@@ -1,0 +1,685 @@
+{
+  "records": [
+    {
+      "project": {
+        "name": "demo-build",
+        "arn": "arn:aws:codebuild:us-east-2:project/demo-build",
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/test-hello-world",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "source_version": "refs/heads/master",
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "NO_ARTIFACTS"
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-demo-build-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-26T06:33:15.913+00:00",
+        "last_modified": "2020-11-26T06:33:15.913+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_1"
+    },
+    {
+      "project": {
+        "name": "build-batch-demo",
+        "arn": "arn:aws:codebuild:us-east-2:project/build-batch-demo",
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/test-hello-world",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "source_version": "refs/heads/master",
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "NO_ARTIFACTS"
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-build-batch-demo-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-18T06:25:40.190+00:00",
+        "last_modified": "2020-11-18T06:25:40.190+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        },
+        "build_batch_config": {
+          "service_role": "arn:aws:iam::role/service-role/build-demo-batch-service-role",
+          "restrictions": {
+            "maximum_builds_allowed": 100
+          },
+          "timeout_in_mins": 480
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-demo-2",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-demo-2",
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/test-hello-world",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "source_version": "refs/heads/master",
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "NO_ARTIFACTS"
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-demo-2-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T12:05:12.468+00:00",
+        "last_modified": "2020-11-10T12:05:12.468+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "build-demo",
+        "arn": "arn:aws:codebuild:us-east-2:project/build-demo",
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/test-hello-world",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "source_version": "refs/heads/master",
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "build-demo",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-build-demo-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T10:40:20.596+00:00",
+        "last_modified": "2020-11-10T10:55:00.543+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-msg-demo",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-msg-demo",
+        "source": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-input-bucket/codebuild-msg-demo.zip",
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "codebuild-msg-demo",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-msg-demo-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T10:23:33.446+00:00",
+        "last_modified": "2020-11-10T10:36:53.879+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-msg1",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-msg1",
+        "source": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-input-bucket/MessageUtil.zip",
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "codebuild-msg1",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-msg1-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T08:14:52.320+00:00",
+        "last_modified": "2020-11-10T08:14:52.320+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_1"
+    },
+    {
+      "project": {
+        "name": "codebuild-calc1",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-calc1",
+        "source": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-input-bucket/codebuild-demo.zip",
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "codebuild-calc1",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-calc1-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T08:04:07.523+00:00",
+        "last_modified": "2020-11-10T08:06:39.776+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-calc",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-calc",
+        "source": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-input-bucket/codebuild-demo.zip",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "codebuild-calc",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-calc-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T07:56:02.703+00:00",
+        "last_modified": "2020-11-10T07:56:02.703+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-test-project",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-test-project",
+        "source": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-input-bucket/codebuild-test.zip",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "codebuild-test-project",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-test-project-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T05:22:00.211+00:00",
+        "last_modified": "2020-11-10T05:22:00.211+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-demo-project",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-demo-project",
+        "source": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-input-bucket/MessageUtil.zip",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "S3",
+          "location": "codebuild-us-east-2-mukesh-output-bucket",
+          "path": "",
+          "namespace_type": "NONE",
+          "name": "codebuild-demo-project",
+          "packaging": "NONE",
+          "override_artifact_name": false,
+          "encryption_disabled": false
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-demo-project-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-10T05:07:50.166+00:00",
+        "last_modified": "2020-11-10T05:07:50.166+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-demo",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-demo",
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/test-hello-world",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "source_version": "refs/heads/master",
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "NO_ARTIFACTS"
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-codebuild-demo-test-service-role",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-09T11:48:54.487+00:00",
+        "last_modified": "2020-11-09T11:52:21.753+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    },
+    {
+      "project": {
+        "name": "codebuild-test4",
+        "arn": "arn:aws:codebuild:us-east-2:project/codebuild-test4",
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/sample-webpage",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "source_version": "refs/heads/master",
+        "secondary_source_versions": [],
+        "artifacts": {
+          "type": "NO_ARTIFACTS"
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "service_role": "arn:aws:iam::role/service-role/codebuild-test4",
+        "timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "tags": [],
+        "created": "2020-11-09T11:36:50.750+00:00",
+        "last_modified": "2020-11-09T11:36:50.750+00:00",
+        "badge": {
+          "badge_enabled": false
+        },
+        "logs_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        }
+      },
+      "region": "US_EAST_2"
+    }
+  ],
+  "count": 12,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "cbtenant",
+      "integration_id": "1"
+    },
+    "integration_type": "awsdevtools",
+    "data_type": "projects",
+    "page_number": 0
+  }
+}

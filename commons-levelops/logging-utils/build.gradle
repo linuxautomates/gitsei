@@ -1,0 +1,29 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.spring_cloud_gcp_starter_logging
+    compile libraries.okhttp
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile 'commons-codec:commons-codec:1.14'
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

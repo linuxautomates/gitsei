@@ -1,0 +1,239 @@
+{
+  "w_id": "dd75ef24-f94b-4865-8143-1f830d5d54fd",
+  "w_workitem_id": "240",
+  "w_integration_id": "1723",
+  "w_is_active": true,
+  "w_summary": "task-2_11",
+  "w_priority": "2",
+  "w_priority_order": 1,
+  "w_epic": "_UNKNOWN_",
+  "w_parent_workitem_id": "243",
+  "w_status": "done",
+  "w_workitem_type": "task",
+  "w_story_points": 4,
+  "w_ingested_at": 1647129600,
+  "w_components": [
+    "component1"
+  ],
+  "w_reporter": {
+    "display_name": "srinath.chandrashekhar@levelops.io",
+    "id": "928b49ef-1a08-4653-9a9f-bf48caf17372",
+    "cloud_id": "admin"
+  },
+  "w_assignee": {
+    "id": "c7423dfe-b3ec-461e-9b72-bf8e104ebd20",
+    "display_name": "Thanh Tran",
+    "cloud_id": "c1"
+  },
+  "w_first_assignee": {
+    "id": "c7423dfe-b3ec-461e-9b72-bf8e104ebd20",
+    "display_name": "Thanh Tran",
+    "cloud_id": "c1"
+  },
+  "w_hops": 1,
+  "w_bounces": 0,
+  "w_num_attachments": 1,
+  "w_desc_size": 40,
+  "w_first_attachment_at": "2022-04-12T11:47:30.952Z",
+  "w_created_at": "2022-04-12T11:47:30.952Z",
+  "w_updated_at": "2022-04-12T11:47:30.952Z",
+  "w_labels": [
+    "regression",
+    "testui"
+  ],
+  "w_custom_fields": [
+    {
+      "name": "customfield_10010",
+      "str": "test"
+    },
+    {
+      "name": "customfield_10011",
+      "int": 1
+    },
+    {
+      "name": "customfield_10012",
+      "long": 40
+    },
+    {
+      "name": "customfield_10013",
+      "float": 1.5
+    },
+    {
+      "name": "customfield_10014",
+      "bool": true
+    },
+    {
+      "name": "customfield_10015",
+      "date": "2022-04-12T11:47:30.952Z"
+    },
+    {
+      "name": "customfield_10016",
+      "arr": [
+        "test1",
+        "test2"
+      ]
+    },
+    {
+      "name": "customfield_10017",
+      "str": "test1:test2"
+    }
+  ],
+  "w_resolution": "_UNKNOWN_",
+  "w_first_comment_at": "2022-04-12T11:47:30.952Z",
+  "w_due_at": "2022-04-12T11:47:30.952Z",
+  "w_status_category": "Completed",
+  "w_original_estimate": 1.5,
+  "w_resolved_at": "2022-04-12T11:47:30.952Z",
+  "w_state_transition_time": "2022-04-12T11:47:30.952Z",
+  "w_first_assigned_at": "2022-04-12T11:47:30.952Z",
+  "w_priorities_sla": {
+    "response_time": 86400,
+    "solve_time": 86400
+  },
+  "w_sprint_mappings": [
+    {
+      "id": "test11March\\Sprint 1",
+      "added_at": 1646996521,
+      "planned": false,
+      "delivered": false,
+      "outside_of_sprint": false,
+      "ignorable_workitem_type": false,
+      "story_points_planned": 0.0,
+      "story_points_delivered": 0.0
+    }
+  ],
+  "w_hist_assignees": [
+    {
+      "assignee": {
+        "id": "c7423dfe-b3ec-461e-9b72-bf8e104ebd20",
+        "display_name": "Thanh Tran",
+        "cloud_id": "c1"
+      },
+      "start_time": "2021-09-28T16:07:30+00:00",
+      "end_time": "2021-09-30T00:16:14+00:00"
+    }
+  ],
+  "w_links": [
+    {
+      "to_workitem_id": "LEV-1926",
+      "relation": "duplicates"
+    }
+  ],
+  "w_versions": [
+    {
+      "id": 10007,
+      "name": "Q4-2020",
+      "description": "This is a sample release.",
+      "archived": false,
+      "released": false,
+      "overdue": false,
+      "start_time": "2022-03-08T06:48:58+00:00",
+      "end_time": "2021-09-30T00:16:14+00:00"
+    }
+  ],
+  "w_fix_versions": [
+    {
+      "id": 10006,
+      "name": "Q3-2020",
+      "description": "This is a sample release.",
+      "archived": false,
+      "released": false,
+      "overdue": false,
+      "start_time": "2022-03-08T06:48:58+00:00",
+      "end_time": "2021-09-30T00:16:14+00:00"
+    }
+  ],
+  "w_project": "Agile-Project",
+  "w_salesforce_cases": [
+    {
+      "field_key": "key_1",
+      "field_value": "val_1"
+    }
+  ],
+  "w_hist_story_points": [
+    {
+      "story_points": 7.0,
+      "start_time": "2022-04-12T11:47:30.952Z",
+      "end_time": "2022-04-12T11:47:30.952Z"
+    }
+  ],
+  "w_hist_sprints": [
+    {
+      "id": 3,
+      "name": "Dec",
+      "state": "CLOSED",
+      "goal": "goal1",
+      "start_time": "2020-12-01T04:07:01+00:00",
+      "end_time": "2021-01-06T04:07:00+00:00",
+      "completed_at": "2021-01-12T16:18:23+00:00"
+    }
+  ],
+  "w_hist_statuses": [
+    {
+      "id": "2ba757ff-8e82-4558-bdaf-50b450312b3d",
+      "status": "Done",
+      "start_time": "2022-04-12T11:47:30.952Z",
+      "end_time": "2022-04-12T11:47:30.952Z"
+    }
+  ],
+  "w_milestones": [
+    {
+      "id": "eeeb7f30-cba6-4184-a462-d17d3e6d19f9",
+      "parent_name": "LevelOps\\Effort Investment",
+      "name": "Milestone 1",
+      "full_name": "LevelOps\\Effort Investment\\Milestone 1",
+      "state": "current",
+      "start_time": "2022-04-12T11:47:30.952Z",
+      "end_time": "2022-04-12T11:47:30.952Z",
+      "completed_at": "2022-04-12T11:47:30.952Z",
+      "attributes": [
+        {
+          "name" : "teams",
+          "arr" : [
+            "cgn-test/test11March/test11March Team"
+            ]
+        },
+        {
+          "name" : "project",
+          "str" : "test11March"
+        },
+        {
+          "name" : "code_area",
+          "str" : "test11March"
+        },
+        {
+          "name" : "organization",
+          "str" : "test"
+        },
+        {
+          "name" : "acceptance_criteria",
+          "str" : "accepted"
+        }
+      ]
+    }
+  ],
+  "w_attributes": [
+    {
+      "name" : "teams",
+      "arr" : [
+        "cgn-test/test11March/test11March Team"
+      ]
+    },
+    {
+      "name" : "project",
+      "str" : "test11March"
+    },
+    {
+      "name" : "code_area",
+      "str" : "test11March"
+    },
+    {
+      "name" : "organization",
+      "str" : "test"
+    },
+    {
+      "name" : "acceptance_criteria",
+      "str" : "accepted"
+    }
+  ]
+}

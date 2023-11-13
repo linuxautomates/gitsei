@@ -1,0 +1,40 @@
+{
+  "page": 0,
+  "sort": [],
+  "across": "none",
+  "fields": [],
+  "filter": {
+    "assignees": [
+      "a900bc1b-919f-4345-8884-43674c4e4b4b",
+      "28033ef3-3ac5-414e-8b34-b75cd2ceeddf"
+    ],
+    "released_in": {
+      "$gt": "1688774400",
+      "$lt": "1691366399"
+    },
+    "integration_ids": [
+      "1849",
+      "4218",
+      "4414"
+    ],
+    "velocity_stages": [
+      "$$ALL_STAGES$$"
+    ],
+    "issue_resolved_at": {
+      "$gt": "1688774400",
+      "$lt": "1691366399"
+    },
+    "velocity_config_id": "b1a46fc9-39e0-4ec7-acbc-40a5b32547ea"
+  },
+  "ou_ids": [
+    33490
+  ],
+  "stacks": [],
+  "interval": "day",
+  "page_size": 10000,
+  "across_limit": 90,
+  "ou_exclusions": [],
+  "filter_across_values": true,
+  "ou_user_filter_designation": {},
+  "apply_ou_on_velocity_report": true
+}

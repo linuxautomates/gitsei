@@ -1,0 +1,206 @@
+{
+    "users": [
+      {
+        "name": "Jose Leon",
+        "email": "ivan.leon.it@gmail.com",
+        "time_zone": "America/Los_Angeles",
+        "color": "purple",
+        "avatar_url": "https://secure.gravatar.com/avatar/2eba62139b0888807e62e0b0ec9fafc4.png?d=mm&r=PG",
+        "billed": true,
+        "role": "owner",
+        "description": null,
+        "invitation_sent": false,
+        "job_title": null,
+        "teams": [
+          {
+            "id": "P6SSO4A",
+            "type": "team_reference",
+            "summary": "OpsTeam",
+            "self": "https://api.pagerduty.com/teams/P6SSO4A",
+            "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+          }
+        ],
+        "contact_methods": [
+          {
+            "id": "PGO4A1I",
+            "type": "email_contact_method_reference",
+            "summary": "Default",
+            "self": "https://api.pagerduty.com/users/P5OQRZ5/contact_methods/PGO4A1I",
+            "html_url": null
+          },
+          {
+            "id": "PITOJIY",
+            "type": "phone_contact_method_reference",
+            "summary": "Mobile",
+            "self": "https://api.pagerduty.com/users/P5OQRZ5/contact_methods/PITOJIY",
+            "html_url": null
+          }
+        ],
+        "notification_rules": [
+          {
+            "id": "P7YQNZL",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel PGO4A1I",
+            "self": "https://api.pagerduty.com/users/P5OQRZ5/notification_rules/P7YQNZL",
+            "html_url": null
+          },
+          {
+            "id": "PO7BOPO",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel PGO4A1I",
+            "self": "https://api.pagerduty.com/users/P5OQRZ5/notification_rules/PO7BOPO",
+            "html_url": null
+          },
+          {
+            "id": "PLOY0WM",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel PITOJIY",
+            "self": "https://api.pagerduty.com/users/P5OQRZ5/notification_rules/PLOY0WM",
+            "html_url": null
+          }
+        ],
+        "coordinated_incidents": [],
+        "id": "P5OQRZ5",
+        "type": "user",
+        "summary": "Jose Leon",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5",
+        "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+      },
+      {
+        "name": "Megha Tamvada",
+        "email": "tamvada@levelops.io",
+        "time_zone": "America/Los_Angeles",
+        "color": "red",
+        "avatar_url": "https://secure.gravatar.com/avatar/6df5d03e5dec07b92aa485d447d7aa07.png?d=mm&r=PG",
+        "billed": true,
+        "role": "admin",
+        "description": null,
+        "invitation_sent": false,
+        "job_title": null,
+        "teams": [
+          {
+            "id": "P6SSO4A",
+            "type": "team_reference",
+            "summary": "OpsTeam",
+            "self": "https://api.pagerduty.com/teams/P6SSO4A",
+            "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+          }
+        ],
+        "contact_methods": [
+          {
+            "id": "PTFYEEY",
+            "type": "email_contact_method_reference",
+            "summary": "Default",
+            "self": "https://api.pagerduty.com/users/PNNYQV7/contact_methods/PTFYEEY",
+            "html_url": null
+          }
+        ],
+        "notification_rules": [
+          {
+            "id": "PEZ1OF5",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel PTFYEEY",
+            "self": "https://api.pagerduty.com/users/PNNYQV7/notification_rules/PEZ1OF5",
+            "html_url": null
+          },
+          {
+            "id": "PI8PPUV",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel PTFYEEY",
+            "self": "https://api.pagerduty.com/users/PNNYQV7/notification_rules/PI8PPUV",
+            "html_url": null
+          }
+        ],
+        "coordinated_incidents": [],
+        "id": "PNNYQV7",
+        "type": "user",
+        "summary": "Megha Tamvada",
+        "self": "https://api.pagerduty.com/users/PNNYQV7",
+        "html_url": "https://dev-ivanops.pagerduty.com/users/PNNYQV7"
+      },
+      {
+        "name": "Viraj Ajgaonkar",
+        "email": "viraj@levelops.io",
+        "time_zone": "America/Los_Angeles",
+        "color": "green",
+        "avatar_url": "https://secure.gravatar.com/avatar/25a6273de409338fe8fdf77fb1496c51.png?d=mm&r=PG",
+        "billed": true,
+        "role": "admin",
+        "description": null,
+        "invitation_sent": false,
+        "job_title": null,
+        "teams": [
+          {
+            "id": "P6SSO4A",
+            "type": "team_reference",
+            "summary": "OpsTeam",
+            "self": "https://api.pagerduty.com/teams/P6SSO4A",
+            "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+          }
+        ],
+        "contact_methods": [
+          {
+            "id": "P4DL28S",
+            "type": "email_contact_method_reference",
+            "summary": "Default",
+            "self": "https://api.pagerduty.com/users/PQBP305/contact_methods/P4DL28S",
+            "html_url": null
+          },
+          {
+            "id": "P9L1YTM",
+            "type": "phone_contact_method_reference",
+            "summary": "Mobile",
+            "self": "https://api.pagerduty.com/users/PQBP305/contact_methods/P9L1YTM",
+            "html_url": null
+          },
+          {
+            "id": "PQXPZ6P",
+            "type": "sms_contact_method_reference",
+            "summary": "Mobile",
+            "self": "https://api.pagerduty.com/users/PQBP305/contact_methods/PQXPZ6P",
+            "html_url": null
+          }
+        ],
+        "notification_rules": [
+          {
+            "id": "PX88LLS",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel P4DL28S",
+            "self": "https://api.pagerduty.com/users/PQBP305/notification_rules/PX88LLS",
+            "html_url": null
+          },
+          {
+            "id": "PAHWMAF",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel P4DL28S",
+            "self": "https://api.pagerduty.com/users/PQBP305/notification_rules/PAHWMAF",
+            "html_url": null
+          },
+          {
+            "id": "PQ7S3LF",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel P9L1YTM",
+            "self": "https://api.pagerduty.com/users/PQBP305/notification_rules/PQ7S3LF",
+            "html_url": null
+          },
+          {
+            "id": "P9Y439S",
+            "type": "assignment_notification_rule_reference",
+            "summary": "0 minutes: channel PQXPZ6P",
+            "self": "https://api.pagerduty.com/users/PQBP305/notification_rules/P9Y439S",
+            "html_url": null
+          }
+        ],
+        "coordinated_incidents": [],
+        "id": "PQBP305",
+        "type": "user",
+        "summary": "Viraj Ajgaonkar",
+        "self": "https://api.pagerduty.com/users/PQBP305",
+        "html_url": "https://dev-ivanops.pagerduty.com/users/PQBP305"
+      }
+    ],
+    "limit": 25,
+    "offset": 0,
+    "total": 3,
+    "more": false
+  }

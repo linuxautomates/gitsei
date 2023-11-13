@@ -1,0 +1,42 @@
+apply plugin: 'java-library'
+apply plugin: 'java'
+
+dependencies {
+    implementation project(':harness-acl-client')
+    compile project(":ingestion-commons")
+    compile project(":workflow-commons")
+//    compile project(":atlassian-connect")
+    compile project(":utils")
+    compile project(":spring-web-utils")
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    compile libraries.apache_commons
+    compile libraries.jackson_core
+    compile libraries.spring_validation
+    compile libraries.aws_developer_tools
+    compile libraries.jsoup
+    compile libraries.diff_parser
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile project(":utils")
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

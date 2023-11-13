@@ -1,0 +1,16 @@
+{
+    "id": "8e8b4493-fb14-4a1e-9ce9-e7b2e53ef0d8",
+    "trigger_type": "scheduled",
+    "description": "Trigger for playbooks to run on a specific schedule.",
+    "fields": {
+        "cron": {
+            "key": "cron",
+            "type": "cron",
+            "options": [],
+            "required": true,
+            "hidden": true,
+            "validation": "",
+            "default_value": ""
+        }
+    }
+}

@@ -1,0 +1,17 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    api project(':okhttp-utils')
+    api project(':database-commons')
+
+    compile libraries.apache_commons
+    compile libraries.jackson_core
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}

@@ -1,0 +1,130 @@
+allprojects {
+    dependencies {
+        components.all {
+            allVariants {
+                withDependencies { deps ->
+                    deps.each { dep ->
+                        if (dep.group == 'io.levelops.commons') {
+                            dep.version {
+                                strictly levelopsCommonsVersion
+                            }
+                            dep.because ""
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+configure(subprojects) {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'jacoco'
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+
+    group = 'io.levelops.integrations'
+    version = '0.1-SNAPSHOT'
+
+    if (System.getenv("VERSION") != null) {
+        version = System.getenv("VERSION")
+    }
+
+    sourceCompatibility = '1.13'
+    targetCompatibility = '1.13'
+
+    task sourcesJar(type: Jar, dependsOn: classes) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        repositories {
+            maven {
+                url 'https://artifactory.levelops.io/repository/maven-public/'
+                credentials {
+                    username nexusUser
+                    password nexusPassword
+                }
+            }
+            maven {
+                url "https://packages.atlassian.com/maven-public/"
+            }
+        }
+    }
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                from components.java
+                if (tasks.findByName('sourcesJar')) {
+                    artifact tasks.sourcesJar
+                }
+            }
+        }
+        repositories {
+            maven {
+                def snapshotsRepoUrl = 'https://artifactory.levelops.io/repository/maven-snapshots/'
+                def releasesRepoUrl = "https://artifactory.levelops.io/repository/levelops-java-releases/"
+                url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+                credentials {
+                    username nexusUser
+                    password nexusPassword
+                }
+            }
+        }
+    }
+
+    test {
+        exclude '**/*IntegrationTest*'
+    }
+
+}
+
+//gradle.buildFinished {
+//    rootProject.buildDir.deleteDir()
+//}
+
+
+ext.levelopsCommonsVersion = 'v0.1.9245-main'
+
+ext.levelopsCommonsLib = { name -> [group: 'io.levelops.commons', name: name, version: levelopsCommonsVersion] }
+
+ext.libraries = [
+        'lombok'                  : [group: 'org.projectlombok', name: 'lombok', version: '1.18.20'],
+        'junit'                   : [group: 'junit', name: 'junit', version: '4.12'],
+        'assertj'                 : [group: 'org.assertj', name: 'assertj-core', version: '3.13.2'],
+        'guava'                   : [group: 'com.google.guava', name: 'guava', version: '29.0-jre'],
+        'apache_commons'          : [group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'],
+        'apache_collections'      : [group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'],
+        'apache_http'             : [group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'],
+        'log4j'                   : [group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.7'],
+        'okhttp'                  : [group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.6.0'],
+        'jackson_core'            : [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9'],
+        'jackson_csv'             : [group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-csv', version: '2.9.9'],
+        'wiremock'                : [group: 'com.github.tomakehurst', name: 'wiremock-jre8', version: '2.24.1'],
+        'mockito'                 : [group: 'org.mockito', name: 'mockito-core', version: '3.3.3'],
+        'mockwebserver'           : [group: "com.squareup.okhttp3", name: "mockwebserver", version: "4.9.1"],
+        'jedis'                   : [group: 'redis.clients', name: 'jedis', version: '3.3.0'],
+        'spring_web'              : [group: 'org.springframework', name: 'spring-web', version: '5.2.7.RELEASE'],
+        'spring_jdbc'             : [group: 'org.springframework', name: 'spring-jdbc', version: '5.2.7.RELEASE'],
+        'spring_jcl'              : [group: 'org.springframework', name: 'spring-jcl', version: '5.2.7.RELEASE'],
+        'spring_boot_cache'       : [group: 'org.springframework.boot', name: 'spring-boot-starter-cache', version: '2.3.1.RELEASE'],
+        'spring_boot_web'         : [group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.3.RELEASE'],
+        'spring_boot_starter_test': [group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.1.RELEASE'],
+        'spring_data_redis'       : [group: 'org.springframework.data', name: 'spring-data-redis', version: '2.3.1.RELEASE'],
+        'spring_integration_core' : [group: 'org.springframework.integration', name: 'spring-integration-core', version: '5.3.1.RELEASE'],
+        'spring_security_test'    : [group: 'org.springframework.security', name: 'spring-security-test', version: '5.3.3.RELEASE'],
+        'joda'                    : [group: 'joda-time', name: 'joda-time', version: '2.10.5'], // for java 8 modules
+        'guava_retrying'          : [group: 'com.github.rholder', name: 'guava-retrying', version: '2.0.0'],
+        'aws_developer_tools'     : [group: 'com.amazonaws', name: 'aws-java-sdk', version: '1.11.901'],
+        'p4java'                  : [group: 'com.perforce', name: 'p4java', version: '2020.1.1999383'],
+        'jaxws'                   : [group: 'com.sun.xml.ws', name: 'jaxws-tools', version: '2.3.2'],
+        'jaxws_ri'                : [group: 'com.sun.xml.ws', name: 'jaxws-ri', version: '2.3.2'],
+        'jakarta_xml_ws_api'      : [group: 'jakarta.xml.ws', name: 'jakarta.xml.ws-api', version: '3.0.1'],
+        'javaxws_security'        : [group: 'com.sun.xml.wss', name: 'xws-security', version: '3.0'],
+        'javax_activation'        : [group: 'javax.activation', name: 'activation', version: '1.1.1']
+]

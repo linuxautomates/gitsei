@@ -1,0 +1,322 @@
+{
+  "id": "0531da54-c87c-4118-af28-319406f1bb95",
+  "name": "SEI-1786",
+  "default_config": false,
+  "created_at": 1684825193386,
+  "updated_at": 1684837070778,
+  "cicd_job_id_name_mappings": {
+    "785ed097-3f96-4ed1-8cc3-22fa5cbd61e8": "refs/merge-requests/13/head",
+    "6a7f0ae4-3767-402e-9c25-c4056b89baf8": "Nish-Test-2",
+    "7d11efc3-9ff6-493d-a80d-4fa91ac3f5fd": "refs/merge-requests/15/head",
+    "d3f45267-1111-4d35-b322-cda874b034aa": "Nish-Test-3",
+    "0455d652-3b42-479c-82f6-0110de603757": "Nish-Test-4",
+    "fde07157-ec68-4437-8f1d-8aedabf80528": "QA_Branch",
+    "cc38e13e-6feb-4679-b59b-266240a1aff2": "main"
+  },
+  "lead_time_for_changes": {
+    "pre_development_custom_stages": [],
+    "fixed_stages": [
+      {
+        "name": "Lead time to First Commit",
+        "order": 0,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_COMMIT_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "PR Creation Time",
+        "order": 1,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "Time to First Comment",
+        "order": 2,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_REVIEW_STARTED"
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "Approval Time",
+        "order": 3,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_APPROVED",
+          "params": {
+            "last_approval": [
+              "true"
+            ]
+          }
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "Merge Time",
+        "order": 4,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_MERGED",
+          "scm_filters": {
+            "labels": {
+              "$begins": [
+                "release"
+              ]
+            },
+            "commit_branch": {
+              "$begins": [
+                "release"
+              ]
+            },
+            "target_branch": {
+              "$begins": [
+                "release"
+              ]
+            }
+          }
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      }
+    ],
+    "post_development_custom_stages": [],
+    "issue_management_integrations": [
+      "jira"
+    ],
+    "starting_event_is_commit_created": false,
+    "starting_event_is_generic_event": false
+  },
+  "mean_time_to_restore": {
+    "pre_development_custom_stages": [],
+    "fixed_stages": [
+      {
+        "name": "Lead time to First Commit",
+        "order": 0,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_COMMIT_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "PR Creation Time",
+        "order": 1,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "Time to First Comment",
+        "order": 2,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_REVIEW_STARTED"
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "Approval Time",
+        "order": 3,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_APPROVED",
+          "params": {
+            "last_approval": [
+              "true"
+            ]
+          }
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "name": "Merge Time",
+        "order": 4,
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_MERGED",
+          "scm_filters": {
+            "labels": {
+              "$begins": [
+                "bugfix",
+                "fix",
+                "bug"
+              ]
+            },
+            "commit_branch": {
+              "$begins": [
+                "bugfix",
+                "fix",
+                "bug"
+              ]
+            },
+            "target_branch": {
+              "$begins": [
+                "bugfix",
+                "fix",
+                "bug"
+              ]
+            }
+          }
+        },
+        "lower_limit_value": 864000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_value": 2592000,
+        "upper_limit_unit": "SECONDS"
+      }
+    ],
+    "post_development_custom_stages": [],
+    "issue_management_integrations": [
+      "jira"
+    ],
+    "starting_event_is_commit_created": false,
+    "starting_event_is_generic_event": false
+  },
+  "deployment_frequency": {
+    "application": "gitlab",
+    "integration_id": 4405,
+    "integration_ids": [
+      4405
+    ],
+    "calculation_field": "end_time",
+    "filters": {
+      "deployment_frequency": {
+        "integration_type": "CICD",
+        "calculation_field": "end_time",
+        "event": {
+          "any_label_added": false,
+          "type": "CICD_JOB_RUN",
+          "values": [
+            "cc38e13e-6feb-4679-b59b-266240a1aff2",
+            "6a7f0ae4-3767-402e-9c25-c4056b89baf8",
+            "d3f45267-1111-4d35-b322-cda874b034aa",
+            "0455d652-3b42-479c-82f6-0110de603757",
+            "fde07157-ec68-4437-8f1d-8aedabf80528",
+            "785ed097-3f96-4ed1-8cc3-22fa5cbd61e8",
+            "7d11efc3-9ff6-493d-a80d-4fa91ac3f5fd"
+          ]
+        },
+        "filter": {
+          "exclude": {
+            "step_status": [
+              "FAILED"
+            ],
+            "stage_status": [
+              "FAILED"
+            ]
+          },
+          "step_name": [
+            "lint-test-job",
+            "unit-test-job"
+          ],
+          "stage_name": [
+            "build",
+            "deploy"
+          ],
+          "partial_match": {}
+        }
+      }
+    }
+  },
+  "change_failure_rate": {
+    "application": "gitlab",
+    "integration_id": 4405,
+    "integration_ids": [
+      4405
+    ],
+    "is_absolute": false,
+    "calculation_field": "end_time",
+    "filters": {
+      "failed_deployment": {
+        "integration_type": "CICD",
+        "calculation_field": "end_time",
+        "event": {
+          "any_label_added": false,
+          "type": "CICD_JOB_RUN",
+          "values": [
+            "cc38e13e-6feb-4679-b59b-266240a1aff2",
+            "6a7f0ae4-3767-402e-9c25-c4056b89baf8",
+            "d3f45267-1111-4d35-b322-cda874b034aa",
+            "0455d652-3b42-479c-82f6-0110de603757",
+            "fde07157-ec68-4437-8f1d-8aedabf80528",
+            "785ed097-3f96-4ed1-8cc3-22fa5cbd61e8",
+            "7d11efc3-9ff6-493d-a80d-4fa91ac3f5fd"
+          ]
+        },
+        "filter": {
+          "exclude": {
+            "step_name": [
+              "lint-test-job"
+            ]
+          },
+          "partial_match": {}
+        }
+      },
+      "total_deployment": {
+        "integration_type": "CICD",
+        "calculation_field": "end_time",
+        "event": {
+          "any_label_added": false,
+          "type": "CICD_JOB_RUN",
+          "values": [
+            "cc38e13e-6feb-4679-b59b-266240a1aff2",
+            "6a7f0ae4-3767-402e-9c25-c4056b89baf8",
+            "d3f45267-1111-4d35-b322-cda874b034aa",
+            "0455d652-3b42-479c-82f6-0110de603757",
+            "fde07157-ec68-4437-8f1d-8aedabf80528",
+            "785ed097-3f96-4ed1-8cc3-22fa5cbd61e8",
+            "7d11efc3-9ff6-493d-a80d-4fa91ac3f5fd"
+          ]
+        },
+        "filter": {
+          "exclude": {
+              "stage_name": [
+                "deploy",
+                "build"
+              ]
+          },
+          "partial_match": {}
+        }
+      }
+    }
+  },
+  "associated_ou_ref_ids": [
+    "33259",
+    "33257",
+    "33258"
+  ],
+  "is_new": true
+}

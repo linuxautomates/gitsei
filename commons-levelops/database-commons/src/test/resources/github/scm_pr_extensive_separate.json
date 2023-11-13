@@ -1,0 +1,319 @@
+{
+  "repo_id": [
+    "levelops/commons-levelops"
+  ],
+  "project": "levelops/commons-levelops",
+  "number": "3850",
+  "integration_id": "1",
+  "creator": "viraj-levelops",
+  "merge_sha": "abe81c99c5f166eefc8fd42513d3fcaab837186c",
+  "title": "PROP-3424 - Self Service Api to Update & Append Entitlements",
+  "source_branch": "jen",
+  "target_branch": "main",
+  "metadata" : {
+    "pr_link" : "https://github.com/levelops/commons-levelops/pull/3850"
+  },
+  "state": "closed",
+  "merged": true,
+  "assignees": [],
+  "assignees_info": [],
+  "labels": [],
+  "pr_labels": [],
+  "commit_shas": [
+    "c0137fbb33e0fb5d53b668d33e5a945579ac912c"
+  ],
+  "reviews": [
+    {
+      "review_id": "1331651788",
+      "reviewer": "maxime-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "maxime-levelops",
+        "original_display_name": "maxime-levelops",
+        "cloudId": "maxime-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316785
+    },
+    {
+      "review_id": "1331652184",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316812
+    },
+    {
+      "review_id": "1331652788",
+      "reviewer": "maxime-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "maxime-levelops",
+        "original_display_name": "maxime-levelops",
+        "cloudId": "maxime-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316850
+    },
+    {
+      "review_id": "1331653076",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316869
+    },
+    {
+      "review_id": "1331653693",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316901
+    },
+    {
+      "review_id": "1331653865",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316910
+    },
+    {
+      "review_id": "1331654209",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316930
+    },
+    {
+      "review_id": "1331654352",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316940
+    },
+    {
+      "review_id": "1331654771",
+      "reviewer": "maxime-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "maxime-levelops",
+        "original_display_name": "maxime-levelops",
+        "cloudId": "maxime-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316967
+    },
+    {
+      "review_id": "1331654925",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316977
+    },
+    {
+      "review_id": "1331655136",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678316991
+    },
+    {
+      "review_id": "1331655286",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317002
+    },
+    {
+      "review_id": "1331655514",
+      "reviewer": "maxime-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "maxime-levelops",
+        "original_display_name": "maxime-levelops",
+        "cloudId": "maxime-levelops"
+      },
+      "state": "APPROVED",
+      "reviewed_at": 1678317020
+    },
+    {
+      "review_id": "1331655514-comment",
+      "reviewer": "maxime-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "maxime-levelops",
+        "original_display_name": "maxime-levelops",
+        "cloudId": "maxime-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317020
+    },
+    {
+      "review_id": "1331655933",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317040
+    },
+    {
+      "review_id": "1331656635",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "CHANGES_REQUESTED",
+      "reviewed_at": 1678317086
+    },
+    {
+      "review_id": "1331656635-comment",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317086
+    },
+    {
+      "review_id": "1331657354",
+      "reviewer": "maxime-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "maxime-levelops",
+        "original_display_name": "maxime-levelops",
+        "cloudId": "maxime-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317105
+    },
+    {
+      "review_id": "1331657812",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317128
+    },
+    {
+      "review_id": "1331658233",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317157
+    },
+    {
+      "review_id": "1331658645",
+      "reviewer": "viraj-levelops",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "viraj-levelops",
+        "original_display_name": "viraj-levelops",
+        "cloudId": "viraj-levelops"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317180
+    },
+    {
+      "review_id": "1331658988",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "APPROVED",
+      "reviewed_at": 1678317205
+    },
+    {
+      "review_id": "1331658988-comment",
+      "reviewer": "sid-propelo",
+      "reviewer_info": {
+        "integration_id": "1",
+        "display_name": "sid-propelo",
+        "original_display_name": "sid-propelo",
+        "cloudId": "sid-propelo"
+      },
+      "state": "COMMENTED",
+      "reviewed_at": 1678317205
+    }
+  ],
+  "pr_updated_at": 1678317353,
+  "pr_merged_at": 1678317349,
+  "pr_closed_at": 1678317349,
+  "pr_created_at": 1678316273,
+  "creator_info": {
+    "integration_id": "1",
+    "display_name": "viraj-levelops",
+    "original_display_name": "viraj-levelops",
+    "cloudId": "viraj-levelops"
+  },
+  "workitem_ids": [
+    "3424"
+  ],
+  "issue_keys": [
+    "PROP-3424"
+  ]
+}

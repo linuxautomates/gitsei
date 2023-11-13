@@ -1,0 +1,35 @@
+dependencies {
+    implementation project(':ingestion-engine')
+    implementation levelopsCommonsLib('utils')
+    implementation levelopsCommonsLib('spring-web-utils')
+    implementation levelopsCommonsLib('ingestion-clients')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    // OpenAPI
+    implementation openapiLib('ui')
+    implementation libraries.spring_boot_web
+    implementation libraries.apache_collections
+
+    testImplementation libraries.junit
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

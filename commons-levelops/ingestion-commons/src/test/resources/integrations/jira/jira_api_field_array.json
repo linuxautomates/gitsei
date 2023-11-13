@@ -1,0 +1,17 @@
+{
+  "id": "versions",
+  "key": "versions",
+  "name": "Affects versions",
+  "custom": false,
+  "orderable": true,
+  "navigable": true,
+  "searchable": true,
+  "clauseNames": [
+    "affectedVersion"
+  ],
+  "schema": {
+    "type": "array",
+    "items": "version",
+    "system": "versions"
+  }
+}

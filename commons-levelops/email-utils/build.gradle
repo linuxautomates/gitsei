@@ -1,0 +1,33 @@
+test {
+    exclude '**/*IntegrationTest*'
+}
+
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile 'com.sendgrid:sendgrid-java:4.9.3'
+    compile libraries.jackson_core
+    compile libraries.apache_io
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

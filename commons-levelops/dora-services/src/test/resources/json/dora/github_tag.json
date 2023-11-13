@@ -1,0 +1,63 @@
+{
+  "records": [
+    {
+      "name": "test-repo-2",
+      "full_name": "test-3000/test-repo-2",
+      "owner": {
+        "type": "organization",
+        "login": "test-3000"
+      },
+      "html_url": "https://github.com/test-3000/test-repo-2",
+      "created_at": "2023-02-09T09:31:50.000+00:00",
+      "pushed_at": "2023-02-09T10:07:58.000+00:00",
+      "updated_at": "2023-02-09T09:31:50.000+00:00",
+      "size": 81,
+      "languages": {},
+      "tags": [
+        {
+          "name": "tag1",
+          "commit": {
+            "sha": "ad1b3750c25cb7bf442135d4c1f9f34fba391386",
+            "url": "https://api.github.com/repos/test-3000/test-repo-2/commits/ad1b3750c25cb7bf442135d4c1f9f34fba391386"
+          },
+          "node_id": "REF_kwDOGUEfXrVyZWZzL3RhZ3MvdjAuMS4xOC1kZXY"
+        },
+        {
+          "name": "tag2",
+          "commit": {
+            "sha": "434adba6c87bd305642b18880842aaf8824e74b7",
+            "url": "https://api.github.com/repos/levelops/wh-levelops/commits/434adba6c87bd305642b18880842aaf8824e74b7"
+          },
+          "node_id": "REF_kwDOGUEfXrVyZWZzL3RhZ3MvdjAuMS4xNy1kZXY"
+        },
+        {
+          "name": "tag3",
+          "commit": {
+            "sha": "f366918971ecf184c42b8db5802cc845d519ce6e",
+            "url": "https://api.github.com/repos/levelops/wh-levelops/commits/f366918971ecf184c42b8db5802cc845d519ce6e"
+          },
+          "node_id": "REF_kwDOGUEfXrVyZWZzL3RhZ3MvdjAuMS4xNi1kZXY"
+        },
+        {
+          "name": "tag4",
+          "commit": {
+            "sha": "d6bdba1888838b6865a4b749474d92c97a5de8fa",
+            "url": "https://api.github.com/repos/levelops/wh-levelops/commits/d6bdba1888838b6865a4b749474d92c97a5de8fa"
+          },
+          "node_id": "REF_kwDOGUEfXrVyZWZzL3RhZ3MvdjAuMS4xNS1kZXY"
+        }
+      ],
+      "id": "test-3000/test-repo-2"
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "4251"
+    },
+    "integration_type": "github",
+    "data_type": "tags",
+    "page_number": 1
+  }
+}

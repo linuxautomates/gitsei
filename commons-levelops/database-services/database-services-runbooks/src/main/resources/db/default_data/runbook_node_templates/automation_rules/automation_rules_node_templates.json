@@ -1,0 +1,69 @@
+[
+  {
+    "hidden": false,
+    "type": "check_automation_rule",
+    "node_handler": "check_automation_rule",
+    "name": "Check Automation Rule",
+    "description": "Check that a given automation rule was matched.",
+    "category": "Automation Rules",
+    "input": {
+      "object_id": {
+        "key": "object_id",
+        "index": 10,
+        "display_name": "Object Id",
+        "description": "Id of the object to check.",
+        "type": "text",
+        "content_type": "string",
+        "value_type": "string",
+        "required": true
+      },
+      "rule_id": {
+        "key": "rule_id",
+        "index": 20,
+        "display_name": "Automation Rule",
+        "description": "Automation Rule to check.",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "automation_rules",
+        "required": true
+      },
+      "only_new_matches": {
+        "key": "only_new_matches",
+        "index": 30,
+        "display_name": "Only new matches",
+        "description": "Select Yes to only return 'Matched' when the rule has no previous match for that object.",
+        "content_type": "boolean",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "required": true
+      }
+    },
+    "options": [
+      "Matched",
+      "Not matched"
+    ],
+    "output": {
+      "count": {
+        "key": "count",
+        "content_type": "integer",
+        "value_type": "string"
+      },
+      "match_content": {
+        "key": "match_content",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "rule_name": {
+        "key": "rule_name",
+        "content_type": "string",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  }
+]

@@ -1,0 +1,681 @@
+[
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "11763",
+    "self": "https://levelops.atlassian.net/rest/api/2/issue/11763",
+    "key": "LEV-1005",
+    "fields": {
+      "issuetype": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10006",
+        "id": 10006,
+        "name": "Story",
+        "description": "Functionality or a feature expressed as a user goal.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+        "id": "10001",
+        "key": "LEV",
+        "name": "levelops",
+        "projectTypeKey": "software",
+        "simplified": false
+      },
+      "fixVersions": [],
+      "created": 1590354205527,
+      "priority": {
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "updated": 1590354209770,
+      "status": {
+        "self": "https://levelops.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+          "id": "2",
+          "key": "new",
+          "name": "To Do",
+          "colorName": "blue-gray"
+        }
+      },
+      "components": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/component/10000",
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "summary": "Check status generic component for playbook",
+      "creator": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": []
+      },
+      "description_text": "schedule -> daily, weekly etc",
+      "description_length": 29,
+      "statuscategorychangedate": "2020-05-24T14:03:25.715-0700",
+      "watches": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-1005/watchers",
+        "watchCount": 1,
+        "isWatching": false
+      },
+      "customfield_10018": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "PLUGIN_LICENSE_ERROR",
+          "message": "The Parent Link is only available to Jira Premium users."
+        }
+      },
+      "customfield_10019": "0|i00a3i:zzr",
+      "attachment": [],
+      "workratio": -1,
+      "customfield_10020": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@51389564[completeDate=<null>,endDate=2020-05-18T23:04:00.000Z,goal=,id=7,name=Dec 11,rapidViewId=1,sequence=6,startDate=2020-05-11T23:04:41.049Z,state=ACTIVE]"
+      ],
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10000": "{}",
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "customfield_10024": [],
+      "timetracking": {}
+    },
+    "changelog": {
+      "maxResults": 2,
+      "startAt": 0,
+      "total": 2,
+      "histories": [
+        {
+          "id": "17746",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590354209773,
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10019",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "17745",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590354209336,
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10020",
+              "from": "",
+              "fromString": "",
+              "to": "8",
+              "toString": "May 11"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "11762",
+    "self": "https://levelops.atlassian.net/rest/api/2/issue/11762",
+    "key": "LEV-1004",
+    "fields": {
+      "issuetype": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10006",
+        "id": 10006,
+        "name": "Story",
+        "description": "Functionality or a feature expressed as a user goal.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+        "id": "10001",
+        "key": "LEV",
+        "name": "levelops",
+        "projectTypeKey": "software",
+        "simplified": false
+      },
+      "fixVersions": [],
+      "created": 1590354168411,
+      "priority": {
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "updated": 1590354172216,
+      "status": {
+        "self": "https://levelops.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+          "id": "2",
+          "key": "new",
+          "name": "To Do",
+          "colorName": "blue-gray"
+        }
+      },
+      "components": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/component/10000",
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "summary": "Crontab generic component for playbook",
+      "creator": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": []
+      },
+      "description_text": "",
+      "description_length": 0,
+      "statuscategorychangedate": "2020-05-24T14:02:48.549-0700",
+      "watches": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-1004/watchers",
+        "watchCount": 1,
+        "isWatching": false
+      },
+      "customfield_10018": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "PLUGIN_LICENSE_ERROR",
+          "message": "The Parent Link is only available to Jira Premium users."
+        }
+      },
+      "customfield_10019": "0|i00a3i:zzi",
+      "attachment": [],
+      "workratio": -1,
+      "customfield_10020": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@51389564[completeDate=<null>,endDate=2020-05-18T23:04:00.000-07:00,goal=,id=9,name=Feb 11 - feb 18,rapidViewId=1,sequence=6,startDate=2020-05-11T23:04:41.049-07:00,state=ACTIVE]"
+      ],
+      "customfield_10000": "{}",
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "customfield_10024": [],
+      "timetracking": {
+      }
+    },
+    "changelog": {
+      "maxResults": 2,
+      "startAt": 0,
+      "total": 2,
+      "histories": [
+        {
+          "id": "17743",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590354172219,
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10019",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "17742",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590354172151,
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10020",
+              "from": "",
+              "fromString": "",
+              "to": "8",
+              "toString": "May 11"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "11761",
+    "self": "https://levelops.atlassian.net/rest/api/2/issue/11761",
+    "key": "LEV-1003",
+    "fields": {
+      "issuetype": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10006",
+        "id": 10006,
+        "name": "Story",
+        "description": "Functionality or a feature expressed as a user goal.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+        "id": "10001",
+        "key": "LEV",
+        "name": "levelops",
+        "projectTypeKey": "software",
+        "simplified": false
+      },
+      "fixVersions": [],
+      "created": 1590349547292,
+      "priority": {
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "updated": 1590349550698,
+      "status": {
+        "self": "https://levelops.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+          "id": "2",
+          "key": "new",
+          "name": "To Do",
+          "colorName": "blue-gray"
+        }
+      },
+      "components": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/component/10000",
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "summary": "LQL changes for playbooks",
+      "creator": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": []
+      },
+      "description_text": "",
+      "description_length": 0,
+      "statuscategorychangedate": "2020-05-24T12:45:47.410-0700",
+      "watches": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-1003/watchers",
+        "watchCount": 1,
+        "isWatching": false
+      },
+      "customfield_10018": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "PLUGIN_LICENSE_ERROR",
+          "message": "The Parent Link is only available to Jira Premium users."
+        }
+      },
+      "customfield_10019": "0|i00a3i:zz",
+      "attachment": [],
+      "workratio": -1,
+      "customfield_10020": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@51389564[completeDate=<null>,endDate=2020-05-18T23:04:00.000+1100,goal=,id=8,name=May 11,rapidViewId=1,sequence=6,startDate=2020-05-11T23:04:41.049+1100,state=ACTIVE]"
+      ],
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10000": "{}",
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "customfield_10024": [],
+      "timetracking": {
+      }
+    },
+    "changelog": {
+      "maxResults": 2,
+      "startAt": 0,
+      "total": 2,
+      "histories": [
+        {
+          "id": "17740",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590349550701,
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10019",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "17739",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590349550606,
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10020",
+              "from": "",
+              "fromString": "",
+              "to": "8",
+              "toString": "May 11"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "11760",
+    "self": "https://levelops.atlassian.net/rest/api/2/issue/11760",
+    "key": "LEV-1202",
+    "fields": {
+      "issuetype": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10006",
+        "id": 10006,
+        "name": "Story",
+        "description": "Functionality or a feature expressed as a user goal.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+        "id": "10001",
+        "key": "LEV",
+        "name": "levelops",
+        "projectTypeKey": "software",
+        "simplified": false
+      },
+      "fixVersions": [],
+      "created": 1590349532229,
+      "priority": {
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "updated": 1590349535182,
+      "status": {
+        "self": "https://levelops.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+          "id": "2",
+          "key": "new",
+          "name": "To Do",
+          "colorName": "blue-gray"
+        }
+      },
+      "components": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/component/10000",
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "summary": "Routes clean up",
+      "creator": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": []
+      },
+      "description_text": "",
+      "description_length": 0,
+      "statuscategorychangedate": "2020-05-24T12:45:32.501-0700",
+      "watches": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-1202/watchers",
+        "watchCount": 1,
+        "isWatching": false
+      },
+      "customfield_10018": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "PLUGIN_LICENSE_ERROR",
+          "message": "The Parent Link is only available to Jira Premium users."
+        }
+      },
+      "customfield_10019": "0|i00a3i:zy",
+      "attachment": [],
+      "workratio": -1,
+      "customfield_10020": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@51389564[completeDate=<null>,endDate=2015-11-18,goal=,id=10,name=Jan 11,rapidViewId=1,sequence=6,startDate=2015-11-11,state=ACTIVE]"
+      ],
+      "customfield_10000": "{}",
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "customfield_10024": [],
+      "timetracking": {
+      }
+    },
+    "changelog": {
+      "maxResults": 2,
+      "startAt": 0,
+      "total": 2,
+      "histories": [
+        {
+          "id": "17737",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590349535186,
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10019",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "17736",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590349535118,
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10020",
+              "from": "",
+              "fromString": "",
+              "to": "8",
+              "toString": "May 11"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

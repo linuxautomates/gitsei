@@ -1,0 +1,141 @@
+{
+  "records": [
+    {
+      "name": "Repository1",
+      "scm": "git",
+      "has_wiki": false,
+      "uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}",
+      "fork_policy": "allow_forks",
+      "project": {
+        "key": "PROJ",
+        "type": "project",
+        "uuid": "{4fad52cb-4889-401f-bf81-c834f0875977}",
+        "name": "project1"
+      },
+      "language": "",
+      "created_on": "2020-07-20T10:09:10.671+00:00",
+      "mainbranch": {
+        "type": "branch",
+        "name": "master"
+      },
+      "full_name": "srinath_levelops/repository1",
+      "has_issues": false,
+      "owner": {
+        "display_name": "Srinath Chandrashekhar",
+        "type": "user",
+        "uuid": "{9ed4d705-29c4-44b2-a289-1c5c076c0239}",
+        "nickname": "srinath.chandrashekhar",
+        "account_id": "5e6b0b13308ac10ced3a5839"
+      },
+      "updated_on": "2020-08-05T07:37:31.206+00:00",
+      "size": 128946,
+      "type": "repository",
+      "slug": "repository1",
+      "is_private": false,
+      "description": "This is a description",
+      "links": {
+        "html": {
+          "href": "https://bitbucket.org/srinath_levelops/repository1"
+        }
+      },
+      "workspace_slug": "srinath_levelops",
+      "pull_requests": [
+        {
+          "id": 3,
+          "description": "file1 edited online with Bitbucket",
+          "title": "file1 edited online with Bitbucket",
+          "close_source_branch": true,
+          "type": "pullrequest",
+          "created_on": "2020-08-05T07:37:32.041+00:00",
+          "source": {
+            "commit": {
+              "hash": "61b9edfbd678",
+              "type": "commit"
+            },
+            "repository": {
+              "type": "repository",
+              "name": "Repository1",
+              "full_name": "srinath_levelops/repository1",
+              "uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}"
+            },
+            "branch": {
+              "name": "Srinath-Chandrashekhar/file1-edited-online-with-bitbucket-1596613027044"
+            }
+          },
+          "destination": {
+            "commit": {
+              "hash": "08b4d6e6e9c9",
+              "type": "commit"
+            },
+            "repository": {
+              "type": "repository",
+              "name": "Repository1",
+              "full_name": "srinath_levelops/repository1",
+              "uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}"
+            },
+            "branch": {
+              "name": "master"
+            }
+          },
+          "summary": {
+            "raw": "file1 edited online with Bitbucket",
+            "markup": "markdown",
+            "html": "<p>file1 edited online with Bitbucket</p>",
+            "type": "rendered"
+          },
+          "comment_count": 0,
+          "state": "OPEN",
+          "task_count": 0,
+          "reason": "",
+          "updated_on": "2020-08-05T07:37:32.154+00:00",
+          "author": {
+            "display_name": "Srinath Chandrashekhar",
+            "type": "user",
+            "uuid": "{9ed4d705-29c4-44b2-a289-1c5c076c0239}",
+            "nickname": "srinath.chandrashekhar",
+            "account_id": "5e6b0b13308ac10ced3a5839"
+          },
+          "participants": [
+            {
+              "role": "REVIEWER",
+              "participated_on": "2020-08-06T16:03:10.568594+00:00",
+              "type": "participant",
+              "approved": true,
+              "user": {
+                "display_name": "Addepalli Venkata Manikyala Rao",
+                "type": "user",
+                "uuid": "{d578993c-07ba-4d98-8bb2-877e88efc0f8}",
+                "nickname": "ManikCognitree",
+                "account_id": "5f23b5968fd8ab001bdfff51"
+              }
+            }
+          ],
+          "approvals": [
+            {
+              "approval": {
+                "date": 1681945441737,
+                "user": {
+                  "display_name": "Addepalli Venkata Manikyala Rao",
+                  "type": "user",
+                  "uuid": "{d578993c-07ba-4d98-8bb2-877e88efc0f8}",
+                  "nickname": "Maxime Bellier",
+                  "account_id": "5f23b5968fd8ab001bdfff51"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "1"
+    },
+    "integration_type": "bitbucket",
+    "data_type": "pull_requests",
+    "page_number": 0
+  }
+}

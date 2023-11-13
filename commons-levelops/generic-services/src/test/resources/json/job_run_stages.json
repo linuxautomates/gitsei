@@ -1,0 +1,155 @@
+{
+  "total_count": 5,
+  "records": [
+    {
+      "id": "90852a34-4c4e-4805-b0ca-cf5bdf9d8558",
+      "type": "CICD_STAGE",
+      "name": "subjob!",
+      "description": "",
+      "result": "FAILURE",
+      "duration": 20,
+      "logs": "",
+      "start_time": 1602042372355,
+      "url": "https://jenkins.dev.levelops.io/blue/organizations/jenkins/Pipelines%2FTest%20Pipeline%203/detail/Test%20Pipeline%203/41/pipeline/49#step-d6a81b81-7a5d-4548-957b-51221a00217b-log-1",
+      "full_path": [
+        {
+          "id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+          "name": "Test Pipeline 3",
+          "position": 1,
+          "type": "CICD_JOB"
+        },
+        {
+          "id": "90852a34-4c4e-4805-b0ca-cf5bdf9d8558",
+          "name": "subjob!",
+          "position": 2,
+          "type": "CICD_STAGE"
+        }
+      ],
+      "cicd_job_run_id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+      "stage_id": "49",
+      "state": "FINISHED",
+      "child_job_runs": [
+        "61c44556-560c-446c-8cd3-f7901ac0eb35"
+      ]
+    },
+    {
+      "id": "40167855-107d-4e5c-979f-8c160aa6f6a9",
+      "type": "CICD_STAGE",
+      "name": "subjob ok!",
+      "description": "",
+      "result": "SUCCESS",
+      "duration": 15,
+      "logs": "",
+      "start_time": 1602042357004,
+      "url": "https://jenkins.dev.levelops.io/blue/organizations/jenkins/Pipelines%2FTest%20Pipeline%203/detail/Test%20Pipeline%203/41/pipeline/36",
+      "full_path": [
+        {
+          "id": "40167855-107d-4e5c-979f-8c160aa6f6a9",
+          "name": "subjob ok!",
+          "position": 2,
+          "type": "CICD_STAGE"
+        },
+        {
+          "id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+          "name": "Test Pipeline 3",
+          "position": 1,
+          "type": "CICD_JOB"
+        }
+      ],
+      "cicd_job_run_id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+      "stage_id": "36",
+      "state": "FINISHED",
+      "child_job_runs": [
+        "21a0cefb-73a9-4279-81fb-eab0efdb7c42"
+      ]
+    },
+    {
+      "id": "5a905bdc-13d1-41b7-b5eb-96bb7dff69b2",
+      "type": "CICD_STAGE",
+      "name": "to fail",
+      "description": "",
+      "result": "FAILURE",
+      "duration": 5,
+      "logs": "",
+      "start_time": 1602042351343,
+      "url": "https://jenkins.dev.levelops.io/blue/organizations/jenkins/Pipelines%2FTest%20Pipeline%203/detail/Test%20Pipeline%203/41/pipeline/20#step-75d7d08b-4635-4527-8965-f233a43dcb74-log-1",
+      "full_path": [
+        {
+          "id": "5a905bdc-13d1-41b7-b5eb-96bb7dff69b2",
+          "name": "to fail",
+          "position": 2,
+          "type": "CICD_STAGE"
+        },
+        {
+          "id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+          "name": "Test Pipeline 3",
+          "position": 1,
+          "type": "CICD_JOB"
+        }
+      ],
+      "cicd_job_run_id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+      "stage_id": "20",
+      "state": "FINISHED",
+      "child_job_runs": []
+    },
+    {
+      "id": "bc0d34eb-bac1-47ce-b43f-8961c36d9470",
+      "type": "CICD_STAGE",
+      "name": "long log",
+      "description": "",
+      "result": "SUCCESS",
+      "duration": 0,
+      "logs": "",
+      "start_time": 1602042351302,
+      "url": "https://jenkins.dev.levelops.io/blue/organizations/jenkins/Pipelines%2FTest%20Pipeline%203/detail/Test%20Pipeline%203/41/pipeline/15",
+      "full_path": [
+        {
+          "id": "bc0d34eb-bac1-47ce-b43f-8961c36d9470",
+          "name": "long log",
+          "position": 2,
+          "type": "CICD_STAGE"
+        },
+        {
+          "id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+          "name": "Test Pipeline 3",
+          "position": 1,
+          "type": "CICD_JOB"
+        }
+      ],
+      "cicd_job_run_id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+      "stage_id": "15",
+      "state": "FINISHED",
+      "child_job_runs": []
+    },
+    {
+      "id": "7c50ab73-ac0e-4944-9391-a650207f199a",
+      "type": "CICD_STAGE",
+      "name": "Hello",
+      "description": "",
+      "result": "SUCCESS",
+      "duration": 0,
+      "logs": "",
+      "start_time": 1602042351239,
+      "url": "https://jenkins.dev.levelops.io/blue/organizations/jenkins/Pipelines%2FTest%20Pipeline%203/detail/Test%20Pipeline%203/41/pipeline/6",
+      "full_path": [
+        {
+          "id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+          "name": "Test Pipeline 3",
+          "position": 1,
+          "type": "CICD_JOB"
+        },
+        {
+          "id": "7c50ab73-ac0e-4944-9391-a650207f199a",
+          "name": "Hello",
+          "position": 2,
+          "type": "CICD_STAGE"
+        }
+      ],
+      "cicd_job_run_id": "34d8c331-66c4-48f4-9202-2aed6cdf41bc",
+      "stage_id": "6",
+      "state": "FINISHED",
+      "child_job_runs": []
+    }
+  ],
+  "count": 5
+}

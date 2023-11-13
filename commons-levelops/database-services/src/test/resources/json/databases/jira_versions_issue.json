@@ -1,0 +1,200 @@
+{
+  "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10010.requestTypePractice,renderedFields",
+  "id": "11482",
+  "self": "https://cognitree.atlassian.net/rest/api/2/issue/11482",
+  "key": "TEST-881",
+  "fields": {
+    "issuetype": {
+      "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10002",
+      "id": 10002,
+      "name": "Task",
+      "description": "A small, distinct piece of work.",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://cognitree.atlassian.net/rest/api/2/project/10004",
+      "id": "10004",
+      "key": "TEST",
+      "name": "test",
+      "projectTypeKey": "software",
+      "simplified": false
+    },
+    "fixVersions": [
+      {
+        "self": "https://cognitree.atlassian.net/rest/api/2/version/10005",
+        "id": "10005",
+        "description": "test-5",
+        "name": "AugRelease",
+        "archived": false,
+        "released": false,
+        "startDate": "2021-08-01",
+        "releaseDate": "2021-08-31",
+        "overdue": false,
+        "userStartDate": "01/Aug/21",
+        "userReleaseDate": "31/Aug/21",
+        "projectId": 10004
+      },
+      {
+        "self": "https://cognitree.atlassian.net/rest/api/2/version/10006",
+        "id": "10006",
+        "description": "test-6",
+        "name": "JuneRelease",
+        "archived": false,
+        "released": false,
+        "releaseDate": "2021-07-31",
+        "userReleaseDate": "31/Jul/21",
+        "projectId": 10004
+      }
+    ],
+    "created": "2021-06-22T08:57:44.583+00:00",
+    "priority": {
+      "name": "Between Medium and High",
+      "id": "10001"
+    },
+    "labels": [],
+    "versions": [
+      {
+        "self": "https://cognitree.atlassian.net/rest/api/2/version/10007",
+        "id": "10007",
+        "description": "test-7",
+        "name": "SepRelease",
+        "archived": false,
+        "released": false,
+        "startDate": "2021-09-01",
+        "releaseDate": "2021-09-31",
+        "overdue": false,
+        "userStartDate": "01/Sep/21",
+        "userReleaseDate": "31/Sep/21",
+        "projectId": 10004
+      }
+    ],
+    "issuelinks": [],
+    "updated": "2021-07-20T12:26:50.138+00:00",
+    "status": {
+      "self": "https://cognitree.atlassian.net/rest/api/2/status/10010",
+      "description": "",
+      "name": "Backlog",
+      "id": "10010",
+      "statusCategory": {
+        "self": "https://cognitree.atlassian.net/rest/api/2/statuscategory/2",
+        "id": "2",
+        "key": "new",
+        "name": "To Do",
+        "colorName": "blue-gray"
+      }
+    },
+    "components": [],
+    "summary": "13",
+    "creator": {
+      "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=5e6b1de9e3c3e70d023a9776",
+      "accountId": "5e6b1de9e3c3e70d023a9776",
+      "accountType": "atlassian",
+      "displayName": "Srinath Chandrashekhar",
+      "active": true
+    },
+    "subtasks": [],
+    "reporter": {
+      "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=5e6b1de9e3c3e70d023a9776",
+      "accountId": "5e6b1de9e3c3e70d023a9776",
+      "accountType": "atlassian",
+      "displayName": "Srinath Chandrashekhar",
+      "active": true
+    },
+    "duedate": "2021-07-21",
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "votes": 0,
+      "hasVoted": false
+    },
+    "comment": {
+      "comments": []
+    },
+    "description_text": "",
+    "description_length": 0,
+    "statuscategorychangedate": "2021-06-22T14:27:44.852+0530",
+    "issuerestriction": {
+      "issuerestrictions": {},
+      "shouldDisplay": false
+    },
+    "watches": {
+      "self": "https://cognitree.atlassian.net/rest/api/2/issue/TEST-881/watchers",
+      "watchCount": 1,
+      "isWatching": true
+    },
+    "lastViewed": "2021-07-20T17:56:26.048+0530",
+    "customfield_10018": {
+      "hasEpicLinkFieldDependency": false,
+      "showField": false,
+      "nonEditableReason": {
+        "reason": "PLUGIN_LICENSE_ERROR",
+        "message": "The Parent Link is only available to Jira Premium users."
+      }
+    },
+    "customfield_10019": "0|i0082s:",
+    "attachment": [],
+    "workratio": -1,
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10000": "{}",
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "timetracking": {}
+  },
+  "changelog": {
+    "maxResults": 2,
+    "startAt": 0,
+    "total": 2,
+    "values": [],
+    "histories": [
+      {
+        "id": "16882",
+        "author": {
+          "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=5e6b1de9e3c3e70d023a9776",
+          "accountId": "5e6b1de9e3c3e70d023a9776",
+          "accountType": "atlassian",
+          "displayName": "Srinath Chandrashekhar",
+          "active": true
+        },
+        "created": "2021-07-20T12:26:50.143+00:00",
+        "items": [
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "fieldId": "fixVersions",
+            "to": "10003",
+            "toString": "New Version 3"
+          }
+        ]
+      },
+      {
+        "id": "16875",
+        "author": {
+          "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=5e6b1de9e3c3e70d023a9776",
+          "accountId": "5e6b1de9e3c3e70d023a9776",
+          "accountType": "atlassian",
+          "displayName": "Srinath Chandrashekhar",
+          "active": true
+        },
+        "created": "2021-07-20T10:33:52.891+00:00",
+        "items": [
+          {
+            "field": "duedate",
+            "fieldtype": "jira",
+            "fieldId": "duedate",
+            "to": "2021-07-21",
+            "toString": "2021-07-21 00:00:00.0"
+          }
+        ]
+      }
+    ]
+  }
+}

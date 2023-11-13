@@ -1,0 +1,38 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    compile libraries.apache_commons
+    compile libraries.jackson_core
+    compile project(':okhttp-utils')
+    compile project(':inventory-service')
+    compile project(':ingestion-commons')
+    compile project(':control-plane-commons')
+
+    testCompile libraries.junit
+    testCompile libraries.mockito
+    testCompile libraries.assertj
+    testCompile project(":utils")
+    testCompile libraries.mock_web_server
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

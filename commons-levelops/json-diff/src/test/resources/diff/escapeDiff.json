@@ -1,0 +1,17 @@
+{
+  "/plugins/" : {
+    "base_path" : "/plugins/",
+    "added" : [ "/plugins/a~1b~0c" ],
+    "removed" : [ ],
+    "changed" : [ ],
+    "data_changes" : {
+      "/plugins/a~1b~0c" : {
+        "operation" : "ADDED",
+        "before" : null,
+        "after" : {
+          "data" : "some"
+        }
+      }
+    }
+  }
+}

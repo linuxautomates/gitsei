@@ -1,0 +1,42 @@
+[
+  {
+    "op": "replace",
+    "fromValue": "1.33",
+    "path": "/plugins/pluginA/implementation_version",
+    "value": "2"
+  },
+  {
+    "op": "remove",
+    "path": "/plugins/pluginB",
+    "value": {
+      "long_name": "Config API for Blue Ocean",
+      "short_name": "pluginB",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-config",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    }
+  },
+  {
+    "op": "remove",
+    "path": "/plugins/pluginC/implementation_version",
+    "value": "1.20"
+  },
+  {
+    "op": "add",
+    "path": "/plugins/pluginC/new_field",
+    "value": "so new"
+  },
+  {
+    "op": "add",
+    "path": "/plugins/pluginD",
+    "value": {
+      "long_name": "new plugin",
+      "short_name": "pluginD",
+      "lots_of_new_data": [
+        "data"
+      ]
+    }
+  }
+]

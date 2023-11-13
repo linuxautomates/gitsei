@@ -1,0 +1,152 @@
+{
+  "/config/" : {
+    "base_path" : "/config/",
+    "added" : [ ],
+    "removed" : [ "/config/csrf" ],
+    "changed" : [ "/config/agent_to_master_access_control_enabled", "/config/authorization_type", "/config/jnlp_protocols" ],
+    "data_changes" : {
+      "/config/agent_to_master_access_control_enabled" : {
+        "operation" : "CHANGED",
+        "before" : false,
+        "after" : true
+      },
+      "/config/authorization_type" : {
+        "operation" : "CHANGED",
+        "before" : "LOGGED_IN_USERS_CAN_DO_ANYTHING",
+        "after" : "changed"
+      },
+      "/config/csrf" : {
+        "operation" : "REMOVED",
+        "before" : {
+          "prevent_csrf" : false,
+          "crumb_issuer" : null,
+          "exclude_client_ipfrom_crumb" : null
+        },
+        "after" : null
+      },
+      "/config/jnlp_protocols" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "jnlp1_protocol_enabled" : true,
+          "jnlp2_protocol_enabled" : true,
+          "jnlp3_protocol_enabled" : true,
+          "jnlp4_protocol_enabled" : false
+        },
+        "after" : {
+          "jnlp1_protocol_enabled" : true,
+          "jnlp2_protocol_enabled" : false,
+          "jnlp4_protocol_enabled" : false
+        }
+      }
+    }
+  },
+  "/plugins/" : {
+    "base_path" : "/plugins/",
+    "added" : [ ],
+    "removed" : [ "/plugins/durable-task" ],
+    "changed" : [ "/plugins/blueocean-config", "/plugins/pubsub-light", "/plugins/sse-gateway" ],
+    "data_changes" : {
+      "/plugins/blueocean-config" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "long_name" : "Config API for Blue Ocean",
+          "short_name" : "blueocean-config",
+          "specification_title" : "The Jenkins Plugins Parent POM Project",
+          "implementation_title" : "blueocean-config",
+          "implementation_version" : "1.21.0",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+          "build_jdk" : "1.8.0_191"
+        },
+        "after" : {
+          "long_name" : "changed",
+          "short_name" : "blueocean-config",
+          "specification_title" : "The Jenkins Plugins Parent POM Project",
+          "implementation_title" : "blueocean-config",
+          "implementation_version" : "1.21.0",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+          "build_jdk" : "1.8.0_191"
+        }
+      },
+      "/plugins/durable-task" : {
+        "operation" : "REMOVED",
+        "before" : {
+          "long_name" : "Durable Task Plugin",
+          "short_name" : "durable-task",
+          "specification_title" : "Library offering an extension point for processes",
+          "implementation_title" : "durable-task",
+          "implementation_version" : "1.33",
+          "url" : "https://github.com/jenkinsci/durable-task-plugin",
+          "build_jdk" : "1.8.0_202"
+        },
+        "after" : null
+      },
+      "/plugins/pubsub-light" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "long_name" : "Jenkins Pub-Sub \"light\" Bus",
+          "short_name" : "pubsub-light",
+          "specification_title" : "A simple Publish-Subscribe light-weight event bus",
+          "implementation_title" : "pubsub-light",
+          "implementation_version" : "1.13",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/PubSub+Light+Plugin",
+          "build_jdk" : "1.8.0_222"
+        },
+        "after" : {
+          "long_name" : "Jenkins Pub-Sub \"light\" Bus",
+          "short_name" : "pubsub-light",
+          "specification_title" : "A simple Publish-Subscribe light-weight event bus",
+          "implementation_version" : "1.13",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/PubSub+Light+Plugin",
+          "build_jdk" : "1.8.0_222"
+        }
+      },
+      "/plugins/sse-gateway" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "long_name" : "Server Sent Events (SSE) Gateway Plugin",
+          "short_name" : "sse-gateway",
+          "specification_title" : "Server Sent Events (SSE) Gateway Plugin",
+          "implementation_title" : "sse-gateway",
+          "implementation_version" : "1.20",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+          "build_jdk" : "1.8.0_222"
+        },
+        "after" : {
+          "long_name" : "Server Sent Events (SSE) Gateway Plugin",
+          "short_name" : "sse-gateway",
+          "specification_title" : "changed",
+          "implementation_title" : "sse-gateway",
+          "implementation_version" : "1.20",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+          "build_jdk" : "1.8.0_222"
+        }
+      }
+    }
+  },
+  "/users/" : {
+    "base_path" : "/users/",
+    "added" : [ "/users/maxime@levelops.io" ],
+    "removed" : [ "/users/testRead@levelops.io" ],
+    "changed" : [ ],
+    "data_changes" : {
+      "/users/maxime@levelops.io" : {
+        "operation" : "ADDED",
+        "before" : null,
+        "after" : {
+          "user_name" : "mbellier",
+          "full_name" : "Maxime Bellier",
+          "email" : "maxime@levelops.io"
+        }
+      },
+      "/users/testRead@levelops.io" : {
+        "operation" : "REMOVED",
+        "before" : {
+          "user_name" : "testRead",
+          "full_name" : "test Read",
+          "email" : "testRead@levelops.io"
+        },
+        "after" : null
+      }
+    }
+  }
+}

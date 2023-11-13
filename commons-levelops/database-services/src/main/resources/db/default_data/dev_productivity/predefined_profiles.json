@@ -1,0 +1,626 @@
+[
+    {
+      "name": "SRE Profile",
+      "description": "Quantify and measure SRE productivity",
+      "default_profile": false,
+      "predefined_profile": true,
+      "created_at": 1654257317052,
+      "updated_at": 1654257317052,
+      "settings": {},
+      "sections": [
+        {
+          "name": "Quality",
+          "description": "Configure metrics to measure the quality of work",
+          "order": 0,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "%",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max % of work",
+              "name": "Percentage of Rework",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 0,
+              "type": "PERCENTAGE_OF_REWORK",
+              "max_value": 75,
+              "lower_limit_percentage": 10,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            },
+            {
+              "feature_unit": "%",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max % of work",
+              "name": "Percentage of Legacy Rework",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 1,
+              "type": "PERCENTAGE_OF_LEGACY_REWORK",
+              "max_value": 75,
+              "lower_limit_percentage": 10,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Impact",
+          "description": "Configure metrics to measure the impact of work",
+          "order": 1,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "Bugs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Bugs",
+              "name": "High Impact bugs worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "NUMBER_OF_CRITICAL_BUGS_RESOLVED_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Stories",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Stories",
+              "name": "High Impact stories worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "NUMBER_OF_CRITICAL_STORIES_RESOLVED_PER_MONTH",
+              "max_value": 2,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Volume",
+          "description": "Configure metrics to measure the volume of work",
+          "order": 2,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "PRs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of PRs",
+              "name": "Number of PRs per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "NUMBER_OF_PRS_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": false
+            },
+            {
+              "feature_unit": "Commits",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Commits",
+              "name": "Number of Commits per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "NUMBER_OF_COMMITS_PER_MONTH",
+              "max_value": 20,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Lines",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of lines",
+              "name": "Lines of Code per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 2,
+              "type": "LINES_OF_CODE_PER_MONTH",
+              "max_value": 250,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": false
+            },
+            {
+              "feature_unit": "Bugs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Bugs",
+              "name": "Number of bugs worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 3,
+              "type": "NUMBER_OF_BUGS_FIXED_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Stories",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Stories",
+              "name": "Number of stories worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 4,
+              "type": "NUMBER_OF_STORIES_RESOLVED_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Points",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Points",
+              "name": "Number of Story Points worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 5,
+              "type": "NUMBER_OF_STORY_POINTS_DELIVERED_PER_MONTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Speed",
+          "description": "Configure metrics to measure the speed of work",
+          "order": 3,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Days",
+              "name": "Average Coding days per week",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "AVG_CODING_DAYS_PER_WEEK",
+              "max_value": 3,
+              "lower_limit_percentage": 17,
+              "upper_limit_percentage": 70,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max # of Days",
+              "name": "Average PR Cycle Time",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 1,
+              "type": "AVG_PR_CYCLE_TIME",
+              "max_value": 6,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "max # of Days",
+              "name": "Average time spent working on Issues",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 2,
+              "type": "AVG_ISSUE_RESOLUTION_TIME",
+              "max_value": 2,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Proficiency",
+          "description": "Configure metrics to measure technical proficiency",
+          "order": 4,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Extensions",
+              "name": "Technical Breadth - Number of unique file extension",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "TECHNICAL_BREADTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Repos",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Repos",
+              "name": "Repo Breadth - Number of unique repo",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "REPO_BREADTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Leadership & Collaboration",
+          "description": "Configure metrics to measure leadership and collaboration",
+          "order": 5,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "PRs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of PRs",
+              "name": "Number of PRs approved per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "NUMBER_OF_PRS_APPROVED_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 20,
+              "upper_limit_percentage": 70,
+              "enabled": true
+            },
+            {
+              "feature_unit": "PRs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of PRs",
+              "name": "Number of PRs commented on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "NUMBER_OF_PRS_COMMENTED_ON_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 20,
+              "upper_limit_percentage": 70,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max # of Days",
+              "name": "Average response time for PR approvals",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 2,
+              "type": "PRS_AVG_APPROVAL_TIME",
+              "max_value": 3,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max # of Days",
+              "name": "Average response time for PR comments",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 3,
+              "type": "PRS_AVG_COMMENT_TIME",
+              "max_value": 3,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Software Developer Profile",
+      "description": "Quantify and measure developer productivity",
+      "default_profile": false,
+      "predefined_profile": true,
+      "created_at": 1654257317006,
+      "updated_at": 1654257317006,
+      "settings": {},
+      "sections": [
+        {
+          "name": "Quality",
+          "description": "Configure metrics to measure the quality of work",
+          "order": 0,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "%",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max % of work",
+              "name": "Percentage of Rework",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 0,
+              "type": "PERCENTAGE_OF_REWORK",
+              "max_value": 75,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            },
+            {
+              "feature_unit": "%",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max % of work",
+              "name": "Percentage of Legacy Rework",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 1,
+              "type": "PERCENTAGE_OF_LEGACY_REWORK",
+              "max_value": 75,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Impact",
+          "description": "Configure metrics to measure the impact of work",
+          "order": 1,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "Bugs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Bugs",
+              "name": "High Impact bugs worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "NUMBER_OF_CRITICAL_BUGS_RESOLVED_PER_MONTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Stories",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Stories",
+              "name": "High Impact stories worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "NUMBER_OF_CRITICAL_STORIES_RESOLVED_PER_MONTH",
+              "max_value": 6,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Volume",
+          "description": "Configure metrics to measure the volume of work",
+          "order": 2,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "PRs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of PRs",
+              "name": "Number of PRs per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "NUMBER_OF_PRS_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": false
+            },
+            {
+              "feature_unit": "Commits",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Commits",
+              "name": "Number of Commits per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "NUMBER_OF_COMMITS_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Lines",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of lines",
+              "name": "Lines of Code per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 2,
+              "type": "LINES_OF_CODE_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": false
+            },
+            {
+              "feature_unit": "Bugs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Bugs",
+              "name": "Number of bugs worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 3,
+              "type": "NUMBER_OF_BUGS_FIXED_PER_MONTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Stories",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Stories",
+              "name": "Number of stories worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 4,
+              "type": "NUMBER_OF_STORIES_RESOLVED_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Points",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Points",
+              "name": "Number of Story Points worked on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 5,
+              "type": "NUMBER_OF_STORY_POINTS_DELIVERED_PER_MONTH",
+              "max_value": 10,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Speed",
+          "description": "Configure metrics to measure the speed of work",
+          "order": 3,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Days",
+              "name": "Average Coding days per week",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "AVG_CODING_DAYS_PER_WEEK",
+              "max_value": 3,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max # of Days",
+              "name": "Average PR Cycle Time",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 1,
+              "type": "AVG_PR_CYCLE_TIME",
+              "max_value": 30,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "max # of Days",
+              "name": "Average time spent working on Issues",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 2,
+              "type": "AVG_ISSUE_RESOLUTION_TIME",
+              "max_value": 10,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Proficiency",
+          "description": "Configure metrics to measure technical proficiency",
+          "order": 4,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Extensions",
+              "name": "Technical Breadth - Number of unique file extension",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "TECHNICAL_BREADTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "Repos",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of Repos",
+              "name": "Repo Breadth - Number of unique repo",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "REPO_BREADTH",
+              "max_value": 4,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "name": "Leadership & Collaboration",
+          "description": "Configure metrics to measure leadership and collaboration",
+          "order": 5,
+          "enabled": true,
+          "weight": 10,
+          "features": [
+            {
+              "feature_unit": "PRs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of PRs",
+              "name": "Number of PRs approved per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 0,
+              "type": "NUMBER_OF_PRS_APPROVED_PER_MONTH",
+              "max_value": 15,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "PRs",
+              "slow_to_good_is_ascending": true,
+              "feature_max_value_text": "Top # of PRs",
+              "name": "Number of PRs commented on per month",
+              "description": "Provide the baseline for best performance or 100% score",
+              "order": 1,
+              "type": "NUMBER_OF_PRS_COMMENTED_ON_PER_MONTH",
+              "max_value": 15,
+              "lower_limit_percentage": 50,
+              "upper_limit_percentage": 75,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max # of Days",
+              "name": "Average response time for PR approvals",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 2,
+              "type": "PRS_AVG_APPROVAL_TIME",
+              "max_value": 4,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            },
+            {
+              "feature_unit": "DAYS",
+              "slow_to_good_is_ascending": false,
+              "feature_max_value_text": "Max # of Days",
+              "name": "Average response time for PR comments",
+              "description": "Provide the baseline for worst performance or 0% score",
+              "order": 3,
+              "type": "PRS_AVG_COMMENT_TIME",
+              "max_value": 4,
+              "lower_limit_percentage": 25,
+              "upper_limit_percentage": 50,
+              "enabled": true
+            }
+          ]
+        }
+      ]
+    }
+]

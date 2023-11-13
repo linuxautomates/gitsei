@@ -1,0 +1,118 @@
+{
+  "checker_name": "NULL_RETURNS",
+  "cid": 10001,
+  "component_name": "Default.Other",
+  "cwe": 476,
+  "defect_state_attribute_values": [
+    {
+      "attribute_definition_id": {
+        "name": "DefectStatus"
+      },
+      "attribute_value_id": {
+        "name": "New"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Classification"
+      },
+      "attribute_value_id": {
+        "name": "Unclassified"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Action"
+      },
+      "attribute_value_id": {
+        "name": "Undecided"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Severity"
+      },
+      "attribute_value_id": {
+        "name": "Unspecified"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Fix Target"
+      },
+      "attribute_value_id": {
+        "name": "Untargeted"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Legacy"
+      },
+      "attribute_value_id": {
+        "name": "False"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Owner"
+      },
+      "attribute_value_id": {
+        "name": "Unassigned"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "TranslatedOwner"
+      },
+      "attribute_value_id": {
+        "name": "Unassigned"
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "OwnerName"
+      },
+      "attribute_value_id": {
+        "name": ""
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Comment"
+      },
+      "attribute_value_id": {
+        "name": ""
+      }
+    },
+    {
+      "attribute_definition_id": {
+        "name": "Ext. Reference"
+      },
+      "attribute_value_id": {
+        "name": ""
+      }
+    }
+  ],
+  "defect_state_standard_attribute_value_data_obj": [
+  ],
+  "display_category": "Null pointer dereferences",
+  "display_impact": "Medium",
+  "display_issue_kind": "Quality",
+  "display_type": "Dereference null return value",
+  "domain": "STATIC_JAVA",
+  "file_pathname": "/opt/chatserver/MyServer.java",
+  "first_detected": "2021-08-03T11:37:28.149+00:00",
+  "first_detected_by": "COMMIT",
+  "first_detected_snapshot_id": 10006,
+  "first_detected_stream": "trigger",
+  "function_display_name": "MyClient.actionPerformed(java.awt.event.ActionEvent)",
+  "function_merge_name": "MyClient.actionPerformed(java.awt.event.ActionEvent)",
+  "function_name": "MyClient.actionPerformed",
+  "issue_kind": "QUALITY",
+  "last_detected": "2021-08-13T13:43:20.069+00:00",
+  "last_detected_snapshot_id": 10006,
+  "last_detected_stream": "trigger",
+  "merge_key": "4b4ec5aec5a7494cec5699cca6b1daa6",
+  "misra_category": "None",
+  "occurrence_count": 1
+}

@@ -1,0 +1,116 @@
+{
+  "data": [
+    {
+      "id": "d6209b2f-1e95-427c-a637-83a038d0c416",
+      "app": {
+        "id": "f154ea7a-bc2e-4e81-ae42-2adbffed73bd"
+      },
+      "root_cause": {
+        "url": "http://app.levelops.io/",
+        "method": "GET"
+      },
+      "severity": "INFORMATIONAL",
+      "status": "UNREVIEWED",
+      "variances": [
+        {
+          "original_exchange": {
+            "request": "GET / HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168Safari/535.19\r\nHost: app.levelops.io\r\n\r\n",
+            "response": "HTTP/1.1 404 Not\r\nConnection: close\r\nDate: Tue, 03 Dec 2019 02:36:07 GMT\r\nContent-Length: 1561\r\nContent-Type: text/html; charset=UTF-8\r\nReferrer-Policy: no-referrer"
+          },
+          "module": {
+            "id": "615d72f4-01bc-447a-b4a2-139654bc9945"
+          },
+          "attack": {
+            "id": "XSSProtectionAttack_1"
+          },
+          "message": "The X-XSS-Protection HTTP response header not found."
+        }
+      ],
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://us.api.insight.rapid7.com:443/ias/v1/vulnerabilities/d6209b2f-1e95-427c-a637-83a038d0c416"
+        }
+      ]
+    },
+    {
+      "id": "766a8b4a-b461-43ff-97bf-8858f0bf858b",
+      "app": {
+        "id": "f154ea7a-bc2e-4e81-ae42-2adbffed73bd"
+      },
+      "root_cause": {
+        "url": "http://app.levelops.io/",
+        "method": "GET"
+      },
+      "severity": "INFORMATIONAL",
+      "status": "UNREVIEWED",
+      "variances": [
+        {
+          "original_exchange": {
+            "request": "GET / HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168Safari/535.19\r\nHost: app.levelops.io\r\n\r\n",
+            "response": "HTTP/1.1 404 Not\r\nConnection: close\r\nDate: Tue, 03 Dec 2019 02:36:07 GMT\r\nContent-Length: 1561\r\nContent-Type: text/html; charset=UTF-8\r\nReferrer-Policy: no-referrer"
+          },
+          "module": {
+            "id": "3e2e60f7-d0e0-4d85-9691-8c2d1f639064"
+          },
+          "attack": {
+            "id": "XFrameAttack_1"
+          },
+          "message": "X-Frame-Options header not found"
+        }
+      ],
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://us.api.insight.rapid7.com:443/ias/v1/vulnerabilities/766a8b4a-b461-43ff-97bf-8858f0bf858b"
+        }
+      ]
+    },
+    {
+      "id": "81338196-e87d-45af-b041-9bb7abe4d04e",
+      "app": {
+        "id": "f154ea7a-bc2e-4e81-ae42-2adbffed73bd"
+      },
+      "root_cause": {
+        "url": "http://app.levelops.io/",
+        "method": "GET"
+      },
+      "severity": "INFORMATIONAL",
+      "status": "UNREVIEWED",
+      "variances": [
+        {
+          "original_exchange": {
+            "request": "GET / HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: gzip, deflate\r\nAccept-Language: en-US\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168Safari/535.19\r\nHost: app.levelops.io\r\n\r\n",
+            "response": "HTTP/1.1 404 Not\r\nConnection: close\r\nDate: Tue, 03 Dec 2019 02:36:07 GMT\r\nContent-Length: 1561\r\nContent-Type: text/html; charset=UTF-8\r\nReferrer-Policy: no-referrer"
+          },
+          "module": {
+            "id": "8399fa8e-df5c-41bc-9d3c-f85dc23dc26b"
+          },
+          "attack": {
+            "id": "XContentTypeAttack_1"
+          },
+          "message": "The X-Content-Type-Options HTTP response header, which only defined value is \"nosniff\", not found."
+        }
+      ],
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://us.api.insight.rapid7.com:443/ias/v1/vulnerabilities/81338196-e87d-45af-b041-9bb7abe4d04e"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "index": 0,
+    "size": 50,
+    "sort": "vulnerability.severity,DESC",
+    "total_data": 3,
+    "total_pages": 1
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://us.api.insight.rapid7.com:443/ias/v1/vulnerabilities"
+    }
+  ]
+}

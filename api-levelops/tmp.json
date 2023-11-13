@@ -1,0 +1,114 @@
+{
+  "links": {
+    "1": {
+      "id": "1",
+      "from": {
+        "nodeId": "1",
+        "portId": "output"
+      },
+      "to": {
+        "nodeId": "2",
+        "portId": "input"
+      },
+      "properties": {
+        "option": "true"
+      }
+    }
+  },
+  "nodes": {
+    "1": {
+      "id": "1",
+      "type": "node type",
+      "name": "Node 1",
+      "position": {
+        "x": 20,
+        "y": 20
+      },
+      "ports": {
+        "input": {
+          "id": "input",
+          "type": "top",
+          "properties": {
+            "action": "input"
+          },
+          "position": {
+            "x": -1,
+            "y": 70
+          }
+        },
+        "output": {
+          "id": "output",
+          "type": "bottom",
+          "properties": {
+            "action": "output"
+          },
+          "position": {
+            "x": 121,
+            "y": 70
+          }
+        }
+      },
+      "input": {
+        "field1": {
+          "key": "field1",
+          "type": "multi-select",
+          "values": [
+            {
+              "value": "user_id etc.",
+              "type": "t1"
+            }
+          ]
+        },
+        "field2": {
+          "key": "field2",
+          "type": "multi-select",
+          "values": [
+            {
+              "value": "user_id etc.",
+              "type": "t1"
+            }
+          ]
+        }
+      }
+    },
+    "2": {
+      "id": "2",
+      "type": "node type",
+      "position": {
+        "x": 20,
+        "y": 20
+      },
+      "input": {
+        "condition": {
+          "key": "condition",
+          "type": "condition",
+          "required": true
+        }
+      },
+      "ports": {
+        "input": {
+          "id": "input",
+          "type": "top",
+          "properties": {
+            "action": "input"
+          },
+          "position": {
+            "x": -1,
+            "y": 70
+          }
+        },
+        "output": {
+          "id": "output",
+          "type": "bottom",
+          "properties": {
+            "action": "output"
+          },
+          "position": {
+            "x": 121,
+            "y": 70
+          }
+        }
+      }
+    }
+  }
+}

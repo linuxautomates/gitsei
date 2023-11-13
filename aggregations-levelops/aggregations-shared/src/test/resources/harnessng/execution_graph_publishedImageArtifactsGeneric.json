@@ -1,0 +1,50 @@
+{
+  "nodeMap": {
+    "yT54s-GUTRy86o1hz4i1Fg": {
+      "outcomes": {
+        "field1": "value",
+        "field2": 123,
+        "map": { "test":  "123" },
+        "artifact_Docker_Push": {
+          "stepArtifacts": {
+            "publishedImageArtifacts": [
+              {
+                "digest": "h1",
+                "imageName": "image1",
+                "tag": "v1",
+                "url": "location",
+                "----test-field": "abc"
+              }
+            ]
+          }
+        },
+        "genericA": {
+          "stepArtifacts": {
+            "publishedImageArtifacts": [
+              {
+                "digest": "h1",
+                "imageName": "image1",
+                "tag": "v1",
+                "url": "location",
+                "----test-field": "abc"
+              }
+            ]
+          }
+        },
+        "genericB": {
+          "stepArtifacts": {
+            "publishedImageArtifacts": [
+              {
+                "digest": "h2",
+                "imageName": "image2",
+                "tag": "v2",
+                "url": "location",
+                "----test-field": "def"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

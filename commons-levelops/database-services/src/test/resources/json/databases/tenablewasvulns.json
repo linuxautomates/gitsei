@@ -1,0 +1,271 @@
+{
+  "records": [
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "Access to URL 'https://testui1.levelops.io/' has been confirmed.\n\nTarget Information\n------------------------\n\nDomain Name : testui1.levelops.io\nIP Address  : 34.102.180.148\n\n\nResponse Information\n---------------------------\n\nStatus Code   : 200\nResponse Time : 0.052511s\nResponse Size : 2806 bytes\nContent-Type  : text/html\n"
+      },
+      "attachments": [
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "434cfc75-83dd-4361-a5a4-ab9cde3119b6",
+          "created_at": "2020-05-14T05:42:40.034Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:1dcf4869898fab5ee80a9b40991a8886",
+          "attachment_id": "1a7a63bc-f92a-4504-ab34-b5238210f155",
+          "created_at": "2020-05-14T05:42:40.144Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "06908cf1-f394-4831-ac70-64d62d6ef606",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98136,
+      "created_at": "2020-05-14T05:42:09Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "The Scanner was unable to detect a HTTPS redirect on URL: http://testui1.levelops.io/"
+      },
+      "attachments": [
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "ccba5edc-f44c-4ca8-a19e-9692b69dcbb2",
+          "created_at": "2020-05-14T05:42:40.195Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:843426b08521090adcb0090ec4973212",
+          "attachment_id": "8f602f89-fb68-42e1-9494-e57ca48cf364",
+          "created_at": "2020-05-14T05:42:40.260Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "32003a01-bba2-452d-af79-46834f5c9b06",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 112544,
+      "created_at": "2020-05-14T05:42:12Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "WAS Scanner has taken a screenshot of the page at url 'https://testui1.levelops.io/' with dimensions 1600x1200.\n\nPlease see the attachment for the screenshot image."
+      },
+      "attachments": [
+        {
+          "md5": "md5:0a644c44e4e08b8820dc518a1c229aa9",
+          "attachment_id": "ea32d7ae-0510-4e4f-86b7-122655dd18b4",
+          "created_at": "2020-05-14T05:42:40.326Z",
+          "attachment_name": "screenshot.png",
+          "file_type": "image/png"
+        }
+      ],
+      "vuln_id": "153f2c65-8104-4035-aa9f-e67654c3b510",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98138,
+      "created_at": "2020-05-14T05:42:18Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "A response has been received with a response code '405' which may require further investigation to verify if this response is due to an abnormal behavior of the target.'\n\nThe response has been triggered by an HTTP OPTIONS request made on the URL 'https://testui1.levelops.io/'.",
+        "proof": "HTTP/1.1 405 Not Allowed"
+      },
+      "attachments": [
+        {
+          "md5": "md5:286843ee461fb7031e7a2a6d3603a094",
+          "attachment_id": "61d97868-aa84-4be3-bec5-d6e6d3dc5471",
+          "created_at": "2020-05-14T05:43:11.530Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:1cd63c38be7bf54a9cbd4ac18606b48c",
+          "attachment_id": "5744ba7d-bede-4c7b-8cbc-40fd3cd78f70",
+          "created_at": "2020-05-14T05:43:11.644Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "2526fbe1-b24d-459a-82b8-3d11695903be",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98050,
+      "created_at": "2020-05-14T05:42:41Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "No Feature-Policy headers were found on https://testui1.levelops.io/"
+      },
+      "attachments": [
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "ce9c1365-bffe-4fa4-a17d-ab13a9505e6d",
+          "created_at": "2020-05-14T05:43:10.880Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:3594a86d651f8bd1094fa1b6d9e1d8b6",
+          "attachment_id": "2c4d262f-50f3-48ca-929f-6b1b10e10d2f",
+          "created_at": "2020-05-14T05:43:10.929Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "46b767df-043b-4c96-8b2d-34448e41374a",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98526,
+      "created_at": "2020-05-14T05:42:41Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "The scanner detected the lack of X-Content-Type-Options header in the target application response.",
+        "proof": "HTTP/1.1 200 OK"
+      },
+      "attachments": [
+        {
+          "md5": "md5:3594a86d651f8bd1094fa1b6d9e1d8b6",
+          "attachment_id": "c8418c57-5265-467c-b875-71a1b063629e",
+          "created_at": "2020-05-14T05:43:11.211Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "82daaa08-aa6f-41fb-8b5e-61b4a2f716ca",
+          "created_at": "2020-05-14T05:43:11.140Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "21321767-960e-4c14-acd3-750ba289a75b",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 112529,
+      "created_at": "2020-05-14T05:42:41Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "The scanner detected the lack of X-XSS-Protection header in the target application response.",
+        "proof": "HTTP/1.1 200 OK"
+      },
+      "attachments": [
+        {
+          "md5": "md5:3594a86d651f8bd1094fa1b6d9e1d8b6",
+          "attachment_id": "23ba3a63-c737-4369-8dca-fc5fd3ae15dc",
+          "created_at": "2020-05-14T05:43:11.337Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "81950df2-dab9-49aa-b1f9-ad5c8a8822e6",
+          "created_at": "2020-05-14T05:43:11.261Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "12300ab6-b488-40e9-acb3-9d5060cc5a0f",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 112526,
+      "created_at": "2020-05-14T05:42:41Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "No Referrer-Policy headers or body meta tags were found on https://testui1.levelops.io/"
+      },
+      "attachments": [
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "17d4aaef-d8ac-4c15-b6c8-0925861c023a",
+          "created_at": "2020-05-14T05:43:11.002Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:3594a86d651f8bd1094fa1b6d9e1d8b6",
+          "attachment_id": "d40d1acf-aa66-4bfa-aca4-85735fee136a",
+          "created_at": "2020-05-14T05:43:11.079Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "4f29028a-d1f5-4d21-8099-a6e943a6faf8",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98527,
+      "created_at": "2020-05-14T05:42:41Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "Page https://testui1.levelops.io/ has no X-Frame-Option header defined",
+        "proof": "HTTP/1.1 200 OK"
+      },
+      "attachments": [
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "6db64156-553b-467c-ac9b-5dc264d0924d",
+          "created_at": "2020-05-14T05:43:11.382Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:3594a86d651f8bd1094fa1b6d9e1d8b6",
+          "attachment_id": "46df3b5f-41db-43ff-abac-cac61147bc20",
+          "created_at": "2020-05-14T05:43:11.460Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "826b69c4-579d-4e88-9173-2d17ae541f2f",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98060,
+      "created_at": "2020-05-14T05:42:41Z"
+    },
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "The Expect-Ct header was not detected on https://testui1.levelops.io/"
+      },
+      "attachments": [
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "2e356b81-bf8f-4a5b-8774-9b83c491b120",
+          "created_at": "2020-05-14T05:43:10.709Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:3594a86d651f8bd1094fa1b6d9e1d8b6",
+          "attachment_id": "8792cee9-8770-4797-8a1a-5f637c626cbb",
+          "created_at": "2020-05-14T05:43:10.820Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "55fbcfb8-95e6-41c6-85b6-368234993c06",
+      "scan_id": "adecd81f-5635-4835-bd45-9a75186b8281",
+      "plugin_id": 98612,
+      "created_at": "2020-05-14T05:42:41Z"
+    }
+  ],
+  "count": 10,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "tenable",
+      "integration_id": "1"
+    },
+    "integration_type": "tenable",
+    "data_type": "was",
+    "page_number": 0
+  }
+}

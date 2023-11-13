@@ -1,0 +1,5196 @@
+[
+  {
+    "w_id": "49df780e-2f88-4f7d-a695-282cdc88292a",
+    "w_workitem_id": "I9P-22387",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-22387_8",
+    "w_is_active": true,
+    "w_summary": "[BE] Add configuration property to RSC to control AMS response size ",
+    "w_priority": "MINOR",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-22134",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 1.0,
+    "w_custom_fields": [
+      {
+        "arr": [
+          "Emerald 23.1.1"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_first_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_desc_size": 68,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1673949956,
+    "w_updated_at": 1676894207,
+    "w_resolved_at": 1673950203,
+    "w_first_assigned_at": 1673950035,
+    "w_first_comment_at": 1673950192,
+    "w_age": 214,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1673949956,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "159048",
+        "ignorable_workitem_type": true,
+        "delivered": true,
+        "id": "ef576b02-db1e-4e20-bfbe-04bba6638b82",
+        "planned": true,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.1.1",
+        "id": "159048",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1673950035,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1673950203,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 18712196,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1673950081,
+        "end_time": 1673950203,
+        "id": "3",
+        "time_spent": 122,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1673949956,
+        "end_time": 1673950081,
+        "id": "10017",
+        "time_spent": 125,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1673433540,
+        "completed_at": 1674661482,
+        "goal": "Complete Kiosk-Mode and Customized Text Epics Release Fresh Images to Production",
+        "name": "Emerald 23.1.1",
+        "end_time": 1674671400,
+        "id": "159048",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 247,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 122,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 125,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1673950203,
+        "hist_assignee_time": 18653724,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1673950035,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1673950203,
+        "w_resolved_at": 1673950203
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 122,
+        "issue_status_id": "3",
+        "status_start_time": 1673950081,
+        "hist_assignee_time": 122,
+        "interval_end_time": 1673950203,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1673950203,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1673950035,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1673950081,
+        "w_resolved_at": 1673950203
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1673949956,
+        "hist_assignee_time": 46,
+        "interval_end_time": 1673950081,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1673950081,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1673950035,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1673950035,
+        "w_resolved_at": 1673950203
+      }
+    ]
+  },
+  {
+    "w_id": "b291efce-8592-4009-91dd-48abba049782",
+    "w_workitem_id": "I9P-23261",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-23261_8",
+    "w_is_active": true,
+    "w_summary": "BE: Increase year in notification-api templates from 2022 to 2023",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-21887",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 2.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 2.0
+      },
+      {
+        "arr": [
+          "Emerald 23.1.3"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "ESPortal_Notifications_API"
+    ],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_first_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_desc_size": 117,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1676286781,
+    "w_updated_at": 1676544340,
+    "w_resolved_at": 1676449454,
+    "w_first_assigned_at": 1676286781,
+    "w_first_comment_at": 1676449451,
+    "w_age": 187,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1676286781,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "159050",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "0e956699-eecc-4d78-8694-0890502ed573",
+        "planned": true,
+        "story_points_delivered": 2.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.1.3",
+        "id": "159050",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1676286781,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1676449455,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 16212944,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1676298770,
+        "end_time": 1676449455,
+        "id": "15750",
+        "time_spent": 150685,
+        "status": "READY FOR TEST"
+      },
+      {
+        "start_time": 1676286796,
+        "end_time": 1676298770,
+        "id": "3",
+        "time_spent": 11974,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1676286781,
+        "end_time": 1676286796,
+        "id": "10017",
+        "time_spent": 15,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1675936914,
+        "completed_at": 1677086661,
+        "goal": "Complete Notification UI Redesign. Complete Pagination of Locations\nSupport Issues, Deployment of components to Prod",
+        "name": "Emerald 23.1.3",
+        "end_time": 1677090600,
+        "id": "159050",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1676286781,
+        "story_points": 2.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 150685,
+        "to_status": "DONE",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 162674,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 162659,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 11989,
+        "to_status": "READY FOR TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 11974,
+        "to_status": "READY FOR TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 15,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1676449455,
+        "hist_assignee_time": 16154472,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1676286781,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676449455,
+        "w_resolved_at": 1676449454
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 150685,
+        "issue_status_id": "15750",
+        "status_start_time": 1676298770,
+        "hist_assignee_time": 150685,
+        "interval_end_time": 1676449455,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1676449455,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "READY FOR TEST",
+        "assignee_start_time": 1676286781,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676298770,
+        "w_resolved_at": 1676449454
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 11974,
+        "issue_status_id": "3",
+        "status_start_time": 1676286796,
+        "hist_assignee_time": 11974,
+        "interval_end_time": 1676298770,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1676298770,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1676286781,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676286796,
+        "w_resolved_at": 1676449454
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676286781,
+        "hist_assignee_time": 15,
+        "interval_end_time": 1676286796,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1676286796,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1676286781,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676286781,
+        "w_resolved_at": 1676449454
+      }
+    ]
+  },
+  {
+    "w_id": "af74206b-6107-4e22-9de9-48a19a3563b7",
+    "w_workitem_id": "I9P-25431",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-25431_8",
+    "w_is_active": true,
+    "w_summary": "BE: Fix CSA flow in ECA when using REDIS",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-21865",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 7.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 3.0
+      },
+      {
+        "arr": [
+          "Emerald 23.2.0",
+          "Emerald 23.1.5",
+          "Emerald 23.1.6"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "Employer Configuration API (ECA)"
+    ],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_first_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_desc_size": 83,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1680780952,
+    "w_updated_at": 1680792779,
+    "w_resolved_at": 1680792779,
+    "w_first_assigned_at": 1680780952,
+    "w_age": 135,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1680780952,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "159052",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "ff3ca5b5-e6ca-467d-9f5b-a3d1a8a3797b",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1680780952,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "159053",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "080bb7bb-d195-46a6-bfcc-d9919564281c",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1680780952,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163106",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "1f3e20ba-e836-41af-b3a5-99074b728a05",
+        "planned": true,
+        "story_points_delivered": 3.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.1.5",
+        "id": "159052",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.1.6",
+        "id": "159053",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.2.0",
+        "id": "163106",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1680780952,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1680792779,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 11869620,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1680781013,
+        "end_time": 1680792779,
+        "id": "3",
+        "time_spent": 11766,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1680780952,
+        "end_time": 1680781013,
+        "id": "10017",
+        "time_spent": 61,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1678352637,
+        "completed_at": 1679508404,
+        "goal": "Finish tasks related improvements for Employer Name in employer creation + historical notes + rebuild images",
+        "name": "Emerald 23.1.5",
+        "end_time": 1679509800,
+        "id": "159052",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1679563218,
+        "completed_at": 1680709924,
+        "goal": "Deploy Rebranding changes to production\nDeploy changes for migration to Production including employer name, location code and address field changes\nRefreshing all images in Prod\nDeploy Historical Notes to Production",
+        "name": "Emerald 23.1.6",
+        "end_time": 1680719400,
+        "id": "159053",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1680769562,
+        "completed_at": 1681317497,
+        "goal": "Complete Test Employer Feature\nRelease fix to Employer Person Api\nRefresh images",
+        "name": "Emerald 23.2.0",
+        "end_time": 1681320960,
+        "id": "163106",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1680780952,
+        "story_points": 3.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 11827,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 11766,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 61,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1680792779,
+        "hist_assignee_time": 11811148,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1680780952,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1680792779,
+        "w_resolved_at": 1680792779
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 11766,
+        "issue_status_id": "3",
+        "status_start_time": 1680781013,
+        "hist_assignee_time": 11766,
+        "interval_end_time": 1680792779,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1680792779,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1680780952,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1680781013,
+        "w_resolved_at": 1680792779
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1680780952,
+        "hist_assignee_time": 61,
+        "interval_end_time": 1680781013,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1680781013,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1680780952,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1680780952,
+        "w_resolved_at": 1680792779
+      }
+    ]
+  },
+  {
+    "w_id": "dcefef06-1e62-4911-9e46-dd5db2c28e12",
+    "w_workitem_id": "I9P-25361",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-25361_8",
+    "w_is_active": true,
+    "w_summary": "BE: reporting-dashboard-api",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-25355",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 11.0,
+    "w_custom_fields": [
+      {
+        "arr": [
+          "Emerald 23.2.3",
+          "Emerald 23.1.4",
+          "Emerald 23.1.5"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "Reporting API"
+    ],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_first_assignee": {
+      "id": "5a7040d6-26fb-4249-a187-0251502e4bb9",
+      "display_name": "nnadozie.omeonu"
+    },
+    "w_desc_size": 455,
+    "w_hops": 2,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1680707826,
+    "w_updated_at": 1684743406,
+    "w_resolved_at": 1684743406,
+    "w_first_assigned_at": 1680707826,
+    "w_first_comment_at": 1681387796,
+    "w_age": 136,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1680707826,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "159051",
+        "ignorable_workitem_type": true,
+        "delivered": false,
+        "id": "22d165c5-2b7a-4245-8c30-3afa77ee0e0c",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1680707826,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "159052",
+        "ignorable_workitem_type": true,
+        "delivered": false,
+        "id": "8986b664-1cca-4347-b784-a57543597272",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1680707826,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163110",
+        "ignorable_workitem_type": true,
+        "delivered": true,
+        "id": "f09201bc-c26a-4c9a-9d25-c3e5fb2c5e71",
+        "planned": true,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.1.4",
+        "id": "159051",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.1.5",
+        "id": "159052",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.2.3",
+        "id": "163110",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1684743398,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      },
+      {
+        "start_time": 1680707826,
+        "end_time": 1681730611,
+        "assignee": {
+          "id": "5a7040d6-26fb-4249-a187-0251502e4bb9",
+          "cloud_id": "61df21330586a20069c0d5cb",
+          "display_name": "nnadozie.omeonu"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1684743406,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 7918993,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1680707826,
+        "end_time": 1684743406,
+        "id": "10017",
+        "time_spent": 4035580,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1677141121,
+        "completed_at": 1678352561,
+        "goal": "Finalize Location Pagination and release to UAT and Prod. We looking to complete Historical Notes. User Context Work Completion, Release all components to UAT and Prod",
+        "name": "Emerald 23.1.4",
+        "end_time": 1678300200,
+        "id": "159051",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1678352637,
+        "completed_at": 1679508404,
+        "goal": "Finish tasks related improvements for Employer Name in employer creation + historical notes + rebuild images",
+        "name": "Emerald 23.1.5",
+        "end_time": 1679509800,
+        "id": "159052",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1683752011,
+        "completed_at": 1684934416,
+        "goal": "Finalize testing for Partial Edits for Termination\nComplete CSA Employer Search\nEdit Employer\nProvide the Fact endpoint I9\nRefresh images and security compliance",
+        "name": "Emerald 23.2.3",
+        "end_time": 1684927080,
+        "id": "163110",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 4035580,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1684743406,
+        "hist_assignee_time": 7860521,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1684743398,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684743406,
+        "w_resolved_at": 1684743406
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1680707826,
+        "hist_assignee_time": 8,
+        "interval_end_time": 1684743406,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1684743406,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1684743398,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684743398,
+        "w_resolved_at": 1684743406
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1680707826,
+        "hist_assignee_time": 1022785,
+        "interval_end_time": 1681730611,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1684743406,
+        "historical_assignee_id": "5a7040d6-26fb-4249-a187-0251502e4bb9",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1680707826,
+        "historical_assignee": "nnadozie.omeonu",
+        "assignee_end_time": 1681730611,
+        "interval_start_time": 1680707826,
+        "w_resolved_at": 1684743406
+      }
+    ]
+  },
+  {
+    "w_id": "938382d6-e106-49b6-b24d-2d40f1969637",
+    "w_workitem_id": "I9P-26911",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-26911_8",
+    "w_is_active": true,
+    "w_summary": "[Employee Edit] - It's not possible to search for work locations when Helen has access to specific locations only",
+    "w_priority": "HIGH",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-25069",
+    "w_status": "DONE",
+    "w_workitem_type": "BUG",
+    "w_story_points": 12.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 2.0
+      },
+      {
+        "arr": [
+          "Emerald 23.2.3",
+          "Emerald 23.2.4"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "QA",
+        "name": "customfield_10703"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "Employer Person API"
+    ],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "4650b744-fb6b-4daa-a83b-25b3b7d00a53",
+      "display_name": "Alina Volkava"
+    },
+    "w_first_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_desc_size": 595,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 6,
+    "w_created_at": 1684846666,
+    "w_updated_at": 1684941193,
+    "w_resolved_at": 1684941193,
+    "w_first_assigned_at": 1684846666,
+    "w_first_comment_at": 1684920845,
+    "w_first_attachment_at": 1684848714,
+    "w_age": 88,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1684846814,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163110",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "2de40c87-5bc6-49ab-9c9a-d1e8ddb2c682",
+        "planned": true,
+        "story_points_delivered": 2.0
+      },
+      {
+        "added_at": 1684934432,
+        "outside_of_sprint": false,
+        "story_points_planned": 2.0,
+        "sprint_id": "163111",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "7d5b925d-aa7d-4fa7-9ced-b4e39328afca",
+        "planned": true,
+        "story_points_delivered": 2.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "I9P-26354",
+        "relation": "Discovered while testing"
+      },
+      {
+        "to_workitem_id": "I9P-26939",
+        "relation": "is cloned by"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.2.3",
+        "id": "163110",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.2.4",
+        "id": "163111",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1684846666,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1684941194,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 7721205,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1684940742,
+        "end_time": 1684941194,
+        "id": "14679",
+        "time_spent": 452,
+        "status": "IN TEST"
+      },
+      {
+        "start_time": 1684920852,
+        "end_time": 1684940742,
+        "id": "15750",
+        "time_spent": 19890,
+        "status": "READY FOR TEST"
+      },
+      {
+        "start_time": 1684858542,
+        "end_time": 1684920852,
+        "id": "10078",
+        "time_spent": 62310,
+        "status": "CODE REVIEW"
+      },
+      {
+        "start_time": 1684847318,
+        "end_time": 1684858542,
+        "id": "3",
+        "time_spent": 11224,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1684846666,
+        "end_time": 1684847318,
+        "id": "10017",
+        "time_spent": 652,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1683752011,
+        "completed_at": 1684934416,
+        "goal": "Finalize testing for Partial Edits for Termination\nComplete CSA Employer Search\nEdit Employer\nProvide the Fact endpoint I9\nRefresh images and security compliance",
+        "name": "Emerald 23.2.3",
+        "end_time": 1684927080,
+        "id": "163110",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1684934524,
+        "completed_at": 1686144359,
+        "goal": "Complete work for CSA Employer Select Experience Phase 1 epic\nComplete work for New Employer Person Fact API epic\nStart BE/FE work on Employer Name Report epic\nStart BE/FE work on Customer Report Billing Events epic\nRelease and enable feature to PeopleHQ production environment - Partial Edit User Profile Features - Termination/Non-Termination Fields\nRelease and enable feature to PeopleHQ production environment - Location Edit Feature\nComplete Java+Spring Updates for Wolfpack Team\nComplete PeopleHQ Platform Services Emerald-related tasks\nFocus on all security issues",
+        "name": "Emerald 23.2.4",
+        "end_time": 1686142800,
+        "id": "163111",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1684846666,
+        "story_points": 1.0,
+        "end_time": 1684858539
+      },
+      {
+        "start_time": 1684858539,
+        "story_points": 2.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 20342,
+        "to_status": "DONE",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 94528,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 452,
+        "to_status": "DONE",
+        "from_status": "IN TEST"
+      },
+      {
+        "state_transition_time": 82652,
+        "to_status": "DONE",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 93876,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 74186,
+        "to_status": "READY FOR TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 62310,
+        "to_status": "READY FOR TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 73534,
+        "to_status": "READY FOR TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 19890,
+        "to_status": "IN TEST",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 94076,
+        "to_status": "IN TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 82200,
+        "to_status": "IN TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 93424,
+        "to_status": "IN TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 11876,
+        "to_status": "CODE REVIEW",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 11224,
+        "to_status": "CODE REVIEW",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 652,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1684941194,
+        "hist_assignee_time": 7662733,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1684846666,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684941194,
+        "w_resolved_at": 1684941193
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 452,
+        "issue_status_id": "14679",
+        "status_start_time": 1684940742,
+        "hist_assignee_time": 452,
+        "interval_end_time": 1684941194,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1684941194,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN TEST",
+        "assignee_start_time": 1684846666,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684940742,
+        "w_resolved_at": 1684941193
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 19890,
+        "issue_status_id": "15750",
+        "status_start_time": 1684920852,
+        "hist_assignee_time": 19890,
+        "interval_end_time": 1684940742,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1684940742,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "READY FOR TEST",
+        "assignee_start_time": 1684846666,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684920852,
+        "w_resolved_at": 1684941193
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 62310,
+        "issue_status_id": "10078",
+        "status_start_time": 1684858542,
+        "hist_assignee_time": 62310,
+        "interval_end_time": 1684920852,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1684920852,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "CODE REVIEW",
+        "assignee_start_time": 1684846666,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684858542,
+        "w_resolved_at": 1684941193
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 11224,
+        "issue_status_id": "3",
+        "status_start_time": 1684847318,
+        "hist_assignee_time": 11224,
+        "interval_end_time": 1684858542,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1684858542,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1684846666,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684847318,
+        "w_resolved_at": 1684941193
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1684846666,
+        "hist_assignee_time": 652,
+        "interval_end_time": 1684847318,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1684847318,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1684846666,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1684846666,
+        "w_resolved_at": 1684941193
+      }
+    ]
+  },
+  {
+    "w_id": "499149cb-f091-4199-aa06-ecbb8e1465df",
+    "w_workitem_id": "I9P-27049",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-27049_8",
+    "w_is_active": true,
+    "w_summary": "I9 Audit summary its failing to be generated in lower envs",
+    "w_priority": "HIGH",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-21865",
+    "w_status": "DONE",
+    "w_workitem_type": "BUG",
+    "w_story_points": 14.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 2.0
+      },
+      {
+        "arr": [
+          "Emerald 23.2.4"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "QA",
+        "name": "customfield_10703"
+      },
+      {
+        "str": "Break-Fix",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "Employer Person Web(EPW)"
+    ],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "dd67cad2-0a16-496c-938d-1ce50e128aa7",
+      "display_name": "Derek Sanders"
+    },
+    "w_first_assignee": {
+      "id": "1cee78a7-f0e7-45f0-b443-c54d33146483",
+      "display_name": "Elene Kiknadze"
+    },
+    "w_desc_size": 178,
+    "w_hops": 2,
+    "w_bounces": 0,
+    "w_num_attachments": 3,
+    "w_created_at": 1685080345,
+    "w_updated_at": 1686053091,
+    "w_resolved_at": 1686053091,
+    "w_first_assigned_at": 1685080345,
+    "w_first_comment_at": 1685982628,
+    "w_first_attachment_at": 1685080436,
+    "w_age": 85,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1685080345,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163534",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "8ef18c8a-9015-4570-97f0-2970b1dc7a5c",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1685099416,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163111",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "f0ff1865-8d1d-4722-acf0-4a33dccd813d",
+        "planned": true,
+        "story_points_delivered": 2.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.2.4",
+        "id": "163111",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1685096003,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      },
+      {
+        "start_time": 1685080345,
+        "end_time": 1685080388,
+        "assignee": {
+          "id": "1cee78a7-f0e7-45f0-b443-c54d33146483",
+          "cloud_id": "5f516467e1154200461d0fa0",
+          "display_name": "Elene Kiknadze"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1686053091,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 6609308,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1685456618,
+        "end_time": 1686053091,
+        "id": "10269",
+        "time_spent": 596473,
+        "status": "BLOCKED"
+      },
+      {
+        "start_time": 1685099577,
+        "end_time": 1685456618,
+        "id": "3",
+        "time_spent": 357041,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1685080345,
+        "end_time": 1685099577,
+        "id": "10017",
+        "time_spent": 19232,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 0,
+        "completed_at": 0,
+        "goal": "",
+        "name": "Emerald - Bugs",
+        "end_time": 0,
+        "id": "163534",
+        "state": "FUTURE"
+      },
+      {
+        "start_time": 1684934524,
+        "completed_at": 1686144359,
+        "goal": "Complete work for CSA Employer Select Experience Phase 1 epic\nComplete work for New Employer Person Fact API epic\nStart BE/FE work on Employer Name Report epic\nStart BE/FE work on Customer Report Billing Events epic\nRelease and enable feature to PeopleHQ production environment - Partial Edit User Profile Features - Termination/Non-Termination Fields\nRelease and enable feature to PeopleHQ production environment - Location Edit Feature\nComplete Java+Spring Updates for Wolfpack Team\nComplete PeopleHQ Platform Services Emerald-related tasks\nFocus on all security issues",
+        "name": "Emerald 23.2.4",
+        "end_time": 1686142800,
+        "id": "163111",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1685080345,
+        "story_points": 2.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 972746,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 596473,
+        "to_status": "DONE",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 953514,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 376273,
+        "to_status": "BLOCKED",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 357041,
+        "to_status": "BLOCKED",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 19232,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1686053091,
+        "hist_assignee_time": 6550836,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1685096003,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1686053091,
+        "w_resolved_at": 1686053091
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 596473,
+        "issue_status_id": "10269",
+        "status_start_time": 1685456618,
+        "hist_assignee_time": 596473,
+        "interval_end_time": 1686053091,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1686053091,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1685096003,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685456618,
+        "w_resolved_at": 1686053091
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 357041,
+        "issue_status_id": "3",
+        "status_start_time": 1685099577,
+        "hist_assignee_time": 357041,
+        "interval_end_time": 1685456618,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1685456618,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1685096003,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685099577,
+        "w_resolved_at": 1686053091
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1685080345,
+        "hist_assignee_time": 3574,
+        "interval_end_time": 1685099577,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1685099577,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1685096003,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685096003,
+        "w_resolved_at": 1686053091
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1685080345,
+        "hist_assignee_time": 43,
+        "interval_end_time": 1685080388,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1685099577,
+        "historical_assignee_id": "1cee78a7-f0e7-45f0-b443-c54d33146483",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1685080345,
+        "historical_assignee": "Elene Kiknadze",
+        "assignee_end_time": 1685080388,
+        "interval_start_time": 1685080345,
+        "w_resolved_at": 1686053091
+      }
+    ]
+  },
+  {
+    "w_id": "b040d91b-e02e-4ae5-b239-4b2f63c2118c",
+    "w_workitem_id": "I9P-26786",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-26786_8",
+    "w_is_active": true,
+    "w_summary": "High Priority Production Issue - CSA Agent is unable to generate data in the reports for different employers - PRD",
+    "w_priority": "BLOCKER",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "EPASS-6",
+    "w_status": "WILL NOT IMPLEMENT",
+    "w_workitem_type": "BUG",
+    "w_story_points": 16.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 3.0
+      },
+      {
+        "arr": [
+          "Emerald 23.2.4",
+          "Emerald 23.2.5"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Production",
+        "name": "customfield_10703"
+      },
+      {
+        "str": "CSA Agent must be able to generate all the reports",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "Reporting API"
+    ],
+    "w_labels": [
+      "portal_support"
+    ],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b6f437bc-d6d5-4eac-92fd-29e219ed1a58",
+      "display_name": "Sai Avala"
+    },
+    "w_first_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_desc_size": 708,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 3,
+    "w_created_at": 1684335606,
+    "w_updated_at": 1687188063,
+    "w_resolved_at": 1687187428,
+    "w_first_assigned_at": 1685622261,
+    "w_first_comment_at": 1685622179,
+    "w_first_attachment_at": 1684336459,
+    "w_age": 94,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "NO LONGER NEEDED",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1684940019,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163299",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "2fbc403d-3116-46be-95aa-b39ddb80c6aa",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1685622252,
+        "outside_of_sprint": false,
+        "story_points_planned": 2.0,
+        "sprint_id": "163111",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "9aac9ce4-5762-4d97-b635-7eba93e2eb78",
+        "planned": true,
+        "story_points_delivered": 2.0
+      },
+      {
+        "added_at": 1686144360,
+        "outside_of_sprint": false,
+        "story_points_planned": 2.0,
+        "sprint_id": "163112",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "990c6864-8749-410d-b22d-300692cf1324",
+        "planned": true,
+        "story_points_delivered": 3.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "ESPI9TFD-4689",
+        "relation": "blocks"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.2.4",
+        "id": "163111",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.2.5",
+        "id": "163112",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1685622261,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1687187429,
+        "end_time": 1692662399,
+        "id": "32782",
+        "time_spent": 5474970,
+        "status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "start_time": 1687187412,
+        "end_time": 1687187429,
+        "id": "10016",
+        "time_spent": 17,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1687186430,
+        "end_time": 1687187412,
+        "id": "15750",
+        "time_spent": 982,
+        "status": "READY FOR TEST"
+      },
+      {
+        "start_time": 1686140968,
+        "end_time": 1687186430,
+        "id": "3",
+        "time_spent": 1045462,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1684335606,
+        "end_time": 1686140968,
+        "id": "10017",
+        "time_spent": 1805362,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 0,
+        "completed_at": 0,
+        "name": "ParkingLot 2",
+        "end_time": 0,
+        "id": "163299",
+        "state": "FUTURE"
+      },
+      {
+        "start_time": 1684934524,
+        "completed_at": 1686144359,
+        "goal": "Complete work for CSA Employer Select Experience Phase 1 epic\nComplete work for New Employer Person Fact API epic\nStart BE/FE work on Employer Name Report epic\nStart BE/FE work on Customer Report Billing Events epic\nRelease and enable feature to PeopleHQ production environment - Partial Edit User Profile Features - Termination/Non-Termination Fields\nRelease and enable feature to PeopleHQ production environment - Location Edit Feature\nComplete Java+Spring Updates for Wolfpack Team\nComplete PeopleHQ Platform Services Emerald-related tasks\nFocus on all security issues",
+        "name": "Emerald 23.2.4",
+        "end_time": 1686142800,
+        "id": "163111",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1686149424,
+        "completed_at": 1687354266,
+        "goal": "Continue to develop partner employer report and partner customer billing events report backend and front end code, deploy CSA enhanced search experience code to production and enable functionality, resolve all production bugs and customer application support ticket issues, complete Java+Spring upgrades, address all security and system availability issues",
+        "name": "Emerald 23.2.5",
+        "end_time": 1687352400,
+        "id": "163112",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1684335606,
+        "story_points": 0.0,
+        "end_time": 1684773476
+      },
+      {
+        "start_time": 1684773476,
+        "story_points": 2.0,
+        "end_time": 1687187429
+      },
+      {
+        "start_time": 1687187429,
+        "story_points": 0.0,
+        "end_time": 1687188063
+      },
+      {
+        "start_time": 1687188063,
+        "story_points": 3.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 982,
+        "to_status": "DONE",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 2851806,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1046444,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 2850824,
+        "to_status": "READY FOR TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1045462,
+        "to_status": "READY FOR TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 1805362,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 17,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "DONE"
+      },
+      {
+        "state_transition_time": 999,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 2851823,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1046461,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "IN PROGRESS"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "32782",
+        "status_start_time": 1687187429,
+        "hist_assignee_time": 5416498,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "WILL NOT IMPLEMENT",
+        "assignee_start_time": 1685622261,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687187429,
+        "w_resolved_at": 1687187428
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1687187412,
+        "hist_assignee_time": 17,
+        "interval_end_time": 1687187429,
+        "issue_status_category": "DONE",
+        "status_end_time": 1687187429,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "DONE",
+        "assignee_start_time": 1685622261,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687187412,
+        "w_resolved_at": 1687187428
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 982,
+        "issue_status_id": "15750",
+        "status_start_time": 1687186430,
+        "hist_assignee_time": 982,
+        "interval_end_time": 1687187412,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1687187412,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "READY FOR TEST",
+        "assignee_start_time": 1685622261,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687186430,
+        "w_resolved_at": 1687187428
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 1045462,
+        "issue_status_id": "3",
+        "status_start_time": 1686140968,
+        "hist_assignee_time": 1045462,
+        "interval_end_time": 1687186430,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1687186430,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1685622261,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1686140968,
+        "w_resolved_at": 1687187428
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1684335606,
+        "hist_assignee_time": 518707,
+        "interval_end_time": 1686140968,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1686140968,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1685622261,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685622261,
+        "w_resolved_at": 1687187428
+      }
+    ]
+  },
+  {
+    "w_id": "bf91683d-3463-4428-8cc2-6d2b0bae4d5e",
+    "w_workitem_id": "I9P-27307",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-27307_8",
+    "w_is_active": true,
+    "w_summary": "Production Environment Bug - Reporting Dashboard Decryption Issue: problem getting the secret key and it fails after all retries",
+    "w_priority": "HIGH",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-25084",
+    "w_status": "WILL NOT IMPLEMENT",
+    "w_workitem_type": "BUG",
+    "w_story_points": 17.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 1.0
+      },
+      {
+        "arr": [
+          "Emerald 23.2.4",
+          "Emerald 23.2.5"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Prod",
+        "name": "customfield_10703"
+      },
+      {
+        "str": "Resolved secret key not being noticed for decrypti",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "Reporting API"
+    ],
+    "w_labels": [
+      "Reporting_Only",
+      "portal_support"
+    ],
+    "w_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "7b064cd4-6f1a-4056-b3a4-c6af44d2448c",
+      "display_name": "regina.gates"
+    },
+    "w_first_assignee": {
+      "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+      "display_name": "Ed Lima"
+    },
+    "w_desc_size": 924,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 2,
+    "w_created_at": 1685989614,
+    "w_updated_at": 1687339098,
+    "w_resolved_at": 1687329912,
+    "w_first_assigned_at": 1685989614,
+    "w_first_comment_at": 1686039529,
+    "w_first_attachment_at": 1686138509,
+    "w_age": 75,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "NO LONGER NEEDED",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1685989614,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "163111",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "aca8e457-d159-42f7-a2b0-2778184a876b",
+        "planned": true,
+        "story_points_delivered": 2.0
+      },
+      {
+        "added_at": 1686144395,
+        "outside_of_sprint": false,
+        "story_points_planned": 2.0,
+        "sprint_id": "163112",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "01d1df83-89a2-4999-b783-4368dd67b8e3",
+        "planned": true,
+        "story_points_delivered": 1.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "Emerald 23.2.4",
+        "id": "163111",
+        "state": "CLOSED"
+      },
+      {
+        "name": "Emerald 23.2.5",
+        "id": "163112",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1685989614,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+          "cloud_id": "61f93f3baab3620070f55471",
+          "display_name": "Ed Lima"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1687329913,
+        "end_time": 1692662399,
+        "id": "32782",
+        "time_spent": 5332486,
+        "status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "start_time": 1687274900,
+        "end_time": 1687329913,
+        "id": "14679",
+        "time_spent": 55013,
+        "status": "IN TEST"
+      },
+      {
+        "start_time": 1685989614,
+        "end_time": 1687274900,
+        "id": "10017",
+        "time_spent": 1285286,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1684934524,
+        "completed_at": 1686144359,
+        "goal": "Complete work for CSA Employer Select Experience Phase 1 epic\nComplete work for New Employer Person Fact API epic\nStart BE/FE work on Employer Name Report epic\nStart BE/FE work on Customer Report Billing Events epic\nRelease and enable feature to PeopleHQ production environment - Partial Edit User Profile Features - Termination/Non-Termination Fields\nRelease and enable feature to PeopleHQ production environment - Location Edit Feature\nComplete Java+Spring Updates for Wolfpack Team\nComplete PeopleHQ Platform Services Emerald-related tasks\nFocus on all security issues",
+        "name": "Emerald 23.2.4",
+        "end_time": 1686142800,
+        "id": "163111",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1686149424,
+        "completed_at": 1687354266,
+        "goal": "Continue to develop partner employer report and partner customer billing events report backend and front end code, deploy CSA enhanced search experience code to production and enable functionality, resolve all production bugs and customer application support ticket issues, complete Java+Spring upgrades, address all security and system availability issues",
+        "name": "Emerald 23.2.5",
+        "end_time": 1687352400,
+        "id": "163112",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1685989614,
+        "story_points": 2.0,
+        "end_time": 1687329913
+      },
+      {
+        "start_time": 1687329913,
+        "story_points": 0.0,
+        "end_time": 1687339098
+      },
+      {
+        "start_time": 1687339098,
+        "story_points": 1.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 1285286,
+        "to_status": "IN TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1340299,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 55013,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "IN TEST"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "32782",
+        "status_start_time": 1687329913,
+        "hist_assignee_time": 5274014,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "WILL NOT IMPLEMENT",
+        "assignee_start_time": 1685989614,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687329913,
+        "w_resolved_at": 1687329912
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 55013,
+        "issue_status_id": "14679",
+        "status_start_time": 1687274900,
+        "hist_assignee_time": 55013,
+        "interval_end_time": 1687329913,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1687329913,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "IN TEST",
+        "assignee_start_time": 1685989614,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687274900,
+        "w_resolved_at": 1687329912
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1685989614,
+        "hist_assignee_time": 1285286,
+        "interval_end_time": 1687274900,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1687274900,
+        "historical_assignee_id": "b50a01da-8cee-42c1-be4a-4dfd6a569c38",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1685989614,
+        "historical_assignee": "Ed Lima",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685989614,
+        "w_resolved_at": 1687329912
+      }
+    ]
+  },
+  {
+    "w_id": "06ac599b-8e72-4cbc-b487-1f1c4d98be99",
+    "w_workitem_id": "VSTAL-1409",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "VSTAL-1409_8",
+    "w_is_active": true,
+    "w_summary": "INSIGHTS:  PRR (NPE) - Support from Developers for 80% Sonar Coverage",
+    "w_priority": "HIGH",
+    "w_project": "VSTAL",
+    "w_parent_workitem_id": "VSTAL-865",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 3.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 5.0
+      },
+      {
+        "arr": [
+          "2023.Q1.Aurora Sprint 3"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "80% sonar coverage for all insights applications a",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "VIP-Insights"
+    ],
+    "w_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b0aa9ab0-fc87-4c95-be27-8e29c108003c",
+      "display_name": "sangeetha.govindarajan"
+    },
+    "w_first_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti"
+    },
+    "w_desc_size": 137,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 3,
+    "w_created_at": 1676032405,
+    "w_updated_at": 1676558835,
+    "w_resolved_at": 1676558835,
+    "w_first_assigned_at": 1676032405,
+    "w_first_comment_at": 1676474195,
+    "w_first_attachment_at": 1676558146,
+    "w_age": 190,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1676032405,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "157370",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "21975775-8233-4117-88ff-efb5b5fcd743",
+        "planned": true,
+        "story_points_delivered": 5.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "2023.Q1.Aurora Sprint 3",
+        "id": "157370",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1676032405,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1676558835,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 16103564,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1676558208,
+        "end_time": 1676558835,
+        "id": "15750",
+        "time_spent": 627,
+        "status": "READY FOR TEST"
+      },
+      {
+        "start_time": 1676032405,
+        "end_time": 1676558208,
+        "id": "10017",
+        "time_spent": 525803,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1675863238,
+        "completed_at": 1677022866,
+        "goal": "",
+        "name": "2023.Q1.Aurora Sprint 3",
+        "end_time": 1677024420,
+        "id": "157370",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1676032405,
+        "story_points": 0.0,
+        "end_time": 1676473116
+      },
+      {
+        "start_time": 1676473116,
+        "story_points": 5.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 627,
+        "to_status": "DONE",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 526430,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 525803,
+        "to_status": "READY FOR TEST",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1676558835,
+        "hist_assignee_time": 16045092,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "DONE",
+        "assignee_start_time": 1676032405,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676558835,
+        "w_resolved_at": 1676558835
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 627,
+        "issue_status_id": "15750",
+        "status_start_time": 1676558208,
+        "hist_assignee_time": 627,
+        "interval_end_time": 1676558835,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1676558835,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "READY FOR TEST",
+        "assignee_start_time": 1676032405,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676558208,
+        "w_resolved_at": 1676558835
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676032405,
+        "hist_assignee_time": 525803,
+        "interval_end_time": 1676558208,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1676558208,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1676032405,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676032405,
+        "w_resolved_at": 1676558835
+      }
+    ]
+  },
+  {
+    "w_id": "2c08fe6b-d7b6-4eb9-b034-83bf58840a1b",
+    "w_workitem_id": "VSTAL-1331",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "VSTAL-1331_8",
+    "w_is_active": true,
+    "w_summary": "INSIGHTS Product Service - Audit Service Integration",
+    "w_priority": "MEDIUM",
+    "w_project": "VSTAL",
+    "w_parent_workitem_id": "VSTAL-583",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 6.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 5.0
+      },
+      {
+        "arr": [
+          "2023.Q1.Aurora Sprint 3",
+          "2023.Q1.Aurora Sprint 4",
+          "2023.Q1.Aurora Sprint 5"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Implementation is completed as per description and",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "VIP-Insights"
+    ],
+    "w_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b0aa9ab0-fc87-4c95-be27-8e29c108003c",
+      "display_name": "sangeetha.govindarajan"
+    },
+    "w_first_assignee": {
+      "id": "e4433dfb-7412-42b8-9829-2f5f191d32b9",
+      "display_name": "roja.gude"
+    },
+    "w_desc_size": 297,
+    "w_hops": 3,
+    "w_bounces": 0,
+    "w_num_attachments": 2,
+    "w_created_at": 1675354134,
+    "w_updated_at": 1679342367,
+    "w_resolved_at": 1679342367,
+    "w_first_assigned_at": 1675354134,
+    "w_first_comment_at": 1677006375,
+    "w_first_attachment_at": 1679341231,
+    "w_age": 198,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1675354134,
+        "outside_of_sprint": false,
+        "story_points_planned": 5.0,
+        "sprint_id": "157370",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "453097e9-9a9b-4082-b7b0-2cdca0d6807f",
+        "planned": true,
+        "story_points_delivered": 5.0
+      },
+      {
+        "added_at": 1677022885,
+        "outside_of_sprint": false,
+        "story_points_planned": 5.0,
+        "sprint_id": "157371",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "5f3ad940-bbc7-4cd3-b309-d6038013ddad",
+        "planned": true,
+        "story_points_delivered": 5.0
+      },
+      {
+        "added_at": 1678373840,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "157372",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "576fe85f-616e-4394-8c81-209b3d8c1003",
+        "planned": true,
+        "story_points_delivered": 5.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "VSTAL-1380",
+        "relation": "is cloned by"
+      },
+      {
+        "to_workitem_id": "VSTAL-1570",
+        "relation": "related to"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "2023.Q1.Aurora Sprint 5",
+        "id": "157372",
+        "state": "CLOSED"
+      },
+      {
+        "name": "2023.Q1.Aurora Sprint 4",
+        "id": "157371",
+        "state": "CLOSED"
+      },
+      {
+        "name": "2023.Q1.Aurora Sprint 3",
+        "id": "157370",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1679061752,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      },
+      {
+        "start_time": 1675805641,
+        "end_time": 1679061752,
+        "assignee": {
+          "id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+          "cloud_id": "6377b6df3e79f12e57200103",
+          "display_name": "mohan.bollam"
+        }
+      },
+      {
+        "start_time": 1675354134,
+        "end_time": 1675805641,
+        "assignee": {
+          "id": "e4433dfb-7412-42b8-9829-2f5f191d32b9",
+          "cloud_id": "634e9c6bd66d8108a1216b7c",
+          "display_name": "roja.gude"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1679342367,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 13320032,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1679342124,
+        "end_time": 1679342367,
+        "id": "14679",
+        "time_spent": 243,
+        "status": "IN TEST"
+      },
+      {
+        "start_time": 1678991598,
+        "end_time": 1679342124,
+        "id": "10078",
+        "time_spent": 350526,
+        "status": "CODE REVIEW"
+      },
+      {
+        "start_time": 1678373858,
+        "end_time": 1678991598,
+        "id": "3",
+        "time_spent": 617740,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1678287150,
+        "end_time": 1678373858,
+        "id": "32782",
+        "time_spent": 86708,
+        "status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "start_time": 1676492900,
+        "end_time": 1678287150,
+        "id": "3",
+        "time_spent": 1794250,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1676473340,
+        "end_time": 1676492900,
+        "id": "10017",
+        "time_spent": 19560,
+        "status": "TO DO"
+      },
+      {
+        "start_time": 1675874295,
+        "end_time": 1676473340,
+        "id": "3",
+        "time_spent": 599045,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1675354134,
+        "end_time": 1675874295,
+        "id": "10017",
+        "time_spent": 520161,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1675863238,
+        "completed_at": 1677022866,
+        "goal": "",
+        "name": "2023.Q1.Aurora Sprint 3",
+        "end_time": 1677024420,
+        "id": "157370",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1677074336,
+        "completed_at": 1678232842,
+        "goal": "",
+        "name": "2023.Q1.Aurora Sprint 4",
+        "end_time": 1678235520,
+        "id": "157371",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 1678292271,
+        "completed_at": 1679440186,
+        "goal": "",
+        "name": "2023.Q1.Aurora Sprint 5",
+        "end_time": 1679453460,
+        "id": "157372",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1675354134,
+        "story_points": 5.0,
+        "end_time": 1678287150
+      },
+      {
+        "start_time": 1678287150,
+        "story_points": 0.0,
+        "end_time": 1678373835
+      },
+      {
+        "start_time": 1678373835,
+        "story_points": 5.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 3988233,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 243,
+        "to_status": "DONE",
+        "from_status": "IN TEST"
+      },
+      {
+        "state_transition_time": 350769,
+        "to_status": "DONE",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 3468072,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 1055217,
+        "to_status": "DONE",
+        "from_status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "state_transition_time": 599045,
+        "to_status": "TO DO",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 3987990,
+        "to_status": "IN TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 350526,
+        "to_status": "IN TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 3467829,
+        "to_status": "IN TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 1054974,
+        "to_status": "IN TEST",
+        "from_status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "state_transition_time": 3637464,
+        "to_status": "CODE REVIEW",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 3117303,
+        "to_status": "CODE REVIEW",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 704448,
+        "to_status": "CODE REVIEW",
+        "from_status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "state_transition_time": 3019724,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 86708,
+        "to_status": "IN PROGRESS",
+        "from_status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "state_transition_time": 2933016,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 2412855,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "IN PROGRESS"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1679342367,
+        "hist_assignee_time": 13261560,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "DONE",
+        "assignee_start_time": 1679061752,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1679342367,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 243,
+        "issue_status_id": "14679",
+        "status_start_time": 1679342124,
+        "hist_assignee_time": 243,
+        "interval_end_time": 1679342367,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1679342367,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "IN TEST",
+        "assignee_start_time": 1679061752,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1679342124,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 280372,
+        "issue_status_id": "10078",
+        "status_start_time": 1678991598,
+        "hist_assignee_time": 280372,
+        "interval_end_time": 1679342124,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1679342124,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "CODE REVIEW",
+        "assignee_start_time": 1679061752,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1679061752,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 70154,
+        "issue_status_id": "10078",
+        "status_start_time": 1678991598,
+        "hist_assignee_time": 70154,
+        "interval_end_time": 1679061752,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1679342124,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "CODE REVIEW",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1678991598,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 617740,
+        "issue_status_id": "3",
+        "status_start_time": 1678373858,
+        "hist_assignee_time": 617740,
+        "interval_end_time": 1678991598,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1678991598,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1678373858,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "32782",
+        "status_start_time": 1678287150,
+        "hist_assignee_time": 86708,
+        "interval_end_time": 1678373858,
+        "issue_status_category": "DONE",
+        "status_end_time": 1678373858,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "WILL NOT IMPLEMENT",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1678287150,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 1794250,
+        "issue_status_id": "3",
+        "status_start_time": 1676492900,
+        "hist_assignee_time": 1794250,
+        "interval_end_time": 1678287150,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1678287150,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1676492900,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676473340,
+        "hist_assignee_time": 19560,
+        "interval_end_time": 1676492900,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1676492900,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1676473340,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 599045,
+        "issue_status_id": "3",
+        "status_start_time": 1675874295,
+        "hist_assignee_time": 599045,
+        "interval_end_time": 1676473340,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1676473340,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1675874295,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1675354134,
+        "hist_assignee_time": 68654,
+        "interval_end_time": 1675874295,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1675874295,
+        "historical_assignee_id": "133dc81a-1bce-4bac-80bb-9879cb7e2479",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1675805641,
+        "historical_assignee": "mohan.bollam",
+        "assignee_end_time": 1679061752,
+        "interval_start_time": 1675805641,
+        "w_resolved_at": 1679342367
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1675354134,
+        "hist_assignee_time": 451507,
+        "interval_end_time": 1675805641,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1675874295,
+        "historical_assignee_id": "e4433dfb-7412-42b8-9829-2f5f191d32b9",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1675354134,
+        "historical_assignee": "roja.gude",
+        "assignee_end_time": 1675805641,
+        "interval_start_time": 1675354134,
+        "w_resolved_at": 1679342367
+      }
+    ]
+  },
+  {
+    "w_id": "bef49171-e6fa-427c-8465-b20833589a15",
+    "w_workitem_id": "VSTAL-1317",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "VSTAL-1317_8",
+    "w_is_active": true,
+    "w_summary": "INSIGHTS - Performance Testing Backend in UAT Environment",
+    "w_priority": "NORMAL",
+    "w_project": "VSTAL",
+    "w_parent_workitem_id": "VSTAL-582",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 9.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 3.0
+      },
+      {
+        "arr": [
+          "2023.Q2.Aurora Sprint 1 NEW",
+          "2023.Q1.Aurora Sprint 6"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Performance testing is completed for all insights ",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "VIP-Insights"
+    ],
+    "w_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b0aa9ab0-fc87-4c95-be27-8e29c108003c",
+      "display_name": "sangeetha.govindarajan"
+    },
+    "w_first_assignee": {
+      "id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+      "display_name": "arpita.tewari"
+    },
+    "w_desc_size": 209,
+    "w_hops": 3,
+    "w_bounces": 2,
+    "w_num_attachments": 6,
+    "w_created_at": 1675194765,
+    "w_updated_at": 1682344097,
+    "w_resolved_at": 1682344097,
+    "w_first_assigned_at": 1675271490,
+    "w_first_comment_at": 1680295905,
+    "w_first_attachment_at": 1681919745,
+    "w_age": 200,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1677688257,
+        "outside_of_sprint": false,
+        "story_points_planned": 3.0,
+        "sprint_id": "157373",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "0be3fc57-5292-48d3-a317-696f7b530880",
+        "planned": true,
+        "story_points_delivered": 3.0
+      },
+      {
+        "added_at": 1680651216,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "162100",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "3b02fcd6-b077-49ee-8018-958cdfb27312",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1680702710,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "162181",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "afe3c18c-8c98-4767-92c4-b6cb8b4ecda5",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1681396979,
+        "outside_of_sprint": false,
+        "story_points_planned": 3.0,
+        "sprint_id": "164278",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "404050bf-1e70-49fd-84c9-9f0b0f8a905d",
+        "planned": true,
+        "story_points_delivered": 3.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "2023.Q2.Aurora Sprint 1 NEW",
+        "id": "164278",
+        "state": "CLOSED"
+      },
+      {
+        "name": "2023.Q1.Aurora Sprint 6",
+        "id": "157373",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1680640659,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      },
+      {
+        "start_time": 1680624082,
+        "end_time": 1680640659,
+        "assignee": {
+          "id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+          "cloud_id": "6377b6dcf6c85b343c07b143",
+          "display_name": "arpita.tewari"
+        }
+      },
+      {
+        "start_time": 1679409485,
+        "end_time": 1680624082,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      },
+      {
+        "start_time": 1675271490,
+        "end_time": 1679409485,
+        "assignee": {
+          "id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+          "cloud_id": "6377b6dcf6c85b343c07b143",
+          "display_name": "arpita.tewari"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1682344097,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 10318302,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1681919825,
+        "end_time": 1682344097,
+        "id": "14679",
+        "time_spent": 424272,
+        "status": "IN TEST"
+      },
+      {
+        "start_time": 1681919817,
+        "end_time": 1681919825,
+        "id": "15750",
+        "time_spent": 8,
+        "status": "READY FOR TEST"
+      },
+      {
+        "start_time": 1681758862,
+        "end_time": 1681919817,
+        "id": "3",
+        "time_spent": 160955,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1680640614,
+        "end_time": 1681758862,
+        "id": "10017",
+        "time_spent": 1118248,
+        "status": "TO DO"
+      },
+      {
+        "start_time": 1680640553,
+        "end_time": 1680640614,
+        "id": "10269",
+        "time_spent": 61,
+        "status": "BLOCKED"
+      },
+      {
+        "start_time": 1680640262,
+        "end_time": 1680640553,
+        "id": "10078",
+        "time_spent": 291,
+        "status": "CODE REVIEW"
+      },
+      {
+        "start_time": 1680295857,
+        "end_time": 1680640262,
+        "id": "3",
+        "time_spent": 344405,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1675194765,
+        "end_time": 1680295857,
+        "id": "10017",
+        "time_spent": 5101092,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1679500455,
+        "completed_at": 1680651215,
+        "goal": "",
+        "name": "2023.Q1.Aurora Sprint 6",
+        "end_time": 1680661680,
+        "id": "157373",
+        "state": "CLOSED"
+      },
+      {
+        "start_time": 0,
+        "completed_at": 0,
+        "goal": "",
+        "name": "Flexible Framework DOA",
+        "end_time": 0,
+        "id": "162100",
+        "state": "FUTURE"
+      },
+      {
+        "start_time": 0,
+        "completed_at": 0,
+        "name": "2023.Q2.Aurora Sprint 1",
+        "end_time": 0,
+        "id": "162181",
+        "state": "FUTURE"
+      },
+      {
+        "start_time": 1681310810,
+        "completed_at": 1682463041,
+        "goal": "1. To deploy 2 pending applications to UAT Env\n2. Integrate Order History service with Micro front end with retrieving existing order from Order History page\n3. Add Authorization check in the configuration services at UI level\n4. Fix performance issues in Dev Env\n5. Bug fixes identified as part of development; \n6. Provide UAT postman collections to PEN testing team",
+        "name": "2023.Q2.Aurora Sprint 1 NEW",
+        "end_time": 1682472000,
+        "id": "164278",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1675194765,
+        "story_points": 0.0,
+        "end_time": 1675271577
+      },
+      {
+        "start_time": 1675271577,
+        "story_points": 5.0,
+        "end_time": 1679430519
+      },
+      {
+        "start_time": 1679430519,
+        "story_points": 3.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 424280,
+        "to_status": "DONE",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 7149332,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 424272,
+        "to_status": "DONE",
+        "from_status": "IN TEST"
+      },
+      {
+        "state_transition_time": 1703835,
+        "to_status": "DONE",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 2048240,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 1703544,
+        "to_status": "DONE",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 6725052,
+        "to_status": "READY FOR TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1279555,
+        "to_status": "READY FOR TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 1623960,
+        "to_status": "READY FOR TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 1279264,
+        "to_status": "READY FOR TEST",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 352,
+        "to_status": "TO DO",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 344757,
+        "to_status": "TO DO",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 61,
+        "to_status": "TO DO",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 8,
+        "to_status": "IN TEST",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 6725060,
+        "to_status": "IN TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1279563,
+        "to_status": "IN TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 1623968,
+        "to_status": "IN TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 1279272,
+        "to_status": "IN TEST",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 5445497,
+        "to_status": "CODE REVIEW",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 344405,
+        "to_status": "CODE REVIEW",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 6564097,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1118600,
+        "to_status": "IN PROGRESS",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 1118309,
+        "to_status": "IN PROGRESS",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 5445788,
+        "to_status": "BLOCKED",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 291,
+        "to_status": "BLOCKED",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 344696,
+        "to_status": "BLOCKED",
+        "from_status": "IN PROGRESS"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1682344097,
+        "hist_assignee_time": 10259830,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "DONE",
+        "assignee_start_time": 1680640659,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1682344097,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 424272,
+        "issue_status_id": "14679",
+        "status_start_time": 1681919825,
+        "hist_assignee_time": 424272,
+        "interval_end_time": 1682344097,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1682344097,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "IN TEST",
+        "assignee_start_time": 1680640659,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1681919825,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 8,
+        "issue_status_id": "15750",
+        "status_start_time": 1681919817,
+        "hist_assignee_time": 8,
+        "interval_end_time": 1681919825,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1681919825,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "READY FOR TEST",
+        "assignee_start_time": 1680640659,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1681919817,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 160955,
+        "issue_status_id": "3",
+        "status_start_time": 1681758862,
+        "hist_assignee_time": 160955,
+        "interval_end_time": 1681919817,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1681919817,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1680640659,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1681758862,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1680640614,
+        "hist_assignee_time": 1118203,
+        "interval_end_time": 1681758862,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1681758862,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1680640659,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1680640659,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1680640614,
+        "hist_assignee_time": 45,
+        "interval_end_time": 1680640659,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1681758862,
+        "historical_assignee_id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1680624082,
+        "historical_assignee": "arpita.tewari",
+        "assignee_end_time": 1680640659,
+        "interval_start_time": 1680640614,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 61,
+        "issue_status_id": "10269",
+        "status_start_time": 1680640553,
+        "hist_assignee_time": 61,
+        "interval_end_time": 1680640614,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1680640614,
+        "historical_assignee_id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1680624082,
+        "historical_assignee": "arpita.tewari",
+        "assignee_end_time": 1680640659,
+        "interval_start_time": 1680640553,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 291,
+        "issue_status_id": "10078",
+        "status_start_time": 1680640262,
+        "hist_assignee_time": 291,
+        "interval_end_time": 1680640553,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1680640553,
+        "historical_assignee_id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+        "issue_status": "CODE REVIEW",
+        "assignee_start_time": 1680624082,
+        "historical_assignee": "arpita.tewari",
+        "assignee_end_time": 1680640659,
+        "interval_start_time": 1680640262,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 16180,
+        "issue_status_id": "3",
+        "status_start_time": 1680295857,
+        "hist_assignee_time": 16180,
+        "interval_end_time": 1680640262,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1680640262,
+        "historical_assignee_id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1680624082,
+        "historical_assignee": "arpita.tewari",
+        "assignee_end_time": 1680640659,
+        "interval_start_time": 1680624082,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 328225,
+        "issue_status_id": "3",
+        "status_start_time": 1680295857,
+        "hist_assignee_time": 328225,
+        "interval_end_time": 1680624082,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1680640262,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1679409485,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1680624082,
+        "interval_start_time": 1680295857,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1675194765,
+        "hist_assignee_time": 886372,
+        "interval_end_time": 1680295857,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1680295857,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1679409485,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1680624082,
+        "interval_start_time": 1679409485,
+        "w_resolved_at": 1682344097
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1675194765,
+        "hist_assignee_time": 4137995,
+        "interval_end_time": 1679409485,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1680295857,
+        "historical_assignee_id": "4ce4d105-0d42-40b0-a410-3d39646146e2",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1675271490,
+        "historical_assignee": "arpita.tewari",
+        "assignee_end_time": 1679409485,
+        "interval_start_time": 1675271490,
+        "w_resolved_at": 1682344097
+      }
+    ]
+  },
+  {
+    "w_id": "06561750-b170-460b-9538-d6d119ae1b0b",
+    "w_workitem_id": "VSTAL-1895",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "VSTAL-1895_8",
+    "w_is_active": true,
+    "w_summary": "Code Review with VS Portal Team for Common Components",
+    "w_priority": "MEDIUM",
+    "w_project": "VSTAL",
+    "w_parent_workitem_id": "VSTAL-579",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 10.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 1.0
+      },
+      {
+        "arr": [
+          "2023 Aurora Sprint 9 NEW"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "Code review session completed with vsportal team a",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Break-Fix",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "VIP-Insights"
+    ],
+    "w_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b0aa9ab0-fc87-4c95-be27-8e29c108003c",
+      "display_name": "sangeetha.govindarajan"
+    },
+    "w_first_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti"
+    },
+    "w_desc_size": 386,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1681235587,
+    "w_updated_at": 1683318438,
+    "w_resolved_at": 1683318438,
+    "w_first_assigned_at": 1681763479,
+    "w_first_comment_at": 1683058747,
+    "w_first_attachment_at": 1681912348,
+    "w_age": 130,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1681235587,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "162181",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "0c5a8f41-f7c5-4c5a-82b8-344c8d139e06",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1681251743,
+        "outside_of_sprint": false,
+        "story_points_planned": 0.0,
+        "sprint_id": "162182",
+        "ignorable_workitem_type": false,
+        "delivered": false,
+        "id": "7ab0f4ac-26cb-49c9-b363-eace0c17c8e0",
+        "planned": true,
+        "story_points_delivered": 0.0
+      },
+      {
+        "added_at": 1682458472,
+        "outside_of_sprint": false,
+        "story_points_planned": 1.0,
+        "sprint_id": "164740",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "fbbfef21-0ded-4763-937e-2bcbfa7519e3",
+        "planned": true,
+        "story_points_delivered": 1.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "2023 Aurora Sprint 9 NEW",
+        "id": "164740",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1681763479,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1683318438,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 9343961,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1683226145,
+        "end_time": 1683318438,
+        "id": "14679",
+        "time_spent": 92293,
+        "status": "IN TEST"
+      },
+      {
+        "start_time": 1683130602,
+        "end_time": 1683226145,
+        "id": "10078",
+        "time_spent": 95543,
+        "status": "CODE REVIEW"
+      },
+      {
+        "start_time": 1683058767,
+        "end_time": 1683130602,
+        "id": "10269",
+        "time_spent": 71835,
+        "status": "BLOCKED"
+      },
+      {
+        "start_time": 1681235587,
+        "end_time": 1683058767,
+        "id": "10017",
+        "time_spent": 1823180,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 0,
+        "completed_at": 0,
+        "name": "2023.Q2.Aurora Sprint 1",
+        "end_time": 0,
+        "id": "162181",
+        "state": "FUTURE"
+      },
+      {
+        "start_time": 0,
+        "completed_at": 0,
+        "name": "2023.Q2.Aurora Sprint 2",
+        "end_time": 0,
+        "id": "162182",
+        "state": "FUTURE"
+      },
+      {
+        "start_time": 1682526235,
+        "completed_at": 1683721993,
+        "goal": "FACT: Bug fixes & production readiness checklist.\nSetting up critical alerts, automation and pipeline for integration test and performance test working for all env.\nFulfillment Service: Implementation and JWT Validation\nGet the billing service requirement\nData Adaptor: Establish Connection to ClearFx. Have a mock in place.\nValidate Request from Product Service.\nDeliver product data response to Product Service.\nPass Verifier Information.\nProduct Service: Retrieve response from data adaptor and transform if needed\nPublish the request to audit service\nPrepare response for fulfillment service to consume it",
+        "name": "2023 Aurora Sprint 9 NEW",
+        "end_time": 1683675180,
+        "id": "164740",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1681235587,
+        "story_points": 0.0,
+        "end_time": 1682005130
+      },
+      {
+        "start_time": 1682005130,
+        "story_points": 1.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 2082851,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 92293,
+        "to_status": "DONE",
+        "from_status": "IN TEST"
+      },
+      {
+        "state_transition_time": 187836,
+        "to_status": "DONE",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 259671,
+        "to_status": "DONE",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 1990558,
+        "to_status": "IN TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 95543,
+        "to_status": "IN TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 167378,
+        "to_status": "IN TEST",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 1895015,
+        "to_status": "CODE REVIEW",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 71835,
+        "to_status": "CODE REVIEW",
+        "from_status": "BLOCKED"
+      },
+      {
+        "state_transition_time": 1823180,
+        "to_status": "BLOCKED",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1683318438,
+        "hist_assignee_time": 9285489,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "DONE",
+        "assignee_start_time": 1681763479,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1683318438,
+        "w_resolved_at": 1683318438
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 92293,
+        "issue_status_id": "14679",
+        "status_start_time": 1683226145,
+        "hist_assignee_time": 92293,
+        "interval_end_time": 1683318438,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1683318438,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "IN TEST",
+        "assignee_start_time": 1681763479,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1683226145,
+        "w_resolved_at": 1683318438
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 95543,
+        "issue_status_id": "10078",
+        "status_start_time": 1683130602,
+        "hist_assignee_time": 95543,
+        "interval_end_time": 1683226145,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1683226145,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "CODE REVIEW",
+        "assignee_start_time": 1681763479,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1683130602,
+        "w_resolved_at": 1683318438
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 71835,
+        "issue_status_id": "10269",
+        "status_start_time": 1683058767,
+        "hist_assignee_time": 71835,
+        "interval_end_time": 1683130602,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1683130602,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1681763479,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1683058767,
+        "w_resolved_at": 1683318438
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1681235587,
+        "hist_assignee_time": 1295288,
+        "interval_end_time": 1683058767,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1683058767,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1681763479,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1681763479,
+        "w_resolved_at": 1683318438
+      }
+    ]
+  },
+  {
+    "w_id": "a95e0d24-9300-438f-8e7c-10ed2f6eed50",
+    "w_workitem_id": "VSTAL-2039",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "VSTAL-2039_8",
+    "w_is_active": true,
+    "w_summary": "[INSIGHTS - FACT] Order History :Analyze URL Removal of \"Looking for an older receipt?\"",
+    "w_priority": "MEDIUM",
+    "w_project": "VSTAL",
+    "w_parent_workitem_id": "VSTAL-2377",
+    "w_status": "WILL NOT IMPLEMENT",
+    "w_workitem_type": "SPIKE",
+    "w_story_points": 15.0,
+    "w_custom_fields": [
+      {
+        "str": "Document the analysis and share the approach that ",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "VIP-Insights"
+    ],
+    "w_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b0aa9ab0-fc87-4c95-be27-8e29c108003c",
+      "display_name": "sangeetha.govindarajan"
+    },
+    "w_first_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti"
+    },
+    "w_desc_size": 322,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 4,
+    "w_created_at": 1682620960,
+    "w_updated_at": 1686837916,
+    "w_resolved_at": 1686837916,
+    "w_first_assigned_at": 1683121179,
+    "w_first_comment_at": 1686669605,
+    "w_first_attachment_at": 1682620834,
+    "w_age": 114,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "NO LONGER NEEDED",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "start_time": 1683121179,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1686837916,
+        "end_time": 1692662399,
+        "id": "32782",
+        "time_spent": 5824483,
+        "status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "start_time": 1682620960,
+        "end_time": 1686837916,
+        "id": "10017",
+        "time_spent": 4216956,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [
+      {
+        "start_time": 1682620960,
+        "story_points": 0.0,
+        "end_time": 1683121197
+      },
+      {
+        "start_time": 1683121197,
+        "story_points": 3.0,
+        "end_time": 1686837916
+      },
+      {
+        "start_time": 1686837916,
+        "story_points": 0.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 4216956,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "32782",
+        "status_start_time": 1686837916,
+        "hist_assignee_time": 5766011,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "WILL NOT IMPLEMENT",
+        "assignee_start_time": 1683121179,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1686837916,
+        "w_resolved_at": 1686837916
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1682620960,
+        "hist_assignee_time": 3716737,
+        "interval_end_time": 1686837916,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1686837916,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1683121179,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1683121179,
+        "w_resolved_at": 1686837916
+      }
+    ]
+  },
+  {
+    "w_id": "6f985ba0-765e-44ed-9322-9c1ea8c0f307",
+    "w_workitem_id": "VSTAL-2388",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "VSTAL-2388_8",
+    "w_is_active": true,
+    "w_summary": "FACT - Change On-Prem Endpoint to Cloud Endpoint",
+    "w_priority": "MAJOR",
+    "w_project": "VSTAL",
+    "w_parent_workitem_id": "VSTAL-2377",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_story_points": 18.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 1.0
+      },
+      {
+        "arr": [
+          "2023 Aurora Sprint 13"
+        ],
+        "name": "customfield_10300"
+      },
+      {
+        "str": "FACT endpoint should be changed to Cloud endpoint ",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "VIP-Insights"
+    ],
+    "w_assignee": {
+      "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+      "display_name": "bhaskar.chaganti",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "b0aa9ab0-fc87-4c95-be27-8e29c108003c",
+      "display_name": "sangeetha.govindarajan"
+    },
+    "w_first_assignee": {
+      "id": "54329809-421d-453e-8b71-35e082fb650b",
+      "display_name": "sravani.kondapalli"
+    },
+    "w_desc_size": 522,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 6,
+    "w_created_at": 1686578589,
+    "w_updated_at": 1687957851,
+    "w_resolved_at": 1687957851,
+    "w_first_assigned_at": 1687357147,
+    "w_first_comment_at": 1687378743,
+    "w_first_attachment_at": 1687535891,
+    "w_age": 68,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "added_at": 1686578589,
+        "outside_of_sprint": false,
+        "story_points_planned": 1.0,
+        "sprint_id": "165245",
+        "ignorable_workitem_type": false,
+        "delivered": true,
+        "id": "e8d670e1-6c8a-4efd-ba57-bd0653fe138c",
+        "planned": true,
+        "story_points_delivered": 1.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "name": "2023 Aurora Sprint 13",
+        "id": "165245",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "start_time": 1687360095,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+          "cloud_id": "5f682504262697006979d0b4",
+          "display_name": "bhaskar.chaganti"
+        }
+      },
+      {
+        "start_time": 1687357147,
+        "end_time": 1687359985,
+        "assignee": {
+          "id": "54329809-421d-453e-8b71-35e082fb650b",
+          "cloud_id": "634e9c80548f1fe6f0c3c5b7",
+          "display_name": "sravani.kondapalli"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1687957851,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 4704548,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1687540272,
+        "end_time": 1687957851,
+        "id": "15750",
+        "time_spent": 417579,
+        "status": "READY FOR TEST"
+      },
+      {
+        "start_time": 1687380114,
+        "end_time": 1687540272,
+        "id": "10078",
+        "time_spent": 160158,
+        "status": "CODE REVIEW"
+      },
+      {
+        "start_time": 1687378705,
+        "end_time": 1687380114,
+        "id": "3",
+        "time_spent": 1409,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1686578589,
+        "end_time": 1687378705,
+        "id": "10017",
+        "time_spent": 800116,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "start_time": 1687358541,
+        "completed_at": 1688564094,
+        "goal": "FACT Enhancement, PubSub fix, logging product code, order history workflow fix and PEN testing",
+        "name": "2023 Aurora Sprint 13",
+        "end_time": 1688598060,
+        "id": "165245",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "start_time": 1686578589,
+        "story_points": 0.0,
+        "end_time": 1686843811
+      },
+      {
+        "start_time": 1686843811,
+        "story_points": 1.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 417579,
+        "to_status": "DONE",
+        "from_status": "READY FOR TEST"
+      },
+      {
+        "state_transition_time": 1379262,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 577737,
+        "to_status": "DONE",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 579146,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 961683,
+        "to_status": "READY FOR TEST",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 160158,
+        "to_status": "READY FOR TEST",
+        "from_status": "CODE REVIEW"
+      },
+      {
+        "state_transition_time": 161567,
+        "to_status": "READY FOR TEST",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 801525,
+        "to_status": "CODE REVIEW",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 1409,
+        "to_status": "CODE REVIEW",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 800116,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1687957851,
+        "hist_assignee_time": 4646076,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "DONE",
+        "assignee_start_time": 1687360095,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687957851,
+        "w_resolved_at": 1687957851
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 417579,
+        "issue_status_id": "15750",
+        "status_start_time": 1687540272,
+        "hist_assignee_time": 417579,
+        "interval_end_time": 1687957851,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1687957851,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "READY FOR TEST",
+        "assignee_start_time": 1687360095,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687540272,
+        "w_resolved_at": 1687957851
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 160158,
+        "issue_status_id": "10078",
+        "status_start_time": 1687380114,
+        "hist_assignee_time": 160158,
+        "interval_end_time": 1687540272,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1687540272,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "CODE REVIEW",
+        "assignee_start_time": 1687360095,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687380114,
+        "w_resolved_at": 1687957851
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 1409,
+        "issue_status_id": "3",
+        "status_start_time": 1687378705,
+        "hist_assignee_time": 1409,
+        "interval_end_time": 1687380114,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1687380114,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1687360095,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687378705,
+        "w_resolved_at": 1687957851
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1686578589,
+        "hist_assignee_time": 18610,
+        "interval_end_time": 1687378705,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1687378705,
+        "historical_assignee_id": "139fb2d5-0a9e-408d-8823-dd8f93e50a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1687360095,
+        "historical_assignee": "bhaskar.chaganti",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1687360095,
+        "w_resolved_at": 1687957851
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1686578589,
+        "hist_assignee_time": 2838,
+        "interval_end_time": 1687359985,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1687378705,
+        "historical_assignee_id": "54329809-421d-453e-8b71-35e082fb650b",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1687357147,
+        "historical_assignee": "sravani.kondapalli",
+        "assignee_end_time": 1687359985,
+        "interval_start_time": 1687357147,
+        "w_resolved_at": 1687957851
+      }
+    ]
+  },
+  {
+    "w_id": "492c66c7-70df-4c3e-b8bb-c1c246cf267b",
+    "w_workitem_id": "I9P-23540",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-23540_8",
+    "w_is_active": true,
+    "w_summary": "Fran flow Functionality is not working manually In QA",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_status": "DONE",
+    "w_workitem_type": "BUG",
+    "w_story_points": 4.0,
+    "w_custom_fields": [
+      {
+        "str": "QA",
+        "name": "customfield_10703"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "PerfTeam",
+      "performance"
+    ],
+    "w_assignee": {
+      "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+      "display_name": "Preethi Abbireddy",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "d67e11a9-9aaf-4b03-9a46-e86f4e2b806f",
+      "display_name": "shamsheer.shaik"
+    },
+    "w_first_assignee": {
+      "id": "d67e11a9-9aaf-4b03-9a46-e86f4e2b806f",
+      "display_name": "shamsheer.shaik"
+    },
+    "w_desc_size": 226,
+    "w_hops": 2,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1676957942,
+    "w_updated_at": 1676958041,
+    "w_resolved_at": 1676958016,
+    "w_first_assigned_at": 1676957942,
+    "w_first_attachment_at": 1676957936,
+    "w_age": 179,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 18000.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [
+      {
+        "to_workitem_id": "I9P-23465",
+        "relation": "blocks"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "start_time": 1676957975,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+          "cloud_id": "60e86c231fd2a300704908dc",
+          "display_name": "Preethi Abbireddy"
+        }
+      },
+      {
+        "start_time": 1676957942,
+        "end_time": 1676957975,
+        "assignee": {
+          "id": "d67e11a9-9aaf-4b03-9a46-e86f4e2b806f",
+          "cloud_id": "615f3e5778e5e400708c5f5f",
+          "display_name": "shamsheer.shaik"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1676958016,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 15704383,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1676958012,
+        "end_time": 1676958016,
+        "id": "3",
+        "time_spent": 4,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1676957942,
+        "end_time": 1676958012,
+        "id": "10017",
+        "time_spent": 70,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 74,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 4,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 70,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1676958016,
+        "hist_assignee_time": 15645911,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "DONE",
+        "assignee_start_time": 1676957975,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676958016,
+        "w_resolved_at": 1676958016
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 4,
+        "issue_status_id": "3",
+        "status_start_time": 1676958012,
+        "hist_assignee_time": 4,
+        "interval_end_time": 1676958016,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1676958016,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1676957975,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676958012,
+        "w_resolved_at": 1676958016
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676957942,
+        "hist_assignee_time": 37,
+        "interval_end_time": 1676958012,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1676958012,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1676957975,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1676957975,
+        "w_resolved_at": 1676958016
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676957942,
+        "hist_assignee_time": 33,
+        "interval_end_time": 1676957975,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1676958012,
+        "historical_assignee_id": "d67e11a9-9aaf-4b03-9a46-e86f4e2b806f",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1676957942,
+        "historical_assignee": "shamsheer.shaik",
+        "assignee_end_time": 1676957975,
+        "interval_start_time": 1676957942,
+        "w_resolved_at": 1676958016
+      }
+    ]
+  },
+  {
+    "w_id": "a6b1a05a-360e-4e90-9a50-a0b44e8efaf6",
+    "w_workitem_id": "I9P-23340",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-23340_8",
+    "w_is_active": true,
+    "w_summary": "Check if we can remove the reverification Logic From the Section 2 completion ",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-21397",
+    "w_status": "DONE",
+    "w_workitem_type": "SPIKE",
+    "w_story_points": 5.0,
+    "w_custom_fields": [
+      {
+        "str": "",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "I-9Strikers"
+    ],
+    "w_assignee": {
+      "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+      "display_name": "Preethi Abbireddy",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "db997b91-b96f-400e-8f7e-3f95d5625a3a",
+      "display_name": "anjaly.venu"
+    },
+    "w_first_assignee": {
+      "id": "db997b91-b96f-400e-8f7e-3f95d5625a3a",
+      "display_name": "anjaly.venu"
+    },
+    "w_desc_size": 78,
+    "w_hops": 2,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1676471358,
+    "w_updated_at": 1681930113,
+    "w_resolved_at": 1678285387,
+    "w_first_assigned_at": 1676471358,
+    "w_first_comment_at": 1677590831,
+    "w_age": 185,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "start_time": 1677590834,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+          "cloud_id": "60e86c231fd2a300704908dc",
+          "display_name": "Preethi Abbireddy"
+        }
+      },
+      {
+        "start_time": 1676471358,
+        "end_time": 1676560482,
+        "assignee": {
+          "id": "db997b91-b96f-400e-8f7e-3f95d5625a3a",
+          "cloud_id": "624294fe2e101c006a8cc766",
+          "display_name": "anjaly.venu"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1678285387,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 14377012,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1678285376,
+        "end_time": 1678285387,
+        "id": "32782",
+        "time_spent": 11,
+        "status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "start_time": 1676471358,
+        "end_time": 1678285376,
+        "id": "10017",
+        "time_spent": 1814018,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 1814029,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 11,
+        "to_status": "DONE",
+        "from_status": "WILL NOT IMPLEMENT"
+      },
+      {
+        "state_transition_time": 1814018,
+        "to_status": "WILL NOT IMPLEMENT",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1678285387,
+        "hist_assignee_time": 14318540,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "DONE",
+        "assignee_start_time": 1677590834,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1678285387,
+        "w_resolved_at": 1678285387
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "32782",
+        "status_start_time": 1678285376,
+        "hist_assignee_time": 11,
+        "interval_end_time": 1678285387,
+        "issue_status_category": "DONE",
+        "status_end_time": 1678285387,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "WILL NOT IMPLEMENT",
+        "assignee_start_time": 1677590834,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1678285376,
+        "w_resolved_at": 1678285387
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676471358,
+        "hist_assignee_time": 694542,
+        "interval_end_time": 1678285376,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1678285376,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1677590834,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1677590834,
+        "w_resolved_at": 1678285387
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1676471358,
+        "hist_assignee_time": 89124,
+        "interval_end_time": 1676560482,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1678285376,
+        "historical_assignee_id": "db997b91-b96f-400e-8f7e-3f95d5625a3a",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1676471358,
+        "historical_assignee": "anjaly.venu",
+        "assignee_end_time": 1676560482,
+        "interval_start_time": 1676471358,
+        "w_resolved_at": 1678285387
+      }
+    ]
+  },
+  {
+    "w_id": "5ecef52c-4d8e-4e58-8574-fca20999a169",
+    "w_workitem_id": "I9P-23835",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-23835_8",
+    "w_is_active": true,
+    "w_summary": "[Performance, I9] Analyze and identify the functionality within savenewPaperI9Employee function",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-23744",
+    "w_status": "DONE",
+    "w_workitem_type": "SPIKE",
+    "w_story_points": 8.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 1.0
+      },
+      {
+        "str": "Clear definition of function within saveNewPaperI9",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Doesnt Exist",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "I-9Strikers"
+    ],
+    "w_assignee": {
+      "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+      "display_name": "Preethi Abbireddy",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "cb46810d-e160-4be0-a328-1d6abd615b82",
+      "display_name": "felicia.donaldson"
+    },
+    "w_first_assignee": {
+      "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+      "display_name": "Preethi Abbireddy"
+    },
+    "w_desc_size": 441,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1677680595,
+    "w_updated_at": 1681930144,
+    "w_resolved_at": 1681305133,
+    "w_first_assigned_at": 1678101521,
+    "w_first_comment_at": 1678796822,
+    "w_first_attachment_at": 1677680596,
+    "w_age": 171,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "start_time": 1678101521,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+          "cloud_id": "60e86c231fd2a300704908dc",
+          "display_name": "Preethi Abbireddy"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1681305133,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 11357266,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1678101534,
+        "end_time": 1681305133,
+        "id": "3",
+        "time_spent": 3203599,
+        "status": "IN PROGRESS"
+      },
+      {
+        "start_time": 1677680595,
+        "end_time": 1678101534,
+        "id": "10017",
+        "time_spent": 420939,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [
+      {
+        "start_time": 1677680595,
+        "story_points": 0.0,
+        "end_time": 1678815674
+      },
+      {
+        "start_time": 1678815674,
+        "story_points": 1.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 3624538,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      },
+      {
+        "state_transition_time": 3203599,
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS"
+      },
+      {
+        "state_transition_time": 420939,
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1681305133,
+        "hist_assignee_time": 11298794,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "DONE",
+        "assignee_start_time": 1678101521,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1681305133,
+        "w_resolved_at": 1681305133
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 3203599,
+        "issue_status_id": "3",
+        "status_start_time": 1678101534,
+        "hist_assignee_time": 3203599,
+        "interval_end_time": 1681305133,
+        "issue_status_category": "IN PROGRESS",
+        "status_end_time": 1681305133,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1678101521,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1678101534,
+        "w_resolved_at": 1681305133
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1677680595,
+        "hist_assignee_time": 13,
+        "interval_end_time": 1678101534,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1678101534,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1678101521,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1678101521,
+        "w_resolved_at": 1681305133
+      }
+    ]
+  },
+  {
+    "w_id": "a4c9c5fd-7388-4945-b99b-be6d5e2375eb",
+    "w_workitem_id": "I9P-26651",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "I9P-26651_8",
+    "w_is_active": true,
+    "w_summary": "Ref API: Update Document JSON files",
+    "w_priority": "NORMAL",
+    "w_project": "I9P",
+    "w_parent_workitem_id": "I9P-4014",
+    "w_status": "DONE",
+    "w_workitem_type": "SPIKE",
+    "w_story_points": 13.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10002",
+        "float": 1.0
+      },
+      {
+        "str": "tbd",
+        "name": "customfield_13011"
+      },
+      {
+        "str": "Break-Fix",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [
+      "I9 Reference Data API"
+    ],
+    "w_labels": [
+      "ES-FeatureDevelopment"
+    ],
+    "w_assignee": {
+      "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+      "display_name": "Preethi Abbireddy",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "cb46810d-e160-4be0-a328-1d6abd615b82",
+      "display_name": "felicia.donaldson"
+    },
+    "w_first_assignee": {
+      "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+      "display_name": "Preethi Abbireddy"
+    },
+    "w_desc_size": 71,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1683897907,
+    "w_updated_at": 1685541987,
+    "w_resolved_at": 1685541987,
+    "w_first_assigned_at": 1685541985,
+    "w_first_comment_at": 1685023139,
+    "w_age": 99,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1692489600,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "start_time": 1685541985,
+        "end_time": 1692603927,
+        "assignee": {
+          "id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+          "cloud_id": "60e86c231fd2a300704908dc",
+          "display_name": "Preethi Abbireddy"
+        }
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "start_time": 1685541987,
+        "end_time": 1692662399,
+        "id": "10016",
+        "time_spent": 7120412,
+        "status": "DONE"
+      },
+      {
+        "start_time": 1683897907,
+        "end_time": 1685541987,
+        "id": "10017",
+        "time_spent": 1644080,
+        "status": "TO DO"
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [
+      {
+        "start_time": 1683897907,
+        "story_points": 0.0,
+        "end_time": 1684254091
+      },
+      {
+        "start_time": 1684254091,
+        "story_points": 1.0,
+        "end_time": 1692603927
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 1644080,
+        "to_status": "DONE",
+        "from_status": "TO DO"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10016",
+        "status_start_time": 1685541987,
+        "hist_assignee_time": 7061940,
+        "interval_end_time": 1692603927,
+        "issue_status_category": "DONE",
+        "status_end_time": 1692662399,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "DONE",
+        "assignee_start_time": 1685541985,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685541987,
+        "w_resolved_at": 1685541987
+      },
+      {
+        "hist_assignee_time_excluding_resolution": 0,
+        "issue_status_id": "10017",
+        "status_start_time": 1683897907,
+        "hist_assignee_time": 2,
+        "interval_end_time": 1685541987,
+        "issue_status_category": "TO DO",
+        "status_end_time": 1685541987,
+        "historical_assignee_id": "fe040da7-aae0-42fb-8543-281c25c7704d",
+        "issue_status": "TO DO",
+        "assignee_start_time": 1685541985,
+        "historical_assignee": "Preethi Abbireddy",
+        "assignee_end_time": 1692603927,
+        "interval_start_time": 1685541985,
+        "w_resolved_at": 1685541987
+      }
+    ]
+  }
+]

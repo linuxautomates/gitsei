@@ -1,0 +1,134 @@
+{
+  "name": "testdash",
+  "type": "teams",
+  "category": [
+    "19cb6c27-4041-4bc4-8c36-f0ab77254b32"
+  ],
+  "metadata": {
+    "dashboard_time_range": true,
+    "dashboard_time_range_filter": "last_month",
+    "effort_investment_profile": true,
+    "effort_investment_profile_filter": "12b2ce6b-98bc-4584-a588-db43ae90c983",
+    "effort_investment_unit": false,
+    "effort_investment_unit_filter": "%_of_engineers",
+    "integration_monitoring": false,
+    "rbac": {
+      "allUsers": true,
+      "dashboardPermission": "public",
+      "owner": "thomas.kouhsari@harness.io",
+      "users": {}
+    }
+  },
+  "widgets": [
+    {
+      "id": "test"
+    },
+    {
+      "id": "3d2eb940-13d8-11ee-aa66-af5f603f67df",
+      "dashboard_id": "15",
+      "name": "Documentation",
+      "type": "dashboard_notes",
+      "metadata": {
+        "order": 2,
+        "width": "full",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "DEF",
+        "max_records": 20,
+        "widget_type": "graph_notes",
+        "custom_hygienes": []
+      },
+      "query": {},
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    },
+    {
+      "id": "b4e79b95-aabf-4755-a157-d5d4e71d5102",
+      "dashboard_id": "15",
+      "name": "EFFORT INVESTMENT SINGLE STAT",
+      "type": "effort_investment_single_stat",
+      "metadata": {
+        "order": 1,
+        "width": "full",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "",
+        "max_records": 20,
+        "widget_type": "stats",
+        "default_value": "jira",
+        "display_format": "percentage",
+        "custom_hygienes": [],
+        "filter_tab_order": {
+          "issue_types": 2,
+          "issue_resolved_at": 1
+        },
+        "dashBoard_time_keys": {
+          "issue_resolved_at": {
+            "use_dashboard_time": true
+          }
+        },
+        "range_filter_choice": {
+          "committed_at": {
+            "type": "relative",
+            "relative": {
+              "last": {
+                "num": 4,
+                "unit": "months"
+              },
+              "next": {
+                "unit": "today"
+              }
+            }
+          },
+          "issue_resolved_at": {
+            "type": "relative",
+            "relative": {
+              "last": {
+                "num": 4,
+                "unit": "months"
+              },
+              "next": {
+                "unit": "today"
+              }
+            }
+          }
+        },
+        "disable_issue_management_system": false
+      },
+      "query": {
+        "exclude": {
+          "issue_types": [
+            "TEST",
+            "TEST PLAN",
+            "TEST SET"
+          ]
+        },
+        "uri_unit": "story_point_report",
+        "issue_resolved_at": {
+          "$gt": "1653868801",
+          "$lt": "1664550629"
+        },
+        "ba_attribution_mode": "current_assignee",
+        "ticket_categorization_scheme": "00b2ce6b-98bc-4584-a588-db43ae90c983"
+      },
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    }
+  ]
+}

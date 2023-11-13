@@ -1,0 +1,233 @@
+{
+  "records": [
+    {
+      "project": {
+        "name": "weather-vue",
+        "projectLevelAdjustments": true,
+        "cloneCategories": [
+          "COMPONENT_DATA",
+          "VULN_DATA"
+        ],
+        "customSignatureEnabled": false,
+        "customSignatureDepth": 5,
+        "licenseConflictsEnabled": false,
+        "snippetAdjustmentApplied": false,
+        "deepLicenseDataEnabled": false,
+        "createdAt": "2021-08-02T07:32:39.139Z",
+        "updatedAt": "2021-08-02T07:32:39.175Z"
+      },
+      "version": {
+        "versionName": "0.1.0",
+        "createdAt": "2021-08-02T07:32:39.169+00:00",
+        "source": "CUSTOM",
+        "phase": "DEVELOPMENT",
+        "distribution": "EXTERNAL",
+        "settingUpdatedAt": "2021-08-13T10:06:29.901+00:00",
+        "securityRiskProfile": {
+          "counts": [
+            {
+              "countType": "CRITICAL",
+              "count": "0"
+            },
+            {
+              "countType": "HIGH",
+              "count": "1"
+            },
+            {
+              "countType": "MEDIUM",
+              "count": "14"
+            },
+            {
+              "countType": "LOW",
+              "count": "5"
+            },
+            {
+              "countType": "OK",
+              "count": "1114"
+            },
+            {
+              "countType": "UNKNOWN",
+              "count": "0"
+            }
+          ]
+        },
+        "licenseRiskProfile": {
+          "counts": [
+            {
+              "countType": "HIGH",
+              "count": "1"
+            },
+            {
+              "countType": "MEDIUM",
+              "count": "1"
+            },
+            {
+              "countType": "LOW",
+              "count": "0"
+            },
+            {
+              "countType": "OK",
+              "count": "1132"
+            },
+            {
+              "countType": "UNKNOWN",
+              "count": "1132"
+            }
+          ]
+        },
+        "operationalRiskProfile": {
+          "counts": [
+            {
+              "countType": "HIGH",
+              "count": "486"
+            },
+            {
+              "countType": "MEDIUM",
+              "count": "97"
+            },
+            {
+              "countType": "LOW",
+              "count": "246"
+            },
+            {
+              "countType": "OK",
+              "count": "305"
+            },
+            {
+              "countType": "UNKNOWN",
+              "count": "305"
+            }
+          ]
+        },
+        "policyStatus": "IN_VIOLATION",
+        "lastBomUpdateDate": "2021-08-17T11:03:48.861+00:00",
+        "bomCount": 0
+      },
+      "issues": [
+        {
+          "componentName": "faye-websocket-node",
+          "componentVersionName": "0.10.0",
+          "componentVersionOriginName": "npmjs",
+          "componentVersionOriginId": "faye-websocket/0.10.0",
+          "vulnerabilityWithRemediation": {
+            "vulnerabilityName": "CVE-2020-15133",
+            "description": "In faye-websocket before version 0.11.0, there is a lack of certification validation in TLS handshakes. The `Faye::WebSocket::Client` class uses the `EM::Connection#start_tls` method in EventMachine to implement the TLS handshake whenever a `wss:` URL is used for the connection. This method does not implement certificate verification by default, meaning that it does not check that the server presents a valid and trusted TLS certificate for the expected hostname. That means that any `wss:` connection made using this library is vulnerable to a man-in-the-middle attack, since it does not confirm the identity of the server it is connected to. For further background information on this issue, please see the referenced GitHub Advisory. Upgrading `faye-websocket` to v0.11.0 is recommended.",
+            "vulnerabilityPublishedDate": "2020-07-31T18:15:00.000Z",
+            "vulnerabilityUpdatedDate": "2020-08-11T19:30:00.000Z",
+            "baseScore": "5.8",
+            "overallScore": "5.8",
+            "exploitabilitySubscore": "8.6",
+            "impactSubscore": "4.9",
+            "source": "NVD",
+            "severity": "MEDIUM",
+            "remediationStatus": "NEW",
+            "cweId": "CWE-295",
+            "bdsaTags": [],
+            "remediationCreatedAt": "2021-08-02T07:33:19.496+00:00",
+            "remediationUpdatedAt": "2021-08-02T07:33:19.496+00:00"
+          }
+        },
+        {
+          "componentName": "glob-parent",
+          "componentVersionName": "v5.1.1",
+          "componentVersionOriginName": "npmjs",
+          "componentVersionOriginId": "glob-parent/5.1.1",
+          "vulnerabilityWithRemediation": {
+            "vulnerabilityName": "CVE-2020-28469",
+            "description": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.",
+            "vulnerabilityPublishedDate": "2021-06-03T16:15:00.000Z",
+            "vulnerabilityUpdatedDate": "2021-06-11T18:37:00.000Z",
+            "baseScore": "5.0",
+            "overallScore": "5.0",
+            "exploitabilitySubscore": "10.0",
+            "impactSubscore": "2.9",
+            "source": "NVD",
+            "severity": "MEDIUM",
+            "remediationStatus": "NEW",
+            "cweId": "CWE-400",
+            "bdsaTags": [],
+            "remediationCreatedAt": "2021-08-02T07:33:18.279+00:00",
+            "remediationUpdatedAt": "2021-08-02T07:33:18.279+00:00"
+          }
+        },
+        {
+          "componentName": "glob-parent",
+          "componentVersionName": "3.1.0",
+          "componentVersionOriginName": "npmjs",
+          "componentVersionOriginId": "glob-parent/3.1.0",
+          "vulnerabilityWithRemediation": {
+            "vulnerabilityName": "CVE-2020-28469",
+            "description": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.",
+            "vulnerabilityPublishedDate": "2021-06-03T16:15:00.000Z",
+            "vulnerabilityUpdatedDate": "2021-06-11T18:37:00.000Z",
+            "baseScore": "5.0",
+            "overallScore": "5.0",
+            "exploitabilitySubscore": "10.0",
+            "impactSubscore": "2.9",
+            "source": "NVD",
+            "severity": "MEDIUM",
+            "remediationStatus": "NEW",
+            "cweId": "CWE-400",
+            "bdsaTags": [],
+            "remediationCreatedAt": "2021-08-02T07:33:19.032+00:00",
+            "remediationUpdatedAt": "2021-08-02T07:33:19.032+00:00"
+          }
+        },
+        {
+          "componentName": "hosted-git-info",
+          "componentVersionName": "v2.8.8",
+          "componentVersionOriginName": "npmjs",
+          "componentVersionOriginId": "hosted-git-info/2.8.8",
+          "vulnerabilityWithRemediation": {
+            "vulnerabilityName": "CVE-2021-23362",
+            "description": "The package hosted-git-info before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The affected regular expression exhibits polynomial worst-case time complexity.",
+            "vulnerabilityPublishedDate": "2021-03-23T17:15:00.000Z",
+            "vulnerabilityUpdatedDate": "2021-06-08T19:30:00.000Z",
+            "baseScore": "5.0",
+            "overallScore": "5.0",
+            "exploitabilitySubscore": "10.0",
+            "impactSubscore": "2.9",
+            "source": "NVD",
+            "severity": "MEDIUM",
+            "remediationStatus": "NEW",
+            "bdsaTags": [],
+            "remediationCreatedAt": "2021-08-02T07:33:20.490+00:00",
+            "remediationUpdatedAt": "2021-08-02T07:33:20.490+00:00"
+          }
+        },
+        {
+          "componentName": "is-svg",
+          "componentVersionName": "3.0.0",
+          "componentVersionOriginName": "npmjs",
+          "componentVersionOriginId": "is-svg/3.0.0",
+          "vulnerabilityWithRemediation": {
+            "vulnerabilityName": "CVE-2021-28092",
+            "description": "The is-svg package 2.1.0 through 4.2.1 for Node.js uses a regular expression that is vulnerable to Regular Expression Denial of Service (ReDoS). If an attacker provides a malicious string, is-svg will get stuck processing the input for a very long time.",
+            "vulnerabilityPublishedDate": "2021-03-12T22:15:00.000Z",
+            "vulnerabilityUpdatedDate": "2021-05-17T20:14:00.000Z",
+            "baseScore": "5.0",
+            "overallScore": "5.0",
+            "exploitabilitySubscore": "10.0",
+            "impactSubscore": "2.9",
+            "source": "NVD",
+            "severity": "MEDIUM",
+            "remediationStatus": "NEW",
+            "bdsaTags": [],
+            "remediationCreatedAt": "2021-08-02T07:33:18.770+00:00",
+            "remediationUpdatedAt": "2021-08-02T07:33:18.770+00:00"
+          }
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "bdktenant",
+      "integration_id": "1"
+    },
+    "integration_type": "blackduck",
+    "data_type": "projects",
+    "page_number": 0
+  }
+}

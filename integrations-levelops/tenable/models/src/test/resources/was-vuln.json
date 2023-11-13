@@ -1,0 +1,37 @@
+{
+  "ordering": "asc",
+  "data": [
+    {
+      "uri": "https://testui1.levelops.io/",
+      "details": {
+        "output": "Access to URL 'https://testui1.levelops.io/' has been confirmed.\n\nTarget Information\n------------------------\n\nDomain Name : testui1.levelops.io\nIP Address  : 34.102.180.148\n\n\nResponse Information\n---------------------------\n\nStatus Code   : 200\nResponse Time : 0.052582s\nResponse Size : 2806 bytes\nContent-Type  : text/html\n",
+        "payload": null,
+        "proof": null
+      },
+      "attachments": [
+        {
+          "md5": "md5:27563f372cdccfe3fb9d61550916e71e",
+          "attachment_id": "68f1b194-d3ba-4b01-8bf7-4c9454fc4588",
+          "created_at": "2020-05-25T06:01:05.937Z",
+          "attachment_name": "HTTP Response",
+          "file_type": "text/plain"
+        },
+        {
+          "md5": "md5:fde4839ecd4ea30688769a419736c4b6",
+          "attachment_id": "aa7e34f3-ec2b-4aa2-9382-8fabec4a4650",
+          "created_at": "2020-05-25T06:01:05.850Z",
+          "attachment_name": "HTTP Request",
+          "file_type": "text/plain"
+        }
+      ],
+      "vuln_id": "396f950f-3e24-40eb-84a3-92357e148c7b",
+      "scan_id": "436a3f6f-d7a4-4448-9d15-f57471d59a41",
+      "plugin_id": 98136,
+      "created_at": "2020-05-25T06:00:35Z"
+    }
+  ],
+  "page_number": 0,
+  "page_size": 1,
+  "order_by": "created_at",
+  "total_size": 81
+}

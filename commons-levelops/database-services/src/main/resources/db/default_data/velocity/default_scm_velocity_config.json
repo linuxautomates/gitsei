@@ -1,0 +1,175 @@
+{
+  "name": "Default SCM Lead Time",
+  "default_config": true,
+  "config":{
+    "name": "Default SCM Lead Time",
+    "scm_config": {
+      "defect": {
+        "tags": {
+          "$begins": [
+            "bugfix",
+            "fix",
+            "bug"
+          ]
+        },
+        "labels": {
+          "$begins": [
+            "bugfix",
+            "fix",
+            "bug"
+          ]
+        },
+        "source_branch": {
+          "$begins": [
+            "bugfix",
+            "fix",
+            "bug"
+          ]
+        },
+        "target_branch": {
+          "$begins": [
+            "bugfix",
+            "fix",
+            "bug"
+          ]
+        }
+      },
+      "hotfix": {
+        "tags": {
+          "$begins": [
+            "hotfix",
+            "hf"
+          ]
+        },
+        "labels": {
+          "$begins": [
+            "hotfix",
+            "hf"
+          ]
+        },
+        "source_branch": {
+          "$begins": [
+            "hotfix",
+            "hf"
+          ]
+        },
+        "target_branch": {
+          "$begins": [
+            "hotfix",
+            "hf"
+          ]
+        }
+      },
+      "release": {
+        "tags": {
+          "$begins": [
+            "release"
+          ]
+        },
+        "labels": {
+          "$begins": [
+            "release"
+          ]
+        },
+        "source_branch": {
+          "$begins": [
+            "release"
+          ]
+        },
+        "target_branch": {
+          "$begins": [
+            "release"
+          ]
+        }
+      },
+      "deployment": {
+        "tags": {
+          "$begins": [
+            "deploy"
+          ]
+        },
+        "labels": {
+          "$begins": [
+            "deploy"
+          ]
+        },
+        "source_branch": {
+          "$begins": [
+            "deploy"
+          ]
+        },
+        "target_branch": {
+          "$begins": [
+            "deploy"
+          ]
+        }
+      }
+    },
+    "description": "Lead Time from SCM",
+    "fixed_stages": [
+      {
+        "name": "PR Creation Time",
+        "event": {
+          "type": "SCM_PR_CREATED",
+          "any_label_added": false
+        },
+        "order": 1,
+        "lower_limit_unit": "DAYS",
+        "upper_limit_unit": "DAYS",
+        "lower_limit_value": 2,
+        "upper_limit_value": 4
+      },
+      {
+        "name": "Time to First Comment",
+        "event": {
+          "type": "SCM_PR_REVIEW_STARTED",
+          "any_label_added": false
+        },
+        "order": 2,
+        "lower_limit_unit": "DAYS",
+        "upper_limit_unit": "DAYS",
+        "lower_limit_value": 2,
+        "upper_limit_value": 4
+      },
+      {
+        "name": "Approval Time",
+        "event": {
+          "type": "SCM_PR_APPROVED",
+          "params": {
+            "last_approval": [
+              "true"
+            ]
+          },
+          "any_label_added": false
+        },
+        "order": 3,
+        "lower_limit_unit": "DAYS",
+        "upper_limit_unit": "DAYS",
+        "lower_limit_value": 2,
+        "upper_limit_value": 4
+      },
+      {
+        "name": "Merge Time",
+        "event": {
+          "type": "SCM_PR_MERGED",
+          "params": {
+            "target_branches_regex": [
+              ".*release.*"
+            ]
+          },
+          "any_label_added": false
+        },
+        "order": 4,
+        "lower_limit_unit": "DAYS",
+        "upper_limit_unit": "DAYS",
+        "lower_limit_value": 2,
+        "upper_limit_value": 4
+      }
+    ],
+    "default_config": true,
+    "issue_management_integrations": [
+      "jira"
+    ],
+    "starting_event_is_commit_created": true
+  }
+}

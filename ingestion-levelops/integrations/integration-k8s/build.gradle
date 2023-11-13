@@ -1,0 +1,55 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-commons')
+    api levelopsCommonsLib('database-commons')
+
+    implementation (group: 'io.fabric8', name: 'kubernetes-client', version: '6.3.1') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.3'  // to fix version from kubernetes-client
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0' // required by kubernetes-client
+
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.14.1'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'
+
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    testImplementation libraries.lombok
+
+    implementation libraries.jackson_core
+    implementation libraries.guava
+    implementation libraries.apache_commons
+    implementation libraries.apache_collections
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+
+
+}
+test {
+    exclude '**/*IntegrationTest*'
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

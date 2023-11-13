@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/internal/v1/tenants/pepsi/integrations/list"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "count": 0,
+            "records": [
+            ]
+        }
+    }
+}

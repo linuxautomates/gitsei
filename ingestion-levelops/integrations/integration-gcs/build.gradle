@@ -1,0 +1,32 @@
+
+dependencies {
+    implementation levelopsCommonsLib("ingestion-commons")
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation levelopsCommonsLib('integration-gcs')
+    implementation levelopsCommonsLib('ingestion-clients')
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

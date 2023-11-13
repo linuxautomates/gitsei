@@ -1,0 +1,97 @@
+apply plugin: 'java-library'
+
+dependencies {
+    annotationProcessor libraries.lombok
+    compileOnly libraries.lombok
+
+    api levelopsCommonsLib('utils')
+    api levelopsCommonsLib('inventory-service')
+
+    compile levelopsCommonsLib('ingestion-service')
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.apache_http
+    compile libraries.jackson_core
+
+    testCompile libraries.jackson_core
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile levelopsCommonsLib("utils")
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'build/generated/sources/wsdl/java']
+        }
+    }
+}
+
+configurations { jaxws }
+
+dependencies {
+    jaxws libraries.jaxws
+    compile libraries.jaxws
+    compile libraries.jaxws_ri
+}
+
+task 'wsimport-coverity' {
+    group = BasePlugin.BUILD_GROUP
+
+    def sourcedestdir = file("$projectDir/build/generated/sources/wsdl/java")
+    def classesDir = file("${projectDir}/build/classes")
+    def configurationFile = file("${projectDir}/src/main/resources/configurationservice.wsdl")
+    def defectFile = file("${projectDir}/src/main/resources/defectservice.wsdl")
+
+    doLast {
+        classesDir.mkdirs()
+        sourcedestdir.mkdirs()
+        ant {
+            taskdef(name: 'wsimport',
+                    classname: 'com.sun.tools.ws.ant.WsImport',
+                    classpath: configurations.jaxws.asPath)
+            [
+                    configurationFile,
+                    defectFile
+            ].each { wsdlfile ->
+                wsimport(
+                        keep: "true",
+                        Xnocompile: "true",
+                        sourcedestdir: sourcedestdir,
+                        destdir: classesDir,
+                        wsdl: wsdlfile,
+                        package: "com.coverity.ws.v9",
+                        extension: "true",
+                        verbose: "true",
+                        quiet: "false",
+                ) {
+                    "xjcarg"(value: "-XautoNameResolution")
+                }
+            }
+        }
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+            excludes = ['com.coverity.ws.v9']
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+            excludes = ['com.coverity.ws.v9']
+        }
+    }
+}
+
+// to run coverage verification during the build (and fail when appropriate)
+compileJava.dependsOn 'wsimport-coverity'
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

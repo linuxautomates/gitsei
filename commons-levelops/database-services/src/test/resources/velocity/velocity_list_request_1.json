@@ -1,0 +1,40 @@
+{
+  "filter": {
+    "calculation": "ticket_velocity",
+    "velocity_config_id": "f21ca4e0-5b1a-4485-8feb-41b1110b32cd",
+    "jira_statuses": [
+      "SELECTED FOR DEVELOPMENT"
+    ],
+    "cicd_creator": [
+      "Srinath Chandrashekhar"
+    ],
+    "jira_custom_fields": {
+      "customfield_10030": [
+        "1.0"
+      ]
+    },
+    "jira_issue_resolved_at": {
+      "$gt": "1612137600",
+      "$lt": "1621593257"
+    },
+    "cicd_job_run_end_time": {
+      "$lt": "1621593116",
+      "$gt": "1619001116"
+    },
+    "pr_merged_at": {
+      "$lt": "1621593119",
+      "$gt": "1619001119"
+    },
+    "product_id": "299",
+    "integration_ids": [
+      "382",
+      "499",
+      "531",
+      "674",
+      "727",
+      "802",
+      "806"
+    ]
+  },
+  "across": "velocity"
+}

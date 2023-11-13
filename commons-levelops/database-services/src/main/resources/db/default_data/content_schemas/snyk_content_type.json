@@ -1,0 +1,151 @@
+{
+    "content_type": "integration/snyk/vulnerability",
+    "fields": {
+        "id": {
+            "key": "id",
+            "value_type": "string",
+            "content_type": "id:integration/snyk/vulnerability"
+        },
+        "title": {
+            "key": "title",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "url": {
+            "key": "url",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "type": {
+            "key": "type",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "description": {
+            "key": "description",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "package_name": {
+            "key": "package_name",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "version": {
+            "key": "version",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "severity": {
+            "key": "severity",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "language": {
+            "key": "language",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "is_upgradable": {
+            "key": "is_upgradable",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "is_patchable": {
+            "key": "is_patchable",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "is_pinable": {
+            "key": "is_pinable",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "is_ignored": {
+            "key": "is_ignored",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "ignored": {
+            "key": "ignored",
+            "value_type": "json_array",
+            "content_type": "integration/snyk/vulnerability.ignored",
+            "fields": {
+                "path": {
+                    "key": "path",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "reason": {
+                    "key": "reason",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "source": {
+                    "key": "source",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "created": {
+                    "key": "created",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "expires": {
+                    "key": "expires",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "reason_type": {
+                    "key": "reason_type",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "ignored_by": {
+                    "key": "ignored_by",
+                    "value_type": "json_blob",
+                    "content_type": "integration/snyk/vulnerability.ignored.ignored_by",
+                    "fields": {
+                        "id": {
+                            "key": "id",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "name": {
+                            "key": "name",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "email": {
+                            "key": "email",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "identifiers": {
+            "key": "identifiers",
+            "value_type": "json_blob",
+            "content_type": "integration/snyk/vulnerability.identifiers",
+            "fields": {
+                "cve": {
+                    "key": "cve",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "cwe": {
+                    "key": "cwe",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "alternative": {
+                    "key": "alternative",
+                    "value_type": "string",
+                    "content_type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,385 @@
+{
+  "id": 3,
+  "version": 0,
+  "title": "style.css edited online with Bitbucket",
+  "description": "this is test description.",
+  "state": "OPEN",
+  "open": true,
+  "closed": false,
+  "createdDate": 1622216383593,
+  "updatedDate": 1622216383593,
+  "fromRef": {
+    "id": "refs/heads/test",
+    "displayId": "test",
+    "latestCommit": "2ad66cf2d9a12dfcbe8094df39cd01b6492ab1f8",
+    "repository": {
+      "slug": "intern-mukesh",
+      "id": 2,
+      "name": "intern-mukesh",
+      "hierarchyId": "c457c199a0284204d3fb",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "CGNTEST",
+        "id": 1,
+        "name": "cgn-test",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/projects/CGNTEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@35.223.32.220:7999/cgntest/intern-mukesh.git",
+            "name": "ssh"
+          },
+          {
+            "href": "http://35.223.32.220:7990/scm/cgntest/intern-mukesh.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "http://35.223.32.220:7990/projects/CGNTEST/repos/intern-mukesh/browse"
+          }
+        ]
+      }
+    }
+  },
+  "toRef": {
+    "id": "refs/heads/master",
+    "displayId": "master",
+    "latestCommit": "5e9684f59d0db5ad5f11090ca6ba95c886d54fa9",
+    "repository": {
+      "slug": "intern-mukesh",
+      "id": 2,
+      "name": "intern-mukesh",
+      "hierarchyId": "c457c199a0284204d3fb",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "CGNTEST",
+        "id": 1,
+        "name": "cgn-test",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/projects/CGNTEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@35.223.32.220:7999/cgntest/intern-mukesh.git",
+            "name": "ssh"
+          },
+          {
+            "href": "http://35.223.32.220:7990/scm/cgntest/intern-mukesh.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "http://35.223.32.220:7990/projects/CGNTEST/repos/intern-mukesh/browse"
+          }
+        ]
+      }
+    }
+  },
+  "locked": false,
+  "author": {
+    "user": {
+      "name": "bbuser",
+      "emailAddress": "srinath.chandrashekhar@levelops.io",
+      "id": 3,
+      "displayName": "Srinath Chandrashekhar",
+      "active": true,
+      "slug": "bbuser",
+      "type": "NORMAL",
+      "links": {
+        "self": [
+          {
+            "href": "http://35.223.32.220:7990/users/bbuser"
+          }
+        ]
+      }
+    },
+    "role": "AUTHOR",
+    "approved": false,
+    "status": "UNAPPROVED"
+  },
+  "reviewers": [
+    {
+      "user": {
+        "name": "srinath",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 2,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "srinath",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/srinath"
+            }
+          ]
+        }
+      },
+      "lastReviewedCommit": "2ad66cf2d9a12dfcbe8094df39cd01b6492ab1f8",
+      "role": "REVIEWER",
+      "approved": false,
+      "status": "NEEDS_WORK"
+    }
+  ],
+  "participants": [
+    {
+      "user": {
+        "name": "bbuser",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 3,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "bbuser",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/bbuser"
+            }
+          ]
+        }
+      },
+      "role": "PARTICIPANT",
+      "approved": false,
+      "status": "UNAPPROVED"
+    },
+    {
+      "user": {
+        "name": "aauser",
+        "emailAddress": "chandrashekhar@levelops.io",
+        "id": 4,
+        "displayName": "Chandrashekhar",
+        "active": true,
+        "slug": "aauser",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/aauser"
+            }
+          ]
+        }
+      },
+      "role": "PARTICIPANT",
+      "approved": false,
+      "status": "UNAPPROVED"
+    },
+    {
+      "user": {
+        "name": "ccuser",
+        "emailAddress": "shekhar@levelops.io",
+        "id": 5,
+        "displayName": "Shekhar",
+        "active": true,
+        "slug": "ccuser",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/ccuser"
+            }
+          ]
+        }
+      },
+      "role": "AUTHOR",
+      "approved": false,
+      "status": "UNAPPROVED"
+    }
+  ],
+  "properties": {
+    "mergeResult": {
+      "outcome": "CLEAN",
+      "current": true
+    },
+    "resolvedTaskCount": 0,
+    "openTaskCount": 0
+  },
+  "links": {
+    "self": [
+      {
+        "href": "http://35.223.32.220:7990/projects/CGNTEST/repos/intern-mukesh/pull-requests/3"
+      }
+    ]
+  },
+  "activities": [
+    {
+      "id": 42,
+      "createdDate": 1622217458716,
+      "user": {
+        "name": "srinath",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 2,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "srinath",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/srinath"
+            }
+          ]
+        }
+      },
+      "action": "REVIEWED"
+    },
+    {
+      "id": 41,
+      "createdDate": 1622217455645,
+      "user": {
+        "name": "srinath",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 2,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "srinath",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/srinath"
+            }
+          ]
+        }
+      },
+      "action": "UNAPPROVED"
+    },
+    {
+      "id": 40,
+      "createdDate": 1622216571009,
+      "user": {
+        "name": "srinath",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 2,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "srinath",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/srinath"
+            }
+          ]
+        }
+      },
+      "action": "APPROVED"
+    },
+    {
+      "id": 39,
+      "createdDate": 1622216383901,
+      "user": {
+        "name": "bbuser",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 3,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "bbuser",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "http://35.223.32.220:7990/users/bbuser"
+            }
+          ]
+        }
+      },
+      "action": "OPENED"
+    }
+  ],
+  "commits": [
+    {
+      "id": "2ad66cf2d9a12dfcbe8094df39cd01b6492ab1f8",
+      "displayId": "2ad66cf2d9a",
+      "author": {
+        "name": "bbuser",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 3,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "bbuser",
+        "type": "NORMAL"
+      },
+      "authorTimestamp": 1622130343000,
+      "committer": {
+        "name": "bbuser",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 3,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "bbuser",
+        "type": "NORMAL"
+      },
+      "committerTimestamp": 1622130343000,
+      "message": "Pull request #2: style.css edited online with Bitbucket\n\nMerge in CGNTEST/intern-mukesh from srinath/stylecss-1622114303933 to test\n\n* commit 'ba32baa44b601018f1ecb0b78c956827e97849aa':\n  style.css edited online with Bitbucket",
+      "parents": [
+        {
+          "id": "5e9684f59d0db5ad5f11090ca6ba95c886d54fa9",
+          "displayId": "5e9684f59d0"
+        },
+        {
+          "id": "ba32baa44b601018f1ecb0b78c956827e97849aa",
+          "displayId": "ba32baa44b6"
+        }
+      ]
+    },
+    {
+      "id": "ba32baa44b601018f1ecb0b78c956827e97849aa",
+      "displayId": "ba32baa44b6",
+      "author": {
+        "name": "bbuser",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 3,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "bbuser",
+        "type": "NORMAL"
+      },
+      "authorTimestamp": 1622114316000,
+      "committer": {
+        "name": "bbuser",
+        "emailAddress": "srinath.chandrashekhar@levelops.io",
+        "id": 3,
+        "displayName": "Srinath Chandrashekhar",
+        "active": true,
+        "slug": "bbuser",
+        "type": "NORMAL"
+      },
+      "committerTimestamp": 1622114316000,
+      "message": "style.css edited online with Bitbucket",
+      "parents": [
+        {
+          "id": "5e9684f59d0db5ad5f11090ca6ba95c886d54fa9",
+          "displayId": "5e9684f59d0"
+        }
+      ]
+    }
+  ]
+}

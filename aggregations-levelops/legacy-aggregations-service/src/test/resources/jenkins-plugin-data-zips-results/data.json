@@ -1,0 +1,59 @@
+{
+    "id": null,
+    "plugin_name": "Jenkins Config",
+    "class": "monitoring",
+    "tool": "jenkins_config",
+    "version": "1",
+    "tags": [],
+    "product_ids": [
+        "71"
+    ],
+    "successful": true,
+    "metadata": {},
+    "labels": null,
+    "results": {
+        "jenkins_config": {
+            "config_changes": [
+                {
+                    "job_name": "Pipe2",
+                    "job_full_name": "Pipe2",
+                    "config_change_details": [
+                        {
+                            "change_time": 1590706610,
+                            "operation": "changed",
+                            "user_id": "testread",
+                            "user_full_name": "test Read"
+                        }
+                    ]
+                },
+                {
+                    "job_name": "Pipe3",
+                    "job_full_name": "Pipe3",
+                    "config_change_details": [
+                        {
+                            "change_time": 1590706623,
+                            "operation": "changed",
+                            "user_id": "testread",
+                            "user_full_name": "test Read"
+                        }
+                    ]
+                },
+                {
+                    "job_name": "Pipe1.1",
+                    "job_full_name": "Pipe1.1",
+                    "config_change_details": [
+                        {
+                            "change_time": 1590706595,
+                            "operation": "changed",
+                            "user_id": "testread",
+                            "user_full_name": "test Read"
+                        }
+                    ]
+                }
+            ],
+            "job_runs": []
+        }
+    },
+    "created_at": null,
+    "created_at_epoch": null
+}

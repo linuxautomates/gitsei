@@ -1,0 +1,432 @@
+{
+  "records": [
+    {
+      "self": "https://levelops.atlassian.net/rest/api/3/project/10001",
+      "id": "10001",
+      "name": "levelops",
+      "key": "LEV",
+      "description": "",
+      "lead": {
+        "self": "https://levelops.atlassian.net/rest/api/3/user?accountId=5d6049c45a68ef0ca625940b",
+        "account_id": "5d6049c45a68ef0ca625940b",
+        "name": "nishant",
+        "key": null,
+        "display_name": "Nishant Doshi",
+        "active": true
+      },
+      "components": [
+        {
+          "id": "10002",
+          "name": "ingestion",
+          "description": "Ingestion Framework"
+        },
+        {
+          "id": "10003",
+          "name": "internalapi-levelops",
+          "description": "Internal api work"
+        },
+        {
+          "id": "10001",
+          "name": "serverapi-levelops",
+          "description": "External Facing API"
+        },
+        {
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "issue_types": [
+        {
+          "id": 10002,
+          "name": "Task",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10003,
+          "name": "Sub-task",
+          "description": null,
+          "sub_task": true
+        },
+        {
+          "id": 10006,
+          "name": "Story",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10005,
+          "name": "Bug",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10000,
+          "name": "Epic",
+          "description": null,
+          "sub_task": false
+        }
+      ],
+      "assignee_type": "UNASSIGNED",
+      "versions": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/3/version/10001",
+          "id": "10001",
+          "description": null,
+          "name": "V1",
+          "archived": false,
+          "released": true,
+          "startDate": "2019-09-17",
+          "releaseDate": "2019-09-17",
+          "userStartDate": "16/Sep/19",
+          "userReleaseDate": "16/Sep/19",
+          "projectId": "10001"
+        }
+      ],
+      "project_roles": [
+        "atlassian-addons-project-access",
+        "Service Desk Team",
+        "Service Desk Customers",
+        "Administrators"
+      ],
+      "projectKeys": [
+        "LEV"
+      ],
+      "priority_scheme": {
+        "name": "default",
+        "priorities": [
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+            "statusColor": "#ffffff",
+            "description": "",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+            "name": "Now",
+            "id": "10000",
+            "priority_order": 1
+          },
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+            "statusColor": "#d04437",
+            "description": "This problem will block progress.",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+            "name": "Highest",
+            "id": "1",
+            "priority_order": 2
+          },
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+            "statusColor": "#f15C75",
+            "description": "Serious problem that could block progress.",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+            "name": "High",
+            "id": "2",
+            "priority_order": 3
+          },
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+            "statusColor": "#ff33ff",
+            "description": "",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+            "name": "Between Medium and High",
+            "id": "10001",
+            "priority_order": 4
+          },
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+            "statusColor": "#f79232",
+            "description": "Has the potential to affect progress.",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3",
+            "priority_order": 5
+          },
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+            "statusColor": "#707070",
+            "description": "Minor problem or easily worked around.",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+            "name": "Low",
+            "id": "4",
+            "priority_order": 6
+          },
+          {
+            "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+            "statusColor": "#999999",
+            "description": "Trivial problem with little or no impact on progress.",
+            "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+            "name": "Lowest",
+            "id": "5",
+            "priority_order": 7
+          }
+        ]
+      },
+      "default_priorities": [
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+          "statusColor": "#ffffff",
+          "description": "",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+          "name": "Now",
+          "id": "10000",
+          "priority_order": 1
+        },
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+          "statusColor": "#d04437",
+          "description": "This problem will block progress.",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+          "name": "Highest",
+          "id": "1",
+          "priority_order": 2
+        },
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+          "statusColor": "#f15C75",
+          "description": "Serious problem that could block progress.",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+          "name": "High",
+          "id": "2",
+          "priority_order": 3
+        },
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+          "statusColor": "#ff33ff",
+          "description": "",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+          "name": "Between Medium and High",
+          "id": "10001",
+          "priority_order": 4
+        },
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+          "statusColor": "#f79232",
+          "description": "Has the potential to affect progress.",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3",
+          "priority_order": 5
+        },
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+          "statusColor": "#707070",
+          "description": "Minor problem or easily worked around.",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Low",
+          "id": "4",
+          "priority_order": 6
+        },
+        {
+          "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+          "statusColor": "#999999",
+          "description": "Trivial problem with little or no impact on progress.",
+          "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+          "name": "Lowest",
+          "id": "5",
+          "priority_order": 7
+        }
+      ],
+      "projectTypeKey": "software",
+      "simplified": false,
+      "style": "classic",
+      "isPrivate": false
+    },
+    {
+      "self": "https://levelops.atlassian.net/rest/api/3/project/10002",
+      "id": "10002",
+      "name": "levelops-lfe",
+      "key": "LFE",
+      "description": "",
+      "lead": {
+        "self": "https://levelops.atlassian.net/rest/api/3/user?accountId=5d6049c45a68ef0ca625940b",
+        "account_id": "5d6049c45a68ef0ca625940b",
+        "name": "nishant",
+        "key": null,
+        "display_name": "Nishant Doshi",
+        "active": true
+      },
+      "components": [
+        {
+          "id": "10002",
+          "name": "ingestion",
+          "description": "Ingestion Framework"
+        },
+        {
+          "id": "10003",
+          "name": "internalapi-levelops",
+          "description": "Internal api work"
+        },
+        {
+          "id": "10001",
+          "name": "serverapi-levelops",
+          "description": "External Facing API"
+        },
+        {
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "issue_types": [
+        {
+          "id": 10002,
+          "name": "Task",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10003,
+          "name": "Sub-task",
+          "description": null,
+          "sub_task": true
+        },
+        {
+          "id": 10006,
+          "name": "Story",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10005,
+          "name": "Bug",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10000,
+          "name": "Epic",
+          "description": null,
+          "sub_task": false
+        }
+      ],
+      "assignee_type": "UNASSIGNED",
+      "versions": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/3/version/10001",
+          "id": "10001",
+          "description": null,
+          "name": "V1",
+          "archived": false,
+          "released": true,
+          "startDate": "2019-09-17",
+          "releaseDate": "2019-09-17",
+          "userStartDate": "16/Sep/19",
+          "userReleaseDate": "16/Sep/19",
+          "projectId": "10001"
+        }
+      ],
+      "project_roles": [
+        "atlassian-addons-project-access",
+        "Service Desk Team",
+        "Service Desk Customers",
+        "Administrators"
+      ],
+      "projectKeys": [
+        "LFE"
+      ]
+    },
+    {
+      "self": "https://levelops.atlassian.net/rest/api/3/project/10003",
+      "id": "10003",
+      "name": "levelops-lte",
+      "key": "LTE",
+      "description": "",
+      "lead": {
+        "self": "https://levelops.atlassian.net/rest/api/3/user?accountId=5d6049c45a68ef0ca625940b",
+        "account_id": "5d6049c45a68ef0ca625940b",
+        "name": "nishant",
+        "key": null,
+        "display_name": "Nishant Doshi",
+        "active": true
+      },
+      "components": [
+        {
+          "id": "10002",
+          "name": "ingestion",
+          "description": "Ingestion Framework"
+        },
+        {
+          "id": "10003",
+          "name": "internalapi-levelops",
+          "description": "Internal api work"
+        },
+        {
+          "id": "10001",
+          "name": "serverapi-levelops",
+          "description": "External Facing API"
+        },
+        {
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "issue_types": [
+        {
+          "id": 10002,
+          "name": "Task",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10003,
+          "name": "Sub-task",
+          "description": null,
+          "sub_task": true
+        },
+        {
+          "id": 10006,
+          "name": "Story",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10005,
+          "name": "Bug",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10000,
+          "name": "Epic",
+          "description": null,
+          "sub_task": false
+        }
+      ],
+      "assignee_type": "UNASSIGNED",
+      "versions": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/3/version/10003",
+          "id": "10003",
+          "description": null,
+          "name": "V1",
+          "archived": false,
+          "released": true,
+          "startDate": "2019-09-17",
+          "releaseDate": "2019-09-17",
+          "userStartDate": "16/Sep/19",
+          "userReleaseDate": "16/Sep/19",
+          "projectId": "10001"
+        }
+      ],
+      "project_roles": [
+        "atlassian-addons-project-access",
+        "Service Desk Team",
+        "Service Desk Customers",
+        "Administrators"
+      ],
+      "projectKeys": [
+        "LTE"
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "7"
+    },
+    "integration_type": "jira",
+    "data_type": "projects"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ea6c2531-e18d-42f3-8e43-d036bc385cf1",
+  "controller_name": "GithubController",
+  "createdAt": 1568268769508,
+  "query": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "1"
+    }
+  },
+  "callbackUrl": "http://localhost:9999/callback",
+  "done": true,
+  "result": {
+    "_metadata": {
+      "data_type": "repositories",
+      "integration_key": {
+        "integration_id": "5",
+        "tenant_id": "foo"
+      },
+      "integration_type": "github"
+    },
+    "count": 1,
+    "destination": "gcs",
+    "prefix_uri": "repositories/",
+    "records": [
+      {
+        "uri": "gs://ingestion-levelops/data/tenant-coke/integration-github/2019/09/30/job-6814b699-75f9-4187-9a44-fbbc0845f5be/repositories/repositories.0.json",
+        "html_uri": "https://console.cloud.google.com/storage/browser/_details/ingestion-levelops/data/tenant-coke/integration-github/2019/09/30/job-6814b699-75f9-4187-9a44-fbbc0845f5be/repositories/repositories.0.json",
+        "blob_id": {
+          "bucket": "ingestion-levelops",
+          "name": "data/tenant-coke/integration-github/2019/09/30/job-6814b699-75f9-4187-9a44-fbbc0845f5be/repositories/repositories.0.json",
+          "generation": 1569877718091006
+        }
+      }
+    ]
+  },
+  "exception": null
+}

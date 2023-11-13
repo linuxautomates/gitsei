@@ -1,0 +1,928 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10064.properties",
+  "id": "14643",
+  "self": "https://levelops.atlassian.net/rest/api/2/issue/14643",
+  "key": "LEV-2823",
+  "changelog": {
+    "startAt": 0,
+    "maxResults": 13,
+    "total": 13,
+    "histories": [
+      {
+        "id": "66349",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-14T00:12:12.521-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10046",
+            "fromString": "In Staging",
+            "to": "3",
+            "toString": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "66348",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-13T23:32:24.964-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "3",
+            "fromString": "In Progress",
+            "to": "10046",
+            "toString": "In Staging"
+          }
+        ]
+      },
+      {
+        "id": "66312",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-13T18:28:20.497-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10046",
+            "fromString": "In Staging",
+            "to": "3",
+            "toString": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "66285",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-13T16:21:41.753-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "3",
+            "fromString": "In Progress",
+            "to": "10046",
+            "toString": "In Staging"
+          }
+        ]
+      },
+      {
+        "id": "66050",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-13T00:11:32.070-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10000",
+            "fromString": "Backlog",
+            "to": "3",
+            "toString": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "65649",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-09T21:42:54.412-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "3",
+            "fromString": "In Progress",
+            "to": "10000",
+            "toString": "Backlog"
+          }
+        ]
+      },
+      {
+        "id": "65412",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:48:04.459-0700",
+        "items": [
+          {
+            "field": "assignee",
+            "fieldtype": "jira",
+            "fieldId": "assignee",
+            "from": null,
+            "fromString": null,
+            "to": "5d6049c4c812c40d27c01ea9",
+            "toString": "Maxime Bellier",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": "5d6049c4c812c40d27c01ea9"
+          }
+        ]
+      },
+      {
+        "id": "65411",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:47:59.809-0700",
+        "items": [
+          {
+            "field": "Story Points",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10030",
+            "from": null,
+            "fromString": null,
+            "to": null,
+            "toString": "5"
+          }
+        ]
+      },
+      {
+        "id": "65410",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:47:49.977-0700",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10000",
+            "fromString": "Backlog",
+            "to": "3",
+            "toString": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "65391",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5fa97a01d74f69007560babf",
+          "accountId": "5fa97a01d74f69007560babf",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "24x24": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "16x16": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "32x32": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png"
+          },
+          "displayName": "Chandra Yalangi",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:22:14.407-0700",
+        "items": [
+          {
+            "field": "Rank",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10019",
+            "from": "",
+            "fromString": "",
+            "to": "",
+            "toString": "Ranked higher"
+          }
+        ]
+      },
+      {
+        "id": "65388",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5fa97a01d74f69007560babf",
+          "accountId": "5fa97a01d74f69007560babf",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "24x24": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "16x16": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "32x32": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png"
+          },
+          "displayName": "Chandra Yalangi",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:20:32.739-0700",
+        "items": [
+          {
+            "field": "Rank",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10019",
+            "from": "",
+            "fromString": "",
+            "to": "",
+            "toString": "Ranked higher"
+          }
+        ]
+      },
+      {
+        "id": "65387",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5fa97a01d74f69007560babf",
+          "accountId": "5fa97a01d74f69007560babf",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "24x24": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "16x16": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+            "32x32": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png"
+          },
+          "displayName": "Chandra Yalangi",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:20:32.535-0700",
+        "items": [
+          {
+            "field": "Sprint",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10020",
+            "from": "",
+            "fromString": "",
+            "to": "72",
+            "toString": "LO20210415"
+          }
+        ]
+      },
+      {
+        "id": "65371",
+        "author": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+          "accountId": "5d6049c4c812c40d27c01ea9",
+          "emailAddress": "maxime@levelops.io",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+            "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+          },
+          "displayName": "Maxime Bellier",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2021-04-08T10:16:44.361-0700",
+        "items": [
+          {
+            "field": "summary",
+            "fieldtype": "jira",
+            "fieldId": "summary",
+            "from": null,
+            "fromString": "Jira Agg. - Add support for sprint metrics",
+            "to": null,
+            "toString": "Parse Sprint metrics when aggregating Jira data"
+          }
+        ]
+      }
+    ]
+  },
+  "fields": {
+    "statuscategorychangedate": "2021-04-13T00:11:32.049-0700",
+    "fixVersions": [],
+    "resolution": null,
+    "lastViewed": "2021-04-14T10:17:54.622-0700",
+    "customfield_10060": null,
+    "customfield_10061": null,
+    "customfield_10062": null,
+    "customfield_10063": null,
+    "customfield_10064": null,
+    "customfield_10065": null,
+    "customfield_10066": null,
+    "priority": {
+      "self": "https://levelops.atlassian.net/rest/api/2/priority/3",
+      "iconUrl": "https://levelops.atlassian.net/images/icons/priorities/medium.svg",
+      "name": "Medium",
+      "id": "3"
+    },
+    "labels": [],
+    "timeestimate": null,
+    "aggregatetimeoriginalestimate": null,
+    "versions": [],
+    "issuelinks": [],
+    "assignee": {
+      "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+      "accountId": "5d6049c4c812c40d27c01ea9",
+      "emailAddress": "maxime@levelops.io",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "status": {
+      "self": "https://levelops.atlassian.net/rest/api/2/status/3",
+      "description": "This issue is being actively worked on at the moment by the assignee.",
+      "iconUrl": "https://levelops.atlassian.net/images/icons/statuses/inprogress.png",
+      "name": "In Progress",
+      "id": "3",
+      "statusCategory": {
+        "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "components": [],
+    "customfield_10050": null,
+    "customfield_10051": null,
+    "customfield_10053": null,
+    "customfield_10054": null,
+    "customfield_10055": null,
+    "customfield_10056": null,
+    "customfield_10057": null,
+    "customfield_10058": null,
+    "customfield_10059": null,
+    "customfield_10049": null,
+    "aggregatetimeestimate": null,
+    "creator": {
+      "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+      "accountId": "5d6049c4c812c40d27c01ea9",
+      "emailAddress": "maxime@levelops.io",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "subtasks": [],
+    "customfield_10040": null,
+    "customfield_10043": null,
+    "reporter": {
+      "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+      "accountId": "5d6049c4c812c40d27c01ea9",
+      "emailAddress": "maxime@levelops.io",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+        "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "customfield_10044": null,
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10045": null,
+    "customfield_10046": null,
+    "customfield_10047": null,
+    "customfield_10038": null,
+    "customfield_10039": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-2823/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10002",
+      "id": "10002",
+      "description": "A task that needs to be done.",
+      "iconUrl": "https://levelops.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+      "name": "Task",
+      "subtask": false,
+      "avatarId": 10318
+    },
+    "timespent": null,
+    "customfield_10030": 5,
+    "project": {
+      "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+      "id": "10001",
+      "key": "LEV",
+      "name": "levelops",
+      "projectTypeKey": "software",
+      "simplified": false,
+      "avatarUrls": {
+        "48x48": "https://levelops.atlassian.net/secure/projectavatar?pid=10001&avatarId=10551",
+        "24x24": "https://levelops.atlassian.net/secure/projectavatar?size=small&s=small&pid=10001&avatarId=10551",
+        "16x16": "https://levelops.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10001&avatarId=10551",
+        "32x32": "https://levelops.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10001&avatarId=10551"
+      }
+    },
+    "customfield_10031": null,
+    "customfield_10032": null,
+    "customfield_10033": null,
+    "aggregatetimespent": null,
+    "customfield_10034": null,
+    "customfield_10035": null,
+    "customfield_10036": null,
+    "customfield_10027": null,
+    "resolutiondate": null,
+    "workratio": -1,
+    "issuerestriction": {
+      "issuerestrictions": {},
+      "shouldDisplay": false
+    },
+    "watches": {
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-2823/watchers",
+      "watchCount": 2,
+      "isWatching": true
+    },
+    "created": "2021-04-08T10:16:10.488-0700",
+    "customfield_10020": [
+      {
+        "id": 72,
+        "name": "LO20210415",
+        "state": "future",
+        "boardId": 1,
+        "goal": ""
+      }
+    ],
+    "customfield_10021": null,
+    "customfield_10022": "2021-04-14T04:48:35.907-0700",
+    "customfield_10023": null,
+    "customfield_10024": [],
+    "customfield_10025": null,
+    "customfield_10026": null,
+    "customfield_10016": null,
+    "customfield_10017": null,
+    "customfield_10018": {
+      "hasEpicLinkFieldDependency": false,
+      "showField": false,
+      "nonEditableReason": {
+        "reason": "PLUGIN_LICENSE_ERROR",
+        "message": "The Parent Link is only available to Jira Premium users."
+      }
+    },
+    "customfield_10019": "0|i007lb:306d000000481h1hb",
+    "updated": "2021-04-14T11:01:31.985-0700",
+    "timeoriginalestimate": null,
+    "description": null,
+    "customfield_10010": null,
+    "customfield_10014": "LEV-2729",
+    "customfield_10015": null,
+    "timetracking": {},
+    "customfield_10005": null,
+    "customfield_10006": null,
+    "security": null,
+    "customfield_10007": null,
+    "customfield_10008": null,
+    "attachment": [],
+    "customfield_10009": null,
+    "summary": "Parse Sprint metrics when aggregating Jira data",
+    "customfield_10000": "{}",
+    "customfield_10001": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10004": null,
+    "environment": null,
+    "duedate": null,
+    "comment": {
+      "comments": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12907",
+          "id": "12907",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "[https://github.com/levelops/commons-levelops/pull/1531|https://github.com/levelops/commons-levelops/pull/1531|smart-link] \n[https://github.com/levelops/internal-api-levelops/pull/652|https://github.com/levelops/internal-api-levelops/pull/652|smart-link] ",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-13T14:01:03.836-0700",
+          "updated": "2021-04-13T14:33:30.968-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12908",
+          "id": "12908",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "[https://github.com/levelops/aggregations-levelops/pull/222|https://github.com/levelops/aggregations-levelops/pull/222|smart-link] ",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-13T16:11:05.268-0700",
+          "updated": "2021-04-13T16:11:05.268-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12909",
+          "id": "12909",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "[https://github.com/levelops/aggregations-levelops/pull/223|https://github.com/levelops/aggregations-levelops/pull/223|smart-link] ",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-13T16:19:58.070-0700",
+          "updated": "2021-04-13T16:19:58.070-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12912",
+          "id": "12912",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "[https://github.com/levelops/aggregations-levelops/pull/224|https://github.com/levelops/aggregations-levelops/pull/224|smart-link] ",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-13T17:17:02.034-0700",
+          "updated": "2021-04-13T17:17:02.034-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12919",
+          "id": "12919",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "[https://github.com/levelops/commons-levelops/pull/1534|https://github.com/levelops/commons-levelops/pull/1534|smart-link] \n[https://github.com/levelops/aggregations-levelops/pull/232|https://github.com/levelops/aggregations-levelops/pull/232|smart-link] ",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-13T22:28:30.675-0700",
+          "updated": "2021-04-13T23:07:28.660-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12922",
+          "id": "12922",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "Need to fix a few bugs:\n\n* status category is wrong because status names are not unique across projects\n → use status_id instead\n* we need to ignore subtasks (maybe epics?)\n* what to do with “issues completed outside of this sprint”?\njira shows them in a separate section → should we treat them as creep or as planned issues?\n\n(to verify with [~accountid:5fa97a01d74f69007560babf])",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-14T00:14:27.001-0700",
+          "updated": "2021-04-14T00:16:06.616-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12927",
+          "id": "12927",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5fa97a01d74f69007560babf",
+            "accountId": "5fa97a01d74f69007560babf",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png"
+            },
+            "displayName": "Chandra Yalangi",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "{quote}we need to ignore subtasks (maybe epics?){quote}\n\nLet’s ignore {{subtasks}} but not {{epics}}. This is to match Jira behavior on {{sprint reports}}\n\n{quote}what to do with “issues completed outside of this sprint”?{quote}\n\nLet’s ignore “issues completed outside of sprint”. In future, we will create a separate widget to track {{points completed outside of sprint}}.\n\n\n\nI used to the following sprint report for reference:\n\n[https://levelops.atlassian.net/secure/RapidBoard.jspa?rapidView=13&projectKey=AUTO&view=reporting&chart=sprintRetrospective&sprint=77|https://levelops.atlassian.net/secure/RapidBoard.jspa?rapidView=13&projectKey=AUTO&view=reporting&chart=sprintRetrospective&sprint=77]",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5fa97a01d74f69007560babf",
+            "accountId": "5fa97a01d74f69007560babf",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/fbbd9f0c0dc39e850f1b33e3a93056ec?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCY-3.png"
+            },
+            "displayName": "Chandra Yalangi",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-14T04:48:35.907-0700",
+          "updated": "2021-04-14T04:48:35.907-0700",
+          "jsdPublic": true
+        },
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment/12937",
+          "id": "12937",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "body": "[https://github.com/levelops/commons-levelops/pull/1540|https://github.com/levelops/commons-levelops/pull/1540|smart-link] \n[https://github.com/levelops/internal-api-levelops/pull/653|https://github.com/levelops/internal-api-levelops/pull/653|smart-link] ",
+          "updateAuthor": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png",
+              "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png"
+            },
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          "created": "2021-04-14T10:36:46.810-0700",
+          "updated": "2021-04-14T11:01:31.967-0700",
+          "jsdPublic": true
+        }
+      ],
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/14643/comment",
+      "maxResults": 8,
+      "total": 8,
+      "startAt": 0
+    }
+  }
+}

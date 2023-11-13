@@ -1,0 +1,347 @@
+{
+  "expand": "operations,versionedRepresentations,editmeta,customfield_10602.requestTypePractice,changelog,customfield_10956.properties,renderedFields",
+  "id": "545484",
+  "self": "https://harness.atlassian.net/rest/api/2/issue/545484",
+  "key": "SSCA-659",
+  "fields": {
+    "issuetype": {
+      "self": "https://harness.atlassian.net/rest/api/2/issuetype/10100",
+      "id": 10100,
+      "name": "Story",
+      "description": "Created by Jira Agile - do not edit or delete. Issue type for a user story.",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://harness.atlassian.net/rest/api/2/project/10343",
+      "id": "10343",
+      "key": "SSCA",
+      "name": "Software Supply Chain Assurance",
+      "projectTypeKey": "software",
+      "simplified": false
+    },
+    "fixVersions": [],
+    "resolution": null,
+    "resolutiondate": null,
+    "created": "2023-09-17T18:49:52.284+00:00",
+    "priority": {
+      "name": "P3",
+      "id": "4"
+    },
+    "labels": [
+      "Affects_delegate"
+    ],
+    "versions": [],
+    "issuelinks": [],
+    "assignee": {
+      "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+      "accountId": "61e445fc6b1ad900699280fb",
+      "accountType": "atlassian",
+      "name": null,
+      "displayName": "Arpit Jain",
+      "active": true,
+      "emailAddress": "arpit.jain@harness.io"
+    },
+    "updated": "2023-10-22T11:25:37.121+00:00",
+    "status": {
+      "self": "https://harness.atlassian.net/rest/api/2/status/10300",
+      "description": "This status means this issue is being reviewed carefully and communication with the stakeholders is advised before proceeding",
+      "name": "Under Review",
+      "id": "10300",
+      "statusCategory": {
+        "self": "https://harness.atlassian.net/rest/api/2/statuscategory/4",
+        "id": "4",
+        "key": "indeterminate",
+        "name": "In Progress",
+        "colorName": "yellow"
+      }
+    },
+    "components": [],
+    "description": null,
+    "summary": "Migrate Old Artifact Entities to be consistent with the new DB schema",
+    "creator": {
+      "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+      "accountId": "61e445fc6b1ad900699280fb",
+      "accountType": "atlassian",
+      "name": null,
+      "displayName": "Arpit Jain",
+      "active": true,
+      "emailAddress": "arpit.jain@harness.io"
+    },
+    "subtasks": [],
+    "reporter": {
+      "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+      "accountId": "61e445fc6b1ad900699280fb",
+      "accountType": "atlassian",
+      "name": null,
+      "displayName": "Arpit Jain",
+      "active": true,
+      "emailAddress": "arpit.jain@harness.io"
+    },
+    "duedate": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "votes": 0,
+      "hasVoted": false
+    },
+    "comment": {
+      "comments": []
+    },
+    "description_text": "Update existing entities in artifact collection to be consistent with the new DB schema.",
+    "description_length": 88,
+    "statuscategorychangedate": "2023-10-17T08:01:57.433-0700",
+    "parent": {
+      "id": "530383",
+      "key": "SSCA-530",
+      "self": "https://harness.atlassian.net/rest/api/2/issue/530383",
+      "fields": {
+        "summary": "Artifact View for SSCA module",
+        "status": {
+          "self": "https://harness.atlassian.net/rest/api/2/status/3",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "https://harness.atlassian.net/images/icons/statuses/inprogress.png",
+          "name": "In Progress",
+          "id": "3",
+          "statusCategory": {
+            "self": "https://harness.atlassian.net/rest/api/2/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://harness.atlassian.net/rest/api/2/priority/2",
+          "iconUrl": "https://harness.atlassian.net/secure/viewavatar?size=xsmall&avatarId=10634&avatarType=issuetype",
+          "name": "P1",
+          "id": "2"
+        },
+        "issuetype": {
+          "self": "https://harness.atlassian.net/rest/api/2/issuetype/10000",
+          "id": "10000",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "iconUrl": "https://harness.atlassian.net/images/icons/issuetypes/epic.svg",
+          "name": "Epic",
+          "subtask": false,
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "customfield_10751": {
+      "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10556",
+      "value": "No ",
+      "id": "10556"
+    },
+    "customfield_10730": "Customer Success, please add details.",
+    "timetracking": {},
+    "customfield_10863": "1|i19kvz:",
+    "customfield_10104": "0|i263gv:",
+    "customfield_10786": "816h",
+    "customfield_10006": "SSCA-530",
+    "customfield_10007": {
+      "hasEpicLinkFieldDependency": false,
+      "showField": false,
+      "nonEditableReason": {
+        "reason": "EPIC_LINK_SHOULD_BE_USED",
+        "message": "To set an epic as the parent, use the epic link instead"
+      }
+    },
+    "customfield_10603": [],
+    "customfield_10669": [
+      {
+        "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10514",
+        "value": "No",
+        "id": "10514"
+      }
+    ],
+    "attachment": [],
+    "workratio": -1,
+    "customfield_10929": "{panel:title=Public Release Notes Summary Template|bgColor=#ffffce|titleBGColor=#99CCCC}\r\nYou can now create/remove/update/delete <item>. This will help you to:\r\n\r\n* Use case 1\r\n* Use case 2\r\n* etc.\r\n\r\n(Optional) Users should <do this>  to ensure the <feature or component> works in their environment. \r\n[Tips on writing Release Note summaries|https://harness.atlassian.net/wiki/spaces/DOCS/pages/1689845830/Release+Notes+Summary+Do+s+and+Don+ts]\r\n{panel}\r\n",
+    "watches": {
+      "self": "https://harness.atlassian.net/rest/api/2/issue/SSCA-659/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "issuerestriction": {
+      "issuerestrictions": {},
+      "shouldDisplay": false
+    },
+    "customfield_10000": "{pullrequest={dataType=pullrequest, state=OPEN, stateCount=1}, json={\"cachedValue\":{\"errors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":1,\"lastUpdated\":\"2023-10-22T05:04:25.000-0700\",\"stateCount\":1,\"state\":\"OPEN\",\"dataType\":\"pullrequest\",\"open\":true},\"byInstanceType\":{\"GitHub\":{\"count\":1,\"name\":\"GitHub\"}}}}},\"isStale\":false}}",
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_11014": [],
+    "customfield_10103": [
+      {
+        "id": 3237,
+        "name": "SSCS Sprint 12",
+        "state": "closed",
+        "boardId": 439,
+        "goal": "",
+        "startDate": "2023-09-11T06:42:28.166Z",
+        "endDate": "2023-09-22T06:42:00.000Z",
+        "completeDate": "2023-09-25T08:51:12.963Z"
+      },
+      {
+        "id": 3245,
+        "name": "SSCS Sprint 13",
+        "state": "active",
+        "boardId": 439,
+        "goal": "",
+        "startDate": "2023-09-25T08:51:27.847Z",
+        "endDate": "2023-10-06T08:51:00.000Z"
+      }
+    ],
+    "customfield_10785": {
+      "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10911",
+      "value": "No",
+      "id": "10911"
+    },
+    "customfield_10896": "https://overopshq.atlassian.net/wiki/spaces/MT/pages/486506549/Standard+Asset+Sizes",
+    "customfield_10930": "{panel:title=Public Release Notes Summary Template|bgColor=#ffffce|titleBGColor=#99CCCC}\r\nThe <name of feature or component> did not <do this thing> (Jira ticket number)\r\n\r\nAdd a detailed explanation of what was wrong and why it was happening. \r\n\r\nThis issue has been resolved. The <feature or component> now <does this>. \r\n\r\n(Optional) Users should <do this>  to ensure the <feature or component> works in their environment. \r\n[Tips on writing Release Note summaries|https://harness.atlassian.net/wiki/spaces/DOCS/pages/1689845830/Release+Notes+Summary+Do+s+and+Don+ts]\r\n{panel}",
+    "customfield_10778": "h3. *Description (what):*\r\n\r\n{color:#707070}Explain the use-case/challenge that the customer is facing or trying to do. Focus on the scenario and not the feature/solution (try not to use any Harness terminology or model)\r\n(For example: \"Customer would like to automatically start a deployment when CI build finish\" vs. \"customer need API/CLI to start CD pipeline\"){color}\r\n\r\nh3. *Motivation (why):*\r\n\r\n{color:#707070}Explain why the customer needs this use case to be supported. It would be best if you articulated the full e2e use case that this requirement will be part of.\r\n(For example: \"Customer would like to have full CI/CD automation with as little manual intervention as needed. This approach will help to push changes faster to production\"){color}\r\n\r\nh3. *What does the customer do now?*\r\n\r\n{color:#707070}Explain what is the workaround customer is doing or current behavior \r\n(For example: \"Customer get a notification that CI build finished and then kick off deployment in Harness manually\"){color}\r\n\r\nh3. *Impact:*\r\n\r\nExplain what will happen if we will not deliver this feature- how adoption/perception of Harness will be affected. \r\n\r\nh3. *Provide links to the following resources:*\r\n\r\n{color:#707070}The functional gap here\r\nSFDC opp (if expansion/renewal is dependant on this request){color}\r\n\r\n{color:#707070}(For example: \"The lack of this use-case supported, is preventing developers from using Harness as part of their development process as it slows releases to production. \"){color}\r\n\r\n\r\nh3. *Suggest a solution (optional):*\r\n\r\n{color:#707070}If an optional solution was discussed with the customer, you could summarise it here.\r\n(For example: \"Customer would prefer Harness to provide a secure API to kick off a deployment. the API will be called as a CI build finished){color}\r\n\r\nh3. *Adoption Timeline:*\r\n\r\n{color:#707070}Establishing a rough timeline for adoption, when a feature is picked up we the PM team have the sizing. We can possibly prepare the customer with a rough estimate so when we ship around that time we can ensure adoption of the feature and continue the momentum. {color}",
+    "customfield_10779": [
+      {
+        "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10805",
+        "value": "Yes",
+        "id": "10805"
+      }
+    ],
+    "customfield_10658": "describe what the user wants:",
+    "customfield_10758": 0.0,
+    "customfield_10759": {
+      "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10578",
+      "value": "No",
+      "id": "10578"
+    },
+    "customfield_10718": {
+      "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10405",
+      "value": "No",
+      "id": "10405"
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    }
+  },
+  "changelog": {
+    "self": null,
+    "maxResults": 9,
+    "startAt": 0,
+    "total": 9,
+    "isLast": null,
+    "values": null,
+    "histories": [
+      {
+        "id": "5452977",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+          "accountId": "61e445fc6b1ad900699280fb",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Arpit Jain",
+          "active": true,
+          "emailAddress": "arpit.jain@harness.io"
+        },
+        "created": "2023-10-22T11:25:37.139+00:00",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "3",
+            "fromString": "In Progress",
+            "to": "10300",
+            "toString": "Under Review",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      },
+      {
+        "id": "5437610",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+          "accountId": "61e445fc6b1ad900699280fb",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Arpit Jain",
+          "active": true,
+          "emailAddress": "arpit.jain@harness.io"
+        },
+        "created": "2023-10-17T15:01:57.459+00:00",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10000",
+            "fromString": "To Do",
+            "to": "3",
+            "toString": "In Progress",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      },
+      {
+        "id": "5356118",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=5ff9d543b66825010ed27008",
+          "accountId": "5ff9d543b66825010ed27008",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Sunil Gupta",
+          "active": true,
+          "emailAddress": "sunil.gupta@harness.io"
+        },
+        "created": "2023-09-25T08:51:13.926+00:00",
+        "items": [
+          {
+            "field": "Sprint",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10103",
+            "from": "3237, 3230",
+            "fromString": "SSCS Sprint 12, SSCS Sprint 11",
+            "to": "3237, 3245",
+            "toString": "SSCS Sprint 12, SSCS Sprint 13",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      },
+      {
+        "id": "5337363",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+          "accountId": "61e445fc6b1ad900699280fb",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Arpit Jain",
+          "active": true,
+          "emailAddress": "arpit.jain@harness.io"
+        },
+        "created": "2023-09-17T18:49:52.442+00:00",
+        "items": [
+          {
+            "field": "IssueParentAssociation",
+            "fieldtype": "jira",
+            "fieldId": null,
+            "from": null,
+            "fromString": null,
+            "to": "530383",
+            "toString": "SSCA-530",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      }
+    ]
+  },
+  "firstCommentAt": null
+}

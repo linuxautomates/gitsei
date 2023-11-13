@@ -1,0 +1,30 @@
+{
+  "content_type": "integration/sonarqube/issues",
+  "fields": {
+    "id": {
+      "key": "id",
+      "value_type": "string",
+      "content_type": "id:integration/sonarqube/issues"
+    },
+    "issue_type": {
+      "key": "issue_type",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "severity": {
+      "key": "severity",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "issue_description": {
+      "key": "issue_description",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "scan_type": {
+      "key": "scan_type",
+      "value_type": "string",
+      "content_type": "string"
+    }
+  }
+}

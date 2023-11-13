@@ -1,0 +1,41 @@
+dependencies {
+    compile project(":utils")
+    compile project(":okhttp-utils")
+    compile project(":spring-web-utils")
+    compile project(":database-commons")
+    compile project(":json-diff")
+
+    compile libraries.okhttp
+
+    compile libraries.gcs
+    compile libraries.gcps
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    testCompile libraries.junit
+    testCompile libraries.spring_security_test
+    testCompile libraries.spring_boot_starter_test
+    testCompile libraries.mockito
+    testCompile libraries.assertj
+    testCompile "com.squareup.okhttp3:logging-interceptor:4.6.0"
+
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

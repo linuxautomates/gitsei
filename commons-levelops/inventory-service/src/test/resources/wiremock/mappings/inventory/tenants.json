@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/internal/v1/tenants/list"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "count": 2,
+            "records": [
+                {"id":"coke", "tenant_name": "Coke Inc."},
+                {"id":"pepsi", "tenant_name": "Pepsi Inc."}
+            ]
+        }
+    }
+}

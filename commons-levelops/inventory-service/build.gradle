@@ -1,0 +1,35 @@
+dependencies {
+    api project(':utils')
+    api project(':okhttp-utils')
+    api project(':ingestion-commons')
+    api project(':database-commons')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.okhttp
+    compile libraries.apache_collections
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.wiremock
+    testCompile libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

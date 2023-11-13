@@ -1,0 +1,45 @@
+{
+  "content_type": "integration/pagerduty/alert",
+  "fields": {
+    "id": {
+      "key": "id",
+      "value_type": "string",
+      "content_type": "id:integration/pagerduty/alert"
+    },
+    "severity": {
+      "key": "severity",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "created_at": {
+      "key": "created_at",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "updated_at": {
+      "key": "updated_at",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "resolved_at": {
+      "key": "resolved_at",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "status": {
+      "key": "status",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "summary": {
+      "key": "summary",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "alert_key": {
+      "key": "alert_key",
+      "value_type": "string",
+      "content_type": "string"
+    }
+  }
+}

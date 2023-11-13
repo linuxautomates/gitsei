@@ -1,0 +1,43 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api levelopsCommonsLib('utils')
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-service')
+
+    implementation levelopsCommonsLib('preflight-check')
+
+    compile project(":integration-helix-swarm-models")
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.apache_http
+    compile libraries.jackson_core
+    compile libraries.spring_boot_web
+    compile group: 'com.perforce', name: 'p4java', version: '2020.1.1999383'
+
+    testCompile libraries.jackson_core
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.mockito
+    testCompile levelopsCommonsLib("utils")
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

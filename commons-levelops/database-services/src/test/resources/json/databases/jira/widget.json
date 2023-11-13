@@ -1,0 +1,53 @@
+{
+  "id": "763f5140-2b16-11ee-8692-b71d07894893",
+  "dashboard_id": "8355",
+  "name": "LEAD TIME BY TIME SPENT IN STAGES",
+  "type": "lead_time_by_time_spent_in_stages_report",
+  "metadata": {
+    "order": 1,
+    "width": "full",
+    "hidden": false,
+    "weights": {
+      "IDLE": 20,
+      "NO_ASSIGNEE": 20,
+      "NO_DUE_DATE": 30,
+      "NO_COMPONENTS": 20,
+      "POOR_DESCRIPTION": 8
+    },
+    "children": [],
+    "description": "The amount of time spent by an issue in a given stage. This widget helps identify issues with bottlenecks.",
+    "max_records": 20,
+    "widget_type": "graph",
+    "default_value": "jira",
+    "custom_hygienes": [],
+    "filter_tab_order": {
+      "assignees": 3,
+      "released_in": 2,
+      "issue_resolved_at": 1
+    },
+    "dashBoard_time_keys": {
+      "released_in": {
+        "use_dashboard_time": true
+      }
+    },
+    "disable_issue_management_system": true
+  },
+  "query": {
+    "assignees": [
+      "a900bc1b-919f-4345-8884-43674c4e4b4b",
+      "28033ef3-3ac5-414e-8b34-b75cd2ceeddf"
+    ],
+    "released_in": {
+      "$gt": "1688256000",
+      "$lt": "1690307221"
+    },
+    "issue_resolved_at": {
+      "$gt": "1688256000",
+      "$lt": "1690307221"
+    },
+    "velocity_config_id": "b1a46fc9-39e0-4ec7-acbc-40a5b32547ea"
+  },
+  "display_info": {},
+  "precalculate": false,
+  "precalculate_frequency_in_mins": 0
+}

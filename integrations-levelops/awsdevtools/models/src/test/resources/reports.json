@@ -1,0 +1,74 @@
+{
+  "report": {
+    "arn": "string",
+    "codeCoverageSummary": {
+      "branchCoveragePercentage": 12,
+      "branchesCovered": 2,
+      "branchesMissed": 1,
+      "lineCoveragePercentage": 12,
+      "linesCovered": 4,
+      "linesMissed": 5
+    },
+    "created": 1606126468,
+    "executionId": "string",
+    "expired": 1606126469,
+    "exportConfig": {
+      "exportConfigType": "string",
+      "s3Destination": {
+        "bucket": "string",
+        "encryptionDisabled": true,
+        "encryptionKey": "string",
+        "packaging": "string",
+        "path": "string"
+      }
+    },
+    "name": "string",
+    "reportGroupArn": "string",
+    "status": "string",
+    "testSummary": {
+      "durationInNanoSeconds": 340000,
+      "statusCounts": {
+        "string" : 1
+      },
+      "total": 3
+    },
+    "truncated": true,
+    "type": "string"
+  },
+  "reportGroup": {
+    "arn": "string",
+    "created": 1606126466,
+    "exportConfig": {
+      "exportConfigType": "string",
+      "s3Destination": {
+        "bucket": "string",
+        "encryptionDisabled": true,
+        "encryptionKey": "string",
+        "packaging": "string",
+        "path": "string"
+      }
+    },
+    "lastModified": 1606126468,
+    "name": "string",
+    "status": "string",
+    "tags": [
+      {
+        "key": "string",
+        "value": "string"
+      }
+    ],
+    "type": "string"
+  },
+  "testCases": [
+    {
+      "durationInNanoSeconds": 1000000,
+      "expired": 1606126469,
+      "message": "string",
+      "name": "string",
+      "prefix": "string",
+      "reportArn": "string",
+      "status": "string",
+      "testRawDataPath": "string"
+    }
+  ]
+}

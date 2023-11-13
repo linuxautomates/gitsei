@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BullseyeCoverage XML 8.21.3 macOS intel License 117660 -->
+<BullseyeCoverage name="test.cov" dir="/Users/viraj/Documents/src/del/moneyapp1/CppApplication_1/" buildId="4362c668_2020-10-28_17:55:47" version="6" xmlns="https://www.bullseye.com/covxml"
+ fn_cov="29" fn_total="29" cd_cov="108" cd_total="161" d_cov="107" d_total="153">
+<folder name="calc" fn_cov="10" fn_total="10" cd_cov="21" cd_total="50" d_cov="21" d_total="50">
+<src name="CalcCore.cpp" mtime="1603906269" fn_cov="7" fn_total="7" cd_cov="11" cd_total="17" d_cov="11" d_total="17">
+<fn name="CalcCore::unitTest()" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="11" column="4" kind="function" event="full"/>
+<block line="12" entered="1"/>
+</fn>
+<fn name="CalcCore::addNumberChar(char)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="40" column="4" kind="function" event="full"/>
+<block line="41" entered="1"/>
+</fn>
+<fn name="CalcCore::apply()" fn_cov="1" fn_total="1" cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+<probe line="47" column="4" kind="function" event="full"/>
+<probe line="49" kind="decision" event="full"/>
+<block line="48" entered="1"/>
+<block line="50" entered="1"/>
+</fn>
+<fn name="CalcCore::apply(Operation)" fn_cov="1" fn_total="1" cd_cov="4" cd_total="6" d_cov="4" d_total="6">
+<probe line="57" column="4" kind="function" event="full"/>
+<probe line="60" kind="switch-label" event="none"/>
+<probe line="63" kind="switch-label" event="none"/>
+<probe line="66" kind="switch-label" event="full"/>
+<probe line="69" kind="switch-label" event="full"/>
+<probe line="70" kind="decision" event="full"/>
+<block line="58" entered="1"/>
+<block line="61" entered="0"/>
+<block line="64" entered="0"/>
+<block line="67" entered="1"/>
+<block line="70" entered="1"/>
+<block line="71" entered="1"/>
+</fn>
+<fn name="CalcCore::clear()" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="80" column="4" kind="function" event="full"/>
+<block line="81" entered="1"/>
+</fn>
+<fn name="CalcCore::compute()" fn_cov="1" fn_total="1" cd_cov="3" cd_total="7" d_cov="3" d_total="7">
+<probe line="90" column="4" kind="function" event="full"/>
+<probe line="93" kind="switch-label" event="full"/>
+<probe line="96" kind="switch-label" event="none"/>
+<probe line="99" kind="switch-label" event="none"/>
+<probe line="102" kind="switch-label" event="full"/>
+<probe line="103" kind="decision" event="true"/>
+<probe line="109" kind="switch-label" event="none"/>
+<block line="91" entered="1"/>
+<block line="94" entered="1"/>
+<block line="97" entered="0"/>
+<block line="100" entered="0"/>
+<block line="103" entered="1"/>
+<block line="104" entered="1"/>
+<block line="106" entered="0"/>
+<block line="110" entered="0"/>
+</fn>
+<fn name="CalcCore::display() const" fn_cov="1" fn_total="1" cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+<probe line="116" column="10" kind="function" event="full"/>
+<probe line="119" kind="decision" event="full"/>
+<block line="117" entered="1"/>
+<block line="120" entered="1"/>
+</fn>
+</src>
+<src name="CalcCore.h" mtime="1603846879" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<fn name="CalcCore::addNumber(double)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="15" column="4" kind="function" event="full"/>
+<block line="15" entered="1"/>
+</fn>
+</src>
+<src name="Calculator.cpp" mtime="1603932332" fn_cov="2" fn_total="2" cd_cov="10" cd_total="33" d_cov="10" d_total="33">
+<fn name="WndProc(HWND,UINT,WPARAM,LPARAM)" fn_cov="1" fn_total="1" cd_cov="7" cd_total="29" d_cov="7" d_total="29">
+<probe line="34" column="15" kind="function" event="full"/>
+<probe line="38" kind="switch-label" event="none"/>
+<probe line="40" kind="switch-label" event="none"/>
+<probe line="43" kind="switch-label" event="none"/>
+<probe line="46" kind="switch-label" event="none"/>
+<probe line="47" kind="switch-label" event="none"/>
+<probe line="47" column="8" kind="switch-label" event="none"/>
+<probe line="47" column="16" kind="switch-label" event="none"/>
+<probe line="47" column="24" kind="switch-label" event="none"/>
+<probe line="47" column="32" kind="switch-label" event="none"/>
+<probe line="47" column="40" kind="switch-label" event="none"/>
+<probe line="47" column="48" kind="switch-label" event="none"/>
+<probe line="47" column="56" kind="switch-label" event="none"/>
+<probe line="47" column="64" kind="switch-label" event="none"/>
+<probe line="47" column="72" kind="switch-label" event="none"/>
+<probe line="50" kind="switch-label" event="none"/>
+<probe line="53" kind="switch-label" event="none"/>
+<probe line="56" kind="switch-label" event="none"/>
+<probe line="59" kind="switch-label" event="none"/>
+<probe line="62" kind="switch-label" event="none"/>
+<probe line="65" kind="switch-label" event="none"/>
+<probe line="68" kind="switch-label" event="none"/>
+<probe line="71" kind="switch-label" event="none"/>
+<probe line="76" kind="switch-label" event="full"/>
+<probe line="79" column="16" kind="decision" event="full"/>
+<probe line="80" column="16" kind="decision" event="full"/>
+<probe line="90" kind="switch-label" event="full"/>
+<probe line="93" kind="switch-label" event="full"/>
+<block line="35" entered="1"/>
+<block line="39" entered="0"/>
+<block line="41" entered="0"/>
+<block line="44" entered="0"/>
+<block line="48" entered="0"/>
+<block line="51" entered="0"/>
+<block line="54" entered="0"/>
+<block line="57" entered="0"/>
+<block line="60" entered="0"/>
+<block line="63" entered="0"/>
+<block line="66" entered="0"/>
+<block line="69" entered="0"/>
+<block line="72" entered="0"/>
+<block line="77" entered="1"/>
+<block line="80" entered="1"/>
+<block line="81" entered="1"/>
+<block line="91" entered="1"/>
+<block line="94" entered="1"/>
+</fn>
+<fn name="wWinMain(HINSTANCE,HINSTANCE,PWSTR,int)" fn_cov="1" fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+<probe line="100" column="9" kind="function" event="full"/>
+<probe line="122" kind="decision" event="full"/>
+<probe line="125" kind="try" event="full"/>
+<probe line="126" column="23" kind="catch" event="none"/>
+<block line="101" entered="1"/>
+<block line="123" entered="1"/>
+<block line="127" entered="0"/>
+</fn>
+</src>
+</folder>
+<folder name="expr" fn_cov="19" fn_total="19" cd_cov="87" cd_total="111" d_cov="86" d_total="103">
+<src name="Lexer.cpp" mtime="1603845772" fn_cov="3" fn_total="3" cd_cov="45" cd_total="47" d_cov="45" d_total="47">
+<fn name="Lexer::unitTest()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+<probe line="9" column="4" kind="function" event="full"/>
+<probe line="33" kind="try" event="none"/>
+<probe line="34" column="17" kind="catch" event="full"/>
+<block line="10" entered="1"/>
+<block line="34" entered="1"/>
+</fn>
+<fn name="Lexer::unitTest(const char*)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="38" column="11" kind="function" event="full"/>
+<block line="39" entered="1"/>
+</fn>
+<fn name="Lexer::read(Token&amp;)" fn_cov="1" fn_total="1" cd_cov="44" cd_total="45" d_cov="44" d_total="45">
+<probe line="45" column="4" kind="function" event="full"/>
+<probe line="47" kind="decision" event="full"/>
+<probe line="52" kind="switch-label" event="full"/>
+<probe line="55" kind="switch-label" event="full"/>
+<probe line="58" kind="decision" event="full"/>
+<probe line="60" kind="switch-label" event="full"/>
+<probe line="64" kind="switch-label" event="full"/>
+<probe line="67" kind="decision" event="full"/>
+<probe line="69" kind="switch-label" event="full"/>
+<probe line="73" kind="switch-label" event="full"/>
+<probe line="77" kind="switch-label" event="full"/>
+<probe line="81" kind="switch-label" event="full"/>
+<probe line="85" kind="switch-label" event="full"/>
+<probe line="89" kind="switch-label" event="full"/>
+<probe line="93" kind="switch-label" event="full"/>
+<probe line="93" column="8" kind="switch-label" event="full"/>
+<probe line="93" column="16" kind="switch-label" event="full"/>
+<probe line="93" column="24" kind="switch-label" event="full"/>
+<probe line="93" column="32" kind="switch-label" event="full"/>
+<probe line="93" column="40" kind="switch-label" event="full"/>
+<probe line="93" column="48" kind="switch-label" event="full"/>
+<probe line="93" column="56" kind="switch-label" event="full"/>
+<probe line="93" column="64" kind="switch-label" event="full"/>
+<probe line="93" column="72" kind="switch-label" event="full"/>
+<probe line="98" kind="switch-label" event="full"/>
+<probe line="101" kind="decision" event="full"/>
+<probe line="102" kind="decision" event="full"/>
+<probe line="104" kind="switch-label" event="full"/>
+<probe line="105" kind="decision" event="true"/>
+<probe line="107" kind="switch-label" event="full"/>
+<probe line="110" kind="decision" event="full"/>
+<probe line="111" kind="decision" event="full"/>
+<probe line="113" kind="switch-label" event="full"/>
+<probe line="117" kind="switch-label" event="full"/>
+<probe line="120" kind="decision" event="full"/>
+<probe line="122" kind="switch-label" event="full"/>
+<probe line="126" kind="switch-label" event="full"/>
+<block line="46" entered="1"/>
+<block line="48" entered="1"/>
+<block line="53" entered="1"/>
+<block line="56" entered="1"/>
+<block line="58" entered="1"/>
+<block line="61" entered="1"/>
+<block line="65" entered="1"/>
+<block line="67" entered="1"/>
+<block line="70" entered="1"/>
+<block line="74" entered="1"/>
+<block line="78" entered="1"/>
+<block line="82" entered="1"/>
+<block line="86" entered="1"/>
+<block line="90" entered="1"/>
+<block line="94" entered="1"/>
+<block line="99" entered="1"/>
+<block line="101" entered="1"/>
+<block line="102" entered="1"/>
+<block line="105" entered="1"/>
+<block line="108" entered="1"/>
+<block line="110" entered="1"/>
+<block line="111" entered="1"/>
+<block line="114" entered="1"/>
+<block line="118" entered="1"/>
+<block line="120" entered="1"/>
+<block line="123" entered="1"/>
+<block line="127" entered="1"/>
+</fn>
+</src>
+<src name="Lexer.h" mtime="1603845849" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<fn name="Lexer::Lexer(const char*)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="41" column="8" kind="function" event="full"/>
+<block line="41" entered="1"/>
+</fn>
+</src>
+<src name="main.cpp" mtime="1603845597" fn_cov="1" fn_total="1" cd_cov="2" cd_total="6" d_cov="2" d_total="6">
+<fn name="main(int,char*[])" fn_cov="1" fn_total="1" cd_cov="2" cd_total="6" d_cov="2" d_total="6">
+<probe line="8" column="3" kind="function" event="full"/>
+<probe line="14" kind="decision" event="false"/>
+<probe line="15" column="11" kind="decision" event="none"/>
+<probe line="25" kind="try" event="full"/>
+<probe line="26" column="18" kind="catch" event="none"/>
+<block line="9" entered="1"/>
+<block line="15" entered="0"/>
+<block line="16" entered="0"/>
+<block line="20" entered="1"/>
+<block line="27" entered="0"/>
+</fn>
+</src>
+<src name="Parser.cpp" mtime="1603845880" fn_cov="14" fn_total="14" cd_cov="40" cd_total="58" d_cov="39" d_total="50">
+<fn name="Parser::unitTest()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+<probe line="5" column="4" kind="function" event="full"/>
+<probe line="25" kind="try" event="none"/>
+<probe line="26" column="17" kind="catch" event="full"/>
+<block line="6" entered="1"/>
+<block line="26" entered="1"/>
+</fn>
+<fn name="Parser::Parser(const char*)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+<probe line="30" kind="function" event="full"/>
+<block line="32" entered="1"/>
+</fn>
+<fn name="Parser::primary_expression()" fn_cov="1" fn_total="1" cd_cov="4" cd_total="6" d_cov="4" d_total="6">
+<probe line="35" column="7" kind="function" event="full"/>
+<probe line="39" kind="switch-label" event="full"/>
+<probe line="43" kind="switch-label" event="full"/>
+<probe line="47" kind="switch-label" event="full"/>
+<probe line="51" kind="decision" event="false"/>
+<probe line="56" kind="switch-label" event="none"/>
+<block line="36" entered="1"/>
+<block line="40" entered="1"/>
+<block line="44" entered="1"/>
+<block line="48" entered="1"/>
+<block line="52" entered="0"/>
+<block line="57" entered="0"/>
+</fn>
+<fn name="Parser::multiplicative_expression()" fn_cov="1" fn_total="1" cd_cov="9" cd_total="10" d_cov="9" d_total="10">
+<probe line="62" column="7" kind="function" event="full"/>
+<probe line="66" kind="decision" event="full"/>
+<probe line="69" column="5" kind="decision" event="full"/>
+<probe line="72" kind="decision" event="full"/>
+<probe line="76" column="5" kind="decision" event="full"/>
+<probe line="79" kind="decision" event="false"/>
+<block line="63" entered="1"/>
+<block line="67" entered="1"/>
+<block line="69" entered="1"/>
+<block line="70" entered="1"/>
+<block line="73" entered="1"/>
+<block line="76" entered="1"/>
+<block line="77" entered="1"/>
+<block line="80" entered="0"/>
+<block line="84" entered="1"/>
+</fn>
+<fn name="Parser::additive_expression()" fn_cov="1" fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+<probe line="90" column="7" kind="function" event="full"/>
+<probe line="94" kind="decision" event="full"/>
+<probe line="97" column="5" kind="decision" event="full"/>
+<block line="91" entered="1"/>
+<block line="95" entered="1"/>
+<block line="97" entered="1"/>
+<block line="98" entered="1"/>
+<block line="101" entered="1"/>
+</fn>
+<fn name="Parser::shift_expression()" fn_cov="1" fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+<probe line="107" column="7" kind="function" event="full"/>
+<probe line="111" kind="decision" event="full"/>
+<probe line="114" column="5" kind="decision" event="full"/>
+<block line="108" entered="1"/>
+<block line="112" entered="1"/>
+<block line="114" entered="1"/>
+<block line="115" entered="1"/>
+<block line="118" entered="1"/>
+</fn>
+<fn name="Parser::relational_expression()" fn_cov="1" fn_total="1" cd_cov="8" cd_total="8" d_cov="8" d_total="8">
+<probe line="124" column="7" kind="function" event="full"/>
+<probe line="128" kind="decision" event="full"/>
+<probe line="131" column="5" kind="decision" event="full"/>
+<probe line="134" column="5" kind="decision" event="full"/>
+<probe line="137" column="5" kind="decision" event="full"/>
+<block line="125" entered="1"/>
+<block line="129" entered="1"/>
+<block line="131" entered="1"/>
+<block line="132" entered="1"/>
+<block line="134" entered="1"/>
+<block line="135" entered="1"/>
+<block line="137" entered="1"/>
+<block line="138" entered="1"/>
+<block line="141" entered="1"/>
+</fn>
+<fn name="Parser::equality_expression()" fn_cov="1" fn_total="1" cd_cov="2" cd_total="4" d_cov="2" d_total="4">
+<probe line="147" column="7" kind="function" event="full"/>
+<probe line="151" kind="decision" event="false"/>
+<probe line="154" column="5" kind="decision" event="false"/>
+<block line="148" entered="1"/>
+<block line="152" entered="0"/>
+<block line="154" entered="1"/>
+<block line="155" entered="0"/>
+<block line="158" entered="1"/>
+</fn>
+<fn name="Parser::and_expression()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+<probe line="164" column="7" kind="function" event="full"/>
+<probe line="167" kind="decision" event="false"/>
+<block line="165" entered="1"/>
+<block line="168" entered="0"/>
+</fn>
+<fn name="Parser::exclusive_or_expression()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+<probe line="174" column="7" kind="function" event="full"/>
+<probe line="177" kind="decision" event="false"/>
+<block line="175" entered="1"/>
+<block line="178" entered="0"/>
+</fn>
+<fn name="Parser::inclusive_or_expression()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+<probe line="184" column="7" kind="function" event="full"/>
+<probe line="187" kind="decision" event="false"/>
+<block line="185" entered="1"/>
+<block line="188" entered="0"/>
+</fn>
+<fn name="Parser::logical_and_expression()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="6" d_cov="1" d_total="2">
+<probe line="194" column="7" kind="function" event="full"/>
+<probe line="197" kind="decision" event="false"/>
+<probe line="199" column="2" kind="condition" event="none"/>
+<probe line="199" column="5" kind="condition" event="none"/>
+<block line="195" entered="1"/>
+<block line="198" entered="0"/>
+</fn>
+<fn name="Parser::logical_or_expression()" fn_cov="1" fn_total="1" cd_cov="3" cd_total="6" d_cov="2" d_total="2">
+<probe line="204" column="7" kind="function" event="full"/>
+<probe line="207" kind="decision" event="full"/>
+<probe line="209" column="2" kind="condition" event="true"/>
+<probe line="209" column="5" kind="condition" event="none"/>
+<block line="205" entered="1"/>
+<block line="208" entered="1"/>
+</fn>
+<fn name="Parser::expression()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+<probe line="214" column="7" kind="function" event="full"/>
+<probe line="218" kind="decision" event="false"/>
+<block line="215" entered="1"/>
+<block line="219" entered="0"/>
+</fn>
+</src>
+</folder>
+</BullseyeCoverage>

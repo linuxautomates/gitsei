@@ -1,0 +1,994 @@
+{
+  "config": {
+    "locator_config": {
+      "admin_email_address": null,
+      "jenkins_url": "http://localhost:8080/"
+    },
+    "security_realm": "JENKINS_OWN_DATABASE",
+    "authorization_type": "LOGGED_IN_USERS_CAN_DO_ANYTHING",
+    "csrf": {
+      "prevent_csrf": false,
+      "crumb_issuer": null,
+      "exclude_client_ipfrom_crumb": null
+    },
+    "slave_agent_port": {
+      "port_type": "DISABLED",
+      "port_number": null
+    },
+    "jnlp_protocols": {
+      "jnlp1_protocol_enabled": true,
+      "jnlp2_protocol_enabled": true,
+      "jnlp3_protocol_enabled": true,
+      "jnlp4_protocol_enabled": false
+    },
+    "agent_to_master_access_control_enabled": false
+  },
+  "users": {
+    "viraj@levelops.io": {
+      "user_name": "viraj",
+      "full_name": "Viraj Ajgaonkar",
+      "email": "viraj@levelops.io"
+    },
+    "testRead@levelops.io": {
+      "user_name": "testRead",
+      "full_name": "test Read",
+      "email": "testRead@levelops.io"
+    }
+  },
+  "plugins": {
+    "durable-task": {
+      "long_name": "Durable Task Plugin",
+      "short_name": "durable-task",
+      "specification_title": "Library offering an extension point for processes",
+      "implementation_title": "durable-task",
+      "implementation_version": "1.33",
+      "url": "https://github.com/jenkinsci/durable-task-plugin",
+      "build_jdk": "1.8.0_202"
+    },
+    "blueocean-config": {
+      "long_name": "Config API for Blue Ocean",
+      "short_name": "blueocean-config",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-config",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "sse-gateway": {
+      "long_name": "Server Sent Events (SSE) Gateway Plugin",
+      "short_name": "sse-gateway",
+      "specification_title": "Server Sent Events (SSE) Gateway Plugin",
+      "implementation_title": "sse-gateway",
+      "implementation_version": "1.20",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "pubsub-light": {
+      "long_name": "Jenkins Pub-Sub \"light\" Bus",
+      "short_name": "pubsub-light",
+      "specification_title": "A simple Publish-Subscribe light-weight event bus",
+      "implementation_title": "pubsub-light",
+      "implementation_version": "1.13",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/PubSub+Light+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "build-timeout": {
+      "long_name": "Build Timeout",
+      "short_name": "build-timeout",
+      "specification_title": "Aborts a build if it's taking too long",
+      "implementation_title": "build-timeout",
+      "implementation_version": "1.19",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/Build-timeout+Plugin",
+      "build_jdk": "1.8.0_92"
+    },
+    "blueocean-pipeline-editor": {
+      "long_name": "Blue Ocean Pipeline Editor",
+      "short_name": "blueocean-pipeline-editor",
+      "specification_title": "The Blue Ocean Pipeline Editor is the simplest wa",
+      "implementation_title": "blueocean-pipeline-editor",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "jquery-detached": {
+      "long_name": "JavaScript GUI Lib: jQuery bundles (jQuery and jQuery UI) p",
+      "short_name": "jquery-detached",
+      "specification_title": null,
+      "implementation_title": "jquery-detached",
+      "implementation_version": "1.2.1",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/jQuery+Detached+Plugin",
+      "build_jdk": "1.7.0_51"
+    },
+    "ant": {
+      "long_name": "Ant Plugin",
+      "short_name": "ant",
+      "specification_title": "Adds Apache Ant support to Jenkins",
+      "implementation_title": "ant",
+      "implementation_version": "1.10",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Ant+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "timestamper": {
+      "long_name": "Timestamper",
+      "short_name": "timestamper",
+      "specification_title": "Adds timestamps to the Console Output",
+      "implementation_title": "timestamper",
+      "implementation_version": "1.10",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/Timestamper",
+      "build_jdk": "1.8.0_212"
+    },
+    "workflow-scm-step": {
+      "long_name": "Pipeline: SCM Step",
+      "short_name": "workflow-scm-step",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-scm-step",
+      "implementation_version": "2.9",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+SCM+Step+Plu",
+      "build_jdk": "1.8.0_161"
+    },
+    "pipeline-build-step": {
+      "long_name": "Pipeline: Build Step",
+      "short_name": "pipeline-build-step",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "pipeline-build-step",
+      "implementation_version": "2.11",
+      "url": "https://github.com/jenkinsci/pipeline-build-step-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "lockable-resources": {
+      "long_name": "Lockable Resources plugin",
+      "short_name": "lockable-resources",
+      "specification_title": "This plugin allows to define lockable resources (",
+      "implementation_title": "lockable-resources",
+      "implementation_version": "2.7",
+      "url": "https://github.com/jenkinsci/lockable-resources-plugin",
+      "build_jdk": "1.8.0_232"
+    },
+    "pipeline-rest-api": {
+      "long_name": "Pipeline: REST API Plugin",
+      "short_name": "pipeline-rest-api",
+      "specification_title": "Provides a REST API to access pipeline and pipeli",
+      "implementation_title": "pipeline-rest-api",
+      "implementation_version": "2.12",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Stage+View+P",
+      "build_jdk": "1.8.0_222"
+    },
+    "token-macro": {
+      "long_name": "Token Macro Plugin",
+      "short_name": "token-macro",
+      "specification_title": "This plugin adds reusable macro expansion capabil",
+      "implementation_title": "token-macro",
+      "implementation_version": "2.10",
+      "url": "https://github.com/jenkinsci/token-macro-plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "blueocean-autofavorite": {
+      "long_name": "Autofavorite for Blue Ocean",
+      "short_name": "blueocean-autofavorite",
+      "specification_title": "Automatically favorites multibranch pipeline jobs",
+      "implementation_title": "blueocean-autofavorite",
+      "implementation_version": "1.2.4",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Autofavori",
+      "build_jdk": "1.8.0_192"
+    },
+    "jsch": {
+      "long_name": "Jenkins JSch dependency plugin",
+      "short_name": "jsch",
+      "specification_title": "Jenkins plugin that brings the JSch library as a ",
+      "implementation_title": "jsch",
+      "implementation_version": "0.1.55.1",
+      "url": "https://wiki.jenkins.io/display/JENKINS/JSch+plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "trilead-api": {
+      "long_name": "Trilead API Plugin",
+      "short_name": "trilead-api",
+      "specification_title": "This plugin provides access to Trilead without ha",
+      "implementation_title": "trilead-api",
+      "implementation_version": "1.0.5",
+      "url": "https://github.com/jenkinsci/trilead-api-plugin",
+      "build_jdk": "11.0.2"
+    },
+    "pipeline-stage-step": {
+      "long_name": "Pipeline: Stage Step",
+      "short_name": "pipeline-stage-step",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "pipeline-stage-step",
+      "implementation_version": "2.3",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Stage+Step+P",
+      "build_jdk": "1.8.0_144"
+    },
+    "scm-api": {
+      "long_name": "SCM API Plugin",
+      "short_name": "scm-api",
+      "specification_title": "This plugin provides a new enhanced API for inter",
+      "implementation_title": "scm-api",
+      "implementation_version": "2.6.3",
+      "url": "https://wiki.jenkins.io/display/JENKINS/SCM+API+Plugin",
+      "build_jdk": "1.8.0_211"
+    },
+    "blueocean-display-url": {
+      "long_name": "Display URL for Blue Ocean",
+      "short_name": "blueocean-display-url",
+      "specification_title": "Provides an implementation of the display url plu",
+      "implementation_title": "blueocean-display-url",
+      "implementation_version": "2.3.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/BlueOcean+Display+URL",
+      "build_jdk": "1.8.0_192"
+    },
+    "ace-editor": {
+      "long_name": "JavaScript GUI Lib: ACE Editor bundle plugin",
+      "short_name": "ace-editor",
+      "specification_title": null,
+      "implementation_title": "ace-editor",
+      "implementation_version": "1.1",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/ACE+Editor+Plugin",
+      "build_jdk": "1.7.0_51"
+    },
+    "blueocean-pipeline-api-impl": {
+      "long_name": "Pipeline implementation for Blue Ocean",
+      "short_name": "blueocean-pipeline-api-impl",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-pipeline-api-impl",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "cloudbees-bitbucket-branch-source": {
+      "long_name": "Bitbucket Branch Source Plugin",
+      "short_name": "cloudbees-bitbucket-branch-source",
+      "specification_title": "Discover and build Bitbucket Cloud and Bitbucket ",
+      "implementation_title": "cloudbees-bitbucket-branch-source",
+      "implementation_version": "2.6.0",
+      "url": "https://github.com/jenkinsci/bitbucket-branch-source-plugin",
+      "build_jdk": "1.8.0_232"
+    },
+    "ssh-slaves": {
+      "long_name": "Jenkins SSH Slaves plugin",
+      "short_name": "ssh-slaves",
+      "specification_title": "Allows to launch agents over SSH, using a Java im",
+      "implementation_title": "ssh-slaves",
+      "implementation_version": "1.31.0",
+      "url": "https://github.com/jenkinsci/ssh-slaves-plugin",
+      "build_jdk": "11.0.2"
+    },
+    "junit": {
+      "long_name": "JUnit Plugin",
+      "short_name": "junit",
+      "specification_title": "Allows JUnit-format test results to be published.",
+      "implementation_title": "junit",
+      "implementation_version": "1.28",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/JUnit+Plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "antisamy-markup-formatter": {
+      "long_name": "OWASP Markup Formatter Plugin",
+      "short_name": "antisamy-markup-formatter",
+      "specification_title": "Uses policy definitions to allow limited HTML mar",
+      "implementation_title": "antisamy-markup-formatter",
+      "implementation_version": "1.6",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/OWASP+Markup+Formatter",
+      "build_jdk": "1.8.0_222"
+    },
+    "role-strategy": {
+      "long_name": "Role-based Authorization Strategy",
+      "short_name": "role-strategy",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "role-strategy",
+      "implementation_version": "2.16",
+      "url": "https://github.com/jenkinsci/role-strategy-plugin",
+      "build_jdk": "1.8.0_201"
+    },
+    "ldap": {
+      "long_name": "LDAP Plugin",
+      "short_name": "ldap",
+      "specification_title": "Adds LDAP authentication to Jenkins",
+      "implementation_title": "ldap",
+      "implementation_version": "1.21",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/LDAP+Plugin",
+      "build_jdk": "1.8.0_211"
+    },
+    "cloudbees-folder": {
+      "long_name": "Folders Plugin",
+      "short_name": "cloudbees-folder",
+      "specification_title": "This plugin allows users to create \"folders\" to o",
+      "implementation_title": "cloudbees-folder",
+      "implementation_version": "6.10.1",
+      "url": "https://github.com/jenkinsci/cloudbees-folder-plugin/",
+      "build_jdk": "1.8.0_222"
+    },
+    "script-security": {
+      "long_name": "Script Security Plugin",
+      "short_name": "script-security",
+      "specification_title": "Allows Jenkins administrators to control what in-",
+      "implementation_title": "script-security",
+      "implementation_version": "1.68",
+      "url": "https://github.com/jenkinsci/script-security-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "pam-auth": {
+      "long_name": "PAM Authentication plugin",
+      "short_name": "pam-auth",
+      "specification_title": "Adds Unix Pluggable Authentication Module (PAM) s",
+      "implementation_title": "pam-auth",
+      "implementation_version": "1.6",
+      "url": "https://wiki.jenkins.io/display/JENKINS/PAM+Authentication+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "workflow-cps": {
+      "long_name": "Pipeline: Groovy",
+      "short_name": "workflow-cps",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-cps",
+      "implementation_version": "2.78",
+      "url": "https://github.com/jenkinsci/workflow-cps-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "blueocean-dashboard": {
+      "long_name": "Dashboard for Blue Ocean",
+      "short_name": "blueocean-dashboard",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-dashboard",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "bouncycastle-api": {
+      "long_name": "bouncycastle API Plugin",
+      "short_name": "bouncycastle-api",
+      "specification_title": "This plugin provides an stable API to Bouncy Cast",
+      "implementation_title": "bouncycastle-api",
+      "implementation_version": "2.16.0",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/Bouncy+Castle+API+Plugin",
+      "build_jdk": "1.8.0_102"
+    },
+    "pipeline-milestone-step": {
+      "long_name": "Pipeline: Milestone Step",
+      "short_name": "pipeline-milestone-step",
+      "specification_title": "Plugin that provides the milestone step",
+      "implementation_title": "pipeline-milestone-step",
+      "implementation_version": "1.3.1",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Milestone+St",
+      "build_jdk": "1.8.0_60"
+    },
+    "git-server": {
+      "long_name": "Jenkins GIT server Plugin",
+      "short_name": "git-server",
+      "specification_title": "This library plugin provides embedded Git server ",
+      "implementation_title": "git-server",
+      "implementation_version": "1.9",
+      "url": "https://github.com/jenkinsci/git-server-plugin",
+      "build_jdk": "1.8.0_232-ea"
+    },
+    "pipeline-github-lib": {
+      "long_name": "Pipeline: GitHub Groovy Libraries",
+      "short_name": "pipeline-github-lib",
+      "specification_title": "Allows Pipeline Groovy libraries to be loaded on ",
+      "implementation_title": "pipeline-github-lib",
+      "implementation_version": "1.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+GitHub+Libra",
+      "build_jdk": "1.8.0_111"
+    },
+    "matrix-auth": {
+      "long_name": "Matrix Authorization Strategy Plugin",
+      "short_name": "matrix-auth",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "matrix-auth",
+      "implementation_version": "2.5",
+      "url": "https://github.com/jenkinsci/matrix-auth-plugin",
+      "build_jdk": "1.8.0_121"
+    },
+    "blueocean-bitbucket-pipeline": {
+      "long_name": "Bitbucket Pipeline for Blue Ocean",
+      "short_name": "blueocean-bitbucket-pipeline",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-bitbucket-pipeline",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "favorite": {
+      "long_name": "Favorite",
+      "short_name": "favorite",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "favorite",
+      "implementation_version": "2.3.2",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Favorite+Plugin",
+      "build_jdk": "1.8.0_131"
+    },
+    "mailer": {
+      "long_name": "Jenkins Mailer Plugin",
+      "short_name": "mailer",
+      "specification_title": "This plugin allows you to configure email notific",
+      "implementation_title": "mailer",
+      "implementation_version": "1.29",
+      "url": "https://github.com/jenkinsci/mailer-plugin",
+      "build_jdk": "1.8.0_181"
+    },
+    "github-api": {
+      "long_name": "GitHub API Plugin",
+      "short_name": "github-api",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "github-api",
+      "implementation_version": "1.95",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/GitHub+API+Plugin",
+      "build_jdk": "1.8.0_181"
+    },
+    "display-url-api": {
+      "long_name": "Display URL API",
+      "short_name": "display-url-api",
+      "specification_title": "Provides the DisplayURLProvider extension point t",
+      "implementation_title": "display-url-api",
+      "implementation_version": "2.3.2",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Display+URL+API+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "levelops": {
+      "long_name": "LevelOps Plugin",
+      "short_name": "levelops",
+      "specification_title": "Upload scan artifacts to LevelOps API",
+      "implementation_title": "levelops",
+      "implementation_version": "1.0.0-SNAPSHOT",
+      "url": "https://app.levelops.io",
+      "build_jdk": "1.8.0_231"
+    },
+    "github-branch-source": {
+      "long_name": "GitHub Branch Source Plugin",
+      "short_name": "github-branch-source",
+      "specification_title": "Multibranch projects and organization folders fro",
+      "implementation_title": "github-branch-source",
+      "implementation_version": "2.5.8",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Branch+Source+",
+      "build_jdk": "1.8.0_211"
+    },
+    "ws-cleanup": {
+      "long_name": "Jenkins Workspace Cleanup Plugin",
+      "short_name": "ws-cleanup",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "ws-cleanup",
+      "implementation_version": "0.38",
+      "url": "https://github.com/jenkinsci/ws-cleanup-plugin/blob/master/README",
+      "build_jdk": "1.8.0_232"
+    },
+    "workflow-support": {
+      "long_name": "Pipeline: Supporting APIs",
+      "short_name": "workflow-support",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-support",
+      "implementation_version": "3.3",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Pipeline+Supporting+APIs+",
+      "build_jdk": "1.8.0_161"
+    },
+    "command-launcher": {
+      "long_name": "Command Agent Launcher Plugin",
+      "short_name": "command-launcher",
+      "specification_title": "Allows agents to be launched using a specified co",
+      "implementation_title": "command-launcher",
+      "implementation_version": "1.2",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Command+Agent+Launcher+Pl",
+      "build_jdk": "1.8.0_151"
+    },
+    "blueocean-git-pipeline": {
+      "long_name": "Git Pipeline for Blue Ocean",
+      "short_name": "blueocean-git-pipeline",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-git-pipeline",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "gradle": {
+      "long_name": "Gradle Plugin",
+      "short_name": "gradle",
+      "specification_title": null,
+      "implementation_title": null,
+      "implementation_version": null,
+      "url": "https://github.com/jenkinsci/gradle-plugin",
+      "build_jdk": null
+    },
+    "docker-workflow": {
+      "long_name": "Docker Pipeline",
+      "short_name": "docker-workflow",
+      "specification_title": "Build and use Docker containers from pipelines",
+      "implementation_title": "docker-workflow",
+      "implementation_version": "1.21",
+      "url": "https://github.com/jenkinsci/docker-workflow-plugin",
+      "build_jdk": "1.8.0_201"
+    },
+    "authentication-tokens": {
+      "long_name": "Authentication Tokens API Plugin",
+      "short_name": "authentication-tokens",
+      "specification_title": "This plugin provides an API for converting creden",
+      "implementation_title": "authentication-tokens",
+      "implementation_version": "1.3",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/Authentication+Tokens+",
+      "build_jdk": "1.8.0_92"
+    },
+    "momentjs": {
+      "long_name": "JavaScript GUI Lib: Moment.js bundle plugin",
+      "short_name": "momentjs",
+      "specification_title": null,
+      "implementation_title": "momentjs",
+      "implementation_version": "1.1.1",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Moment.js",
+      "build_jdk": "1.7.0_51"
+    },
+    "handy-uri-templates-2-api": {
+      "long_name": "Handy Uri Templates 2.x API Plugin",
+      "short_name": "handy-uri-templates-2-api",
+      "specification_title": "Bundles Handy Uri Templates 2.x and allows it to ",
+      "implementation_title": "handy-uri-templates-2-api",
+      "implementation_version": "2.1.8-1.0",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Handy+Uri+Templates+2+API",
+      "build_jdk": "1.8.0_222"
+    },
+    "blueocean-jira": {
+      "long_name": "JIRA Integration for Blue Ocean",
+      "short_name": "blueocean-jira",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-jira",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "blueocean": {
+      "long_name": "Blue Ocean",
+      "short_name": "blueocean",
+      "specification_title": "Blue Ocean is a new project that rethinks the use",
+      "implementation_title": "blueocean",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "credentials-binding": {
+      "long_name": "Credentials Binding Plugin",
+      "short_name": "credentials-binding",
+      "specification_title": "Allows credentials to be bound to environment var",
+      "implementation_title": "credentials-binding",
+      "implementation_version": "1.20",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Credentials+Binding+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "blueocean-github-pipeline": {
+      "long_name": "GitHub Pipeline for Blue Ocean",
+      "short_name": "blueocean-github-pipeline",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-github-pipeline",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "pipeline-model-definition": {
+      "long_name": "Pipeline: Declarative",
+      "short_name": "pipeline-model-definition",
+      "specification_title": "An opinionated, declarative Pipeline",
+      "implementation_title": "pipeline-model-definition",
+      "implementation_version": "1.5.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Model+Defini",
+      "build_jdk": "11.0.5"
+    },
+    "jira": {
+      "long_name": "Jenkins JIRA plugin",
+      "short_name": "jira",
+      "specification_title": "Integrates Jenkins to JIRA",
+      "implementation_title": "jira",
+      "implementation_version": "3.0.11",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/JIRA+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "github": {
+      "long_name": "GitHub plugin",
+      "short_name": "github",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "github",
+      "implementation_version": "1.29.5",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin",
+      "build_jdk": "1.8.0_181"
+    },
+    "resource-disposer": {
+      "long_name": "Resource Disposer Plugin",
+      "short_name": "resource-disposer",
+      "specification_title": "Dispose resources asynchronously. Utility plugin ",
+      "implementation_title": "resource-disposer",
+      "implementation_version": "0.14",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Resource+Disposer+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "workflow-basic-steps": {
+      "long_name": "Pipeline: Basic Steps",
+      "short_name": "workflow-basic-steps",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-basic-steps",
+      "implementation_version": "2.19",
+      "url": "https://github.com/jenkinsci/workflow-basic-steps-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "blueocean-rest-impl": {
+      "long_name": "REST Implementation for Blue Ocean",
+      "short_name": "blueocean-rest-impl",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-rest-impl",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "structs": {
+      "long_name": "Structs Plugin",
+      "short_name": "structs",
+      "specification_title": "Library plugin for DSL plugins that need names fo",
+      "implementation_title": "structs",
+      "implementation_version": "1.20",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Structs+plugin",
+      "build_jdk": "1.8.0_202"
+    },
+    "handlebars": {
+      "long_name": "JavaScript GUI Lib: Handlebars bundle plugin",
+      "short_name": "handlebars",
+      "specification_title": null,
+      "implementation_title": "handlebars",
+      "implementation_version": "1.1.1",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Handlebars.js",
+      "build_jdk": "1.7.0_51"
+    },
+    "plain-credentials": {
+      "long_name": "Plain Credentials Plugin",
+      "short_name": "plain-credentials",
+      "specification_title": "Allows use of plain strings and files as credenti",
+      "implementation_title": "plain-credentials",
+      "implementation_version": "1.5",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Plain+Credentials+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "blueocean-web": {
+      "long_name": "Web for Blue Ocean",
+      "short_name": "blueocean-web",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-web",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "mercurial": {
+      "long_name": "Jenkins Mercurial plugin",
+      "short_name": "mercurial",
+      "specification_title": "Allows Jenkins to check out projects from the Mer",
+      "implementation_title": "mercurial",
+      "implementation_version": "2.8",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Mercurial+Plugin",
+      "build_jdk": "1.8.0_212"
+    },
+    "workflow-cps-global-lib": {
+      "long_name": "Pipeline: Shared Groovy Libraries",
+      "short_name": "workflow-cps-global-lib",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-cps-global-lib",
+      "implementation_version": "2.15",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Pipeline+Shared+Groovy+Li",
+      "build_jdk": "1.8.0_161"
+    },
+    "ssh-credentials": {
+      "long_name": "SSH Credentials Plugin",
+      "short_name": "ssh-credentials",
+      "specification_title": "Allows storage of SSH credentials in Jenkins",
+      "implementation_title": "ssh-credentials",
+      "implementation_version": "1.18",
+      "url": "https://github.com/jenkinsci/ssh-credentials-plugin/blob/master/d",
+      "build_jdk": "11.0.4"
+    },
+    "pipeline-input-step": {
+      "long_name": "Pipeline: Input Step",
+      "short_name": "pipeline-input-step",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "pipeline-input-step",
+      "implementation_version": "2.11",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Input+Step+P",
+      "build_jdk": "1.8.0_161"
+    },
+    "branch-api": {
+      "long_name": "Branch API Plugin",
+      "short_name": "branch-api",
+      "specification_title": "This plugin provides an API for multiple branch b",
+      "implementation_title": "branch-api",
+      "implementation_version": "2.5.5",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Branch+API+Plugin",
+      "build_jdk": "1.8.0_202"
+    },
+    "apache-httpcomponents-client-4-api": {
+      "long_name": "Jenkins Apache HttpComponents Client 4.x API Plugin",
+      "short_name": "apache-httpcomponents-client-4-api",
+      "specification_title": "Bundles Apache HttpComponents Client 4.x and allo",
+      "implementation_title": "apache-httpcomponents-client-4-api",
+      "implementation_version": "4.5.10-2.0",
+      "url": "https://github.com/jenkinsci/apache-httpcomponents-client-4-api-p",
+      "build_jdk": "1.8.0_201"
+    },
+    "pipeline-model-extensions": {
+      "long_name": "Pipeline: Declarative Extension Points API",
+      "short_name": "pipeline-model-extensions",
+      "specification_title": "APIs for extension points used in Declarative Pip",
+      "implementation_title": "pipeline-model-extensions",
+      "implementation_version": "1.5.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Model+Defini",
+      "build_jdk": "11.0.5"
+    },
+    "active-directory": {
+      "long_name": "Jenkins Active Directory plugin",
+      "short_name": "active-directory",
+      "specification_title": "Enables authentication through Active Directory",
+      "implementation_title": "active-directory",
+      "implementation_version": "2.16",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Active+Directory+Plugin",
+      "build_jdk": "1.8.0_65"
+    },
+    "variant": {
+      "long_name": "Variant Plugin",
+      "short_name": "variant",
+      "specification_title": "This user-invisible library plugin allows other m",
+      "implementation_title": "variant",
+      "implementation_version": "1.3",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Variant+Plugin",
+      "build_jdk": "1.8.0_131"
+    },
+    "matrix-project": {
+      "long_name": "Matrix Project Plugin",
+      "short_name": "matrix-project",
+      "specification_title": "Multi-configuration (matrix) project type.",
+      "implementation_title": "matrix-project",
+      "implementation_version": "1.14",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Matrix+Project+Plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "workflow-step-api": {
+      "long_name": "Pipeline: Step API",
+      "short_name": "workflow-step-api",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-step-api",
+      "implementation_version": "2.22",
+      "url": "https://github.com/jenkinsci/workflow-step-api-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "workflow-aggregator": {
+      "long_name": "Pipeline",
+      "short_name": "workflow-aggregator",
+      "specification_title": "A suite of plugins that lets you orchestrate auto",
+      "implementation_title": "workflow-aggregator",
+      "implementation_version": "2.6",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Plugin",
+      "build_jdk": "1.8.0_181"
+    },
+    "workflow-api": {
+      "long_name": "Pipeline: API",
+      "short_name": "workflow-api",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-api",
+      "implementation_version": "2.38",
+      "url": "https://github.com/jenkinsci/workflow-api-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "pipeline-model-declarative-agent": {
+      "long_name": "Pipeline: Declarative Agent API",
+      "short_name": "pipeline-model-declarative-agent",
+      "specification_title": "Replaced by Pipeline: Declarative Extension Point",
+      "implementation_title": "pipeline-model-declarative-agent",
+      "implementation_version": "1.1.1",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Model+Defini",
+      "build_jdk": "1.7.0_79"
+    },
+    "workflow-multibranch": {
+      "long_name": "Pipeline: Multibranch",
+      "short_name": "workflow-multibranch",
+      "specification_title": "Enhances Pipeline plugin to handle branches bette",
+      "implementation_title": "workflow-multibranch",
+      "implementation_version": "2.21",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Pipeline+Multibranch+Plugin",
+      "build_jdk": "1.8.0_181"
+    },
+    "pipeline-stage-view": {
+      "long_name": "Pipeline: Stage View Plugin",
+      "short_name": "pipeline-stage-view",
+      "specification_title": "Provides a swimlane view of the different stages ",
+      "implementation_title": "pipeline-stage-view",
+      "implementation_version": "2.12",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Pipeline+Stage+View+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "email-ext": {
+      "long_name": "Email Extension Plugin",
+      "short_name": "email-ext",
+      "specification_title": "Allows to configure every aspect of email notific",
+      "implementation_title": "email-ext",
+      "implementation_version": "2.68",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+plugin",
+      "build_jdk": "1.8.0_212"
+    },
+    "workflow-job": {
+      "long_name": "Pipeline: Job",
+      "short_name": "workflow-job",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-job",
+      "implementation_version": "2.36",
+      "url": "https://github.com/jenkinsci/workflow-job-plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "docker-commons": {
+      "long_name": "Docker Commons Plugin",
+      "short_name": "docker-commons",
+      "specification_title": "APIs useful to Docker-based plugins.",
+      "implementation_title": "docker-commons",
+      "implementation_version": "1.16",
+      "url": "https://github.com/jenkinsci/docker-commons-plugin",
+      "build_jdk": "1.8.0_201"
+    },
+    "blueocean-commons": {
+      "long_name": "Common API for Blue Ocean",
+      "short_name": "blueocean-commons",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-commons",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "blueocean-pipeline-scm-api": {
+      "long_name": "Pipeline SCM API for Blue Ocean",
+      "short_name": "blueocean-pipeline-scm-api",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-pipeline-scm-api",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "jackson2-api": {
+      "long_name": "Jackson 2 API Plugin",
+      "short_name": "jackson2-api",
+      "specification_title": "This plugin exposes the Jackson 2 JSON APIs to ot",
+      "implementation_title": "jackson2-api",
+      "implementation_version": "2.10.2",
+      "url": "https://github.com/jenkinsci/jackson2-api-plugin",
+      "build_jdk": "11.0.4"
+    },
+    "blueocean-i18n": {
+      "long_name": "i18n for Blue Ocean",
+      "short_name": "blueocean-i18n",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-i18n",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "workflow-durable-task-step": {
+      "long_name": "Pipeline: Nodes and Processes",
+      "short_name": "workflow-durable-task-step",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "workflow-durable-task-step",
+      "implementation_version": "2.35",
+      "url": "https://github.com/jenkinsci/workflow-durable-task-step-plugin",
+      "build_jdk": "1.8.0_202"
+    },
+    "git-client": {
+      "long_name": "Jenkins Git client plugin",
+      "short_name": "git-client",
+      "specification_title": "Utility plugin for Git support in Jenkins",
+      "implementation_title": "git-client",
+      "implementation_version": "3.0.0",
+      "url": "https://github.com/jenkinsci/git-client-plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "jdk-tool": {
+      "long_name": "JDK Tool Plugin",
+      "short_name": "jdk-tool",
+      "specification_title": "Allows the JDK tool to be installed via download ",
+      "implementation_title": "jdk-tool",
+      "implementation_version": "1.0",
+      "url": "https://wiki.jenkins.io/display/JENKINS/JDK+Tool+Plugin",
+      "build_jdk": "1.8.0_161"
+    },
+    "pipeline-graph-analysis": {
+      "long_name": "Pipeline Graph Analysis Plugin",
+      "short_name": "pipeline-graph-analysis",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "pipeline-graph-analysis",
+      "implementation_version": "1.10",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Graph+Analys",
+      "build_jdk": "1.8.0_161"
+    },
+    "htmlpublisher": {
+      "long_name": "HTML Publisher plugin",
+      "short_name": "htmlpublisher",
+      "specification_title": "This plugin publishes HTML reports.",
+      "implementation_title": "htmlpublisher",
+      "implementation_version": "1.21",
+      "url": "http://wiki.jenkins-ci.org/display/JENKINS/HTML+Publisher+Plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "blueocean-jwt": {
+      "long_name": "JWT for Blue Ocean",
+      "short_name": "blueocean-jwt",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-jwt",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "blueocean-events": {
+      "long_name": "Events API for Blue Ocean",
+      "short_name": "blueocean-events",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-events",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "blueocean-personalization": {
+      "long_name": "Personalization for Blue Ocean",
+      "short_name": "blueocean-personalization",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-personalization",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "blueocean-core-js": {
+      "long_name": "Blue Ocean Core JS",
+      "short_name": "blueocean-core-js",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-core-js",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Core+JS",
+      "build_jdk": "1.8.0_191"
+    },
+    "git": {
+      "long_name": "Jenkins Git plugin",
+      "short_name": "git",
+      "specification_title": "Integrates Jenkins with GIT SCM",
+      "implementation_title": "git",
+      "implementation_version": "4.0.0",
+      "url": "https://github.com/jenkinsci/git-plugin",
+      "build_jdk": "1.8.0_222"
+    },
+    "blueocean-rest": {
+      "long_name": "REST API for Blue Ocean",
+      "short_name": "blueocean-rest",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "blueocean-rest",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+      "build_jdk": "1.8.0_191"
+    },
+    "pipeline-model-api": {
+      "long_name": "Pipeline: Model API",
+      "short_name": "pipeline-model-api",
+      "specification_title": "Model API for Declarative Pipeline",
+      "implementation_title": "pipeline-model-api",
+      "implementation_version": "1.5.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Model+Defini",
+      "build_jdk": "11.0.5"
+    },
+    "jenkins-design-language": {
+      "long_name": "Jenkins Design Language",
+      "short_name": "jenkins-design-language",
+      "specification_title": "The Jenkins Plugins Parent POM Project",
+      "implementation_title": "jenkins-design-language",
+      "implementation_version": "1.21.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Jenkins+Design+Language",
+      "build_jdk": "1.8.0_191"
+    },
+    "credentials": {
+      "long_name": "Credentials Plugin",
+      "short_name": "credentials",
+      "specification_title": "This plugin allows you to store credentials in Je",
+      "implementation_title": "credentials",
+      "implementation_version": "2.3.0",
+      "url": "https://wiki.jenkins.io/display/JENKINS/Credentials+Plugin",
+      "build_jdk": "1.8.0_163"
+    },
+    "pipeline-stage-tags-metadata": {
+      "long_name": "Pipeline: Stage Tags Metadata",
+      "short_name": "pipeline-stage-tags-metadata",
+      "specification_title": "Library plugin for Pipeline stage tag metadata",
+      "implementation_title": "pipeline-stage-tags-metadata",
+      "implementation_version": "1.5.0",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/Pipeline+Model+Defini",
+      "build_jdk": "11.0.5"
+    }
+  }
+}

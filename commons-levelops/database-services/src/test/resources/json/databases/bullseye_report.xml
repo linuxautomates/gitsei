@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BullseyeCoverage XML 8.21.3 macOS intel License 117660 -->
+<BullseyeCoverage name="test.cov"
+                  dir="/Users/joe/Downloads/levelops_code_coverage/"
+                  buildId="f1618a51_2021-01-12_04:01:45" version="6" xmlns="https://www.bullseye.com/covxml"
+                  fn_cov="784" fn_total="884" cd_cov="12167" cd_total="17713" d_cov="10294" d_total="14637">
+    <folder name=".." fn_cov="784" fn_total="884" cd_cov="12167" cd_total="17713" d_cov="10294" d_total="14637">
+        <folder name="source" fn_cov="784" fn_total="884" cd_cov="12167" cd_total="17713" d_cov="10294" d_total="14637">
+            <folder name="programs" fn_cov="784" fn_total="884" cd_cov="12167" cd_total="17713" d_cov="10294"
+                    d_total="14637">
+                <folder name="protected_cpp" fn_cov="784" fn_total="884" cd_cov="12167" cd_total="17713" d_cov="10294"
+                        d_total="14637">
+                    <folder name="!shared" fn_cov="7" fn_total="18" cd_cov="9" cd_total="118" d_cov="9" d_total="66">
+                        <folder name="esub" fn_cov="7" fn_total="16" cd_cov="9" cd_total="116" d_cov="9" d_total="64">
+                            <src name="emu_submission.cpp" mtime="1610452708" fn_cov="3" fn_total="10" cd_cov="0"
+                                 cd_total="66" d_cov="0" d_total="34">
+                                <fn name="init_emu_submission()" fn_cov="0" fn_total="1" cd_cov="0" cd_total="2"
+                                    d_cov="0" d_total="2">
+                                    <probe line="16" column="4" kind="function" event="none"/>
+                                    <probe line="18" kind="decision" event="none"/>
+                                </fn>
+                                <fn name="set_esub_active_url_list(url_util::url_list&amp;)" fn_cov="1" fn_total="1"
+                                    cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                    <probe line="32" column="4" kind="function" event="full"/>
+                                </fn>
+                                <fn name="is_duplicated_url(const char*,uint16_t)" fn_cov="0" fn_total="1" cd_cov="0"
+                                    cd_total="8" d_cov="0" d_total="4">
+                                    <probe line="37" column="4" kind="function" event="none"/>
+                                    <probe line="40" column="16" kind="decision" event="none"/>
+                                    <probe line="42" kind="decision" event="none"/>
+                                    <probe line="42" column="3" kind="condition" event="none"/>
+                                    <probe line="43" kind="condition" event="none"/>
+                                </fn>
+                                <fn name="scrub_url_pii(const char*,uint16_t)" fn_cov="0" fn_total="1" cd_cov="0"
+                                    cd_total="14" d_cov="0" d_total="10">
+                                    <probe line="64" column="8" kind="function" event="none"/>
+                                    <probe line="79" kind="switch-label" event="none"/>
+                                    <probe line="81" kind="switch-label" event="none"/>
+                                </fn>
+                                <fn name="add_to_url_list(const char*,uint16_t)" fn_cov="1" fn_total="1" cd_cov="0"
+                                    cd_total="0" d_cov="0" d_total="0">
+                                    <probe line="86" column="8" kind="function" event="full"/>
+                                </fn>
+                                <fn name="add_to_url_list_with_flag(const char*,uint16_t,uint32_t)" fn_cov="0"
+                                    fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                    <probe line="91" column="8" kind="function" event="none"/>
+                                </fn>
+                                <fn name="add_to_url_list_internal(const char*,uint16_t)" fn_cov="0" fn_total="1"
+                                    cd_cov="0" cd_total="20" d_cov="0" d_total="8">
+                                    <probe line="96" column="4" kind="function" event="none"/>
+                                    <probe line="116" kind="decision" event="none"/>
+                                </fn>
+                                <fn name="identify_and_add_to_url_list(const char*,uint16_t)" fn_cov="0" fn_total="1"
+                                    cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                    <probe line="128" column="8" kind="function" event="none"/>
+                                </fn>
+                                <fn name="append_script_and_ret_emu_submisson_blob(const char*,uint32_t,uint32_t,uint32_t*,uint16_t)"
+                                    fn_cov="0" fn_total="1" cd_cov="0" cd_total="22" d_cov="0" d_total="10">
+                                    <probe line="133" column="8" kind="function" event="none"/>
+                                    <probe line="136" column="18" kind="decision" event="none"/>
+                                    <probe line="149" column="52" kind="decision" event="none"/>
+                                    <probe line="154" column="54" kind="decision" event="none"/>
+                                    <probe line="163" kind="decision" event="none"/>
+                                </fn>
+                                <fn name="reset_current_url_list()" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="181" column="4" kind="function" event="full"/>
+                                </fn>
+                            </src>
+                            <src name="pii_util.cpp" mtime="1610452708" fn_cov="0" fn_total="1" cd_cov="0" cd_total="14"
+                                 d_cov="0" d_total="2">
+                                <fn name="pii_util::has_bait_string(const char*,uint16_t)" fn_cov="0" fn_total="1"
+                                    cd_cov="0" cd_total="14" d_cov="0" d_total="2">
+                                    <probe line="5" column="4" kind="function" event="none"/>
+                                    <probe line="7" kind="decision" event="none"/>
+                                    <probe line="12" kind="condition" event="none"/>
+                                </fn>
+                            </src>
+                            <src name="url_util.cpp" mtime="1610452708" fn_cov="4" fn_total="5" cd_cov="9" cd_total="36"
+                                 d_cov="9" d_total="28">
+                                <fn name="url_util::url_list::size()" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="17" column="8" kind="function" event="full"/>
+                                </fn>
+                                <fn name="url_util::url_list::add_url(const char*,uint16_t,uint32_t)" fn_cov="1"
+                                    fn_total="1" cd_cov="7" cd_total="20" d_cov="7" d_total="20">
+                                    <probe line="24" column="8" kind="function" event="full"/>
+                                    <probe line="59" kind="decision" event="false"/>
+                                    <probe line="66" kind="decision" event="false"/>
+                                </fn>
+                                <fn name="url_util::url_list::check_and_add_url(const char*,uint16_t,uint32_t)"
+                                    fn_cov="0" fn_total="1" cd_cov="0" cd_total="14" d_cov="0" d_total="6">
+                                    <probe line="83" column="8" kind="function" event="none"/>
+                                    <probe line="105" column="3" kind="condition" event="none"/>
+                                    <probe line="105" column="38" kind="condition" event="none"/>
+                                </fn>
+                                <fn name="url_util::ars_url_list::ars_url_list(const char*)" fn_cov="1" fn_total="1"
+                                    cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                    <probe line="115" kind="function" event="full"/>
+                                </fn>
+                                <fn name="url_util::ars_url_list::~ars_url_list()" fn_cov="1" fn_total="1" cd_cov="2"
+                                    cd_total="2" d_cov="2" d_total="2">
+                                    <probe line="141" kind="function" event="full"/>
+                                    <probe line="146" kind="decision" event="full"/>
+                                </fn>
+                            </src>
+                        </folder>
+                        <folder name="util" fn_cov="0" fn_total="2" cd_cov="0" cd_total="2" d_cov="0" d_total="2">
+                            <src name="crc.h" mtime="1610452708" fn_cov="0" fn_total="2" cd_cov="0" cd_total="2"
+                                 d_cov="0" d_total="2">
+                                <fn name="crc32_step(uint8_t,uint32_t)" fn_cov="0" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="12" column="20" kind="function" event="none"/>
+                                </fn>
+                                <fn name="crc32(uint8_t const*,size_t,uint32_t)" fn_cov="0" fn_total="1" cd_cov="0"
+                                    cd_total="2" d_cov="0" d_total="2">
+                                    <probe line="21" column="20" kind="function" event="none"/>
+                                    <probe line="24" column="8" kind="decision" event="none"/>
+                                </fn>
+                            </src>
+                        </folder>
+                    </folder>
+                    <folder name="af_allfiles" fn_cov="777" fn_total="866" cd_cov="12158" cd_total="17595" d_cov="10285"
+                            d_total="14571">
+                        <folder name="02100_plod" fn_cov="777" fn_total="866" cd_cov="12158" cd_total="17595"
+                                d_cov="10285" d_total="14571">
+                            <folder name="cpu" fn_cov="42" fn_total="43" cd_cov="1701" cd_total="2067" d_cov="1680"
+                                    d_total="2037">
+                                <folder name="ia32" fn_cov="42" fn_total="43" cd_cov="1701" cd_total="2067" d_cov="1680"
+                                        d_total="2037">
+                                    <src name="ia32emu.c" mtime="1610452711" fn_cov="24" fn_total="25" cd_cov="93"
+                                         cd_total="151" d_cov="87" d_total="145">
+                                        <fn name="obtain_page_crossing(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="2"
+                                            cd_total="2" d_cov="2" d_total="2">
+                                            <probe line="39" column="27" kind="function" event="full"/>
+                                            <probe line="42" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="prepare_page_crossing(ia32_cpu_t*,unsigned int,unsigned int)"
+                                            fn_cov="1" fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                            <probe line="59" column="27" kind="function" event="full"/>
+                                            <probe line="67" kind="decision" event="true"/>
+                                            <probe line="75" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="release_page_crossing(ia32_cpu_t*,ia32_page_crossing_t*)" fn_cov="1"
+                                            fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="86" column="10" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="unlink_code_block(ia32_cpu_t*,unsigned int)" fn_cov="1" fn_total="1"
+                                            cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="93" column="10" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="append_code_block(ia32_cpu_t*,unsigned int,unsigned int)" fn_cov="1"
+                                            fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="105" column="10" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="chain_free_code_block(ia32_cpu_t*,unsigned int)" fn_cov="1"
+                                            fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="118" column="10" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="discard_code_block(ia32_cpu_t*,unsigned int)" fn_cov="1" fn_total="1"
+                                            cd_cov="5" cd_total="8" d_cov="5" d_total="8">
+                                            <probe line="129" column="10" kind="function" event="full"/>
+                                            <probe line="138" kind="decision" event="full"/>
+                                            <probe line="148" kind="decision" event="false"/>
+                                            <probe line="152" kind="decision" event="none"/>
+                                            <probe line="173" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="obtain_code_block(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="2"
+                                            cd_total="2" d_cov="2" d_total="2">
+                                            <probe line="186" column="17" kind="function" event="full"/>
+                                            <probe line="190" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="get_current_insn_va(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="0"
+                                            cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="210" column="14" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="handle_event(ia32_cpu_t*,uint32_t)" fn_cov="1" fn_total="1" cd_cov="0"
+                                            cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="225" column="19" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="invalidate_code_blocks_from_map(ia32_cpu_t*,uint8_t*,uint32_t,uint32_t,uint32_t)"
+                                            fn_cov="1" fn_total="1" cd_cov="16" cd_total="16" d_cov="10" d_total="10">
+                                            <probe line="239" column="10" kind="function" event="full"/>
+                                            <probe line="251" column="5" kind="decision" event="full"/>
+                                            <probe line="252" kind="decision" event="full"/>
+                                            <probe line="255" column="16" kind="decision" event="full"/>
+                                            <probe line="258" kind="decision" event="full"/>
+                                            <probe line="258" column="3" kind="condition" event="full"/>
+                                            <probe line="258" column="8" kind="condition" event="full"/>
+                                            <probe line="258" column="33" kind="condition" event="full"/>
+                                            <probe line="265" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="invalidate_code_blocks_for_range(ia32_cpu_t*,uint32_t,uint32_t,int)"
+                                            fn_cov="1" fn_total="1" cd_cov="9" cd_total="10" d_cov="9" d_total="10">
+                                            <probe line="278" column="4" kind="function" event="full"/>
+                                            <probe line="288" kind="decision" event="full"/>
+                                            <probe line="291" kind="decision" event="full"/>
+                                            <probe line="294" kind="decision" event="full"/>
+                                            <probe line="297" kind="decision" event="full"/>
+                                            <probe line="306" kind="decision" event="true"/>
+                                        </fn>
+                                        <fn name="dummy_event_handler(ia32_cpu_t*,ia32_event_t)" fn_cov="0" fn_total="1"
+                                            cd_cov="0" cd_total="3" d_cov="0" d_total="3">
+                                            <probe line="314" column="19" kind="function" event="none"/>
+                                            <probe line="319" kind="switch-label" event="none"/>
+                                            <probe line="322" kind="switch-label" event="none"/>
+                                            <probe line="325" kind="switch-label" event="none"/>
+                                        </fn>
+                                        <fn name="get_lazy_of(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="11"
+                                            cd_total="30" d_cov="11" d_total="30">
+                                            <probe line="374" column="17" kind="function" event="full"/>
+                                            <probe line="379" kind="switch-label" event="full"/>
+                                            <probe line="411" kind="switch-label" event="none"/>
+                                        </fn>
+                                        <fn name="get_lazy_sf(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="0"
+                                            cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="418" column="17" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="get_lazy_zf(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="0"
+                                            cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="424" column="17" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="get_lazy_af(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="13"
+                                            cd_total="30" d_cov="13" d_total="30">
+                                            <probe line="430" column="17" kind="function" event="full"/>
+                                            <probe line="435" kind="switch-label" event="full"/>
+                                            <probe line="476" kind="switch-label" event="full"/>
+                                            <probe line="479" kind="switch-label" event="none"/>
+                                        </fn>
+                                        <fn name="get_lazy_pf(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="0"
+                                            cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="486" column="17" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="get_lazy_cf(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="14"
+                                            cd_total="24" d_cov="14" d_total="24">
+                                            <probe line="497" column="17" kind="function" event="full"/>
+                                            <probe line="502" kind="switch-label" event="full"/>
+                                            <probe line="527" kind="switch-label" event="full"/>
+                                            <probe line="528" kind="switch-label" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_get_eflags(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="0"
+                                            cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="536" column="8" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_set_eflags(ia32_cpu_t*,uint32_t)" fn_cov="1" fn_total="1"
+                                            cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                            <probe line="559" column="4" kind="function" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_cpu_init(ia32_cpu_t*,unsigned int,vmm_space_t*)" fn_cov="1"
+                                            fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                            <probe line="568" column="4" kind="function" event="full"/>
+                                            <probe line="579" kind="decision" event="false"/>
+                                            <probe line="584" column="8" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_cpu_close(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="8"
+                                            cd_total="10" d_cov="8" d_total="10">
+                                            <probe line="617" column="4" kind="function" event="full"/>
+                                            <probe line="620" kind="decision" event="false"/>
+                                            <probe line="622" kind="decision" event="true"/>
+                                            <probe line="626" kind="decision" event="full"/>
+                                            <probe line="629" kind="decision" event="full"/>
+                                            <probe line="634" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_cpu_run(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="1"
+                                            cd_total="2" d_cov="1" d_total="2">
+                                            <probe line="827" column="13" kind="function" event="full"/>
+                                            <probe line="830" kind="decision" event="false"/>
+                                        </fn>
+                                        <fn name="ia32_invalidate_write_cache(ia32_cpu_t*,uint32_t,uint32_t)" fn_cov="1"
+                                            fn_total="1" cd_cov="6" cd_total="6" d_cov="6" d_total="6">
+                                            <probe line="981" column="4" kind="function" event="full"/>
+                                            <probe line="983" kind="decision" event="full"/>
+                                            <probe line="984" column="5" kind="decision" event="full"/>
+                                            <probe line="987" kind="decision" event="full"/>
+                                        </fn>
+                                    </src>
+                                    <src name="ia32run.h" mtime="1610452711" fn_cov="17" fn_total="17" cd_cov="1515"
+                                         cd_total="1779" d_cov="1507" d_total="1771">
+                                        <fn name="ia32_fast_modrm_decode_mem16(ia32_cpu_t*,unsigned int,uint8_t const*)"
+                                            fn_cov="1" fn_total="1" cd_cov="12" cd_total="15" d_cov="12" d_total="15">
+                                            <probe line="14" column="13" kind="function" event="full"/>
+                                            <probe line="26" kind="switch-label" event="full"/>
+                                            <probe line="88" kind="switch-label" event="full"/>
+                                            <probe line="92" kind="switch-label" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_modrm_decode_mem32(ia32_cpu_t*,unsigned int,uint8_t const*)"
+                                            fn_cov="1" fn_total="1" cd_cov="21" cd_total="23" d_cov="17" d_total="19">
+                                            <probe line="105" column="13" kind="function" event="full"/>
+                                            <probe line="117" kind="switch-label" event="full"/>
+                                            <probe line="175" kind="switch-label" event="full"/>
+                                            <probe line="179" kind="switch-label" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_page_fault(ia32_cpu_t*,uint32_t,uint32_t,uint32_t,uint8_t,unsigned int)"
+                                            fn_cov="1" fn_total="1" cd_cov="5" cd_total="7" d_cov="5" d_total="7">
+                                            <probe line="195" column="13" kind="function" event="full"/>
+                                            <probe line="200" kind="switch-label" event="full"/>
+                                            <probe line="203" kind="switch-label" event="full"/>
+                                            <probe line="206" kind="switch-label" event="full"/>
+                                            <probe line="207" kind="switch-label" event="none"/>
+                                            <probe line="211" kind="switch-label" event="none"/>
+                                            <probe line="222" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_fast_mem_read_error(ia32_cpu_t*,uint32_t,uint32_t,unsigned int,int)"
+                                            fn_cov="1" fn_total="1" cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+                                            <probe line="239" column="13" kind="function" event="full"/>
+                                            <probe line="242" column="42" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_fast_mem_write_error(ia32_cpu_t*,uint32_t,uint32_t,unsigned int,int)"
+                                            fn_cov="1" fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                            <probe line="246" column="13" kind="function" event="full"/>
+                                            <probe line="248" kind="decision" event="full"/>
+                                            <probe line="254" column="42" kind="decision" event="false"/>
+                                        </fn>
+                                        <fn name="ia32_fast_read_mem8(ia32_cpu_t*,uint32_t,unsigned int,uint8_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                            <probe line="258" column="19" kind="function" event="full"/>
+                                            <probe line="263" kind="decision" event="full"/>
+                                            <probe line="266" kind="decision" event="true"/>
+                                        </fn>
+                                        <fn name="ia32_fast_read_mem16(ia32_cpu_t*,uint32_t,unsigned int,uint16_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="6" cd_total="10" d_cov="6" d_total="10">
+                                            <probe line="276" column="19" kind="function" event="full"/>
+                                            <probe line="282" kind="decision" event="false"/>
+                                            <probe line="285" kind="decision" event="none"/>
+                                            <probe line="288" kind="decision" event="full"/>
+                                            <probe line="298" kind="decision" event="full"/>
+                                            <probe line="301" kind="decision" event="true"/>
+                                        </fn>
+                                        <fn name="ia32_fast_read_mem32(ia32_cpu_t*,uint32_t,unsigned int,uint32_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="6" cd_total="10" d_cov="6" d_total="10">
+                                            <probe line="314" column="19" kind="function" event="full"/>
+                                            <probe line="320" kind="decision" event="full"/>
+                                            <probe line="323" kind="decision" event="true"/>
+                                            <probe line="326" kind="decision" event="full"/>
+                                            <probe line="336" kind="decision" event="false"/>
+                                            <probe line="339" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_read_mem64(ia32_cpu_t*,uint32_t,unsigned int,uint64_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="4" cd_total="10" d_cov="4" d_total="10">
+                                            <probe line="349" column="19" kind="function" event="full"/>
+                                            <probe line="355" kind="decision" event="false"/>
+                                            <probe line="358" kind="decision" event="none"/>
+                                            <probe line="361" kind="decision" event="full"/>
+                                            <probe line="371" kind="decision" event="false"/>
+                                            <probe line="374" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_modread_mem8(ia32_cpu_t*,uint32_t,unsigned int,uint8_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+                                            <probe line="384" column="19" kind="function" event="full"/>
+                                            <probe line="388" kind="decision" event="full"/>
+                                            <probe line="391" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_fast_modread_mem16(ia32_cpu_t*,uint32_t,unsigned int,uint16_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="2" cd_total="16" d_cov="2" d_total="16">
+                                            <probe line="405" column="19" kind="function" event="full"/>
+                                            <probe line="411" kind="decision" event="false"/>
+                                            <probe line="414" kind="decision" event="none"/>
+                                            <probe line="416" kind="decision" event="none"/>
+                                            <probe line="424" kind="decision" event="none"/>
+                                            <probe line="427" kind="decision" event="none"/>
+                                            <probe line="434" kind="decision" event="true"/>
+                                            <probe line="445" kind="decision" event="none"/>
+                                            <probe line="448" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_modread_mem32(ia32_cpu_t*,uint32_t,unsigned int,uint32_t*)"
+                                            fn_cov="1" fn_total="1" cd_cov="6" cd_total="16" d_cov="6" d_total="16">
+                                            <probe line="459" column="19" kind="function" event="full"/>
+                                            <probe line="465" kind="decision" event="full"/>
+                                            <probe line="468" kind="decision" event="full"/>
+                                            <probe line="470" kind="decision" event="true"/>
+                                            <probe line="478" kind="decision" event="none"/>
+                                            <probe line="481" kind="decision" event="none"/>
+                                            <probe line="488" kind="decision" event="true"/>
+                                            <probe line="499" kind="decision" event="none"/>
+                                            <probe line="502" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_write_mem8(ia32_cpu_t*,uint32_t,uint8_t,unsigned int)"
+                                            fn_cov="1" fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+                                            <probe line="513" column="19" kind="function" event="full"/>
+                                            <probe line="517" kind="decision" event="full"/>
+                                            <probe line="520" kind="decision" event="full"/>
+                                        </fn>
+                                        <fn name="ia32_fast_write_mem16(ia32_cpu_t*,uint32_t,uint16_t,unsigned int)"
+                                            fn_cov="1" fn_total="1" cd_cov="11" cd_total="16" d_cov="11" d_total="16">
+                                            <probe line="538" column="19" kind="function" event="full"/>
+                                            <probe line="544" kind="decision" event="full"/>
+                                            <probe line="547" kind="decision" event="false"/>
+                                            <probe line="551" kind="decision" event="full"/>
+                                            <probe line="559" kind="decision" event="full"/>
+                                            <probe line="562" kind="decision" event="false"/>
+                                            <probe line="569" kind="decision" event="full"/>
+                                            <probe line="580" kind="decision" event="false"/>
+                                            <probe line="583" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_write_mem32(ia32_cpu_t*,uint32_t,uint32_t,unsigned int)"
+                                            fn_cov="1" fn_total="1" cd_cov="11" cd_total="16" d_cov="11" d_total="16">
+                                            <probe line="595" column="19" kind="function" event="full"/>
+                                            <probe line="601" kind="decision" event="full"/>
+                                            <probe line="604" kind="decision" event="full"/>
+                                            <probe line="608" kind="decision" event="full"/>
+                                            <probe line="616" kind="decision" event="true"/>
+                                            <probe line="619" kind="decision" event="false"/>
+                                            <probe line="626" kind="decision" event="full"/>
+                                            <probe line="637" kind="decision" event="false"/>
+                                            <probe line="640" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_write_mem64(ia32_cpu_t*,uint32_t,uint64_t,unsigned int)"
+                                            fn_cov="1" fn_total="1" cd_cov="4" cd_total="16" d_cov="4" d_total="16">
+                                            <probe line="650" column="19" kind="function" event="full"/>
+                                            <probe line="656" kind="decision" event="false"/>
+                                            <probe line="659" kind="decision" event="none"/>
+                                            <probe line="663" kind="decision" event="none"/>
+                                            <probe line="671" kind="decision" event="none"/>
+                                            <probe line="674" kind="decision" event="none"/>
+                                            <probe line="681" kind="decision" event="full"/>
+                                            <probe line="692" kind="decision" event="false"/>
+                                            <probe line="695" kind="decision" event="none"/>
+                                        </fn>
+                                        <fn name="ia32_fast_run(ia32_cpu_t*)" fn_cov="1" fn_total="1" cd_cov="1411"
+                                            cd_total="1606" d_cov="1407" d_total="1602">
+                                            <probe line="4265" column="19" kind="function" event="full"/>
+                                            <probe line="4306" kind="decision" event="full"/>
+                                            <probe line="6990" kind="switch-label" event="none"/>
+                                            <probe line="6994" kind="switch-label" event="none"/>
+                                        </fn>
+                                    </src>
+                                    <src name="ia32tab.h" mtime="1610452711" fn_cov="1" fn_total="1" cd_cov="93"
+                                         cd_total="137" d_cov="86" d_total="121">
+                                        <fn name="ia32_insn_scan(uint8_t const*,unsigned int)" fn_cov="1" fn_total="1"
+                                            cd_cov="93" cd_total="137" d_cov="86" d_total="121">
+                                            <probe line="129" column="17" kind="function" event="full"/>
+                                            <probe line="142" kind="switch-label" event="full"/>
+                                            <probe line="439" kind="switch-label" event="full"/>
+                                            <probe line="440" kind="switch-label" event="none"/>
+                                            <probe line="443" kind="switch-label" event="none"/>
+                                            <probe line="446" kind="decision" event="full"/>
+                                        </fn>
+                                    </src>
+                                </folder>
+                            </folder>
+                            <folder name="filetype" fn_cov="6" fn_total="6" cd_cov="189" cd_total="236" d_cov="116"
+                                    d_total="150">
+                                <src name="pe.c" mtime="1610452711" fn_cov="6" fn_total="6" cd_cov="189" cd_total="236"
+                                     d_cov="116" d_total="150">
+                                    <fn name="ft_pe(vmm_space_t*,fio_t*,plod_dentry_t*,pe_info_t*)" fn_cov="1"
+                                        fn_total="1" cd_cov="65" cd_total="68" d_cov="31" d_total="34">
+                                        <probe line="11" column="3" kind="function" event="full"/>
+                                        <probe line="25" kind="decision" event="full"/>
+                                        <probe line="198" column="42" kind="condition" event="full"/>
+                                        <probe line="201" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="pe_get_sections(pe_info_t*)" fn_cov="1" fn_total="1" cd_cov="84"
+                                        cd_total="96" d_cov="50" d_total="56">
+                                        <probe line="261" column="3" kind="function" event="full"/>
+                                        <probe line="275" kind="decision" event="full"/>
+                                        <probe line="469" kind="decision" event="full"/>
+                                        <probe line="477" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="pe_imp32_init(pe_imp32_state_t*,vmm_space_t*,pe_info_t const*)" fn_cov="1"
+                                        fn_total="1" cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+                                        <probe line="492" column="17" kind="function" event="full"/>
+                                        <probe line="500" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="pe_imp32_get_dir(pe_imp32_state_t*)" fn_cov="1" fn_total="1" cd_cov="21"
+                                        cd_total="35" d_cov="16" d_total="23">
+                                        <probe line="507" column="17" kind="function" event="full"/>
+                                        <probe line="515" kind="decision" event="full"/>
+                                        <probe line="608" kind="switch-label" event="none"/>
+                                        <probe line="611" kind="switch-label" event="none"/>
+                                    </fn>
+                                    <fn name="pe_imp32_get_import(pe_imp32_state_t*,int)" fn_cov="1" fn_total="1"
+                                        cd_cov="10" cd_total="23" d_cov="10" d_total="23">
+                                        <probe line="624" column="17" kind="function" event="full"/>
+                                        <probe line="634" kind="switch-label" event="full"/>
+                                        <probe line="719" kind="switch-label" event="none"/>
+                                    </fn>
+                                    <fn name="pe_from_sc(vmm_space_t*,fio_t*,plod_dentry_t*,pe_info_t*)" fn_cov="1"
+                                        fn_total="1" cd_cov="7" cd_total="12" d_cov="7" d_total="12">
+                                        <probe line="1067" column="3" kind="function" event="full"/>
+                                        <probe line="1085" column="16" kind="decision" event="false"/>
+                                        <probe line="1223" column="8" kind="decision" event="full"/>
+                                    </fn>
+                                </src>
+                            </folder>
+                            <folder name="vmm" fn_cov="46" fn_total="47" cd_cov="216" cd_total="256" d_cov="200"
+                                    d_total="240">
+                                <src name="vmm.c" mtime="1610452712" fn_cov="42" fn_total="43" cd_cov="188"
+                                     cd_total="228" d_cov="172" d_total="212">
+                                    <fn name="vmm_create(size_t)" fn_cov="1" fn_total="1" cd_cov="4" cd_total="6"
+                                        d_cov="4" d_total="6">
+                                        <probe line="34" column="6" kind="function" event="full"/>
+                                        <probe line="40" kind="decision" event="false"/>
+                                        <probe line="50" kind="decision" event="false"/>
+                                        <probe line="56" column="8" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_set_page_limit(vmm_t*,size_t)" fn_cov="1" fn_total="1" cd_cov="0"
+                                        cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="70" column="6" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_close(vmm_t*)" fn_cov="1" fn_total="1" cd_cov="3" cd_total="4"
+                                        d_cov="3" d_total="4">
+                                        <probe line="79" column="4" kind="function" event="full"/>
+                                        <probe line="87" kind="decision" event="false"/>
+                                        <probe line="94" column="21" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_alloc_page(vmm_t*)" fn_cov="1" fn_total="1" cd_cov="7" cd_total="8"
+                                        d_cov="7" d_total="8">
+                                        <probe line="107" column="5" kind="function" event="full"/>
+                                        <probe line="111" kind="decision" event="full"/>
+                                        <probe line="115" kind="decision" event="full"/>
+                                        <probe line="124" kind="decision" event="false"/>
+                                        <probe line="127" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_free_page(vmm_t*,void*)" fn_cov="1" fn_total="1" cd_cov="2"
+                                        cd_total="2" d_cov="2" d_total="2">
+                                        <probe line="134" column="4" kind="function" event="full"/>
+                                        <probe line="138" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="space_alloc(vmm_t*,uint8_t)" fn_cov="1" fn_total="1" cd_cov="5"
+                                        cd_total="10" d_cov="5" d_total="10">
+                                        <probe line="151" column="18" kind="function" event="full"/>
+                                        <probe line="162" kind="decision" event="false"/>
+                                        <probe line="182" kind="decision" event="false"/>
+                                        <probe line="193" kind="decision" event="false"/>
+                                        <probe line="201" kind="decision" event="false"/>
+                                        <probe line="214" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="space_free(vmm_space_t*)" fn_cov="1" fn_total="1" cd_cov="12"
+                                        cd_total="12" d_cov="12" d_total="12">
+                                        <probe line="234" column="10" kind="function" event="full"/>
+                                        <probe line="242" column="11" kind="decision" event="full"/>
+                                        <probe line="244" kind="decision" event="full"/>
+                                        <probe line="245" column="11" kind="decision" event="full"/>
+                                        <probe line="247" kind="decision" event="full"/>
+                                        <probe line="258" column="8" kind="decision" event="full"/>
+                                        <probe line="261" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_create_space(vmm_t*,uint8_t)" fn_cov="1" fn_total="1" cd_cov="3"
+                                        cd_total="4" d_cov="3" d_total="4">
+                                        <probe line="276" column="12" kind="function" event="full"/>
+                                        <probe line="282" kind="decision" event="false"/>
+                                        <probe line="284" column="8" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_close_space(vmm_space_t*)" fn_cov="1" fn_total="1" cd_cov="1"
+                                        cd_total="2" d_cov="1" d_total="2">
+                                        <probe line="293" column="4" kind="function" event="full"/>
+                                        <probe line="296" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="rx_alloc(vmm_space_t*)" fn_cov="1" fn_total="1" cd_cov="9" cd_total="12"
+                                        d_cov="9" d_total="12">
+                                        <probe line="306" column="14" kind="function" event="full"/>
+                                        <probe line="312" kind="decision" event="full"/>
+                                        <probe line="319" kind="decision" event="full"/>
+                                        <probe line="321" kind="decision" event="full"/>
+                                        <probe line="323" kind="decision" event="false"/>
+                                        <probe line="326" kind="decision" event="false"/>
+                                        <probe line="329" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="missing_page_init(vmm_space_t*,vmm_range_t*,uint32_t)" fn_cov="0"
+                                        fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="345" column="17" kind="function" event="none"/>
+                                    </fn>
+                                    <fn name="vmm_get_range_pos(vmm_space_t*,uint32_t)" fn_cov="1" fn_total="1"
+                                        cd_cov="6" cd_total="6" d_cov="6" d_total="6">
+                                        <probe line="355" column="3" kind="function" event="full"/>
+                                        <probe line="361" kind="decision" event="full"/>
+                                        <probe line="365" kind="decision" event="full"/>
+                                        <probe line="367" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_get_range(vmm_space_t*,uint32_t)" fn_cov="1" fn_total="1" cd_cov="2"
+                                        cd_total="2" d_cov="2" d_total="2">
+                                        <probe line="381" column="12" kind="function" event="full"/>
+                                        <probe line="384" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_add_range(vmm_space_t*,uint8_t,uint32_t,uint32_t,vmm_init_page_f,void*,char const*)"
+                                        fn_cov="1" fn_total="1" cd_cov="9" cd_total="10" d_cov="5" d_total="6">
+                                        <probe line="406" column="11" kind="function" event="full"/>
+                                        <probe line="417" kind="decision" event="full"/>
+                                        <probe line="417" column="3" kind="condition" event="full"/>
+                                        <probe line="417" column="9" kind="condition" event="full"/>
+                                        <probe line="419" kind="decision" event="false"/>
+                                        <probe line="421" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_init_page(vmm_space_t*,uint32_t)" fn_cov="1" fn_total="1" cd_cov="8"
+                                        cd_total="8" d_cov="4" d_total="4">
+                                        <probe line="443" column="11" kind="function" event="full"/>
+                                        <probe line="457" kind="decision" event="full"/>
+                                        <probe line="462" kind="decision" event="full"/>
+                                        <probe line="462" column="3" kind="condition" event="full"/>
+                                        <probe line="462" column="12" kind="condition" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_change_prot(vmm_space_t*,uint32_t,uint8_t)" fn_cov="1" fn_total="1"
+                                        cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                        <probe line="475" column="11" kind="function" event="full"/>
+                                        <probe line="486" kind="decision" event="false"/>
+                                        <probe line="487" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="pt_modify(vmm_space_t*,uint32_t)" fn_cov="1" fn_total="1" cd_cov="5"
+                                        cd_total="6" d_cov="5" d_total="6">
+                                        <probe line="507" column="17" kind="function" event="full"/>
+                                        <probe line="512" kind="decision" event="full"/>
+                                        <probe line="515" kind="decision" event="false"/>
+                                        <probe line="518" column="8" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_set_page(vmm_space_t*,uint32_t,void*,vmm_flags_t,vmm_rx_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="1" cd_total="2" d_cov="1" d_total="2">
+                                        <probe line="526" column="11" kind="function" event="full"/>
+                                        <probe line="533" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="zero_initer(vmm_space_t*,vmm_range_t*,uint32_t)" fn_cov="1" fn_total="1"
+                                        cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="542" column="11" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_add_zero_range(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t,char const*)"
+                                        fn_cov="1" fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="549" column="11" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="filemap_page_init(vmm_space_t*,vmm_range_t*,uint32_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="7" cd_total="12" d_cov="7" d_total="12">
+                                        <probe line="567" column="17" kind="function" event="full"/>
+                                        <probe line="576" kind="decision" event="false"/>
+                                        <probe line="583" kind="decision" event="false"/>
+                                        <probe line="584" kind="decision" event="false"/>
+                                        <probe line="591" column="2" kind="decision" event="full"/>
+                                        <probe line="592" kind="decision" event="false"/>
+                                        <probe line="601" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="vmm_add_file_range(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t,fio_t*,uint64_t,uint64_t,char const*)"
+                                        fn_cov="1" fn_total="1" cd_cov="2" cd_total="4" d_cov="2" d_total="4">
+                                        <probe line="611" column="11" kind="function" event="full"/>
+                                        <probe line="623" kind="decision" event="false"/>
+                                        <probe line="629" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="preinit_initer(vmm_space_t*,vmm_range_t*,uint32_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="5" cd_total="8" d_cov="5" d_total="8">
+                                        <probe line="644" column="17" kind="function" event="full"/>
+                                        <probe line="653" kind="decision" event="full"/>
+                                        <probe line="659" kind="decision" event="false"/>
+                                        <probe line="667" kind="decision" event="false"/>
+                                        <probe line="672" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="vmm_add_preinit_range(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t,uint8_t const*,size_t,char const*)"
+                                        fn_cov="1" fn_total="1" cd_cov="2" cd_total="4" d_cov="2" d_total="4">
+                                        <probe line="682" column="11" kind="function" event="full"/>
+                                        <probe line="690" kind="decision" event="false"/>
+                                        <probe line="695" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="vmm_access_pages(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+                                        <probe line="700" column="11" kind="function" event="full"/>
+                                        <probe line="709" kind="decision" event="full"/>
+                                        <probe line="710" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_access32(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="718" column="11" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_access(vmm_space_t*,uint64_t,uint64_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="729" column="11" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_read(vmm_space_t*,void*,uint64_t,size_t)" fn_cov="1" fn_total="1"
+                                        cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                        <probe line="739" column="4" kind="function" event="full"/>
+                                        <probe line="752" kind="decision" event="full"/>
+                                        <probe line="761" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="vmm_copy_on_write(vmm_space_t*,uint32_t,uint32_t)" fn_cov="1" fn_total="1"
+                                        cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+                                        <probe line="770" column="11" kind="function" event="full"/>
+                                        <probe line="774" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_own_pages(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+                                        <probe line="782" column="11" kind="function" event="full"/>
+                                        <probe line="791" kind="decision" event="full"/>
+                                        <probe line="793" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_modify(vmm_space_t*,uint64_t,uint64_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="798" column="11" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_modify32(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="0" cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="808" column="11" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_write(vmm_space_t*,void const*,uint64_t,size_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="4" cd_total="4" d_cov="4" d_total="4">
+                                        <probe line="819" column="4" kind="function" event="full"/>
+                                        <probe line="832" kind="decision" event="full"/>
+                                        <probe line="841" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_get_safe_read_range(vmm_space_t*,u64,u64,u8**,u32*)" fn_cov="1"
+                                        fn_total="1" cd_cov="5" cd_total="6" d_cov="5" d_total="6">
+                                        <probe line="850" column="4" kind="function" event="full"/>
+                                        <probe line="855" kind="decision" event="false"/>
+                                        <probe line="865" kind="decision" event="full"/>
+                                        <probe line="871" column="6" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_get_safe_write_range(vmm_space_t*,u64,u64,u8**,u32*)" fn_cov="1"
+                                        fn_total="1" cd_cov="5" cd_total="6" d_cov="5" d_total="6">
+                                        <probe line="877" column="4" kind="function" event="full"/>
+                                        <probe line="882" kind="decision" event="false"/>
+                                        <probe line="892" kind="decision" event="full"/>
+                                        <probe line="898" column="6" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_get_unsafe_range(vmm_space_t*,u64,u64,u8**,u32*)" fn_cov="1"
+                                        fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                        <probe line="903" column="4" kind="function" event="full"/>
+                                        <probe line="907" kind="decision" event="false"/>
+                                        <probe line="919" column="6" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_search_u8(vmm_space_t*,uint64_t,uint64_t,uint8_t,vmm_flags_t,uint64_t*)"
+                                        fn_cov="1" fn_total="1" cd_cov="8" cd_total="8" d_cov="8" d_total="8">
+                                        <probe line="925" column="11" kind="function" event="full"/>
+                                        <probe line="935" column="14" kind="decision" event="full"/>
+                                        <probe line="943" kind="decision" event="full"/>
+                                        <probe line="953" kind="decision" event="full"/>
+                                        <probe line="956" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_rsearch_u8(vmm_space_t*,uint64_t,uint64_t,uint8_t,vmm_flags_t,uint64_t*)"
+                                        fn_cov="1" fn_total="1" cd_cov="9" cd_total="10" d_cov="9" d_total="10">
+                                        <probe line="970" column="11" kind="function" event="full"/>
+                                        <probe line="981" kind="decision" event="full"/>
+                                        <probe line="990" kind="decision" event="false"/>
+                                        <probe line="1001" kind="decision" event="full"/>
+                                        <probe line="1004" column="15" kind="decision" event="full"/>
+                                        <probe line="1005" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_search_u16le(vmm_space_t*,uint64_t,uint64_t,uint16_t,vmm_flags_t,uint64_t*)"
+                                        fn_cov="1" fn_total="1" cd_cov="12" cd_total="16" d_cov="12" d_total="16">
+                                        <probe line="1019" column="11" kind="function" event="full"/>
+                                        <probe line="1033" kind="decision" event="false"/>
+                                        <probe line="1041" kind="decision" event="full"/>
+                                        <probe line="1051" kind="decision" event="false"/>
+                                        <probe line="1054" kind="decision" event="none"/>
+                                        <probe line="1064" kind="decision" event="full"/>
+                                        <probe line="1071" column="20" kind="decision" event="full"/>
+                                        <probe line="1072" kind="decision" event="full"/>
+                                        <probe line="1078" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_get_buffer(vmm_space_t*,uint64_t,size_t,uint8_t*)" fn_cov="1"
+                                        fn_total="1" cd_cov="3" cd_total="4" d_cov="3" d_total="4">
+                                        <probe line="1087" column="5" kind="function" event="full"/>
+                                        <probe line="1090" kind="decision" event="full"/>
+                                        <probe line="1091" kind="decision" event="false"/>
+                                    </fn>
+                                    <fn name="vmm_status_name(unsigned int)" fn_cov="1" fn_total="1" cd_cov="0"
+                                        cd_total="0" d_cov="0" d_total="0">
+                                        <probe line="1097" column="10" kind="function" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_find_gap(vmm_space_t*,uint32_t,uint32_t,uint32_t,uint8_t,uint64_t*)"
+                                        fn_cov="1" fn_total="1" cd_cov="22" cd_total="22" d_cov="14" d_total="14">
+                                        <probe line="1117" column="8" kind="function" event="full"/>
+                                        <probe line="1128" kind="decision" event="full"/>
+                                        <probe line="1129" kind="decision" event="full"/>
+                                        <probe line="1134" kind="decision" event="full"/>
+                                        <probe line="1136" kind="decision" event="full"/>
+                                        <probe line="1139" kind="decision" event="full"/>
+                                        <probe line="1145" kind="decision" event="full"/>
+                                        <probe line="1145" column="3" kind="condition" event="full"/>
+                                        <probe line="1145" column="15" kind="condition" event="full"/>
+                                        <probe line="1149" column="16" kind="decision" event="full"/>
+                                        <probe line="1149" column="22" kind="condition" event="full"/>
+                                        <probe line="1149" column="42" kind="condition" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_wash_pages(vmm_space_t*,uint32_t,uint32_t)" fn_cov="1" fn_total="1"
+                                        cd_cov="8" cd_total="8" d_cov="8" d_total="8">
+                                        <probe line="1156" column="4" kind="function" event="full"/>
+                                        <probe line="1160" column="57" kind="decision" event="full"/>
+                                        <probe line="1164" kind="decision" event="full"/>
+                                        <probe line="1165" kind="decision" event="full"/>
+                                        <probe line="1166" column="30" kind="decision" event="full"/>
+                                    </fn>
+                                </src>
+                                <src name="vmm.h" mtime="1610452712" fn_cov="4" fn_total="4" cd_cov="28" cd_total="28"
+                                     d_cov="28" d_total="28">
+                                    <fn name="vmm_access_page(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="8" cd_total="8" d_cov="8" d_total="8">
+                                        <probe line="447" column="17" kind="function" event="full"/>
+                                        <probe line="460" kind="decision" event="full"/>
+                                        <probe line="461" kind="decision" event="full"/>
+                                        <probe line="463" kind="decision" event="full"/>
+                                        <probe line="467" column="6" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_modify_page(vmm_space_t*,uint32_t,uint32_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="16" cd_total="16" d_cov="16" d_total="16">
+                                        <probe line="550" column="17" kind="function" event="full"/>
+                                        <probe line="559" kind="decision" event="full"/>
+                                        <probe line="565" kind="decision" event="full"/>
+                                        <probe line="572" kind="decision" event="full"/>
+                                        <probe line="575" kind="decision" event="full"/>
+                                        <probe line="578" kind="decision" event="full"/>
+                                        <probe line="580" kind="decision" event="full"/>
+                                        <probe line="583" kind="decision" event="full"/>
+                                        <probe line="588" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_aread(vmm_space_t*,void*,uint64_t,size_t,vmm_flags_t)" fn_cov="1"
+                                        fn_total="1" cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+                                        <probe line="637" column="17" kind="function" event="full"/>
+                                        <probe line="641" kind="decision" event="full"/>
+                                    </fn>
+                                    <fn name="vmm_mwrite(vmm_space_t*,void const*,uint64_t,size_t,vmm_flags_t)"
+                                        fn_cov="1" fn_total="1" cd_cov="2" cd_total="2" d_cov="2" d_total="2">
+                                        <probe line="658" column="17" kind="function" event="full"/>
+                                        <probe line="662" kind="decision" event="full"/>
+                                    </fn>
+                                </src>
+                            </folder>
+                            <src name="main.c" mtime="1610452711" fn_cov="7" fn_total="7" cd_cov="108" cd_total="194"
+                                 d_cov="88" d_total="158">
+                                <fn name="auto_dump_vspace(job_t*)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="400" column="3" kind="function" event="full"/>
+                                </fn>
+                                <fn name="prepare_tick(job_t*)" fn_cov="1" fn_total="1" cd_cov="6" cd_total="8"
+                                    d_cov="6" d_total="8">
+                                    <probe line="673" column="12" kind="function" event="full"/>
+                                    <probe line="676" column="24" kind="decision" event="false"/>
+                                    <probe line="679" kind="decision" event="false"/>
+                                    <probe line="680" kind="decision" event="full"/>
+                                    <probe line="688" kind="decision" event="full"/>
+                                </fn>
+                                <fn name="event_handler(job_t*,uint)" fn_cov="1" fn_total="1" cd_cov="23" cd_total="39"
+                                    d_cov="20" d_total="31">
+                                    <probe line="2186" column="18" kind="function" event="full"/>
+                                    <probe line="2214" kind="switch-label" event="full"/>
+                                    <probe line="2218" kind="switch-label" event="full"/>
+                                    <probe line="2323" column="3" kind="condition" event="false"/>
+                                    <probe line="2323" column="15" kind="condition" event="none"/>
+                                </fn>
+                                <fn name="process_file(const char*,fio_t*,params_t*)" fn_cov="1" fn_total="1"
+                                    cd_cov="47" cd_total="83" d_cov="37" d_total="67">
+                                    <probe line="2441" column="3" kind="function" event="full"/>
+                                    <probe line="2474" kind="decision" event="full"/>
+                                    <probe line="2762" kind="decision" event="true"/>
+                                </fn>
+                                <fn name="print_help(void)" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1"
+                                    d_total="2">
+                                    <probe line="2781" column="4" kind="function" event="full"/>
+                                    <probe line="2816" column="33" kind="decision" event="false"/>
+                                </fn>
+                                <fn name="get_opt_value(char const*const*,int,int*,int*)" fn_cov="1" fn_total="1"
+                                    cd_cov="1" cd_total="4" d_cov="1" d_total="4">
+                                    <probe line="2846" column="5" kind="function" event="full"/>
+                                    <probe line="2849" kind="decision" event="true"/>
+                                    <probe line="2857" kind="decision" event="none"/>
+                                </fn>
+                                <fn name="main(int,char const*const*)" fn_cov="1" fn_total="1" cd_cov="30" cd_total="58"
+                                    d_cov="23" d_total="46">
+                                    <probe line="2899" column="3" kind="function" event="full"/>
+                                    <probe line="2919" kind="decision" event="false"/>
+                                    <probe line="3177" kind="decision" event="none"/>
+                                </fn>
+                            </src>
+                            <src name="prodconf.cpp" mtime="1610452712" fn_cov="5" fn_total="5" cd_cov="2" cd_total="4"
+                                 d_cov="2" d_total="4">
+                                <fn name="scoring_get_environment()" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="46" column="14" kind="function" event="full"/>
+                                </fn>
+                                <fn name="setup_prod_conf()" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2" d_cov="1"
+                                    d_total="2">
+                                    <probe line="64" column="4" kind="function" event="full"/>
+                                    <probe line="68" kind="switch-label" event="none"/>
+                                    <probe line="72" kind="switch-label" event="full"/>
+                                </fn>
+                                <fn name="setup_prod_env(void)" fn_cov="1" fn_total="1" cd_cov="1" cd_total="2"
+                                    d_cov="1" d_total="2">
+                                    <probe line="80" column="4" kind="function" event="full"/>
+                                    <probe line="84" kind="switch-label" event="none"/>
+                                    <probe line="89" kind="switch-label" event="full"/>
+                                </fn>
+                                <fn name="setup_ars_path_url(void)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="99" column="4" kind="function" event="full"/>
+                                </fn>
+                                <fn name="destroy_ars_path_url(void)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="105" column="4" kind="function" event="full"/>
+                                </fn>
+                            </src>
+                            <src name="user.cpp" mtime="1610452712" fn_cov="3" fn_total="3" cd_cov="2" cd_total="2"
+                                 d_cov="2" d_total="2">
+                                <fn name="report_vid(uint,win_job_t*,job_status_t*)" fn_cov="1" fn_total="1" cd_cov="2"
+                                    cd_total="2" d_cov="2" d_total="2">
+                                    <probe line="37" column="4" kind="function" event="full"/>
+                                    <probe line="45" kind="decision" event="full"/>
+                                </fn>
+                                <fn name="report_vid_internal(uint,u8)" fn_cov="1" fn_total="1" cd_cov="0" cd_total="0"
+                                    d_cov="0" d_total="0">
+                                    <probe line="52" column="13" kind="function" event="full"/>
+                                </fn>
+                                <fn name="report_throttling(uint,uint,u64)" fn_cov="1" fn_total="1" cd_cov="0"
+                                    cd_total="0" d_cov="0" d_total="0">
+                                    <probe line="91" column="13" kind="function" event="full"/>
+                                </fn>
+                            </src>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+    </folder>
+</BullseyeCoverage>

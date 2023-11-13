@@ -1,0 +1,36 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":utils")
+    compile libraries.jackson_dataformat_xml
+    compile libraries.jackson_datatype_jsr
+    compile libraries.guava
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.jackson_core
+    compile libraries.log4j
+
+    compile 'org.reflections:reflections:0.9.9' // having runtime issues with 0.9.12
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.6
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.5
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

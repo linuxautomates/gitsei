@@ -1,0 +1,111 @@
+[
+  {
+    "id": 3273,
+    "repo_id": 682,
+    "trigger": "test-owner",
+    "number": 1,
+    "status": "success",
+    "event": "custom",
+    "action": "",
+    "link": "https://github.com/test-owner/test1/commit/cf883e4e49ce970d57a4ecd6cdae430a0f0f055e",
+    "timestamp": 0,
+    "message": "Update .drone.yml",
+    "before": "cf883e4e49ce970d57a4ecd6cdae430a0f0f055e",
+    "after": "cf883e4e49ce970d57a4ecd6cdae430a0f0f055e",
+    "ref": "refs/heads/main",
+    "source_repo": "",
+    "source": "main",
+    "target": "main",
+    "author_login": "test-owner",
+    "author_name": "test-owner",
+    "author_email": "104614802+test-owner@users.noreply.github.com",
+    "author_avatar": "https://avatars.githubusercontent.com/u/104614802?v=4",
+    "sender": "test-owner",
+    "started": 1652421877,
+    "finished": 1652421879,
+    "created": 1652421877,
+    "updated": 1652421877,
+    "version": 3,
+    "stages": [
+      {
+        "id": 3272,
+        "repo_id": 682,
+        "build_id": 3273,
+        "number": 1,
+        "name": "default",
+        "kind": "pipeline",
+        "type": "docker",
+        "status": "success",
+        "error": "",
+        "errignore": false,
+        "exit_code": 0,
+        "machine": "runner",
+        "os": "linux",
+        "arch": "amd64",
+        "started": 1652421877,
+        "stopped": 1652421879,
+        "created": 1652421877,
+        "updated": 1652421879,
+        "version": 4,
+        "on_success": true,
+        "on_failure": false,
+        "steps": [
+          {
+            "id": 13063,
+            "step_id": 3272,
+            "number": 1,
+            "name": "clone",
+            "status": "success",
+            "exit_code": 0,
+            "started": 1652421878,
+            "stopped": 1652421879,
+            "version": 4,
+            "image": "drone/git:latest",
+            "depends_on": [
+              "clone"
+            ],
+            "stepLogs": [
+              [
+                {
+                  "pos": 0,
+                  "out": "Initialized empty Git repository in /drone/src/.git/\n",
+                  "time": 0
+                },
+                {
+                  "pos": 1,
+                  "out": "+ git fetch origin +refs/heads/main:\n",
+                  "time": 0
+                },
+                {
+                  "pos": 2,
+                  "out": "From https://github.com/test-owner/test1\n",
+                  "time": 1
+                },
+                {
+                  "pos": 3,
+                  "out": " * branch            main       -> FETCH_HEAD\n",
+                  "time": 1
+                },
+                {
+                  "pos": 4,
+                  "out": " * [new branch]      main       -> origin/main\n",
+                  "time": 1
+                },
+                {
+                  "pos": 5,
+                  "out": "+ git checkout cf883e4e49ce970d57a4ecd6cdae430a0f0f055e -b main\n",
+                  "time": 1
+                },
+                {
+                  "pos": 6,
+                  "out": "Switched to a new branch 'main'\n",
+                  "time": 1
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

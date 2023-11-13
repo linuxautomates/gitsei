@@ -1,0 +1,495 @@
+BUILD SUCCESSFUL in 1m 58s
+176 actionable tasks: 60 executed, 80 from cache, 36 up-to-date
++ ./gradlew publish
+> Task :utils:compileJava UP-TO-DATE
+> Task :normalization-service:compileJava UP-TO-DATE
+> Task :ingestion-commons:compileJava UP-TO-DATE
+> Task :workflow-commons:compileJava UP-TO-DATE
+> Task :database-commons:compileJava UP-TO-DATE
+> Task :aggregation-commons:compileJava UP-TO-DATE
+> Task :aggregation-commons:processResources NO-SOURCE
+> Task :aggregation-commons:classes UP-TO-DATE
+> Task :aggregation-commons:jar UP-TO-DATE
+> Task :aggregation-commons:generateMetadataFileForMavenPublication
+> Task :aggregation-commons:generatePomFileForMavenPublication
+> Task :aggregation-commons:sourcesJar
+
+> Task :aggregation-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/aggregation-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/aggregation-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :aggregation-commons:publish
+> Task :okhttp-utils:compileJava UP-TO-DATE
+> Task :aggregation-services:compileJava UP-TO-DATE
+> Task :aggregation-services:processResources NO-SOURCE
+> Task :aggregation-services:classes UP-TO-DATE
+> Task :aggregation-services:jar UP-TO-DATE
+> Task :aggregation-services:generateMetadataFileForMavenPublication
+> Task :aggregation-services:generatePomFileForMavenPublication
+> Task :aggregation-services:sourcesJar
+
+> Task :aggregation-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/aggregation-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/aggregation-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :aggregation-services:publish
+> Task :control-plane-commons:compileJava UP-TO-DATE
+> Task :control-plane-commons:processResources NO-SOURCE
+> Task :control-plane-commons:classes UP-TO-DATE
+> Task :control-plane-commons:jar UP-TO-DATE
+> Task :control-plane-commons:generateMetadataFileForMavenPublication
+> Task :control-plane-commons:generatePomFileForMavenPublication
+> Task :control-plane-commons:sourcesJar
+
+> Task :control-plane-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/control-plane-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/control-plane-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :control-plane-commons:publish
+> Task :database-commons:processResources NO-SOURCE
+> Task :database-commons:classes UP-TO-DATE
+> Task :database-commons:jar UP-TO-DATE
+> Task :database-commons:generateMetadataFileForMavenPublication
+> Task :database-commons:generatePomFileForMavenPublication
+> Task :database-commons:sourcesJar
+
+> Task :database-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/database-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/database-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :database-commons:publish
+> Task :database-services:compileJava UP-TO-DATE
+> Task :database-services:processResources UP-TO-DATE
+> Task :database-services:classes UP-TO-DATE
+> Task :database-services:jar UP-TO-DATE
+> Task :database-services:generateMetadataFileForMavenPublication
+> Task :database-services:generatePomFileForMavenPublication
+> Task :database-services:sourcesJar
+
+> Task :database-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/database-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/database-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :database-services:publish
+> Task :email-utils:compileJava UP-TO-DATE
+> Task :email-utils:processResources NO-SOURCE
+> Task :email-utils:classes UP-TO-DATE
+> Task :email-utils:jar UP-TO-DATE
+> Task :email-utils:generateMetadataFileForMavenPublication
+> Task :email-utils:generatePomFileForMavenPublication
+> Task :email-utils:sourcesJar
+
+> Task :email-utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/email-utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/email-utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :email-utils:publish
+> Task :spring-web-utils:compileJava UP-TO-DATE
+> Task :events-services:compileJava UP-TO-DATE
+> Task :events-services:processResources NO-SOURCE
+> Task :events-services:classes UP-TO-DATE
+> Task :events-services:jar UP-TO-DATE
+> Task :events-services:generateMetadataFileForMavenPublication
+> Task :events-services:generatePomFileForMavenPublication
+> Task :events-services:sourcesJar
+
+> Task :events-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/events-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/events-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :events-services:publish
+> Task :file-commons:compileJava UP-TO-DATE
+> Task :file-commons:processResources NO-SOURCE
+> Task :file-commons:classes UP-TO-DATE
+> Task :file-commons:jar UP-TO-DATE
+> Task :file-commons:generateMetadataFileForMavenPublication
+> Task :file-commons:generatePomFileForMavenPublication
+> Task :file-commons:sourcesJar
+
+> Task :file-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/file-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/file-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :file-commons:publish
+> Task :internal-api-clients:compileJava UP-TO-DATE
+> Task :generic-services:compileJava UP-TO-DATE
+> Task :generic-services:processResources NO-SOURCE
+> Task :generic-services:classes UP-TO-DATE
+> Task :generic-services:jar UP-TO-DATE
+> Task :generic-services:generateMetadataFileForMavenPublication
+> Task :generic-services:generatePomFileForMavenPublication
+> Task :generic-services:sourcesJar
+
+> Task :generic-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/generic-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/generic-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :generic-services:publish
+> Task :ingestion-clients:compileJava UP-TO-DATE
+> Task :ingestion-clients:processResources NO-SOURCE
+> Task :ingestion-clients:classes UP-TO-DATE
+> Task :ingestion-clients:jar UP-TO-DATE
+> Task :ingestion-clients:generateMetadataFileForMavenPublication
+> Task :ingestion-clients:generatePomFileForMavenPublication
+> Task :ingestion-clients:sourcesJar
+
+> Task :ingestion-clients:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-clients/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-clients/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :ingestion-clients:publish
+> Task :ingestion-commons:processResources NO-SOURCE
+> Task :ingestion-commons:classes UP-TO-DATE
+> Task :ingestion-commons:jar UP-TO-DATE
+> Task :ingestion-commons:generateMetadataFileForMavenPublication
+> Task :ingestion-commons:generatePomFileForMavenPublication
+> Task :ingestion-commons:sourcesJar
+
+> Task :ingestion-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :ingestion-commons:publish
+> Task :inventory-service:compileJava UP-TO-DATE
+> Task :ingestion-service:compileJava UP-TO-DATE
+> Task :ingestion-service:processResources NO-SOURCE
+> Task :ingestion-service:classes UP-TO-DATE
+> Task :ingestion-service:jar UP-TO-DATE
+> Task :ingestion-service:generateMetadataFileForMavenPublication
+> Task :ingestion-service:generatePomFileForMavenPublication
+> Task :ingestion-service:sourcesJar
+
+> Task :ingestion-service:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-service/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-service/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :ingestion-service:publish
+> Task :ingestion-utils:compileJava NO-SOURCE
+> Task :ingestion-utils:processResources NO-SOURCE
+> Task :ingestion-utils:classes UP-TO-DATE
+> Task :ingestion-utils:jar UP-TO-DATE
+> Task :ingestion-utils:generateMetadataFileForMavenPublication
+> Task :ingestion-utils:generatePomFileForMavenPublication
+> Task :ingestion-utils:sourcesJar
+
+> Task :ingestion-utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/ingestion-utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :ingestion-utils:publish
+> Task :integration-clients:compileJava NO-SOURCE
+> Task :integration-clients:processResources NO-SOURCE
+> Task :integration-clients:classes UP-TO-DATE
+> Task :integration-clients:jar UP-TO-DATE
+> Task :integration-clients:generateMetadataFileForMavenPublication
+> Task :integration-clients:generatePomFileForMavenPublication
+> Task :integration-clients:sourcesJar
+
+> Task :integration-clients:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-clients/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-clients/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :integration-clients:publish
+> Task :internal-api-clients:processResources UP-TO-DATE
+> Task :internal-api-clients:classes UP-TO-DATE
+> Task :internal-api-clients:jar UP-TO-DATE
+> Task :internal-api-clients:generateMetadataFileForMavenPublication
+> Task :internal-api-clients:generatePomFileForMavenPublication
+> Task :internal-api-clients:sourcesJar
+
+> Task :internal-api-clients:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/internal-api-clients/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/internal-api-clients/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :internal-api-clients:publish
+> Task :inventory-service:processResources NO-SOURCE
+> Task :inventory-service:classes UP-TO-DATE
+> Task :inventory-service:jar UP-TO-DATE
+> Task :inventory-service:generateMetadataFileForMavenPublication
+> Task :inventory-service:generatePomFileForMavenPublication
+> Task :inventory-service:sourcesJar
+
+> Task :inventory-service:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/inventory-service/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/inventory-service/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :inventory-service:publish
+> Task :json-diff:compileJava UP-TO-DATE
+> Task :json-diff:processResources NO-SOURCE
+> Task :json-diff:classes UP-TO-DATE
+> Task :json-diff:jar UP-TO-DATE
+> Task :json-diff:generateMetadataFileForMavenPublication
+> Task :json-diff:generatePomFileForMavenPublication
+> Task :json-diff:sourcesJar
+
+> Task :json-diff:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/json-diff/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/json-diff/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :json-diff:publish
+> Task :lql-utils:compileJava UP-TO-DATE
+> Task :lql-utils:processResources NO-SOURCE
+> Task :lql-utils:classes UP-TO-DATE
+> Task :lql-utils:jar UP-TO-DATE
+> Task :lql-utils:generateMetadataFileForMavenPublication
+> Task :lql-utils:generatePomFileForMavenPublication
+> Task :lql-utils:sourcesJar
+
+> Task :lql-utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/lql-utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/lql-utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :lql-utils:publish
+> Task :normalization-service:processResources NO-SOURCE
+> Task :normalization-service:classes UP-TO-DATE
+> Task :normalization-service:jar UP-TO-DATE
+> Task :normalization-service:generateMetadataFileForMavenPublication
+> Task :normalization-service:generatePomFileForMavenPublication
+> Task :normalization-service:sourcesJar
+
+> Task :normalization-service:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/normalization-service/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/normalization-service/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :normalization-service:publish
+> Task :template-utils:compileJava UP-TO-DATE
+> Task :notification-service:compileJava UP-TO-DATE
+> Task :notification-service:processResources NO-SOURCE
+> Task :notification-service:classes UP-TO-DATE
+> Task :notification-service:jar UP-TO-DATE
+> Task :notification-service:generateMetadataFileForMavenPublication
+> Task :notification-service:generatePomFileForMavenPublication
+> Task :notification-service:sourcesJar
+
+> Task :notification-service:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/notification-service/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/notification-service/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :notification-service:publish
+> Task :okhttp-utils:processResources NO-SOURCE
+> Task :okhttp-utils:classes UP-TO-DATE
+> Task :okhttp-utils:jar UP-TO-DATE
+> Task :okhttp-utils:generateMetadataFileForMavenPublication
+> Task :okhttp-utils:generatePomFileForMavenPublication
+> Task :okhttp-utils:sourcesJar
+
+> Task :okhttp-utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/okhttp-utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/okhttp-utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :okhttp-utils:publish
+> Task :plugin-results-commons:compileJava UP-TO-DATE
+> Task :plugin-results-commons:processResources NO-SOURCE
+> Task :plugin-results-commons:classes UP-TO-DATE
+> Task :plugin-results-commons:jar UP-TO-DATE
+> Task :plugin-results-commons:generateMetadataFileForMavenPublication
+> Task :plugin-results-commons:generatePomFileForMavenPublication
+> Task :plugin-results-commons:sourcesJar
+
+> Task :plugin-results-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/plugin-results-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/plugin-results-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :plugin-results-commons:publish
+> Task :plugin-services:compileJava UP-TO-DATE
+> Task :plugin-services:processResources NO-SOURCE
+> Task :plugin-services:classes UP-TO-DATE
+> Task :plugin-services:jar UP-TO-DATE
+> Task :plugin-services:generateMetadataFileForMavenPublication
+> Task :plugin-services:generatePomFileForMavenPublication
+> Task :plugin-services:sourcesJar
+
+> Task :plugin-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/plugin-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/plugin-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :plugin-services:publish
+> Task :integration-clients:integration-github:compileJava UP-TO-DATE
+> Task :integration-clients:integration-jira:compileJava UP-TO-DATE
+> Task :integration-clients:integration-snyk:compileJava UP-TO-DATE
+> Task :preflight-check:compileJava UP-TO-DATE
+> Task :preflight-check:processResources NO-SOURCE
+> Task :preflight-check:classes UP-TO-DATE
+> Task :preflight-check:jar UP-TO-DATE
+> Task :preflight-check:generateMetadataFileForMavenPublication
+> Task :preflight-check:generatePomFileForMavenPublication
+> Task :preflight-check:sourcesJar
+
+> Task :preflight-check:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/preflight-check/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/preflight-check/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :preflight-check:publish
+> Task :runbook-commons:compileJava UP-TO-DATE
+> Task :runbook-commons:processResources NO-SOURCE
+> Task :runbook-commons:classes UP-TO-DATE
+> Task :runbook-commons:jar UP-TO-DATE
+> Task :runbook-commons:generateMetadataFileForMavenPublication
+> Task :runbook-commons:generatePomFileForMavenPublication
+> Task :runbook-commons:sourcesJar
+
+> Task :runbook-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/runbook-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/runbook-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :runbook-commons:publish
+> Task :runbook-services:compileJava UP-TO-DATE
+> Task :runbook-services:processResources NO-SOURCE
+> Task :runbook-services:classes UP-TO-DATE
+> Task :runbook-services:jar UP-TO-DATE
+> Task :runbook-services:generateMetadataFileForMavenPublication
+> Task :runbook-services:generatePomFileForMavenPublication
+> Task :runbook-services:sourcesJar
+
+> Task :runbook-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/runbook-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/runbook-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :runbook-services:publish
+> Task :spring-web-utils:processResources NO-SOURCE
+> Task :spring-web-utils:classes UP-TO-DATE
+> Task :spring-web-utils:jar UP-TO-DATE
+> Task :spring-web-utils:generateMetadataFileForMavenPublication
+> Task :spring-web-utils:generatePomFileForMavenPublication
+> Task :spring-web-utils:sourcesJar
+
+> Task :spring-web-utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/spring-web-utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/spring-web-utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :spring-web-utils:publish
+> Task :template-utils:processResources UP-TO-DATE
+> Task :template-utils:classes UP-TO-DATE
+> Task :template-utils:jar UP-TO-DATE
+> Task :template-utils:generateMetadataFileForMavenPublication
+> Task :template-utils:generatePomFileForMavenPublication
+> Task :template-utils:sourcesJar
+
+> Task :template-utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/template-utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/template-utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :template-utils:publish
+> Task :token-services:compileJava UP-TO-DATE
+> Task :token-services:processResources NO-SOURCE
+> Task :token-services:classes UP-TO-DATE
+> Task :token-services:jar UP-TO-DATE
+> Task :token-services:generateMetadataFileForMavenPublication
+> Task :token-services:generatePomFileForMavenPublication
+> Task :token-services:sourcesJar
+
+> Task :token-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/token-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/token-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :token-services:publish
+> Task :trigger-services:compileJava UP-TO-DATE
+> Task :trigger-services:processResources NO-SOURCE
+> Task :trigger-services:classes UP-TO-DATE
+> Task :trigger-services:jar UP-TO-DATE
+> Task :trigger-services:generateMetadataFileForMavenPublication
+> Task :trigger-services:generatePomFileForMavenPublication
+> Task :trigger-services:sourcesJar
+
+> Task :trigger-services:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/trigger-services/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/trigger-services/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :trigger-services:publish
+> Task :utils:processResources NO-SOURCE
+> Task :utils:classes UP-TO-DATE
+> Task :utils:jar UP-TO-DATE
+> Task :utils:generateMetadataFileForMavenPublication
+> Task :utils:generatePomFileForMavenPublication
+> Task :utils:sourcesJar
+
+> Task :utils:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/utils/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/utils/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :utils:publish
+> Task :workflow-commons:processResources NO-SOURCE
+> Task :workflow-commons:classes UP-TO-DATE
+> Task :workflow-commons:jar UP-TO-DATE
+> Task :workflow-commons:generateMetadataFileForMavenPublication
+> Task :workflow-commons:generatePomFileForMavenPublication
+> Task :workflow-commons:sourcesJar
+
+> Task :workflow-commons:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/workflow-commons/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/workflow-commons/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :workflow-commons:publish
+> Task :integration-clients:integration-gcs:compileJava UP-TO-DATE
+> Task :integration-clients:integration-gcs:processResources NO-SOURCE
+> Task :integration-clients:integration-gcs:classes UP-TO-DATE
+> Task :integration-clients:integration-gcs:jar UP-TO-DATE
+> Task :integration-clients:integration-gcs:generateMetadataFileForMavenPublication
+> Task :integration-clients:integration-gcs:generatePomFileForMavenPublication
+> Task :integration-clients:integration-gcs:sourcesJar
+
+> Task :integration-clients:integration-gcs:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-gcs/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-gcs/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :integration-clients:integration-gcs:publish
+> Task :integration-clients:integration-github:processResources NO-SOURCE
+> Task :integration-clients:integration-github:classes UP-TO-DATE
+> Task :integration-clients:integration-github:jar UP-TO-DATE
+> Task :integration-clients:integration-github:generateMetadataFileForMavenPublication
+> Task :integration-clients:integration-github:generatePomFileForMavenPublication
+> Task :integration-clients:integration-github:sourcesJar
+
+> Task :integration-clients:integration-github:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-github/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-github/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :integration-clients:integration-github:publish
+> Task :integration-clients:integration-jira:processResources NO-SOURCE
+> Task :integration-clients:integration-jira:classes UP-TO-DATE
+> Task :integration-clients:integration-jira:jar UP-TO-DATE
+> Task :integration-clients:integration-jira:generateMetadataFileForMavenPublication
+> Task :integration-clients:integration-jira:generatePomFileForMavenPublication
+> Task :integration-clients:integration-jira:sourcesJar
+
+> Task :integration-clients:integration-jira:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-jira/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-jira/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :integration-clients:integration-jira:publish
+> Task :integration-clients:integration-snyk:processResources NO-SOURCE
+> Task :integration-clients:integration-snyk:classes UP-TO-DATE
+> Task :integration-clients:integration-snyk:jar UP-TO-DATE
+> Task :integration-clients:integration-snyk:generateMetadataFileForMavenPublication
+> Task :integration-clients:integration-snyk:generatePomFileForMavenPublication
+> Task :integration-clients:integration-snyk:sourcesJar
+
+> Task :integration-clients:integration-snyk:publishMavenPublicationToMavenRepository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-256. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-snyk/maven-metadata.xml.sha256'. Received status code 400 from server: Invalid path for a Maven 2 repository
+Cannot upload checksum for module-maven-metadata.xml. Remote repository doesn't support sha-512. Error: Could not PUT 'https://artifactory.levelops.io/repository/levelops-java-releases/io/levelops/commons/integration-snyk/maven-metadata.xml.sha512'. Received status code 400 from server: Invalid path for a Maven 2 repository
+
+> Task :integration-clients:integration-snyk:publish
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.6.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 12s
+217 actionable tasks: 144 executed, 73 up-to-date
+New run name is 'v0.1.1933'
+The recommended git tool is: NONE
+using credential 2018cd1a-91ac-4f4c-87f9-3066676f4266
+ > /usr/bin/git tag -l v0.1.1933 # timeout=10
+ > /usr/bin/git tag -a -f -m Jenkins Git plugin tagging with v0.1.1933 v0.1.1933 # timeout=10
+Pushing tag v0.1.1933 to repo origin
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_ASKPASS to set credentials nonhuman-levelops apikey
+ > /usr/bin/git push https://github.com/levelops/commons-levelops.git v0.1.1933 # timeout=10
+Pushing HEAD to branch main at repo origin
+using GIT_ASKPASS to set credentials nonhuman-levelops apikey
+ > /usr/bin/git push https://github.com/levelops/commons-levelops.git HEAD:main # timeout=10
+[Checks API] No suitable checks publisher found.
+[Slack Notifications] found #1932 as previous completed, non-aborted build
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Finished: SUCCESS

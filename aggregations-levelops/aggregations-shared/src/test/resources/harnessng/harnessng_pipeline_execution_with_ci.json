@@ -1,0 +1,2075 @@
+{
+  "pipelineExecutionSummary": {
+    "pipelineIdentifier": "Messy_Pipeline",
+    "planExecutionId": "GUlUcdJ0SDWw6Rxkfeqr2Q",
+    "name": "Messy Pipeline",
+    "status": "Failed",
+    "tags": [],
+    "executionTriggerInfo": {
+      "triggerType": "MANUAL",
+      "triggeredBy": {
+        "uuid": "CH77Nl2oRbqm9zCUZeXIuQ",
+        "identifier": "Meetrajsinh solanki",
+        "extraInfo": {
+          "email": "meetraj2000@gmail.com"
+        }
+      },
+      "isRerun": false
+    },
+    "executionErrorInfo": {
+      "message": "1 error occurred:\n\t* exit status 1\n\n"
+    },
+    "governanceMetadata": {
+      "id": "0",
+      "deny": false,
+      "details": [],
+      "message": "",
+      "timestamp": "1672643189597",
+      "status": "pass",
+      "accountId": "iEsVNBQGTs-MM3EY525pGQ",
+      "orgId": "default",
+      "projectId": "Test",
+      "entity": "accountIdentifier%3AiEsVNBQGTs-MM3EY525pGQ%2ForgIdentifier%3Adefault%2FprojectIdentifier%3ATest%2FpipelineIdentifier%3AMessy_Pipeline",
+      "type": "pipeline",
+      "action": "onrun",
+      "created": "1672643189579"
+    },
+    "moduleInfo": {
+      "ci": {
+        "__recast": "io.harness.ci.plan.creator.execution.CIPipelineModuleInfo",
+        "ciPipelineStageModuleInfo": {
+          "__recast": "io.harness.ci.plan.creator.execution.CIPipelineStageModuleInfo",
+          "stageExecutionId": "qgmNNIUNR9Cl2Hz3W6rCmg",
+          "stageId": "Build_Stage",
+          "stageName": "Build Stage",
+          "cpuTime": 5490,
+          "stageBuildTime": 11067,
+          "infraType": "HostedVm",
+          "osType": "Linux",
+          "osArch": "Amd64",
+          "startTs": 1672643189990,
+          "buildMultiplier": 1.0
+        },
+        "imageDetailsList": [],
+        "infraDetailsList": [
+          {
+            "__recast": "io.harness.ci.pipeline.executions.beans.CIInfraDetails",
+            "infraType": "HostedVm",
+            "infraOSType": "Linux",
+            "infraHostType": "Harness Hosted",
+            "infraArchType": "Amd64"
+          }
+        ],
+        "isPrivateRepo": true,
+        "scmDetailsList": [],
+        "tiBuildDetailsList": []
+      },
+      "pms": {
+        "__recast": "io.harness.pms.plan.execution.PmsPipelineModuleInfo",
+        "approvalStageNames": [
+          "Approval_Stage"
+        ],
+        "hasApprovalStage": true
+      }
+    },
+    "layoutNodeMap": {
+      "OMeqWcNYRBGlUMO3sx8xjAparallel_rollbackStage": {
+        "nodeType": "parallel",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "parallelOMeqWcNYRBGlUMO3sx8xjAparallel_rollbackStage",
+        "name": "",
+        "nodeUuid": "OMeqWcNYRBGlUMO3sx8xjAparallel_rollbackStage",
+        "status": "NotStarted",
+        "edgeLayoutList": {
+          "currentNodeChildren": [
+            "mlIT8Bt7RvuKlTHvdaMCsg_rollbackStage",
+            "BuVRvZZESyK-MgC65lIWDg_rollbackStage"
+          ],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      },
+      "ot3B-0lUQoaMhLdkexMtkg_rollbackStage": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Second_Deployment_rollbackStage",
+        "name": "Second Deployment (Rollback Stage)",
+        "nodeUuid": "ot3B-0lUQoaMhLdkexMtkg_rollbackStage",
+        "status": "NotStarted",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      },
+      "OMeqWcNYRBGlUMO3sx8xjAparallel": {
+        "nodeType": "parallel",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "parallelOMeqWcNYRBGlUMO3sx8xjAparallel",
+        "name": "",
+        "nodeUuid": "OMeqWcNYRBGlUMO3sx8xjAparallel",
+        "status": "NotStarted",
+        "edgeLayoutList": {
+          "currentNodeChildren": [
+            "mlIT8Bt7RvuKlTHvdaMCsg",
+            "BuVRvZZESyK-MgC65lIWDg"
+          ],
+          "nextIds": [
+            "P9wtemorRVe_WA7Q4wv5Yw"
+          ]
+        },
+        "isRollbackStageNode": false
+      },
+      "BuVRvZZESyK-MgC65lIWDg_rollbackStage": {
+        "nodeType": "CI",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Build_1st_Stage_rollbackStage",
+        "name": "Build 1st Stage (Rollback Stage)",
+        "nodeUuid": "BuVRvZZESyK-MgC65lIWDg_rollbackStage",
+        "status": "NotStarted",
+        "module": "ci",
+        "moduleInfo": {
+          "ci": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      },
+      "mlIT8Bt7RvuKlTHvdaMCsg_rollbackStage": {
+        "nodeType": "CI",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Build_Stage_rollbackStage",
+        "name": "Build Stage (Rollback Stage)",
+        "nodeUuid": "mlIT8Bt7RvuKlTHvdaMCsg_rollbackStage",
+        "status": "NotStarted",
+        "module": "ci",
+        "moduleInfo": {
+          "ci": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      },
+      "NXeNr4lHQMStGXEO5ez0tAparallel_rollbackStage": {
+        "nodeType": "parallel",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "parallelNXeNr4lHQMStGXEO5ez0tAparallel_rollbackStage",
+        "name": "",
+        "nodeUuid": "NXeNr4lHQMStGXEO5ez0tAparallel_rollbackStage",
+        "status": "NotStarted",
+        "edgeLayoutList": {
+          "currentNodeChildren": [
+            "rHP8ZL1TSfea5gwQiFlk2A_rollbackStage",
+            "ot3B-0lUQoaMhLdkexMtkg_rollbackStage"
+          ],
+          "nextIds": [
+            "P9wtemorRVe_WA7Q4wv5Yw_rollbackStage"
+          ]
+        },
+        "isRollbackStageNode": true
+      },
+      "NXeNr4lHQMStGXEO5ez0tAparallel": {
+        "nodeType": "parallel",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "parallelNXeNr4lHQMStGXEO5ez0tAparallel",
+        "name": "",
+        "nodeUuid": "NXeNr4lHQMStGXEO5ez0tAparallel",
+        "status": "NotStarted",
+        "edgeLayoutList": {
+          "currentNodeChildren": [
+            "rHP8ZL1TSfea5gwQiFlk2A",
+            "ot3B-0lUQoaMhLdkexMtkg"
+          ],
+          "nextIds": [
+            "dQZLGoG5TjOIwYvg06vEcA"
+          ]
+        },
+        "isRollbackStageNode": false
+      },
+      "P9wtemorRVe_WA7Q4wv5Yw_rollbackStage": {
+        "nodeType": "Approval",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "P9wtemorRVe_WA7Q4wv5Yw_rollbackStage",
+        "name": "Approval Stage (Rollback Stage)",
+        "nodeUuid": "P9wtemorRVe_WA7Q4wv5Yw_rollbackStage",
+        "status": "NotStarted",
+        "module": "pms",
+        "moduleInfo": {
+          "pms": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": [
+            "OMeqWcNYRBGlUMO3sx8xjAparallel_rollbackStage"
+          ]
+        },
+        "isRollbackStageNode": true
+      },
+      "BuVRvZZESyK-MgC65lIWDg": {
+        "nodeType": "CI",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Build_1st_Stage",
+        "name": "Build 1st Stage",
+        "nodeUuid": "BuVRvZZESyK-MgC65lIWDg",
+        "status": "Failed",
+        "module": "ci",
+        "moduleInfo": {
+          "ci": {
+            "__recast": "io.harness.ci.plan.creator.execution.CIStageModuleInfo"
+          }
+        },
+        "startTs": 1672643189981,
+        "endTs": 1672643201027,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n"
+        },
+        "failureInfoDTO": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "6fck4wW3R_mClWuHQMduVQ",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "dQZLGoG5TjOIwYvg06vEcA": {
+        "nodeType": "Custom",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Custom_Last_Stage_After_Deployment",
+        "name": "Custom Last Stage After Deployment",
+        "nodeUuid": "dQZLGoG5TjOIwYvg06vEcA",
+        "status": "Skipped",
+        "module": "pms",
+        "moduleInfo": {
+          "pms": {}
+        },
+        "endTs": 1672643201408,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": ""
+        },
+        "failureInfoDTO": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "rhpsfU3rRB-BXP6PjQK3xA",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "ot3B-0lUQoaMhLdkexMtkg": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Second_Deployment",
+        "name": "Second Deployment",
+        "nodeUuid": "ot3B-0lUQoaMhLdkexMtkg",
+        "status": "Skipped",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {}
+        },
+        "endTs": 1672643201310,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": ""
+        },
+        "failureInfoDTO": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "jJi7qjUnTdO478DhR4hPSQ",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "mlIT8Bt7RvuKlTHvdaMCsg": {
+        "nodeType": "CI",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Build_Stage",
+        "name": "Build Stage",
+        "nodeUuid": "mlIT8Bt7RvuKlTHvdaMCsg",
+        "status": "Failed",
+        "module": "ci",
+        "moduleInfo": {
+          "ci": {
+            "__recast": "io.harness.ci.plan.creator.execution.CIStageModuleInfo"
+          }
+        },
+        "startTs": 1672643189990,
+        "endTs": 1672643201085,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n"
+        },
+        "failureInfoDTO": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "qgmNNIUNR9Cl2Hz3W6rCmg",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "dQZLGoG5TjOIwYvg06vEcA_rollbackStage": {
+        "nodeType": "Custom",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "dQZLGoG5TjOIwYvg06vEcA_rollbackStage",
+        "name": "Custom Last Stage After Deployment (Rollback Stage)",
+        "nodeUuid": "dQZLGoG5TjOIwYvg06vEcA_rollbackStage",
+        "status": "NotStarted",
+        "module": "pms",
+        "moduleInfo": {
+          "pms": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": [
+            "NXeNr4lHQMStGXEO5ez0tAparallel_rollbackStage"
+          ]
+        },
+        "isRollbackStageNode": true
+      },
+      "rHP8ZL1TSfea5gwQiFlk2A": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Deployment",
+        "name": "Deployment",
+        "nodeUuid": "rHP8ZL1TSfea5gwQiFlk2A",
+        "status": "Skipped",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {}
+        },
+        "endTs": 1672643201308,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": ""
+        },
+        "failureInfoDTO": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "SuY5NHomSK-T_Jfa5QysCg",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "P9wtemorRVe_WA7Q4wv5Yw": {
+        "nodeType": "Approval",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Approval_Stage",
+        "name": "Approval Stage",
+        "nodeUuid": "P9wtemorRVe_WA7Q4wv5Yw",
+        "status": "Skipped",
+        "module": "pms",
+        "moduleInfo": {
+          "pms": {
+            "__recast": "io.harness.pms.plan.execution.PmsExecutionServiceInfoProvider$PmsNoopModuleInfo"
+          }
+        },
+        "endTs": 1672643201215,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": [
+            "NXeNr4lHQMStGXEO5ez0tAparallel"
+          ]
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": ""
+        },
+        "failureInfoDTO": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "oNXEjg7GR5OPpO_sDmbi0Q",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "rHP8ZL1TSfea5gwQiFlk2A_rollbackStage": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Deployment_rollbackStage",
+        "name": "Deployment (Rollback Stage)",
+        "nodeUuid": "rHP8ZL1TSfea5gwQiFlk2A_rollbackStage",
+        "status": "NotStarted",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      }
+    },
+    "modules": [
+      "cd",
+      "ci",
+      "pms"
+    ],
+    "startingNodeId": "OMeqWcNYRBGlUMO3sx8xjAparallel",
+    "startTs": 1672643189597,
+    "endTs": 1672643201480,
+    "createdAt": 1672643189756,
+    "canRetry": true,
+    "showRetryHistory": false,
+    "runSequence": 2,
+    "successfulStagesCount": 0,
+    "runningStagesCount": 0,
+    "failedStagesCount": 2,
+    "totalStagesCount": 6,
+    "storeType": "INLINE",
+    "executionInputConfigured": false,
+    "parentStageInfo": {
+      "hasparentpipeline": false,
+      "stagenodeid": "",
+      "executionid": "",
+      "identifier": "",
+      "projectid": "",
+      "orgid": "",
+      "runsequence": 0
+    },
+    "allowStageExecutions": false,
+    "stagesExecution": false
+  },
+  "executionGraph": {
+    "rootNodeId": "xva7dfTEQFyLxKx-ih-PIw",
+    "nodeMap": {
+      "WEwe0yTRTRWlzAbwQZ11-Q": {
+        "uuid": "WEwe0yTRTRWlzAbwQZ11-Q",
+        "setupId": "0yuJmB30R2aYQRV25v9muA",
+        "name": "Execution",
+        "identifier": "execution",
+        "baseFqn": "pipeline.stages.Build_1st_Stage.spec.execution",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "0yuJmB30R2aYQRV25v9muAsteps",
+          "logMessage": "Execution Element"
+        },
+        "startTs": 1672643190072,
+        "endTs": 1672643200946,
+        "stepType": "NG_EXECUTION",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "0yuJmB30R2aYQRV25v9muAsteps",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "87haCcZFS4e7EGoWxS8-_w": {
+        "uuid": "87haCcZFS4e7EGoWxS8-_w",
+        "setupId": "lzizk0f3T4KTAe8w7ZDr8w",
+        "name": "Execution",
+        "identifier": "execution",
+        "baseFqn": "pipeline.stages.Build_Stage.spec.execution",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "lzizk0f3T4KTAe8w7ZDr8wsteps",
+          "logMessage": "Execution Element"
+        },
+        "startTs": 1672643190082,
+        "endTs": 1672643201001,
+        "stepType": "NG_EXECUTION",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "lzizk0f3T4KTAe8w7ZDr8wsteps",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "nN9fZ64VQa-ym09RjpsipA": {
+        "uuid": "nN9fZ64VQa-ym09RjpsipA",
+        "setupId": "OMeqWcNYRBGlUMO3sx8xjAparallel",
+        "name": "parallel",
+        "identifier": "parallelOMeqWcNYRBGlUMO3sx8xjAparallel",
+        "baseFqn": "pipeline.stages",
+        "outcomes": {},
+        "stepParameters": {
+          "parallelNodeIds": [
+            "mlIT8Bt7RvuKlTHvdaMCsg",
+            "BuVRvZZESyK-MgC65lIWDg"
+          ]
+        },
+        "startTs": 1672643189864,
+        "endTs": 1672643201137,
+        "stepType": "NG_FORK",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "children": {
+              "children": [
+                {
+                  "childNodeId": "mlIT8Bt7RvuKlTHvdaMCsg"
+                },
+                {
+                  "childNodeId": "BuVRvZZESyK-MgC65lIWDg"
+                }
+              ],
+              "maxConcurrency": "0",
+              "logKeys": [],
+              "shouldProceedIfFailed": false
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "xva7dfTEQFyLxKx-ih-PIw": {
+        "uuid": "xva7dfTEQFyLxKx-ih-PIw",
+        "setupId": "Kp1qWBG5TrOk7ZCQFXQ8SQ",
+        "name": "Messy Pipeline",
+        "identifier": "pipeline",
+        "baseFqn": "pipeline",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeID": "Kp1qWBG5TrOk7ZCQFXQ8SQstages",
+          "name": "Messy Pipeline",
+          "identifier": "Messy_Pipeline",
+          "description": "",
+          "tags": {},
+          "properties": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "executionId": "GUlUcdJ0SDWw6Rxkfeqr2Q",
+          "sequenceId": 2
+        },
+        "startTs": 1672643189786,
+        "endTs": 1672643201480,
+        "stepType": "PIPELINE_SECTION",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "Kp1qWBG5TrOk7ZCQFXQ8SQstages",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "6fck4wW3R_mClWuHQMduVQ": {
+        "uuid": "6fck4wW3R_mClWuHQMduVQ",
+        "setupId": "BuVRvZZESyK-MgC65lIWDg",
+        "name": "Build 1st Stage",
+        "identifier": "Build_1st_Stage",
+        "baseFqn": "pipeline.stages.Build_1st_Stage",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "BuVRvZZESyK-MgC65lIWDg",
+          "identifier": "Build_1st_Stage",
+          "name": "Build 1st Stage",
+          "description": "",
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "CI",
+          "specConfig": {
+            "infrastructure": {
+              "type": "HOSTED_VM",
+              "spec": {
+                "platform": {
+                  "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                  "os": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Linux"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  },
+                  "arch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Amd64"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            },
+            "enableCloneRepo": false,
+            "stepIdentifiers": [
+              "SecondStageStep"
+            ],
+            "childNodeID": "ZnIV31m5T3usDcbFNu7NZw"
+          }
+        },
+        "startTs": 1672643189981,
+        "endTs": 1672643201027,
+        "stepType": "IntegrationStageStepPMS",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "ZnIV31m5T3usDcbFNu7NZw",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "SuY5NHomSK-T_Jfa5QysCg": {
+        "uuid": "SuY5NHomSK-T_Jfa5QysCg",
+        "setupId": "rHP8ZL1TSfea5gwQiFlk2A",
+        "name": "Deployment",
+        "identifier": "Deployment",
+        "baseFqn": "pipeline.stages.Deployment",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "rHP8ZL1TSfea5gwQiFlk2A",
+          "identifier": "Deployment",
+          "name": "Deployment",
+          "description": "",
+          "failureStrategies": [
+            {
+              "onFailure": {
+                "errors": [
+                  "ALL_ERRORS"
+                ],
+                "action": {
+                  "type": "STAGE_ROLLBACK"
+                }
+              }
+            }
+          ],
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "Deployment",
+          "specConfig": {
+            "childNodeID": "NpxU01kHR_GUmv-vrysV-Q"
+          }
+        },
+        "startTs": null,
+        "endTs": 1672643201308,
+        "stepType": "DEPLOYMENT_STAGE_STEP",
+        "status": "Skipped",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "1UxIETyyQxG3RxwJwNusIw": {
+        "uuid": "1UxIETyyQxG3RxwJwNusIw",
+        "setupId": "qa730u08RjeqpPFrLHAUKwparallel",
+        "name": "parallel",
+        "identifier": "parallelqa730u08RjeqpPFrLHAUKwparallel",
+        "baseFqn": "pipeline.stages.Build_Stage.spec.execution.steps",
+        "outcomes": {},
+        "stepParameters": {
+          "parallelNodeIds": [
+            "1f9tzBG9T1ib9Ry7B6VhSw",
+            "BWCiRCMwRIKVyM0XY3_owg"
+          ]
+        },
+        "startTs": 1672643195852,
+        "endTs": 1672643200919,
+        "stepType": "NG_FORK",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "children": {
+              "children": [
+                {
+                  "childNodeId": "1f9tzBG9T1ib9Ry7B6VhSw"
+                },
+                {
+                  "childNodeId": "BWCiRCMwRIKVyM0XY3_owg"
+                }
+              ],
+              "maxConcurrency": "0",
+              "logKeys": [],
+              "shouldProceedIfFailed": false
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "bBg86zwzTme6dA2UFa3q4g": {
+        "uuid": "bBg86zwzTme6dA2UFa3q4g",
+        "setupId": "-Ap2ivGHSXSaLJC0pSHOnw",
+        "name": "SecondStageStep",
+        "identifier": "SecondStageStep",
+        "baseFqn": "pipeline.stages.Build_1st_Stage.spec.execution.steps.SecondStageStep",
+        "outcomes": {},
+        "stepParameters": {
+          "identifier": "SecondStageStep",
+          "name": "SecondStageStep",
+          "timeout": "10h",
+          "type": "BuildAndPushDockerRegistry",
+          "spec": {
+            "uuid": "NSpPiKmJSpagu_LQHFQYTw",
+            "retry": 1,
+            "connectorRef": "CD_Docker",
+            "repo": "cd_repo",
+            "tags": [
+              "latest"
+            ]
+          }
+        },
+        "startTs": 1672643195891,
+        "endTs": 1672643200861,
+        "stepType": "BuildAndPushDockerRegistry",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "rtm2JcWqR9a5em4lw-n-vw"
+              ],
+              "logKeys": [
+                "accountId:iEsVNBQGTs-MM3EY525pGQ/orgId:default/projectId:Test/pipelineId:Messy_Pipeline/runSequence:2/level0:pipeline/level1:stages/level2:parallelOMeqWcNYRBGlUMO3sx8xjAparallel/level3:Build_1st_Stage/level4:spec/level5:execution/level6:steps/level7:SecondStageStep"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "3UAdZhYSTY2_BWIqIvo7Sw": {
+        "uuid": "3UAdZhYSTY2_BWIqIvo7Sw",
+        "setupId": "Kp1qWBG5TrOk7ZCQFXQ8SQstages",
+        "name": "stages",
+        "identifier": "stages",
+        "baseFqn": "pipeline.stages",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "OMeqWcNYRBGlUMO3sx8xjAparallel",
+          "logMessage": "Stages"
+        },
+        "startTs": 1672643189822,
+        "endTs": 1672643201446,
+        "stepType": "STAGES_STEP",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "OMeqWcNYRBGlUMO3sx8xjAparallel",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "jJi7qjUnTdO478DhR4hPSQ": {
+        "uuid": "jJi7qjUnTdO478DhR4hPSQ",
+        "setupId": "ot3B-0lUQoaMhLdkexMtkg",
+        "name": "Second Deployment",
+        "identifier": "Second_Deployment",
+        "baseFqn": "pipeline.stages.Second_Deployment",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "ot3B-0lUQoaMhLdkexMtkg",
+          "identifier": "Second_Deployment",
+          "name": "Second Deployment",
+          "description": "",
+          "failureStrategies": [
+            {
+              "onFailure": {
+                "errors": [
+                  "ALL_ERRORS"
+                ],
+                "action": {
+                  "type": "STAGE_ROLLBACK"
+                }
+              }
+            }
+          ],
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "Deployment",
+          "specConfig": {
+            "childNodeID": "W9lIwZpuQp2qbTTsfGLnFA"
+          }
+        },
+        "startTs": null,
+        "endTs": 1672643201310,
+        "stepType": "DEPLOYMENT_STAGE_STEP",
+        "status": "Skipped",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "rhpsfU3rRB-BXP6PjQK3xA": {
+        "uuid": "rhpsfU3rRB-BXP6PjQK3xA",
+        "setupId": "dQZLGoG5TjOIwYvg06vEcA",
+        "name": "Custom Last Stage After Deployment",
+        "identifier": "Custom_Last_Stage_After_Deployment",
+        "baseFqn": "pipeline.stages.Custom_Last_Stage_After_Deployment",
+        "outcomes": {},
+        "stepParameters": null,
+        "startTs": null,
+        "endTs": 1672643201408,
+        "stepType": "CUSTOM_STAGE",
+        "status": "Skipped",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "A1RHzE3yQhamwyjUIiicHQ": {
+        "uuid": "A1RHzE3yQhamwyjUIiicHQ",
+        "setupId": "vTrd0rWgT42YynIbMgWSAA",
+        "name": "liteEngineTask",
+        "identifier": "liteEngineTask",
+        "baseFqn": "pipeline.stages.Build_1st_Stage.spec.execution.steps.liteEngineTask",
+        "outcomes": {
+          "vmDetailsOutcome": {
+            "ipAddress": "10.105.224.73",
+            "delegateId": "jOaZrt6LQ8eU1ls_5yY-Vg"
+          },
+          "dependencies": {
+            "serviceDependencyList": []
+          }
+        },
+        "stepParameters": {
+          "identifier": "liteEngineTask",
+          "name": "liteEngineTask",
+          "timeout": "10m",
+          "type": "liteEngineTask",
+          "spec": {
+            "timeout": 0,
+            "retry": 0,
+            "executionElementConfig": {
+              "uuid": "9UJbxEgrSkaGe3p5vzMTxA",
+              "steps": [
+                {
+                  "uuid": "gXBC_OlGSy2stgk2uxKR5Q",
+                  "step": {
+                    "identifier": "SecondStageStep",
+                    "type": "BuildAndPushDockerRegistry",
+                    "name": "SecondStageStep",
+                    "spec": {
+                      "connectorRef": "CD_Docker",
+                      "repo": "cd_repo",
+                      "tags": [
+                        "latest"
+                      ],
+                      "__uuid": "NSpPiKmJSpagu_LQHFQYTw"
+                    },
+                    "__uuid": "-Ap2ivGHSXSaLJC0pSHOnw"
+                  },
+                  "parallel": {},
+                  "stepGroup": {}
+                }
+              ]
+            },
+            "stageIdentifier": "Build_1st_Stage",
+            "stageElementConfig": {
+              "uuid": "ZnIV31m5T3usDcbFNu7NZw",
+              "execution": {
+                "uuid": "0yuJmB30R2aYQRV25v9muA",
+                "steps": [
+                  {
+                    "uuid": "gXBC_OlGSy2stgk2uxKR5Q",
+                    "step": {
+                      "identifier": "SecondStageStep",
+                      "type": "BuildAndPushDockerRegistry",
+                      "name": "SecondStageStep",
+                      "spec": {
+                        "connectorRef": "CD_Docker",
+                        "repo": "cd_repo",
+                        "tags": [
+                          "latest"
+                        ],
+                        "__uuid": "NSpPiKmJSpagu_LQHFQYTw"
+                      },
+                      "__uuid": "-Ap2ivGHSXSaLJC0pSHOnw"
+                    },
+                    "parallel": {},
+                    "stepGroup": {}
+                  }
+                ]
+              },
+              "runtime": {
+                "type": "CLOUD",
+                "spec": {}
+              },
+              "platform": {
+                "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                "os": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Linux"
+                    },
+                    "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "arch": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Amd64"
+                    },
+                    "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                }
+              },
+              "cloneCodebase": false
+            },
+            "skipGitClone": true,
+            "infrastructure": {
+              "type": "HOSTED_VM",
+              "spec": {
+                "platform": {
+                  "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                  "os": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Linux"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  },
+                  "arch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Amd64"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "startTs": 1672643190198,
+        "endTs": 1672643195817,
+        "stepType": "liteEngineTask",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "zY2p1l25RZmcrBJGtr_WyA"
+              ],
+              "logKeys": [
+                "accountId:iEsVNBQGTs-MM3EY525pGQ/orgId:default/projectId:Test/pipelineId:Messy_Pipeline/runSequence:2/level0:pipeline/level1:stages/level2:parallelOMeqWcNYRBGlUMO3sx8xjAparallel/level3:Build_1st_Stage/level4:spec/level5:execution/level6:steps/level7:liteEngineTask"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": {
+          "initStepV2DelegateTaskInfo": {
+            "taskID": "zY2p1l25RZmcrBJGtr_WyA",
+            "taskName": "INITIALIZATION_PHASE"
+          }
+        },
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "nlsTNMdVSFqhQW70Nm9oEQ": {
+        "uuid": "nlsTNMdVSFqhQW70Nm9oEQ",
+        "setupId": "6RXKoOVWR5ySix4fuqbo9g",
+        "name": "liteEngineTask",
+        "identifier": "liteEngineTask",
+        "baseFqn": "pipeline.stages.Build_Stage.spec.execution.steps.liteEngineTask",
+        "outcomes": {
+          "vmDetailsOutcome": {
+            "ipAddress": "10.105.224.78",
+            "delegateId": "GPpJSGAASiOdjLT2Qz1X2w"
+          },
+          "dependencies": {
+            "serviceDependencyList": [
+              {
+                "identifier": "cd_dependency",
+                "name": "cd_dependency",
+                "image": "cd_repo",
+                "status": "Success",
+                "errorMessage": "",
+                "logKeys": [
+                  "accountId:iEsVNBQGTs-MM3EY525pGQ/orgId:default/projectId:Test/pipelineId:Messy_Pipeline/runSequence:2/level0:pipeline/level1:stages/level2:parallelOMeqWcNYRBGlUMO3sx8xjAparallel/level3:Build_Stage/serviceId:cd_dependency"
+                ]
+              }
+            ]
+          }
+        },
+        "stepParameters": {
+          "identifier": "liteEngineTask",
+          "name": "liteEngineTask",
+          "timeout": "10m",
+          "type": "liteEngineTask",
+          "spec": {
+            "timeout": 0,
+            "retry": 0,
+            "executionElementConfig": {
+              "uuid": "sR_bazXZRxm0bRIAAlZt1A",
+              "steps": [
+                {
+                  "uuid": "qa730u08RjeqpPFrLHAUKw",
+                  "step": {},
+                  "parallel": [
+                    {
+                      "step": {
+                        "identifier": "cd_step1",
+                        "type": "BuildAndPushDockerRegistry",
+                        "name": "cd_step-1",
+                        "spec": {
+                          "connectorRef": "CD_Docker",
+                          "repo": "cd_repo",
+                          "tags": [
+                            "latest"
+                          ],
+                          "__uuid": "jGBrufBNQg-KLYt3ZEp0XQ"
+                        },
+                        "__uuid": "1f9tzBG9T1ib9Ry7B6VhSw"
+                      },
+                      "__uuid": "uLpsRaEhRsuBa_iCy5ut2Q"
+                    },
+                    {
+                      "step": {
+                        "identifier": "cd_step_2",
+                        "type": "BuildAndPushDockerRegistry",
+                        "name": "cd_step_2",
+                        "spec": {
+                          "connectorRef": "CD_Docker",
+                          "repo": "cd_repo",
+                          "tags": [
+                            "latest"
+                          ],
+                          "__uuid": "AfMADDtkRKye3rMwB6pX8Q"
+                        },
+                        "__uuid": "BWCiRCMwRIKVyM0XY3_owg"
+                      },
+                      "__uuid": "DTLan4-URV-yOpQgn5UsiQ"
+                    }
+                  ],
+                  "stepGroup": {}
+                }
+              ]
+            },
+            "stageIdentifier": "Build_Stage",
+            "stageElementConfig": {
+              "uuid": "UDTLJy4fRRav4R7FfqdMCw",
+              "execution": {
+                "uuid": "lzizk0f3T4KTAe8w7ZDr8w",
+                "steps": [
+                  {
+                    "uuid": "qa730u08RjeqpPFrLHAUKw",
+                    "step": {},
+                    "parallel": [
+                      {
+                        "step": {
+                          "identifier": "cd_step1",
+                          "type": "BuildAndPushDockerRegistry",
+                          "name": "cd_step-1",
+                          "spec": {
+                            "connectorRef": "CD_Docker",
+                            "repo": "cd_repo",
+                            "tags": [
+                              "latest"
+                            ],
+                            "__uuid": "jGBrufBNQg-KLYt3ZEp0XQ"
+                          },
+                          "__uuid": "1f9tzBG9T1ib9Ry7B6VhSw"
+                        },
+                        "__uuid": "uLpsRaEhRsuBa_iCy5ut2Q"
+                      },
+                      {
+                        "step": {
+                          "identifier": "cd_step_2",
+                          "type": "BuildAndPushDockerRegistry",
+                          "name": "cd_step_2",
+                          "spec": {
+                            "connectorRef": "CD_Docker",
+                            "repo": "cd_repo",
+                            "tags": [
+                              "latest"
+                            ],
+                            "__uuid": "AfMADDtkRKye3rMwB6pX8Q"
+                          },
+                          "__uuid": "BWCiRCMwRIKVyM0XY3_owg"
+                        },
+                        "__uuid": "DTLan4-URV-yOpQgn5UsiQ"
+                      }
+                    ],
+                    "stepGroup": {}
+                  }
+                ]
+              },
+              "runtime": {
+                "type": "CLOUD",
+                "spec": {}
+              },
+              "platform": {
+                "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                "os": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Linux"
+                    },
+                    "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "arch": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Amd64"
+                    },
+                    "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                }
+              },
+              "serviceDependencies": [
+                {
+                  "uuid": "JhMBByGgTlyy0D0HM8cP7Q",
+                  "identifier": "cd_dependency",
+                  "name": "cd_dependency",
+                  "description": "Execution Dependencies",
+                  "type": "SERVICE",
+                  "dependencySpecType": {
+                    "uuid": "C1g39vwqSv63UNy07pNGKA",
+                    "identifier": "cd_dependency",
+                    "name": "cd_dependency",
+                    "image": "cd_repo",
+                    "connectorRef": "CD_Docker"
+                  }
+                }
+              ],
+              "cloneCodebase": false
+            },
+            "skipGitClone": true,
+            "infrastructure": {
+              "type": "HOSTED_VM",
+              "spec": {
+                "platform": {
+                  "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                  "os": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Linux"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  },
+                  "arch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Amd64"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "startTs": 1672643190206,
+        "endTs": 1672643195825,
+        "stepType": "liteEngineTask",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "4qgkHq6ETcS60vZsdb_0Qg"
+              ],
+              "logKeys": [
+                "accountId:iEsVNBQGTs-MM3EY525pGQ/orgId:default/projectId:Test/pipelineId:Messy_Pipeline/runSequence:2/level0:pipeline/level1:stages/level2:parallelOMeqWcNYRBGlUMO3sx8xjAparallel/level3:Build_Stage/level4:spec/level5:execution/level6:steps/level7:liteEngineTask"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": {
+          "initStepV2DelegateTaskInfo": {
+            "taskID": "4qgkHq6ETcS60vZsdb_0Qg",
+            "taskName": "INITIALIZATION_PHASE"
+          }
+        },
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "n1udGoxaQ_uy8De3bToZ1g": {
+        "uuid": "n1udGoxaQ_uy8De3bToZ1g",
+        "setupId": "BWCiRCMwRIKVyM0XY3_owg",
+        "name": "cd_step_2",
+        "identifier": "cd_step_2",
+        "baseFqn": "pipeline.stages.Build_Stage.spec.execution.steps.cd_step_2",
+        "outcomes": {},
+        "stepParameters": {
+          "identifier": "cd_step_2",
+          "name": "cd_step_2",
+          "timeout": "10h",
+          "type": "BuildAndPushDockerRegistry",
+          "spec": {
+            "uuid": "AfMADDtkRKye3rMwB6pX8Q",
+            "retry": 1,
+            "connectorRef": "CD_Docker",
+            "repo": "cd_repo",
+            "tags": [
+              "latest"
+            ]
+          }
+        },
+        "startTs": 1672643195939,
+        "endTs": 1672643200847,
+        "stepType": "BuildAndPushDockerRegistry",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "NJaYCDbjTO6vCua3mt6FMQ"
+              ],
+              "logKeys": [
+                "accountId:iEsVNBQGTs-MM3EY525pGQ/orgId:default/projectId:Test/pipelineId:Messy_Pipeline/runSequence:2/level0:pipeline/level1:stages/level2:parallelOMeqWcNYRBGlUMO3sx8xjAparallel/level3:Build_Stage/level4:spec/level5:execution/level6:steps/level7:parallelqa730u08RjeqpPFrLHAUKwparallel/level8:cd_step_2"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "_Pcv8m2SSzKUy3h86lynoQ": {
+        "uuid": "_Pcv8m2SSzKUy3h86lynoQ",
+        "setupId": "1f9tzBG9T1ib9Ry7B6VhSw",
+        "name": "cd_step-1",
+        "identifier": "cd_step1",
+        "baseFqn": "pipeline.stages.Build_Stage.spec.execution.steps.cd_step1",
+        "outcomes": {},
+        "stepParameters": {
+          "identifier": "cd_step1",
+          "name": "cd_step-1",
+          "timeout": "10h",
+          "type": "BuildAndPushDockerRegistry",
+          "spec": {
+            "uuid": "jGBrufBNQg-KLYt3ZEp0XQ",
+            "retry": 1,
+            "connectorRef": "CD_Docker",
+            "repo": "cd_repo",
+            "tags": [
+              "latest"
+            ]
+          }
+        },
+        "startTs": 1672643195939,
+        "endTs": 1672643200868,
+        "stepType": "BuildAndPushDockerRegistry",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "dSBYAzcNT0SMODfm9evC6A"
+              ],
+              "logKeys": [
+                "accountId:iEsVNBQGTs-MM3EY525pGQ/orgId:default/projectId:Test/pipelineId:Messy_Pipeline/runSequence:2/level0:pipeline/level1:stages/level2:parallelOMeqWcNYRBGlUMO3sx8xjAparallel/level3:Build_Stage/level4:spec/level5:execution/level6:steps/level7:parallelqa730u08RjeqpPFrLHAUKwparallel/level8:cd_step1"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "D8639TEmRRWQU__E6xtWAA": {
+        "uuid": "D8639TEmRRWQU__E6xtWAA",
+        "setupId": "NXeNr4lHQMStGXEO5ez0tAparallel",
+        "name": "parallel",
+        "identifier": "parallelNXeNr4lHQMStGXEO5ez0tAparallel",
+        "baseFqn": "pipeline.stages",
+        "outcomes": {},
+        "stepParameters": {
+          "parallelNodeIds": [
+            "rHP8ZL1TSfea5gwQiFlk2A",
+            "ot3B-0lUQoaMhLdkexMtkg"
+          ]
+        },
+        "startTs": 1672643201235,
+        "endTs": 1672643201355,
+        "stepType": "NG_FORK",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "children": {
+              "children": [
+                {
+                  "childNodeId": "rHP8ZL1TSfea5gwQiFlk2A"
+                },
+                {
+                  "childNodeId": "ot3B-0lUQoaMhLdkexMtkg"
+                }
+              ],
+              "maxConcurrency": "0",
+              "logKeys": [],
+              "shouldProceedIfFailed": false
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "qgmNNIUNR9Cl2Hz3W6rCmg": {
+        "uuid": "qgmNNIUNR9Cl2Hz3W6rCmg",
+        "setupId": "mlIT8Bt7RvuKlTHvdaMCsg",
+        "name": "Build Stage",
+        "identifier": "Build_Stage",
+        "baseFqn": "pipeline.stages.Build_Stage",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "mlIT8Bt7RvuKlTHvdaMCsg",
+          "identifier": "Build_Stage",
+          "name": "Build Stage",
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "CI",
+          "specConfig": {
+            "infrastructure": {
+              "type": "HOSTED_VM",
+              "spec": {
+                "platform": {
+                  "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                  "os": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Linux"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  },
+                  "arch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Amd64"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            },
+            "dependencies": [
+              {
+                "uuid": "JhMBByGgTlyy0D0HM8cP7Q",
+                "identifier": "cd_dependency",
+                "name": "cd_dependency",
+                "description": "Execution Dependencies",
+                "type": "SERVICE",
+                "dependencySpecType": {
+                  "uuid": "C1g39vwqSv63UNy07pNGKA",
+                  "identifier": "cd_dependency",
+                  "name": "cd_dependency",
+                  "image": "cd_repo",
+                  "connectorRef": "CD_Docker"
+                }
+              }
+            ],
+            "enableCloneRepo": false,
+            "stepIdentifiers": [
+              "cd_step1",
+              "cd_step_2"
+            ],
+            "childNodeID": "UDTLJy4fRRav4R7FfqdMCw"
+          }
+        },
+        "startTs": 1672643189990,
+        "endTs": 1672643201085,
+        "stepType": "IntegrationStageStepPMS",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "1 error occurred:\n\t* exit status 1\n\n",
+          "failureTypeList": [
+            "APPLICATION_ERROR"
+          ],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "UDTLJy4fRRav4R7FfqdMCw",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "oNXEjg7GR5OPpO_sDmbi0Q": {
+        "uuid": "oNXEjg7GR5OPpO_sDmbi0Q",
+        "setupId": "P9wtemorRVe_WA7Q4wv5Yw",
+        "name": "Approval Stage",
+        "identifier": "Approval_Stage",
+        "baseFqn": "pipeline.stages.Approval_Stage",
+        "outcomes": {},
+        "stepParameters": null,
+        "startTs": null,
+        "endTs": 1672643201215,
+        "stepType": "APPROVAL_STAGE",
+        "status": "Skipped",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": false,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "false",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      }
+    },
+    "nodeAdjacencyListMap": {
+      "WEwe0yTRTRWlzAbwQZ11-Q": {
+        "children": [
+          "A1RHzE3yQhamwyjUIiicHQ"
+        ],
+        "nextIds": []
+      },
+      "87haCcZFS4e7EGoWxS8-_w": {
+        "children": [
+          "nlsTNMdVSFqhQW70Nm9oEQ"
+        ],
+        "nextIds": []
+      },
+      "nN9fZ64VQa-ym09RjpsipA": {
+        "children": [
+          "qgmNNIUNR9Cl2Hz3W6rCmg",
+          "6fck4wW3R_mClWuHQMduVQ"
+        ],
+        "nextIds": [
+          "oNXEjg7GR5OPpO_sDmbi0Q"
+        ]
+      },
+      "xva7dfTEQFyLxKx-ih-PIw": {
+        "children": [
+          "3UAdZhYSTY2_BWIqIvo7Sw"
+        ],
+        "nextIds": []
+      },
+      "6fck4wW3R_mClWuHQMduVQ": {
+        "children": [
+          "WEwe0yTRTRWlzAbwQZ11-Q"
+        ],
+        "nextIds": []
+      },
+      "SuY5NHomSK-T_Jfa5QysCg": {
+        "children": [],
+        "nextIds": []
+      },
+      "1UxIETyyQxG3RxwJwNusIw": {
+        "children": [
+          "_Pcv8m2SSzKUy3h86lynoQ",
+          "n1udGoxaQ_uy8De3bToZ1g"
+        ],
+        "nextIds": []
+      },
+      "bBg86zwzTme6dA2UFa3q4g": {
+        "children": [],
+        "nextIds": []
+      },
+      "3UAdZhYSTY2_BWIqIvo7Sw": {
+        "children": [
+          "nN9fZ64VQa-ym09RjpsipA"
+        ],
+        "nextIds": []
+      },
+      "jJi7qjUnTdO478DhR4hPSQ": {
+        "children": [],
+        "nextIds": []
+      },
+      "rhpsfU3rRB-BXP6PjQK3xA": {
+        "children": [],
+        "nextIds": []
+      },
+      "A1RHzE3yQhamwyjUIiicHQ": {
+        "children": [],
+        "nextIds": [
+          "bBg86zwzTme6dA2UFa3q4g"
+        ]
+      },
+      "nlsTNMdVSFqhQW70Nm9oEQ": {
+        "children": [],
+        "nextIds": [
+          "1UxIETyyQxG3RxwJwNusIw"
+        ]
+      },
+      "n1udGoxaQ_uy8De3bToZ1g": {
+        "children": [],
+        "nextIds": []
+      },
+      "_Pcv8m2SSzKUy3h86lynoQ": {
+        "children": [],
+        "nextIds": []
+      },
+      "D8639TEmRRWQU__E6xtWAA": {
+        "children": [
+          "SuY5NHomSK-T_Jfa5QysCg",
+          "jJi7qjUnTdO478DhR4hPSQ"
+        ],
+        "nextIds": [
+          "rhpsfU3rRB-BXP6PjQK3xA"
+        ]
+      },
+      "qgmNNIUNR9Cl2Hz3W6rCmg": {
+        "children": [
+          "87haCcZFS4e7EGoWxS8-_w"
+        ],
+        "nextIds": []
+      },
+      "oNXEjg7GR5OPpO_sDmbi0Q": {
+        "children": [],
+        "nextIds": [
+          "D8639TEmRRWQU__E6xtWAA"
+        ]
+      }
+    },
+    "executionMetadata": {
+      "accountId": "iEsVNBQGTs-MM3EY525pGQ",
+      "pipelineIdentifier": "Messy_Pipeline",
+      "orgIdentifier": "default",
+      "projectIdentifier": "Test",
+      "planExecutionId": "GUlUcdJ0SDWw6Rxkfeqr2Q"
+    },
+    "representationStrategy": "camelCase"
+  }
+}

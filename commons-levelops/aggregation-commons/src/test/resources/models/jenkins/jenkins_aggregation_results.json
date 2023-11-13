@@ -1,0 +1,450 @@
+{
+  "config_changes_by_jobs": [
+    {
+      "job_name": "BBMaven1New",
+      "changes_count": 12,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 10
+        },
+        {
+          "user_id": "SYSTEM",
+          "changes_count": 2
+        }
+      ]
+    },
+    {
+      "job_name": "Pipe2",
+      "changes_count": 6,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 6
+        }
+      ]
+    },
+    {
+      "job_name": "BBMaven2",
+      "changes_count": 4,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 4
+        }
+      ]
+    },
+    {
+      "job_name": "Pipe1.1",
+      "changes_count": 4,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 4
+        }
+      ]
+    },
+    {
+      "job_name": "Stream-Maven-Delete-7",
+      "changes_count": 3,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 3
+        }
+      ]
+    },
+    {
+      "job_name": "Pipe3",
+      "changes_count": 3,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 3
+        }
+      ]
+    },
+    {
+      "job_name": "Stream-Maven-2",
+      "changes_count": 1,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "changes_count": 1
+        }
+      ]
+    }
+  ],
+  "config_changes_by_users": [
+    {
+      "user_id": "testread",
+      "changes_count": 31,
+      "details_by_job": [
+        {
+          "job_name": "BBMaven1New",
+          "changes_count": 10
+        },
+        {
+          "job_name": "Pipe2",
+          "changes_count": 6
+        },
+        {
+          "job_name": "BBMaven2",
+          "changes_count": 4
+        },
+        {
+          "job_name": "Pipe1.1",
+          "changes_count": 4
+        },
+        {
+          "job_name": "Stream-Maven-Delete-7",
+          "changes_count": 3
+        },
+        {
+          "job_name": "Pipe3",
+          "changes_count": 3
+        },
+        {
+          "job_name": "Stream-Maven-2",
+          "changes_count": 1
+        }
+      ]
+    },
+    {
+      "user_id": "SYSTEM",
+      "changes_count": 2,
+      "details_by_job": [
+        {
+          "job_name": "BBMaven1New",
+          "changes_count": 2
+        }
+      ]
+    }
+  ],
+  "config_changes_by_jobs_time_series": {
+    "1591660800": [
+      {
+        "job_name": "BBMaven1New",
+        "changes_count": 12,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 10
+          },
+          {
+            "user_id": "SYSTEM",
+            "changes_count": 2
+          }
+        ]
+      },
+      {
+        "job_name": "Pipe2",
+        "changes_count": 6,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 6
+          }
+        ]
+      },
+      {
+        "job_name": "BBMaven2",
+        "changes_count": 4,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 4
+          }
+        ]
+      },
+      {
+        "job_name": "Pipe1.1",
+        "changes_count": 4,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 4
+          }
+        ]
+      },
+      {
+        "job_name": "Stream-Maven-Delete-7",
+        "changes_count": 3,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 3
+          }
+        ]
+      },
+      {
+        "job_name": "Pipe3",
+        "changes_count": 3,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 3
+          }
+        ]
+      },
+      {
+        "job_name": "Stream-Maven-2",
+        "changes_count": 1,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "changes_count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "config_changes_by_users_time_series": {
+    "1591660800": [
+      {
+        "user_id": "testread",
+        "changes_count": 31,
+        "details_by_job": [
+          {
+            "job_name": "BBMaven1New",
+            "changes_count": 10
+          },
+          {
+            "job_name": "Pipe2",
+            "changes_count": 6
+          },
+          {
+            "job_name": "BBMaven2",
+            "changes_count": 4
+          },
+          {
+            "job_name": "Pipe1.1",
+            "changes_count": 4
+          },
+          {
+            "job_name": "Stream-Maven-Delete-7",
+            "changes_count": 3
+          },
+          {
+            "job_name": "Pipe3",
+            "changes_count": 3
+          },
+          {
+            "job_name": "Stream-Maven-2",
+            "changes_count": 1
+          }
+        ]
+      },
+      {
+        "user_id": "SYSTEM",
+        "changes_count": 2,
+        "details_by_job": [
+          {
+            "job_name": "BBMaven1New",
+            "changes_count": 2
+          }
+        ]
+      }
+    ]
+  },
+  "job_runs_by_jobs": [
+    {
+      "job_name": "Pipe2",
+      "runs_count": 18,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "runs_count": 18
+        }
+      ]
+    },
+    {
+      "job_name": "Pipe3",
+      "runs_count": 7,
+      "details_by_user": [
+        {
+          "user_id": "testread",
+          "runs_count": 7
+        }
+      ]
+    }
+  ],
+  "job_runs_by_users": [
+    {
+      "user_id": "testread",
+      "runs_count": 25,
+      "details_by_job": [
+        {
+          "job_name": "Pipe2",
+          "runs_count": 18
+        },
+        {
+          "job_name": "Pipe3",
+          "runs_count": 7
+        }
+      ]
+    }
+  ],
+  "job_runs_by_jobs_time_series": {
+    "1591660800": [
+      {
+        "job_name": "Pipe2",
+        "runs_count": 18,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "runs_count": 18
+          }
+        ]
+      },
+      {
+        "job_name": "Pipe3",
+        "runs_count": 7,
+        "details_by_user": [
+          {
+            "user_id": "testread",
+            "runs_count": 7
+          }
+        ]
+      }
+    ]
+  },
+  "job_runs_by_users_time_series": {
+    "1591660800": [
+      {
+        "user_id": "testread",
+        "runs_count": 25,
+        "details_by_job": [
+          {
+            "job_name": "Pipe2",
+            "runs_count": 18
+          },
+          {
+            "job_name": "Pipe3",
+            "runs_count": 7
+          }
+        ]
+      }
+    ]
+  },
+  "job_stats": [
+    {
+      "name": "Pipe2",
+      "avg_build_duration": 13527137,
+      "mttr_all_failed_info": 122015169,
+      "mttf_all_builds": 0,
+      "std_dev_all_failed_info": 39280441,
+      "success_count": 16,
+      "un_stable_count": 0,
+      "failure_count": 0,
+      "not_built_count": 0,
+      "aborted_count": 2
+    },
+    {
+      "name": "Pipe3",
+      "avg_build_duration": 13931,
+      "mttr_all_failed_info": 0,
+      "mttf_all_builds": 0,
+      "std_dev_all_failed_info": 894,
+      "success_count": 0,
+      "un_stable_count": 0,
+      "failure_count": 7,
+      "not_built_count": 0,
+      "aborted_count": 0
+    }
+  ],
+  "job_stats_time_series": {
+    "1591660800": [
+      {
+        "name": "Pipe2",
+        "avg_build_duration": 13527137,
+        "mttr_all_failed_info": 122015169,
+        "mttf_all_builds": 0,
+        "std_dev_all_failed_info": 39280441,
+        "success_count": 16,
+        "un_stable_count": 0,
+        "failure_count": 0,
+        "not_built_count": 0,
+        "aborted_count": 2
+      },
+      {
+        "name": "Pipe3",
+        "avg_build_duration": 13931,
+        "mttr_all_failed_info": 0,
+        "mttf_all_builds": 0,
+        "std_dev_all_failed_info": 894,
+        "success_count": 0,
+        "un_stable_count": 0,
+        "failure_count": 7,
+        "not_built_count": 0,
+        "aborted_count": 0
+      }
+    ]
+  },
+  "aggregate_build_results": [
+    {
+      "agg_name": "Pipe2 Prod",
+      "job_stats": {
+        "name": "Pipe2",
+        "avg_build_duration": 14026,
+        "mttr_all_failed_info": 0,
+        "mttf_all_builds": 0,
+        "std_dev_all_failed_info": 0,
+        "success_count": 1,
+        "un_stable_count": 0,
+        "failure_count": 0,
+        "not_built_count": 0,
+        "aborted_count": 0
+      }
+    },
+    {
+      "agg_name": "Pipe2 UAT",
+      "job_stats": {
+        "name": "Pipe2",
+        "avg_build_duration": 12909,
+        "mttr_all_failed_info": 0,
+        "mttf_all_builds": 0,
+        "std_dev_all_failed_info": 3253,
+        "success_count": 4,
+        "un_stable_count": 0,
+        "failure_count": 0,
+        "not_built_count": 0,
+        "aborted_count": 0
+      }
+    }
+  ],
+  "aggregate_build_results_time_series": {
+    "1591660800": [
+      {
+        "agg_name": "Pipe2 Prod",
+        "job_stats": {
+          "name": "Pipe2",
+          "avg_build_duration": 14026,
+          "mttr_all_failed_info": 0,
+          "mttf_all_builds": 0,
+          "std_dev_all_failed_info": 0,
+          "success_count": 1,
+          "un_stable_count": 0,
+          "failure_count": 0,
+          "not_built_count": 0,
+          "aborted_count": 0
+        }
+      },
+      {
+        "agg_name": "Pipe2 UAT",
+        "job_stats": {
+          "name": "Pipe2",
+          "avg_build_duration": 12909,
+          "mttr_all_failed_info": 0,
+          "mttf_all_builds": 0,
+          "std_dev_all_failed_info": 3253,
+          "success_count": 4,
+          "un_stable_count": 0,
+          "failure_count": 0,
+          "not_built_count": 0,
+          "aborted_count": 0
+        }
+      }
+    ]
+  }
+}

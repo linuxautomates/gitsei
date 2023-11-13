@@ -1,0 +1,266 @@
+{
+  "data": {
+    "resultType": "vector",
+    "result": [
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "https",
+          "instance": "192.168.65.3:6443",
+          "job": "apiserver",
+          "namespace": "default",
+          "service": "kubernetes"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "https-metrics",
+          "instance": "192.168.65.3:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics",
+          "namespace": "kube-system",
+          "node": "docker-desktop",
+          "service": "prometheus-prometheus-oper-kubelet"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "https-metrics",
+          "instance": "192.168.65.3:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/resource/v1alpha1",
+          "namespace": "kube-system",
+          "node": "docker-desktop",
+          "service": "prometheus-prometheus-oper-kubelet"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http-metrics",
+          "instance": "192.168.65.3:10252",
+          "job": "kube-controller-manager",
+          "namespace": "kube-system",
+          "pod": "kube-controller-manager-docker-desktop",
+          "service": "prometheus-prometheus-oper-kube-controller-manager"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "https-metrics",
+          "instance": "192.168.65.3:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/probes",
+          "namespace": "kube-system",
+          "node": "docker-desktop",
+          "service": "prometheus-prometheus-oper-kubelet"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http-metrics",
+          "instance": "192.168.65.3:10251",
+          "job": "kube-scheduler",
+          "namespace": "kube-system",
+          "pod": "kube-scheduler-docker-desktop",
+          "service": "prometheus-prometheus-oper-kube-scheduler"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "web",
+          "instance": "10.1.3.108:9090",
+          "job": "prometheus-prometheus-oper-prometheus",
+          "namespace": "monitoring",
+          "pod": "prometheus-prometheus-prometheus-oper-prometheus-0",
+          "service": "prometheus-prometheus-oper-prometheus"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http-metrics",
+          "instance": "192.168.65.3:10249",
+          "job": "kube-proxy",
+          "namespace": "kube-system",
+          "pod": "kube-proxy-fzkt5",
+          "service": "prometheus-prometheus-oper-kube-proxy"
+        },
+        "value": [
+          1.602053531867E9,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http-metrics",
+          "instance": "10.1.3.102:9153",
+          "job": "coredns",
+          "namespace": "kube-system",
+          "pod": "coredns-5c98db65d4-7wkfl",
+          "service": "prometheus-prometheus-oper-coredns"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "metrics",
+          "instance": "192.168.65.3:9100",
+          "job": "node-exporter",
+          "namespace": "monitoring",
+          "pod": "prometheus-prometheus-node-exporter-rthhk",
+          "service": "prometheus-prometheus-node-exporter"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http-metrics",
+          "instance": "192.168.65.3:2379",
+          "job": "kube-etcd",
+          "namespace": "kube-system",
+          "pod": "etcd-docker-desktop",
+          "service": "prometheus-prometheus-oper-kube-etcd"
+        },
+        "value": [
+          1.602053531867E9,
+          "0"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http-metrics",
+          "instance": "10.1.3.100:9153",
+          "job": "coredns",
+          "namespace": "kube-system",
+          "pod": "coredns-5c98db65d4-nx4tb",
+          "service": "prometheus-prometheus-oper-coredns"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "https-metrics",
+          "instance": "192.168.65.3:10250",
+          "job": "kubelet",
+          "metrics_path": "/metrics/cadvisor",
+          "namespace": "kube-system",
+          "node": "docker-desktop",
+          "service": "prometheus-prometheus-oper-kubelet"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http",
+          "instance": "10.1.3.105:8080",
+          "job": "prometheus-prometheus-oper-operator",
+          "namespace": "monitoring",
+          "pod": "prometheus-prometheus-oper-operator-7c75ff5864-6dk67",
+          "service": "prometheus-prometheus-oper-operator"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "web",
+          "instance": "10.1.3.107:9093",
+          "job": "prometheus-prometheus-oper-alertmanager",
+          "namespace": "monitoring",
+          "pod": "alertmanager-prometheus-prometheus-oper-alertmanager-0",
+          "service": "prometheus-prometheus-oper-alertmanager"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "service",
+          "instance": "10.1.3.104:3000",
+          "job": "prometheus-grafana",
+          "namespace": "monitoring",
+          "pod": "prometheus-grafana-5558455c66-jqszh",
+          "service": "prometheus-grafana"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      },
+      {
+        "metric": {
+          "__name__": "up",
+          "endpoint": "http",
+          "instance": "10.1.3.106:8080",
+          "job": "kube-state-metrics",
+          "namespace": "monitoring",
+          "pod": "prometheus-kube-state-metrics-6b46f67bf6-nmv6m",
+          "service": "prometheus-kube-state-metrics"
+        },
+        "value": [
+          1.602053531867E9,
+          "1"
+        ]
+      }
+    ]
+  },
+  "status": "success"
+}

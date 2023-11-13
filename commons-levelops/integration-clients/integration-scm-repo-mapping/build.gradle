@@ -1,0 +1,14 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(':inventory-service')
+    compile libraries.okhttp
+
+    compile project(':inventory-service')
+    compile project(':ingestion-commons')
+    compile project(':integration-clients:integration-github')
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+}

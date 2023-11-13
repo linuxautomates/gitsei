@@ -1,0 +1,67 @@
+{
+  "properties": {
+    "i_id": {
+      "type": "keyword"
+    },
+    "i_repo_id": {
+      "type": "keyword"
+    },
+    "i_integration_id": {
+      "type": "keyword"
+    },
+    "i_issue_id": {
+      "type": "keyword"
+    },
+    "i_number": {
+      "type": "keyword"
+    },
+    "i_project": {
+      "type": "keyword"
+    },
+    "i_state": {
+      "type": "keyword"
+    },
+    "i_title": {
+      "type": "keyword"
+    },
+    "i_labels": {
+      "type": "keyword"
+    },
+    "i_url": {
+      "type": "keyword"
+    },
+    "i_num_comments": {
+      "type": "keyword"
+    },
+    "i_response_time": {
+      "type": "long"
+    },
+    "i_solve_time": {
+      "type": "long"
+    },
+    "i_issue_updated_at": {
+      "type": "date"
+    },
+    "i_issue_created_at": {
+      "type": "date"
+    },
+    "i_issue_closed_at": {
+      "type": "date"
+    },
+    "i_first_comment_at": {
+      "type": "date"
+    },
+    "i_created_at": {
+      "type": "date"
+    },
+    "i_assignees": {
+      "type": "keyword"
+    },
+    "i_creator": {
+      "type": "keyword"
+    },
+    "i_creator_id": {
+      "type": "keyword"
+    }
+  }
+}

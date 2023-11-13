@@ -1,0 +1,20 @@
+dependencies {
+    // annotation processing
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation project(":utils")
+    implementation project(":database-commons")
+
+    compile libraries.jackson_core
+    compile libraries.log4j
+
+    // test
+    testAnnotationProcessor libraries.lombok
+    testCompileOnly libraries.lombok
+    testImplementation libraries.embedded_postgres
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+}
+

@@ -1,0 +1,104 @@
+{
+  "records": [
+    {
+      "id": 68,
+      "name": "Test Plan 1",
+      "assignedto_id": null,
+      "assignee": null,
+      "blocked_count": 0,
+      "completed_on": null,
+      "created_by": 1,
+      "creator": null,
+      "created_on": 1691388918,
+      "description": null,
+      "entries": null,
+      "failed_count": 0,
+      "is_completed": false,
+      "milestone_id": null,
+      "passed_count": 0,
+      "project_id": 7,
+      "retest_count": 0,
+      "untested_count": 1,
+      "status_counts": null,
+      "url": "https://harnessio.testrail.io/index.php?/plans/view/68",
+      "refs": null,
+      "test_runs": [
+        {
+          "id": 69,
+          "name": "Baseline 1",
+          "assignedto_id": null,
+          "assignee": null,
+          "blocked_count": 0,
+          "completed_on": null,
+          "config": null,
+          "config_ids": [],
+          "created_by": 1,
+          "creator": null,
+          "created_on": 1691388918,
+          "description": null,
+          "failed_count": 0,
+          "include_all": true,
+          "is_completed": false,
+          "milestone_id": null,
+          "plan_id": 68,
+          "passed_count": 0,
+          "project_id": 7,
+          "retest_count": 0,
+          "suite_id": 18,
+          "untested_count": 1,
+          "updated_on": null,
+          "status_counts": null,
+          "url": "https://harnessio.testrail.io/index.php?/runs/view/69",
+          "refs": null,
+          "tests": [
+            {
+              "custom_case_fields": {
+                "custom_steps": "Step-1\r\nStep-2",
+                "custom_string_field": "new",
+                "custom_testrail_bdd_scenario": "[{\"content\":\"Scenarios no 1\"}]",
+                "custom_date_field": "8/1/2023",
+                "custom_integer_field": -4,
+                "custom_dropdown_field": "option2",
+                "custom_text_field": "This is text field",
+                "custom_automation_type": "Ranorex",
+                "custom_checkbox_field": true,
+                "custom_tags": "tag2",
+                "custom_url_field": "https://www.google.com/"
+              },
+              "id": 1141049,
+              "case_id": 33717,
+              "status_id": 3,
+              "assignedto_id": null,
+              "run_id": 69,
+              "title": "Test case for login",
+              "template_id": 1,
+              "type_id": 6,
+              "priority_id": 1,
+              "estimate_forecast": "2m",
+              "estimate": "2m",
+              "refs": "https://www.google.com/",
+              "milestone_id": null,
+              "sections_display_order": 1,
+              "cases_display_order": 1,
+              "type": "Functional",
+              "status": "Untested",
+              "assignee": null,
+              "priority": "Low",
+              "results": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "4559"
+    },
+    "integration_type": "testrails",
+    "data_type": "test_plans",
+    "page_number": 0
+  }
+}

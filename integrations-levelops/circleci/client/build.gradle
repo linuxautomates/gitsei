@@ -1,0 +1,45 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api levelopsCommonsLib('utils')
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-service')
+
+    implementation levelopsCommonsLib('preflight-check')
+
+    compile project(":integration-circleci-models")
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.apache_http
+    compile libraries.jackson_core
+    compile libraries.spring_boot_web
+
+    testCompile libraries.jackson_core
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.mockito
+    testCompile libraries.lombok
+    testCompile levelopsCommonsLib("utils")
+}
+
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

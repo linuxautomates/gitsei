@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: serverapi
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+      file-size-threshold: 10MB
+  mvc:
+    async:
+      request-timeout: 120s
+    pathmatch:
+        matching-strategy: ANT_PATH_MATCHER
+  cloud:
+    gcp:
+      metrics:
+        enabled: true
+      sql:
+        enabled: false
+      logging:
+        enabled: true
+
+server:
+  compression:
+    enabled: true
+    min-response-size: 2048
+  http2:
+    enabled: true
+  tomcat:
+    max-connections: 8192 # default 8192
+    connection-timeout: 120s
+    threads: 
+      max: 300 # default 200
+      min-spare: 50 # default 10
+  error:
+    include-message: always
+
+springdoc:
+  api-docs:
+    path: /api/api-docs
+    enabled: true
+  swagger-ui:
+    path: /api/ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    metrics:
+      enabled: true
+  metrics:
+    export:
+      stackdriver:
+        useSemanticMetricTypes: true
+    tags:
+      service: "server-api"
+      pod: ${HOSTNAME}
+    stackdriver:
+      enabled: true
+      step: 1m
+      

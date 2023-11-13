@@ -1,0 +1,265 @@
+{
+  "totalCount": 1,
+  "items": [
+    {
+      "createdAt": "2021-08-02T07:32:39.169Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://35.239.185.151/api/users/00000000-0000-0000-0001-000000000001",
+      "settingUpdatedAt": "2021-08-09T00:55:56.295Z",
+      "settingUpdatedBy": "sysadmin",
+      "settingUpdatedByUser": "https://35.239.185.151/api/users/00000000-0000-0000-0001-000000000001",
+      "versionName": "0.1.0",
+      "source": "CUSTOM",
+      "phase": "DEVELOPMENT",
+      "distribution": "EXTERNAL",
+      "_meta": {
+        "allow": [
+          "GET",
+          "PUT"
+        ],
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6",
+        "links": [
+          {
+            "rel": "bulk-adjustment",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/bulk-adjustment"
+          },
+          {
+            "rel": "source-trees",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/source-trees"
+          },
+          {
+            "rel": "snippet-counts",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/snippet-counts"
+          },
+          {
+            "rel": "vulnerability-bom",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/vulnerability-bom"
+          },
+          {
+            "rel": "version-risk-profile",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/risk-profile"
+          },
+          {
+            "rel": "origin-risk-profile",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/origin-risk-profile"
+          },
+          {
+            "rel": "references",
+            "href": "https://35.239.185.151/api/components/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/references"
+          },
+          {
+            "rel": "active-policy-rules",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/policy-rules"
+          },
+          {
+            "rel": "reports",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/reports"
+          },
+          {
+            "rel": "versionReport",
+            "href": "https://35.239.185.151/api/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/reports"
+          },
+          {
+            "rel": "licenseReports",
+            "href": "https://35.239.185.151/api/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/license-reports"
+          },
+          {
+            "rel": "riskProfile",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/risk-profile"
+          },
+          {
+            "rel": "version-risk-profile",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/risk-profile"
+          },
+          {
+            "rel": "origin-risk-profile",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/origin-risk-profile"
+          },
+          {
+            "rel": "components",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/components"
+          },
+          {
+            "rel": "vulnerable-components",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/vulnerable-bom-components"
+          },
+          {
+            "rel": "comparison",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/comparison"
+          },
+          {
+            "rel": "project",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8"
+          },
+          {
+            "rel": "policy-status",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/policy-status"
+          },
+          {
+            "rel": "codelocations",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/codelocations"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/custom-fields"
+          },
+          {
+            "rel": "issues",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/issues"
+          },
+          {
+            "rel": "project-version-journal",
+            "href": "https://35.239.185.151/api/journal/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6"
+          },
+          {
+            "rel": "bom-status",
+            "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions/a72ca063-d59b-424d-9c0f-4df2451720a6/bom-status"
+          }
+        ]
+      },
+      "license": {
+        "type": "DISJUNCTIVE",
+        "licenses": [
+          {
+            "license": "https://35.239.185.151/api/licenses/00000000-0010-0000-0000-000000000000",
+            "licenses": [],
+            "name": "Unknown License",
+            "ownership": "UNKNOWN",
+            "licenseDisplay": "Unknown License",
+            "licenseFamilySummary": {
+              "name": "Unknown",
+              "href": "https://35.239.185.151/api/license-families/5"
+            }
+          }
+        ],
+        "licenseDisplay": "Unknown License"
+      },
+      "securityRiskProfile": {
+        "counts": [
+          {
+            "countType": "CRITICAL",
+            "count": 0
+          },
+          {
+            "countType": "HIGH",
+            "count": 1
+          },
+          {
+            "countType": "MEDIUM",
+            "count": 19
+          },
+          {
+            "countType": "LOW",
+            "count": 0
+          },
+          {
+            "countType": "OK",
+            "count": 1114
+          },
+          {
+            "countType": "UNKNOWN",
+            "count": 0
+          }
+        ]
+      },
+      "licenseRiskProfile": {
+        "counts": [
+          {
+            "countType": "HIGH",
+            "count": 1
+          },
+          {
+            "countType": "MEDIUM",
+            "count": 1
+          },
+          {
+            "countType": "LOW",
+            "count": 0
+          },
+          {
+            "countType": "OK",
+            "count": 1132
+          },
+          {
+            "countType": "UNKNOWN",
+            "count": 1132
+          }
+        ]
+      },
+      "operationalRiskProfile": {
+        "counts": [
+          {
+            "countType": "HIGH",
+            "count": 486
+          },
+          {
+            "countType": "MEDIUM",
+            "count": 97
+          },
+          {
+            "countType": "LOW",
+            "count": 246
+          },
+          {
+            "countType": "OK",
+            "count": 305
+          },
+          {
+            "countType": "UNKNOWN",
+            "count": 305
+          }
+        ]
+      },
+      "policyStatus": "IN_VIOLATION",
+      "lastBomUpdateDate": "2021-08-09T00:55:56.314Z",
+      "lastScanDate": "2021-08-04T14:36:01.283Z",
+      "bomCount": 0
+    }
+  ],
+  "appliedFilters": [],
+  "_meta": {
+    "allow": [
+      "POST",
+      "GET"
+    ],
+    "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions",
+    "links": [
+      {
+        "rel": "static-filter",
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions-filters?filterKey=distribution",
+        "name": "distribution",
+        "label": "Distribution"
+      },
+      {
+        "rel": "dynamic-filter",
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions-filters?filterKey=license",
+        "name": "license",
+        "label": "License"
+      },
+      {
+        "rel": "static-filter",
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions-filters?filterKey=licenseRisk",
+        "name": "licenseRisk",
+        "label": "License Risk"
+      },
+      {
+        "rel": "static-filter",
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions-filters?filterKey=operationalRisk",
+        "name": "operationalRisk",
+        "label": "Operational Risk"
+      },
+      {
+        "rel": "static-filter",
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions-filters?filterKey=phase",
+        "name": "phase",
+        "label": "Release Phase"
+      },
+      {
+        "rel": "static-filter",
+        "href": "https://35.239.185.151/api/projects/b04cb94f-86c7-4d2c-abd6-f7575544d5d8/versions-filters?filterKey=securityRisk",
+        "name": "securityRisk",
+        "label": "Security Risk"
+      }
+    ]
+  }
+}

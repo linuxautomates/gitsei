@@ -1,0 +1,49 @@
+pipeline:
+  name: Build-Server-API
+  identifier: BuildServerAPI
+  template:
+    templateRef: pipelinetemplatejava
+    versionLabel: v1
+    templateInputs:
+      variables:
+        - name: BUILDER_BASE_IMAGE_NAME
+          type: String
+          value: openjdk:13
+        - name: DOCKER_HUB_BUILDER_BASE_IMAGE
+          type: String
+          value: "yes"
+        - name: VERSION_SUFFIX
+          type: String
+          value: <+input>
+        - name: REPO_NAME
+          type: String
+          default: test
+          value: api-levelops
+        - name: DOCKER_CONTEXT
+          type: String
+          value: .
+        - name: DOCKERFILE_PATH
+          type: String
+          value: Dockerfile
+        - name: SRC_FOLDER_NAME
+          type: String
+          value: ./
+        - name: GRADLE_RELATIVE_LOCATION
+          type: String
+          value: ./gradlew
+        - name: SERVICE_IMAGE_NAME
+          type: String
+          value: serverapi
+        - name: COMPONENT_VERSION_KEY
+          type: String
+          value: SERVER_API_VERSION
+        - name: K8S_ENV
+          type: String
+          value: <+input>
+      properties:
+        ci:
+          codebase:
+            build: <+input>
+  tags: {}
+  projectIdentifier: Backend
+  orgIdentifier: SEIpropelo

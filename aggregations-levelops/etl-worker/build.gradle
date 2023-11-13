@@ -1,0 +1,74 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.7.0")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    mainClass = "io.levelops.etl.WorkerApplication"
+}
+
+configurations {
+    runtime.exclude group: "org.apache.logging.log4j", module: "log4j-core"
+}
+
+dependencies {
+    // annotation processing
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    // local aggs shared
+    implementation project(":aggregations-shared")
+
+
+    // commons
+    implementation levelopsCommonsLib('logging-utils')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('database-services')
+    implementation levelopsCommonsLib('events-services')
+    implementation levelopsCommonsLib('inventory-service')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('aggregation-commons')
+    implementation levelopsCommonsLib('scm-auto-repo-mapping')
+    implementation levelopsCommonsLib('etl-commons')
+
+
+    // 3rd party
+    implementation libraries.jackson_core
+    implementation libraries.google_cloud_storage
+    // This is only here for the k8s readiness check, there may be a better way to do this
+    implementation libraries.servlet
+    implementation libraries.spring_boot_web
+    implementation libraries.spring_actuator
+    implementation libraries.failsafe
+
+    implementation libraries.spring_actuator
+    implementation libraries.micrometer_stackdriver
+
+
+    // test
+    testImplementation libraries.junit
+    testImplementation libraries.spring_boot_starter_test
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+    testImplementation libraries.embedded_postgres
+}
+
+test {
+//    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = 'full'
+    }
+}

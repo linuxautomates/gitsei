@@ -1,0 +1,30 @@
+apply plugin: 'java-library'
+
+dependencies {
+    annotationProcessor libraries.lombok
+    compileOnly libraries.lombok
+
+     compile project(':ingestion-commons')
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.embedded_postgres
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

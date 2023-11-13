@@ -1,0 +1,667 @@
+{
+  "expand": "operations,versionedRepresentations,editmeta,customfield_10029.requestTypePractice,changelog,renderedFields,customfield_10131.properties",
+  "id": "30764",
+  "self": "https://timebyping.atlassian.net/rest/api/2/issue/30764",
+  "key": "CSE2-282",
+  "fields": {
+    "issuetype": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/issuetype/10004",
+      "id": 10004,
+      "name": "Bug",
+      "description": "Defect in our application or platform.  Requires steps to reproduce.",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/project/10070",
+      "id": "10070",
+      "key": "CSE2",
+      "name": "Customer Support Engineering II",
+      "projectTypeKey": "software",
+      "simplified": false
+    },
+    "fixVersions": [],
+    "resolution": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "Work has been completed on this issue.",
+      "name": "Done"
+    },
+    "resolutiondate": "2022-07-08T18:35:59.991+00:00",
+    "created": "2022-06-01T18:03:24.072+00:00",
+    "priority": {
+      "name": "Medium",
+      "id": "3"
+    },
+    "labels": [],
+    "versions": [],
+    "issuelinks": [],
+    "assignee": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=6226f2c4a687c5006a617bf1",
+      "accountId": "6226f2c4a687c5006a617bf1",
+      "accountType": "atlassian",
+      "displayName": "Jonas Melo",
+      "active": true,
+      "emailAddress": "jonas.melo@timebyping.com"
+    },
+    "updated": "2022-07-08T18:35:59.996+00:00",
+    "status": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/status/10002",
+      "description": "",
+      "name": "Done",
+      "id": "10002",
+      "statusCategory": {
+        "self": "https://timebyping.atlassian.net/rest/api/2/statuscategory/3",
+        "id": "3",
+        "key": "done",
+        "name": "Done",
+        "colorName": "green"
+      }
+    },
+    "summary": "Lerners VM LDN-VMTBP01 needs word iManage integration",
+    "creator": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+      "accountId": "61f9a658b3ec760068c14bcb",
+      "accountType": "atlassian",
+      "displayName": "Cristina Djianouck",
+      "active": true,
+      "emailAddress": "cristina@timebyping.com"
+    },
+    "subtasks": [],
+    "reporter": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+      "accountId": "61f9a658b3ec760068c14bcb",
+      "accountType": "atlassian",
+      "displayName": "Cristina Djianouck",
+      "active": true,
+      "emailAddress": "cristina@timebyping.com"
+    },
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "votes": 0,
+      "hasVoted": false
+    },
+    "comment": {},
+    "description_text": "The load behavior message( see image 25) indicates that MSOffice-iManage integration is having issues.\n\nAlso, the checked out iManage Word docs are not checking in automatically upon closing the document (confirmed they are checked out by our user on this machine).\n\nAlso,  the iManage Tab is not available in Word.\n\nThe Customer IT needs to fix the MSOffice-iManage integration on the VM LDN-VMTBP01\n\n\n\nNote: VM LDN-VMTP02  is not connecting( image 24), so we do not have another option for testing Word-iManage ",
+    "description_length": 513,
+    "statuscategorychangedate": "2022-07-08T11:35:59.996-0700",
+    "parent": {
+      "id": "30043",
+      "self": "https://timebyping.atlassian.net/rest/api/2/issue/30043",
+      "key": "CSE2-130",
+      "fields": {
+        "issuetype": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/issuetype/10000",
+          "id": 10000,
+          "name": "Epic",
+          "description": "Scope or time bound project, used to classify work, align on goals, and track progress through child stories.  Epic must be less than a quarter of work.",
+          "subtask": false
+        },
+        "priority": {
+          "name": "Medium",
+          "id": "3"
+        },
+        "status": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/status/3",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "3",
+          "statusCategory": {
+            "self": "https://timebyping.atlassian.net/rest/api/2/statuscategory/4",
+            "id": "4",
+            "key": "indeterminate",
+            "name": "In Progress",
+            "colorName": "yellow"
+          }
+        },
+        "summary": "Epic for routine work improving customer experience",
+        "description_text": "",
+        "description_length": 0
+      }
+    },
+    "customfield_10090": [
+      {
+        "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=6226f2c4a687c5006a617bf1",
+        "accountId": "6226f2c4a687c5006a617bf1",
+        "emailAddress": "jonas.melo@timebyping.com",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6226f2c4a687c5006a617bf1/36e032e4-0430-45ff-a738-9123d2a0cc0e/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6226f2c4a687c5006a617bf1/36e032e4-0430-45ff-a738-9123d2a0cc0e/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6226f2c4a687c5006a617bf1/36e032e4-0430-45ff-a738-9123d2a0cc0e/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6226f2c4a687c5006a617bf1/36e032e4-0430-45ff-a738-9123d2a0cc0e/32"
+        },
+        "displayName": "Jonas Melo",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      }
+    ],
+    "customfield_10094": [
+      {
+        "self": "https://timebyping.atlassian.net/rest/api/2/customFieldOption/10335",
+        "value": "lerners",
+        "id": "10335"
+      }
+    ],
+    "customfield_10030": [],
+    "customfield_10097": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/customFieldOption/10141",
+      "value": "S2",
+      "id": "10141"
+    },
+    "customfield_10010": [
+      {
+        "id": 373,
+        "name": "[CSE] Sprint 62",
+        "state": "active",
+        "boardId": 54,
+        "goal": "",
+        "startDate": "2022-07-01T17:08:08.487Z",
+        "endDate": "2022-07-15T18:37:00.000Z"
+      }
+    ],
+    "customfield_10011": "2|hzzztj:",
+    "customfield_10012": "2022-06-01T11:16:06.699-0700",
+    "customfield_10013": "3_*:*_1_*:*_92634658_*|*_10175_*:*_1_*:*_3105673345_*|*_10002_*:*_1_*:*_0_*|*_10003_*:*_1_*:*_447934",
+    "customfield_10014": 2.0,
+    "timetracking": {},
+    "customfield_10126": {
+      "errorMessage": "The service project you are trying to view does not exist.",
+      "i18nErrorMessage": {
+        "i18nKey": "sd.jsm.agent.servicedesk.error.servicedesk.missing",
+        "parameters": []
+      }
+    },
+    "customfield_10127": {
+      "errorMessage": "The service project you are trying to view does not exist.",
+      "i18nErrorMessage": {
+        "i18nKey": "sd.jsm.agent.servicedesk.error.servicedesk.missing",
+        "parameters": []
+      }
+    },
+    "customfield_10128": {
+      "errorMessage": "The service project you are trying to view does not exist.",
+      "i18nErrorMessage": {
+        "i18nKey": "sd.jsm.agent.servicedesk.error.servicedesk.missing",
+        "parameters": []
+      }
+    },
+    "customfield_10008": "CSE2-130",
+    "customfield_10129": {
+      "errorMessage": "The service project you are trying to view does not exist.",
+      "i18nErrorMessage": {
+        "i18nKey": "sd.jsm.agent.servicedesk.error.servicedesk.missing",
+        "parameters": []
+      }
+    },
+    "customfield_10009": {
+      "hasEpicLinkFieldDependency": false,
+      "showField": false,
+      "nonEditableReason": {
+        "reason": "PLUGIN_LICENSE_ERROR",
+        "message": "The Parent Link is only available to Jira Premium users."
+      }
+    },
+    "attachment": [
+      {
+        "self": "https://timebyping.atlassian.net/rest/api/2/attachment/15891",
+        "id": "15891",
+        "filename": "image (24).png",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "emailAddress": "cristina@timebyping.com",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/32"
+          },
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2022-06-01T11:03:47.776-0700",
+        "size": 515943,
+        "mimeType": "image/png",
+        "content": "https://timebyping.atlassian.net/rest/api/2/attachment/content/15891",
+        "thumbnail": "https://timebyping.atlassian.net/rest/api/2/attachment/thumbnail/15891"
+      },
+      {
+        "self": "https://timebyping.atlassian.net/rest/api/2/attachment/15892",
+        "id": "15892",
+        "filename": "image (25).png",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "emailAddress": "cristina@timebyping.com",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/32"
+          },
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "created": "2022-06-01T11:04:17.093-0700",
+        "size": 23901,
+        "mimeType": "image/png",
+        "content": "https://timebyping.atlassian.net/rest/api/2/attachment/content/15892",
+        "thumbnail": "https://timebyping.atlassian.net/rest/api/2/attachment/thumbnail/15892"
+      }
+    ],
+    "workratio": -1,
+    "watches": {
+      "self": "https://timebyping.atlassian.net/rest/api/2/issue/CSE2-282/watchers",
+      "watchCount": 6,
+      "isWatching": false
+    },
+    "issuerestriction": {
+      "issuerestrictions": {},
+      "shouldDisplay": false
+    },
+    "customfield_10141": [
+      {
+        "self": "https://timebyping.atlassian.net/rest/api/2/customFieldOption/10329",
+        "value": "DMS - Document Categorization",
+        "id": "10329"
+      }
+    ],
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_10000": "{}",
+    "customfield_10145": [
+      {
+        "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+        "accountId": "61f9a658b3ec760068c14bcb",
+        "emailAddress": "cristina@timebyping.com",
+        "avatarUrls": {
+          "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/48",
+          "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/24",
+          "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/16",
+          "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/61f9a658b3ec760068c14bcb/c2351ad4-5177-4e57-b36b-07ff1247eac6/32"
+        },
+        "displayName": "Cristina Djianouck",
+        "active": true,
+        "timeZone": "America/Los_Angeles",
+        "accountType": "atlassian"
+      }
+    ],
+    "customfield_10139": "h1. Steps to Reproduce\n\nLog in VM LDN-VMTBP01\n\nCreate a new word document\n\nFile the document to iManage\n\nh1. Expected Behavior\n\nthe iManage Tab is  available in Word.\n\nh1. Actual Behavior\n\nthe iManage Tab is not available in Word.",
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    }
+  },
+  "changelog": {
+    "maxResults": 15,
+    "startAt": 0,
+    "total": 15,
+    "values": [],
+    "histories": [
+      {
+        "id": "327671",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=6226f2c4a687c5006a617bf1",
+          "accountId": "6226f2c4a687c5006a617bf1",
+          "accountType": "atlassian",
+          "displayName": "Jonas Melo",
+          "active": true,
+          "emailAddress": "jonas.melo@timebyping.com"
+        },
+        "created": "2022-07-08T18:36:00.009+00:00",
+        "items": [
+          {
+            "field": "resolution",
+            "fieldtype": "jira",
+            "fieldId": "resolution",
+            "to": "10000",
+            "toString": "Done"
+          },
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "3",
+            "fromString": "In Progress",
+            "to": "10002",
+            "toString": "Done"
+          }
+        ]
+      },
+      {
+        "id": "327669",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=6226f2c4a687c5006a617bf1",
+          "accountId": "6226f2c4a687c5006a617bf1",
+          "accountType": "atlassian",
+          "displayName": "Jonas Melo",
+          "active": true,
+          "emailAddress": "jonas.melo@timebyping.com"
+        },
+        "created": "2022-07-08T18:35:53.898+00:00",
+        "items": [
+          {
+            "field": "Story Points",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10014",
+            "toString": "2"
+          }
+        ]
+      },
+      {
+        "id": "327233",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=6226f2c4a687c5006a617bf1",
+          "accountId": "6226f2c4a687c5006a617bf1",
+          "accountType": "atlassian",
+          "displayName": "Jonas Melo",
+          "active": true,
+          "emailAddress": "jonas.melo@timebyping.com"
+        },
+        "created": "2022-07-07T16:52:05.351+00:00",
+        "items": [
+          {
+            "field": "Engineer/Pair/Mob",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10090",
+            "to": "[6226f2c4a687c5006a617bf1]",
+            "toString": "[Jonas Melo]"
+          },
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10003",
+            "fromString": "To Do",
+            "to": "3",
+            "toString": "In Progress"
+          }
+        ]
+      },
+      {
+        "id": "327231",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=5f0343b79d9a120029fb32d4",
+          "accountId": "5f0343b79d9a120029fb32d4",
+          "accountType": "atlassian",
+          "displayName": "Roman Wright",
+          "active": true,
+          "emailAddress": "roman@timebyping.com"
+        },
+        "created": "2022-07-07T16:49:16.124+00:00",
+        "items": [
+          {
+            "field": "assignee",
+            "fieldtype": "jira",
+            "fieldId": "assignee",
+            "to": "6226f2c4a687c5006a617bf1",
+            "toString": "Jonas Melo",
+            "tmpToAccountId": "6226f2c4a687c5006a617bf1"
+          }
+        ]
+      },
+      {
+        "id": "327228",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f86fad49fc43006950a6fb",
+          "accountId": "61f86fad49fc43006950a6fb",
+          "accountType": "atlassian",
+          "displayName": "Katherine La Rochelle",
+          "active": true,
+          "emailAddress": "katherine@timebyping.com"
+        },
+        "created": "2022-07-07T16:45:31.841+00:00",
+        "items": [
+          {
+            "field": "Epic Link",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10008",
+            "to": "30043",
+            "toString": "CSE2-130"
+          }
+        ]
+      },
+      {
+        "id": "327226",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f86fad49fc43006950a6fb",
+          "accountId": "61f86fad49fc43006950a6fb",
+          "accountType": "atlassian",
+          "displayName": "Katherine La Rochelle",
+          "active": true,
+          "emailAddress": "katherine@timebyping.com"
+        },
+        "created": "2022-07-07T16:45:31.815+00:00",
+        "items": [
+          {
+            "field": "IssueParentAssociation",
+            "fieldtype": "jira",
+            "to": "30043",
+            "toString": "CSE2-130"
+          }
+        ]
+      },
+      {
+        "id": "327225",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f86fad49fc43006950a6fb",
+          "accountId": "61f86fad49fc43006950a6fb",
+          "accountType": "atlassian",
+          "displayName": "Katherine La Rochelle",
+          "active": true,
+          "emailAddress": "katherine@timebyping.com"
+        },
+        "created": "2022-07-07T16:44:58.125+00:00",
+        "items": [
+          {
+            "field": "Sprint",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10010",
+            "from": "",
+            "fromString": "",
+            "to": "373",
+            "toString": "[CSE] Sprint 62"
+          }
+        ]
+      },
+      {
+        "id": "327224",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f86fad49fc43006950a6fb",
+          "accountId": "61f86fad49fc43006950a6fb",
+          "accountType": "atlassian",
+          "displayName": "Katherine La Rochelle",
+          "active": true,
+          "emailAddress": "katherine@timebyping.com"
+        },
+        "created": "2022-07-07T16:44:37.417+00:00",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10175",
+            "fromString": "Not Triaged",
+            "to": "10003",
+            "toString": "To Do"
+          }
+        ]
+      },
+      {
+        "id": "327221",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f86fad49fc43006950a6fb",
+          "accountId": "61f86fad49fc43006950a6fb",
+          "accountType": "atlassian",
+          "displayName": "Katherine La Rochelle",
+          "active": true,
+          "emailAddress": "katherine@timebyping.com"
+        },
+        "created": "2022-07-07T16:43:49.091+00:00",
+        "items": [
+          {
+            "field": "project",
+            "fieldtype": "jira",
+            "fieldId": "project",
+            "from": "10060",
+            "fromString": "Solutions Engineering",
+            "to": "10070",
+            "toString": "Customer Support Engineering II"
+          },
+          {
+            "field": "Key",
+            "fieldtype": "jira",
+            "fromString": "TBP13-581",
+            "toString": "CSE2-282"
+          }
+        ]
+      },
+      {
+        "id": "326777",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=5dae3c29ed37210c34fc5a61",
+          "accountId": "5dae3c29ed37210c34fc5a61",
+          "accountType": "atlassian",
+          "displayName": "Sarah Boaz-Shelley",
+          "active": true,
+          "emailAddress": "sarah@timebyping.com"
+        },
+        "created": "2022-07-06T16:30:09.460+00:00",
+        "items": [
+          {
+            "field": "project",
+            "fieldtype": "jira",
+            "fieldId": "project",
+            "from": "10044",
+            "fromString": "Bug Triage Board",
+            "to": "10060",
+            "toString": "Solutions Engineering"
+          },
+          {
+            "field": "Key",
+            "fieldtype": "jira",
+            "fromString": "TBP5-485",
+            "toString": "TBP13-581"
+          }
+        ]
+      },
+      {
+        "id": "314429",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "accountType": "atlassian",
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "emailAddress": "cristina@timebyping.com"
+        },
+        "created": "2022-06-01T18:04:53.270+00:00",
+        "items": [
+          {
+            "field": "description",
+            "fieldtype": "jira",
+            "fieldId": "description",
+            "fromString": "The load behavior message( see picture) indicates that MSOffice-iManage integration is having issues.\n\nAlso, the checked out iManage Word docs are not checking in automatically upon closing the document (confirmed they are checked out by our user on this machine).\n\nAlso,  the iManage Tab is not available in Word.\n\nThe Customer IT needs to fix the MSOffice-iManage integration on the VM LDN-VMTBP01\n\n\n\nNote: VM LDN-VMTP02  is not connecting( picture2), so we do not have another option for testing Word-iManage ",
+            "toString": "The load behavior message( see image 25) indicates that MSOffice-iManage integration is having issues.\n\nAlso, the checked out iManage Word docs are not checking in automatically upon closing the document (confirmed they are checked out by our user on this machine).\n\nAlso,  the iManage Tab is not available in Word.\n\nThe Customer IT needs to fix the MSOffice-iManage integration on the VM LDN-VMTBP01\n\n\n\nNote: VM LDN-VMTP02  is not connecting( image 24), so we do not have another option for testing Word-iManage "
+          }
+        ]
+      },
+      {
+        "id": "314427",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "accountType": "atlassian",
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "emailAddress": "cristina@timebyping.com"
+        },
+        "created": "2022-06-01T18:04:17.395+00:00",
+        "items": [
+          {
+            "field": "Attachment",
+            "fieldtype": "jira",
+            "fieldId": "attachment",
+            "to": "15892",
+            "toString": "image (25).png"
+          }
+        ]
+      },
+      {
+        "id": "314426",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "accountType": "atlassian",
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "emailAddress": "cristina@timebyping.com"
+        },
+        "created": "2022-06-01T18:04:07.199+00:00",
+        "items": [
+          {
+            "field": "Attachment",
+            "fieldtype": "jira",
+            "fieldId": "attachment",
+            "from": "15890",
+            "fromString": "image (25).png"
+          }
+        ]
+      },
+      {
+        "id": "314425",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "accountType": "atlassian",
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "emailAddress": "cristina@timebyping.com"
+        },
+        "created": "2022-06-01T18:03:48.130+00:00",
+        "items": [
+          {
+            "field": "Attachment",
+            "fieldtype": "jira",
+            "fieldId": "attachment",
+            "to": "15891",
+            "toString": "image (24).png"
+          }
+        ]
+      },
+      {
+        "id": "314424",
+        "author": {
+          "self": "https://timebyping.atlassian.net/rest/api/2/user?accountId=61f9a658b3ec760068c14bcb",
+          "accountId": "61f9a658b3ec760068c14bcb",
+          "accountType": "atlassian",
+          "displayName": "Cristina Djianouck",
+          "active": true,
+          "emailAddress": "cristina@timebyping.com"
+        },
+        "created": "2022-06-01T18:03:47.886+00:00",
+        "items": [
+          {
+            "field": "Attachment",
+            "fieldtype": "jira",
+            "fieldId": "attachment",
+            "to": "15890",
+            "toString": "image (25).png"
+          }
+        ]
+      }
+    ]
+  },
+  "firstCommentAt": 1654107026
+}

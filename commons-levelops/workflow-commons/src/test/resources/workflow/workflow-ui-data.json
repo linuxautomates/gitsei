@@ -1,0 +1,397 @@
+{
+  "id": "1",
+  "offset": {
+    "x": 0,
+    "y": 0
+  },
+  "name": "SAST Vulnerabilities Workflow",
+  "nodes": {
+    "node1": {
+      "id": "node1",
+      "type": "start",
+      "position": {
+        "x": 20,
+        "y": 20
+      },
+      "ports": {
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "output"
+          }
+        }
+      },
+      "properties": {
+        "type": "start",
+        "icon": "info-circle",
+        "title": "Start",
+        "name": "My Workflow",
+        "configurations": {
+          "product_ids": [
+            "product1"
+          ],
+          "release_ids": [
+            "R14",
+            "R34"
+          ],
+          "severity": "medium",
+          "stage_ids": [
+            "dev"
+          ]
+        }
+      }
+    },
+    "node2": {
+      "id": "node2",
+      "type": "condition",
+      "icon": "",
+      "position": {
+        "x": 200,
+        "y": 20
+      },
+      "ports": {
+        "port1": {
+          "id": "port1",
+          "type": "left",
+          "properties": {
+            "action": "input"
+          }
+        },
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "success"
+          }
+        },
+        "port3": {
+          "id": "port3",
+          "type": "output",
+          "properties": {
+            "action": "fail"
+          }
+        }
+      },
+      "properties": {
+        "icon": "apartment",
+        "title": "condition",
+        "name": "Check SAST",
+        "type": "condition",
+        "configurations": {
+          "integration_type": "jira",
+          "integration_ids": [
+            "jira1"
+          ],
+          "condition_type": "aggregate",
+          "signature_condition": {
+          },
+          "aggregate_condition": {
+            "type": "condition",
+            "name": "or",
+            "id": "1",
+            "children": [
+              {
+                "type": "rule",
+                "id": "2",
+                "signature_id": "sign123",
+                "payload": {
+                  "operator": "==",
+                  "value": "false"
+                }
+              },
+              {
+                "type": "condition",
+                "name": "and",
+                "id": "3",
+                "children": [
+                  {
+                    "type": "rule",
+                    "id": "4",
+                    "signature_id": "sign567",
+                    "payload": {
+                      "operator": "==",
+                      "value": "true"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "node3": {
+      "id": "node3",
+      "type": "action_email",
+      "position": {
+        "x": 400,
+        "y": 20
+      },
+      "ports": {
+        "port1": {
+          "id": "port1",
+          "type": "left",
+          "properties": {
+            "action": "input"
+          }
+        },
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "output"
+          }
+        }
+      },
+      "properties": {
+        "icon": "mail",
+        "title": "Email",
+        "name": "Notify InfoSec",
+        "type": "action_email"
+      }
+    },
+    "node4": {
+      "id": "node4",
+      "type": "action_questionnaire",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "ports": {
+        "port1": {
+          "id": "port1",
+          "type": "left",
+          "properties": {
+            "action": "input"
+          }
+        },
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "output"
+          }
+        }
+      },
+      "properties": {
+        "icon": "reconciliation",
+        "title": "Questionnaire",
+        "name": "More Info",
+        "type": "action_questionnaire",
+        "configurations": {
+          "qtemplate_id": "quest1",
+          "comm_channel": "slack",
+          "message_template_id": "msg1",
+          "additional_info": "some info",
+          "target_emails": [
+            "maxime@levelops.io"
+          ]
+        }
+      }
+    },
+    "node5": {
+      "id": "node5",
+      "type": "wait",
+      "icon": "",
+      "position": {
+        "x": 200,
+        "y": 20
+      },
+      "ports": {
+        "port1": {
+          "id": "port1",
+          "type": "left",
+          "properties": {
+            "action": "input"
+          }
+        },
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "success"
+          }
+        },
+        "port3": {
+          "id": "port3",
+          "type": "output",
+          "properties": {
+            "action": "fail"
+          }
+        }
+      },
+      "properties": {
+        "icon": "apartment",
+        "title": "wait",
+        "name": "Check status of questionnaire",
+        "type": "wait",
+        "configurations": {
+          "node_id": "node4",
+          "exit_status": "complete",
+          "frequency": {
+            "type": "weekly",
+            "hour": 13,
+            "day_of_week": 4
+          }
+        }
+      }
+    },
+    "node6": {
+      "id": "node6",
+      "type": "action_email",
+      "position": {
+        "x": 400,
+        "y": 20
+      },
+      "ports": {
+        "port1": {
+          "id": "port1",
+          "type": "left",
+          "properties": {
+            "action": "input"
+          }
+        },
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "output"
+          }
+        }
+      },
+      "properties": {
+        "icon": "mail",
+        "title": "Email",
+        "name": "Notify reminder",
+        "type": "action_email"
+      }
+    },
+    "node7": {
+      "id": "node7",
+      "type": "condition",
+      "icon": "",
+      "position": {
+        "x": 200,
+        "y": 20
+      },
+      "ports": {
+        "port1": {
+          "id": "port1",
+          "type": "left",
+          "properties": {
+            "action": "input"
+          }
+        },
+        "port2": {
+          "id": "port2",
+          "type": "right",
+          "properties": {
+            "action": "success"
+          }
+        },
+        "port3": {
+          "id": "port3",
+          "type": "output",
+          "properties": {
+            "action": "fail"
+          }
+        }
+      },
+      "properties": {
+        "icon": "apartment",
+        "title": "condition",
+        "name": "Some other policy",
+        "type": "condition",
+        "configurations": {
+          "integration_type": "github",
+          "integration_ids": [
+            "github"
+          ],
+          "condition_type": "signature",
+          "signature_condition": {
+            "name": "..."
+          },
+          "aggregate_condition": {
+          }
+        }
+      }
+    }
+  },
+  "links": {
+    "link1": {
+      "id": "link1",
+      "from": {
+        "nodeId": "node1",
+        "portId": "port2"
+      },
+      "to": {
+        "nodeId": "node2",
+        "portId": "port1"
+      },
+      "properties": {
+        "label": "example link label"
+      }
+    },
+    "link2": {
+      "id": "link2",
+      "from": {
+        "nodeId": "node2",
+        "portId": "port2"
+      },
+      "to": {
+        "nodeId": "node3",
+        "portId": "port1"
+      },
+      "properties": {
+        "label": "another example link label"
+      }
+    },
+    "link3": {
+      "id": "link3",
+      "from": {
+        "nodeId": "node2",
+        "portId": "port3"
+      },
+      "to": {
+        "nodeId": "node4",
+        "portId": "port1"
+      }
+    },
+    "link4": {
+      "id": "link4",
+      "from": {
+        "nodeId": "node4",
+        "portId": "port2"
+      },
+      "to": {
+        "nodeId": "node5",
+        "portId": "port1"
+      }
+    },
+    "link5": {
+      "id": "link5",
+      "from": {
+        "nodeId": "node5",
+        "portId": "port2"
+      },
+      "to": {
+        "nodeId": "node6",
+        "portId": "port1"
+      }
+    },
+    "link6": {
+      "id": "link6",
+      "from": {
+        "nodeId": "node1",
+        "portId": "port2"
+      },
+      "to": {
+        "nodeId": "node7",
+        "portId": "port1"
+      }
+    }
+  },
+  "selected": {},
+  "hovered": {}
+}

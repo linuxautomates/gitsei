@@ -1,0 +1,42 @@
+{
+  "job_name": "test-gitlab",
+  "user_id": "admin",
+  "job_run_params": [],
+  "repo_url": "https://gitlab.com/ctlo2020/test-velocity-cog.git",
+  "scm_user_id": null,
+  "start_time": 1636693617359,
+  "result": "SUCCESS",
+  "duration": 593,
+  "build_number": 40,
+  "jenkins_instance_guid": "ecea2027-8c69-4733-9611-027b905a426c",
+  "jenkins_instance_name": "CGN-Jenkins-Staging-Test",
+  "jenkins_instance_url": "http://localhost:9090/",
+  "job_run": null,
+  "job_full_name": "test-gitlab",
+  "job_normalized_full_name": "test-gitlab",
+  "branch_name": null,
+  "module_name": null,
+  "scm_commit_ids": [
+    "681981bf125bdd944d3a330be887ec7b65a6780e"
+  ],
+  "trigger_chain": [
+    {
+      "id": "test-multilevel-pipeline",
+      "job_run_number": "18",
+      "type": "UpstreamCause",
+      "direct_parents": [
+        {
+          "id": "test-gitlab-pipeline",
+          "job_run_number": "51",
+          "type": "UpstreamCause",
+          "direct_parents": [
+            {
+              "id": "admin",
+              "type": "UserIdCause"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

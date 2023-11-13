@@ -1,0 +1,25 @@
+{
+  "plugins": {
+    "jenkins_config": {
+      "tool": "jenkins_config",
+      "paths": [
+        "/config",
+        "/users",
+        "/plugins"
+      ]
+    },
+    "sast_brakeman": {
+      "tool": "sast_brakeman",
+      "paths": [
+        "/warnings"
+      ]
+    },
+    "sast_git_secrets": {
+      "tool": "sast_git_secrets",
+      "paths": [
+        "/resullts/historic",
+        "/results/hits"
+      ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "name": "Sample Project",
+      "suite_mode": 1,
+      "show_announcement": false,
+      "url": "https://cgnlevelops5.testrail.io/index.php?/projects/overview/1",
+      "is_completed": false,
+      "milestones_list": [
+        {
+          "id": 1,
+          "name": "Release 1.0",
+          "project_id": 1,
+          "url": "https://cgnlevelops5.testrail.io/index.php?/milestones/view/1",
+          "is_started": true,
+          "started_on": 1611924085,
+          "is_completed": false,
+          "milestones": [
+            {
+              "id": 2,
+              "name": "Release 2.0",
+              "project_id": 1,
+              "parent_id": 1,
+              "url": "https://cgnlevelops5.testrail.io/index.php?/milestones/view/2",
+              "is_started": true,
+              "started_on": 1611924093,
+              "is_completed": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Empty Project",
+      "suite_mode": 1,
+      "show_announcement": false,
+      "url": "https://cgnlevelops5.testrail.io/index.php?/projects/overview/1",
+      "is_completed": false,
+      "milestones_list": [
+        {
+          "id": 4,
+          "name": "Release 4.0",
+          "project_id": 1,
+          "url": "https://cgnlevelops5.testrail.io/index.php?/milestones/view/1",
+          "is_started": true,
+          "started_on": 1611924085,
+          "is_completed": false,
+          "milestones": [
+            {
+              "id": 5,
+              "name": "Release 5.0",
+              "project_id": 1,
+              "parent_id": 1,
+              "url": "https://cgnlevelops5.testrail.io/index.php?/milestones/view/2",
+              "is_started": true,
+              "started_on": 1611924093,
+              "is_completed": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "tr1tenant",
+      "integration_id": "8"
+    },
+    "integration_type": "testrails",
+    "data_type": "projects",
+    "page_number": 0
+  }
+}

@@ -1,0 +1,1117 @@
+{
+  "records": [
+    {
+      "id": "hashicorp/vault",
+      "name": "vault",
+      "owner": {
+        "type": "organization",
+        "login": "hashicorp"
+      },
+      "owner_name": "hashicorp",
+      "owner_type": "organization",
+      "html_url": "https://github.com/hashicorp/vault",
+      "master_branch": "master",
+      "created_at": 1424823359000,
+      "pushed_at": 1595019454000,
+      "updated_at": 1595017827000,
+      "size": 123698,
+      "is_private": false,
+      "languages": {
+        "Go": 1
+      },
+      "issues": [
+        {
+          "id": "644183081",
+          "node_id": "MDExOlB1bGxSZXF1ZXN0NDM4ODUyMjU2",
+          "number": 9302,
+          "html_url": "https://github.com/hashicorp/vault/pull/9302",
+          "title": "Add ability to specify region for OCI Storage Backend",
+          "user": {
+            "type": "user",
+            "login": "jwitko"
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 2,
+          "created_at": 1592950517000,
+          "updated_at": 1594432592000,
+          "author_association": "NONE",
+          "body": "This pull request adds the use of an OCI SDK function to the OCI Storage Backend for allowing the explicit setting of an OCI region to the ObjectStorage client.  \r\n\r\nThe current behavior is to use the SDK default behavior which pulls the region from the OCI credentials configuration.  \r\n\r\nThis behavior has not been changed in the event a region is not specified in the storage backend config.",
+          "events": []
+        },
+        {
+          "id": "439465860",
+          "node_id": "MDU6SXNzdWU0Mzk0NjU4NjA=",
+          "number": 6670,
+          "html_url": "https://github.com/hashicorp/vault/issues/6670",
+          "title": "LDAP auth method: support client certificate authentication",
+          "user": {
+            "type": "user",
+            "login": "mberhault"
+          },
+          "labels": [
+            {
+              "id": "1657599041",
+              "node_id": "MDU6TGFiZWwxNjU3NTk5MDQx",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/auth/ldap",
+              "name": "auth/ldap",
+              "color": "f968e8",
+              "description": "",
+              "default": false
+            },
+            {
+              "id": "1488905226",
+              "node_id": "MDU6TGFiZWwxNDg4OTA1MjI2",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/enhancement",
+              "name": "enhancement",
+              "color": "0d8232",
+              "description": "",
+              "default": true
+            }
+          ],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 18,
+          "created_at": 1556783596000,
+          "updated_at": 1594486226000,
+          "author_association": "NONE",
+          "body": "**Is your feature request related to a problem? Please describe.**\r\nUsing [GSuite Secure LDAP](https://support.google.com/a/answer/9048516?hl=en) as the LDAP server for the [LDAP auth method](https://www.vaultproject.io/docs/auth/ldap.html) is not currently possible directly due the use of client certificates for client authentication with the LDAP server. Use of the system pool for server certificate verification may also be an issue (I have not checked).\r\n\r\n**Describe the solution you'd like**\r\nThe following additional fields in the [/auth/ldap/config endpoint](https://www.vaultproject.io/api/auth/ldap/index.html#configure-ldap) should be sufficient:\r\n- path to client certificate\r\n- path to client key\r\n- empty \"certificate\" field means \"use the system pool\" (unclear whether that's already the case)\r\n\r\n**Describe alternatives you've considered**\r\nIt is possible to use stunnel to get around this restriction. This is the workaround included in the [gsuite LDAP connection docs](https://support.google.com/a/answer/9089736?hl=en).\r\n\r\n**Explain any additional use-cases**\r\nUnsure about client certificate authentication for other LDAP server. I suspect this may be useful elsewhere.\r\n\r\n**Additional context**\r\nUsername and password are not required but can still be provided.\r\nPlease see the linked [gsuite docs](https://support.google.com/a/answer/9089736?hl=en) for more details about client configuration.\r\n\r\n[GSuite secure LDAP](https://support.google.com/a/answer/9048516?hl=en) is for enterprise GSuite accounts only. I am happy to provide an environment to help develop/test this.",
+          "events": [
+            {
+              "id": 530746421,
+              "created_at": 1568280824000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/530746421",
+              "actor": "AeroNotix",
+              "body": "I've been trying to get this working for the last day using Gsuite LDAP and Vault. I have not yet succeeded.\r\n\r\nDid you manage to get this to work?\r\n\r\nWhat I tried:\r\n\r\n* Using `stunnel` I set the certificates and dropped `ldaps` at that point, run `stunnel` on `127.0.0.1`. Vault config:\r\n\r\n```\r\nvault write auth/ldap/config \\\r\n  url=\"ldap://127.0.0.1:1636\" \\\r\n  discoverdn=true \\\r\n  userdn=\"ou=Users,dc=ourcompanyname,dc=com\"\r\n  starttls=false \\\r\n  userattr=\"uid\" \\\r\n  deny_null_bind=true\r\n```\r\n\r\nStunnel conf:\r\n\r\n```\r\ndebug = 7\r\noutput = /etc/stunnel/google-ldap.log\r\n[ldap]\r\nclient = yes\r\naccept = 127.0.0.1:1636\r\nconnect = ldap.google.com:636\r\ncert = /etc/ssl/ldap-cert.crt\r\nkey = /etc/ssl/ldap-key.key\r\n```\r\n\r\nOutcome: \r\n\r\n* Vault makes an initial `simple bindingRequest` through LDAP (verified with Wireshark) but receives no results. Testing with `ldapsearch` yields the same results, an anonymous bind returns nothing.\r\n\r\nThere's a small bit of information on the [Google docs]( https://support.google.com/a/answer/9190869?hl=en) for this:\r\n\r\n```\r\nldapsearch returns status 0 (success) but no users are outputs\r\n\r\nSpecifying ldapsearch option -x (use SASL authentication) with client certificates will successfully authenticate but will not list users in the domain.\r\n\r\nRecommendation: Remove the option -x and try again.\r\n```\r\n\r\nBut in order to test with `ldapsearch` with the version I have on my system, I _must_ pass the `-x` parameter in order for `ldapsearch` to test due to the fact the certs Google provide you are self-signed. I will build `ldapsearch` locally with different compile flags enabled which could change how self-signed certs are handled.\r\n\r\nI built vault v1.2.0 locally to insert some additional debugging and I can confirm it is attempting to use anonymous binds (go-ldap library in the vendor libs).\r\n\r\nAt a loss as to what to try next.\r\n\r\n\r\n",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-530746421"
+            },
+            {
+              "id": 534435025,
+              "created_at": 1569311058000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/534435025",
+              "actor": "stephenrjohnson",
+              "body": "@AeroNotix did you get this to work?",
+              "user": "stephenrjohnson",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-534435025"
+            },
+            {
+              "id": 2657008810,
+              "created_at": 1569311059000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2657008810",
+              "actor": "AeroNotix"
+            },
+            {
+              "id": 2657008812,
+              "created_at": 1569311059000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2657008812",
+              "actor": "AeroNotix"
+            },
+            {
+              "id": 534443472,
+              "created_at": 1569312411000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/534443472",
+              "actor": "AeroNotix",
+              "body": "Hi,\r\n\r\nKinda sorta.\r\n\r\nI can get authentication working with vault and google groups:\r\n\r\n* Use stunnel\r\n* Use user principle binds\r\n* Disable verify TLS\r\n\r\nThis will authenticate users. (If the above doesn't work for you then I can get you my config to make it work). However, it will not allow groups to work. I've tried various configuration to get groups working but when accessing Google LDAP through Stunnel, it seems some operations don't work as expected? At least that what it seems like.",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-534443472"
+            },
+            {
+              "id": 535007310,
+              "created_at": 1569415960000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/535007310",
+              "actor": "stephenrjohnson",
+              "body": "That's a shame the whole reason we paid for google cloud identity was to get vault ldap working with groups in there. ",
+              "user": "stephenrjohnson",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-535007310"
+            },
+            {
+              "id": 535009872,
+              "created_at": 1569416347000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/535009872",
+              "actor": "AeroNotix",
+              "body": "@stephenrjohnson I am not saying it is impossible - I am saying I couldn't figure out how to do it.",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-535009872"
+            },
+            {
+              "id": 2661584575,
+              "created_at": 1569416347000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2661584575",
+              "actor": "stephenrjohnson"
+            },
+            {
+              "id": 2661584576,
+              "created_at": 1569416347000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2661584576",
+              "actor": "stephenrjohnson"
+            },
+            {
+              "id": 2779694112,
+              "created_at": 1573139415000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2779694112",
+              "actor": "michelvocks",
+              "label": "auth/ldap"
+            },
+            {
+              "id": 2779694114,
+              "created_at": 1573139415000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2779694114",
+              "actor": "michelvocks",
+              "label": "enhancement"
+            },
+            {
+              "id": 606597049,
+              "created_at": 1585657859000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606597049",
+              "actor": "omar-nahhas",
+              "body": "I managed to get this working including group belonging/mapping. These are the steps I have followed:\r\n\r\n#### Setting up an  LDAP application on Gsuite and giving it the following access\r\n![ldap-app](https://user-images.githubusercontent.com/551844/78023246-3f029a80-734e-11ea-806a-9b53b7a5ec65.png)\r\n\r\n#### I created a set of LDAP access credentials (not sure if this is needed, but I had some issues that were fixed when doing this)\r\n![access-creds](https://user-images.githubusercontent.com/551844/78023399-7a9d6480-734e-11ea-9af0-86c89e3c73ac.png)\r\n\r\n#### Configured [stunnel](https://www.stunnel.org/) as per [google documentation](https://support.google.com/a/answer/9089736#stunnel)\r\n\r\n#### Verify connectivity with ldapsearch command\r\nThis command should list you all the users on your organization:\r\n\r\n`\r\nldapsearch -x -H ldap://127.0.0.1:1636 -D \"cn=LDAPUSER-HERE\" -b ou=Users,dc=example,dc=com -w LDAPPASSWORD-HERE\r\n`\r\n\r\n**Note**:  dc=example,dc=com is for the domain example.com, replace accordingly.\r\n\r\n#### Launch a local vault in dev mode:\r\n\r\n`\r\nexport VAULT_DEV_ROOT_TOKEN_ID=myroot\r\n`\r\n\r\n`\r\nexport VAULT_LOG_LEVEL=debug\r\n`\r\n\r\n`docker run --rm --name vault --net=host -d \r\n    --cap-add=IPC_LOCK \r\n    -e \"VAULT_DEV_ROOT_TOKEN_ID=$VAULT_DEV_ROOT_TOKEN_ID\" \r\n    -e \"VAULT_LOG_LEVEL=$VAULT_LOG_LEVEL\" \r\n    -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200' \"vault:1.2.2\"\r\n`\r\n\r\n**Note**: LDAP logging error messages will be visible if you use `docker logs` command \r\n\r\n#### Login and config  local vault:\r\n\r\n`\r\nexport VAULT_ADDR=http://0.0.0.0:8200\r\n`\r\n`\r\nvault login --method token (user myroot here)\r\n`\r\n#### Configure ldap auth-backend \r\n\r\n`\r\nvault auth enable ldap\r\n`\r\n\r\n`\r\nvault write auth/ldap/config \r\n    url=\"ldap://127.0.0.1:1636\" \r\n    binddn=\"cn=LDAPUSER-HERE\" \r\n    bindpass=\"LDAPPASSWORD-HERE\" \r\n    userdn=\"ou=Users,dc=example,dc=com\" \r\n    userattr=\"uid\" \r\n    groupdn=\"ou=Groups,dc=example,dc=com\" \r\n    groupattr=\"cn\" \r\n    starttls=false\r\n`\r\n\r\n**Note**:  dc=example,dc=com is for the domain example.com, replace accordingly.\r\n\r\n#### Configure an LDAP group mapping\r\n\r\n`\r\nvault write auth/ldap/groups/group2 policies=default,group2\r\n`\r\n\r\n**Note**: This command assumes you have a group named \"group2\" in Gsuite\r\n\r\n#### Authenticate with a user that belongs to \"group2\" in Gsuite\r\n\r\n`\r\nvault login -method=ldap username=<GSUITE_USER_WITHOUT @example.com> password=<GSUITE_PASSWORD>\r\n`\r\n\r\n![token](https://user-images.githubusercontent.com/551844/78024923-10d28a00-7351-11ea-8667-522127b25735.png)\r\n**Note**: This output assumes you have a policy named \"group2\" in vault\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+              "user": "omar-nahhas",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606597049"
+            },
+            {
+              "id": 606598802,
+              "created_at": 1585658076000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606598802",
+              "actor": "AeroNotix",
+              "body": "@omar-nahhas does that work with users which aren't used for the `binddn` though? We recently finished a large portion of work to get this to _actually_ work properly, which is now in master.\r\n\r\nI suggest to you look deeper into your setup to ensure it works as expected. It looks like it will only work for the single user you set up in the ldap configuration.",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606598802"
+            },
+            {
+              "id": 3183080469,
+              "created_at": 1585658077000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3183080469",
+              "actor": "omar-nahhas"
+            },
+            {
+              "id": 3183080472,
+              "created_at": 1585658077000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3183080472",
+              "actor": "omar-nahhas"
+            },
+            {
+              "id": 606603258,
+              "created_at": 1585658636000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606603258",
+              "actor": "omar-nahhas",
+              "body": "The user used on binddn is the access credentials you set up in GSuite when you set up the LDAP application, is not a user on your Gsuite account. Is worth to mention that the creds used for ldap auth were not used on any configuration step. Also, the \"token_meta_username\" field (after authenticating) shows the Gsuite user name not the binddn user.\r\n\r\nI have carried out the following tests:\r\n- Tried vault login with a wrong user/password for the Gsuite user. This time it could not log-in.\r\n- Removed (In Gsuite) the user from the group for which I have created the mapping in vault, and try to authenticate again, this time the users did only have the default policy.\r\n\r\n\r\nI hope this makes things a bit clearer",
+              "user": "omar-nahhas",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606603258"
+            },
+            {
+              "id": 606605704,
+              "created_at": 1585658942000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606605704",
+              "actor": "AeroNotix",
+              "body": "Interesting, thanks for information. Now it looks like there are multiple ways that GSuite LDAP can be used with vault. The additional pieces myself and @Gisson added, in order for it to work with unauthenticated binds and the client certificates - and apparently, your method here.",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606605704"
+            },
+            {
+              "id": 3183137459,
+              "created_at": 1585658942000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3183137459",
+              "actor": "Gisson"
+            },
+            {
+              "id": 3183137462,
+              "created_at": 1585658942000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3183137462",
+              "actor": "Gisson"
+            },
+            {
+              "id": 606608261,
+              "created_at": 1585659251000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606608261",
+              "actor": "omar-nahhas",
+              "body": "This is an extract from the debug logs (redacted) if that helps\r\n```\r\n2020-03-31T11:40:36.746Z [DEBUG] auth.ldap.auth_ldap_e72aXXXb: discovering user: userdn=ou=Users,dc=example,dc=net filter=(uid=gsuite_user)\r\n2020-03-31T11:40:37.366Z [DEBUG] auth.ldap.auth_ldap_e72aXXXb: user binddn fetched: username=gsuite_user binddn=uid=gsuite_user,ou=Users,dc=example,dc=net\r\n2020-03-31T11:40:38.544Z [DEBUG] auth.ldap.auth_ldap_e72aXXXb: re-bound to original binddn\r\n2020-03-31T11:40:38.544Z [DEBUG] auth.ldap.auth_ldap_e72aXXXb: compiling group filter: group_filter=(|(memberUid={{.Username}})(member={{.UserDN}})(uniqueMember={{.UserDN}}))\r\n2020-03-31T11:40:38.544Z [DEBUG] auth.ldap.auth_ldap_e72aXXXb: searching: groupdn=ou=Groups,dc=example,dc=net rendered_query=(|(memberUid=gsuite_user)(member=uid=gsuite_user,ou=Users,dc=example,dc=net)(uniqueMember=uid=gsuite_user,ou=Users,dc=example,dc=net))\r\n2020-03-31T11:40:39.515Z [DEBUG] auth.ldap.auth_ldap_e72aXXXb: groups fetched from server: num_server_groups=3 server_groups=[ou=Groups,dc=example,dc=net, group2, group1]\r\n2020-03-31T11:40:39.515Z [DEBUG] identity: refreshing external group memberships: entity_id=XXXXXXX-a92f-2247-9ee3-XXXXXXXXX group_aliases=[\"mount_accessor:\"auth_ldap_e72aXXXb\" name:\"ou=Groups,dc=example,dc=net\" \", \"mount_accessor:\"auth_ldap_e72aXXXb\" name:\"group2\" \", \"mount_accessor:\"auth_ldap_e72aXXXb\" name:\"group1\" \"]\r\n```",
+              "user": "omar-nahhas",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606608261"
+            },
+            {
+              "id": 606610353,
+              "created_at": 1585659498000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606610353",
+              "actor": "AeroNotix",
+              "body": "Yes, I believe you that it works :)\r\n\r\nThe piece I was originally missing is that I wasn't aware you needed to use some extra credentials in order to access GSuite LDAP. It's not documented at all (unless you can point me to it?)\r\n\r\nTherefore I added flags/features to vault in order for it to work as the GSuite documentation suggests, by using client certificates, unauthenticated binds. That work is in master, now.",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606610353"
+            },
+            {
+              "id": 606611803,
+              "created_at": 1585659672000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606611803",
+              "actor": "omar-nahhas",
+              "body": "You are right, that is not documented, I just happened to try both ways, thank you guys for the work on master, does it allow us to avoid using stunnel? ",
+              "user": "omar-nahhas",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606611803"
+            },
+            {
+              "id": 606614367,
+              "created_at": 1585659987000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606614367",
+              "actor": "omar-nahhas",
+              "body": "I have found [this](https://support.google.com/a/answer/9089736?hl=en#basic-instructions ) on Google docs, I think this is where I got the hint.\r\n",
+              "user": "omar-nahhas",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606614367"
+            },
+            {
+              "id": 606615986,
+              "created_at": 1585660157000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/606615986",
+              "actor": "AeroNotix",
+              "body": "Yes, you don't need to use stunnel.",
+              "user": "AeroNotix",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-606615986"
+            },
+            {
+              "id": 619840567,
+              "created_at": 1587978286000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/619840567",
+              "actor": "prajwalkirankumar",
+              "body": "Is there a way to replicate the same on an OpenLDAP server and use client certificates to authenticate?\r\n",
+              "user": "prajwalkirankumar",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-619840567"
+            },
+            {
+              "id": 622948964,
+              "created_at": 1588423893000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/622948964",
+              "actor": "stephenrjohnson",
+              "body": "Any eta when this will be released? ",
+              "user": "stephenrjohnson",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-622948964"
+            },
+            {
+              "id": 656929000,
+              "created_at": 1594421665000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/656929000",
+              "actor": "mister2d",
+              "body": "> Is there a way to replicate the same on an OpenLDAP server and use client certificates to authenticate?\r\n\r\nI'm able to have vault work successfully with OpenLDAP by setting the `LDAP_TLS_VERIFY_CLIENT=try` environment variable using the `osixia/docker-openldap` docker image.",
+              "user": "mister2d",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-656929000"
+            },
+            {
+              "id": 657093614,
+              "created_at": 1594486226000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/657093614",
+              "actor": "prajwalkirankumar",
+              "body": "> > Is there a way to replicate the same on an OpenLDAP server and use client certificates to authenticate?\r\n> \r\n> I'm able to have vault work successfully with OpenLDAP by setting the `LDAP_TLS_VERIFY_CLIENT=try` environment variable using the `osixia/docker-openldap` docker image.\r\n@mister2d \r\nI enabled the environment variable LDAP_TLS_VERIFY_CLIENT=try with the following output on the osixia/docker-openldap : \r\n\r\n```\r\nroot@ldap:/# ldapsearch  -ZZ -Y EXTERNAL -b dc=example,dc=org\r\nSASL/EXTERNAL authentication started\r\nSASL username: cn=admin\r\nSASL SSF: 0\r\n# extended LDIF\r\n#\r\n# LDAPv3\r\n# base <dc=example,dc=org> with scope subtree\r\n# filter: (objectclass=*)\r\n# requesting: ALL\r\n#\r\n\r\n# search result\r\nsearch: 3\r\nresult: 32 No such object\r\n\r\n```\r\n\r\nI have set my hostname to ldap.example.org while running the image.\r\n\r\nThis is what I get when i do the authentication with username and password (which I should get when using the certificate as well) : \r\n\r\n```\r\nroot@ldap:/# ldapsearch -x -H ldaps://localhost -b dc=example,dc=org -D \"cn=admin,dc=example,dc=org\" -w admin\r\n# extended LDIF\r\n#\r\n# LDAPv3\r\n# base <dc=example,dc=org> with scope subtree\r\n# filter: (objectclass=*)\r\n# requesting: ALL\r\n#\r\n\r\n# example.org\r\ndn: dc=example,dc=org\r\nobjectClass: top\r\nobjectClass: dcObject\r\nobjectClass: organization\r\no: Example Inc.\r\ndc: example\r\n\r\n# admin, example.org\r\ndn: cn=admin,dc=example,dc=org\r\nobjectClass: simpleSecurityObject\r\nobjectClass: organizationalRole\r\ncn: admin\r\ndescription: LDAP administrator\r\nuserPassword:: e1NTSEF9K0tqZ1hZV2NKZ2ptZnZSQ1kyMnI1SXRRREt6bWtyeTg=\r\n\r\n# search result\r\nsearch: 2\r\nresult: 0 Success\r\n\r\n# numResponses: 3\r\n# numEntries: 2\r\n```\r\n_____________________________________________________________________________\r\nIs the certificate I have generated wrong? It looks like this : \r\n\r\n> Certificate:\r\n>     Data:\r\n>         Version: 3 (0x2)\r\n>         Serial Number:\r\n>             c5:86:23:9d:17:87:08:d7:4d:6c:0d:c1:ca:57:2d:b4\r\n>     Signature Algorithm: sha256WithRSAEncryption\r\n>         Issuer: CN=Root CA\r\n>         Validity\r\n>             Not Before: Jul 11 16:39:01 2020 GMT\r\n>             Not After : Oct 14 16:39:01 2022 GMT\r\n>         Subject: CN=admin\r\n>         Subject Public Key Info:\r\n>             Public Key Algorithm: rsaEncryption\r\n>                 Public-Key: (2048 bit)\r\n>                 Modulus:\r\n>                    //Modulus\r\n>                 Exponent: 65537 (0x10001)\r\n>         X509v3 extensions:\r\n>             X509v3 Basic Constraints:\r\n>                 CA:FALSE\r\n>             X509v3 Subject Key Identifier:\r\n>                 D2:08:40:2F:0C:E9:D2:A9:30:AA:8E:D8:FA:D1:12:DF:F1:4A:D5:E2\r\n>             X509v3 Authority Key Identifier:\r\n>                 keyid:01:CF:48:3D:BD:15:AA:81:D1:AF:5E:72:DF:34:2D:4C:7A:A8:1C:82\r\n>                 DirName:/CN=Root CA\r\n>                 serial:91:42:E6:57:2A:93:47:A7\r\n> \r\n>             X509v3 Extended Key Usage:\r\n>                 TLS Web Client Authentication\r\n>             X509v3 Key Usage:\r\n>                 Digital Signature\r\n>     Signature Algorithm: sha256WithRSAEncryption\r\n>         //Key\r\n\r\n_________________________________________________________________\r\n\r\nAm i missing something here?",
+              "user": "prajwalkirankumar",
+              "html_url": "https://github.com/hashicorp/vault/issues/6670#issuecomment-657093614"
+            },
+            {
+              "id": 3536430277,
+              "created_at": 1594486226000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3536430277",
+              "actor": "mister2d"
+            },
+            {
+              "id": 3536430278,
+              "created_at": 1594486226000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3536430278",
+              "actor": "mister2d"
+            }
+          ]
+        },
+        {
+          "id": "655331297",
+          "node_id": "MDU6SXNzdWU2NTUzMzEyOTc=",
+          "number": 9461,
+          "html_url": "https://github.com/hashicorp/vault/issues/9461",
+          "title": "Add option to secure v1/sys/health and other endpoints",
+          "user": {
+            "type": "user",
+            "login": "SledgeHammer01"
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 0,
+          "created_at": 1594529771000,
+          "updated_at": 1594529880000,
+          "author_association": "NONE",
+          "body": "v1/sys/health endpoint is currently unsecured. Would like to see a way to secure it with the client token, etc as the other endpoints. It is a security concern to expose internal information. Also see some of the other rest endpoints are not secured.",
+          "events": [
+            {
+              "id": 3536813360,
+              "created_at": 1594529865000,
+              "event": "renamed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3536813360",
+              "actor": "SledgeHammer01",
+              "rename": {
+                "from": "Add option to secure v1/sys/health endpoint",
+                "to": "Add option to secure v1/sys/health and other endpoints"
+              }
+            }
+          ]
+        },
+        {
+          "id": "380085157",
+          "node_id": "MDU6SXNzdWUzODAwODUxNTc=",
+          "number": 5767,
+          "html_url": "https://github.com/hashicorp/vault/issues/5767",
+          "title": "Unable to login using local AWS profile with role_arn / source_profile and MFA",
+          "user": {
+            "type": "user",
+            "login": "gwilym"
+          },
+          "labels": [
+            {
+              "id": "1659715356",
+              "node_id": "MDU6TGFiZWwxNjU5NzE1MzU2",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/auth/aws",
+              "name": "auth/aws",
+              "color": "f968e8",
+              "description": "",
+              "default": false
+            },
+            {
+              "id": "1492658523",
+              "node_id": "MDU6TGFiZWwxNDkyNjU4NTIz",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/bug",
+              "name": "bug",
+              "color": "ef97a7",
+              "description": "",
+              "default": true
+            },
+            {
+              "id": "1683802498",
+              "node_id": "MDU6TGFiZWwxNjgzODAyNDk4",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/version/1.0.x",
+              "name": "version/1.0.x",
+              "color": "bbcef9",
+              "description": "",
+              "default": false
+            }
+          ],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 11,
+          "created_at": 1542092329000,
+          "updated_at": 1594618625000,
+          "author_association": "NONE",
+          "body": "<!-- Please reserve GitHub issues for bug reports and feature requests.\r\n\r\nFor questions, the best place to get answers is on our [mailing list](https://groups.google.com/forum/#!forum/vault-tool), as they will get more visibility from experienced users than the issue tracker.\r\n\r\nPlease note: We take Vault's security and our users' trust very seriously. If you believe you have found a security issue in Vault, please responsibly disclose by contacting us at security@hashicorp.com. Our PGP key is available at [our security page](https://www.hashicorp.com/security/).\r\n\r\n-->\r\n\r\n**Describe the bug**\r\n\r\nAttempting to `vault login` using this particular IAM profile setup in `~/.aws/credentials` fails with the following error:\r\n\r\n```\r\nError authenticating: failed to retrieve credentials from credential chain: NoCredentialProviders: no valid providers in chain. Deprecated.\r\n\tFor verbose messaging see aws.Config.CredentialsChainVerboseErrors\r\n```\r\n\r\nThe same setup works OK with the official `aws` CLI (`AWS_PROFILE=admin aws sts get-caller-identity` works), as well as with basic usage of the Go SDK.\r\n\r\nExample of `~/.aws/credentials`:\r\n\r\n```\r\n[main]\r\naws_access_key_id = ?\r\naws_secret_access_key = ?\r\n[admin]\r\nmfa_serial = arn:aws:iam::MAINACCOUNTID:mfa/USERNAME\r\nrole_arn = arn:aws:iam::SUBACCOUNTID:role/admin\r\nsource_profile = main\r\n```\r\n\r\nNote: account IDs above may be the same account, though for this case it likely doesn't matter because Vault fails during the credential-load stage. There's likely two potential issues here, one with credential loading and one with enabling an MFA token provider for the AWS SDK.\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Establish an AWS account setup that uses MFA and role-switching\r\n2. Run `vault server -dev` with credentials to utilise `aws` auth\r\n2. Run `vault auth enable aws`\r\n3. Run `vault write auth/aws/config/client iam_server_id_header_value=vault.example.com`\r\n4. Run `vault write auth/aws/role/admin auth_type=iam 'bound_iam_principal_arn=arn:aws:sts::SUBACCOUNTID:assumed-role/admin/*' max_ttl=8h`\r\n5. Run `AWS_SDK_LOAD_CONFIG=1 AWS_PROFILE=admin vault login -method=aws header_value=vault.example.com role=admin` \r\n6. See error\r\n\r\n**Expected behavior**\r\n1. Vault should prompt for an MFA code.\r\n2. Vault should use credentials of the assumed role to generate signed payloads for the login action.\r\n3. In theory, the login should succeed and you should be able to access Vault, but I haven't reached this point yet.\r\n\r\n**Environment:**\r\n* Vault Server Version (retrieve with `vault status`): 1.0.0-beta2\r\n* Vault CLI Version (retrieve with `vault version`): Vault v1.0.0-beta2 ('8f61c4953620801477ad40f9d75063659acb5d84')\r\n* Server Operating System/Architecture: darwin/amd64\r\n\r\nVault server configuration file(s):\r\n\r\nNone, I've been using `-dev`.\r\n\r\n**Additional context**\r\n\r\nApologies up front if I'm missing anything fundamental: I am brand new to Vault. If anything looks off here let me know and I will try to clarify.\r\n\r\nWhen I modify Vault's `awsutil` package to enable verbose errors like so ...\r\n\r\n```diff\r\n-\tcreds := credentials.NewChainCredentials(providers)\r\n+\tcreds := credentials.NewCredentials(&credentials.ChainProvider{\r\n+\t\tProviders:     providers,\r\n+\t\tVerboseErrors: true,\r\n+\t})\r\n```\r\n\r\n... I get the following extra info:\r\n\r\n```\r\nError authenticating: failed to retrieve credentials from credential chain: NoCredentialProviders: no valid providers in chain\r\ncaused by: EnvAccessKeyNotFound: AWS_ACCESS_KEY_ID or AWS_ACCESS_KEY not found in environment\r\nSharedCredsAccessKey: shared credentials admin in CREDSFILENAME did not contain aws_access_key_id\r\ncaused by: error when getting key of section 'admin': key 'aws_access_key_id' not exists\r\nEC2RoleRequestError: no EC2 instance role found\r\ncaused by: RequestError: send request failed\r\ncaused by: Get http://169.254.169.254/latest/meta-data/iam/security-credentials/: dial tcp 169.254.169.254:80: connect: host is down\r\n```\r\n\r\nThe EC2 errors are expected since I'm running this locally, however, the `admin` profile shouldn't need access keys within it due to `source_profile`. When I take the access keys and put them in the profile, then that prevents the role-switch from happening and it attempts to login using the original credentials instead (which is not expected).\r\n\r\nNot sure if this helps, but here's an example of a simple, working-as-expected Go AWS SDK usage:\r\n\r\n```\r\npackage main\r\n\r\nimport (\r\n\t\"log\"\r\n\r\n\t\"github.com/aws/aws-sdk-go/aws\"\r\n\t\"github.com/aws/aws-sdk-go/aws/credentials/stscreds\"\r\n\t\"github.com/aws/aws-sdk-go/aws/session\"\r\n\t\"github.com/aws/aws-sdk-go/service/sts\"\r\n)\r\n\r\nfunc main() {\r\n\tsess, err := session.NewSessionWithOptions(session.Options{\r\n\t\tConfig:                  *aws.NewConfig(),\r\n\t\tAssumeRoleTokenProvider: stscreds.StdinTokenProvider,\r\n\t})\r\n\r\n\tif err != nil {\r\n\t\tlog.Fatalf(\"session error: %v\", err)\r\n\t}\r\n\r\n\tsvc := sts.New(sess)\r\n\tresult, err := svc.GetCallerIdentity(&sts.GetCallerIdentityInput{})\r\n\tif err != nil {\r\n\t\tlog.Fatalf(\"GetCallerIdentity error: %v\", err)\r\n\t}\r\n\r\n\tlog.Printf(\"GetCallerIdentity result: %#v\", result)\r\n}\r\n```\r\n",
+          "events": [
+            {
+              "id": 439220557,
+              "created_at": 1542322579000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/439220557",
+              "actor": "gwilym",
+              "body": "I haven't had time to learn the Vault codebase yet, but I was able to whip up a workaround for this that others might find usable. It's based on the signing code present in the Vault CLI.\r\n\r\nhttps://gist.github.com/gwilym/1db446f67a4d62db50d1139082e5b719\r\n\r\nThe output of this app should usable as part of a `vault write`, like below (assuming you build it as `vault-aws-login`):\r\n\r\n```\r\n$ AWS_SDK_LOAD_CONFIG=1 AWS_PROFILE=aws-profile-name vault-aws-login -server vault.example.com\r\n# capture above using your preferred method, remembering that it may prompt / read for an MFA on stdin, and use it below, like ...\r\n$ vault write auth/aws/login role=vault-profile-name $output\r\n```",
+              "user": "gwilym",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-439220557"
+            },
+            {
+              "id": 528774251,
+              "created_at": 1567760438000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/528774251",
+              "actor": "Vince-Chenal",
+              "body": "Do you have any update ?\r\nI still have the exact same problem",
+              "user": "Vince-Chenal",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-528774251"
+            },
+            {
+              "id": 2791442664,
+              "created_at": 1573565082000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2791442664",
+              "actor": "michelvocks",
+              "label": "auth/aws"
+            },
+            {
+              "id": 2791442665,
+              "created_at": 1573565082000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2791442665",
+              "actor": "michelvocks",
+              "label": "bug"
+            },
+            {
+              "id": 2808331534,
+              "created_at": 1574096575000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2808331534",
+              "actor": "catsby",
+              "label": "version/1.0.x"
+            },
+            {
+              "id": 570598823,
+              "created_at": 1578064175000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/570598823",
+              "actor": "kevinpgrant",
+              "body": "I've been reading this post a few times, whilst trying to solve a different issue, but then I read something that finally clicked - you have used source_profile in ~/.aws/credentials but according to the docs, it can only be used in the CLI config file ~/.aws/config\r\n\r\n> \"Note that configuration variables for using IAM roles can only be in the AWS CLI config file.\"\r\n\r\nExample configuration using source_profile:\r\n\r\n```\r\n# In ~/.aws/credentials:\r\n[development]\r\naws_access_key_id=foo\r\naws_secret_access_key=bar\r\n\r\n# In ~/.aws/config\r\n[profile crossaccount]\r\nrole_arn=arn:aws:iam:...\r\nsource_profile=development\r\n```\r\nsee [https://docs.aws.amazon.com/cli/latest/topic/config-vars.html](https://docs.aws.amazon.com/cli/latest/topic/config-vars.html)",
+              "user": "kevinpgrant",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-570598823"
+            },
+            {
+              "id": 2970731754,
+              "created_at": 1579710579000,
+              "event": "assigned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2970731754",
+              "actor": "spangenberg",
+              "assignee": "spangenberg"
+            },
+            {
+              "id": 577784361,
+              "created_at": 1579800374000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/577784361",
+              "actor": "spangenberg",
+              "body": "As @kevinpgrant pointed out correctly, that `~/.aws/credentials` should not contain the `source_profile` and/or `role_arn`; instead, it belongs inside the `~/.aws/config`.\r\nNevertheless, I verified that the bug still exists and needs to be addressed.\r\n@gwilym thanks a lot for the effort you already put in to investigate and come up with a workaround.",
+              "user": "spangenberg",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-577784361"
+            },
+            {
+              "id": 2974601865,
+              "created_at": 1579800374000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2974601865",
+              "actor": "gwilym"
+            },
+            {
+              "id": 2974601867,
+              "created_at": 1579800374000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2974601867",
+              "actor": "gwilym"
+            },
+            {
+              "id": 2974601870,
+              "created_at": 1579800374000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2974601870",
+              "actor": "kevinpgrant"
+            },
+            {
+              "id": 2974601871,
+              "created_at": 1579800374000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/2974601871",
+              "actor": "kevinpgrant"
+            },
+            {
+              "created_at": 1579894804000,
+              "event": "cross-referenced",
+              "actor": "spangenberg",
+              "source": {
+                "type": "issue",
+                "issue": {
+                  "url": "https://api.github.com/repos/hashicorp/vault/issues/8237",
+                  "repository_url": "https://api.github.com/repos/hashicorp/vault",
+                  "labels_url": "https://api.github.com/repos/hashicorp/vault/issues/8237/labels{/name}",
+                  "comments_url": "https://api.github.com/repos/hashicorp/vault/issues/8237/comments",
+                  "events_url": "https://api.github.com/repos/hashicorp/vault/issues/8237/events",
+                  "html_url": "https://github.com/hashicorp/vault/pull/8237",
+                  "id": 554917644,
+                  "node_id": "MDExOlB1bGxSZXF1ZXN0MzY2OTg1NjMy",
+                  "number": 8237,
+                  "title": "Add AssumeRole session token provider",
+                  "user": {
+                    "login": "spangenberg",
+                    "id": 236406,
+                    "node_id": "MDQ6VXNlcjIzNjQwNg==",
+                    "avatar_url": "https://avatars3.githubusercontent.com/u/236406?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/spangenberg",
+                    "html_url": "https://github.com/spangenberg",
+                    "followers_url": "https://api.github.com/users/spangenberg/followers",
+                    "following_url": "https://api.github.com/users/spangenberg/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/spangenberg/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/spangenberg/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/spangenberg/subscriptions",
+                    "organizations_url": "https://api.github.com/users/spangenberg/orgs",
+                    "repos_url": "https://api.github.com/users/spangenberg/repos",
+                    "events_url": "https://api.github.com/users/spangenberg/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/spangenberg/received_events",
+                    "type": "User",
+                    "site_admin": false
+                  },
+                  "labels": [
+                    {
+                      "id": 1659715356,
+                      "node_id": "MDU6TGFiZWwxNjU5NzE1MzU2",
+                      "url": "https://api.github.com/repos/hashicorp/vault/labels/auth/aws",
+                      "name": "auth/aws",
+                      "color": "f968e8",
+                      "default": false,
+                      "description": ""
+                    }
+                  ],
+                  "state": "closed",
+                  "locked": false,
+                  "assignee": {
+                    "login": "spangenberg",
+                    "id": 236406,
+                    "node_id": "MDQ6VXNlcjIzNjQwNg==",
+                    "avatar_url": "https://avatars3.githubusercontent.com/u/236406?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/spangenberg",
+                    "html_url": "https://github.com/spangenberg",
+                    "followers_url": "https://api.github.com/users/spangenberg/followers",
+                    "following_url": "https://api.github.com/users/spangenberg/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/spangenberg/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/spangenberg/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/spangenberg/subscriptions",
+                    "organizations_url": "https://api.github.com/users/spangenberg/orgs",
+                    "repos_url": "https://api.github.com/users/spangenberg/repos",
+                    "events_url": "https://api.github.com/users/spangenberg/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/spangenberg/received_events",
+                    "type": "User",
+                    "site_admin": false
+                  },
+                  "assignees": [
+                    {
+                      "login": "spangenberg",
+                      "id": 236406,
+                      "node_id": "MDQ6VXNlcjIzNjQwNg==",
+                      "avatar_url": "https://avatars3.githubusercontent.com/u/236406?v=4",
+                      "gravatar_id": "",
+                      "url": "https://api.github.com/users/spangenberg",
+                      "html_url": "https://github.com/spangenberg",
+                      "followers_url": "https://api.github.com/users/spangenberg/followers",
+                      "following_url": "https://api.github.com/users/spangenberg/following{/other_user}",
+                      "gists_url": "https://api.github.com/users/spangenberg/gists{/gist_id}",
+                      "starred_url": "https://api.github.com/users/spangenberg/starred{/owner}{/repo}",
+                      "subscriptions_url": "https://api.github.com/users/spangenberg/subscriptions",
+                      "organizations_url": "https://api.github.com/users/spangenberg/orgs",
+                      "repos_url": "https://api.github.com/users/spangenberg/repos",
+                      "events_url": "https://api.github.com/users/spangenberg/events{/privacy}",
+                      "received_events_url": "https://api.github.com/users/spangenberg/received_events",
+                      "type": "User",
+                      "site_admin": false
+                    }
+                  ],
+                  "comments": 1,
+                  "created_at": "2020-01-24T19:40:03Z",
+                  "updated_at": "2020-06-12T17:24:58Z",
+                  "closed_at": "2020-06-12T17:24:58Z",
+                  "author_association": "MEMBER",
+                  "repository": {
+                    "id": 31288958,
+                    "node_id": "MDEwOlJlcG9zaXRvcnkzMTI4ODk1OA==",
+                    "name": "vault",
+                    "full_name": "hashicorp/vault",
+                    "private": false,
+                    "owner": {
+                      "login": "hashicorp",
+                      "id": 761456,
+                      "node_id": "MDEyOk9yZ2FuaXphdGlvbjc2MTQ1Ng==",
+                      "avatar_url": "https://avatars2.githubusercontent.com/u/761456?v=4",
+                      "gravatar_id": "",
+                      "url": "https://api.github.com/users/hashicorp",
+                      "html_url": "https://github.com/hashicorp",
+                      "followers_url": "https://api.github.com/users/hashicorp/followers",
+                      "following_url": "https://api.github.com/users/hashicorp/following{/other_user}",
+                      "gists_url": "https://api.github.com/users/hashicorp/gists{/gist_id}",
+                      "starred_url": "https://api.github.com/users/hashicorp/starred{/owner}{/repo}",
+                      "subscriptions_url": "https://api.github.com/users/hashicorp/subscriptions",
+                      "organizations_url": "https://api.github.com/users/hashicorp/orgs",
+                      "repos_url": "https://api.github.com/users/hashicorp/repos",
+                      "events_url": "https://api.github.com/users/hashicorp/events{/privacy}",
+                      "received_events_url": "https://api.github.com/users/hashicorp/received_events",
+                      "type": "Organization",
+                      "site_admin": false
+                    },
+                    "html_url": "https://github.com/hashicorp/vault",
+                    "description": "A tool for secrets management, encryption as a service, and privileged access management",
+                    "fork": false,
+                    "url": "https://api.github.com/repos/hashicorp/vault",
+                    "forks_url": "https://api.github.com/repos/hashicorp/vault/forks",
+                    "keys_url": "https://api.github.com/repos/hashicorp/vault/keys{/key_id}",
+                    "collaborators_url": "https://api.github.com/repos/hashicorp/vault/collaborators{/collaborator}",
+                    "teams_url": "https://api.github.com/repos/hashicorp/vault/teams",
+                    "hooks_url": "https://api.github.com/repos/hashicorp/vault/hooks",
+                    "issue_events_url": "https://api.github.com/repos/hashicorp/vault/issues/events{/number}",
+                    "events_url": "https://api.github.com/repos/hashicorp/vault/events",
+                    "assignees_url": "https://api.github.com/repos/hashicorp/vault/assignees{/user}",
+                    "branches_url": "https://api.github.com/repos/hashicorp/vault/branches{/branch}",
+                    "tags_url": "https://api.github.com/repos/hashicorp/vault/tags",
+                    "blobs_url": "https://api.github.com/repos/hashicorp/vault/git/blobs{/sha}",
+                    "git_tags_url": "https://api.github.com/repos/hashicorp/vault/git/tags{/sha}",
+                    "git_refs_url": "https://api.github.com/repos/hashicorp/vault/git/refs{/sha}",
+                    "trees_url": "https://api.github.com/repos/hashicorp/vault/git/trees{/sha}",
+                    "statuses_url": "https://api.github.com/repos/hashicorp/vault/statuses/{sha}",
+                    "languages_url": "https://api.github.com/repos/hashicorp/vault/languages",
+                    "stargazers_url": "https://api.github.com/repos/hashicorp/vault/stargazers",
+                    "contributors_url": "https://api.github.com/repos/hashicorp/vault/contributors",
+                    "subscribers_url": "https://api.github.com/repos/hashicorp/vault/subscribers",
+                    "subscription_url": "https://api.github.com/repos/hashicorp/vault/subscription",
+                    "commits_url": "https://api.github.com/repos/hashicorp/vault/commits{/sha}",
+                    "git_commits_url": "https://api.github.com/repos/hashicorp/vault/git/commits{/sha}",
+                    "comments_url": "https://api.github.com/repos/hashicorp/vault/comments{/number}",
+                    "issue_comment_url": "https://api.github.com/repos/hashicorp/vault/issues/comments{/number}",
+                    "contents_url": "https://api.github.com/repos/hashicorp/vault/contents/{+path}",
+                    "compare_url": "https://api.github.com/repos/hashicorp/vault/compare/{base}...{head}",
+                    "merges_url": "https://api.github.com/repos/hashicorp/vault/merges",
+                    "archive_url": "https://api.github.com/repos/hashicorp/vault/{archive_format}{/ref}",
+                    "downloads_url": "https://api.github.com/repos/hashicorp/vault/downloads",
+                    "issues_url": "https://api.github.com/repos/hashicorp/vault/issues{/number}",
+                    "pulls_url": "https://api.github.com/repos/hashicorp/vault/pulls{/number}",
+                    "milestones_url": "https://api.github.com/repos/hashicorp/vault/milestones{/number}",
+                    "notifications_url": "https://api.github.com/repos/hashicorp/vault/notifications{?since,all,participating}",
+                    "labels_url": "https://api.github.com/repos/hashicorp/vault/labels{/name}",
+                    "releases_url": "https://api.github.com/repos/hashicorp/vault/releases{/id}",
+                    "deployments_url": "https://api.github.com/repos/hashicorp/vault/deployments",
+                    "created_at": "2015-02-25T00:15:59Z",
+                    "updated_at": "2020-07-17T20:30:27Z",
+                    "pushed_at": "2020-07-17T20:57:34Z",
+                    "git_url": "git://github.com/hashicorp/vault.git",
+                    "ssh_url": "git@github.com:hashicorp/vault.git",
+                    "clone_url": "https://github.com/hashicorp/vault.git",
+                    "svn_url": "https://github.com/hashicorp/vault",
+                    "homepage": "https://www.vaultproject.io/",
+                    "size": 123698,
+                    "stargazers_count": 16436,
+                    "watchers_count": 16436,
+                    "language": "Go",
+                    "has_issues": true,
+                    "has_projects": false,
+                    "has_downloads": true,
+                    "has_wiki": false,
+                    "has_pages": false,
+                    "forks_count": 2534,
+                    "archived": false,
+                    "disabled": false,
+                    "open_issues_count": 708,
+                    "license": {
+                      "key": "mpl-2.0",
+                      "name": "Mozilla Public License 2.0",
+                      "spdx_id": "MPL-2.0",
+                      "url": "https://api.github.com/licenses/mpl-2.0",
+                      "node_id": "MDc6TGljZW5zZTE0"
+                    },
+                    "forks": 2534,
+                    "open_issues": 708,
+                    "watchers": 16436,
+                    "default_branch": "master"
+                  },
+                  "pull_request": {
+                    "url": "https://api.github.com/repos/hashicorp/vault/pulls/8237",
+                    "html_url": "https://github.com/hashicorp/vault/pull/8237",
+                    "diff_url": "https://github.com/hashicorp/vault/pull/8237.diff",
+                    "patch_url": "https://github.com/hashicorp/vault/pull/8237.patch"
+                  },
+                  "body": "Fixes #5767"
+                }
+              }
+            },
+            {
+              "id": 589788327,
+              "created_at": 1582311497000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/589788327",
+              "actor": "spangenberg",
+              "body": "We haven't heard back regarding this issue in over 29 days. To try and keep our GitHub issues current, we'll be closing this issue in approximately seven days if we do not hear back regarding this issue. Please let us know if you can still reproduce this issue, and if there is any more information you could share, otherwise we'll be closing this issue.",
+              "user": "spangenberg",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-589788327"
+            },
+            {
+              "id": 589978002,
+              "created_at": 1582391970000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/589978002",
+              "actor": "dalvizu",
+              "body": "Yes this is still an issue, the last comment was from yourself confirming this is still an issue?",
+              "user": "dalvizu",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-589978002"
+            },
+            {
+              "id": 590001047,
+              "created_at": 1582407716000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/590001047",
+              "actor": "spangenberg",
+              "body": "Sorry, didn't mean to put the comment there. Too many open tabs, please ignore it. ",
+              "user": "spangenberg",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-590001047"
+            },
+            {
+              "id": 590003000,
+              "created_at": 1582409308000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/590003000",
+              "actor": "cablespaghetti",
+              "body": "I know this ticket is about MFA, but I am correct in thinking that it also currently isn't possible to use AWS CLI profiles which assume roles? Currently I'm working around this with the aws sts assume-role command and exporting various environment variables from the output of that.\r\n\r\nCurrently doing this:\r\n```\r\nAWS_ROLE=<role-arn-here>\r\nCREDENTIALS=`aws sts assume-role --role-arn \"$AWS_ROLE\" --role-session-name vaultSession --duration-seconds 3600 --output=json`\r\nexport AWS_ACCESS_KEY_ID=`echo ${CREDENTIALS} | jq -r '.Credentials.AccessKeyId'`\r\nexport AWS_SECRET_ACCESS_KEY=`echo ${CREDENTIALS} | jq -r '.Credentials.SecretAccessKey'`\r\nexport AWS_SESSION_TOKEN=`echo ${CREDENTIALS} | jq -r '.Credentials.SessionToken'`\r\nexport AWS_EXPIRATION=`echo ${CREDENTIALS} | jq -r '.Credentials.Expiration'`\r\nvault login -method=aws\r\n```",
+              "user": "cablespaghetti",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-590003000"
+            },
+            {
+              "id": 617677507,
+              "created_at": 1587549310000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/617677507",
+              "actor": "gw0",
+              "body": "@cablespaghetti I came to the exactly the same conclusion and same workaround.",
+              "user": "gw0",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-617677507"
+            },
+            {
+              "id": 3259797274,
+              "created_at": 1587549310000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3259797274",
+              "actor": "cablespaghetti"
+            },
+            {
+              "id": 3259797278,
+              "created_at": 1587549310000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3259797278",
+              "actor": "cablespaghetti"
+            },
+            {
+              "id": 3260058669,
+              "created_at": 1587553582000,
+              "event": "unassigned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3260058669",
+              "actor": "spangenberg",
+              "assignee": "spangenberg"
+            },
+            {
+              "id": 617710382,
+              "created_at": 1587553634000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/617710382",
+              "actor": "cablespaghetti",
+              "body": "@gw0 I actually stopped doing this as it was a horrible user experience. I now have a dockerised bash script running as a Kubernetes cron job which syncs up the members of an IAM Group with Vault, so they can log in as their normal user.",
+              "user": "cablespaghetti",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-617710382"
+            },
+            {
+              "id": 3260061683,
+              "created_at": 1587553635000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3260061683",
+              "actor": "gw0"
+            },
+            {
+              "id": 3260061690,
+              "created_at": 1587553635000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3260061690",
+              "actor": "gw0"
+            },
+            {
+              "id": 657369046,
+              "created_at": 1594618625000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/657369046",
+              "actor": "cyrus-mc",
+              "body": "Still and issue for me. Would be nice to have this fixed. ",
+              "user": "cyrus-mc",
+              "html_url": "https://github.com/hashicorp/vault/issues/5767#issuecomment-657369046"
+            }
+          ]
+        },
+        {
+          "id": "567654108",
+          "node_id": "MDU6SXNzdWU1Njc2NTQxMDg=",
+          "number": 8382,
+          "html_url": "https://github.com/hashicorp/vault/issues/8382",
+          "title": "Prometheus metrics docs and guidelines",
+          "user": {
+            "type": "user",
+            "login": "riuvshyn"
+          },
+          "labels": [
+            {
+              "id": "1661028911",
+              "node_id": "MDU6TGFiZWwxNjYxMDI4OTEx",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/core/metric",
+              "name": "core/metric",
+              "color": "0000ff",
+              "description": "",
+              "default": false
+            },
+            {
+              "id": "1024442799",
+              "node_id": "MDU6TGFiZWwxMDI0NDQyNzk5",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/docs",
+              "name": "docs",
+              "color": "b2ffb7",
+              "description": "",
+              "default": false
+            }
+          ],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 2,
+          "created_at": 1582127832000,
+          "updated_at": 1594622905000,
+          "author_association": "CONTRIBUTOR",
+          "body": "Hello! I have a couple of questions:\r\n1) where I can read actual prometheus metrics documentation?\r\nI've tried to go through https://www.vaultproject.io/docs/internals/telemetry/ but this looks outdated and does not cover lots of exposed in prom format metrics so it is absolutely not clear how to use the metric...\r\nex: I have k8s auth plugin enabled so I have metrics:\r\n```\r\nvault_route_rollback_auth_kubernetes__sum 0.5904119880869985\r\nvault_route_rollback_auth_kubernetes__count 28\r\n``` \r\nbut there is no anything related to this in docs nor plugin repo https://github.com/hashicorp/vault-plugin-auth-kubernetes\r\n\r\nand there are many such examples so it feels quite inconsistent.\r\n\r\nanother ex: https://www.vaultproject.io/docs/internals/telemetry/#secrets-engines-metrics covers only Databases but how do I monitor transit backend? what metrics it exposes?\r\n\r\ncan this doc also cover what is the `rollback` and `route rollback` operations?\r\n\r\n2) is there any guidelines on monitoring/alerting?  WOuld be nice to see what should be in focus.",
+          "events": [
+            {
+              "id": 3056587188,
+              "created_at": 1582211520000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3056587188",
+              "actor": "catsby",
+              "label": "core/metric"
+            },
+            {
+              "id": 3056587192,
+              "created_at": 1582211520000,
+              "event": "labeled",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3056587192",
+              "actor": "catsby",
+              "label": "docs"
+            },
+            {
+              "id": 589100505,
+              "created_at": 1582211527000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/589100505",
+              "actor": "catsby",
+              "body": "Hello! There is some additional documentation about using Prometheus here, albeit not much:\r\n\r\n- https://www.vaultproject.io/docs/configuration/telemetry/\r\n\r\nIt does seem like our documentation on metrics needs some updating :/ ",
+              "user": "catsby",
+              "html_url": "https://github.com/hashicorp/vault/issues/8382#issuecomment-589100505"
+            },
+            {
+              "id": 657390317,
+              "created_at": 1594622904000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/657390317",
+              "actor": "omerlh",
+              "body": "I'm struggling with this also. Spent around half an hour digging around the code and trying to find where the metrics are defined - so far couldn't find anything. My main concern is to find out what I should monitor. I can see a lot of metrics like `vault_gcs_put`, but I can't figure which one are important - and how I can monitor errors. Can someone help clearing it out?",
+              "user": "omerlh",
+              "html_url": "https://github.com/hashicorp/vault/issues/8382#issuecomment-657390317"
+            }
+          ]
+        },
+        {
+          "id": "651603950",
+          "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ0ODI3NDc2",
+          "number": 9402,
+          "html_url": "https://github.com/hashicorp/vault/pull/9402",
+          "title": "Docs: Add Mittwald Vault Libraries",
+          "user": {
+            "type": "user",
+            "login": "ins0"
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 2,
+          "created_at": 1594047221000,
+          "updated_at": 1594645502000,
+          "author_association": "NONE",
+          "body": "This will add Vault Client Libraries for\r\n\r\n- [x] golang - https://github.com/mittwald/vaultgo\r\n- [x] php - https://github.com/mittwald/vaultPHP\r\n- [x] typescript - https://github.com/mittwald/vaulTS",
+          "events": [
+            {
+              "id": 654287401,
+              "created_at": 1594047224000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/654287401",
+              "actor": "hashicorp-cla",
+              "body": "[![CLA assistant check](https://cla.hashicorp.com/pull/badge/signed)](https://cla.hashicorp.com/hashicorp/vault?pullRequest=9402) <br/>All committers have signed the CLA.",
+              "user": "hashicorp-cla",
+              "html_url": "https://github.com/hashicorp/vault/pull/9402#issuecomment-654287401"
+            },
+            {
+              "id": 3516345038,
+              "created_at": 1594047354000,
+              "event": "renamed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3516345038",
+              "actor": "ins0",
+              "rename": {
+                "from": "Add Mittwald Vault Libraries",
+                "to": "Docs: Add Mittwald Vault Libraries"
+              }
+            },
+            {
+              "id": 3533447753,
+              "created_at": 1594379387000,
+              "event": "base_ref_changed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3533447753",
+              "actor": "ins0"
+            },
+            {
+              "id": 3533449469,
+              "created_at": 1594379423000,
+              "event": "base_ref_changed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3533449469",
+              "actor": "ins0"
+            },
+            {
+              "id": 656620872,
+              "created_at": 1594379460000,
+              "event": "commented",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/comments/656620872",
+              "actor": "ins0",
+              "body": "@austingebauer @kalafut is there anything i need to check or idk - not sure how to progress on this. Thanks! :)",
+              "user": "ins0",
+              "html_url": "https://github.com/hashicorp/vault/pull/9402#issuecomment-656620872"
+            },
+            {
+              "id": 3533451276,
+              "created_at": 1594379460000,
+              "event": "mentioned",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3533451276",
+              "actor": "here"
+            },
+            {
+              "id": 3533451277,
+              "created_at": 1594379460000,
+              "event": "subscribed",
+              "url": "https://api.github.com/repos/hashicorp/vault/issues/events/3533451277",
+              "actor": "here"
+            }
+          ]
+        },
+        {
+          "id": "655966548",
+          "node_id": "MDU6SXNzdWU2NTU5NjY1NDg=",
+          "number": 9462,
+          "html_url": "https://github.com/hashicorp/vault/issues/9462",
+          "title": "Vault Proxy Protocol support is broken on Google Cloud",
+          "user": {
+            "type": "user",
+            "login": "upodroid"
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 0,
+          "created_at": 1594656206000,
+          "updated_at": 1594656206000,
+          "author_association": "NONE",
+          "body": "<!-- Please reserve GitHub issues for bug reports and feature requests.\r\n\r\nFor questions, the best place to get answers is on our [discussion forum](https://discuss.hashicorp.com/c/vault), as they will get more visibility from experienced users than the issue tracker.\r\n\r\nPlease note: We take Vault's security and our users' trust very seriously. If you believe you have found a security issue in Vault, please responsibly disclose by contacting us at security@hashicorp.com. Our PGP key is available at [our security page](https://www.hashicorp.com/security/).\r\n\r\n-->\r\n\r\n**Describe the bug**\r\n\r\nVault fails to pass Google Health Checks that have proxy protocol enabled. Google Support investigated this and concluded with the following:\r\n\r\nThe product team found out that vault is not prepared to handle PROXY1V_UNKNOWN string. That is why the healthchecks were failing.\r\n\r\nI will share the findings below:\r\n\r\nhttps://github.com/hashicorp/vault/blob/3831cbfac99222866c0f4eb3b9f563f37e2852aa/command/server/listener.go#L43 - vault proxy protocol setup\r\n\r\nhttps://github.com/hashicorp/vault/blob/3831cbfac99222866c0f4eb3b9f563f37e2852aa/helper/proxyutil/proxyutil.go#L9 - proxy protocol implemented in first link - which can handle the `unknown` string - https://github.com/armon/go-proxyproto/blob/f0b8253b1507a570415b16910691d11751a0685c/protocol.go#L52 , but doesn't, as can be seen in proxyutil.go\r\n\r\nGiven that the healthcheck failed due to vault not being prepared to receive the \"UNKNOWN\" string, we will not pursue this as a fixable issue.\r\n\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Deploy Google Cloud LB with a Google HC that has the following config.\r\n```\r\ncheckIntervalSec: 1\r\ncreationTimestamp: '2020-06-28T13:37:23.358-07:00'\r\ndescription: ''\r\nhealthyThreshold: 2\r\nhttp2HealthCheck:\r\n  host: vault.upo.one\r\n  port: 8200\r\n  proxyHeader: PROXY_V1\r\n  requestPath: /v1/sys/health\r\nid: '471244148877640044'\r\nkind: compute#healthCheck\r\nlogConfig:\r\n  enable: true\r\nname: vault-hc\r\nselfLink: https://www.googleapis.com/compute/v1/projects/REDACTED/global/healthChecks/vault-hc\r\ntimeoutSec: 1\r\ntype: HTTP2\r\nunhealthyThreshold: 2\r\n```\r\n\r\n**Expected behavior**\r\nIt should work but SSL failures happen.\r\n\r\nApp Log:\r\n\r\n```\r\n{\"@level\":\"info\",\"@message\":\"http: TLS handshake error from 130.211.0.205:45346: read tcp 10.100.0.20:8200-\\u003e130.211.0.205:45346: use of closed network connection\",\"@timestamp\":\"2020-06-29T09:34:20.480293Z\"}\r\n2020-06-29 09:34:20.742588 I | [ERR] Failed to read proxy prefix: Invalid header line: PROXY UNKNOWN\r\n{\"@level\":\"info\",\"@message\":\"http: TLS handshake error from 130.211.0.201:44978: read tcp 10.100.0.20:8200-\\u003e130.211.0.201:44978: use of closed network connection\",\"@timestamp\":\"2020-06-29T09:34:20.742655Z\"}\r\n2020-06-29 09:34:20.751224 I | [ERR] Failed to read proxy prefix: Invalid header line: PROXY UNKNOWN\r\n{\"@level\":\"info\",\"@message\":\"http: TLS handshake error from 130.211.3.46:51922: read tcp 10.100.0.20:8200-\\u003e130.211.3.46:51922: use of closed network connection\",\"@timestamp\":\"2020-06-29T09:34:20.751287Z\"}\r\nLocal HTTP request:\r\n```\r\nVault server configuration file(s):\r\n\r\n```hcl\r\n# Run Vault in HA mode. Even if there's only one Vault node, it doesn't hurt to\r\n# have this set.\r\napi_addr = \"{{ api_addr }}\"\r\ncluster_addr = \"https://{{ ansible_all_ipv4_addresses[0]  }}:8201\"\r\n\r\n# Set debugging level\r\nlog_level = \"{{vault_log_level}}\"\r\nlog_format = \"json\"\r\n\r\n# Enable the UI\r\nui = {{ vault_ui_enabled | to_json }}\r\n\r\n# Enable plugin directory\r\nplugin_directory = \"/etc/vault.d/plugins\"\r\n\r\n# Enable auto-unsealing with Google Cloud KMS\r\nseal \"gcpckms\" {\r\n  project    = \"{{ kms_project }}\"\r\n  region     = \"{{ kms_location }}\"\r\n  key_ring   = \"{{ kms_keyring }}\"\r\n  crypto_key = \"{{ kms_crypto_key }}\"\r\n}\r\n\r\n# Enable HA backend storage with GCS\r\nstorage \"gcs\" {\r\n  bucket     = \"{{ storage_bucket }}\"\r\n  ha_enabled = \"true\"\r\n}\r\n\r\n# Create local non-TLS listener\r\nlistener \"tcp\" {\r\n  address     = \"127.0.0.1:{{ vault_port }}\"\r\n  tls_disable = \"true\"\r\n}\r\n\r\n\r\n# Create an mTLS listener locally. Client's shouldn't talk to Vault directly,\r\n# but not all clients are well-behaved. This is also needed so the nodes can\r\n# communicate with eachother.\r\nlistener \"tcp\" {\r\n  address            = \"{{ ansible_all_ipv4_addresses[0] }}:{{vault_port}}\"\r\n  tls_cert_file      = \"/etc/vault/vault.crt\"\r\n  tls_key_file       = \"/etc/vault/vault.key\"\r\n  #tls_client_ca_file = \"/etc/vault/ca.crt\"\r\n  proxy_protocol_behavior = \"use_always\"\r\n\r\n  tls_disable_client_certs           = {{ vault_tls_disable_client_certs | to_json }}\r\n  tls_require_and_verify_client_cert = {{ vault_tls_require_and_verify_client_cert | to_json }}\r\n}\r\n\r\n# Send data to Stackdriver monitoring\r\ntelemetry {\r\n  stackdriver_project_id = \"{{ kms_project }}\"\r\n  stackdriver_location = \"{{ ansible_domain.split(\".\")[0] | zone_to_region }}\"\r\n  stackdriver_namespace = \"vault\"\r\n  disable_hostname = true\r\n  enable_hostname_label = true\r\n}\r\n\r\n```\r\n\r\n**Additional context**\r\nAdd any other context about the problem here.\r\n",
+          "events": []
+        },
+        {
+          "id": "655087530",
+          "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ3Njg0MTEy",
+          "number": 9459,
+          "html_url": "https://github.com/hashicorp/vault/pull/9459",
+          "title": "raft/test: fix snapshot peers race test by using committed and applie…",
+          "user": {
+            "type": "user",
+            "login": "calvn"
+          },
+          "labels": [],
+          "state": "closed",
+          "locked": false,
+          "assignees": [],
+          "comments": 0,
+          "created_at": 1594424483000,
+          "updated_at": 1594659776000,
+          "closed_at": 1594659772000,
+          "author_association": "MEMBER",
+          "body": "…d indexes\r\n\r\nFixes a data race that can occur in `TestRaft_Snapshot_Peers` which happens when we try to compare the follower's FSM database as the snapshot is being restored.\r\n\r\n```\r\n==================\r\nWARNING: DATA RACE\r\nRead at 0x00c000126760 by goroutine 77:\r\n  github.com/hashicorp/vault/physical/raft.TestRaft_Snapshot_Peers()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/snapshot_test.go:261 +0x647\r\n  testing.tRunner()\r\n      /usr/local/go/src/testing/testing.go:991 +0x1eb\r\n\r\nPrevious write at 0x00c000126760 by goroutine 164:\r\n  github.com/hashicorp/vault/physical/raft.(*FSM).openDBFile()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/fsm.go:176 +0x1ba\r\n  github.com/hashicorp/vault/physical/raft.(*FSM).Restore()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/fsm.go:642 +0x71d\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/go-raftchunking.(*ChunkingFSM).Restore()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/go-raftchunking/fsm.go:164 +0x68\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/go-raftchunking.(*ChunkingBatchingFSM).Restore()\r\n      <autogenerated>:1 +0x75\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*Raft).runFSM.func3()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/fsm.go:181 +0x3c3\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*Raft).runFSM()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/fsm.go:222 +0x473\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*Raft).runFSM-fm()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/fsm.go:69 +0x41\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*raftState).goFunc.func1()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/state.go:146 +0x6e\r\n\r\nGoroutine 77 (running) created at:\r\n  testing.(*T).Run()\r\n      /usr/local/go/src/testing/testing.go:1042 +0x660\r\n  testing.runTests.func1()\r\n      /usr/local/go/src/testing/testing.go:1284 +0xa6\r\n  testing.tRunner()\r\n      /usr/local/go/src/testing/testing.go:991 +0x1eb\r\n  testing.runTests()\r\n      /usr/local/go/src/testing/testing.go:1282 +0x527\r\n  testing.(*M).Run()\r\n      /usr/local/go/src/testing/testing.go:1199 +0x2ff\r\n  main.main()\r\n      _testmain.go:98 +0x223\r\n\r\nGoroutine 164 (running) created at:\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*raftState).goFunc()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/state.go:144 +0x73\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.NewRaft()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/api.go:563 +0x167b\r\n  github.com/hashicorp/vault/physical/raft.(*RaftBackend).SetupCluster()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/raft.go:677 +0xa4c\r\n  github.com/hashicorp/vault/physical/raft.addPeer()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/snapshot_test.go:48 +0x364\r\n  github.com/hashicorp/vault/physical/raft.TestRaft_Snapshot_Peers()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/snapshot_test.go:255 +0x59e\r\n  testing.tRunner()\r\n      /usr/local/go/src/testing/testing.go:991 +0x1eb\r\n==================\r\n==================\r\nWARNING: DATA RACE\r\nWrite at 0x00c000306bb8 by goroutine 77:\r\n  sync/atomic.CompareAndSwapInt32()\r\n      /usr/local/go/src/runtime/race_amd64.s:293 +0xb\r\n  sync.(*Mutex).Lock()\r\n      /usr/local/go/src/sync/mutex.go:74 +0x49\r\n  github.com/hashicorp/vault/vendor/go.etcd.io/bbolt.(*DB).beginTx()\r\n      /go/src/github.com/hashicorp/vault/vendor/go.etcd.io/bbolt/db.go:551 +0x61\r\n  github.com/hashicorp/vault/vendor/go.etcd.io/bbolt.(*DB).Begin()\r\n      /go/src/github.com/hashicorp/vault/vendor/go.etcd.io/bbolt/db.go:544 +0x9e\r\n  github.com/hashicorp/vault/vendor/go.etcd.io/bbolt.(*DB).View()\r\n      /go/src/github.com/hashicorp/vault/vendor/go.etcd.io/bbolt/db.go:709 +0x60\r\n  github.com/hashicorp/vault/physical/raft.compareDBs()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/raft_test.go:190 +0x18b\r\n  github.com/hashicorp/vault/physical/raft.TestRaft_Snapshot_Peers()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/snapshot_test.go:261 +0x67b\r\n  testing.tRunner()\r\n      /usr/local/go/src/testing/testing.go:991 +0x1eb\r\n\r\nPrevious write at 0x00c000306bb8 by goroutine 164:\r\n  github.com/hashicorp/vault/vendor/go.etcd.io/bbolt.Open()\r\n      /go/src/github.com/hashicorp/vault/vendor/go.etcd.io/bbolt/db.go:179 +0x71\r\n  github.com/hashicorp/vault/physical/raft.(*FSM).openDBFile()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/fsm.go:130 +0x13e\r\n  github.com/hashicorp/vault/physical/raft.(*FSM).Restore()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/fsm.go:642 +0x71d\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/go-raftchunking.(*ChunkingFSM).Restore()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/go-raftchunking/fsm.go:164 +0x68\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/go-raftchunking.(*ChunkingBatchingFSM).Restore()\r\n      <autogenerated>:1 +0x75\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*Raft).runFSM.func3()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/fsm.go:181 +0x3c3\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*Raft).runFSM()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/fsm.go:222 +0x473\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*Raft).runFSM-fm()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/fsm.go:69 +0x41\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*raftState).goFunc.func1()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/state.go:146 +0x6e\r\n\r\nGoroutine 77 (running) created at:\r\n  testing.(*T).Run()\r\n      /usr/local/go/src/testing/testing.go:1042 +0x660\r\n  testing.runTests.func1()\r\n      /usr/local/go/src/testing/testing.go:1284 +0xa6\r\n  testing.tRunner()\r\n      /usr/local/go/src/testing/testing.go:991 +0x1eb\r\n  testing.runTests()\r\n      /usr/local/go/src/testing/testing.go:1282 +0x527\r\n  testing.(*M).Run()\r\n      /usr/local/go/src/testing/testing.go:1199 +0x2ff\r\n  main.main()\r\n      _testmain.go:98 +0x223\r\n\r\nGoroutine 164 (running) created at:\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.(*raftState).goFunc()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/state.go:144 +0x73\r\n  github.com/hashicorp/vault/vendor/github.com/hashicorp/raft.NewRaft()\r\n      /go/src/github.com/hashicorp/vault/vendor/github.com/hashicorp/raft/api.go:563 +0x167b\r\n  github.com/hashicorp/vault/physical/raft.(*RaftBackend).SetupCluster()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/raft.go:677 +0xa4c\r\n  github.com/hashicorp/vault/physical/raft.addPeer()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/snapshot_test.go:48 +0x364\r\n  github.com/hashicorp/vault/physical/raft.TestRaft_Snapshot_Peers()\r\n      /go/src/github.com/hashicorp/vault/physical/raft/snapshot_test.go:255 +0x59e\r\n  testing.tRunner()\r\n      /usr/local/go/src/testing/testing.go:991 +0x1eb\r\n==================\r\n```",
+          "milestone": {
+            "id": "5107883",
+            "number": 65,
+            "title": "1.5"
+          },
+          "events": []
+        },
+        {
+          "id": "655032845",
+          "node_id": "MDExOlB1bGxSZXF1ZXN0NDQ3NjQxNDk0",
+          "number": 9454,
+          "html_url": "https://github.com/hashicorp/vault/pull/9454",
+          "title": "Adds documentation for OIDC provider specific extension for G Suite",
+          "user": {
+            "type": "user",
+            "login": "austingebauer"
+          },
+          "labels": [
+            {
+              "id": "1874015060",
+              "node_id": "MDU6TGFiZWwxODc0MDE1MDYw",
+              "url": "https://api.github.com/repos/hashicorp/vault/labels/docs-cherrypick",
+              "name": "docs-cherrypick",
+              "color": "0e8a16",
+              "description": "",
+              "default": false
+            }
+          ],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 1,
+          "created_at": 1594414723000,
+          "updated_at": 1594662119000,
+          "author_association": "MEMBER",
+          "body": "This PR adds documentation for using an OIDC provider specific extension for G Suite that allows for fetching of groups and user information during authentication. Please see the rendered [documentation preview](https://5f08d685c1a9d20007bb58da--vault-www.netlify.app/docs/auth/jwt_oidc_providers#google-specific-handling-configuration).\r\n\r\nAssociated PR for the feature: https://github.com/hashicorp/vault-plugin-auth-jwt/pull/123",
+          "events": []
+        },
+        {
+          "id": "656059339",
+          "node_id": "MDU6SXNzdWU2NTYwNTkzMzk=",
+          "number": 9468,
+          "html_url": "https://github.com/hashicorp/vault/issues/9468",
+          "title": "DOCS: API documentation for endpoint sys/internal/ui/resultant-acl",
+          "user": {
+            "type": "user",
+            "login": "stuartpurgavie"
+          },
+          "labels": [],
+          "state": "open",
+          "locked": false,
+          "assignees": [],
+          "comments": 0,
+          "created_at": 1594665690000,
+          "updated_at": 1594665715000,
+          "author_association": "CONTRIBUTOR",
+          "body": "**Is your feature request related to a problem? Please describe.**\r\nThere doesn't seem to be documentation for the endpoint `sys/internal/ui/resultant-acl` however it is present in the `default` policy and obviously returns data.\r\n\r\n**Describe the solution you'd like**\r\nWould like to see documentation on the endpoint, including what parameters it takes, if any.\r\n\r\n**Explain any additional use-cases**\r\nPossible additional use case for being able to provide a token, entity, or role to the endpoint as a parameter to see what the resultant ACL would be for that object, if it does not exist. Without documentation it's hard to know, but seems likely it's an introspection endpoint only, which is only useful to a given token.\r\n\r\n**Additional context**\r\nWas attempting to [troubleshoot an ACL issue](https://groups.google.com/forum/#!msg/vault-tool/PbwI7iDg5WY/nUmRXZDcBgAJ) where when `+` is used as a path segment wildcard, there are some unexpected resultant ACLs. This seemed like it could be a useful endpoint for figuring out what was going on in the user's scenario. Yes, the `sys/capabilities*` family of endpoints does exist, but you have to know the paths in advance to query, whereas the `resultant-acl` endpoint simply lists all endpoints for you without passing paths as parameters.\r\n",
+          "events": []
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "140"
+    },
+    "integration_type": "github",
+    "data_type": "issues",
+    "page_number": 0
+  }
+}

@@ -1,0 +1,1009 @@
+{
+  "pipelineExecutionSummary": {
+    "pipelineIdentifier": "CI_only_Docker_Registry",
+    "planExecutionId": "RSOc9qP_TJmsPvbgM0mHIw",
+    "name": "CI only Docker Registry",
+    "status": "Success",
+    "tags": [],
+    "executionTriggerInfo": {
+      "triggerType": "MANUAL",
+      "triggeredBy": {
+        "uuid": "q27LHq2XSSam3H09Rrqevg",
+        "identifier": "Meetrajsinh Solanki",
+        "extraInfo": {
+          "email": "meetrajsinh.solanki@crestdatasys.com"
+        }
+      },
+      "isRerun": true,
+      "rerunInfo": {
+        "rootExecutionId": "rTrvud3FQmOA22Bk3QMo9Q",
+        "rootTriggerType": "MANUAL",
+        "prevExecutionId": "rTrvud3FQmOA22Bk3QMo9Q",
+        "prevTriggerType": "MANUAL"
+      }
+    },
+    "governanceMetadata": {
+      "id": "0",
+      "deny": false,
+      "details": [],
+      "message": "",
+      "timestamp": "1672913562393",
+      "status": "pass",
+      "accountId": "Br432S_3TWKotjbw9B5cNQ",
+      "orgId": "default",
+      "projectId": "Propelo_Project",
+      "entity": "accountIdentifier%3ABr432S_3TWKotjbw9B5cNQ%2ForgIdentifier%3Adefault%2FprojectIdentifier%3APropelo_Project%2FpipelineIdentifier%3ACI_only_Docker_Registry",
+      "type": "pipeline",
+      "action": "onrun",
+      "created": "1672913562382"
+    },
+    "moduleInfo": {
+      "ci": {
+        "__recast": "io.harness.ci.plan.creator.execution.CIPipelineModuleInfo",
+        "ciPipelineStageModuleInfo": {
+          "__recast": "io.harness.ci.plan.creator.execution.CIPipelineStageModuleInfo",
+          "stageExecutionId": "1TCdmgXTQL-TTzuvojeHbw",
+          "stageId": "Build_and_Push_to_Docker",
+          "stageName": "Build and Push to Docker",
+          "cpuTime": 36327,
+          "stageBuildTime": 39796,
+          "infraType": "HostedVm",
+          "osType": "Linux",
+          "osArch": "Amd64",
+          "startTs": 1672913562596,
+          "buildMultiplier": 1.0
+        },
+        "branch": "main",
+        "buildType": "branch",
+        "ciExecutionInfoDTO": {
+          "__recast": "io.harness.ci.pipeline.executions.beans.CIWebhookInfoDTO",
+          "event": "branch",
+          "branch": {
+            "__recast": "io.harness.ci.pipeline.executions.beans.CIBuildBranchHook",
+            "commits": [
+              {
+                "__recast": "io.harness.ci.pipeline.executions.beans.CIBuildCommit",
+                "id": "5cbcf0087de1614ed155f1b372a004f4e38d3ab2",
+                "link": "https://github.com/meetrajsinh-crest/private-repo/commit/5cbcf0087de1614ed155f1b372a004f4e38d3ab2",
+                "message": "docker update",
+                "ownerName": "Meetrajsinh Solanki",
+                "ownerId": "",
+                "ownerEmail": "meetrajsinh.solanki@CHLap1080-474.local",
+                "timeStamp": 1672834030000
+              }
+            ]
+          }
+        },
+        "imageDetailsList": [
+          {
+            "__recast": "io.harness.ci.pipeline.executions.beans.CIImageDetails",
+            "imageName": "harness/drone-git",
+            "imageTag": "1.2.7-rootless"
+          }
+        ],
+        "infraDetailsList": [
+          {
+            "__recast": "io.harness.ci.pipeline.executions.beans.CIInfraDetails",
+            "infraType": "HostedVm",
+            "infraOSType": "Linux",
+            "infraHostType": "Harness Hosted",
+            "infraArchType": "Amd64"
+          }
+        ],
+        "isPrivateRepo": true,
+        "repoName": "private-repo",
+        "scmDetailsList": [
+          {
+            "__recast": "io.harness.ci.pipeline.executions.beans.CIScmDetails",
+            "scmUrl": "https://github.com/meetrajsinh-crest/private-repo",
+            "scmProvider": "Github",
+            "scmAuthType": "Http",
+            "scmHostType": "SaaS"
+          }
+        ],
+        "tiBuildDetailsList": []
+      }
+    },
+    "layoutNodeMap": {
+      "wR4bRwfRSee4266wBit9Xg_rollbackStage": {
+        "nodeType": "CI",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "wR4bRwfRSee4266wBit9Xg_rollbackStage",
+        "name": "Build and Push to Docker (Rollback Stage)",
+        "nodeUuid": "wR4bRwfRSee4266wBit9Xg_rollbackStage",
+        "status": "NotStarted",
+        "module": "ci",
+        "moduleInfo": {
+          "ci": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      },
+      "wR4bRwfRSee4266wBit9Xg": {
+        "nodeType": "CI",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Build_and_Push_to_Docker",
+        "name": "Build and Push to Docker",
+        "nodeUuid": "wR4bRwfRSee4266wBit9Xg",
+        "status": "Success",
+        "module": "ci",
+        "moduleInfo": {
+          "ci": {
+            "__recast": "io.harness.ci.plan.creator.execution.CIStageModuleInfo"
+          }
+        },
+        "startTs": 1672913562596,
+        "endTs": 1672913602417,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": ""
+        },
+        "failureInfoDTO": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "1TCdmgXTQL-TTzuvojeHbw",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      }
+    },
+    "modules": [
+      "ci"
+    ],
+    "startingNodeId": "wR4bRwfRSee4266wBit9Xg",
+    "startTs": 1672913562394,
+    "endTs": 1672913602489,
+    "createdAt": 1672913562450,
+    "canRetry": true,
+    "showRetryHistory": false,
+    "runSequence": 3,
+    "successfulStagesCount": 1,
+    "runningStagesCount": 0,
+    "failedStagesCount": 0,
+    "totalStagesCount": 1,
+    "storeType": "INLINE",
+    "executionInputConfigured": false,
+    "parentStageInfo": {
+      "hasparentpipeline": false,
+      "stagenodeid": "",
+      "executionid": "",
+      "identifier": "",
+      "projectid": "",
+      "orgid": "",
+      "runsequence": 0
+    },
+    "allowStageExecutions": false,
+    "stagesExecution": false
+  },
+  "executionGraph": {
+    "rootNodeId": "jk7xoF8bQyif1UbB-V26Xg",
+    "nodeMap": {
+      "sHZKOu1QR564P7lpxReLig": {
+        "uuid": "sHZKOu1QR564P7lpxReLig",
+        "setupId": "N7Ei3hjCRM6uwHZvIXhAIw",
+        "name": "Clone codebase",
+        "identifier": "harness-git-clone",
+        "baseFqn": "pipeline.stages.Build_and_Push_to_Docker.spec.execution.steps.harness-git-clone",
+        "outcomes": {},
+        "stepParameters": {
+          "identifier": "harness-git-clone",
+          "name": "Clone codebase",
+          "timeout": "1h",
+          "type": "Plugin",
+          "spec": {
+            "retry": 1,
+            "settings": {
+              "__recast": "java.util.LinkedHashMap",
+              "depth": {
+                "__recast": "com.fasterxml.jackson.databind.node.TextNode",
+                "__encodedValue": "50"
+              }
+            },
+            "image": "harness/drone-git:1.2.7-rootless",
+            "entrypoint": [
+              "/usr/local/bin/clone"
+            ],
+            "harnessManagedImage": true
+          }
+        },
+        "startTs": 1672913567135,
+        "endTs": 1672913587196,
+        "stepType": "Plugin",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "XRXXCQGiTwqHDFQkH8AO3w"
+              ],
+              "logKeys": [
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CI_only_Docker_Registry/runSequence:3/level0:pipeline/level1:stages/level2:Build_and_Push_to_Docker/level3:spec/level4:execution/level5:steps/level6:harness-git-clone"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "1TCdmgXTQL-TTzuvojeHbw": {
+        "uuid": "1TCdmgXTQL-TTzuvojeHbw",
+        "setupId": "wR4bRwfRSee4266wBit9Xg",
+        "name": "Build and Push to Docker",
+        "identifier": "Build_and_Push_to_Docker",
+        "baseFqn": "pipeline.stages.Build_and_Push_to_Docker",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "wR4bRwfRSee4266wBit9Xg",
+          "identifier": "Build_and_Push_to_Docker",
+          "name": "Build and Push to Docker",
+          "description": "",
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "CI",
+          "specConfig": {
+            "infrastructure": {
+              "type": "HOSTED_VM",
+              "spec": {
+                "platform": {
+                  "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                  "os": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Linux"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  },
+                  "arch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Amd64"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            },
+            "enableCloneRepo": true,
+            "buildStatusUpdateParameter": {
+              "identifier": "Build_and_Push_to_Docker",
+              "name": "Build and Push to Docker",
+              "connectorIdentifier": "Github_Meetrajsinhcrest_connector",
+              "repoName": "private-repo"
+            },
+            "stepIdentifiers": [
+              "CI_Only_Docker_Registry"
+            ],
+            "childNodeID": "wC78Mc9uS8GAKMKaMiD5yg"
+          }
+        },
+        "startTs": 1672913562596,
+        "endTs": 1672913602417,
+        "stepType": "IntegrationStageStepPMS",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "wC78Mc9uS8GAKMKaMiD5yg",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "bGs_aAe9SVCaDhUsZ73eww": {
+        "uuid": "bGs_aAe9SVCaDhUsZ73eww",
+        "setupId": "LeRDMHM-TU6JoGL03YSdUQstages",
+        "name": "stages",
+        "identifier": "stages",
+        "baseFqn": "pipeline.stages",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "wR4bRwfRSee4266wBit9Xg",
+          "logMessage": "Stages"
+        },
+        "startTs": 1672913562526,
+        "endTs": 1672913602454,
+        "stepType": "STAGES_STEP",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "wR4bRwfRSee4266wBit9Xg",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "S0w6rnLPSTGYn5RF0oTp3w": {
+        "uuid": "S0w6rnLPSTGYn5RF0oTp3w",
+        "setupId": "0hv_FgpoTTGUkiO0J_1ezQ",
+        "name": "liteEngineTask",
+        "identifier": "liteEngineTask",
+        "baseFqn": "pipeline.stages.Build_and_Push_to_Docker.spec.execution.steps.liteEngineTask",
+        "outcomes": {
+          "vmDetailsOutcome": {
+            "ipAddress": "10.105.224.92",
+            "delegateId": "013rA3FdQ5ueSMvFMbwquA"
+          },
+          "dependencies": {
+            "serviceDependencyList": []
+          }
+        },
+        "stepParameters": {
+          "identifier": "liteEngineTask",
+          "name": "liteEngineTask",
+          "timeout": "10m",
+          "type": "liteEngineTask",
+          "spec": {
+            "timeout": 0,
+            "retry": 0,
+            "executionElementConfig": {
+              "uuid": "HJMzw_9OSvasi5j6taZP9Q",
+              "steps": [
+                {
+                  "uuid": "sUatMG3uSxmahaL1AxDOSA",
+                  "step": {
+                    "type": "Plugin",
+                    "identifier": "harness-git-clone",
+                    "name": "Clone codebase",
+                    "timeout": "1h",
+                    "__uuid": "N7Ei3hjCRM6uwHZvIXhAIw",
+                    "spec": {
+                      "settings": {
+                        "depth": "50"
+                      },
+                      "image": "harness/drone-git:1.2.7-rootless",
+                      "entrypoint": [
+                        "/usr/local/bin/clone"
+                      ],
+                      "harnessManagedImage": true
+                    }
+                  },
+                  "parallel": {},
+                  "stepGroup": {}
+                },
+                {
+                  "uuid": "nYSvi-nrQsmr7r0nsc5gWQ",
+                  "step": {
+                    "identifier": "CI_Only_Docker_Registry",
+                    "type": "BuildAndPushDockerRegistry",
+                    "name": "CI Only Docker Registry",
+                    "spec": {
+                      "connectorRef": "CI_Only_Docker_Registry",
+                      "repo": "meetrajsinhcrest/harness-test",
+                      "tags": [
+                        "0.0.2"
+                      ],
+                      "__uuid": "D2ecpZO0SBmsfJZhY7cYNw"
+                    },
+                    "__uuid": "v1J3EyofS4CBftHJWUONkQ"
+                  },
+                  "parallel": {},
+                  "stepGroup": {}
+                }
+              ]
+            },
+            "ciCodebase": {
+              "uuid": "sspdWmM-TrajA423WgWuOQ",
+              "connectorRef": "Github_Meetrajsinhcrest_connector",
+              "repoName": "private-repo",
+              "build": {
+                "__recast": "io.harness.yaml.extended.ci.codebase.Build",
+                "type": "BRANCH",
+                "spec": {
+                  "__recast": "io.harness.yaml.extended.ci.codebase.impl.BranchBuildSpec",
+                  "branch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "main"
+                      },
+                      "valueClass": "java.lang.String",
+                      "typeString": true,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            },
+            "executionSource": {
+              "branch": "main"
+            },
+            "stageIdentifier": "Build_and_Push_to_Docker",
+            "stageElementConfig": {
+              "uuid": "wC78Mc9uS8GAKMKaMiD5yg",
+              "execution": {
+                "uuid": "T6kkRjC0RACsVbbcf2v3Gg",
+                "steps": [
+                  {
+                    "uuid": "nYSvi-nrQsmr7r0nsc5gWQ",
+                    "step": {
+                      "identifier": "CI_Only_Docker_Registry",
+                      "type": "BuildAndPushDockerRegistry",
+                      "name": "CI Only Docker Registry",
+                      "spec": {
+                        "connectorRef": "CI_Only_Docker_Registry",
+                        "repo": "meetrajsinhcrest/harness-test",
+                        "tags": [
+                          "0.0.2"
+                        ],
+                        "__uuid": "D2ecpZO0SBmsfJZhY7cYNw"
+                      },
+                      "__uuid": "v1J3EyofS4CBftHJWUONkQ"
+                    },
+                    "parallel": {},
+                    "stepGroup": {}
+                  }
+                ]
+              },
+              "runtime": {
+                "type": "CLOUD",
+                "spec": {}
+              },
+              "platform": {
+                "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                "os": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Linux"
+                    },
+                    "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "arch": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Amd64"
+                    },
+                    "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                }
+              },
+              "cloneCodebase": true
+            },
+            "skipGitClone": false,
+            "infrastructure": {
+              "type": "HOSTED_VM",
+              "spec": {
+                "platform": {
+                  "__recast": "io.harness.beans.yaml.extended.platform.Platform",
+                  "os": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Linux"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.infrastrucutre.OSType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  },
+                  "arch": {
+                    "__recast": "parameterField",
+                    "__encodedValue": {
+                      "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                      "expression": false,
+                      "valueDoc": {
+                        "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                        "value": "Amd64"
+                      },
+                      "valueClass": "io.harness.beans.yaml.extended.platform.ArchType",
+                      "typeString": false,
+                      "skipAutoEvaluation": false,
+                      "jsonResponseField": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "startTs": 1672913563560,
+        "endTs": 1672913567069,
+        "stepType": "liteEngineTask",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "zRT-ZCGGSbeR4oIbFa4_6w"
+              ],
+              "logKeys": [
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CI_only_Docker_Registry/runSequence:3/level0:pipeline/level1:stages/level2:Build_and_Push_to_Docker/level3:spec/level4:execution/level5:steps/level6:liteEngineTask"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": {
+          "initStepV2DelegateTaskInfo": {
+            "taskID": "zRT-ZCGGSbeR4oIbFa4_6w",
+            "taskName": "INITIALIZATION_PHASE"
+          }
+        },
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "jk7xoF8bQyif1UbB-V26Xg": {
+        "uuid": "jk7xoF8bQyif1UbB-V26Xg",
+        "setupId": "LeRDMHM-TU6JoGL03YSdUQ",
+        "name": "CI only Docker Registry",
+        "identifier": "pipeline",
+        "baseFqn": "pipeline",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeID": "LeRDMHM-TU6JoGL03YSdUQstages",
+          "name": "CI only Docker Registry",
+          "identifier": "CI_only_Docker_Registry",
+          "description": "",
+          "tags": {},
+          "properties": {
+            "__recast": "java.util.LinkedHashMap",
+            "ci": {
+              "__recast": "io.harness.yaml.core.properties.CIProperties",
+              "uuid": "O46Ys0NpQcG-aakZqRqCzQ",
+              "codebase": {
+                "__recast": "io.harness.yaml.extended.ci.codebase.CodeBase",
+                "uuid": "sspdWmM-TrajA423WgWuOQ",
+                "connectorRef": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "Github_Meetrajsinhcrest_connector"
+                    },
+                    "valueClass": "java.lang.String",
+                    "typeString": true,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "repoName": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": "private-repo"
+                    },
+                    "valueClass": "java.lang.String",
+                    "typeString": true,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "build": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                      "value": {
+                        "__recast": "io.harness.yaml.extended.ci.codebase.Build",
+                        "type": "BRANCH",
+                        "spec": {
+                          "__recast": "io.harness.yaml.extended.ci.codebase.impl.BranchBuildSpec",
+                          "branch": {
+                            "__recast": "parameterField",
+                            "__encodedValue": {
+                              "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                              "expression": false,
+                              "valueDoc": {
+                                "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                                "value": "main"
+                              },
+                              "valueClass": "java.lang.String",
+                              "typeString": true,
+                              "skipAutoEvaluation": false,
+                              "jsonResponseField": false
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "valueClass": "io.harness.yaml.extended.ci.codebase.Build",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "depth": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper"
+                    },
+                    "valueClass": "java.lang.Integer",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "sslVerify": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper"
+                    },
+                    "valueClass": "java.lang.Boolean",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                },
+                "prCloneStrategy": {
+                  "__recast": "parameterField",
+                  "__encodedValue": {
+                    "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                    "expression": false,
+                    "valueDoc": {
+                      "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper"
+                    },
+                    "valueClass": "io.harness.yaml.extended.ci.codebase.PRCloneStrategy",
+                    "typeString": false,
+                    "skipAutoEvaluation": false,
+                    "jsonResponseField": false
+                  }
+                }
+              }
+            }
+          },
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "executionId": "RSOc9qP_TJmsPvbgM0mHIw",
+          "sequenceId": 2
+        },
+        "startTs": 1672913562487,
+        "endTs": 1672913602489,
+        "stepType": "PIPELINE_SECTION",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "LeRDMHM-TU6JoGL03YSdUQstages",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "1GmLbQ7qQlWOJyhJzF1fXw": {
+        "uuid": "1GmLbQ7qQlWOJyhJzF1fXw",
+        "setupId": "v1J3EyofS4CBftHJWUONkQ",
+        "name": "CI Only Docker Registry",
+        "identifier": "CI_Only_Docker_Registry",
+        "baseFqn": "pipeline.stages.Build_and_Push_to_Docker.spec.execution.steps.CI_Only_Docker_Registry",
+        "outcomes": {},
+        "stepParameters": {
+          "identifier": "CI_Only_Docker_Registry",
+          "name": "CI Only Docker Registry",
+          "timeout": "10h",
+          "type": "BuildAndPushDockerRegistry",
+          "spec": {
+            "uuid": "D2ecpZO0SBmsfJZhY7cYNw",
+            "retry": 1,
+            "connectorRef": "CI_Only_Docker_Registry",
+            "repo": "meetrajsinhcrest/harness-test",
+            "tags": [
+              "0.0.2"
+            ]
+          }
+        },
+        "startTs": 1672913587322,
+        "endTs": 1672913602256,
+        "stepType": "BuildAndPushDockerRegistry",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "K4YNIJnPSoGHNBzxnWG44g"
+              ],
+              "logKeys": [
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CI_only_Docker_Registry/runSequence:3/level0:pipeline/level1:stages/level2:Build_and_Push_to_Docker/level3:spec/level4:execution/level5:steps/level6:CI_Only_Docker_Registry"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "sjo_eHttQP-wsm38EUS_3w": {
+        "uuid": "sjo_eHttQP-wsm38EUS_3w",
+        "setupId": "T6kkRjC0RACsVbbcf2v3Gg",
+        "name": "Execution",
+        "identifier": "execution",
+        "baseFqn": "pipeline.stages.Build_and_Push_to_Docker.spec.execution",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "T6kkRjC0RACsVbbcf2v3Ggsteps",
+          "logMessage": "Execution Element"
+        },
+        "startTs": 1672913563368,
+        "endTs": 1672913602336,
+        "stepType": "NG_EXECUTION",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "T6kkRjC0RACsVbbcf2v3Ggsteps",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "yT54s-GUTRy86o1hz4i1Fg": {
+        "outcomes": {
+          "artifact_Docker_Push": {
+            "stepArtifacts": {
+              "publishedImageArtifacts": [
+                {
+                  "digest": "h1",
+                  "imageName": "image1",
+                  "tag": "v1",
+                  "url": "location",
+                  "----test-field": "abc"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "nodeAdjacencyListMap": {
+      "sHZKOu1QR564P7lpxReLig": {
+        "children": [],
+        "nextIds": [
+          "1GmLbQ7qQlWOJyhJzF1fXw"
+        ]
+      },
+      "1TCdmgXTQL-TTzuvojeHbw": {
+        "children": [
+          "sjo_eHttQP-wsm38EUS_3w"
+        ],
+        "nextIds": []
+      },
+      "bGs_aAe9SVCaDhUsZ73eww": {
+        "children": [
+          "1TCdmgXTQL-TTzuvojeHbw"
+        ],
+        "nextIds": []
+      },
+      "S0w6rnLPSTGYn5RF0oTp3w": {
+        "children": [],
+        "nextIds": [
+          "sHZKOu1QR564P7lpxReLig"
+        ]
+      },
+      "jk7xoF8bQyif1UbB-V26Xg": {
+        "children": [
+          "bGs_aAe9SVCaDhUsZ73eww"
+        ],
+        "nextIds": []
+      },
+      "1GmLbQ7qQlWOJyhJzF1fXw": {
+        "children": [],
+        "nextIds": []
+      },
+      "sjo_eHttQP-wsm38EUS_3w": {
+        "children": [
+          "S0w6rnLPSTGYn5RF0oTp3w"
+        ],
+        "nextIds": []
+      }
+    },
+    "executionMetadata": {
+      "accountId": "Br432S_3TWKotjbw9B5cNQ",
+      "pipelineIdentifier": "CI_only_Docker_Registry",
+      "orgIdentifier": "default",
+      "projectIdentifier": "Propelo_Project",
+      "planExecutionId": "RSOc9qP_TJmsPvbgM0mHIw"
+    },
+    "representationStrategy": "camelCase"
+  }
+}

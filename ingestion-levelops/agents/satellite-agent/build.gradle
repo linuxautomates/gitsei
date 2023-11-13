@@ -1,0 +1,99 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.6.6")
+    }
+}
+
+plugins {
+    id 'com.github.jk1.dependency-license-report'
+    id "com.github.hierynomus.license" version "0.16.1"
+    id 'org.cyclonedx.bom' version '1.7.2'
+}
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation project(':ingestion-engine')
+    implementation project(':ingestion-agent')
+    implementation project(':agents:agents-common')
+    implementation project(':integrations:integration-k8s')
+    implementation project(':integrations:integration-gcs')
+
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('inventory-service')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('spring-web-utils')
+
+    implementation levelopsCommonsLib('integration-gcs')
+    implementation levelopsCommonsLib('ingestion-clients')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation libraries.okhttp
+    implementation libraries.jooq
+    implementation libraries.spring_boot_web
+    implementation libraries.gson
+    implementation libraries.servlet
+    implementation libraries.kotlin_stdlib
+    implementation libraries.spring_actuator
+    // OpenAPI
+    implementation openapiLib('ui')
+
+    // for jira oauth1 tool
+    implementation libraries.google_oauth_client
+    implementation libraries.google_client_jackson
+
+    implementation group: 'org.jasypt', name: 'jasypt', version: '1.9.3'
+    implementation libraries.jackson_yaml
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+}
+
+downloadLicenses {
+   includeProjectDependencies = true
+   reportByDependency = true
+   reportByLicenseType = false
+   dependencyConfiguration = "compile"
+}
+
+cyclonedxBom {
+    includeConfigs = ["runtimeClasspath"]
+    skipConfigs = ["compileClasspath", "testCompileClasspath"]
+    projectType = "application"
+    schemaVersion = "1.4"
+    destination = file("build/reports")
+    outputName = "CycloneDX-Sbom"
+    outputFormat = "all"
+    includeBomSerialNumber = true
+    componentVersion = "2.0.0"
+
+    // Usage: gradle :agents:satellite-agent:cyclonedxBom
+    // Output: agents/satellite-agent/build/reports/CycloneDX-Sbom.json (or .xml)
+}
+
+licenseMain.enabled = false
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

@@ -1,0 +1,272 @@
+{
+  "answer_dtos": [
+    {
+      "question_id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+      "assertions": [
+        {
+          "assertion_id": "eb9b9412-f96b-433c-875e-087a47b65ac8",
+          "user_email": "meghana@levelops.io",
+          "answered": true,
+          "upload": false,
+          "response": [
+            {
+              "value": "option 1",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "assertion_id": "779c9270-f03e-4e7d-bdca-772e56f7dcfd",
+          "answered": false,
+          "upload": false,
+          "response": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "assertion_id": "f899d457-52ef-48c5-be6b-9a1a1d7f3785",
+          "answered": false,
+          "upload": false,
+          "response": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "assertion_id": "19feb66a-c2fb-47bc-871d-1c6de2d3d824",
+          "answered": false,
+          "upload": false,
+          "response": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "assertion_id": "885bb6d8-cdbc-43ca-a81b-2d2fde880f40",
+          "answered": false,
+          "upload": false,
+          "response": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question_id": "753d4f8a-ff95-4a34-a14d-a2a31f1b7d13",
+      "assertions": [
+        {
+          "assertion_id": "d24eb0c8-bbe0-491c-8514-f5c67f28ecde",
+          "answered": false,
+          "upload": false,
+          "response": []
+        }
+      ]
+    },
+    {
+      "question_id": "fa54762a-a6a2-425f-b445-46460e81a19e",
+      "assertions": [
+        {
+          "assertion_id": "f723739d-e72e-49f1-9dae-f325fa467abb",
+          "answered": false,
+          "upload": false,
+          "response": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "assertion_id": "58dea17f-a2f0-4f4e-8a7b-be37ecf80a1c",
+          "answered": false,
+          "upload": false,
+          "response": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assignment_msg": "Please fill out questionnaire new test template available at https://testui1.levelops.io/#/admin/answer-questionnaire-page?questionnaire=eff9bd12-a121-4dfd-9008-766f91199ae0&tenant=foo being sent to you by meghana@levelops.io\n\n\n",
+  "questions": [
+    {
+      "tags": [],
+      "id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+      "name": "some new question",
+      "type": "DEFAULT",
+      "description": "some desc",
+      "assertions": [
+        {
+          "verifiable": true,
+          "id": "eb9b9412-f96b-433c-875e-087a47b65ac8",
+          "name": "ass 1",
+          "severity": "MEDIUM",
+          "question_id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+          "type": "multi-select",
+          "options": [
+            {
+              "value": "option 1",
+              "score": 1
+            },
+            {
+              "value": "option 2",
+              "score": 1
+            }
+          ],
+          "verification_mode": "MANUAL"
+        },
+        {
+          "verifiable": true,
+          "id": "779c9270-f03e-4e7d-bdca-772e56f7dcfd",
+          "name": "single 1",
+          "severity": "MEDIUM",
+          "question_id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+          "type": "single-select",
+          "options": [
+            {
+              "value": "single",
+              "score": 1
+            },
+            {
+              "value": "single2",
+              "score": 3
+            }
+          ],
+          "verification_mode": "MANUAL"
+        },
+        {
+          "verifiable": true,
+          "id": "f899d457-52ef-48c5-be6b-9a1a1d7f3785",
+          "name": "hahah",
+          "severity": "MEDIUM",
+          "question_id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+          "type": "text",
+          "options": [
+            {
+              "value": "",
+              "score": 5
+            }
+          ],
+          "verification_mode": "MANUAL"
+        },
+        {
+          "verifiable": true,
+          "id": "19feb66a-c2fb-47bc-871d-1c6de2d3d824",
+          "name": "file file ",
+          "severity": "MEDIUM",
+          "question_id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+          "type": "file upload",
+          "options": [
+            {
+              "value": "",
+              "score": 5
+            }
+          ],
+          "verification_mode": "MANUAL"
+        },
+        {
+          "verifiable": true,
+          "id": "885bb6d8-cdbc-43ca-a81b-2d2fde880f40",
+          "name": "bool bool",
+          "severity": "MEDIUM",
+          "question_id": "3281de37-7901-4f9d-8488-d1387ec1006d",
+          "type": "boolean",
+          "options": [
+            {
+              "value": "yes",
+              "score": 1
+            },
+            {
+              "value": "no",
+              "score": 3
+            }
+          ],
+          "verification_mode": "MANUAL"
+        }
+      ],
+      "created_at": 1581704342
+    },
+    {
+      "tags": [
+        "1"
+      ],
+      "id": "753d4f8a-ff95-4a34-a14d-a2a31f1b7d13",
+      "name": "popopoui",
+      "type": "CHECKLIST",
+      "description": "kjkjo",
+      "assertions": [
+        {
+          "verifiable": true,
+          "id": "d24eb0c8-bbe0-491c-8514-f5c67f28ecde",
+          "name": "hahahah",
+          "severity": "MEDIUM",
+          "question_id": "753d4f8a-ff95-4a34-a14d-a2a31f1b7d13",
+          "type": "multi-select",
+          "options": [
+            {
+              "value": "opt opt opt",
+              "score": 1
+            },
+            {
+              "value": "opt opt opt1",
+              "score": 1
+            }
+          ],
+          "verification_mode": "MANUAL"
+        }
+      ],
+      "created_at": 1579221447
+    },
+    {
+      "tags": [],
+      "id": "fa54762a-a6a2-425f-b445-46460e81a19e",
+      "name": "testingale",
+      "type": "CHECKLIST",
+      "description": "florence",
+      "assertions": [
+        {
+          "verifiable": true,
+          "id": "f723739d-e72e-49f1-9dae-f325fa467abb",
+          "name": "check",
+          "severity": "MEDIUM",
+          "question_id": "fa54762a-a6a2-425f-b445-46460e81a19e",
+          "type": "checklist",
+          "options": [
+            {
+              "score": 1
+            }
+          ],
+          "verification_mode": "MANUAL"
+        },
+        {
+          "verifiable": true,
+          "id": "58dea17f-a2f0-4f4e-8a7b-be37ecf80a1c",
+          "name": "check2",
+          "severity": "MEDIUM",
+          "question_id": "fa54762a-a6a2-425f-b445-46460e81a19e",
+          "type": "checklist",
+          "options": [
+            {
+              "score": 3
+            }
+          ],
+          "verification_mode": "MANUAL"
+        }
+      ],
+      "created_at": 1581736816
+    }
+  ]
+}

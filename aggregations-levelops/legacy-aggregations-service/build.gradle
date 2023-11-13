@@ -1,0 +1,137 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.7.0")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    mainClass = "io.levelops.aggregations.AggregationsApplication"
+}
+
+configurations {
+    runtime.exclude group: "org.apache.logging.log4j", module: "log4j-core"
+}
+
+dependencies {
+    // annotation processing
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    // documentation
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.11'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    // levelops
+    implementation project(":aggregations-shared")
+    implementation levelopsCommonsLib('aggregation-commons')
+    implementation levelopsCommonsLib('events-services')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('database-services')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('internal-api-clients')
+    implementation levelopsCommonsLib('json-diff')
+    implementation levelopsCommonsLib('licensing-service')
+    implementation levelopsCommonsLib('lql-utils')
+    implementation levelopsCommonsLib('okhttp-utils')
+    implementation levelopsCommonsLib('plugin-results-commons')
+    implementation levelopsCommonsLib('plugin-services')
+    implementation levelopsCommonsLib('spring-web-utils')
+    implementation levelopsCommonsLib('token-services')
+    implementation levelopsCommonsLib('utils')
+    implementation levelopsCommonsLib('bullseye-converter-commons')
+    implementation levelopsCommonsLib('bullseye-converter-clients')
+    implementation levelopsCommonsLib('dev-productivity-services')
+    implementation levelopsCommonsLib('notification-service')
+    implementation levelopsCommonsLib("faceted-search")
+    implementation levelopsCommonsLib('faceted-search-query')
+    implementation levelopsCommonsLib('elasticsearch-clients')
+    implementation levelopsCommonsLib('logging-utils')
+
+    implementation levelopsIntegrationsLib('integration-pagerduty-aggregations')
+    implementation levelopsIntegrationsLib('integration-pagerduty-models')
+    implementation levelopsIntegrationsLib('integration-gerrit-models')
+    implementation levelopsIntegrationsLib('integration-zendesk-models')
+    implementation levelopsIntegrationsLib('integration-bitbucket-models')
+    implementation levelopsIntegrationsLib('integration-helix-core-models')
+    // 3rd party
+    implementation group: 'com.github.ben-manes.caffeine', name: 'caffeine'
+    implementation group: 'redis.clients', name: 'jedis', version: '3.8.0'
+
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-starter-pubsub', version: '1.2.8.RELEASE'
+    implementation group: "com.google.cloud", name: "google-cloud-pubsub", version: "1.116.3"
+    implementation group: "com.google.cloud", name: "google-cloud-storage", version: "2.6.2"
+    implementation group: 'org.springframework.integration', name: 'spring-integration-redis', version: '5.3.0.RELEASE'
+
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.11' // to fix CVE in spring cloud gcp starter logging
+    implementation group: 'ch.qos.logback', name: 'logback-core', version: '1.2.11' // to fix CVE in spring cloud gcp starter logging
+    implementation group: "org.springframework.integration", name: "spring-integration-core", version: "5.5.15"
+    implementation libraries.spring_boot_web
+    implementation group: "org.apache.commons", name: "commons-lang3", version: "3.10"
+
+    implementation group: "com.zaxxer", name: "HikariCP", version: "3.3.1"
+    implementation group: "org.postgresql", name: "postgresql", version: "42.5.1"
+
+    implementation 'com.cronutils:cron-utils:9.2.0'
+    implementation 'org.apache.commons:commons-math3:3.3'
+    implementation group: "net.javacrumbs.shedlock", name: "shedlock-spring", version: "4.38.0"
+    implementation group: "net.javacrumbs.shedlock", name: "shedlock-provider-redis-jedis", version: "4.38.0"
+
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.33' // to fix cve
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.21.12' // to fix cve
+    implementation (group: 'com.google.api-client', name: 'google-api-client') {
+        version {
+            strictly '1.35.2'
+        }
+    }
+
+    // test
+    testImplementation libraries.spring_boot_starter_test
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testImplementation libraries.embedded_postgres
+
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+    components.all {
+        allVariants {
+            withDependencies { deps ->
+                deps.each { dep ->
+                    if (dep.group == 'io.levelops.commons') {
+                        dep.version {
+                            strictly levelopsCommonsVersion
+                        }
+                        dep.because ""
+                    }
+                }
+            }
+        }
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

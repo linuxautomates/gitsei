@@ -1,0 +1,259 @@
+{
+  "build": {
+    "arn": "string",
+    "artifacts": {
+      "artifactIdentifier": "string",
+      "encryptionDisabled": true,
+      "location": "string",
+      "md5sum": "string",
+      "overrideArtifactName": false,
+      "sha256sum": "string"
+    },
+    "buildBatchArn": "string",
+    "buildComplete": true,
+    "buildNumber": 1,
+    "buildStatus": "string",
+    "cache": {
+      "location": "string",
+      "modes": [
+        "string"
+      ],
+      "type": "string"
+    },
+    "currentPhase": "string",
+    "debugSession": {
+      "sessionEnabled": true,
+      "sessionTarget": "string"
+    },
+    "encryptionKey": "string",
+    "endTime": 1606126468,
+    "environment": {
+      "certificate": "string",
+      "computeType": "string",
+      "environmentVariables": [
+        {
+          "name": "string",
+          "type": "string",
+          "value": "string"
+        }
+      ],
+      "image": "string",
+      "imagePullCredentialsType": "string",
+      "privilegedMode": true,
+      "registryCredential": {
+        "credential": "string",
+        "credentialProvider": "string"
+      },
+      "type": "string"
+    },
+    "exportedEnvironmentVariables": [
+      {
+        "name": "string",
+        "value": "string"
+      }
+    ],
+    "fileSystemLocations": [
+      {
+        "identifier": "string",
+        "location": "string",
+        "mountOptions": "string",
+        "mountPoint": "string",
+        "type": "string"
+      }
+    ],
+    "id": "string",
+    "initiator": "string",
+    "logs": {
+      "cloudWatchLogs": {
+        "groupName": "string",
+        "status": "string",
+        "streamName": "string"
+      },
+      "cloudWatchLogsArn": "string",
+      "deepLink": "string",
+      "groupName": "string",
+      "s3DeepLink": "string",
+      "s3Logs": {
+        "encryptionDisabled": false,
+        "location": "string",
+        "status": "string"
+      },
+      "s3LogsArn": "string",
+      "streamName": "string"
+    },
+    "networkInterface": {
+      "networkInterfaceId": "string",
+      "subnetId": "string"
+    },
+    "phases": [
+      {
+        "contexts": [
+          {
+            "message": "string",
+            "statusCode": "string"
+          }
+        ],
+        "durationInSeconds": 15,
+        "endTime": 1606126468,
+        "phaseStatus": "string",
+        "phaseType": "string",
+        "startTime": 1606126466
+      }
+    ],
+    "projectName": "string",
+    "queuedTimeoutInMinutes": 1,
+    "reportArns": [
+      "string"
+    ],
+    "resolvedSourceVersion": "string",
+    "secondaryArtifacts": [
+      {
+        "artifactIdentifier": "string",
+        "encryptionDisabled": false,
+        "location": "string",
+        "md5sum": "string",
+        "overrideArtifactName": true,
+        "sha256sum": "string"
+      }
+    ],
+    "secondarySources": [
+      {
+        "auth": {
+          "resource": "string",
+          "type": "string"
+        },
+        "buildspec": "string",
+        "buildStatusConfig": {
+          "context": "string",
+          "targetUrl": "string"
+        },
+        "gitCloneDepth": 1,
+        "gitSubmodulesConfig": {
+          "fetchSubmodules": true
+        },
+        "insecureSsl": true,
+        "location": "string",
+        "reportBuildStatus": true,
+        "sourceIdentifier": "string",
+        "type": "string"
+      }
+    ],
+    "secondarySourceVersions": [
+      {
+        "sourceIdentifier": "string",
+        "sourceVersion": "string"
+      }
+    ],
+    "serviceRole": "string",
+    "source": {
+      "auth": {
+        "resource": "string",
+        "type": "string"
+      },
+      "buildspec": "string",
+      "buildStatusConfig": {
+        "context": "string",
+        "targetUrl": "string"
+      },
+      "gitCloneDepth": 123,
+      "gitSubmodulesConfig": {
+        "fetchSubmodules": false
+      },
+      "insecureSsl": true,
+      "location": "string",
+      "reportBuildStatus": true,
+      "sourceIdentifier": "string",
+      "type": "string"
+    },
+    "sourceVersion": "string",
+    "startTime": 1606126466,
+    "timeoutInMinutes": 1,
+    "vpcConfig": {
+      "securityGroupIds": [
+        "string"
+      ],
+      "subnets": [
+        "string"
+      ],
+      "vpcId": "string"
+    }
+  },
+  "enrichedReports": [
+    {
+      "report": {
+        "arn": "string",
+        "codeCoverageSummary": {
+          "branchCoveragePercentage": 12,
+          "branchesCovered": 2,
+          "branchesMissed": 1,
+          "lineCoveragePercentage": 12,
+          "linesCovered": 4,
+          "linesMissed": 5
+        },
+        "created": 1606126468,
+        "executionId": "string",
+        "expired": 1606126469,
+        "exportConfig": {
+          "exportConfigType": "string",
+          "s3Destination": {
+            "bucket": "string",
+            "encryptionDisabled": true,
+            "encryptionKey": "string",
+            "packaging": "string",
+            "path": "string"
+          }
+        },
+        "name": "string",
+        "reportGroupArn": "string",
+        "status": "string",
+        "testSummary": {
+          "durationInNanoSeconds": 340000,
+          "statusCounts": {
+            "string": 1
+          },
+          "total": 3
+        },
+        "truncated": true,
+        "type": "string"
+      },
+      "reportGroup": {
+        "arn": "string",
+        "created": 1606126466,
+        "exportConfig": {
+          "exportConfigType": "string",
+          "s3Destination": {
+            "bucket": "string",
+            "encryptionDisabled": true,
+            "encryptionKey": "string",
+            "packaging": "string",
+            "path": "string"
+          }
+        },
+        "lastModified": 1606126468,
+        "name": "string",
+        "status": "string",
+        "tags": [
+          {
+            "key": "string",
+            "value": "string"
+          }
+        ],
+        "type": "string"
+      },
+      "testCases": [
+        {
+          "durationInNanoSeconds": 1000000,
+          "expired": 1606126469,
+          "message": "string",
+          "name": "string",
+          "prefix": "string",
+          "reportArn": "string",
+          "status": "string",
+          "testRawDataPath": "string"
+        }
+      ]
+    }
+  ],
+  "projectArn": "project-arn",
+  "region": "US_EAST_2"
+}

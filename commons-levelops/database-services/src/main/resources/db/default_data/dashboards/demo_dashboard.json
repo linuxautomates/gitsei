@@ -1,0 +1,963 @@
+{
+  "name": "Demo Dashboard",
+  "demo": true,
+  "metadata": {
+    "demo_data": {
+      "42194f26-e326-11ec-8fea-0242ac120002": {
+        "data": {
+          "band": "LOW",
+          "stat": 12,
+          "unit": "days",
+          "count": 14,
+          "recover_time": 12
+        },
+        "type": "scm_dora_time_to_recover",
+        "order": 4,
+        "title": "TIME TO RESTORE SERVICE"
+      },
+      "5ad82dba-e322-11ec-8fea-0242ac120002": {
+        "data": {
+          "band": "ELITE",
+          "stat": 10,
+          "unit": "Failure Rate",
+          "count": 47,
+          "realValue": 5,
+          "unitSymbol": "%",
+          "failure_rate": 10
+        },
+        "type": "scm_dora_failure_rate",
+        "order": 3,
+        "title": "FAILURE RATE"
+      },
+      "91997098-da67-11ec-9d64-0242ac120002": {
+        "data": [
+          {
+            "key": "acme/web",
+            "name": "acme/web",
+            "count": 561
+          },
+          {
+            "key": "acme/mobile-ios",
+            "name": "acme/mobile-ios",
+            "count": 361
+          },
+          {
+            "key": "acme/mobile-android",
+            "name": "acme/mobile-android",
+            "count": 188
+          },
+          {
+            "key": "acme/native-windows",
+            "name": "acme/native-windows",
+            "count": 130
+          },
+          {
+            "key": "acme/native-linux",
+            "name": "acme/native-linux",
+            "count": 90
+          },
+          {
+            "key": "acme/internal",
+            "name": "acme/internal",
+            "count": 87
+          },
+          {
+            "key": "acme/devops",
+            "name": "acme/devops",
+            "count": 83
+          },
+          {
+            "key": "acme/microservice-a",
+            "name": "acme/microservice-a",
+            "count": 77
+          },
+          {
+            "key": "acme/microservice-b",
+            "name": "acme/microservice-b",
+            "count": 18
+          }
+        ],
+        "type": "github_commits_report",
+        "order": 8,
+        "title": "COMMITS BY REPO"
+      },
+      "919973d6-da67-11ec-9d64-0242ac120002": {
+        "data": [
+          {
+            "stat": 200,
+            "color": "#7badf7",
+            "count": 6383,
+            "title": {
+              "label": "Repo Id",
+              "value": "acme/web"
+            },
+            "project": "acme/web",
+            "repo_id": "acme/web",
+            "subTitle": {
+              "label": "Module",
+              "value": "acme/web"
+            },
+            "root_folder_key": "acme/web"
+          },
+          {
+            "stat": 200,
+            "color": "#f444c8",
+            "count": 4439,
+            "title": {
+              "label": "Repo Id",
+              "value": "acme/mobile-ios"
+            },
+            "project": "acme/mobile-ios",
+            "repo_id": "acme/mobile-ios",
+            "subTitle": {
+              "label": "Module",
+              "value": "acme/mobile-ios"
+            },
+            "root_folder_key": "acme/mobile-ios"
+          },
+          {
+            "stat": 200,
+            "color": "#7badf7",
+            "count": 4012,
+            "title": {
+              "label": "Repo Id",
+              "value": "acme/mobile-android"
+            },
+            "project": "acme/mobile-android",
+            "repo_id": "acme/mobile-android",
+            "subTitle": {
+              "label": "Module",
+              "value": "acme/mobile-android"
+            },
+            "root_folder_key": "acme/mobile-android"
+          },
+          {
+            "stat": 200,
+            "color": "#b354f7",
+            "count": 2346,
+            "title": {
+              "label": "Repo Id",
+              "value": "acme/native-windows"
+            },
+            "project": "acme/native-windows",
+            "repo_id": "acme/native-windows",
+            "subTitle": {
+              "label": "Module",
+              "value": "acme/native-windows"
+            },
+            "root_folder_key": "acme/native-windows"
+          }
+        ],
+        "type": "scm_files_report",
+        "order": 10,
+        "title": "CODE CHURN BY REPOS",
+        "width": "full",
+        "total": 17180,
+        "dataKey": "count"
+      },
+      "91997570-da67-11ec-9d64-0242ac120002": {
+        "data": {
+          "apiData": [
+            {
+              "key": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+              "count": 13,
+              "stacks": [
+                {
+                  "key": "ae0a349a-69b9-419e-a4cd-3236de92fe0d",
+                  "count": 13,
+                  "additional_key": "Frodo"
+                }
+              ],
+              "collab_state": "assigned-peer-approved",
+              "additional_key": "Aragorn"
+            },
+            {
+              "key": "ae0a349a-69b9-419e-a4cd-3236de92fe0d",
+              "count": 10,
+              "stacks": [
+                {
+                  "key": "844f83b8-61c4-4d8a-82fb-9c737ce7e402",
+                  "count": 10,
+                  "additional_key": "Samwise"
+                }
+              ],
+              "collab_state": "assigned-peer-approved",
+              "additional_key": "Frodo"
+            },
+            {
+              "key": "7cec2fb4-0f44-4388-9d35-87c2bc1e4086",
+              "count": 9,
+              "stacks": [
+                {
+                  "key": "c75a0da3-1365-446d-a8a3-915a003f46cf",
+                  "count": 2,
+                  "additional_key": "Gollum"
+                },
+                {
+                  "key": "34af1665-f006-4730-871c-d6c96c564ba9",
+                  "count": 7,
+                  "additional_key": "Elrond"
+                }
+              ],
+              "collab_state": "unassigned-peer-approved",
+              "additional_key": "Boromir"
+            },
+            {
+              "key": "844f83b8-61c4-4d8a-82fb-9c737ce7e402",
+              "count": 5,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 5,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Samwise"
+            },
+            {
+              "key": "7cec2fb4-0f44-4388-9d35-87c2bc1e4086",
+              "count": 3,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 3,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Boromir"
+            },
+            {
+              "key": "34af1665-f006-4730-871c-d6c96c564ba9",
+              "count": 4,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 4,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Elrond"
+            },
+            {
+              "key": "56aa16f8-4e72-4c4e-ba71-dc99e8f4da57",
+              "count": 3,
+              "stacks": [
+                {
+                  "key": "367251a0-9691-4383-a0cb-716f437f8d18",
+                  "count": 3,
+                  "additional_key": "Merry"
+                }
+              ],
+              "collab_state": "unassigned-peer-approved",
+              "additional_key": "Gimli"
+            },
+            {
+              "key": "1351c535-b4da-47a3-99bc-59dd6c8b8fcd",
+              "count": 2,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 2,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Arwen"
+            },
+            {
+              "key": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+              "count": 2,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 2,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Gandalf"
+            },
+            {
+              "key": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+              "count": 2,
+              "stacks": [
+                {
+                  "key": "f1617a51-04ba-4010-9c11-028f5e15b943",
+                  "count": 2,
+                  "additional_key": "Saruman"
+                }
+              ],
+              "collab_state": "assigned-peer-approved",
+              "additional_key": "Gandalf"
+            },
+            {
+              "key": "937a0d3d-fec0-432c-93e1-6cab26ce8a23",
+              "count": 2,
+              "stacks": [
+                {
+                  "key": "937a0d3d-fec0-432c-93e1-6cab26ce8a23",
+                  "count": 2,
+                  "additional_key": "Sauron"
+                }
+              ],
+              "collab_state": "self-approved",
+              "additional_key": "Sauron"
+            },
+            {
+              "key": "9ea043c2-722c-4611-8e35-f6871d561954",
+              "count": 2,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 2,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Legolas"
+            },
+            {
+              "key": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+              "count": 2,
+              "stacks": [
+                {
+                  "key": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+                  "count": 2,
+                  "additional_key": "Gandalf"
+                }
+              ],
+              "collab_state": "unassigned-peer-approved",
+              "additional_key": "Aragorn"
+            },
+            {
+              "key": "d1bd715e-8e61-4ab4-9aec-d69ad322de19",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 1,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Celeborn"
+            },
+            {
+              "key": "34af1665-f006-4730-871c-d6c96c564ba9",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "7cec2fb4-0f44-4388-9d35-87c2bc1e4086",
+                  "count": 1,
+                  "additional_key": "Boromir"
+                }
+              ],
+              "collab_state": "unassigned-peer-approved",
+              "additional_key": "Elrond"
+            },
+            {
+              "key": "f1617a51-04ba-4010-9c11-028f5e15b943",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "f1617a51-04ba-4010-9c11-028f5e15b943",
+                  "count": 1,
+                  "additional_key": "Saruman"
+                }
+              ],
+              "collab_state": "self-approved",
+              "additional_key": "Saruman"
+            },
+            {
+              "key": "27e77244-f8bb-4557-bc2d-04bd7fa857d5",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 1,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "dependabot[bot]"
+            },
+            {
+              "key": "c75a0da3-1365-446d-a8a3-915a003f46cf",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "c75a0da3-1365-446d-a8a3-915a003f46cf",
+                  "count": 1,
+                  "additional_key": "Gollum"
+                }
+              ],
+              "collab_state": "self-approved-with-review",
+              "additional_key": "Gollum"
+            },
+            {
+              "key": "76994284-7d7a-4c29-860f-194552bb11c1",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 1,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Galadriel"
+            },
+            {
+              "key": "367251a0-9691-4383-a0cb-716f437f8d18",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 1,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Merry"
+            },
+            {
+              "key": "caa5d34c-e29f-4b3d-a2c8-00190c0df2dd",
+              "count": 1,
+              "stacks": [
+                {
+                  "key": "NONE",
+                  "count": 1,
+                  "additional_key": "NONE"
+                }
+              ],
+              "collab_state": "unapproved",
+              "additional_key": "Isildur"
+            }
+          ],
+          "reviewersList": [
+            {
+              "key": "ae0a349a-69b9-419e-a4cd-3236de92fe0d",
+              "name": "Frodo",
+              "total_prs": 13,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 100,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+              "name": "Gandalf",
+              "total_prs": 2,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 100,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "844f83b8-61c4-4d8a-82fb-9c737ce7e402",
+              "name": "Samwise",
+              "total_prs": 10,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 100,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "c75a0da3-1365-446d-a8a3-915a003f46cf",
+              "name": "Gollum",
+              "total_prs": 3,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 66.66666,
+              "self_approved_with_review": 33.33333
+            },
+            {
+              "key": "34af1665-f006-4730-871c-d6c96c564ba9",
+              "name": "Elrond",
+              "total_prs": 7,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 100,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "367251a0-9691-4383-a0cb-716f437f8d18",
+              "name": "Merry",
+              "total_prs": 3,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 100,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "f1617a51-04ba-4010-9c11-028f5e15b943",
+              "name": "Saruman",
+              "total_prs": 3,
+              "unapproved": 0,
+              "self_approved": 33.3333,
+              "assigned_peer_approved": 66.6666,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "7cec2fb4-0f44-4388-9d35-87c2bc1e4086",
+              "name": "Boromir",
+              "total_prs": 1,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 100,
+              "self_approved_with_review": 0
+            }
+          ],
+          "submittersList": [
+            {
+              "key": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+              "name": "Aragorn",
+              "total_prs": 15,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 86.66666666666667,
+              "unassigned_peer_approved": 13.333333333333334,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "7cec2fb4-0f44-4388-9d35-87c2bc1e4086",
+              "name": "Boromir",
+              "total_prs": 12,
+              "unapproved": 25,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 75,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "ae0a349a-69b9-419e-a4cd-3236de92fe0d",
+              "name": "Frodo",
+              "total_prs": 10,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 100,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "844f83b8-61c4-4d8a-82fb-9c737ce7e402",
+              "name": "Samwise",
+              "total_prs": 5,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "34af1665-f006-4730-871c-d6c96c564ba9",
+              "name": "Elrond",
+              "total_prs": 5,
+              "unapproved": 80,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 20,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "529bd44f-15e2-448d-8532-2c5ed205b27e",
+              "name": "Eowyn",
+              "total_prs": 4,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+              "name": "Gandalf",
+              "total_prs": 4,
+              "unapproved": 50,
+              "self_approved": 0,
+              "assigned_peer_approved": 50,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "56aa16f8-4e72-4c4e-ba71-dc99e8f4da57",
+              "name": "Gimli",
+              "total_prs": 3,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 100,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "1351c535-b4da-47a3-99bc-59dd6c8b8fcd",
+              "name": "Arwen",
+              "total_prs": 2,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "937a0d3d-fec0-432c-93e1-6cab26ce8a23",
+              "name": "Sauron",
+              "total_prs": 2,
+              "unapproved": 0,
+              "self_approved": 100,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "9ea043c2-722c-4611-8e35-f6871d561954",
+              "name": "Legolas",
+              "total_prs": 2,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "d1bd715e-8e61-4ab4-9aec-d69ad322de19",
+              "name": "Celeborn",
+              "total_prs": 1,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "f1617a51-04ba-4010-9c11-028f5e15b943",
+              "name": "Saruman",
+              "total_prs": 1,
+              "unapproved": 0,
+              "self_approved": 100,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "27e77244-f8bb-4557-bc2d-04bd7fa857d5",
+              "name": "dependabot[bot]",
+              "total_prs": 1,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "c75a0da3-1365-446d-a8a3-915a003f46cf",
+              "name": "Gollum",
+              "total_prs": 1,
+              "unapproved": 0,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 100
+            },
+            {
+              "key": "76994284-7d7a-4c29-860f-194552bb11c1",
+              "name": "Galadriel",
+              "total_prs": 1,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "367251a0-9691-4383-a0cb-716f437f8d18",
+              "name": "Merry",
+              "total_prs": 1,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            },
+            {
+              "key": "caa5d34c-e29f-4b3d-a2c8-00190c0df2dd",
+              "name": "Isildur",
+              "total_prs": 1,
+              "unapproved": 100,
+              "self_approved": 0,
+              "assigned_peer_approved": 0,
+              "unassigned_peer_approved": 0,
+              "self_approved_with_review": 0
+            }
+          ],
+          "totalBreakdowndata_old_format": {
+            "unassigned-peer-approved": 15,
+            "unapproved": 27,
+            "assigned-peer-approved": 25,
+            "self-approved": 3,
+            "self-approved-with-review": 1
+          },
+          "totalBreakdowndata": [
+            {
+              "value": 25,
+              "order": 1,
+              "key": "assigned-peer-approved"
+            },
+            {
+              "value": 27,
+              "order": 2,
+              "key": "unapproved"
+            },
+            {
+              "value": 15,
+              "order": 3,
+              "key": "unassigned-peer-approved"
+            },
+            {
+              "value": 3,
+              "order": 4,
+              "key": "self-approved"
+            },
+            {
+              "value": 1,
+              "order": 5,
+              "key": "self-approved-with-review"
+            }
+          ]
+        },
+        "type": "review_collaboration_report",
+        "order": 6,
+        "title": "CODE REVIEW COLLABORATION"
+      },
+      "91997674-da67-11ec-9d64-0242ac120002": {
+        "data": [
+          {
+            "id": "f2c2700e-1b03-4c1c-b96e-1429948956e2",
+            "name": "TO DO ",
+            "rating": "GOOD",
+            "duration": 2.092998658705435,
+            "event_name": "Ticket Status Changed from TODO,TO DO",
+            "lower_limit": 4,
+            "upper_limit": 11
+          },
+          {
+            "id": "f0640bf8-afa8-41b2-a475-db44080313e4",
+            "name": "Lead time to First Commit",
+            "rating": "GOOD",
+            "duration": 4,
+            "event_name": "First Commit",
+            "lower_limit": 10,
+            "upper_limit": 30
+          },
+          {
+            "id": "d75ecba6-8b27-4e93-987c-75114b61dc66",
+            "name": "PR Creation Time",
+            "rating": "SLOW",
+            "duration": 3,
+            "event_name": "Pull Request Created",
+            "lower_limit": 10,
+            "upper_limit": 30
+          },
+          {
+            "id": "31e18484-e71a-43c5-b6fa-a9d5a9288e46",
+            "name": "Time to First Comment",
+            "rating": "SLOW",
+            "duration": 2,
+            "event_name": "Pull Request Review Started",
+            "lower_limit": 10,
+            "upper_limit": 30
+          },
+          {
+            "id": "372d3ebe-e4f3-4754-b0e0-3fa708b25e62",
+            "name": "Approval Time",
+            "rating": "ACCEPTABLE",
+            "duration": 1,
+            "event_name": "Pull Request Approved",
+            "lower_limit": 10,
+            "upper_limit": 30
+          },
+          {
+            "id": "2a4a2326-54d9-43eb-ad25-5b1f53220856",
+            "name": "Merge Time",
+            "rating": "GOOD",
+            "duration": 0.083333,
+            "event_name": "Pull Request Merged",
+            "lower_limit": 10,
+            "upper_limit": 30
+          },
+          {
+            "id": "54cf3f96-efbd-44bc-8d77-531067b44621",
+            "name": "ready for QA",
+            "rating": "SLOW",
+            "duration": 2,
+            "event_name": "Ticket Status Changed from READY FOR QA",
+            "lower_limit": 4,
+            "upper_limit": 11
+          },
+          {
+            "id": "323e07ea-015b-4b09-9757-df03eaf5ef42",
+            "name": "Ready for Prod",
+            "rating": "ACCEPTABLE",
+            "duration": 3,
+            "event_name": "Ticket Status Changed from READY FOR PROD",
+            "lower_limit": 4,
+            "upper_limit": 11
+          },
+          {
+            "id": "753aa9e0-4e1b-4b00-9be8-f6cd31f241c3",
+            "name": "Pushed to Prod",
+            "rating": "GOOD",
+            "duration": 1.0606199160609207,
+            "event_name": "Ticket Status Changed from DONE,WON'T DO,WONT DO,WON'T FIX",
+            "lower_limit": 4,
+            "upper_limit": 11
+          }
+        ],
+        "type": "lead_time_by_stage_report",
+        "order": 5,
+        "title": "LEAD TIME BY STAGES"
+      },
+      "91997a98-da67-11ec-9d64-0242ac120002": {
+        "data": [
+          {
+            "key": "acme/web",
+            "name": "acme/web",
+            "avg_coding_day_week": 5.508
+          },
+          {
+            "key": "acme/mobile-ios",
+            "name": "acme/mobile-ios",
+            "avg_coding_day_week": 4.208
+          },
+          {
+            "key": "acme/mobile-android",
+            "name": "acme/mobile-android",
+            "avg_coding_day_week": 3.008
+          },
+          {
+            "key": "acme/native-windows",
+            "name": "acme/native-windows",
+            "avg_coding_day_week": 1.308
+          },
+          {
+            "key": "acme/native-linux",
+            "name": "acme/native-linux",
+            "avg_coding_day_week": 0.716
+          },
+          {
+            "key": "acme/native-macos",
+            "name": "acme/native-macos",
+            "avg_coding_day_week": 0.416
+          },
+          {
+            "key": "acme/devops",
+            "name": "acme/devops",
+            "avg_coding_day_week": 0.316
+          },
+          {
+            "key": "acme/microservice-a",
+            "name": "acme/microservice-a",
+            "avg_coding_day_week": 0.224
+          },
+          {
+            "key": "acme/microservice-b",
+            "name": "acme/microservice-b",
+            "avg_coding_day_week": 0.124
+          },
+          {
+            "key": "acme/libraries",
+            "name": "acme/libraries",
+            "avg_coding_day_week": 0.048
+          }
+        ],
+        "type": "github_coding_days_report",
+        "order": 7,
+        "title": "CODING DAYS",
+        "width": "full"
+      },
+      "91997bec-da67-11ec-9d64-0242ac120002": {
+        "data": [
+          {
+            "key": "acme/web",
+            "name": "acme/web",
+            "num_of_prs": 57
+          },
+          {
+            "key": "acme/mobile-ios",
+            "name": "acme/mobile-ios",
+            "num_of_prs": 50
+          },
+          {
+            "key": "acme/mobile-android",
+            "name": "acme/mobile-android",
+            "num_of_prs": 42
+          },
+          {
+            "key": "acme/native-windows",
+            "name": "acme/native-windows",
+            "num_of_prs": 20
+          },
+          {
+            "key": "acme/native-macos",
+            "name": "acme/native-macos",
+            "num_of_prs": 13
+          },
+          {
+            "key": "acme/native-linux",
+            "name": "acme/native-linux",
+            "num_of_prs": 12
+          },
+          {
+            "key": "acme/internal",
+            "name": "acme/internal",
+            "num_of_prs": 10
+          },
+          {
+            "key": "acme/devops",
+            "name": "acme/devops",
+            "num_of_prs": 5
+          }
+        ],
+        "type": "github_prs_report",
+        "order": 9,
+        "title": "PRS BY REPO"
+      },
+      "9c67b2d2-e322-11ec-8fea-0242ac120002": {
+        "data": {
+          "band": "HIGH",
+          "stat": 0.33,
+          "unit": "Per Day",
+          "count": 10,
+          "deployment_frequency": 0
+        },
+        "type": "deployment_frequency",
+        "order": 2,
+        "title": "DEPLOYMENT FREQUENCY"
+      },
+      "edf9edba-e325-11ec-8fea-0242ac120002": {
+        "data": {
+          "band": "MEDIUM",
+          "stat": 18,
+          "unit": "days",
+          "count": 33,
+          "lead_time": 11095
+        },
+        "type": "lead_time_for_change",
+        "order": 1,
+        "title": "LEAD TIME FOR CHANGE"
+      }
+    },
+    "show_org_unit_selection": false
+  }
+}

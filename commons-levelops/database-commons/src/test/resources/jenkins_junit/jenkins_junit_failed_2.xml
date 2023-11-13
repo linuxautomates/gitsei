@@ -1,0 +1,64 @@
+<testsuite name="Mocha Tests" tests="1" failures="1" errors="1" skipped="0" timestamp="Wed Jun 10 2020 12:57:26 GMT+0000 (Coordinated Universal Time)" time="3.787">
+    <testcase classname="/workspace/webapp/test/unit-tests/lib" name="/workspace/webapp/test/unit-tests/lib/batch-executor-stages/create-ingest-job-test.js" time="0">
+        <failure>
+            <![CDATA[Error: Cannot find module '../../../client/src/tests/fixtures/workspace/create-dataset/connections-credential-types.json'
+Require stack:
+- /workspace/webapp/test/test-utils/with-data-service-mock.js
+- /workspace/webapp/test/test-utils/index.js
+- /workspace/webapp/test/unit-tests/lib/batch-executor-stages/create-ingest-job-test.js
+- /workspace/webapp/node_modules/mocha/lib/mocha.js
+- /workspace/webapp/node_modules/mocha/index.js
+- /workspace/webapp/test/unit-tests/parallel-test-runner-worker.js]]>
+            <![CDATA[Error: Cannot find module '../../../client/src/tests/fixtures/workspace/create-dataset/connections-credential-types.json'
+Require stack:
+- /workspace/webapp/test/test-utils/with-data-service-mock.js
+- /workspace/webapp/test/test-utils/index.js
+- /workspace/webapp/test/unit-tests/lib/batch-executor-stages/create-ingest-job-test.js
+- /workspace/webapp/node_modules/mocha/lib/mocha.js
+- /workspace/webapp/node_modules/mocha/index.js
+- /workspace/webapp/test/unit-tests/parallel-test-runner-worker.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:966:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:842:27)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/workspace/webapp/test/test-utils/with-data-service-mock.js:13:32)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/workspace/webapp/test/test-utils/index.js:19:20)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/workspace/webapp/test/unit-tests/lib/batch-executor-stages/create-ingest-job-test.js:15:19)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Function.Module._load (/workspace/node_modules/override-require/src/index.js:1:141)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at /workspace/webapp/node_modules/mocha/lib/mocha.js:250:27
+    at Array.forEach (<anonymous>)
+    at Mocha.loadFiles (/workspace/webapp/node_modules/mocha/lib/mocha.js:247:14)
+    at Mocha.run (/workspace/webapp/node_modules/mocha/lib/mocha.js:576:10)
+    at process.<anonymous> (/workspace/webapp/test/unit-tests/parallel-test-runner-worker.js:49:11)
+    at process.emit (events.js:315:20)
+    at process.EventEmitter.emit (domain.js:482:12)
+    at emit (internal/child_process.js:876:12)
+    at processTicksAndRejections (internal/process/task_queues.js:85:21)]]>
+        </failure>
+    </testcase>
+</testsuite>

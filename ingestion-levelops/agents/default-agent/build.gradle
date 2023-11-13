@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.6.6")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation project(':ingestion-agent')
+    implementation project(':ingestion-engine')
+    implementation project(':agents:agents-common')
+    implementation project(':integrations:integration-gcs')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('ingestion-clients')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation libraries.okhttp
+    implementation libraries.spring_boot_web
+    implementation libraries.gson
+    implementation libraries.servlet
+    implementation libraries.kotlin_stdlib
+    implementation libraries.spring_actuator
+    implementation libraries.spring_redis
+    implementation group: 'redis.clients', name: 'jedis', version: '3.8.0'
+    // OpenAPI
+    implementation openapiLib('ui')
+
+    testImplementation libraries.junit
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

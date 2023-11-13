@@ -1,0 +1,45 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":database-commons")
+    compile project(":database-services")
+    compile project(":elasticsearch-clients")
+    compile project(":faceted-search")
+    compile project(":faceted-search-models")
+    compile project(":faceted-search-utils")
+
+    compile libraries.jackson_core
+    compile libraries.log4j
+    compile libraries.es
+
+    testCompile group: "io.zonky.test", name: "embedded-postgres", version: "1.2.6"
+    testCompile enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:11.5.0')
+    testCompile libraries.junit
+    testCompile libraries.spring_boot_starter_test
+    testCompile libraries.mockito
+    testCompile libraries.assertj
+    testImplementation "org.testcontainers:elasticsearch:1.16.3"
+
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

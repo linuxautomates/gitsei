@@ -1,0 +1,706 @@
+{
+  "pagelen": 10,
+  "values": [
+    {
+      "description": "* PR Commit 7\r\n* PR Commit 8\r\n* PR Commit 9\r\n\r\n‌",
+      "title": "Pr branch 5",
+      "close_source_branch": true,
+      "type": "pullrequest",
+      "id": 5,
+      "destination": {
+        "commit": {
+          "hash": "e1355419fe5c",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/e1355419fe5c"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/e1355419fe5c"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "master"
+        }
+      },
+      "created_on": "2020-02-12T21:08:42.106829+00:00",
+      "summary": {
+        "raw": "* PR Commit 7\r\n* PR Commit 8\r\n* PR Commit 9\r\n\r\n‌",
+        "markup": "markdown",
+        "html": "<ul>\n<li>PR Commit 7</li>\n<li>PR Commit 8</li>\n<li>PR Commit 9</li>\n</ul>\n<p>‌</p>",
+        "type": "rendered"
+      },
+      "source": {
+        "commit": {
+          "hash": "f2d70bbcf95c",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/f2d70bbcf95c"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/f2d70bbcf95c"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "pr-branch-5"
+        }
+      },
+      "comment_count": 0,
+      "state": "OPEN",
+      "task_count": 0,
+      "participants": [],
+      "reason": "",
+      "updated_on": "2020-02-12T21:08:42.149939+00:00",
+      "author": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      },
+      "merge_commit": null,
+      "closed_by": null
+    },
+    {
+      "description": "* PR Commit 7\r\n* PR Commit 8\r\n\r\n‌",
+      "title": "Pr branch 4",
+      "close_source_branch": true,
+      "type": "pullrequest",
+      "id": 4,
+      "destination": {
+        "commit": {
+          "hash": "e1355419fe5c",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/e1355419fe5c"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/e1355419fe5c"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "master"
+        }
+      },
+      "created_on": "2020-02-12T00:59:45.647333+00:00",
+      "summary": {
+        "raw": "* PR Commit 7\r\n* PR Commit 8\r\n\r\n‌",
+        "markup": "markdown",
+        "html": "<ul>\n<li>PR Commit 7</li>\n<li>PR Commit 8</li>\n</ul>\n<p>‌</p>",
+        "type": "rendered"
+      },
+      "source": {
+        "commit": {
+          "hash": "7af92a074a79",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/7af92a074a79"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/7af92a074a79"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "pr-branch-4"
+        }
+      },
+      "comment_count": 0,
+      "state": "OPEN",
+      "task_count": 0,
+      "participants": [],
+      "reason": "",
+      "updated_on": "2020-02-12T00:59:45.685012+00:00",
+      "author": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      },
+      "merge_commit": null,
+      "closed_by": null
+    },
+    {
+      "description": "* PR Commit 5\r\n* PR Commit 6\r\n\r\n‌",
+      "title": "Pr branch 3",
+      "close_source_branch": true,
+      "type": "pullrequest",
+      "id": 3,
+      "destination": {
+        "commit": {
+          "hash": "4e0a67779616",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/4e0a67779616"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/4e0a67779616"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "master"
+        }
+      },
+      "created_on": "2020-02-12T00:47:39.547404+00:00",
+      "summary": {
+        "raw": "* PR Commit 5\r\n* PR Commit 6\r\n\r\n‌",
+        "markup": "markdown",
+        "html": "<ul>\n<li>PR Commit 5</li>\n<li>PR Commit 6</li>\n</ul>\n<p>‌</p>",
+        "type": "rendered"
+      },
+      "source": {
+        "commit": {
+          "hash": "e1355419fe5c",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/e1355419fe5c"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/e1355419fe5c"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "pr-branch-3"
+        }
+      },
+      "comment_count": 0,
+      "state": "MERGED",
+      "task_count": 0,
+      "participants": [
+        {
+          "role": "PARTICIPANT",
+          "participated_on": "2020-02-12T00:47:47.094514+00:00",
+          "type": "participant",
+          "approved": true,
+          "user": {
+            "display_name": "App Account App Admin",
+            "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+              },
+              "html": {
+                "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+              },
+              "avatar": {
+                "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+              }
+            },
+            "nickname": "App Account App Admin",
+            "type": "user",
+            "account_id": "5e41c580c8ec310c955a97b2"
+          }
+        }
+      ],
+      "reason": "",
+      "updated_on": "2020-02-12T00:48:03.163593+00:00",
+      "author": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      },
+      "merge_commit": {
+        "hash": "e1355419fe5c",
+        "type": "commit",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/e1355419fe5c"
+          },
+          "html": {
+            "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/e1355419fe5c"
+          }
+        }
+      },
+      "closed_by": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      }
+    },
+    {
+      "description": "* PR Commit 3\r\n* PR Commit 4\r\n\r\n‌",
+      "title": "Pr branch 2",
+      "close_source_branch": true,
+      "type": "pullrequest",
+      "id": 2,
+      "destination": {
+        "commit": {
+          "hash": "46418c4dead5",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/46418c4dead5"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/46418c4dead5"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "master"
+        }
+      },
+      "created_on": "2020-02-12T00:42:18.045979+00:00",
+      "summary": {
+        "raw": "* PR Commit 3\r\n* PR Commit 4\r\n\r\n‌",
+        "markup": "markdown",
+        "html": "<ul>\n<li>PR Commit 3</li>\n<li>PR Commit 4</li>\n</ul>\n<p>‌</p>",
+        "type": "rendered"
+      },
+      "source": {
+        "commit": {
+          "hash": "09cb3701121e",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/09cb3701121e"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/09cb3701121e"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "pr-branch-2"
+        }
+      },
+      "comment_count": 0,
+      "state": "MERGED",
+      "task_count": 0,
+      "participants": [
+        {
+          "role": "PARTICIPANT",
+          "participated_on": "2020-02-12T00:42:26.991122+00:00",
+          "type": "participant",
+          "approved": true,
+          "user": {
+            "display_name": "App Account App Admin",
+            "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+              },
+              "html": {
+                "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+              },
+              "avatar": {
+                "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+              }
+            },
+            "nickname": "App Account App Admin",
+            "type": "user",
+            "account_id": "5e41c580c8ec310c955a97b2"
+          }
+        }
+      ],
+      "reason": "",
+      "updated_on": "2020-02-12T00:43:00.028771+00:00",
+      "author": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      },
+      "merge_commit": {
+        "hash": "4e0a67779616",
+        "type": "commit",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/4e0a67779616"
+          },
+          "html": {
+            "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/4e0a67779616"
+          }
+        }
+      },
+      "closed_by": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      }
+    },
+    {
+      "description": "* PR Commit 1\r\n* PR Commit 2\r\n\r\n‌",
+      "title": "Pr branch 1",
+      "close_source_branch": true,
+      "type": "pullrequest",
+      "id": 1,
+      "destination": {
+        "commit": {
+          "hash": "557fbcb8a1fc",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/557fbcb8a1fc"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/557fbcb8a1fc"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "master"
+        }
+      },
+      "created_on": "2020-02-12T00:37:38.433950+00:00",
+      "summary": {
+        "raw": "* PR Commit 1\r\n* PR Commit 2\r\n\r\n‌",
+        "markup": "markdown",
+        "html": "<ul>\n<li>PR Commit 1</li>\n<li>PR Commit 2</li>\n</ul>\n<p>‌</p>",
+        "type": "rendered"
+      },
+      "source": {
+        "commit": {
+          "hash": "4a16e7782e49",
+          "type": "commit",
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/4a16e7782e49"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/4a16e7782e49"
+            }
+          }
+        },
+        "repository": {
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1"
+            },
+            "html": {
+              "href": "https://bitbucket.org/levelopstest/team-levelops-test-1"
+            },
+            "avatar": {
+              "href": "https://bytebucket.org/ravatar/%7B65d194fb-d886-440a-ace0-f51916c69de2%7D?ts=default"
+            }
+          },
+          "type": "repository",
+          "name": "team-levelops-test-1",
+          "full_name": "levelopstest/team-levelops-test-1",
+          "uuid": "{65d194fb-d886-440a-ace0-f51916c69de2}"
+        },
+        "branch": {
+          "name": "pr-branch-1"
+        }
+      },
+      "comment_count": 0,
+      "state": "MERGED",
+      "task_count": 0,
+      "participants": [
+        {
+          "role": "PARTICIPANT",
+          "participated_on": "2020-02-12T00:38:01.958881+00:00",
+          "type": "participant",
+          "approved": true,
+          "user": {
+            "display_name": "App Account App Admin",
+            "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+              },
+              "html": {
+                "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+              },
+              "avatar": {
+                "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+              }
+            },
+            "nickname": "App Account App Admin",
+            "type": "user",
+            "account_id": "5e41c580c8ec310c955a97b2"
+          }
+        }
+      ],
+      "reason": "",
+      "updated_on": "2020-02-12T00:38:43.411199+00:00",
+      "author": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      },
+      "merge_commit": {
+        "hash": "46418c4dead5",
+        "type": "commit",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/repositories/levelopstest/team-levelops-test-1/commit/46418c4dead5"
+          },
+          "html": {
+            "href": "https://bitbucket.org/levelopstest/team-levelops-test-1/commits/46418c4dead5"
+          }
+        }
+      },
+      "closed_by": {
+        "display_name": "App Account App Admin",
+        "uuid": "{4e696f9a-19a3-4a33-b801-f28101d2542b}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/users/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7B4e696f9a-19a3-4a33-b801-f28101d2542b%7D/"
+          },
+          "avatar": {
+            "href": "https://secure.gravatar.com/avatar/12dba5cb6094c64c640f8301eb1aa29c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAA-4.png"
+          }
+        },
+        "nickname": "App Account App Admin",
+        "type": "user",
+        "account_id": "5e41c580c8ec310c955a97b2"
+      }
+    }
+  ],
+  "page": 1,
+  "size": 5
+}

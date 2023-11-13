@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/internal/v1/tenants/pepsi"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "id": "coke",
+            "metadata": "..."
+        }
+    }
+}

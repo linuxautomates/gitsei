@@ -1,0 +1,1415 @@
+openapi: "3.0.0"
+info:
+  description: "LevelOps Public API"
+  version: "1.0.0"
+  title: "LevelOps API"
+  termsOfService: "http://levelops.io/terms/"
+  contact:
+    email: "apiteam@levelops.io"
+  # license:
+  #   name: "Apache 2.0"
+  #   url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+servers:
+  - url: "{proto}://{hostname}:{port}/v1"
+    variables:
+      proto:
+        default: https
+        enum:
+          - http
+          - https
+      hostname:
+        default: api.levelops.io
+      port:
+        default: "443"
+  - url: "api.levelops.io/v1"
+  - url: "api/v1"
+  - url: "localhost:8080/v1"
+externalDocs:
+  description: "Find out more about LevelOps"
+  url: "https://levelops.io"
+tags:
+- name: "SDLC"
+  description: "Everything to managed your sdlc"
+  externalDocs:
+    description: "Find out more"
+    url: "http://levelops.io"
+paths:
+  /fileupload/{component}/{id}:
+    post:
+      summary: Send a file to LevelOps.
+      description: Saves a file in LevelOps infrastructure.
+      tags:
+      - "generic"
+      parameters:
+        - name: component
+          in: path
+          description: The component 
+          required: true
+          schema:
+            type: string
+        - name: id
+          in: path
+          description: The component id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary            
+      responses:
+        201:
+          description: File successfully uploaded. The id to retrieve the file is returned.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /fileupload/{component}/{id}/{file_id}:
+    get:
+      tags:
+      - "generic"
+      summary: Download a file
+      description: Download a file
+      parameters:
+        - name: component
+          in: path
+          description: The component 
+          required: true
+          schema:
+            type: string
+        - name: id
+          in: path
+          description: The component id
+          required: true
+          schema:
+            type: string
+        - name: file_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: File found.
+          content:
+            multipart/form-data:
+              schema:
+                $ref: "#/components/schemas/File"
+  /fileupload/{component}/{id}/{sub_component}/{sub_id}:
+    post:
+      summary: Send a file to LevelOps.
+      description: Saves a file in LevelOps infrastructure.
+      tags:
+      - "generic"
+      parameters:
+        - name: component
+          in: path
+          description: The component 
+          required: true
+          schema:
+            type: string
+        - name: id
+          in: path
+          description: The component id
+          required: true
+          schema:
+            type: string
+        - name: sub_component
+          in: path
+          description: The component 
+          required: true
+          schema:
+            type: string
+        - name: sub_id
+          in: path
+          description: The component id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: "#/components/schemas/File"          
+      responses:
+        201:
+          description: File successfully uploaded. The id to retrieve the file is returned.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /fileupload/{component}/{id}/{sub_component}/{sub_id}/{file_id}:
+    get:
+      tags:
+      - "generic"
+      summary: Download a file
+      description: Download a file
+      parameters:
+        - name: component
+          in: path
+          description: The component 
+          required: true
+          schema:
+            type: string
+        - name: id
+          in: path
+          description: The component id
+          required: true
+          schema:
+            type: string
+        - name: sub_component
+          in: path
+          description: The component 
+          required: true
+          schema:
+            type: string
+        - name: sub_id
+          in: path
+          description: The component id
+          required: true
+          schema:
+            type: string
+        - name: file_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: File found.
+          content:
+            multipart/form-data:
+              schema:
+                $ref: "#/components/schemas/File"
+  /bestpractices:
+    post:
+      tags:
+      - bestpractices
+      description: Creates a best practice
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BestPractice"
+      responses:
+        201:
+          description: Best practice created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /bestpractices/{id}:
+    get:
+      tags:
+      - bestpractices
+      description: Retrieves a best practice item.
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        200:
+          description: Bet practice found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BestPractice"
+    put:
+      tags:
+      - bestpractices
+      description: Replaces a best practice item.
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BestPractice"
+      responses:
+        201:
+          description: Bet practice found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    patch:
+      tags:
+      - bestpractices
+      description: Updates a best practice item.
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BestPractice"
+      responses:
+        201:
+          description: Bet practice found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    delete:
+      tags:
+      - bestpractices
+      description: Deletes a best practice.
+      parameters:
+        - name: id
+          in: path
+          description: The id of the best practice to delete.
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Best practice deleted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BestPractice"
+  /bestpractices/list:
+    post:
+      tags:
+      - bestpractices
+      description: Search for bestpractices
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Search"
+      responses:
+        200:
+          description: Best practices found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BestPracticesPage"
+  /tags/{id}:
+    get:
+      tags:
+      - "tags"
+      summary: Gets a tag by id.
+      description: Gets a tag by id.
+      responses:
+        200:
+          description: Tag found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tag"
+  /tags/list:
+    post:
+      tags:
+      - "tags"
+      summary: "Add a new pet to the store"
+      description: ""
+      operationId: "addPet"
+      requestBody:
+        content:
+         application/json:
+          schema:
+            $ref: "#/components/schemas/Tag"
+      responses:
+        405:
+          content:
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Tag"
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Tag"
+          description: "Invalid input"
+      security:
+      - petstore_auth:
+        - "write:pets"
+        - "read:pets"
+  /questionnaires:
+    post:
+      tags:
+      - "questionnaire"
+      summary: Creates a questionnaire
+      description: Creates a questionnaire identified by the id provided in the path
+      operationId: createQuestionnaire
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuestionnaireTemplate"
+      responses:
+        201:
+          description: QuestionnaireTemplate created
+          content: 
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The id of the newly created questionnaire
+  /questionnaires/{id}:
+    get:
+      tags:
+      - "questionnaire"
+      summary: Gets a questionnaire
+      description: Retrieves a questionnaire identified by the id provided in the path
+      operationId: getQuestionnaire
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: QuestionnaireTemplate found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuestionnaireTemplate"
+    put:
+      tags:
+      - "questionnaire"
+      summary: Replaces a questionnaire (replaces)
+      description: replaces an existing questionnaire identified by the id provided in the path with the questionnaire object in the request
+      operationId: replaceQuestionnaire
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuestionnaireTemplate"
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: QuestionnaireTemplate updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The id of the updated questionnaire.
+    patch:
+      tags:
+      - "questionnaire"
+      summary: Updates a questionnaire
+      description: Updates the questionnaire identified by the id provided in the path by updating the questionnaire fields with the ones provided in the request included
+      operationId: updateQuestionnaire
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuestionnaireTemplate"
+      responses:
+        200:
+          description: QuestionnaireTemplate updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+    delete:
+      tags:
+      - "questionnaire"
+      summary: Deletes a questionnaire
+      description: Deletes the questionnaire identified by the id provided in the path
+      operationId: getQuestionnaire
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: QuestionnaireTemplate deleted
+  /questionnaires/list:
+    post:
+      tags:
+      - "questionnaire"
+      summary: "Find questionnaires"
+      description: "Returns a list of questionnaires that match the search criteria"
+      operationId: "findQuestionnaires"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Search"
+      responses:
+        200:
+          description: "successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuestionnairesTemplatePage"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Pet not found"
+      security:
+      - api_key: []
+  /quiz/{id}:
+    get:
+      tags:
+      - quiz
+      summary: Retrieves a quiz by id
+      description: If a quiz with the provided id is found it is retrieved.
+      operationId: getQuiz
+      parameters:
+        - name: id
+          in: "path"
+          description: quiz id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Questionnaire found replaced.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Questionnaire"
+    put:
+      tags:
+      - quiz
+      summary: Replaces a quiz
+      description: Replaces a quiz with the provided quiz object
+      operationId: "replaceQuiz"
+      parameters:
+        - name: id
+          in: "path"
+          description: quiz id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Questionnaire"
+      responses:
+        201:
+          description: Questionnaire successfully replaced.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /quiz/list:
+    post:
+      tags:
+      - "quiz"
+      summary: "Retrieves a list of quizes."
+      description: "Retrieves a list of quizes that match the search criteria."
+      operationId: findQuiz
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Search"
+      responses:
+        200:
+          description: "successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuestionnaireListPage"
+  /workitems:
+    post:
+      tags:
+      - workitems
+      summary: Create a WorkItem
+      description: Create a WorkItem
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WorkItem"
+      responses:
+        201:
+          description: WorkItem successfully created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /workitems/{id}:
+    get:
+      tags:
+        - workitems
+      summary: Retrieves a workitem for the provided id
+      description: Retrieves a workitem for the provided id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: WorkItem found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WorkItem"
+    put:
+      tags:
+      - workitems
+      summary: Replaces a WorkItem
+      description: Replaces a WorkItem
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WorkItem"
+      responses:
+        201:
+          description: WorkItem replaced
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    patch:
+      tags:
+      - workitems
+      summary: Updates a WorkItem
+      description: Updates a WorkItem with the values of the provided fields.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WorkItem"
+      responses:
+        201:
+          description: WorkItem updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    delete:
+      tags:
+      - workitems
+      summary: Deletes a WorkItem
+      description: Deletes a WorkItem
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: WorkItem replaced
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WorkItem"
+  /workitems/list:
+    post:
+      tags:
+      - workitems
+      summary: Searches for workitems
+      description: Searches for workitems
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Search"
+      responses:
+        200:
+          description: WorkItem successfully created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WorkItemsListPage"
+  /notes:
+    post:
+      tags:
+      - notes
+      description: Creates a Note object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Note"
+      responses:
+        201:
+          description: Note created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /notes/{id}:
+    get:
+      tags:
+      - notes
+      description: Retrieves a Note object.
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        200:
+          description: Note found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Note"
+    delete:
+      tags:
+      - notes
+      description: Deletes a Note object.
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        200:
+          description: Note deleted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Note"
+    put:
+      tags:
+      - notes
+      description: Replaces a Note object
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Note"
+      responses:
+        201:
+          description: Note replaces
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    patch:
+      tags:
+      - notes
+      description: Updates a Note object
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Note"
+      responses:
+        201:
+          description: Note updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /notes/list:
+    post:
+      tags:
+      - notes
+      description: Search for notes
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Search"
+      responses:
+        200:
+          description: Notes found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NotesListPage"
+  /sections:
+    post:
+      tags:
+      - "sections"
+      description: Creates a section
+      requestBody:
+        content: 
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Section"
+      responses:
+        201:
+          description: Section object created.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+  /sections/{id}:
+    get:
+      tags:
+      - "sections"
+      description: Retrieves a Section object.
+      parameters:
+        - name: id.
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        200:
+          description: Sections found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Section"
+    put:
+      tags:
+      - "sections"
+      description: Replaces a Section object.
+      parameters:
+        - name: id.
+          in: path
+          schema:
+            type: string
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Section"
+      responses:
+        201:
+          description: Section replaces.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    patch:
+      tags:
+      - "sections"
+      description: Updates a section object.
+      parameters:
+        - name: id.
+          in: path
+          schema:
+            type: string
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Section"
+      responses:
+        201:
+          description: Section replaces.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Id"
+    delete:
+      tags:
+      - "sections"
+      description: Deletes a Section object.
+      parameters:
+        - name: id.
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        200:
+          description: Section deleted.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Section"
+  /sections/list:
+    post:
+      tags:
+      - "sections"
+      summary: "Search for Section objects."
+      description: ""
+      operationId: "findSections"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Search"
+      responses:
+        200:
+          description: "successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SectionsListPage"
+  /plugins/{id}/trigger:
+    post:
+      tags:
+      - "plugins"
+      summary: "Triggers the excecution of a plugin after a file has been uploaded."
+      description: ""
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      operationId: "triggerPlugin"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PluginTrigger"
+      responses:
+        200:
+          description: "plugin triggered successfully."
+          content: 
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PluginTriggerId"
+components:
+  schemas:
+    Id:
+      type: object
+      properties:
+        id:
+          description: The id of an object
+          type: string
+    ListMetadata:
+      type: object
+      properties:
+        page:
+          type: integer
+        page_size:
+          type: integer
+        total_count:
+          type: integer
+    ResultsPage:
+      type: object
+      properties:
+        _metadata:
+          $ref: "#/components/schemas/ListMetadata"
+        count:
+          type: integer
+    BestPractice:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        type:
+          type: string
+        value:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+            description: tags values
+          example:
+          - "gcp" 
+          - "java"
+          - internal
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+    BestPracticesPage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records:
+              type: array
+              items:
+                $ref: "#/components/schemas/BestPractice"
+    Tag:
+      type: "object"
+      properties:
+        id:
+          type: string
+        name:
+          type: "string"
+    TagsPage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/Tag"
+    Section:
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        name:
+          type: string
+        description:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+        questions:
+          type: array
+          items:
+            $ref: "#/components/schemas/Question"
+    SectionsListPage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records: 
+              type: array
+              items:
+                $ref: "#/components/schemas/Section"
+    QuestionsListPage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records: 
+              type: array
+              items:
+                $ref: "#/components/schemas/QuestionsListItem"
+    QuestionsListItem:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        tags:
+          type: string
+    QuestionnairesTemplatePage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/QuestionnaireTemplate"
+    QuestionnaireTemplate:
+      type: "object"
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+          readOnly: true
+        name:
+          type: string
+        low_risk_boundary:
+          type: integer
+        mid_risk_boundary:
+          type: integer
+        sections:
+          description: Array of strings that represent the section ids that belong to this questionaire.
+          type: array
+          items:
+            type: string
+          example: ["q123", "q-345", q-opelo-234]
+    QuestionnaireListPage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/QuestionnaireListItem"
+    Questionnaire:
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        work_item_id:
+          type: string
+        # workitem_name:
+        #   type: string
+        questionnaire_template_id:
+          type: string
+        questionnaire_template_name:
+          type: string
+        integration_application:
+          type: string
+        integration_url:
+          type: string
+        # policy_id:
+        #   type: string
+        policy_name:
+          type: string
+        artifact:
+          type: string
+        sender_email:
+          type: string
+          example: user1@company.foo
+        target_email:
+          type: string
+          example: user2@company.foo
+        assignment_message:
+          type: string
+        curernt_score:
+          type: integer
+          readOnly: true
+        priority:
+          type: string
+          enum: 
+            - high
+            - medium
+            - low
+        total_questions:
+          type: integer
+        answered_questions:
+          type: integer
+        total_score:
+          type: integer
+        updated_on:
+          type: string
+          format: date-time
+        sections:
+          type: array
+          items:
+            $ref: "#/components/schemas/Section"
+        answers:
+          type: array
+          items:
+            $ref: "#/components/schemas/SectionResponse"
+    QuestionnaireListItem:
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        work_item_id:
+          type: string
+        reason:
+          type: string
+        questionnaire_template_id:
+          type: string
+        questionnaire_template_name:
+          type: string
+        policy_name:
+          type: string
+        curernt_score:
+          type: integer
+          readOnly: true
+        total_questions:
+          type: integer
+        target_email:
+          type: string
+          example: user@company.foo
+        answered_questions:
+          type: integer
+        score:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+        updated_on:
+          type: string
+          format: date-time
+    SectionResponse:
+      description: When a section is completed, the information provided to each section point is called 'section response' and all the question responses for all the questions in an section is called an answer.
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        user_email:
+          type: string
+        section_id:
+          type: string
+        answered:
+          type: boolean
+        sections:
+          type: array
+          items:
+            $ref: "#/components/schemas/Section"
+        answers:
+          type: array
+          items:
+            $ref: "#/components/schemas/Answer"
+    Question:
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        name:
+          type: string
+        severity:
+          type: string
+          enum:
+            - high
+            - medium
+            - low
+        type:
+          type: string
+        options:
+          type: array
+          items:
+            type: object
+            properties:
+              value:
+                type: string
+              score: 
+                type: string
+        custom:
+          type: boolean
+        verifiable:
+          type: boolean
+        verification_mode:
+          type: string
+          enum:
+            - auto
+            - manual
+        verification_assets:
+          type: array
+          items:
+            type: object
+        training:
+          type: array
+          items:
+            type: object
+    Answer:
+      type: object
+      properties:
+        question_id:
+          type: string
+        user_email:
+          type: string
+          example: user@company.foo
+        answered:
+          type: boolean
+        response:
+          type: object
+          properties:
+            value:
+              type: string
+            score:
+              type: string
+            type:
+              type: string
+    Note:
+      type: object
+      properties:
+        id:
+          type: string
+          readOnly: true
+        creator:
+          type: string
+          example: user1@company.foo
+        body:
+          type: string
+          example: This is super relevant, everybody needs to pay close attention to this standard.
+        work_item_id:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+    NotesListPage:
+      allOf:
+      - $ref: "#/components/schemas/ResultsPage"
+      - type: object
+        properties:
+          records:
+            type: array
+            items:
+              $ref: "#/components/schemas/Note"
+    Search:
+      type: "object"
+      properties:
+        page:
+          type: "integer"
+        page_size:
+          type: "integer"
+        filter:
+          type: object
+          properties:
+            name:
+              type: string
+            partial: 
+              type: object
+              properties:
+                name:
+                  type: string
+    WorkItem:
+      type: object
+      properties:
+        id:
+          description: WorkItem's id
+          type: string
+          example: "wi-123-123"
+          readOnly: true
+        name:
+          description: Name of the WorkItem 
+          type: string
+        policy_id:
+          type: string
+        team_ids:
+          type: array
+          items:
+            type: string
+            description: Team's id
+            example: team-1234
+        type:
+          type: string
+          enum:
+            - manual
+        status:
+          type: string
+          enum:
+          - open
+          - closed
+        assignee:
+          type: string
+        due_at:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+        integration_id:
+          type: string
+        reason:
+          type: string
+        artifact:
+          type: string
+        score:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+    WorkItemsListPage:
+      allOf:
+        - $ref: "#/components/schemas/ResultsPage"
+        - type: object
+          properties:
+            records:
+              type: array
+              items:
+                $ref: "#/components/schemas/WorkItemsListItem"
+    WorkItemsListItem:
+      type: object
+      properties:
+        id:
+          type: string
+          example: wi-453-123
+        name:
+          type: string
+          example: WorkItem for super awesome policy
+        assignee:
+          type: string
+          example: "user1@company.foo"
+        status:
+          type: string
+          enum:
+            - open
+            - closed
+        type:
+          type: string
+          enum:
+            - manual
+        score:
+          type: string
+          enum:
+            - low
+            - medium
+            - high
+        due_at:
+          type: string
+          format: date-time
+        created_at:
+          type: string
+          format: date-time
+    File:
+      type: object
+      properties:
+        file:
+          type: string
+          format: binary   
+    PluginTrigger:
+      type: object
+      properties:
+        type:
+          type: string
+          example: file
+        value:
+          type: string
+          example: "fileid:142342342"
+        product_ids:
+          type: array
+          items:
+            type: string
+            example: "2124"
+    PluginTriggerId:
+      type: object
+      properties:
+        trigger_id:
+          type: string
+          example: 142-424142-242134-24   
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+security:
+  - BearerAuth: []

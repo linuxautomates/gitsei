@@ -1,0 +1,237 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10602.requestTypePractice,customfield_10956.properties",
+  "id": "489582",
+  "self": "https://harness.atlassian.net/rest/api/2/issue/489582",
+  "key": "SEI-2263",
+  "fields": {
+    "parent": {
+      "id": "489581",
+      "key": "SEI-2262",
+      "self": "https://harness.atlassian.net/rest/api/2/issue/489581",
+      "fields": {
+        "summary": "Test. Please ignore.",
+        "status": {
+          "self": "https://harness.atlassian.net/rest/api/2/status/10000",
+          "description": "",
+          "iconUrl": "https://harness.atlassian.net/",
+          "name": "To Do",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://harness.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://harness.atlassian.net/rest/api/2/priority/5",
+          "iconUrl": "https://harness.atlassian.net/images/icons/priorities/trivial.svg",
+          "name": "P4",
+          "id": "5"
+        },
+        "issuetype": {
+          "self": "https://harness.atlassian.net/rest/api/2/issuetype/10000",
+          "id": "10000",
+          "description": "Represents Product Feature with one or multiple use cases.",
+          "iconUrl": "https://harness.atlassian.net/images/icons/issuetypes/epic.svg",
+          "name": "Epic",
+          "subtask": false,
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "resolution": null,
+    "customfield_10751": {
+      "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10556",
+      "value": "No ",
+      "id": "10556"
+    },
+    "customfield_10863": "1|i106sv:",
+    "lastViewed": "2023-06-21T10:04:42.502-0700",
+    "labels": [],
+    "aggregatetimeoriginalestimate": null,
+    "issuelinks": [],
+    "assignee": {
+      "self": "https://harness.atlassian.net/rest/api/2/user?accountId=63b46e4eb790087ed711a6e7",
+      "accountId": "63b46e4eb790087ed711a6e7",
+      "emailAddress": "maxime.bellier@harness.io",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "24x24": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "16x16": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "32x32": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "components": [],
+    "customfield_10603": [],
+    "subtasks": [],
+    "reporter": {
+      "self": "https://harness.atlassian.net/rest/api/2/user?accountId=63b46e4eb790087ed711a6e7",
+      "accountId": "63b46e4eb790087ed711a6e7",
+      "emailAddress": "maxime.bellier@harness.io",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "24x24": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "16x16": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "32x32": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "customfield_11014": [],
+    "customfield_10954": "",
+    "customfield_10955": 0.0,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "self": "https://harness.atlassian.net/rest/api/2/issue/SEI-2263/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    },
+    "issuetype": {
+      "self": "https://harness.atlassian.net/rest/api/2/issuetype/10102",
+      "id": "10102",
+      "description": "The sub-task of the issue",
+      "iconUrl": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10621?size=medium",
+      "name": "Sub-task",
+      "subtask": true,
+      "avatarId": 10621,
+      "hierarchyLevel": -1
+    },
+    "project": {
+      "self": "https://harness.atlassian.net/rest/api/2/project/10368",
+      "id": "10368",
+      "key": "SEI",
+      "name": "Software Engineering Insights",
+      "projectTypeKey": "software",
+      "simplified": false,
+      "avatarUrls": {
+        "48x48": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738",
+        "24x24": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738?size=small",
+        "16x16": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738?size=xsmall",
+        "32x32": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738?size=medium"
+      },
+      "projectCategory": {
+        "self": "https://harness.atlassian.net/rest/api/2/projectCategory/10001",
+        "id": "10001",
+        "description": "Product Development",
+        "name": "Product Development"
+      }
+    },
+    "resolutiondate": null,
+    "watches": {
+      "self": "https://harness.atlassian.net/rest/api/2/issue/SEI-2263/watchers",
+      "watchCount": 1,
+      "isWatching": true
+    },
+    "updated": "2023-06-21T10:04:36.438-0700",
+    "timeoriginalestimate": null,
+    "description": "Test. Please ignore.",
+    "timetracking": {},
+    "customfield_10007": {
+      "hasEpicLinkFieldDependency": false,
+      "showField": false,
+      "nonEditableReason": {
+        "reason": "SUBTASK_LINK_SHOULD_BE_USED",
+        "message": "To set the parent for a sub-task, use the sub-task link."
+      }
+    },
+    "summary": "Test. Please ignore.",
+    "customfield_10000": "{}",
+    "environment": null,
+    "duedate": null,
+    "comment": {
+      "comments": [],
+      "self": "https://harness.atlassian.net/rest/api/2/issue/489582/comment",
+      "maxResults": 0,
+      "total": 0,
+      "startAt": 0
+    },
+    "statuscategorychangedate": "2023-06-21T10:02:24.017-0700",
+    "fixVersions": [],
+    "customfield_10104": "0|i1wrc7:",
+    "priority": {
+      "self": "https://harness.atlassian.net/rest/api/2/priority/5",
+      "iconUrl": "https://harness.atlassian.net/images/icons/priorities/trivial.svg",
+      "name": "P4",
+      "id": "5"
+    },
+    "timeestimate": null,
+    "status": {
+      "self": "https://harness.atlassian.net/rest/api/2/status/10000",
+      "description": "",
+      "iconUrl": "https://harness.atlassian.net/",
+      "name": "To Do",
+      "id": "10000",
+      "statusCategory": {
+        "self": "https://harness.atlassian.net/rest/api/2/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "aggregatetimeestimate": null,
+    "creator": {
+      "self": "https://harness.atlassian.net/rest/api/2/user?accountId=63b46e4eb790087ed711a6e7",
+      "accountId": "63b46e4eb790087ed711a6e7",
+      "emailAddress": "maxime.bellier@harness.io",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "24x24": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "16x16": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png",
+        "32x32": "https://secure.gravatar.com/avatar/1ebec979ded739555acafb2b2c37523d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-2.png"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "timespent": null,
+    "aggregatetimespent": null,
+    "customfield_10786": "0m",
+    "customfield_10669": [
+      {
+        "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10514",
+        "value": "No",
+        "id": "10514"
+      }
+    ],
+    "workratio": -1,
+    "issuerestriction": {
+      "issuerestrictions": {},
+      "shouldDisplay": false
+    },
+    "created": "2023-06-21T10:02:23.528-0700",
+    "customfield_10896": "https://overopshq.atlassian.net/wiki/spaces/MT/pages/486506549/Standard+Asset+Sizes",
+    "customfield_10778": "h3. *Description (what):*\r\n\r\n{color:#707070}Explain the use-case/challenge that the customer is facing or trying to do. Focus on the scenario and not the feature/solution (try not to use any Harness terminology or model)\r\n(For example: \"Customer would like to automatically start a deployment when CI build finish\" vs. \"customer need API/CLI to start CD pipeline\"){color}\r\n\r\nh3. *Motivation (why):*\r\n\r\n{color:#707070}Explain why the customer needs this use case to be supported. It would be best if you articulated the full e2e use case that this requirement will be part of.\r\n(For example: \"Customer would like to have full CI/CD automation with as little manual intervention as needed. This approach will help to push changes faster to production\"){color}\r\n\r\nh3. *What does the customer do now?*\r\n\r\n{color:#707070}Explain what is the workaround customer is doing or current behavior \r\n(For example: \"Customer get a notification that CI build finished and then kick off deployment in Harness manually\"){color}\r\n\r\nh3. *Impact:*\r\n\r\nExplain what will happen if we will not deliver this feature- how adoption/perception of Harness will be affected. \r\n\r\nh3. *Provide links to the following resources:*\r\n\r\n{color:#707070}The functional gap here\r\nSFDC opp (if expansion/renewal is dependant on this request){color}\r\n\r\n{color:#707070}(For example: \"The lack of this use-case supported, is preventing developers from using Harness as part of their development process as it slows releases to production. \"){color}\r\n\r\n\r\nh3. *Suggest a solution (optional):*\r\n\r\n{color:#707070}If an optional solution was discussed with the customer, you could summarise it here.\r\n(For example: \"Customer would prefer Harness to provide a secure API to kick off a deployment. the API will be called as a CI build finished){color}\r\n\r\nh3. *Adoption Timeline:*\r\n\r\n{color:#707070}Establishing a rough timeline for adoption, when a feature is picked up we the PM team have the sizing. We can possibly prepare the customer with a rough estimate so when we ship around that time we can ensure adoption of the feature and continue the momentum. {color}",
+    "security": null,
+    "attachment": [],
+    "customfield_10758": 0.0,
+    "customfield_10759": {
+      "self": "https://harness.atlassian.net/rest/api/2/customFieldOption/10578",
+      "value": "No",
+      "id": "10578"
+    },
+    "customfield_10638": null
+  }
+}

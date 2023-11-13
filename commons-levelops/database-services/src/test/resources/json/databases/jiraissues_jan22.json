@@ -1,0 +1,1097 @@
+{
+  "records": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "11290",
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/11290",
+      "key": "TS-3",
+      "fields": {
+        "issuetype": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10013",
+          "id": 10013,
+          "name": "Epic",
+          "description": "Epics track collections of related bugs, stories, and tasks.",
+          "subtask": false
+        },
+        "project": {
+          "self": "https://levelops.atlassian.net/rest/api/2/project/10004",
+          "id": "10004",
+          "key": "TS",
+          "name": "TestProject3",
+          "projectTypeKey": "software",
+          "simplified": true
+        },
+        "fixVersions": [],
+        "created": 1582068473917,
+        "priority": {
+          "name": "High",
+          "id": "3"
+        },
+        "labels": [],
+        "versions": [],
+        "issuelinks": [
+          {
+            "id": "10254",
+            "self": "https://cognitree.atlassian.net/rest/api/2/issueLink/10254",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "10367",
+              "key": "TEST-96",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issue/10367",
+              "fields": {
+                "summary": "custom sprint ",
+                "status": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/status/10010",
+                  "description": "",
+                  "iconUrl": "https://cognitree.atlassian.net/",
+                  "name": "Backlog",
+                  "id": "10010",
+                  "statusCategory": {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                  "name": "Highest",
+                  "id": "1"
+                },
+                "issuetype": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10006",
+                  "id": "10006",
+                  "description": "Stories track functionality or features expressed as user goals.",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/issuetypes/story.svg",
+                  "name": "Story",
+                  "subtask": false,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "10253",
+            "self": "https://cognitree.atlassian.net/rest/api/2/issueLink/10253",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "10367",
+              "key": "TEST-96",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issue/10367",
+              "fields": {
+                "summary": "custom sprint ",
+                "status": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/status/10010",
+                  "description": "",
+                  "iconUrl": "https://cognitree.atlassian.net/",
+                  "name": "Backlog",
+                  "id": "10010",
+                  "statusCategory": {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                  "name": "Highest",
+                  "id": "1"
+                },
+                "issuetype": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10006",
+                  "id": "10006",
+                  "description": "Stories track functionality or features expressed as user goals.",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/issuetypes/story.svg",
+                  "name": "Story",
+                  "subtask": false,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "updated": 1582674467002,
+        "status": {
+          "self": "https://levelops.atlassian.net/rest/api/2/status/10009",
+          "description": "",
+          "name": "Done",
+          "id": "10009",
+          "statusCategory": {
+            "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+            "id": "2",
+            "key": "new",
+            "name": "To Do",
+            "colorName": "blue-gray"
+          }
+        },
+        "components": [],
+        "summary": "Fix Remove access for user rlaughlin@lightue.io",
+        "creator": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+          "accountId": "5d6049c417bc890d28ef70dd",
+          "displayName": "Meghana Dwarakanath",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+          "accountId": "5d6049c417bc890d28ef70dd",
+          "displayName": "Meghana Dwarakanath",
+          "active": true
+        },
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "votes": 0,
+          "hasVoted": false
+        },
+        "comment": {
+          "comments": [
+            {
+              "self": "https://levelops.atlassian.net/rest/api/2/issue/11290/comment/10241",
+              "id": "10241",
+              "author": {
+                "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+                "accountId": "5d6049c4c812c40d27c01ea9",
+                "displayName": "Maxime Bellier",
+                "active": true
+              },
+              "updateAuthor": {
+                "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+                "accountId": "5d6049c4c812c40d27c01ea9",
+                "displayName": "Maxime Bellier",
+                "active": true
+              },
+              "body": "adding comments for testing ingestion",
+              "created": 1582674467002,
+              "updated": 1582674467002,
+              "body_text": "adding comments for testing ingestion"
+            }
+          ]
+        },
+        "description_text": "",
+        "description_length": 0,
+        "statuscategorychangedate": "2020-02-18T15:27:54.087-0800",
+        "watches": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/TS-3/watchers",
+          "watchCount": 2,
+          "isWatching": false
+        },
+        "customfield_10048": [
+          {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d2fabe02d76f30c36bf8dee",
+            "accountId": "5d2fabe02d76f30c36bf8dee",
+            "displayName": "Harsh Jariwala",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          },
+          {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+            "accountId": "5d6049c4c812c40d27c01ea9",
+            "emailAddress": "maxime@levelops.io",
+            "displayName": "Maxime Bellier",
+            "active": true,
+            "timeZone": "America/Los_Angeles",
+            "accountType": "atlassian"
+          }
+        ],
+        "customfield_10149": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d2fabe02d76f30c36bf8dee",
+          "accountId": "5d2fabe02d76f30c36bf8dee",
+          "displayName": "Harsh Jariwala",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10019": "0|i007vr:",
+        "customfield_20001": "Magic1,Magic2,Magic3",
+        "attachment": [],
+        "workratio": -1,
+        "customfield_10022": "2020-02-25T15:47:47.002-0800",
+        "customfield_10000": "{}",
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 0,
+          "worklogs": []
+        },
+        "customfield_10024": [],
+        "timetracking": {}
+      },
+      "changelog": {
+        "maxResults": 1,
+        "startAt": 0,
+        "total": 1,
+        "histories": [
+          {
+            "id": "15276",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+              "accountId": "5d6049c417bc890d28ef70dd",
+              "displayName": "Meghana Dwarakanath",
+              "active": true
+            },
+            "created": 1582070888418,
+            "items": [
+              {
+                "field": "summary",
+                "fieldtype": "jira",
+                "fieldId": "summary",
+                "fromString": "Remove user nonenguser@acme.io from github",
+                "toString": "Remove access for user rlaughlin@lightue.io"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "11394",
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/11394",
+      "key": "MT-8",
+      "fields": {
+        "issuetype": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10027",
+          "id": 10027,
+          "name": "Task",
+          "description": "Tasks track small, distinct pieces of work.",
+          "subtask": false
+        },
+        "project": {
+          "self": "https://levelops.atlassian.net/rest/api/2/project/10012",
+          "id": "10012",
+          "key": "MT",
+          "name": "Megha-tracking",
+          "projectTypeKey": "software",
+          "simplified": true
+        },
+        "fixVersions": [],
+        "duedate": "2020-02-20",
+        "created": 1584469712213,
+        "priority": {
+          "name": "High",
+          "id": "3"
+        },
+        "labels": [],
+        "versions": [],
+        "issuelinks": [
+          {
+            "id": "10254",
+            "self": "https://cognitree.atlassian.net/rest/api/2/issueLink/10254",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "10367",
+              "key": "TEST-96",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issue/10367",
+              "fields": {
+                "summary": "custom sprint ",
+                "status": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/status/10010",
+                  "description": "",
+                  "iconUrl": "https://cognitree.atlassian.net/",
+                  "name": "Backlog",
+                  "id": "10010",
+                  "statusCategory": {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                  "name": "Highest",
+                  "id": "1"
+                },
+                "issuetype": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10006",
+                  "id": "10006",
+                  "description": "Stories track functionality or features expressed as user goals.",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/issuetypes/story.svg",
+                  "name": "Story",
+                  "subtask": false,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "10253",
+            "self": "https://cognitree.atlassian.net/rest/api/2/issueLink/10253",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "10367",
+              "key": "TEST-96",
+              "self": "https://cognitree.atlassian.net/rest/api/2/issue/10367",
+              "fields": {
+                "summary": "custom sprint ",
+                "status": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/status/10010",
+                  "description": "",
+                  "iconUrl": "https://cognitree.atlassian.net/",
+                  "name": "Backlog",
+                  "id": "10010",
+                  "statusCategory": {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                  "name": "Highest",
+                  "id": "1"
+                },
+                "issuetype": {
+                  "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10006",
+                  "id": "10006",
+                  "description": "Stories track functionality or features expressed as user goals.",
+                  "iconUrl": "https://cognitree.atlassian.net/images/icons/issuetypes/story.svg",
+                  "name": "Story",
+                  "subtask": false,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "updated": 1584469719961,
+        "status": {
+          "self": "https://levelops.atlassian.net/rest/api/2/status/10024",
+          "description": "",
+          "name": "To Do",
+          "id": "10024",
+          "statusCategory": {
+            "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+            "id": "2",
+            "key": "new",
+            "name": "To Do",
+            "colorName": "blue-gray"
+          }
+        },
+        "components": [],
+        "summary": "pen test results ingestion",
+        "creator": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "votes": 0,
+          "hasVoted": false
+        },
+        "comment": {
+          "comments": []
+        },
+        "description_text": "",
+        "description_length": 0,
+        "statuscategorychangedate": "2020-03-17T11:28:32.403-0700",
+        "watches": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/MT-8/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10019": "0|i008iv:",
+        "customfield_20001": "Magic3,Magic4,Magic5",
+        "customfield_20011": "2020-01-03",
+        "attachment": [],
+        "workratio": -1,
+        "customfield_10000": "{}",
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 0,
+          "worklogs": []
+        },
+        "customfield_10024": [],
+        "timetracking": {}
+      },
+      "changelog": {
+        "maxResults": 1,
+        "startAt": 0,
+        "total": 1,
+        "histories": [
+          {
+            "id": "15944",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+              "accountId": "5deadfb2752c1b0d114f9db3",
+              "displayName": "Megha Tamvada",
+              "active": true,
+              "emailAddress": "tamvada@levelops.io"
+            },
+            "created": 1584469719978,
+            "items": [
+              {
+                "field": "summary",
+                "fieldtype": "jira",
+                "fieldId": "summary",
+                "fromString": "pen test results",
+                "toString": "pen test results ingestion"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "11393",
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/11393",
+      "key": "MT-7",
+      "fields": {
+        "issuetype": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10027",
+          "id": 10027,
+          "name": "Task",
+          "description": "Tasks track small, distinct pieces of work.",
+          "subtask": false
+        },
+        "project": {
+          "self": "https://levelops.atlassian.net/rest/api/2/project/10012",
+          "id": "10012",
+          "key": "MT",
+          "name": "Megha-tracking",
+          "projectTypeKey": "software",
+          "simplified": true
+        },
+        "fixVersions": [],
+        "created": 1584469648482,
+        "priority": {
+          "name": "Medium",
+          "id": "3"
+        },
+        "labels": [],
+        "versions": [],
+        "issuelinks": [],
+        "updated": 1584469782724,
+        "status": {
+          "self": "https://levelops.atlassian.net/rest/api/2/status/10025",
+          "description": "",
+          "name": "In Progress",
+          "id": "10025",
+          "statusCategory": {
+            "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/4",
+            "id": "4",
+            "key": "indeterminate",
+            "name": "In Progress",
+            "colorName": "yellow"
+          }
+        },
+        "components": [],
+        "summary": "jira reports v1",
+        "creator": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "votes": 0,
+          "hasVoted": false
+        },
+        "comment": {
+          "comments": []
+        },
+        "description_text": "",
+        "description_length": 0,
+        "statuscategorychangedate": "2020-03-17T11:29:42.548-0700",
+        "watches": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/MT-7/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10019": "0|i008hx:",
+        "customfield_20001": "Magic2,Magic3,Magic7",
+        "attachment": [],
+        "workratio": -1,
+        "customfield_10000": "{}",
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 0,
+          "worklogs": []
+        },
+        "customfield_10024": [],
+        "timetracking": {}
+      },
+      "changelog": {
+        "maxResults": 2,
+        "startAt": 0,
+        "total": 2,
+        "histories": [
+          {
+            "id": "15952",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+              "accountId": "5deadfb2752c1b0d114f9db3",
+              "displayName": "Megha Tamvada",
+              "active": true,
+              "emailAddress": "tamvada@levelops.io"
+            },
+            "created": 1584469782726,
+            "items": [
+              {
+                "field": "Rank",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10019",
+                "from": "",
+                "fromString": "",
+                "to": "",
+                "toString": "Ranked higher"
+              }
+            ]
+          },
+          {
+            "id": "15951",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+              "accountId": "5deadfb2752c1b0d114f9db3",
+              "displayName": "Megha Tamvada",
+              "active": true,
+              "emailAddress": "tamvada@levelops.io"
+            },
+            "created": 1584469782561,
+            "items": [
+              {
+                "field": "status",
+                "fieldtype": "jira",
+                "fieldId": "status",
+                "from": "10024",
+                "fromString": "To Do",
+                "to": "10025",
+                "toString": "In Progress"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "11392",
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/11392",
+      "key": "MT-6",
+      "fields": {
+        "issuetype": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10027",
+          "id": 10027,
+          "name": "Task",
+          "description": "Tasks track small, distinct pieces of work.",
+          "subtask": false
+        },
+        "project": {
+          "self": "https://levelops.atlassian.net/rest/api/2/project/10012",
+          "id": "10012",
+          "key": "MT",
+          "name": "Megha-tracking",
+          "projectTypeKey": "software",
+          "simplified": true
+        },
+        "fixVersions": [],
+        "created": 1584469640458,
+        "priority": {
+          "name": "Medium",
+          "id": "3"
+        },
+        "labels": [],
+        "versions": [],
+        "issuelinks": [],
+        "updated": 1584469888965,
+        "status": {
+          "self": "https://levelops.atlassian.net/rest/api/2/status/10024",
+          "description": "",
+          "name": "To Do",
+          "id": "10024",
+          "statusCategory": {
+            "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+            "id": "2",
+            "key": "new",
+            "name": "To Do",
+            "colorName": "blue-gray"
+          }
+        },
+        "components": [],
+        "summary": "datadog integration",
+        "creator": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "votes": 0,
+          "hasVoted": false
+        },
+        "comment": {
+          "comments": []
+        },
+        "description_text": "",
+        "description_length": 0,
+        "statuscategorychangedate": "2020-03-17T11:27:20.610-0700",
+        "watches": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/MT-6/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "customfield_10032": "",
+        "customfield_10033": 0.0,
+        "customfield_10000": "{}",
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10034": "Completed",
+        "customfield_10024": [],
+        "timetracking": {},
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10019": "0|i008if:",
+        "attachment": [],
+        "workratio": -1,
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 0,
+          "worklogs": []
+        }
+      },
+      "changelog": {
+        "maxResults": 4,
+        "startAt": 0,
+        "total": 4,
+        "histories": [
+          {
+            "id": "15956",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5c6145a82cdb124474b3dda9",
+              "accountId": "5c6145a82cdb124474b3dda9",
+              "displayName": "Issue Checklist",
+              "active": true
+            },
+            "created": 1584469888977,
+            "items": [
+              {
+                "field": "Checklist Progress (obsolete)",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10031",
+                "fromString": "Checklist: 0/1",
+                "toString": ""
+              },
+              {
+                "field": "Checklist Completed",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10034",
+                "fromString": "Not Completed",
+                "toString": "Completed"
+              },
+              {
+                "field": "Checklist Content YAML",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10035",
+                "fromString": "items:\n  - text: build a report\n    checked: false\n",
+                "toString": ""
+              },
+              {
+                "field": "Checklist Text",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10036",
+                "fromString": "* build a report",
+                "toString": ""
+              }
+            ]
+          },
+          {
+            "id": "15955",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5c6145a82cdb124474b3dda9",
+              "accountId": "5c6145a82cdb124474b3dda9",
+              "displayName": "Issue Checklist",
+              "active": true
+            },
+            "created": 1584469888498,
+            "items": [
+              {
+                "field": "Checklist Progress (obsolete)",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10031",
+                "fromString": "Checklist: 0/2",
+                "toString": "Checklist: 0/1"
+              },
+              {
+                "field": "Checklist Content YAML",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10035",
+                "fromString": "items:\n  - text: Check for the 10 things\n    checked: false\n  - text: build a report\n    checked: false\n",
+                "toString": "items:\n  - text: build a report\n    checked: false\n"
+              },
+              {
+                "field": "Checklist Text",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10036",
+                "fromString": "* Check for the 10 things\n* build a report",
+                "toString": "* build a report"
+              }
+            ]
+          },
+          {
+            "id": "15954",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5c6145a82cdb124474b3dda9",
+              "accountId": "5c6145a82cdb124474b3dda9",
+              "displayName": "Issue Checklist",
+              "active": true
+            },
+            "created": 1584469887849,
+            "items": [
+              {
+                "field": "Checklist Progress (obsolete)",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10031",
+                "fromString": "Checklist: 0/3",
+                "toString": "Checklist: 0/2"
+              },
+              {
+                "field": "Checklist Content YAML",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10035",
+                "fromString": "items:\n  - text: Build a connector\n    checked: false\n  - text: Check for the 10 things\n    checked: false\n  - text: build a report\n    checked: false\n",
+                "toString": "items:\n  - text: Check for the 10 things\n    checked: false\n  - text: build a report\n    checked: false\n"
+              },
+              {
+                "field": "Checklist Text",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10036",
+                "fromString": "* Build a connector\n* Check for the 10 things\n* build a report",
+                "toString": "* Check for the 10 things\n* build a report"
+              }
+            ]
+          },
+          {
+            "id": "15953",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5c6145a82cdb124474b3dda9",
+              "accountId": "5c6145a82cdb124474b3dda9",
+              "displayName": "Issue Checklist",
+              "active": true
+            },
+            "created": 1584469882538,
+            "items": [
+              {
+                "field": "Checklist Progress (obsolete)",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10031",
+                "toString": "Checklist: 0/3"
+              },
+              {
+                "field": "Checklist Completed",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10034",
+                "toString": "Not Completed"
+              },
+              {
+                "field": "Checklist Content YAML",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10035",
+                "toString": "items:\n  - text: Build a connector\n    checked: false\n  - text: Check for the 10 things\n    checked: false\n  - text: build a report\n    checked: false\n"
+              },
+              {
+                "field": "Checklist Text",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10036",
+                "toString": "* Build a connector\n* Check for the 10 things\n* build a report"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "11391",
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/11391",
+      "key": "MT-5",
+      "fields": {
+        "issuetype": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10027",
+          "id": 10027,
+          "name": "Task",
+          "description": "Tasks track small, distinct pieces of work.",
+          "subtask": false
+        },
+        "project": {
+          "self": "https://levelops.atlassian.net/rest/api/2/project/10012",
+          "id": "10012",
+          "key": "MT",
+          "name": "Megha-tracking",
+          "projectTypeKey": "software",
+          "simplified": true
+        },
+        "fixVersions": [],
+        "created": 1584469634531,
+        "priority": {
+          "name": "Medium",
+          "id": "3"
+        },
+        "labels": [],
+        "versions": [],
+        "issuelinks": [],
+        "updated": 1584469779643,
+        "status": {
+          "self": "https://levelops.atlassian.net/rest/api/2/status/10025",
+          "description": "",
+          "name": "In Progress",
+          "id": "10025",
+          "statusCategory": {
+            "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/4",
+            "id": "4",
+            "key": "indeterminate",
+            "name": "In Progress",
+            "colorName": "yellow"
+          }
+        },
+        "components": [],
+        "summary": "bugsnag integration",
+        "creator": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+          "accountId": "5deadfb2752c1b0d114f9db3",
+          "displayName": "Megha Tamvada",
+          "active": true,
+          "emailAddress": "tamvada@levelops.io"
+        },
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "votes": 0,
+          "hasVoted": false
+        },
+        "comment": {
+          "comments": []
+        },
+        "description_text": "",
+        "description_length": 0,
+        "statuscategorychangedate": "2020-03-17T11:29:39.523-0700",
+        "watches": {
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/MT-5/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "customfield_10018": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10019": "0|i008hv:",
+        "attachment": [],
+        "workratio": -1,
+        "customfield_10000": "{}",
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "worklog": {
+          "startAt": 0,
+          "maxResults": 20,
+          "total": 0,
+          "worklogs": []
+        },
+        "customfield_10024": [],
+        "timetracking": {}
+      },
+      "changelog": {
+        "maxResults": 2,
+        "startAt": 0,
+        "total": 2,
+        "histories": [
+          {
+            "id": "15950",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+              "accountId": "5deadfb2752c1b0d114f9db3",
+              "displayName": "Megha Tamvada",
+              "active": true,
+              "emailAddress": "tamvada@levelops.io"
+            },
+            "created": 1584469779646,
+            "items": [
+              {
+                "field": "Rank",
+                "fieldtype": "custom",
+                "fieldId": "customfield_10019",
+                "from": "",
+                "fromString": "",
+                "to": "",
+                "toString": "Ranked higher"
+              }
+            ]
+          },
+          {
+            "id": "15949",
+            "author": {
+              "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+              "accountId": "5deadfb2752c1b0d114f9db3",
+              "displayName": "Megha Tamvada",
+              "active": true,
+              "emailAddress": "tamvada@levelops.io"
+            },
+            "created": 1584469779540,
+            "items": [
+              {
+                "field": "status",
+                "fieldtype": "jira",
+                "fieldId": "status",
+                "from": "10024",
+                "fromString": "To Do",
+                "to": "10025",
+                "toString": "In Progress"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "count": 5,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "99"
+    },
+    "integration_type": "jira",
+    "data_type": "issues",
+    "page_number": 0
+  }
+}

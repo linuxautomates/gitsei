@@ -1,0 +1,46 @@
+dependencies {
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":ingestion-commons")
+    compile project(":ingestion-service")
+    compile project(":inventory-service")
+    compile project(":email-utils")
+    compile project(":template-utils")
+    compile project(':integration-clients:integration-jira')
+    compile project(':database-services')
+    compile project(':internal-api-clients')
+
+    compile libraries.spring_redis
+    compile libraries.jedis
+
+    compile libraries.guava
+    compile libraries.apache_collections
+
+    testCompile group: 'org.mockito', name: 'mockito-core', 'version': '3.0.0'
+    testCompile libraries.embedded_postgres
+    testCompile enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:11.5.0')
+    testCompile libraries.junit
+    testCompile libraries.assertj
+}
+
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

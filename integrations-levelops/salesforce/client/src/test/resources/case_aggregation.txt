@@ -1,0 +1,70 @@
+Table: salesforce_cases
+
+        case_id
+        integration_id
+        account_id
+        subject
+        description
+        comments
+        contact
+        created_by
+        is_closed
+        is_deleted
+        is_escalated
+        origin
+        status
+        type
+        priority
+        reason
+        bounce
+        hops
+        created_at
+        last_modified_at
+        resolved_at
+        resolved_time // will be calculated based on the case history status field
+
+        {
+          "AccountId": "0013h00000BY3bwAAD",
+          "Description": "descriptiom",
+          "Comments": "",
+          "ContactEmail": "johndoe@test.com",
+          "CreatedBy.Email": "srinath.chandrashekhar@levelops.io",
+          "CreatedDate": "2020-06-19T02:58:39.000Z",
+          "Id": "5003h000003wNbMAAU",
+          "IsClosed": false,
+          "IsDeleted": false,
+          "IsEscalated": false,
+          "LastModifiedBy.Email": "srinath.chandrashekhar@levelops.io",
+          "LastModifiedDate": "2020-06-19T02:58:39.000Z",
+          "Origin": "Phone",
+          "Priority": "Medium",
+          "Reason": "Complex functionality",
+          "Status": "Pending",
+          "Subject": "Subject",
+          "Type": "Feature Request"
+        }
+
+
+Table: salesfoce_case_contacts
+
+        case_id
+        contact
+        duration
+
+
+Table: salesforce_case_statuses
+
+        case_id
+        status
+        duration
+
+        {
+          "CaseId": "5003h000003vbP0AAI",
+          "CreatedById": "0053h000001tLKJAA2",
+          "CreatedDate": "2020-06-19T02:57:46.000Z",
+          "Field": "Contact",
+          "Id": "0173h00005P9LLGAA3",
+          "IsDeleted": false,
+          "NewValue": "0033h000008F0YvAAK",
+          "OldValue": ""
+        }

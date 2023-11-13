@@ -1,0 +1,125 @@
+{
+  "id": "c465fd50-81eb-4819-8779-c8d355111308",
+  "default_scheme": false,
+  "name": "Copy of Testingg",
+  "config": {
+    "description": "With Azure",
+    "integration_type": "azure_devops",
+    "categories": {
+      "2": {
+        "id": "a30179f4-a56e-41c9-b3b8-6407053e77c6",
+        "name": "Cat 1",
+        "index": 2,
+        "color": "#F2917A",
+        "goals": {
+          "enabled": true,
+          "ideal_range": {
+            "min": 0,
+            "max": 16
+          },
+          "acceptable_range": {
+            "min": 0,
+            "max": 32
+          }
+        },
+        "filter": {}
+      },
+      "3": {
+        "id": "7bee9e6d-fbf3-4f8b-aae5-eaa4053f49f8",
+        "name": "Cat 2",
+        "index": 2,
+        "color": "#EEA248",
+        "goals": {
+          "enabled": true,
+          "ideal_range": {
+            "min": 0,
+            "max": 16
+          },
+          "acceptable_range": {
+            "min": 0,
+            "max": 32
+          }
+        },
+        "filter": {}
+      },
+      "4": {
+        "id": "8fc7fc24-f3c8-4f16-a7f7-680bf5856063",
+        "name": "Cat 3",
+        "index": 3,
+        "color": "#CAC035",
+        "goals": {
+          "enabled": true,
+          "ideal_range": {
+            "min": 0,
+            "max": 16
+          },
+          "acceptable_range": {
+            "min": 0,
+            "max": 32
+          }
+        },
+        "filter": {}
+      },
+      "5": {
+        "id": "0b30ac41-3050-4c79-8579-6f0c4d2ee1fa",
+        "name": "Cat 4",
+        "index": 3,
+        "color": "#84C67B",
+        "goals": {
+          "enabled": true,
+          "ideal_range": {
+            "min": 0,
+            "max": 16
+          },
+          "acceptable_range": {
+            "min": 0,
+            "max": 32
+          }
+        },
+        "filter": {}
+      },
+      "6": {
+        "id": "28d4563c-5008-4684-95da-658ba5e4a676",
+        "name": "Cat 5",
+        "description": "Testing Cat",
+        "index": 6,
+        "color": "#30C5E8",
+        "goals": {
+          "enabled": true,
+          "ideal_range": {
+            "min": 0,
+            "max": 16
+          },
+          "acceptable_range": {
+            "min": 0,
+            "max": 32
+          }
+        },
+        "filter": {}
+      }
+    },
+    "uncategorized": {
+      "color": "#FC91AA",
+      "goals": {
+        "enabled": true,
+        "ideal_range": {
+          "min": 0,
+          "max": 16
+        },
+        "acceptable_range": {
+          "min": 0,
+          "max": 32
+        }
+      }
+    },
+    "active_work": {
+      "issues": {
+        "active_sprints": false,
+        "in_progress": false,
+        "assigned": false
+      }
+    }
+  },
+  "created_at": 1673327504316,
+  "updated_at": 1673327535676
+}

@@ -1,0 +1,1740 @@
+{
+  "records":[
+    {
+      "project":{
+        "id":"d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name":"project-test-1",
+        "url":"https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state":"wellFormed",
+        "revision":12,
+        "visibility":"private",
+        "lastUpdateTime":"2020-11-06T09:57:46.917+0000",
+        "organization":"cgn-test"
+      },
+      "releases": [
+        {
+          "id": 1,
+          "name": "Release-1",
+          "status": "active",
+          "createdOn": "2023-06-21T06:24:18.183Z",
+          "modifiedOn": "2023-06-21T06:24:18.183Z",
+          "start_time": "2023-06-21T06:24:31.9333333Z",
+          "finish_time": "2023-06-21T06:24:38.6733333Z",
+          "modifiedBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdFor": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "stages": [
+            {
+              "id": 1,
+              "releaseId": 1,
+              "name": "Stage 1",
+              "status": "succeeded",
+              "variables": {},
+              "variableGroups": [],
+              "steps": [
+                {
+                  "id": 7,
+                  "timelineRecordId": "7aca260e-be17-5603-f7fe-c33f6c92deb7",
+                  "name": "Agent job",
+                  "dateStarted": "2023-06-21T06:24:31.9333333Z",
+                  "dateEnded": "2023-06-21T06:24:38.68Z",
+                  "startTime": "2023-06-21T06:24:31.9333333Z",
+                  "finishTime": "2023-06-21T06:24:38.68Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1/environments/1/deployPhases/1/tasks/7/logs"
+                },
+                {
+                  "id": 4,
+                  "timelineRecordId": "9b69d2b6-671a-44bc-9996-615ce996a2fe",
+                  "name": "Initialize job",
+                  "dateStarted": "2023-06-21T06:24:32.32Z",
+                  "dateEnded": "2023-06-21T06:24:33.92Z",
+                  "startTime": "2023-06-21T06:24:32.32Z",
+                  "finishTime": "2023-06-21T06:24:33.92Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1/environments/1/deployPhases/1/tasks/4/logs"
+                },
+                {
+                  "id": 5,
+                  "timelineRecordId": "d88977ff-71ab-5fd7-127b-1170c3547845",
+                  "name": "Download artifact - _HelloWorld (Azure Artifacts)",
+                  "dateStarted": "2023-06-21T06:24:33.9433333Z",
+                  "dateEnded": "2023-06-21T06:24:38.6166667Z",
+                  "startTime": "2023-06-21T06:24:33.9433333Z",
+                  "finishTime": "2023-06-21T06:24:38.6166667Z",
+                  "status": "succeeded",
+                  "rank": 2,
+                  "issues": [],
+                  "task": {
+                    "id": "8d6e8f7e-267d-442d-8c92-1f586864c62f",
+                    "name": "DownloadPackage",
+                    "version": "1.221.0"
+                  },
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1/environments/1/deployPhases/1/tasks/5/logs"
+                },
+                {
+                  "id": 6,
+                  "timelineRecordId": "7f8cbb64-3097-4169-ab35-8e7234866ca6",
+                  "name": "Finalize Job",
+                  "dateStarted": "2023-06-21T06:24:38.63Z",
+                  "dateEnded": "2023-06-21T06:24:38.6733333Z",
+                  "startTime": "2023-06-21T06:24:38.63Z",
+                  "finishTime": "2023-06-21T06:24:38.6733333Z",
+                  "status": "succeeded",
+                  "percentComplete": 100,
+                  "rank": 3,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1/environments/1/deployPhases/1/tasks/6/logs"
+                }
+              ],
+              "rank": 1,
+              "definitionEnvironmentId": 1,
+              "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+              },
+              "demands": [],
+              "conditions": [
+                {
+                  "result": true,
+                  "name": "ReleaseStarted",
+                  "conditionType": "event",
+                  "value": ""
+                }
+              ],
+              "createdOn": "2023-06-21T06:24:18.237Z",
+              "modifiedOn": "2023-06-21T06:27:17.34Z",
+              "workflowTasks": [],
+              "deployPhasesSnapshot": [
+                {
+                  "deploymentInput": {
+                    "parallelExecution": {
+                      "parallelExecutionType": "none"
+                    },
+                    "agentSpecification": {
+                      "identifier": "ubuntu latest"
+                    },
+                    "skipArtifactsDownload": false,
+                    "artifactsDownloadInput": {
+                      "downloadInputs": []
+                    },
+                    "queueId": 9,
+                    "demands": [],
+                    "enableAccessToken": true,
+                    "timeoutInMinutes": 0,
+                    "jobCancelTimeoutInMinutes": 1,
+                    "condition": "succeeded()",
+                    "overrideInputs": {}
+                  },
+                  "rank": 1,
+                  "phaseType": "agentBasedDeployment",
+                  "name": "Agent job",
+                  "refName": null,
+                  "workflowTasks": []
+                }
+              ],
+              "owner": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "schedules": [],
+              "release": {
+                "id": 1,
+                "name": "Release-1",
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=1&_a=release-summary"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1"
+                  }
+                }
+              },
+              "releaseDefinition": {
+                "id": 1,
+                "name": "New release pipeline",
+                "path": "\\",
+                "projectReference": null,
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/1",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=1"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/1"
+                  }
+                }
+              },
+              "releaseCreatedBy": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "triggerReason": "ReleaseStarted",
+              "timeToDeploy": 0.29061666666666669,
+              "processParameters": {},
+              "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              },
+              "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              }
+            }
+          ],
+          "variables": {},
+          "variableGroups": [],
+          "artifacts": [
+            {
+              "sourceId": "289d0890-546e-481b-92aa-02385a8c62fc:d8024289-22ae-4c03-8b35-c281aab2a6a6",
+              "type": "PackageManagement",
+              "alias": "_HelloWorld",
+              "definitionReference": {
+                "definition": {
+                  "id": "d8024289-22ae-4c03-8b35-c281aab2a6a6",
+                  "name": "HelloWorld"
+                },
+                "feed": {
+                  "id": "289d0890-546e-481b-92aa-02385a8c62fc",
+                  "name": "automation-cdc"
+                },
+                "files": {
+                  "id": "**",
+                  "name": "**"
+                },
+                "packageType": {
+                  "id": "nuget",
+                  "name": "NuGet"
+                },
+                "skipextract": {
+                  "id": "true",
+                  "name": "true"
+                },
+                "version": {
+                  "id": "1.3.0.17",
+                  "name": "1.3.0.17"
+                },
+                "view": {
+                  "id": "e20f0187-bbe2-451c-a524-a1e858a928a4",
+                  "name": "Local"
+                }
+              },
+              "isPrimary": true,
+              "isRetained": false
+            }
+          ],
+          "releaseDefinition": {
+            "id": 1,
+            "name": "New release pipeline",
+            "path": "\\",
+            "projectReference": null,
+            "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/1",
+            "_links": {
+              "self": {
+                "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/1"
+              },
+              "web": {
+                "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=1"
+              }
+            }
+          },
+          "releaseDefinitionRevision": 1,
+          "description": "",
+          "reason": "manual",
+          "releaseNameFormat": "Release-$(rev:r)",
+          "keepForever": false,
+          "definitionSnapshotRevision": 1,
+          "logsContainerUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1/logs",
+          "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1",
+          "_links": {
+            "self": {
+              "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/1"
+            },
+            "web": {
+              "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=1&_a=release-summary"
+            }
+          },
+          "tags": [],
+          "triggeringArtifactAlias": null,
+          "projectReference": {
+            "id": "e3bbfdf8-b1df-4ff0-9755-c67b163328b3",
+            "name": null
+          },
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "project":{
+        "id":"d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name":"project-test-1",
+        "url":"https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state":"wellFormed",
+        "revision":12,
+        "visibility":"private",
+        "lastUpdateTime":"2020-11-06T09:57:46.917+0000",
+        "organization":"cgn-test"
+      },
+      "releases": [
+        {
+          "id": 2,
+          "name": "Release-1",
+          "status": "active",
+          "createdOn": "2023-06-21T10:12:02.92Z",
+          "modifiedOn": "2023-06-21T10:12:02.92Z",
+          "start_time": "2023-06-21T10:12:12.2533333Z",
+          "finish_time": "2023-06-21T10:12:18.0866667Z",
+          "modifiedBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdFor": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "stages": [
+            {
+              "id": 2,
+              "releaseId": 2,
+              "name": "Stage 2",
+              "status": "succeeded",
+              "variables": {},
+              "variableGroups": [],
+              "steps": [
+                {
+                "id": 7,
+                "timelineRecordId": "e87da953-925b-518c-531c-0f0eb71514be",
+                "name": "Agent job",
+                "dateStarted": "2023-06-21T10:12:12.2533333Z",
+                "dateEnded": "2023-06-21T10:12:18.0933333Z",
+                "startTime": "2023-06-21T10:12:12.2533333Z",
+                "finishTime": "2023-06-21T10:12:18.0933333Z",
+                "status": "succeeded",
+                "rank": 1,
+                "issues": [],
+                "agentName": "Hosted Agent",
+                "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2/environments/2/deployPhases/3/tasks/7/logs"
+                },
+                {
+                  "id": 4,
+                  "timelineRecordId": "22928f34-90aa-40b8-858f-93560d373eb0",
+                  "name": "Initialize job",
+                  "dateStarted": "2023-06-21T10:12:12.52Z",
+                  "dateEnded": "2023-06-21T10:12:13.57Z",
+                  "startTime": "2023-06-21T10:12:12.52Z",
+                  "finishTime": "2023-06-21T10:12:13.57Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2/environments/2/deployPhases/3/tasks/4/logs"
+                },
+                {
+                  "id": 5,
+                  "timelineRecordId": "0ea2c682-0eff-5086-e621-c1fea24f8810",
+                  "name": "Download artifact - _NuGetHelloWorldPackage (Azure Artifacts)",
+                  "dateStarted": "2023-06-21T10:12:13.5866667Z",
+                  "dateEnded": "2023-06-21T10:12:18.0633333Z",
+                  "startTime": "2023-06-21T10:12:13.5866667Z",
+                  "finishTime": "2023-06-21T10:12:18.0633333Z",
+                  "status": "succeeded",
+                  "rank": 2,
+                  "issues": [],
+                  "task": {
+                    "id": "8d6e8f7e-267d-442d-8c92-1f586864c62f",
+                    "name": "DownloadPackage",
+                    "version": "1.221.0"
+                  },
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2/environments/2/deployPhases/3/tasks/5/logs"
+                },
+                {
+                  "id": 6,
+                  "timelineRecordId": "2ebe917f-357b-4381-b2e8-222c61402624",
+                  "name": "Finalize Job",
+                  "dateStarted": "2023-06-21T10:12:18.0733333Z",
+                  "dateEnded": "2023-06-21T10:12:18.0866667Z",
+                  "startTime": "2023-06-21T10:12:18.0733333Z",
+                  "finishTime": "2023-06-21T10:12:18.0866667Z",
+                  "status": "succeeded",
+                  "percentComplete": 100,
+                  "rank": 3,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2/environments/2/deployPhases/3/tasks/6/logs"
+                }
+              ],
+              "rank": 1,
+              "definitionEnvironmentId": 2,
+              "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+              },
+              "demands": [],
+              "conditions": [
+                {
+                  "result": true,
+                  "name": "ReleaseStarted",
+                  "conditionType": "event",
+                  "value": ""
+                }
+              ],
+              "createdOn": "2023-06-21T10:12:02.97Z",
+              "modifiedOn": "2023-06-21T10:12:21.713Z",
+              "workflowTasks": [],
+              "deployPhasesSnapshot": [
+                {
+                  "deploymentInput": {
+                    "parallelExecution": {
+                      "parallelExecutionType": "none"
+                    },
+                    "agentSpecification": {
+                      "identifier": "ubuntu latest"
+                    },
+                    "skipArtifactsDownload": false,
+                    "artifactsDownloadInput": {
+                      "downloadInputs": []
+                    },
+                    "queueId": 9,
+                    "demands": [],
+                    "enableAccessToken": false,
+                    "timeoutInMinutes": 0,
+                    "jobCancelTimeoutInMinutes": 1,
+                    "condition": "succeeded()",
+                    "overrideInputs": {}
+                  },
+                  "rank": 1,
+                  "phaseType": "agentBasedDeployment",
+                  "name": "Agent job",
+                  "refName": null,
+                  "workflowTasks": []
+                }
+              ],
+              "owner": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "schedules": [],
+              "release": {
+                "id": 2,
+                "name": "Release-1",
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=2&_a=release-summary"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2"
+                  }
+                }
+              },
+              "releaseDefinition": {
+                "id": 2,
+                "name": "New release pipeline (1)",
+                "path": "\\",
+                "projectReference": null,
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/2",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=2"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/2"
+                  }
+                }
+              },
+              "releaseCreatedBy": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "triggerReason": "ReleaseStarted",
+              "timeToDeploy": 0.30733333333333335,
+              "processParameters": {},
+              "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              },
+              "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              }
+            }
+          ],
+          "variables": {},
+          "variableGroups": [],
+          "artifacts": [
+            {
+              "sourceId": "289d0890-546e-481b-92aa-02385a8c62fc:9abd0923-1bce-4f2d-9175-b7c191a42937",
+              "type": "PackageManagement",
+              "alias": "_NuGetHelloWorldPackage",
+              "definitionReference": {
+                "definition": {
+                  "id": "9abd0923-1bce-4f2d-9175-b7c191a42937",
+                  "name": "NuGetHelloWorldPackage"
+                },
+                "feed": {
+                  "id": "289d0890-546e-481b-92aa-02385a8c62fc",
+                  "name": "automation-cdc"
+                },
+                "files": {
+                  "id": "**",
+                  "name": "**"
+                },
+                "packageType": {
+                  "id": "nuget",
+                  "name": "NuGet"
+                },
+                "skipextract": {
+                  "id": "",
+                  "name": ""
+                },
+                "version": {
+                  "id": "0.0.8",
+                  "name": "0.0.8"
+                },
+                "view": {
+                  "id": "e20f0187-bbe2-451c-a524-a1e858a928a4",
+                  "name": "Local"
+                }
+              },
+              "isPrimary": true,
+              "isRetained": false
+            }
+          ],
+          "releaseDefinition": {
+            "id": 2,
+            "name": "New release pipeline (1)",
+            "path": "\\",
+            "projectReference": null,
+            "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/2",
+            "_links": {
+              "self": {
+                "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/2"
+              },
+              "web": {
+                "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=2"
+              }
+            }
+          },
+          "releaseDefinitionRevision": 1,
+          "description": "",
+          "reason": "manual",
+          "releaseNameFormat": "Release-$(rev:r)",
+          "keepForever": false,
+          "definitionSnapshotRevision": 1,
+          "logsContainerUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2/logs",
+          "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2",
+          "_links": {
+            "self": {
+              "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/2"
+            },
+            "web": {
+              "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=2&_a=release-summary"
+            }
+          },
+          "tags": [],
+          "triggeringArtifactAlias": null,
+          "projectReference": {
+            "id": "e3bbfdf8-b1df-4ff0-9755-c67b163328b3",
+            "name": null
+          },
+          "properties": {}
+        }
+      ]
+    },
+    {
+      "project":{
+        "id":"3ed4a959-b658-4ecf-adfb-ca0a8bb1a66a",
+        "name":"Project45",
+        "url":"https://dev.azure.com/cgn-test/_apis/projects/3ed4a959-b658-4ecf-adfb-ca0a8bb1a66a",
+        "state":"wellFormed",
+        "revision":100,
+        "visibility":"public",
+        "lastUpdateTime":"2021-04-09T07:33:37.513+0000",
+        "organization":"cgn-test"
+      },
+      "releases": [
+        {
+          "id": 3,
+          "name": "Release-1",
+          "status": "active",
+          "createdOn": "2023-06-22T06:04:59.197Z",
+          "modifiedOn": "2023-06-22T06:04:59.197Z",
+          "start_time": "2023-06-22T06:05:08.0866667Z",
+          "finish_time": "2023-06-22T06:05:17.04Z",
+          "modifiedBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdFor": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "stages": [
+            {
+              "id": 3,
+              "releaseId": 3,
+              "name": "Stage 2",
+              "status": "succeeded",
+              "variables": {},
+              "variableGroups": [],
+              "steps": [
+                {
+                  "id": 7,
+                  "timelineRecordId": "7d4da69f-f754-5930-037e-7b22c240b5cd",
+                  "name": "Agent job",
+                  "dateStarted": "2023-06-22T06:05:08.0866667Z",
+                  "dateEnded": "2023-06-22T06:05:17.0466667Z",
+                  "startTime": "2023-06-22T06:05:08.0866667Z",
+                  "finishTime": "2023-06-22T06:05:17.0466667Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3/environments/3/deployPhases/4/tasks/7/logs"
+                },
+                {
+                  "id": 4,
+                  "timelineRecordId": "07b4224f-16ea-41a9-91d2-11d0260434ee",
+                  "name": "Initialize job",
+                  "dateStarted": "2023-06-22T06:05:08.3033333Z",
+                  "dateEnded": "2023-06-22T06:05:10.22Z",
+                  "startTime": "2023-06-22T06:05:08.3033333Z",
+                  "finishTime": "2023-06-22T06:05:10.22Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3/environments/3/deployPhases/4/tasks/4/logs"
+                },
+                {
+                  "id": 5,
+                  "timelineRecordId": "872bfea3-e1ba-54d7-24e3-b3f5e6ad0145",
+                  "name": "Download artifact - _NuGetHelloWorldPackage (Azure Artifacts)",
+                  "dateStarted": "2023-06-22T06:05:10.2366667Z",
+                  "dateEnded": "2023-06-22T06:05:16.9966667Z",
+                  "startTime": "2023-06-22T06:05:10.2366667Z",
+                  "finishTime": "2023-06-22T06:05:16.9966667Z",
+                  "status": "succeeded",
+                  "rank": 2,
+                  "issues": [],
+                  "task": {
+                    "id": "8d6e8f7e-267d-442d-8c92-1f586864c62f",
+                    "name": "DownloadPackage",
+                    "version": "1.221.0"
+                  },
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3/environments/3/deployPhases/4/tasks/5/logs"
+                },
+                {
+                  "id": 6,
+                  "timelineRecordId": "c1245da3-fb84-4385-aa97-c15de50f4f90",
+                  "name": "Finalize Job",
+                  "dateStarted": "2023-06-22T06:05:17.0033333Z",
+                  "dateEnded": "2023-06-22T06:05:17.04Z",
+                  "startTime": "2023-06-22T06:05:17.0033333Z",
+                  "finishTime": "2023-06-22T06:05:17.04Z",
+                  "status": "succeeded",
+                  "percentComplete": 100,
+                  "rank": 3,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3/environments/3/deployPhases/4/tasks/6/logs"
+                }
+              ],
+              "rank": 1,
+              "definitionEnvironmentId": 3,
+              "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+              },
+              "demands": [],
+              "conditions": [
+                {
+                  "result": true,
+                  "name": "ReleaseStarted",
+                  "conditionType": "event",
+                  "value": ""
+                }
+              ],
+              "createdOn": "2023-06-22T06:04:59.237Z",
+              "modifiedOn": "2023-06-22T06:05:18.86Z",
+              "workflowTasks": [],
+              "deployPhasesSnapshot": [
+                {
+                  "deploymentInput": {
+                    "parallelExecution": {
+                      "parallelExecutionType": "none"
+                    },
+                    "agentSpecification": {
+                      "identifier": "ubuntu latest"
+                    },
+                    "skipArtifactsDownload": false,
+                    "artifactsDownloadInput": {
+                      "downloadInputs": []
+                    },
+                    "queueId": 9,
+                    "demands": [],
+                    "enableAccessToken": false,
+                    "timeoutInMinutes": 0,
+                    "jobCancelTimeoutInMinutes": 1,
+                    "condition": "succeeded()",
+                    "overrideInputs": {}
+                  },
+                  "rank": 1,
+                  "phaseType": "agentBasedDeployment",
+                  "name": "Agent job",
+                  "refName": null,
+                  "workflowTasks": []
+                }
+              ],
+              "owner": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "schedules": [],
+              "release": {
+                "id": 3,
+                "name": "Release-1",
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=3&_a=release-summary"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3"
+                  }
+                }
+              },
+              "releaseDefinition": {
+                "id": 3,
+                "name": "New release pipeline (1) - With Variables",
+                "path": "\\",
+                "projectReference": null,
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=3"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3"
+                  }
+                }
+              },
+              "releaseCreatedBy": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "triggerReason": "ReleaseStarted",
+              "timeToDeploy": 0.32321666666666665,
+              "processParameters": {},
+              "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              },
+              "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              }
+            }
+          ],
+          "variables": {
+            "var1": {
+              "value": "val1"
+            },
+            "var2": {
+              "value": "val2"
+            }
+          },
+          "variableGroups": [
+            {
+              "variables": {
+                "env_var1": {
+                  "value": "env_val1"
+                },
+                "env_var2": {
+                  "value": "env_val2"
+                }
+              },
+              "type": "Vsts",
+              "id": 1,
+              "name": "Env variable group",
+              "description": "",
+              "isShared": false,
+              "variableGroupProjectReferences": null
+            }
+          ],
+          "artifacts": [
+            {
+              "sourceId": "289d0890-546e-481b-92aa-02385a8c62fc:9abd0923-1bce-4f2d-9175-b7c191a42937",
+              "type": "PackageManagement",
+              "alias": "_NuGetHelloWorldPackage",
+              "definitionReference": {
+                "definition": {
+                  "id": "9abd0923-1bce-4f2d-9175-b7c191a42937",
+                  "name": "NuGetHelloWorldPackage"
+                },
+                "feed": {
+                  "id": "289d0890-546e-481b-92aa-02385a8c62fc",
+                  "name": "automation-cdc"
+                },
+                "files": {
+                  "id": "**",
+                  "name": "**"
+                },
+                "packageType": {
+                  "id": "nuget",
+                  "name": "NuGet"
+                },
+                "skipextract": {
+                  "id": "",
+                  "name": ""
+                },
+                "version": {
+                  "id": "0.0.8",
+                  "name": "0.0.8"
+                },
+                "view": {
+                  "id": "e20f0187-bbe2-451c-a524-a1e858a928a4",
+                  "name": "Local"
+                }
+              },
+              "isPrimary": true,
+              "isRetained": false
+            }
+          ],
+          "releaseDefinition": {
+            "id": 3,
+            "name": "New release pipeline (1) - With Variables",
+            "path": "\\",
+            "projectReference": null,
+            "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3",
+            "_links": {
+              "self": {
+                "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3"
+              },
+              "web": {
+                "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=3"
+              }
+            }
+          },
+          "releaseDefinitionRevision": 1,
+          "description": "",
+          "reason": "manual",
+          "releaseNameFormat": "Release-$(rev:r)",
+          "keepForever": false,
+          "definitionSnapshotRevision": 1,
+          "logsContainerUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3/logs",
+          "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3",
+          "_links": {
+            "self": {
+              "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/3"
+            },
+            "web": {
+              "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=3&_a=release-summary"
+            }
+          },
+          "tags": [],
+          "triggeringArtifactAlias": null,
+          "projectReference": {
+            "id": "e3bbfdf8-b1df-4ff0-9755-c67b163328b3",
+            "name": null
+          },
+          "properties": {}
+        },
+        {
+          "id": 4,
+          "name": "Release-2",
+          "status": "active",
+          "createdOn": "2023-07-06T10:44:54.297Z",
+          "modifiedOn": "2023-07-06T10:44:54.297Z",
+          "start_time": "2023-07-06T10:45:05.1766667Z",
+          "finish_time": "2023-07-06T10:45:10.8733333Z",
+          "modifiedBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdFor": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "stages": [
+            {
+              "id": 4,
+              "releaseId": 4,
+              "name": "Stage 2",
+              "status": "succeeded",
+              "variables": {
+                "var1": {
+                  "value": "val1"
+                }
+              },
+              "variableGroups": [],
+              "steps": [
+                {
+                  "id": 7,
+                  "timelineRecordId": "7d4da69f-f754-5930-037e-7b22c240b5cd",
+                  "name": "Agent job",
+                  "dateStarted": "2023-07-06T10:45:05.1766667Z",
+                  "dateEnded": "2023-07-06T10:45:10.8766667Z",
+                  "startTime": "2023-07-06T10:45:05.1766667Z",
+                  "finishTime": "2023-07-06T10:45:10.8766667Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4/environments/4/deployPhases/5/tasks/7/logs"
+                },
+                {
+                  "id": 4,
+                  "timelineRecordId": "d3f2abd5-7516-4fef-898a-9e006948bea2",
+                  "name": "Initialize job",
+                  "dateStarted": "2023-07-06T10:45:05.37Z",
+                  "dateEnded": "2023-07-06T10:45:06.5566667Z",
+                  "startTime": "2023-07-06T10:45:05.37Z",
+                  "finishTime": "2023-07-06T10:45:06.5566667Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4/environments/4/deployPhases/5/tasks/4/logs"
+                },
+                {
+                  "id": 5,
+                  "timelineRecordId": "872bfea3-e1ba-54d7-24e3-b3f5e6ad0145",
+                  "name": "Download artifact - _NuGetHelloWorldPackage (Azure Artifacts)",
+                  "dateStarted": "2023-07-06T10:45:06.5733333Z",
+                  "dateEnded": "2023-07-06T10:45:10.8333333Z",
+                  "startTime": "2023-07-06T10:45:06.5733333Z",
+                  "finishTime": "2023-07-06T10:45:10.8333333Z",
+                  "status": "succeeded",
+                  "rank": 2,
+                  "issues": [],
+                  "task": {
+                    "id": "8d6e8f7e-267d-442d-8c92-1f586864c62f",
+                    "name": "DownloadPackage",
+                    "version": "1.221.0"
+                  },
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4/environments/4/deployPhases/5/tasks/5/logs"
+                },
+                {
+                  "id": 6,
+                  "timelineRecordId": "2018a007-7b3b-49d8-87ba-d7e8e0623119",
+                  "name": "Finalize Job",
+                  "dateStarted": "2023-07-06T10:45:10.84Z",
+                  "dateEnded": "2023-07-06T10:45:10.8733333Z",
+                  "startTime": "2023-07-06T10:45:10.84Z",
+                  "finishTime": "2023-07-06T10:45:10.8733333Z",
+                  "status": "succeeded",
+                  "percentComplete": 100,
+                  "rank": 3,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4/environments/4/deployPhases/5/tasks/6/logs"
+                }
+              ],
+              "rank": 1,
+              "definitionEnvironmentId": 3,
+              "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+              },
+              "demands": [],
+              "conditions": [
+                {
+                  "result": true,
+                  "name": "ReleaseStarted",
+                  "conditionType": "event",
+                  "value": ""
+                }
+              ],
+              "createdOn": "2023-07-06T10:44:54.36Z",
+              "modifiedOn": "2023-07-06T10:45:12.75Z",
+              "workflowTasks": [],
+              "deployPhasesSnapshot": [
+                {
+                  "deploymentInput": {
+                    "parallelExecution": {
+                      "parallelExecutionType": "none"
+                    },
+                    "agentSpecification": {
+                      "identifier": "ubuntu latest"
+                    },
+                    "skipArtifactsDownload": false,
+                    "artifactsDownloadInput": {
+                      "downloadInputs": []
+                    },
+                    "queueId": 9,
+                    "demands": [],
+                    "enableAccessToken": false,
+                    "timeoutInMinutes": 0,
+                    "jobCancelTimeoutInMinutes": 1,
+                    "condition": "succeeded()",
+                    "overrideInputs": {}
+                  },
+                  "rank": 1,
+                  "phaseType": "agentBasedDeployment",
+                  "name": "Agent job",
+                  "refName": null,
+                  "workflowTasks": []
+                }
+              ],
+              "owner": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "schedules": [],
+              "release": {
+                "id": 4,
+                "name": "Release-2",
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=4&_a=release-summary"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4"
+                  }
+                }
+              },
+              "releaseDefinition": {
+                "id": 3,
+                "name": "New release pipeline (1) - With Variables",
+                "path": "\\",
+                "projectReference": null,
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=3"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3"
+                  }
+                }
+              },
+              "releaseCreatedBy": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "triggerReason": "ReleaseStarted",
+              "timeToDeploy": 0.3026,
+              "processParameters": {},
+              "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              },
+              "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              }
+            }
+          ],
+          "variables": {
+            "var2": {
+              "value": "val2"
+            }
+          },
+          "variableGroups": [
+            {
+              "variables": {
+                "env_var1": {
+                  "value": "env_val1"
+                },
+                "env_var2": {
+                  "value": "env_val2"
+                }
+              },
+              "type": "Vsts",
+              "id": 1,
+              "name": "Env variable group",
+              "description": "",
+              "isShared": false,
+              "variableGroupProjectReferences": null
+            }
+          ],
+          "artifacts": [
+            {
+              "sourceId": "289d0890-546e-481b-92aa-02385a8c62fc:9abd0923-1bce-4f2d-9175-b7c191a42937",
+              "type": "PackageManagement",
+              "alias": "_NuGetHelloWorldPackage",
+              "definitionReference": {
+                "definition": {
+                  "id": "9abd0923-1bce-4f2d-9175-b7c191a42937",
+                  "name": "NuGetHelloWorldPackage"
+                },
+                "feed": {
+                  "id": "289d0890-546e-481b-92aa-02385a8c62fc",
+                  "name": "automation-cdc"
+                },
+                "files": {
+                  "id": "**",
+                  "name": "**"
+                },
+                "packageType": {
+                  "id": "nuget",
+                  "name": "NuGet"
+                },
+                "skipextract": {
+                  "id": "",
+                  "name": ""
+                },
+                "version": {
+                  "id": "0.0.8",
+                  "name": "0.0.8"
+                },
+                "view": {
+                  "id": "e20f0187-bbe2-451c-a524-a1e858a928a4",
+                  "name": "Local"
+                }
+              },
+              "isPrimary": true,
+              "isRetained": false
+            }
+          ],
+          "releaseDefinition": {
+            "id": 3,
+            "name": "New release pipeline (1) - With Variables",
+            "path": "\\",
+            "projectReference": null,
+            "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3",
+            "_links": {
+              "self": {
+                "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3"
+              },
+              "web": {
+                "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=3"
+              }
+            }
+          },
+          "releaseDefinitionRevision": 2,
+          "description": "",
+          "reason": "manual",
+          "releaseNameFormat": "Release-$(rev:r)",
+          "keepForever": false,
+          "definitionSnapshotRevision": 1,
+          "logsContainerUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4/logs",
+          "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4",
+          "_links": {
+            "self": {
+              "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/4"
+            },
+            "web": {
+              "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=4&_a=release-summary"
+            }
+          },
+          "tags": [],
+          "triggeringArtifactAlias": null,
+          "projectReference": {
+            "id": "e3bbfdf8-b1df-4ff0-9755-c67b163328b3",
+            "name": null
+          },
+          "properties": {}
+        },
+        {
+          "id": 5,
+          "name": "Release-3",
+          "status": "active",
+          "createdOn": "2023-07-10T10:23:54.17Z",
+          "modifiedOn": "2023-07-10T10:23:54.17Z",
+          "start_time": "2023-07-10T10:24:02.7433333Z",
+          "finish_time": "2023-07-10T10:24:06.0066667Z",
+          "modifiedBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdBy": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "createdFor": {
+            "displayName": "Automation CDC",
+            "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+            "_links": {
+              "avatar": {
+                "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              }
+            },
+            "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+            "uniqueName": "automation-cdc@harness.io",
+            "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+            "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+          },
+          "stages": [
+            {
+              "id": 5,
+              "releaseId": 5,
+              "name": "Stage 2",
+              "status": "succeeded",
+              "variables": {
+                "var1": {
+                  "value": "val1"
+                }
+              },
+              "variableGroups": [],
+              "steps": [
+                {
+                  "id": 7,
+                  "timelineRecordId": "7d4da69f-f754-5930-037e-7b22c240b5cd",
+                  "name": "Agent job",
+                  "dateStarted": "2023-07-10T10:24:02.7433333Z",
+                  "dateEnded": "2023-07-10T10:24:06.01Z",
+                  "startTime": "2023-07-10T10:24:02.7433333Z",
+                  "finishTime": "2023-07-10T10:24:06.01Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5/environments/5/deployPhases/6/tasks/7/logs"
+                },
+                {
+                  "id": 4,
+                  "timelineRecordId": "83036b7b-347d-40bd-833a-340e2f8eff45",
+                  "name": "Initialize job",
+                  "dateStarted": "2023-07-10T10:24:02.98Z",
+                  "dateEnded": "2023-07-10T10:24:03.8233333Z",
+                  "startTime": "2023-07-10T10:24:02.98Z",
+                  "finishTime": "2023-07-10T10:24:03.8233333Z",
+                  "status": "succeeded",
+                  "rank": 1,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5/environments/5/deployPhases/6/tasks/4/logs"
+                },
+                {
+                  "id": 5,
+                  "timelineRecordId": "872bfea3-e1ba-54d7-24e3-b3f5e6ad0145",
+                  "name": "Download artifact - _NuGetHelloWorldPackage (Azure Artifacts)",
+                  "dateStarted": "2023-07-10T10:24:03.84Z",
+                  "dateEnded": "2023-07-10T10:24:05.9633333Z",
+                  "startTime": "2023-07-10T10:24:03.84Z",
+                  "finishTime": "2023-07-10T10:24:05.9633333Z",
+                  "status": "succeeded",
+                  "rank": 2,
+                  "issues": [],
+                  "task": {
+                    "id": "8d6e8f7e-267d-442d-8c92-1f586864c62f",
+                    "name": "DownloadPackage",
+                    "version": "1.221.0"
+                  },
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5/environments/5/deployPhases/6/tasks/5/logs"
+                },
+                {
+                  "id": 6,
+                  "timelineRecordId": "90f36dcb-f5fa-42a9-bb37-bfa24df8f3e3",
+                  "name": "Finalize Job",
+                  "dateStarted": "2023-07-10T10:24:05.9733333Z",
+                  "dateEnded": "2023-07-10T10:24:06.0066667Z",
+                  "startTime": "2023-07-10T10:24:05.9733333Z",
+                  "finishTime": "2023-07-10T10:24:06.0066667Z",
+                  "status": "succeeded",
+                  "percentComplete": 100,
+                  "rank": 3,
+                  "issues": [],
+                  "agentName": "Hosted Agent",
+                  "logUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5/environments/5/deployPhases/6/tasks/6/logs"
+                }
+              ],
+              "rank": 1,
+              "definitionEnvironmentId": 3,
+              "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+              },
+              "demands": [],
+              "conditions": [
+                {
+                  "result": true,
+                  "name": "ReleaseStarted",
+                  "conditionType": "event",
+                  "value": ""
+                }
+              ],
+              "createdOn": "2023-07-10T10:23:54.21Z",
+              "modifiedOn": "2023-07-10T10:24:07.577Z",
+              "workflowTasks": [],
+              "deployPhasesSnapshot": [
+                {
+                  "deploymentInput": {
+                    "parallelExecution": {
+                      "parallelExecutionType": "none"
+                    },
+                    "agentSpecification": {
+                      "identifier": "ubuntu latest"
+                    },
+                    "skipArtifactsDownload": false,
+                    "artifactsDownloadInput": {
+                      "downloadInputs": []
+                    },
+                    "queueId": 9,
+                    "demands": [],
+                    "enableAccessToken": false,
+                    "timeoutInMinutes": 0,
+                    "jobCancelTimeoutInMinutes": 1,
+                    "condition": "succeeded()",
+                    "overrideInputs": {}
+                  },
+                  "rank": 1,
+                  "phaseType": "agentBasedDeployment",
+                  "name": "Agent job",
+                  "refName": null,
+                  "workflowTasks": []
+                }
+              ],
+              "owner": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "schedules": [],
+              "release": {
+                "id": 5,
+                "name": "Release-3",
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=5&_a=release-summary"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5"
+                  }
+                }
+              },
+              "releaseDefinition": {
+                "id": 3,
+                "name": "New release pipeline (1) - With Variables",
+                "path": "\\",
+                "projectReference": null,
+                "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3",
+                "_links": {
+                  "web": {
+                    "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=3"
+                  },
+                  "self": {
+                    "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3"
+                  }
+                }
+              },
+              "releaseCreatedBy": {
+                "displayName": "Automation CDC",
+                "url": "https://spsprodcus5.vssps.visualstudio.com/Aecf628d0-1355-4565-bf48-9400ce76bc35/_apis/Identities/b965367c-7d7b-677d-a9c6-0326493c8420",
+                "_links": {
+                  "avatar": {
+                    "href": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+                  }
+                },
+                "id": "b965367c-7d7b-677d-a9c6-0326493c8420",
+                "uniqueName": "automation-cdc@harness.io",
+                "imageUrl": "https://dev.azure.com/automation-cdc/_apis/GraphProfile/MemberAvatars/aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw",
+                "descriptor": "aad.Yjk2NTM2N2MtN2Q3Yi03NzdkLWE5YzYtMDMyNjQ5M2M4NDIw"
+              },
+              "triggerReason": "ReleaseStarted",
+              "timeToDeploy": 0.21828333333333333,
+              "processParameters": {},
+              "preDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              },
+              "postDeploymentGatesSnapshot": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+              }
+            }
+          ],
+          "variables": {
+            "var2": {
+              "value": "val2"
+            }
+          },
+          "variableGroups": [
+            {
+              "variables": {
+                "env_var1": {
+                  "value": "env_val1"
+                },
+                "env_var2": {
+                  "value": "env_val2"
+                }
+              },
+              "type": "Vsts",
+              "id": 1,
+              "name": "Env variable group",
+              "description": "",
+              "isShared": false,
+              "variableGroupProjectReferences": null
+            }
+          ],
+          "artifacts": [
+            {
+              "sourceId": "289d0890-546e-481b-92aa-02385a8c62fc:9abd0923-1bce-4f2d-9175-b7c191a42937",
+              "type": "PackageManagement",
+              "alias": "_NuGetHelloWorldPackage",
+              "definitionReference": {
+                "definition": {
+                  "id": "9abd0923-1bce-4f2d-9175-b7c191a42937",
+                  "name": "NuGetHelloWorldPackage"
+                },
+                "feed": {
+                  "id": "289d0890-546e-481b-92aa-02385a8c62fc",
+                  "name": "automation-cdc"
+                },
+                "files": {
+                  "id": "**",
+                  "name": "**"
+                },
+                "packageType": {
+                  "id": "nuget",
+                  "name": "NuGet"
+                },
+                "skipextract": {
+                  "id": "",
+                  "name": ""
+                },
+                "version": {
+                  "id": "0.0.8",
+                  "name": "0.0.8"
+                },
+                "view": {
+                  "id": "e20f0187-bbe2-451c-a524-a1e858a928a4",
+                  "name": "Local"
+                }
+              },
+              "isPrimary": true,
+              "isRetained": false
+            }
+          ],
+          "releaseDefinition": {
+            "id": 3,
+            "name": "New release pipeline (1) - With Variables",
+            "path": "\\",
+            "projectReference": null,
+            "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3",
+            "_links": {
+              "self": {
+                "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/definitions/3"
+              },
+              "web": {
+                "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?definitionId=3"
+              }
+            }
+          },
+          "releaseDefinitionRevision": 2,
+          "description": "",
+          "reason": "manual",
+          "releaseNameFormat": "Release-$(rev:r)",
+          "keepForever": false,
+          "definitionSnapshotRevision": 1,
+          "logsContainerUrl": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5/logs",
+          "url": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5",
+          "_links": {
+            "self": {
+              "href": "https://vsrm.dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_apis/Release/releases/5"
+            },
+            "web": {
+              "href": "https://dev.azure.com/automation-cdc/e3bbfdf8-b1df-4ff0-9755-c67b163328b3/_release?releaseId=5&_a=release-summary"
+            }
+          },
+          "tags": [],
+          "triggeringArtifactAlias": null,
+          "projectReference": {
+            "id": "e3bbfdf8-b1df-4ff0-9755-c67b163328b3",
+            "name": null
+          },
+          "properties": {}
+        }
+      ]
+    }
+  ],
+  "count":3,
+  "_metadata":{
+    "integration_key":{
+      "tenant_id":"aztenant",
+      "integration_id":"46"
+    },
+    "integration_type":"azuredevops",
+    "data_type":"pipelines",
+    "page_number":0
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "records": [
+    {
+      "self": "https://levelops.atlassian.net/rest/api/3/project/10001",
+      "id": "10001",
+      "name": "levelops",
+      "key": "LEV",
+      "description": "",
+      "lead": {
+        "self": "https://levelops.atlassian.net/rest/api/3/user?accountId=5d6049c45a68ef0ca625940b",
+        "account_id": "5d6049c45a68ef0ca625940b",
+        "name": "nishant",
+        "key": null,
+        "display_name": "Nishant Doshi",
+        "active": true
+      },
+      "components": [
+        {
+          "id": "10002",
+          "name": "ingestion",
+          "description": "Ingestion Framework"
+        },
+        {
+          "id": "10003",
+          "name": "internalapi-levelops",
+          "description": "Internal api work"
+        },
+        {
+          "id": "10001",
+          "name": "serverapi-levelops",
+          "description": "External Facing API"
+        },
+        {
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "issue_types": [
+        {
+          "id": 10002,
+          "name": "Task",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10003,
+          "name": "Sub-task",
+          "description": null,
+          "sub_task": true
+        },
+        {
+          "id": 10006,
+          "name": "Story",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10005,
+          "name": "Bug",
+          "description": null,
+          "sub_task": false
+        },
+        {
+          "id": 10000,
+          "name": "Epic",
+          "description": null,
+          "sub_task": false
+        }
+      ],
+      "assignee_type": "UNASSIGNED",
+      "versions": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/3/version/10001",
+          "id": "10001",
+          "description": null,
+          "name": "V1",
+          "archived": false,
+          "released": true,
+          "startDate": "2019-09-17",
+          "releaseDate": "2019-09-17",
+          "userStartDate": "16/Sep/19",
+          "userReleaseDate": "16/Sep/19",
+          "projectId": "10001"
+        }
+      ],
+      "project_roles": [
+        "atlassian-addons-project-access",
+        "Service Desk Team",
+        "Service Desk Customers",
+        "Administrators"
+      ],
+      "projectKeys": [
+        "LEV"
+      ],
+      "projectTypeKey": "software",
+      "simplified": false,
+      "style": "classic",
+      "isPrivate": false
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "7"
+    },
+    "integration_type": "jira",
+    "data_type": "projects"
+  }
+}

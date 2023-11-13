@@ -1,0 +1,426 @@
+{
+    "public": true,
+    "id": "1",
+    "name": "Demo DORA Dashboard",
+    "type": "dashboard",
+    "demo": true,
+    "query": {
+    },
+    "metadata": {
+        "rbac": {
+            "owner": "tamvada@levelops.io",
+            "users": {},
+            "isPublic": "public"
+        },
+        "ou_ids": [],
+        "dashboard_time_range": true,
+        "effort_investment_unit": false,
+        "show_org_unit_selection": false,
+        "effort_investment_profile": false,
+        "dashboard_time_range_filter": "last_30_days",
+        "effort_investment_unit_filter": "%_of_engineers"
+    },
+    "widgets": [
+        {
+            "id": "c2de1c50-a040-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "COMMITS BY REPO",
+            "type": "github_commits_report",
+            "metadata": {
+                "order": 5,
+                "width": "half",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "",
+                "max_records": 20,
+                "widget_type": "graph",
+                "custom_hygienes": []
+            },
+            "query": {
+                "across": "repo_id",
+                "visualization": "pie_chart",
+                "code_change_size_unit": "lines"
+            },
+            "display_info": {}
+        },
+        {
+            "id": "96023180-a040-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "CODE CHURN BY REPOS",
+            "type": "scm_files_report",
+            "metadata": {
+                "order": 7,
+                "width": "full",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "",
+                "max_records": 20,
+                "widget_type": "graph",
+                "custom_hygienes": [],
+                "groupByRootFolder_scm_files_report": true
+            },
+            "query": {
+                "across": "",
+                "module": ""
+            },
+            "display_info": {}
+        },
+        {
+            "id": "828b01c0-a03d-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "CODE REVIEW COLLABORATION",
+            "type": "review_collaboration_report",
+            "metadata": {
+                "order": 2,
+                "width": "full",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "This widget shows how your development teams are collaborating",
+                "max_records": 20,
+                "widget_type": "graph",
+                "custom_hygienes": []
+            },
+            "query": {
+                "across": "",
+                "missing_fields": {
+                    "pr_merged": true
+                }
+            },
+            "display_info": {}
+        },
+        {
+            "id": "b61e7740-a03a-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "LEAD TIME BY STAGES",
+            "type": "lead_time_by_stage_report",
+            "metadata": {
+                "order": 1,
+                "width": "full",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "This widget shows the lead time by stages",
+                "max_records": 20,
+                "widget_type": "graph",
+                "default_value": "jira",
+                "custom_hygienes": [],
+                "disable_issue_management_system": true
+            },
+            "query": {
+                "across": "velocity",
+                "velocity_config_id": "b1eb5aa6-8fff-43b4-8cf0-9433c0aaa1ac",
+                "limit_to_only_applicable_data": false
+            },
+            "display_info": {}
+        },
+        {
+            "id": "a3c0c670-a03a-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "MEAN TIME TO RESTORE",
+            "type": "lead_time_single_stat",
+            "metadata": {
+                "order": 4,
+                "width": "half",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "The time it takes to ",
+                "max_records": 20,
+                "widget_type": "stats",
+                "default_value": "githubjira",
+                "custom_hygienes": [],
+                "disable_issue_management_system": true
+            },
+            "query": {
+                "across": "",
+                "calculation": "ticket_velocity",
+                "jira_statuses": [
+                    "DONE"
+                ],
+                "jira_issue_types": [
+                    "BUG"
+                ],
+                "velocity_config_id": "bfbaf906-c06a-40e0-90d9-ba924bbd5f8f"
+            },
+            "display_info": {}
+        },
+        {
+            "id": "7ae72a00-a03a-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "FAILURE RATE",
+            "type": "tickets_counts_stat",
+            "metadata": {
+                "order": 3,
+                "width": "half",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "",
+                "max_records": 20,
+                "widget_type": "stats",
+                "default_value": "jira",
+                "custom_hygienes": [],
+                "filter_tab_order": {
+                    "priorities": 3,
+                    "issue_types": 2,
+                    "stat_time_based": 1
+                },
+                "range_filter_choice": {
+                    "issue_resolved_at": {
+                        "type": "relative",
+                        "relative": {
+                            "last": {
+                                "num": 30,
+                                "unit": "days"
+                            },
+                            "next": {
+                                "unit": "today"
+                            }
+                        }
+                    }
+                },
+                "disable_issue_management_system": true
+            },
+            "query": {
+                "across": "issue_resolved",
+                "priorities": [
+                    "HIGHEST"
+                ],
+                "issue_types": [
+                    "STORY"
+                ],
+                "issue_resolved_at": {
+                    "$gt": "30",
+                    "$lt": "30"
+                }
+            },
+            "display_info": {}
+        },
+        {
+            "id": "8275a1d0-a039-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "DEPLOYMENT FREQUENCY",
+            "type": "jenkins_job_config_change_counts_stat",
+            "metadata": {
+                "order": 2,
+                "width": "half",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "Deployment Frequency is the number of deployments or releases to production done in the selected period",
+                "max_records": 20,
+                "widget_type": "stats",
+                "custom_hygienes": []
+            },
+            "query": {
+                "across": "",
+                "agg_type": "total",
+                "time_period": 30
+            },
+            "display_info": {}
+        },
+        {
+            "id": "3591cb50-a039-11ec-b6dc-b14ee4d6c7aa",
+            "dashboard_id": "1",
+            "name": "LEAD TIME FOR CHANGES",
+            "type": "lead_time_single_stat",
+            "metadata": {
+                "order": 1,
+                "width": "half",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "The time it takes to ",
+                "max_records": 20,
+                "widget_type": "stats",
+                "default_value": "githubjira",
+                "custom_hygienes": [],
+                "apply_ou_on_velocity_report": false,
+                "disable_issue_management_system": true
+            },
+            "query": {
+                "across": "",
+                "calculation": "ticket_velocity",
+                "jira_statuses": [
+                    "DONE"
+                ],
+                "jira_priorities": [],
+                "jira_issue_types": [
+                    "STORY"
+                ],
+                "velocity_config_id": "bfbaf906-c06a-40e0-90d9-ba924bbd5f8f"
+            },
+            "display_info": {}
+        },
+        {
+            "id": "087d15a0-a0db-11ec-b480-5f819beec126",
+            "dashboard_id": "1",
+            "name": "CODING DAYS",
+            "type": "github_coding_days_report",
+            "metadata": {
+                "order": 3,
+                "width": "full",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "",
+                "max_records": 20,
+                "widget_type": "graph",
+                "custom_hygienes": []
+            },
+            "query": {
+                "across": "committer",
+                "interval": "week",
+                "sort_xaxis": "value_high-low",
+                "committed_at": {
+                    "$gt": "1646352000",
+                    "$lt": "1646954568"
+                }
+            },
+            "display_info": {}
+        },
+        {
+            "id": "8ade7700-a0db-11ec-b480-5f819beec126",
+            "dashboard_id": "1",
+            "name": "PRS BY REPO",
+            "type": "github_prs_report",
+            "metadata": {
+                "order": 6,
+                "width": "half",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "description": "",
+                "max_records": 20,
+                "widget_type": "graph",
+                "custom_hygienes": []
+            },
+            "query": {
+                "across": "repo_id"
+            },
+            "display_info": {}
+        },
+        {
+            "id": "9a4562d0-aecd-11ec-bfdf-89f35dc76e87",
+            "dashboard_id": "1",
+            "name": "Rework",
+            "type": "scm_rework_report",
+            "metadata": {
+                "order": 4,
+                "width": "full",
+                "hidden": false,
+                "weights": {
+                    "IDLE": 20,
+                    "NO_ASSIGNEE": 20,
+                    "NO_DUE_DATE": 30,
+                    "NO_COMPONENTS": 20,
+                    "POOR_DESCRIPTION": 8
+                },
+                "children": [],
+                "max_records": 20,
+                "widget_type": "graph",
+                "custom_hygienes": [],
+                "range_filter_choice": {
+                    "committed_at": {
+                        "type": "relative",
+                        "relative": {
+                            "last": {
+                                "num": "90",
+                                "unit": "days"
+                            },
+                            "next": {
+                                "unit": "today"
+                            }
+                        }
+                    }
+                }
+            },
+            "query": {
+                "across": "author",
+                "exclude": {
+                    "authors": [
+                        "jenkins@jenkins.dev.levelops.io",
+                        "9cbfddd6-64a6-48eb-9d00-dc880c670046",
+                        "e87d4880-5145-46bf-8480-ba5d105ae35b",
+                        "ctlo2020",
+                        "gershon-levelops",
+                        "28296ea2-ff19-481d-bd7f-b897ebbca94e",
+                        "06b25669-d192-4f57-af6b-3d491ab25d99",
+                        "gshif",
+                        "c63f6a69-143f-423f-8a84-df6a956150ce",
+                        "0f6b4185-006a-436e-b9be-1a7cafacb76f"
+                    ]
+                },
+                "committed_at": {
+                    "$gt": "1628294400",
+                    "$lt": "1636070399"
+                }
+            },
+            "display_info": {}
+        }
+    ],
+    "default": true
+}

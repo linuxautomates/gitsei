@@ -1,0 +1,78 @@
+dependencies {
+    implementation project(':ingestion-agent')
+    implementation project(':ingestion-engine')
+    implementation project(':integrations:integration-gcs')
+    implementation project(':integrations:integration-github')
+    implementation project(':integrations:integration-jira')
+    implementation project(':integrations:integration-slack')
+    implementation project(':integrations:integration-confluence')
+    implementation project(':integrations:integration-rapid7')
+    implementation project(':integrations:integration-snyk')
+    implementation project(':integrations:integration-postgres')
+    implementation project(':integrations:integration-splunk')
+    implementation project(':integrations:integration-k8s')
+    // implementation project(':integrations:integration-pagerduty')
+    // implementation project(':integrations:integration-blackduck')
+    // implementation project(':integrations:integration-coverity')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('integration-clients')
+    implementation levelopsCommonsLib('integration-github')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('integration-scm-repo-mapping')
+
+    implementation levelopsIntegrationsLib('integration-awsdevtools-controllers')
+    implementation levelopsIntegrationsLib('integration-azure-devops-controllers')
+    implementation levelopsIntegrationsLib('integration-bitbucket-controllers')
+    implementation levelopsIntegrationsLib('integration-bitbucket-server-controllers')
+    implementation levelopsIntegrationsLib('integration-blackduck-controllers')
+    implementation levelopsIntegrationsLib('integration-checkmarx-controllers')
+    implementation levelopsIntegrationsLib('integration-circleci-controllers')
+    implementation levelopsIntegrationsLib('integration-coverity-controllers')
+    implementation levelopsIntegrationsLib('integration-droneci-controllers')
+    implementation levelopsIntegrationsLib('integration-gerrit-controllers')
+    implementation levelopsIntegrationsLib('integration-gitlab-controllers')
+    implementation levelopsIntegrationsLib('integration-harnessng-controllers')
+    implementation levelopsIntegrationsLib('integration-helix-core-controllers')
+    implementation levelopsIntegrationsLib('integration-helix-swarm-controllers')
+    implementation levelopsIntegrationsLib('integration-okta-controllers')
+    implementation levelopsIntegrationsLib('integration-pagerduty-controllers')
+    implementation levelopsIntegrationsLib('integration-prometheus-controllers')
+    implementation levelopsIntegrationsLib('integration-salesforce-controllers')
+    implementation levelopsIntegrationsLib('integration-sonarqube-controllers')
+    implementation levelopsIntegrationsLib('integration-tenable-controllers')
+    implementation levelopsIntegrationsLib('integration-testrails-controllers')
+    implementation levelopsIntegrationsLib('integration-zendesk-controllers')
+
+    implementation ("org.apache.logging.log4j:log4j-core:2.17.2") {
+        version {
+            strictly "2.17.2"
+        }
+        because "version >=2.17.1 required to fix CVE-2021-44228, CVE-2021-45105, CVE-2021-45046"
+    }
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation libraries.spring_boot_web
+
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+//check.dependsOn jacocoTestCoverageVerification

@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ingestion-agent
+#  output:
+#    ansi:
+#      enabled: ALWAYS
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%0.15t]%X{tenant_id}%X{integration_id}%X{job_id} %-40.40logger{0} : %m%n'
+server:
+  servlet:
+    context-path: /ingestion-agent
+  compression:
+    enabled: true
+    min-response-size: 2048
+  http2:
+    enabled: true
+
+inventory:
+         url: http://localhost:9999
+
+#management.endpoints.web.exposure.include: loggers,mappings,info
+#management.endpoint.loggers.enabled: true

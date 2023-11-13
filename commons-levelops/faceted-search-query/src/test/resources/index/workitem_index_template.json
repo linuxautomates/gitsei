@@ -1,0 +1,550 @@
+{
+  "properties": {
+    "w_id": {
+      "type": "keyword"
+    },
+    "w_workitem_id": {
+      "type": "keyword"
+    },
+    "w_is_active": {
+      "type": "boolean"
+    },
+    "w_integration_id": {
+      "type": "keyword"
+    },
+    "w_integ_type": {
+      "type": "keyword"
+    },
+    "w_workitem_integ_id": {
+      "type": "keyword"
+    },
+    "w_summary": {
+      "type": "text"
+    },
+    "w_workitem_type": {
+      "type": "keyword"
+    },
+    "w_priority": {
+      "type": "keyword"
+    },
+    "w_project": {
+      "type": "keyword"
+    },
+    "w_custom_fields": {
+      "type": "nested",
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "int": {
+          "type": "integer"
+        },
+        "date": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "long": {
+          "type": "long"
+        },
+        "str": {
+          "type": "keyword"
+        },
+        "bool": {
+          "type": "boolean"
+        },
+        "float": {
+          "type": "float"
+        },
+        "arr": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_assignee": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "display_name": {
+          "type": "keyword"
+        },
+        "cloud_id": {
+          "type": "keyword"
+        },
+        "active": {
+          "type": "boolean"
+        }
+      }
+    },
+    "w_reporter": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "display_name": {
+          "type": "keyword"
+        },
+        "cloud_id": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_first_assignee": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "display_name": {
+          "type": "keyword"
+        },
+        "cloud_id": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_labels": {
+      "type": "keyword"
+    },
+    "w_components": {
+      "type": "keyword"
+    },
+    "w_status": {
+      "type": "keyword"
+    },
+    "w_epic": {
+      "type": "keyword"
+    },
+    "w_parent_workitem_id": {
+      "type": "keyword"
+    },
+    "w_desc_size": {
+      "type": "integer"
+    },
+    "w_hops": {
+      "type": "integer"
+    },
+    "w_bounces": {
+      "type": "integer"
+    },
+    "w_num_attachments": {
+      "type": "integer"
+    },
+    "w_first_attachment_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_created_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_updated_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_resolved_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_due_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_first_comment_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_first_assigned_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_ingested_at": {
+      "type": "date",
+      "format": "epoch_second"
+    },
+    "w_age": {
+      "type": "long"
+    },
+    "w_unestimated_ticket": {
+      "type": "integer"
+    },
+    "w_state_transition_time": {
+      "type": "date"
+    },
+    "w_status_category": {
+      "type": "keyword"
+    },
+    "w_original_estimate": {
+      "type": "float"
+    },
+    "w_priority_order": {
+      "type": "integer"
+    },
+    "w_story_points": {
+      "type": "float"
+    },
+    "w_resolution": {
+      "type": "keyword"
+    },
+    "w_attributes": {
+      "type": "nested",
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "int": {
+          "type": "integer"
+        },
+        "date": {
+          "type": "date"
+        },
+        "long": {
+          "type": "long"
+        },
+        "str": {
+          "type": "keyword"
+        },
+        "bool": {
+          "type": "boolean"
+        },
+        "float": {
+          "type": "float"
+        },
+        "arr": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_milestones": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "parent_name": {
+          "type": "keyword"
+        },
+        "full_name": {
+          "type": "keyword"
+        },
+        "state": {
+          "type": "keyword"
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "end_time": {
+          "type": "date"
+        },
+        "completed_at": {
+          "type": "date"
+        },
+        "attributes": {
+          "properties": {
+            "name": {
+              "type": "keyword"
+            },
+            "int": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "date"
+            },
+            "long": {
+              "type": "long"
+            },
+            "str": {
+              "type": "keyword"
+            },
+            "bool": {
+              "type": "boolean"
+            },
+            "float": {
+              "type": "float"
+            },
+            "arr": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    },
+    "w_versions": {
+      "properties": {
+        "id": {
+          "type": "long"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "description": {
+          "type": "text"
+        },
+        "archived": {
+          "type": "boolean"
+        },
+        "released": {
+          "type": "boolean"
+        },
+        "overdue": {
+          "type": "boolean"
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "end_time": {
+          "type": "date"
+        }
+      }
+    },
+    "w_fix_versions": {
+      "properties": {
+        "id": {
+          "type": "long"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "description": {
+          "type": "text"
+        },
+        "archived": {
+          "type": "boolean"
+        },
+        "released": {
+          "type": "boolean"
+        },
+        "overdue": {
+          "type": "boolean"
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "end_time": {
+          "type": "date"
+        }
+      }
+    },
+    "w_sprints": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "state": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_hist_assignees": {
+      "properties": {
+        "assignee": {
+          "properties": {
+            "id": {
+              "type": "keyword"
+            },
+            "display_name": {
+              "type": "keyword"
+            },
+            "cloud_id": {
+              "type": "keyword"
+            }
+          }
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "end_time": {
+          "type": "date"
+        }
+      }
+    },
+    "w_hist_statuses": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "status": {
+          "type": "keyword"
+        },
+        "end_time": {
+          "type": "date"
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "time_spent": {
+          "type": "long"
+        }
+      }
+    },
+    "w_hist_story_points": {
+      "properties": {
+        "story_points": {
+          "type": "float"
+        },
+        "end_time": {
+          "type": "date"
+        },
+        "start_time": {
+          "type": "date"
+        }
+      }
+    },
+    "w_hist_sprints": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "goal": {
+          "type": "keyword"
+        },
+        "state": {
+          "type": "keyword"
+        },
+        "start_time": {
+          "type": "date"
+        },
+        "end_time": {
+          "type": "date"
+        },
+        "completed_at": {
+          "type": "date"
+        }
+      }
+    },
+    "w_sprint_mappings": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "delivered": {
+          "type": "boolean"
+        },
+        "ignorable_workitem_type": {
+          "type": "boolean"
+        },
+        "outside_of_sprint": {
+          "type": "boolean"
+        },
+        "planned": {
+          "type": "boolean"
+        },
+        "story_points_delivered": {
+          "type": "float"
+        },
+        "story_points_planned": {
+          "type": "float"
+        },
+        "added_at": {
+          "type": "long"
+        }
+      }
+    },
+    "w_salesforce_cases": {
+      "properties": {
+        "field_key": {
+          "type": "keyword"
+        },
+        "field_value": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_links": {
+      "type": "nested",
+      "properties": {
+        "relation": {
+          "type": "keyword"
+        },
+        "to_project": {
+          "type": "keyword"
+        },
+        "to_workitem_id": {
+          "type": "keyword"
+        }
+      }
+    },
+    "w_priorities_sla": {
+      "properties": {
+        "response_time": {
+          "type": "long"
+        },
+        "solve_time": {
+          "type": "long"
+        }
+      }
+    },
+    "w_hist_state_transitions": {
+      "type": "nested",
+      "properties": {
+        "from_status": {
+          "type": "keyword"
+        },
+        "to_status": {
+          "type": "keyword"
+        },
+        "state_transition_time": {
+          "type": "long"
+        }
+      }
+    },
+    "w_hist_assignee_statuses": {
+      "type": "nested",
+      "properties": {
+        "historical_assignee": {
+          "type": "keyword"
+        },
+        "historical_assignee_id": {
+          "type": "keyword"
+        },
+        "issue_status": {
+          "type": "keyword"
+        },
+        "issue_status_id": {
+          "type": "keyword"
+        },
+        "issue_status_category": {
+          "type": "keyword"
+        },
+        "assignee_start_time": {
+          "type": "date"
+        },
+        "assignee_end_time": {
+          "type": "date"
+        },
+        "status_start_time": {
+          "type": "date"
+        },
+        "status_end_time": {
+          "type": "date"
+        },
+        "hist_assignee_time": {
+          "type": "long"
+        },
+        "interval_start_time": {
+          "type": "date"
+        },
+        "interval_end_time": {
+          "type": "date"
+        },
+        "hist_assignee_time_excluding_resolution": {
+          "type": "long"
+        },
+        "w_resolved_at": {
+          "type": "date",
+          "format": "epoch_second"
+        }
+      }
+    }
+  }
+}

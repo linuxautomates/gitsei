@@ -1,0 +1,215 @@
+{
+  "buildBatch": {
+    "arn": "string",
+    "artifacts": {
+      "artifactIdentifier": "string",
+      "encryptionDisabled": true,
+      "location": "string",
+      "md5sum": "string",
+      "overrideArtifactName": true,
+      "sha256sum": "string"
+    },
+    "buildBatchConfig": {
+      "combineArtifacts": true,
+      "restrictions": {
+        "computeTypesAllowed": [
+          "string"
+        ],
+        "maximumBuildsAllowed": 12
+      },
+      "serviceRole": "string",
+      "timeoutInMins": 2
+    },
+    "buildBatchNumber": 2,
+    "buildBatchStatus": "string",
+    "buildGroups": [
+      {
+        "currentBuildSummary": {
+          "arn": "string",
+          "buildStatus": "string",
+          "primaryArtifact": {
+            "identifier": "string",
+            "location": "string",
+            "type": "string"
+          },
+          "requestedOn": 1606126466,
+          "secondaryArtifacts": [
+            {
+              "identifier": "string",
+              "location": "string",
+              "type": "string"
+            }
+          ]
+        },
+        "dependsOn": [
+          "string"
+        ],
+        "identifier": "string",
+        "ignoreFailure": true,
+        "priorBuildSummaryList": [
+          {
+            "arn": "string",
+            "buildStatus": "string",
+            "primaryArtifact": {
+              "identifier": "string",
+              "location": "string",
+              "type": "string"
+            },
+            "requestedOn": 1606126466,
+            "secondaryArtifacts": [
+              {
+                "identifier": "string",
+                "location": "string",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "buildTimeoutInMinutes": 3,
+    "cache": {
+      "location": "string",
+      "modes": [
+        "string"
+      ],
+      "type": "string"
+    },
+    "complete": true,
+    "currentPhase": "string",
+    "encryptionKey": "string",
+    "endTime": 1606126468,
+    "environment": {
+      "certificate": "string",
+      "computeType": "string",
+      "environmentVariables": [
+        {
+          "name": "string",
+          "type": "string",
+          "value": "string"
+        }
+      ],
+      "image": "string",
+      "imagePullCredentialsType": "string",
+      "privilegedMode": true,
+      "registryCredential": {
+        "credential": "string",
+        "credentialProvider": "string"
+      },
+      "type": "string"
+    },
+    "fileSystemLocations": [
+      {
+        "identifier": "string",
+        "location": "string",
+        "mountOptions": "string",
+        "mountPoint": "string",
+        "type": "string"
+      }
+    ],
+    "id": "string",
+    "initiator": "string",
+    "logConfig": {
+      "cloudWatchLogs": {
+        "groupName": "string",
+        "status": "string",
+        "streamName": "string"
+      },
+      "s3Logs": {
+        "encryptionDisabled": true,
+        "location": "string",
+        "status": "string"
+      }
+    },
+    "phases": [
+      {
+        "contexts": [
+          {
+            "message": "string",
+            "statusCode": "string"
+          }
+        ],
+        "durationInSeconds": 12,
+        "endTime": 1606126468,
+        "phaseStatus": "string",
+        "phaseType": "string",
+        "startTime": 1606126466
+      }
+    ],
+    "projectName": "string",
+    "queuedTimeoutInMinutes": 1,
+    "resolvedSourceVersion": "string",
+    "secondaryArtifacts": [
+      {
+        "artifactIdentifier": "string",
+        "encryptionDisabled": true,
+        "location": "string",
+        "md5sum": "string",
+        "overrideArtifactName": true,
+        "sha256sum": "string"
+      }
+    ],
+    "secondarySources": [
+      {
+        "auth": {
+          "resource": "string",
+          "type": "string"
+        },
+        "buildspec": "string",
+        "buildStatusConfig": {
+          "context": "string",
+          "targetUrl": "string"
+        },
+        "gitCloneDepth": 123,
+        "gitSubmodulesConfig": {
+          "fetchSubmodules": true
+        },
+        "insecureSsl": true,
+        "location": "string",
+        "reportBuildStatus": true,
+        "sourceIdentifier": "string",
+        "type": "string"
+      }
+    ],
+    "secondarySourceVersions": [
+      {
+        "sourceIdentifier": "string",
+        "sourceVersion": "string"
+      }
+    ],
+    "serviceRole": "string",
+    "source": {
+      "auth": {
+        "resource": "string",
+        "type": "string"
+      },
+      "buildspec": "string",
+      "buildStatusConfig": {
+        "context": "string",
+        "targetUrl": "string"
+      },
+      "gitCloneDepth": 123,
+      "gitSubmodulesConfig": {
+        "fetchSubmodules": true
+      },
+      "insecureSsl": true,
+      "location": "string",
+      "reportBuildStatus": true,
+      "sourceIdentifier": "string",
+      "type": "string"
+    },
+    "sourceVersion": "string",
+    "startTime": 1606126466,
+    "vpcConfig": {
+      "securityGroupIds": [
+        "string"
+      ],
+      "subnets": [
+        "string"
+      ],
+      "vpcId": "string"
+    }
+  },
+  "projectArn": "project-arn",
+  "region": "US_EAST_2"
+}

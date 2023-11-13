@@ -1,0 +1,65 @@
+[
+  {
+    "type": "check_snyk_issues_count",
+    "node_handler": "check_snyk_issues_count",
+    "name": "Check Snyk Issues count",
+    "description": "Checks if count of Snyk Issues is greater than or equal to threshold",
+    "category": "Snyk",
+    "input": {
+      "scm_url": {
+        "key": "scm_url",
+        "index": 10,
+        "display_name": "SCM Url",
+        "description": "SCM Url e.g. Project Git Url",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 20,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "threshold": {
+        "key": "threshold",
+        "index": 30,
+        "display_name": "Snyk Issues count threshold",
+        "type": "text",
+        "description": "Check if Snyk Issues count is greater than or equal to threshold",
+        "content_type": "integer",
+        "required": true
+      },
+      "severity": {
+        "key": "severity",
+        "index": 40,
+        "display_name": "Severity",
+        "type": "single-select",
+        "options": [
+          "high",
+          "medium",
+          "low"
+        ],
+        "description": "Choose which severity the Snyk issue should have",
+        "required": false
+      }
+    },
+    "output": {
+      "count": {
+        "key": "count",
+        "content_type": "integer",
+        "value_type": "integer"
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met"
+    ],
+    "ui_data": {
+      "icon": "snyk"
+    }
+  }
+]

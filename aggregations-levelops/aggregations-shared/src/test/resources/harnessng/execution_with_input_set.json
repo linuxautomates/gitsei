@@ -1,0 +1,444 @@
+{
+  "pipelineExecutionSummary" : {
+    "orgIdentifier" : "Harness",
+    "projectIdentifier" : "Operations",
+    "pipelineIdentifier" : "STO_Proxy",
+    "planExecutionId" : "gYnew5wrRBaiJyE_cyi0vA",
+    "name" : "STO Core",
+    "status" : "Success",
+    "runSequence" : 573,
+    "executionTriggerInfo" : {
+      "triggeredBy" : {
+        "email_from_extra_info" : "",
+        "uuid" : "systemUser",
+        "identifier" : "Failover_Trigger",
+        "extraInfo" : {
+          "execution_trigger_tag_needed_for_abort" : "wFHXHD0RRQWoO8tIZT5YVw:Harness:Operations:STO_Proxy",
+          "triggerRef" : "wFHXHD0RRQWoO8tIZT5YVw/Harness/Operations/Failover_Trigger",
+          "eventCorrelationId" : "63f6990f6c9b762437b9c726"
+        }
+      }
+    },
+    "startTs" : 1677105425858,
+    "endTs" : 1677105447474,
+    "createdAt" : 1677105425979,
+    "layoutNodeMap" : {
+      "msLHYkiuTl-q911RbwG0YQ" : {
+        "nodeType" : "CI",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "Scan_STO_Image",
+        "name" : "Scan STO Image",
+        "nodeUuid" : "msLHYkiuTl-q911RbwG0YQ",
+        "status" : "Skipped",
+        "module" : "ci",
+        "moduleInfo" : {
+          "ci" : {
+            "__recast" : "io.harness.ci.plan.creator.execution.CIStageModuleInfo"
+          }
+        },
+        "endTs" : 1677105447411
+      },
+      "joSG9ZMzT7W-3jGtuFR64A" : {
+        "nodeType" : "Custom",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "Mandatory_PreRequisite",
+        "name" : "Mandatory PreRequisite",
+        "nodeUuid" : "joSG9ZMzT7W-3jGtuFR64A",
+        "status" : "Skipped",
+        "module" : "pms",
+        "moduleInfo" : { },
+        "endTs" : 1677105426499
+      },
+      "msLHYkiuTl-q911RbwG0YQ_rollbackStage" : {
+        "nodeType" : "CI",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "msLHYkiuTl-q911RbwG0YQ_rollbackStage",
+        "name" : "Scan STO Image (Rollback Stage)",
+        "nodeUuid" : "msLHYkiuTl-q911RbwG0YQ_rollbackStage",
+        "status" : "NotStarted",
+        "module" : "ci",
+        "moduleInfo" : {
+          "ci" : { }
+        }
+      },
+      "-j6hm3qLRDOQCz1mlRvLmg_rollbackStage" : {
+        "nodeType" : "Deployment",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "-j6hm3qLRDOQCz1mlRvLmg_rollbackStage",
+        "name" : "sto (Rollback Stage)",
+        "nodeUuid" : "-j6hm3qLRDOQCz1mlRvLmg_rollbackStage",
+        "status" : "NotStarted",
+        "module" : "cd",
+        "moduleInfo" : {
+          "cd" : { }
+        }
+      },
+      "-j6hm3qLRDOQCz1mlRvLmg" : {
+        "nodeType" : "Deployment",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "sto",
+        "name" : "sto",
+        "nodeUuid" : "-j6hm3qLRDOQCz1mlRvLmg",
+        "status" : "Success",
+        "module" : "cd",
+        "moduleInfo" : {
+          "cd" : {
+            "__recast" : "io.harness.cdng.pipeline.executions.beans.CDStageModuleInfo",
+            "serviceInfo" : {
+              "__recast" : "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary",
+              "identifier" : "sto",
+              "displayName" : "sto-core",
+              "deploymentType" : "Kubernetes",
+              "gitOpsEnabled" : false,
+              "artifacts" : {
+                "__recast" : "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary$ArtifactsSummary",
+                "primary" : {
+                  "__recast" : "io.harness.cdng.artifact.GcrArtifactSummary",
+                  "imagePath" : "platform-205701/harness/sto-core",
+                  "tag" : "v1.31.4"
+                }
+              }
+            },
+            "infraExecutionSummary" : {
+              "__recast" : "io.harness.cdng.pipeline.executions.beans.InfraExecutionSummary",
+              "identifier" : "free",
+              "name" : "free",
+              "type" : "Production"
+            }
+          }
+        },
+        "startTs" : 1677105426542,
+        "endTs" : 1677105447266
+      },
+      "joSG9ZMzT7W-3jGtuFR64A_rollbackStage" : {
+        "nodeType" : "Custom",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "joSG9ZMzT7W-3jGtuFR64A_rollbackStage",
+        "name" : "Mandatory PreRequisite (Rollback Stage)",
+        "nodeUuid" : "joSG9ZMzT7W-3jGtuFR64A_rollbackStage",
+        "status" : "NotStarted",
+        "module" : "pms",
+        "moduleInfo" : { }
+      }
+    },
+    "moduleInfo" : {
+      "ci" : {
+        "__recast" : "io.harness.ci.plan.creator.execution.CIPipelineModuleInfo"
+      },
+      "cd" : {
+        "__recast" : "io.harness.cdng.pipeline.executions.beans.CDPipelineModuleInfo",
+        "envGroupIdentifiers" : [ ],
+        "envIdentifiers" : [ "free" ],
+        "environmentTypes" : [ "Production" ],
+        "freezeIdentifiers" : [ ],
+        "infrastructureIdentifiers" : [ null ],
+        "infrastructureNames" : [ null ],
+        "infrastructureTypes" : [ "KubernetesDirect" ],
+        "serviceDefinitionTypes" : [ "Kubernetes" ],
+        "serviceIdentifiers" : [ "sto" ]
+      }
+    },
+    "tags" : [ ]
+  },
+  "executionGraph" : {
+    "rootNodeId" : "APdR1FZqQjGnct6qQyqDpw",
+    "nodeMap" : {
+      "pfW3_I8-TTWDJTPAIVTCGw" : {
+        "uuid" : "pfW3_I8-TTWDJTPAIVTCGw",
+        "name" : "Mandatory PreRequisite",
+        "identifier" : "Mandatory_PreRequisite",
+        "baseFqn" : "pipeline.stages.Mandatory_PreRequisite",
+        "stepType" : "CUSTOM_STAGE",
+        "status" : "Skipped",
+        "endTs" : 1677105426499,
+        "outcomes" : { }
+      },
+      "PYxK8V_pTUSn0idhf5EyNg" : {
+        "uuid" : "PYxK8V_pTUSn0idhf5EyNg",
+        "name" : "Service",
+        "identifier" : "serviceConfig",
+        "baseFqn" : "pipeline.stages.sto.spec.serviceConfig",
+        "stepType" : "SERVICE_CONFIG",
+        "status" : "Success",
+        "startTs" : 1677105426663,
+        "endTs" : 1677105428635,
+        "outcomes" : {
+          "output" : {
+            "serviceResult" : {
+              "identifier" : "sto",
+              "name" : "sto-core",
+              "type" : "Kubernetes",
+              "tags" : { },
+              "gitOpsEnabled" : false
+            },
+            "variablesResult" : { },
+            "artifactResults" : {
+              "primary" : {
+                "connectorRef" : "Platform_Viewer",
+                "imagePath" : "platform-205701/harness/sto-core",
+                "tag" : "v1.31.4",
+                "registryHostname" : "us.gcr.io",
+                "identifier" : "primary",
+                "type" : "Gcr",
+                "primaryArtifact" : true,
+                "image" : "us.gcr.io/platform-205701/harness/sto-core:v1.31.4",
+                "imagePullSecret" : "<+imagePullSecret.primary>"
+              }
+            },
+            "manifestResults" : {
+              "all_values_sto" : {
+                "identifier" : "all_values_sto",
+                "type" : "Values",
+                "store" : {
+                  "uuid" : "m_4NWIf9Q1ayEf9SAtCMBw",
+                  "connectorRef" : "<+eventPayload.gitConnector>",
+                  "gitFetchType" : "BRANCH",
+                  "branch" : "<+eventPayload.branchName>",
+                  "paths" : [ "sto/values.yaml", "environments/<+pipeline.variables.envType>/all-services.yaml", "environments/<+pipeline.variables.envType>/sto/values.yaml", "environments/<+pipeline.variables.envType>/sto/<+pipeline.variables.availabilityType>/values.yaml" ],
+                  "repoName" : ""
+                },
+                "order" : 1
+              },
+              "sto_core" : {
+                "identifier" : "sto_core",
+                "type" : "K8sManifest",
+                "store" : {
+                  "uuid" : "ffcZU9AzQRmzJZ6hy1v8bg",
+                  "connectorRef" : "<+eventPayload.gitConnector>",
+                  "gitFetchType" : "BRANCH",
+                  "branch" : "<+eventPayload.branchName>",
+                  "paths" : [ "sto" ],
+                  "repoName" : ""
+                },
+                "skipResourceVersioning" : false
+              }
+            }
+          }
+        }
+      },
+      "ZheeetQ9RbG9xux95RJo2w" : {
+        "uuid" : "ZheeetQ9RbG9xux95RJo2w",
+        "name" : "Infrastructure",
+        "identifier" : "spec",
+        "baseFqn" : "pipeline.stages.sto.spec.infrastructure.infrastructureDefinition.spec",
+        "stepType" : "INFRASTRUCTURE",
+        "status" : "Success",
+        "startTs" : 1677105428785,
+        "endTs" : 1677105429103,
+        "outcomes" : {
+          "output" : {
+            "connectorRef" : "freeprivatefailover",
+            "namespace" : "sto-free",
+            "releaseName" : "release-<+INFRA_KEY>",
+            "environment" : {
+              "name" : "free",
+              "identifier" : "free",
+              "description" : "",
+              "type" : "Production",
+              "tags" : { }
+            },
+            "infrastructureKey" : "123",
+            "connector" : {
+              "name" : "free-private-failover"
+            }
+          }
+        }
+      },
+      "TA5xD0eoReWymCwYWCdslA" : {
+        "uuid" : "TA5xD0eoReWymCwYWCdslA",
+        "name" : "Resource Constraint",
+        "identifier" : "rc-AjzmNYikSUeasT2N4vKZcg",
+        "baseFqn" : "pipeline.stages.sto.spec.rc-AjzmNYikSUeasT2N4vKZcg",
+        "stepType" : "ResourceConstraint",
+        "status" : "Success",
+        "startTs" : 1677105429299,
+        "endTs" : 1677105429332,
+        "outcomes" : {
+          "output" : {
+            "name" : "Queuing",
+            "capacity" : 1,
+            "resourceUnit" : "123",
+            "usage" : 1,
+            "alreadyAcquiredPermits" : 1
+          }
+        }
+      },
+      "Et7IGDqrRJO2pPaX7SVUtQ" : {
+        "uuid" : "Et7IGDqrRJO2pPaX7SVUtQ",
+        "name" : "DeployFailover",
+        "identifier" : "DeployFailover",
+        "baseFqn" : "pipeline.stages.sto.spec.execution.steps.DeployFailover",
+        "stepType" : "ShellScript",
+        "status" : "Skipped",
+        "endTs" : 1677105447128,
+        "outcomes" : { }
+      },
+      "Yzyqz7p9S6-0obUmcI_9lQ" : {
+        "uuid" : "Yzyqz7p9S6-0obUmcI_9lQ",
+        "name" : "Scan STO Image",
+        "identifier" : "Scan_STO_Image",
+        "baseFqn" : "pipeline.stages.Scan_STO_Image",
+        "stepType" : "IntegrationStageStepPMS",
+        "status" : "Skipped",
+        "endTs" : 1677105447411,
+        "outcomes" : { }
+      },
+      "PaZZaPfjROmo7rZf2ZOn7Q" : {
+        "uuid" : "PaZZaPfjROmo7rZf2ZOn7Q",
+        "name" : "sto",
+        "identifier" : "sto",
+        "baseFqn" : "pipeline.stages.sto",
+        "stepType" : "DEPLOYMENT_STAGE_STEP",
+        "status" : "Success",
+        "startTs" : 1677105426542,
+        "endTs" : 1677105447266,
+        "outcomes" : { }
+      },
+      "APdR1FZqQjGnct6qQyqDpw" : {
+        "uuid" : "APdR1FZqQjGnct6qQyqDpw",
+        "name" : "STO Core",
+        "identifier" : "pipeline",
+        "baseFqn" : "pipeline",
+        "stepType" : "PIPELINE_SECTION",
+        "status" : "Success",
+        "startTs" : 1677105426062,
+        "endTs" : 1677105447474,
+        "outcomes" : { }
+      },
+      "mTqewssFSGyxJrSrVbJ6sA" : {
+        "uuid" : "mTqewssFSGyxJrSrVbJ6sA",
+        "name" : "Execution",
+        "identifier" : "execution",
+        "baseFqn" : "pipeline.stages.sto.spec.execution",
+        "stepType" : "NG_SECTION_WITH_ROLLBACK_INFO",
+        "status" : "Success",
+        "startTs" : 1677105429351,
+        "endTs" : 1677105447197,
+        "outcomes" : { }
+      },
+      "JoD5vei0RjeNdkwr-zXAOA" : {
+        "uuid" : "JoD5vei0RjeNdkwr-zXAOA",
+        "name" : "Rollout Deployment",
+        "identifier" : "rolloutDeployment",
+        "baseFqn" : "pipeline.stages.sto.spec.execution.steps.rolloutDeployment",
+        "stepType" : "K8sRollingDeploy",
+        "status" : "Success",
+        "startTs" : 1677105429722,
+        "endTs" : 1677105446371,
+        "outcomes" : {
+          "deploymentInfoOutcome" : {
+            "serverInstanceInfoList" : [ ]
+          },
+          "output" : {
+            "releaseName" : "release-123",
+            "releaseNumber" : 30,
+            "prunedResourceIds" : [ ]
+          }
+        }
+      },
+      "QOPWbe7dTIe92h30-FYhLQ" : {
+        "uuid" : "QOPWbe7dTIe92h30-FYhLQ",
+        "name" : "Slack_Notify",
+        "identifier" : "Slack_Notify",
+        "baseFqn" : "pipeline.stages.sto.spec.execution.steps.Slack_Notify",
+        "stepType" : "ShellScript",
+        "status" : "Skipped",
+        "endTs" : 1677105446931,
+        "outcomes" : { }
+      },
+      "ZVK9H_syTgi4CtdNrbca8A" : {
+        "uuid" : "ZVK9H_syTgi4CtdNrbca8A",
+        "name" : "Post Version to Swarmia",
+        "identifier" : "Post_Version_to_Swarmia",
+        "baseFqn" : "pipeline.stages.sto.spec.execution.steps.Post_Version_to_Swarmia",
+        "stepType" : "ShellScript",
+        "status" : "Skipped",
+        "endTs" : 1677105446695,
+        "outcomes" : { }
+      },
+      "rBLRs5NeSAmLuyoFlPsU9Q" : {
+        "uuid" : "rBLRs5NeSAmLuyoFlPsU9Q",
+        "name" : "Get_Deployed_Ver_Swarmia",
+        "identifier" : "Get_Deployed_Ver_Swarmia",
+        "baseFqn" : "pipeline.stages.sto.spec.execution.steps.Get_Deployed_Ver_Swarmia",
+        "stepType" : "ShellScript",
+        "status" : "Skipped",
+        "endTs" : 1677105429596,
+        "outcomes" : { }
+      },
+      "W3fLtxQmR66k5rX7Q9u3TQ" : {
+        "uuid" : "W3fLtxQmR66k5rX7Q9u3TQ",
+        "name" : "stages",
+        "identifier" : "stages",
+        "baseFqn" : "pipeline.stages",
+        "stepType" : "STAGES_STEP",
+        "status" : "Success",
+        "startTs" : 1677105426089,
+        "endTs" : 1677105447450,
+        "outcomes" : { }
+      }
+    },
+    "nodeAdjacencyListMap" : {
+      "pfW3_I8-TTWDJTPAIVTCGw" : {
+        "children" : [ ],
+        "nextIds" : [ "PaZZaPfjROmo7rZf2ZOn7Q" ]
+      },
+      "PYxK8V_pTUSn0idhf5EyNg" : {
+        "children" : [ ],
+        "nextIds" : [ "ZheeetQ9RbG9xux95RJo2w" ]
+      },
+      "ZheeetQ9RbG9xux95RJo2w" : {
+        "children" : [ ],
+        "nextIds" : [ "TA5xD0eoReWymCwYWCdslA" ]
+      },
+      "TA5xD0eoReWymCwYWCdslA" : {
+        "children" : [ ],
+        "nextIds" : [ "mTqewssFSGyxJrSrVbJ6sA" ]
+      },
+      "Et7IGDqrRJO2pPaX7SVUtQ" : {
+        "children" : [ ],
+        "nextIds" : [ ]
+      },
+      "Yzyqz7p9S6-0obUmcI_9lQ" : {
+        "children" : [ ],
+        "nextIds" : [ ]
+      },
+      "PaZZaPfjROmo7rZf2ZOn7Q" : {
+        "children" : [ "PYxK8V_pTUSn0idhf5EyNg" ],
+        "nextIds" : [ "Yzyqz7p9S6-0obUmcI_9lQ" ]
+      },
+      "APdR1FZqQjGnct6qQyqDpw" : {
+        "children" : [ "W3fLtxQmR66k5rX7Q9u3TQ" ],
+        "nextIds" : [ ]
+      },
+      "mTqewssFSGyxJrSrVbJ6sA" : {
+        "children" : [ "rBLRs5NeSAmLuyoFlPsU9Q" ],
+        "nextIds" : [ ]
+      },
+      "JoD5vei0RjeNdkwr-zXAOA" : {
+        "children" : [ ],
+        "nextIds" : [ "ZVK9H_syTgi4CtdNrbca8A" ]
+      },
+      "QOPWbe7dTIe92h30-FYhLQ" : {
+        "children" : [ ],
+        "nextIds" : [ "Et7IGDqrRJO2pPaX7SVUtQ" ]
+      },
+      "ZVK9H_syTgi4CtdNrbca8A" : {
+        "children" : [ ],
+        "nextIds" : [ "QOPWbe7dTIe92h30-FYhLQ" ]
+      },
+      "rBLRs5NeSAmLuyoFlPsU9Q" : {
+        "children" : [ ],
+        "nextIds" : [ "JoD5vei0RjeNdkwr-zXAOA" ]
+      },
+      "W3fLtxQmR66k5rX7Q9u3TQ" : {
+        "children" : [ "pfW3_I8-TTWDJTPAIVTCGw" ],
+        "nextIds" : [ ]
+      }
+    }
+  },
+  "inputSet": {
+    "inputSetTemplateYaml" : "pipeline:\n  identifier: \"STO_Proxy\"\n  stages:\n  - stage:\n      identifier: \"sto\"\n      type: \"Deployment\"\n      spec:\n        serviceConfig:\n          serviceDefinition:\n            type: \"Kubernetes\"\n            spec:\n              manifests:\n              - manifest:\n                  identifier: \"sto_core\"\n                  type: \"K8sManifest\"\n                  spec:\n                    store:\n                      type: \"Git\"\n                      spec:\n                        connectorRef: \"<+input>\"\n                        repoName: \"<+input>\"\n                        branch: \"<+input>\"\n              - manifest:\n                  identifier: \"all_values_sto\"\n                  type: \"Values\"\n                  spec:\n                    store:\n                      type: \"Git\"\n                      spec:\n                        connectorRef: \"<+input>\"\n                        repoName: \"<+input>\"\n                        branch: \"<+input>\"\n              artifacts:\n                primary:\n                  type: \"Gcr\"\n                  spec:\n                    tag: \"<+input>\"\n  variables:\n  - name: \"envType\"\n    type: \"String\"\n    value: \"<+input>.allowedValues(uat,preqa,qa,prod,free,compliance,prod4)\"\n  - name: \"availabilityType\"\n    type: \"String\"\n    value: \"<+input>.allowedValues(primary,failover)\"\n  - name: \"Connector\"\n    type: \"String\"\n    value: \"<+input>.allowedValues(uatprivate,uatfailoverprivate,qaprivate,qastress,prodprivateprimary,prodprivatefailover,freeprivateprimary,freeprivatefailover,compprivateprimary,compprivatefailover,prod4primaryuseast1manual)\"\n  - name: \"namespace\"\n    type: \"String\"\n    value: \"<+input>.allowedValues(sto,sto-free,sto-compliance,sto-prod4)\"\n  - name: \"delegate\"\n    type: \"String\"\n    value: \"<+input>.allowedValues(prod-delegate-us-west2,stage-delegate-qa,stage-pie-preqa-delegate)\"\n  - name: \"deploymentType\"\n    type: \"String\"\n    value: \"<+input>.allowedValues(new-rel,hf-feature,hf-regression,rollback,bounce)\"\n  - name: \"ChangeList\"\n    type: \"String\"\n    value: \"<+input>\"\n",
+    "inputSetYaml" : "pipeline:\n  identifier: \"STO_Proxy\"\n  stages:\n  - stage:\n      identifier: \"sto\"\n      type: \"Deployment\"\n      spec:\n        serviceConfig:\n          serviceDefinition:\n            type: \"Kubernetes\"\n            spec:\n              manifests:\n              - manifest:\n                  identifier: \"sto_core\"\n                  type: \"K8sManifest\"\n                  spec:\n                    store:\n                      type: \"Git\"\n                      spec:\n                        connectorRef: \"Prod_NG_Manifest_Repo\"\n                        repoName: \"\"\n                        branch: \"chris-retry-migration\"\n              - manifest:\n                  identifier: \"all_values_sto\"\n                  type: \"Values\"\n                  spec:\n                    store:\n                      type: \"Git\"\n                      spec:\n                        connectorRef: \"Prod_NG_Manifest_Repo\"\n                        repoName: \"\"\n                        branch: \"chris-retry-migration\"\n              artifacts:\n                primary:\n                  type: \"Gcr\"\n                  spec:\n                    tag: \"v1.31.4\"\n  variables:\n  - name: \"envType\"\n    type: \"String\"\n    value: \"free\"\n  - name: \"availabilityType\"\n    type: \"String\"\n    value: \"failover\"\n  - name: \"Connector\"\n    type: \"String\"\n    value: \"freeprivatefailover\"\n  - name: \"namespace\"\n    type: \"String\"\n    value: \"sto-free\"\n  - name: \"delegate\"\n    type: \"String\"\n    value: \"prod-delegate-us-west2\"\n  - name: \"deploymentType\"\n    type: \"String\"\n    value: \"new-rel\"\n  - name: \"ChangeList\"\n    type: \"String\"\n    value: \"NA\"\n"
+  }
+}

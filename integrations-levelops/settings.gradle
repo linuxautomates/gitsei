@@ -1,0 +1,33 @@
+rootProject.name = 'integrations'
+
+[
+        'pagerduty',
+        'zendesk',
+        'tenable',
+        'salesforce',
+        'gerrit',
+        'bitbucket',
+        'okta',
+        'blackduck',
+        'sonarqube',
+        'testrails',
+        'prometheus',
+        'circleci',
+        'droneci',
+        'harnessng',
+        'gitlab',
+        'azure-devops',
+        'awsdevtools',
+        'helix-core',
+        'helix-swarm',
+        'checkmarx',
+        'helix',
+        'bitbucket-server',
+        'coverity'
+].each { integ ->
+    file(integ).eachDir { dir ->
+        def project_name = ":integration-${integ}-${dir.name}"
+        include project_name
+        project(project_name).projectDir = dir
+    }
+}

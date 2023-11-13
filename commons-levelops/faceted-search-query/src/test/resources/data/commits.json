@@ -1,0 +1,1024 @@
+[
+  {
+    "c_id": "df79e4ef-1ce8-4e35-a498-ce17dd0feb4d",
+    "c_integration_id": "1861",
+    "c_repo_id": [
+      "depot"
+    ],
+    "c_vcs_type": "PERFORCE",
+    "c_project": "depot",
+    "c_commit_sha": "476",
+    "c_branch": "PROP-476",
+    "c_committer": "srnthc",
+    "c_author": "srnthc",
+    "c_message": "LEV-4751 ",
+    "c_files_ct": 1,
+    "c_additions": 0,
+    "c_deletions": 0,
+    "c_changes": 0,
+    "c_committed_at": 1644549114000,
+    "c_ingested_at": 1644537600000,
+    "c_created_at": 1646063586000,
+    "c_author_info": {
+      "id": "32d2cedc-edaf-466f-a962-7723f94915f1",
+      "integration_id": "1861",
+      "display_name": "srnthc",
+      "cloudId": "srnthc"
+    },
+    "c_committer_info": {
+      "id": "32d2cedc-edaf-466f-a962-7723f94915f1",
+      "integration_id": "1861",
+      "display_name": "srnthc",
+      "cloudId": "srnthc"
+    },
+    "c_author_id": "32d2cedc-edaf-466f-a962-7723f94915f1",
+    "c_committer_id": "32d2cedc-edaf-466f-a962-7723f94915f1",
+    "c_file_types": [
+      "txt"
+    ],
+    "c_workitem_ids": [
+      "LEV-4751"
+    ],
+    "c_tot_lines_changed": 0,
+    "c_tot_lines_removed": 0,
+    "c_tot_lines_added": 27,
+    "c_files": [
+      {
+        "id": "91b8365f-bfef-4651-a1b0-38df13973516",
+        "file_id": "d3ec14e1-f759-4982-9484-854cf9097682",
+        "integration_id": "1861",
+        "commit_sha": "476",
+        "project": "depot",
+        "file_name": "LEV-4751.txt",
+        "repo": "depot",
+        "file_type": "txt",
+        "change": 0,
+        "addition": 27,
+        "deletion": 0,
+        "total_change": 27,
+        "committed_at": 1644549114000,
+        "createdAt": 1646063586000,
+        "file_created_at": 1646063586000
+      }
+    ],
+    "c_day": "Friday",
+    "c_direct_merge": false,
+    "c_pr_count": 3
+  },
+  {
+    "c_id": "0631e452-67ca-465f-9e45-8e52cf788369",
+    "c_integration_id": "2228",
+    "c_repo_id": [
+      "levelops/api-levelops"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/api-levelops",
+    "c_commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+    "c_branch": "LEV-5196-fix",
+    "c_committer": "ctlo2020",
+    "c_author": "ctlo2020",
+    "c_commit_url": "https://api.github.com/repos/levelops/api-levelops/commits/0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+    "c_message": "LEV-5196: Update commons ",
+    "c_files_ct": 1,
+    "c_additions": 1,
+    "c_deletions": 1,
+    "c_changes": 2,
+    "c_committed_at": 1653562067000,
+    "c_ingested_at": 1653523200000,
+    "c_commit_pushed_at": 1653562077,
+    "c_created_at": 1653607216000,
+    "c_author_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_committer_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_author_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_committer_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_file_types": [
+      "gradle"
+    ],
+    "c_workitem_ids": [
+      "LEV-5196"
+    ],
+    "c_tot_lines_changed": 2,
+    "c_tot_lines_removed": 1,
+    "c_tot_lines_added": 1,
+    "c_files": [
+      {
+        "id": "51d2f3c5-0d0b-4033-97c3-e6b4116fd9a3",
+        "file_id": "3a325ab8-8ce8-404a-88b8-70c26c2d2d40",
+        "integration_id": "2228",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "project": "levelops/api-levelops",
+        "file_name": "build.gradle",
+        "repo": "levelops/api-levelops",
+        "file_type": "gradle",
+        "change": 2,
+        "addition": 1,
+        "deletion": 1,
+        "total_change": 4,
+        "committed_at": 1653562067000,
+        "previous_committed_at": 1653553921000,
+        "createdAt": 1653607216000,
+        "file_created_at": 1652322824000
+      }
+    ],
+    "c_scm_tags": [
+      {
+        "id": "7caf1f38-23a7-4f25-82fb-4b1942653a40",
+        "integration_id": "2228",
+        "project": "levelops/api-levelops",
+        "repo": "levelops/api-levelops",
+        "tag": "v0.1.3477-test",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "created_at": 1653607403,
+        "updated_at": 1653607403
+      },
+      {
+        "id": "22cc4243-9c2c-4c8b-94bb-276e1f6df5ea",
+        "integration_id": "2461",
+        "project": "levelops/api-levelops",
+        "repo": "levelops/api-levelops",
+        "tag": "v0.1.3477-test",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "created_at": 1653592132,
+        "updated_at": 1653592132
+      },
+      {
+        "id": "f822ca39-312b-4276-b956-862c9a631699",
+        "integration_id": "2460",
+        "project": "levelops/api-levelops",
+        "repo": "levelops/api-levelops",
+        "tag": "v0.1.3477-test",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "created_at": 1653591781,
+        "updated_at": 1653591781
+      },
+      {
+        "id": "b40d10a0-5bab-4b5f-aad7-1bdced579a95",
+        "integration_id": "2458",
+        "project": "levelops/api-levelops",
+        "repo": "levelops/api-levelops",
+        "tag": "v0.1.3477-test",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "created_at": 1653592806,
+        "updated_at": 1653592806
+      },
+      {
+        "id": "e6990bbc-3b80-4429-bec1-ec201986da5f",
+        "integration_id": "2229",
+        "project": "levelops/api-levelops",
+        "repo": "levelops/api-levelops",
+        "tag": "v0.1.3477-test",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "created_at": 1653589180,
+        "updated_at": 1653589180
+      },
+      {
+        "id": "b04c33db-bd51-475f-bbd3-fadb072055b5",
+        "integration_id": "2459",
+        "project": "levelops/api-levelops",
+        "repo": "levelops/api-levelops",
+        "tag": "v0.1.3477-test",
+        "commit_sha": "0d431c208eb8f6ddddaa6575d5bdb5497a93f5db",
+        "created_at": 1653591419,
+        "updated_at": 1653591419
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "961525",
+        "repo_id": "levelops/api-levelops",
+        "name": "Java",
+        "integration_id": "2228",
+        "created_at": 1652276288
+      },
+      {
+        "id": "961526",
+        "repo_id": "levelops/api-levelops",
+        "name": "HTML",
+        "integration_id": "2228",
+        "created_at": 1652276288
+      },
+      {
+        "id": "961527",
+        "repo_id": "levelops/api-levelops",
+        "name": "Dockerfile",
+        "integration_id": "2228",
+        "created_at": 1652276288
+      }
+    ],
+    "c_day": "Thursday",
+    "c_direct_merge": false,
+    "c_pr_count": 2
+  },
+  {
+    "c_id": "6f4e01da-4c7d-4189-83a3-9182292c269f",
+    "c_integration_id": "2228",
+    "c_repo_id": [
+      "levelops/integrations-levelops"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/integrations-levelops",
+    "c_commit_sha": "c725318f777b386e1599629b30112fe3d5c98df1",
+    "c_branch": "LEV-5219-Phase-3",
+    "c_committer": "ctlo2020",
+    "c_author": "ctlo2020",
+    "c_commit_url": "https://api.github.com/repos/levelops/integrations-levelops/commits/c725318f777b386e1599629b30112fe3d5c98df1",
+    "c_message": "LEV-5219-Phase-3 : Test c",
+    "c_files_ct": 2,
+    "c_additions": 0,
+    "c_deletions": 5,
+    "c_changes": 5,
+    "c_committed_at": 1653559095000,
+    "c_ingested_at": 1653523200000,
+    "c_commit_pushed_at": 1653559103,
+    "c_created_at": 1653583144000,
+    "c_author_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_committer_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_author_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_committer_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_file_types": [
+      "java"
+    ],
+    "c_workitem_ids": [
+      "PHASE-3",
+      "LEV-5219"
+    ],
+    "c_tot_lines_changed": 5,
+    "c_tot_lines_removed": 5,
+    "c_tot_lines_added": 0,
+    "c_files": [
+      {
+        "id": "de4354ed-35e2-4241-9f34-4373e599858b",
+        "file_id": "8a04cf73-9d90-4c7d-9d5d-cd501445001e",
+        "integration_id": "2228",
+        "commit_sha": "c725318f777b386e1599629b30112fe3d5c98df1",
+        "project": "levelops/integrations-levelops",
+        "file_name": "azure-devops/client/src/main/java/io/levelops/integrations/azureDevops/services/AzureDevopsFetchChangeSetsService.java",
+        "repo": "levelops/integrations-levelops",
+        "file_type": "java",
+        "change": 2,
+        "addition": 0,
+        "deletion": 2,
+        "total_change": 4,
+        "committed_at": 1653559095000,
+        "previous_committed_at": 1653556742000,
+        "createdAt": 1653583144000,
+        "file_created_at": 1652346569000
+      },
+      {
+        "id": "c7ce8f98-85ff-4e79-b02b-0d95fdfe84fc",
+        "file_id": "0446f15e-a25f-48a4-94b9-194ab1fb4841",
+        "integration_id": "2228",
+        "commit_sha": "c725318f777b386e1599629b30112fe3d5c98df1",
+        "project": "levelops/integrations-levelops",
+        "file_name": "azure-devops/client/src/main/java/io/levelops/integrations/azureDevops/client/AzureDevopsClient.java",
+        "repo": "levelops/integrations-levelops",
+        "file_type": "java",
+        "change": 3,
+        "addition": 0,
+        "deletion": 3,
+        "total_change": 6,
+        "committed_at": 1653559095000,
+        "previous_committed_at": 1653556742000,
+        "createdAt": 1653583144000,
+        "file_created_at": 1652322840000
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "961564",
+        "repo_id": "levelops/integrations-levelops",
+        "name": "Java",
+        "integration_id": "2228",
+        "c_created_at": 1652276288
+      }
+    ],
+    "c_day": "Thursday",
+    "c_direct_merge": false,
+    "c_pr_count": 1
+  },
+  {
+    "c_id": "c2d6c9ed-bf5b-4962-8d3c-afce40ba003d",
+    "c_integration_id": "2228",
+    "repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/commons-levelops",
+    "c_commit_sha": "299ea24760dcc7010ff47a875f95b8d6055b2ec8",
+    "c_branch": "LEV-5280",
+    "c_committer": "ctlo2020",
+    "c_author": "ctlo2020",
+    "c_commit_url": "https://api.github.com/repos/levelops/commons-levelops/commits/299ea24760dcc7010ff47a875f95b8d6055b2ec8",
+    "c_message": "LEV-5280: Minor fix",
+    "c_files_ct": 1,
+    "c_additions": 3,
+    "c_deletions": 3,
+    "c_changes": 6,
+    "c_committed_at": 1653375598000,
+    "c_ingested_at": 1653350400000,
+    "c_commit_pushed_at": 1653375605,
+    "c_created_at": 1653414718000,
+    "c_author_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_committer_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_author_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_committer_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_file_types": [
+      "java"
+    ],
+    "c_workitem_ids": [
+      "LEV-5280"
+    ],
+    "c_tot_lines_changed": 6,
+    "c_tot_lines_removed": 3,
+    "c_tot_lines_added": 3,
+    "c_files": [
+      {
+        "id": "08ddf696-4f6f-4d6f-8e38-2a20664d428a",
+        "file_id": "ceefb7e8-2b15-4d63-a1fd-7e7575f386f0",
+        "integration_id": "2228",
+        "commit_sha": "299ea24760dcc7010ff47a875f95b8d6055b2ec8",
+        "project": "levelops/commons-levelops",
+        "file_name": "database-services/src/main/java/io/levelops/commons/databases/services/ScmQueryUtils.java",
+        "repo": "levelops/commons-levelops",
+        "file_type": "java",
+        "change": 6,
+        "addition": 3,
+        "deletion": 3,
+        "total_change": 12,
+        "committed_at": 1653375598000,
+        "previous_committed_at": 1653373533000,
+        "createdAt": 1653414718000,
+        "file_created_at": 1652322834000
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "961533",
+        "repo_id": "levelops/commons-levelops",
+        "name": "Java",
+        "integration_id": "2228",
+        "created_at": 1652276288
+      }
+    ],
+    "c_day": "Tuesday",
+    "c_direct_merge": false,
+    "c_pr_count": 5
+  },
+  {
+    "c_id": "a8eebefc-cc7e-4b50-b5e9-9e7ff9b2ea45",
+    "c_integration_id": "2228",
+    "c_repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/commons-levelops",
+    "c_commit_sha": "8842d4b3840588df5d4162583fd7c33fcbe24d6f",
+    "c_branch": "LEV-5272",
+    "c_committer": "ctlo2020",
+    "c_author": "ctlo2020",
+    "c_commit_url": "https://api.github.com/repos/levelops/commons-levelops/commits/8842d4b3840588df5d4162583fd7c33fcbe24d6f",
+    "c_message": "LEV-5272: Removed formatt",
+    "c_files_ct": 1,
+    "c_additions": 44,
+    "c_deletions": 44,
+    "c_changes": 88,
+    "c_committed_at": 1652743216000,
+    "c_ingested_at": 1652745600000,
+    "c_commit_pushed_at": 1652743225,
+    "c_created_at": 1652777917000,
+    "c_author_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_committer_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_author_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_committer_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_file_types": [
+      "java"
+    ],
+    "c_workitem_ids": [
+      "LEV-5272"
+    ],
+    "c_tot_lines_changed": 88,
+    "c_tot_lines_removed": 44,
+    "c_tot_lines_added": 44,
+    "c_files": [
+      {
+        "id": "f402d9d8-0224-487e-9f21-8bd3c50d59e4",
+        "file_id": "935eb28b-1838-4440-b325-c57c17a878cf",
+        "integration_id": "2228",
+        "commit_sha": "8842d4b3840588df5d4162583fd7c33fcbe24d6f",
+        "project": "levelops/commons-levelops",
+        "file_name": "database-services/src/main/java/io/levelops/commons/databases/services/CiCdJobRunsDatabaseService.java",
+        "repo": "levelops/commons-levelops",
+        "file_type": "java",
+        "change": 88,
+        "addition": 44,
+        "deletion": 44,
+        "total_change": 176,
+        "committed_at": 1652743216000,
+        "previous_committed_at": 1652741235000,
+        "createdAt": 1652777917000,
+        "file_created_at": 1652427237000
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "961533",
+        "repo_id": "levelops/commons-levelops",
+        "name": "Java",
+        "integration_id": "2228",
+        "created_at": 1652276288
+      }
+    ],
+    "c_day": "Tuesday",
+    "c_direct_merge": false,
+    "c_pr_count": 1
+  },
+  {
+    "c_id": "25126f3b-82d1-4e12-945c-34a07da631bd",
+    "c_integration_id": "2228",
+    "c_repo_id": [
+      "levelops/faceted-search"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/faceted-search",
+    "c_commit_sha": "e69fcdc0f685bebce06438b3e3642bca1e5204e5",
+    "c_branch": "LEV-5041,5042",
+    "c_committer": "ctlo2020",
+    "c_author": "ctlo2020",
+    "c_commit_url": "https://api.github.com/repos/levelops/faceted-search/commits/e69fcdc0f685bebce06438b3e3642bca1e5204e5",
+    "c_message": "Merge branch 'LEV-5041,50",
+    "c_files_ct": 3,
+    "c_additions": 31,
+    "c_deletions": 18,
+    "c_changes": 49,
+    "c_committed_at": 1651713049000,
+    "c_ingested_at": 1651708800000,
+    "c_commit_pushed_at": 1651713059,
+    "c_created_at": 1652322841000,
+    "c_author_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_committer_info": {
+      "id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+      "integration_id": "2228",
+      "display_name": "ctlo2020",
+      "cloudId": "ctlo2020"
+    },
+    "c_author_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_committer_id": "ab986f2d-6f05-4653-89b8-7e094ebf966c",
+    "c_file_types": [
+      "java"
+    ],
+    "c_workitem_ids": [
+      "LEV-5041"
+    ],
+    "c_tot_lines_changed": 49,
+    "c_tot_lines_removed": 18,
+    "c_tot_lines_added": 31,
+    "c_files": [
+      {
+        "id": "3b5ecd34-6350-4214-94bc-7465fb1e7a0a",
+        "file_id": "8d1bb59b-5b74-4d81-a534-d87fe18c17d3",
+        "integration_id": "2228",
+        "commit_sha": "e69fcdc0f685bebce06438b3e3642bca1e5204e5",
+        "project": "levelops/faceted-search",
+        "file_name": "src/test/java/io/levelops/faceted_search/services/issue_mgmt/EsWorkItemQueryBuilderTest.java",
+        "repo": "levelops/faceted-search",
+        "file_type": "java",
+        "change": 38,
+        "addition": 26,
+        "deletion": 12,
+        "total_change": 76,
+        "committed_at": 1651713049000,
+        "previous_committed_at": 1651711890000,
+        "createdAt": 1652322841000,
+        "file_created_at": 1652322841000
+      },
+      {
+        "id": "afd2a234-b713-42ef-8d3b-7995c22cd1ce",
+        "file_id": "2f8e19f1-d04d-47a9-9fba-c24b1e697433",
+        "integration_id": "2228",
+        "commit_sha": "e69fcdc0f685bebce06438b3e3642bca1e5204e5",
+        "project": "levelops/faceted-search",
+        "file_name": "src/main/java/io/levelops/faceted_search/utils/EsUtils.java",
+        "repo": "levelops/faceted-search",
+        "file_type": "java",
+        "change": 7,
+        "addition": 3,
+        "deletion": 4,
+        "total_change": 14,
+        "committed_at": 1651713049000,
+        "previous_committed_at": 1651711890000,
+        "createdAt": 1652322841000,
+        "file_created_at": 1652322841000
+      },
+      {
+        "id": "94fe02f5-b2b9-4b8a-9abd-9ceb49281207",
+        "file_id": "baf1fff6-d741-4817-9db2-4f34d332f718",
+        "integration_id": "2228",
+        "commit_sha": "e69fcdc0f685bebce06438b3e3642bca1e5204e5",
+        "project": "levelops/faceted-search",
+        "file_name": "src/main/java/io/levelops/faceted_search/services/issue_mgmt/EsWorkItemQueryBuilder.java",
+        "repo": "levelops/faceted-search",
+        "file_type": "java",
+        "change": 4,
+        "addition": 2,
+        "deletion": 2,
+        "total_change": 8,
+        "committed_at": 1651713049000,
+        "previous_committed_at": 1651711890000,
+        "createdAt": 1652322841000,
+        "file_created_at": 1652322841000
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "1008161",
+        "repo_id": "levelops/faceted-search",
+        "name": "Dockerfile",
+        "integration_id": "2228",
+        "created_at": 1652931476
+      },
+      {
+        "id": "961616",
+        "repo_id": "levelops/faceted-search",
+        "name": "Java",
+        "integration_id": "2228",
+        "created_at": 1652276288
+      }
+    ],
+    "c_day": "Thursday",
+    "c_direct_merge": false,
+    "c_pr_count": 2
+  },
+  {
+    "c_id": "00bd0b4c-6a8b-4223-81c4-eaf5486293e5",
+    "c_integration_id": "1815",
+    "c_repo_id": [
+      "levelops/api-levelops"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/api-levelops",
+    "c_commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+    "c_branch": "main",
+    "c_committer": "web-flow",
+    "c_author": "ashish-levelops",
+    "c_commit_url": "https://api.github.com/repos/levelops/api-levelops/commits/694af546f6543b7bce5437b55eff1a63301fed41",
+    "c_message": "Merge branch 'dev' into L",
+    "c_files_ct": 11,
+    "c_additions": 232,
+    "c_deletions": 92,
+    "c_changes": 324,
+    "c_committed_at": 1644559544000,
+    "c_ingested_at": 1644537600000,
+    "c_created_at": 1646188777000,
+    "c_author_info": {
+      "id": "9b530651-3062-4097-9465-de20b5241408",
+      "integration_id": "1815",
+      "display_name": "ashish-levelops",
+      "cloudId": "ashish-levelops"
+    },
+    "c_committer_info": {
+      "id": "602b51b7-13af-4fc3-9d99-c382cbae9b3e",
+      "integration_id": "1815",
+      "display_name": "web-flow",
+      "cloudId": "web-flow"
+    },
+    "c_author_id": "9b530651-3062-4097-9465-de20b5241408",
+    "c_committer_id": "602b51b7-13af-4fc3-9d99-c382cbae9b3e",
+    "c_file_types": [
+      "gradle",
+      "java"
+    ],
+    "c_workitem_ids": [
+      "LEV-4687"
+    ],
+    "c_tot_lines_changed": 324,
+    "c_tot_lines_removed": 92,
+    "c_tot_lines_added": 232,
+    "c_files": [
+      {
+        "id": "b0dedc13-c41c-492f-a041-334a88ee4254",
+        "file_id": "59304363-0dae-469c-98f1-f1d903f3f323",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/controllers/ScmAggsController.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 10,
+        "addition": 7,
+        "deletion": 3,
+        "total_change": 20,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099700000
+      },
+      {
+        "id": "c9e44265-d592-4db8-8033-64556dfe1f03",
+        "file_id": "564d0f7a-140e-4865-a38b-917e41cae8e8",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/services/dev_productivity/OrgDevProductivityFixedIntervalReportService.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 3,
+        "addition": 2,
+        "deletion": 1,
+        "total_change": 6,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099700000
+      },
+      {
+        "id": "77a092a9-d21c-452d-bba0-08799130fdbf",
+        "file_id": "f6511117-b5e8-46c3-b440-41afc8e7ddb1",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/services/dev_productivity/UserDevProductivityReportService.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 13,
+        "addition": 8,
+        "deletion": 5,
+        "total_change": 26,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099699000
+      },
+      {
+        "id": "bfca27f9-0625-4eb1-8e4b-517bf660c85d",
+        "file_id": "21021106-099e-4a36-8b36-4e4868b6e707",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/services/dev_productivity/OrgDevProductivityReportService.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 10,
+        "addition": 7,
+        "deletion": 3,
+        "total_change": 20,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099700000
+      },
+      {
+        "id": "001057dd-cd0e-45ba-bb7a-4af2b84d9b7c",
+        "file_id": "6a9c5adb-3ba3-42b4-9218-b7f8021996a4",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/controllers/VelocityAggsController.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 215,
+        "addition": 159,
+        "deletion": 56,
+        "total_change": 430,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099700000
+      },
+      {
+        "id": "49d924d3-4b17-4dd0-85df-f0b02b3331c1",
+        "file_id": "ccd043ec-24ec-46e7-8b76-379516286a5c",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/services/IntegrationManagementService.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 5,
+        "addition": 3,
+        "deletion": 2,
+        "total_change": 10,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099700000
+      },
+      {
+        "id": "8b852781-b6f5-40f3-8df8-7a1f958b2289",
+        "file_id": "e0405fbe-bf40-4ad3-bb5c-7e2a12fc67d7",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "build.gradle",
+        "repo": "levelops/api-levelops",
+        "file_type": "gradle",
+        "change": 1,
+        "addition": 1,
+        "deletion": 0,
+        "total_change": 2,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099696000
+      },
+      {
+        "id": "3f20acf7-7f34-4518-8113-76d7b685c366",
+        "file_id": "71da45a0-977e-4e20-ad5e-64504857cbc5",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/controllers/CiCdPipelinesAggregationsController.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 10,
+        "addition": 7,
+        "deletion": 3,
+        "total_change": 20,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646188777000
+      },
+      {
+        "id": "901067b2-6954-43a8-8c04-df01a22cbdbe",
+        "file_id": "7564fff5-3f64-4fab-af58-770d5e68d3f6",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/controllers/JiraIssuesController.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 13,
+        "addition": 8,
+        "deletion": 5,
+        "total_change": 26,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099699000
+      },
+      {
+        "id": "8e026583-2bca-420d-b1d7-5af3add8a01a",
+        "file_id": "9937f879-aea7-4649-a644-de72001db8a4",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/services/VelocityAggsService.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 10,
+        "addition": 7,
+        "deletion": 3,
+        "total_change": 20,
+        "committed_at": 1644559544000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646099700000
+      },
+      {
+        "id": "053bf45f-0ba2-4280-9e8a-c897275b0a28",
+        "file_id": "23497856-646b-4700-b141-03f65d260486",
+        "integration_id": "1815",
+        "commit_sha": "694af546f6543b7bce5437b55eff1a63301fed41",
+        "project": "levelops/api-levelops",
+        "file_name": "server_api/src/main/java/io/levelops/api/controllers/PagerDutyAggregationsController.java",
+        "repo": "levelops/api-levelops",
+        "file_type": "java",
+        "change": 34,
+        "addition": 23,
+        "deletion": 11,
+        "total_change": 68,
+        "committed_at": 1644559544000,
+        "previous_committed_at": 1644217003000,
+        "createdAt": 1646188778000,
+        "file_created_at": 1646188777000
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "859873",
+        "repo_id": "levelops/api-levelops",
+        "name": "Java",
+        "integration_id": "1815",
+        "created_at": 1645144826
+      },
+      {
+        "id": "859874",
+        "repo_id": "levelops/api-levelops",
+        "name": "Dockerfile",
+        "integration_id": "1815",
+        "created_at": 1645144826
+      }
+    ],
+    "c_day": "Friday",
+    "c_direct_merge": false
+  },
+  {
+    "c_id": "ef23566f-7bcb-4366-b9ae-3a5a132cb95d",
+    "c_integration_id": "1815",
+    "c_repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "c_vcs_type": "GIT",
+    "c_project": "levelops/commons-levelops",
+    "c_commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+    "c_branch": "main",
+    "c_committer": "web-flow",
+    "c_author": "ashish-levelops",
+    "c_commit_url": "https://api.github.com/repos/levelops/commons-levelops/commits/c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+    "c_message": "LEV-4853 - Dev productivi",
+    "c_files_ct": 3,
+    "c_additions": 27,
+    "c_deletions": 41,
+    "c_changes": 68,
+    "c_committed_at": 1646027389000,
+    "c_ingested_at": 1646006400000,
+    "c_created_at": 1646099996000,
+    "c_author_info": {
+      "id": "9b530651-3062-4097-9465-de20b5241408",
+      "integration_id": "1815",
+      "display_name": "ashish-levelops",
+      "cloudId": "ashish-levelops"
+    },
+    "c_committer_info": {
+      "id": "602b51b7-13af-4fc3-9d99-c382cbae9b3e",
+      "integration_id": "1815",
+      "display_name": "web-flow",
+      "cloudId": "web-flow"
+    },
+    "c_author_id": "9b530651-3062-4097-9465-de20b5241408",
+    "c_committer_id": "602b51b7-13af-4fc3-9d99-c382cbae9b3e",
+    "c_file_types": [
+      "java"
+    ],
+    "c_workitem_ids": [
+      "LEV-4853"
+    ],
+    "c_tot_lines_changed": 68,
+    "c_tot_lines_removed": 41,
+    "c_tot_lines_added": 27,
+    "c_files": [
+      {
+        "id": "5f74912b-ce7f-4509-a939-7ca449b43e1d",
+        "file_id": "30784b7e-f373-4723-800c-831c44d7f216",
+        "integration_id": "1815",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "project": "levelops/commons-levelops",
+        "file_name": "database-services/src/main/java/io/levelops/commons/databases/services/SonarQubeAggService.java",
+        "repo": "levelops/commons-levelops",
+        "file_type": "java",
+        "change": 21,
+        "addition": 8,
+        "deletion": 13,
+        "total_change": 42,
+        "committed_at": 1646027389000,
+        "previous_committed_at": 1646024082000,
+        "createdAt": 1646099996000,
+        "file_created_at": 1646099996000
+      },
+      {
+        "id": "fbc81de1-f7b5-43bf-bc74-3fca88d202cb",
+        "file_id": "af420ffc-ff10-4d35-9a3e-51ab6d1007ad",
+        "integration_id": "1815",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "project": "levelops/commons-levelops",
+        "file_name": "database-services/src/main/java/io/levelops/commons/databases/services/SonarQubeProjectService.java",
+        "repo": "levelops/commons-levelops",
+        "file_type": "java",
+        "change": 23,
+        "addition": 8,
+        "deletion": 15,
+        "total_change": 46,
+        "committed_at": 1646027389000,
+        "previous_committed_at": 1646024082000,
+        "createdAt": 1646099996000,
+        "file_created_at": 1646099996000
+      },
+      {
+        "id": "650f449c-2c7f-44f8-ab4c-284674c53168",
+        "file_id": "480987cd-023e-4104-be2c-5a00be9acd21",
+        "integration_id": "1815",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "project": "levelops/commons-levelops",
+        "file_name": "database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+        "repo": "levelops/commons-levelops",
+        "file_type": "java",
+        "change": 24,
+        "addition": 11,
+        "deletion": 13,
+        "total_change": 48,
+        "committed_at": 1646027389000,
+        "previous_committed_at": 1646014601000,
+        "createdAt": 1646099996000,
+        "file_created_at": 1646099696000
+      }
+    ],
+    "c_scm_tags": [
+      {
+        "id": "064be554-f7a1-4cdd-8dcb-53cbd70e4e14",
+        "integration_id": "2460",
+        "project": "levelops/commons-levelops",
+        "repo": "levelops/commons-levelops",
+        "tag": "v0.1.5167",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "created_at": 1653311899,
+        "updated_at": 1653311899
+      },
+      {
+        "id": "f5c4b610-ba50-4bbd-9a5b-398c730cc0bd",
+        "integration_id": "2458",
+        "project": "levelops/commons-levelops",
+        "repo": "levelops/commons-levelops",
+        "tag": "v0.1.5167",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "created_at": 1653293734,
+        "updated_at": 1653293734
+      },
+      {
+        "id": "79f576a3-39bf-41c8-8ca8-10d9a468fe58",
+        "integration_id": "2228",
+        "project": "levelops/commons-levelops",
+        "repo": "levelops/commons-levelops",
+        "tag": "v0.1.5167",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "created_at": 1652322880,
+        "updated_at": 1652322880
+      },
+      {
+        "id": "36ee4601-364d-4413-ad55-7b6a494a8495",
+        "integration_id": "2229",
+        "project": "levelops/commons-levelops",
+        "repo": "levelops/commons-levelops",
+        "tag": "v0.1.5167",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "created_at": 1652320597,
+        "updated_at": 1652320597
+      },
+      {
+        "id": "3d2ed0f6-c75f-4f3e-a2d6-9c5f4298e9c3",
+        "integration_id": "2459",
+        "project": "levelops/commons-levelops",
+        "repo": "levelops/commons-levelops",
+        "tag": "v0.1.5167",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "created_at": 1653293899,
+        "updated_at": 1653293899
+      },
+      {
+        "id": "a1950d16-6828-4b1c-89cf-019494425b1e",
+        "integration_id": "2461",
+        "project": "levelops/commons-levelops",
+        "repo": "levelops/commons-levelops",
+        "tag": "v0.1.5167",
+        "commit_sha": "c2aa9c54fb60112e8c3a97cb27fdc3291fcd16b9",
+        "created_at": 1653580027,
+        "updated_at": 1653580027
+      }
+    ],
+    "c_technologies": [
+      {
+        "id": "859880",
+        "repo_id": "levelops/commons-levelops",
+        "name": "Java",
+        "integration_id": "1815",
+        "created_at": 1645144826
+      }
+    ],
+    "c_day": "Monday",
+    "c_direct_merge": false
+  }
+]

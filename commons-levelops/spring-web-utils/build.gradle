@@ -1,0 +1,35 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":utils")
+    compile project(":okhttp-utils")
+
+    compile libraries.spring_web
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.spring_web
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.2
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+//check.dependsOn jacocoTestCoverageVerification

@@ -1,0 +1,22 @@
+{
+  "plugins": [
+    {
+      "long_name": "Durable Task Plugin",
+      "short_name": "pluginA",
+      "specification_title": "Library offering an extension point for processes",
+      "implementation_title": "durable-task",
+      "implementation_version": "2",
+      "url": "https://github.com/jenkinsci/durable-task-plugin",
+      "build_jdk": "1.8.0_202"
+    },
+    {
+      "long_name": "Server Sent Events (SSE) Gateway Plugin",
+      "short_name": "pluginC",
+      "specification_title": "Server Sent Events (SSE) Gateway Plugin",
+      "implementation_title": "sse-gateway",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+      "build_jdk": "1.8.0_222",
+      "new_field": "so new"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+    "records": [
+        {
+            "slug": "github/test/circleciRepo",
+            "user_name": "test",
+            "repo": "circleciRepo",
+            "modified_slug": "github/test/circleciRepo",
+            "all_commit_details": [
+                {
+                    "commit_url": "https://github.com/test/circleciRepo/commit/6432e0bc7134f1fd70f2b07621547fbc67aad822",
+                    "commit": "6432e0bc7134f1fd70f2b07621547fbc67aad822",
+                    "committer_name": "GitHub",
+                    "committer_email": "noreply@github.com",
+                    "subject": "Update config.yml"
+                }
+            ],
+            "steps": [
+                {
+                    "name": "Spin up environment",
+                    "actions": [
+                        {
+                            "run_time_millis": 17496,
+                            "start_time": "2022-06-17T10:10:44.808+00:00",
+                            "end_time": "2022-06-17T10:11:02.304+00:00",
+                            "name": "Spin up environment",
+                            "type": "test",
+                            "truncated": false,
+                            "index": 0,
+                            "parallel": true,
+                            "status": "success",
+                            "allocation_id": "62ac5321f7504d372eb67bf5-0-build/44E50B9C",
+                            "output_url": "https://circle-production-action-output.s3.amazonaws.com/6eae28c2f6c001a74235ca26-62a180665712b1251ea1badf-0-0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220629T050305Z&X-Amz-SignedHeaders=host&X-Amz-Expires=431999&X-Amz-Credential=AKIAIJNI6FA5RIAFFQ7Q%2F20220629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6fe3788e7505f2c6862ab1984f97c9941771f9bc7303ee986abf8016977d2142",
+                            "background": false,
+                            "insignificant": false,
+                            "step": 0,
+                            "has_output": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Preparing environment variables",
+                    "actions": [
+                        {
+                            "run_time_millis": 16,
+                            "start_time": "2022-06-17T10:11:02.505+00:00",
+                            "end_time": "2022-06-17T10:11:02.521+00:00",
+                            "name": "Preparing environment variables",
+                            "type": "test",
+                            "truncated": false,
+                            "index": 0,
+                            "parallel": true,
+                            "status": "success",
+                            "allocation_id": "62ac5321f7504d372eb67bf5-0-build/44E50B9C",
+                            "output_url": "https://circle-production-action-output.s3.amazonaws.com/11fcfb7e45c54afa6335ca26-62a180665712b1251ea1badf-99-0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220629T050305Z&X-Amz-SignedHeaders=host&X-Amz-Expires=431999&X-Amz-Credential=AKIAIJNI6FA5RIAFFQ7Q%2F20220629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b26521069533ead9b1540b3da697cd83e443c0e8e0f82244f4766bce7069034d",
+                            "background": false,
+                            "insignificant": false,
+                            "step": 99,
+                            "has_output": true
+                        }
+                    ]
+                },
+                {
+                    "name": "echo \"Say hi to YAML!\"",
+                    "actions": [
+                        {
+                            "bash_command": "#!/bin/bash -eo pipefail\necho \"Say hi to YAML!\"",
+                            "run_time_millis": 14,
+                            "start_time": "2022-06-17T10:11:02.529+00:00",
+                            "end_time": "2022-06-17T10:11:02.543+00:00",
+                            "name": "echo \"Say hi to YAML!\"",
+                            "type": "test",
+                            "truncated": false,
+                            "index": 0,
+                            "parallel": true,
+                            "status": "success",
+                            "allocation_id": "62ac5321f7504d372eb67bf5-0-build/44E50B9C",
+                            "output_url": "https://circle-production-action-output.s3.amazonaws.com/21fcfb7e45c54afa6335ca26-62a180665712b1251ea1badf-101-0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220629T050305Z&X-Amz-SignedHeaders=host&X-Amz-Expires=431999&X-Amz-Credential=AKIAIJNI6FA5RIAFFQ7Q%2F20220629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=501e8ff6d3bc1fcf49195d2146b2ea12838812538e3f9a98d1022ac3b1f073df",
+                            "background": false,
+                            "insignificant": false,
+                            "step": 101,
+                            "has_output": true,
+                            "exit_code": 0
+                        }
+                    ]
+                }
+            ],
+            "vcs_url": "https://github.com/test/circleciRepo",
+            "vcs_type": "github",
+            "build_url": "https://circleci.com/gh/test/circleciRepo/13",
+            "build_num": 13,
+            "branch": "main",
+            "vcs_revision": "6432e0bc7134f1fd70f2b07621547fbc67aad822",
+            "committer_name": "GitHub",
+            "committer_email": "noreply@github.com",
+            "subject": "Update config.yml",
+            "body": "",
+            "why": "github",
+            "queued_at": "2022-06-17T10:10:41.990+00:00",
+            "start_time": "2022-06-17T10:10:44.771+00:00",
+            "stop_time": "2022-06-17T10:11:02.863+00:00",
+            "build_time_millis": 18092,
+            "username": "test",
+            "reponame": "circleciRepo",
+            "lifecycle": "finished",
+            "outcome": "success",
+            "status": "success",
+            "retry_of": 0,
+            "workflows": {
+                "job_name": "job_name",
+                "job_id": "c7b32d7c-af34-4564-90f8-ca44b3710b54",
+                "workflow_id": "680092a7-7bf2-48e2-8a78-a4810838bbfd",
+                "workspace_id": "4177257d-ccd2-4130-a84b-48b2b2cd41de",
+                "workflow_name": "workflow_name"
+            }
+        }
+    ],
+    "count": 1,
+    "_metadata": {
+        "integration_key": {
+            "tenant_id": "foo",
+            "integration_id": "1"
+        },
+        "integration_type": "circleci",
+        "data_type": "builds",
+        "page_number": 0
+    }
+}

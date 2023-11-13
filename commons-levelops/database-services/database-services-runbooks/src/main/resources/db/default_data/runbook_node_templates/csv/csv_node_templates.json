@@ -1,0 +1,281 @@
+[
+  {
+    "type": "csv_diff",
+    "node_handler": "csv_diff",
+    "name": "CSV Diff",
+    "description": "Calculate the diff of a given CSV and its previous upload.",
+    "category": "CSV",
+    "input": {
+      "plugin_result_id": {
+        "key": "plugin_result_id",
+        "index": 10,
+        "display_name": "Plugin Result Id",
+        "description": "Id of the CSV upload",
+        "type": "variable-select",
+        "content_type": "id:plugin_result/*",
+        "options": [],
+        "required": true
+      },
+      "key_column": {
+        "key": "key_column",
+        "index": 20,
+        "display_name": "Name of unique-key column",
+        "description": "Enter the name of the column that contains a unique key. This will be used to identify rows.",
+        "type": "text",
+        "required": true
+      },
+      "columns_to_diff": {
+        "key": "columns_to_diff",
+        "index": 30,
+        "display_name": "Names of columns to diff",
+        "description": "Enter a comma-separated list of column names. Only these columns will matter for the diff.",
+        "type": "text",
+        "required": true
+      }
+    },
+    "output": {
+      "added_or_changed_keys": {
+        "key": "added_or_changed_keys",
+        "value_type": "json_array"
+      },
+      "added_keys": {
+        "key": "added_keys",
+        "value_type": "json_array"
+      },
+      "removed_keys": {
+        "key": "removed_keys",
+        "value_type": "json_array"
+      },
+      "changed_keys": {
+        "key": "changed_keys",
+        "value_type": "json_array"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "write_csv_to_table",
+    "node_handler": "write_csv_to_table",
+    "name": "Write CSV to Table",
+    "description": "Given a CSV upload and a mapping of columns, write rows to a table according to a given key.",
+    "category": "CSV",
+    "input": {
+      "plugin_result_id": {
+        "key": "plugin_result_id",
+        "index": 10,
+        "display_name": "Plugin Result Id",
+        "description": "Id of the CSV upload",
+        "type": "variable-select",
+        "content_type": "id:plugin_result/*",
+        "options": [],
+        "required": true
+      },
+      "key_column": {
+        "key": "key_column",
+        "index": 20,
+        "display_name": "Name of unique-key column in CSV",
+        "description": "Enter the name of the column that contains a unique key. This will be used to identify rows.",
+        "type": "text",
+        "required": true
+      },
+      "table": {
+        "key": "table",
+        "index": 30,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "column_mapping": {
+        "key": "column_mapping",
+        "index": 40,
+        "display_name": "Table to CSV Column Mapping",
+        "description": "Select the destination columns in the table and map each one of them to a column in the CSV. Make sure to map the column containing the unique key.",
+        "type": "config-table-filter",
+        "use_input_fields": {
+          "table_id": "table"
+        },
+        "required": true
+      },
+      "keys_to_upsert": {
+        "key": "keys_to_upsert",
+        "index": 50,
+        "display_name": "List of keys of rows to insert or update",
+        "description": "Select a variable that contains a list of unique keys of the rows to insert or update.",
+        "type": "variable-select",
+        "required": false
+      },
+      "keys_to_delete": {
+        "key": "keys_to_delete",
+        "index": 60,
+        "display_name": "List of keys of rows to delete",
+        "description": "Select a variable that contains a list of unique keys of the rows to delete.",
+        "type": "variable-select",
+        "required": false
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "diff_csv_with_table",
+    "node_handler": "diff_csv_with_table",
+    "name": "Diff CSV with Table",
+    "description": "Given a mapping of columns, calculate the difference between a CSV upload and a table and write the result back to the table.",
+    "category": "CSV",
+    "input": {
+      "plugin_result_id": {
+        "key": "plugin_result_id",
+        "index": 10,
+        "display_name": "Plugin Result Id",
+        "description": "Id of the CSV upload",
+        "type": "variable-select",
+        "content_type": "id:plugin_result/*",
+        "options": [],
+        "required": true
+      },
+      "csv_key_columns": {
+        "key": "csv_key_columns",
+        "index": 20,
+        "display_name": "Names of unique-key columns in CSV",
+        "description": "Enter a comma-separated list of column names in the CSV that uniquely identify a row. (One or more)",
+        "type": "text",
+        "required": true
+      },
+      "csv_diff_columns": {
+        "key": "csv_diff_columns",
+        "index": 25,
+        "display_name": "Names of columns to diff in CSV",
+        "description": "Enter a comma-separated list of column names. Only these columns will be used for the diff. (One or more)",
+        "type": "text",
+        "required": true
+      },
+      "table": {
+        "key": "table",
+        "index": 30,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "column_mapping": {
+        "key": "column_mapping",
+        "index": 40,
+        "display_name": "Table to CSV Column Mapping",
+        "description": "Select the destination columns in the table and map each one of them to a column in the CSV. Make sure to map all the columns mentioned beforehand.",
+        "type": "config-table-filter",
+        "use_input_fields": {
+          "table_id": "table"
+        },
+        "required": true
+      },
+      "delete_removed_rows": {
+        "key": "delete_removed_rows",
+        "index": 50,
+        "display_name": "Delete Removed Rows",
+        "description": "If Yes, rows that are not present in the CSV will be deleted from the table.",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "required": false
+      }
+    },
+    "output": {
+      "new_table_version": {
+        "key": "new_table_version",
+        "value_type": "string"
+      },
+      "previous_table_version": {
+        "key": "previous_table_version",
+        "value_type": "string"
+      },
+      "added_or_changed_row_ids": {
+        "key": "added_or_changed_row_ids",
+        "value_type": "json_array"
+      },
+      "added_row_ids": {
+        "key": "added_row_ids",
+        "value_type": "json_array"
+      },
+      "removed_row_ids": {
+        "key": "removed_row_ids",
+        "value_type": "json_array"
+      },
+      "changed_row_ids": {
+        "key": "changed_row_ids",
+        "value_type": "json_array"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "iterate_table_diff",
+    "node_handler": "iterate_table_diff",
+    "name": "Iterate Table Diff",
+    "description": "Given the row ids from the diff output of a table, iterate the rows and return the previous and the new data.",
+    "category": "CSV",
+    "input": {
+      "table": {
+        "key": "table",
+        "index": 10,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "new_version": {
+        "key": "new_version",
+        "index": 20,
+        "display_name": "New Version of Table",
+        "type": "text",
+        "required": true
+      },
+      "previous_version": {
+        "key": "previous_version",
+        "index": 30,
+        "display_name": "Previous Version of Table",
+        "type": "text",
+        "required": false
+      },
+      "row_ids": {
+        "key": "row_ids",
+        "index": 40,
+        "display_name": "Row Ids to Iterate",
+        "type": "text",
+        "required": true
+      }
+    },
+    "output": {
+      "row": {
+        "key": "row",
+        "value_type": "json_blob",
+        "content_type_from_input_config_table": "table"
+      },
+      "previous_row": {
+        "key": "previous_row",
+        "value_type": "json_blob",
+        "content_type_from_input_config_table": "table"
+      }
+    },
+    "options": [
+      "For Each",
+      "Empty"
+    ],
+    "ui_data": {
+      "icon": "levelops"
+    }
+  }
+]

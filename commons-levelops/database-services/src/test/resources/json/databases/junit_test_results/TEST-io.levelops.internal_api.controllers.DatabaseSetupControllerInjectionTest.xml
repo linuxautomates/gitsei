@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.levelops.internal_api.controllers.DatabaseSetupControllerInjectionTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2020-10-12T13:21:13" hostname="Arpits-MacBook-Pro.local" time="0.036">
+  <properties/>
+  <testcase name="testTenantTables" classname="io.levelops.internal_api.controllers.DatabaseSetupControllerInjectionTest" time="0.006"/>
+  <testcase name="testGlobalTables" classname="io.levelops.internal_api.controllers.DatabaseSetupControllerInjectionTest" time="0.009"/>
+  <testcase name="testDependencyGraph" classname="io.levelops.internal_api.controllers.DatabaseSetupControllerInjectionTest" time="0.015">
+    <failure message="java.lang.AssertionError: [Dependents missing for : [class io.levelops.commons.databases.services.JiraFieldService, class io.levelops.commons.databases.services.IntegrationService]] &#10;Expecting:&#10;  &lt;[io.levelops.commons.databases.services.JiraIssueService@631054c1]&gt;&#10;to contain exactly in any order:&#10;  &lt;[]&gt;&#10;but the following elements were unexpected:&#10;  &lt;[io.levelops.commons.databases.services.JiraIssueService@631054c1]&gt;&#10;" type="java.lang.AssertionError">java.lang.AssertionError: [Dependents missing for : [class io.levelops.commons.databases.services.JiraFieldService, class io.levelops.commons.databases.services.IntegrationService]] 
+Expecting:
+  &lt;[io.levelops.commons.databases.services.JiraIssueService@631054c1]&gt;
+to contain exactly in any order:
+  &lt;[]&gt;
+but the following elements were unexpected:
+  &lt;[io.levelops.commons.databases.services.JiraIssueService@631054c1]&gt;
+
+	at io.levelops.internal_api.controllers.DatabaseSetupControllerInjectionTest.verifyGraphContains(DatabaseSetupControllerInjectionTest.java:350)
+	at io.levelops.internal_api.controllers.DatabaseSetupControllerInjectionTest.testDependencyGraph(DatabaseSetupControllerInjectionTest.java:309)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2020-10-12 18:51:12 INFO [Test worke] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-10-12 18:51:12 INFO [Test worke] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@84ac9eb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26cb10fe, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@23687135, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@788190f2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@26da1b98, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5868a35d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@386990bc, org.springframework.test.context.event.EventPublishingTestExecutionListener@4c9b8143, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3aeb5593, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@27846bd8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@539cf3e4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@439de14d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@23ba6360, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@27641664]
+RunbookReportDatabaseService
+SectionsService
+RunbookRunDatabaseService
+DashboardWidgetService
+TicketTemplateDBService
+WorkflowPolicyDatabaseService
+JiraSalesforceService
+TriageRuleHitsService
+GerritRepositoryService
+CiCdJobRunsDatabaseService
+ComponentsDatabaseService
+TokenDataService
+PluginDatabaseService
+OktaAggService
+ServicesDatabaseService
+TriageRulesService
+CiCdJobConfigChangesDatabaseService
+JobRunStageDatabaseService
+ZendeskTicketService
+WorkItemDBService
+ContentSchemaDatabaseService
+ComponentProductMappingService
+CiCdInstancesDatabaseService
+PolicyService
+UserService
+SamlConfigService
+GitRepositoryService
+BestPracticesService
+RunbookNodeTemplateDatabaseService
+TriggerSchemasDatabaseService
+ProductService
+JiraOktaService
+JiraFieldService
+TeamService
+CiCdJobRunDetailsDatabaseService
+ConfigTableDatabaseService
+ActivityLogService
+StateDBService
+RunbookReportSectionDatabaseService
+ScmAggService
+JiraIssueService
+CiCdJobsDatabaseService
+ProductIntegMappingService
+CiCdScmCombinedAggsService
+ScmJiraZendeskService
+EventTypesDatabaseService
+TagsService
+IntegrationTrackingService
+AccessKeyService
+BitbucketRepositoryService
+IntegrationAggService
+CiCdAggsService
+MsgTemplateService
+CiCdPipelinesAggsService
+TagItemDBService
+JiraProjectService
+QuestionnaireDBService
+CiCdScmMappingService
+WorkflowDatabaseService
+QuestionnaireTemplateDBService
+WorkItemNotesService
+SalesforceCaseService
+AggregationsDatabaseService
+RunbookDatabaseService
+PluginResultsDatabaseService
+TenantConfigService
+PagerDutyServicesDatabaseService
+PagerDutyAlertsDatabaseService
+PagerDutyIncidentsDatabaseService
+IntegrationService
+CiCdJobRunStageStepsDatabaseService
+RunbookRunningNodeDatabaseService
+OrganizationService
+
+{[]=[io.levelops.commons.databases.services.TriageRulesService@27a107a0, io.levelops.commons.databases.services.StateDBService@d68fa4a, io.levelops.commons.databases.services.ActivityLogService@2a8a1de9, io.levelops.commons.databases.services.WorkflowDatabaseService@3b45f283, io.levelops.commons.databases.services.RunbookReportDatabaseService@6e5eeaf9, io.levelops.commons.databases.services.ConfigTableDatabaseService@e07d44f, io.levelops.commons.databases.services.ContentSchemaDatabaseService@6e449a6e, io.levelops.commons.databases.services.MsgTemplateService@2fdf7af4, io.levelops.commons.databases.services.OrganizationService@34f64a7d, io.levelops.commons.databases.services.SectionsService@3e55b259, io.levelops.commons.databases.services.PluginDatabaseService@4bfb9315, io.levelops.commons.databases.services.ServicesDatabaseService@3411a65e, io.levelops.commons.databases.services.TagsService@50488e27, io.levelops.commons.databases.services.AccessKeyService@e453d0a, io.levelops.commons.databases.services.IntegrationService@60299df9, io.levelops.commons.databases.services.SamlConfigService@5de8e9db, io.levelops.commons.databases.services.RunbookDatabaseService@bd45e27, io.levelops.commons.databases.services.CiCdInstancesDatabaseService@47e9eca, io.levelops.commons.databases.services.BestPracticesService@4a5a3b0e, io.levelops.commons.databases.services.RunbookNodeTemplateDatabaseService@cf07a06, io.levelops.commons.databases.services.UserService@3a0f8c77, io.levelops.commons.databases.services.ComponentsDatabaseService@14b90a62, io.levelops.commons.databases.services.WorkflowPolicyDatabaseService@6e3bfce7, io.levelops.commons.databases.services.TriggerSchemasDatabaseService@164cec72], [class io.levelops.commons.databases.services.UserService]=[io.levelops.commons.databases.services.DashboardWidgetService@64ff693d, io.levelops.commons.databases.services.ProductService@3ed7696d, io.levelops.commons.databases.services.PolicyService@7052fff9], [class io.levelops.commons.databases.services.RunbookReportDatabaseService]=[io.levelops.commons.databases.services.RunbookReportSectionDatabaseService@636a6e40], [class io.levelops.commons.databases.services.JiraIssueService, class io.levelops.commons.databases.services.SalesforceCaseService]=[io.levelops.commons.databases.services.JiraSalesforceService@4ed7b2af], [class io.levelops.commons.databases.services.CiCdJobRunsDatabaseService]=[io.levelops.commons.databases.services.JobRunStageDatabaseService@6279f889, io.levelops.commons.databases.services.CiCdJobRunDetailsDatabaseService@5e26095e], [class io.levelops.commons.databases.services.CiCdInstancesDatabaseService, class io.levelops.commons.databases.services.ProductService]=[io.levelops.commons.databases.services.CiCdJobsDatabaseService@53382e8d], [class io.levelops.commons.databases.services.ComponentProductMappingService]=[io.levelops.commons.databases.services.PluginResultsDatabaseService@403a9f9d], [class io.levelops.commons.databases.services.TagsService]=[io.levelops.commons.databases.services.TagItemDBService@578678d1], [class io.levelops.commons.databases.services.pagerduty.PagerDutyIncidentsDatabaseService, class io.levelops.commons.databases.services.pagerduty.PagerDutyServicesDatabaseService]=[io.levelops.commons.databases.services.pagerduty.PagerDutyAlertsDatabaseService@54495416], [class io.levelops.commons.databases.services.ComponentsDatabaseService]=[io.levelops.commons.databases.services.EventTypesDatabaseService@237bac91], [class io.levelops.commons.databases.services.pagerduty.PagerDutyServicesDatabaseService]=[io.levelops.commons.databases.services.pagerduty.PagerDutyIncidentsDatabaseService@401bef75], [class io.levelops.commons.databases.services.DashboardWidgetService]=[io.levelops.commons.databases.services.TenantConfigService@2a914077], [class io.levelops.commons.databases.services.ServicesDatabaseService]=[io.levelops.commons.databases.services.pagerduty.PagerDutyServicesDatabaseService@7dc508ef], [class io.levelops.commons.databases.services.RunbookRunDatabaseService]=[io.levelops.commons.databases.services.RunbookRunningNodeDatabaseService@2b89783e], [class io.levelops.commons.databases.services.ScmAggService, class io.levelops.commons.databases.services.CiCdJobRunsDatabaseService]=[io.levelops.commons.databases.services.CiCdScmMappingService@5f61594e], [class io.levelops.commons.databases.services.TriageRulesService, class io.levelops.commons.databases.services.CiCdJobRunsDatabaseService, class io.levelops.commons.databases.services.JobRunStageDatabaseService]=[io.levelops.commons.databases.services.TriageRuleHitsService@51fe8cc9], [class io.levelops.commons.databases.services.JobRunStageDatabaseService]=[io.levelops.commons.databases.services.CiCdJobRunStageStepsDatabaseService@357e6363], [class io.levelops.commons.databases.services.JiraFieldService, class io.levelops.commons.databases.services.IntegrationService]=[io.levelops.commons.databases.services.JiraIssueService@631054c1], [class io.levelops.commons.databases.services.QuestionnaireTemplateDBService]=[io.levelops.commons.databases.services.TicketTemplateDBService@7def4e79], [class io.levelops.commons.databases.services.UserService, class io.levelops.commons.databases.services.StateDBService, class io.levelops.commons.databases.services.PolicyService, class io.levelops.commons.databases.services.TicketTemplateDBService, class io.levelops.commons.databases.services.IntegrationService, class io.levelops.commons.databases.services.ProductService]=[io.levelops.commons.databases.services.WorkItemDBService@74d00115], [class io.levelops.commons.databases.services.CiCdJobRunsDatabaseService, class io.levelops.commons.databases.services.CiCdJobsDatabaseService]=[io.levelops.commons.databases.services.CiCdPipelinesAggsService@7f90dfd7, io.levelops.commons.databases.services.CiCdAggsService@8d5bb89], [class io.levelops.commons.databases.services.QuestionnaireTemplateDBService, class io.levelops.commons.databases.services.BestPracticesService, class io.levelops.commons.databases.services.ProductService, class io.levelops.commons.databases.services.WorkItemDBService]=[io.levelops.commons.databases.services.QuestionnaireDBService@26764430], [class io.levelops.commons.databases.services.BestPracticesService]=[io.levelops.commons.databases.services.QuestionnaireTemplateDBService@1d8bdde0], [class io.levelops.commons.databases.services.WorkItemDBService]=[io.levelops.commons.databases.services.WorkItemNotesService@9c84da5], [class io.levelops.commons.databases.services.CiCdJobsDatabaseService, class io.levelops.commons.databases.services.CiCdJobRunsDatabaseService, class io.levelops.commons.databases.services.ScmAggService, class io.levelops.commons.databases.services.CiCdScmMappingService]=[io.levelops.commons.databases.services.CiCdScmCombinedAggsService@50f250ed], [class io.levelops.commons.databases.services.ScmAggService, class io.levelops.commons.databases.services.JiraIssueService]=[io.levelops.commons.databases.services.ScmJiraZendeskService@31a5b06e], [class io.levelops.commons.databases.services.ProductService, class io.levelops.commons.databases.services.IntegrationService]=[io.levelops.commons.databases.services.ProductIntegMappingService@7b311e3f], [class io.levelops.commons.databases.services.CiCdJobsDatabaseService]=[io.levelops.commons.databases.services.CiCdJobRunsDatabaseService@67088ee6, io.levelops.commons.databases.services.CiCdJobConfigChangesDatabaseService@30554b7a], [class io.levelops.commons.databases.services.IntegrationService]=[io.levelops.commons.databases.services.ScmAggService@537f6bce, io.levelops.commons.databases.services.JiraProjectService@722a885b, io.levelops.commons.databases.services.GitRepositoryService@2d10a462, io.levelops.commons.databases.services.BitbucketRepositoryService@70a41777, io.levelops.commons.databases.services.IntegrationTrackingService@12ffd9fb, io.levelops.commons.databases.services.OktaAggService@68a75b32, io.levelops.commons.databases.services.JiraFieldService@2ae1c917, io.levelops.commons.databases.services.GerritRepositoryService@56658c09, io.levelops.commons.databases.services.TokenDataService@310444f8, io.levelops.commons.databases.services.ZendeskTicketService@5be381ce, io.levelops.commons.databases.services.SalesforceCaseService@5cb6cefb], [class io.levelops.commons.databases.services.ProductService]=[io.levelops.commons.databases.services.AggregationsDatabaseService@48f3ee04, io.levelops.commons.databases.services.ComponentProductMappingService@43548a9f, io.levelops.commons.databases.services.IntegrationAggService@640996f2], [class io.levelops.commons.databases.services.OktaAggService, class io.levelops.commons.databases.services.JiraIssueService]=[io.levelops.commons.databases.services.JiraOktaService@254eb7f2], [class io.levelops.commons.databases.services.RunbookDatabaseService]=[io.levelops.commons.databases.services.RunbookRunDatabaseService@4b48f00], [class io.levelops.commons.databases.services.OrganizationService]=[io.levelops.commons.databases.services.TeamService@5bbf9f45]}
+
+Format:              [ dependencies (requirements) ] --> [ dependents ]
+------------------------------------------------------------------------------------------------------------------------------------------
+                                                  [] --> [RunbookNodeTemplateDatabaseService, TagsService, StateDBService, ContentSchemaDatabaseService, WorkflowDatabaseService, PluginDatabaseService, WorkflowPolicyDatabaseService, IntegrationService, SectionsService, AccessKeyService, RunbookReportDatabaseService, CiCdInstancesDatabaseService, ServicesDatabaseService, ConfigTableDatabaseService, TriageRulesService, UserService, RunbookDatabaseService, ActivityLogService, SamlConfigService, OrganizationService, BestPracticesService, ComponentsDatabaseService, TriggerSchemasDatabaseService, MsgTemplateService]
+                            [DashboardWidgetService] --> [TenantConfigService]
+                                       [TagsService] --> [TagItemDBService]
+[JobRunStageDatabaseService, TriageRulesService, CiCdJobRunsDatabaseService] --> [TriageRuleHitsService]
+                               [OrganizationService] --> [TeamService]
+                                    [ProductService] --> [ComponentProductMappingService, AggregationsDatabaseService, IntegrationAggService]
+                                [IntegrationService] --> [SalesforceCaseService, GerritRepositoryService, ZendeskTicketService, JiraFieldService, GitRepositoryService, ScmAggService, IntegrationTrackingService, BitbucketRepositoryService, OktaAggService, JiraProjectService, TokenDataService]
+                                       [UserService] --> [DashboardWidgetService, PolicyService, ProductService]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

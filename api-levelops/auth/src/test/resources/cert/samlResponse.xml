@@ -1,0 +1,64 @@
+<samlp:Response ID="id-7825987e-96d4-4797-9fb5-fdf2f24d8903" Version="2.0" IssueInstant="2023-06-22T15:49:15.816Z" Destination="https://testapi1.propelo.ai/v1/saml_auth"
+                xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+    <saml:Issuer
+            xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://auth.pingone.asia/62343c88-3a5a-40b4-94f5-624ea82a7761</saml:Issuer>
+    <samlp:Status>
+        <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </samlp:Status>
+    <saml:Assertion ID="id-8763043b-bae8-451a-9cb0-df4a442c2f46" Version="2.0" IssueInstant="2023-06-22T15:49:15.816Z"
+                    xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+        <saml:Issuer>https://auth.pingone.asia/62343c88-3a5a-40b4-94f5-624ea82a7761</saml:Issuer>
+        <ds:Signature
+                xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+                <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+                <ds:Reference URI="#id-8763043b-bae8-451a-9cb0-df4a442c2f46">
+                    <ds:Transforms>
+                        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                        <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    </ds:Transforms>
+                    <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                    <ds:DigestValue>/0yuOZZ1q3j+iwU1SXqqOP/66y4pxwn2ZvZMDtwHAxc=</ds:DigestValue>
+                </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>mRc6s5EpllEod7M4DGUq03+8ufK7jWOF0uADLNRv3G35o+bQVpBuYeYH5GVMtw0QbEhOZqjy1dtSUnvYaqvNeOHhzjrbeQaQ5E/Cne03h3XJxKRXAvfp+tH29jbJUg2yKukZ75+KyKpy0ydOodimQo0Mz5ZLupEsQ+7NkF5nNtfK2RZ4agMNGvqWWmeKEzG7iMv9CBxOfv3QF7K/JeDYUDx1pFO9rmg1ROgolmg99nyFqcDS8XJj2hVjlI+ut8TgVme9FOsl8wI2rKMvhWA/03il94v6OkmI/cIJEuw1K8DqIC7sq+GFuPIOI0HArrfZhdYQFBagsKMwQbEqDA5sWQ==</ds:SignatureValue>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDejCCAmKgAwIBAgIGAYjclKKXMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRYwFAYDVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MT8wPQYDVQQDDDZQaW5nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgQWRtaW5pc3RyYXRvcnMgZW52aXJvbm1lbnQwHhcNMjMwNjIxMDYxMTQ4WhcNMjQwNjIwMDYxMTQ4WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECgwNUGluZyBJZGVudGl0eTEWMBQGA1UECwwNUGluZyBJZGVudGl0eTE/MD0GA1UEAww2UGluZ09uZSBTU08gQ2VydGlmaWNhdGUgZm9yIEFkbWluaXN0cmF0b3JzIGVudmlyb25tZW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp2pCBI5DiA0CF7hPRFYcP8i0A3hI2HDQ1cfjcl1UJXTdu+/gmjT+XIxOkLzoYrWFlEvSFdpiS+N0klLj2ZWhUDlFlLQehYQ7/MSzE+rC8G8X8RjzfQhizzXGtgjJvB9HiO5ExTFX5DrBYJCcb2lCaY3zCh+8DKBvPu68Uha1SIzowsRKPRANNvcQEhhCUKOifETdCNfBhWt3jH3LHm51+hhtY63Hqsou89jERINcfyWN+KdYiey1OmhrKrg/Ski7yZvEAMnX6mRi+qoC55qvhOcnre/0myeqJluIY9exVWUyKgElE+gOLs4NgOgbgaGYnihe06mqYmtQ+uPaVjekswIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAH17JMJquKlIYUbW5WwWtiMUuO4/hkuV2OwLdnzyHr7D9gVjEiXygrhHvfNhFKiDOOULP008ofn/PvuV7Yx7uyyOK5On9p+D8v6I5w7v2PgwqGdcmyYOY7TDnjeNu4ByMEuVH0G7ID5xe21IxvaBERAAZ0u+2sfzlpXBG4T+UyKNB4pMGEFq0VTz9x6U8Y3Vi6Mx6L3pUVXDnfzyBCqBp44RvI/4GgUXYHsCrqULF+hlBx1N+kELSr86UIZFNzhjTEquWS9iHz7Xb+BiJbdWo3YRd3gM32rI3LSOG2kIN/u/9hUvHfygJS/Df5Du1nX3y9cwlfylf4ZHC9aekT3VQs</ds:X509Certificate>
+                </ds:X509Data>
+                <ds:KeyValue>
+                    <ds:RSAKeyValue>
+                        <ds:Modulus>p2pCBI5DiA0CF7hPRFYcP8i0A3hI2HDQ1cfjcl1UJXTdu+/gmjT+XIxOkLzoYrWFlEvSFdpiS+N0klLj2ZWhUDlFlLQehYQ7/MSzE+rC8G8X8RjzfQhizzXGtgjJvB9HiO5ExTFX5DrBYJCcb2lCaY3zCh+8DKBvPu68Uha1SIzowsRKPRANNvcQEhhCUKOifETdCNfBhWt3jH3LHm51+hhtY63Hqsou89jERINcfyWN+KdYiey1OmhrKrg/Ski7yZvEAMnX6mRi+qoC55qvhOcnre/0myeqJluIY9exVWUyKgElE+gOLs4NgOgbgaGYnihe06mqYmtQ+uPaVjeksw==</ds:Modulus>
+                        <ds:Exponent>AQAB</ds:Exponent>
+                    </ds:RSAKeyValue>
+                </ds:KeyValue>
+            </ds:KeyInfo>
+        </ds:Signature>
+        <saml:Subject>
+            <saml:NameID>ashish@propelo.ai</saml:NameID>
+            <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml:SubjectConfirmationData NotOnOrAfter="2030-06-23T00:09:15.816Z" Recipient="https://testapi1.propelo.ai/v1/saml_auth"/>
+            </saml:SubjectConfirmation>
+        </saml:Subject>
+        <saml:Conditions NotBefore="2023-06-22T15:48:15.816Z" NotOnOrAfter="2030-06-23T00:09:15.816Z">
+            <saml:AudienceRestriction>
+                <saml:Audience>dev-propelo.ai</saml:Audience>
+            </saml:AudienceRestriction>
+        </saml:Conditions>
+        <saml:AuthnStatement AuthnInstant="2023-06-22T15:49:15.816Z" SessionNotOnOrAfter="2030-06-23T00:09:15.816Z" SessionIndex="7157a0c1-3c64-42d6-8f08-320cc53de0e3">
+            <saml:AuthnContext>
+                <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml:AuthnContextClassRef>
+                <saml:AuthenticatingAuthority>https://auth.pingone.asia/62343c88-3a5a-40b4-94f5-624ea82a7761</saml:AuthenticatingAuthority>
+            </saml:AuthnContext>
+        </saml:AuthnStatement>
+        <saml:AttributeStatement>
+            <saml:Attribute Name="saml_subject" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xsi:type="xs:string"
+                                     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">ashish@propelo.ai
+                </saml:AttributeValue>
+            </saml:Attribute>
+        </saml:AttributeStatement>
+    </saml:Assertion>
+</samlp:Response>

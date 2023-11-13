@@ -1,0 +1,101 @@
+{
+  "records": [
+    {
+      "_metadata": {
+        "integration_key": {
+          "tenant_id": "foo",
+          "integration_id": "1430"
+        },
+        "integration_type": "jira",
+        "data_type": "issues"
+      },
+      "destination": "gcs",
+      "prefix_uri": "issues/",
+      "records": [
+        {
+          "uri": "b/issues.0.json",
+          "html_uri": "b/issues.0.json",
+          "blob_id": {
+            "bucket": "dev-ingestion-levelops",
+            "name": "b/issues.0.json",
+            "generation": 1645655788946538
+          }
+        },
+        {
+          "uri": "b/issues.1.json",
+          "html_uri": "b/issues.1.json",
+          "blob_id": {
+            "bucket": "dev-ingestion-levelops",
+            "name": "b/issues.1.json",
+            "generation": 1645655788946538
+          }
+        }
+      ],
+      "count": 2
+    },
+    {
+      "_metadata": {
+        "integration_key": {
+          "tenant_id": "foo",
+          "integration_id": "1430"
+        },
+        "integration_type": "jira",
+        "data_type": "fields"
+      },
+      "destination": "gcs",
+      "prefix_uri": "fields/",
+      "records": [
+        {
+          "uri": "fields.json",
+          "html_uri": "fields.json",
+          "blob_id": {
+            "bucket": "dev-ingestion-levelops",
+            "name": "fields.json",
+            "generation": 1645655801168719
+          }
+        }
+      ],
+      "count": 1
+    },
+    {
+      "_metadata": {
+        "integration_key": {
+          "tenant_id": "foo",
+          "integration_id": "1430"
+        },
+        "integration_type": "jira",
+        "data_type": "users"
+      },
+      "destination": "gcs",
+      "prefix_uri": "users/",
+      "records": [
+      ],
+      "count": 1
+    },
+    {
+      "_metadata": {
+        "integration_key": {
+          "tenant_id": "foo",
+          "integration_id": "1430"
+        },
+        "integration_type": "jira",
+        "data_type": "statuses"
+      },
+      "destination": "gcs",
+      "prefix_uri": "statuses/",
+      "records": [
+        {
+          "uri": "b/statuses.json",
+          "html_uri": "b/statuses.json",
+          "blob_id": {
+            "bucket": "dev-ingestion-levelops",
+            "name": "b/statuses.json",
+            "generation": 1645655802663856
+          }
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "count": 5
+}

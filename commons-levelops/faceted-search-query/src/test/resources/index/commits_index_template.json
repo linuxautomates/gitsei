@@ -1,0 +1,237 @@
+{
+  "properties": {
+    "c_id": {
+      "type": "keyword"
+    },
+    "c_repo_id": {
+      "type": "keyword"
+    },
+    "c_integration_id": {
+      "type": "keyword"
+    },
+    "c_vcs_type": {
+      "type": "keyword"
+    },
+    "c_project": {
+      "type": "keyword"
+    },
+    "c_commit_sha": {
+      "type": "keyword"
+    },
+    "c_committer": {
+      "type": "keyword"
+    },
+    "c_author": {
+      "type": "keyword"
+    },
+    "c_commit_url": {
+      "type": "keyword"
+    },
+    "c_message": {
+      "type": "keyword",
+      "ignore_above": 512
+    },
+    "c_workitem_ids": {
+      "type": "keyword"
+    },
+    "c_issue_keys": {
+      "type": "keyword"
+    },
+    "c_author_id": {
+      "type": "keyword"
+    },
+    "c_committer_id": {
+      "type": "keyword"
+    },
+    "c_file_types": {
+      "type": "keyword"
+    },
+    "c_day": {
+      "type": "keyword"
+    },
+    "c_tot_lines_changed": {
+      "type": "integer"
+    },
+    "c_tot_lines_removed": {
+      "type": "integer"
+    },
+    "c_tot_lines_added": {
+      "type": "integer"
+    },
+    "c_files_ct": {
+      "type": "integer"
+    },
+    "c_additions": {
+      "type": "integer"
+    },
+    "c_deletions": {
+      "type": "integer"
+    },
+    "c_changes": {
+      "type": "integer"
+    },
+    "c_loc": {
+      "type": "integer"
+    },
+    "c_committed_at": {
+      "type": "date"
+    },
+    "c_ingested_at": {
+      "type": "date"
+    },
+    "c_created_at": {
+      "type": "date"
+    },
+    "c_direct_merge": {
+      "type": "boolean"
+    },
+    "c_pr_list": {
+      "type": "keyword"
+    },
+    "c_pr_count": {
+      "type": "integer"
+    },
+    "c_committer_pr_list": {
+      "type": "keyword"
+    },
+    "c_committer_pr_count": {
+      "type": "integer"
+    },
+    "c_author_info": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "integration_id": {
+          "type": "keyword"
+        },
+        "display_name": {
+          "type": "keyword"
+        },
+        "cloudId": {
+          "type": "keyword"
+        }
+      }
+    },
+    "c_committer_info": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "integration_id": {
+          "type": "keyword"
+        },
+        "display_name": {
+          "type": "keyword"
+        },
+        "cloudId": {
+          "type": "keyword"
+        }
+      }
+    },
+    "c_files": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "file_id": {
+          "type": "keyword"
+        },
+        "integration_id": {
+          "type": "keyword"
+        },
+        "commit_sha": {
+          "type": "keyword"
+        },
+        "repo": {
+          "type": "keyword"
+        },
+        "project": {
+          "type": "keyword"
+        },
+        "file_name": {
+          "type": "keyword"
+        },
+        "file_type": {
+          "type": "keyword"
+        },
+        "additions": {
+          "type": "integer"
+        },
+        "deletions": {
+          "type": "integer"
+        },
+        "changes": {
+          "type": "integer"
+        },
+        "totalChange": {
+          "type": "integer"
+        },
+        "committed_at": {
+          "type": "date"
+        },
+        "previous_committed_at": {
+          "type": "date"
+        },
+        "createdAt": {
+          "type": "date"
+        },
+        "file_created_at": {
+          "type": "long"
+        }
+      }
+    },
+    "c_technologies": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "repo_id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "integration_id": {
+          "type": "keyword"
+        },
+        "created_at": {
+          "type": "date"
+        }
+      }
+    },
+    "c_scm_tags": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "integration_id": {
+          "type": "keyword"
+        },
+        "project": {
+          "type": "keyword"
+        },
+        "repo": {
+          "type": "keyword"
+        },
+        "tag": {
+          "type": "keyword"
+        },
+        "commit_sha": {
+          "type": "keyword"
+        },
+        "created_at": {
+          "type": "date"
+        },
+        "updated_at": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}

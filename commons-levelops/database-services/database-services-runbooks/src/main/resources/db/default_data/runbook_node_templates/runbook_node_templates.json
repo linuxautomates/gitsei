@@ -1,0 +1,923 @@
+[
+  {
+    "type": "slack_notification",
+    "node_handler": "slack_notification",
+    "name": "Send Slack notification",
+    "description": "Send a Slack message to a user",
+    "category": "Notifications",
+    "input": {
+      "bot_name": {
+        "key": "bot_name",
+        "index": 20,
+        "display_name": "Bot Name",
+        "description": "Name of the sender in Slack",
+        "type": "text",
+        "options": [],
+        "required": false
+      },
+      "user_email": {
+        "key": "user_email",
+        "index": 10,
+        "display_name": "Recipient Slack Channels or User Emails",
+        "description": "Names of the Slack channels (e.g. 'general'), and/or emails of the recipients. Select an email from the list, or enter a recipient. You can also use a variable (it may contain one or more emails, separated by commas).",
+        "type": "multi-custom-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "users",
+        "search_field": "email",
+        "required": true
+      },
+      "text": {
+        "key": "text",
+        "index": 30,
+        "description": "Text message to send",
+        "type": "text-area",
+        "options": [],
+        "required": true
+      }
+    },
+    "ui_data": {
+      "icon": "slack"
+    }
+  },
+  {
+    "type": "msteams_notification",
+    "node_handler": "msteams_notification",
+    "name": "Send MS Teams notification",
+    "description": "Send a MS Teams message to a user",
+    "category": "Notifications",
+    "input": {
+      "user_email": {
+        "key": "user_email",
+        "index": 10,
+        "display_name": "Recipient MS Teams Channels or User Emails",
+        "description": "Names of the MS Teams channels (e.g. 'team/channel'), and/or emails of the recipients. Select an email from the list, or enter a recipient. You can also use a variable (it may contain one or more emails, separated by commas).",
+        "type": "multi-custom-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "users",
+        "search_field": "email",
+        "required": true
+      },
+      "text": {
+        "key": "text",
+        "index": 30,
+        "description": "Text message to send",
+        "type": "text-area",
+        "options": [],
+        "required": true
+      }
+    },
+    "ui_data": {
+      "icon": "ms_teams"
+    }
+  },
+  {
+    "type": "email_notification",
+    "node_handler": "email_notification",
+    "name": "Send Email notification",
+    "description": "Send an Email to a user",
+    "category": "Notifications",
+    "input": {
+      "subject": {
+        "key": "subject",
+        "index": 20,
+        "display_name": "Subject",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "user_email": {
+        "key": "user_email",
+        "index": 10,
+        "display_name": "User Emails",
+        "description": "Emails of the recipients. Select from the list, or use a variable (it may contain one or more emails, separated by commas).",
+        "type": "multi-custom-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "users",
+        "search_field": "email",
+        "required": true
+      },
+      "text": {
+        "key": "text",
+        "index": 30,
+        "description": "Text message to send",
+        "type": "text-area",
+        "options": [],
+        "required": true
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "get_plugin_result",
+    "node_handler": "get_plugin_result",
+    "name": "Get Plugin Result",
+    "description": "Retrieve the results of a Plugin by Id",
+    "category": "General",
+    "input": {
+      "plugin_result_id": {
+        "key": "plugin_result_id",
+        "index": 10,
+        "display_name": "Plugin Result Id",
+        "type": "variable-select",
+        "content_type": "id:plugin_result/*",
+        "options": [],
+        "required": true
+      }
+    },
+    "output": {
+      "plugin_result": {
+        "key": "plugin_result",
+        "value_type": "json_blob",
+        "content_type_from_input": "plugin_result_id"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "list_ingestion_data",
+    "node_handler": "list_ingestion_data",
+    "hidden": true,
+    "name": "List Ingestion Data",
+    "description": "List data from a given integration, or all integrations of a given project",
+    "category": "General",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": false
+      },
+      "product_id": {
+        "key": "product_id",
+        "index": 20,
+        "display_name": "Project",
+        "description": "If selected, targets all integrations associated with that project",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "products",
+        "required": false
+      },
+      "integration_type": {
+        "key": "integration_type",
+        "index": 30,
+        "display_name": "Integration Type",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "integration_data_type": {
+        "key": "integration_data_type",
+        "index": 40,
+        "display_name": "Data Type",
+        "description": "Choose which type of data offered by the selected integration",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "lql": {
+        "key": "lql",
+        "index": 50,
+        "display_name": "Query",
+        "description": "Filter the data using the query language",
+        "type": "text",
+        "options": [],
+        "required": false
+      }
+    },
+    "output": {
+      "list": {
+        "key": "list",
+        "value_type": "json_array"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "for_each",
+    "node_handler": "for_each",
+    "name": "For Each Item In List",
+    "description": "Iterate over items in a given list variable",
+    "category": "General",
+    "input": {
+      "list": {
+        "key": "list",
+        "index": 10,
+        "description": "Select a variable that contains a list of items",
+        "type": "variable-select",
+        "required": true
+      }
+    },
+    "output": {
+      "item": {
+        "key": "item",
+        "value_type": "json_blob",
+        "content_type_from_input": "list"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "report",
+    "node_handler": "report",
+    "name": "Create report",
+    "description": "Create a report from items in a list",
+    "category": "General",
+    "input": {
+      "report_title": {
+        "key": "report_title",
+        "index": 10,
+        "display_name": "Report Title",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "section_title": {
+        "key": "section_title",
+        "index": 20,
+        "display_name": "Section Title",
+        "description": "If this node is invoked multiple times (for example, by a loop), the data will be grouped in a section with the given title",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "list": {
+        "key": "list",
+        "index": 30,
+        "description": "Select a variable that contains a list of items",
+        "type": "variable-select",
+        "options": [],
+        "required": true
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "if_condition",
+    "node_handler": "if_condition",
+    "name": "If Condition",
+    "description": "Evaluate condition",
+    "category": "General",
+    "input": {
+      "lql": {
+        "key": "lql",
+        "index": 10,
+        "display_name": "Condition",
+        "description": "Use the Propel Query Language to define the condition",
+        "type": "text",
+        "required": true
+      }
+    },
+    "output": {
+      "result": {
+        "key": "result",
+        "content_type": "boolean",
+        "value_type": "string"
+      }
+    },
+    "options": [
+      "True",
+      "False"
+    ],
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "rest_api",
+    "node_handler": "rest_api",
+    "name": "REST API Call",
+    "description": "Make a call to a REST API",
+    "category": "General",
+    "input": {
+      "method": {
+        "key": "method",
+        "index": 10,
+        "display_name": "Method",
+        "type": "single-select",
+        "options": [
+          "GET",
+          "POST",
+          "PUT",
+          "PATCH",
+          "DELETE"
+        ],
+        "default_value": "GET",
+        "required": true
+      },
+      "url": {
+        "key": "url",
+        "index": 20,
+        "display_name": "URL",
+        "description": "URL with parameters",
+        "type": "text",
+        "required": true
+      },
+      "headers": {
+        "key": "headers",
+        "index": 30,
+        "display_name": "Headers",
+        "type": "kv",
+        "required": false
+      },
+      "content_type": {
+        "key": "content_type",
+        "index": 50,
+        "display_name": "Content Type",
+        "description": "Content type of the body (for example: \"application/json\")",
+        "type": "text",
+        "required": false
+      },
+      "body": {
+        "key": "body",
+        "index": 60,
+        "display_name": "Body",
+        "type": "text-area",
+        "required": false
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 70,
+        "display_name": "Satellite Integration",
+        "description": "Pick a satellite integration to make the call from. If not specified, only public APIs can be reached.",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": false,
+        "filters": [
+          {"key": "satellite", "type": "text", "default_value": "true", "required": true, "hidden": "true", "display_name": "satellite", "description": "satellite"}
+        ]
+      },
+      "ignore_errors": {
+        "key": "ignore_errors",
+        "index": 80,
+        "display_name": "Ignore errors",
+        "description": "If Yes, this node will succeed regardless of the API response",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": false
+      }
+    },
+    "output": {
+      "code": {
+        "key": "code"
+      },
+      "body": {
+        "key": "body"
+      },
+      "json_body": {
+        "key": "json_body",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "levelops_query",
+    "node_handler": "levelops_query",
+    "name": "SEI Query",
+    "description": "Query the SEI API",
+    "category": "General",
+    "input": {
+      "method": {
+        "key": "method",
+        "index": 10,
+        "display_name": "Method",
+        "type": "single-select",
+        "options": [
+          "GET",
+          "POST",
+          "PUT",
+          "PATCH",
+          "DELETE"
+        ],
+        "default_value": "GET",
+        "required": true
+      },
+      "path": {
+        "key": "path",
+        "index": 20,
+        "display_name": "Path",
+        "description": "Path appended to the base URL",
+        "type": "text",
+        "required": true
+      },
+      "headers": {
+        "key": "headers",
+        "index": 30,
+        "display_name": "Headers",
+        "type": "kv",
+        "required": false
+      },
+      "content_type": {
+        "key": "content_type",
+        "index": 40,
+        "display_name": "Content Type",
+        "description": "Content type of the body (for example: \"application/json\")",
+        "type": "text",
+        "required": false
+      },
+      "body": {
+        "key": "body",
+        "index": 50,
+        "display_name": "Body",
+        "type": "text-area",
+        "required": false
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 60,
+        "display_name": "Satellite Integration",
+        "description": "Pick a satellite integration to make the call from. If not specified, only public APIs can be reached.",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": false,
+        "filters": [
+          {"key": "satellite", "type": "text", "default_value": "true", "required": true, "hidden": "true", "display_name": "satellite", "description": "satellite"}
+        ]
+      },
+      "password": {
+        "key": "password",
+        "index": 70,
+        "display_name": "Api Key",
+        "description": "API key to authenticate to SEI.",
+        "type": "password_string",
+        "required": true
+      },
+      "ignore_errors": {
+        "key": "ignore_errors",
+        "index": 80,
+        "display_name": "Ignore errors",
+        "description": "If Yes, this node will succeed regardless of the API response",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": false
+      }
+    },
+    "output": {
+      "code": {
+        "key": "code"
+      },
+      "body": {
+        "key": "body"
+      },
+      "json_body": {
+        "key": "json_body",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "prs_list",
+    "node_handler": "prs_list",
+    "name": "PRs List API",
+    "description": "List the PRs based on the filter",
+    "category": "General",
+    "input": {
+      "body": {
+        "key": "body",
+        "index": 10,
+        "display_name": "Body",
+        "type": "text-area",
+        "required": false
+      },
+      "api_key": {
+        "key": "api_key",
+        "index": 20,
+        "display_name": "Api Key",
+        "description": "Api key for Authentication to reach PRs List API.",
+        "type": "password_string",
+        "required": true
+      },
+      "ignore_errors": {
+        "key": "ignore_errors",
+        "index": 30,
+        "display_name": "Ignore errors",
+        "description": "If Yes, this node will succeed regardless of the API response",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": false
+      }
+    },
+    "output": {
+      "code": {
+        "key": "code"
+      },
+      "body": {
+        "key": "body"
+      },
+      "json_body": {
+        "key": "json_body",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "jira_list",
+    "node_handler": "jira_list",
+    "name": "Jira List API",
+    "description": "List the Jira Issues based on the filter",
+    "category": "General",
+    "input": {
+      "body": {
+        "key": "body",
+        "index": 10,
+        "display_name": "Body",
+        "type": "text-area",
+        "required": false
+      },
+      "api_key": {
+        "key": "api_key",
+        "index": 20,
+        "display_name": "Api Key",
+        "description": "Api key for Authentication to reach PRs List API.",
+        "type": "password_string",
+        "required": true
+      },
+      "ignore_errors": {
+        "key": "ignore_errors",
+        "index": 30,
+        "display_name": "Ignore errors",
+        "description": "If Yes, this node will succeed regardless of the API response",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": false
+      }
+    },
+    "output": {
+      "code": {
+        "key": "code"
+      },
+      "body": {
+        "key": "body"
+      },
+      "json_body": {
+        "key": "json_body",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "tickets_report",
+    "node_handler": "tickets_report",
+    "name": "Jira Tickets Report",
+    "description": "Get the jira tickets report based on the filter",
+    "category": "General",
+    "input": {
+      "body": {
+        "key": "body",
+        "index": 10,
+        "display_name": "Body",
+        "type": "text-area",
+        "required": false
+      },
+      "api_key": {
+        "key": "api_key",
+        "index": 20,
+        "display_name": "Api Key",
+        "description": "Api key for Authentication to reach PRs List API.",
+        "type": "password_string",
+        "required": true
+      },
+      "ignore_errors": {
+        "key": "ignore_errors",
+        "index": 30,
+        "display_name": "Ignore errors",
+        "description": "If Yes, this node will succeed regardless of the API response",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": false
+      }
+    },
+    "output": {
+      "code": {
+        "key": "code"
+      },
+      "body": {
+        "key": "body"
+      },
+      "json_body": {
+        "key": "json_body",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "exit",
+    "node_handler": "exit",
+    "name": "Exit Propel",
+    "description": "Stops the execution of this Propel",
+    "category": "General",
+    "input": {
+      "exit_state": {
+        "key": "exit_state",
+        "index": 10,
+        "display_name": "Exit State",
+        "description": "Choose in which state the current run should be after exiting",
+        "type": "single-select",
+        "options": [
+          "Success",
+          "Failure"
+        ],
+        "default_value": "Success",
+        "required": true
+      },
+      "output_variables": {
+        "key": "output_variables",
+        "index": 20,
+        "display_name": "Output Variables",
+        "description": "Specify the name and value of eventual output variables returned by this Propel",
+        "type": "kv",
+        "required": false
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "key_value_mapping",
+    "node_handler": "key_value_mapping",
+    "name": "Key Value Mapping",
+    "description": "Find the value associated to a given key",
+    "category": "General",
+    "input": {
+      "key": {
+        "key": "key",
+        "index": 10,
+        "display_name": "Key",
+        "description": "The key to map",
+        "type": "text",
+        "required": true
+      },
+      "mappings": {
+        "key": "mappings",
+        "index": 20,
+        "display_name": "Mappings",
+        "description": "List of mappings",
+        "type": "kv",
+        "required": true
+      },
+      "default_value": {
+        "key": "default_value",
+        "index": 30,
+        "display_name": "Default Value",
+        "description": "The default value if no mapping was found",
+        "type": "text",
+        "required": false
+      },
+      "ignore_case": {
+        "key": "ignore_case",
+        "index": 40,
+        "display_name": "Case Insensitive",
+        "description": "If Yes, the case of the keys will be ignored",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": true
+      },
+      "trim": {
+        "key": "trim",
+        "index": 50,
+        "display_name": "Trim",
+        "description": "If Yes, leading and trailing whitespace around keys and values will be removed",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": true
+      }
+    },
+    "output": {
+      "value": {
+        "key": "value",
+        "value_type": "string",
+        "content_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "trigger_playbook",
+    "node_handler": "trigger_playbook",
+    "name": "Trigger Propel",
+    "description": "Triggers the execution of a Propel",
+    "category": "General",
+    "input": {
+      "playbook_id": {
+        "key": "playbook_id",
+        "index": 10,
+        "display_name": "Propel",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "playbooks",
+        "required": true
+      },
+      "parameters": {
+        "key": "parameters",
+        "index": 20,
+        "display_name": "Parameters",
+        "description": "Specify the name and value of the input variables required by this Propel",
+        "type": "kv",
+        "required": false
+      },
+      "wait": {
+        "key": "wait",
+        "index": 30,
+        "display_name": "Wait for completion",
+        "description": "Wait for the Propel to complete and return output variables, if any. If the Propel fails while waiting for completion, this node will also fail.",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "required": false
+      }
+    },
+    "output": {
+      "playbook_id": {
+        "key": "playbook_id",
+        "value_type": "string",
+        "content_type": "string"
+      },
+      "run_id": {
+        "key": "run_id",
+        "value_type": "string",
+        "content_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "script",
+    "node_handler": "script",
+    "name": "Custom Script",
+    "description": "Custom logic using JavaScript",
+    "category": "General",
+    "input": {
+      "parameters": {
+        "key": "parameters",
+        "index": 10,
+        "display_name": "Input Parameters",
+        "description": "Specify input parameters that will be available within the script.",
+        "type": "kv",
+        "required": false
+      },
+      "script": {
+        "key": "script",
+        "index": 20,
+        "display_name": "Script",
+        "description": "Write some custom logic using JavaScript.",
+        "default_value": "prefix = 'hello ';\nfunction handleNode(context) {\n  name = context.getParam('name');\n  // propels.serviceName().doSomething() - invoke a service\n  return { \n    state : 'success',\n    output : { \n      'message' : prefix + name  \n    } \n  };\n}",
+        "type": "text-editor",
+        "required": true
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "provision_user",
+    "node_handler": "provision_user",
+    "name": "Provision User",
+    "description": "Create a User Account",
+    "category": "General",
+    "input": {
+      "user_email": {
+        "key": "user_email",
+        "index": 10,
+        "display_name": "User Email",
+        "type": "text",
+        "required": true
+      },
+      "first_name": {
+        "key": "first_name",
+        "index": 20,
+        "display_name": "First Name",
+        "type": "text",
+        "required": true
+      },
+      "last_name": {
+        "key": "last_name",
+        "index": 30,
+        "display_name": "Last Name",
+        "type": "text",
+        "required": true
+      },
+      "role": {
+        "key": "role",
+        "index": 40,
+        "display_name": "Role",
+        "description": "Select a role for the user, which will determinate which permissions the account gets.",
+        "type": "single-select",
+        "options": [
+          "Limited User",
+          "Restricted User",
+          "Auditor",
+          "Admin"
+        ],
+        "required": true
+      },
+      "password": {
+        "key": "password",
+        "index": 50,
+        "display_name": "Password Enabled",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": true
+      },
+      "sso": {
+        "key": "sso",
+        "index": 60,
+        "display_name": "SSO Enabled",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "No",
+        "type": "radio-group",
+        "required": true
+      },
+      "send_email": {
+        "key": "send_email",
+        "index": 70,
+        "display_name": "Send Email Notification",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": true
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  }
+]

@@ -1,0 +1,66 @@
+{
+    "name": "Jose Leon",
+    "email": "ivan.leon.it@gmail.com",
+    "time_zone": "America/Los_Angeles",
+    "color": "purple",
+    "avatar_url": "https://secure.gravatar.com/avatar/2eba62139b0888807e62e0b0ec9fafc4.png?d=mm&r=PG",
+    "billed": true,
+    "role": "owner",
+    "description": null,
+    "invitation_sent": false,
+    "job_title": null,
+    "teams": [
+      {
+        "id": "P6SSO4A",
+        "type": "team_reference",
+        "summary": "OpsTeam",
+        "self": "https://api.pagerduty.com/teams/P6SSO4A",
+        "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+      }
+    ],
+    "contact_methods": [
+      {
+        "id": "PGO4A1I",
+        "type": "email_contact_method_reference",
+        "summary": "Default",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5/contact_methods/PGO4A1I",
+        "html_url": null
+      },
+      {
+        "id": "PITOJIY",
+        "type": "phone_contact_method_reference",
+        "summary": "Mobile",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5/contact_methods/PITOJIY",
+        "html_url": null
+      }
+    ],
+    "notification_rules": [
+      {
+        "id": "P7YQNZL",
+        "type": "assignment_notification_rule_reference",
+        "summary": "0 minutes: channel PGO4A1I",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5/notification_rules/P7YQNZL",
+        "html_url": null
+      },
+      {
+        "id": "PO7BOPO",
+        "type": "assignment_notification_rule_reference",
+        "summary": "0 minutes: channel PGO4A1I",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5/notification_rules/PO7BOPO",
+        "html_url": null
+      },
+      {
+        "id": "PLOY0WM",
+        "type": "assignment_notification_rule_reference",
+        "summary": "0 minutes: channel PITOJIY",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5/notification_rules/PLOY0WM",
+        "html_url": null
+      }
+    ],
+    "coordinated_incidents": [],
+    "id": "P5OQRZ5",
+    "type": "user",
+    "summary": "Jose Leon",
+    "self": "https://api.pagerduty.com/users/P5OQRZ5",
+    "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+  }

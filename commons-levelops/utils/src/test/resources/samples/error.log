@@ -1,0 +1,69 @@
+Jul 08, 2020 2:58:14 PM INFO hudson.model.AsyncPeriodicWork lambda/var/jenkins_home/workspace/blink-full-pipeline@tmp/durable-1253e9f9/script.sh
+Finished LevelOps Monitoring Worker Thread. 1 ms
+Jul 08, 2020 2:58:15 PM WARNING io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager onFailure
+Exec Failure
+java.util.concurrent.RejectedExecutionException: Task okhttp3.RealCall@2043dd14 rejected from java.util.concurrent.ThreadPoolExecutor@70d6b840[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 27]
+    at java.util.concurrent.ThreadPoolExecutor.rejectedExecution(ThreadPoolExecutor.java:2063)
+    at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+    at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+    at okhttp3.RealCall.executeOn(RealCall.java:183)
+Caused: java.io.InterruptedIOException: executor rejected
+    at okhttp3.RealCall.executeOn(RealCall.java:186)
+    at okhttp3.Dispatcher.promoteAndExecute(Dispatcher.java:186)
+    at okhttp3.Dispatcher.enqueue(Dispatcher.java:137)
+    at okhttp3.RealCall.enqueue(RealCall.java:127)
+    at okhttp3.internal.ws.RealWebSocket.connect(RealWebSocket.java:193)
+    at okhttp3.OkHttpClient.newWebSocket(OkHttpClient.java:435)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager.runWatch(WatchConnectionManager.java:161)
+Jul 08, 2020 2:58:14 PM INFO hudson.model.AsyncPeriodicWork lambda/var/jenkins_home/workspace/blink-full-pipeline@tmp/durable-1253e9f9/script.sh
+Finished LevelOps Monitoring Worker Thread. 1 ms
+Jul 08, 2020 2:58:15 PM WARNING io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager onFailure
+Exec Failure
+java.util.concurrent.RejectedExecutionException: Task okhttp3.RealCall@2043dd14 rejected from java.util.concurrent.ThreadPoolExecutor@70d6b840[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 27]
+    at java.util.concurrent.ThreadPoolExecutor.rejectedExecution(ThreadPoolExecutor.java:2063)
+    at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+    at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+    at okhttp3.RealCall.executeOn(RealCall.java:183)
+Caused: java.io.InterruptedIOException: executor rejected reGex
+    at okhttp3.RealCall.executeOn(RealCall.java:186)
+    at okhttp3.Dispatcher.promoteAndExecute(Dispatcher.java:186)
+    at okhttp3.Dispatcher.enqueue(Dispatcher.java:137)
+    at okhttp3.RealCall.enqueue(RealCall.java:127)
+    at okhttp3.internal.ws.RealWebSocket.connect(RealWebSocket.java:193)
+    at okhttp3.OkHttpClient.newWebSocket(OkHttpClient.java:435)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager.runWatch(WatchConnectionManager.java:161)
+Jul 08, 2020 2:58:14 PM INFO hudson.model.AsyncPeriodicWork lambda/var/jenkins_home/workspace/blink-full-pipeline@tmp/durable-1253e9f9/script.sh
+Finished LevelOps Monitoring Worker Thread. 1 ms
+Jul 08, 2020 2:58:15 PM WARNING io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager onFailure
+Exec Failure
+java.util.concurrent.RejectedExecutionException: Task okhttp3.RealCall@2043dd14 rejected from java.util.concurrent.ThreadPoolExecutor@70d6b840[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 27]
+    at java.util.concurrent.ThreadPoolExecutor.rejectedExecution(ThreadPoolExecutor.java:2063)
+    at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+    at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+    at okhttp3.RealCall.executeOn(RealCall.java:183)
+Caused: java.io.InterruptedIOException: executor rejected asdaaaaa
+    at okhttp3.RealCall.executeOn(RealCall.java:186)
+    at okhttp3.Dispatcher.promoteAndExecute(Dispatcher.java:186)
+    at okhttp3.Dispatcher.enqueue(Dispatcher.java:137)
+    at okhttp3.RealCall.enqueue(RealCall.java:127)
+    at okhttp3.internal.ws.RealWebSocket.connect(RealWebSocket.java:193)
+    at okhttp3.OkHttpClient.newWebSocket(OkHttpClient.java:435)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager.runWatch(WatchConnectionManager.java:161)
+Jul 08, 2020 2:58:14 PM INFO hudson.model.AsyncPeriodicWork lambda/var/jenkins_home/workspace/blink-full-pipeline@tmp/durable-1253e9f9/script.sh
+Finished LevelOps Monitoring Worker Thread. 1 ms
+Jul 08, 2020 2:58:15 PM WARNING io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager onFailure
+Exec Failure
+java.util.concurrent.RejectedExecutionException: Task okhttp3.RealCall@2043dd14 rejected from java.util.concurrent.ThreadPoolExecutor@70d6b840[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 27]
+    at java.util.concurrent.ThreadPoolExecutor.rejectedExecution(ThreadPoolExecutor.java:2063)
+    at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+    at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+    at okhttp3.RealCall.executeOn(RealCall.java:183)
+Caused: java.io.InterruptedIOException: executor rejected
+    at okhttp3.RealCall.executeOn(RealCall.java:186)
+    at okhttp3.Dispatcher.promoteAndExecute(Dispatcher.java:186)
+    at okhttp3.Dispatcher.enqueue(Dispatcher.java:137)
+    at okhttp3.RealCall.enqueue(RealCall.java:127)
+    at okhttp3.internal.ws.RealWebSocket.connect(RealWebSocket.java:193)
+    at okhttp3.OkHttpClient.newWebSocket(OkHttpClient.java:435)
+    at io.fabric8.kubernetes.client.dsl.internal.WatchConnectionManager.runWatch(WatchConnectionManager.java:161)
+asdaaaio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnectionio.fabric8.kubernetes.client.dsl.internal.WatchConnection

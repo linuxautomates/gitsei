@@ -1,0 +1,97 @@
+{
+  "integration_id": "1",
+  "tenant_id": "tenable",
+  "partial": false,
+  "trigger_results": [
+    {
+      "trigger_id": "846b9fe3-ad5f-4050-8074-1af0061b46ef",
+      "trigger_type": "tenable",
+      "tenant_id": "tenable",
+      "integration_id": "1",
+      "iteration_id": "6216a279-d1cf-421a-bd8c-8e8950294e03",
+      "partial": false,
+      "jobs": [
+        {
+          "id": "3293026a-f8de-45cc-8f55-e501f54f61d8",
+          "agent_id": "2dd3ce3a-fe48-4ccb-9d07-2cd45ee11f68",
+          "status": "success",
+          "tenant_id": "tenable",
+          "integration_id": "1",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "partial": false,
+            "integration_key": {
+              "tenant_id": "tenable",
+              "integration_id": "1"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "TenableIngestionController",
+          "created_at": 1590122483,
+          "status_changed_at": 1590122572,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "tenable",
+                    "integration_id": "1"
+                  },
+                  "integration_type": "tenable",
+                  "data_type": "vulnerability"
+                },
+                "destination": "gcs",
+                "prefix_uri": "vulnerability/",
+                "records": [
+                  {
+                    "uri": "gs://tenable-dev-ingestion-levelops/data/tenant-tenable/integration-1/2020/05/22/job-3293026a-f8de-45cc-8f55-e501f54f61d8/vulnerability/vulnerability.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/tenable-dev-ingestion-levelops/data/tenant-tenable/integration-1/2020/05/22/job-3293026a-f8de-45cc-8f55-e501f54f61d8/vulnerability/vulnerability.0.json",
+                    "blob_id": {
+                      "bucket": "tenable-dev-ingestion-levelops",
+                      "name": "data/tenant-tenable/integration-1/2020/05/22/job-3293026a-f8de-45cc-8f55-e501f54f61d8/vulnerability/vulnerability.0.json",
+                      "generation": 1590122517031254
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "tenable",
+                    "integration_id": "1"
+                  },
+                  "integration_type": "tenable",
+                  "data_type": "web_app_scan"
+                },
+                "destination": "gcs",
+                "prefix_uri": "web_app_scan/",
+                "records": [
+                  {
+                    "uri": "gs://tenable-dev-ingestion-levelops/data/tenant-tenable/integration-1/2020/05/22/job-3293026a-f8de-45cc-8f55-e501f54f61d8/web_app_scan/web_app_scan.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/tenable-dev-ingestion-levelops/data/tenant-tenable/integration-1/2020/05/22/job-3293026a-f8de-45cc-8f55-e501f54f61d8/web_app_scan/web_app_scan.0.json",
+                    "blob_id": {
+                      "bucket": "tenable-dev-ingestion-levelops",
+                      "name": "data/tenant-tenable/integration-1/2020/05/22/job-3293026a-f8de-45cc-8f55-e501f54f61d8/web_app_scan/web_app_scan.0.json",
+                      "generation": 1590122549135585
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 2
+          },
+          "trigger_id": "846b9fe3-ad5f-4050-8074-1af0061b46ef",
+          "partial": false,
+          "iteration_id": "70f6e647-559b-433d-b9c9-7eaa96109d17",
+          "iteration_ts": 1590122483
+        }
+      ],
+      "count": 1
+    }
+  ]
+}

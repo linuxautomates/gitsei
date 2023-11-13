@@ -1,0 +1,270 @@
+{
+  "id": "153135586",
+  "iid": "4038",
+  "project_id": 19105467,
+  "title": "test title",
+  "description": "",
+  "state": "merged",
+  "created_at": "2022-05-02T18:53:43.541+00:00",
+  "updated_at": "2022-05-02T18:54:53.783+00:00",
+  "merged_by": {
+    "admin": false,
+    "id": "8559920",
+    "name": "Maxime Bellier",
+    "username": "mbellier",
+    "state": "active",
+    "avatar_url": "https://secure.gravatar.com/avatar/eec095fd4da9ae205d1cabfc771fec50?s=80&d=identicon",
+    "web_url": "https://gitlab.com/mbellier",
+    "is_admin": false,
+    "theme_id": 0,
+    "color_scheme_id": 0,
+    "projects_limit": 0,
+    "can_create_group": false,
+    "can_create_project": false,
+    "two_factor_enabled": false,
+    "external": false,
+    "private_profile": false
+  },
+  "merged_at": "2022-05-02T18:54:53.816+00:00",
+  "target_branch": "main",
+  "source_branch": "mbellier/test-repo",
+  "user_notes_count": 0,
+  "upvotes": 0,
+  "downvotes": 0,
+  "author": {
+    "admin": false,
+    "id": "8559925",
+    "name": "Maxime Bellier",
+    "username": "mbellier",
+    "state": "active",
+    "avatar_url": "https://secure.gravatar.com/avatar/0?s=80&d=identicon",
+    "web_url": "https://gitlab.com/mbellier",
+    "is_admin": false,
+    "theme_id": 0,
+    "color_scheme_id": 0,
+    "projects_limit": 0,
+    "can_create_group": false,
+    "can_create_project": false,
+    "two_factor_enabled": false,
+    "external": false,
+    "private_profile": false
+  },
+  "assignees": [
+    {
+      "admin": false,
+      "id": "8559925",
+      "name": "Maxime Bellier",
+      "username": "mbellier",
+      "state": "active",
+      "avatar_url": "https://secure.gravatar.com/avatar/0?s=80&d=identicon",
+      "web_url": "https://gitlab.com/mbellier",
+      "is_admin": false,
+      "theme_id": 0,
+      "color_scheme_id": 0,
+      "projects_limit": 0,
+      "can_create_group": false,
+      "can_create_project": false,
+      "two_factor_enabled": false,
+      "external": false,
+      "private_profile": false
+    }
+  ],
+  "assignee": {
+    "admin": false,
+    "id": "8559925",
+    "name": "Maxime Bellier",
+    "username": "mbellier",
+    "state": "active",
+    "avatar_url": "https://secure.gravatar.com/avatar/0?s=80&d=identicon",
+    "web_url": "https://gitlab.com/mbellier",
+    "is_admin": false,
+    "theme_id": 0,
+    "color_scheme_id": 0,
+    "projects_limit": 0,
+    "can_create_group": false,
+    "can_create_project": false,
+    "two_factor_enabled": false,
+    "external": false,
+    "private_profile": false
+  },
+  "source_project_id": "19105467",
+  "target_project_id": "19105467",
+  "work_in_progress": false,
+  "labels": [],
+  "merge_when_pipeline_succeeds": false,
+  "merge_status": "can_be_merged",
+  "sha": "5c2b8a590d09da5283bd74507593f7be5bc8e000",
+  "merge_commit_sha": "bedb8e1f92a208b5181f004ecd2a0d627cb2f000",
+  "commits": [
+    {
+      "id": "5c2b8a590d09da5283bd74507593f7be5bc8e000",
+      "short_id": "5c2b8a59",
+      "created_at": "2022-05-02T18:53:32.000+00:00",
+      "parent_ids": [],
+      "title": "test commit title",
+      "message": "test commit msg\n",
+      "author_name": "Maxime Bellier",
+      "author_email": "mbellier@propelo.ai",
+      "authored_date": "2022-05-02T18:53:32.000+00:00",
+      "committer_name": "Maxime Bellier",
+      "committer_email": "mbellier@propelo.ai",
+      "committed_date": "2022-05-02T18:53:32.000+00:00",
+      "web_url": "https://gitlab.com/levelops/pipeline/-/commit/5c2b8a590d09da5283bd74507593f7be5bc8e000"
+    }
+  ],
+  "state_events": [
+    {
+      "id": "82087984",
+      "user": {
+        "admin": false,
+        "id": "8559925",
+        "name": "Maxime Bellier",
+        "username": "mbellier",
+        "state": "active",
+        "avatar_url": "https://secure.gravatar.com/avatar/0?s=80&d=identicon",
+        "web_url": "https://gitlab.com/mbellier",
+        "is_admin": false,
+        "theme_id": 0,
+        "color_scheme_id": 0,
+        "projects_limit": 0,
+        "can_create_group": false,
+        "can_create_project": false,
+        "two_factor_enabled": false,
+        "external": false,
+        "private_profile": false
+      },
+      "created_at": "2022-05-02T18:54:54.008+00:00",
+      "resource_type": "MergeRequest",
+      "resource_id": "153135586",
+      "state": "merged"
+    }
+  ],
+  "events": [
+    {
+      "id": "1862969470",
+      "project_id": "19105467",
+      "action_name": "accepted",
+      "target_id": "153135586",
+      "target_iid": "4038",
+      "target_type": "MergeRequest",
+      "author_id": "8559925",
+      "target_title": "test title",
+      "created_at": "2022-05-02T18:54:53.816+00:00",
+      "author": {
+        "id": "8559925",
+        "name": "Maxime Bellier",
+        "username": "mbellier",
+        "state": "active"
+      },
+      "author_username": "mbellier"
+    },
+    {
+      "id": "1862968922",
+      "project_id": "19105467",
+      "action_name": "approved",
+      "target_id": "153135586",
+      "target_iid": "4038",
+      "target_type": "MergeRequest",
+      "author_id": "8205908",
+      "target_title": "test title",
+      "created_at": "2022-05-02T18:54:28.069+00:00",
+      "author": {
+        "id": "8205908",
+        "name": "Meghana D",
+        "username": "meghanad",
+        "state": "active"
+      },
+      "author_username": "meghanad"
+    },
+    {
+      "id": "1862968117",
+      "project_id": "19105467",
+      "action_name": "opened",
+      "target_id": "153135586",
+      "target_iid": "4038",
+      "target_type": "MergeRequest",
+      "author_id": "8559925",
+      "target_title": "test title",
+      "created_at": "2022-05-02T18:53:47.278+00:00",
+      "author": {
+        "id": "8559925",
+        "name": "Maxime Bellier",
+        "username": "mbellier",
+        "state": "active"
+      },
+      "author_username": "mbellier"
+    }
+  ],
+  "changes": {
+    "subscribed": false,
+    "changes_count": 1,
+    "latest_build_started_at": "2022-05-02T18:53:48.556+00:00",
+    "pipeline": {
+      "id": "529572070",
+      "project_id": "19105467",
+      "status": "failed",
+      "ref": "refs/merge-requests/4038/head",
+      "sha": "5c2b8a590d09da5283bd74507593f7be5bc8e000",
+      "web_url": "https://gitlab.com/levelops/pipeline/-/pipelines/529572070",
+      "created_at": "2022-05-02T18:53:47.054+00:00",
+      "updated_at": "2022-05-02T18:59:31.699+00:00"
+    },
+    "head_pipeline": {
+      "id": "529572070",
+      "project_id": "19105467",
+      "status": "failed",
+      "ref": "refs/merge-requests/4038/head",
+      "sha": "5c2b8a590d09da5283bd74507593f7be5bc8e000",
+      "web_url": "https://gitlab.com/levelops/pipeline/-/pipelines/529572070",
+      "created_at": "2022-05-02T18:53:47.054+00:00",
+      "updated_at": "2022-05-02T18:59:31.699+00:00",
+      "before_sha": "0000000000000000000000000000000000000000",
+      "tag": "false",
+      "started_at": "2022-05-02T18:53:48.556+00:00",
+      "finished_at": "2022-05-02T18:59:31.689+00:00",
+      "duration": 343,
+      "queued_duration": 1,
+      "user": {
+        "admin": false,
+        "id": "8559925",
+        "name": "Maxime Bellier",
+        "username": "mbellier",
+        "state": "active",
+        "avatar_url": "https://secure.gravatar.com/avatar/0?s=80&d=identicon",
+        "web_url": "https://gitlab.com/mbellier",
+        "is_admin": false,
+        "theme_id": 0,
+        "color_scheme_id": 0,
+        "projects_limit": 0,
+        "can_create_group": false,
+        "can_create_project": false,
+        "two_factor_enabled": false,
+        "external": false,
+        "private_profile": false
+      }
+    },
+    "diff_refs": {
+      "base_sha": "0a01f5b1cbc617292fa28d41d5f556420cc74000",
+      "head_sha": "5c2b8a590d09da5283bd74507593f7be5bc8e000",
+      "start_sha": "0a01f5b1cbc617292fa28d41d5f556420cc74000"
+    },
+    "user": {
+      "can_merge": false
+    },
+    "changes": [
+      {
+        "amode": "100644",
+        "bmode": "100644",
+        "old_path": "services/inventory/ci/gitlab-ci.yml",
+        "new_path": "services/inventory/ci/gitlab-ci.yml",
+        "a_mode": "100644",
+        "b_mode": "100644",
+        "new_file": false,
+        "renamed_file": false,
+        "deleted_file": false,
+        "diff": "@@ -42,7 +42,7 @@ test:\n   a \n b\n"
+      }
+    ]
+  }
+}
+

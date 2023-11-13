@@ -1,0 +1,3265 @@
+[
+  {
+    "w_id": "781daa1a-43c1-4a9f-8caf-5553c6832724",
+    "w_workitem_id": "SEI-1179",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "SEI-1179_8",
+    "w_is_active": true,
+    "w_summary": "Demo workspace with demo data and hierarchy",
+    "w_priority": "P4",
+    "w_project": "SEI",
+    "w_epic": "PROP-1372",
+    "w_status": "TO DO",
+    "w_workitem_type": "EPIC",
+    "w_custom_fields": [
+      {
+        "str": "Demo workspace with demo data and hierarchy",
+        "name": "customfield_10003"
+      },
+      {
+        "str": "TOAD KTLO",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "self_onboarding_plg"
+    ],
+    "w_assignee": {
+      "id": "null",
+      "display_name": "_UNASSIGNED_"
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_desc_size": 1708,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 2,
+    "w_created_at": 1658185875,
+    "w_updated_at": 1684513948,
+    "w_first_comment_at": 1661446309,
+    "w_first_attachment_at": 1663098389,
+    "w_age": 420,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "",
+    "w_status_category": "To Do",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [
+      {
+        "to_project": "SEI",
+        "to_workitem_id": "SEI-1184",
+        "relation": "relates to"
+      },
+      {
+        "to_project": "SEI",
+        "to_workitem_id": "SEI-1281",
+        "relation": "relates to"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [],
+    "w_hist_statuses": [
+      {
+        "start_time": 1682271716,
+        "end_time": 1694563199,
+        "id": "10000",
+        "time_spent": 12291483,
+        "status": "TO DO"
+      },
+      {
+        "start_time": 1658185875,
+        "end_time": 1682271716,
+        "id": "10632",
+        "time_spent": 24085841,
+        "status": "BACKLOG"
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "state_transition_time": 24085841,
+        "to_status": "TO DO",
+        "from_status": "BACKLOG"
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [],
+    "w_story_points": 2.0
+  },
+  {
+    "w_id": "ca01ebb4-44ab-457f-a95e-262d3805ffb3",
+    "w_workitem_id": "PROP-1372",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "PROP-1372_8",
+    "w_is_active": true,
+    "w_summary": "Add prod server on Pendo",
+    "w_priority": "P1",
+    "w_project": "PROP",
+    "w_status": "WILL NOT FIX",
+    "w_workitem_type": "TASK",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      },
+      {
+        "str": "Break-Fix",
+        "name": "customfield_22611"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+      "display_name": "thanh.tran",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 181,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1663625820,
+    "w_updated_at": 1676466954,
+    "w_resolved_at": 1676466954,
+    "w_first_assigned_at": 1663626399,
+    "w_first_comment_at": 1663626531,
+    "w_age": 357,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+          "cloud_id": "63b46e56030d706ab0e53334",
+          "display_name": "thanh.tran"
+        },
+        "start_time": 1674657541,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1663626399,
+        "end_time": 1674657541
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 18096245,
+        "status": "WILL NOT FIX",
+        "id": "10400",
+        "start_time": 1676466954,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 12691665,
+        "status": "WON'T DO",
+        "id": "10822",
+        "start_time": 1663775289,
+        "end_time": 1676466954
+      },
+      {
+        "time_spent": 149469,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1663625820,
+        "end_time": 1663775289
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "WON'T DO",
+        "from_status": "TO DO",
+        "state_transition_time": 149469
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "WON'T DO",
+        "state_transition_time": 12691665
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "TO DO",
+        "state_transition_time": 12841134
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "thanh.tran",
+        "historical_assignee_id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+        "issue_status": "WILL NOT FIX",
+        "issue_status_id": "10400",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674657541,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676466954,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 18013342,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1676466954,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1676466954
+      },
+      {
+        "historical_assignee": "thanh.tran",
+        "historical_assignee_id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+        "issue_status": "WON'T DO",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674657541,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1663775289,
+        "status_end_time": 1676466954,
+        "hist_assignee_time": 1809413,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1674657541,
+        "interval_end_time": 1676466954,
+        "w_resolved_at": 1676466954
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "WON'T DO",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1663626399,
+        "assignee_end_time": 1674657541,
+        "status_start_time": 1663775289,
+        "status_end_time": 1676466954,
+        "hist_assignee_time": 10882252,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1663775289,
+        "interval_end_time": 1674657541,
+        "w_resolved_at": 1676466954
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1663626399,
+        "assignee_end_time": 1674657541,
+        "status_start_time": 1663625820,
+        "status_end_time": 1663775289,
+        "hist_assignee_time": 148890,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1663626399,
+        "interval_end_time": 1663775289,
+        "w_resolved_at": 1676466954
+      }
+    ]
+  },
+  {
+    "w_id": "160a0e09-1e24-4e3a-a0a9-dbd392427be6",
+    "w_workitem_id": "SEI-275",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "SEI-275_8",
+    "w_is_active": true,
+    "w_summary": "Remove certain features from Trial tenants",
+    "w_priority": "P4",
+    "w_project": "SEI",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-1179",
+    "w_status": "DEPLOYED",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "189ad753-d8eb-4d9e-80bd-01dc4a83a00b",
+      "display_name": "Shivam Yadav",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 425,
+    "w_hops": 2,
+    "w_bounces": 1,
+    "w_num_attachments": 2,
+    "w_created_at": 1662701971,
+    "w_updated_at": 1682518420,
+    "w_resolved_at": 1682518420,
+    "w_first_assigned_at": 1662702883,
+    "w_first_comment_at": 1664200241,
+    "w_first_attachment_at": 1663195416,
+    "w_age": 367,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "DEPLOYED",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "eecc6245-007d-4466-86e5-69ce98abd258",
+          "cloud_id": "60b6a61993e3f500716087d9",
+          "display_name": "Shivam Yadav"
+        },
+        "start_time": 1674656653,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "eecc6245-007d-4466-86e5-69ce98abd258",
+          "cloud_id": "60b6a61993e3f500716087d9",
+          "display_name": "Shivam Yadav"
+        },
+        "start_time": 1664173141,
+        "end_time": 1674656653
+      },
+      {
+        "assignee": {
+          "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1662702883,
+        "end_time": 1664173141
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 12044779,
+        "status": "DEPLOYED",
+        "id": "10711",
+        "start_time": 1682518420,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 248417,
+        "status": "PR TEST",
+        "id": "10635",
+        "start_time": 1682270003,
+        "end_time": 1682518420
+      },
+      {
+        "time_spent": 5802442,
+        "status": "MERGED",
+        "id": "10743",
+        "start_time": 1676467561,
+        "end_time": 1682270003
+      },
+      {
+        "time_spent": 12259470,
+        "status": "MERGED",
+        "id": "10799",
+        "start_time": 1664208091,
+        "end_time": 1676467561
+      },
+      {
+        "time_spent": 8036,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1664200055,
+        "end_time": 1664208091
+      },
+      {
+        "time_spent": 11612,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1664188443,
+        "end_time": 1664200055
+      },
+      {
+        "time_spent": 1484459,
+        "status": "READY FOR DEV",
+        "id": "10817",
+        "start_time": 1662703984,
+        "end_time": 1664188443
+      },
+      {
+        "time_spent": 2013,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1662701971,
+        "end_time": 1662703984
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "READY FOR DEV",
+        "from_status": "TO DO",
+        "state_transition_time": 2013
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 19814436
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "TO DO",
+        "state_transition_time": 19816449
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 18329977
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "PR TEST",
+        "state_transition_time": 248417
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "MERGED",
+        "state_transition_time": 18310329
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 18318365
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 1484459
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 1486472
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 19566019
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "TO DO",
+        "state_transition_time": 19568032
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 18081560
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "MERGED",
+        "state_transition_time": 18061912
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 18069948
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 13763577
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "TO DO",
+        "state_transition_time": 13765590
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 12279118
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 12267506
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 1496071
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "TO DO",
+        "state_transition_time": 1498084
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 11612
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "DEPLOYED",
+        "issue_status_id": "10711",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674656653,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1682518420,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 11961876,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1682518420,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "PR TEST",
+        "issue_status_id": "10635",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1674656653,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1682270003,
+        "status_end_time": 1682518420,
+        "hist_assignee_time": 248417,
+        "hist_assignee_time_excluding_resolution": 248417,
+        "interval_start_time": 1682270003,
+        "interval_end_time": 1682518420,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "MERGED",
+        "issue_status_id": "10743",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1674656653,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676467561,
+        "status_end_time": 1682270003,
+        "hist_assignee_time": 5802442,
+        "hist_assignee_time_excluding_resolution": 5802442,
+        "interval_start_time": 1676467561,
+        "interval_end_time": 1682270003,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "MERGED",
+        "issue_status_id": "10799",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1674656653,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1664208091,
+        "status_end_time": 1676467561,
+        "hist_assignee_time": 1810908,
+        "hist_assignee_time_excluding_resolution": 1810908,
+        "interval_start_time": 1674656653,
+        "interval_end_time": 1676467561,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "MERGED",
+        "issue_status_id": "10799",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664173141,
+        "assignee_end_time": 1674656653,
+        "status_start_time": 1664208091,
+        "status_end_time": 1676467561,
+        "hist_assignee_time": 10448562,
+        "hist_assignee_time_excluding_resolution": 10448562,
+        "interval_start_time": 1664208091,
+        "interval_end_time": 1674656653,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "IN REVIEW",
+        "issue_status_id": "10736",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664173141,
+        "assignee_end_time": 1674656653,
+        "status_start_time": 1664200055,
+        "status_end_time": 1664208091,
+        "hist_assignee_time": 8036,
+        "hist_assignee_time_excluding_resolution": 8036,
+        "interval_start_time": 1664200055,
+        "interval_end_time": 1664208091,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664173141,
+        "assignee_end_time": 1674656653,
+        "status_start_time": 1664188443,
+        "status_end_time": 1664200055,
+        "hist_assignee_time": 11612,
+        "hist_assignee_time_excluding_resolution": 11612,
+        "interval_start_time": 1664188443,
+        "interval_end_time": 1664200055,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1664173141,
+        "assignee_end_time": 1674656653,
+        "status_start_time": 1662703984,
+        "status_end_time": 1664188443,
+        "hist_assignee_time": 15302,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1664173141,
+        "interval_end_time": 1664188443,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1662702883,
+        "assignee_end_time": 1664173141,
+        "status_start_time": 1662703984,
+        "status_end_time": 1664188443,
+        "hist_assignee_time": 1469157,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1662703984,
+        "interval_end_time": 1664173141,
+        "w_resolved_at": 1682518420
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1662702883,
+        "assignee_end_time": 1664173141,
+        "status_start_time": 1662701971,
+        "status_end_time": 1662703984,
+        "hist_assignee_time": 1101,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1662702883,
+        "interval_end_time": 1662703984,
+        "w_resolved_at": 1682518420
+      }
+    ]
+  },
+  {
+    "w_id": "942a1c07-2c7a-47be-99c5-c37eea08eb19",
+    "w_workitem_id": "SEI-1230",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "SEI-1230_8",
+    "w_is_active": true,
+    "w_summary": "Demo dashboard - Alignment",
+    "w_priority": "P4",
+    "w_project": "SEI",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-275",
+    "w_status": "DEPLOYED",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "189ad753-d8eb-4d9e-80bd-01dc4a83a00b",
+      "display_name": "Shivam Yadav",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "790affdf-ebb2-41be-9ef3-c75e754d7ec7",
+      "display_name": "Satish Kumar Singh"
+    },
+    "w_desc_size": 242,
+    "w_hops": 2,
+    "w_bounces": 1,
+    "w_num_attachments": 16,
+    "w_created_at": 1660028827,
+    "w_updated_at": 1682518393,
+    "w_resolved_at": 1682518393,
+    "w_first_assigned_at": 1660673249,
+    "w_first_comment_at": 1660673970,
+    "w_first_attachment_at": 1661407745,
+    "w_age": 398,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "DEPLOYED",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [
+      {
+        "to_workitem_id": "SEI-1224",
+        "relation": "relates to",
+        "to_project": "SEI"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "eecc6245-007d-4466-86e5-69ce98abd258",
+          "cloud_id": "60b6a61993e3f500716087d9",
+          "display_name": "Shivam Yadav"
+        },
+        "start_time": 1674656652,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "eecc6245-007d-4466-86e5-69ce98abd258",
+          "cloud_id": "60b6a61993e3f500716087d9",
+          "display_name": "Shivam Yadav"
+        },
+        "start_time": 1660753947,
+        "end_time": 1674656652
+      },
+      {
+        "assignee": {
+          "id": "fb643cec-8cbf-4d0b-b7ff-e2f442c0303d",
+          "cloud_id": "622f659733fb840069657a8b",
+          "display_name": "Satish Kumar Singh"
+        },
+        "start_time": 1660673249,
+        "end_time": 1660753947
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 12044806,
+        "status": "DEPLOYED",
+        "id": "10711",
+        "start_time": 1682518393,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 246660,
+        "status": "PR TEST",
+        "id": "10635",
+        "start_time": 1682271733,
+        "end_time": 1682518393
+      },
+      {
+        "time_spent": 5804168,
+        "status": "MERGED",
+        "id": "10743",
+        "start_time": 1676467565,
+        "end_time": 1682271733
+      },
+      {
+        "time_spent": 14454885,
+        "status": "MERGED",
+        "id": "10799",
+        "start_time": 1662012680,
+        "end_time": 1676467565
+      },
+      {
+        "time_spent": 54948,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1661957732,
+        "end_time": 1662012680
+      },
+      {
+        "time_spent": 709651,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1661248081,
+        "end_time": 1661957732
+      },
+      {
+        "time_spent": 75415,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1661172666,
+        "end_time": 1661248081
+      },
+      {
+        "time_spent": 22560,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1661150106,
+        "end_time": 1661172666
+      },
+      {
+        "time_spent": 1121175,
+        "status": "READY FOR DEV",
+        "id": "10817",
+        "start_time": 1660028931,
+        "end_time": 1661150106
+      },
+      {
+        "time_spent": 104,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1660028827,
+        "end_time": 1660028931
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "READY FOR DEV",
+        "from_status": "TO DO",
+        "state_transition_time": 104
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 22489462
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "TO DO",
+        "state_transition_time": 22489566
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 21368287
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 21270312
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "PR TEST",
+        "state_transition_time": 246660
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "MERGED",
+        "state_transition_time": 20505713
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 20560661
+      },
+      {
+        "to_status": "TO DO",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 1143735
+      },
+      {
+        "to_status": "TO DO",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 22560
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 1121175
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 1121279
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 1219150
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 1219254
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 97975
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 22242802
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "TO DO",
+        "state_transition_time": 22242906
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 21121627
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 21023652
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "MERGED",
+        "state_transition_time": 20259053
+      },
+      {
+        "to_status": "PR TEST",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 20314001
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 16438634
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "TO DO",
+        "state_transition_time": 16438738
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 15317459
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 15219484
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 14509833
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 1928801
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "TO DO",
+        "state_transition_time": 1928905
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 807626
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 709651
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "DEPLOYED",
+        "issue_status_id": "10711",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674656652,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1682518393,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 11961903,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1682518393,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "PR TEST",
+        "issue_status_id": "10635",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1674656652,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1682271733,
+        "status_end_time": 1682518393,
+        "hist_assignee_time": 246660,
+        "hist_assignee_time_excluding_resolution": 246660,
+        "interval_start_time": 1682271733,
+        "interval_end_time": 1682518393,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "MERGED",
+        "issue_status_id": "10743",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1674656652,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676467565,
+        "status_end_time": 1682271733,
+        "hist_assignee_time": 5804168,
+        "hist_assignee_time_excluding_resolution": 5804168,
+        "interval_start_time": 1676467565,
+        "interval_end_time": 1682271733,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "MERGED",
+        "issue_status_id": "10799",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1674656652,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1662012680,
+        "status_end_time": 1676467565,
+        "hist_assignee_time": 1810913,
+        "hist_assignee_time_excluding_resolution": 1810913,
+        "interval_start_time": 1674656652,
+        "interval_end_time": 1676467565,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "MERGED",
+        "issue_status_id": "10799",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1660753947,
+        "assignee_end_time": 1674656652,
+        "status_start_time": 1662012680,
+        "status_end_time": 1676467565,
+        "hist_assignee_time": 12643972,
+        "hist_assignee_time_excluding_resolution": 12643972,
+        "interval_start_time": 1662012680,
+        "interval_end_time": 1674656652,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "IN REVIEW",
+        "issue_status_id": "10736",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1660753947,
+        "assignee_end_time": 1674656652,
+        "status_start_time": 1661957732,
+        "status_end_time": 1662012680,
+        "hist_assignee_time": 54948,
+        "hist_assignee_time_excluding_resolution": 54948,
+        "interval_start_time": 1661957732,
+        "interval_end_time": 1662012680,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1660753947,
+        "assignee_end_time": 1674656652,
+        "status_start_time": 1661248081,
+        "status_end_time": 1661957732,
+        "hist_assignee_time": 709651,
+        "hist_assignee_time_excluding_resolution": 709651,
+        "interval_start_time": 1661248081,
+        "interval_end_time": 1661957732,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1660753947,
+        "assignee_end_time": 1674656652,
+        "status_start_time": 1661172666,
+        "status_end_time": 1661248081,
+        "hist_assignee_time": 75415,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1661172666,
+        "interval_end_time": 1661248081,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "DEV IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1660753947,
+        "assignee_end_time": 1674656652,
+        "status_start_time": 1661150106,
+        "status_end_time": 1661172666,
+        "hist_assignee_time": 22560,
+        "hist_assignee_time_excluding_resolution": 22560,
+        "interval_start_time": 1661150106,
+        "interval_end_time": 1661172666,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "eecc6245-007d-4466-86e5-69ce98abd258",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1660753947,
+        "assignee_end_time": 1674656652,
+        "status_start_time": 1660028931,
+        "status_end_time": 1661150106,
+        "hist_assignee_time": 396159,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1660753947,
+        "interval_end_time": 1661150106,
+        "w_resolved_at": 1682518393
+      },
+      {
+        "historical_assignee": "Satish Kumar Singh",
+        "historical_assignee_id": "fb643cec-8cbf-4d0b-b7ff-e2f442c0303d",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1660673249,
+        "assignee_end_time": 1660753947,
+        "status_start_time": 1660028931,
+        "status_end_time": 1661150106,
+        "hist_assignee_time": 80698,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1660673249,
+        "interval_end_time": 1660753947,
+        "w_resolved_at": 1682518393
+      }
+    ]
+  },
+  {
+    "w_id": "63e23865-448e-4d14-ae3e-10ae6ca5b5d2",
+    "w_workitem_id": "SEI-1487",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "SEI-1487_8",
+    "w_is_active": true,
+    "w_summary": "Self-onboarding - Demo OUs are not working",
+    "w_priority": "P2",
+    "w_project": "SEI",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-1230",
+    "w_status": "WILL NOT FIX",
+    "w_workitem_type": "BUG",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "0388670d-e6b5-4096-9b08-7db22483413a",
+      "display_name": "Mandar Gaitonde",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "afef6cd0-5ade-4a2b-a6b8-3020188ac00c",
+      "display_name": "Maxime Bellier"
+    },
+    "w_first_assignee": {
+      "id": "0388670d-e6b5-4096-9b08-7db22483413a",
+      "display_name": "Mandar Gaitonde"
+    },
+    "w_desc_size": 342,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 3,
+    "w_created_at": 1656712492,
+    "w_updated_at": 1684396165,
+    "w_resolved_at": 1684396164,
+    "w_first_assigned_at": 1656784361,
+    "w_first_comment_at": 1657003955,
+    "w_first_attachment_at": 1656712492,
+    "w_age": 437,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "WILL NOT FIX",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "0388670d-e6b5-4096-9b08-7db22483413a",
+          "cloud_id": "6045c5f543eac6006f58c5b8",
+          "display_name": "Mandar Gaitonde"
+        },
+        "start_time": 1656784361,
+        "end_time": 1694480296
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 10167034,
+        "status": "WILL NOT FIX",
+        "id": "10400",
+        "start_time": 1684396165,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 2124358,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1682271807,
+        "end_time": 1684396165
+      },
+      {
+        "time_spent": 5804904,
+        "status": "OPEN",
+        "id": "10625",
+        "start_time": 1676466903,
+        "end_time": 1682271807
+      },
+      {
+        "time_spent": 19754411,
+        "status": "OPEN (MIGRATED)",
+        "id": "10737",
+        "start_time": 1656712492,
+        "end_time": 1676466903
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "TO DO",
+        "state_transition_time": 2124358
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "OPEN (MIGRATED)",
+        "state_transition_time": 27683673
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "OPEN",
+        "state_transition_time": 7929262
+      },
+      {
+        "to_status": "TO DO",
+        "from_status": "OPEN (MIGRATED)",
+        "state_transition_time": 25559315
+      },
+      {
+        "to_status": "TO DO",
+        "from_status": "OPEN",
+        "state_transition_time": 5804904
+      },
+      {
+        "to_status": "OPEN",
+        "from_status": "OPEN (MIGRATED)",
+        "state_transition_time": 19754411
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Mandar Gaitonde",
+        "historical_assignee_id": "0388670d-e6b5-4096-9b08-7db22483413a",
+        "issue_status": "WILL NOT FIX",
+        "issue_status_id": "10400",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1656784361,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1684396165,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 10084131,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1684396165,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1684396164
+      },
+      {
+        "historical_assignee": "Mandar Gaitonde",
+        "historical_assignee_id": "0388670d-e6b5-4096-9b08-7db22483413a",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1656784361,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1682271807,
+        "status_end_time": 1684396165,
+        "hist_assignee_time": 2124358,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1682271807,
+        "interval_end_time": 1684396165,
+        "w_resolved_at": 1684396164
+      },
+      {
+        "historical_assignee": "Mandar Gaitonde",
+        "historical_assignee_id": "0388670d-e6b5-4096-9b08-7db22483413a",
+        "issue_status": "OPEN",
+        "issue_status_id": "10625",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1656784361,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676466903,
+        "status_end_time": 1682271807,
+        "hist_assignee_time": 5804904,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1676466903,
+        "interval_end_time": 1682271807,
+        "w_resolved_at": 1684396164
+      },
+      {
+        "historical_assignee": "Mandar Gaitonde",
+        "historical_assignee_id": "0388670d-e6b5-4096-9b08-7db22483413a",
+        "issue_status": "OPEN (MIGRATED)",
+        "issue_status_id": "10737",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1656784361,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1656712492,
+        "status_end_time": 1676466903,
+        "hist_assignee_time": 19682542,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1656784361,
+        "interval_end_time": 1676466903,
+        "w_resolved_at": 1684396164
+      }
+    ]
+  },
+  {
+    "w_id": "93c68450-354b-4614-81f3-c9333acdfa80",
+    "w_workitem_id": "PROP-1636",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "PROP-1636_8",
+    "w_is_active": true,
+    "w_summary": "API-activated Pendo guides for demo dashboard walkthrough",
+    "w_priority": "P1",
+    "w_project": "PROP",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-1230",
+    "w_status": "WILL NOT FIX",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+      "display_name": "thanh.tran",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 4558,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1664571891,
+    "w_updated_at": 1676466953,
+    "w_resolved_at": 1676466953,
+    "w_first_assigned_at": 1664572140,
+    "w_first_comment_at": 1665004955,
+    "w_age": 346,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+          "cloud_id": "63b46e56030d706ab0e53334",
+          "display_name": "thanh.tran"
+        },
+        "start_time": 1674657535,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1664572140,
+        "end_time": 1674657535
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 18096246,
+        "status": "WILL NOT FIX",
+        "id": "10400",
+        "start_time": 1676466953,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 11301362,
+        "status": "WON'T DO",
+        "id": "10822",
+        "start_time": 1665165591,
+        "end_time": 1676466953
+      },
+      {
+        "time_spent": 593700,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1664571891,
+        "end_time": 1665165591
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "WON'T DO",
+        "from_status": "TO DO",
+        "state_transition_time": 593700
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "WON'T DO",
+        "state_transition_time": 11301362
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "TO DO",
+        "state_transition_time": 11895062
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "thanh.tran",
+        "historical_assignee_id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+        "issue_status": "WILL NOT FIX",
+        "issue_status_id": "10400",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674657535,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676466953,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 18013343,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1676466953,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1676466953
+      },
+      {
+        "historical_assignee": "thanh.tran",
+        "historical_assignee_id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+        "issue_status": "WON'T DO",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674657535,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1665165591,
+        "status_end_time": 1676466953,
+        "hist_assignee_time": 1809418,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1674657535,
+        "interval_end_time": 1676466953,
+        "w_resolved_at": 1676466953
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "WON'T DO",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1664572140,
+        "assignee_end_time": 1674657535,
+        "status_start_time": 1665165591,
+        "status_end_time": 1676466953,
+        "hist_assignee_time": 9491944,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1665165591,
+        "interval_end_time": 1674657535,
+        "w_resolved_at": 1676466953
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1664572140,
+        "assignee_end_time": 1674657535,
+        "status_start_time": 1664571891,
+        "status_end_time": 1665165591,
+        "hist_assignee_time": 593451,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1664572140,
+        "interval_end_time": 1665165591,
+        "w_resolved_at": 1676466953
+      }
+    ]
+  },
+  {
+    "w_id": "c6764ee5-8361-42dd-9043-bcf95c944009",
+    "w_workitem_id": "SEI-1248",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "SEI-1248_8",
+    "w_is_active": true,
+    "w_summary": "Demo dashboard - DORA Metrics. Rename and enhance the current demo dashboard",
+    "w_priority": "P4",
+    "w_project": "SEI",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-1230",
+    "w_status": "IN PROGRESS",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "ac97d67f-90f1-4964-b1e7-f98a12cfc36d",
+      "display_name": "Gopal Mandloi",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "834a7b5e-ed9f-466f-858e-b79ce3c08b55",
+      "display_name": "Nehal Patel"
+    },
+    "w_desc_size": 223,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 6,
+    "w_created_at": 1658883936,
+    "w_updated_at": 1682271739,
+    "w_due_at": 1663286400,
+    "w_first_assigned_at": 1659023157,
+    "w_first_comment_at": 1660349693,
+    "w_first_attachment_at": 1661359118,
+    "w_age": 411,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "",
+    "w_status_category": "In Progress",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "ac97d67f-90f1-4964-b1e7-f98a12cfc36d",
+          "cloud_id": "626ee25f807e0000691abc04",
+          "display_name": "Gopal Mandloi"
+        },
+        "start_time": 1660712665,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "834a7b5e-ed9f-466f-858e-b79ce3c08b55",
+          "cloud_id": "6200c011eaf9e20070735990",
+          "display_name": "Nehal Patel"
+        },
+        "start_time": 1659023157,
+        "end_time": 1660712665
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 33324008,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1661239191,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 2355058,
+        "status": "READY FOR DEV",
+        "id": "10817",
+        "start_time": 1658884133,
+        "end_time": 1661239191
+      },
+      {
+        "time_spent": 197,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1658883936,
+        "end_time": 1658884133
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "READY FOR DEV",
+        "from_status": "TO DO",
+        "state_transition_time": 197
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 2355058
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 2355255
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "ac97d67f-90f1-4964-b1e7-f98a12cfc36d",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1660712665,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1661239191,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 33241105,
+        "hist_assignee_time_excluding_resolution": 33241105,
+        "interval_start_time": 1661239191,
+        "interval_end_time": 1694480296
+      },
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "ac97d67f-90f1-4964-b1e7-f98a12cfc36d",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1660712665,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1658884133,
+        "status_end_time": 1661239191,
+        "hist_assignee_time": 526526,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1660712665,
+        "interval_end_time": 1661239191
+      },
+      {
+        "historical_assignee": "Nehal Patel",
+        "historical_assignee_id": "834a7b5e-ed9f-466f-858e-b79ce3c08b55",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1659023157,
+        "assignee_end_time": 1660712665,
+        "status_start_time": 1658884133,
+        "status_end_time": 1661239191,
+        "hist_assignee_time": 1689508,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1659023157,
+        "interval_end_time": 1660712665
+      }
+    ]
+  },
+  {
+    "w_id": "e2462206-4206-45dd-804a-f7f77cf99040",
+    "w_workitem_id": "SEI-1735",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "SEI-1735_8",
+    "w_is_active": true,
+    "w_summary": "FE - Demo dashboard modifications",
+    "w_priority": "P2",
+    "w_project": "SEI",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-275",
+    "w_status": "DEPLOYED",
+    "w_workitem_type": "ENHANCEMENT ",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "PROP Sprint - 202305.1",
+          "SEI Sprint - 202305.2"
+        ]
+      },
+      {
+        "name": "customfield_10658",
+        "str": "describe what the user wants:\n\n\n\n\n*DORA*\n\n* Need s"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+      "display_name": "Sharath M H",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "84189ff6-a9d3-48b2-a444-6f1a92d9b2d7",
+      "display_name": "yashaswini.raghavan"
+    },
+    "w_first_assignee": {
+      "id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+      "display_name": "Sharath M H"
+    },
+    "w_desc_size": 0,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1683269660,
+    "w_updated_at": 1684513948,
+    "w_resolved_at": 1684218080,
+    "w_first_assigned_at": 1683269660,
+    "w_first_comment_at": 1683711947,
+    "w_age": 129,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "DEPLOYED",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "04777f2f-066c-4f7b-a83e-295ed8511d06",
+        "sprint_id": "2037",
+        "added_at": 1683269660,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "0a305b78-0d0c-47f1-a471-23a6fe4161f4",
+        "sprint_id": "2038",
+        "added_at": 1684141457,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "SEI-1745",
+        "relation": "Parent of",
+        "to_project": "SEI"
+      },
+      {
+        "to_workitem_id": "SEI-1815",
+        "relation": "Parent of",
+        "to_project": "SEI"
+      },
+      {
+        "to_workitem_id": "SEI-1819",
+        "relation": "Parent of",
+        "to_project": "SEI"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "2037",
+        "name": "PROP Sprint - 202305.1",
+        "state": "CLOSED"
+      },
+      {
+        "id": "2038",
+        "name": "SEI Sprint - 202305.2",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+          "cloud_id": "63b4ce67159df2c252e89b7e",
+          "display_name": "Sharath M H"
+        },
+        "start_time": 1683269660,
+        "end_time": 1694480296
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 10345118,
+        "status": "DEPLOYED",
+        "id": "10711",
+        "start_time": 1684218081,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 81051,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1684137030,
+        "end_time": 1684218081
+      },
+      {
+        "time_spent": 831,
+        "status": "DEV COMPLETE",
+        "id": "10626",
+        "start_time": 1684136199,
+        "end_time": 1684137030
+      },
+      {
+        "time_spent": 424224,
+        "status": "QA TEST",
+        "id": "10100",
+        "start_time": 1683711975,
+        "end_time": 1684136199
+      },
+      {
+        "time_spent": 16,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1683711959,
+        "end_time": 1683711975
+      },
+      {
+        "time_spent": 102461,
+        "status": "UNDER REVIEW",
+        "id": "10300",
+        "start_time": 1683609498,
+        "end_time": 1683711959
+      },
+      {
+        "time_spent": 339829,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1683269669,
+        "end_time": 1683609498
+      },
+      {
+        "time_spent": 9,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1683269660,
+        "end_time": 1683269669
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "2037",
+        "name": "PROP Sprint - 202305.1",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1683017521,
+        "end_time": 1684038300,
+        "completed_at": 1684141437
+      },
+      {
+        "id": "2038",
+        "name": "SEI Sprint - 202305.2",
+        "state": "CLOSED",
+        "goal": "high level goals -\n\n1. Ability to establish correlation between Any CI to Any CD using the generic end point - Identify the correlation elements.\n2. Start research on ServiceNow\n3. TestRail integration support for custom labels\n4. Sprint report enhancements\n5. Trellis enhancements\n6. Jira email id auto fetch\n7. BA to move to ES\n8. Bug fixes and others",
+        "start_time": 1684141445,
+        "end_time": 1685334300,
+        "completed_at": 1685345794
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "TO DO",
+        "state_transition_time": 867370
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 867361
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "UNDER REVIEW",
+        "state_transition_time": 527532
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "DEV COMPLETE",
+        "state_transition_time": 831
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "QA TEST",
+        "state_transition_time": 425055
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "DONE",
+        "state_transition_time": 81051
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "TO DO",
+        "state_transition_time": 948421
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 948412
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "UNDER REVIEW",
+        "state_transition_time": 608583
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "DEV COMPLETE",
+        "state_transition_time": 81882
+      },
+      {
+        "to_status": "DEPLOYED",
+        "from_status": "QA TEST",
+        "state_transition_time": 506106
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 442299
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "UNDER REVIEW",
+        "state_transition_time": 102461
+      },
+      {
+        "to_status": "UNDER REVIEW",
+        "from_status": "TO DO",
+        "state_transition_time": 339838
+      },
+      {
+        "to_status": "UNDER REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 339829
+      },
+      {
+        "to_status": "DEV COMPLETE",
+        "from_status": "TO DO",
+        "state_transition_time": 866539
+      },
+      {
+        "to_status": "DEV COMPLETE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 866530
+      },
+      {
+        "to_status": "DEV COMPLETE",
+        "from_status": "UNDER REVIEW",
+        "state_transition_time": 526701
+      },
+      {
+        "to_status": "DEV COMPLETE",
+        "from_status": "QA TEST",
+        "state_transition_time": 424224
+      },
+      {
+        "to_status": "QA TEST",
+        "from_status": "TO DO",
+        "state_transition_time": 442315
+      },
+      {
+        "to_status": "QA TEST",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 442306
+      },
+      {
+        "to_status": "QA TEST",
+        "from_status": "UNDER REVIEW",
+        "state_transition_time": 102477
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "DEPLOYED",
+        "issue_status_id": "10711",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1684218081,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 10262215,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1684218081,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "DONE",
+        "issue_status_id": "10001",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1684137030,
+        "status_end_time": 1684218081,
+        "hist_assignee_time": 81051,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1684137030,
+        "interval_end_time": 1684218081,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "DEV COMPLETE",
+        "issue_status_id": "10626",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1684136199,
+        "status_end_time": 1684137030,
+        "hist_assignee_time": 831,
+        "hist_assignee_time_excluding_resolution": 831,
+        "interval_start_time": 1684136199,
+        "interval_end_time": 1684137030,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "QA TEST",
+        "issue_status_id": "10100",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1683711975,
+        "status_end_time": 1684136199,
+        "hist_assignee_time": 424224,
+        "hist_assignee_time_excluding_resolution": 424224,
+        "interval_start_time": 1683711975,
+        "interval_end_time": 1684136199,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1683711959,
+        "status_end_time": 1683711975,
+        "hist_assignee_time": 16,
+        "hist_assignee_time_excluding_resolution": 16,
+        "interval_start_time": 1683711959,
+        "interval_end_time": 1683711975,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "UNDER REVIEW",
+        "issue_status_id": "10300",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1683609498,
+        "status_end_time": 1683711959,
+        "hist_assignee_time": 102461,
+        "hist_assignee_time_excluding_resolution": 102461,
+        "interval_start_time": 1683609498,
+        "interval_end_time": 1683711959,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1683269669,
+        "status_end_time": 1683609498,
+        "hist_assignee_time": 339829,
+        "hist_assignee_time_excluding_resolution": 339829,
+        "interval_start_time": 1683269669,
+        "interval_end_time": 1683609498,
+        "w_resolved_at": 1684218080
+      },
+      {
+        "historical_assignee": "Sharath M H",
+        "historical_assignee_id": "d6c9b8f7-0aac-4bb5-a312-b5534b7d6e62",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1683269660,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1683269660,
+        "status_end_time": 1683269669,
+        "hist_assignee_time": 9,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1683269660,
+        "interval_end_time": 1683269669,
+        "w_resolved_at": 1684218080
+      }
+    ]
+  },
+  {
+    "w_id": "5745f453-aca0-40c0-b142-849bf6ce374d",
+    "w_workitem_id": "PROP-1424",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "PROP-1424_8",
+    "w_is_active": true,
+    "w_summary": "Make Initech Demo Workspace READ-ONLY in trial and full tenants",
+    "w_priority": "P1",
+    "w_project": "PROP",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-1179",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+      "display_name": "Madhav Bhasin",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 234,
+    "w_hops": 2,
+    "w_bounces": 1,
+    "w_num_attachments": 0,
+    "w_created_at": 1663786128,
+    "w_updated_at": 1674653677,
+    "w_resolved_at": 1670940873,
+    "w_first_assigned_at": 1663819467,
+    "w_first_comment_at": 1663819559,
+    "w_age": 355,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+          "cloud_id": "63bf551feac4f07e3f3bf9ef",
+          "display_name": "Madhav Bhasin"
+        },
+        "start_time": 1674653678,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+          "cloud_id": "63bf551feac4f07e3f3bf9ef",
+          "display_name": "Madhav Bhasin"
+        },
+        "start_time": 1664165501,
+        "end_time": 1674653678
+      },
+      {
+        "assignee": {
+          "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1663819467,
+        "end_time": 1664165501
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 23622326,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1670940873,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 3,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1670940870,
+        "end_time": 1670940873
+      },
+      {
+        "time_spent": 2,
+        "status": "QA IN PROGRESS",
+        "id": "10820",
+        "start_time": 1670940868,
+        "end_time": 1670940870
+      },
+      {
+        "time_spent": 3,
+        "status": "READY FOR QA",
+        "id": "10797",
+        "start_time": 1670940865,
+        "end_time": 1670940868
+      },
+      {
+        "time_spent": 6732737,
+        "status": "MERGED",
+        "id": "10799",
+        "start_time": 1664208128,
+        "end_time": 1670940865
+      },
+      {
+        "time_spent": 13085,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1664195043,
+        "end_time": 1664208128
+      },
+      {
+        "time_spent": 13774,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1664181269,
+        "end_time": 1664195043
+      },
+      {
+        "time_spent": 395141,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1663786128,
+        "end_time": 1664181269
+      }
+    ],
+    "w_hist_sprints": [],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 8
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "TO DO",
+        "state_transition_time": 7154745
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6759604
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 3
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "MERGED",
+        "state_transition_time": 6732745
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 6745830
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "QA IN PROGRESS",
+        "state_transition_time": 5
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "TO DO",
+        "state_transition_time": 7154737
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6759596
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "MERGED",
+        "state_transition_time": 6732737
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 6745822
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 395141
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 5
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "TO DO",
+        "state_transition_time": 7154742
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6759601
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "MERGED",
+        "state_transition_time": 6732742
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 6745827
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "QA IN PROGRESS",
+        "state_transition_time": 2
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "TO DO",
+        "state_transition_time": 422000
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 26859
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 13085
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "TO DO",
+        "state_transition_time": 408915
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 13774
+      },
+      {
+        "to_status": "QA IN PROGRESS",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 3
+      },
+      {
+        "to_status": "QA IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 7154740
+      },
+      {
+        "to_status": "QA IN PROGRESS",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6759599
+      },
+      {
+        "to_status": "QA IN PROGRESS",
+        "from_status": "MERGED",
+        "state_transition_time": 6732740
+      },
+      {
+        "to_status": "QA IN PROGRESS",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 6745825
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "DONE",
+        "issue_status_id": "10001",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674653678,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1670940873,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 19826618,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1674653678,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "DONE",
+        "issue_status_id": "10001",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1670940873,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 3712805,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1670940873,
+        "interval_end_time": 1674653678,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "READY FOR PROD",
+        "issue_status_id": "10805",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1670940870,
+        "status_end_time": 1670940873,
+        "hist_assignee_time": 3,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1670940870,
+        "interval_end_time": 1670940873,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "QA IN PROGRESS",
+        "issue_status_id": "10820",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1670940868,
+        "status_end_time": 1670940870,
+        "hist_assignee_time": 2,
+        "hist_assignee_time_excluding_resolution": 2,
+        "interval_start_time": 1670940868,
+        "interval_end_time": 1670940870,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "READY FOR QA",
+        "issue_status_id": "10797",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1670940865,
+        "status_end_time": 1670940868,
+        "hist_assignee_time": 3,
+        "hist_assignee_time_excluding_resolution": 3,
+        "interval_start_time": 1670940865,
+        "interval_end_time": 1670940868,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "MERGED",
+        "issue_status_id": "10799",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1664208128,
+        "status_end_time": 1670940865,
+        "hist_assignee_time": 6732737,
+        "hist_assignee_time_excluding_resolution": 6732737,
+        "interval_start_time": 1664208128,
+        "interval_end_time": 1670940865,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "IN REVIEW",
+        "issue_status_id": "10736",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1664195043,
+        "status_end_time": 1664208128,
+        "hist_assignee_time": 13085,
+        "hist_assignee_time_excluding_resolution": 13085,
+        "interval_start_time": 1664195043,
+        "interval_end_time": 1664208128,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1664181269,
+        "status_end_time": 1664195043,
+        "hist_assignee_time": 13774,
+        "hist_assignee_time_excluding_resolution": 13774,
+        "interval_start_time": 1664181269,
+        "interval_end_time": 1664195043,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "2e961e38-5f28-466f-85e7-8c891720aba3",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1664165501,
+        "assignee_end_time": 1674653678,
+        "status_start_time": 1663786128,
+        "status_end_time": 1664181269,
+        "hist_assignee_time": 15768,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1664165501,
+        "interval_end_time": 1664181269,
+        "w_resolved_at": 1670940873
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1663819467,
+        "assignee_end_time": 1664165501,
+        "status_start_time": 1663786128,
+        "status_end_time": 1664181269,
+        "hist_assignee_time": 346034,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1663819467,
+        "interval_end_time": 1664165501,
+        "w_resolved_at": 1670940873
+      }
+    ]
+  },
+  {
+    "w_id": "7f4fa939-61a5-432f-81ee-c34114cb673a",
+    "w_workitem_id": "PROP-2658",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "PROP-2658_8",
+    "w_is_active": true,
+    "w_summary": "Initech Demo workspace: Internal Server Error in OU category selection page after accessing Tree View",
+    "w_priority": "P3",
+    "w_project": "PROP",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "PROP-1424",
+    "w_status": "WILL NOT FIX",
+    "w_workitem_type": "BUG",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "PROP Sprint - 202301.1"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+      "display_name": "thanh.tran",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "c12beedc-c2af-4769-a367-a7d8fe2a0e0a",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 1503,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 2,
+    "w_created_at": 1671490848,
+    "w_updated_at": 1676466950,
+    "w_resolved_at": 1674190966,
+    "w_first_assigned_at": 1671491517,
+    "w_first_comment_at": 1671491597,
+    "w_first_attachment_at": 1671491244,
+    "w_age": 266,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "WON'T DO",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "72b629fd-39c0-43f7-b79f-f5435e2aedab",
+        "sprint_id": "1818",
+        "added_at": 1671491525,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1818",
+        "name": "PROP Sprint - 202301.1",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+          "cloud_id": "63b46e56030d706ab0e53334",
+          "display_name": "thanh.tran"
+        },
+        "start_time": 1674657531,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1671491517,
+        "end_time": 1674657531
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 18096249,
+        "status": "WILL NOT FIX",
+        "id": "10400",
+        "start_time": 1676466950,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 2275984,
+        "status": "WON'T DO (MIGRATED 2)",
+        "id": "10822",
+        "start_time": 1674190966,
+        "end_time": 1676466950
+      },
+      {
+        "time_spent": 2700118,
+        "status": "OPEN (MIGRATED)",
+        "id": "10737",
+        "start_time": 1671490848,
+        "end_time": 1674190966
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1818",
+        "name": "PROP Sprint - 202301.1",
+        "state": "CLOSED",
+        "goal": "Harness CD integration, Trellis perf improvements, Vulnerabilities fixes",
+        "start_time": 1673251544,
+        "end_time": 1674476580,
+        "completed_at": 1674551899
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "OPEN (MIGRATED)",
+        "state_transition_time": 4976102
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "WON'T DO (MIGRATED 2)",
+        "state_transition_time": 2275984
+      },
+      {
+        "to_status": "WON'T DO (MIGRATED 2)",
+        "from_status": "OPEN (MIGRATED)",
+        "state_transition_time": 2700118
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "thanh.tran",
+        "historical_assignee_id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+        "issue_status": "WILL NOT FIX",
+        "issue_status_id": "10400",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674657531,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676466950,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 18013346,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1676466950,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1674190966
+      },
+      {
+        "historical_assignee": "thanh.tran",
+        "historical_assignee_id": "4b0b8d7d-c660-4513-8d24-303f9c729c37",
+        "issue_status": "WON'T DO (MIGRATED 2)",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1674657531,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1674190966,
+        "status_end_time": 1676466950,
+        "hist_assignee_time": 1809419,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1674657531,
+        "interval_end_time": 1676466950,
+        "w_resolved_at": 1674190966
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "WON'T DO (MIGRATED 2)",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1671491517,
+        "assignee_end_time": 1674657531,
+        "status_start_time": 1674190966,
+        "status_end_time": 1676466950,
+        "hist_assignee_time": 466565,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1674190966,
+        "interval_end_time": 1674657531,
+        "w_resolved_at": 1674190966
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "8b4fcffa-4900-4c4e-a88c-1321f5136ec9",
+        "issue_status": "OPEN (MIGRATED)",
+        "issue_status_id": "10737",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1671491517,
+        "assignee_end_time": 1674657531,
+        "status_start_time": 1671490848,
+        "status_end_time": 1674190966,
+        "hist_assignee_time": 2699449,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1671491517,
+        "interval_end_time": 1674190966,
+        "w_resolved_at": 1674190966
+      }
+    ]
+  },
+  {
+    "w_id": "262e04c5-80a7-4c17-a502-09461e33152d",
+    "w_workitem_id": "PROP-1295",
+    "w_integration_id": 8,
+    "w_workitem_integ_id": "PROP-1295_8",
+    "w_is_active": true,
+    "w_summary": "Static URLs for Home page, demo dashboards, Integration page for Pendo walkthroughs",
+    "w_priority": "P1",
+    "w_project": "PROP",
+    "w_epic": "PROP-1372",
+    "w_parent_workitem_id": "SEI-1179",
+    "w_status": "WILL NOT FIX",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "SEI-1179"
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "790affdf-ebb2-41be-9ef3-c75e754d7ec7",
+      "display_name": "Satish Kumar Singh",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "90803775-83d1-4ba4-8113-be1337201d3c",
+      "display_name": "Amanda Willoughby"
+    },
+    "w_first_assignee": {
+      "id": "1d1cbe38-1a03-4f8e-a8d9-2bc4f7c41ad3",
+      "display_name": "sivareddy aeddula"
+    },
+    "w_desc_size": 304,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1663092739,
+    "w_updated_at": 1676466957,
+    "w_resolved_at": 1676466957,
+    "w_first_assigned_at": 1663092782,
+    "w_first_comment_at": 1663282508,
+    "w_first_attachment_at": 1664173490,
+    "w_age": 363,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1694476800,
+    "w_resolution": "",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "63bceb3e-18cc-4d73-ac30-2827fb6fe0ec",
+        "sprint_id": "1813",
+        "added_at": 1663092739,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "PROP-1725",
+        "relation": "relates to",
+        "to_project": "PROP"
+      },
+      {
+        "to_workitem_id": "PROP-1951",
+        "relation": "relates to",
+        "to_project": "PROP"
+      },
+      {
+        "to_workitem_id": "SEI-1038",
+        "relation": "relates to",
+        "to_project": "SEI"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "fb643cec-8cbf-4d0b-b7ff-e2f442c0303d",
+          "cloud_id": "622f659733fb840069657a8b",
+          "display_name": "Satish Kumar Singh"
+        },
+        "start_time": 1663688019,
+        "end_time": 1694480296
+      },
+      {
+        "assignee": {
+          "id": "1d1cbe38-1a03-4f8e-a8d9-2bc4f7c41ad3",
+          "cloud_id": "610f0d97b704b400683b85f2",
+          "display_name": "sivareddy aeddula"
+        },
+        "start_time": 1663092782,
+        "end_time": 1663688019
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 18096242,
+        "status": "WILL NOT FIX",
+        "id": "10400",
+        "start_time": 1676466957,
+        "end_time": 1694563199
+      },
+      {
+        "time_spent": 8864196,
+        "status": "WON'T DO",
+        "id": "10822",
+        "start_time": 1667602761,
+        "end_time": 1676466957
+      },
+      {
+        "time_spent": 4039591,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1663563170,
+        "end_time": 1667602761
+      },
+      {
+        "time_spent": 2,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1663563168,
+        "end_time": 1663563170
+      },
+      {
+        "time_spent": 280729,
+        "status": "READY FOR DEV",
+        "id": "10817",
+        "start_time": 1663282439,
+        "end_time": 1663563168
+      },
+      {
+        "time_spent": 189700,
+        "status": "TO DO",
+        "id": "10000",
+        "start_time": 1663092739,
+        "end_time": 1663282439
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1813",
+        "name": "PROP Sprint 1",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1654043105,
+        "end_time": 1655252700,
+        "completed_at": 1667893603
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "WON'T DO",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 4320322
+      },
+      {
+        "to_status": "WON'T DO",
+        "from_status": "TO DO",
+        "state_transition_time": 4510022
+      },
+      {
+        "to_status": "WON'T DO",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 4039593
+      },
+      {
+        "to_status": "WON'T DO",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 4039591
+      },
+      {
+        "to_status": "READY FOR DEV",
+        "from_status": "TO DO",
+        "state_transition_time": 189700
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "WON'T DO",
+        "state_transition_time": 8864196
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 13184518
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "TO DO",
+        "state_transition_time": 13374218
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 12903789
+      },
+      {
+        "to_status": "WILL NOT FIX",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 12903787
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 280729
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TO DO",
+        "state_transition_time": 470429
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "READY FOR DEV",
+        "state_transition_time": 280731
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "TO DO",
+        "state_transition_time": 470431
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 2
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Satish Kumar Singh",
+        "historical_assignee_id": "fb643cec-8cbf-4d0b-b7ff-e2f442c0303d",
+        "issue_status": "WILL NOT FIX",
+        "issue_status_id": "10400",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1663688019,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1676466957,
+        "status_end_time": 1694563199,
+        "hist_assignee_time": 18013339,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1676466957,
+        "interval_end_time": 1694480296,
+        "w_resolved_at": 1676466957
+      },
+      {
+        "historical_assignee": "Satish Kumar Singh",
+        "historical_assignee_id": "fb643cec-8cbf-4d0b-b7ff-e2f442c0303d",
+        "issue_status": "WON'T DO",
+        "issue_status_id": "10822",
+        "issue_status_category": "DONE",
+        "assignee_start_time": 1663688019,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1667602761,
+        "status_end_time": 1676466957,
+        "hist_assignee_time": 8864196,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1667602761,
+        "interval_end_time": 1676466957,
+        "w_resolved_at": 1676466957
+      },
+      {
+        "historical_assignee": "Satish Kumar Singh",
+        "historical_assignee_id": "fb643cec-8cbf-4d0b-b7ff-e2f442c0303d",
+        "issue_status": "IN REVIEW",
+        "issue_status_id": "10736",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1663688019,
+        "assignee_end_time": 1694480296,
+        "status_start_time": 1663563170,
+        "status_end_time": 1667602761,
+        "hist_assignee_time": 3914742,
+        "hist_assignee_time_excluding_resolution": 3914742,
+        "interval_start_time": 1663688019,
+        "interval_end_time": 1667602761,
+        "w_resolved_at": 1676466957
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "1d1cbe38-1a03-4f8e-a8d9-2bc4f7c41ad3",
+        "issue_status": "IN REVIEW",
+        "issue_status_id": "10736",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1663092782,
+        "assignee_end_time": 1663688019,
+        "status_start_time": 1663563170,
+        "status_end_time": 1667602761,
+        "hist_assignee_time": 124849,
+        "hist_assignee_time_excluding_resolution": 124849,
+        "interval_start_time": 1663563170,
+        "interval_end_time": 1663688019,
+        "w_resolved_at": 1676466957
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "1d1cbe38-1a03-4f8e-a8d9-2bc4f7c41ad3",
+        "issue_status": "IN PROGRESS",
+        "issue_status_id": "3",
+        "issue_status_category": "IN PROGRESS",
+        "assignee_start_time": 1663092782,
+        "assignee_end_time": 1663688019,
+        "status_start_time": 1663563168,
+        "status_end_time": 1663563170,
+        "hist_assignee_time": 2,
+        "hist_assignee_time_excluding_resolution": 2,
+        "interval_start_time": 1663563168,
+        "interval_end_time": 1663563170,
+        "w_resolved_at": 1676466957
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "1d1cbe38-1a03-4f8e-a8d9-2bc4f7c41ad3",
+        "issue_status": "READY FOR DEV",
+        "issue_status_id": "10817",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1663092782,
+        "assignee_end_time": 1663688019,
+        "status_start_time": 1663282439,
+        "status_end_time": 1663563168,
+        "hist_assignee_time": 280729,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1663282439,
+        "interval_end_time": 1663563168,
+        "w_resolved_at": 1676466957
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "1d1cbe38-1a03-4f8e-a8d9-2bc4f7c41ad3",
+        "issue_status": "TO DO",
+        "issue_status_id": "10000",
+        "issue_status_category": "TO DO",
+        "assignee_start_time": 1663092782,
+        "assignee_end_time": 1663688019,
+        "status_start_time": 1663092739,
+        "status_end_time": 1663282439,
+        "hist_assignee_time": 189657,
+        "hist_assignee_time_excluding_resolution": 0,
+        "interval_start_time": 1663092782,
+        "interval_end_time": 1663282439,
+        "w_resolved_at": 1676466957
+      }
+    ]
+  }
+]

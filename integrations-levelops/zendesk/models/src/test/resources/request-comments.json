@@ -1,0 +1,35 @@
+{
+  "comments": [
+    {
+      "url": "https://test.zendesk.com/api/v2/requests/10/comments/1099598218733.json",
+      "id": 1099598218733,
+      "type": "Comment",
+      "request_id": 10,
+      "body": "Test ticket creation",
+      "html_body": "<div class=\"zd-comment\" dir=\"auto\"><p dir=\"auto\">Test ticket creation</p></div>",
+      "plain_body": "Test ticket creation",
+      "public": true,
+      "author_id": 406080093073,
+      "attachments": [],
+      "created_at": "2020-04-02T11:53:04Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 406080093073,
+      "name": "TestUser",
+      "photo": null,
+      "agent": true,
+      "organization_id": 370343724653
+    }
+  ],
+  "organizations": [
+    {
+      "id": 370343724653,
+      "name": "Test"
+    }
+  ],
+  "next_page": null,
+  "previous_page": null,
+  "count": 1
+}

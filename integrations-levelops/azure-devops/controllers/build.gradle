@@ -1,0 +1,49 @@
+apply plugin: 'java-library'
+
+dependencies {
+    annotationProcessor libraries.lombok
+
+    api levelopsCommonsLib('utils')
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('control-plane-commons')
+
+    compileOnly libraries.lombok
+
+    compile levelopsCommonsLib('ingestion-service')
+    compile levelopsCommonsLib('ingestion-commons')
+    compile levelopsCommonsLib('spring-web-utils')
+    compile levelopsCommonsLib("ingestion-commons")
+    compile levelopsCommonsLib("okhttp-utils")
+
+    compile project(":integration-azure-devops-models")
+    compile project(":integration-azure-devops-client")
+
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.apache_http
+    compile libraries.jackson_core
+    compile libraries.spring_boot_web
+
+    testCompile libraries.jackson_core
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile levelopsCommonsLib("utils")
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

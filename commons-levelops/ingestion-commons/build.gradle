@@ -1,0 +1,38 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":utils")
+    compile project(":normalization-service")
+
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.apache_http
+    compile libraries.jackson_core
+    compile libraries.github_core
+    compile libraries.aws_developer_tools
+    compile libraries.perforce
+
+    testCompile libraries.jackson_core
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile project(":utils")
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

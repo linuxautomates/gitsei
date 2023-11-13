@@ -1,0 +1,673 @@
+{
+  "records": [
+    {
+      "id": "00gpwsz95oQ32Hj8s4x6",
+      "created": "2020-08-13T10:21:42.000+00:00",
+      "type": "OKTA_GROUP",
+      "profile": {
+        "name": "Developers",
+        "description": "Group of Software developers"
+      },
+      "lastUpdated": "2020-08-13T10:21:42.000+00:00",
+      "lastMembershipUpdated": "2020-08-13T10:21:42.000+00:00",
+      "objectClass": [
+        "okta:user_group"
+      ],
+      "_links": {
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png",
+            "type": "image/png"
+          },
+          {
+            "name": "large",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png",
+            "type": "image/png"
+          }
+        ],
+        "users": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gpwsz95oQ32Hj8s4x6/users"
+        },
+        "apps": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gpwsz95oQ32Hj8s4x6/apps"
+        }
+      },
+      "enrichedUsers": []
+    },
+    {
+      "id": "00gp0owf4zNupRfKE4x6",
+      "created": "2020-08-07T08:34:17.000+00:00",
+      "type": "OKTA_GROUP",
+      "profile": {
+        "name": "Engineering",
+        "description": "Team of engineers"
+      },
+      "lastUpdated": "2020-08-07T08:34:17.000+00:00",
+      "lastMembershipUpdated": "2020-08-12T06:28:03.000+00:00",
+      "objectClass": [
+        "okta:user_group"
+      ],
+      "_links": {
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png",
+            "type": "image/png"
+          },
+          {
+            "name": "large",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png",
+            "type": "image/png"
+          }
+        ],
+        "users": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0owf4zNupRfKE4x6/users"
+        },
+        "apps": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0owf4zNupRfKE4x6/apps"
+        }
+      },
+      "enrichedUsers": [
+        {
+          "id": "00up0i303yWE1aXeH4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T07:30:18.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar@levelops.io",
+            "email": "srinath.chandrashekhar@levelops.io",
+            "firstName": "ctlo",
+            "lastName": "user"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            },
+            "recovery_question": {
+              "question": "What is your favorite security question?"
+            }
+          },
+          "statusChanged": "2020-08-07T07:34:06.000+00:00",
+          "lastLogin": "2020-08-17T13:45:51.000+00:00",
+          "lastUpdated": "2020-08-07T07:34:06.000+00:00",
+          "passwordChanged": "2020-08-07T07:34:06.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0i303yWE1aXeH4x6"
+            }
+          }
+        },
+        {
+          "id": "00up0md4yLmVC6R2x4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T07:59:08.000+00:00",
+          "activated": "2020-08-07T07:59:09.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+3@levelops.io",
+            "email": "srinath.chandrashekhar+3@levelops.io",
+            "firstName": "ctlo3",
+            "lastName": "user"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-07T07:59:09.000+00:00",
+          "lastUpdated": "2020-08-07T07:59:09.000+00:00",
+          "passwordChanged": "2020-08-07T07:59:09.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0md4yLmVC6R2x4x6"
+            }
+          }
+        },
+        {
+          "id": "00up0okt5NvU8YBBB4x6",
+          "status": "STAGED",
+          "created": "2020-08-07T08:35:58.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+4@levelops.io",
+            "email": "srinath.chandrashekhar+4@levelops.io",
+            "firstName": "ctlo4",
+            "lastName": "user"
+          },
+          "credentials": {
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "lastUpdated": "2020-08-07T08:35:58.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0okt5NvU8YBBB4x6"
+            }
+          }
+        },
+        {
+          "id": "00upqdgfe7UFcB9f04x6",
+          "status": "ACTIVE",
+          "created": "2020-08-12T06:28:03.000+00:00",
+          "activated": "2020-08-12T06:28:03.000+00:00",
+          "type": {
+            "id": "otypqbdgbmfWTbC9F4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+6@levelops.io",
+            "email": "srinath.chandrashekhar+6@levelops.io",
+            "firstName": "clerk name",
+            "lastName": "clerk last name"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-12T06:28:03.000+00:00",
+          "lastUpdated": "2020-08-12T06:28:03.000+00:00",
+          "passwordChanged": "2020-08-12T06:28:03.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00upqdgfe7UFcB9f04x6"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "00gp0i2weE3clvPwo4x6",
+      "created": "2020-08-07T07:30:12.000+00:00",
+      "type": "BUILT_IN",
+      "profile": {
+        "name": "Everyone",
+        "description": "All users in your organization"
+      },
+      "lastUpdated": "2020-08-07T07:30:12.000+00:00",
+      "lastMembershipUpdated": "2020-08-12T09:59:42.000+00:00",
+      "objectClass": [
+        "okta:user_group"
+      ],
+      "_links": {
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png",
+            "type": "image/png"
+          },
+          {
+            "name": "large",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png",
+            "type": "image/png"
+          }
+        ],
+        "users": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0i2weE3clvPwo4x6/users"
+        },
+        "apps": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0i2weE3clvPwo4x6/apps"
+        }
+      },
+      "enrichedUsers": [
+        {
+          "id": "00up0i303yWE1aXeH4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T07:30:18.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar@levelops.io",
+            "email": "srinath.chandrashekhar@levelops.io",
+            "firstName": "ctlo",
+            "lastName": "user"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            },
+            "recovery_question": {
+              "question": "What is your favorite security question?"
+            }
+          },
+          "statusChanged": "2020-08-07T07:34:06.000+00:00",
+          "lastLogin": "2020-08-17T13:45:51.000+00:00",
+          "lastUpdated": "2020-08-07T07:34:06.000+00:00",
+          "passwordChanged": "2020-08-07T07:34:06.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0i303yWE1aXeH4x6"
+            }
+          }
+        },
+        {
+          "id": "00up0incg1OQzXk1V4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T07:58:24.000+00:00",
+          "activated": "2020-08-07T07:58:24.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+1@levelops.io",
+            "email": "srinath.chandrashekhar+1@levelops.io",
+            "title": "Senior Developer",
+            "organization": "Designers",
+            "division": "2",
+            "firstName": "ctlo2",
+            "lastName": "user",
+            "middleName": "my middle name",
+            "honorificSuffix": "Garu",
+            "honorificPrefix": "Mr",
+            "displayName": "Dev_DisplayName",
+            "nickName": "DevGuy",
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "userType": "Some user type",
+            "employeeNumber": "1",
+            "department": "Coding",
+            "managerId": "srinath.chandrashekhar+5@levelops.io",
+            "manager": "manager's display name"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            },
+            "recovery_question": {
+              "question": "What is the food you least liked as a child?"
+            }
+          },
+          "statusChanged": "2020-08-07T07:58:24.000+00:00",
+          "lastLogin": "2020-08-18T01:58:32.000+00:00",
+          "lastUpdated": "2020-08-17T14:04:55.000+00:00",
+          "passwordChanged": "2020-08-07T07:58:24.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0incg1OQzXk1V4x6"
+            }
+          }
+        },
+        {
+          "id": "00up0md4yLmVC6R2x4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T07:59:08.000+00:00",
+          "activated": "2020-08-07T07:59:09.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+3@levelops.io",
+            "email": "srinath.chandrashekhar+3@levelops.io",
+            "firstName": "ctlo3",
+            "lastName": "user"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-07T07:59:09.000+00:00",
+          "lastUpdated": "2020-08-07T07:59:09.000+00:00",
+          "passwordChanged": "2020-08-07T07:59:09.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0md4yLmVC6R2x4x6"
+            }
+          }
+        },
+        {
+          "id": "00up0okt5NvU8YBBB4x6",
+          "status": "STAGED",
+          "created": "2020-08-07T08:35:58.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+4@levelops.io",
+            "email": "srinath.chandrashekhar+4@levelops.io",
+            "firstName": "ctlo4",
+            "lastName": "user"
+          },
+          "credentials": {
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "lastUpdated": "2020-08-07T08:35:58.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0okt5NvU8YBBB4x6"
+            }
+          }
+        },
+        {
+          "id": "00up0svsrFjVIAXU54x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T09:41:19.000+00:00",
+          "activated": "2020-08-07T09:41:19.000+00:00",
+          "type": {
+            "id": "otypqx0icAavzjs374x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+5@levelops.io",
+            "email": "srinath.chandrashekhar+5@levelops.io",
+            "firstName": "Manager Name",
+            "lastName": "user",
+            "displayName": "Manager's Display name",
+            "userType": "manager"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-07T09:41:19.000+00:00",
+          "lastUpdated": "2020-08-12T12:33:23.000+00:00",
+          "passwordChanged": "2020-08-07T09:41:19.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0svsrFjVIAXU54x6"
+            }
+          }
+        },
+        {
+          "id": "00upqdgfe7UFcB9f04x6",
+          "status": "ACTIVE",
+          "created": "2020-08-12T06:28:03.000+00:00",
+          "activated": "2020-08-12T06:28:03.000+00:00",
+          "type": {
+            "id": "otypqbdgbmfWTbC9F4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+6@levelops.io",
+            "email": "srinath.chandrashekhar+6@levelops.io",
+            "firstName": "clerk name",
+            "lastName": "clerk last name"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-12T06:28:03.000+00:00",
+          "lastUpdated": "2020-08-12T06:28:03.000+00:00",
+          "passwordChanged": "2020-08-12T06:28:03.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00upqdgfe7UFcB9f04x6"
+            }
+          }
+        },
+        {
+          "id": "00upqytbppwYwwBqU4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-12T09:59:42.000+00:00",
+          "activated": "2020-08-12T09:59:43.000+00:00",
+          "type": {
+            "id": "otypqx0icAavzjs374x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+7@levelops.io",
+            "email": "srinath.chandrashekhar+7@levelops.io",
+            "firstName": "Sales Manager",
+            "lastName": "lastname"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-12T09:59:43.000+00:00",
+          "lastUpdated": "2020-08-12T09:59:43.000+00:00",
+          "passwordChanged": "2020-08-12T09:59:43.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00upqytbppwYwwBqU4x6"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "00gpwkttnRv2N9sNr4x6",
+      "created": "2020-08-13T09:25:58.000+00:00",
+      "type": "OKTA_GROUP",
+      "profile": {
+        "name": "Interns",
+        "description": "Group of onboarding candidates"
+      },
+      "lastUpdated": "2020-08-13T09:25:58.000+00:00",
+      "lastMembershipUpdated": "2020-08-13T09:26:29.000+00:00",
+      "objectClass": [
+        "okta:user_group"
+      ],
+      "_links": {
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png",
+            "type": "image/png"
+          },
+          {
+            "name": "large",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png",
+            "type": "image/png"
+          }
+        ],
+        "users": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gpwkttnRv2N9sNr4x6/users"
+        },
+        "apps": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gpwkttnRv2N9sNr4x6/apps"
+        }
+      },
+      "enrichedUsers": [
+        {
+          "id": "00up0i303yWE1aXeH4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T07:30:18.000+00:00",
+          "type": {
+            "id": "otyp0i2wnq6YnpcRM4x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar@levelops.io",
+            "email": "srinath.chandrashekhar@levelops.io",
+            "firstName": "ctlo",
+            "lastName": "user"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            },
+            "recovery_question": {
+              "question": "What is your favorite security question?"
+            }
+          },
+          "statusChanged": "2020-08-07T07:34:06.000+00:00",
+          "lastLogin": "2020-08-17T13:45:51.000+00:00",
+          "lastUpdated": "2020-08-07T07:34:06.000+00:00",
+          "passwordChanged": "2020-08-07T07:34:06.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0i303yWE1aXeH4x6"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "00gp0mldh93FmwXBL4x6",
+      "created": "2020-08-07T08:37:12.000+00:00",
+      "type": "OKTA_GROUP",
+      "profile": {
+        "name": "ProjectManagers",
+        "description": "Team of project managers"
+      },
+      "lastUpdated": "2020-08-07T08:37:12.000+00:00",
+      "lastMembershipUpdated": "2020-08-07T09:41:19.000+00:00",
+      "objectClass": [
+        "okta:user_group"
+      ],
+      "_links": {
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png",
+            "type": "image/png"
+          },
+          {
+            "name": "large",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png",
+            "type": "image/png"
+          }
+        ],
+        "users": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0mldh93FmwXBL4x6/users"
+        },
+        "apps": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0mldh93FmwXBL4x6/apps"
+        }
+      },
+      "enrichedUsers": [
+        {
+          "id": "00up0svsrFjVIAXU54x6",
+          "status": "ACTIVE",
+          "created": "2020-08-07T09:41:19.000+00:00",
+          "activated": "2020-08-07T09:41:19.000+00:00",
+          "type": {
+            "id": "otypqx0icAavzjs374x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+5@levelops.io",
+            "email": "srinath.chandrashekhar+5@levelops.io",
+            "firstName": "Manager Name",
+            "lastName": "user",
+            "displayName": "Manager's Display name",
+            "userType": "manager"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-07T09:41:19.000+00:00",
+          "lastUpdated": "2020-08-12T12:33:23.000+00:00",
+          "passwordChanged": "2020-08-07T09:41:19.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00up0svsrFjVIAXU54x6"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "00gp0pxbtxQCPQna64x6",
+      "created": "2020-08-07T08:36:51.000+00:00",
+      "type": "OKTA_GROUP",
+      "profile": {
+        "name": "Sales",
+        "description": "Team of Sales executives"
+      },
+      "lastUpdated": "2020-08-07T08:36:51.000+00:00",
+      "lastMembershipUpdated": "2020-08-12T09:59:42.000+00:00",
+      "objectClass": [
+        "okta:user_group"
+      ],
+      "_links": {
+        "logo": [
+          {
+            "name": "medium",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-medium.d7fb831bc4e7e1a5d8bd35dfaf405d9e.png",
+            "type": "image/png"
+          },
+          {
+            "name": "large",
+            "href": "https://ok11static.oktacdn.com/assets/img/logos/groups/okta-large.511fcb0de9da185b52589cb14d581c2c.png",
+            "type": "image/png"
+          }
+        ],
+        "users": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0pxbtxQCPQna64x6/users"
+        },
+        "apps": {
+          "href": "https://levelops-ctlo.okta.com/api/v1/groups/00gp0pxbtxQCPQna64x6/apps"
+        }
+      },
+      "enrichedUsers": [
+        {
+          "id": "00upqytbppwYwwBqU4x6",
+          "status": "ACTIVE",
+          "created": "2020-08-12T09:59:42.000+00:00",
+          "activated": "2020-08-12T09:59:43.000+00:00",
+          "type": {
+            "id": "otypqx0icAavzjs374x6"
+          },
+          "profile": {
+            "login": "srinath.chandrashekhar+7@levelops.io",
+            "email": "srinath.chandrashekhar+7@levelops.io",
+            "firstName": "Sales Manager",
+            "lastName": "lastname"
+          },
+          "credentials": {
+            "password": {},
+            "provider": {
+              "type": "OKTA",
+              "name": "OKTA"
+            }
+          },
+          "statusChanged": "2020-08-12T09:59:43.000+00:00",
+          "lastUpdated": "2020-08-12T09:59:43.000+00:00",
+          "passwordChanged": "2020-08-12T09:59:43.000+00:00",
+          "_links": {
+            "self": {
+              "href": "https://levelops-ctlo.okta.com/api/v1/users/00upqytbppwYwwBqU4x6"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "count": 6,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "1"
+    },
+    "integration_type": "okta",
+    "data_type": "groups",
+    "page_number": 0
+  }
+}

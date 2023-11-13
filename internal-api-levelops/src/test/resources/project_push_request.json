@@ -1,0 +1,38 @@
+{
+  "id": "ea6c2531-e18d-42f3-8e43-d036bc385cf1",
+  "controller_name": "JiraController",
+  "createdAt": 1568268769508,
+  "query": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "1"
+    }
+  },
+  "callbackUrl": "http://localhost:9999/callback",
+  "done": true,
+  "result": {
+    "_metadata": {
+      "data_type": "projects",
+      "integration_key": {
+        "integration_id": "6",
+        "tenant_id": "foo"
+      },
+      "integration_type": "jira"
+    },
+    "count": 1,
+    "destination": "gcs",
+    "prefix_uri": "projects/",
+    "records": [
+      {
+        "blob_id": {
+          "bucket": "ingestion-levelops",
+          "generation": 1570046863226785,
+          "name": "data/tenant-foo/integration-6/2019/10/02/job-ab47aba8-ae92-4a1f-add9-a4ecb8a41793/projects/projects.json"
+        },
+        "html_uri": "https://console.cloud.google.com/storage/browser/_details/ingestion-levelops/data/tenant-foo/integration-6/2019/10/02/job-ab47aba8-ae92-4a1f-add9-a4ecb8a41793/projects/projects.json",
+        "uri": "gs://ingestion-levelops/data/tenant-foo/integration-6/2019/10/02/job-ab47aba8-ae92-4a1f-add9-a4ecb8a41793/projects/projects.json"
+      }
+    ]
+  },
+  "exception": null
+}

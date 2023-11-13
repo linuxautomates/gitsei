@@ -1,0 +1,32 @@
+{
+  "id": "c465fd50-81eb-4819-8779-c8d355111308",
+  "default_scheme": false,
+  "name": "Copy of Testingg",
+  "config": {
+    "description": "With Azure",
+    "integration_type": "azure_devops",
+    "uncategorized": {
+      "color": "#FC91AA",
+      "goals": {
+        "enabled": true,
+        "ideal_range": {
+          "min": 0,
+          "max": 16
+        },
+        "acceptable_range": {
+          "min": 0,
+          "max": 32
+        }
+      }
+    },
+    "active_work": {
+      "issues": {
+        "active_sprints": false,
+        "in_progress": false,
+        "assigned": false
+      }
+    }
+  },
+  "created_at": 1673327504316,
+  "updated_at": 1673327535676
+}

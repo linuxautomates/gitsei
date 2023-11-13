@@ -1,0 +1,1 @@
+docker stop sat-dev

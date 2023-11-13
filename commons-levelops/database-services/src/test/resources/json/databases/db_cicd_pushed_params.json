@@ -1,0 +1,33 @@
+[
+  {
+    "integration_id": 1,
+    "repository": "test-repo",
+    "job_name": "action_workflow",
+    "job_run_number": 1,
+    "job_run_params": [
+      {
+        "type": "StringParamterValue",
+        "name": "BRANCH_VERSION",
+        "value": "v.0.1-123"
+      },
+      {
+        "type": "StringParamterValue",
+        "name": "BRANCH_VERSION",
+        "value": "v.0.1-124"
+      }
+    ]
+  },
+  {
+    "integration_id": 1,
+    "repository": "test-repo",
+    "job_name": "action_workflow",
+    "job_run_number": 3,
+    "job_run_params": [
+      {
+        "type": "StringParamterValue",
+        "name": "BRANCH_VERSION",
+        "value": "v.0.1-125"
+      }
+    ]
+  }
+]

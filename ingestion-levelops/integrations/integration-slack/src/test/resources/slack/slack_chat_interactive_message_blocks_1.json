@@ -1,0 +1,191 @@
+[{"type": "section","text": {"type": "mrkdwn","text": ":warning: A Jenkins Job has hit some triage rules."}},{"type": "section","text": {"type": "mrkdwn","text": "*Job::* `Test Pipeline 1`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Job Run Number::* `1480`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Jenkins Instance::* `Jenkins Instance`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Jenkins URL::* `<Jenkins Instance|View Logs>`"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Stage::* `to fail`"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Rule::* `Failure`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Matches::* `2`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Snippet:* ```+ sleep 5
+  + echo Failure
+  Failure
+  + exit 1
+  script returned exit code 1
+  ```"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Stage::* `3`"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Rule::* `Failure`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Matches::* `200`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Snippet:* ```Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  ```"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Rule::* `Errors or exceptions`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Matches::* `2`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Snippet:* ```+ sleep 5
+  + echo Error
+  Error
+  + exit 1
+  script returned exit code 1
+  ```"}},{"type": "section","text": {"type": "mrkdwn","text": "*Job::* `Test Pipeline 1`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Job Run Number::* `1479`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Jenkins Instance::* `Jenkins Instance`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Jenkins URL::* `<Jenkins Instance|View Logs>`"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Stage::* `3`"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Rule::* `Errors or exceptions`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Matches::* `2`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Snippet:* ```+ sleep 5
+  + echo Error
+  Error
+  + exit 1
+  script returned exit code 1
+  ```"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Rule::* `Failure`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Matches::* `200`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Snippet:* ```Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  Failure
+  ```"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Stage::* `to fail`"}},{"type": "divider"},{"type": "section","text": {"type": "mrkdwn","text": "*Rule::* `Failure`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Matches::* `2`"}},{"type": "section","text": {"type": "mrkdwn","text": "*Snippet:* ```+ sleep 5
+  + echo Failure
+  Failure
+  + exit 1
+  script returned exit code 1
+  ```"}},{"type": "section","text": {"type": "mrkdwn","text": "Change ticket status"},"accessory": {"type": "static_select","placeholder": {"type": "plain_text","text": "Select an item","emoji": true},"options": [{"text": {"type": "plain_text","text": "Open","emoji": true},"value": "OPEN"},{"text": {"type": "plain_text","text": "Closed","emoji": true},"value": "CLOSED"},{"text": {"type": "plain_text","text": "In Review","emoji": true},"value": "IN_REVIEW"}]}},{"type": "section","text": {"type": "mrkdwn","text": "Forward this ticket"},"accessory": {"type": "multi_users_select","placeholder": {"type": "plain_text","text": "Select users","emoji": true}}}]

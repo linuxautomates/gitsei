@@ -1,0 +1,816 @@
+{
+  "status": "SUCCESS",
+  "data": {
+    "pipelineExecutionSummary": {
+      "pipelineIdentifier": "Messy_Pipeline",
+      "planExecutionId": "bEdpBLFcR5iVx6Up4C9uDw",
+      "name": "Messy Pipeline",
+      "status": "Failed",
+      "tags": [],
+      "executionTriggerInfo": {
+        "triggerType": "MANUAL",
+        "triggeredBy": {
+          "uuid": "q27LHq2XSSam3H09Rrqevg",
+          "identifier": "Meetrajsinh Solanki",
+          "extraInfo": {
+            "email": "meetrajsinh.solanki@crestdatasys.com"
+          }
+        },
+        "isRerun": false
+      },
+      "executionErrorInfo": {
+        "message": "No eligible delegate(s) in account to execute task. Account has no active delegates"
+      },
+      "governanceMetadata": {
+        "id": "0",
+        "deny": false,
+        "details": [],
+        "message": "",
+        "timestamp": "1672649303018",
+        "status": "pass",
+        "accountId": "iEsVNBQGTs-MM3EY525pGQ",
+        "orgId": "default",
+        "projectId": "Test",
+        "entity": "accountIdentifier%3AiEsVNBQGTs-MM3EY525pGQ%2ForgIdentifier%3Adefault%2FprojectIdentifier%3ATest%2FpipelineIdentifier%3AMessy_Pipeline",
+        "type": "pipeline",
+        "action": "onrun",
+        "created": "1672649302998"
+      },
+      "moduleInfo": {
+        "ci": {
+          "__recast": "io.harness.ci.plan.creator.execution.CIPipelineModuleInfo",
+          "ciPipelineStageModuleInfo": {
+            "__recast": "io.harness.ci.plan.creator.execution.CIPipelineStageModuleInfo",
+            "stageExecutionId": "BH8S2pz4QYK44UcizlMSXA",
+            "stageId": "Build_1st_Stage",
+            "stageName": "Build 1st Stage",
+            "cpuTime": 0,
+            "stageBuildTime": 0,
+            "infraType": "HostedVm",
+            "osType": "Linux",
+            "osArch": "Amd64",
+            "startTs": 1672649305169,
+            "buildMultiplier": 1.0
+          }
+        },
+        "pms": {
+          "__recast": "io.harness.pms.plan.execution.PmsPipelineModuleInfo",
+          "approvalStageNames": [
+            "Approval_Stage"
+          ],
+          "hasApprovalStage": true
+        }
+      },
+      "layoutNodeMap": {
+        "1XpIqTfPTS-qeVU2d8QsKgparallel_rollbackStage": {
+          "nodeType": "parallel",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "parallel1XpIqTfPTS-qeVU2d8QsKgparallel_rollbackStage",
+          "name": "",
+          "nodeUuid": "1XpIqTfPTS-qeVU2d8QsKgparallel_rollbackStage",
+          "status": "NotStarted",
+          "edgeLayoutList": {
+            "currentNodeChildren": [
+              "Flk3SYDRTBClTgfuP8hYQA_rollbackStage",
+              "IVqy_EY4R7mlisMgMbT75Q_rollbackStage"
+            ],
+            "nextIds": [
+              "mpBdu78wR6Kg4QNBwH-9Yw_rollbackStage"
+            ]
+          },
+          "isRollbackStageNode": true
+        },
+        "GNQej_1iSw6rbQd4Rm4AdQ": {
+          "nodeType": "CI",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Build_1st_Stage",
+          "name": "Build 1st Stage",
+          "nodeUuid": "GNQej_1iSw6rbQd4Rm4AdQ",
+          "status": "Skipped",
+          "module": "ci",
+          "moduleInfo": {
+            "ci": {
+              "__recast": "io.harness.ci.plan.creator.execution.CIStageModuleInfo"
+            }
+          },
+          "endTs": 1672649305228,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": false,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "false",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": ""
+          },
+          "failureInfoDTO": {
+            "message": "",
+            "failureTypeList": [],
+            "responseMessages": []
+          },
+          "nodeExecutionId": "BH8S2pz4QYK44UcizlMSXA",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "mpBdu78wR6Kg4QNBwH-9Yw_rollbackStage": {
+          "nodeType": "Approval",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "mpBdu78wR6Kg4QNBwH-9Yw_rollbackStage",
+          "name": "Approval Stage (Rollback Stage)",
+          "nodeUuid": "mpBdu78wR6Kg4QNBwH-9Yw_rollbackStage",
+          "status": "NotStarted",
+          "module": "pms",
+          "moduleInfo": {
+            "pms": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": [
+              "mw3cFm12SGqqO5bY2Gezwwparallel_rollbackStage"
+            ]
+          },
+          "isRollbackStageNode": true
+        },
+        "p-7PAQwLSoSJxrTGN1Jjpw": {
+          "nodeType": "Custom",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Custom1",
+          "name": "Custom1",
+          "nodeUuid": "p-7PAQwLSoSJxrTGN1Jjpw",
+          "status": "Failed",
+          "module": "pms",
+          "moduleInfo": {
+            "pms": {}
+          },
+          "startTs": 1672649303351,
+          "endTs": 1672649305118,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": [
+              "mw3cFm12SGqqO5bY2Gezwwparallel"
+            ]
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": true,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "true",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": "No eligible delegate(s) in account to execute task. Account has no active delegates"
+          },
+          "failureInfoDTO": {
+            "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+            "failureTypeList": [],
+            "responseMessages": [
+              {
+                "code": "DELEGATE_NOT_AVAILABLE",
+                "level": "ERROR",
+                "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+                "exception": null,
+                "failureTypes": []
+              }
+            ]
+          },
+          "nodeExecutionId": "GrKA0klDRzu0lAL1UeQcTA",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "p-7PAQwLSoSJxrTGN1Jjpw_rollbackStage": {
+          "nodeType": "Custom",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "p-7PAQwLSoSJxrTGN1Jjpw_rollbackStage",
+          "name": "Custom1 (Rollback Stage)",
+          "nodeUuid": "p-7PAQwLSoSJxrTGN1Jjpw_rollbackStage",
+          "status": "NotStarted",
+          "module": "pms",
+          "moduleInfo": {
+            "pms": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "isRollbackStageNode": true
+        },
+        "1XpIqTfPTS-qeVU2d8QsKgparallel": {
+          "nodeType": "parallel",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "parallel1XpIqTfPTS-qeVU2d8QsKgparallel",
+          "name": "",
+          "nodeUuid": "1XpIqTfPTS-qeVU2d8QsKgparallel",
+          "status": "NotStarted",
+          "edgeLayoutList": {
+            "currentNodeChildren": [
+              "Flk3SYDRTBClTgfuP8hYQA",
+              "IVqy_EY4R7mlisMgMbT75Q"
+            ],
+            "nextIds": [
+              "PaDYmXAJQxubX1wojpumsg"
+            ]
+          },
+          "isRollbackStageNode": false
+        },
+        "mpBdu78wR6Kg4QNBwH-9Yw": {
+          "nodeType": "Approval",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Approval_Stage",
+          "name": "Approval Stage",
+          "nodeUuid": "mpBdu78wR6Kg4QNBwH-9Yw",
+          "status": "Skipped",
+          "module": "pms",
+          "moduleInfo": {
+            "pms": {
+              "__recast": "io.harness.pms.plan.execution.PmsExecutionServiceInfoProvider$PmsNoopModuleInfo"
+            }
+          },
+          "endTs": 1672649305356,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": [
+              "1XpIqTfPTS-qeVU2d8QsKgparallel"
+            ]
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": false,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "false",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": ""
+          },
+          "failureInfoDTO": {
+            "message": "",
+            "failureTypeList": [],
+            "responseMessages": []
+          },
+          "nodeExecutionId": "xviihofpQhqPsUHRGiAyKw",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "IVqy_EY4R7mlisMgMbT75Q_rollbackStage": {
+          "nodeType": "Deployment",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Second_Deployment_rollbackStage",
+          "name": "Second Deployment (Rollback Stage)",
+          "nodeUuid": "IVqy_EY4R7mlisMgMbT75Q_rollbackStage",
+          "status": "NotStarted",
+          "module": "cd",
+          "moduleInfo": {
+            "cd": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "isRollbackStageNode": true
+        },
+        "PaDYmXAJQxubX1wojpumsg": {
+          "nodeType": "Custom",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Custom_Last_Stage_After_Deployment",
+          "name": "Custom Last Stage After Deployment",
+          "nodeUuid": "PaDYmXAJQxubX1wojpumsg",
+          "status": "Skipped",
+          "module": "pms",
+          "moduleInfo": {
+            "pms": {}
+          },
+          "endTs": 1672649305560,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": false,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "false",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": ""
+          },
+          "failureInfoDTO": {
+            "message": "",
+            "failureTypeList": [],
+            "responseMessages": []
+          },
+          "nodeExecutionId": "TI9PE2XCSSSA56PoKke2CQ",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "wnXKZkEkTWWr5Jtlii4sSA": {
+          "nodeType": "CI",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Build_Stage",
+          "name": "Build Stage",
+          "nodeUuid": "wnXKZkEkTWWr5Jtlii4sSA",
+          "status": "Skipped",
+          "module": "ci",
+          "moduleInfo": {
+            "ci": {
+              "__recast": "io.harness.ci.plan.creator.execution.CIStageModuleInfo"
+            }
+          },
+          "endTs": 1672649305216,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": false,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "false",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": ""
+          },
+          "failureInfoDTO": {
+            "message": "",
+            "failureTypeList": [],
+            "responseMessages": []
+          },
+          "nodeExecutionId": "HiiKg7QGQ2WWRPj17qqIXQ",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "wnXKZkEkTWWr5Jtlii4sSA_rollbackStage": {
+          "nodeType": "CI",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Build_Stage_rollbackStage",
+          "name": "Build Stage (Rollback Stage)",
+          "nodeUuid": "wnXKZkEkTWWr5Jtlii4sSA_rollbackStage",
+          "status": "NotStarted",
+          "module": "ci",
+          "moduleInfo": {
+            "ci": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "isRollbackStageNode": true
+        },
+        "Flk3SYDRTBClTgfuP8hYQA": {
+          "nodeType": "Deployment",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Deployment",
+          "name": "Deployment",
+          "nodeUuid": "Flk3SYDRTBClTgfuP8hYQA",
+          "status": "Skipped",
+          "module": "cd",
+          "moduleInfo": {
+            "cd": {}
+          },
+          "endTs": 1672649305447,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": false,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "false",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": ""
+          },
+          "failureInfoDTO": {
+            "message": "",
+            "failureTypeList": [],
+            "responseMessages": []
+          },
+          "nodeExecutionId": "FuGit_A9R-GI1R0raIxsjw",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "IVqy_EY4R7mlisMgMbT75Q": {
+          "nodeType": "Deployment",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Second_Deployment",
+          "name": "Second Deployment",
+          "nodeUuid": "IVqy_EY4R7mlisMgMbT75Q",
+          "status": "Skipped",
+          "module": "cd",
+          "moduleInfo": {
+            "cd": {}
+          },
+          "endTs": 1672649305448,
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": false,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "false",
+                "count": 1
+              }
+            ]
+          },
+          "failureInfo": {
+            "message": ""
+          },
+          "failureInfoDTO": {
+            "message": "",
+            "failureTypeList": [],
+            "responseMessages": []
+          },
+          "nodeExecutionId": "0vTqaTAFTxKT8AmYuoIp3w",
+          "executionInputConfigured": false,
+          "isRollbackStageNode": false
+        },
+        "GNQej_1iSw6rbQd4Rm4AdQ_rollbackStage": {
+          "nodeType": "CI",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Build_1st_Stage_rollbackStage",
+          "name": "Build 1st Stage (Rollback Stage)",
+          "nodeUuid": "GNQej_1iSw6rbQd4Rm4AdQ_rollbackStage",
+          "status": "NotStarted",
+          "module": "ci",
+          "moduleInfo": {
+            "ci": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "isRollbackStageNode": true
+        },
+        "PaDYmXAJQxubX1wojpumsg_rollbackStage": {
+          "nodeType": "Custom",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "PaDYmXAJQxubX1wojpumsg_rollbackStage",
+          "name": "Custom Last Stage After Deployment (Rollback Stage)",
+          "nodeUuid": "PaDYmXAJQxubX1wojpumsg_rollbackStage",
+          "status": "NotStarted",
+          "module": "pms",
+          "moduleInfo": {
+            "pms": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": [
+              "1XpIqTfPTS-qeVU2d8QsKgparallel_rollbackStage"
+            ]
+          },
+          "isRollbackStageNode": true
+        },
+        "mw3cFm12SGqqO5bY2Gezwwparallel_rollbackStage": {
+          "nodeType": "parallel",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "parallelmw3cFm12SGqqO5bY2Gezwwparallel_rollbackStage",
+          "name": "",
+          "nodeUuid": "mw3cFm12SGqqO5bY2Gezwwparallel_rollbackStage",
+          "status": "NotStarted",
+          "edgeLayoutList": {
+            "currentNodeChildren": [
+              "wnXKZkEkTWWr5Jtlii4sSA_rollbackStage",
+              "GNQej_1iSw6rbQd4Rm4AdQ_rollbackStage"
+            ],
+            "nextIds": [
+              "p-7PAQwLSoSJxrTGN1Jjpw_rollbackStage"
+            ]
+          },
+          "isRollbackStageNode": true
+        },
+        "Flk3SYDRTBClTgfuP8hYQA_rollbackStage": {
+          "nodeType": "Deployment",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "Deployment_rollbackStage",
+          "name": "Deployment (Rollback Stage)",
+          "nodeUuid": "Flk3SYDRTBClTgfuP8hYQA_rollbackStage",
+          "status": "NotStarted",
+          "module": "cd",
+          "moduleInfo": {
+            "cd": {}
+          },
+          "edgeLayoutList": {
+            "currentNodeChildren": [],
+            "nextIds": []
+          },
+          "isRollbackStageNode": true
+        },
+        "mw3cFm12SGqqO5bY2Gezwwparallel": {
+          "nodeType": "parallel",
+          "nodeGroup": "STAGE",
+          "nodeIdentifier": "parallelmw3cFm12SGqqO5bY2Gezwwparallel",
+          "name": "",
+          "nodeUuid": "mw3cFm12SGqqO5bY2Gezwwparallel",
+          "status": "NotStarted",
+          "edgeLayoutList": {
+            "currentNodeChildren": [
+              "wnXKZkEkTWWr5Jtlii4sSA",
+              "GNQej_1iSw6rbQd4Rm4AdQ"
+            ],
+            "nextIds": [
+              "mpBdu78wR6Kg4QNBwH-9Yw"
+            ]
+          },
+          "isRollbackStageNode": false
+        }
+      },
+      "modules": [
+        "ci",
+        "pms",
+        "cd"
+      ],
+      "startingNodeId": "p-7PAQwLSoSJxrTGN1Jjpw",
+      "startTs": 1672649303018,
+      "endTs": 1672649305628,
+      "createdAt": 1672649303214,
+      "canRetry": true,
+      "showRetryHistory": false,
+      "runSequence": 3,
+      "successfulStagesCount": 0,
+      "runningStagesCount": 0,
+      "failedStagesCount": 1,
+      "totalStagesCount": 7,
+      "storeType": "INLINE",
+      "executionInputConfigured": false,
+      "parentStageInfo": {
+        "hasparentpipeline": false,
+        "stagenodeid": "",
+        "executionid": "",
+        "identifier": "",
+        "projectid": "",
+        "orgid": "",
+        "runsequence": 0
+      },
+      "allowStageExecutions": false,
+      "stagesExecution": false
+    },
+    "executionGraph": {
+      "rootNodeId": "tyOGymiSTS2LzxMplksxDQ",
+      "nodeMap": {
+        "GrKA0klDRzu0lAL1UeQcTA": {
+          "uuid": "GrKA0klDRzu0lAL1UeQcTA",
+          "setupId": "p-7PAQwLSoSJxrTGN1Jjpw",
+          "name": "Custom1",
+          "identifier": "Custom1",
+          "baseFqn": "pipeline.stages.Custom1",
+          "outcomes": {},
+          "stepParameters": {
+            "uuid": "p-7PAQwLSoSJxrTGN1Jjpw",
+            "identifier": "Custom1",
+            "name": "Custom1",
+            "description": "",
+            "variables": {
+              "__recast": "java.util.LinkedHashMap",
+              "MyVar": {
+                "__recast": "parameterField",
+                "__encodedValue": {
+                  "__recast": "io.harness.pms.yaml.ParameterDocumentField",
+                  "expression": false,
+                  "valueDoc": {
+                    "__recast": "io.harness.pms.yaml.ParameterFieldValueWrapper",
+                    "value": ""
+                  },
+                  "typeString": true,
+                  "skipAutoEvaluation": false,
+                  "jsonResponseField": false
+                }
+              }
+            },
+            "tags": {},
+            "type": "Custom",
+            "specConfig": {
+              "childNodeID": "impkCQCZSRuVydzNJ2Abrw"
+            }
+          },
+          "startTs": 1672649303351,
+          "endTs": 1672649305118,
+          "stepType": "CUSTOM_STAGE",
+          "status": "Failed",
+          "failureInfo": {
+            "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+            "failureTypeList": [],
+            "responseMessages": [
+              {
+                "code": "DELEGATE_NOT_AVAILABLE",
+                "level": "ERROR",
+                "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+                "exception": null,
+                "failureTypes": []
+              }
+            ]
+          },
+          "skipInfo": null,
+          "nodeRunInfo": {
+            "whenCondition": "<+OnPipelineSuccess>",
+            "evaluatedCondition": true,
+            "expressions": [
+              {
+                "expression": "OnPipelineSuccess",
+                "expressionValue": "true",
+                "count": 1
+              }
+            ]
+          },
+          "executableResponses": [
+            {
+              "child": {
+                "childNodeId": "impkCQCZSRuVydzNJ2Abrw",
+                "logKeys": [],
+                "units": []
+              }
+            }
+          ],
+          "unitProgresses": [],
+          "progressData": null,
+          "delegateInfoList": [],
+          "interruptHistories": [],
+          "stepDetails": null,
+          "strategyMetadata": null,
+          "executionInputConfigured": false
+        },
+        "DZQUPR5vSyO1TW0zDRuz_g": {
+          "uuid": "DZQUPR5vSyO1TW0zDRuz_g",
+          "setupId": "QwYsx4n4SWKmlm8Km--qaQstages",
+          "name": "stages",
+          "identifier": "stages",
+          "baseFqn": "pipeline.stages",
+          "outcomes": {},
+          "stepParameters": {
+            "childNodeId": "p-7PAQwLSoSJxrTGN1Jjpw",
+            "logMessage": "Stages"
+          },
+          "startTs": 1672649303280,
+          "endTs": 1672649305596,
+          "stepType": "STAGES_STEP",
+          "status": "Failed",
+          "failureInfo": {
+            "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+            "failureTypeList": [],
+            "responseMessages": [
+              {
+                "code": "DELEGATE_NOT_AVAILABLE",
+                "level": "ERROR",
+                "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+                "exception": null,
+                "failureTypes": []
+              }
+            ]
+          },
+          "skipInfo": null,
+          "nodeRunInfo": null,
+          "executableResponses": [
+            {
+              "child": {
+                "childNodeId": "p-7PAQwLSoSJxrTGN1Jjpw",
+                "logKeys": [],
+                "units": []
+              }
+            }
+          ],
+          "unitProgresses": [],
+          "progressData": null,
+          "delegateInfoList": [],
+          "interruptHistories": [],
+          "stepDetails": null,
+          "strategyMetadata": null,
+          "executionInputConfigured": false
+        },
+        "tyOGymiSTS2LzxMplksxDQ": {
+          "uuid": "tyOGymiSTS2LzxMplksxDQ",
+          "setupId": "QwYsx4n4SWKmlm8Km--qaQ",
+          "name": "Messy Pipeline",
+          "identifier": "pipeline",
+          "baseFqn": "pipeline",
+          "outcomes": {
+            "artifact_Docker_Push": {
+              "stepArtifacts": {
+                "publishedImageArtifacts": [
+                  {
+                    "digest": "sha256:9399b7edc64bfddab1d4524b4cf10378e803b4f16d144b902141e0caf1e75c3e",
+                    "imageName": "harness/nextgenui",
+                    "tag": "cds-49176-ui",
+                    "url": "https://hub.docker.com/layers/harness/nextgenui/cds-49176-ui/images/sha256-9399b7edc64bfddab1d4524b4cf10378e803b4f16d144b902141e0caf1e75c3e"
+                  }
+                ]
+              }
+            }
+          },
+          "stepParameters": {
+            "childNodeID": "QwYsx4n4SWKmlm8Km--qaQstages",
+            "name": "Messy Pipeline",
+            "identifier": "Messy_Pipeline",
+            "description": "",
+            "tags": {},
+            "properties": {
+              "__recast": "java.util.LinkedHashMap"
+            },
+            "variables": {
+              "__recast": "java.util.LinkedHashMap"
+            },
+            "executionId": "bEdpBLFcR5iVx6Up4C9uDw",
+            "sequenceId": 3
+          },
+          "startTs": 1672649303246,
+          "endTs": 1672649305628,
+          "stepType": "PIPELINE_SECTION",
+          "status": "Failed",
+          "failureInfo": {
+            "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+            "failureTypeList": [],
+            "responseMessages": [
+              {
+                "code": "DELEGATE_NOT_AVAILABLE",
+                "level": "ERROR",
+                "message": "No eligible delegate(s) in account to execute task. Account has no active delegates",
+                "exception": null,
+                "failureTypes": []
+              }
+            ]
+          },
+          "skipInfo": null,
+          "nodeRunInfo": null,
+          "executableResponses": [
+            {
+              "child": {
+                "childNodeId": "QwYsx4n4SWKmlm8Km--qaQstages",
+                "logKeys": [],
+                "units": []
+              }
+            }
+          ],
+          "unitProgresses": [],
+          "progressData": null,
+          "delegateInfoList": [],
+          "interruptHistories": [],
+          "stepDetails": null,
+          "strategyMetadata": null,
+          "executionInputConfigured": false
+        }
+      },
+      "nodeAdjacencyListMap": {
+        "GrKA0klDRzu0lAL1UeQcTA": {
+          "children": [],
+          "nextIds": []
+        },
+        "DZQUPR5vSyO1TW0zDRuz_g": {
+          "children": [
+            "GrKA0klDRzu0lAL1UeQcTA"
+          ],
+          "nextIds": []
+        },
+        "tyOGymiSTS2LzxMplksxDQ": {
+          "children": [
+            "DZQUPR5vSyO1TW0zDRuz_g"
+          ],
+          "nextIds": []
+        }
+      },
+      "executionMetadata": {
+        "accountId": "iEsVNBQGTs-MM3EY525pGQ",
+        "pipelineIdentifier": "Messy_Pipeline",
+        "orgIdentifier": "default",
+        "projectIdentifier": "Test",
+        "planExecutionId": "bEdpBLFcR5iVx6Up4C9uDw"
+      },
+      "representationStrategy": "camelCase"
+    }
+  },
+  "metaData": null,
+  "correlationId": "8d448069-20f6-4523-bb15-2ed61853d5ef"
+}

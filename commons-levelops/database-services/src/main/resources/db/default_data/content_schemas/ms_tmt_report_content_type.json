@@ -1,0 +1,219 @@
+{
+    "content_type": "plugin_result/ms_tmt_report/report",
+    "fields": {
+        "id": {
+            "key": "id",
+            "value_type": "string",
+            "content_type": "id:plugin_result/ms_tmt_report/report"
+        },
+        "tool": {
+            "key": "tool",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "successful": {
+            "key": "successful",
+            "value_type": "string",
+            "content_type": "boolean"
+        },
+        "tags": {
+            "key": "tags",
+            "value_type": "json_array",
+            "content_type": "string"
+        },
+        "product_ids": {
+            "key": "product_ids",
+            "value_type": "json_array",
+            "content_type": "string"
+        },
+        "results": {
+            "key": "results",
+            "value_type": "json_blob",
+            "content_type": "plugin_result/ms_tmt_report/report.results",
+            "fields": {
+                "project_name": {
+                    "key": "project_name",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "summary": {
+                    "key": "summary",
+                    "value_type": "json_array",
+                    "content_type": "plugin_result/ms_tmt_report/report.results.summary",
+                    "fields": {
+                        "key": {
+                            "key": "key",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "not_started": {
+                            "key": "not_started",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "not_applicable": {
+                            "key": "not_applicable",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "needs_investigation": {
+                            "key": "needs_investigation",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "mitigation_implemented": {
+                            "key": "mitigation_implemented",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "total": {
+                            "key": "total",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "total_migrated": {
+                            "key": "total_migrated",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        }
+                    }
+                },
+                "metadata": {
+                    "key": "metadata",
+                    "value_type": "json_blob",
+                    "content_type": "plugin_result/ms_tmt_report/report.results.metadata",
+                    "fields": {
+                        "created_at": {
+                            "created_at": "key",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "threat_model_name": {
+                            "key": "threat_model_name",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "owner": {
+                            "key": "owner",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "reviewer": {
+                            "key": "reviewer",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "contributors": {
+                            "key": "contributors",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "description": {
+                            "key": "description",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "assumptions": {
+                            "key": "assumptions",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "external_dependencies": {
+                            "key": "external_dependencies",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                },
+                "aggregations": {
+                    "key": "aggregations",
+                    "value_type": "json_array",
+                    "content_type": "plugin_result/ms_tmt_report/report.results.aggregations",
+                    "fields": {
+                        "key": {
+                            "key": "key",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "by_priority": {
+                            "key": "by_priority",
+                            "value_type": "json_array",
+                            "content_type": "plugin_result/ms_tmt_report/report.results.aggregations.by_priority",
+                            "fields": {
+                                "high": {
+                                    "key": "high",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "medium": {
+                                    "key": "medium",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "low": {
+                                    "key": "low",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        },
+                        "by_state": {
+                            "key": "by_state",
+                            "value_type": "json_array",
+                            "content_type": "plugin_result/ms_tmt_report/report.results.aggregations.by_state",
+                            "fields": {
+                                "not_started": {
+                                    "key": "not_started",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        }
+                    }
+                },
+                "data": {
+                    "key": "data",
+                    "value_type": "json_array",
+                    "content_type": "plugin_result/ms_tmt_report/report.results.data",
+                    "fields": {
+                        "key": {
+                            "key": "key",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "category": {
+                            "key": "category",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "description": {
+                            "key": "description",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "justification": {
+                            "key": "justification",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "summary": {
+                            "key": "summary",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "state": {
+                            "key": "state",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "priority": {
+                            "key": "priority",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

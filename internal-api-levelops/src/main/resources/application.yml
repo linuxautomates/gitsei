@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: internal-api
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+      file-size-threshold: 10MB
+  cloud:
+    gcp:
+      sql:
+        enabled: false
+      logging:
+        enabled: true
+      metrics:
+        enabled: true
+server:
+  compression:
+    enabled: true
+    min-response-size: 2048
+  http2:
+    enabled: true
+  error:
+    include-stacktrace: on_param # show trace by manually adding a request param e.g. /v1/endpoint?trace
+    include-message: always
+
+springdoc:
+  api-docs:
+    path: /api/api-docs
+    enabled: true
+  swagger-ui:
+    path: /api/ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    metrics:
+      enabled: true
+  metrics:
+    export:
+      stackdriver:
+        useSemanticMetricTypes: true
+    tags:
+      service: "internal-api"
+      pod: ${HOSTNAME}

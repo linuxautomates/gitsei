@@ -1,0 +1,172 @@
+{
+    "content_type": "integration/github/pull_request",
+    "fields": {
+        "id": {
+            "key": "id",
+            "value_type": "string",
+            "content_type": "id:integration/github/pull_request"
+        },
+        "state": {
+            "key": "state",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "locked": {
+            "key": "locked",
+            "value_type": "boolean",
+            "content_type": "boolean"
+        },
+        "title": {
+            "key": "title",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "number": {
+            "key": "number",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "created_at": {
+            "key": "created_at",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "updated_at": {
+            "key": "updated_at",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "closed_at": {
+            "key": "closed_at",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "merged_at": {
+            "key": "merged_at",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "merge_commit_sha": {
+            "key": "merge_commit_sha",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "assignees": {
+            "key": "assignees",
+            "value_type": "json_array",
+            "content_type": "integration/github/pull_request.assignees",
+            "fields": {
+                "login": {
+                    "key": "login",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "type": {
+                    "key": "type",
+                    "value_type": "string",
+                    "content_type": "string"
+                }
+            }
+        },
+        "head": {
+            "key": "head",
+            "value_type": "json_blob",
+            "content_type": "integration/github/pull_request.head",
+            "fields": {
+                "label": {
+                    "key": "label",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "ref": {
+                    "key": "ref",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "sha": {
+                    "key": "sha",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "user": {
+                    "key": "user",
+                    "value_type": "json_blob",
+                    "content_type": "integration/github/pull_request.head.user",
+                    "fields": {
+                        "login": {
+                            "key": "login",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "type": {
+                            "key": "type",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "base": {
+            "key": "base",
+            "value_type": "string",
+            "content_type": "integration/github/pull_request.base",
+            "fields": {
+                "label": {
+                    "key": "label",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "ref": {
+                    "key": "ref",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "sha": {
+                    "key": "sha",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "user": {
+                    "key": "user",
+                    "value_type": "json_blob",
+                    "content_type": "integration/github/pull_request.base.user",
+                    "fields": {
+                        "login": {
+                            "key": "login",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "type": {
+                            "key": "type",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "labels": {
+            "key": "labels",
+            "value_type": "json_array",
+            "content_type": "integration/github/pull_request.labels",
+            "fields": {
+                "id": {
+                    "key": "id",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "name": {
+                    "key": "name",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "description": {
+                    "key": "description",
+                    "value_type": "string",
+                    "content_type": "string"
+                }
+            }
+        }
+    }
+}

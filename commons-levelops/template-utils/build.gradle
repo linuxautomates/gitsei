@@ -1,0 +1,25 @@
+dependencies {
+
+    implementation group: 'org.apache.velocity', name: 'velocity-engine-core', version: '2.3'
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.6
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

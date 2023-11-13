@@ -1,0 +1,299 @@
+{
+  "incidents": [
+    {
+      "incident_number": 1,
+      "title": "The server is on fire.",
+      "description": "The server is on fire.",
+      "created_at": "2020-01-29T00:18:50Z",
+      "status": "resolved",
+      "incident_key": "baf7cf21b1da41b4b0221008339ff357",
+      "service": {
+        "id": "PVE8AWA",
+        "type": "service_reference",
+        "summary": "Service1 - API",
+        "self": "https://api.pagerduty.com/services/PVE8AWA",
+        "html_url": "https://dev-ivanops.pagerduty.com/services/PVE8AWA"
+      },
+      "assignments": [],
+      "assigned_via": "escalation_policy",
+      "last_status_change_at": "2020-01-29T01:25:46Z",
+      "first_trigger_log_entry": {
+        "id": "R78LHHB3MNACHTS1H8MCEMN53L",
+        "type": "trigger_log_entry_reference",
+        "summary": "Triggered through the website",
+        "self": "https://api.pagerduty.com/log_entries/R78LHHB3MNACHTS1H8MCEMN53L",
+        "html_url": "https://dev-ivanops.pagerduty.com/incidents/PQDG56R/log_entries/R78LHHB3MNACHTS1H8MCEMN53L"
+      },
+      "alert_counts": {
+        "all": 0,
+        "triggered": 0,
+        "resolved": 0
+      },
+      "is_mergeable": true,
+      "escalation_policy": {
+        "id": "P1P74IJ",
+        "type": "escalation_policy_reference",
+        "summary": "Ops1",
+        "self": "https://api.pagerduty.com/escalation_policies/P1P74IJ",
+        "html_url": "https://dev-ivanops.pagerduty.com/escalation_policies/P1P74IJ"
+      },
+      "teams": [
+        {
+          "id": "P6SSO4A",
+          "type": "team_reference",
+          "summary": "OpsTeam",
+          "self": "https://api.pagerduty.com/teams/P6SSO4A",
+          "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+        }
+      ],
+      "pending_actions": [],
+      "acknowledgements": [{
+        "at": "2021-02-11T15:47:35Z",
+        "acknowledger": {
+          "id": "P5OQRZ5",
+          "type": "user_reference",
+          "summary": "Jose Leon",
+          "self": "https://api.pagerduty.com/users/P5OQRZ5",
+          "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+        }
+      }],
+      "basic_alert_grouping": null,
+      "alert_grouping": null,
+      "last_status_change_by": {
+        "id": "P5OQRZ5",
+        "type": "user_reference",
+        "summary": "Jose Leon",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5",
+        "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+      },
+      "resolve_reason": null,
+      "incidents_responders": [],
+      "responder_requests": [],
+      "subscriber_requests": [],
+      "urgency": "high",
+      "id": "PQDG56R",
+      "type": "incident",
+      "summary": "[#1] The server is on fire.",
+      "self": "https://api.pagerduty.com/incidents/PQDG56R",
+      "html_url": "https://dev-ivanops.pagerduty.com/incidents/PQDG56R"
+    },
+    {
+      "incident_number": 2,
+      "title": "The server is on fire2.",
+      "description": "The server is on fire2.",
+      "created_at": "2020-01-29T01:10:38Z",
+      "status": "resolved",
+      "incident_key": "d8ae8dc244d84bcbab5b83cf74dc2dd3",
+      "service": {
+        "id": "PVE8AWA",
+        "type": "service_reference",
+        "summary": "Service1 - API",
+        "self": "https://api.pagerduty.com/services/PVE8AWA",
+        "html_url": "https://dev-ivanops.pagerduty.com/services/PVE8AWA"
+      },
+      "assignments": [],
+      "assigned_via": "escalation_policy",
+      "last_status_change_at": "2020-01-29T01:31:48Z",
+      "first_trigger_log_entry": {
+        "id": "R71L6C4RX6M3NN7MH78FJ5XT1K",
+        "type": "trigger_log_entry_reference",
+        "summary": "Triggered through the website",
+        "self": "https://api.pagerduty.com/log_entries/R71L6C4RX6M3NN7MH78FJ5XT1K",
+        "html_url": "https://dev-ivanops.pagerduty.com/incidents/PJF5ALO/log_entries/R71L6C4RX6M3NN7MH78FJ5XT1K"
+      },
+      "alert_counts": {
+        "all": 0,
+        "triggered": 0,
+        "resolved": 0
+      },
+      "is_mergeable": true,
+      "escalation_policy": {
+        "id": "P1P74IJ",
+        "type": "escalation_policy_reference",
+        "summary": "Ops1",
+        "self": "https://api.pagerduty.com/escalation_policies/P1P74IJ",
+        "html_url": "https://dev-ivanops.pagerduty.com/escalation_policies/P1P74IJ"
+      },
+      "teams": [
+        {
+          "id": "P6SSO4A",
+          "type": "team_reference",
+          "summary": "OpsTeam",
+          "self": "https://api.pagerduty.com/teams/P6SSO4A",
+          "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+        }
+      ],
+      "pending_actions": [],
+      "acknowledgements": [],
+      "basic_alert_grouping": null,
+      "alert_grouping": null,
+      "last_status_change_by": {
+        "id": "P5OQRZ5",
+        "type": "user_reference",
+        "summary": "Jose Leon",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5",
+        "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+      },
+      "resolve_reason": null,
+      "incidents_responders": [],
+      "responder_requests": [],
+      "subscriber_requests": [],
+      "urgency": "high",
+      "id": "PJF5ALO",
+      "type": "incident",
+      "summary": "[#2] The server is on fire2.",
+      "self": "https://api.pagerduty.com/incidents/PJF5ALO",
+      "html_url": "https://dev-ivanops.pagerduty.com/incidents/PJF5ALO"
+    },
+    {
+      "incident_number": 4,
+      "title": "The server is on fire2.",
+      "description": "The server is on fire2.",
+      "created_at": "2020-01-29T01:13:52Z",
+      "status": "resolved",
+      "incident_key": "0694021be4ce4457b5c4efd6d1f43e8d",
+      "service": {
+        "id": "PVE8AWA",
+        "type": "service_reference",
+        "summary": "Service1 - API",
+        "self": "https://api.pagerduty.com/services/PVE8AWA",
+        "html_url": "https://dev-ivanops.pagerduty.com/services/PVE8AWA"
+      },
+      "assignments": [],
+      "assigned_via": "escalation_policy",
+      "last_status_change_at": "2020-01-29T01:35:34Z",
+      "first_trigger_log_entry": {
+        "id": "R7DSBSVTE8HSPRVBL0CM4C3V75",
+        "type": "trigger_log_entry_reference",
+        "summary": "Triggered through the website",
+        "self": "https://api.pagerduty.com/log_entries/R7DSBSVTE8HSPRVBL0CM4C3V75",
+        "html_url": "https://dev-ivanops.pagerduty.com/incidents/PHC69FF/log_entries/R7DSBSVTE8HSPRVBL0CM4C3V75"
+      },
+      "alert_counts": {
+        "all": 0,
+        "triggered": 0,
+        "resolved": 0
+      },
+      "is_mergeable": true,
+      "escalation_policy": {
+        "id": "P1P74IJ",
+        "type": "escalation_policy_reference",
+        "summary": "Ops1",
+        "self": "https://api.pagerduty.com/escalation_policies/P1P74IJ",
+        "html_url": "https://dev-ivanops.pagerduty.com/escalation_policies/P1P74IJ"
+      },
+      "teams": [
+        {
+          "id": "P6SSO4A",
+          "type": "team_reference",
+          "summary": "OpsTeam",
+          "self": "https://api.pagerduty.com/teams/P6SSO4A",
+          "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+        }
+      ],
+      "pending_actions": [],
+      "acknowledgements": [],
+      "basic_alert_grouping": null,
+      "alert_grouping": null,
+      "last_status_change_by": {
+        "id": "P5OQRZ5",
+        "type": "user_reference",
+        "summary": "Jose Leon",
+        "self": "https://api.pagerduty.com/users/P5OQRZ5",
+        "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+      },
+      "resolve_reason": null,
+      "incidents_responders": [],
+      "responder_requests": [],
+      "subscriber_requests": [],
+      "urgency": "high",
+      "id": "PHC69FF",
+      "type": "incident",
+      "summary": "[#4] The server is on fire2.",
+      "self": "https://api.pagerduty.com/incidents/PHC69FF",
+      "html_url": "https://dev-ivanops.pagerduty.com/incidents/PHC69FF"
+    },
+    {
+      "incident_number": 3,
+      "title": "The server is on fire2.",
+      "description": "The server is on fire2.",
+      "created_at": "2020-01-29T01:10:58Z",
+      "status": "triggered",
+      "incident_key": "856bf5803c824078ab17961fa4b95ec8",
+      "service": {
+        "id": "PVE8AWA",
+        "type": "service_reference",
+        "summary": "Service1 - API",
+        "self": "https://api.pagerduty.com/services/PVE8AWA",
+        "html_url": "https://dev-ivanops.pagerduty.com/services/PVE8AWA"
+      },
+      "assignments": [
+        {
+          "at": "2020-01-29T01:10:58Z",
+          "assignee": {
+            "id": "P5OQRZ5",
+            "type": "user_reference",
+            "summary": "Jose Leon",
+            "self": "https://api.pagerduty.com/users/P5OQRZ5",
+            "html_url": "https://dev-ivanops.pagerduty.com/users/P5OQRZ5"
+          }
+        }
+      ],
+      "assigned_via": "escalation_policy",
+      "last_status_change_at": "2020-01-29T01:10:58Z",
+      "first_trigger_log_entry": {
+        "id": "R9ZBRBHA5Y9IJW0FFEDHBR88YD",
+        "type": "trigger_log_entry_reference",
+        "summary": "Triggered through the website",
+        "self": "https://api.pagerduty.com/log_entries/R9ZBRBHA5Y9IJW0FFEDHBR88YD",
+        "html_url": "https://dev-ivanops.pagerduty.com/incidents/PXMFZXN/log_entries/R9ZBRBHA5Y9IJW0FFEDHBR88YD"
+      },
+      "alert_counts": {
+        "all": 0,
+        "triggered": 0,
+        "resolved": 0
+      },
+      "is_mergeable": true,
+      "escalation_policy": {
+        "id": "P1P74IJ",
+        "type": "escalation_policy_reference",
+        "summary": "Ops1",
+        "self": "https://api.pagerduty.com/escalation_policies/P1P74IJ",
+        "html_url": "https://dev-ivanops.pagerduty.com/escalation_policies/P1P74IJ"
+      },
+      "teams": [
+        {
+          "id": "P6SSO4A",
+          "type": "team_reference",
+          "summary": "OpsTeam",
+          "self": "https://api.pagerduty.com/teams/P6SSO4A",
+          "html_url": "https://dev-ivanops.pagerduty.com/teams/P6SSO4A"
+        }
+      ],
+      "pending_actions": [],
+      "acknowledgements": [],
+      "basic_alert_grouping": null,
+      "alert_grouping": null,
+      "last_status_change_by": {
+        "id": "PVE8AWA",
+        "type": "service_reference",
+        "summary": "Service1 - API",
+        "self": "https://api.pagerduty.com/services/PVE8AWA",
+        "html_url": "https://dev-ivanops.pagerduty.com/services/PVE8AWA"
+      },
+      "incidents_responders": [],
+      "responder_requests": [],
+      "subscriber_requests": [],
+      "urgency": "high",
+      "id": "PXMFZXN",
+      "type": "incident",
+      "summary": "[#3] The server is on fire2.",
+      "self": "https://api.pagerduty.com/incidents/PXMFZXN",
+      "html_url": "https://dev-ivanops.pagerduty.com/incidents/PXMFZXN"
+    }
+  ],
+  "limit": 25,
+  "offset": 2,
+  "total": 4,
+  "more": false
+}

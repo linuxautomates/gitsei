@@ -1,0 +1,68 @@
+{
+  "content_type": "work_item/-/work_item",
+  "value_type": "json_blob",
+  "fields": {
+    "id": {
+      "key": "id",
+      "value_type": "string",
+      "content_type": "id:work_item/-/work_item"
+    },
+    "assignees": {
+      "key": "assignees",
+      "value_type": "json_array",
+      "content_type": "work_item/-/work_item.assignees",
+      "fields": {
+        "user_id": {
+          "key": "user_id",
+          "value_type": "string",
+          "content_type": "string"
+        },
+        "user_email": {
+          "key": "user_email",
+          "value_type": "string",
+          "content_type": "string"
+        }
+      }
+    },
+    "child_ids": {
+      "key": "child_ids",
+      "value_type": "json_array",
+      "content_type": "id:work_item/-/work_item"
+    },
+    "created_at": {
+      "key": "created_at",
+      "value_type": "string",
+      "content_type": "date"
+    },
+    "product_id": {
+      "key": "product_id",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "reason": {
+      "key": "reason",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "state": {
+      "key": "state",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "title": {
+      "key": "title",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "updated_at": {
+      "key": "updated_at",
+      "value_type": "string",
+      "content_type": "date"
+    },
+    "vanity_id": {
+      "key": "vanity_id",
+      "value_type": "string",
+      "content_type": "string"
+    }
+  }
+}

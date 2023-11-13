@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: etl-scheduler
+  cloud:
+    gcp:
+      metrics:
+        enabled: true
+      sql:
+        enabled: false
+      logging:
+        enabled: true
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%0.15t]%X{tenant_id}%X{integration_type}%X{integration_id}%X{message_id} %-40.40logger{0} : %m%n'
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  compression:
+    enabled: true
+    min-response-size: 2048
+  http2:
+    enabled: true
+  error:
+    include-message: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    metrics:
+      enabled: true
+  metrics:
+    export:
+      stackdriver:
+        useSemanticMetricTypes: true
+    tags:
+      service: "etl-scheduler"
+      pod: ${HOSTNAME}
+    stackdriver:
+      enabled: true
+      step: 1m

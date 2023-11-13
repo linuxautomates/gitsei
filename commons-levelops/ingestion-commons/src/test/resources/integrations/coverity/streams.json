@@ -1,0 +1,30 @@
+{
+  "auto_delete_on_expiry": false,
+  "component_map_id": {
+    "name": "Default"
+  },
+  "description": "",
+  "id": {
+    "name": "trigger"
+  },
+  "language": "MIXED",
+  "outdated": false,
+  "primary_project_id": {
+    "name": "New Project 1"
+  },
+  "triage_store_id": {
+    "name": "Default Triage Store"
+  },
+  "role_assignments": [
+    {
+      "role_assignment_type": "user",
+      "role_id": {
+        "name": "streamOwner"
+      },
+      "type": "stream",
+      "username": "admin"
+    }
+  ],
+  "enable_desktop_analysis": true,
+  "owner_assignment_option": "default_component_owner"
+}

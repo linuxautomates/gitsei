@@ -1,0 +1,12 @@
+{
+  "env_ids" : [ "CD_only_Docker_Registry_Env" ],
+  "infra_types" : [ "KubernetesGcp" ],
+  "rollback" : false,
+  "infra_ids" : [ "CD_only_Docker_Registry_Infrastructure" ],
+  "infra_names" : [ "CD only Docker Registry Infrastructure" ],
+  "service_types" : [ "Kubernetes" ],
+  "service_ids" : [ "Deploy_to_GCP" ],
+  "env_types" : [ "PreProduction" ],
+  "env_groups" : [ ],
+  "tags" : [ ]
+}

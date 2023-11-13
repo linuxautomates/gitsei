@@ -1,0 +1,157 @@
+[
+  {
+    "type": "k8s_exec",
+    "node_handler": "k8s_exec",
+    "name": "Kubernetes Exec",
+    "description": "Execute a command within a Kubernetes container",
+    "category": "Kubernetes",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Satellite Integration",
+        "description": "Choose a satellite integration that has been deployed in your Kubernetes cluster",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "namespace": {
+        "key": "namespace",
+        "index": 20,
+        "display_name": "Namespace",
+        "description": "If not specified, the default namespace will be used",
+        "type": "text",
+        "required": false
+      },
+      "pod_name": {
+        "key": "pod_name",
+        "index": 30,
+        "display_name": "Pod",
+        "description": "Name of the pod where the command will be executed",
+        "type": "text",
+        "required": true
+      },
+      "container": {
+        "key": "container",
+        "index": 40,
+        "display_name": "Container",
+        "description": "Name of a container within the pod where the command will be executed",
+        "type": "text",
+        "required": false
+      },
+      "command": {
+        "key": "command",
+        "index": 50,
+        "display_name": "Command",
+        "description": "The command that will be executed",
+        "type": "text",
+        "required": true
+      },
+      "timeout_in_minutes": {
+        "key": "timeout_in_minutes",
+        "index": 60,
+        "display_name": "Timeout In Minutes",
+        "description": "How long to wait for the command execution",
+        "type": "integer",
+        "required": true,
+        "default_value": "1"
+      }
+    },
+    "output": {
+      "output_log": {
+        "key": "output_log",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "error_log": {
+        "key": "error_log",
+        "content_type": "string",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "kubernetes"
+    }
+  },
+  {
+    "type": "k8s_create_pod",
+    "node_handler": "k8s_create_pod",
+    "name": "Kubernetes Create Pod",
+    "description": "Create a Pod in a Kubernetes cluster and extract logs",
+    "category": "Kubernetes",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Satellite Integration",
+        "description": "Choose a satellite integration that has been deployed in your Kubernetes cluster",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "namespace": {
+        "key": "namespace",
+        "index": 20,
+        "display_name": "Namespace",
+        "description": "If not specified, the default namespace will be used",
+        "type": "text",
+        "required": false
+      },
+      "yaml_resource": {
+        "key": "yaml_resource",
+        "index": 30,
+        "display_name": "Kubernetes YAML Pod Definition",
+        "description": "Define how to create the pod and what command to execute. Make sure to use the following policy to let the pod terminate after completion of the command: \"restartPolicy: Never\"",
+        "type": "text-area",
+        "default_value": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: propel-pod\nspec:\n  containers:\n  - name: propel-pod-container\n    image: debian\n    command: [\"/bin/sh\"]\n    args: [\"-c\", \"sleep 2 && echo done\"]\n  restartPolicy: Never",
+        "required": true
+      },
+      "add_name_suffix": {
+        "key": "add_name_suffix",
+        "index": 40,
+        "display_name": "Add Name Suffix",
+        "description": "If Yes, a unique suffix will be added to name of the pod to prevent conflicts with previous instances",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": true
+      },
+      "timeout_in_minutes": {
+        "key": "timeout_in_minutes",
+        "index": 60,
+        "display_name": "Timeout In Minutes",
+        "description": "How long to wait before expecting the pod to complete and extracting logs",
+        "type": "integer",
+        "required": false,
+        "default_value": "1"
+      },
+      "pod_deletion": {
+        "key": "pod_deletion",
+        "index": 70,
+        "display_name": "Delete Pod After Completion",
+        "description": "The pod is considered successful if it completes without errors before timing out",
+        "options": [
+          "Always",
+          "Only if successful",
+          "Never"
+        ],
+        "default_value": "Never",
+        "type": "radio-group",
+        "required": true
+      }
+    },
+    "output": {
+      "output_log": {
+        "key": "output_log",
+        "content_type": "string",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "kubernetes"
+    }
+  }
+]

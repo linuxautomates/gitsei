@@ -1,0 +1,50 @@
+pipeline:
+  name: Build ETL SERVICE SCHEDULER
+  identifier: Build_ETL_SERVICE_SCHEDULER
+  template:
+    templateRef: pipelinetemplatejava
+    versionLabel: v1
+    gitBranch: main
+    templateInputs:
+      variables:
+        - name: BUILDER_BASE_IMAGE_NAME
+          type: String
+          value: <+input>.default(eclipse-temurin:17-jdk-ubi9-minimal)
+        - name: DOCKER_HUB_BUILDER_BASE_IMAGE
+          type: String
+          value: <+input>.default(yes)
+        - name: VERSION_SUFFIX
+          type: String
+          value: <+input>
+        - name: REPO_NAME
+          type: String
+          default: test
+          value: aggregations-levelops
+        - name: DOCKER_CONTEXT
+          type: String
+          value: ./etl-scheduler
+        - name: DOCKERFILE_PATH
+          type: String
+          value: ./etl-scheduler/Dockerfile
+        - name: SRC_FOLDER_NAME
+          type: String
+          value: ./etl-scheduler
+        - name: GRADLE_RELATIVE_LOCATION
+          type: String
+          value: ../gradlew
+        - name: SERVICE_IMAGE_NAME
+          type: String
+          value: etl-service-scheduler
+        - name: COMPONENT_VERSION_KEY
+          type: String
+          value: ETL_SERVICE_SCHEDULER_VERSION
+        - name: K8S_ENV
+          type: String
+          value: <+input>
+      properties:
+        ci:
+          codebase:
+            build: <+input>
+  tags: {}
+  projectIdentifier: Backend
+  orgIdentifier: SEIpropelo

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 263,
+    "teamId": 107,
+    "name": "Jvl test",
+    "isPublic": true,
+    "customFields": [],
+    "links": [
+      {
+        "rel": "self",
+        "uri": "/projects/263"
+      },
+      {
+        "rel": "teams",
+        "uri": "/auth/teams/"
+      },
+      {
+        "rel": "latestscan",
+        "uri": "/sast/scans?projectId=263&last=1"
+      },
+      {
+        "rel": "allscans",
+        "uri": "/sast/scans?projectId=263"
+      },
+      {
+        "rel": "scansettings",
+        "uri": "/sast/scanSettings/263"
+      },
+      {
+        "type": "git",
+        "rel": "source",
+        "uri": "/projects/263/sourceCode/remoteSettings/git"
+      }
+    ]
+  }
+]

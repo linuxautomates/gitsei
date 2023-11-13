@@ -1,0 +1,76 @@
+{
+  "content_type": "integration/jira/issues",
+  "value_type": "json_blob",
+  "fields": {
+    "key": {
+      "key": "key",
+      "value_type": "string",
+      "content_type": "id:integration/jira/issues"
+    },
+    "project_key": {
+      "key": "project_key",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "type": {
+      "key": "type",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "status": {
+      "key": "status",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "priority": {
+      "key": "priority",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "assignee": {
+      "key": "assignee",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "assignee_email": {
+      "key": "assignee_email",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "reporter": {
+      "key": "reporter",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "reporter_email": {
+      "key": "reporter_email",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "labels": {
+      "key": "labels",
+      "value_type": "json_array",
+      "content_type": "string"
+    },
+    "fix_versions": {
+      "key": "fix_versions",
+      "value_type": "json_array",
+      "content_type": "string"
+    },
+    "updated_at": {
+      "key": "updated_at",
+      "value_type": "string",
+      "content_type": "date"
+    },
+    "created_at": {
+      "key": "created_at",
+      "value_type": "string",
+      "content_type": "date"
+    },
+    "custom_fields": {
+      "key": "custom_fields",
+      "value_type": "json_blob",
+      "content_type": "integration/jira/custom_fields"
+    }
+  }
+}

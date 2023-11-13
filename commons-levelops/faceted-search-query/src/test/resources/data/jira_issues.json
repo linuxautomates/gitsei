@@ -1,0 +1,3835 @@
+[
+  {
+    "w_id": "d2d61601-11ae-418a-9382-ae6fd406faee",
+    "w_workitem_id": "LEV-4914",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4914_13",
+    "w_is_active": true,
+    "w_summary": "Create a default workflow profile with SCM only",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "f2d19d84-ae45-448a-aed5-fa6c58508f51",
+      "display_name": "Megha Tamvada"
+    },
+    "w_first_assignee": {
+      "id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+      "display_name": "sivareddy aeddula"
+    },
+    "w_desc_size": 95,
+    "w_hops": 6,
+    "w_bounces": 2,
+    "w_num_attachments": 1,
+    "w_created_at": 1646697693,
+    "w_updated_at": 1674148915,
+    "w_resolved_at": 1655848603,
+    "w_first_assigned_at": 1646949160,
+    "w_first_comment_at": 1651551945,
+    "w_first_attachment_at": 1655167264,
+    "w_age": 517,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "d2a1311b-d6d0-4408-9025-cd09a2111506",
+        "sprint_id": "1810",
+        "added_at": 1647696117,
+        "planned": true,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "33a18bc7-1b43-4a22-a415-bc73c2cfc62e",
+        "sprint_id": "1811",
+        "added_at": 1651513657,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-5129",
+        "relation": "is duplicated by",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "PROP-144",
+        "relation": "relates to",
+        "to_project": "PROP"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+          "cloud_id": "5d6049c4c812c40d27c01ea9",
+          "display_name": "Maxime Bellier"
+        },
+        "start_time": 1654033658,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "eb087936-a8b9-47af-8028-2aec32dc21cb",
+          "cloud_id": "6045c5f543eac6006f58c5b8",
+          "display_name": "Mandar Gaitonde"
+        },
+        "start_time": 1654033550,
+        "end_time": 1654033658
+      },
+      {
+        "assignee": {
+          "id": "d391729e-acd0-4c6b-99e0-3377b314ce65",
+          "cloud_id": "626ed3ac76b8d3006871bbc7",
+          "display_name": "Namit Shivaram"
+        },
+        "start_time": 1653369529,
+        "end_time": 1654033550
+      },
+      {
+        "assignee": {
+          "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+          "cloud_id": "5e6b0b13308ac10ced3a5839",
+          "display_name": "Srinath Chandrashekhar"
+        },
+        "start_time": 1651075385,
+        "end_time": 1653369529
+      },
+      {
+        "assignee": {
+          "id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+          "cloud_id": "610f0d97b704b400683b85f2",
+          "display_name": "sivareddy aeddula"
+        },
+        "start_time": 1651020869,
+        "end_time": 1651075385
+      },
+      {
+        "assignee": {
+          "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+          "cloud_id": "5e6b0b13308ac10ced3a5839",
+          "display_name": "Srinath Chandrashekhar"
+        },
+        "start_time": 1651020749,
+        "end_time": 1651020869
+      },
+      {
+        "assignee": {
+          "id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+          "cloud_id": "610f0d97b704b400683b85f2",
+          "display_name": "sivareddy aeddula"
+        },
+        "start_time": 1646949160,
+        "end_time": 1651020749
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 35690596,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1655848603,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 514743,
+        "status": "READY FOR QA",
+        "id": "10797",
+        "start_time": 1655333860,
+        "end_time": 1655848603
+      },
+      {
+        "time_spent": 448341,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1654885519,
+        "end_time": 1655333860
+      },
+      {
+        "time_spent": 3132969,
+        "status": "BLOCKED",
+        "id": "10798",
+        "start_time": 1651752550,
+        "end_time": 1654885519
+      },
+      {
+        "time_spent": 202723,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1651549827,
+        "end_time": 1651752550
+      },
+      {
+        "time_spent": 4679747,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1646870080,
+        "end_time": 1651549827
+      },
+      {
+        "time_spent": 172387,
+        "status": "TODO",
+        "id": "10786",
+        "start_time": 1646697693,
+        "end_time": 1646870080
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "TODO",
+        "state_transition_time": 9150910
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 514743
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 8978523
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 4298776
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "BLOCKED",
+        "state_transition_time": 4096053
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "TODO",
+        "state_transition_time": 8636167
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "BACKLOG",
+        "state_transition_time": 8463780
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 3784033
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "BLOCKED",
+        "state_transition_time": 3581310
+      },
+      {
+        "to_status": "BACKLOG",
+        "from_status": "TODO",
+        "state_transition_time": 172387
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 8187826
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 8015439
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "BLOCKED",
+        "state_transition_time": 3132969
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "TODO",
+        "state_transition_time": 5054857
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4882470
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 202723
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1654033658,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655848603,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 35614818
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "READY FOR QA",
+        "assignee_start_time": 1654033658,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655333860,
+        "status_end_time": 1655848603,
+        "hist_assignee_time": 514743
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1654033658,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1654885519,
+        "status_end_time": 1655333860,
+        "hist_assignee_time": 448341
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1654033658,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651752550,
+        "status_end_time": 1654885519,
+        "hist_assignee_time": 851861
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1651075385,
+        "assignee_end_time": 1653369529,
+        "status_start_time": 1651752550,
+        "status_end_time": 1654885519,
+        "hist_assignee_time": 1616979
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1651075385,
+        "assignee_end_time": 1653369529,
+        "status_start_time": 1651549827,
+        "status_end_time": 1651752550,
+        "hist_assignee_time": 202723
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1651075385,
+        "assignee_end_time": 1653369529,
+        "status_start_time": 1646870080,
+        "status_end_time": 1651549827,
+        "hist_assignee_time": 474442
+      }
+    ]
+  },
+  {
+    "w_id": "6f5e8634-7a64-42f0-8369-cf321609327d",
+    "w_workitem_id": "LEV-4907",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4907_13",
+    "w_is_active": true,
+    "w_summary": "Show available repos and let users select the repos they want to be scanned as part of the integration ",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "e94a82a9-a0cb-404a-b689-f713b6780aa6",
+      "display_name": "ashish.duthade",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "f2d19d84-ae45-448a-aed5-fa6c58508f51",
+      "display_name": "Megha Tamvada"
+    },
+    "w_first_assignee": {
+      "id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+      "display_name": "ashish"
+    },
+    "w_desc_size": 409,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1646853012,
+    "w_updated_at": 1674651551,
+    "w_resolved_at": 1654508184,
+    "w_first_assigned_at": 1646981375,
+    "w_first_comment_at": 1647449170,
+    "w_first_attachment_at": 1648558028,
+    "w_age": 516,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "ce029837-d5f7-44d7-b198-7b6b057e0e08",
+        "sprint_id": "1810",
+        "added_at": 1647696195,
+        "planned": true,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "c5165b45-11f9-4241-aa0b-8d3ba0a638d6",
+        "sprint_id": "1811",
+        "added_at": 1651513657,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4949",
+        "relation": "relates to",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "LEV-5153",
+        "relation": "causes",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "LEV-5155",
+        "relation": "causes",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "LFE-2699",
+        "relation": "is cloned by",
+        "to_project": "LFE"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "e94a82a9-a0cb-404a-b689-f713b6780aa6",
+          "cloud_id": "63b47b394bc858b303ce7471",
+          "display_name": "ashish.duthade"
+        },
+        "start_time": 1674651551,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+          "cloud_id": "60f5b52f56c7a7007080884d",
+          "display_name": "ashish"
+        },
+        "start_time": 1646981375,
+        "end_time": 1674651551
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 37031015,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1654508184,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 6,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1654508178,
+        "end_time": 1654508184
+      },
+      {
+        "time_spent": 5678984,
+        "status": "READY FOR QA",
+        "id": "10797",
+        "start_time": 1648829194,
+        "end_time": 1654508178
+      },
+      {
+        "time_spent": 950409,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1647878785,
+        "end_time": 1648829194
+      },
+      {
+        "time_spent": 1015666,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1646863119,
+        "end_time": 1647878785
+      },
+      {
+        "time_spent": 10107,
+        "status": "TODO",
+        "id": "10786",
+        "start_time": 1646853012,
+        "end_time": 1646863119
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "TODO",
+        "state_transition_time": 7655172
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 5678990
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 7645065
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6629399
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 6
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "TODO",
+        "state_transition_time": 1976182
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "BACKLOG",
+        "state_transition_time": 1966075
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 950409
+      },
+      {
+        "to_status": "BACKLOG",
+        "from_status": "TODO",
+        "state_transition_time": 10107
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 1025773
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 1015666
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "TODO",
+        "state_transition_time": 7655166
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 5678984
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "BACKLOG",
+        "state_transition_time": 7645059
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6629393
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "ashish",
+        "historical_assignee_id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+        "issue_status": "DONE",
+        "assignee_start_time": 1646981375,
+        "assignee_end_time": 1674651551,
+        "status_start_time": 1654508184,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 20143367
+      },
+      {
+        "historical_assignee": "ashish",
+        "historical_assignee_id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1646981375,
+        "assignee_end_time": 1674651551,
+        "status_start_time": 1654508178,
+        "status_end_time": 1654508184,
+        "hist_assignee_time": 6
+      },
+      {
+        "historical_assignee": "ashish",
+        "historical_assignee_id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+        "issue_status": "READY FOR QA",
+        "assignee_start_time": 1646981375,
+        "assignee_end_time": 1674651551,
+        "status_start_time": 1648829194,
+        "status_end_time": 1654508178,
+        "hist_assignee_time": 5678984
+      },
+      {
+        "historical_assignee": "ashish",
+        "historical_assignee_id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1646981375,
+        "assignee_end_time": 1674651551,
+        "status_start_time": 1647878785,
+        "status_end_time": 1648829194,
+        "hist_assignee_time": 950409
+      },
+      {
+        "historical_assignee": "ashish",
+        "historical_assignee_id": "0c693cc2-901c-4f37-82c6-0ae449ee0fc8",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1646981375,
+        "assignee_end_time": 1674651551,
+        "status_start_time": 1646863119,
+        "status_end_time": 1647878785,
+        "hist_assignee_time": 897410
+      }
+    ]
+  },
+  {
+    "w_id": "23b43d0a-d16c-4fc2-9d19-b8e086d518f5",
+    "w_workitem_id": "LEV-4911",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4911_13",
+    "w_is_active": true,
+    "w_summary": "backend creates demo dashboard ",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "TASK",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+      "display_name": "Thanh Tran"
+    },
+    "w_first_assignee": {
+      "id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+      "display_name": "Jose Ivan Leon Islas"
+    },
+    "w_desc_size": 81,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1646867848,
+    "w_updated_at": 1674148904,
+    "w_resolved_at": 1655834824,
+    "w_first_assigned_at": 1646867867,
+    "w_first_comment_at": 1650147075,
+    "w_age": 516,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "5cb5a28b-a336-47dd-add1-e9b779e121e7",
+        "sprint_id": "1810",
+        "added_at": 1647695994,
+        "planned": true,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "39d8e0b0-e8e9-4e9d-9bc9-167ebc45dde4",
+        "sprint_id": "1811",
+        "added_at": 1651513649,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LFE-3098",
+        "relation": "relates to",
+        "to_project": "LFE"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+          "cloud_id": "5d6049c4c812c40d27c01ea9",
+          "display_name": "Maxime Bellier"
+        },
+        "start_time": 1652909067,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+          "cloud_id": "5d9b9f8281ec020c3e165814",
+          "display_name": "Jose Ivan Leon Islas"
+        },
+        "start_time": 1646867867,
+        "end_time": 1652909067
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 35704375,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1655834824,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 1635472,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1654199352,
+        "end_time": 1655834824
+      },
+      {
+        "time_spent": 1231,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1654198121,
+        "end_time": 1654199352
+      },
+      {
+        "time_spent": 1289053,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1652909068,
+        "end_time": 1654198121
+      },
+      {
+        "time_spent": 4992620,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1647916448,
+        "end_time": 1652909068
+      },
+      {
+        "time_spent": 1048600,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1646867848,
+        "end_time": 1647916448
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 8966976
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 7918376
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 1635472
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 1636703
+      },
+      {
+        "to_status": "BACKLOG",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 4992620
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 1048600
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "BACKLOG",
+        "state_transition_time": 7331504
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6282904
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 1231
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BACKLOG",
+        "state_transition_time": 7330273
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6281673
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1652909067,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655834824,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 35628597
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1652909067,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1654199352,
+        "status_end_time": 1655834824,
+        "hist_assignee_time": 1635472
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1652909067,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1654198121,
+        "status_end_time": 1654199352,
+        "hist_assignee_time": 1231
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1652909067,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1652909068,
+        "status_end_time": 1654198121,
+        "hist_assignee_time": 1289053
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1652909067,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647916448,
+        "status_end_time": 1652909068,
+        "hist_assignee_time": 1
+      },
+      {
+        "historical_assignee": "Jose Ivan Leon Islas",
+        "historical_assignee_id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1646867867,
+        "assignee_end_time": 1652909067,
+        "status_start_time": 1647916448,
+        "status_end_time": 1652909068,
+        "hist_assignee_time": 4992619
+      },
+      {
+        "historical_assignee": "Jose Ivan Leon Islas",
+        "historical_assignee_id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1646867867,
+        "assignee_end_time": 1652909067,
+        "status_start_time": 1646867848,
+        "status_end_time": 1647916448,
+        "hist_assignee_time": 1048581
+      }
+    ]
+  },
+  {
+    "w_id": "bd07eb33-5450-4cb6-a53a-dbf8e3a7ced7",
+    "w_workitem_id": "LEV-4912",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4912_13",
+    "w_is_active": true,
+    "w_summary": "backend creates dashboard with tenant data after 2 weeks ingestion",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "TASK",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+      "display_name": "Thanh Tran"
+    },
+    "w_first_assignee": {
+      "id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+      "display_name": "Jose Ivan Leon Islas"
+    },
+    "w_desc_size": 110,
+    "w_hops": 3,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1646868049,
+    "w_updated_at": 1674148920,
+    "w_resolved_at": 1655847092,
+    "w_first_assigned_at": 1646868049,
+    "w_first_comment_at": 1649047653,
+    "w_age": 516,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "685833e2-f79a-441f-93fe-fdda56c4a579",
+        "sprint_id": "1810",
+        "added_at": 1647696296,
+        "planned": true,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "4a4db1d6-690d-4132-8cb0-5a244561fccd",
+        "sprint_id": "1811",
+        "added_at": 1651513657,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4975",
+        "relation": "relates to",
+        "to_project": "LEV"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+          "cloud_id": "5d6049c4c812c40d27c01ea9",
+          "display_name": "Maxime Bellier"
+        },
+        "start_time": 1652909084,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+          "cloud_id": "610f0d97b704b400683b85f2",
+          "display_name": "sivareddy aeddula"
+        },
+        "start_time": 1646981799,
+        "end_time": 1652909084
+      },
+      {
+        "assignee": {
+          "id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+          "cloud_id": "5d9b9f8281ec020c3e165814",
+          "display_name": "Jose Ivan Leon Islas"
+        },
+        "start_time": 1646868049,
+        "end_time": 1646981799
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 35692107,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1655847092,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 7034320,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1648812772,
+        "end_time": 1655847092
+      },
+      {
+        "time_spent": 963013,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1647849759,
+        "end_time": 1648812772
+      },
+      {
+        "time_spent": 981710,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1646868049,
+        "end_time": 1647849759
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 8979043
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 7997333
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 7034320
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 981710
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BACKLOG",
+        "state_transition_time": 1944723
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 963013
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1652909084,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655847092,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 35616329
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1652909084,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648812772,
+        "status_end_time": 1655847092,
+        "hist_assignee_time": 2938008
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1646981799,
+        "assignee_end_time": 1652909084,
+        "status_start_time": 1648812772,
+        "status_end_time": 1655847092,
+        "hist_assignee_time": 4096312
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1646981799,
+        "assignee_end_time": 1652909084,
+        "status_start_time": 1647849759,
+        "status_end_time": 1648812772,
+        "hist_assignee_time": 963013
+      },
+      {
+        "historical_assignee": "sivareddy aeddula",
+        "historical_assignee_id": "7d86ec44-614c-43cf-8a55-6cfd7345f6af",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1646981799,
+        "assignee_end_time": 1652909084,
+        "status_start_time": 1646868049,
+        "status_end_time": 1647849759,
+        "hist_assignee_time": 867960
+      },
+      {
+        "historical_assignee": "Jose Ivan Leon Islas",
+        "historical_assignee_id": "74651221-a86a-48e9-aaa4-5e34b194c8c3",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1646868049,
+        "assignee_end_time": 1646981799,
+        "status_start_time": 1646868049,
+        "status_end_time": 1647849759,
+        "hist_assignee_time": 113750
+      }
+    ]
+  },
+  {
+    "w_id": "7020f5a4-dafd-486f-8bb8-2b868583128e",
+    "w_workitem_id": "LEV-4945",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4945_13",
+    "w_is_active": true,
+    "w_summary": "Tie communication templates to issue templates",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_status": "DONE",
+    "w_workitem_type": "IMPROVEMENT",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "feature_request",
+      "jira_escalated"
+    ],
+    "w_assignee": {
+      "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+      "display_name": "Srinath Chandrashekhar",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "d4ff95dc-b8a8-4fc0-9432-b15d513d93b9",
+      "display_name": "Meghana Dwarakanath"
+    },
+    "w_first_assignee": {
+      "id": "a1521e4b-ac2b-4a32-b5d6-db0980b4eba6",
+      "display_name": "srinath.chandrashekhar"
+    },
+    "w_desc_size": 297,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1647278910,
+    "w_updated_at": 1674148876,
+    "w_resolved_at": 1651857715,
+    "w_first_assigned_at": 1648153220,
+    "w_first_comment_at": 1647839605,
+    "w_age": 511,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "86c5e5d7-6e08-409f-9f1a-a651dc446cd0",
+        "sprint_id": "1810",
+        "added_at": 1650926153,
+        "planned": true,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "e361401c-81d1-4ea7-911e-59423aeabdba",
+        "sprint_id": "1811",
+        "added_at": 1651513658,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-5147",
+        "relation": "is duplicated by",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "LFE-2998",
+        "relation": "relates to",
+        "to_project": "LFE"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+          "cloud_id": "5e6b0b13308ac10ced3a5839",
+          "display_name": "Srinath Chandrashekhar"
+        },
+        "start_time": 1648611293,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "a1521e4b-ac2b-4a32-b5d6-db0980b4eba6",
+          "cloud_id": "622f65975b6d710070a06d78",
+          "display_name": "srinath.chandrashekhar"
+        },
+        "start_time": 1648153220,
+        "end_time": 1648611293
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 39681484,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1651857715,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 35259,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1651822456,
+        "end_time": 1651857715
+      },
+      {
+        "time_spent": 234885,
+        "status": "READY FOR QA",
+        "id": "10797",
+        "start_time": 1651587571,
+        "end_time": 1651822456
+      },
+      {
+        "time_spent": 35746,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1651551825,
+        "end_time": 1651587571
+      },
+      {
+        "time_spent": 92429,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1651459396,
+        "end_time": 1651551825
+      },
+      {
+        "time_spent": 4180486,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1647278910,
+        "end_time": 1651459396
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 270144
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4578805
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 398319
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 35259
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 305890
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4308661
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 128175
+      },
+      {
+        "to_status": "READY FOR QA",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 35746
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4180486
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "READY FOR QA",
+        "state_transition_time": 234885
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4543546
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 363060
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 270631
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4272915
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 92429
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "DONE",
+        "assignee_start_time": 1648611293,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651857715,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 39605706
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1648611293,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651822456,
+        "status_end_time": 1651857715,
+        "hist_assignee_time": 35259
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "READY FOR QA",
+        "assignee_start_time": 1648611293,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651587571,
+        "status_end_time": 1651822456,
+        "hist_assignee_time": 234885
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1648611293,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651551825,
+        "status_end_time": 1651587571,
+        "hist_assignee_time": 35746
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1648611293,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651459396,
+        "status_end_time": 1651551825,
+        "hist_assignee_time": 92429
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1648611293,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647278910,
+        "status_end_time": 1651459396,
+        "hist_assignee_time": 2848103
+      }
+    ]
+  },
+  {
+    "w_id": "43c28b11-4ce6-4c61-9df6-f53f1b5511ca",
+    "w_workitem_id": "LEV-4948",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4948_13",
+    "w_is_active": true,
+    "w_summary": "Inconsistent SCM repos returned for for SCM metrics",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_status": "WONT DO",
+    "w_workitem_type": "BUG",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "jira_escalated"
+    ],
+    "w_assignee": {
+      "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+      "display_name": "Srinath Chandrashekhar",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "71f45e68-dd0b-4c27-aada-800501bce37a",
+      "display_name": "Shashank Kumar"
+    },
+    "w_first_assignee": {
+      "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+      "display_name": "Srinath Chandrashekhar"
+    },
+    "w_desc_size": 2729,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 4,
+    "w_created_at": 1647296150,
+    "w_updated_at": 1674148901,
+    "w_resolved_at": 1652767093,
+    "w_due_at": 1647475200,
+    "w_first_assigned_at": 1647839926,
+    "w_first_comment_at": 1647299130,
+    "w_first_attachment_at": 1647299130,
+    "w_age": 511,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "WON'T DO",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "fbfe2c8b-caaa-4262-b743-870c39775a46",
+        "sprint_id": "1810",
+        "added_at": 1647387677,
+        "planned": true,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "8c6e8f00-2845-4165-8429-9e36b4487765",
+        "sprint_id": "1811",
+        "added_at": 1651513658,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LFE-3077",
+        "relation": "relates to",
+        "to_project": "LFE"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+          "cloud_id": "5e6b0b13308ac10ced3a5839",
+          "display_name": "Srinath Chandrashekhar"
+        },
+        "start_time": 1647839926,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 38772106,
+        "status": "WONT DO",
+        "id": "10785",
+        "start_time": 1652767093,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 10919,
+        "status": "BLOCKED",
+        "id": "10798",
+        "start_time": 1652756174,
+        "end_time": 1652767093
+      },
+      {
+        "time_spent": 4708083,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1648048091,
+        "end_time": 1652756174
+      },
+      {
+        "time_spent": 751941,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1647296150,
+        "end_time": 1648048091
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "WONT DO",
+        "from_status": "BACKLOG",
+        "state_transition_time": 5470943
+      },
+      {
+        "to_status": "WONT DO",
+        "from_status": "BLOCKED",
+        "state_transition_time": 10919
+      },
+      {
+        "to_status": "WONT DO",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 4719002
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "BACKLOG",
+        "state_transition_time": 5460024
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 4708083
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 751941
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "WONT DO",
+        "assignee_start_time": 1647839926,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1652767093,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 38696328
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1647839926,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1652756174,
+        "status_end_time": 1652767093,
+        "hist_assignee_time": 10919
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1647839926,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648048091,
+        "status_end_time": 1652756174,
+        "hist_assignee_time": 4708083
+      },
+      {
+        "historical_assignee": "Srinath Chandrashekhar",
+        "historical_assignee_id": "9dfc1da4-b7c4-4d00-8e8e-18e2205850c6",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1647839926,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647296150,
+        "status_end_time": 1648048091,
+        "hist_assignee_time": 208165
+      }
+    ]
+  },
+  {
+    "w_id": "d4a34ad6-6fc4-47f4-97bc-5f012cb6eb0e",
+    "w_workitem_id": "LEV-4949",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4949_13",
+    "w_is_active": true,
+    "w_summary": "Do not start ingestion after connecting scm integrations but start it on demand",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier"
+    },
+    "w_first_assignee": {
+      "id": "39dabc5e-e4a4-47b4-933d-4863fa8cb100",
+      "display_name": "Maxime Bellier"
+    },
+    "w_desc_size": 379,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1647326776,
+    "w_updated_at": 1674148842,
+    "w_resolved_at": 1651604134,
+    "w_first_assigned_at": 1647326855,
+    "w_first_comment_at": 1647982312,
+    "w_age": 510,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "0016542f-d930-42be-a864-130128afc813",
+        "sprint_id": "1810",
+        "added_at": 1647696378,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "821bf775-dc5f-4e08-9465-5303e122f8f0",
+        "sprint_id": "1811",
+        "added_at": 1651513658,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4907",
+        "relation": "relates to",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "LFE-2663",
+        "relation": "causes",
+        "to_project": "LFE"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+          "cloud_id": "5d6049c4c812c40d27c01ea9",
+          "display_name": "Maxime Bellier"
+        },
+        "start_time": 1647326855,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 39935065,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1651604134,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 3532219,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1648071915,
+        "end_time": 1651604134
+      },
+      {
+        "time_spent": 59512,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1648012403,
+        "end_time": 1648071915
+      },
+      {
+        "time_spent": 103395,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1647909008,
+        "end_time": 1648012403
+      },
+      {
+        "time_spent": 582232,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1647326776,
+        "end_time": 1647909008
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4277358
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 3695126
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 3532219
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 3591731
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 582232
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "BACKLOG",
+        "state_transition_time": 745139
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 162907
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 59512
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BACKLOG",
+        "state_transition_time": 685627
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 103395
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651604134,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 39859287
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648071915,
+        "status_end_time": 1651604134,
+        "hist_assignee_time": 3532219
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648012403,
+        "status_end_time": 1648071915,
+        "hist_assignee_time": 59512
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647909008,
+        "status_end_time": 1648012403,
+        "hist_assignee_time": 103395
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647326776,
+        "status_end_time": 1647909008,
+        "hist_assignee_time": 582153
+      }
+    ]
+  },
+  {
+    "w_id": "d4a34ad6-6fc4-47f4-97bc-5f012cb6eb0e",
+    "w_workitem_id": "LEV-4949",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4949_13",
+    "w_is_active": true,
+    "w_summary": "Do not start ingestion after connecting scm integrations but start it on demand",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier"
+    },
+    "w_first_assignee": {
+      "id": "39dabc5e-e4a4-47b4-933d-4863fa8cb100",
+      "display_name": "Maxime Bellier"
+    },
+    "w_desc_size": 379,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1647326776,
+    "w_updated_at": 1674148842,
+    "w_resolved_at": 1651604134,
+    "w_first_assigned_at": 1647326855,
+    "w_first_comment_at": 1647982312,
+    "w_age": 510,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "0016542f-d930-42be-a864-130128afc813",
+        "sprint_id": "1810",
+        "added_at": 1647696378,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "821bf775-dc5f-4e08-9465-5303e122f8f0",
+        "sprint_id": "1811",
+        "added_at": 1651513658,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4907",
+        "relation": "relates to",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "LFE-2663",
+        "relation": "causes",
+        "to_project": "LFE"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+          "cloud_id": "5d6049c4c812c40d27c01ea9",
+          "display_name": "Maxime Bellier"
+        },
+        "start_time": 1647326855,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 39935065,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1651604134,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 3532219,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1648071915,
+        "end_time": 1651604134
+      },
+      {
+        "time_spent": 59512,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1648012403,
+        "end_time": 1648071915
+      },
+      {
+        "time_spent": 103395,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1647909008,
+        "end_time": 1648012403
+      },
+      {
+        "time_spent": 582232,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1647326776,
+        "end_time": 1647909008
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 4277358
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 3695126
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 3532219
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 3591731
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 582232
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "BACKLOG",
+        "state_transition_time": 745139
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 162907
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 59512
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BACKLOG",
+        "state_transition_time": 685627
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 103395
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1651604134,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 39859287
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648071915,
+        "status_end_time": 1651604134,
+        "hist_assignee_time": 3532219
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648012403,
+        "status_end_time": 1648071915,
+        "hist_assignee_time": 59512
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647909008,
+        "status_end_time": 1648012403,
+        "hist_assignee_time": 103395
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1647326855,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647326776,
+        "status_end_time": 1647909008,
+        "hist_assignee_time": 582153
+      }
+    ]
+  },
+  {
+    "w_id": "4913a9e1-7524-4736-8c08-74c347f7bffd",
+    "w_workitem_id": "LEV-4975",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LEV-4975_13",
+    "w_is_active": true,
+    "w_summary": "Tweak SCM ingestion to cover 2 weeks of onboarding",
+    "w_priority": "P2",
+    "w_project": "LEV",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "DONE",
+    "w_workitem_type": "TASK",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "LO20220225",
+          "LO20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier"
+    },
+    "w_first_assignee": {
+      "id": "39dabc5e-e4a4-47b4-933d-4863fa8cb100",
+      "display_name": "Maxime Bellier"
+    },
+    "w_desc_size": 0,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 0,
+    "w_created_at": 1647908960,
+    "w_updated_at": 1674148839,
+    "w_resolved_at": 1654105460,
+    "w_first_assigned_at": 1647908985,
+    "w_first_comment_at": 1648237935,
+    "w_age": 503,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "65ec2387-d91f-4d7b-9a3d-8a62a1a1cb38",
+        "sprint_id": "1810",
+        "added_at": 1648071932,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      },
+      {
+        "id": "4d162a3b-e580-417e-bd34-6c9a394f0e39",
+        "sprint_id": "1811",
+        "added_at": 1653501420,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4912",
+        "relation": "relates to",
+        "to_project": "LEV"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED"
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+          "cloud_id": "5d6049c4c812c40d27c01ea9",
+          "display_name": "Maxime Bellier"
+        },
+        "start_time": 1647908985,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 37433739,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1654105460,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 597666,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1653507794,
+        "end_time": 1654105460
+      },
+      {
+        "time_spent": 2918,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1653504876,
+        "end_time": 1653507794
+      },
+      {
+        "time_spent": 4794,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1653500082,
+        "end_time": 1653504876
+      },
+      {
+        "time_spent": 4319272,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1649180810,
+        "end_time": 1653500082
+      },
+      {
+        "time_spent": 1108877,
+        "status": "IN PROGRESS",
+        "id": "3",
+        "start_time": 1648071933,
+        "end_time": 1649180810
+      },
+      {
+        "time_spent": 162954,
+        "status": "BACKLOG",
+        "id": "10632",
+        "start_time": 1647908979,
+        "end_time": 1648071933
+      },
+      {
+        "time_spent": 19,
+        "status": "TODO",
+        "id": "10786",
+        "start_time": 1647908960,
+        "end_time": 1647908979
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1810",
+        "name": "LO20220225",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1644645264,
+        "end_time": 1645854720,
+        "completed_at": 1651513648
+      },
+      {
+        "id": "1811",
+        "name": "LO20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651522208,
+        "end_time": 1652723340,
+        "completed_at": 1667899624
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "TODO",
+        "state_transition_time": 6196500
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "BACKLOG",
+        "state_transition_time": 6196481
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 605378
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 6033527
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 597666
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 600584
+      },
+      {
+        "to_status": "BACKLOG",
+        "from_status": "TODO",
+        "state_transition_time": 19
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 5591122
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "DONE",
+        "state_transition_time": 4319272
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 5591103
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 5428149
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 162973
+      },
+      {
+        "to_status": "IN PROGRESS",
+        "from_status": "BACKLOG",
+        "state_transition_time": 162954
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "TODO",
+        "state_transition_time": 5598834
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "DONE",
+        "state_transition_time": 4326984
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "BACKLOG",
+        "state_transition_time": 5598815
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 7712
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 5435861
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 2918
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "TODO",
+        "state_transition_time": 5595916
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "DONE",
+        "state_transition_time": 4324066
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BACKLOG",
+        "state_transition_time": 5595897
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 4794
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "IN PROGRESS",
+        "state_transition_time": 5432943
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1654105460,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 37357961
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1653507794,
+        "status_end_time": 1654105460,
+        "hist_assignee_time": 597666
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1653504876,
+        "status_end_time": 1653507794,
+        "hist_assignee_time": 2918
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1653500082,
+        "status_end_time": 1653504876,
+        "hist_assignee_time": 4794
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "DONE",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1649180810,
+        "status_end_time": 1653500082,
+        "hist_assignee_time": 4319272
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "IN PROGRESS",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1648071933,
+        "status_end_time": 1649180810,
+        "hist_assignee_time": 1108877
+      },
+      {
+        "historical_assignee": "Maxime Bellier",
+        "historical_assignee_id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+        "issue_status": "BACKLOG",
+        "assignee_start_time": 1647908985,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1647908979,
+        "status_end_time": 1648071933,
+        "hist_assignee_time": 162948
+      }
+    ]
+  },
+  {
+    "w_id": "53a2c077-7de5-4d25-8439-41a4489ac346",
+    "w_workitem_id": "LFE-2998",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LFE-2998_13",
+    "w_is_active": true,
+    "w_summary": "email and slack notifications in issue templates need to be dynamic",
+    "w_priority": "P2",
+    "w_project": "LFE",
+    "w_status": "DONE",
+    "w_workitem_type": "TASK",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "FE20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "peer_testing_done"
+    ],
+    "w_assignee": {
+      "id": "56031c78-c186-4f8f-a208-955a9ae75fcd",
+      "display_name": "Ajay Sakat",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+      "display_name": "Thanh Tran"
+    },
+    "w_first_assignee": {
+      "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 731,
+    "w_hops": 3,
+    "w_bounces": 1,
+    "w_num_attachments": 3,
+    "w_created_at": 1651645600,
+    "w_updated_at": 1674650256,
+    "w_resolved_at": 1652143732,
+    "w_first_assigned_at": 1651645600,
+    "w_first_comment_at": 1651795828,
+    "w_first_attachment_at": 1651645600,
+    "w_age": 460,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "DONE",
+    "w_status_category": "Done",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "35d758c3-5f1b-461b-8304-8e16ee0389da",
+        "sprint_id": "1812",
+        "added_at": 1651645600,
+        "planned": true,
+        "delivered": true,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4945",
+        "relation": "relates to",
+        "to_project": "LEV"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1812",
+        "name": "FE20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+          "cloud_id": "615e75b6c7bea40069507c8b",
+          "display_name": "Ajay Sakat"
+        },
+        "start_time": 1674650256,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+          "cloud_id": "615e75b6c7bea40069507c8b",
+          "display_name": "Ajay Sakat"
+        },
+        "start_time": 1651725510,
+        "end_time": 1674650256
+      },
+      {
+        "assignee": {
+          "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1651645600,
+        "end_time": 1651725510
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 39395467,
+        "status": "DONE",
+        "id": "10001",
+        "start_time": 1652143732,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 51072,
+        "status": "READY FOR PROD",
+        "id": "10805",
+        "start_time": 1652092660,
+        "end_time": 1652143732
+      },
+      {
+        "time_spent": 280337,
+        "status": "MERGED",
+        "id": "10799",
+        "start_time": 1651812323,
+        "end_time": 1652092660
+      },
+      {
+        "time_spent": 84782,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1651727541,
+        "end_time": 1651812323
+      },
+      {
+        "time_spent": 81941,
+        "status": "TODO",
+        "id": "10786",
+        "start_time": 1651645600,
+        "end_time": 1651727541
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1812",
+        "name": "FE20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651516876,
+        "end_time": 1652640060,
+        "completed_at": 1667893901
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DONE",
+        "from_status": "TODO",
+        "state_transition_time": 498132
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 416191
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "READY FOR PROD",
+        "state_transition_time": 51072
+      },
+      {
+        "to_status": "DONE",
+        "from_status": "MERGED",
+        "state_transition_time": 331409
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 81941
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "TODO",
+        "state_transition_time": 447060
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 365119
+      },
+      {
+        "to_status": "READY FOR PROD",
+        "from_status": "MERGED",
+        "state_transition_time": 280337
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "TODO",
+        "state_transition_time": 166723
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 84782
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Ajay Sakat",
+        "historical_assignee_id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+        "issue_status": "DONE",
+        "assignee_start_time": 1651725510,
+        "assignee_end_time": 1674650256,
+        "status_start_time": 1652143732,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 22506524
+      },
+      {
+        "historical_assignee": "Ajay Sakat",
+        "historical_assignee_id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+        "issue_status": "READY FOR PROD",
+        "assignee_start_time": 1651725510,
+        "assignee_end_time": 1674650256,
+        "status_start_time": 1652092660,
+        "status_end_time": 1652143732,
+        "hist_assignee_time": 51072
+      },
+      {
+        "historical_assignee": "Ajay Sakat",
+        "historical_assignee_id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+        "issue_status": "MERGED",
+        "assignee_start_time": 1651725510,
+        "assignee_end_time": 1674650256,
+        "status_start_time": 1651812323,
+        "status_end_time": 1652092660,
+        "hist_assignee_time": 280337
+      },
+      {
+        "historical_assignee": "Ajay Sakat",
+        "historical_assignee_id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1651725510,
+        "assignee_end_time": 1674650256,
+        "status_start_time": 1651727541,
+        "status_end_time": 1651812323,
+        "hist_assignee_time": 84782
+      },
+      {
+        "historical_assignee": "Ajay Sakat",
+        "historical_assignee_id": "8224bc57-e107-44b2-8721-d28e52568d8a",
+        "issue_status": "TODO",
+        "assignee_start_time": 1651725510,
+        "assignee_end_time": 1674650256,
+        "status_start_time": 1651645600,
+        "status_end_time": 1651727541,
+        "hist_assignee_time": 2031
+      },
+      {
+        "historical_assignee": "Thanh Tran",
+        "historical_assignee_id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+        "issue_status": "TODO",
+        "assignee_start_time": 1651645600,
+        "assignee_end_time": 1651725510,
+        "status_start_time": 1651645600,
+        "status_end_time": 1651727541,
+        "hist_assignee_time": 79910
+      }
+    ]
+  },
+  {
+    "w_id": "424eb161-a2c7-4253-bfe7-f2f00ddd21d6",
+    "w_workitem_id": "LFE-3077",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LFE-3077_13",
+    "w_is_active": true,
+    "w_summary": "support paginated SCM api calls ",
+    "w_priority": "P2",
+    "w_project": "LFE",
+    "w_status": "BLOCKED (MIGRATED)",
+    "w_workitem_type": "TASK",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "FE20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "19122af1-0614-4ae9-b72f-085e3dd2cc69",
+      "display_name": "Madhav Bhasin",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+      "display_name": "Thanh Tran"
+    },
+    "w_first_assignee": {
+      "id": "1d2e0ef1-ca84-478a-867f-bfa731a1683c",
+      "display_name": "Madhav Bhasin"
+    },
+    "w_desc_size": 209,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1652763389,
+    "w_updated_at": 1674149427,
+    "w_first_assigned_at": 1652763389,
+    "w_first_comment_at": 1652771497,
+    "w_first_attachment_at": 1652771496,
+    "w_age": 447,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "",
+    "w_status_category": "To Do",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "b96e0530-241e-4c02-8d6d-72861f0dc9ea",
+        "sprint_id": "1812",
+        "added_at": 1652763389,
+        "planned": false,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4948",
+        "relation": "relates to",
+        "to_project": "LEV"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1812",
+        "name": "FE20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "19122af1-0614-4ae9-b72f-085e3dd2cc69",
+          "cloud_id": "611b4043ee94700071830dfd",
+          "display_name": "Madhav Bhasin"
+        },
+        "start_time": 1652763389,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 38601661,
+        "status": "BLOCKED",
+        "id": "10798",
+        "start_time": 1652937538,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 170318,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1652767220,
+        "end_time": 1652937538
+      },
+      {
+        "time_spent": 3831,
+        "status": "TODO",
+        "id": "10786",
+        "start_time": 1652763389,
+        "end_time": 1652767220
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1812",
+        "name": "FE20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651516876,
+        "end_time": 1652640060,
+        "completed_at": 1667893901
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 3831
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "TODO",
+        "state_transition_time": 174149
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 170318
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "19122af1-0614-4ae9-b72f-085e3dd2cc69",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1652763389,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1652937538,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 38525883
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "19122af1-0614-4ae9-b72f-085e3dd2cc69",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1652763389,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1652767220,
+        "status_end_time": 1652937538,
+        "hist_assignee_time": 170318
+      },
+      {
+        "historical_assignee": "Madhav Bhasin",
+        "historical_assignee_id": "19122af1-0614-4ae9-b72f-085e3dd2cc69",
+        "issue_status": "TODO",
+        "assignee_start_time": 1652763389,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1652763389,
+        "status_end_time": 1652767220,
+        "hist_assignee_time": 3831
+      }
+    ]
+  },
+  {
+    "w_id": "91d05755-5d2f-480c-bd3d-8503f7ecf264",
+    "w_workitem_id": "LFE-3098",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "LFE-3098_13",
+    "w_is_active": true,
+    "w_summary": "[FE] Create demo dashboard",
+    "w_priority": "P2",
+    "w_project": "LFE",
+    "w_epic": "LFE-2567",
+    "w_parent_workitem_id": "LFE-2567",
+    "w_status": "CODE MERGED",
+    "w_workitem_type": "STORY",
+    "w_custom_fields": [
+      {
+        "name": "customfield_10006",
+        "str": "LFE-2567"
+      },
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "FE20220516"
+        ]
+      }
+    ],
+    "w_components": [],
+    "w_labels": [
+      "peer_testing_done"
+    ],
+    "w_assignee": {
+      "id": "71c6a5ba-c5d7-4199-87d2-cb5de28711e4",
+      "display_name": "Shivam Yadav",
+      "active": true
+    },
+    "w_reporter": {
+      "id": "84f5f0ff-8012-4e20-b376-702c64d9ca53",
+      "display_name": "Maxime Bellier"
+    },
+    "w_first_assignee": {
+      "id": "c7f73013-6417-48ad-8970-27f1834435ad",
+      "display_name": "Shivam Yadav"
+    },
+    "w_desc_size": 580,
+    "w_hops": 0,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1653007637,
+    "w_updated_at": 1674149423,
+    "w_first_assigned_at": 1653024632,
+    "w_first_comment_at": 1653575124,
+    "w_first_attachment_at": 1653575387,
+    "w_age": 444,
+    "w_unestimated_ticket": 1,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "",
+    "w_status_category": "In Progress",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "17509ecf-0e9f-4377-a89d-1691dd82b503",
+        "sprint_id": "1812",
+        "added_at": 1653024635,
+        "planned": false,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 0.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4911",
+        "relation": "relates to",
+        "to_project": "LEV"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1812",
+        "name": "FE20220516",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "71c6a5ba-c5d7-4199-87d2-cb5de28711e4",
+          "cloud_id": "60b6a61993e3f500716087d9",
+          "display_name": "Shivam Yadav"
+        },
+        "start_time": 1653024632,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 37432841,
+        "status": "MERGED",
+        "id": "10799",
+        "start_time": 1654106358,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 442498,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1653663860,
+        "end_time": 1654106358
+      },
+      {
+        "time_spent": 628937,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1653034923,
+        "end_time": 1653663860
+      },
+      {
+        "time_spent": 27286,
+        "status": "TODO",
+        "id": "10786",
+        "start_time": 1653007637,
+        "end_time": 1653034923
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1812",
+        "name": "FE20220516",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1651516876,
+        "end_time": 1652640060,
+        "completed_at": 1667893901
+      }
+    ],
+    "w_hist_story_points": [],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "TODO",
+        "state_transition_time": 27286
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "TODO",
+        "state_transition_time": 1098721
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 1071435
+      },
+      {
+        "to_status": "MERGED",
+        "from_status": "IN REVIEW",
+        "state_transition_time": 442498
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "TODO",
+        "state_transition_time": 656223
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 628937
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "71c6a5ba-c5d7-4199-87d2-cb5de28711e4",
+        "issue_status": "MERGED",
+        "assignee_start_time": 1653024632,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1654106358,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 37357063
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "71c6a5ba-c5d7-4199-87d2-cb5de28711e4",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1653024632,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1653663860,
+        "status_end_time": 1654106358,
+        "hist_assignee_time": 442498
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "71c6a5ba-c5d7-4199-87d2-cb5de28711e4",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1653024632,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1653034923,
+        "status_end_time": 1653663860,
+        "hist_assignee_time": 628937
+      },
+      {
+        "historical_assignee": "Shivam Yadav",
+        "historical_assignee_id": "71c6a5ba-c5d7-4199-87d2-cb5de28711e4",
+        "issue_status": "TODO",
+        "assignee_start_time": 1653024632,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1653007637,
+        "status_end_time": 1653034923,
+        "hist_assignee_time": 10291
+      }
+    ]
+  },
+  {
+    "w_id": "fac37054-f67b-49fb-813f-c5c874b5df40",
+    "w_workitem_id": "PROP-144",
+    "w_integration_id": 13,
+    "w_workitem_integ_id": "PROP-144_13",
+    "w_is_active": true,
+    "w_summary": "FE issue related to default SCM-only workflow profile",
+    "w_priority": "P2",
+    "w_project": "PROP",
+    "w_status": "IN REVIEW",
+    "w_workitem_type": "BUG",
+    "w_story_points": 2.0,
+    "w_custom_fields": [
+      {
+        "name": "customfield_10103",
+        "arr": [
+          "PROP Sprint 1"
+        ]
+      },
+      {
+        "name": "customfield_10105",
+        "float": 2.0
+      }
+    ],
+    "w_components": [
+      "Frontend"
+    ],
+    "w_labels": [],
+    "w_assignee": {
+      "id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+      "display_name": "Gopal Mandloi",
+      "active": false
+    },
+    "w_reporter": {
+      "id": "d391729e-acd0-4c6b-99e0-3377b314ce65",
+      "display_name": "Namit Shivaram"
+    },
+    "w_first_assignee": {
+      "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+      "display_name": "Thanh Tran"
+    },
+    "w_desc_size": 832,
+    "w_hops": 1,
+    "w_bounces": 0,
+    "w_num_attachments": 1,
+    "w_created_at": 1655333696,
+    "w_updated_at": 1674130360,
+    "w_first_assigned_at": 1655333806,
+    "w_first_comment_at": 1655767016,
+    "w_first_attachment_at": 1655333801,
+    "w_age": 418,
+    "w_unestimated_ticket": 0,
+    "w_ingested_at": 1691452800,
+    "w_resolution": "",
+    "w_status_category": "In Progress",
+    "w_original_estimate": 0.0,
+    "w_versions": [],
+    "w_fix_versions": [],
+    "w_sprint_mappings": [
+      {
+        "id": "3de930dd-7fb0-4aa3-9d12-e916abded084",
+        "sprint_id": "1813",
+        "added_at": 1655998904,
+        "planned": false,
+        "delivered": false,
+        "outside_of_sprint": false,
+        "ignorable_workitem_type": false,
+        "story_points_planned": 0.0,
+        "story_points_delivered": 2.0
+      }
+    ],
+    "w_links": [
+      {
+        "to_workitem_id": "LEV-4914",
+        "relation": "relates to",
+        "to_project": "LEV"
+      },
+      {
+        "to_workitem_id": "PROP-186",
+        "relation": "is blocked by",
+        "to_project": "PROP"
+      }
+    ],
+    "w_salesforce_cases": [],
+    "w_priorities_sla": {
+      "response_time": 86400,
+      "solve_time": 86400
+    },
+    "w_sprints": [
+      {
+        "id": "1813",
+        "name": "PROP Sprint 1",
+        "state": "CLOSED"
+      }
+    ],
+    "w_hist_assignees": [
+      {
+        "assignee": {
+          "id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+          "cloud_id": "626ee25f807e0000691abc04",
+          "display_name": "Gopal Mandloi"
+        },
+        "start_time": 1655681583,
+        "end_time": 1691463421
+      },
+      {
+        "assignee": {
+          "id": "1ba45bb0-7a99-4c90-830b-d6318b7f3a5f",
+          "cloud_id": "5fc4012e0d2f61006f8a1792",
+          "display_name": "Thanh Tran"
+        },
+        "start_time": 1655333806,
+        "end_time": 1655681583
+      }
+    ],
+    "w_hist_statuses": [
+      {
+        "time_spent": 35198361,
+        "status": "IN REVIEW",
+        "id": "10736",
+        "start_time": 1656340838,
+        "end_time": 1691539199
+      },
+      {
+        "time_spent": 3,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1656340835,
+        "end_time": 1656340838
+      },
+      {
+        "time_spent": 509663,
+        "status": "BLOCKED",
+        "id": "10798",
+        "start_time": 1655831172,
+        "end_time": 1656340835
+      },
+      {
+        "time_spent": 92396,
+        "status": "DEV IN PROGRESS",
+        "id": "3",
+        "start_time": 1655738776,
+        "end_time": 1655831172
+      },
+      {
+        "time_spent": 405080,
+        "status": "OPEN",
+        "id": "10737",
+        "start_time": 1655333696,
+        "end_time": 1655738776
+      }
+    ],
+    "w_hist_sprints": [
+      {
+        "id": "1813",
+        "name": "PROP Sprint 1",
+        "state": "CLOSED",
+        "goal": "",
+        "start_time": 1654043105,
+        "end_time": 1655252700,
+        "completed_at": 1667893603
+      }
+    ],
+    "w_hist_story_points": [
+      {
+        "story_points": 0.0,
+        "start_time": 1655333696,
+        "end_time": 1656052429
+      },
+      {
+        "story_points": 2.0,
+        "start_time": 1656052429,
+        "end_time": 1691463421
+      }
+    ],
+    "w_hist_state_transitions": [
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "BLOCKED",
+        "state_transition_time": 509663
+      },
+      {
+        "to_status": "DEV IN PROGRESS",
+        "from_status": "OPEN",
+        "state_transition_time": 1007139
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 92396
+      },
+      {
+        "to_status": "BLOCKED",
+        "from_status": "OPEN",
+        "state_transition_time": 497476
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "DEV IN PROGRESS",
+        "state_transition_time": 602062
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "BLOCKED",
+        "state_transition_time": 509666
+      },
+      {
+        "to_status": "IN REVIEW",
+        "from_status": "OPEN",
+        "state_transition_time": 1007142
+      }
+    ],
+    "w_integ_type": "jira",
+    "w_hist_assignee_statuses": [
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+        "issue_status": "IN REVIEW",
+        "assignee_start_time": 1655681583,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1656340838,
+        "status_end_time": 1691539199,
+        "hist_assignee_time": 35122583
+      },
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1655681583,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1656340835,
+        "status_end_time": 1656340838,
+        "hist_assignee_time": 3
+      },
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+        "issue_status": "BLOCKED",
+        "assignee_start_time": 1655681583,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655831172,
+        "status_end_time": 1656340835,
+        "hist_assignee_time": 509663
+      },
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+        "issue_status": "DEV IN PROGRESS",
+        "assignee_start_time": 1655681583,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655738776,
+        "status_end_time": 1655831172,
+        "hist_assignee_time": 92396
+      },
+      {
+        "historical_assignee": "Gopal Mandloi",
+        "historical_assignee_id": "30f9b3f0-e4f2-4f32-a8df-3a334fd56025",
+        "issue_status": "OPEN",
+        "assignee_start_time": 1655681583,
+        "assignee_end_time": 1691463421,
+        "status_start_time": 1655333696,
+        "status_end_time": 1655738776,
+        "hist_assignee_time": 57193
+      }
+    ]
+  }
+]

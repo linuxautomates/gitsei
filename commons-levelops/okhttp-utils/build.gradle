@@ -1,0 +1,34 @@
+dependencies {
+    api project(":utils")
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.okhttp
+    compile libraries.apache_collections
+    compile libraries.apache_io
+    compile libraries.jackson_core
+    compile libraries.log4j
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

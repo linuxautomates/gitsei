@@ -1,0 +1,52 @@
+{
+  "sha": "d091c7da5f3a9faf4b4e932c458ff4b40296314a",
+  "url": "https://api.github.com/repos/levelops/ui-levelops/commits/d091c7da5f3a9faf4b4e932c458ff4b40296314a",
+  "author": {
+    "type": "user",
+    "login": "piyushkantm"
+  },
+  "committer": {
+    "type": "user",
+    "login": "piyushkantm"
+  },
+  "message": "fix create comment in smart tickets",
+  "git_author": {
+    "email": "piyush0mishra@gmail.com",
+    "name": "Piyush Mishra",
+    "date": 1592974505000
+  },
+  "git_committer": {
+    "email": "piyush0mishra@gmail.com",
+    "name": "Piyush Mishra",
+    "date": 1592974505000
+  },
+  "stats": {
+    "additions": 8,
+    "deletions": 8,
+    "total": 16
+  },
+  "files": [
+    {
+      "additions": 4,
+      "changes": 8,
+      "deletions": 4,
+      "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+      "filename": "src/assessments/components/comments/comments.component.jsx",
+      "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+      "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+      "sha": "756d21698fc5147e19b550f453ed338e12951d1d",
+      "status": "modified"
+    },
+    {
+      "additions": 4,
+      "changes": 8,
+      "deletions": 4,
+      "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+      "filename": "src/workitems/containers/notes.container.jsx",
+      "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+      "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+      "sha": "75b0ff6748bd5126a0d56286658bc7bd70f51466",
+      "status": "modified"
+    }
+  ]
+}

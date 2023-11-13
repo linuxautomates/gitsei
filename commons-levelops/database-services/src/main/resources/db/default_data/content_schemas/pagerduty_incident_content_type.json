@@ -1,0 +1,52 @@
+{
+    "content_type": "integration/pagerduty/incident",
+    "fields": {
+        "id": {
+            "key": "id",
+            "value_type": "string",
+            "content_type": "id:integration/pagerduty/incident"
+        },
+        "title": {
+            "key": "title",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "description": {
+            "key": "description",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "urgency": {
+            "key": "urgency",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "status": {
+            "key": "status",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "created_at": {
+            "key": "created_at",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "last_status_change_at": {
+            "key": "last_status_change_at",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "priority": {
+            "key": "priority",
+            "value_type": "json_blob",
+            "content_type": "integration/pagerduty/incident.priority",
+            "fields": {
+                "summary": {
+                    "key": "summary",
+                    "value_type": "string",
+                    "content_type": "string"
+                }
+            }
+        }
+    }
+}

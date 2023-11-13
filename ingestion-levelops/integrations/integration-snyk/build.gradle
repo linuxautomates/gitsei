@@ -1,0 +1,40 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-commons')
+    api levelopsCommonsLib('database-commons')
+    api levelopsCommonsLib('integration-snyk')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    testImplementation libraries.lombok
+
+    implementation libraries.jackson_core
+    implementation libraries.guava
+    implementation libraries.apache_commons
+    implementation libraries.apache_collections
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+//check.dependsOn jacocoTestCoverageVerification

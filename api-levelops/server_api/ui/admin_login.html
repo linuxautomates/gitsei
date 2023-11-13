@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Propelo.ai Tenant Admin Console</h1>
+            <div id="loginForm" class="container-sm">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-warning" id="forgot">Recover Password</button>
+                        <button type="button" class="btn btn-success" id="login">Login</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tenantForm" class="container-sm" style="display:none">
+                <div class="mb-3 row">
+                    <label for="staticCompany" class="col-sm-2 col-form-label">Company</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputUserName" class="col-sm-2 col-form-label">User First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputUserName">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputUserLastname" class="col-sm-2 col-form-label">User Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputUserLastname">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputUserEmail" class="col-sm-2 col-form-label">User Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputUserEmail">
+                    </div>
+                </div>
+                <div class="mx-auto mb-3" style="width: 400px;">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tenantType" id="flexRadioDefault2" value="TRIAL_TENANT" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Trial Tenant
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tenantType" id="flexRadioDefault1" value="FULL_TENANT">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Full Tenant
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <button type="button" class="btn btn-primary" id="createTenant-modal" data-bs-toggle="modal" data-bs-target="#confirmationModal">Create Tenant</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="responseModalLabel">Success!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Status:</label>
+                      <input type="text" class="form-control" id="response-status">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Login Url:</label>
+                      <textarea class="form-control" id="response-url"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border text-info" role="status" style="display:none" id="processing1">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            <div class="spinner-grow text-info" role="status" style="display:none" id="processing2">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+         </div>
+         <div class="toast-container position-absolute p-3 top-0 start-50 translate-middle-x" id="toastPlacement">
+            <div class="toast text-white bg-primary" role="alert" id="forgot-alert" aria-live="assertive" aria-atomic="true" style="z-index: 11">
+                <div class="toast-body">
+                Password recovery request recieved!</br></br> if the user has an account, an email will be sent with following steps.
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Please verify the following information &#128269;
+                            &#128373;</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="confirmationModal-Company">Company</div>
+                        <div id="confirmationModal-firstName">First Name</div>
+                        <div id="confirmationModal-lastName">LastName</div>
+                        <div id="confirmationModal-email">Email</div>
+                        <div id="confirmationModal-tenantType">Tenant Type:</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="createTenant">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            var token = ""
+            $.wait = function(ms) {
+                var defer = $.Deferred();
+                setTimeout(function() { defer.resolve(); }, ms);
+                return defer;
+            };
+            $(function () {
+                $('#forgot').click(function () {
+                    var body = JSON.stringify({"company": "_levelops", "username": $('#inputEmail').val()})
+                    $.ajax({
+                        url: "/v1/forgot_password",
+                        contentType: "application/json",
+                        data: body,
+                        type: 'POST',
+                        success: function (response) {
+                            console.log("forgot!");
+                            var toast = $('#forgot-alert');
+                            toast.show();
+                            setTimeout(function(){toast.delay(5000).hide();}, 5000);
+                        },
+                        error: function (response) {
+                            console.log('error in forgot');
+                        }
+                    });
+                });
+                $('#login').click(function () {
+                    var body = JSON.stringify({"company": "_levelops", "username": $('#inputEmail').val(), "password": $('#inputPassword').val() })
+                    $.ajax({
+                        url: "/v1/authenticate",
+                        contentType: "application/json",
+                        data: body,
+                        dataType: "json",
+                        type: 'POST',
+                        success: function (response) {
+                            console.log("success!")
+                            console.log(response)
+                            token = response.token
+                            $('#loginForm').hide()
+                            $('#tenantForm').show()
+                        }
+                    });
+                });
+            });
+            $(function () {
+                $('#createTenant').click(function () {
+                    $('#confirmationModal').trigger('click')
+                    var process1 = $('#processing1');
+                    var process2 = $('#processing2');
+                    process1.show()
+                    process2.show()
+                    var body = JSON.stringify({"tenant_name": $('#inputCompany').val(), "user_name": $('#inputUserName').val(), "user_lastname": $('#inputUserLastname').val(), "user_email": $('#inputUserEmail').val(), "tenant_type": $('input[name="tenantType"]:checked').val() })
+                    $.ajax({
+                        url: "/v1/admin/tenant/enroll",
+                        contentType: "application/json",
+                        data: body,
+                        headers: {"Authorization": "Bearer " + token},
+                        dataType: "json",
+                        type: 'POST',
+                        success: function (response) {
+                            console.log("success!")
+                            console.log(response)
+                            //response
+                            $('#responseModalLabel').text('Tenant Created!')
+                            var modalStatus = $('#response-status')
+                            var modalUrl = $('#response-url')
+                            modalStatus.val(response.status)
+                            modalUrl.val(response.url)
+                            $('#responseModal').modal('show');
+                            process1.hide()
+                            process2.hide()
+                        },
+                        error: function (response) {
+                            console.log("error!")
+                            var r = response.responseJSON
+                            console.log(r)
+                            $('#responseModalLabel').text('Error!')
+                            var modalStatus = $('#response-status')
+                            var modalUrl = $('#response-url')
+                            modalStatus.val("error")
+                            modalUrl.val(r.message)
+                            $('#responseModal').modal('show');
+                            process1.hide()
+                            process2.hide()
+                        }
+                    });
+                });
+            });
+            $(function () {
+                $('#createTenant-modal').click(function () {
+                    $('#confirmationModal-Company').text('Company:   ' + $('#inputCompany').val())
+                    $('#confirmationModal-firstName').text('First Name:   ' + $('#inputUserName').val())
+                    $('#confirmationModal-lastName').text('Last Name:   ' + $('#inputUserLastname').val())
+                    $('#confirmationModal-email').text('Email:   ' + $('#inputUserEmail').val())
+                    $('#confirmationModal-tenantType').text('Tenant Type:   ' +  $('input[name="tenantType"]:checked').val())
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "type": "block_actions",
+  "user": {
+    "id": "US4JC7ZM5",
+    "username": "viraj",
+    "name": "viraj",
+    "team_id": "TM3U03S49"
+  },
+  "api_app_id": "A02",
+  "token": "Shh_its_a_seekrit",
+  "container": {
+    "type": "message",
+    "text": "The contents of the original message where the action originated"
+  },
+  "trigger_id": "12466734323.1395872398",
+  "team": {
+    "id": "TM3U03S49",
+    "domain": "levelopsworkspace"
+  },
+  "state": {
+    "values": {
+      "McQT": {
+        "Rx8FG": {
+          "type": "static_select",
+          "selected_option": null
+        }
+      },
+      "p4a": {
+        "yQPR": {
+          "type": "multi_conversations_select",
+          "selected_conversations": [
+            "UM9R8MR28"
+          ]
+        }
+      }
+    }
+  },
+  "response_url": "https://www.postresponsestome.com/T123567/1509734234",
+  "actions": [
+    {
+      "type": "button",
+      "block_id": "workitem_snippet",
+      "action_id": "view_wi_text_attachment",
+      "text": {
+        "type": "plain_text",
+        "text": "View Snippet",
+        "emoji": true
+      },
+      "value": "view_wi_text_attachment~@@@_test~@@@_5a94ff29-3556-43a7-97e2-e367da654d44~@@@_22a3ce26-2178-4c73-bea9-c6b75728d1f7",
+      "action_ts": "1604985812.813118"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(':inventory-service')
+    compile libraries.okhttp
+
+    compile 'org.eclipse.mylyn.github:org.eclipse.egit.github.core:2.1.5'
+    compile group: "io.jsonwebtoken", name: "jjwt-api", version: "0.11.5"
+    compile group: "io.jsonwebtoken", name: "jjwt-impl", version: "0.11.5"
+    compile group: "io.jsonwebtoken", name: "jjwt-orgjson", version: "0.11.5"
+    compile 'javax.xml.bind:jaxb-api:2.3.0' // needed to convert JWT token to string
+    compile libraries.guava
+    compile libraries.apache_collections
+    compile libraries.mockito
+
+
+    compile project(':token-services')
+    compile project(':inventory-service')
+    compile project(':ingestion-commons')
+    compile project(':database-commons')
+    compile project(':ingestion-utils')
+
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

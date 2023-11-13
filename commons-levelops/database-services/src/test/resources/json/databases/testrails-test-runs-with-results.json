@@ -1,0 +1,2527 @@
+{
+  "records": [
+    {
+      "id": 59,
+      "name": "Test Run 1",
+      "assignedto_id": 1,
+      "assignee": {
+        "id": 1,
+        "name": "John Wick",
+        "email": "john@test.com",
+        "is_active": true,
+        "role_id": 1,
+        "role": "Lead"
+      },
+      "blocked_count": 0,
+      "config_ids": [],
+      "created_by": 1,
+      "creator": {
+        "id": 1,
+        "name": "John Wick",
+        "email": "john@test.com",
+        "is_active": true,
+        "role_id": 1,
+        "role": "Lead"
+      },
+      "created_on": 1618548425,
+      "failed_count": 0,
+      "include_all": true,
+      "is_completed": false,
+      "milestone_id": 6,
+      "passed_count": 0,
+      "project_id": 1,
+      "retest_count": 0,
+      "suite_id": 1,
+      "untested_count": 45,
+      "updated_on": 1618548425,
+      "url": "https://cgnlevelops6.testrail.io/index.php?/runs/view/59",
+      "tests": [
+        {
+          "id": 1019,
+          "case_id": 1,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 1",
+          "template_id": 1,
+          "type_id": 2,
+          "priority_id": 3,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 1,
+          "type": "Accessibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 1,
+              "test_id": 1019,
+              "defects": "DUM-1, DUM-2",
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 1",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1020,
+          "case_id": 2,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 2",
+          "template_id": 1,
+          "type_id": 2,
+          "priority_id": 3,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 1,
+          "sections_display_order": 1,
+          "cases_display_order": 2,
+          "type": "Accessibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 2,
+              "test_id": 1020,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 2",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1021,
+          "case_id": 3,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 3",
+          "template_id": 1,
+          "type_id": 1,
+          "priority_id": 2,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 3,
+          "type": "Acceptance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 3,
+              "test_id": 1021,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 3",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1022,
+          "case_id": 4,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 4",
+          "template_id": 1,
+          "type_id": 3,
+          "priority_id": 2,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 4,
+          "type": "Automated",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 4,
+              "test_id": 1022,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 4",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1023,
+          "case_id": 5,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 5",
+          "template_id": 1,
+          "type_id": 5,
+          "priority_id": 1,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 5,
+          "type": "Destructive",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 5,
+              "test_id": 1023,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 5",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1024,
+          "case_id": 6,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 6",
+          "template_id": 1,
+          "type_id": 6,
+          "priority_id": 2,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 6,
+          "type": "Functional",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 6,
+              "test_id": 1024,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 6",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1025,
+          "case_id": 7,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 7",
+          "template_id": 1,
+          "type_id": 5,
+          "priority_id": 2,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 1,
+          "sections_display_order": 1,
+          "cases_display_order": 7,
+          "type": "Destructive",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 7,
+              "test_id": 1025,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 7",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1026,
+          "case_id": 8,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 8",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 2,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 8,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 8,
+              "test_id": 1026,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 8",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1027,
+          "case_id": 9,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 9",
+          "template_id": 1,
+          "type_id": 4,
+          "priority_id": 4,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 9,
+          "type": "Compatibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 9,
+              "test_id": 1027,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 9",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1028,
+          "case_id": 10,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 10",
+          "template_id": 1,
+          "type_id": 6,
+          "priority_id": 2,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 10,
+          "type": "Functional",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 10,
+              "test_id": 1028,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 10",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1029,
+          "case_id": 11,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 11",
+          "template_id": 1,
+          "type_id": 6,
+          "priority_id": 1,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 1,
+          "sections_display_order": 1,
+          "cases_display_order": 11,
+          "type": "Functional",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 11,
+              "test_id": 1029,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 11",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1030,
+          "case_id": 12,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 12",
+          "template_id": 1,
+          "type_id": 2,
+          "priority_id": 2,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 12,
+          "type": "Accessibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 12,
+              "test_id": 1030,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 12",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1031,
+          "case_id": 13,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 13",
+          "template_id": 1,
+          "type_id": 10,
+          "priority_id": 2,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 13,
+          "type": "Security",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 13,
+              "test_id": 1031,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 13",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1032,
+          "case_id": 14,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 14",
+          "template_id": 1,
+          "type_id": 12,
+          "priority_id": 2,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 14,
+          "type": "Usability",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 14,
+              "test_id": 1032,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 14",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1033,
+          "case_id": 15,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 15",
+          "template_id": 1,
+          "type_id": 1,
+          "priority_id": 4,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 15,
+          "type": "Acceptance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 15,
+              "test_id": 1033,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 15",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1034,
+          "case_id": 16,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 16",
+          "template_id": 1,
+          "type_id": 2,
+          "priority_id": 4,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 16,
+          "type": "Accessibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 16,
+              "test_id": 1034,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 16",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1035,
+          "case_id": 17,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 17",
+          "template_id": 1,
+          "type_id": 3,
+          "priority_id": 4,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 17,
+          "type": "Automated",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 17,
+              "test_id": 1035,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 17",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1036,
+          "case_id": 18,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 18",
+          "template_id": 1,
+          "type_id": 4,
+          "priority_id": 4,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 18,
+          "type": "Compatibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 18,
+              "test_id": 1036,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 18",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1037,
+          "case_id": 19,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 19",
+          "template_id": 1,
+          "type_id": 5,
+          "priority_id": 4,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 19,
+          "type": "Destructive",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 19,
+              "test_id": 1037,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 19",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1038,
+          "case_id": 20,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 20",
+          "template_id": 1,
+          "type_id": 6,
+          "priority_id": 4,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 20,
+          "type": "Functional",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 20,
+              "test_id": 1038,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 20",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1039,
+          "case_id": 21,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 21",
+          "template_id": 1,
+          "type_id": 7,
+          "priority_id": 4,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 21,
+          "type": "Other",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 21,
+              "test_id": 1039,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 21",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1040,
+          "case_id": 22,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 22",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 4,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 22,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 22,
+              "test_id": 1040,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 22",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1041,
+          "case_id": 23,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 23",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 4,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 23,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 23,
+              "test_id": 1041,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 23",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1042,
+          "case_id": 24,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 24",
+          "template_id": 1,
+          "type_id": 9,
+          "priority_id": 4,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 24,
+          "type": "Regression",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 24,
+              "test_id": 1042,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 24",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1043,
+          "case_id": 25,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 25",
+          "template_id": 1,
+          "type_id": 10,
+          "priority_id": 4,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 25,
+          "type": "Security",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Critical",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 25,
+              "test_id": 1043,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 25",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1044,
+          "case_id": 26,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 26",
+          "template_id": 1,
+          "type_id": 1,
+          "priority_id": 3,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 26,
+          "type": "Acceptance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 26,
+              "test_id": 1044,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 26",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1045,
+          "case_id": 27,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 27",
+          "template_id": 1,
+          "type_id": 2,
+          "priority_id": 3,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 27,
+          "type": "Accessibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 27,
+              "test_id": 1045,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 27",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1046,
+          "case_id": 28,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 28",
+          "template_id": 1,
+          "type_id": 3,
+          "priority_id": 3,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 28,
+          "type": "Automated",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 28,
+              "test_id": 1046,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 28",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1047,
+          "case_id": 29,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 29",
+          "template_id": 1,
+          "type_id": 6,
+          "priority_id": 3,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 29,
+          "type": "Functional",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 29,
+              "test_id": 1047,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 29",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1048,
+          "case_id": 30,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 30",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 3,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 30,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 30,
+              "test_id": 1048,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 30",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1049,
+          "case_id": 31,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 31",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 3,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 31,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 31,
+              "test_id": 1049,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 31",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1050,
+          "case_id": 32,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 32",
+          "template_id": 1,
+          "type_id": 2,
+          "priority_id": 1,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 32,
+          "type": "Accessibility",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 32,
+              "test_id": 1050,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 32",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1051,
+          "case_id": 33,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 33",
+          "template_id": 1,
+          "type_id": 9,
+          "priority_id": 1,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 33,
+          "type": "Regression",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 33,
+              "test_id": 1051,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 33",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1052,
+          "case_id": 34,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 34",
+          "template_id": 1,
+          "type_id": 10,
+          "priority_id": 1,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 34,
+          "type": "Security",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 34,
+              "test_id": 1052,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 34",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1053,
+          "case_id": 35,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 35",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 1,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 35,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 35,
+              "test_id": 1053,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 35",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1054,
+          "case_id": 36,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 36",
+          "template_id": 1,
+          "type_id": 10,
+          "priority_id": 1,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 36,
+          "type": "Security",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 36,
+              "test_id": 1054,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 36",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1055,
+          "case_id": 37,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 37",
+          "template_id": 1,
+          "type_id": 5,
+          "priority_id": 1,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 37,
+          "type": "Destructive",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 37,
+              "test_id": 1055,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 37",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1056,
+          "case_id": 38,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 38",
+          "template_id": 1,
+          "type_id": 3,
+          "priority_id": 1,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 38,
+          "type": "Automated",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 38,
+              "test_id": 1056,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 38",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1057,
+          "case_id": 39,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 39",
+          "template_id": 1,
+          "type_id": 5,
+          "priority_id": 3,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 39,
+          "type": "Destructive",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 39,
+              "test_id": 1057,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 39",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1058,
+          "case_id": 40,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 40",
+          "template_id": 1,
+          "type_id": 8,
+          "priority_id": 3,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 40,
+          "type": "Performance",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 40,
+              "test_id": 1058,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 40",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1059,
+          "case_id": 41,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 41",
+          "template_id": 1,
+          "type_id": 11,
+          "priority_id": 1,
+          "estimate_forecast": "5m",
+          "estimate": "5m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 41,
+          "type": "Smoke & Sanity",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 41,
+              "test_id": 1059,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 41",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1060,
+          "case_id": 42,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 42",
+          "template_id": 1,
+          "type_id": 12,
+          "priority_id": 3,
+          "estimate_forecast": "1m 20s",
+          "estimate": "1m 20s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 42,
+          "type": "Usability",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 42,
+              "test_id": 1060,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 42",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1061,
+          "case_id": 43,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 43",
+          "template_id": 1,
+          "type_id": 12,
+          "priority_id": 1,
+          "estimate_forecast": "56s",
+          "estimate": "56s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 43,
+          "type": "Usability",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Low",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 43,
+              "test_id": 1061,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 43",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1062,
+          "case_id": 44,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 44",
+          "template_id": 1,
+          "type_id": 5,
+          "priority_id": 3,
+          "estimate_forecast": "45s",
+          "estimate": "45s",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 44,
+          "type": "Destructive",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "High",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 44,
+              "test_id": 1062,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 44",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        },
+        {
+          "id": 1063,
+          "case_id": 45,
+          "status_id": 3,
+          "assignedto_id": 1,
+          "run_id": 59,
+          "title": "test 45",
+          "template_id": 1,
+          "type_id": 7,
+          "priority_id": 2,
+          "estimate_forecast": "1m",
+          "estimate": "1m",
+          "custom_automation_type": 0,
+          "sections_display_order": 1,
+          "cases_display_order": 45,
+          "type": "Other",
+          "status": "untested",
+          "assignee": {
+            "id": 1,
+            "name": "John Wick",
+            "email": "john@test.com",
+            "is_active": true,
+            "role_id": 1,
+            "role": "Lead"
+          },
+          "priority": "Medium",
+          "created_on": 1618548425,
+          "results":[
+            {
+              "id": 45,
+              "test_id": 1063,
+              "defects": null,
+              "created_on": 1618548425,
+              "assignee": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "creator": {
+                "id": 1,
+                "name": "John Wick",
+                "email": "john@test.com",
+                "is_active": true,
+                "role_id": 1,
+                "role": "Lead"
+              },
+              "comment": "comment 45",
+              "elapsed": "5s",
+              "status": "untested"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "btenant",
+      "integration_id": "9"
+    },
+    "integration_type": "testrails",
+    "data_type": "test_runs",
+    "page_number": 0
+  }
+}

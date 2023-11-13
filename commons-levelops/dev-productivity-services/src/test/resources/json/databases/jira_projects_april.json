@@ -1,0 +1,855 @@
+{
+    "records": [
+        {
+            "self": "https://cognitree.atlassian.net/rest/api/2/project/10001",
+            "id": "10001",
+            "key": "LOI",
+            "description": "",
+            "lead": {
+                "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=557058:80766d9f-42b0-4521-8e95-3f95126bfe87",
+                "accountId": "557058:80766d9f-42b0-4521-8e95-3f95126bfe87",
+                "displayName": "Girish Karthik Ramasamy",
+                "active": true
+            },
+            "components": [],
+            "issueTypes": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10001",
+                    "id": 10001,
+                    "name": "Improvement",
+                    "description": "An improvement or enhancement to an existing feature or task.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10002",
+                    "id": 10002,
+                    "name": "Task",
+                    "description": "A small, distinct piece of work.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10003",
+                    "id": 10003,
+                    "name": "Sub-task",
+                    "description": "A small piece of work that's part of a larger task.",
+                    "subtask": true
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10004",
+                    "id": 10004,
+                    "name": "New Feature",
+                    "description": "A new feature of the product, which has yet to be developed.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10005",
+                    "id": 10005,
+                    "name": "Bug",
+                    "description": "A problem or error.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10000",
+                    "id": 10000,
+                    "name": "Epic",
+                    "description": "A big user story that needs to be broken down. Created by Jira Software - do not edit or delete.",
+                    "subtask": false
+                }
+            ],
+            "assigneeType": "UNASSIGNED",
+            "versions": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/version/10000",
+                    "id": "10000",
+                    "name": "nov",
+                    "archived": false,
+                    "released": false,
+                    "startDate": "2020-11-06",
+                    "releaseDate": "2020-11-30",
+                    "userStartDate": "06/Nov/20",
+                    "userReleaseDate": "30/Nov/20",
+                    "projectId": "10001"
+                }
+            ],
+            "name": "LevelOps-integrations",
+            "roles": {
+                "atlassian-addons-project-access": "https://cognitree.atlassian.net/rest/api/2/project/10001/role/10003",
+                "Administrators": "https://cognitree.atlassian.net/rest/api/2/project/10001/role/10002"
+            },
+            "projectTypeKey": "software",
+            "simplified": false,
+            "style": "classic",
+            "isPrivate": false,
+            "projectKeys": [
+                "LOI"
+            ],
+            "priority_scheme": {
+                "name": "default",
+                "priorities": [
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                        "statusColor": "#ffffff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                        "name": "Now",
+                        "id": "10000",
+                        "priority_order": 1
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                        "statusColor": "#d04437",
+                        "description": "This problem will block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                        "name": "Highest",
+                        "id": "1",
+                        "priority_order": 2
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                        "statusColor": "#f15C75",
+                        "description": "Serious problem that could block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                        "name": "High",
+                        "id": "2",
+                        "priority_order": 3
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                        "statusColor": "#ff33ff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                        "name": "Between Medium and High",
+                        "id": "10001",
+                        "priority_order": 4
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                        "statusColor": "#f79232",
+                        "description": "Has the potential to affect progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                        "name": "Medium",
+                        "id": "3",
+                        "priority_order": 5
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                        "statusColor": "#707070",
+                        "description": "Minor problem or easily worked around.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                        "name": "Low",
+                        "id": "4",
+                        "priority_order": 6
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                        "statusColor": "#999999",
+                        "description": "Trivial problem with little or no impact on progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                        "name": "Lowest",
+                        "id": "5",
+                        "priority_order": 7
+                    }
+                ]
+            },
+            "default_priorities": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                    "statusColor": "#ffffff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                    "name": "Now",
+                    "id": "10000",
+                    "priority_order": 1
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                    "statusColor": "#d04437",
+                    "description": "This problem will block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                    "name": "Highest",
+                    "id": "1",
+                    "priority_order": 2
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                    "statusColor": "#f15C75",
+                    "description": "Serious problem that could block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                    "name": "High",
+                    "id": "2",
+                    "priority_order": 3
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                    "statusColor": "#ff33ff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                    "name": "Between Medium and High",
+                    "id": "10001",
+                    "priority_order": 4
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                    "statusColor": "#f79232",
+                    "description": "Has the potential to affect progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                    "name": "Medium",
+                    "id": "3",
+                    "priority_order": 5
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                    "statusColor": "#707070",
+                    "description": "Minor problem or easily worked around.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                    "name": "Low",
+                    "id": "4",
+                    "priority_order": 6
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                    "statusColor": "#999999",
+                    "description": "Trivial problem with little or no impact on progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                    "name": "Lowest",
+                    "id": "5",
+                    "priority_order": 7
+                }
+            ]
+        },
+        {
+            "self": "https://cognitree.atlassian.net/rest/api/2/project/10003",
+            "id": "10003",
+            "key": "SW",
+            "description": "",
+            "lead": {
+                "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=557058:80766d9f-42b0-4521-8e95-3f95126bfe87",
+                "accountId": "557058:80766d9f-42b0-4521-8e95-3f95126bfe87",
+                "displayName": "Girish Karthik Ramasamy",
+                "active": true
+            },
+            "components": [],
+            "issueTypes": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10012",
+                    "id": 10012,
+                    "name": "Task",
+                    "description": "Tasks track small, distinct pieces of work.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10013",
+                    "id": 10013,
+                    "name": "Epic",
+                    "description": "Epics track collections of related bugs, stories, and tasks.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10014",
+                    "id": 10014,
+                    "name": "Subtask",
+                    "description": "Subtasks track small pieces of work that are part of a larger task.",
+                    "subtask": true
+                }
+            ],
+            "assigneeType": "UNASSIGNED",
+            "versions": [],
+            "name": "talonx",
+            "roles": {
+                "atlassian-addons-project-access": "https://cognitree.atlassian.net/rest/api/2/project/10003/role/10011",
+                "Administrator": "https://cognitree.atlassian.net/rest/api/2/project/10003/role/10008",
+                "Viewer": "https://cognitree.atlassian.net/rest/api/2/project/10003/role/10010",
+                "Member": "https://cognitree.atlassian.net/rest/api/2/project/10003/role/10009"
+            },
+            "projectTypeKey": "software",
+            "simplified": true,
+            "style": "next-gen",
+            "isPrivate": false,
+            "projectKeys": [
+                "SW",
+                "TAL"
+            ],
+            "priority_scheme": {
+                "name": "default",
+                "priorities": [
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                        "statusColor": "#ffffff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                        "name": "Now",
+                        "id": "10000",
+                        "priority_order": 1
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                        "statusColor": "#d04437",
+                        "description": "This problem will block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                        "name": "Highest",
+                        "id": "1",
+                        "priority_order": 2
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                        "statusColor": "#f15C75",
+                        "description": "Serious problem that could block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                        "name": "High",
+                        "id": "2",
+                        "priority_order": 3
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                        "statusColor": "#ff33ff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                        "name": "Between Medium and High",
+                        "id": "10001",
+                        "priority_order": 4
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                        "statusColor": "#f79232",
+                        "description": "Has the potential to affect progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                        "name": "Medium",
+                        "id": "3",
+                        "priority_order": 5
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                        "statusColor": "#707070",
+                        "description": "Minor problem or easily worked around.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                        "name": "Low",
+                        "id": "4",
+                        "priority_order": 6
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                        "statusColor": "#999999",
+                        "description": "Trivial problem with little or no impact on progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                        "name": "Lowest",
+                        "id": "5",
+                        "priority_order": 7
+                    }
+                ]
+            },
+            "default_priorities": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                    "statusColor": "#ffffff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                    "name": "Now",
+                    "id": "10000",
+                    "priority_order": 1
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                    "statusColor": "#d04437",
+                    "description": "This problem will block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                    "name": "Highest",
+                    "id": "1",
+                    "priority_order": 2
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                    "statusColor": "#f15C75",
+                    "description": "Serious problem that could block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                    "name": "High",
+                    "id": "2",
+                    "priority_order": 3
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                    "statusColor": "#ff33ff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                    "name": "Between Medium and High",
+                    "id": "10001",
+                    "priority_order": 4
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                    "statusColor": "#f79232",
+                    "description": "Has the potential to affect progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                    "name": "Medium",
+                    "id": "3",
+                    "priority_order": 5
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                    "statusColor": "#707070",
+                    "description": "Minor problem or easily worked around.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                    "name": "Low",
+                    "id": "4",
+                    "priority_order": 6
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                    "statusColor": "#999999",
+                    "description": "Trivial problem with little or no impact on progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                    "name": "Lowest",
+                    "id": "5",
+                    "priority_order": 7
+                }
+            ]
+        },
+        {
+            "self": "https://cognitree.atlassian.net/rest/api/2/project/10004",
+            "id": "10004",
+            "key": "TEST",
+            "description": "",
+            "lead": {
+                "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=5e6b1de9e3c3e70d023a9776",
+                "accountId": "5e6b1de9e3c3e70d023a9776",
+                "displayName": "Srinath Chandrashekhar",
+                "active": true
+            },
+            "components": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/component/10000",
+                    "id": "10000",
+                    "name": "Component 1",
+                    "description": "This is a JIRA component",
+                    "isAssigneeTypeValid": false
+                }
+            ],
+            "issueTypes": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10002",
+                    "id": 10002,
+                    "name": "Task",
+                    "description": "A small, distinct piece of work.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10003",
+                    "id": 10003,
+                    "name": "Sub-task",
+                    "description": "A small piece of work that's part of a larger task.",
+                    "subtask": true
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10006",
+                    "id": 10006,
+                    "name": "Story",
+                    "description": "Stories track functionality or features expressed as user goals.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10005",
+                    "id": 10005,
+                    "name": "Bug",
+                    "description": "A problem or error.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10000",
+                    "id": 10000,
+                    "name": "Epic",
+                    "description": "A big user story that needs to be broken down. Created by Jira Software - do not edit or delete.",
+                    "subtask": false
+                }
+            ],
+            "assigneeType": "UNASSIGNED",
+            "versions": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/version/10001",
+                    "id": "10001",
+                    "description": "An excellent version",
+                    "name": "New Version 1",
+                    "archived": false,
+                    "released": true,
+                    "releaseDate": "2010-07-06",
+                    "userReleaseDate": "06/Jul/10",
+                    "projectId": "10004"
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/version/10002",
+                    "id": "10002",
+                    "description": "An excellent version 2",
+                    "name": "New Version 2",
+                    "archived": false,
+                    "released": true,
+                    "releaseDate": "2011-07-06",
+                    "userReleaseDate": "06/Jul/11",
+                    "projectId": "10004"
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/version/10003",
+                    "id": "10003",
+                    "name": "New Version 3",
+                    "archived": false,
+                    "released": false,
+                    "startDate": "2021-02-01",
+                    "releaseDate": "2021-02-15",
+                    "userStartDate": "01/Feb/21",
+                    "userReleaseDate": "15/Feb/21",
+                    "projectId": "10004"
+                }
+            ],
+            "name": "test",
+            "roles": {
+                "atlassian-addons-project-access": "https://cognitree.atlassian.net/rest/api/2/project/10004/role/10003",
+                "Administrators": "https://cognitree.atlassian.net/rest/api/2/project/10004/role/10002"
+            },
+            "projectTypeKey": "software",
+            "simplified": false,
+            "style": "classic",
+            "isPrivate": false,
+            "projectKeys": [
+                "TEST"
+            ],
+            "priority_scheme": {
+                "name": "default",
+                "priorities": [
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                        "statusColor": "#ffffff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                        "name": "Now",
+                        "id": "10000",
+                        "priority_order": 1
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                        "statusColor": "#d04437",
+                        "description": "This problem will block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                        "name": "Highest",
+                        "id": "1",
+                        "priority_order": 2
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                        "statusColor": "#f15C75",
+                        "description": "Serious problem that could block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                        "name": "High",
+                        "id": "2",
+                        "priority_order": 3
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                        "statusColor": "#ff33ff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                        "name": "Between Medium and High",
+                        "id": "10001",
+                        "priority_order": 4
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                        "statusColor": "#f79232",
+                        "description": "Has the potential to affect progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                        "name": "Medium",
+                        "id": "3",
+                        "priority_order": 5
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                        "statusColor": "#707070",
+                        "description": "Minor problem or easily worked around.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                        "name": "Low",
+                        "id": "4",
+                        "priority_order": 6
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                        "statusColor": "#999999",
+                        "description": "Trivial problem with little or no impact on progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                        "name": "Lowest",
+                        "id": "5",
+                        "priority_order": 7
+                    }
+                ]
+            },
+            "default_priorities": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                    "statusColor": "#ffffff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                    "name": "Now",
+                    "id": "10000",
+                    "priority_order": 1
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                    "statusColor": "#d04437",
+                    "description": "This problem will block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                    "name": "Highest",
+                    "id": "1",
+                    "priority_order": 2
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                    "statusColor": "#f15C75",
+                    "description": "Serious problem that could block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                    "name": "High",
+                    "id": "2",
+                    "priority_order": 3
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                    "statusColor": "#ff33ff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                    "name": "Between Medium and High",
+                    "id": "10001",
+                    "priority_order": 4
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                    "statusColor": "#f79232",
+                    "description": "Has the potential to affect progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                    "name": "Medium",
+                    "id": "3",
+                    "priority_order": 5
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                    "statusColor": "#707070",
+                    "description": "Minor problem or easily worked around.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                    "name": "Low",
+                    "id": "4",
+                    "priority_order": 6
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                    "statusColor": "#999999",
+                    "description": "Trivial problem with little or no impact on progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                    "name": "Lowest",
+                    "id": "5",
+                    "priority_order": 7
+                }
+            ]
+        },
+        {
+            "self": "https://cognitree.atlassian.net/rest/api/2/project/10002",
+            "id": "10002",
+            "key": "UN",
+            "description": "",
+            "lead": {
+                "self": "https://cognitree.atlassian.net/rest/api/2/user?accountId=5e6b1de9e3c3e70d023a9776",
+                "accountId": "5e6b1de9e3c3e70d023a9776",
+                "displayName": "Srinath Chandrashekhar",
+                "active": true
+            },
+            "components": [],
+            "issueTypes": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10007",
+                    "id": 10007,
+                    "name": "Story",
+                    "description": "Stories track functionality or features expressed as user goals.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10008",
+                    "id": 10008,
+                    "name": "Task",
+                    "description": "Tasks track small, distinct pieces of work.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10009",
+                    "id": 10009,
+                    "name": "Bug",
+                    "description": "Bugs track problems or errors.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10010",
+                    "id": 10010,
+                    "name": "Epic",
+                    "description": "Epics track collections of related bugs, stories, and tasks.",
+                    "subtask": false
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/issuetype/10011",
+                    "id": 10011,
+                    "name": "Subtask",
+                    "description": "Subtasks track small pieces of work that are part of a larger task.",
+                    "subtask": true
+                }
+            ],
+            "assigneeType": "UNASSIGNED",
+            "versions": [],
+            "name": "unravel",
+            "roles": {
+                "atlassian-addons-project-access": "https://cognitree.atlassian.net/rest/api/2/project/10002/role/10007",
+                "Administrator": "https://cognitree.atlassian.net/rest/api/2/project/10002/role/10004",
+                "Viewer": "https://cognitree.atlassian.net/rest/api/2/project/10002/role/10006",
+                "Member": "https://cognitree.atlassian.net/rest/api/2/project/10002/role/10005"
+            },
+            "projectTypeKey": "software",
+            "simplified": true,
+            "style": "next-gen",
+            "isPrivate": false,
+            "projectKeys": [
+                "UN"
+            ],
+            "priority_scheme": {
+                "name": "default",
+                "priorities": [
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                        "statusColor": "#ffffff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                        "name": "Now",
+                        "id": "10000",
+                        "priority_order": 1
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                        "statusColor": "#d04437",
+                        "description": "This problem will block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                        "name": "Highest",
+                        "id": "1",
+                        "priority_order": 2
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                        "statusColor": "#f15C75",
+                        "description": "Serious problem that could block progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                        "name": "High",
+                        "id": "2",
+                        "priority_order": 3
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                        "statusColor": "#ff33ff",
+                        "description": "",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                        "name": "Between Medium and High",
+                        "id": "10001",
+                        "priority_order": 4
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                        "statusColor": "#f79232",
+                        "description": "Has the potential to affect progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                        "name": "Medium",
+                        "id": "3",
+                        "priority_order": 5
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                        "statusColor": "#707070",
+                        "description": "Minor problem or easily worked around.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                        "name": "Low",
+                        "id": "4",
+                        "priority_order": 6
+                    },
+                    {
+                        "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                        "statusColor": "#999999",
+                        "description": "Trivial problem with little or no impact on progress.",
+                        "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                        "name": "Lowest",
+                        "id": "5",
+                        "priority_order": 7
+                    }
+                ]
+            },
+            "default_priorities": [
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10000",
+                    "statusColor": "#ffffff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/blocker.svg",
+                    "name": "Now",
+                    "id": "10000",
+                    "priority_order": 1
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/1",
+                    "statusColor": "#d04437",
+                    "description": "This problem will block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/highest.svg",
+                    "name": "Highest",
+                    "id": "1",
+                    "priority_order": 2
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/2",
+                    "statusColor": "#f15C75",
+                    "description": "Serious problem that could block progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/high.svg",
+                    "name": "High",
+                    "id": "2",
+                    "priority_order": 3
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/10001",
+                    "statusColor": "#ff33ff",
+                    "description": "",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/critical.svg",
+                    "name": "Between Medium and High",
+                    "id": "10001",
+                    "priority_order": 4
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/3",
+                    "statusColor": "#f79232",
+                    "description": "Has the potential to affect progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/medium.svg",
+                    "name": "Medium",
+                    "id": "3",
+                    "priority_order": 5
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/4",
+                    "statusColor": "#707070",
+                    "description": "Minor problem or easily worked around.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/low.svg",
+                    "name": "Low",
+                    "id": "4",
+                    "priority_order": 6
+                },
+                {
+                    "self": "https://cognitree.atlassian.net/rest/api/2/priority/5",
+                    "statusColor": "#999999",
+                    "description": "Trivial problem with little or no impact on progress.",
+                    "iconUrl": "https://cognitree.atlassian.net/images/icons/priorities/lowest.svg",
+                    "name": "Lowest",
+                    "id": "5",
+                    "priority_order": 7
+                }
+            ]
+        }
+    ],
+    "count": 4,
+    "_metadata": {
+        "integration_key": {
+            "tenant_id": "test",
+            "integration_id": "1"
+        },
+        "integration_type": "jira",
+        "data_type": "projects"
+    }
+}

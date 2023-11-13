@@ -1,0 +1,43 @@
+{
+  "repo_id" : [ "project1" ],
+  "project" : "project1",
+  "number" : "1",
+  "integration_id" : "1",
+  "creator" : "Administrator",
+  "title" : "PROP-123 This is the first change",
+  "source_branch" : "master",
+  "target_branch" : "_UNKNOWN_",
+  "state" : "NEW",
+  "merged" : false,
+  "assignees" : [ "Administrator" ],
+  "assignees_info" : [ {
+    "integration_id" : "1",
+    "display_name" : "Administrator",
+    "original_display_name" : "Administrator",
+    "cloudId" : "admin@example.com"
+  } ],
+  "labels" : [ ],
+  "commit_shas" : [ ],
+  "reviews" : [ {
+    "review_id" : "-1671583970",
+    "reviewer" : "Administrator",
+    "reviewer_info" : {
+      "integration_id" : "1",
+      "display_name" : "Administrator",
+      "original_display_name" : "Administrator",
+      "cloudId" : "admin@example.com"
+    },
+    "state" : "I would prefer this is not merged as is",
+    "reviewed_at" : 1601321384
+  } ],
+  "pr_updated_at" : 1601321384,
+  "pr_created_at" : 1601321384,
+  "creator_info" : {
+    "integration_id" : "1",
+    "display_name" : "Administrator",
+    "original_display_name" : "Administrator",
+    "cloudId" : "admin@example.com"
+  },
+  "workitem_ids" : [ "1", "123", "2" ],
+  "issue_keys" : [ "PROP-123" ]
+}

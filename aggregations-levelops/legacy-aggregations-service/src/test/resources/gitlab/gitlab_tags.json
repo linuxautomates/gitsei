@@ -1,0 +1,123 @@
+[
+  {
+    "id": "31983767",
+    "description": "",
+    "name": "test1",
+    "name_with_namespace": "Srinath Chandrashekhar / test1",
+    "path": "test1",
+    "path_with_namespace": "srinath.chandrashekhar/test1",
+    "created_at": "2021-12-09T12:18:31.487+00:00",
+    "default_branch": "main",
+    "tag_list": [],
+    "ssh_url_to_repo": "git@gitlab.com:srinath.chandrashekhar/test1.git",
+    "http_url_to_repo": "https://gitlab.com/srinath.chandrashekhar/test1.git",
+    "web_url": "https://gitlab.com/srinath.chandrashekhar/test1",
+    "forks_count": 0,
+    "star_count": 0,
+    "last_activity_at": "2022-03-21T11:49:24.446+00:00",
+    "namespace": {
+      "id": "10779589",
+      "name": "Srinath Chandrashekhar",
+      "path": "srinath.chandrashekhar",
+      "kind": "user",
+      "full_path": "srinath.chandrashekhar",
+      "avatar_url": "https://secure.gravatar.com/avatar/88c37a120ba79d303a138574efbf3405?s=80&d=identicon",
+      "web_url": "https://gitlab.com/srinath.chandrashekhar"
+    },
+    "_links": {
+      "self": "https://gitlab.com/api/v4/projects/31983767",
+      "issues": "https://gitlab.com/api/v4/projects/31983767/issues",
+      "merge_requests": "https://gitlab.com/api/v4/projects/31983767/merge_requests",
+      "repo_branches": "https://gitlab.com/api/v4/projects/31983767/repository/branches",
+      "labels": "https://gitlab.com/api/v4/projects/31983767/labels",
+      "events": "https://gitlab.com/api/v4/projects/31983767/events",
+      "members": "https://gitlab.com/api/v4/projects/31983767/members"
+    },
+    "container_expiration_policy": {
+      "cadence": "1d",
+      "enabled": false,
+      "keep_n": 10,
+      "older_than": "90d",
+      "name_regex": ".*",
+      "next_run_at": "2021-12-10T12:18:31.508Z"
+    },
+    "permissions": {
+      "project_access": {
+        "access_level": 50,
+        "notification_level": 3
+      }
+    },
+    "packages_enabled": true,
+    "empty_repo": false,
+    "archived": false,
+    "visibility": "public",
+    "resolve_outdated_diff_discussions": false,
+    "container_registry_enabled": true,
+    "issues_enabled": true,
+    "merge_requests_enabled": true,
+    "wiki_enabled": true,
+    "jobs_enabled": true,
+    "builds_access_level": "enabled",
+    "snippets_enabled": true,
+    "service_desk_enabled": true,
+    "service_desk_address": "contact-project+srinath-chandrashekhar-test1-31983767-issue-@incoming.gitlab.com",
+    "can_create_merge_request_in": true,
+    "issues_access_level": "enabled",
+    "repository_access_level": "enabled",
+    "merge_requests_access_level": "enabled",
+    "forking_access_level": "enabled",
+    "tags": [
+      {
+        "name": "ThirdTag",
+        "message": "ThirdTag",
+        "target": "bda7c5630dc32faeb47d4899332437718eb83229",
+        "commit": {
+          "id": "d9ccef7454abaef3b1463df9b9dea4c85b44ee1a",
+          "short_id": "d9ccef74",
+          "created_at": "2022-01-05T05:20:40.000+00:00",
+          "title": "Add new file",
+          "web_url": "https://gitlab.com/srinath.chandrashekhar/test1/-/commit/d9ccef7454abaef3b1463df9b9dea4c85b44ee1a"
+        },
+        "release": {
+          "tag_name": "ThirdTag",
+          "description": "ThirdTag"
+        },
+        "protected": false
+      },
+      {
+        "name": "SecondTag",
+        "message": "SecondTag",
+        "target": "309d594560ae5f0a7aa18771f555d0b5fbb9a6a0",
+        "commit": {
+          "id": "d9ccef7454abaef3b1463df9b9dea4c85b44ee1a",
+          "short_id": "d9ccef74",
+          "created_at": "2022-01-05T05:20:40.000+00:00",
+          "title": "Add new file",
+          "web_url": "https://gitlab.com/srinath.chandrashekhar/test1/-/commit/d9ccef7454abaef3b1463df9b9dea4c85b44ee1a"
+        },
+        "release": {
+          "tag_name": "SecondTag",
+          "description": "SecondTag"
+        },
+        "protected": false
+      },
+      {
+        "name": "FirstTag",
+        "message": "FirstTag",
+        "target": "69efa17e475065e9fcfe3eda215b1be0bb145598",
+        "commit": {
+          "id": "d9ccef7454abaef3b1463df9b9dea4c85b44ee1a",
+          "short_id": "d9ccef74",
+          "created_at": "2022-01-05T05:20:40.000+00:00",
+          "title": "Add new file",
+          "web_url": "https://gitlab.com/srinath.chandrashekhar/test1/-/commit/d9ccef7454abaef3b1463df9b9dea4c85b44ee1a"
+        },
+        "release": {
+          "tag_name": "FirstTag",
+          "description": "FirstTag"
+        },
+        "protected": false
+      }
+    ]
+  }
+]

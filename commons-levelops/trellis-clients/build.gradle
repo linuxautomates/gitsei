@@ -1,0 +1,19 @@
+dependencies {
+    // annotation processing
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.okhttp
+
+    implementation project(":utils")
+    implementation project(":database-commons")
+    implementation project(":database-services")
+    implementation project(":trellis-models")
+
+    // test
+    testAnnotationProcessor libraries.lombok
+    testCompileOnly libraries.lombok
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+}

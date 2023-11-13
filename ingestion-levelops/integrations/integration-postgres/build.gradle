@@ -1,0 +1,44 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-commons')
+    api levelopsCommonsLib('database-commons')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    testImplementation libraries.lombok
+
+    implementation libraries.jackson_core
+    implementation libraries.guava
+    implementation libraries.apache_commons
+    implementation libraries.apache_collections
+    implementation libraries.spring_jdbc
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+
+    implementation group: "com.zaxxer", name: "HikariCP", version: "3.3.1"
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.5.1'
+    implementation group: 'org.jooq', name: 'jooq', version: '3.9.2'
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

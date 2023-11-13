@@ -1,0 +1,157 @@
+{
+  "name": "maxime-test-rb",
+  "description": "desc",
+  "enabled": true,
+  "trigger_type": "scheduled",
+  "trigger_template_type": "quelque chose",
+  "ui_data": {
+    "links": {
+      "1": {
+        "id": "1",
+        "from": {
+          "nodeId": "0",
+          "portId": "output"
+        },
+        "to": {
+          "nodeId": "1",
+          "portId": "input"
+        },
+        "properties": {
+          "option": "if condition met",
+          "wait": true
+        }
+      },
+      "2": {
+        "id": "2",
+        "from": {
+          "nodeId": "1",
+          "portId": "output"
+        },
+        "to": {
+          "nodeId": "1",
+          "portId": "input"
+        },
+        "properties": {
+          "option": "abc",
+          "wait": false
+        }
+      }
+    },
+    "nodes": {
+      "0": {
+        "id": "0",
+        "type": "trigger",
+        "name": "start node",
+        "position": {
+          "x": 20,
+          "y": 20
+        },
+        "ports": {
+          "input": {
+            "id": "input",
+            "type": "top",
+            "properties": {
+              "action": "input"
+            },
+            "position": {
+              "x": -1,
+              "y": 70
+            }
+          },
+          "output": {
+            "id": "output",
+            "type": "bottom",
+            "properties": {
+              "action": "output"
+            },
+            "position": {
+              "x": 121,
+              "y": 70
+            }
+          }
+        },
+        "input": {
+          "interval_in_min": {
+            "key": "interval_in_min",
+            "type": "text",
+            "values": [
+              {
+                "value": "10",
+                "type": "string"
+              }
+            ]
+          },
+          "multi": {
+            "key": "multi",
+            "type": "multi",
+            "values": [
+              {
+                "value": "a",
+                "type": "string"
+              },
+              {
+                "value": "b",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      },
+      "1": {
+        "id": "1",
+        "type": "slack_notification",
+        "name": "Send Slack to Maxime",
+        "position": {
+          "x": 420,
+          "y": 1000
+        },
+        "ports": {
+          "input": {
+            "id": "input",
+            "type": "top",
+            "properties": {
+              "action": "input"
+            },
+            "position": {
+              "x": -1,
+              "y": 70
+            }
+          },
+          "output": {
+            "id": "output",
+            "type": "bottom",
+            "properties": {
+              "action": "output"
+            },
+            "position": {
+              "x": 121,
+              "y": 70
+            }
+          }
+        },
+        "input": {
+          "user_email": {
+            "key": "user_email",
+            "type": "text",
+            "values": [
+              {
+                "value": "maxime@levelops.io",
+                "type": "string"
+              }
+            ]
+          },
+          "text": {
+            "key": "text ",
+            "type": "text",
+            "values": [
+              {
+                "value": "wassup",
+                "type": "string"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

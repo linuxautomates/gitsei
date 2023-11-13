@@ -1,0 +1,538 @@
+{
+  "sender_email": "viraj@levelops.io",
+  "target_email": "viraj@levelops.io",
+  "assignment_message": "",
+  "work_item_id": "98d35072-529e-4b43-a685-3e6f8629bcaf",
+  "id": "390a40fb-7cbe-475b-8772-dc8c9eda91ec",
+  "qtemplate_id": "80da25b7-f043-4215-b480-7b5833de37b1",
+  "product_id": "71",
+  "qtemplate_name": "VA Test 3",
+  "generation": "1603350616135872",
+  "completed": false,
+  "current_score": 0,
+  "priority": "LOW",
+  "total_questions": 12,
+  "answered_questions": 11,
+  "total_score": 0,
+  "updated_at": 1603350616,
+  "sections": [
+    {
+      "tags": [],
+      "id": "06db5640-49e4-4518-8f0b-8e9603766057",
+      "name": "S1",
+      "type": "DEFAULT",
+      "description": "",
+      "questions": [
+        {
+          "id": "d5b18833-b68e-46b2-ae5e-02b9b55f5fda",
+          "name": "Q1.1",
+          "severity": "MEDIUM",
+          "section_id": "06db5640-49e4-4518-8f0b-8e9603766057",
+          "type": "multi-select",
+          "options": [
+            {
+              "value": "option 1",
+              "score": 0
+            },
+            {
+              "value": "option 2",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 1,
+          "required": true,
+          "tag_ids": []
+        },
+        {
+          "id": "870fa663-426f-4fb3-963b-30e6cd24a9c1",
+          "name": "Question 2",
+          "severity": "MEDIUM",
+          "section_id": "06db5640-49e4-4518-8f0b-8e9603766057",
+          "type": "single-select",
+          "options": [
+            {
+              "value": "option 1",
+              "score": 0
+            },
+            {
+              "value": "option 2",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 2,
+          "required": false,
+          "tag_ids": []
+        },
+        {
+          "id": "4672a9b1-2c9b-44d2-86f1-0f030e662243",
+          "name": "Question 3",
+          "severity": "MEDIUM",
+          "section_id": "06db5640-49e4-4518-8f0b-8e9603766057",
+          "type": "boolean",
+          "options": [
+            {
+              "value": "yes",
+              "score": 0
+            },
+            {
+              "value": "no",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 3,
+          "required": false,
+          "tag_ids": []
+        }
+      ],
+      "created_at": 1597255212
+    },
+    {
+      "tags": [],
+      "id": "2e8e8e64-1deb-4684-8eb0-a3cdcefd616b",
+      "name": "S2",
+      "type": "DEFAULT",
+      "description": "",
+      "questions": [
+        {
+          "id": "66d26a26-eaff-44b3-b8d9-820a70c2b46b",
+          "name": "Q2.1",
+          "severity": "MEDIUM",
+          "section_id": "2e8e8e64-1deb-4684-8eb0-a3cdcefd616b",
+          "type": "single-select",
+          "options": [
+            {
+              "value": "option 1",
+              "score": 0
+            },
+            {
+              "value": "option 2",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 1,
+          "required": true,
+          "tag_ids": []
+        }
+      ],
+      "created_at": 1597255237
+    },
+    {
+      "tags": [],
+      "id": "eaf4b23c-b404-4676-8b30-430ea79248b1",
+      "name": "S3",
+      "type": "DEFAULT",
+      "description": "",
+      "questions": [
+        {
+          "id": "85b708a8-6590-4d06-a9b1-c8e27ab0c0fb",
+          "name": "Multi line Q1",
+          "severity": "MEDIUM",
+          "section_id": "eaf4b23c-b404-4676-8b30-430ea79248b1",
+          "type": "text",
+          "options": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 1,
+          "required": true,
+          "tag_ids": []
+        }
+      ],
+      "created_at": 1603230099
+    },
+    {
+      "tags": [],
+      "id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+      "name": "test section",
+      "type": "DEFAULT",
+      "description": "this is a test description",
+      "questions": [
+        {
+          "id": "d66e6a16-e067-44d8-9c2d-748559b45b19",
+          "name": "Question 1 \"Dangerous\" Question?",
+          "severity": "MEDIUM",
+          "section_id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+          "type": "boolean",
+          "options": [
+            {
+              "value": "yes",
+              "score": 0
+            },
+            {
+              "value": "no",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 1,
+          "required": true,
+          "tag_ids": []
+        },
+        {
+          "id": "9ae7b8a7-502a-464b-9289-19e1195da8a7",
+          "name": "Question 2 - \"Dangerous\" Question?",
+          "severity": "MEDIUM",
+          "section_id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+          "type": "multi-select",
+          "options": [
+            {
+              "value": "\"Dangerous\" option 1",
+              "score": 0
+            },
+            {
+              "value": "Dangerous\\n option 2",
+              "score": 0
+            },
+            {
+              "value": "option 3",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 2,
+          "required": true,
+          "tag_ids": []
+        },
+        {
+          "id": "e5ebc85d-aeee-464b-8c09-b9ccab32d51b",
+          "name": "Question 3 - \"Dangerous\" Question?",
+          "severity": "MEDIUM",
+          "section_id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+          "type": "single-select",
+          "options": [
+            {
+              "value": "\"Dangerous\" option 1",
+              "score": 0
+            },
+            {
+              "value": "Dangerous\\n option 2",
+              "score": 0
+            },
+            {
+              "value": "option 3",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 3,
+          "required": true,
+          "tag_ids": []
+        },
+        {
+          "id": "714c4653-2013-4094-9b73-20f55da3f261",
+          "name": "Question 4 - \"Dangerous\" Question?",
+          "severity": "MEDIUM",
+          "section_id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+          "type": "text",
+          "options": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 4,
+          "required": true,
+          "tag_ids": []
+        },
+        {
+          "id": "50a60d00-7300-4b10-85cb-9e3d0877ec86",
+          "name": "Question 5 - Dangerous\\n Question?",
+          "severity": "MEDIUM",
+          "section_id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+          "type": "text",
+          "options": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 5,
+          "required": true,
+          "tag_ids": []
+        }
+      ],
+      "created_at": 1601464277
+    },
+    {
+      "tags": [],
+      "id": "4d92f53d-061a-416c-8aea-7990835802a2",
+      "name": "Checklist Section",
+      "type": "CHECKLIST",
+      "description": "Checklist Section",
+      "questions": [
+        {
+          "id": "05f2f21b-70e9-49f7-8cad-aeb8b3de9c07",
+          "name": "Checklist Question 1",
+          "severity": "MEDIUM",
+          "section_id": "4d92f53d-061a-416c-8aea-7990835802a2",
+          "type": "checklist",
+          "options": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 1,
+          "required": true,
+          "tag_ids": []
+        },
+        {
+          "id": "b61147e6-8b4d-41bb-948b-b87289f19fec",
+          "name": "Checklist Question 2",
+          "severity": "MEDIUM",
+          "section_id": "4d92f53d-061a-416c-8aea-7990835802a2",
+          "type": "checklist",
+          "options": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "MANUAL",
+          "number": 2,
+          "required": true,
+          "tag_ids": []
+        }
+      ],
+      "created_at": 1602813046
+    }
+  ],
+  "section_responses": [
+    {
+      "section_id": "06db5640-49e4-4518-8f0b-8e9603766057",
+      "answers": [
+        {
+          "comments": [],
+          "question_id": "d5b18833-b68e-46b2-ae5e-02b9b55f5fda",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "option 1",
+              "original_value": "option 1",
+              "score": 0
+            },
+            {
+              "value": "option 2",
+              "original_value": "option 2",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350564
+        },
+        {
+          "comments": [],
+          "question_id": "870fa663-426f-4fb3-963b-30e6cd24a9c1",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "option 1",
+              "original_value": "option 1",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350567
+        },
+        {
+          "comments": [],
+          "question_id": "4672a9b1-2c9b-44d2-86f1-0f030e662243",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "no",
+              "original_value": "no",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350569
+        }
+      ]
+    },
+    {
+      "section_id": "2e8e8e64-1deb-4684-8eb0-a3cdcefd616b",
+      "answers": [
+        {
+          "comments": [],
+          "question_id": "66d26a26-eaff-44b3-b8d9-820a70c2b46b",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "option 1",
+              "original_value": "option 1",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350571
+        }
+      ]
+    },
+    {
+      "section_id": "eaf4b23c-b404-4676-8b30-430ea79248b1",
+      "answers": [
+        {
+          "comments": [],
+          "question_id": "85b708a8-6590-4d06-a9b1-c8e27ab0c0fb",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "line 1\nline 2",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350586
+        }
+      ]
+    },
+    {
+      "section_id": "872c9674-f2c6-42d9-ae0d-62add4d36213",
+      "answers": [
+        {
+          "comments": [],
+          "question_id": "50a60d00-7300-4b10-85cb-9e3d0877ec86",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "answer 3",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350613
+        },
+        {
+          "comments": [],
+          "question_id": "d66e6a16-e067-44d8-9c2d-748559b45b19",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "no",
+              "original_value": "no",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350588
+        },
+        {
+          "comments": [],
+          "question_id": "9ae7b8a7-502a-464b-9289-19e1195da8a7",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "\"Dangerous\" option 1",
+              "original_value": "\"Dangerous\" option 1",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350590
+        },
+        {
+          "comments": [],
+          "question_id": "e5ebc85d-aeee-464b-8c09-b9ccab32d51b",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "Dangerous\\n option 2",
+              "original_value": "Dangerous\\n option 2",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350595
+        },
+        {
+          "comments": [],
+          "question_id": "714c4653-2013-4094-9b73-20f55da3f261",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "answer 2",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350604
+        }
+      ]
+    },
+    {
+      "section_id": "4d92f53d-061a-416c-8aea-7990835802a2",
+      "answers": [
+        {
+          "comments": [],
+          "question_id": "05f2f21b-70e9-49f7-8cad-aeb8b3de9c07",
+          "user_email": "viraj@levelops.io",
+          "answered": true,
+          "upload": false,
+          "responses": [
+            {
+              "value": "true",
+              "score": 0
+            }
+          ],
+          "created_at": 1603350615
+        },
+        {
+          "comments": [],
+          "question_id": "b61147e6-8b4d-41bb-948b-b87289f19fec",
+          "answered": false,
+          "upload": false,
+          "responses": [
+            {
+              "value": "",
+              "score": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "message_sent": false,
+  "tag_ids": [
+    "18"
+  ],
+  "state": "INCOMPLETE",
+  "main": true,
+  "kb_ids": [
+    "23907f9f-0a08-4338-85d6-a7799ba283a5",
+    "93e604b2-c96c-40a4-83e6-0f0c5bfcd69c",
+    "9667d350-668d-444c-b88e-0bee463f7231"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "maxResults": 50,
+  "startAt": 0,
+  "total": 5,
+  "isLast": true,
+  "values": [
+    {
+      "id": 1,
+      "self": "https://levelops.atlassian.net/rest/agile/1.0/board/1",
+      "name": "DefaultScrumBoard",
+      "type": "scrum",
+      "location": {
+        "projectId": 10001,
+        "displayName": "LevelOps-integrations (LOI)",
+        "projectName": "LevelOps-integrations",
+        "projectKey": "LOI",
+        "projectTypeKey": "software",
+        "avatarURI": "/secure/projectavatar?size=small&s=small&pid=10001&avatarId=10416",
+        "name": "LevelOps-integrations (LOI)"
+      }
+    },
+    {
+      "id": 2,
+      "self": "https://levelops.atlassian.net/rest/agile/1.0/board/2",
+      "name": "UN board",
+      "type": "simple",
+      "location": {
+        "projectId": 10002,
+        "displayName": "unravel (UN)",
+        "projectName": "unravel",
+        "projectKey": "UN",
+        "projectTypeKey": "software",
+        "avatarURI": "/secure/projectavatar?size=small&s=small&pid=10002&avatarId=10425",
+        "name": "unravel (UN)"
+      }
+    },
+    {
+      "id": 4,
+      "self": "https://levelops.atlassian.net/rest/agile/1.0/board/4",
+      "name": "TEST board",
+      "type": "kanban",
+      "location": {
+        "projectId": 10004,
+        "displayName": "test (TEST)",
+        "projectName": "test",
+        "projectKey": "TEST",
+        "projectTypeKey": "software",
+        "avatarURI": "/secure/projectavatar?size=small&s=small&pid=10004&avatarId=10423",
+        "name": "test (TEST)"
+      }
+    },
+    {
+      "id": 5,
+      "self": "https://levelops.atlassian.net/rest/agile/1.0/board/5",
+      "name": "PLAT board",
+      "type": "simple",
+      "location": {
+        "projectId": 10005,
+        "displayName": "PLATFORM-Test (PLAT)",
+        "projectName": "PLATFORM-Test",
+        "projectKey": "PLAT",
+        "projectTypeKey": "software",
+        "avatarURI": "/secure/projectavatar?size=small&s=small&pid=10005&avatarId=10405",
+        "name": "PLATFORM-Test (PLAT)"
+      }
+    },
+    {
+      "id": 3,
+      "self": "https://levelops.atlassian.net/rest/agile/1.0/board/3",
+      "name": "Sprint dashboard",
+      "type": "simple",
+      "location": {
+        "projectId": 10003,
+        "displayName": "talonx (SW)",
+        "projectName": "talonx",
+        "projectKey": "SW",
+        "projectTypeKey": "software",
+        "avatarURI": "/secure/projectavatar?size=small&s=small&pid=10003&avatarId=10401",
+        "name": "talonx (SW)"
+      }
+    }
+  ]
+}

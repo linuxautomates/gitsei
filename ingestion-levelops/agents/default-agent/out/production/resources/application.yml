@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ingestion-agent
+server:
+  servlet:
+    context-path: /ingestion-agent
+  compression:
+    enabled: true
+    min-response-size: 2048
+  http2:
+    enabled: true
+
+inventory:
+         url: http://localhost:9999
+
+
+spring.output.ansi.enabled: ALWAYS
+
+#management.endpoints.web.exposure.include: loggers,mappings,info
+#management.endpoint.loggers.enabled: true

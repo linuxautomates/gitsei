@@ -1,0 +1,144 @@
+{
+  "count" : 5,
+  "records" : [ {
+    "_metadata" : {
+      "integration_key" : {
+        "tenant_id" : "foo",
+        "integration_id" : "1430"
+      },
+      "integration_type" : "jira",
+      "data_type" : "statuses"
+    },
+    "destination" : "gcs",
+    "prefix_uri" : "statuses/",
+    "records" : [ {
+      "uri" : "a/statuses.json",
+      "html_uri" : "a/statuses.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "a/statuses.json",
+        "generation" : 1645655802663856
+      }
+    }, {
+      "uri" : "b/statuses.json",
+      "html_uri" : "b/statuses.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "b/statuses.json",
+        "generation" : 1645655802663856
+      }
+    } ],
+    "failures" : [ ],
+    "count" : 2
+  }, {
+    "_metadata" : {
+      "integration_key" : {
+        "tenant_id" : "foo",
+        "integration_id" : "1430"
+      },
+      "integration_type" : "jira",
+      "data_type" : "projects"
+    },
+    "destination" : "gcs",
+    "prefix_uri" : "projects/",
+    "records" : [ {
+      "uri" : "projects.json",
+      "html_uri" : "projects.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "projects.json",
+        "generation" : 1645655800736273
+      }
+    } ],
+    "count" : 1
+  }, {
+    "_metadata" : {
+      "integration_key" : {
+        "tenant_id" : "foo",
+        "integration_id" : "1430"
+      },
+      "integration_type" : "jira",
+      "data_type" : "fields"
+    },
+    "destination" : "gcs",
+    "prefix_uri" : "fields/",
+    "records" : [ {
+      "uri" : "fields.json",
+      "html_uri" : "fields.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "fields.json",
+        "generation" : 1645655801168719
+      }
+    } ],
+    "count" : 1
+  }, {
+    "_metadata" : {
+      "integration_key" : {
+        "tenant_id" : "foo",
+        "integration_id" : "1430"
+      },
+      "integration_type" : "jira",
+      "data_type" : "issues"
+    },
+    "destination" : "gcs",
+    "prefix_uri" : "issues/",
+    "records" : [ {
+      "uri" : "a/issues.0.json",
+      "html_uri" : "a/issues.0.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "a/issues.0.json",
+        "generation" : 1645655788946538
+      }
+    }, {
+      "uri" : "a/issues.1.json",
+      "html_uri" : "a/issues.1.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "a/issues.1.json",
+        "generation" : 1645655788946538
+      }
+    }, {
+      "uri" : "b/issues.0.json",
+      "html_uri" : "b/issues.0.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "b/issues.0.json",
+        "generation" : 1645655788946538
+      }
+    }, {
+      "uri" : "b/issues.1.json",
+      "html_uri" : "b/issues.1.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "b/issues.1.json",
+        "generation" : 1645655788946538
+      }
+    } ],
+    "failures" : [ ],
+    "count" : 4
+  }, {
+    "_metadata" : {
+      "integration_key" : {
+        "tenant_id" : "foo",
+        "integration_id" : "1430"
+      },
+      "integration_type" : "jira",
+      "data_type" : "users"
+    },
+    "destination" : "gcs",
+    "prefix_uri" : "users/",
+    "records" : [ {
+      "uri" : "users.0.json",
+      "html_uri" : "users.0.json",
+      "blob_id" : {
+        "bucket" : "dev-ingestion-levelops",
+        "name" : "users.0.json",
+        "generation" : 1645655802317464
+      }
+    } ],
+    "failures" : [ ],
+    "count" : 1
+  } ]
+}

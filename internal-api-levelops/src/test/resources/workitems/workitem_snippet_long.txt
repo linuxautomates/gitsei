@@ -1,0 +1,19 @@
+2020-11-06 17:41:00.250 ERROR 1 --- [ctivity-event-2] i.l.a.s.SlackInteractivityEventService   : Error sending answer questionnaire inline modal!
+
+io.levelops.notification.clients.SlackClientException: Response not successful: SlackApiResponse(ok=false, payload=SlackApiViewResponse(view=null), dynamicProperties={response_metadata={messages=[[ERROR] failed to match all allowed schemas [json-pointer:/view], [ERROR] failed to match all allowed schemas [json-pointer:/view/title], [ERROR] must be less than 25 characters [json-pointer:/view/title/text]]}, error=invalid_arguments})
+	at io.levelops.notification.clients.SlackBotClientImpl.expectOkResponse(SlackBotClientImpl.java:37) ~[notification-service-v0.1.1906.jar!/:na]
+	at io.levelops.notification.clients.SlackBotClientImpl.openView(SlackBotClientImpl.java:58) ~[notification-service-v0.1.1906.jar!/:na]
+	at io.levelops.notification.clients.CachedSlackBotClient.openView(CachedSlackBotClient.java:20) ~[notification-service-v0.1.1906.jar!/:na]
+	at io.levelops.api.services.SlackInteractivityEventService.processQuestionnaireAction(SlackInteractivityEventService.java:310) ~[classes!/:na]
+	at io.levelops.api.services.SlackInteractivityEventService.processQuestionnaireInteractivityEvent(SlackInteractivityEventService.java:327) ~[classes!/:na]
+	at io.levelops.api.services.SlackInteractivityEventService.processSlackInteractivityEvent(SlackInteractivityEventService.java:358) ~[classes!/:na]
+	at io.levelops.api.services.SlackInteractivityEventService$$FastClassBySpringCGLIB$$d9d03afa.invoke(<generated>) ~[classes!/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.7.RELEASE.jar!/:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.7.RELEASE.jar!/:5.2.7.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.7.RELEASE.jar!/:5.2.7.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.7.RELEASE.jar!/:5.2.7.RELEASE]
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115) ~[spring-aop-5.2.7.RELEASE.jar!/:5.2.7.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:830) ~[na:na]

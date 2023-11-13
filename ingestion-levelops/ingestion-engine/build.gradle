@@ -1,0 +1,36 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation libraries.okhttp
+    implementation levelopsCommonsLib('utils')
+    implementation levelopsCommonsLib("ingestion-commons")
+    implementation levelopsCommonsLib("okhttp-utils")
+    implementation libraries.apache_commons
+    implementation libraries.guava
+    implementation libraries.jackson_core
+    implementation libraries.log4j
+    implementation libraries.jsr
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.4
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

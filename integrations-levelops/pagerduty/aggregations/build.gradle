@@ -1,0 +1,53 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    api levelopsCommonsLib('utils')
+    api levelopsCommonsLib('database-services')
+    api (levelopsCommonsLib('aggregation-commons')) {
+        exclude group: 'io.levelops.integrations', module: 'integration-pagerduty-models'
+    }
+
+    api project(":integration-pagerduty-models")
+    api libraries.apache_commons
+    api libraries.apache_collections
+    api libraries.jackson_core
+    api libraries.spring_boot_cache
+
+
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+    
+    testCompile 'com.github.ben-manes.caffeine:caffeine:2.8.5'
+    // testImplementation libraries.spring_boot_cache
+    testImplementation libraries.jackson_core
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+    testImplementation levelopsCommonsLib("utils")
+
+    // testApi 'io.zonky.test:embedded-postgres:1.2.6'
+    testImplementation group: 'io.zonky.test', name: 'embedded-postgres', version: '1.2.7'
+
+    testImplementation enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:11.5.0')
+    
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.3
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

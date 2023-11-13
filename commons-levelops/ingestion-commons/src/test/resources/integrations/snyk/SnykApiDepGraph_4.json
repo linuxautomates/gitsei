@@ -1,0 +1,678 @@
+{
+  "depGraph": {
+    "schemaVersion": "1.2.0",
+    "pkgManager": {
+      "name": "maven"
+    },
+    "pkgs": [
+      {
+        "id": "com.wordnik:swagger-codegen_2.9.1@2.0.0",
+        "info": {
+          "name": "com.wordnik:swagger-codegen_2.9.1",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.core:jackson-annotations@2.10.1",
+        "info": {
+          "name": "com.fasterxml.jackson.core:jackson-annotations",
+          "version": "2.10.1"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.core:jackson-core@2.1.0",
+        "info": {
+          "name": "com.fasterxml.jackson.core:jackson-core",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.core:jackson-databind@2.1.0",
+        "info": {
+          "name": "com.fasterxml.jackson.core:jackson-databind",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base@2.10.1",
+        "info": {
+          "name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base",
+          "version": "2.10.1"
+        }
+      },
+      {
+        "id": "jakarta.activation:jakarta.activation-api@1.2.1",
+        "info": {
+          "name": "jakarta.activation:jakarta.activation-api",
+          "version": "1.2.1"
+        }
+      },
+      {
+        "id": "jakarta.xml.bind:jakarta.xml.bind-api@2.3.2",
+        "info": {
+          "name": "jakarta.xml.bind:jakarta.xml.bind-api",
+          "version": "2.3.2"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations@2.10.1",
+        "info": {
+          "name": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations",
+          "version": "2.10.1"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider@2.10.1",
+        "info": {
+          "name": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider",
+          "version": "2.10.1"
+        }
+      },
+      {
+        "id": "org.scala-lang:scala-library@2.9.1-1",
+        "info": {
+          "name": "org.scala-lang:scala-library",
+          "version": "2.9.1-1"
+        }
+      },
+      {
+        "id": "com.google.guava:guava@r09",
+        "info": {
+          "name": "com.google.guava:guava",
+          "version": "r09"
+        }
+      },
+      {
+        "id": "com.thoughtworks.paranamer:paranamer@2.3",
+        "info": {
+          "name": "com.thoughtworks.paranamer:paranamer",
+          "version": "2.3"
+        }
+      },
+      {
+        "id": "org.scalastuff:scalabeans@0.3",
+        "info": {
+          "name": "org.scalastuff:scalabeans",
+          "version": "0.3"
+        }
+      },
+      {
+        "id": "com.fasterxml.jackson.module:jackson-module-scala@2.1.2",
+        "info": {
+          "name": "com.fasterxml.jackson.module:jackson-module-scala",
+          "version": "2.1.2"
+        }
+      },
+      {
+        "id": "commons-io:commons-io@2.3",
+        "info": {
+          "name": "commons-io:commons-io",
+          "version": "2.3"
+        }
+      },
+      {
+        "id": "org.fusesource.scalamd:scalamd@1.5",
+        "info": {
+          "name": "org.fusesource.scalamd:scalamd",
+          "version": "1.5"
+        }
+      },
+      {
+        "id": "org.slf4j:slf4j-api@1.6.1",
+        "info": {
+          "name": "org.slf4j:slf4j-api",
+          "version": "1.6.1"
+        }
+      },
+      {
+        "id": "org.fusesource.scalate:scalate-util@1.5.3",
+        "info": {
+          "name": "org.fusesource.scalate:scalate-util",
+          "version": "1.5.3"
+        }
+      },
+      {
+        "id": "org.scala-lang:scala-compiler@2.9.1",
+        "info": {
+          "name": "org.scala-lang:scala-compiler",
+          "version": "2.9.1"
+        }
+      },
+      {
+        "id": "org.fusesource.scalate:scalate-core@1.5.3",
+        "info": {
+          "name": "org.fusesource.scalate:scalate-core",
+          "version": "1.5.3"
+        }
+      },
+      {
+        "id": "org.fusesource.wikitext:wikitext-core@1.2",
+        "info": {
+          "name": "org.fusesource.wikitext:wikitext-core",
+          "version": "1.2"
+        }
+      },
+      {
+        "id": "org.fusesource.wikitext:confluence-core@1.2",
+        "info": {
+          "name": "org.fusesource.wikitext:confluence-core",
+          "version": "1.2"
+        }
+      },
+      {
+        "id": "org.fusesource.wikitext:textile-core@1.2",
+        "info": {
+          "name": "org.fusesource.wikitext:textile-core",
+          "version": "1.2"
+        }
+      },
+      {
+        "id": "org.fusesource.scalate:scalate-wikitext@1.5.3",
+        "info": {
+          "name": "org.fusesource.scalate:scalate-wikitext",
+          "version": "1.5.3"
+        }
+      },
+      {
+        "id": "org.yaml:snakeyaml@1.7",
+        "info": {
+          "name": "org.yaml:snakeyaml",
+          "version": "1.7"
+        }
+      },
+      {
+        "id": "rhino:js@1.7R2",
+        "info": {
+          "name": "rhino:js",
+          "version": "1.7R2"
+        }
+      },
+      {
+        "id": "org.fusesource.scalate:scalate-page@1.5.3",
+        "info": {
+          "name": "org.fusesource.scalate:scalate-page",
+          "version": "1.5.3"
+        }
+      }
+    ],
+    "graph": {
+      "rootNodeId": "root-node",
+      "nodes": [
+        {
+          "nodeId": "root-node",
+          "pkgId": "com.wordnik:swagger-codegen_2.9.1@2.0.0",
+          "deps": [
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-annotations@2.10.1"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider@2.10.1"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.module:jackson-module-scala@2.1.2"
+            },
+            {
+              "nodeId": "commons-io:commons-io@2.3"
+            },
+            {
+              "nodeId": "org.fusesource.scalate:scalate-page@1.5.3"
+            },
+            {
+              "nodeId": "org.fusesource.scalate:scalate-wikitext@1.5.3"
+            },
+            {
+              "nodeId": "org.scala-lang:scala-library@2.9.1-1"
+            }
+          ]
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.core:jackson-annotations@2.10.1",
+          "pkgId": "com.fasterxml.jackson.core:jackson-annotations@2.10.1",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "jackson-version"
+              },
+              "location": "file://pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.core:jackson-core@2.1.0",
+          "pkgId": "com.fasterxml.jackson.core:jackson-core@2.1.0",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-scala/2.1.2/jackson-module-scala-2.1.2.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.core:jackson-databind@2.1.0",
+          "pkgId": "com.fasterxml.jackson.core:jackson-databind@2.1.0",
+          "deps": [
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-annotations@2.10.1"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-core@2.1.0"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-scala/2.1.2/jackson-module-scala-2.1.2.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base@2.10.1",
+          "pkgId": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base@2.10.1",
+          "deps": [
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-core@2.1.0"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-databind@2.1.0"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "project.version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.10.1/jackson-jaxrs-json-provider-2.10.1.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "jakarta.activation:jakarta.activation-api@1.2.1",
+          "pkgId": "jakarta.activation:jakarta.activation-api@1.2.1",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.1/jackson-module-jaxb-annotations-2.10.1.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "jakarta.xml.bind:jakarta.xml.bind-api@2.3.2",
+          "pkgId": "jakarta.xml.bind:jakarta.xml.bind-api@2.3.2",
+          "deps": [
+            {
+              "nodeId": "jakarta.activation:jakarta.activation-api@1.2.1"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "version.jaxb.impl"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.1/jackson-module-jaxb-annotations-2.10.1.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations@2.10.1",
+          "pkgId": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations@2.10.1",
+          "deps": [
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-annotations@2.10.1"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-core@2.1.0"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-databind@2.1.0"
+            },
+            {
+              "nodeId": "jakarta.activation:jakarta.activation-api@1.2.1"
+            },
+            {
+              "nodeId": "jakarta.xml.bind:jakarta.xml.bind-api@2.3.2"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "jackson.version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-bom/2.10.1/jackson-bom-2.10.1.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider@2.10.1",
+          "pkgId": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider@2.10.1",
+          "deps": [
+            {
+              "nodeId": "com.fasterxml.jackson.jaxrs:jackson-jaxrs-base@2.10.1"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.module:jackson-module-jaxb-annotations@2.10.1"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "org.scala-lang:scala-library@2.9.1-1",
+          "pkgId": "org.scala-lang:scala-library@2.9.1-1",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "scala-version"
+              },
+              "location": "file://pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "com.google.guava:guava@r09",
+          "pkgId": "com.google.guava:guava@r09",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/scalastuff/scalabeans/0.3/scalabeans-0.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "com.thoughtworks.paranamer:paranamer@2.3",
+          "pkgId": "com.thoughtworks.paranamer:paranamer@2.3",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/scalastuff/scalabeans/0.3/scalabeans-0.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.scalastuff:scalabeans@0.3",
+          "pkgId": "org.scalastuff:scalabeans@0.3",
+          "deps": [
+            {
+              "nodeId": "com.google.guava:guava@r09"
+            },
+            {
+              "nodeId": "com.thoughtworks.paranamer:paranamer@2.3"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-scala/2.1.2/jackson-module-scala-2.1.2.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "com.fasterxml.jackson.module:jackson-module-scala@2.1.2",
+          "pkgId": "com.fasterxml.jackson.module:jackson-module-scala@2.1.2",
+          "deps": [
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-annotations@2.10.1"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-core@2.1.0"
+            },
+            {
+              "nodeId": "com.fasterxml.jackson.core:jackson-databind@2.1.0"
+            },
+            {
+              "nodeId": "org.scala-lang:scala-library@2.9.1-1"
+            },
+            {
+              "nodeId": "org.scalastuff:scalabeans@0.3"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "commons-io:commons-io@2.3",
+          "pkgId": "commons-io:commons-io@2.3",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.scalamd:scalamd@1.5",
+          "pkgId": "org.fusesource.scalamd:scalamd@1.5",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "scalamd-version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-project/1.5.3/scalate-project-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.slf4j:slf4j-api@1.6.1",
+          "pkgId": "org.slf4j:slf4j-api@1.6.1",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "slf4j-version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-project/1.5.3/scalate-project-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.scalate:scalate-util@1.5.3",
+          "pkgId": "org.fusesource.scalate:scalate-util@1.5.3",
+          "deps": [
+            {
+              "nodeId": "org.scala-lang:scala-library@2.9.1-1"
+            },
+            {
+              "nodeId": "org.slf4j:slf4j-api@1.6.1"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "project.version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-core/1.5.3/scalate-core-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.scala-lang:scala-compiler@2.9.1",
+          "pkgId": "org.scala-lang:scala-compiler@2.9.1",
+          "deps": [
+            {
+              "nodeId": "org.scala-lang:scala-library@2.9.1-1"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "scala-version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-project/1.5.3/scalate-project-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.scalate:scalate-core@1.5.3",
+          "pkgId": "org.fusesource.scalate:scalate-core@1.5.3",
+          "deps": [
+            {
+              "nodeId": "org.fusesource.scalate:scalate-util@1.5.3"
+            },
+            {
+              "nodeId": "org.scala-lang:scala-compiler@2.9.1"
+            },
+            {
+              "nodeId": "org.slf4j:slf4j-api@1.6.1"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "project.version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-wikitext/1.5.3/scalate-wikitext-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.wikitext:wikitext-core@1.2",
+          "pkgId": "org.fusesource.wikitext:wikitext-core@1.2",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "project.version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/wikitext/confluence-core/1.2/confluence-core-1.2.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.wikitext:confluence-core@1.2",
+          "pkgId": "org.fusesource.wikitext:confluence-core@1.2",
+          "deps": [
+            {
+              "nodeId": "org.fusesource.wikitext:wikitext-core@1.2"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "wikitext-version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-project/1.5.3/scalate-project-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.wikitext:textile-core@1.2",
+          "pkgId": "org.fusesource.wikitext:textile-core@1.2",
+          "deps": [
+            {
+              "nodeId": "org.fusesource.wikitext:wikitext-core@1.2"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "wikitext-version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-project/1.5.3/scalate-project-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.scalate:scalate-wikitext@1.5.3",
+          "pkgId": "org.fusesource.scalate:scalate-wikitext@1.5.3",
+          "deps": [
+            {
+              "nodeId": "org.fusesource.scalate:scalate-core@1.5.3"
+            },
+            {
+              "nodeId": "org.fusesource.wikitext:confluence-core@1.2"
+            },
+            {
+              "nodeId": "org.fusesource.wikitext:textile-core@1.2"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "org.yaml:snakeyaml@1.7",
+          "pkgId": "org.yaml:snakeyaml@1.7",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-page/1.5.3/scalate-page-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "rhino:js@1.7R2",
+          "pkgId": "rhino:js@1.7R2",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "rhino-version"
+              },
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/org/fusesource/scalate/scalate-project/1.5.3/scalate-project-1.5.3.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "org.fusesource.scalate:scalate-page@1.5.3",
+          "pkgId": "org.fusesource.scalate:scalate-page@1.5.3",
+          "deps": [
+            {
+              "nodeId": "org.fusesource.scalamd:scalamd@1.5"
+            },
+            {
+              "nodeId": "org.fusesource.scalate:scalate-core@1.5.3"
+            },
+            {
+              "nodeId": "org.fusesource.scalate:scalate-wikitext@1.5.3"
+            },
+            {
+              "nodeId": "org.yaml:snakeyaml@1.7"
+            },
+            {
+              "nodeId": "rhino:js@1.7R2"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://pom.xml"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

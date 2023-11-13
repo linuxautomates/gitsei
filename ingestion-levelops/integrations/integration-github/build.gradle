@@ -1,0 +1,37 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation levelopsCommonsLib('inventory-service')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('integration-github')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation 'org.eclipse.mylyn.github:org.eclipse.egit.github.core:2.1.5'
+    implementation libraries.guava
+    implementation libraries.apache_collections
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

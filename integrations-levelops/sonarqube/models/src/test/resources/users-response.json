@@ -1,0 +1,61 @@
+{
+  "paging" : {
+    "pageIndex" : 1,
+    "pageSize" : 50,
+    "total" : 5
+  },
+  "users" : [ {
+    "login" : "admin",
+    "name" : "Administrator",
+    "active" : true,
+    "tokensCount" : 0,
+    "local" : true,
+    "externalIdentity" : "admin",
+    "externalProvider" : "sonarqube",
+    "groups" : [ "sonar-administrators", "sonar-users" ]
+  }, {
+    "login" : "harsh@levelops.io",
+    "name" : "Harsh",
+    "active" : true,
+    "avatar" : "36a071051e3976b0dc3ebad154a0dd50",
+    "email" : "harsh@levelops.io",
+    "tokensCount" : 0,
+    "local" : true,
+    "externalIdentity" : "harsh@levelops.io",
+    "externalProvider" : "sonarqube",
+    "groups" : [ "CGN-Levelops", "sonar-users" ]
+  }, {
+    "login" : "srinath",
+    "name" : "Srinath C",
+    "active" : true,
+    "avatar" : "f6d495afbb009a8e23234b30f5d69554",
+    "email" : "srinath.chandrashekar@levelops.io",
+    "tokensCount" : 2,
+    "local" : true,
+    "externalIdentity" : "srinath",
+    "externalProvider" : "sonarqube",
+    "groups" : [ "CGN-Levelops", "sonar-administrators", "sonar-users" ]
+  }, {
+    "login" : "test1",
+    "name" : "Test User",
+    "active" : true,
+    "avatar" : "55502f40dc8b7c769880b10874abc9d0",
+    "email" : "test@example.com",
+    "tokensCount" : 0,
+    "local" : true,
+    "externalIdentity" : "test1",
+    "externalProvider" : "sonarqube",
+    "groups" : [ "CGN-Levelops", "sonar-users" ]
+  }, {
+    "login" : "test2",
+    "name" : "Test user 2",
+    "active" : true,
+    "avatar" : "43b05f394d5611c54a1a9e8e20baee21",
+    "email" : "test2@example.com",
+    "tokensCount" : 1,
+    "local" : true,
+    "externalIdentity" : "test2",
+    "externalProvider" : "sonarqube",
+    "groups" : [ "sonar-administrators", "sonar-users" ]
+  } ]
+}

@@ -1,0 +1,39 @@
+{
+  "records": [
+    {
+      "organization": "default-organization",
+      "key": "io.levelops:aggregations-service",
+      "name": "aggregations-service",
+      "qualifier": "TRK",
+      "visibility": "public",
+      "lastAnalysisDate": "2020-09-22T05:08:05+0000",
+      "revision": "ca02ea52bbf35d8a5c463102d40d7a28c4fd2783",
+      "analyses": [
+        {
+          "key": "AXS0Np_ksszTasiJGA8_",
+          "date": "2020-09-22T05:08:05+0000",
+          "projectVersion": "0.0.1-SNAPSHOT",
+          "manualNewCodePeriodBaseline": "false",
+          "revision": "ca02ea52bbf35d8a5c463102d40d7a28c4fd2783",
+          "events": [
+            {
+              "key": "AXS0Nqv0sszTasiJGBlS",
+              "category": "VERSION",
+              "name": "0.0.1-SNAPSHOT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "23"
+    },
+    "integration_type": "sonarqube",
+    "data_type": "analyses",
+    "page_number": 0
+  }
+}

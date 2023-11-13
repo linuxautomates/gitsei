@@ -1,0 +1,105 @@
+{
+  "email": "sanjay.gurnani@broadcom.com",
+  "score": 14,
+  "full_name": "Sanjay Gurnani",
+  "org_user_id": "d7fa9d51-4219-4a7b-a1cf-2531d5ccf2be",
+  "section_responses": [
+    {
+      "name": "Quality",
+      "order": 0,
+      "score": 90,
+      "enabled": true,
+      "description": "Configure metrics to measure the quality of work",
+      "weighted_score": 15,
+      "feature_responses": [
+        {
+          "mean": 0.0,
+          "name": "Percentage of Rework",
+          "count": 0,
+          "order": 0,
+          "score": 90,
+          "rating": "GOOD",
+          "result": 0,
+          "enabled": true,
+          "description": "Provide the baseline for worst performance or 0% score",
+          "feature_unit": "%",
+          "section_order": 0
+        }
+      ]
+    },
+    {
+      "name": "Impact",
+      "order": 1,
+      "score": 30,
+      "enabled": true,
+      "description": "Configure metrics to measure the impact of work",
+      "weighted_score": 1,
+      "feature_responses": [
+        {
+          "name": "High Impact bugs worked on per month",
+          "count": 1,
+          "order": 0,
+          "score": 30,
+          "rating": "NEEDS_IMPROVEMENT",
+          "result": 1,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Bugs"
+        },
+        {
+          "mean": 1.0,
+          "name": "High Impact stories worked on per month",
+          "count": 1,
+          "order": 1,
+          "score": 30,
+          "rating": "NEEDS_IMPROVEMENT",
+          "result": 1,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Stories"
+        }
+      ]
+    },
+    {
+      "name": "Volume",
+      "order": 2,
+      "score": 0,
+      "enabled": true,
+      "description": "Configure metrics to measure the volume of work",
+      "weighted_score": 0,
+      "feature_responses": [
+        {
+          "name": "Number of PRs per month",
+          "order": 0,
+          "score": 0,
+          "rating": "NEEDS_IMPROVEMENT",
+          "result": 0,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "PRs"
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "order": 3,
+      "enabled": true,
+      "description": "Configure metrics to measure the speed of work",
+      "feature_responses": []
+    },
+    {
+      "name": "Proficiency",
+      "order": 4,
+      "enabled": true,
+      "description": "Configure metrics to measure technical proficiency",
+      "feature_responses": []
+    },
+    {
+      "name": "Leadership & Collaboration",
+      "order": 5,
+      "enabled": true,
+      "description": "Configure metrics to measure leadership and collaboration",
+      "feature_responses": []
+    }
+  ]
+}

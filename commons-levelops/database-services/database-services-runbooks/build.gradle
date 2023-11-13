@@ -1,0 +1,55 @@
+dependencies {
+    api project(':database-services:database-services-base')
+    api project(':utils')
+    api project(':database-commons')
+    api project(':ingestion-commons')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.spring_integration_core
+    compile libraries.spring_boot_starter_web
+    compile libraries.spring_jdbc
+    compile libraries.hikari
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.5.1'
+    compile group: 'com.google.cloud', name: 'google-cloud-storage', version: '2.6.2'
+    compile group: 'com.google.cloud.sql', name: 'postgres-socket-factory', version: '1.8.0'
+    compile libraries.apache_collections
+    compile libraries.okhttp
+    compile libraries.spring_redis
+    compile libraries.jedis
+    compile project(":integration-clients:integration-gcs")
+
+    // compile ('io.levelops.integrations:integration-pagerduty-models:v0.1.lev1312-SNAPSHOT'){
+    //     exclude group: 'io.levelops.commons'
+    // }
+
+    
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+    
+    testCompile group: "io.zonky.test", name: "embedded-postgres", version: "1.2.6"
+    testCompile enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:11.5.0')
+    testCompile libraries.junit
+    testCompile libraries.spring_boot_starter_test
+    testCompile libraries.mockito
+    testCompile libraries.assertj
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.7
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.4
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

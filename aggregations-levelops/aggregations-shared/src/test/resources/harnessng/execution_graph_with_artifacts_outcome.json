@@ -1,0 +1,43 @@
+{
+  "nodeMap": {
+    "lPCtnAXIQYmjnLEV-tb5ww": {
+      "uuid": "lPCtnAXIQYmjnLEV-tb5ww",
+      "name": "Service",
+      "identifier": "service",
+      "baseFqn": "pipeline.stages.cd.spec",
+      "stepType": "SERVICE_V3",
+      "status": "Success",
+      "startTs": 1679488844482,
+      "endTs": 1679488850413,
+      "outcomes": {
+        "service": {
+          "identifier": "testservice2",
+          "name": "test-service-2",
+          "type": "Kubernetes",
+          "tags": {},
+          "gitOpsEnabled": false
+        },
+        "artifacts": {
+          "primary": {
+            "connectorRef": "seijuhidockerhub",
+            "imagePath": "juhiagr/sei-repo",
+            "tag": "2.0",
+            "identifier": "primary",
+            "type": "DockerRegistry",
+            "primaryArtifact": true,
+            "image": "index.docker.io/juhiagr/sei-repo:2.0",
+            "imagePullSecret": "<+imagePullSecret.primary>",
+            "label": {},
+            "displayName": "Tag# 2.0",
+            "metadata": {
+              "image": "index.docker.io/juhiagr/sei-repo:2.0",
+              "tag": "2.0",
+              "url": "https://index.docker.io/v2/juhiagr/sei-repo/tags/2.0"
+            }
+          },
+          "sidecars": {}
+        }
+      }
+    }
+  }
+}

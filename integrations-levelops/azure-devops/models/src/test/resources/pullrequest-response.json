@@ -1,0 +1,145 @@
+{
+  "value": [
+    {
+      "repository": {
+        "id": "9c17199f-fa9a-45f1-9766-d97c41e3c680",
+        "name": "pr-demo-repo",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680",
+        "project": {
+          "id": "c4db413b-d8d0-4ffb-b7c7-6a10eef543d2",
+          "name": "project-test-11",
+          "state": "unchanged",
+          "visibility": "unchanged",
+          "lastUpdateTime": "0001-01-01T00:00:00"
+        }
+      },
+      "pullRequestId": 3,
+      "codeReviewId": 3,
+      "status": "active",
+      "createdBy": {
+        "displayName": "srinath.chandrashekhar",
+        "url": "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi"
+          }
+        },
+        "id": "31111bde-02f6-694e-86e7-cb19b5559f0b",
+        "uniqueName": null,
+        "imageUrl": null,
+        "descriptor": "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi"
+      },
+      "creationDate": "2021-04-20T07:49:18.6997312Z",
+      "title": "Added sample.txt",
+      "description": "Added sample.txt",
+      "sourceRefName": "refs/heads/filter-fix",
+      "targetRefName": "refs/heads/main",
+      "mergeStatus": "succeeded",
+      "isDraft": false,
+      "mergeId": "5d2cc2bd-35e8-4001-9a58-209044eee193",
+      "lastMergeSourceCommit": {
+        "commitId": "56b774b0b7ccb42f8c2b1f7602bb7bd3bf7909f5",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/commits/56b774b0b7ccb42f8c2b1f7602bb7bd3bf7909f5"
+      },
+      "lastMergeTargetCommit": {
+        "commitId": "5b96a219f056273b40cd5f373e77397dc3e19eac",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/commits/5b96a219f056273b40cd5f373e77397dc3e19eac"
+      },
+      "lastMergeCommit": {
+        "commitId": "da8f67fade0aa5355648fb3cd1465b62066a8860",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/commits/da8f67fade0aa5355648fb3cd1465b62066a8860"
+      },
+      "reviewers": [
+        {
+          "reviewerUrl": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/pullRequests/3/reviewers/d1337ef6-e968-4488-bc45-d9222700ec95",
+          "vote": 0,
+          "hasDeclined": false,
+          "isFlagged": false,
+          "displayName": "praveen@cognitree.com",
+          "url": "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/d1337ef6-e968-4488-bc45-d9222700ec95",
+          "_links": {
+            "avatar": {
+              "href": "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxwcmF2ZWVuQGNvZ25pdHJlZS5jb20"
+            }
+          },
+          "id": "d1337ef6-e968-4488-bc45-d9222700ec95",
+          "uniqueName": null,
+          "imageUrl": null
+        }
+      ],
+      "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/pullRequests/3",
+      "supportsIterations": true
+    },
+    {
+      "repository": {
+        "id": "9c17199f-fa9a-45f1-9766-d97c41e3c680",
+        "name": "pr-demo-repo",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680",
+        "project": {
+          "id": "c4db413b-d8d0-4ffb-b7c7-6a10eef543d2",
+          "name": "project-test-11",
+          "state": "unchanged",
+          "visibility": "unchanged",
+          "lastUpdateTime": "0001-01-01T00:00:00"
+        }
+      },
+      "pullRequestId": 2,
+      "codeReviewId": 2,
+      "status": "active",
+      "createdBy": {
+        "displayName": "srinath.chandrashekhar",
+        "url": "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi"
+          }
+        },
+        "id": "31111bde-02f6-694e-86e7-cb19b5559f0b",
+        "uniqueName": null,
+        "imageUrl": null,
+        "descriptor": "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi"
+      },
+      "creationDate": "2021-04-14T12:08:53.3638936Z",
+      "title": "Pr-2 Added list.txt",
+      "description": "second PR Added list.txt",
+      "sourceRefName": "refs/heads/doc-branch",
+      "targetRefName": "refs/heads/main",
+      "mergeStatus": "succeeded",
+      "isDraft": false,
+      "mergeId": "a0a7de8c-e678-4579-af1f-ddd2103ea14c",
+      "lastMergeSourceCommit": {
+        "commitId": "4b03e67b017e3a43262a6712138d692772639ef6",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/commits/4b03e67b017e3a43262a6712138d692772639ef6"
+      },
+      "lastMergeTargetCommit": {
+        "commitId": "5b96a219f056273b40cd5f373e77397dc3e19eac",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/commits/5b96a219f056273b40cd5f373e77397dc3e19eac"
+      },
+      "lastMergeCommit": {
+        "commitId": "929b9cab1f1d34e03c1479aa539403be3407d1ce",
+        "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/commits/929b9cab1f1d34e03c1479aa539403be3407d1ce"
+      },
+      "reviewers": [
+        {
+          "reviewerUrl": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/pullRequests/2/reviewers/d1337ef6-e968-4488-bc45-d9222700ec95",
+          "vote": 0,
+          "hasDeclined": false,
+          "isFlagged": false,
+          "displayName": "praveen@cognitree.com",
+          "url": "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/d1337ef6-e968-4488-bc45-d9222700ec95",
+          "_links": {
+            "avatar": {
+              "href": "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/bnd.dXBuOldpbmRvd3MgTGl2ZSBJRFxwcmF2ZWVuQGNvZ25pdHJlZS5jb20"
+            }
+          },
+          "id": "d1337ef6-e968-4488-bc45-d9222700ec95",
+          "uniqueName": null,
+          "imageUrl": null
+        }
+      ],
+      "url": "https://dev.azure.com/cgn-test/c4db413b-d8d0-4ffb-b7c7-6a10eef543d2/_apis/git/repositories/9c17199f-fa9a-45f1-9766-d97c41e3c680/pullRequests/2",
+      "supportsIterations": true
+    }
+  ],
+  "count": 2
+}

@@ -1,0 +1,293 @@
+{
+  "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+  "id": "10063",
+  "self": "https://levelops.atlassian.net/rest/api/2/issue/10063",
+  "key": "LEV-63",
+  "fields": {
+    "statuscategorychangedate": "2020-01-22T13:18:48.648-0800",
+    "issuetype": {
+      "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10002",
+      "id": "10002",
+      "description": "A task that needs to be done.",
+      "iconUrl": "https://levelops.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+      "name": "Task",
+      "subtask": false,
+      "avatarId": 10318
+    },
+    "timespent": 39600,
+    "project": {
+      "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+      "id": "10001",
+      "key": "LEV",
+      "name": "levelops",
+      "projectTypeKey": "software",
+      "simplified": false,
+      "avatarUrls": {
+        "48x48": "https://levelops.atlassian.net/secure/projectavatar?pid=10001&avatarId=10408",
+        "24x24": "https://levelops.atlassian.net/secure/projectavatar?size=small&s=small&pid=10001&avatarId=10408",
+        "16x16": "https://levelops.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10001&avatarId=10408",
+        "32x32": "https://levelops.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10001&avatarId=10408"
+      }
+    },
+    "customfield_10031": null,
+    "customfield_10032": null,
+    "fixVersions": [
+      {
+        "self": "https://levelops.atlassian.net/rest/api/2/version/10001",
+        "id": "10001",
+        "description": "",
+        "name": "V1",
+        "archived": false,
+        "released": true,
+        "releaseDate": "2019-09-17"
+      }
+    ],
+    "customfield_10033": null,
+    "customfield_10034": null,
+    "aggregatetimespent": 39600,
+    "customfield_10035": null,
+    "resolution": {
+      "self": "https://levelops.atlassian.net/rest/api/2/resolution/10000",
+      "id": "10000",
+      "description": "Work has been completed on this issue.",
+      "name": "Done"
+    },
+    "customfield_10036": null,
+    "customfield_10027": null,
+    "resolutiondate": "2020-01-22T13:18:48.644-0800",
+    "workratio": 66000,
+    "lastViewed": null,
+    "watches": {
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-63/watchers",
+      "watchCount": 1,
+      "isWatching": false
+    },
+    "created": "2019-09-13T19:06:43.405-0700",
+    "customfield_10020": [
+      "com.atlassian.greenhopper.service.sprint.Sprint@14e84cc2[id=1,rapidViewId=1,state=FUTURE,name=LEV Sprint 1,goal=<null>,startDate=<null>,endDate=<null>,completeDate=<null>,sequence=1]"
+    ],
+    "customfield_10021": null,
+    "customfield_10022": null,
+    "priority": {
+      "self": "https://levelops.atlassian.net/rest/api/2/priority/3",
+      "iconUrl": "https://levelops.atlassian.net/images/icons/priorities/medium.svg",
+      "name": "Medium",
+      "id": "3"
+    },
+    "customfield_10023": "3_*:*_1_*:*_14486031_*|*_10000_*:*_2_*:*_578215912_*|*_10002_*:*_2_*:*_10708423313",
+    "customfield_10024": [],
+    "customfield_10025": null,
+    "labels": [
+      "test-label"
+    ],
+    "customfield_10026": null,
+    "customfield_10016": null,
+    "customfield_10017": null,
+    "customfield_10018": {
+      "hasEpicLinkFieldDependency": false,
+      "showField": false,
+      "nonEditableReason": {
+        "reason": "PLUGIN_LICENSE_ERROR",
+        "message": "Portfolio for Jira must be licensed for the Parent Link to be available."
+      }
+    },
+    "customfield_10019": "0|i000bz:",
+    "aggregatetimeoriginalestimate": 60,
+    "timeestimate": 18000,
+    "versions": [],
+    "issuelinks": [
+      {
+        "id": "10107",
+        "self": "https://levelops.atlassian.net/rest/api/2/issueLink/10107",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://levelops.atlassian.net/rest/api/2/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "10060",
+          "key": "LEV-60",
+          "self": "https://levelops.atlassian.net/rest/api/2/issue/10060",
+          "fields": {
+            "summary": "Jira Integration",
+            "status": {
+              "self": "https://levelops.atlassian.net/rest/api/2/status/10002",
+              "description": "",
+              "iconUrl": "https://levelops.atlassian.net/",
+              "name": "Done",
+              "id": "10002",
+              "statusCategory": {
+                "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://levelops.atlassian.net/rest/api/2/priority/3",
+              "iconUrl": "https://levelops.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "A big user story that needs to be broken down. Created by Jira Software - do not edit or delete.",
+              "iconUrl": "https://levelops.atlassian.net/images/icons/issuetypes/epic.svg",
+              "name": "Epic",
+              "subtask": false
+            }
+          }
+        }
+      }
+    ],
+    "assignee": {
+      "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+      "name": "maxime",
+      "key": "maxime",
+      "accountId": "5d6049c4c812c40d27c01ea9",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=48&s=48",
+        "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=24&s=24",
+        "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=16&s=16",
+        "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=32&s=32"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "updated": "2020-02-12T13:53:32.557-0800",
+    "status": {
+      "self": "https://levelops.atlassian.net/rest/api/2/status/10002",
+      "description": "",
+      "iconUrl": "https://levelops.atlassian.net/",
+      "name": "Done",
+      "id": "10002",
+      "statusCategory": {
+        "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "components": [
+      {
+        "self": "https://levelops.atlassian.net/rest/api/2/component/10002",
+        "id": "10002",
+        "name": "ingestion-levelops",
+        "description": "Ingestion Framework"
+      }
+    ],
+    "timeoriginalestimate": 60,
+    "description": "Description\\!\n\nCVE-29012\n\nh1. test\n\nh6. adfasd\n\n{{asdasdas}}\n\n{quote}quote{quote}\n\n{quote}quoted text{quote}\n\n!Screen Shot 2019-09-17 at 2.48.00 PM.png|width=200,height=183!\n\n ",
+    "customfield_10010": null,
+    "customfield_10014": "LEV-60",
+    "customfield_10015": null,
+    "customfield_10005": null,
+    "customfield_10006": null,
+    "customfield_10007": null,
+    "security": null,
+    "customfield_10008": null,
+    "aggregatetimeestimate": 18000,
+    "customfield_10009": null,
+    "summary": "Ingestion - Jira - Fetch Projects",
+    "creator": {
+      "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+      "name": "maxime",
+      "key": "maxime",
+      "accountId": "5d6049c4c812c40d27c01ea9",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=48&s=48",
+        "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=24&s=24",
+        "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=16&s=16",
+        "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=32&s=32"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "subtasks": [
+      {
+        "id": "10083",
+        "key": "LEV-83",
+        "self": "https://levelops.atlassian.net/rest/api/2/issue/10083",
+        "fields": {
+          "summary": "Dev Test Please Ignore",
+          "status": {
+            "self": "https://levelops.atlassian.net/rest/api/2/status/10003",
+            "description": "",
+            "iconUrl": "https://levelops.atlassian.net/images/icons/statuses/generic.png",
+            "name": "Wont Do",
+            "id": "10003",
+            "statusCategory": {
+              "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/3",
+              "id": 3,
+              "key": "done",
+              "colorName": "green",
+              "name": "Done"
+            }
+          },
+          "priority": {
+            "self": "https://levelops.atlassian.net/rest/api/2/priority/3",
+            "iconUrl": "https://levelops.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+          },
+          "issuetype": {
+            "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10003",
+            "id": "10003",
+            "description": "The sub-task of the issue",
+            "iconUrl": "https://levelops.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype",
+            "name": "Sub-task",
+            "subtask": true,
+            "avatarId": 10316
+          }
+        }
+      }
+    ],
+    "reporter": {
+      "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c4c812c40d27c01ea9",
+      "name": "maxime",
+      "key": "maxime",
+      "accountId": "5d6049c4c812c40d27c01ea9",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=48&s=48",
+        "24x24": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=24&s=24",
+        "16x16": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=16&s=16",
+        "32x32": "https://secure.gravatar.com/avatar/52413128490bfe20ac9fc95f681445be?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMB-5.png&size=32&s=32"
+      },
+      "displayName": "Maxime Bellier",
+      "active": true,
+      "timeZone": "America/Los_Angeles",
+      "accountType": "atlassian"
+    },
+    "customfield_10000": "{}",
+    "aggregateprogress": {
+      "progress": 39600,
+      "total": 57600,
+      "percent": 68
+    },
+    "customfield_10001": null,
+    "customfield_10002": null,
+    "customfield_10003": null,
+    "customfield_10004": null,
+    "environment": null,
+    "duedate": "2020-02-20",
+    "progress": {
+      "progress": 39600,
+      "total": 57600,
+      "percent": 68
+    },
+    "votes": {
+      "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-63/votes",
+      "votes": 0,
+      "hasVoted": false
+    }
+  }
+}

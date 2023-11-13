@@ -1,0 +1,67 @@
+[
+  {
+    "op": "replace",
+    "fromValue": "1.33",
+    "path": "/plugins/0/implementation_version",
+    "value": "2"
+  },
+  {
+    "op": "replace",
+    "fromValue": "Config API for Blue Ocean",
+    "path": "/plugins/1/long_name",
+    "value": "Server Sent Events (SSE) Gateway Plugin"
+  },
+  {
+    "op": "replace",
+    "fromValue": "pluginB",
+    "path": "/plugins/1/short_name",
+    "value": "pluginC"
+  },
+  {
+    "op": "replace",
+    "fromValue": "The Jenkins Plugins Parent POM Project",
+    "path": "/plugins/1/specification_title",
+    "value": "Server Sent Events (SSE) Gateway Plugin"
+  },
+  {
+    "op": "replace",
+    "fromValue": "blueocean-config",
+    "path": "/plugins/1/implementation_title",
+    "value": "sse-gateway"
+  },
+  {
+    "op": "remove",
+    "path": "/plugins/1/implementation_version",
+    "value": "1.21.0"
+  },
+  {
+    "op": "replace",
+    "fromValue": "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+    "path": "/plugins/1/url",
+    "value": "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin"
+  },
+  {
+    "op": "replace",
+    "fromValue": "1.8.0_191",
+    "path": "/plugins/1/build_jdk",
+    "value": "1.8.0_222"
+  },
+  {
+    "op": "add",
+    "path": "/plugins/1/new_field",
+    "value": "so new"
+  },
+  {
+    "op": "remove",
+    "path": "/plugins/2",
+    "value": {
+      "long_name": "Server Sent Events (SSE) Gateway Plugin",
+      "short_name": "pluginC",
+      "specification_title": "Server Sent Events (SSE) Gateway Plugin",
+      "implementation_title": "sse-gateway",
+      "implementation_version": "1.20",
+      "url": "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+      "build_jdk": "1.8.0_222"
+    }
+  }
+]

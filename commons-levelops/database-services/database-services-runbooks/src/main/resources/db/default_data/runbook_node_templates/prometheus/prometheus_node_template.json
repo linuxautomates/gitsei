@@ -1,0 +1,72 @@
+[
+  {
+    "type": "prometheus_query",
+    "node_handler": "prometheus_query",
+    "name": "Create Prometheus Query",
+    "description": "Creates a Prometheus Query and waits for the results to be ingested",
+    "category": "Prometheus",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "query_string": {
+        "key": "query_string",
+        "index": 20,
+        "display_name": "Prometheus expression query string",
+        "description": "Prometheus query to fetch data from db",
+        "type": "text",
+        "required": true
+      },
+      "is_instant": {
+        "key": "is_instant",
+        "index": 30,
+        "display_name": "Prometheus is instant query",
+        "description": "Flag that determines if the query is instant or range query. If false, start_time, end_time & step should be specified",
+        "type": "single-select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "required": true
+      },
+      "start_time": {
+        "key": "start_time",
+        "index": 40,
+        "display_name": "Start timestamp",
+        "description": "Start time for range query",
+        "type": "text",
+        "required": false
+      },
+      "end_time": {
+        "key": "end_time",
+        "index": 50,
+        "display_name": " End timestamp",
+        "description": "End time for range query",
+        "type": "text",
+        "required": false
+      },
+      "step": {
+        "key": "step",
+        "index": 60,
+        "display_name": "Query resolution step",
+        "description": "Prometheus query resolution step",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "query_result": {
+        "key": "query_result",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "prometheus"
+    }
+  }
+]

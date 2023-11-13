@@ -1,0 +1,60 @@
+{
+  "uuid": "yT54s-GUTRy86o1hz4i1Fg",
+  "setupId": "mMZeYautRCGHQRVEGaEbNw",
+  "name": "Rolling Out",
+  "identifier": "Rolling_Out",
+  "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP.spec.execution.steps.Rolling_Out",
+  "outcomes": {
+    "output": {
+      "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1",
+      "releaseNumber": 4,
+      "prunedResourceIds": []
+    },
+    "deploymentInfoOutcome": {
+      "serverInstanceInfoList": [
+        {
+          "name": "harness-example-deployment-6b4d9f99f8-fl4gw",
+          "namespace": "default",
+          "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1",
+          "podIP": "10.43.128.200",
+          "containerList": [
+            {
+              "containerId": "containerd://8121d9d18c181b52aa1b036c1efddedde43c803b14c3803bda47425fd87e730f",
+              "name": "harness-example",
+              "image": "docker.io/meetrajsinhcrest/harness-test:0.0.2",
+              "----test-field": "abc"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "stepParameters": {
+    "identifier": "Rolling_Out",
+    "name": "Rolling Out",
+    "timeout": "10m",
+    "type": "K8sRollingDeploy",
+    "spec": {
+      "skipDryRun": false,
+      "pruningEnabled": false
+    }
+  },
+  "startTs": 1672917329225,
+  "endTs": 1672917368671,
+  "stepType": "K8sRollingDeploy",
+  "status": "Success",
+  "failureInfo": {
+    "message": "",
+    "failureTypeList": [],
+    "responseMessages": []
+  },
+  "skipInfo": null,
+  "stepDetails": {
+    "Release Name": {
+      "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1"
+    }
+  },
+  "strategyMetadata": null,
+  "executionInputConfigured": false
+}
+

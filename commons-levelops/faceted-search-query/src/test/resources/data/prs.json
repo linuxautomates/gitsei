@@ -1,0 +1,937 @@
+[
+  {
+    "pr_id": "730e7778-2638-444e-bbb2-282a5bc81393",
+    "pr_repo_id": [
+      "levelops/api-levelops"
+    ],
+    "pr_project": "levelops/api-levelops",
+    "pr_number": "1142",
+    "pr_integration_id": "1849",
+    "pr_creator": "ashish-levelops",
+    "pr_merge_sha": "32efad6718848abe3fd6d9366b0ef82c05cad258",
+    "pr_title": "LEV-4198 - Support drill-downs for dev-productivity",
+    "pr_source_branch": "LEV-3933-1",
+    "pr_target_branch": "dev",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "NONE"
+    ],
+    "pr_reviewer_ids": [
+      "NONE"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [
+      "ready for review"
+    ],
+    "pr_commit_shas": [
+      "a66619c85c12551b534c027b5af3bd8fc0d118b7",
+      "8e39643d0b3036afb58633d4a5ac72e486975be7",
+      "09415805d70c58c4d92cd69ac9c679b3525f3e78",
+      "0108ea0db330a8e1257517788469e097091020ba",
+      "c5dd1978e2a54fb4afec3ea6cac234fee22399b5",
+      "73d44dc3ceaa271aeb88903364c97f72c94b6ccf",
+      "96fab733121028f6163ffa397a39ce433db38c01",
+      "f6dd693b58a13605e379121bf8cd0dff623e9020",
+      "1ece723463f75518bfe069600c230e2311f7a9ad",
+      "1f85d5ddc8b20ef1ccb39f34ec96b4accb9585f4",
+      "5033fb6250875022140b497e65615e96fba5846e",
+      "f475cc4177757e43c70facd0f6f7bc216f7f0a49",
+      "c7172ddc04670d9eb92a6058aee41094161e280e",
+      "80a3258d5012e95ad25ce2c88c748fe0c55c6b3a",
+      "57c243065284eb387afe833a852e33178caf3772",
+      "5c49ccfee0aa804d07342f8e1e82a67c5c76cb86",
+      "35184678825078cddea9eb984fa8ae1a42c68b30"
+    ],
+    "pr_pr_updated_at": 1636446264000,
+    "pr_pr_merged_at": 1636446264000,
+    "pr_pr_closed_at": 1636446264000,
+    "pr_pr_created_at": 1636440044000,
+    "pr_createdat": 1646291234000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 6220,
+    "pr_creator_id": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+    "pr_workitem_ids": [
+      "LEV-3933",
+      "LEV-4198"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Tuesday",
+    "pr_closed_day": "Tuesday",
+    "pr_additions": 5,
+    "pr_deletions": 5,
+    "pr_changes": 10,
+    "pr_files_count": 3,
+    "pr_comment_count": 3,
+    "pr_reviewer_count": 0,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "HTML",
+      "Dockerfile",
+      "Java"
+    ],
+    "pr_cycle_time": 6220
+  },
+  {
+    "pr_id": "935560a1-93d1-4f80-98a5-4a7c4ae791f2",
+    "pr_repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "pr_project": "levelops/commons-levelops",
+    "pr_number": "2436",
+    "pr_integration_id": "1849",
+    "pr_creator": "ashish-levelops",
+    "pr_merge_sha": "05a9488c76935ca333c5abe6d29189b0e9a87886",
+    "pr_title": "Technical Breadth & Repo Breadth change from mean to count",
+    "pr_source_branch": "LEV-3933-1",
+    "pr_target_branch": "main",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "PEER_REVIEWED",
+    "pr_collab_state": "unassigned-peer-approved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "viraj-levelops"
+    ],
+    "pr_reviewer_ids": [
+      "f1617a51-04ba-4010-9c11-028f5e15b943"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "f1617a51-04ba-4010-9c11-028f5e15b943"
+    ],
+    "pr_approvers": [
+      "viraj-levelops"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "e18ce096ad64a600e69319d20be72d266bbf1b33",
+      "c1eac68c06e53ffbd8d13b23b6c5f0871361bc26",
+      "efe5ceb2c8e2917dbc8b1352eff6d3bd47761189",
+      "2877c4ae1c5afcdbe04f79acc255f2fa8b125392",
+      "86c1c764dc69725d7ae423809557516d06cbdd77",
+      "9be887d504c1ca77bcdc35e79ccb8213851e3d56",
+      "fe567131ce3bd3fb8835e977715e5369bb6e46e9",
+      "459c7d5e8fe10084914f6da02b52baecc129c016",
+      "9b28cd1167ecdbd69352d0eade03157ee5498994",
+      "a756e9f05db3254d0a6a40ab52f43b2256b0c053",
+      "f03f64c6941d5a6ea6715c87f42ddd1d7731f9fc",
+      "cae672ba04e412c60c173bfd862c11ba71926a3a",
+      "c79ee203a8db6d915b00d693d74e6fb8baea8b2d",
+      "c0fa8b84bade98c81f9c0a8965dbf30a43339211",
+      "b96da81e40f83c134a79d7c82356ce4065970b7a",
+      "ea4e43f04f4483beeae35e18bf1e1ff1a954f85d",
+      "6f7a47886c29d0b6d7d1ad8759abf119579fa856",
+      "0a2b8b4c07ed0be6e517159f1ec1833b8c79ef42",
+      "9d4121b59f5cadefb1dc13f36c80a516f373e40f"
+    ],
+    "pr_pr_updated_at": 1637197413000,
+    "pr_pr_merged_at": 1637197413000,
+    "pr_pr_closed_at": 1637197413000,
+    "pr_pr_created_at": 1637196158000,
+    "pr_createdat": 1646291240000,
+    "pr_avg_author_response_time": 468,
+    "pr_avg_reviewer_response_time": 787,
+    "pr_approval_time": 787,
+    "pr_creator_id": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+    "pr_workitem_ids": [
+      "LEV-3933"
+    ],
+    "pr_commentor_info": [],
+    "pr_approver_info": [
+      {
+        "id": "b4534e6c-7907-4c2a-95f7-1e337bd16b62",
+        "pr_id": "935560a1-93d1-4f80-98a5-4a7c4ae791f2",
+        "review_id": "809511025",
+        "reviewer": "viraj-levelops",
+        "state": "APPROVED",
+        "reviewed_at": 1637196945000
+      }
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Thursday",
+    "pr_closed_day": "Thursday",
+    "pr_additions": 15,
+    "pr_deletions": 20,
+    "pr_changes": 35,
+    "pr_files_count": 1,
+    "pr_comment_count": 0,
+    "pr_reviewer_count": 1,
+    "pr_approver_count": 1,
+    "pr_approval_status": "peer approved",
+    "pr_technology": [
+      "Java"
+    ],
+    "pr_cycle_time": 1255,
+    "pr_review_cycle_time": 787,
+    "pr_review_merge_cycle_time": 468
+  },
+  {
+    "pr_id": "69372052-d940-439c-a971-aec17ae0298f",
+    "pr_repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "pr_project": "levelops/commons-levelops",
+    "pr_number": "2442",
+    "pr_integration_id": "1849",
+    "pr_creator": "ashish-levelops",
+    "pr_merge_sha": "ff014f4185c93c686070716c84c1a4c217557047",
+    "pr_title": "Dev Productivity - Validation for dynamic user definition",
+    "pr_source_branch": "LEV-3933-1",
+    "pr_target_branch": "main",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "SELF_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "ivan-levelops",
+      "ashish-levelops"
+    ],
+    "pr_reviewer_ids": [
+      "9ea043c2-722c-4611-8e35-f6871d561954",
+      "14143532-db10-497d-b9ac-f4b7e8c9050e"
+    ],
+    "pr_commenters": [
+      "ashish-levelops",
+      "ivan-levelops"
+    ],
+    "pr_commenter_ids": [
+      "14143532-db10-497d-b9ac-f4b7e8c9050e",
+      "9ea043c2-722c-4611-8e35-f6871d561954"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "e18ce096ad64a600e69319d20be72d266bbf1b33",
+      "c1eac68c06e53ffbd8d13b23b6c5f0871361bc26",
+      "efe5ceb2c8e2917dbc8b1352eff6d3bd47761189",
+      "2877c4ae1c5afcdbe04f79acc255f2fa8b125392",
+      "86c1c764dc69725d7ae423809557516d06cbdd77",
+      "9be887d504c1ca77bcdc35e79ccb8213851e3d56",
+      "fe567131ce3bd3fb8835e977715e5369bb6e46e9",
+      "459c7d5e8fe10084914f6da02b52baecc129c016",
+      "9b28cd1167ecdbd69352d0eade03157ee5498994",
+      "a756e9f05db3254d0a6a40ab52f43b2256b0c053",
+      "f03f64c6941d5a6ea6715c87f42ddd1d7731f9fc",
+      "cae672ba04e412c60c173bfd862c11ba71926a3a",
+      "c79ee203a8db6d915b00d693d74e6fb8baea8b2d",
+      "c0fa8b84bade98c81f9c0a8965dbf30a43339211",
+      "b96da81e40f83c134a79d7c82356ce4065970b7a",
+      "ea4e43f04f4483beeae35e18bf1e1ff1a954f85d",
+      "6f7a47886c29d0b6d7d1ad8759abf119579fa856",
+      "0a2b8b4c07ed0be6e517159f1ec1833b8c79ef42",
+      "d391d7f920bb906a2b5001ef9dd5ee1ece337d47",
+      "a95d00646fb135050edeb9b442e5bc8296864e88",
+      "b136a997f017355b114e4d49cbdddcf6b1595df7",
+      "466f726d2d9da75d75b95b12554c56061669efe7",
+      "5ad4b7733a91e61b78ab62fe23578eb01c671d5f",
+      "a5fd88296d9bd1f83a81403f0240395618c593ed",
+      "93d70779bcadd17f71615e81695895902e2bae9b",
+      "4f92100324e7da01d957ebceffa77525aa776f62",
+      "7359fd1f3e468bb66a481aa368cce798fca78d5b",
+      "88b390d1f8927f1d5de6e4f3f75b3e629c0e1f6b",
+      "15892d69c5a8827dc2cb0fe10126ba18798b722a",
+      "b1eb1ba60643b5fd4484454de1d5f37d153d9169",
+      "2ce221800878f3c694cf004817344463ecd25b6f",
+      "f65a320816cb838a7f9d50f7b6685648a421501f",
+      "8799fdd1ae7fb86e5fd59d326b2d08a32c6217f3",
+      "6a7d8ee768a29545849089593446791a10be831b",
+      "981c8acd0d5e8f134de088ac1b9c83fcffc3ac10",
+      "186097f67f41552f64ffb9d1ad8528d6f5be47ce",
+      "c4062c58e3997d2c571d75a9d5966131baea6e50",
+      "6d5c39bf1fa1bd2e6349251c8d2b2a023cc91ce7",
+      "3c9eae18164511b25c3d2d8a9f7466f11b6618d2",
+      "2e0336dd27d8aca0bf975f8a7da26d32175ccfcc",
+      "2b75d6eabb92cf9ef2305a85b6a6690edc8a4cc4",
+      "198150180c45472987217216d8b3582218a22ddc",
+      "b28368d1ba45a086a2eb5252a9d4b96fd6c475c5",
+      "24157a7043b933f5699c6b947de0f1f436f47444",
+      "673dd415e59d566a174b0ec9b9bec82fec61fc9d",
+      "368e572799d3fc52e73b725b8cd5847bf3c64bc2",
+      "01969678bee48a20dc206a708701701b764b521d",
+      "843d129bafd4303818dc130e53a01628bbc0ae3e",
+      "8fbe05fb58dc20c6207da7f13c2ec1b664c01252",
+      "84426ba2d06d0178ee6512892c7003f95d5f4b26",
+      "c0de2dcb0bdb946228d070c45d7e0f3c8f61ef25",
+      "a6e41c51a082d8cc2c55c800c171afca8eb886a1",
+      "783e69b1d1964b65c71caf9259fb11ddc78a8969",
+      "6384fe30d0535d4698c5aea2fe9e889929400e63",
+      "9e63e1297c839aa46bded9d4b700d52cf2e46a91",
+      "02867bca664eb3dd4f1b01d98e59e62dd6d7f482",
+      "527223ee66af6a1242c9bede6a1a0142b3154aff",
+      "52d76b395d63ada8f6a02064284b7ae6ee729252",
+      "59aaaa0a56f738e851d339db13baf35916addfbd",
+      "c33eb002c6b48b08ee174e8f818a0b36ea7e1444",
+      "f5f20d2d49701081dc27bdc59cd5140e56eb16a7",
+      "9d4121b59f5cadefb1dc13f36c80a516f373e40f",
+      "4c0f9b78e93925d4021732382a523bdbd9fa34c6",
+      "334e1ca1a4f79cdfdd1f755891e18f9870903b79",
+      "d93d77fb7954d41386275d301c61dc1200e1bd41",
+      "706f93a17dffcd7ed6ec5348b180c2d7a00b390b",
+      "5a384bf887b6fd504b48a815a6c30aed8d960d1d",
+      "0a89ef66dd6024e5d2bce079e3421bba9a419536",
+      "772b6edc7396400840ce9b493b54f0e377a6c245"
+    ],
+    "pr_pr_updated_at": 1637329678000,
+    "pr_pr_merged_at": 1637325793000,
+    "pr_pr_closed_at": 1637325793000,
+    "pr_pr_created_at": 1637318214000,
+    "pr_createdat": 1646291240000,
+    "pr_avg_author_response_time": 3581,
+    "pr_avg_reviewer_response_time": 3998,
+    "pr_comment_time": 7883,
+    "pr_creator_id": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+    "pr_workitem_ids": [
+      "LEV-3933"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Friday",
+    "pr_closed_day": "Friday",
+    "pr_additions": 12,
+    "pr_deletions": 0,
+    "pr_changes": 12,
+    "pr_files_count": 3,
+    "pr_comment_count": 2,
+    "pr_reviewer_count": 2,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "Java"
+    ],
+    "pr_cycle_time": 7579,
+    "pr_review_cycle_time": 7883,
+    "pr_review_merge_cycle_time": 304
+  },
+  {
+    "pr_id": "731bb2d3-c604-4b92-a0ca-2e3d9d2afb47",
+    "pr_repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "pr_project": "levelops/commons-levelops",
+    "pr_number": "2466",
+    "pr_integration_id": "1849",
+    "pr_creator": "ashish-levelops",
+    "pr_merge_sha": "e577113ee4d2a77d8799e7100f32e37e807a3685",
+    "pr_title": "LEV-4295 - Handle missing integrations",
+    "pr_source_branch": "LEV-4178-hf",
+    "pr_target_branch": "main",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "SELF_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "ashish-levelops",
+      "maxime-levelops"
+    ],
+    "pr_reviewer_ids": [
+      "14143532-db10-497d-b9ac-f4b7e8c9050e",
+      "367251a0-9691-4383-a0cb-716f437f8d18"
+    ],
+    "pr_commenters": [
+      "maxime-levelops",
+      "ashish-levelops"
+    ],
+    "pr_commenter_ids": [
+      "367251a0-9691-4383-a0cb-716f437f8d18",
+      "14143532-db10-497d-b9ac-f4b7e8c9050e"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "6df97ad007a14fb76cb2d527a0bfb751afadd256"
+    ],
+    "pr_pr_updated_at": 1638150714000,
+    "pr_pr_merged_at": 1638150060000,
+    "pr_pr_closed_at": 1638150060000,
+    "pr_pr_created_at": 1637925401000,
+    "pr_createdat": 1646291240000,
+    "pr_avg_author_response_time": 215,
+    "pr_avg_reviewer_response_time": 224444,
+    "pr_comment_time": 225098,
+    "pr_creator_id": "14143532-db10-497d-b9ac-f4b7e8c9050e",
+    "pr_workitem_ids": [
+      "LEV-4295",
+      "LEV-4178"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Monday",
+    "pr_closed_day": "Monday",
+    "pr_additions": 0,
+    "pr_deletions": 23,
+    "pr_changes": 23,
+    "pr_files_count": 2,
+    "pr_comment_count": 2,
+    "pr_reviewer_count": 2,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "Java"
+    ],
+    "pr_cycle_time": 224659,
+    "pr_review_cycle_time": 225098,
+    "pr_review_merge_cycle_time": 439
+  },
+  {
+    "pr_id": "be87b99d-dbb4-420d-81af-2b7770eb623f",
+    "pr_repo_id": [
+      "levelops/devops-levelops"
+    ],
+    "pr_project": "levelops/devops-levelops",
+    "pr_number": "1110",
+    "pr_integration_id": "1849",
+    "pr_creator": "viraj-levelops",
+    "pr_merge_sha": "f9396968c47e835ae05ab4052de25262ff185c91",
+    "pr_title": "LEV-4138: Updated aggregations version for prod & asia1",
+    "pr_source_branch": "jen",
+    "pr_target_branch": "main",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "PEER_REVIEWED",
+    "pr_collab_state": "unassigned-peer-approved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "maxime-levelops"
+    ],
+    "pr_reviewer_ids": [
+      "367251a0-9691-4383-a0cb-716f437f8d18"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "367251a0-9691-4383-a0cb-716f437f8d18"
+    ],
+    "pr_approvers": [
+      "maxime-levelops"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "e7e0eabbe2026d1f99de9d9b655dd262e314319c"
+    ],
+    "pr_pr_updated_at": 1637078940000,
+    "pr_pr_merged_at": 1637078936000,
+    "pr_pr_closed_at": 1637078936000,
+    "pr_pr_created_at": 1637075935000,
+    "pr_createdat": 1646291245000,
+    "pr_avg_author_response_time": 2223,
+    "pr_avg_reviewer_response_time": 778,
+    "pr_approval_time": 778,
+    "pr_creator_id": "f1617a51-04ba-4010-9c11-028f5e15b943",
+    "pr_workitem_ids": [
+      "LEV-4138"
+    ],
+    "pr_commentor_info": [],
+    "pr_approver_info": [
+      {
+        "id": "6d9bcc13-9943-4bc4-84b0-81098e41fe1a",
+        "pr_id": "be87b99d-dbb4-420d-81af-2b7770eb623f",
+        "review_id": "807831587",
+        "reviewer": "maxime-levelops",
+        "state": "APPROVED",
+        "reviewed_at": 1637076713000
+      }
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Tuesday",
+    "pr_closed_day": "Tuesday",
+    "pr_additions": 67,
+    "pr_deletions": 32,
+    "pr_changes": 99,
+    "pr_files_count": 3,
+    "pr_comment_count": 2,
+    "pr_reviewer_count": 1,
+    "pr_approver_count": 1,
+    "pr_approval_status": "peer approved",
+    "pr_technology": [
+      "PLpgSQL",
+      "Jinja",
+      "Shell",
+      "Dockerfile",
+      "Python"
+    ],
+    "pr_cycle_time": 3001,
+    "pr_review_cycle_time": 778,
+    "pr_review_merge_cycle_time": 2223
+  },
+  {
+    "pr_id": "93d2815f-e809-43fb-81ea-039b1a279eac",
+    "pr_repo_id": [
+      "levelops/commons-levelops"
+    ],
+    "pr_project": "levelops/commons-levelops",
+    "pr_number": "2501",
+    "pr_integration_id": "1849",
+    "pr_creator": "viraj-levelops",
+    "pr_merge_sha": "f291702c508850f66ac6b3c51352852a21377633",
+    "pr_title": "LEV-4304 + LEV-4269 + LEV-4294 - Fix Feature Handler calculations, across & filters",
+    "pr_source_branch": "jen",
+    "pr_target_branch": "main",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "NONE"
+    ],
+    "pr_reviewer_ids": [
+      "NONE"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "1922ba8b5033de03db8dd1fac7d1b58d691f4c54"
+    ],
+    "pr_pr_updated_at": 1638510966000,
+    "pr_pr_merged_at": 1638510964000,
+    "pr_pr_closed_at": 1638510964000,
+    "pr_pr_created_at": 1638510957000,
+    "pr_createdat": 1646291239000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 7,
+    "pr_creator_id": "f1617a51-04ba-4010-9c11-028f5e15b943",
+    "pr_workitem_ids": [
+      "LEV-4294",
+      "LEV-4304",
+      "LEV-4269"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Friday",
+    "pr_closed_day": "Friday",
+    "pr_additions": 120,
+    "pr_deletions": 56,
+    "pr_changes": 176,
+    "pr_files_count": 4,
+    "pr_comment_count": 0,
+    "pr_reviewer_count": 0,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "Java"
+    ],
+    "pr_cycle_time": 7
+  },
+  {
+    "pr_id": "d55706d1-b62d-4e17-8de5-e739bac826f5",
+    "pr_repo_id": [
+      "levelops/aggregations-levelops"
+    ],
+    "pr_project": "levelops/aggregations-levelops",
+    "pr_number": "383",
+    "pr_integration_id": "1849",
+    "pr_creator": "ctlo2020",
+    "pr_merge_sha": "4045d7d1620c43fe5f83b39ed07801dbf07d424e",
+    "pr_title": "LEV:4163 Populate userIds in DbJiraIssue",
+    "pr_source_branch": "jira-users-fix",
+    "pr_target_branch": "dev",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "ctlo2020"
+    ],
+    "pr_assignee_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_reviewers": [
+      "ctlo2020"
+    ],
+    "pr_reviewer_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "0de37f8a1866154dff5486538cc7131f6d31f5b2",
+      "7560fe1b7701c4450af0a379361c7d1aac6dd644",
+      "647c083b84883375c515a6f2da273671bfee1a0a",
+      "08c2115648af3876e2d36a62c377d3d6c73c4f7d",
+      "0b5ca4a5aa771a90e1da85cf9e54048b5c41a48d",
+      "677bd9945b05ae30c6299518f32a66aadcf7ccfd"
+    ],
+    "pr_pr_updated_at": 1636417283000,
+    "pr_pr_merged_at": 1636417283000,
+    "pr_pr_closed_at": 1636417283000,
+    "pr_pr_created_at": 1636341636000,
+    "pr_createdat": 1646291246000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 75647,
+    "pr_creator_id": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Tuesday",
+    "pr_closed_day": "Tuesday",
+    "pr_comment_count": 2,
+    "pr_reviewer_count": 1,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "Java",
+      "Dockerfile"
+    ],
+    "pr_cycle_time": 75647
+  },
+  {
+    "pr_id": "d55706d1-b62d-4e17-8de5-e739bac826f5",
+    "pr_repo_id": [
+      "levelops/aggregations-levelops"
+    ],
+    "pr_project": "levelops/aggregations-levelops",
+    "pr_number": "383",
+    "pr_integration_id": "1849",
+    "pr_creator": "ctlo2020",
+    "pr_merge_sha": "4045d7d1620c43fe5f83b39ed07801dbf07d424e",
+    "pr_title": "LEV:4163 Populate userIds in DbJiraIssue",
+    "pr_source_branch": "jira-users-fix",
+    "pr_target_branch": "dev",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "ctlo2020"
+    ],
+    "pr_assignee_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_reviewers": [
+      "ctlo2020"
+    ],
+    "pr_reviewer_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "0de37f8a1866154dff5486538cc7131f6d31f5b2",
+      "7560fe1b7701c4450af0a379361c7d1aac6dd644",
+      "647c083b84883375c515a6f2da273671bfee1a0a",
+      "08c2115648af3876e2d36a62c377d3d6c73c4f7d",
+      "0b5ca4a5aa771a90e1da85cf9e54048b5c41a48d",
+      "677bd9945b05ae30c6299518f32a66aadcf7ccfd"
+    ],
+    "pr_pr_updated_at": 1636417283000,
+    "pr_pr_merged_at": 1636417283000,
+    "pr_pr_closed_at": 1636417283000,
+    "pr_pr_created_at": 1636341636000,
+    "pr_createdat": 1646291246000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 75647,
+    "pr_creator_id": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Tuesday",
+    "pr_closed_day": "Tuesday",
+    "pr_additions": 8,
+    "pr_deletions": 0,
+    "pr_changes": 8,
+    "pr_files_count": 1,
+    "pr_comment_count": 1,
+    "pr_reviewer_count": 1,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "Java",
+      "Dockerfile"
+    ],
+    "pr_cycle_time": 75647
+  },
+  {
+    "pr_id": "ffeca0de-8b52-47bf-b9da-28d62593cc24",
+    "pr_repo_id": [
+      "levelops/integrations-levelops"
+    ],
+    "pr_project": "levelops/integrations-levelops",
+    "pr_number": "235",
+    "pr_integration_id": "1849",
+    "pr_creator": "ctlo2020",
+    "pr_merge_sha": "63aeed7c7f8d47df7f1e7782d31e491736f0adfb",
+    "pr_title": "LEV-4128-fix: Corrected token structure for PreflightCheck test",
+    "pr_source_branch": "LEV-4128-fix",
+    "pr_target_branch": "dev",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "ctlo2020"
+    ],
+    "pr_assignee_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_reviewers": [
+      "ctlo2020"
+    ],
+    "pr_reviewer_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "4aea476625d809a80a46aace3200b6da85bb7296"
+    ],
+    "pr_pr_updated_at": 1636359419000,
+    "pr_pr_merged_at": 1636359419000,
+    "pr_pr_closed_at": 1636359419000,
+    "pr_pr_created_at": 1636358079000,
+    "pr_createdat": 1646291246000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 1340,
+    "pr_creator_id": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+    "pr_workitem_ids": [
+      "LEV-4128"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Monday",
+    "pr_closed_day": "Monday",
+    "pr_additions": 8,
+    "pr_deletions": 0,
+    "pr_changes": 8,
+    "pr_files_count": 1,
+    "pr_comment_count": 0,
+    "pr_reviewer_count": 1,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "Java"
+    ],
+    "pr_cycle_time": 1340
+  },
+  {
+    "pr_id": "92ef0271-fab5-4f7d-8525-df4450191f3b",
+    "pr_repo_id": [
+      "levelops/api-levelops"
+    ],
+    "pr_project": "levelops/api-levelops",
+    "pr_number": "1153",
+    "pr_integration_id": "1849",
+    "pr_creator": "ctlo2020",
+    "pr_merge_sha": "07b8d84329f5ca98643309ff58ea09272b12240b",
+    "pr_title": "LEV-4214: SCM Commit to CICD Job Lead Time Single Stat needs to support start time filter",
+    "pr_source_branch": "LEV-4214",
+    "pr_target_branch": "dev",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "ctlo2020"
+    ],
+    "pr_assignee_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_reviewers": [
+      "ctlo2020"
+    ],
+    "pr_reviewer_ids": [
+      "a03fcd03-f166-4e93-9de1-58e93c2c79e8"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "dcc30fb9c655e7fd5d3f5dc6060d6a906052450f",
+      "63ee10d197abb9b104ec8435d47a146404497ffc",
+      "e80a2a7c381023f426414b77fdc2532be805a28b",
+      "006eb562996977b9447235ccad2e5870511020a1"
+    ],
+    "pr_pr_updated_at": 1636689372000,
+    "pr_pr_merged_at": 1636689372000,
+    "pr_pr_closed_at": 1636689372000,
+    "pr_pr_created_at": 1636618685000,
+    "pr_createdat": 1646291234000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 70687,
+    "pr_creator_id": "a03fcd03-f166-4e93-9de1-58e93c2c79e8",
+    "pr_workitem_ids": [
+      "LEV-4214"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Friday",
+    "pr_closed_day": "Friday",
+    "pr_additions": 0,
+    "pr_deletions": 20,
+    "pr_changes": 20,
+    "pr_files_count": 1,
+    "pr_comment_count": 0,
+    "pr_reviewer_count": 1,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "HTML",
+      "Dockerfile",
+      "Java"
+    ],
+    "pr_cycle_time": 70687
+  },
+  {
+    "pr_id": "0967206e-d871-4835-80fd-d88b9463bc33",
+    "pr_repo_id": [
+      "levelops/api-levelops"
+    ],
+    "pr_project": "levelops/api-levelops",
+    "pr_number": "1201",
+    "pr_integration_id": "1849",
+    "pr_creator": "viraj-levelops",
+    "pr_merge_sha": "30bff908296aacb5bc7b3f8c047adb2bd2ba6a56",
+    "pr_title": "LEV-4306 - Date Partitions calculation returns extra parition",
+    "pr_source_branch": "jen",
+    "pr_target_branch": "dev",
+    "pr_state": "closed",
+    "pr_merged": true,
+    "pr_review_type": "NOT_REVIEWED",
+    "pr_collab_state": "unapproved",
+    "pr_assignees": [
+      "NONE"
+    ],
+    "pr_assignee_ids": [
+      "NONE"
+    ],
+    "pr_reviewers": [
+      "NONE"
+    ],
+    "pr_reviewer_ids": [
+      "NONE"
+    ],
+    "pr_commenters": [],
+    "pr_commenter_ids": [
+      "NONE"
+    ],
+    "pr_approver_ids": [
+      "NONE"
+    ],
+    "pr_approvers": [
+      "NONE"
+    ],
+    "pr_label": [],
+    "pr_commit_shas": [
+      "62e93931e46b8d39a73789de22d107374d5aedfb"
+    ],
+    "pr_pr_updated_at": 1638239596000,
+    "pr_pr_merged_at": 1638239582000,
+    "pr_pr_closed_at": 1638239582000,
+    "pr_pr_created_at": 1638239574000,
+    "pr_createdat": 1646291234000,
+    "pr_avg_author_response_time": 0,
+    "pr_avg_reviewer_response_time": 8,
+    "pr_creator_id": "f1617a51-04ba-4010-9c11-028f5e15b943",
+    "pr_workitem_ids": [
+      "LEV-4306"
+    ],
+    "pr_created_day": "Thursday",
+    "pr_merged_day": "Tuesday",
+    "pr_closed_day": "Tuesday",
+    "pr_comment_count": 0,
+    "pr_reviewer_count": 0,
+    "pr_approver_count": 0,
+    "pr_approval_status": "not reviewed",
+    "pr_technology": [
+      "HTML",
+      "Dockerfile",
+      "Java"
+    ],
+    "pr_cycle_time": 8
+  }
+]

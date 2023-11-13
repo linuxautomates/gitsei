@@ -1,0 +1,883 @@
+{
+  "pipelineExecutionSummary": {
+    "pipelineIdentifier": "CD_only_Docker_Registry_with_Rollout_Clone",
+    "planExecutionId": "10xJNVJ2QvmOkKUUKXFQCg",
+    "name": "CD only Docker Registry with Rolling out Deployment",
+    "status": "Success",
+    "tags": [],
+    "executionTriggerInfo": {
+      "triggerType": "MANUAL",
+      "triggeredBy": {
+        "uuid": "q27LHq2XSSam3H09Rrqevg",
+        "identifier": "Meetrajsinh Solanki",
+        "extraInfo": {
+          "email": "meetrajsinh.solanki@crestdatasys.com"
+        }
+      },
+      "isRerun": false
+    },
+    "governanceMetadata": {
+      "id": "0",
+      "deny": false,
+      "details": [],
+      "message": "",
+      "timestamp": "1672917316858",
+      "status": "pass",
+      "accountId": "Br432S_3TWKotjbw9B5cNQ",
+      "orgId": "default",
+      "projectId": "Propelo_Project",
+      "entity": "accountIdentifier%3ABr432S_3TWKotjbw9B5cNQ%2ForgIdentifier%3Adefault%2FprojectIdentifier%3APropelo_Project%2FpipelineIdentifier%3ACD_only_Docker_Registry_with_Rollout_Clone",
+      "type": "pipeline",
+      "action": "onrun",
+      "created": "1672917316847"
+    },
+    "moduleInfo": {
+      "cd": {
+        "__recast": "io.harness.cdng.pipeline.executions.beans.CDPipelineModuleInfo",
+        "envGroupIdentifiers": [],
+        "envIdentifiers": [
+          "CD_only_Docker_Registry_Env"
+        ],
+        "environmentTypes": [
+          "PreProduction"
+        ],
+        "freezeIdentifiers": [],
+        "infrastructureIdentifiers": [
+          "CD_only_Docker_Registry_Infrastructure"
+        ],
+        "infrastructureNames": [
+          "CD only Docker Registry Infrastructure"
+        ],
+        "infrastructureTypes": [
+          "KubernetesGcp"
+        ],
+        "serviceDefinitionTypes": [
+          "Kubernetes"
+        ],
+        "serviceIdentifiers": [
+          "Deploy_to_GCP"
+        ]
+      }
+    },
+    "layoutNodeMap": {
+      "LKeiChfcRtSVMfpe3CZmtw_rollbackStage": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "LKeiChfcRtSVMfpe3CZmtw_rollbackStage",
+        "name": "Deploy from Docker to GCP (Rollback Stage)",
+        "nodeUuid": "LKeiChfcRtSVMfpe3CZmtw_rollbackStage",
+        "status": "NotStarted",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      },
+      "LKeiChfcRtSVMfpe3CZmtw": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "Deploy_from_Docker_to_GCP",
+        "name": "Deploy from Docker to GCP",
+        "nodeUuid": "LKeiChfcRtSVMfpe3CZmtw",
+        "status": "Success",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {
+            "__recast": "io.harness.cdng.pipeline.executions.beans.CDStageModuleInfo",
+            "rollbackDuration": 0,
+            "serviceInfo": {
+              "__recast": "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary",
+              "identifier": "Deploy_to_GCP",
+              "displayName": "Deploy to GCP",
+              "deploymentType": "Kubernetes",
+              "gitOpsEnabled": false,
+              "artifacts": {
+                "__recast": "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary$ArtifactsSummary",
+                "primary": {
+                  "__recast": "io.harness.ngpipeline.pipeline.executions.beans.DockerArtifactSummary",
+                  "imagePath": "meetrajsinhcrest/harness-test",
+                  "tag": "0.0.2"
+                },
+                "sidecars": []
+              }
+            },
+            "infraExecutionSummary": {
+              "__recast": "io.harness.cdng.pipeline.executions.beans.InfraExecutionSummary",
+              "identifier": "CD_only_Docker_Registry_Env",
+              "name": "CD only Docker Registry Env",
+              "type": "PreProduction",
+              "infrastructureIdentifier": "CD_only_Docker_Registry_Infrastructure",
+              "infrastructureName": "CD only Docker Registry Infrastructure"
+            }
+          }
+        },
+        "startTs": 1672917317053,
+        "endTs": 1672917369009,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": ""
+        },
+        "failureInfoDTO": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "nodeExecutionId": "KOAUclTrRue25D4jYzwTQw",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      }
+    },
+    "modules": [
+      "cd"
+    ],
+    "startingNodeId": "LKeiChfcRtSVMfpe3CZmtw",
+    "startTs": 1672917316859,
+    "endTs": 1672917369080,
+    "createdAt": 1672917316903,
+    "canRetry": true,
+    "showRetryHistory": false,
+    "runSequence": 1,
+    "successfulStagesCount": 1,
+    "runningStagesCount": 0,
+    "failedStagesCount": 0,
+    "totalStagesCount": 1,
+    "storeType": "INLINE",
+    "executionInputConfigured": false,
+    "parentStageInfo": {
+      "hasparentpipeline": false,
+      "stagenodeid": "",
+      "executionid": "",
+      "identifier": "",
+      "projectid": "",
+      "orgid": "",
+      "runsequence": 0
+    },
+    "allowStageExecutions": false,
+    "stagesExecution": false
+  },
+  "executionGraph": {
+    "rootNodeId": "4GC-eNasTRKVrWHgME6Efg",
+    "nodeMap": {
+      "4GC-eNasTRKVrWHgME6Efg": {
+        "uuid": "4GC-eNasTRKVrWHgME6Efg",
+        "setupId": "jUI9QiOfQpOp6F0nAfpRHQ",
+        "name": "CD only Docker Registry with Rolling out Deployment",
+        "identifier": "pipeline",
+        "baseFqn": "pipeline",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeID": "jUI9QiOfQpOp6F0nAfpRHQstages",
+          "name": "CD only Docker Registry with Rolling out Deployment",
+          "identifier": "CD_only_Docker_Registry_with_Rollout_Clone",
+          "description": "",
+          "tags": {},
+          "properties": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "executionId": "10xJNVJ2QvmOkKUUKXFQCg",
+          "sequenceId": 1
+        },
+        "startTs": 1672917316931,
+        "endTs": 1672917369080,
+        "stepType": "PIPELINE_SECTION",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "jUI9QiOfQpOp6F0nAfpRHQstages",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "5w5aHWDaQIW46zdWb5z2-g": {
+        "uuid": "5w5aHWDaQIW46zdWb5z2-g",
+        "setupId": "8eiT12k8R1Onz_3PB0meMA",
+        "name": "Resource Constraint",
+        "identifier": "rc-lhNf1TWvTWqVV4QZG7uGiA",
+        "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP.spec.rc-lhNf1TWvTWqVV4QZG7uGiA",
+        "outcomes": {
+          "output": {
+            "name": "Queuing",
+            "capacity": 1,
+            "resourceUnit": "895e552d418bb1b51452bb293cb201b1450ef6c1",
+            "usage": 1,
+            "alreadyAcquiredPermits": 1
+          }
+        },
+        "stepParameters": {
+          "identifier": "rc-lhNf1TWvTWqVV4QZG7uGiA",
+          "name": "Resource Constraint",
+          "timeout": "1w",
+          "when": {
+            "uuid": "uhWzh6_nSG2FzuC-XeVIvg",
+            "stageStatus": "SUCCESS",
+            "condition": "true == \"true\""
+          },
+          "type": "ResourceConstraint",
+          "spec": {
+            "name": "Queuing",
+            "resourceUnit": "895e552d418bb1b51452bb293cb201b1450ef6c1",
+            "acquireMode": "ENSURE",
+            "permits": 1,
+            "holdingScope": "STAGE"
+          }
+        },
+        "startTs": 1672917329035,
+        "endTs": 1672917329077,
+        "stepType": "ResourceConstraint",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess> && (<+InfrastructureStepOutput.addRcStep> == \"true\")",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "InfrastructureStepOutput.addRcStep",
+              "expressionValue": "true",
+              "count": 1
+            },
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "sync": {
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "KOAUclTrRue25D4jYzwTQw": {
+        "uuid": "KOAUclTrRue25D4jYzwTQw",
+        "setupId": "LKeiChfcRtSVMfpe3CZmtw",
+        "name": "Deploy from Docker to GCP",
+        "identifier": "Deploy_from_Docker_to_GCP",
+        "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "LKeiChfcRtSVMfpe3CZmtw",
+          "identifier": "Deploy_from_Docker_to_GCP",
+          "name": "Deploy from Docker to GCP",
+          "description": "",
+          "failureStrategies": [
+            {
+              "onFailure": {
+                "errors": [
+                  "ALL_ERRORS"
+                ],
+                "action": {
+                  "type": "STAGE_ROLLBACK"
+                }
+              }
+            }
+          ],
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "Deployment",
+          "specConfig": {}
+        },
+        "startTs": 1672917317053,
+        "endTs": 1672917369009,
+        "stepType": "DEPLOYMENT_STAGE_STEP",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "ojPoNwDmTYy6dobpbIU4Kg",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "ns4nvx4WRN2Dxo5F05cgsQ": {
+        "uuid": "ns4nvx4WRN2Dxo5F05cgsQ",
+        "setupId": "E1CjHo_iR3StbYMUBUldag",
+        "name": "Infrastructure Section",
+        "identifier": "infrastructure",
+        "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP.spec.infrastructure",
+        "outcomes": {
+          "output": {
+            "connectorRef": "CD_only_GCP_Connector",
+            "namespace": "default",
+            "cluster": "us-central1/test-cluster-1",
+            "releaseName": "release-<+INFRA_KEY>",
+            "environment": {
+              "name": "CD only Docker Registry Env",
+              "identifier": "CD_only_Docker_Registry_Env",
+              "description": "",
+              "type": "PreProduction",
+              "tags": {},
+              "environmentRef": "CD_only_Docker_Registry_Env",
+              "variables": {}
+            },
+            "infrastructureKey": "895e552d418bb1b51452bb293cb201b1450ef6c1",
+            "infraIdentifier": "CD_only_Docker_Registry_Infrastructure",
+            "infraName": "CD only Docker Registry Infrastructure",
+            "name": "CD only Docker Registry Infrastructure",
+            "connector": {
+              "name": "CD only GCP Connector"
+            }
+          },
+          "rollbackArtifact": {
+            "connectorRef": "CD_only_Docker_Registry",
+            "imagePath": "meetrajsinhcrest/harness-test",
+            "tag": "0.0.2",
+            "identifier": "primary",
+            "type": "DockerRegistry",
+            "primaryArtifact": true,
+            "image": "index.docker.io/meetrajsinhcrest/harness-test:0.0.2",
+            "imagePullSecret": "<+imagePullSecret.primary>",
+            "label": {
+              "org.opencontainers.image.source": "https://github.com/meetrajsinh-crest/private-repo.git",
+              "org.opencontainers.image.url": "",
+              "org.opencontainers.image.revision": "5cbcf0087de1614ed155f1b372a004f4e38d3ab2",
+              "org.opencontainers.image.created": "2023-01-05T10:13:08Z"
+            },
+            "displayName": "Tag# 0.0.2",
+            "metadata": {
+              "image": "index.docker.io/meetrajsinhcrest/harness-test:0.0.2",
+              "tag": "0.0.2",
+              "url": "https://index.docker.io/v2/meetrajsinhcrest/harness-test/tags/0.0.2"
+            }
+          }
+        },
+        "stepParameters": {
+          "envRef": "CD_only_Docker_Registry_Env",
+          "infraRef": "CD_only_Docker_Registry_Infrastructure",
+          "deploymentType": "KUBERNETES"
+        },
+        "startTs": 1672917327873,
+        "endTs": 1672917328863,
+        "stepType": "INFRASTRUCTURE_TASKSTEP_V2",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [],
+              "logKeys": [
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:infrastructure-commandUnit:Execute"
+              ],
+              "units": [],
+              "timeout": 0
+            }
+          }
+        ],
+        "unitProgresses": [
+          {
+            "unitName": "Execute",
+            "status": "SUCCESS",
+            "startTime": "1672917328352",
+            "endTime": "1672917328831"
+          }
+        ],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "8OrjQEzATNaaLA-f0mbNjA": {
+        "uuid": "8OrjQEzATNaaLA-f0mbNjA",
+        "setupId": "VsbWjKV2Q-au3Ls0vvYNLQ",
+        "name": "Execution",
+        "identifier": "execution",
+        "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP.spec.execution",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "VsbWjKV2Q-au3Ls0vvYNLQsteps",
+          "logMessage": "Execution Element"
+        },
+        "startTs": 1672917329105,
+        "endTs": 1672917368925,
+        "stepType": "NG_SECTION_WITH_ROLLBACK_INFO",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "VsbWjKV2Q-au3Ls0vvYNLQsteps",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "yT54s-GUTRy86o1hz4i1Fg": {
+        "uuid": "yT54s-GUTRy86o1hz4i1Fg",
+        "setupId": "mMZeYautRCGHQRVEGaEbNw",
+        "name": "Rolling Out",
+        "identifier": "Rolling_Out",
+        "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP.spec.execution.steps.Rolling_Out",
+        "outcomes": {
+          "output": {
+            "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1",
+            "releaseNumber": 4,
+            "prunedResourceIds": []
+          },
+          "deploymentInfoOutcome": {
+            "serverInstanceInfoList": [
+              {
+                "name": "harness-example-deployment-6b4d9f99f8-fl4gw",
+                "namespace": "default",
+                "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1",
+                "podIP": "10.43.128.200",
+                "containerList": [
+                  {
+                    "containerId": "containerd://8121d9d18c181b52aa1b036c1efddedde43c803b14c3803bda47425fd87e730f",
+                    "name": "harness-example",
+                    "image": "docker.io/meetrajsinhcrest/harness-test:0.0.2"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "stepParameters": {
+          "identifier": "Rolling_Out",
+          "name": "Rolling Out",
+          "timeout": "10m",
+          "type": "K8sRollingDeploy",
+          "spec": {
+            "skipDryRun": false,
+            "pruningEnabled": false
+          }
+        },
+        "startTs": 1672917329225,
+        "endTs": 1672917368671,
+        "stepType": "K8sRollingDeploy",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "taskChain": {
+              "taskId": "k7-ADQSqS7OvSs362PaCVg",
+              "taskCategory": "DELEGATE_TASK_V2",
+              "chainEnd": true,
+              "passThroughData": "eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5rOHMuYmVhbnMuSzhzRXhlY3V0aW9uUGFzc1Rocm91Z2hEYXRhIiwiaW5mcmFzdHJ1Y3R1cmUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLmNkbmcuaW5mcmEuYmVhbnMuSzhzR2NwSW5mcmFzdHJ1Y3R1cmVPdXRjb21lIiwiY29ubmVjdG9yUmVmIjoiQ0Rfb25seV9HQ1BfQ29ubmVjdG9yIiwibmFtZXNwYWNlIjoiZGVmYXVsdCIsImNsdXN0ZXIiOiJ1cy1jZW50cmFsMS90ZXN0LWNsdXN0ZXItMSIsInJlbGVhc2VOYW1lIjoicmVsZWFzZS08K0lORlJBX0tFWT4iLCJlbnZpcm9ubWVudCI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3Muc3RlcHMuZW52aXJvbm1lbnQuRW52aXJvbm1lbnRPdXRjb21lIiwibmFtZSI6IkNEIG9ubHkgRG9ja2VyIFJlZ2lzdHJ5IEVudiIsImlkZW50aWZpZXIiOiJDRF9vbmx5X0RvY2tlcl9SZWdpc3RyeV9FbnYiLCJkZXNjcmlwdGlvbiI6IiIsInR5cGUiOiJQcmVQcm9kdWN0aW9uIiwidGFncyI6e30sImVudmlyb25tZW50UmVmIjoiQ0Rfb25seV9Eb2NrZXJfUmVnaXN0cnlfRW52IiwidmFyaWFibGVzIjp7fX0sImluZnJhc3RydWN0dXJlS2V5IjoiODk1ZTU1MmQ0MThiYjFiNTE0NTJiYjI5M2NiMjAxYjE0NTBlZjZjMSIsImluZnJhSWRlbnRpZmllciI6IkNEX29ubHlfRG9ja2VyX1JlZ2lzdHJ5X0luZnJhc3RydWN0dXJlIiwiaW5mcmFOYW1lIjoiQ0Qgb25seSBEb2NrZXIgUmVnaXN0cnkgSW5mcmFzdHJ1Y3R1cmUiLCJuYW1lIjoiQ0Qgb25seSBEb2NrZXIgUmVnaXN0cnkgSW5mcmFzdHJ1Y3R1cmUiLCJjb25uZWN0b3IiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLmNkbmcuaW5mcmEuQ29ubmVjdG9yIiwibmFtZSI6IkNEIG9ubHkgR0NQIENvbm5lY3RvciJ9fSwibWFuaWZlc3RGaWxlcyI6W3siX19yZWNhc3QiOiJpby5oYXJuZXNzLmRlbGVnYXRlLnRhc2subG9jYWxzdG9yZS5NYW5pZmVzdEZpbGVzIiwiZmlsZVBhdGgiOiIvU2FtcGxlIEs4cyBNYW5pZmVzdHMvdGVtcGxhdGVzL2RlcGxveW1lbnQueWFtbCIsImZpbGVDb250ZW50Ijoie3stIGlmIC5WYWx1ZXMuZW52LmNvbmZpZ319XG5hcGlWZXJzaW9uOiB2MVxua2luZDogQ29uZmlnTWFwXG5tZXRhZGF0YTpcbiAgbmFtZToge3suVmFsdWVzLm5hbWV9fVxuZGF0YTpcbnt7LlZhbHVlcy5lbnYuY29uZmlnIHwgdG9ZYW1sIHwgaW5kZW50IDJ9fVxuLS0tXG57ey0gZW5kfX1cblxue3stIGlmIC5WYWx1ZXMuZW52LnNlY3JldHN9fVxuYXBpVmVyc2lvbjogdjFcbmtpbmQ6IFNlY3JldFxubWV0YWRhdGE6XG4gIG5hbWU6IHt7LlZhbHVlcy5uYW1lfX1cbnN0cmluZ0RhdGE6XG57ey5WYWx1ZXMuZW52LnNlY3JldHMgfCB0b1lhbWwgfCBpbmRlbnQgMn19XG4tLS1cbnt7LSBlbmR9fVxuXG57ey0gaWYgLlZhbHVlcy5kb2NrZXJjZmd9fVxuYXBpVmVyc2lvbjogdjFcbmtpbmQ6IFNlY3JldFxubWV0YWRhdGE6XG4gIG5hbWU6IHt7LlZhbHVlcy5uYW1lfX0tZG9ja2VyY2ZnXG4gIGFubm90YXRpb25zOlxuICAgIGhhcm5lc3MuaW8vc2tpcC12ZXJzaW9uaW5nOiBcInRydWVcIlxuZGF0YTpcbiAgLmRvY2tlcmNmZzoge3suVmFsdWVzLmRvY2tlcmNmZ319XG50eXBlOiBrdWJlcm5ldGVzLmlvL2RvY2tlcmNmZ1xuLS0tXG57ey0gZW5kfX1cblxuYXBpVmVyc2lvbjogYXBwcy92MVxua2luZDogRGVwbG95bWVudFxubWV0YWRhdGE6XG4gIG5hbWU6IHt7LlZhbHVlcy5uYW1lfX0tZGVwbG95bWVudFxuc3BlYzpcbiAgcmVwbGljYXM6IHt7aW50IC5WYWx1ZXMucmVwbGljYXN9fVxuICBzZWxlY3RvcjpcbiAgICBtYXRjaExhYmVsczpcbiAgICAgIGFwcDoge3suVmFsdWVzLm5hbWV9fVxuICB0ZW1wbGF0ZTpcbiAgICBtZXRhZGF0YTpcbiAgICAgIGxhYmVsczpcbiAgICAgICAgYXBwOiB7ey5WYWx1ZXMubmFtZX19XG4gICAgc3BlYzpcbiAgICAgIHt7LSBpZiAuVmFsdWVzLmRvY2tlcmNmZ319XG4gICAgICBpbWFnZVB1bGxTZWNyZXRzOlxuICAgICAgLSBuYW1lOiB7ey5WYWx1ZXMubmFtZX19LWRvY2tlcmNmZ1xuICAgICAge3stIGVuZH19XG4gICAgICBjb250YWluZXJzOlxuICAgICAgLSBuYW1lOiB7ey5WYWx1ZXMubmFtZX19XG4gICAgICAgIGltYWdlOiB7ey5WYWx1ZXMuaW1hZ2V9fVxuICAgICAgICB7ey0gaWYgb3IgLlZhbHVlcy5lbnYuY29uZmlnIC5WYWx1ZXMuZW52LnNlY3JldHN9fVxuICAgICAgICBlbnZGcm9tOlxuICAgICAgICB7ey0gaWYgLlZhbHVlcy5lbnYuY29uZmlnfX1cbiAgICAgICAgLSBjb25maWdNYXBSZWY6XG4gICAgICAgICAgICBuYW1lOiB7ey5WYWx1ZXMubmFtZX19XG4gICAgICAgIHt7LSBlbmR9fVxuICAgICAgICB7ey0gaWYgLlZhbHVlcy5lbnYuc2VjcmV0c319XG4gICAgICAgIC0gc2VjcmV0UmVmOlxuICAgICAgICAgICAgbmFtZToge3suVmFsdWVzLm5hbWV9fVxuICAgICAgICB7ey0gZW5kfX1cbiAgICAgICAge3stIGVuZH19IiwiZmlsZU5hbWUiOiJkZXBsb3ltZW50LnlhbWwifV19",
+              "logKeys": [
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:execution/level5:steps/level6:Rolling_Out-commandUnit:Fetch Files",
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:execution/level5:steps/level6:Rolling_Out-commandUnit:Initialize",
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:execution/level5:steps/level6:Rolling_Out-commandUnit:Prepare",
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:execution/level5:steps/level6:Rolling_Out-commandUnit:Apply",
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:execution/level5:steps/level6:Rolling_Out-commandUnit:Wait for Steady State",
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:execution/level5:steps/level6:Rolling_Out-commandUnit:Wrap Up"
+              ],
+              "units": [
+                "Fetch Files",
+                "Initialize",
+                "Prepare",
+                "Apply",
+                "Wait for Steady State",
+                "Wrap Up"
+              ],
+              "taskName": "K8s Task : Rolling Deploy"
+            }
+          }
+        ],
+        "unitProgresses": [
+          {
+            "unitName": "Fetch Files",
+            "status": "SUCCESS",
+            "startTime": "1672917331937",
+            "endTime": "1672917331946"
+          },
+          {
+            "unitName": "Initialize",
+            "status": "SUCCESS",
+            "startTime": "1672917332204",
+            "endTime": "1672917339138"
+          },
+          {
+            "unitName": "Prepare",
+            "status": "SUCCESS",
+            "startTime": "1672917339670",
+            "endTime": "1672917345256"
+          },
+          {
+            "unitName": "Apply",
+            "status": "SUCCESS",
+            "startTime": "1672917345523",
+            "endTime": "1672917350701"
+          },
+          {
+            "unitName": "Wait for Steady State",
+            "status": "RUNNING",
+            "startTime": "1672917357330",
+            "endTime": "0"
+          },
+          {
+            "unitName": "Wrap Up",
+            "status": "SUCCESS",
+            "startTime": "1672917361616",
+            "endTime": "1672917368129"
+          }
+        ],
+        "progressData": {
+          "unitProgresses": [
+            {
+              "unitName": "Fetch Files",
+              "status": "SUCCESS",
+              "startTime": "1672917331937",
+              "endTime": "1672917331946"
+            },
+            {
+              "unitName": "Initialize",
+              "status": "SUCCESS",
+              "startTime": "1672917332204",
+              "endTime": "1672917339138"
+            },
+            {
+              "unitName": "Prepare",
+              "status": "SUCCESS",
+              "startTime": "1672917339670",
+              "endTime": "1672917345256"
+            },
+            {
+              "unitName": "Apply",
+              "status": "SUCCESS",
+              "startTime": "1672917345523",
+              "endTime": "1672917350701"
+            },
+            {
+              "unitName": "Wait for Steady State",
+              "status": "RUNNING",
+              "startTime": "1672917357330"
+            },
+            {
+              "unitName": "Wrap Up",
+              "status": "RUNNING",
+              "startTime": "1672917361616"
+            }
+          ]
+        },
+        "delegateInfoList": [
+          {
+            "id": null,
+            "name": null,
+            "taskId": "k7-ADQSqS7OvSs362PaCVg",
+            "taskName": "K8s Task : Rolling Deploy"
+          }
+        ],
+        "interruptHistories": [],
+        "stepDetails": {
+          "Release Name": {
+            "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1"
+          }
+        },
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "8VOva5vZQD-lq4-oN8eTrA": {
+        "uuid": "8VOva5vZQD-lq4-oN8eTrA",
+        "setupId": "4R_KX9wMS1Og3LMN4iUzSA",
+        "name": "Service",
+        "identifier": "service",
+        "baseFqn": "pipeline.stages.Deploy_from_Docker_to_GCP.spec",
+        "outcomes": {
+          "service": {
+            "identifier": "Deploy_to_GCP",
+            "name": "Deploy to GCP",
+            "type": "Kubernetes",
+            "gitOpsEnabled": false
+          },
+          "manifests": {
+            "CD only Docker Registry Manifest": {
+              "identifier": "CD only Docker Registry Manifest",
+              "type": "K8sManifest",
+              "store": {
+                "files": [
+                  "account:/Sample K8s Manifests/templates/deployment.yaml"
+                ]
+              },
+              "skipResourceVersioning": false,
+              "valuesPaths": [
+                "account:/Sample K8s Manifests/values.yaml"
+              ]
+            }
+          },
+          "artifacts": {
+            "primary": {
+              "connectorRef": "CD_only_Docker_Registry",
+              "imagePath": "meetrajsinhcrest/harness-test",
+              "tag": "0.0.2",
+              "identifier": "primary",
+              "type": "DockerRegistry",
+              "primaryArtifact": true,
+              "image": "index.docker.io/meetrajsinhcrest/harness-test:0.0.2",
+              "imagePullSecret": "<+imagePullSecret.primary>",
+              "label": {
+                "org.opencontainers.image.source": "https://github.com/meetrajsinh-crest/private-repo.git",
+                "org.opencontainers.image.url": "",
+                "org.opencontainers.image.revision": "5cbcf0087de1614ed155f1b372a004f4e38d3ab2",
+                "org.opencontainers.image.created": "2023-01-05T10:13:08Z"
+              },
+              "displayName": "Tag# 0.0.2",
+              "metadata": {
+                "image": "index.docker.io/meetrajsinhcrest/harness-test:0.0.2",
+                "tag": "0.0.2",
+                "url": "https://index.docker.io/v2/meetrajsinhcrest/harness-test/tags/0.0.2"
+              }
+            },
+            "sidecars": {}
+          }
+        },
+        "stepParameters": {
+          "service": "Deploy_to_GCP"
+        },
+        "startTs": 1672917317163,
+        "endTs": 1672917327851,
+        "stepType": "SERVICE_V3",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "children": {
+              "children": [
+                {
+                  "childNodeId": "artifacts-PRszj7iGQvafmrYrw0_LSQ"
+                },
+                {
+                  "childNodeId": "manifests-OfNJrwu6QeySsrb4X09zRQ"
+                },
+                {
+                  "childNodeId": "configFiles-OZYkpETjQxeRT_dEddCSog"
+                }
+              ],
+              "maxConcurrency": "0",
+              "logKeys": [
+                "accountId:Br432S_3TWKotjbw9B5cNQ/orgId:default/projectId:Propelo_Project/pipelineId:CD_only_Docker_Registry_with_Rollout_Clone/runSequence:1/level0:pipeline/level1:stages/level2:Deploy_from_Docker_to_GCP/level3:spec/level4:service"
+              ],
+              "shouldProceedIfFailed": false
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "xZzkcGzSSiiLKvdCyPC4mw": {
+        "uuid": "xZzkcGzSSiiLKvdCyPC4mw",
+        "setupId": "jUI9QiOfQpOp6F0nAfpRHQstages",
+        "name": "stages",
+        "identifier": "stages",
+        "baseFqn": "pipeline.stages",
+        "outcomes": {},
+        "stepParameters": {
+          "childNodeId": "LKeiChfcRtSVMfpe3CZmtw",
+          "logMessage": "Stages"
+        },
+        "startTs": 1672917316964,
+        "endTs": 1672917369044,
+        "stepType": "STAGES_STEP",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "LKeiChfcRtSVMfpe3CZmtw",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      }
+    },
+    "nodeAdjacencyListMap": {
+      "4GC-eNasTRKVrWHgME6Efg": {
+        "children": [
+          "xZzkcGzSSiiLKvdCyPC4mw"
+        ],
+        "nextIds": []
+      },
+      "5w5aHWDaQIW46zdWb5z2-g": {
+        "children": [],
+        "nextIds": [
+          "8OrjQEzATNaaLA-f0mbNjA"
+        ]
+      },
+      "KOAUclTrRue25D4jYzwTQw": {
+        "children": [
+          "8VOva5vZQD-lq4-oN8eTrA"
+        ],
+        "nextIds": []
+      },
+      "ns4nvx4WRN2Dxo5F05cgsQ": {
+        "children": [],
+        "nextIds": [
+          "5w5aHWDaQIW46zdWb5z2-g"
+        ]
+      },
+      "8OrjQEzATNaaLA-f0mbNjA": {
+        "children": [
+          "yT54s-GUTRy86o1hz4i1Fg"
+        ],
+        "nextIds": []
+      },
+      "yT54s-GUTRy86o1hz4i1Fg": {
+        "children": [],
+        "nextIds": []
+      },
+      "8VOva5vZQD-lq4-oN8eTrA": {
+        "children": [],
+        "nextIds": [
+          "ns4nvx4WRN2Dxo5F05cgsQ"
+        ]
+      },
+      "xZzkcGzSSiiLKvdCyPC4mw": {
+        "children": [
+          "KOAUclTrRue25D4jYzwTQw"
+        ],
+        "nextIds": []
+      }
+    },
+    "executionMetadata": {
+      "accountId": "Br432S_3TWKotjbw9B5cNQ",
+      "pipelineIdentifier": "CD_only_Docker_Registry_with_Rollout_Clone",
+      "orgIdentifier": "default",
+      "projectIdentifier": "Propelo_Project",
+      "planExecutionId": "10xJNVJ2QvmOkKUUKXFQCg"
+    },
+    "representationStrategy": "camelCase"
+  }
+}

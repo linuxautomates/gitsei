@@ -1,0 +1,133 @@
+{
+  "id": "1268702459",
+  "number": 3851,
+  "state": "closed",
+  "locked": false,
+  "title": "PROP-3423 - The PR comments are not getting properly attributed for raw stats for Equifax",
+  "user": {
+    "type": "user",
+    "login": "viraj-levelops"
+  },
+  "created_at": "2023-03-09T00:50:41.000+00:00",
+  "updated_at": "2023-03-09T00:52:11.000+00:00",
+  "closed_at": "2023-03-09T00:52:08.000+00:00",
+  "merged_at": "2023-03-09T00:52:08.000+00:00",
+  "merge_commit_sha": "044de254cd74ad22022eeb0b596ea1c470ea5651",
+  "assignees": [],
+  "requested_reviewers": [],
+  "requested_teams": [],
+  "labels": [],
+  "head": {
+    "label": "levelops:jen",
+    "ref": "jen",
+    "sha": "42f10912c330fa0ff0fb65c4c1cbce0e767a9b2e",
+    "user": {
+      "type": "organization",
+      "login": "levelops"
+    },
+    "repo": {
+      "id": "205456849",
+      "name": "commons-levelops",
+      "full_name": "levelops/commons-levelops"
+    }
+  },
+  "base": {
+    "label": "levelops:main",
+    "ref": "main",
+    "sha": "abe81c99c5f166eefc8fd42513d3fcaab837186c",
+    "user": {
+      "type": "organization",
+      "login": "levelops"
+    },
+    "repo": {
+      "id": "205456849",
+      "name": "commons-levelops",
+      "full_name": "levelops/commons-levelops"
+    }
+  },
+  "author_association": "CONTRIBUTOR",
+  "reviews": [
+    {
+      "id": "1331831041",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "LGTM",
+      "state": "APPROVED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-09T00:51:47.000+00:00",
+      "commit_id": "42f10912c330fa0ff0fb65c4c1cbce0e767a9b2e",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3851#pullrequestreview-1331831041"
+    }
+  ],
+  "pr_commits": [
+    {
+      "sha": "42f10912c330fa0ff0fb65c4c1cbce0e767a9b2e",
+      "url": "https://api.github.com/repos/levelops/commons-levelops/commits/42f10912c330fa0ff0fb65c4c1cbce0e767a9b2e",
+      "author": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "committer": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "message": "PROP-3423 - The PR comments are not getting properly attributed for raw stats for Equifax",
+      "git_author": {
+        "email": "viraj@levelops.io",
+        "name": "Viraj Ajgaonkar",
+        "date": "2023-03-09T00:50:16.000+00:00"
+      },
+      "git_committer": {
+        "email": "viraj@levelops.io",
+        "name": "Viraj Ajgaonkar",
+        "date": "2023-03-09T00:50:16.000+00:00"
+      }
+    }
+  ],
+  "merge_commit": {
+    "sha": "044de254cd74ad22022eeb0b596ea1c470ea5651",
+    "url": "https://api.github.com/repos/levelops/commons-levelops/commits/044de254cd74ad22022eeb0b596ea1c470ea5651",
+    "author": {
+      "type": "user",
+      "login": "viraj-levelops"
+    },
+    "committer": {
+      "type": "user",
+      "login": "web-flow"
+    },
+    "message": "PROP-3423 - The PR comments are not getting properly attributed for raw stats for Equifax (#3851)",
+    "git_author": {
+      "email": "59263740+viraj-levelops@users.noreply.github.com",
+      "name": "viraj-levelops",
+      "date": "2023-03-09T00:52:08.000+00:00"
+    },
+    "git_committer": {
+      "email": "noreply@github.com",
+      "name": "GitHub",
+      "date": "2023-03-09T00:52:08.000+00:00"
+    },
+    "stats": {
+      "additions": 1,
+      "deletions": 0,
+      "total": 1
+    },
+    "files": [
+      {
+        "additions": 1,
+        "changes": 1,
+        "deletions": 0,
+        "blob_url": "https://github.com/levelops/commons-levelops/blob/044de254cd74ad22022eeb0b596ea1c470ea5651/settings.gradle",
+        "filename": "settings.gradle",
+        "patch": "@@ -61,3 +61,4 @@ include 'trellis-models'\n include 'scm-auto-repo-mapping'\n include 'integration-clients:integration-scm-repo-mapping'\n \n+",
+        "raw_url": "https://github.com/levelops/commons-levelops/raw/044de254cd74ad22022eeb0b596ea1c470ea5651/settings.gradle",
+        "sha": "74c637572d72f662251c253de9fae4296af47aa2",
+        "status": "modified"
+      }
+    ]
+  },
+  "patches": [
+    "@@ -61,3 +61,4 @@ include 'trellis-models'\n include 'scm-auto-repo-mapping'\n include 'integration-clients:integration-scm-repo-mapping'\n \n+"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "/plugins/" : {
+    "base_path" : "/plugins/",
+    "added" : [ "/plugins/pluginD" ],
+    "removed" : [ "/plugins/pluginB" ],
+    "changed" : [ "/plugins/pluginA", "/plugins/pluginC" ],
+    "data_changes" : {
+      "/plugins/pluginA" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "long_name" : "Durable Task Plugin",
+          "short_name" : "pluginA",
+          "specification_title" : "Library offering an extension point for processes",
+          "implementation_title" : "durable-task",
+          "implementation_version" : "1.33",
+          "url" : "https://github.com/jenkinsci/durable-task-plugin",
+          "build_jdk" : "1.8.0_202"
+        },
+        "after" : {
+          "long_name" : "Durable Task Plugin",
+          "short_name" : "pluginA",
+          "specification_title" : "Library offering an extension point for processes",
+          "implementation_title" : "durable-task",
+          "implementation_version" : "2",
+          "url" : "https://github.com/jenkinsci/durable-task-plugin",
+          "build_jdk" : "1.8.0_202"
+        }
+      },
+      "/plugins/pluginB" : {
+        "operation" : "REMOVED",
+        "before" : {
+          "long_name" : "Config API for Blue Ocean",
+          "short_name" : "pluginB",
+          "specification_title" : "The Jenkins Plugins Parent POM Project",
+          "implementation_title" : "blueocean-config",
+          "implementation_version" : "1.21.0",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/Blue+Ocean+Plugin",
+          "build_jdk" : "1.8.0_191"
+        },
+        "after" : null
+      },
+      "/plugins/pluginC" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "long_name" : "Server Sent Events (SSE) Gateway Plugin",
+          "short_name" : "pluginC",
+          "specification_title" : "Server Sent Events (SSE) Gateway Plugin",
+          "implementation_title" : "sse-gateway",
+          "implementation_version" : "1.20",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+          "build_jdk" : "1.8.0_222"
+        },
+        "after" : {
+          "long_name" : "Server Sent Events (SSE) Gateway Plugin",
+          "short_name" : "pluginC",
+          "specification_title" : "Server Sent Events (SSE) Gateway Plugin",
+          "implementation_title" : "sse-gateway",
+          "url" : "https://wiki.jenkins-ci.org/display/JENKINS/SSE+Gateway+Plugin",
+          "build_jdk" : "1.8.0_222",
+          "new_field" : "so new"
+        }
+      },
+      "/plugins/pluginD" : {
+        "operation" : "ADDED",
+        "before" : null,
+        "after" : {
+          "long_name" : "new plugin",
+          "short_name" : "pluginD",
+          "lots_of_new_data" : [ "data" ]
+        }
+      }
+    }
+  }
+}

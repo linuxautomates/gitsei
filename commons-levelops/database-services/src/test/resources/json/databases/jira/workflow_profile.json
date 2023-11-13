@@ -1,0 +1,47 @@
+{
+  "config": {
+    "id": "b1a46fc9-39e0-4ec7-acbc-40a5b32547ea",
+    "name": "13-07 testing BE Test_ms_7-6_new-true-new-demo",
+    "jira_only": true,
+    "scm_config": {},
+    "description": "asdf",
+    "default_config": false,
+    "issue_management_integrations": [
+      "jira"
+    ],
+    "pre_development_custom_stages": [
+      {
+        "name": "In progress",
+        "event": {
+          "type": "JIRA_STATUS",
+          "values": [
+            "IN PROGRESS"
+          ],
+          "any_label_added": false
+        },
+        "order": 4,
+        "lower_limit_unit": "DAYS",
+        "upper_limit_unit": "DAYS",
+        "lower_limit_value": 4,
+        "upper_limit_value": 11
+      },
+      {
+        "name": "Done",
+        "event": {
+          "type": "JIRA_STATUS",
+          "values": [
+            "DONE"
+          ],
+          "any_label_added": false
+        },
+        "order": 5,
+        "lower_limit_unit": "DAYS",
+        "upper_limit_unit": "DAYS",
+        "lower_limit_value": 4,
+        "upper_limit_value": 11
+      }
+    ],
+    "starting_event_is_generic_event": false,
+    "starting_event_is_commit_created": false
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "type": "check_github_pr_status",
+    "node_handler": "check_github_pr_status",
+    "name": "Check Status of Github PR",
+    "description": "Wait for a Github PR to be in a desired state",
+    "category": "Github",
+    "input": {
+      "repo_owner": {
+        "key": "repo_owner",
+        "index": 10,
+        "display_name": "Github Repo Owner",
+        "description": "Repo Owner in Github.",
+        "type": "text",
+        "value_type": "string",
+        "required": true
+      },
+      "repo_name": {
+        "key": "repo_name",
+        "index": 20,
+        "display_name": "Github Repo Name",
+        "description": "Repo Name in Github.",
+        "type": "text",
+        "value_type": "string",
+        "required": true
+      },
+      "pr_number": {
+        "key": "pr_number",
+        "index": 30,
+        "display_name": "Github Pull Request Number",
+        "description": "Github Pull Request Number.",
+        "type": "text",
+        "value_type": "string",
+        "required": true
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 40,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "frequency": {
+        "key": "frequency",
+        "index": 50,
+        "display_name": "Frequency in minutes",
+        "description": "Choose how often to check the PR status",
+        "type": "text",
+        "required": true
+      },
+      "timeout": {
+        "key": "timeout",
+        "index": 60,
+        "display_name": "Time-out in minutes",
+        "description": "Choose how long to wait before stopping checking the PR status",
+        "type": "text",
+        "required": false
+      },
+      "status": {
+        "key": "status",
+        "index": 70,
+        "display_name": "Status",
+        "type": "text",
+        "description": "Choose which status the PR should have",
+        "required": true
+      }
+    },
+    "output": {
+      "pull_request": {
+        "key": "pull_request",
+        "content_type": "integration/github/pull_request",
+        "value_type": "json_blob"
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met",
+      "Timed out"
+    ],
+    "ui_data": {
+      "icon": "github"
+    }
+  }
+]

@@ -1,0 +1,650 @@
+{
+  "records": [
+    {
+      "id": "levelops/ui-levelops",
+      "name": "ui-levelops",
+      "owner": {
+        "type": "organization",
+        "login": "levelops"
+      },
+      "owner_name": "levelops",
+      "owner_type": "organization",
+      "html_url": "https://github.com/levelops/ui-levelops",
+      "master_branch": "master",
+      "created_at": 1565113464000,
+      "pushed_at": 1592974519000,
+      "updated_at": 1587394881000,
+      "size": 28498,
+      "is_private": true,
+      "languages": {
+        "CSS": 1
+      },
+      "events": [
+        {
+          "public": false,
+          "id": "12717358602",
+          "type": "PushEvent",
+          "is_public": false,
+          "actor": "piyushkantm",
+          "org": "levelops",
+          "created_at": 1492974519000,
+          "commits": [
+            {
+              "sha": "e071c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/d091c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "author": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "committer": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "message": "LEV-889 fix create comment in smart tickets",
+              "git_author": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1392974505000
+              },
+              "git_committer": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1392974505000
+              },
+              "stats": {
+                "additions": 8,
+                "deletions": 8,
+                "total": 16
+              },
+              "files": [
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "e071c7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                },
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "e071c7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                }
+              ]
+            },
+            {
+              "sha": "a371c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/d091c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "author": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "committer": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "message": "LEV-889 fix create comment in smart tickets",
+              "git_author": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1392974005000
+              },
+              "git_committer": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1392904505000
+              },
+              "stats": {
+                "additions": 8,
+                "deletions": 8,
+                "total": 16
+              },
+              "files": [
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "a371c7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                },
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "a371c7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "public": false,
+          "id": "12716951617",
+          "type": "PushEvent",
+          "is_public": false,
+          "actor": "piyushkantm",
+          "org": "levelops",
+          "created_at": 1592969602000,
+          "commits": [
+            {
+              "sha": "af586afa79c8e803c729b1b6668226a13ed28174",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/8fd86afa79c8e803c729b1b6668226a13ed28174",
+              "author": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "committer": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "message": "complete generic mentions component",
+              "git_author": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1592920608000
+              },
+              "git_committer": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1592920608000
+              },
+              "stats": {
+                "additions": 164,
+                "deletions": 90,
+                "total": 254
+              },
+              "files": [
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "af586afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "af586afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 17,
+                  "changes": 104,
+                  "deletions": 87,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -1,85 +1,26 @@\n import React from \"react\";\n import * as PropTypes from \"prop-types\";\n-import { Col, Comment, Mentions, Row, Tooltip, Typography } from \"antd\";\n+import { Col, Comment, Row, Tooltip, Typography } from \"antd\";\n import { NameAvatar } from \"../../../shared-resources/components\";\n import \"../questions/questions.style.scss\";\n-import { mapRestapiDispatchtoProps } from \"redux/maps/restapiMap\";\n-import ErrorWrapper from \"hoc/errorWrapper\";\n-import { connect } from \"react-redux\";\n import { AntButton } from \"shared-resources/components\";\n-import { debounce } from \"lodash\";\n import { REGEX_EMAIL_COMMENTS } from \"utils/regexUtils\";\n-import { userGetSearchResults } from \"redux/selectors/restapiSelector\";\n+import { GenericMentions } from \"shared-resources/containers\";\n \n const moment = require(\"moment\");\n \n const { Text } = Typography;\n-const { Option } = Mentions;\n \n const USER_LIST_KEY = \"comment_users_search\";\n \n class CommentsComponent extends React.PureComponent {\n-  static getDerivedStateFromProps(props, state) {\n-    if (state.users_loading) {\n-      const { loading, error, data: userData } = props.users;\n-      if (!loading && !error && userData !== undefined) {\n-        const users = userData.records;\n-        return {\n-          users_loading: false,\n-          users: users.map(user => user.email)\n-        };\n-      }\n-    }\n-  }\n-\n-  componentWillUnmount() {\n-    this.props.restapiClear(\"users\", \"list\", \"0\");\n-  }\n-\n   constructor(props) {\n     super(props);\n     this.state = {\n-      current_comment: \"\",\n-      users: [],\n-      users_loading: false\n+      current_comment: \"\"\n     };\n \n     this.handleAddComment = this.handleAddComment.bind(this);\n-    this.onSearch = this.onSearch.bind(this);\n-    this.loadUsers = debounce(this.loadUsers.bind(this), 800);\n-  }\n-\n-  onSearch(query) {\n-    this.setState(\n-      state => ({\n-        users: [],\n-        users_loading: !!query\n-      }),\n-      () => {\n-        this.loadUsers(query);\n-      }\n-    );\n-  }\n-\n-  loadUsers(query) {\n-    if (!query) {\n-      this.setState({\n-        users: []\n-      });\n-\n-      return;\n-    }\n-\n-    this.props.usersList(\n-      {\n-        filter: {\n-          partial: {\n-            email: query\n-          }\n-        }\n-      },\n-      USER_LIST_KEY\n-    );\n   }\n \n   get comments() {\n@@ -125,34 +66,29 @@ class CommentsComponent extends React.PureComponent {\n \n   get addComment() {\n     const { creator } = this.props;\n-    const { users_loading, users } = this.state;\n-\n     return (\n       <Row gutter={[10, 10]} style={{ paddingTop: \"10px\" }}>\n         <Col span={1}>\n           <NameAvatar name={creator} />\n         </Col>\n         <Col span={20}>\n-          <Mentions\n-            prefix={[\"@\"]}\n-            split={\"#\"}\n-            value={this.state.current_comment || \"\"}\n+          <GenericMentions\n             placeholder=\"Add a comment....\"\n-            style={{ width: \"100%\" }}\n-            loading={users_loading}\n+            value={this.state.current_comment}\n+            id={USER_LIST_KEY}\n+            uri=\"users\"\n+            method=\"list\"\n+            searchField=\"email\"\n             onChange={comment => {\n               this.setState({ current_comment: comment });\n             }}\n-            onSearch={query => {\n-              this.onSearch(query);\n-            }}>\n-            {users.map(user => (\n-              <Option key={user} value={user}>\n-                <NameAvatar name={user} />\n-                {user}\n-              </Option>\n-            ))}\n-          </Mentions>\n+            optionRenderer={(user, email) => (\n+              <>\n+                <NameAvatar name={email} />\n+                {email}\n+              </>\n+            )}\n+          />\n         </Col>\n         <Col span={3}>\n           <AntButton onClick={this.handleAddComment} type={\"primary\"}>\n@@ -186,10 +122,4 @@ CommentsComponent.defaultProps = {\n   comments: []\n };\n \n-const mapStateToProps = (state, ownProps) => {\n-  return {\n-    users: userGetSearchResults(state, USER_LIST_KEY)\n-  };\n-};\n-\n-export default ErrorWrapper(connect(mapStateToProps, mapRestapiDispatchtoProps)(CommentsComponent));\n+export default CommentsComponent;",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "1b22f172f97be8c28d585d0020d99b9c9d264142",
+                  "status": "modified"
+                },
+                {
+                  "additions": 2,
+                  "changes": 4,
+                  "deletions": 2,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/redux/selectors/restapiSelector.js",
+                  "filename": "src/redux/selectors/restapiSelector.js",
+                  "patch": "@@ -397,6 +397,6 @@ export const dashboardViewState = (state, ownProps) => {\n \n export const getDashboardSelector = createSelector(dashboardState, dashboard => dashboard);\n \n-export const userGetSearchResults = (state, key) => {\n-  return get(state.restapiReducer, [\"users\", \"list\", key], { loading: true, error: true });\n+export const getMentionsSearchResults = (state, uri, method, id) => {\n+  return get(state.restapiReducer, [uri, method, id], { loading: true, error: true });\n };",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/redux/selectors/restapiSelector.js",
+                  "sha": "37f6b867110c84357543d3dd1bcfd98749bf2194",
+                  "status": "modified"
+                },
+                {
+                  "additions": 143,
+                  "changes": 143,
+                  "deletions": 0,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/generic-mentions/generic-mentions.jsx",
+                  "filename": "src/shared-resources/containers/generic-mentions/generic-mentions.jsx",
+                  "patch": "@@ -0,0 +1,143 @@\n+import React from \"react\";\n+import { Mentions } from \"antd\";\n+import * as PropTypes from \"prop-types\";\n+import { debounce } from \"lodash\";\n+import { getMentionsSearchResults } from \"redux/selectors/restapiSelector\";\n+import { mapRestapiDispatchtoProps } from \"redux/maps/restapiMap\";\n+import { mapGenericToProps } from \"redux/maps/restapi\";\n+import ErrorWrapper from \"hoc/errorWrapper\";\n+import { connect } from \"react-redux\";\n+\n+class GenericMentions extends React.PureComponent {\n+  static getDerivedStateFromProps(props, state) {\n+    if (state.options_loading) {\n+      const { loading, error, data: optionsData } = props.options;\n+      if (!loading && !error && optionsData !== undefined) {\n+        const users = optionsData.records;\n+        return {\n+          options: users,\n+          options_loading: false\n+        };\n+      }\n+    }\n+  }\n+\n+  componentWillUnmount() {\n+    this.props.restapiClear(this.props.uri, this.props.method, this.props.id);\n+  }\n+\n+  constructor(props) {\n+    super(props);\n+    this.state = {\n+      current_value: props.value,\n+      options: [],\n+      options_loading: false\n+    };\n+    this.onSearch = this.onSearch.bind(this);\n+    this.handleChange = this.handleChange.bind(this);\n+    this.loadOptions = debounce(this.loadOptions.bind(this), 800);\n+  }\n+\n+  loadOptions(query) {\n+    const { uri, method, id, searchField } = this.props;\n+    this.props.genericList(\n+      uri,\n+      method,\n+      {\n+        filter: {\n+          partial: {\n+            [searchField]: query\n+          }\n+        }\n+      },\n+      null,\n+      id\n+    );\n+  }\n+\n+  onSearch(query) {\n+    this.setState(\n+      state => ({\n+        options: [],\n+        options_loading: !!query\n+      }),\n+      () => {\n+        this.loadOptions(query);\n+      }\n+    );\n+  }\n+\n+  handleChange(comment) {\n+    this.setState({ current_value: comment }, () => {\n+      this.props.onChange(comment);\n+    });\n+  }\n+\n+  render() {\n+    const { Option } = Mentions;\n+\n+    const { placeholder, value, searchField, prefix, split, optionRenderer } = this.props;\n+\n+    return (\n+      <Mentions\n+        prefix={prefix}\n+        split={split}\n+        value={value}\n+        placeholder={placeholder}\n+        style={{ width: \"100%\" }}\n+        loading={this.state.options_loading}\n+        onChange={this.handleChange}\n+        onSearch={query => {\n+          this.onSearch(query);\n+        }}>\n+        {optionRenderer &&\n+          this.state.options.map(option => (\n+            <Option key={option[searchField]} value={option[searchField]}>\n+              {optionRenderer(option, option[searchField])}\n+            </Option>\n+          ))}\n+        {!optionRenderer &&\n+          this.state.options.map(option => (\n+            <Option key={option[searchField]} value={option[searchField]}>\n+              {option[searchField]}\n+            </Option>\n+          ))}\n+      </Mentions>\n+    );\n+  }\n+}\n+\n+GenericMentions.propTypes = {\n+  placeholder: PropTypes.string,\n+  value: PropTypes.string.isRequired,\n+  id: PropTypes.string.isRequired,\n+  uri: PropTypes.string.isRequired,\n+  method: PropTypes.string.isRequired,\n+  searchField: PropTypes.string.isRequired,\n+  onChange: PropTypes.func.isRequired,\n+  prefix: PropTypes.string || PropTypes.array,\n+  split: PropTypes.string,\n+  optionRenderer: PropTypes.func // (entity, searchField) => JSX\n+};\n+\n+GenericMentions.defaultProps = {\n+  id: \"0\",\n+  value: \"\",\n+  prefix: [\"@\"],\n+  split: \"#\"\n+};\n+\n+const mapStateToProps = (state, ownProps) => {\n+  return {\n+    options: getMentionsSearchResults(state, ownProps.uri, ownProps.method, ownProps.id)\n+  };\n+};\n+\n+const dispatchToProps = dispatch => {\n+  return {\n+    ...mapRestapiDispatchtoProps(dispatch),\n+    ...mapGenericToProps(dispatch)\n+  };\n+};\n+\n+export default ErrorWrapper(connect(mapStateToProps, dispatchToProps)(GenericMentions));",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/generic-mentions/generic-mentions.jsx",
+                  "sha": "8b788288c02dce16d20135442829dc85818dbc8a",
+                  "status": "added"
+                },
+                {
+                  "additions": 1,
+                  "changes": 1,
+                  "deletions": 0,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/index.js",
+                  "filename": "src/shared-resources/containers/index.js",
+                  "patch": "@@ -8,3 +8,4 @@ export { AutoSuggestContainer as AutoSuggest } from \"./autosuggest/autosuggest.c\n export { default as WidgetApiWrapper } from \"./jira-api-wrapper/WidgetRestApiContainer\";\n export { default as HygieneRestApiWrapper } from \"./jira-api-wrapper/HygieneRestApiContainer\";\n export { default as ProductAggRestApiWrapper } from \"./product-agg-api-wrapper/product-agg-api-wrapper.component\";\n+export { default as GenericMentions } from \"./generic-mentions/generic-mentions\";",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/index.js",
+                  "sha": "35a64419f578256e327a41c524c14de103145465",
+                  "status": "modified"
+                },
+                {
+                  "additions": 1,
+                  "changes": 2,
+                  "deletions": 1,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/utils/regexUtils.js",
+                  "filename": "src/utils/regexUtils.js",
+                  "patch": "@@ -1,2 +1,2 @@\n-export const REGEX_EMAIL_COMMENTS = /\\#\\@((?:[a-zA-Z0-9_\\-\\.]+)\\@(?:[a-zA-Z0-9_\\-\\.]+)\\.(?:[a-zA-Z]{2,5}))\\#/g;\n+export const REGEX_EMAIL_COMMENTS = /(?:\\#|^)\\@((?:[a-zA-Z0-9_\\-\\.]+)\\@(?:[a-zA-Z0-9_\\-\\.]+)\\.(?:[a-zA-Z]{2,5}))\\#/g;\n export const REGEX_PHONE_NUMBER = /^[^a-zA-Z]+$/g;",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/utils/regexUtils.js",
+                  "sha": "a0f3a17f3db1846947537b1790d7d9d4667b362e",
+                  "status": "modified"
+                }
+              ]
+            },
+            {
+              "sha": "1b2ba3c76256894e03a73cb4d73d9d7cdca3087b",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b",
+              "author": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "committer": {
+                "type": "user",
+                "login": "piyushkantm"
+              },
+              "message": "add comments component in Smart Tickets",
+              "git_author": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1592922101000
+              },
+              "git_committer": {
+                "email": "piyush0mishra@gmail.com",
+                "name": "Piyush Mishra",
+                "date": 1592922101000
+              },
+              "stats": {
+                "additions": 47,
+                "deletions": 79,
+                "total": 126
+              },
+              "files": [
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "1b2ba3c76256894e03a73cb4d73d9d7cdca3087b",
+                  "status": "modified"
+                },
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "1b2ba3c76256894e03a73cb4d73d9d7cdca3087b",
+                  "status": "modified"
+                },
+                {
+                  "additions": 14,
+                  "changes": 26,
+                  "deletions": 12,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -32,13 +32,13 @@ class CommentsComponent extends React.PureComponent {\n             <Comment\n               key={`note-${index}`}\n               actions={[]}\n-              author={comment.user}\n-              avatar={<NameAvatar name={comment.user} />}\n+              author={comment[this.props.creatorKey]}\n+              avatar={<NameAvatar name={comment[this.props.creatorKey]} />}\n               content={\n                 <Text>\n                   {\n                     // TODO: Add formatting\n-                    (comment.message || \"\").replace(REGEX_EMAIL_COMMENTS, \"$1\")\n+                    (comment[this.props.commentKey] || \"\").replace(REGEX_EMAIL_COMMENTS, \"$1\")\n                   }\n                 </Text>\n               }\n@@ -67,11 +67,11 @@ class CommentsComponent extends React.PureComponent {\n   get addComment() {\n     const { creator } = this.props;\n     return (\n-      <Row gutter={[10, 10]} style={{ paddingTop: \"10px\" }}>\n-        <Col span={1}>\n+      <Row gutter={[10, 10]} style={{ paddingTop: \"10px\" }} align={\"center\"}>\n+        <Col span={1} className=\"pr-5\">\n           <NameAvatar name={creator} />\n         </Col>\n-        <Col span={20}>\n+        <Col span={18}>\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n@@ -90,7 +90,7 @@ class CommentsComponent extends React.PureComponent {\n             )}\n           />\n         </Col>\n-        <Col span={3}>\n+        <Col span={5}>\n           <AntButton onClick={this.handleAddComment} type={\"primary\"}>\n             Add Comment\n           </AntButton>\n@@ -103,23 +103,25 @@ class CommentsComponent extends React.PureComponent {\n     const { sectionId, questionId, comments, onAddComment } = this.props;\n     return (\n       <div className={\"comments\"}>\n-        <div style={{ width: \"70%\" }}>\n-          {this.comments}\n-          {this.addComment}\n-        </div>\n+        <div style={{ width: \"70%\" }}>{this.comments}</div>\n+        {this.addComment}\n       </div>\n     );\n   }\n }\n \n CommentsComponent.propTypes = {\n   comments: PropTypes.array.isRequired,\n+  commentKey: PropTypes.string,\n+  creatorKey: PropTypes.string,\n   onAddComment: PropTypes.func.isRequired,\n   creator: PropTypes.string.isRequired\n };\n \n CommentsComponent.defaultProps = {\n-  comments: []\n+  comments: [],\n+  commentKey: \"message\",\n+  creatorKey: \"user\"\n };\n \n export default CommentsComponent;",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "d3e094f7afc9364bf8b2d3443d5c4ac830ff1341",
+                  "status": "modified"
+                },
+                {
+                  "additions": 33,
+                  "changes": 100,
+                  "deletions": 67,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -1,13 +1,13 @@\n import React from \"react\";\n import * as PropTypes from \"prop-types\";\n-import { Avatar, Comment, Tooltip, Typography, Icon, Input } from \"antd\";\n+import { Typography } from \"antd\";\n import { connect } from \"react-redux\";\n import { mapRestapiDispatchtoProps, mapRestapiStatetoProps } from \"redux/maps/restapiMap\";\n import { getData, loadingStatus } from \"utils/loadingUtils\";\n-import { AntButton, AntInput, NameAvatar } from \"shared-resources/components\";\n import { RestNotes } from \"classes/RestNotes\";\n import LocalStoreService from \"services/localStoreService\";\n import Loader from \"../../components/Loader/Loader\";\n+import { Comments } from \"../../assessments/components\";\n \n const moment = require(\"moment\");\n const { Text } = Typography;\n@@ -103,80 +103,46 @@ export class NotesContainer extends React.Component {\n     this.setState(state => ({ show_add_note: !state.show_add_note }));\n   };\n \n-  get addNoteField() {\n-    // if (!this.state.show_add_note) {\n-    //   return null;\n-    // }\n-    const ls = new LocalStoreService();\n-    const creator = ls.getUserEmail();\n-    return (\n-      <div className=\"flex direction-column\">\n-        <Input\n-          addonBefore={<NameAvatar name={creator} />}\n-          disabled={this.isCreating}\n-          className=\"mb-10\"\n-          key=\"new-note\"\n-          value={this.state.note_text || \"\"}\n-          label=\"\"\n-          name=\"new-note\"\n-          rows={4}\n-          hasError={this.state.note_text === \"\"}\n-          type=\"textarea\"\n-          isRequired={true}\n-          onPressEnter={this.handleNoteCreate}\n-          placeholder={\"Add a comment....\"}\n-          onChange={e => {\n-            this.setState({ note_text: e.target.value });\n-          }}\n-        />\n-        {/*<div className=\"flex direction-row justify-end\">*/}\n-        {/*  <AntButton className=\"mr-5\" onClick={this.toggleAddNoteModal}>*/}\n-        {/*    Cancel*/}\n-        {/*  </AntButton>*/}\n-        {/*  <AntButton type=\"primary\" onClick={this.handleNoteCreate}>*/}\n-        {/*    Add*/}\n-        {/*  </AntButton>*/}\n-        {/*</div>*/}\n-      </div>\n-    );\n-  }\n-\n   get notes() {\n     const { loading, notes } = this.state;\n     if (loading) {\n       return <Loader />;\n     }\n-    return notes.map((note, index) => (\n-      <Comment\n-        key={`note-${index}`}\n-        actions={[]}\n-        author={note.creator}\n-        avatar={<NameAvatar name={note.creator} />}\n-        content={<Text>{note.body}</Text>}\n-        datetime={\n-          <Tooltip title={moment().format(\"YYYY-MM-DD HH:mm:ss\")}>\n-            <span>{moment.unix(note.created_at).fromNow()}</span>\n-          </Tooltip>\n-        }\n-      />\n-    ));\n-  }\n \n-  get isCreating() {\n-    const { notes_create_loading, loading_due_to_create } = this.state;\n-    return notes_create_loading || loading_due_to_create;\n-  }\n+    const ls = new LocalStoreService();\n+    const creator = ls.getUserEmail();\n \n-  render() {\n     return (\n-      <>\n-        {/*<AntButton disabled={this.isCreating} className=\"mb-10\" onClick={this.toggleAddNoteModal} type=\"primary\">*/}\n-        {/*  {this.isCreating ? \"Adding new comment...\" : \"New Comment\"}*/}\n-        {/*</AntButton>*/}\n-        {this.addNoteField}\n-        {this.notes}\n-      </>\n+      <Comments\n+        comments={notes}\n+        commentKey=\"body\"\n+        creatorKey=\"creator\"\n+        creator={creator}\n+        onAddComment={comment => {\n+          this.setState({ note_text: comment }, () => {\n+            this.handleNoteCreate();\n+          });\n+        }}\n+      />\n     );\n+    // return notes.map((note, index) => (\n+    //   <Comment\n+    //     key={`note-${index}`}\n+    //     actions={[]}\n+    //     author={note.creator}\n+    //     avatar={<NameAvatar name={note.creator} />}\n+    //     content={<Text>{note.body}</Text>}\n+    //     datetime={\n+    //       <Tooltip title={moment().format(\"YYYY-MM-DD HH:mm:ss\")}>\n+    //         <span>{moment.unix(note.created_at).fromNow()}</span>\n+    //       </Tooltip>\n+    //     }\n+    //   />\n+    // ));\n+  }\n+\n+  render() {\n+    return <>{this.notes}</>;\n   }\n }\n ",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/workitems/containers/notes.container.jsx",
+                  "sha": "9a29b8b131929802ade0124650891181907948f4",
+                  "status": "modified"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "public": false,
+          "id": "12717358612",
+          "type": "PushEvent",
+          "is_public": false,
+          "actor": "kush-prof",
+          "org": "levelops",
+          "created_at": 1633000000000,
+          "commits": [
+            {
+              "sha": "17e0c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/d091c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "author": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "committer": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "message": "LEV-889 fix create comment in smart tickets",
+              "git_author": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1633000000000
+              },
+              "git_committer": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1633000000000
+              },
+              "stats": {
+                "additions": 8,
+                "deletions": 8,
+                "total": 16
+              },
+              "files": [
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "17e0c7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                },
+                {
+                  "additions": 4,
+                  "changes": 8,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "17e0c7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                }
+              ]
+            },
+            {
+              "sha": "173ac7da5f3a9faf4b4e932c458ff4b40296314a",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/d091c7da5f3a9faf4b4e932c458ff4b40296314a",
+              "author": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "committer": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "message": "LEV-889 fix create comment in smart tickets",
+              "git_author": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1633000000000
+              },
+              "git_committer": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1633000000000
+              },
+              "stats": {
+                "additions": 7,
+                "deletions": 15,
+                "total": 22
+              },
+              "files": [
+                {
+                  "additions": 3,
+                  "changes": 7,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "173ac7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                },
+                {
+                  "additions": 4,
+                  "changes": 15,
+                  "deletions": 11,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "173ac7da5f3a9faf4b4e932c458ff4b40296314a",
+                  "status": "modified"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "public": false,
+          "id": "12716951618",
+          "type": "PushEvent",
+          "is_public": false,
+          "actor": "kush-prof",
+          "org": "levelops",
+          "created_at": 1634000000000,
+          "commits": [
+            {
+              "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/8fd86afa79c8e803c729b1b6668226a13ed28174",
+              "author": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "committer": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "message": "complete generic mentions component",
+              "git_author": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1634000000000
+              },
+              "git_committer": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1634000000000
+              },
+              "stats": {
+                "additions": 164,
+                "deletions": 90,
+                "total": 254
+              },
+              "files": [
+                {
+                  "additions": 9,
+                  "changes": 13,
+                  "deletions": 4,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 8,
+                  "changes": 10,
+                  "deletions": 2,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 15,
+                  "changes": 100,
+                  "deletions": 85,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -1,85 +1,26 @@\n import React from \"react\";\n import * as PropTypes from \"prop-types\";\n-import { Col, Comment, Mentions, Row, Tooltip, Typography } from \"antd\";\n+import { Col, Comment, Row, Tooltip, Typography } from \"antd\";\n import { NameAvatar } from \"../../../shared-resources/components\";\n import \"../questions/questions.style.scss\";\n-import { mapRestapiDispatchtoProps } from \"redux/maps/restapiMap\";\n-import ErrorWrapper from \"hoc/errorWrapper\";\n-import { connect } from \"react-redux\";\n import { AntButton } from \"shared-resources/components\";\n-import { debounce } from \"lodash\";\n import { REGEX_EMAIL_COMMENTS } from \"utils/regexUtils\";\n-import { userGetSearchResults } from \"redux/selectors/restapiSelector\";\n+import { GenericMentions } from \"shared-resources/containers\";\n \n const moment = require(\"moment\");\n \n const { Text } = Typography;\n-const { Option } = Mentions;\n \n const USER_LIST_KEY = \"comment_users_search\";\n \n class CommentsComponent extends React.PureComponent {\n-  static getDerivedStateFromProps(props, state) {\n-    if (state.users_loading) {\n-      const { loading, error, data: userData } = props.users;\n-      if (!loading && !error && userData !== undefined) {\n-        const users = userData.records;\n-        return {\n-          users_loading: false,\n-          users: users.map(user => user.email)\n-        };\n-      }\n-    }\n-  }\n-\n-  componentWillUnmount() {\n-    this.props.restapiClear(\"users\", \"list\", \"0\");\n-  }\n-\n   constructor(props) {\n     super(props);\n     this.state = {\n-      current_comment: \"\",\n-      users: [],\n-      users_loading: false\n+      current_comment: \"\"\n     };\n \n     this.handleAddComment = this.handleAddComment.bind(this);\n-    this.onSearch = this.onSearch.bind(this);\n-    this.loadUsers = debounce(this.loadUsers.bind(this), 800);\n-  }\n-\n-  onSearch(query) {\n-    this.setState(\n-      state => ({\n-        users: [],\n-        users_loading: !!query\n-      }),\n-      () => {\n-        this.loadUsers(query);\n-      }\n-    );\n-  }\n-\n-  loadUsers(query) {\n-    if (!query) {\n-      this.setState({\n-        users: []\n-      });\n-\n-      return;\n-    }\n-\n-    this.props.usersList(\n-      {\n-        filter: {\n-          partial: {\n-            email: query\n-          }\n-        }\n-      },\n-      USER_LIST_KEY\n-    );\n   }\n \n   get comments() {\n@@ -125,34 +66,29 @@ class CommentsComponent extends React.PureComponent {\n \n   get addComment() {\n     const { creator } = this.props;\n-    const { users_loading, users } = this.state;\n-\n     return (\n       <Row gutter={[10, 10]} style={{ paddingTop: \"10px\" }}>\n         <Col span={1}>\n           <NameAvatar name={creator} />\n         </Col>\n         <Col span={20}>\n-          <Mentions\n-            prefix={[\"@\"]}\n-            split={\"#\"}\n-            value={this.state.current_comment || \"\"}\n+          <GenericMentions\n             placeholder=\"Add a comment....\"\n-            style={{ width: \"100%\" }}\n-            loading={users_loading}\n+            value={this.state.current_comment}\n+            id={USER_LIST_KEY}\n+            uri=\"users\"\n+            method=\"list\"\n+            searchField=\"email\"\n             onChange={comment => {\n               this.setState({ current_comment: comment });\n             }}\n-            onSearch={query => {\n-              this.onSearch(query);\n-            }}>\n-            {users.map(user => (\n-              <Option key={user} value={user}>\n-                <NameAvatar name={user} />\n-                {user}\n-              </Option>\n-            ))}\n-          </Mentions>\n+            optionRenderer={(user, email) => (\n+              <>\n+                <NameAvatar name={email} />\n+                {email}\n+              </>\n+            )}\n+          />\n         </Col>\n         <Col span={3}>\n           <AntButton onClick={this.handleAddComment} type={\"primary\"}>\n@@ -186,10 +122,4 @@ CommentsComponent.defaultProps = {\n   comments: []\n };\n \n-const mapStateToProps = (state, ownProps) => {\n-  return {\n-    users: userGetSearchResults(state, USER_LIST_KEY)\n-  };\n-};\n-\n-export default ErrorWrapper(connect(mapStateToProps, mapRestapiDispatchtoProps)(CommentsComponent));\n+export default CommentsComponent;",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 2,
+                  "changes": 8,
+                  "deletions": 6,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/redux/selectors/restapiSelector.js",
+                  "filename": "src/redux/selectors/restapiSelector.js",
+                  "patch": "@@ -397,6 +397,6 @@ export const dashboardViewState = (state, ownProps) => {\n \n export const getDashboardSelector = createSelector(dashboardState, dashboard => dashboard);\n \n-export const userGetSearchResults = (state, key) => {\n-  return get(state.restapiReducer, [\"users\", \"list\", key], { loading: true, error: true });\n+export const getMentionsSearchResults = (state, uri, method, id) => {\n+  return get(state.restapiReducer, [uri, method, id], { loading: true, error: true });\n };",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/redux/selectors/restapiSelector.js",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 143,
+                  "changes": 143,
+                  "deletions": 0,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/generic-mentions/generic-mentions.jsx",
+                  "filename": "src/shared-resources/containers/generic-mentions/generic-mentions.jsx",
+                  "patch": "@@ -0,0 +1,143 @@\n+import React from \"react\";\n+import { Mentions } from \"antd\";\n+import * as PropTypes from \"prop-types\";\n+import { debounce } from \"lodash\";\n+import { getMentionsSearchResults } from \"redux/selectors/restapiSelector\";\n+import { mapRestapiDispatchtoProps } from \"redux/maps/restapiMap\";\n+import { mapGenericToProps } from \"redux/maps/restapi\";\n+import ErrorWrapper from \"hoc/errorWrapper\";\n+import { connect } from \"react-redux\";\n+\n+class GenericMentions extends React.PureComponent {\n+  static getDerivedStateFromProps(props, state) {\n+    if (state.options_loading) {\n+      const { loading, error, data: optionsData } = props.options;\n+      if (!loading && !error && optionsData !== undefined) {\n+        const users = optionsData.records;\n+        return {\n+          options: users,\n+          options_loading: false\n+        };\n+      }\n+    }\n+  }\n+\n+  componentWillUnmount() {\n+    this.props.restapiClear(this.props.uri, this.props.method, this.props.id);\n+  }\n+\n+  constructor(props) {\n+    super(props);\n+    this.state = {\n+      current_value: props.value,\n+      options: [],\n+      options_loading: false\n+    };\n+    this.onSearch = this.onSearch.bind(this);\n+    this.handleChange = this.handleChange.bind(this);\n+    this.loadOptions = debounce(this.loadOptions.bind(this), 800);\n+  }\n+\n+  loadOptions(query) {\n+    const { uri, method, id, searchField } = this.props;\n+    this.props.genericList(\n+      uri,\n+      method,\n+      {\n+        filter: {\n+          partial: {\n+            [searchField]: query\n+          }\n+        }\n+      },\n+      null,\n+      id\n+    );\n+  }\n+\n+  onSearch(query) {\n+    this.setState(\n+      state => ({\n+        options: [],\n+        options_loading: !!query\n+      }),\n+      () => {\n+        this.loadOptions(query);\n+      }\n+    );\n+  }\n+\n+  handleChange(comment) {\n+    this.setState({ current_value: comment }, () => {\n+      this.props.onChange(comment);\n+    });\n+  }\n+\n+  render() {\n+    const { Option } = Mentions;\n+\n+    const { placeholder, value, searchField, prefix, split, optionRenderer } = this.props;\n+\n+    return (\n+      <Mentions\n+        prefix={prefix}\n+        split={split}\n+        value={value}\n+        placeholder={placeholder}\n+        style={{ width: \"100%\" }}\n+        loading={this.state.options_loading}\n+        onChange={this.handleChange}\n+        onSearch={query => {\n+          this.onSearch(query);\n+        }}>\n+        {optionRenderer &&\n+          this.state.options.map(option => (\n+            <Option key={option[searchField]} value={option[searchField]}>\n+              {optionRenderer(option, option[searchField])}\n+            </Option>\n+          ))}\n+        {!optionRenderer &&\n+          this.state.options.map(option => (\n+            <Option key={option[searchField]} value={option[searchField]}>\n+              {option[searchField]}\n+            </Option>\n+          ))}\n+      </Mentions>\n+    );\n+  }\n+}\n+\n+GenericMentions.propTypes = {\n+  placeholder: PropTypes.string,\n+  value: PropTypes.string.isRequired,\n+  id: PropTypes.string.isRequired,\n+  uri: PropTypes.string.isRequired,\n+  method: PropTypes.string.isRequired,\n+  searchField: PropTypes.string.isRequired,\n+  onChange: PropTypes.func.isRequired,\n+  prefix: PropTypes.string || PropTypes.array,\n+  split: PropTypes.string,\n+  optionRenderer: PropTypes.func // (entity, searchField) => JSX\n+};\n+\n+GenericMentions.defaultProps = {\n+  id: \"0\",\n+  value: \"\",\n+  prefix: [\"@\"],\n+  split: \"#\"\n+};\n+\n+const mapStateToProps = (state, ownProps) => {\n+  return {\n+    options: getMentionsSearchResults(state, ownProps.uri, ownProps.method, ownProps.id)\n+  };\n+};\n+\n+const dispatchToProps = dispatch => {\n+  return {\n+    ...mapRestapiDispatchtoProps(dispatch),\n+    ...mapGenericToProps(dispatch)\n+  };\n+};\n+\n+export default ErrorWrapper(connect(mapStateToProps, dispatchToProps)(GenericMentions));",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/generic-mentions/generic-mentions.jsx",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "added"
+                },
+                {
+                  "additions": 5,
+                  "changes": 6,
+                  "deletions": 1,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/index.js",
+                  "filename": "src/shared-resources/containers/index.js",
+                  "patch": "@@ -8,3 +8,4 @@ export { AutoSuggestContainer as AutoSuggest } from \"./autosuggest/autosuggest.c\n export { default as WidgetApiWrapper } from \"./jira-api-wrapper/WidgetRestApiContainer\";\n export { default as HygieneRestApiWrapper } from \"./jira-api-wrapper/HygieneRestApiContainer\";\n export { default as ProductAggRestApiWrapper } from \"./product-agg-api-wrapper/product-agg-api-wrapper.component\";\n+export { default as GenericMentions } from \"./generic-mentions/generic-mentions\";",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/shared-resources/containers/index.js",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                },
+                {
+                  "additions": 0,
+                  "changes": 15,
+                  "deletions": 15,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/8fd86afa79c8e803c729b1b6668226a13ed28174/src/utils/regexUtils.js",
+                  "filename": "src/utils/regexUtils.js",
+                  "patch": "@@ -1,2 +1,2 @@\n-export const REGEX_EMAIL_COMMENTS = /\\#\\@((?:[a-zA-Z0-9_\\-\\.]+)\\@(?:[a-zA-Z0-9_\\-\\.]+)\\.(?:[a-zA-Z]{2,5}))\\#/g;\n+export const REGEX_EMAIL_COMMENTS = /(?:\\#|^)\\@((?:[a-zA-Z0-9_\\-\\.]+)\\@(?:[a-zA-Z0-9_\\-\\.]+)\\.(?:[a-zA-Z]{2,5}))\\#/g;\n export const REGEX_PHONE_NUMBER = /^[^a-zA-Z]+$/g;",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/8fd86afa79c8e803c729b1b6668226a13ed28174/src/utils/regexUtils.js",
+                  "sha": "fa286afa79c8e803c729b1b6668226a13ed28174",
+                  "status": "modified"
+                }
+              ]
+            },
+            {
+              "sha": "21aba3c76256894e03a73cb4d73d9d7cdca3087b",
+              "url": "https://api.github.com/repos/levelops/ui-levelops/commits/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b",
+              "author": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "committer": {
+                "type": "user",
+                "login": "kush-prof"
+              },
+              "message": "add comments component in Smart Tickets",
+              "git_author": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1634000000000
+              },
+              "git_committer": {
+                "email": "kushagra@devslane.com",
+                "name": "Kushagra Saxena",
+                "date": 1634000000000
+              },
+              "stats": {
+                "additions": 47,
+                "deletions": 79,
+                "total": 126
+              },
+              "files": [
+                {
+                  "additions": 9,
+                  "changes": 14,
+                  "deletions": 5,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -11,7 +11,7 @@ const moment = require(\"moment\");\n \n const { Text } = Typography;\n \n-const USER_LIST_KEY = \"comment_users_search\";\n+const LIST_KEY = \"mentions_search\";\n \n class CommentsComponent extends React.PureComponent {\n   constructor(props) {\n@@ -57,9 +57,9 @@ class CommentsComponent extends React.PureComponent {\n   handleAddComment() {\n     const { onAddComment, creator } = this.props;\n     const newComment = {\n-      user: creator,\n+      [this.props.creatorKey]: creator,\n       created_at: Math.floor(Date.now()) / 1000,\n-      message: this.state.current_comment\n+      [this.props.commentKey]: this.state.current_comment\n     };\n     this.setState({ current_comment: \"\" }, () => onAddComment(newComment));\n   }\n@@ -75,7 +75,7 @@ class CommentsComponent extends React.PureComponent {\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n-            id={USER_LIST_KEY}\n+            id={LIST_KEY}\n             uri=\"users\"\n             method=\"list\"\n             searchField=\"email\"",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "21aba3c76256894e03a73cb4d73d9d7cdca3087b",
+                  "status": "modified"
+                },
+                {
+                  "additions": 10,
+                  "changes": 18,
+                  "deletions": 8,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -21,7 +21,7 @@ export class NotesContainer extends React.Component {\n       loading: false,\n       workItemid: null,\n       show_add_note: false,\n-      note_text: \"\",\n+      new_comment: \"\",\n       notes_create_loading: false,\n       loading_due_to_create: false,\n       notes: []\n@@ -84,13 +84,13 @@ export class NotesContainer extends React.Component {\n   handleNoteCreate = () => {\n     const note = new RestNotes();\n     const ls = new LocalStoreService();\n-    note.body = this.state.note_text;\n+    note.body = this.state.new_comment.body;\n     note.creator = ls.getUserEmail();\n     note.work_item_id = this.props.workItemid;\n     this.setState(\n       {\n         show_add_note: false,\n-        note_text: \"\",\n+        new_comment: undefined,\n         notes_create_loading: true\n       },\n       () => {\n@@ -119,7 +119,7 @@ export class NotesContainer extends React.Component {\n         creatorKey=\"creator\"\n         creator={creator}\n         onAddComment={comment => {\n-          this.setState({ note_text: comment }, () => {\n+          this.setState({ new_comment: comment }, () => {\n             this.handleNoteCreate();\n           });\n         }}",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/d091c7da5f3a9faf4b4e932c458ff4b40296314a/src/workitems/containers/notes.container.jsx",
+                  "sha": "21aba3c76256894e03a73cb4d73d9d7cdca3087b",
+                  "status": "modified"
+                },
+                {
+                  "additions": 14,
+                  "changes": 24,
+                  "deletions": 10,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/assessments/components/comments/comments.component.jsx",
+                  "filename": "src/assessments/components/comments/comments.component.jsx",
+                  "patch": "@@ -32,13 +32,13 @@ class CommentsComponent extends React.PureComponent {\n             <Comment\n               key={`note-${index}`}\n               actions={[]}\n-              author={comment.user}\n-              avatar={<NameAvatar name={comment.user} />}\n+              author={comment[this.props.creatorKey]}\n+              avatar={<NameAvatar name={comment[this.props.creatorKey]} />}\n               content={\n                 <Text>\n                   {\n                     // TODO: Add formatting\n-                    (comment.message || \"\").replace(REGEX_EMAIL_COMMENTS, \"$1\")\n+                    (comment[this.props.commentKey] || \"\").replace(REGEX_EMAIL_COMMENTS, \"$1\")\n                   }\n                 </Text>\n               }\n@@ -67,11 +67,11 @@ class CommentsComponent extends React.PureComponent {\n   get addComment() {\n     const { creator } = this.props;\n     return (\n-      <Row gutter={[10, 10]} style={{ paddingTop: \"10px\" }}>\n-        <Col span={1}>\n+      <Row gutter={[10, 10]} style={{ paddingTop: \"10px\" }} align={\"center\"}>\n+        <Col span={1} className=\"pr-5\">\n           <NameAvatar name={creator} />\n         </Col>\n-        <Col span={20}>\n+        <Col span={18}>\n           <GenericMentions\n             placeholder=\"Add a comment....\"\n             value={this.state.current_comment}\n@@ -90,7 +90,7 @@ class CommentsComponent extends React.PureComponent {\n             )}\n           />\n         </Col>\n-        <Col span={3}>\n+        <Col span={5}>\n           <AntButton onClick={this.handleAddComment} type={\"primary\"}>\n             Add Comment\n           </AntButton>\n@@ -103,23 +103,25 @@ class CommentsComponent extends React.PureComponent {\n     const { sectionId, questionId, comments, onAddComment } = this.props;\n     return (\n       <div className={\"comments\"}>\n-        <div style={{ width: \"70%\" }}>\n-          {this.comments}\n-          {this.addComment}\n-        </div>\n+        <div style={{ width: \"70%\" }}>{this.comments}</div>\n+        {this.addComment}\n       </div>\n     );\n   }\n }\n \n CommentsComponent.propTypes = {\n   comments: PropTypes.array.isRequired,\n+  commentKey: PropTypes.string,\n+  creatorKey: PropTypes.string,\n   onAddComment: PropTypes.func.isRequired,\n   creator: PropTypes.string.isRequired\n };\n \n CommentsComponent.defaultProps = {\n-  comments: []\n+  comments: [],\n+  commentKey: \"message\",\n+  creatorKey: \"user\"\n };\n \n export default CommentsComponent;",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/assessments/components/comments/comments.component.jsx",
+                  "sha": "21aba3c76256894e03a73cb4d73d9d7cdca3087b",
+                  "status": "modified"
+                },
+                {
+                  "additions": 33,
+                  "changes": 100,
+                  "deletions": 67,
+                  "blob_url": "https://github.com/levelops/ui-levelops/blob/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/workitems/containers/notes.container.jsx",
+                  "filename": "src/workitems/containers/notes.container.jsx",
+                  "patch": "@@ -1,13 +1,13 @@\n import React from \"react\";\n import * as PropTypes from \"prop-types\";\n-import { Avatar, Comment, Tooltip, Typography, Icon, Input } from \"antd\";\n+import { Typography } from \"antd\";\n import { connect } from \"react-redux\";\n import { mapRestapiDispatchtoProps, mapRestapiStatetoProps } from \"redux/maps/restapiMap\";\n import { getData, loadingStatus } from \"utils/loadingUtils\";\n-import { AntButton, AntInput, NameAvatar } from \"shared-resources/components\";\n import { RestNotes } from \"classes/RestNotes\";\n import LocalStoreService from \"services/localStoreService\";\n import Loader from \"../../components/Loader/Loader\";\n+import { Comments } from \"../../assessments/components\";\n \n const moment = require(\"moment\");\n const { Text } = Typography;\n@@ -103,80 +103,46 @@ export class NotesContainer extends React.Component {\n     this.setState(state => ({ show_add_note: !state.show_add_note }));\n   };\n \n-  get addNoteField() {\n-    // if (!this.state.show_add_note) {\n-    //   return null;\n-    // }\n-    const ls = new LocalStoreService();\n-    const creator = ls.getUserEmail();\n-    return (\n-      <div className=\"flex direction-column\">\n-        <Input\n-          addonBefore={<NameAvatar name={creator} />}\n-          disabled={this.isCreating}\n-          className=\"mb-10\"\n-          key=\"new-note\"\n-          value={this.state.note_text || \"\"}\n-          label=\"\"\n-          name=\"new-note\"\n-          rows={4}\n-          hasError={this.state.note_text === \"\"}\n-          type=\"textarea\"\n-          isRequired={true}\n-          onPressEnter={this.handleNoteCreate}\n-          placeholder={\"Add a comment....\"}\n-          onChange={e => {\n-            this.setState({ note_text: e.target.value });\n-          }}\n-        />\n-        {/*<div className=\"flex direction-row justify-end\">*/}\n-        {/*  <AntButton className=\"mr-5\" onClick={this.toggleAddNoteModal}>*/}\n-        {/*    Cancel*/}\n-        {/*  </AntButton>*/}\n-        {/*  <AntButton type=\"primary\" onClick={this.handleNoteCreate}>*/}\n-        {/*    Add*/}\n-        {/*  </AntButton>*/}\n-        {/*</div>*/}\n-      </div>\n-    );\n-  }\n-\n   get notes() {\n     const { loading, notes } = this.state;\n     if (loading) {\n       return <Loader />;\n     }\n-    return notes.map((note, index) => (\n-      <Comment\n-        key={`note-${index}`}\n-        actions={[]}\n-        author={note.creator}\n-        avatar={<NameAvatar name={note.creator} />}\n-        content={<Text>{note.body}</Text>}\n-        datetime={\n-          <Tooltip title={moment().format(\"YYYY-MM-DD HH:mm:ss\")}>\n-            <span>{moment.unix(note.created_at).fromNow()}</span>\n-          </Tooltip>\n-        }\n-      />\n-    ));\n-  }\n \n-  get isCreating() {\n-    const { notes_create_loading, loading_due_to_create } = this.state;\n-    return notes_create_loading || loading_due_to_create;\n-  }\n+    const ls = new LocalStoreService();\n+    const creator = ls.getUserEmail();\n \n-  render() {\n     return (\n-      <>\n-        {/*<AntButton disabled={this.isCreating} className=\"mb-10\" onClick={this.toggleAddNoteModal} type=\"primary\">*/}\n-        {/*  {this.isCreating ? \"Adding new comment...\" : \"New Comment\"}*/}\n-        {/*</AntButton>*/}\n-        {this.addNoteField}\n-        {this.notes}\n-      </>\n+      <Comments\n+        comments={notes}\n+        commentKey=\"body\"\n+        creatorKey=\"creator\"\n+        creator={creator}\n+        onAddComment={comment => {\n+          this.setState({ note_text: comment }, () => {\n+            this.handleNoteCreate();\n+          });\n+        }}\n+      />\n     );\n+    // return notes.map((note, index) => (\n+    //   <Comment\n+    //     key={`note-${index}`}\n+    //     actions={[]}\n+    //     author={note.creator}\n+    //     avatar={<NameAvatar name={note.creator} />}\n+    //     content={<Text>{note.body}</Text>}\n+    //     datetime={\n+    //       <Tooltip title={moment().format(\"YYYY-MM-DD HH:mm:ss\")}>\n+    //         <span>{moment.unix(note.created_at).fromNow()}</span>\n+    //       </Tooltip>\n+    //     }\n+    //   />\n+    // ));\n+  }\n+\n+  render() {\n+    return <>{this.notes}</>;\n   }\n }\n ",
+                  "raw_url": "https://github.com/levelops/ui-levelops/raw/6b2ba5c76236894e03a73cb4d73d9d7cdca3087b/src/workitems/containers/notes.container.jsx",
+                  "sha": "21aba3c76256894e03a73cb4d73d9d7cdca3087b",
+                  "status": "modified"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "121"
+    },
+    "integration_type": "github",
+    "data_type": "commits",
+    "page_number": 15
+  }
+}

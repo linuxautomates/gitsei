@@ -1,0 +1,46 @@
+dependencies {
+    compile project(":utils")
+    compile project(":okhttp-utils")
+    compile project(":spring-web-utils")
+    compile project(":database-commons")
+    compile project(":database-commons")
+    compile project(":ingestion-service")
+
+    compile libraries.okhttp
+    compile libraries.jackson_core
+    compile libraries.apache_collections
+    compile libraries.apache_io
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    testCompile libraries.junit
+    testCompile libraries.spring_security_test
+    testCompile libraries.spring_boot_starter_test
+    testCompile libraries.mockito
+    testCompile libraries.mock_web_server
+    testCompile libraries.assertj
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}
+
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

@@ -1,0 +1,138 @@
+{
+  "depGraph": {
+    "schemaVersion": "1.2.0",
+    "pkgManager": {
+      "name": "maven"
+    },
+    "pkgs": [
+      {
+        "id": "org.biojava:biojava3-core@3.0-SNAPSHOT",
+        "info": {
+          "name": "org.biojava:biojava3-core",
+          "version": "3.0-SNAPSHOT"
+        }
+      },
+      {
+        "id": "com.google.collections:google-collections@1.0",
+        "info": {
+          "name": "com.google.collections:google-collections",
+          "version": "1.0"
+        }
+      },
+      {
+        "id": "commons-pool:commons-pool@1.3",
+        "info": {
+          "name": "commons-pool:commons-pool",
+          "version": "1.3"
+        }
+      },
+      {
+        "id": "commons-dbcp:commons-dbcp@1.2.2",
+        "info": {
+          "name": "commons-dbcp:commons-dbcp",
+          "version": "1.2.2"
+        }
+      },
+      {
+        "id": "org.biojava:bytecode@3.0-SNAPSHOT",
+        "info": {
+          "name": "org.biojava:bytecode",
+          "version": "3.0-SNAPSHOT"
+        }
+      },
+      {
+        "id": "org.biojava:core@3.0-SNAPSHOT",
+        "info": {
+          "name": "org.biojava:core",
+          "version": "3.0-SNAPSHOT"
+        }
+      }
+    ],
+    "graph": {
+      "rootNodeId": "root-node",
+      "nodes": [
+        {
+          "nodeId": "root-node",
+          "pkgId": "org.biojava:biojava3-core@3.0-SNAPSHOT",
+          "deps": [
+            {
+              "nodeId": "com.google.collections:google-collections@1.0"
+            },
+            {
+              "nodeId": "org.biojava:core@3.0-SNAPSHOT"
+            }
+          ]
+        },
+        {
+          "nodeId": "com.google.collections:google-collections@1.0",
+          "pkgId": "com.google.collections:google-collections@1.0",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://biojava3-core/pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "commons-pool:commons-pool@1.3",
+          "pkgId": "commons-pool:commons-pool@1.3",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "https://maven-central.storage-download.googleapis.com/repos/central/data/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.pom"
+            }
+          }
+        },
+        {
+          "nodeId": "commons-dbcp:commons-dbcp@1.2.2",
+          "pkgId": "commons-dbcp:commons-dbcp@1.2.2",
+          "deps": [
+            {
+              "nodeId": "commons-pool:commons-pool@1.3"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "location": "file://pom.xml",
+              "type": "dependencyManagement"
+            }
+          }
+        },
+        {
+          "nodeId": "org.biojava:bytecode@3.0-SNAPSHOT",
+          "pkgId": "org.biojava:bytecode@3.0-SNAPSHOT",
+          "deps": [],
+          "info": {
+            "versionProvenance": {
+              "type": "property",
+              "property": {
+                "name": "project.version"
+              },
+              "location": "file://core/pom.xml"
+            }
+          }
+        },
+        {
+          "nodeId": "org.biojava:core@3.0-SNAPSHOT",
+          "pkgId": "org.biojava:core@3.0-SNAPSHOT",
+          "deps": [
+            {
+              "nodeId": "commons-dbcp:commons-dbcp@1.2.2"
+            },
+            {
+              "nodeId": "org.biojava:bytecode@3.0-SNAPSHOT"
+            }
+          ],
+          "info": {
+            "versionProvenance": {
+              "type": "dependency",
+              "location": "file://biojava3-core/pom.xml"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

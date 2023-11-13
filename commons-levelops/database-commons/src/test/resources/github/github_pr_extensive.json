@@ -1,0 +1,397 @@
+{
+  "id": "1268581083",
+  "number": 3850,
+  "state": "closed",
+  "locked": false,
+  "title": "PROP-3424 - Self Service Api to Update & Append Entitlements",
+  "user": {
+    "type": "user",
+    "login": "viraj-levelops"
+  },
+  "created_at": "2023-03-08T22:57:53.000+00:00",
+  "updated_at": "2023-03-08T23:15:53.000+00:00",
+  "closed_at": "2023-03-08T23:15:49.000+00:00",
+  "merged_at": "2023-03-08T23:15:49.000+00:00",
+  "merge_commit_sha": "abe81c99c5f166eefc8fd42513d3fcaab837186c",
+  "assignees": [],
+  "requested_reviewers": [
+    {
+      "type": "user",
+      "login": "ashish-levelops"
+    }
+  ],
+  "requested_teams": [],
+  "labels": [],
+  "head": {
+    "label": "levelops:jen",
+    "ref": "jen",
+    "sha": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+    "user": {
+      "type": "organization",
+      "login": "levelops"
+    },
+    "repo": {
+      "id": "205456849",
+      "name": "commons-levelops",
+      "full_name": "levelops/commons-levelops"
+    }
+  },
+  "base": {
+    "label": "levelops:main",
+    "ref": "main",
+    "sha": "77282d1654ae1ac16540fadaecba4aab8ce6e147",
+    "user": {
+      "type": "organization",
+      "login": "levelops"
+    },
+    "repo": {
+      "id": "205456849",
+      "name": "commons-levelops",
+      "full_name": "levelops/commons-levelops"
+    }
+  },
+  "author_association": "CONTRIBUTOR",
+  "reviews": [
+    {
+      "id": "1331651788",
+      "user": {
+        "type": "user",
+        "login": "maxime-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:06:25.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331651788"
+    },
+    {
+      "id": "1331652184",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:06:52.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331652184"
+    },
+    {
+      "id": "1331652788",
+      "user": {
+        "type": "user",
+        "login": "maxime-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:07:30.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331652788"
+    },
+    {
+      "id": "1331653076",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:07:49.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331653076"
+    },
+    {
+      "id": "1331653693",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:08:21.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331653693"
+    },
+    {
+      "id": "1331653865",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:08:30.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331653865"
+    },
+    {
+      "id": "1331654209",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:08:50.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331654209"
+    },
+    {
+      "id": "1331654352",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:09:00.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331654352"
+    },
+    {
+      "id": "1331654771",
+      "user": {
+        "type": "user",
+        "login": "maxime-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:09:27.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331654771"
+    },
+    {
+      "id": "1331654925",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:09:37.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331654925"
+    },
+    {
+      "id": "1331655136",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:09:51.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331655136"
+    },
+    {
+      "id": "1331655286",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:10:02.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331655286"
+    },
+    {
+      "id": "1331655514",
+      "user": {
+        "type": "user",
+        "login": "maxime-levelops"
+      },
+      "body": "lgtm",
+      "state": "APPROVED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:10:20.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331655514"
+    },
+    {
+      "id": "1331655933",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:10:40.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331655933"
+    },
+    {
+      "id": "1331656635",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "Comment 6",
+      "state": "CHANGES_REQUESTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:11:26.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331656635"
+    },
+    {
+      "id": "1331657354",
+      "user": {
+        "type": "user",
+        "login": "maxime-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:11:45.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331657354"
+    },
+    {
+      "id": "1331657812",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:12:08.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331657812"
+    },
+    {
+      "id": "1331658233",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:12:37.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331658233"
+    },
+    {
+      "id": "1331658645",
+      "user": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:13:00.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331658645"
+    },
+    {
+      "id": "1331658988",
+      "user": {
+        "type": "user",
+        "login": "sid-propelo"
+      },
+      "body": "Comment 9",
+      "state": "APPROVED",
+      "author_association": "CONTRIBUTOR",
+      "submitted_at": "2023-03-08T23:13:25.000+00:00",
+      "commit_id": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "html_url": "https://github.com/levelops/commons-levelops/pull/3850#pullrequestreview-1331658988"
+    }
+  ],
+  "pr_commits": [
+    {
+      "sha": "c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "url": "https://api.github.com/repos/levelops/commons-levelops/commits/c0137fbb33e0fb5d53b668d33e5a945579ac912c",
+      "author": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "committer": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "message": "PROP-3424 - Self Service Api to Update & Append Entitlements",
+      "git_author": {
+        "email": "viraj@levelops.io",
+        "name": "Viraj Ajgaonkar",
+        "date": "2023-03-08T22:57:34.000+00:00"
+      },
+      "git_committer": {
+        "email": "viraj@levelops.io",
+        "name": "Viraj Ajgaonkar",
+        "date": "2023-03-08T22:57:34.000+00:00"
+      }
+    }
+  ],
+  "merge_commit": {
+    "sha": "abe81c99c5f166eefc8fd42513d3fcaab837186c",
+    "url": "https://api.github.com/repos/levelops/commons-levelops/commits/abe81c99c5f166eefc8fd42513d3fcaab837186c",
+    "author": {
+      "type": "user",
+      "login": "viraj-levelops"
+    },
+    "committer": {
+      "type": "user",
+      "login": "web-flow"
+    },
+    "message": "PROP-3424 - Self Service Api to Update & Append Entitlements (#3850)",
+    "git_author": {
+      "email": "59263740+viraj-levelops@users.noreply.github.com",
+      "name": "viraj-levelops",
+      "date": "2023-03-08T23:15:48.000+00:00"
+    },
+    "git_committer": {
+      "email": "noreply@github.com",
+      "name": "GitHub",
+      "date": "2023-03-08T23:15:48.000+00:00"
+    },
+    "stats": {
+      "additions": 91,
+      "deletions": 0,
+      "total": 91
+    },
+    "files": [
+      {
+        "additions": 41,
+        "changes": 41,
+        "deletions": 0,
+        "blob_url": "https://github.com/levelops/commons-levelops/blob/abe81c99c5f166eefc8fd42513d3fcaab837186c/licensing-service%2Fsrc%2Fmain%2Fjava%2Fio%2Flevelops%2Fcommons%2Flicensing%2Fservice%2FLicensingService.java",
+        "filename": "licensing-service/src/main/java/io/levelops/commons/licensing/service/LicensingService.java",
+        "patch": "@@ -9,6 +9,11 @@\n import okhttp3.OkHttpClient;\n import okhttp3.Request;\n \n+import java.util.ArrayList;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.stream.Collectors;\n+\n public class LicensingService {\n \n     private final String licensingServiceUrl;\n@@ -43,4 +48,40 @@ public License getLicense(String company) throws LicensingException {\n         return clientHelper.executeAndParse(request, License.class);\n     }\n \n+    /**\n+     * This will overwrite existing entitlements, it will NOT append.\n+     * @param company\n+     * @param entitlements\n+     * @return New License Object with updated entitlements\n+     * @throws LicensingException\n+     */\n+    public License updateEntitlements(String company, List<String> entitlements) throws LicensingException {\n+        var url = HttpUrl.parse(licensingServiceUrl).newBuilder()\n+                .addPathSegment(\"v1\")\n+                .addPathSegment(\"licensing\")\n+                .addPathSegment(company)\n+                .addPathSegment(\"custom_entitlements\")\n+                .build();\n+\n+        var request = new Request.Builder()\n+                .url(url)\n+                .post(clientHelper.createJsonRequestBody(Map.of(\"entitlements\", entitlements)))\n+                .build();\n+\n+        return clientHelper.executeAndParse(request, License.class);\n+    }\n+\n+    /**\n+     * Not transactional. If another thread/process runns append with different values the last one would persist.\n+     * @param company\n+     * @param entitlements\n+     * @return\n+     */\n+    public License appendEntitlements(String company, List<String> entitlements) throws LicensingException {\n+        License current = getLicense(company);\n+        List<String> combinedList = new ArrayList<>(current.getEntitlements());\n+        combinedList.addAll(entitlements);\n+        License updated = updateEntitlements(company, combinedList.stream().distinct().collect(Collectors.toList()));\n+        return updated;\n+    }\n }",
+        "raw_url": "https://github.com/levelops/commons-levelops/raw/abe81c99c5f166eefc8fd42513d3fcaab837186c/licensing-service%2Fsrc%2Fmain%2Fjava%2Fio%2Flevelops%2Fcommons%2Flicensing%2Fservice%2FLicensingService.java",
+        "sha": "5cd6c40223e2fcfd7024d357f9536e2378d77e8d",
+        "status": "modified"
+      },
+      {
+        "additions": 50,
+        "changes": 50,
+        "deletions": 0,
+        "blob_url": "https://github.com/levelops/commons-levelops/blob/abe81c99c5f166eefc8fd42513d3fcaab837186c/licensing-service%2Fsrc%2Ftest%2Fjava%2Fio%2Flevelops%2Fcommons%2Flicensing%2Fservice%2FLicensingServiceIntegrationTest.java",
+        "filename": "licensing-service/src/test/java/io/levelops/commons/licensing/service/LicensingServiceIntegrationTest.java",
+        "patch": "@@ -0,0 +1,50 @@\n+package io.levelops.commons.licensing.service;\n+\n+import io.levelops.commons.jackson.DefaultObjectMapper;\n+import io.levelops.commons.licensing.exception.LicensingException;\n+import io.levelops.commons.licensing.model.License;\n+import junit.framework.TestCase;\n+import okhttp3.OkHttpClient;\n+import org.junit.Assert;\n+import org.junit.Test;\n+\n+import java.util.List;\n+import java.util.concurrent.TimeUnit;\n+\n+public class LicensingServiceIntegrationTest {\n+    @Test\n+    public void test() throws LicensingException {\n+        OkHttpClient.Builder builder = new OkHttpClient.Builder();\n+        builder.connectTimeout(1, TimeUnit.MINUTES) // connect timeout\n+                .writeTimeout(5, TimeUnit.MINUTES) // write timeout\n+                .readTimeout(5, TimeUnit.MINUTES); // read timeout\n+        OkHttpClient client = builder.build();\n+\n+        LicensingService service = LicensingService.builder()\n+                .licensingServiceUrl(\"http://localhost:10080/\").client(client).objectMapper(DefaultObjectMapper.get())\n+                .build();\n+\n+            List<String> entitlements1 = List.of(\"ALL_FEATURES\", \"DASHBOARDS\", \"ISSUES\", \"PROPELS\", \"TRIAGE\", \"TEMPLATES\", \"REPORTS\", \"TABLES\", \"SETTINGS\", \"SELECTABLE_DRILLDOWN_COLUMNS\", \"NEW_DORA_LEADTIME_WIDGET\", \"DORA_IMPROVEMENTS\",\"DORA_IMPROVEMENTS_2\");\n+        List<String> entitlements2 = List.of(\"ALL_FEATURES\", \"DASHBOARDS\", \"ISSUES\", \"PROPELS\", \"TRIAGE\", \"TEMPLATES\", \"REPORTS\", \"TABLES\", \"SETTINGS\", \"SELECTABLE_DRILLDOWN_COLUMNS\", \"NEW_DORA_LEADTIME_WIDGET\", \"DORA_IMPROVEMENTS\");\n+\n+        License updated = service.updateEntitlements(\"foo\", entitlements1);\n+        Assert.assertTrue(updated.getEntitlements().contains(\"DORA_IMPROVEMENTS_2\"));\n+\n+        updated = service.updateEntitlements(\"foo\", entitlements2);\n+        Assert.assertFalse(updated.getEntitlements().contains(\"DORA_IMPROVEMENTS_2\"));\n+\n+        List<String> before = updated.getEntitlements();\n+\n+        updated = service.appendEntitlements(\"foo\", List.of(\"DORA_IMPROVEMENTS_3\", \"DORA_IMPROVEMENTS_4\"));\n+        List<String> newList = updated.getEntitlements();\n+\n+        Assert.assertTrue(newList.contains(\"DORA_IMPROVEMENTS_3\"));\n+        Assert.assertTrue(newList.contains(\"DORA_IMPROVEMENTS_4\"));\n+        for(String e : before) {\n+            Assert.assertTrue(newList.contains(e));\n+        }\n+        Assert.assertEquals(2, newList.size() - before.size());\n+\n+        service.updateEntitlements(\"foo\", before);\n+    }\n+}\n\\ No newline at end of file",
+        "raw_url": "https://github.com/levelops/commons-levelops/raw/abe81c99c5f166eefc8fd42513d3fcaab837186c/licensing-service%2Fsrc%2Ftest%2Fjava%2Fio%2Flevelops%2Fcommons%2Flicensing%2Fservice%2FLicensingServiceIntegrationTest.java",
+        "sha": "93012591b5eb444f0edc15f8910412b202bddddb",
+        "status": "added"
+      }
+    ]
+  },
+  "patches": [
+    "@@ -9,6 +9,11 @@\n import okhttp3.OkHttpClient;\n import okhttp3.Request;\n \n+import java.util.ArrayList;\n+import java.util.List;\n+import java.util.Map;\n+import java.util.stream.Collectors;\n+\n public class LicensingService {\n \n     private final String licensingServiceUrl;\n@@ -43,4 +48,40 @@ public License getLicense(String company) throws LicensingException {\n         return clientHelper.executeAndParse(request, License.class);\n     }\n \n+    /**\n+     * This will overwrite existing entitlements, it will NOT append.\n+     * @param company\n+     * @param entitlements\n+     * @return New License Object with updated entitlements\n+     * @throws LicensingException\n+     */\n+    public License updateEntitlements(String company, List<String> entitlements) throws LicensingException {\n+        var url = HttpUrl.parse(licensingServiceUrl).newBuilder()\n+                .addPathSegment(\"v1\")\n+                .addPathSegment(\"licensing\")\n+                .addPathSegment(company)\n+                .addPathSegment(\"custom_entitlements\")\n+                .build();\n+\n+        var request = new Request.Builder()\n+                .url(url)\n+                .post(clientHelper.createJsonRequestBody(Map.of(\"entitlements\", entitlements)))\n+                .build();\n+\n+        return clientHelper.executeAndParse(request, License.class);\n+    }\n+\n+    /**\n+     * Not transactional. If another thread/process runns append with different values the last one would persist.\n+     * @param company\n+     * @param entitlements\n+     * @return\n+     */\n+    public License appendEntitlements(String company, List<String> entitlements) throws LicensingException {\n+        License current = getLicense(company);\n+        List<String> combinedList = new ArrayList<>(current.getEntitlements());\n+        combinedList.addAll(entitlements);\n+        License updated = updateEntitlements(company, combinedList.stream().distinct().collect(Collectors.toList()));\n+        return updated;\n+    }\n }",
+    "@@ -0,0 +1,50 @@\n+package io.levelops.commons.licensing.service;\n+\n+import io.levelops.commons.jackson.DefaultObjectMapper;\n+import io.levelops.commons.licensing.exception.LicensingException;\n+import io.levelops.commons.licensing.model.License;\n+import junit.framework.TestCase;\n+import okhttp3.OkHttpClient;\n+import org.junit.Assert;\n+import org.junit.Test;\n+\n+import java.util.List;\n+import java.util.concurrent.TimeUnit;\n+\n+public class LicensingServiceIntegrationTest {\n+    @Test\n+    public void test() throws LicensingException {\n+        OkHttpClient.Builder builder = new OkHttpClient.Builder();\n+        builder.connectTimeout(1, TimeUnit.MINUTES) // connect timeout\n+                .writeTimeout(5, TimeUnit.MINUTES) // write timeout\n+                .readTimeout(5, TimeUnit.MINUTES); // read timeout\n+        OkHttpClient client = builder.build();\n+\n+        LicensingService service = LicensingService.builder()\n+                .licensingServiceUrl(\"http://localhost:10080/\").client(client).objectMapper(DefaultObjectMapper.get())\n+                .build();\n+\n+            List<String> entitlements1 = List.of(\"ALL_FEATURES\", \"DASHBOARDS\", \"ISSUES\", \"PROPELS\", \"TRIAGE\", \"TEMPLATES\", \"REPORTS\", \"TABLES\", \"SETTINGS\", \"SELECTABLE_DRILLDOWN_COLUMNS\", \"NEW_DORA_LEADTIME_WIDGET\", \"DORA_IMPROVEMENTS\",\"DORA_IMPROVEMENTS_2\");\n+        List<String> entitlements2 = List.of(\"ALL_FEATURES\", \"DASHBOARDS\", \"ISSUES\", \"PROPELS\", \"TRIAGE\", \"TEMPLATES\", \"REPORTS\", \"TABLES\", \"SETTINGS\", \"SELECTABLE_DRILLDOWN_COLUMNS\", \"NEW_DORA_LEADTIME_WIDGET\", \"DORA_IMPROVEMENTS\");\n+\n+        License updated = service.updateEntitlements(\"foo\", entitlements1);\n+        Assert.assertTrue(updated.getEntitlements().contains(\"DORA_IMPROVEMENTS_2\"));\n+\n+        updated = service.updateEntitlements(\"foo\", entitlements2);\n+        Assert.assertFalse(updated.getEntitlements().contains(\"DORA_IMPROVEMENTS_2\"));\n+\n+        List<String> before = updated.getEntitlements();\n+\n+        updated = service.appendEntitlements(\"foo\", List.of(\"DORA_IMPROVEMENTS_3\", \"DORA_IMPROVEMENTS_4\"));\n+        List<String> newList = updated.getEntitlements();\n+\n+        Assert.assertTrue(newList.contains(\"DORA_IMPROVEMENTS_3\"));\n+        Assert.assertTrue(newList.contains(\"DORA_IMPROVEMENTS_4\"));\n+        for(String e : before) {\n+            Assert.assertTrue(newList.contains(e));\n+        }\n+        Assert.assertEquals(2, newList.size() - before.size());\n+\n+        service.updateEntitlements(\"foo\", before);\n+    }\n+}\n\\ No newline at end of file"
+  ]
+}

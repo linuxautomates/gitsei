@@ -1,0 +1,33 @@
+{
+  "request": {
+    "url": "https://test.zendesk.com/api/v2/requests/2.json",
+    "id": 2,
+    "status": "new",
+    "priority": null,
+    "type": null,
+    "subject": "Test ticket ",
+    "description": "Test ticket creation",
+    "organization_id": 370343724653,
+    "via": {
+      "channel": "api",
+      "source": {
+        "from": {},
+        "to": {},
+        "rel": null
+      }
+    },
+    "custom_fields": [],
+    "requester_id": 406080093073,
+    "collaborator_ids": [],
+    "email_cc_ids": [],
+    "is_public": true,
+    "due_at": null,
+    "can_be_solved_by_me": false,
+    "created_at": "2020-04-02T11:50:46Z",
+    "updated_at": "2020-04-02T11:50:46Z",
+    "recipient": null,
+    "followup_source_id": null,
+    "assignee_id": null,
+    "fields": []
+  }
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": ":warning: A Jenkins Job has hit some triage rules."
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Job:* `Pipeline`"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Owner:* `team1`"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Stage:* `build`"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Jenkins Instance:* `US 1`"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Rules that were hit:* `a,b,c`"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Sub jobs or stages that failed:* `x,y,z`"
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Rule:* `a`"
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Snippet:* ```Snippet text```"
+    }
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "Change ticket status"
+    },
+    "accessory": {
+      "type": "static_select",
+      "placeholder": {
+        "type": "plain_text",
+        "text": "Select an item",
+        "emoji": true
+      },
+      "options": [
+        {
+          "text": {
+            "type": "plain_text",
+            "text": "Open",
+            "emoji": true
+          },
+          "value": "Open"
+        },
+        {
+          "text": {
+            "type": "plain_text",
+            "text": "Closed",
+            "emoji": true
+          },
+          "value": "Closed"
+        },
+        {
+          "text": {
+            "type": "plain_text",
+            "text": "In Review",
+            "emoji": true
+          },
+          "value": "In Review"
+        }
+      ]
+    }
+  },
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "Forward this ticket"
+    },
+    "accessory": {
+      "type": "multi_users_select",
+      "placeholder": {
+        "type": "plain_text",
+        "text": "Select users",
+        "emoji": true
+      }
+    }
+  }
+]

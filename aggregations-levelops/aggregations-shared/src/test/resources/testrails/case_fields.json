@@ -1,0 +1,165 @@
+{
+  "records": [
+    {
+      "type": "DATE",
+      "id": 20,
+      "is_active": true,
+      "label": "Custom Date Field",
+      "name": "date_field",
+      "system_name": "custom_date_field",
+      "type_id": 8,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "itemsMap": {},
+            "items": null
+          }
+        }
+      ]
+    },
+    {
+      "type": "DROPDOWN",
+      "id": 21,
+      "is_active": true,
+      "label": "Custom Dropdown Field",
+      "name": "dropdown_field",
+      "system_name": "custom_dropdown_field",
+      "type_id": 6,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "itemsMap": {
+              "1": "option1",
+              "2": "option2"
+            },
+            "items": "2, option2\n1, option1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "INTEGER",
+      "id": 22,
+      "is_active": true,
+      "label": "Custom Integer Field",
+      "name": "integer_field",
+      "system_name": "custom_integer_field",
+      "type_id": 2,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "itemsMap": {},
+            "items": null
+          }
+        }
+      ]
+    },
+    {
+      "type": "MILESTONE",
+      "id": 23,
+      "is_active": true,
+      "label": "Custom Milestone Field",
+      "name": "milestone_field",
+      "system_name": "custom_milestone_field",
+      "type_id": 9,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "itemsMap": {},
+            "items": null
+          }
+        }
+      ]
+    },
+    {
+      "type": "MULTI_SELECT",
+      "id": 24,
+      "is_active": true,
+      "label": "Custom Multi Select Field",
+      "name": "multi_select_field",
+      "system_name": "custom_multi_select_field",
+      "type_id": 12,
+      "configs": [
+        {
+          "context": {
+            "is_global": false,
+            "project_ids": [
+              5
+            ]
+          },
+          "options": {
+            "itemsMap": {
+              "0": "option0Esha",
+              "1": "option1Esha",
+              "2": "option2Esha"
+            },
+            "items": "0, option0Esha\n1, option1Esha\n2,option2Esha"
+          }
+        },
+        {
+          "context": {
+            "is_global": false,
+            "project_ids": [
+              3
+            ]
+          },
+          "options": {
+            "itemsMap": {
+              "0": "option0",
+              "1": "option1",
+              "2": "option2"
+            },
+            "items": "0, option0\n1, option1\n2,option2"
+          }
+        }
+      ]
+    },
+    {
+      "type": "STRING",
+      "id": 25,
+      "is_active": true,
+      "label": "Custom String Field",
+      "name": "string_field",
+      "system_name": "custom_string_field",
+      "type_id": 1,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "itemsMap": {},
+            "items": null
+          }
+        }
+      ]
+    }
+  ],
+  "count": 6,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "4559"
+    },
+    "integration_type": "testrails",
+    "data_type": "case_fields",
+    "page_number": 0
+  }
+}

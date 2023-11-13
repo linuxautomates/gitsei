@@ -1,0 +1,84 @@
+{
+  "records": [
+    {
+      "project": {
+        "id": "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name": "project-test-1",
+        "url": "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state": "wellFormed",
+        "revision": 12,
+        "visibility": "private",
+        "lastUpdateTime": "2020-11-06T09:57:46.917+0000",
+        "GitEnabled": true,
+        "TfvcEnabled": false,
+        "projectProperty": [
+          {
+            "value": "23feeea2-cfbb-48d7-bd00-d0f620a4eac4",
+            "name": "System.CurrentProcessTemplateId"
+          },
+          {
+            "value": "23feeea2-cfbb-48d7-bd00-d0f620a4eac4",
+            "name": "System.OriginalProcessTemplateId"
+          },
+          {
+            "value": "b8a3a935-7e91-48b8-a94c-606d37c3e9f2",
+            "name": "System.ProcessTemplateType"
+          },
+          {
+            "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<MSProject>\r\n  <Mappings>\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.AreaPath\" ProjectField=\"pjTaskOutlineCode9\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.AssignedTo\" ProjectField=\"pjTaskResourceNames\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Id\" ProjectField=\"pjTaskText10\" ProjectName=\"Work Item ID\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.IterationPath\" ProjectField=\"pjTaskOutlineCode10\" ProjectName=\"Sprint\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Reason\" ProjectField=\"pjTaskText14\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Rev\" ProjectField=\"pjTaskText23\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.State\" ProjectField=\"pjTaskText13\" ProjectName=\"State\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Title\" ProjectField=\"pjTaskName\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.WorkItemType\" ProjectField=\"pjTaskText24\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"Microsoft.VSTS.Common.BacklogPriority\" ProjectField=\"pjTaskNumber1\" ProjectName=\"Backlog Priority\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"Microsoft.VSTS.Scheduling.RemainingWork\" ProjectField=\"pjTaskRemainingWork\" ProjectUnits=\"pjHour\" IfSummaryRefreshOnly=\"true\" />\r\n    <LinksField ProjectField=\"pjTaskText26\" />\r\n    <SyncField ProjectField=\"pjTaskText25\" />\r\n  </Mappings>\r\n</MSProject>",
+            "name": "System.MSPROJ"
+          },
+          {
+            "value": "Scrum",
+            "name": "System.Process Template"
+          },
+          {
+            "value": "1",
+            "name": "System.Microsoft.TeamFoundation.Team.Count"
+          },
+          {
+            "value": "493f65a8-608a-4d9b-a289-b3119a5e2a63",
+            "name": "System.Microsoft.TeamFoundation.Team.Default"
+          },
+          {
+            "value": "2",
+            "name": "System.SourceControlCapabilityFlags"
+          },
+          {
+            "value": "True",
+            "name": "System.SourceControlGitEnabled"
+          },
+          {
+            "value": "True",
+            "name": "System.SourceControlGitPermissionsInitialized"
+          }
+        ],
+        "organization": "cgn-test"
+      },
+      "iterations": [
+        {
+          "id": "410a754a-1a31-4aa1-bab7-572497be9101",
+          "name": "azure devopos integration",
+          "path": "project-test-1\\azure devopos integration",
+          "attributes": {
+            "startDate": "2020-11-06T00:00:00Z",
+            "finishDate": "2020-11-13T00:00:00Z",
+            "timeFrame": "past"
+          },
+          "url": "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/493f65a8-608a-4d9b-a289-b3119a5e2a63/_apis/work/teamsettings/iterations/410a754a-1a31-4aa1-bab7-572497be9101"
+        },
+        {
+          "id": "41605e6e-3f0f-436a-b8c7-d36a8f6324eb",
+          "name": "sprint -4",
+          "path": "project-test-1\\sprint -4",
+          "attributes": {
+            "startDate": "2020-11-16T00:00:00Z",
+            "finishDate": "2020-11-23T00:00:00Z",
+            "timeFrame": "current"
+          },
+          "url": "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/493f65a8-608a-4d9b-a289-b3119a5e2a63/_apis/work/teamsettings/iterations/41605e6e-3f0f-436a-b8c7-d36a8f6324eb"
+        }
+      ]
+    }
+  ]
+}

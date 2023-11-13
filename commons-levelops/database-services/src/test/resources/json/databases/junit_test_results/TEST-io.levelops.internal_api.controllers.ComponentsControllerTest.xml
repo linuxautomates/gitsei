@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.levelops.internal_api.controllers.ComponentsControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-12T13:21:11" hostname="Arpits-MacBook-Pro.local" time="0.025">
+  <properties/>
+  <testcase name="getComponentByTypeAndNameTest" classname="io.levelops.internal_api.controllers.ComponentsControllerTest" time="0.012"/>
+  <testcase name="listComponentsTest" classname="io.levelops.internal_api.controllers.ComponentsControllerTest" time="0.013"/>
+  <system-out><![CDATA[2020-10-12 18:51:05 INFO [Test worke] org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [io.levelops.internal_api.controllers.ComponentsControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-12 18:51:05 INFO [Test worke] org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-10-12 18:51:05 INFO [Test worke] org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6fb69836, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f411a1a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2da6eff0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64348e2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3f18cdb5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@182e8186, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@26d341c, org.springframework.test.context.event.EventPublishingTestExecutionListener@4268879a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3b648f07, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@572a0b5c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3c0c0871, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ade0c3d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@255db0d6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@22aa2fca]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-10-12 18:51:10 INFO [Test worke] io.levelops.internal_api.controllers.ComponentsControllerTest - Starting ComponentsControllerTest on Arpits-MacBook-Pro.local with PID 17853 (started by arpit in /Users/arpit/.jenkins/workspace/internal-api-levelops)
+2020-10-12 18:51:10 INFO [Test worke] io.levelops.internal_api.controllers.ComponentsControllerTest - No active profile set, falling back to default profiles: default
+class io.levelops.commons.databases.services.ProductService$MockitoMock$44439121
+class io.levelops.commons.databases.services.ProductService
+2020-10-12 18:51:10 INFO [Test worke] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 18:51:11 INFO [Test worke] org.springframework.boot.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-12 18:51:11 INFO [Test worke] org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-12 18:51:11 INFO [Test worke] org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 7 ms
+2020-10-12 18:51:11 INFO [Test worke] io.levelops.internal_api.controllers.ComponentsControllerTest - Started ComponentsControllerTest in 6.822 seconds (JVM running for 17.687)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

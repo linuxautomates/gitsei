@@ -1,0 +1,19 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/internal/v1/tenants/coke/integrations/list"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "jsonBody": {
+            "count": 2,
+            "records": [
+                {"id":"uuid1"},
+                {"id":"uuid2"}
+            ]
+        }
+    }
+}

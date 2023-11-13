@@ -1,0 +1,113 @@
+{
+  "records": [
+    {
+      "buildBatch": {
+        "id": "build-batch-demo:18e477db-e74c-4ce8-ad31-9b285b6afdec",
+        "arn": "arn:aws:codebuild:us-east-2:build-batch/build-batch-demo:18e477db-e74c-4ce8-ad31-9b285b6afdec",
+        "start_time": "2020-11-18T06:26:07.367+00:00",
+        "end_time": "2020-11-18T06:26:43.482+00:00",
+        "current_phase": "FAILED",
+        "build_batch_status": "FAILED",
+        "source_version": "refs/heads/master",
+        "project_name": "build-batch-demo",
+        "phases": [
+          {
+            "phase_type": "SUBMITTED",
+            "phase_status": "SUCCEEDED",
+            "start_time": "2020-11-18T06:26:07.367+00:00",
+            "end_time": "2020-11-18T06:26:07.592+00:00",
+            "duration_in_seconds": 0
+          },
+          {
+            "phase_type": "DOWNLOAD_BATCHSPEC",
+            "phase_status": "CLIENT_ERROR",
+            "start_time": "2020-11-18T06:26:07.592+00:00",
+            "end_time": "2020-11-18T06:26:43.482+00:00",
+            "duration_in_seconds": 35
+          },
+          {
+            "phase_type": "FAILED",
+            "start_time": "2020-11-18T06:26:43.482+00:00"
+          }
+        ],
+        "source": {
+          "type": "CODECOMMIT",
+          "location": "https://git-codecommit.us-east-2.amazonaws.com/v1/repos/test-hello-world",
+          "git_clone_depth": 1,
+          "git_submodules_config": {
+            "fetch_submodules": false
+          },
+          "buildspec": "version: 0.2",
+          "insecure_ssl": false
+        },
+        "secondary_sources": [],
+        "secondary_source_versions": [],
+        "artifacts": {
+          "location": ""
+        },
+        "secondary_artifacts": [],
+        "cache": {
+          "type": "NO_CACHE"
+        },
+        "environment": {
+          "type": "LINUX_CONTAINER",
+          "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+          "compute_type": "BUILD_GENERAL1_SMALL",
+          "environment_variables": [],
+          "privileged_mode": false,
+          "image_pull_credentials_type": "CODEBUILD"
+        },
+        "log_config": {
+          "cloud_watch_logs": {
+            "status": "ENABLED"
+          },
+          "s3_logs": {
+            "status": "DISABLED",
+            "encryption_disabled": false
+          }
+        },
+        "build_timeout_in_minutes": 60,
+        "queued_timeout_in_minutes": 480,
+        "complete": true,
+        "initiator": "john",
+        "encryption_key": "arn:aws:kms:us-east-2:alias/aws/s3",
+        "build_batch_number": 1,
+        "build_batch_config": {
+          "service_role": "arn:aws:iam::role/service-role/build-demo-batch-service-role",
+          "restrictions": {
+            "maximum_builds_allowed": 100
+          },
+          "timeout_in_mins": 480
+        },
+        "build_groups": [
+          {
+            "identifier": "DOWNLOAD_SOURCE",
+            "ignore_failure": false,
+            "current_build_summary": {
+              "arn": "arn:aws:codebuild:us-east-2:build/build-batch-demo:eb74e693-0d71-4125-bd95-5496f489e886",
+              "requested_on": "2020-11-18T06:26:07.972+00:00",
+              "build_status": "FAILED",
+              "primary_artifact": {
+                "type": "no_artifacts",
+                "identifier": "DOWNLOAD_SOURCE"
+              },
+              "secondary_artifacts": []
+            }
+          }
+        ]
+      },
+      "projectArn": "arn:aws:codebuild:us-east-2:project/build-batch-demo",
+      "region": "US_EAST_2"
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "cbtenant",
+      "integration_id": "1"
+    },
+    "integration_type": "awsdevtools",
+    "data_type": "build_batches",
+    "page_number": 0
+  }
+}

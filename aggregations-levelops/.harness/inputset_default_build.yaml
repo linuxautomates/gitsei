@@ -1,0 +1,30 @@
+inputSet:
+  name: Default build
+  identifier: Default_build
+  orgIdentifier: SEIpropelo
+  projectIdentifier: Backend
+  pipeline:
+    identifier: Build_ETL_SERVICE_SCHEDULER
+    template:
+      templateInputs:
+        variables:
+          - name: BUILDER_BASE_IMAGE_NAME
+            type: String
+            value: eclipse-temurin:17-jdk-ubi9-minimal
+          - name: DOCKER_HUB_BUILDER_BASE_IMAGE
+            type: String
+            value: "yes"
+          - name: VERSION_SUFFIX
+            type: String
+            value: " "
+          - name: K8S_ENV
+            type: String
+            value: " "
+        properties:
+          ci:
+            codebase:
+              build:
+                type: branch
+                spec:
+                  branch: <+input>
+  object Object: pipeline.template.templateInputs.properties.ci.codebase

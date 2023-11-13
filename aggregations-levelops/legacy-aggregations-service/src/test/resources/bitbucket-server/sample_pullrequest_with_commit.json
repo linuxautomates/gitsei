@@ -1,0 +1,297 @@
+{
+  "records": [
+    {
+      "project": {
+        "key": "DP",
+        "id": 1095,
+        "name": "Data_Platform",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://code.test.com/projects/DP"
+            }
+          ]
+        }
+      },
+      "repository": {
+        "slug": "realdata",
+        "id": 7399,
+        "name": "realdata",
+        "hierarchyId": "7103bfa25981e27a8339",
+        "scmId": "git",
+        "state": "AVAILABLE",
+        "statusMessage": "Available",
+        "forkable": true,
+        "project": {
+          "key": "DP",
+          "id": 1095,
+          "name": "Data_Platform",
+          "public": false,
+          "type": "NORMAL",
+          "links": {
+            "self": [
+              {
+                "href": "https://code.test.com/projects/DP"
+              }
+            ]
+          }
+        },
+        "public": false,
+        "links": {
+          "self": [
+            {
+              "href": "https://code.test.com/projects/DP/repos/realdata/browse"
+            }
+          ],
+          "clone": [
+            {
+              "href": "https://code.test.com/scm/dp/realdata.git",
+              "name": "http"
+            }
+          ]
+        }
+      },
+      "pullRequests": [
+        {
+          "id": 430,
+          "version": 3,
+          "title": "Test title",
+          "description": "1 object added",
+          "state": "MERGED",
+          "open": false,
+          "closed": true,
+          "createdDate": 1656860432000,
+          "updatedDate": 1656866706000,
+          "fromRef": {
+            "id": "refs/heads/feature/DATATECH-5216-deployment-of-reporting-bq-objects-for-unknown-subject-area_V2",
+            "displayId": "feature/DATATECH-5216-deployment-of-reporting-bq-objects-for-unknown-subject-area_V2",
+            "latestCommit": "d33d4618cf3e55933d92a44087e708e1d52a6d24",
+            "repository": {
+              "slug": "realdata",
+              "id": 7399,
+              "name": "realdata",
+              "hierarchyId": "7103bfa25981e27a8339",
+              "scmId": "git",
+              "state": "AVAILABLE",
+              "statusMessage": "Available",
+              "forkable": true,
+              "project": {
+                "key": "DP",
+                "id": 1095,
+                "name": "Data_Platform",
+                "public": false,
+                "type": "NORMAL",
+                "links": {
+                  "self": [
+                    {
+                      "href": "https://code.test.com/projects/DP"
+                    }
+                  ]
+                }
+              },
+              "public": false,
+              "links": {
+                "self": [
+                  {
+                    "href": "https://code.test.com/projects/DP/repos/realdata/browse"
+                  }
+                ],
+                "clone": [
+                  {
+                    "href": "https://code.test.com/scm/dp/realdata.git",
+                    "name": "http"
+                  },
+                  {
+                    "href": "ssh://git@code.test.com:7999/dp/realdata.git",
+                    "name": "ssh"
+                  }
+                ]
+              }
+            }
+          },
+          "toRef": {
+            "id": "refs/heads/master",
+            "displayId": "master",
+            "latestCommit": "5787f3d0e435cd6d740f1db2ae5bf1e68bbf3a8f",
+            "repository": {
+              "slug": "realdata",
+              "id": 7399,
+              "name": "realdata",
+              "hierarchyId": "7103bfa25981e27a8339",
+              "scmId": "git",
+              "state": "AVAILABLE",
+              "statusMessage": "Available",
+              "forkable": true,
+              "project": {
+                "key": "DP",
+                "id": 1095,
+                "name": "Data_Platform",
+                "public": false,
+                "type": "NORMAL",
+                "links": {
+                  "self": [
+                    {
+                      "href": "https://code.test.com/projects/DP"
+                    }
+                  ]
+                }
+              },
+              "public": false,
+              "links": {
+                "self": [
+                  {
+                    "href": "https://code.test.com/projects/DP/repos/realdata/browse"
+                  }
+                ],
+                "clone": [
+                  {
+                    "href": "https://code.test.com/scm/dp/realdata.git",
+                    "name": "http"
+                  },
+                  {
+                    "href": "ssh://git@code.test.com:7999/dp/realdata.git",
+                    "name": "ssh"
+                  }
+                ]
+              }
+            }
+          },
+          "locked": false,
+          "author": {
+            "user": {
+              "name": "ghadgea",
+              "emailAddress": "sid@test.com",
+              "id": 200521,
+              "displayName": "Bidasaria, Sid",
+              "active": true,
+              "slug": "sid",
+              "type": "NORMAL"
+            },
+            "role": "AUTHOR",
+            "approved": false,
+            "status": "UNAPPROVED"
+          },
+          "reviewers": [
+            {
+              "user": {
+                "name": "pustovyio",
+                "emailAddress": "pustovyio@test.com",
+                "id": 198130,
+                "displayName": "Pustovyi, Oleksandr",
+                "active": true,
+                "slug": "pustovyio",
+                "type": "NORMAL"
+              },
+              "role": "REVIEWER",
+              "approved": false,
+              "status": "UNAPPROVED"
+            }
+          ],
+          "participants": [],
+          "links": {
+            "self": [
+              {
+                "href": "https://code.test.com/projects/DP/repos/realdata/pull-requests/430"
+              }
+            ]
+          },
+          "properties": {
+            "resolvedTaskCount": 0,
+            "openTaskCount": 0
+          },
+          "commits": [
+            {
+              "id": "d33d4618cf3e55933d92a44087e708e1d52a6d24",
+              "displayId": "d33d4618cf3",
+              "author": {
+                "name": "ghadgea",
+                "emailAddress": "sid@test.com",
+                "id": 200521,
+                "displayName": "Bidasaria, Sid",
+                "active": true,
+                "slug": "sid",
+                "type": "NORMAL"
+              },
+              "authorTimestamp": 1656858162000,
+              "committer": {
+                "name": "ghadgea",
+                "emailAddress": "sid@test.com",
+                "id": 200521,
+                "displayName": "Bidasaria, Sid",
+                "active": true,
+                "slug": "sid",
+                "type": "NORMAL"
+              },
+              "committerTimestamp": 1656858162000,
+              "message": "test message",
+              "parents": [
+                {
+                  "id": "5787f3d0e435cd6d740f1db2ae5bf1e68bbf3a8f",
+                  "displayId": "5787f3d0e43"
+                }
+              ]
+            }
+          ],
+          "activities": [
+            {
+              "id": 5549544,
+              "createdDate": 1656866706000,
+              "action": "MERGED",
+              "commit": {
+                "id": "cde1db975eb62803281a3165d90eae85c990797e",
+                "displayId": "cde1db975eb",
+
+                "authorTimestamp": 1656866705000,
+
+                "committerTimestamp": 1656866705000,
+                "message": "Pull request #430: DATATECH-5216-deployment-of-reporting-bq-objects-for-unknown-subject-area_V2\n\nMerge in DP/realdata from feature/DATATECH-5216-deployment-of-reporting-bq-objects-for-unknown-subject-area_V2 to master\n\n* commit 'd33d4618cf3e55933d92a44087e708e1d52a6d24':\n  DATATECH-5216-deployment-of-reporting-bq-objects-for-unknown-subject-area_V2",
+                "parents": [
+                ]
+              }
+            },
+            {
+              "id": 5549541,
+              "createdDate": 1656866661000,
+              "user": {
+                "name": "sakurel",
+                "emailAddress": "sakurel@test.com",
+                "id": 199273,
+                "displayName": "Sakure, Lalit",
+                "active": true,
+                "slug": "sakurel",
+                "type": "NORMAL"
+              },
+              "action": "APPROVED"
+            },
+            {
+              "id": 5549540,
+              "createdDate": 1656860432000,
+              "user": {
+                "name": "ghadgea",
+                "emailAddress": "sid@test.com",
+                "id": 200521,
+                "displayName": "Bidasaria, Sid",
+                "active": true,
+                "slug": "sid",
+                "type": "NORMAL"
+              },
+              "action": "OPENED"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "aeo",
+      "integration_id": "4"
+    },
+    "integration_type": "bitbucket_server",
+    "data_type": "pull_requests",
+    "page_number": 0
+  }
+}

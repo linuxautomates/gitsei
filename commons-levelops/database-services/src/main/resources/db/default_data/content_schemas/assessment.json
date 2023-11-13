@@ -1,0 +1,61 @@
+{
+  "content_type": "assessment/-/assessment",
+  "value_type": "json_blob",
+  "fields": {
+    "id": {
+      "key": "id",
+      "value_type": "string",
+      "content_type": "id:assessment/-/assessment"
+    },
+    "name": {
+      "key": "name",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "answered_questions": {
+      "key": "answered_questions",
+      "value_type": "string",
+      "content_type": "integer"
+    },
+    "completed": {
+      "key": "completed",
+      "value_type": "string",
+      "content_type": "boolean"
+    },
+    "current_score": {
+      "key": "current_score",
+      "value_type": "string",
+      "content_type": "integer"
+    },
+    "state": {
+      "key": "state",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "assignees": {
+      "key": "assignees",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "total_questions": {
+      "key": "total_questions",
+      "value_type": "string",
+      "content_type": "integer"
+    },
+    "updated_at": {
+      "key": "updated_at",
+      "value_type": "string",
+      "content_type": "epoch"
+    },
+    "ticket_id": {
+      "key": "ticket_id",
+      "value_type": "string",
+      "content_type": "id:work_item/-/work_item"
+    },
+    "answers": {
+      "key": "answers",
+      "value_type": "json_array",
+      "content_type": "string"
+    }
+  }
+}

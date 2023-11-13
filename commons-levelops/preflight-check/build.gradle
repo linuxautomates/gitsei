@@ -1,0 +1,36 @@
+dependencies {
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.spring_integration_core
+    compile project(':inventory-service')
+    compile project(':integration-clients:integration-jira')
+    compile project(':integration-clients:integration-github')
+    compile project(':integration-clients:integration-snyk')
+    compile libraries.okhttp
+    
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.mockito
+    testCompile libraries.wiremock
+
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1 // changed for now, will update test cases once tested in dev - ashish
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

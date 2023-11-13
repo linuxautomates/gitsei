@@ -1,0 +1,77 @@
+[
+  {
+    "op": "replace",
+    "path": "/config/authorization_type",
+    "value": "changed"
+  },
+  {
+    "op": "remove",
+    "path": "/config/csrf",
+    "value": {
+      "prevent_csrf": false,
+      "crumb_issuer": null,
+      "exclude_client_ipfrom_crumb": null
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/config/jnlp_protocols/jnlp2_protocol_enabled",
+    "value": false
+  },
+  {
+    "op": "remove",
+    "path": "/config/jnlp_protocols/jnlp3_protocol_enabled",
+    "value": true
+  },
+  {
+    "op": "replace",
+    "path": "/config/agent_to_master_access_control_enabled",
+    "value": true
+  },
+  {
+    "op": "remove",
+    "path": "/users/testRead@levelops.io",
+    "value": {
+      "user_name": "testRead",
+      "full_name": "test Read",
+      "email": "testRead@levelops.io"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/users/maxime@levelops.io",
+    "value": {
+      "user_name": "mbellier",
+      "full_name": "Maxime Bellier",
+      "email": "maxime@levelops.io"
+    }
+  },
+  {
+    "op": "remove",
+    "path": "/plugins/durable-task",
+    "value": {
+      "long_name": "Durable Task Plugin",
+      "short_name": "durable-task",
+      "specification_title": "Library offering an extension point for processes",
+      "implementation_title": "durable-task",
+      "implementation_version": "1.33",
+      "url": "https://github.com/jenkinsci/durable-task-plugin",
+      "build_jdk": "1.8.0_202"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/plugins/blueocean-config/long_name",
+    "value": "changed"
+  },
+  {
+    "op": "replace",
+    "path": "/plugins/sse-gateway/specification_title",
+    "value": "changed"
+  },
+  {
+    "op": "remove",
+    "path": "/plugins/pubsub-light/implementation_title",
+    "value": "pubsub-light"
+  }
+]

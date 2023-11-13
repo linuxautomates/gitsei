@@ -1,0 +1,234 @@
+{
+  "records": [
+    {
+      "public": true,
+      "id": "1",
+      "teamId": "1",
+      "name": "Tic - Tac - Toe",
+      "isPublic": true,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "/projects/1"
+        },
+        {
+          "rel": "teams",
+          "uri": "/auth/teams/"
+        },
+        {
+          "rel": "latestscan",
+          "uri": "/sast/scans?projectId=1&last=1"
+        },
+        {
+          "rel": "allscans",
+          "uri": "/sast/scans?projectId=1"
+        },
+        {
+          "rel": "scansettings",
+          "uri": "/sast/scanSettings/1"
+        },
+        {
+          "type": "local",
+          "rel": "source"
+        }
+      ],
+      "vcs_settings": {
+        "exclude_settings": {
+          "link": {
+            "rel": "self",
+            "uri": "/projects/1/sourceCode/excludeSettings"
+          },
+          "projectId": "1",
+          "excludeFoldersPattern": "",
+          "excludeFilesPattern": ""
+        }
+      }
+    },
+    {
+      "public": true,
+      "id": "2",
+      "teamId": "1",
+      "name": "fastcore",
+      "isPublic": true,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "/projects/2"
+        },
+        {
+          "rel": "teams",
+          "uri": "/auth/teams/"
+        },
+        {
+          "rel": "latestscan",
+          "uri": "/sast/scans?projectId=2&last=1"
+        },
+        {
+          "rel": "allscans",
+          "uri": "/sast/scans?projectId=2"
+        },
+        {
+          "rel": "scansettings",
+          "uri": "/sast/scanSettings/2"
+        },
+        {
+          "type": "local",
+          "rel": "source"
+        }
+      ],
+      "vcs_settings": {
+        "exclude_settings": {
+          "link": {
+            "rel": "self",
+            "uri": "/projects/2/sourceCode/excludeSettings"
+          },
+          "projectId": "2",
+          "excludeFoldersPattern": "",
+          "excludeFilesPattern": ""
+        }
+      }
+    },
+    {
+      "public": true,
+      "id": "3",
+      "teamId": "1",
+      "name": "next-canary",
+      "isPublic": true,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "/projects/3"
+        },
+        {
+          "rel": "teams",
+          "uri": "/auth/teams/"
+        },
+        {
+          "rel": "latestscan",
+          "uri": "/sast/scans?projectId=3&last=1"
+        },
+        {
+          "rel": "allscans",
+          "uri": "/sast/scans?projectId=3"
+        },
+        {
+          "rel": "scansettings",
+          "uri": "/sast/scanSettings/3"
+        },
+        {
+          "type": "local",
+          "rel": "source"
+        }
+      ],
+      "vcs_settings": {
+        "exclude_settings": {
+          "link": {
+            "rel": "self",
+            "uri": "/projects/3/sourceCode/excludeSettings"
+          },
+          "projectId": "3",
+          "excludeFoldersPattern": "",
+          "excludeFilesPattern": ""
+        }
+      }
+    },
+    {
+      "public": true,
+      "id": "4",
+      "teamId": "1",
+      "name": "smart-inspector",
+      "isPublic": true,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "/projects/4"
+        },
+        {
+          "rel": "teams",
+          "uri": "/auth/teams/"
+        },
+        {
+          "rel": "latestscan",
+          "uri": "/sast/scans?projectId=4&last=1"
+        },
+        {
+          "rel": "allscans",
+          "uri": "/sast/scans?projectId=4"
+        },
+        {
+          "rel": "scansettings",
+          "uri": "/sast/scanSettings/4"
+        },
+        {
+          "type": "local",
+          "rel": "source"
+        }
+      ],
+      "vcs_settings": {
+        "exclude_settings": {
+          "link": {
+            "rel": "self",
+            "uri": "/projects/4/sourceCode/excludeSettings"
+          },
+          "projectId": "4",
+          "excludeFoldersPattern": "",
+          "excludeFilesPattern": ""
+        }
+      }
+    },
+    {
+      "public": true,
+      "id": "5",
+      "teamId": "1",
+      "name": "Nv chad",
+      "isPublic": true,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "/projects/5"
+        },
+        {
+          "rel": "teams",
+          "uri": "/auth/teams/"
+        },
+        {
+          "rel": "latestscan",
+          "uri": "/sast/scans?projectId=5&last=1"
+        },
+        {
+          "rel": "allscans",
+          "uri": "/sast/scans?projectId=5"
+        },
+        {
+          "rel": "scansettings",
+          "uri": "/sast/scanSettings/5"
+        },
+        {
+          "type": "local",
+          "rel": "source"
+        }
+      ],
+      "vcs_settings": {
+        "exclude_settings": {
+          "link": {
+            "rel": "self",
+            "uri": "/projects/5/sourceCode/excludeSettings"
+          },
+          "projectId": "5",
+          "excludeFoldersPattern": "",
+          "excludeFilesPattern": ""
+        }
+      }
+    }
+  ],
+  "count": 5,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "16"
+    },
+    "integration_type": "cxsast",
+    "data_type": "projects",
+    "page_number": 0
+  }
+}

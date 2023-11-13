@@ -1,0 +1,124 @@
+[
+  {
+    "job_name": "job1",
+    "job_full_name": "harness-job1",
+    "scm_url": "https://github.com/test-org/repo2.git",
+    "runs": [
+      {
+        "number": 1,
+        "status": "SUCCESS",
+        "start_time": 1593060359,
+        "duration": 199,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "2bdf3970b3c4991fe22692c290a718162ffef08b"
+        ],
+        "metadata": {
+          "branch": "PROP-3004-main",
+          "rollback": true,
+          "repo_name": "repo2",
+          "repo_url": "https://github.com/test-org/repo2.git",
+          "service_ids": [
+            "fieldService"
+          ],
+          "env_ids": [
+            "env2"
+          ],
+          "infra_ids": [
+            "if0",
+            "if4"
+          ]
+        }
+      },
+      {
+        "number": 2,
+        "status": "SUCCESS",
+        "start_time": 1593060359,
+        "duration": 199,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "2bdf3970b3c4991fe22692c290a718162ffef08b"
+        ],
+        "metadata": {
+          "branch": "dev",
+          "repo_name": "repo2",
+          "repo_url": "https://github.com/test-org/repo2.git",
+          "env_ids": [
+            "env1",
+            "env3"
+          ],
+          "infra_ids": [
+            "if1",
+            "if2"
+          ],
+          "service_types": ["deploy"]
+        }
+      }
+    ]
+  },
+  {
+    "job_name": "job2",
+    "job_full_name": "harness-job2",
+    "scm_url": "https://github.com/test-org/repo1.git",
+    "runs": [
+      {
+        "number": 3,
+        "status": "SUCCESS",
+        "start_time": 1593060359,
+        "duration": 199,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "2bdf3970b3c4991fe22692c290a718162ffef08b"
+        ],
+        "metadata": {
+          "branch": "dev",
+          "rollback": true,
+          "service_ids": [
+            "fieldService",
+            "artifactService"
+          ],
+          "repo_name": "repo2",
+          "repo_url": "https://github.com/test-org/repo2.git",
+          "env_ids": [
+            "env1",
+            "env2"
+          ],
+          "infra_ids": [
+            "if1",
+            "if2"
+          ],
+          "service_types": ["deploy1"]
+        }
+      },
+      {
+        "number": 4,
+        "status": "SUCCESS",
+        "start_time": 1593060359,
+        "duration": 199,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "2bdf3970b3c4991fe22692c290a718162ffef08b"
+        ],
+        "metadata": {
+          "branch": "main",
+          "rollback": false,
+          "service_ids": [
+            "dockerService",
+            "githubService"
+          ],
+          "repo_name": "repo2",
+          "repo_url": "https://github.com/test-org/repo2.git",
+          "env_ids": [
+            "env1",
+            "env3"
+          ],
+          "infra_ids": [
+            "if3",
+            "if4"
+          ],
+          "service_types": ["deploy"]
+        }
+      }
+    ]
+  }
+]

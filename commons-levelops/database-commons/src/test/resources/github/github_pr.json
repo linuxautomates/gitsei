@@ -1,0 +1,89 @@
+{
+  "id": "438815878",
+  "number": 24,
+  "state": "closed",
+  "locked": false,
+  "title": "Jenkins Aggs - Fix bug with persisting job run params",
+  "user": {
+    "type": "user",
+    "login": "viraj-levelops"
+  },
+  "body": "",
+  "created_at": 1592945635000,
+  "updated_at": 1592946850000,
+  "closed_at": 1592946846000,
+  "merged_at": 1592946846000,
+  "merge_commit_sha": "6ca5a1062809e836a0e8ac9dbc1b54eb7648eae6",
+  "assignees": [{ "type" : "USER", "login": "viraj-levelops"}],
+  "requested_reviewers": [
+    {
+      "type": "user",
+      "login": "harsh-levelops"
+    },
+    {
+      "type": "user",
+      "login": "maxime-levelops"
+    },
+    {
+      "type": "user",
+      "login": "ivan-levelops"
+    }
+  ],
+  "requested_teams": [],
+  "labels": [],
+  "head": {
+    "label": "levelops:jen",
+    "ref": "jen",
+    "sha": "311d9e1a15da6699f15daaffc242ffe80596de11",
+    "user": {
+      "type": "organization",
+      "login": "levelops"
+    },
+    "repo": {
+      "id": "264248601",
+      "name": "aggregations-levelops",
+      "full_name": "levelops/aggregations-levelops"
+    }
+  },
+  "base": {
+    "label": "levelops:dev",
+    "ref": "dev",
+    "sha": "4e6e34862e18a8095805b7e73f7c94614a2a3031",
+    "user": {
+      "type": "organization",
+      "login": "levelops"
+    },
+    "repo": {
+      "id": "264248601",
+      "name": "aggregations-levelops",
+      "full_name": "levelops/aggregations-levelops"
+    }
+  },
+  "author_association": "CONTRIBUTOR",
+  "reviews": [],
+  "pr_commits": [
+    {
+      "sha": "311d9e1a15da6699f15daaffc242ffe80596de11",
+      "url": "https://api.github.com/repos/levelops/aggregations-levelops/commits/311d9e1a15da6699f15daaffc242ffe80596de11",
+      "author": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "committer": {
+        "type": "user",
+        "login": "viraj-levelops"
+      },
+      "message": "Jenkins Aggs - Fix bug with persisting job run params",
+      "git_author": {
+        "email": "viraj@levelops.io",
+        "name": "Viraj Ajgaonkar",
+        "date": 1592945608000
+      },
+      "git_committer": {
+        "email": "viraj@levelops.io",
+        "name": "Viraj Ajgaonkar",
+        "date": 1592945608000
+      }
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "is_active": true,
+      "type_id": 3,
+      "name": "preconds",
+      "system_name": "custom_preconds",
+      "label": "Preconditions",
+      "description": "The preconditions of this test case. Reference other test cases with [C#] (e.g. [C17]).",
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": null
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown",
+            "rows": "7"
+          },
+          "id": "4be1344d55d11"
+        }
+      ],
+      "display_order": 1,
+      "include_all": false,
+      "template_ids": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "is_active": true,
+      "type_id": 3,
+      "name": "steps",
+      "system_name": "custom_steps",
+      "label": "Steps",
+      "description": "The required steps to execute the test case.",
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": null
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown",
+            "rows": "7"
+          },
+          "id": "4be97c65ea2fd"
+        }
+      ],
+      "display_order": 2,
+      "include_all": false,
+      "template_ids": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "is_active": true,
+      "type_id": 3,
+      "name": "expected",
+      "system_name": "custom_expected",
+      "label": "Expected Result",
+      "description": "The expected result after executing the test case.",
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": null
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown",
+            "rows": "7"
+          },
+          "id": "4be1345cafd07"
+        }
+      ],
+      "display_order": 3,
+      "include_all": false,
+      "template_ids": [
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "is_active": true,
+      "type_id": 10,
+      "name": "steps_separated",
+      "system_name": "custom_steps_separated",
+      "label": "Steps",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": null
+          },
+          "options": {
+            "is_required": false,
+            "format": "markdown",
+            "has_expected": true,
+            "rows": "5"
+          },
+          "id": "4be97c65ea2fd"
+        }
+      ],
+      "display_order": 4,
+      "include_all": false,
+      "template_ids": [
+        2
+      ]
+    },
+    {
+      "id": 12,
+      "is_active": true,
+      "type_id": 3,
+      "name": "mission",
+      "system_name": "custom_mission",
+      "label": "Mission",
+      "description": "A high-level overview of what to test and which areas to cover, usually just 1-2 sentences.",
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": null
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown",
+            "rows": "7"
+          },
+          "id": "4be1345cafd07"
+        }
+      ],
+      "display_order": 5,
+      "include_all": false,
+      "template_ids": [
+        3
+      ]
+    },
+    {
+      "id": 13,
+      "is_active": true,
+      "type_id": 3,
+      "name": "goals",
+      "system_name": "custom_goals",
+      "label": "Goals",
+      "description": "A detailed list of goals to cover as part of the exploratory sessions.",
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": null
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown",
+            "rows": "7"
+          },
+          "id": "4be1345cafd07"
+        }
+      ],
+      "display_order": 6,
+      "include_all": false,
+      "template_ids": [
+        3
+      ]
+    },
+    {
+      "id": 14,
+      "is_active": true,
+      "type_id": 6,
+      "name": "automation_type",
+      "system_name": "custom_automation_type",
+      "label": "Automation Type",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "0",
+            "items": "0, None\n1, Ranorex"
+          },
+          "id": "7a34a519-f458-40bb-af43-ed63baf874ee"
+        }
+      ],
+      "display_order": 5,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 15,
+      "is_active": true,
+      "type_id": 13,
+      "name": "testrail_bdd_scenario",
+      "system_name": "custom_testrail_bdd_scenario",
+      "label": "BDD Scenarios",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "format": "markdown",
+            "rows": "6"
+          },
+          "id": "b8ec6053-7705-40a4-91c7-b0405e42cfce"
+        }
+      ],
+      "display_order": 2,
+      "include_all": false,
+      "template_ids": [
+        4
+      ]
+    },
+    {
+      "id": 17,
+      "is_active": true,
+      "type_id": 1,
+      "name": "tags",
+      "system_name": "custom_tags",
+      "label": "Tags",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown"
+          },
+          "id": "56b59548-0aba-4561-88be-22d414f0c4c2"
+        }
+      ],
+      "display_order": 6,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 18,
+      "is_active": true,
+      "type_id": 3,
+      "name": "text_field",
+      "system_name": "custom_text_field",
+      "label": "Custom Text Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown",
+            "rows": ""
+          },
+          "id": "6b62e8e7-aa7a-4da0-afca-051436cc5b39"
+        }
+      ],
+      "display_order": 7,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 19,
+      "is_active": true,
+      "type_id": 5,
+      "name": "checkbox_field",
+      "system_name": "custom_checkbox_field",
+      "label": "Custom Checkbox Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "0",
+            "format": "markdown"
+          },
+          "id": "bc745852-a3be-4a0b-9586-69ad9d482285"
+        }
+      ],
+      "display_order": 7,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 20,
+      "is_active": true,
+      "type_id": 8,
+      "name": "date_field",
+      "system_name": "custom_date_field",
+      "label": "Custom Date Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "format": "markdown"
+          },
+          "id": "e10fcc19-68b3-4c61-b96f-f24795012626"
+        }
+      ],
+      "display_order": 8,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 21,
+      "is_active": true,
+      "type_id": 6,
+      "name": "dropdown_field",
+      "system_name": "custom_dropdown_field",
+      "label": "Custom Dropdown Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "items": "2, option2\n1, option1",
+            "format": "markdown"
+          },
+          "id": "30ac3d74-43ec-4106-a670-422a965a2b3e"
+        }
+      ],
+      "display_order": 9,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 22,
+      "is_active": true,
+      "type_id": 2,
+      "name": "integer_field",
+      "system_name": "custom_integer_field",
+      "label": "Custom Integer Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown"
+          },
+          "id": "89dd5153-a8c9-4f7d-bd2e-6ccd15ca918e"
+        }
+      ],
+      "display_order": 10,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 23,
+      "is_active": true,
+      "type_id": 9,
+      "name": "milestone_field",
+      "system_name": "custom_milestone_field",
+      "label": "Custom Milestone Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "format": "markdown"
+          },
+          "id": "1346cd9c-7c0d-40d6-a39c-079119882fc2"
+        }
+      ],
+      "display_order": 11,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 24,
+      "is_active": true,
+      "type_id": 12,
+      "name": "multi_select_field",
+      "system_name": "custom_multi_select_field",
+      "label": "Custom Multi Select Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": false,
+            "project_ids": [
+              3
+            ]
+          },
+          "options": {
+            "is_required": false,
+            "items": "0, option0\n1, option1\n2, option2",
+            "format": "markdown"
+          },
+          "id": "d8d1bba1-12a4-4312-9314-4ed8c7c3392d"
+        },
+        {
+          "context": {
+            "is_global": false,
+            "project_ids": [
+              5
+            ]
+          },
+          "options": {
+            "is_required": false,
+            "items": "0, option0Esha\n1, option1Esha\n2, option2Esha",
+            "format": "markdown"
+          },
+          "id": "808aa317-ffcb-43af-816a-94d3398e8036"
+        }
+      ],
+      "display_order": 8,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 25,
+      "is_active": true,
+      "type_id": 1,
+      "name": "string_field",
+      "system_name": "custom_string_field",
+      "label": "Custom String Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown"
+          },
+          "id": "5ca435b9-1d95-46a1-b1a7-96f0f77bfb21"
+        }
+      ],
+      "display_order": 12,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 26,
+      "is_active": true,
+      "type_id": 4,
+      "name": "url_field",
+      "system_name": "custom_url_field",
+      "label": "Custom URL field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": true,
+            "project_ids": []
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown"
+          },
+          "id": "b7ab85a5-bf61-4b75-b4b3-dd4d6cf5d293"
+        }
+      ],
+      "display_order": 13,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 27,
+      "is_active": true,
+      "type_id": 7,
+      "name": "project_admin_field",
+      "system_name": "custom_project_admin_field",
+      "label": "Project Admin Field",
+      "description": null,
+      "configs": [
+        {
+          "context": {
+            "is_global": false,
+            "project_ids": [
+              3
+            ]
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown"
+          },
+          "id": "dddc39ce-c90e-4fc4-94da-7203c0a633e4"
+        },
+        {
+          "context": {
+            "is_global": false,
+            "project_ids": [
+              5,
+              2
+            ]
+          },
+          "options": {
+            "is_required": false,
+            "default_value": "",
+            "format": "markdown"
+          },
+          "id": "b4c188c5-c96a-4339-a481-de53b053a2ba"
+        }
+      ],
+      "display_order": 14,
+      "include_all": true,
+      "template_ids": []
+    },
+    {
+      "id": 28,
+      "is_active": true,
+      "type_id": 3,
+      "name": "not_assigned_project_field",
+      "system_name": "custom_not_assigned_project_field",
+      "label": "Not Assigned to Any Project",
+      "description": null,
+      "configs": [],
+      "display_order": 9,
+      "include_all": true,
+      "template_ids": []
+    }
+  ],
+  "count": 20,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "test",
+      "integration_id": "1"
+    },
+    "integration_type": "testrails",
+    "data_type": "case_fields",
+    "page_number": 0
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "expand": "description,lead,issueTypes,url,projectKeys,permissions,insight",
+  "self": "https://harness.atlassian.net/rest/api/2/project/10368",
+  "id": "10368",
+  "key": "SEI",
+  "description": "",
+  "lead": {
+    "self": "https://harness.atlassian.net/rest/api/2/user?accountId=5deadfb2752c1b0d114f9db3",
+    "accountId": "5deadfb2752c1b0d114f9db3",
+    "avatarUrls": {
+      "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/MT-4.png",
+      "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/MT-4.png",
+      "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/MT-4.png",
+      "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/initials/MT-4.png"
+    },
+    "displayName": "Megha Tamvada",
+    "active": true
+  },
+  "components": [
+    {
+      "self": "https://harness.atlassian.net/rest/api/2/component/11449",
+      "id": "11449",
+      "name": "Aggregation",
+      "isAssigneeTypeValid": false
+    }
+  ],
+  "issueTypes": [
+    {
+      "self": "https://harness.atlassian.net/rest/api/2/issuetype/10100",
+      "id": "10100",
+      "description": "Created by Jira Agile - do not edit or delete. Issue type for a user story.",
+      "iconUrl": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+      "name": "Story",
+      "subtask": false,
+      "avatarId": 10315,
+      "hierarchyLevel": 0
+    }
+  ],
+  "assigneeType": "UNASSIGNED",
+  "versions": [
+    {
+      "self": "https://harness.atlassian.net/rest/api/2/version/12303",
+      "id": "12303",
+      "description": "Testing purpose only",
+      "name": "Test Release",
+      "archived": false,
+      "released": false,
+      "startDate": "2023-05-02",
+      "releaseDate": "2023-05-02",
+      "overdue": true,
+      "userStartDate": "01/May/23",
+      "userReleaseDate": "01/May/23",
+      "projectId": 10368
+    },
+    {
+      "self": "https://harness.atlassian.net/rest/api/2/version/12329",
+      "id": "12329",
+      "name": "202305.1",
+      "archived": true,
+      "released": false,
+      "startDate": "2023-05-02",
+      "releaseDate": "2023-05-15",
+      "overdue": false,
+      "userStartDate": "01/May/23",
+      "userReleaseDate": "14/May/23",
+      "projectId": 10368
+    }
+  ],
+  "name": "Software Engineering Insights",
+  "roles": {
+    "Administrators (migrated)": "https://harness.atlassian.net/rest/api/2/project/10368/role/10378",
+    "atlassian-addons-project-access (migrated)": "https://harness.atlassian.net/rest/api/2/project/10368/role/10366",
+    "Consultant User": "https://harness.atlassian.net/rest/api/2/project/10368/role/10353",
+    "Owner": "https://harness.atlassian.net/rest/api/2/project/10368/role/10364",
+    "Product Management": "https://harness.atlassian.net/rest/api/2/project/10368/role/10367",
+    "Service Desk Customers": "https://harness.atlassian.net/rest/api/2/project/10368/role/10300",
+    "General User": "https://harness.atlassian.net/rest/api/2/project/10368/role/10368",
+    "Doc Project Watch": "https://harness.atlassian.net/rest/api/2/project/10368/role/10331",
+    "Move Issues": "https://harness.atlassian.net/rest/api/2/project/10368/role/10377",
+    "atlassian-addons-project-access": "https://harness.atlassian.net/rest/api/2/project/10368/role/10200",
+    "Issue Workflow Bypass": "https://harness.atlassian.net/rest/api/2/project/10368/role/10379",
+    "Developers (migrated)": "https://harness.atlassian.net/rest/api/2/project/10368/role/10369",
+    "Member": "https://harness.atlassian.net/rest/api/2/project/10368/role/10365",
+    "SWAT Project Watch": "https://harness.atlassian.net/rest/api/2/project/10368/role/10332",
+    "Service Desk Team": "https://harness.atlassian.net/rest/api/2/project/10368/role/10301",
+    "Service Owner": "https://harness.atlassian.net/rest/api/2/project/10368/role/11383",
+    "Comment Admin": "https://harness.atlassian.net/rest/api/2/project/10368/role/10371",
+    "Guest": "https://harness.atlassian.net/rest/api/2/project/10368/role/10358",
+    "Default Assignee": "https://harness.atlassian.net/rest/api/2/project/10368/role/10370",
+    "Project Administrator": "https://harness.atlassian.net/rest/api/2/project/10368/role/10380",
+    "Developers": "https://harness.atlassian.net/rest/api/2/project/10368/role/10100",
+    "Administrators": "https://harness.atlassian.net/rest/api/2/project/10368/role/10002",
+    "Sprint Manager": "https://harness.atlassian.net/rest/api/2/project/10368/role/10381",
+    "Comment Admin (migrated)": "https://harness.atlassian.net/rest/api/2/project/10368/role/10372",
+    "Tempo Project Managers": "https://harness.atlassian.net/rest/api/2/project/10368/role/10363"
+  },
+  "avatarUrls": {
+    "48x48": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738",
+    "24x24": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738?size=small",
+    "16x16": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738?size=xsmall",
+    "32x32": "https://harness.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10738?size=medium"
+  },
+  "projectCategory": {
+    "self": "https://harness.atlassian.net/rest/api/2/projectCategory/10001",
+    "id": "10001",
+    "name": "Product Development",
+    "description": "Product Development"
+  },
+  "projectTypeKey": "software",
+  "simplified": false,
+  "style": "classic",
+  "isPrivate": false,
+  "properties": {},
+  "ingested_at": 1698760149
+}

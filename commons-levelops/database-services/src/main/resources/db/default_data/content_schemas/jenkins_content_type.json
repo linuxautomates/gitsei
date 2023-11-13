@@ -1,0 +1,57 @@
+{
+  "content_type": "plugin_result/jenkins/job_run",
+  "fields": {
+    "id": {
+      "key": "id",
+      "value_type": "string",
+      "content_type": "id:plugin_result/jenkins/job_run"
+    },
+    "repo_url": {
+      "key": "repo_url",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "repo_user_id": {
+      "key": "repo_user_id",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "job_name": {
+      "key": "job_name",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "user_id": {
+      "key": "user_id",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "product_ids": {
+      "key": "product_ids",
+      "value_type": "json_array",
+      "content_type": "string"
+    },
+    "job_run_params": {
+      "key": "job_run_params",
+      "value_type": "json_array",
+      "content_type": "plugin_result/jenkins/job_run.job_run_params",
+      "fields": {
+        "type": {
+          "key": "type",
+          "value_type": "string",
+          "content_type": "string"
+        },
+        "name": {
+          "key": "name",
+          "value_type": "string",
+          "content_type": "string"
+        },
+        "value": {
+          "key": "value",
+          "value_type": "string",
+          "content_type": "string"
+        }
+      }
+    }
+  }
+}

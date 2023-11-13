@@ -1,0 +1,27 @@
+inputSet:
+  name: Dev Build Params
+  identifier: Dev_Build_Params
+  orgIdentifier: SEIpropelo
+  projectIdentifier: Backend
+  pipeline:
+    identifier: BuildServerAPI
+    template:
+      templateInputs:
+        variables:
+          - name: OPENJDK_IMAGE_NAME
+            type: String
+            value: v1.0.39_jdk-13.0.2
+          - name: VERSION_SUFFIX
+            type: String
+            value: " "
+          - name: K8S_ENV
+            type: String
+            value: " "
+        properties:
+          ci:
+            codebase:
+              build:
+                type: branch
+                spec:
+                  branch: dev
+  object Object: pipeline.template.templateInputs.properties.ci.codebase

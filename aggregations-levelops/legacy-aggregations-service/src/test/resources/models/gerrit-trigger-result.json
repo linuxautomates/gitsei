@@ -1,0 +1,2367 @@
+{
+  "integration_id": "17",
+  "tenant_id": "foo",
+  "partial": false,
+  "trigger_results": [
+    {
+      "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+      "trigger_type": "gerrit",
+      "tenant_id": "foo",
+      "integration_id": "17",
+      "iteration_id": "544e59a8-9fc5-4a9c-9837-bc9f2ec196f2",
+      "partial": false,
+      "jobs": [
+        {
+          "id": "ea69f4a0-a4e4-4029-be2e-021d0a84ee08",
+          "agent_id": "307d4796-7858-4a0f-8801-3c9d63bf28f9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594805521096,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594904593,
+          "status_changed_at": 1594904642,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/projects/projects.0.json",
+                      "generation": 1594904617493047
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/groups/groups.0.json",
+                      "generation": 1594904618744086
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-ea69f4a0-a4e4-4029-be2e-021d0a84ee08/accounts/accounts.0.json",
+                      "generation": 1594904620532972
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "544e59a8-9fc5-4a9c-9837-bc9f2ec196f2",
+          "iteration_ts": 1594904593
+        },
+        {
+          "id": "a18bde02-c45c-4895-a9c4-ea47f065d110",
+          "agent_id": "307d4796-7858-4a0f-8801-3c9d63bf28f9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594804620217,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594805521,
+          "status_changed_at": 1594904612,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/projects/projects.0.json",
+                      "generation": 1594904590511606
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/groups/groups.0.json",
+                      "generation": 1594904591830114
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-a18bde02-c45c-4895-a9c4-ea47f065d110/accounts/accounts.0.json",
+                      "generation": 1594904593080373
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "04242a0f-b4f1-432c-a1f0-919540ed91ab",
+          "iteration_ts": 1594805521
+        },
+        {
+          "id": "17331a87-37c3-42a5-9e2d-440b4608ba3e",
+          "agent_id": "307d4796-7858-4a0f-8801-3c9d63bf28f9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594802161796,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594804620,
+          "status_changed_at": 1594904613,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/projects/projects.0.json",
+                      "generation": 1594904591571148
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/groups/groups.0.json",
+                      "generation": 1594904592798360
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-17331a87-37c3-42a5-9e2d-440b4608ba3e/accounts/accounts.0.json",
+                      "generation": 1594904594053901
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "081b28f7-c23b-4c29-b3e5-c0513e7d78c0",
+          "iteration_ts": 1594804620
+        },
+        {
+          "id": "dc52359d-9ee8-4e20-bcea-697bd28b5e97",
+          "agent_id": "307d4796-7858-4a0f-8801-3c9d63bf28f9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594801230711,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594802162,
+          "status_changed_at": 1594904613,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/projects/projects.0.json",
+                      "generation": 1594904591023937
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/groups/groups.0.json",
+                      "generation": 1594904592858494
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-dc52359d-9ee8-4e20-bcea-697bd28b5e97/accounts/accounts.0.json",
+                      "generation": 1594904594108513
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "da3e142a-e3f6-42e7-97f1-dc1de438ad0b",
+          "iteration_ts": 1594802161
+        },
+        {
+          "id": "8062a2ec-390a-499a-b2c2-768ab8e7cd44",
+          "agent_id": "307d4796-7858-4a0f-8801-3c9d63bf28f9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594800311190,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594801231,
+          "status_changed_at": 1594904612,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/projects/projects.0.json",
+                      "generation": 1594904591447769
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/groups/groups.0.json",
+                      "generation": 1594904592717741
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-8062a2ec-390a-499a-b2c2-768ab8e7cd44/accounts/accounts.0.json",
+                      "generation": 1594904593952498
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "2c8fb1ae-b4c2-4e14-bc5f-f1c29b1f71dc",
+          "iteration_ts": 1594801230
+        },
+        {
+          "id": "fb6789df-682f-444f-8e92-2f02d068b82d",
+          "agent_id": "307d4796-7858-4a0f-8801-3c9d63bf28f9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594799314161,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594800311,
+          "status_changed_at": 1594904612,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/projects/projects.0.json",
+                      "generation": 1594904590536323
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/groups/groups.0.json",
+                      "generation": 1594904591824940
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/16/job-fb6789df-682f-444f-8e92-2f02d068b82d/accounts/accounts.0.json",
+                      "generation": 1594904593196569
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "731b8f6f-7e12-4640-9755-35375372f79d",
+          "iteration_ts": 1594800310
+        },
+        {
+          "id": "f5d2a511-caf0-4c20-88e9-17bf596d0fb6",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594798414140,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594799314,
+          "status_changed_at": 1594799382,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/projects/projects.0.json",
+                      "generation": 1594799346735277
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/groups/groups.0.json",
+                      "generation": 1594799356804174
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-f5d2a511-caf0-4c20-88e9-17bf596d0fb6/accounts/accounts.0.json",
+                      "generation": 1594799378092889
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "6901d7d8-1ea3-4d36-ba95-2a08fde52d9a",
+          "iteration_ts": 1594799314
+        },
+        {
+          "id": "f9b85567-2f18-470b-be68-19f50b309d75",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594797514138,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594798414,
+          "status_changed_at": 1594798452,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/projects/projects.0.json",
+                      "generation": 1594798426656442
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/groups/groups.0.json",
+                      "generation": 1594798427702082
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-f9b85567-2f18-470b-be68-19f50b309d75/accounts/accounts.0.json",
+                      "generation": 1594798428791830
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "7fac0970-233f-4d2b-ae0e-92563746cd5f",
+          "iteration_ts": 1594798414
+        },
+        {
+          "id": "663c2487-e441-4269-82f9-3d37839b9915",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594796614100,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594797514,
+          "status_changed_at": 1594797552,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/projects/projects.0.json",
+                      "generation": 1594797527192090
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/groups/groups.0.json",
+                      "generation": 1594797528348098
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-663c2487-e441-4269-82f9-3d37839b9915/accounts/accounts.0.json",
+                      "generation": 1594797534845728
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "605397ee-4063-4d4c-aca6-fa5ef150c155",
+          "iteration_ts": 1594797514
+        },
+        {
+          "id": "21c6cb45-48a2-4ad7-907a-3a5781dbf7b2",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594795714106,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594796614,
+          "status_changed_at": 1594796652,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/projects/projects.0.json",
+                      "generation": 1594796626816855
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/groups/groups.0.json",
+                      "generation": 1594796627862452
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-21c6cb45-48a2-4ad7-907a-3a5781dbf7b2/accounts/accounts.0.json",
+                      "generation": 1594796628882884
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "4c2ddb67-ffb0-4934-aa78-eab594f3baa3",
+          "iteration_ts": 1594796614
+        },
+        {
+          "id": "128a3e97-327b-461f-adda-54e7f72229b6",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594794814131,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594795714,
+          "status_changed_at": 1594795752,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/projects/projects.0.json",
+                      "generation": 1594795730024487
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/groups/groups.0.json",
+                      "generation": 1594795731062512
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-128a3e97-327b-461f-adda-54e7f72229b6/accounts/accounts.0.json",
+                      "generation": 1594795732136790
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "0db9be48-9974-425d-9049-226ae4a51876",
+          "iteration_ts": 1594795714
+        },
+        {
+          "id": "22afe73f-3956-4885-ab44-2e22947fd157",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594793914139,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594794814,
+          "status_changed_at": 1594794852,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/projects/projects.0.json",
+                      "generation": 1594794826015385
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/groups/groups.0.json",
+                      "generation": 1594794827050435
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-22afe73f-3956-4885-ab44-2e22947fd157/accounts/accounts.0.json",
+                      "generation": 1594794828198639
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "74a1a9c5-913e-473b-886b-87ba104131e9",
+          "iteration_ts": 1594794814
+        },
+        {
+          "id": "389a483a-4a7b-42fb-a9c7-bc219d443192",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594793014119,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594793914,
+          "status_changed_at": 1594793952,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/projects/projects.0.json",
+                      "generation": 1594793928496601
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/groups/groups.0.json",
+                      "generation": 1594793929860433
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-389a483a-4a7b-42fb-a9c7-bc219d443192/accounts/accounts.0.json",
+                      "generation": 1594793931910294
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "8605ad02-3ba8-4358-b6a7-afd83b490078",
+          "iteration_ts": 1594793914
+        },
+        {
+          "id": "197fe16b-4dad-4c7e-8580-c4d122819667",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594792114478,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594793014,
+          "status_changed_at": 1594793052,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/projects/projects.0.json",
+                      "generation": 1594793032453717
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/groups/groups.0.json",
+                      "generation": 1594793033584089
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-197fe16b-4dad-4c7e-8580-c4d122819667/accounts/accounts.0.json",
+                      "generation": 1594793034636445
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "a620c7d0-7aa9-4942-b1b9-ecac53a5a5c6",
+          "iteration_ts": 1594793014
+        },
+        {
+          "id": "8e971554-7e4f-4c2b-b341-bef596f3e566",
+          "agent_id": "1131f82e-a83c-4070-ba79-611647c7ce2e",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594730156916,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594792114,
+          "status_changed_at": 1594792182,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/projects/projects.0.json",
+                      "generation": 1594792161528376
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/groups/groups.0.json",
+                      "generation": 1594792162739067
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/15/job-8e971554-7e4f-4c2b-b341-bef596f3e566/accounts/accounts.0.json",
+                      "generation": 1594792163776264
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "fdfb05f2-8673-4e38-aba8-5633eb23ca01",
+          "iteration_ts": 1594792114
+        },
+        {
+          "id": "8e32ee03-e308-45db-a19a-3953f8c6f778",
+          "agent_id": "7e161380-fef7-48cb-8698-b2789bc6e6d9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594729256914,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594730157,
+          "status_changed_at": 1594730207,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/projects/projects.0.json",
+                      "generation": 1594730181161948
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/groups/groups.0.json",
+                      "generation": 1594730182158484
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-8e32ee03-e308-45db-a19a-3953f8c6f778/accounts/accounts.0.json",
+                      "generation": 1594730183128881
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "242d6f52-e464-4273-a41d-152dd3c0cadd",
+          "iteration_ts": 1594730156
+        },
+        {
+          "id": "02057270-9d39-451e-81cc-ee8f33baef57",
+          "agent_id": "7e161380-fef7-48cb-8698-b2789bc6e6d9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594728356908,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594729257,
+          "status_changed_at": 1594729307,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/projects/projects.0.json",
+                      "generation": 1594729280734203
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/groups/groups.0.json",
+                      "generation": 1594729282610327
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-02057270-9d39-451e-81cc-ee8f33baef57/accounts/accounts.0.json",
+                      "generation": 1594729284223117
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "08e1610c-91dd-4c3a-bbe3-f68167fe680d",
+          "iteration_ts": 1594729256
+        },
+        {
+          "id": "5762a72e-fa7e-4c6e-a79f-fdbef119c684",
+          "agent_id": "7e161380-fef7-48cb-8698-b2789bc6e6d9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594727456928,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594728357,
+          "status_changed_at": 1594728407,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/projects/projects.0.json",
+                      "generation": 1594728381375016
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/groups/groups.0.json",
+                      "generation": 1594728382353998
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-5762a72e-fa7e-4c6e-a79f-fdbef119c684/accounts/accounts.0.json",
+                      "generation": 1594728383305865
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "1de05f12-31bb-45b0-8163-a24603821fc7",
+          "iteration_ts": 1594728356
+        },
+        {
+          "id": "030afd09-62d8-404c-af01-5261b53c8e94",
+          "agent_id": "7e161380-fef7-48cb-8698-b2789bc6e6d9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "after": 1594726556939,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594727457,
+          "status_changed_at": 1594727507,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [],
+                "count": 0
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/projects/projects.0.json",
+                      "generation": 1594727481372666
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/groups/groups.0.json",
+                      "generation": 1594727482368711
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-030afd09-62d8-404c-af01-5261b53c8e94/accounts/accounts.0.json",
+                      "generation": 1594727483324928
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": true,
+          "iteration_id": "ace3c89e-0f82-4e53-849e-a9dd79e84638",
+          "iteration_ts": 1594727456
+        },
+        {
+          "id": "36d5c142-01d2-4a36-be60-8090769ad52d",
+          "agent_id": "7e161380-fef7-48cb-8698-b2789bc6e6d9",
+          "status": "success",
+          "tenant_id": "foo",
+          "integration_id": "17",
+          "reserved": false,
+          "level": 0,
+          "attempt_count": 1,
+          "attempt_max": 0,
+          "query": {
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "17"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "GerritIngestionController",
+          "created_at": 1594726557,
+          "status_changed_at": 1594726607,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "changes"
+                },
+                "destination": "gcs",
+                "prefix_uri": "changes/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/changes/changes.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/changes/changes.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/changes/changes.0.json",
+                      "generation": 1594726581711223
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "projects"
+                },
+                "destination": "gcs",
+                "prefix_uri": "projects/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/projects/projects.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/projects/projects.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/projects/projects.0.json",
+                      "generation": 1594726588454149
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "groups"
+                },
+                "destination": "gcs",
+                "prefix_uri": "groups/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/groups/groups.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/groups/groups.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/groups/groups.0.json",
+                      "generation": 1594726589476033
+                    }
+                  }
+                ],
+                "count": 1
+              },
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "17"
+                  },
+                  "integration_type": "gerrit",
+                  "data_type": "accounts"
+                },
+                "destination": "gcs",
+                "prefix_uri": "accounts/",
+                "records": [
+                  {
+                    "uri": "gs://zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/accounts/accounts.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/zendesk-dev-ingestion-levelops/data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/accounts/accounts.0.json",
+                    "blob_id": {
+                      "bucket": "zendesk-dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-17/2020/07/14/job-36d5c142-01d2-4a36-be60-8090769ad52d/accounts/accounts.0.json",
+                      "generation": 1594726590472690
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 4
+          },
+          "trigger_id": "5de9b930-a8de-4086-8582-fae89f72d12a",
+          "partial": false,
+          "iteration_id": "444beaa8-0152-4297-9770-8161a1bf248b",
+          "iteration_ts": 1594726556
+        }
+      ],
+      "count": 20
+    }
+  ]
+}

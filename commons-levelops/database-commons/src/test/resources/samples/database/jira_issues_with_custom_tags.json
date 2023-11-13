@@ -1,0 +1,189 @@
+[
+  {
+  "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+  "id": "1263123",
+  "self": "https://projects.cdk.com/rest/api/2/issue/1263123",
+  "key": "MODACC-106",
+  "fields": {
+    "issuetype": {
+      "self": "https://projects.cdk.com/rest/api/2/issuetype/10000",
+      "id": 10000,
+      "name": "Feature",
+      "description": "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+      "subtask": false
+    },
+    "project": {
+      "self": "https://projects.cdk.com/rest/api/2/project/20909",
+      "id": "20909",
+      "key": "MODACC",
+      "name": "Modernization Accounting",
+      "projectTypeKey": "software"
+    },
+    "fixVersions": [],
+    "created": "2021-07-14T23:58:28.000+00:00",
+    "priority": {
+      "name": "High",
+      "id": "2"
+    },
+    "labels": [
+      "F-FY22P1S5"
+    ],
+    "versions": [],
+    "issuelinks": [
+      {
+        "self": "https://projects.cdk.com/rest/api/2/issueLink/1643793",
+        "id": "1643793",
+        "type": {
+          "id": "10900",
+          "name": "Is Program By",
+          "inward": "Is Programed By",
+          "outward": "Programs"
+        },
+        "inwardIssue": {
+          "id": "1263085",
+          "self": "https://projects.cdk.com/rest/api/2/issue/1263085",
+          "key": "PRGM-2",
+          "fields": {
+            "issuetype": {
+              "self": "https://projects.cdk.com/rest/api/2/issuetype/10001",
+              "id": 10001,
+              "name": "Story",
+              "description": "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+              "subtask": false
+            },
+            "priority": {
+              "name": "Medium",
+              "id": "3"
+            },
+            "status": {
+              "self": "https://projects.cdk.com/rest/api/2/status/10200",
+              "description": "",
+              "name": "To Do",
+              "id": "10200",
+              "statusCategory": {
+                "self": "https://projects.cdk.com/rest/api/2/statuscategory/2",
+                "id": "2",
+                "key": "new",
+                "name": "To Do",
+                "colorName": "blue-gray"
+              }
+            },
+            "summary": " MOD:Workflow Simplification - AP, Sales, F&I",
+            "description_text": "",
+            "description_length": 0
+          }
+        }
+      },
+      {
+        "self": "https://projects.cdk.com/rest/api/2/issueLink/1645309",
+        "id": "1645309",
+        "type": {
+          "id": "10500",
+          "name": "ZBB",
+          "inward": "is child of sub-initiative",
+          "outward": "is parent of epic"
+        },
+        "inwardIssue": {
+          "id": "1264473",
+          "self": "https://projects.cdk.com/rest/api/2/issue/1264473",
+          "key": "BUDGETFY22-65",
+          "fields": {
+            "issuetype": {
+              "self": "https://projects.cdk.com/rest/api/2/issuetype/10802",
+              "id": 10802,
+              "name": "CDK Sub-Initiative",
+              "description": "",
+              "subtask": true
+            },
+            "priority": {
+              "name": "Medium",
+              "id": "3"
+            },
+            "status": {
+              "self": "https://projects.cdk.com/rest/api/2/status/10200",
+              "description": "",
+              "name": "To Do",
+              "id": "10200",
+              "statusCategory": {
+                "self": "https://projects.cdk.com/rest/api/2/statuscategory/2",
+                "id": "2",
+                "key": "new",
+                "name": "To Do",
+                "colorName": "blue-gray"
+              }
+            },
+            "summary": "Accounting Modernizations",
+            "description_text": "",
+            "description_length": 0
+          }
+        }
+      }
+    ],
+    "assignee": {
+      "self": "https://projects.cdk.com/rest/api/2/user?username=bragggr",
+      "name": "bragggr",
+      "displayName": "Bragg, Greg",
+      "active": true,
+      "emailAddress": "Greg.Bragg@cdk.com"
+    },
+    "updated": "2021-07-26T18:48:58.000+00:00",
+    "status": {
+      "self": "https://projects.cdk.com/rest/api/2/status/10200",
+      "description": "",
+      "name": "To Do",
+      "id": "10200",
+      "statusCategory": {
+        "self": "https://projects.cdk.com/rest/api/2/statuscategory/2",
+        "id": "2",
+        "key": "new",
+        "name": "To Do",
+        "colorName": "blue-gray"
+      }
+    },
+    "components": [
+      {
+        "self": "https://projects.cdk.com/rest/api/2/component/31506",
+        "id": "31506",
+        "name": "Greg_MODACC",
+        "description": "Track 2 - Team 1 + Backend Modernization"
+      }
+    ],
+    "summary": "Flex-Drive POC - Enhanced Check Writing - Credit Card Remittance ",
+    "creator": {
+      "self": "https://projects.cdk.com/rest/api/2/user?username=bragggr",
+      "name": "bragggr",
+      "displayName": "Bragg, Greg",
+      "active": true,
+      "emailAddress": "Greg.Bragg@cdk.com"
+    },
+    "subtasks": [],
+    "reporter": {
+      "self": "https://projects.cdk.com/rest/api/2/user?username=bragggr",
+      "name": "bragggr",
+      "displayName": "Bragg, Greg",
+      "active": true,
+      "emailAddress": "Greg.Bragg@cdk.com"
+    },
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "votes": 0,
+      "hasVoted": false
+    },
+    "comment": {
+      "comments": []
+    },
+    "description_text": "As an AP Clerk writing checks, I want an option to create and print a credit card remittance form, so that I can properly post and account for payments made by credit card instead of check.",
+    "description_length": 189,
+    "customfield_10605": "<p><b>Cross-Domain Dependencies:</b></p>\r\n\r\n<ul>\r\n\t<li>eForm for Credit Card Remittance</li>\r\n\t<li>Common Services Printing from Flex Workflow to Drive Printers  <ul>\n            <li>foo 123 bar</li>\n            <li>456 bar foo</li>\n        </ul> </li>\r\n\t<li>QA, Performance, and Production ready environments of Flex-Drive POC</li>\r\n</ul><ul>\n            <li>foo abc bar</li>\n            <li>xyz bar foo</li>\n        </ul> \r\n",
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    }
+  }
+}
+]

@@ -1,0 +1,1561 @@
+{
+    "expand": "names,schema",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 1,
+    "issues": [
+        {
+            "expand": "customfield_13265.properties,operations,customfield_13488.properties,versionedRepresentations,editmeta,customfield_11700.requestTypePractice,changelog,renderedFields",
+            "id": "138841",
+            "self": "https://test.atlassian.net/rest/api/3/issue/138841",
+            "key": "SUP-3026",
+            "changelog": {
+                "startAt": 0,
+                "maxResults": 6,
+                "total": 6,
+                "histories": [
+                    {
+                        "id": "1746248",
+                        "author": {
+                            "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Ad7ccd2e6-7a2f-4a25-8942-67f8bed62fb8",
+                            "accountId": "557058:d7ccd2e6-7a2f-4a25-8942-67f8bed62fb8",
+                            "emailAddress": "subhash.arja@test.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d7ccd2e6-7a2f-4a25-8942-67f8bed62fb8/87c71c2d-2cb4-4553-b2f2-b2e2aaa38423/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d7ccd2e6-7a2f-4a25-8942-67f8bed62fb8/87c71c2d-2cb4-4553-b2f2-b2e2aaa38423/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d7ccd2e6-7a2f-4a25-8942-67f8bed62fb8/87c71c2d-2cb4-4553-b2f2-b2e2aaa38423/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d7ccd2e6-7a2f-4a25-8942-67f8bed62fb8/87c71c2d-2cb4-4553-b2f2-b2e2aaa38423/32"
+                            },
+                            "displayName": "Subhash Arja",
+                            "active": true,
+                            "timeZone": "America/Los_Angeles",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2021-08-05T14:27:45.256-0400",
+                        "items": [
+                            {
+                                "field": "Link",
+                                "fieldtype": "jira",
+                                "from": null,
+                                "fromString": null,
+                                "to": "CUST-3358",
+                                "toString": "This issue relates to CUST-3358"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1739739",
+                        "author": {
+                            "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa01b4872-0086-4bc3-903e-23f26637afa2",
+                            "accountId": "557058:a01b4872-0086-4bc3-903e-23f26637afa2",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png",
+                                "24x24": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png",
+                                "16x16": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png",
+                                "32x32": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png"
+                            },
+                            "displayName": "Zendesk Support for Jira",
+                            "active": true,
+                            "timeZone": "America/New_York",
+                            "accountType": "app"
+                        },
+                        "created": "2021-07-30T17:10:20.537-0400",
+                        "items": [
+                            {
+                                "field": "labels",
+                                "fieldtype": "jira",
+                                "fieldId": "labels",
+                                "from": null,
+                                "fromString": "C:allstate jira_bearhug jira_escalated",
+                                "to": null,
+                                "toString": "C:allstate jira_bearhug"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1739717",
+                        "author": {
+                            "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                            "accountId": "5beb1b1557ce5f1164c8e57e",
+                            "emailAddress": "phil.mcgee@test.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                            },
+                            "displayName": "Phil McGee",
+                            "active": true,
+                            "timeZone": "America/New_York",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2021-07-30T16:40:47.877-0400",
+                        "items": [
+                            {
+                                "field": "resolution",
+                                "fieldtype": "jira",
+                                "fieldId": "resolution",
+                                "from": null,
+                                "fromString": null,
+                                "to": "10000",
+                                "toString": "Done"
+                            },
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "3",
+                                "fromString": "In Progress",
+                                "to": "11164",
+                                "toString": "Done: Feature Request"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1739716",
+                        "author": {
+                            "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                            "accountId": "5beb1b1557ce5f1164c8e57e",
+                            "emailAddress": "phil.mcgee@test.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                            },
+                            "displayName": "Phil McGee",
+                            "active": true,
+                            "timeZone": "America/New_York",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2021-07-30T16:40:23.341-0400",
+                        "items": [
+                            {
+                                "field": "assignee",
+                                "fieldtype": "jira",
+                                "fieldId": "assignee",
+                                "from": null,
+                                "fromString": null,
+                                "to": "5beb1b1557ce5f1164c8e57e",
+                                "toString": "Phil McGee",
+                                "tmpFromAccountId": null,
+                                "tmpToAccountId": "5beb1b1557ce5f1164c8e57e"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1739672",
+                        "author": {
+                            "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                            "accountId": "5beb1b1557ce5f1164c8e57e",
+                            "emailAddress": "phil.mcgee@test.com",
+                            "avatarUrls": {
+                                "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                            },
+                            "displayName": "Phil McGee",
+                            "active": true,
+                            "timeZone": "America/New_York",
+                            "accountType": "atlassian"
+                        },
+                        "created": "2021-07-30T16:26:48.080-0400",
+                        "items": [
+                            {
+                                "field": "status",
+                                "fieldtype": "jira",
+                                "fieldId": "status",
+                                "from": "10406",
+                                "fromString": "Backlog",
+                                "to": "3",
+                                "toString": "In Progress"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1739527",
+                        "author": {
+                            "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa01b4872-0086-4bc3-903e-23f26637afa2",
+                            "accountId": "557058:a01b4872-0086-4bc3-903e-23f26637afa2",
+                            "avatarUrls": {
+                                "48x48": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png",
+                                "24x24": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png",
+                                "16x16": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png",
+                                "32x32": "https://secure.gravatar.com/avatar/bc07317d8cbdde0ff466674bb68a9dd7?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FZJ-1.png"
+                            },
+                            "displayName": "Zendesk Support for Jira",
+                            "active": true,
+                            "timeZone": "America/New_York",
+                            "accountType": "app"
+                        },
+                        "created": "2021-07-30T14:47:44.287-0400",
+                        "items": [
+                            {
+                                "field": "labels",
+                                "fieldtype": "jira",
+                                "fieldId": "labels",
+                                "from": null,
+                                "fromString": "C:allstate",
+                                "to": null,
+                                "toString": "C:allstate jira_bearhug jira_escalated"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "fields": {
+                "customfield_13460": null,
+                "customfield_13221": null,
+                "customfield_13342": null,
+                "customfield_13220": null,
+                "customfield_13462": null,
+                "customfield_13223": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11314",
+                    "value": "Product",
+                    "id": "11314"
+                },
+                "customfield_13344": null,
+                "customfield_13225": null,
+                "customfield_13346": null,
+                "customfield_13467": null,
+                "resolution": {
+                    "self": "https://test.atlassian.net/rest/api/3/resolution/10000",
+                    "id": "10000",
+                    "description": "The ticket has been completed. Any remaining work, if any, will be represented in a subsequent ticket.",
+                    "name": "Done"
+                },
+                "customfield_13466": null,
+                "customfield_13224": null,
+                "customfield_13345": null,
+                "customfield_12800": null,
+                "customfield_13339": null,
+                "customfield_13217": null,
+                "customfield_12801": null,
+                "customfield_12803": null,
+                "lastViewed": null,
+                "customfield_13450": null,
+                "customfield_13210": null,
+                "customfield_12000": null,
+                "customfield_13452": null,
+                "customfield_13451": null,
+                "customfield_13212": null,
+                "customfield_13211": null,
+                "customfield_13453": null,
+                "customfield_13214": null,
+                "customfield_13455": null,
+                "customfield_13213": null,
+                "customfield_13458": null,
+                "labels": [
+                    "C:allstate",
+                    "jira_bearhug"
+                ],
+                "customfield_13457": null,
+                "customfield_13207": null,
+                "customfield_13449": null,
+                "customfield_11700": null,
+                "customfield_13448": null,
+                "customfield_13206": null,
+                "customfield_11702": null,
+                "customfield_13209": null,
+                "customfield_13208": null,
+                "customfield_11701": [],
+                "aggregatetimeoriginalestimate": null,
+                "issuelinks": [
+                    {
+                        "id": "145137",
+                        "self": "https://test.atlassian.net/rest/api/3/issueLink/145137",
+                        "type": {
+                            "id": "10003",
+                            "name": "Relates",
+                            "inward": "relates to",
+                            "outward": "relates to",
+                            "self": "https://test.atlassian.net/rest/api/3/issueLinkType/10003"
+                        },
+                        "outwardIssue": {
+                            "id": "138863",
+                            "key": "CUST-3358",
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138863",
+                            "fields": {
+                                "summary": "Provide Mechanism to Limit Tracked Object's ToString Output For Captured Dataflow",
+                                "status": {
+                                    "self": "https://test.atlassian.net/rest/api/3/status/11179",
+                                    "description": "PROD ticket created and scheduled on roadmap. At this point all updates for this CUST ticket will be in the corresponding PROD ticket. The CUST ticket should also be linked to a PROD ticket.",
+                                    "iconUrl": "https://test.atlassian.net/images/icons/statuses/generic.png",
+                                    "name": "Feature Confirmed",
+                                    "id": "11179",
+                                    "statusCategory": {
+                                        "self": "https://test.atlassian.net/rest/api/3/statuscategory/2",
+                                        "id": 2,
+                                        "key": "new",
+                                        "colorName": "blue-gray",
+                                        "name": "To Do"
+                                    }
+                                },
+                                "priority": {
+                                    "self": "https://test.atlassian.net/rest/api/3/priority/3",
+                                    "iconUrl": "https://test.atlassian.net/images/icons/priorities/critical.svg",
+                                    "name": "Major",
+                                    "id": "3"
+                                },
+                                "issuetype": {
+                                    "self": "https://test.atlassian.net/rest/api/3/issuetype/10825",
+                                    "id": "10825",
+                                    "description": "For CUST",
+                                    "iconUrl": "https://test.atlassian.net/secure/viewavatar?size=medium&avatarId=11100&avatarType=issuetype",
+                                    "name": "Request",
+                                    "subtask": false,
+                                    "avatarId": 11100,
+                                    "hierarchyLevel": 0
+                                }
+                            }
+                        }
+                    }
+                ],
+                "assignee": {
+                    "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                    "accountId": "5beb1b1557ce5f1164c8e57e",
+                    "emailAddress": "phil.mcgee@test.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                        "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                        "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                        "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                    },
+                    "displayName": "Phil McGee",
+                    "active": true,
+                    "timeZone": "America/New_York",
+                    "accountType": "atlassian"
+                },
+                "components": [
+                    {
+                        "self": "https://test.atlassian.net/rest/api/3/component/17789",
+                        "id": "17789",
+                        "name": "Java"
+                    }
+                ],
+                "customfield_13440": null,
+                "customfield_13201": null,
+                "customfield_13443": null,
+                "customfield_13203": null,
+                "customfield_13445": null,
+                "customfield_13444": null,
+                "customfield_13202": null,
+                "customfield_13205": null,
+                "customfield_13447": null,
+                "customfield_13204": null,
+                "customfield_13446": null,
+                "customfield_13438": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11948",
+                    "value": "No",
+                    "id": "11948"
+                },
+                "customfield_12900": null,
+                "customfield_13439": null,
+                "subtasks": [],
+                "customfield_13430": null,
+                "customfield_13550": null,
+                "reporter": {
+                    "self": "https://test.atlassian.net/rest/api/3/user?accountId=5b633fa0e41fea2ca1cd395d",
+                    "accountId": "5b633fa0e41fea2ca1cd395d",
+                    "emailAddress": "matthias.reimann@test.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/48",
+                        "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/24",
+                        "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/16",
+                        "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/32"
+                    },
+                    "displayName": "Matthias Reimann",
+                    "active": true,
+                    "timeZone": "America/Los_Angeles",
+                    "accountType": "atlassian"
+                },
+                "customfield_13431": null,
+                "customfield_13434": null,
+                "customfield_13312": null,
+                "customfield_13433": null,
+                "customfield_13436": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11931",
+                    "value": "5:00 PM",
+                    "id": "11931"
+                },
+                "customfield_13315": null,
+                "customfield_13314": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11554",
+                    "value": "Jira",
+                    "id": "11554"
+                },
+                "customfield_13548": null,
+                "customfield_13427": null,
+                "customfield_13547": null,
+                "customfield_10711": null,
+                "customfield_11801": null,
+                "customfield_13429": null,
+                "customfield_13428": null,
+                "customfield_13549": null,
+                "progress": {
+                    "progress": 0,
+                    "total": 0
+                },
+                "votes": {
+                    "self": "https://test.atlassian.net/rest/api/3/issue/SUP-3026/votes",
+                    "votes": 0,
+                    "hasVoted": false
+                },
+                "worklog": {
+                    "startAt": 0,
+                    "maxResults": 20,
+                    "total": 0,
+                    "worklogs": []
+                },
+                "issuetype": {
+                    "self": "https://test.atlassian.net/rest/api/3/issuetype/10400",
+                    "id": "10400",
+                    "description": "Research task to assess feasibility prior to design.",
+                    "iconUrl": "https://test.atlassian.net/secure/viewavatar?size=medium&avatarId=15202&avatarType=issuetype",
+                    "name": "Investigation",
+                    "subtask": false,
+                    "avatarId": 15202,
+                    "hierarchyLevel": 0
+                },
+                "project": {
+                    "self": "https://test.atlassian.net/rest/api/3/project/11928",
+                    "id": "11928",
+                    "key": "SUP",
+                    "name": "Support",
+                    "projectTypeKey": "software",
+                    "simplified": false,
+                    "avatarUrls": {
+                        "48x48": "https://test.atlassian.net/secure/projectavatar?pid=11928&avatarId=15439",
+                        "24x24": "https://test.atlassian.net/secure/projectavatar?size=small&s=small&pid=11928&avatarId=15439",
+                        "16x16": "https://test.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=11928&avatarId=15439",
+                        "32x32": "https://test.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=11928&avatarId=15439"
+                    }
+                },
+                "customfield_13300": null,
+                "customfield_11000": "0|i0hgxp:",
+                "customfield_13302": null,
+                "customfield_13546": null,
+                "customfield_13416": null,
+                "customfield_13415": null,
+                "customfield_13539": null,
+                "customfield_10701": null,
+                "customfield_13417": null,
+                "customfield_10703": null,
+                "resolutiondate": "2021-07-30T16:40:47.811-0400",
+                "customfield_10704": null,
+                "watches": {
+                    "self": "https://test.atlassian.net/rest/api/3/issue/SUP-3026/watchers",
+                    "watchCount": 3,
+                    "isWatching": false
+                },
+                "customfield_12200": {
+                    "hasEpicLinkFieldDependency": false,
+                    "showField": false,
+                    "nonEditableReason": {
+                        "reason": "EPIC_LINK_SHOULD_BE_USED",
+                        "message": "To set an epic as the parent, use the epic link instead"
+                    }
+                },
+                "customfield_13414": null,
+                "customfield_13413": null,
+                "customfield_13405": null,
+                "customfield_13525": null,
+                "updated": "2021-08-05T14:27:45.248-0400",
+                "timeoriginalestimate": null,
+                "description": {
+                    "version": 1,
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Allstate is complaining about “some memory thrash/GC issues [they] suspect is a result of test calling toString on OpenAPI Generator generated POJO classes” as “OpenAPI Generator produces extremely verbose (and poorly implemented) toString that pretty prints the object”. "
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "They are asking:"
+                                },
+                                {
+                                    "type": "hardBreak"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "[1] Why does test invoke toString on the POJO for REST calls (in most cases this isn’t going capture the payload but rather the class name)"
+                                },
+                                {
+                                    "type": "hardBreak"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "[2] They are considering shipping a custom template to remove the custom/generated toString but that’s going to require updates for dozens of teams."
+                                },
+                                {
+                                    "type": "hardBreak"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "[3] Is this something that could be disabled or tuned?"
+                                },
+                                {
+                                    "type": "hardBreak"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "Proposed a DENYLIST with class com.allstate.productsolutions.contract.services.client.model.AgreementChangeType.toString() but they \"would prefer not to have to(...) limit test’s ability to identify issues, and likely lead to false negative vulnerabilities\""
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Log Excerpt provided:"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "codeBlock",
+                            "attrs": {
+                                "language": "java"
+                            },
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "11:34\r\nat java.lang.StringBuffer.toString()Ljava/lang/String; (StringBuffer.java:669)\r\n  at java.util.regex.Matcher.appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher; (Unknown Source)\r\n  at java.util.regex.Matcher.replaceAll(Ljava/lang/String;)Ljava/lang/String; (Matcher.java:955)\r\n  at java.lang.String.replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String; (String.java:2240)\r\n  at com.allstate.productsolutions.contract.services.client.model.AgreementChangeType.toIndentedString(Ljava/lang/Object;)Ljava/lang/String; (AgreementChangeType.java:459)\r\n  at com.allstate.productsolutions.contract.services.client.model.AgreementChangeType.toString()Ljava/lang/String; (AgreementChangeType.java:445)\r\n  at com.allstate.productsolutions.contract.services.client.model.OfferSummaryResponsePayloadType.toIndentedString(Ljava/lang/Object;)Ljava/lang/String; (OfferSummaryResponsePayloadType.java:76)\r\n  at com.allstate.productsolutions.contract.services.client.model.OfferSummaryResponsePayloadType.toString()Ljava/lang/String; (OfferSummaryResponsePayloadType.java:63)\r\n  at com.test.agent.trace.snapshot.h.snapshotAndTruncate(Ljava/lang/Object;)[C (DefaultObjectSnapshotFactory.java:41)\r\n  at com.test.agent.trace.snapshot.h.snapshotAndTruncate(Ljava/lang/Object;Lcom/test/agent/trace/TagRanges;)Lcom/test/agent/trace/snapshot/DataSnapshot; (DefaultObjectSnapshotFactory.java:54)\r\n  at com.test.agent.trace.snapshot.ObjectSnapshotFactory.snapshotAndTruncate(Ljava/lang/Object;Lcom/test/agent/trace/TagRanges;)Lcom/test/agent/trace/snapshot/DataSnapshot; (ObjectSnapshotFactory.java:237)\r\n  at com.test.agent.plugins.security.model.b.d(Ljava/lang/Object;)Lcom/test/agent/plugins/security/model/b; (DataFlowEventBuilder.java:95)\r\n  at com.test.agent.plugins.security.model.PropagationEvent$a.d(Ljava/lang/Object;)Lcom/test/agent/plugins/security/model/b; (PropagationEvent.java:264)\r\n  at com.test.agent.plugins.security.controller.propagate.d.a(Lcom/test/agent/plugins/security/model/d;Lcom/test/agent/trace/TagRanges;)Lcom/test/agent/plugins/security/model/PropagationEvent; (PropagationMachine.java:327)\r\n  at com.test.agent.plugins.security.controller.propagate.d.a(Ljava/lang/Object;Ljava/lang/Object;Lcom/test/agent/plugins/security/model/d;Ljava/util/Map;Lcom/test/agent/plugins/security/policy/propagators/Propagator$Command;ZZ)V (PropagationMachine.java:272)\r\n  at com.test.agent.plugins.security.controller.propagate.d.a(Ljava/lang/Object;Ljava/lang/Object;Lcom/test/agent/plugins/security/model/d;ZLjava/util/Map;Lcom/test/agent/plugins/security/policy/propagators/Propagator$Command;Z)V (PropagationMachine.java:145)\r\n  at com.test.agent.plugins.security.controller.propagate.d.a(Ljava/lang/Object;Ljava/lang/Object;Lcom/test/agent/plugins/security/model/d;ZLjava/util/Map;Z)V (PropagationMachine.java:86)\r\n  at com.test.agent.plugins.security.controller.propagate.testDataFlowPropagationDispatcherImpl.a(Lcom/test/agent/plugins/security/model/d;)V (testDataFlowPropagationDispatcherImpl.java:458)\r\n  at com.test.agent.plugins.security.controller.propagate.testDataFlowPropagationDispatcherImpl.a(Lcom/test/agent/plugins/security/policy/propagators/Propagator;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Class;[Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;IZZ[I)V (testDataFlowPropagationDispatcherImpl.java:216)\r\n  at com.test.agent.plugins.security.controller.propagate.testDataFlowPropagationDispatcherImpl.onPropagation(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Class;[Ljava/lang/Object;[Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;IZZ[I)V (testDataFlowPropagationDispatcherImpl.java:137)\r\n  at com.fasterxml.jackson.databind.ObjectMapper.readValue(Ljava/io/InputStream;Lcom/fasterxml/jackson/databind/JavaType;)Ljava/lang/Object; (ObjectMapper.java:3521)\r\n  at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(Lcom/fasterxml/jackson/databind/JavaType;Lorg/springframework/http/HttpInputMessage;)Ljava/lang/Object; (AbstractJackson2HttpMessageConverter.java:274)"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Note: Only the above log excerpt has been provided. Please let me know if we do need more."
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": "Based on discussion at "
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "https://testinc.slack.com/archives/CFB0K1MTJ/p1627411248352700,",
+                                    "marks": [
+                                        {
+                                            "type": "link",
+                                            "attrs": {
+                                                "href": "https://testinc.slack.com/archives/CFB0K1MTJ/p1627411248352700,"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": " this may be a SUP or a CUST. Starting with the SUP "
+                                },
+                                {
+                                    "type": "emoji",
+                                    "attrs": {
+                                        "shortName": ":slight_smile:",
+                                        "id": "1f642",
+                                        "text": "\uD83D\uDE42"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "customfield_13400": null,
+                "timetracking": {},
+                "customfield_13191": null,
+                "summary": "Memory Issues With Custom toString Class",
+                "customfield_10000": null,
+                "customfield_12300": "{}",
+                "environment": null,
+                "duedate": null,
+                "comment": {
+                    "comments": [
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221519",
+                            "id": "221519",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "accountId": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "emailAddress": "tracy.callender@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png"
+                                },
+                                "displayName": "Tracy Callender",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5b633fa0e41fea2ca1cd395d",
+                                                    "text": "Matthias Reimann",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " we need to get this assigned and attn. can you please stress that in any Engr. calls this will heat up and I have a call on Wed. afternoon and I need someone assigned and working on this before then. "
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "accountId": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "emailAddress": "tracy.callender@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png"
+                                },
+                                "displayName": "Tracy Callender",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T14:51:36.378-0400",
+                            "updated": "2021-07-30T14:51:36.378-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221544",
+                            "id": "221544",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "accountId": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "emailAddress": "tracy.callender@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png"
+                                },
+                                "displayName": "Tracy Callender",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5beb1b1557ce5f1164c8e57e",
+                                                    "text": "Phil McGee",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " Oh Phil, thank you for grabbing this!! Allstate will be so appreciative!!! You’re the best!"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "accountId": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "emailAddress": "tracy.callender@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png"
+                                },
+                                "displayName": "Tracy Callender",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T16:38:13.960-0400",
+                            "updated": "2021-07-30T16:38:13.960-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221545",
+                            "id": "221545",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                                "accountId": "5beb1b1557ce5f1164c8e57e",
+                                "emailAddress": "phil.mcgee@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                                },
+                                "displayName": "Phil McGee",
+                                "active": true,
+                                "timeZone": "America/New_York",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "What is happening is that the POJO (instance of com.allstate.productsolutions.contract.services.client.model.AgreementChangeType) is created from the tracked object of type "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "org.springframework.http.HttpInputMessage",
+                                                "marks": [
+                                                    {
+                                                        "type": "code"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " and as a result a PropagationEvent is created.  When a PropagationEvent (or almost any other data flow event) is created the event records as strings the objects involved in invoking the tracked method.  The string representations are created by the method  "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "ObjectSnapshotFactory.snapshotAndTruncate()",
+                                                "marks": [
+                                                    {
+                                                        "type": "code"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " .  These strings are the values reported by TeamServer in the vulnerability reports."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "ObjectSnapshotFactory.snapshotAndTruncate()",
+                                                "marks": [
+                                                    {
+                                                        "type": "code"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " does truncate long object snapshot strings to reduce their memory footprint and communication message size, but it typically starts by calling the object's toString() method and this is the origin of the objectionable call.  "
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "The captured data flow events require a string representations of the objects involved in tracked method call, so there is no way to disable this functionality.  In principal, it would be possible to use a more limited String representation (like object class name along with object identity hash code) for some objects, but the agent currently does not provide the ability to configure such a behavior."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "I’m going to close this as a feature request.  I think it is a feature that could be of benefit to a lot of customers that deal with transmitting large serialized object structures and are interested in reducing their impact on Assess memory usage."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": []
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "cc "
+                                            },
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5de7c47e7095a40d1253cbb6",
+                                                    "text": "Mike Walters",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "603c2ea51c44230072dbfd54",
+                                                    "text": "Asma Zubair",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                                "accountId": "5beb1b1557ce5f1164c8e57e",
+                                "emailAddress": "phil.mcgee@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                                },
+                                "displayName": "Phil McGee",
+                                "active": true,
+                                "timeZone": "America/New_York",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T16:40:12.554-0400",
+                            "updated": "2021-07-30T16:40:12.554-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221547",
+                            "id": "221547",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                                "accountId": "5beb1b1557ce5f1164c8e57e",
+                                "emailAddress": "phil.mcgee@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                                },
+                                "displayName": "Phil McGee",
+                                "active": true,
+                                "timeZone": "America/New_York",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                                    "text": "Tracy Callender",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " I wish I had better news for them.  I think adding a configuration to avoid converting large object structures to strings just to get a shortened reporting value would be a boost to agent performance, but we currently don’t have such a thing."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "Sorry."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                                "accountId": "5beb1b1557ce5f1164c8e57e",
+                                "emailAddress": "phil.mcgee@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                                },
+                                "displayName": "Phil McGee",
+                                "active": true,
+                                "timeZone": "America/New_York",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T16:45:10.724-0400",
+                            "updated": "2021-07-30T16:45:10.724-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221551",
+                            "id": "221551",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "accountId": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "emailAddress": "tracy.callender@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png"
+                                },
+                                "displayName": "Tracy Callender",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5beb1b1557ce5f1164c8e57e",
+                                                    "text": "Phil McGee",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " this so sucks. Do you create enhancement or does Matthias or me? Thanks BTW!"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3Aa4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "accountId": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                "emailAddress": "tracy.callender@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "24x24": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "16x16": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png",
+                                    "32x32": "https://secure.gravatar.com/avatar/00473f1e4668b87c86af377ff4e92fa0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FTC-6.png"
+                                },
+                                "displayName": "Tracy Callender",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T17:02:57.441-0400",
+                            "updated": "2021-07-30T17:02:57.441-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221559",
+                            "id": "221559",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5b633fa0e41fea2ca1cd395d",
+                                "accountId": "5b633fa0e41fea2ca1cd395d",
+                                "emailAddress": "matthias.reimann@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/32"
+                                },
+                                "displayName": "Matthias Reimann",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                                    "text": "Tracy Callender",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5beb1b1557ce5f1164c8e57e",
+                                                    "text": "Phil McGee",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "inlineCard",
+                                                "attrs": {
+                                                    "url": "https://test.atlassian.net/browse/CUST-3358"
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5b633fa0e41fea2ca1cd395d",
+                                "accountId": "5b633fa0e41fea2ca1cd395d",
+                                "emailAddress": "matthias.reimann@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/32"
+                                },
+                                "displayName": "Matthias Reimann",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T17:23:24.768-0400",
+                            "updated": "2021-07-30T17:23:24.768-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221560",
+                            "id": "221560",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                                "accountId": "5beb1b1557ce5f1164c8e57e",
+                                "emailAddress": "phil.mcgee@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                                },
+                                "displayName": "Phil McGee",
+                                "active": true,
+                                "timeZone": "America/New_York",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                                    "text": "Tracy Callender",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " I don’t have a clear picture of the whole feature request process.  My role as the Java agent engineer on support is to review the SUP ticket and associated data to determine if it describes a bug in existing agent functionality, or if the issue can be addressed by configuration, of if addressing the issue requires adding new functionality to the agent (as in this case)."
+                                            },
+                                            {
+                                                "type": "hardBreak"
+                                            },
+                                            {
+                                                "type": "hardBreak"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "What happens after that is a mystery to me, though I think eventually the request may require approval and prioritization by "
+                                            },
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "603c2ea51c44230072dbfd54",
+                                                    "text": "Asma Zubair",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " because of her role in product management.  If it passes that hurdle, I may see it again as work assigned to a Java agent developer group."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": []
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5b633fa0e41fea2ca1cd395d",
+                                                    "text": "Matthias Reimann",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " Can you shed any light on what happens with a SUP ticket determined to be a feature request?"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5beb1b1557ce5f1164c8e57e",
+                                "accountId": "5beb1b1557ce5f1164c8e57e",
+                                "emailAddress": "phil.mcgee@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5beb1b1557ce5f1164c8e57e/260cbf43-4a01-4813-9fba-a96a72814cc6/32"
+                                },
+                                "displayName": "Phil McGee",
+                                "active": true,
+                                "timeZone": "America/New_York",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T17:30:42.089-0400",
+                            "updated": "2021-07-30T17:30:42.089-0400",
+                            "jsdPublic": true
+                        },
+                        {
+                            "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment/221561",
+                            "id": "221561",
+                            "author": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5b633fa0e41fea2ca1cd395d",
+                                "accountId": "5b633fa0e41fea2ca1cd395d",
+                                "emailAddress": "matthias.reimann@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/32"
+                                },
+                                "displayName": "Matthias Reimann",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "body": {
+                                "version": 1,
+                                "type": "doc",
+                                "content": [
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "557058:a4085ef1-0b92-4de4-bc9f-fa1266f46dbf",
+                                                    "text": "Tracy Callender",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            },
+                                            {
+                                                "type": "mention",
+                                                "attrs": {
+                                                    "id": "5beb1b1557ce5f1164c8e57e",
+                                                    "text": "Phil McGee",
+                                                    "accessLevel": ""
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " If a SUP is marked ‘Done’, the associated support ticket gets updated with"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "blockquote",
+                                        "content": [
+                                            {
+                                                "type": "paragraph",
+                                                "content": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "The linked investigation ticket has been marked as Done! Please check it's status and follow the relevant steps below:"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "paragraph",
+                                                "content": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "If it's \"Done: Bug Confirmed\" please unlink the SUP ticket and then link the corresponding test ticket."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "paragraph",
+                                                "content": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "If it's \"Done: Feature Request\" please file a CUST ticket accordingly, unlink the SUP ticket and then link the new CUST ticket."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "paragraph",
+                                                "content": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "If it's \"Done: Functioning as Designed\" please follow up with the customer or obtain further info from Engineering or Product as required."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "(Thanks to Simon’s super amazing Zendesk automation) "
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "content": [
+                                            {
+                                                "type": "text",
+                                                "text": "I did create the enhancement request: "
+                                            },
+                                            {
+                                                "type": "inlineCard",
+                                                "attrs": {
+                                                    "url": "https://test.atlassian.net/browse/CUST-3358"
+                                                }
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " "
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "updateAuthor": {
+                                "self": "https://test.atlassian.net/rest/api/3/user?accountId=5b633fa0e41fea2ca1cd395d",
+                                "accountId": "5b633fa0e41fea2ca1cd395d",
+                                "emailAddress": "matthias.reimann@test.com",
+                                "avatarUrls": {
+                                    "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/48",
+                                    "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/24",
+                                    "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/16",
+                                    "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/32"
+                                },
+                                "displayName": "Matthias Reimann",
+                                "active": true,
+                                "timeZone": "America/Los_Angeles",
+                                "accountType": "atlassian"
+                            },
+                            "created": "2021-07-30T17:58:13.161-0400",
+                            "updated": "2021-07-30T17:58:13.161-0400",
+                            "jsdPublic": true
+                        }
+                    ],
+                    "self": "https://test.atlassian.net/rest/api/3/issue/138841/comment",
+                    "maxResults": 8,
+                    "total": 8,
+                    "startAt": 0
+                },
+                "statuscategorychangedate": "2021-07-30T16:40:47.849-0400",
+                "fixVersions": [],
+                "customfield_13290": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11414",
+                    "value": "California",
+                    "id": "11414"
+                },
+                "customfield_13292": null,
+                "customfield_13291": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11459",
+                    "value": "Employee",
+                    "id": "11459"
+                },
+                "customfield_13294": null,
+                "customfield_13293": null,
+                "customfield_13296": [
+                    {
+                        "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11475",
+                        "value": "Engineering-level Knowledge Required",
+                        "id": "11475"
+                    }
+                ],
+                "customfield_13295": null,
+                "priority": {
+                    "self": "https://test.atlassian.net/rest/api/3/priority/4",
+                    "iconUrl": "https://image.flaticon.com/icons/svg/54/54110.svg",
+                    "name": "Standard",
+                    "id": "4"
+                },
+                "customfield_12400": null,
+                "timeestimate": null,
+                "versions": [],
+                "status": {
+                    "self": "https://test.atlassian.net/rest/api/3/status/11164",
+                    "description": "Investigation work done, no defect, CUST ticket should be opened.",
+                    "iconUrl": "https://test.atlassian.net/images/icons/statuses/generic.png",
+                    "name": "Done: Feature Request",
+                    "id": "11164",
+                    "statusCategory": {
+                        "self": "https://test.atlassian.net/rest/api/3/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                },
+                "customfield_13289": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11395",
+                    "value": "US (United States)",
+                    "id": "11395"
+                },
+                "customfield_13288": null,
+                "customfield_12510": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/10733",
+                    "value": "New Hire",
+                    "id": "10733"
+                },
+                "customfield_12505": null,
+                "aggregatetimeestimate": null,
+                "customfield_12508": null,
+                "creator": {
+                    "self": "https://test.atlassian.net/rest/api/3/user?accountId=5b633fa0e41fea2ca1cd395d",
+                    "accountId": "5b633fa0e41fea2ca1cd395d",
+                    "emailAddress": "matthias.reimann@test.com",
+                    "avatarUrls": {
+                        "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/48",
+                        "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/24",
+                        "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/16",
+                        "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5b633fa0e41fea2ca1cd395d/6c16478b-ad59-4ac5-b3da-12f1c5ea27b7/32"
+                    },
+                    "displayName": "Matthias Reimann",
+                    "active": true,
+                    "timeZone": "America/Los_Angeles",
+                    "accountType": "atlassian"
+                },
+                "customfield_13391": null,
+                "customfield_13390": null,
+                "customfield_13393": null,
+                "customfield_13392": null,
+                "customfield_13150": null,
+                "customfield_13397": null,
+                "customfield_13399": null,
+                "customfield_13157": null,
+                "aggregateprogress": {
+                    "progress": 0,
+                    "total": 0
+                },
+                "customfield_13398": null,
+                "customfield_13156": null,
+                "customfield_13158": null,
+                "customfield_13382": null,
+                "customfield_13261": null,
+                "customfield_13381": null,
+                "customfield_13142": null,
+                "timespent": null,
+                "customfield_13263": null,
+                "customfield_13262": null,
+                "customfield_13141": null,
+                "customfield_13383": null,
+                "customfield_13265": null,
+                "customfield_13386": null,
+                "customfield_13143": null,
+                "customfield_13385": null,
+                "customfield_13264": [
+                    {
+                        "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11384",
+                        "value": "Assess",
+                        "id": "11384"
+                    }
+                ],
+                "customfield_13387": null,
+                "aggregatetimespent": null,
+                "customfield_13148": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11148",
+                    "value": "No",
+                    "id": "11148"
+                },
+                "customfield_13389": null,
+                "customfield_13149": null,
+                "customfield_12602": null,
+                "customfield_12601": null,
+                "workratio": -1,
+                "issuerestriction": {
+                    "issuerestrictions": {},
+                    "shouldDisplay": false
+                },
+                "customfield_13490": null,
+                "customfield_13492": null,
+                "customfield_13250": null,
+                "customfield_13491": null,
+                "customfield_13373": null,
+                "created": "2021-07-30T14:45:28.828-0400",
+                "customfield_13494": null,
+                "customfield_13251": null,
+                "customfield_13375": null,
+                "customfield_13374": null,
+                "customfield_13255": null,
+                "customfield_13376": null,
+                "customfield_13258": null,
+                "customfield_13379": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11706",
+                    "value": "Umbrella",
+                    "id": "11706",
+                    "child": {
+                        "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11721",
+                        "value": "Cloud Native",
+                        "id": "11721"
+                    }
+                },
+                "customfield_13257": null,
+                "customfield_13378": null,
+                "customfield_12600": null,
+                "customfield_13259": null,
+                "customfield_10301": null,
+                "customfield_13360": null,
+                "customfield_13481": null,
+                "customfield_13480": null,
+                "customfield_13362": "2021-07-30T14:51:36.378-0400",
+                "customfield_13120": null,
+                "customfield_13483": null,
+                "customfield_13240": null,
+                "customfield_13361": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11590",
+                    "value": "Voluntary",
+                    "id": "11590"
+                },
+                "customfield_13122": null,
+                "customfield_13243": null,
+                "customfield_13001": null,
+                "customfield_13363": "10406_*:*_1_*:*_6079252_*|*_3_*:*_1_*:*_839797_*|*_11164_*:*_1_*:*_0",
+                "customfield_13121": null,
+                "customfield_13000": null,
+                "customfield_13003": null,
+                "customfield_13245": null,
+                "customfield_13366": {
+                    "self": "https://test.atlassian.net/rest/api/3/customFieldOption/11608",
+                    "value": "No",
+                    "id": "11608"
+                },
+                "customfield_13487": null,
+                "customfield_13124": null,
+                "customfield_13002": null,
+                "customfield_13486": null,
+                "customfield_13365": null,
+                "customfield_13005": null,
+                "customfield_13247": null,
+                "customfield_13489": null,
+                "customfield_13368": null,
+                "customfield_13367": {
+                    "self": "https://test.atlassian.net/rest/api/3/user?accountId=557058%3A72f10d2f-20d1-41c9-a9c4-533e8e444fb5",
+                    "accountId": "557058:72f10d2f-20d1-41c9-a9c4-533e8e444fb5",
+                    "emailAddress": "wendith@test.com",
+                    "avatarUrls": {
+                        "48x48": "https://secure.gravatar.com/avatar/9beb7dc71eba1b537b6b0ac3dc94ca31?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FWC-3.png",
+                        "24x24": "https://secure.gravatar.com/avatar/9beb7dc71eba1b537b6b0ac3dc94ca31?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FWC-3.png",
+                        "16x16": "https://secure.gravatar.com/avatar/9beb7dc71eba1b537b6b0ac3dc94ca31?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FWC-3.png",
+                        "32x32": "https://secure.gravatar.com/avatar/9beb7dc71eba1b537b6b0ac3dc94ca31?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FWC-3.png"
+                    },
+                    "displayName": "Wendith Chastain",
+                    "active": true,
+                    "timeZone": "America/Los_Angeles",
+                    "accountType": "atlassian"
+                },
+                "customfield_13246": null,
+                "customfield_13488": null,
+                "customfield_13004": null,
+                "customfield_13249": null,
+                "customfield_13369": null,
+                "customfield_13006": null,
+                "customfield_13248": null,
+                "customfield_13119": null,
+                "customfield_12701": null,
+                "customfield_13239": null,
+                "customfield_12700": null,
+                "customfield_13118": null,
+                "security": null,
+                "customfield_12703": null,
+                "customfield_12702": null,
+                "attachment": [],
+                "customfield_13470": null,
+                "customfield_13353": null,
+                "customfield_13473": null,
+                "customfield_13231": null,
+                "customfield_13355": null,
+                "customfield_13354": null,
+                "customfield_13236": null,
+                "customfield_13478": null,
+                "customfield_13357": null,
+                "customfield_13477": null,
+                "customfield_13356": null,
+                "customfield_13359": null,
+                "customfield_13116": null,
+                "customfield_10400": null,
+                "customfield_13479": null,
+                "customfield_13358": null
+            }
+        }
+    ]
+}

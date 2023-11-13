@@ -1,0 +1,581 @@
+[
+  {
+    "type": "list_jira_issues",
+    "node_handler": "list_ingestion_data",
+    "hidden": true,
+    "name": "List Jira Issues",
+    "description": "List Jira Issues",
+    "category": "Jira",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": false
+      },
+      "product_id": {
+        "key": "product_id",
+        "index": 20,
+        "display_name": "Project",
+        "description": "If selected, targets all integrations associated with that project",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "products",
+        "required": false
+      },
+      "integration_type": {
+        "key": "integration_type",
+        "index": 30,
+        "display_name": "Integration Type",
+        "type": "text",
+        "options": [],
+        "required": true,
+        "hidden": true,
+        "default_value": "jira"
+      },
+      "integration_data_type": {
+        "key": "integration_data_type",
+        "index": 40,
+        "display_name": "Data Type",
+        "description": "Choose which type of data offered by the selected integration",
+        "type": "text",
+        "options": [],
+        "required": true,
+        "hidden": true,
+        "default_value": "issues"
+      },
+      "lql": {
+        "key": "lql",
+        "index": 50,
+        "display_name": "Query",
+        "description": "Use the Query Language to filter the data",
+        "type": "text",
+        "options": [],
+        "required": false
+      }
+    },
+    "output": {
+      "list": {
+        "key": "list",
+        "content_type": "integration/jira/issues",
+        "value_type": "json_array"
+      }
+    },
+    "ui_data": {
+      "icon": "jira"
+    }
+  },
+  {
+    "type": "create_jira_issue",
+    "node_handler": "create_jira_issue",
+    "name": "Create Jira Issue",
+    "description": "Create an issue in Jira",
+    "category": "Jira",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "summary": {
+        "key": "summary",
+        "index": 20,
+        "display_name": "Summary",
+        "type": "text",
+        "required": true
+      },
+      "description": {
+        "key": "description",
+        "index": 30,
+        "display_name": "Description",
+        "type": "text-area",
+        "required": false
+      },
+      "project_key": {
+        "key": "project_key",
+        "index": 40,
+        "display_name": "Jira Project Key",
+        "type": "text",
+        "required": true
+      },
+      "issue_type_name": {
+        "key": "issue_type_name",
+        "index": 50,
+        "display_name": "Issue Type",
+        "description": "Type of the issue in Jira (e.g. \"Task\", case insensitive, but must exist in the chosen project).",
+        "type": "text",
+        "required": true
+      },
+      "assignee_search_string": {
+        "key": "assignee_search_string",
+        "index": 60,
+        "display_name": "Assignee",
+        "description": "Find Jira user by name (Jira Cloud), or name and email (Jira Server)",
+        "type": "text",
+        "required": false
+      },
+      "labels": {
+        "key": "labels",
+        "index": 70,
+        "display_name": "Labels",
+        "description": "Comma-separated list of labels",
+        "type": "text",
+        "required": false
+      },
+      "component_names": {
+        "key": "component_names",
+        "index": 80,
+        "display_name": "Components",
+        "description": "Comma-separated list of components",
+        "type": "text",
+        "required": false
+      },
+      "versions": {
+        "key": "versions",
+        "index": 90,
+        "display_name": "Affects Versions",
+        "description": "Comma-separated list of versions",
+        "type": "text",
+        "required": false
+      },
+      "fix_versions": {
+        "key": "fix_versions",
+        "index": 100,
+        "display_name": "Fix Versions",
+        "description": "Comma-separated list of fix versions",
+        "type": "text",
+        "required": false
+      },
+      "custom_fields": {
+        "key": "custom_fields",
+        "index": 110,
+        "display_name": "Custom Fields",
+        "type": "custom-fields",
+        "use_input_fields": {
+          "integration_id": "integration_id"
+        },
+        "required": false
+      },
+      "priority": {
+        "key": "priority",
+        "index": 120,
+        "display_name": "Priority",
+        "description": "Set the priority of the issue. The name of the priority is case sensitive and must match one of the priorities supported by the project and issue type selected.",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "issue_key": {
+        "key": "issue_key",
+        "content_type": "id:integration/jira/issues",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "jira"
+    }
+  },
+  {
+    "type": "check_jira_issue_status",
+    "node_handler": "check_jira_issue_status",
+    "name": "Check Status of Jira Issue",
+    "description": "Wait for a Jira issue to be in a desired state",
+    "category": "Jira",
+    "input": {
+      "issue_key": {
+        "key": "issue_key",
+        "index": 10,
+        "display_name": "Jira Issue Key",
+        "description": "Issue Key in Jira (e.g. PROJ-123). Enter or select a variable from the list. You can also type in a key.",
+        "type": "variable-select",
+        "content_type": "id:integration/jira/issues",
+        "value_type": "string",
+        "required": true
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 20,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "frequency": {
+        "key": "frequency",
+        "index": 30,
+        "display_name": "Frequency in minutes",
+        "description": "Choose how often to check the issue status",
+        "type": "text",
+        "required": true
+      },
+      "timeout": {
+        "key": "timeout",
+        "index": 40,
+        "display_name": "Time-out in minutes",
+        "description": "Choose how long to wait before stopping checking the issue status",
+        "type": "text",
+        "required": false
+      },
+      "status": {
+        "key": "status",
+        "index": 50,
+        "display_name": "Status",
+        "type": "text",
+        "description": "Choose which status the issue should have",
+        "required": false
+      },
+      "assignee": {
+        "key": "assignee",
+        "index": 60,
+        "display_name": "Assignee",
+        "description": "Choose which assignee the issue should have (by name)",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "issue": {
+        "key": "issue",
+        "content_type": "integration/jira/issues",
+        "value_type": "json_blob"
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met",
+      "Timed out"
+    ],
+    "ui_data": {
+      "icon": "jira"
+    }
+  },
+  {
+    "type": "update_jira_issue",
+    "node_handler": "update_jira_issue",
+    "name": "Update Jira Issue",
+    "description": "Update an issue in Jira",
+    "category": "Jira",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "issue_key": {
+        "key": "issue_key",
+        "index": 20,
+        "display_name": "Jira Issue Key",
+        "description": "Issue Key in Jira (e.g. PROJ-123). Enter or select a variable from the list. You can also type in a key.",
+        "type": "variable-select",
+        "content_type": "id:integration/jira/issues",
+        "value_type": "string",
+        "required": true
+      },
+      "summary": {
+        "key": "summary",
+        "index": 30,
+        "display_name": "Summary",
+        "type": "text",
+        "required": false
+      },
+      "description": {
+        "key": "description",
+        "index": 40,
+        "display_name": "Description",
+        "type": "text-area",
+        "required": false
+      },
+      "status": {
+        "key": "status",
+        "index": 45,
+        "display_name": "Status",
+        "type": "text",
+        "description": "Issue status (e.g. To Do, In Progress, Done, Wont Do, ...)",
+        "required": false
+      },
+      "assignee_search_string": {
+        "key": "assignee_search_string",
+        "index": 50,
+        "display_name": "Assignee",
+        "description": "Find Jira user by name (Jira Cloud), or name and email (Jira Server)",
+        "type": "text",
+        "required": false
+      },
+      "labels_to_add": {
+        "key": "labels_to_add",
+        "index": 60,
+        "display_name": "Labels to add",
+        "description": "Comma-separated list of labels",
+        "type": "text",
+        "required": false
+      },
+      "labels_to_remove": {
+        "key": "labels_to_remove",
+        "index": 70,
+        "display_name": "Labels to remove",
+        "description": "Comma-separated list of labels",
+        "type": "text",
+        "required": false
+      },
+      "custom_fields": {
+        "key": "custom_fields",
+        "index": 80,
+        "display_name": "Custom Fields",
+        "type": "custom-fields",
+        "use_input_fields": {
+          "integration_id": "integration_id"
+        },
+        "required": false
+      },
+      "versions": {
+        "key": "versions",
+        "index": 90,
+        "display_name": "Affects Versions",
+        "description": "Comma-separated list of versions",
+        "type": "text",
+        "required": false
+      },
+      "fix_versions": {
+        "key": "fix_versions",
+        "index": 100,
+        "display_name": "Fix Versions",
+        "description": "Comma-separated list of fix versions",
+        "type": "text",
+        "required": false
+      },
+      "due_date": {
+        "key": "due_date",
+        "index": 110,
+        "display_name": "Due Date",
+        "description": "Due date using yyyy-mm-dd format (e.g. 2021-03-16)",
+        "type": "text",
+        "required": false
+      },
+      "watchers_to_add": {
+        "key": "watchers_to_add",
+        "index": 120,
+        "display_name": "Watchers To Add",
+        "description": "Comma-list of Jira users to find by name (Jira Cloud), or name and email (Jira Server)",
+        "type": "text",
+        "required": false
+      },
+      "priority": {
+        "key": "priority",
+        "index": 130,
+        "display_name": "Priority",
+        "description": "Set the priority of the issue. The name of the priority is case sensitive and must match one of the priorities supported by the project and issue type selected.",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "jira"
+    }
+  },
+  {
+    "type": "get_jira_issue",
+    "node_handler": "get_jira_issue",
+    "name": "Get Jira Issue",
+    "description": "Retrieve the latest data of a Jira issue",
+    "category": "Jira",
+    "input": {
+      "issue_key": {
+        "key": "issue_key",
+        "index": 10,
+        "display_name": "Jira Issue Key",
+        "description": "Issue Key in Jira (e.g. PROJ-123). Enter or select a variable from the list. You can also type in a key.",
+        "type": "variable-select",
+        "content_type": "id:integration/jira/issues",
+        "value_type": "string",
+        "required": true
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 20,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": true
+      }
+    },
+    "output": {
+      "issue": {
+        "key": "issue",
+        "content_type": "integration/jira/issues",
+        "value_type": "json_blob"
+      }
+    },
+    "options": [],
+    "ui_data": {
+      "icon": "jira"
+    }
+  },
+  {
+    "type": "jira_extract_custom_field",
+    "node_handler": "jira_extract_custom_field",
+    "name": "Extract Custom Field",
+    "description": "Retrieve a specific custom field.",
+    "category": "Jira",
+    "input": {
+      "custom_fields_ref": {
+        "key": "custom_fields_ref",
+        "index": 10,
+        "display_name": "Custom Fields",
+        "description": "Select a variable containing custom fields.",
+        "type": "variable-select",
+        "content_type": "integration/jira/custom_fields",
+        "value_type": "string",
+        "required": true
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 20,
+        "display_name": "Jira Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "custom_field_to_extract": {
+        "key": "custom_field_to_extract",
+        "index": 30,
+        "display_name": "Custom Field To Extract",
+        "type": "jira-custom-single-select",
+        "use_input_fields": {
+          "integration_id": "integration_id"
+        },
+        "required": true
+      },
+      "default_value": {
+        "key": "default_value",
+        "index": 40,
+        "display_name": "Default Value",
+        "description": "If specified, when the field is missing, the node will return this value instead and follow the 'Found' branch.",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "value": {
+        "key": "value",
+        "content_type": "string",
+        "value_type": "string"
+      }
+    },
+    "options": [
+      "Found",
+      "Not found"
+    ],
+    "ui_data": {
+      "icon": "jira"
+    }
+  },
+  {
+    "type": "jira_wait_until_due",
+    "node_handler": "jira_wait_until_due",
+    "name": "Wait Until Due Date",
+    "description": "Wait until a Jira issue is due, and allows for a daily reminder workflow to start some days before the due date.",
+    "category": "Jira",
+    "input": {
+      "issue_key": {
+        "key": "issue_key",
+        "index": 10,
+        "display_name": "Jira Issue Key",
+        "description": "Issue Key in Jira (e.g. PROJ-123). Enter or select a variable from the list. You can also type in a key.",
+        "type": "variable-select",
+        "content_type": "id:integration/jira/issues",
+        "value_type": "string",
+        "required": true
+      },
+      "integration_id": {
+        "key": "integration_id",
+        "index": 20,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "remind_within_days": {
+        "key": "remind_within_days",
+        "index": 30,
+        "display_name": "Reminder Threshold",
+        "description": "Number of days before the due date when the “Reminder workflow” is triggered on unresolved tickets",
+        "default_value": "0",
+        "type": "text",
+        "required": true
+      },
+      "post_due_date_threshold": {
+        "key": "post_due_date_threshold",
+        "index": 40,
+        "display_name": "Post Due Date Threshold",
+        "description": "Number of days to wait after the due date to trigger a “Post Due Date workflow” on tickets that still remain unresolved",
+        "default_value": "0",
+        "type": "text",
+        "required": true
+      },
+      "due_date_field" : {
+        "key": "due_date_field",
+        "index": 50,
+        "display_name": "Custom field value for the due date",
+        "description": "Custom field to use as the due date. Leave blank to use the standard due date field.",
+        "type": "jira-custom-single-select",
+        "use_input_fields": {
+          "integration_id": "integration_id"
+        },
+        "required": false
+      },
+      "reminder_frequency": {
+        "key": "reminder_frequency",
+        "index": 60,
+        "display_name": "Reminder Frequency",
+        "description": "Choose how often the reminder workflow will be triggered.",
+        "type": "radio-group",
+        "options": [
+          "Only once",
+          "Every day"
+        ],
+        "default_value": "Only once",
+        "required": true
+      },
+      "status": {
+        "key": "status",
+        "index": 70,
+        "display_name": "Resolution Status",
+        "type": "text",
+        "description": "Stop waiting or sending reminders if Jira issue has this status.",
+        "required": false
+      }
+    },
+    "output": {
+      "issue": {
+        "key": "issue",
+        "content_type": "integration/jira/issues",
+        "value_type": "json_blob"
+      }
+    },
+    "options": [
+      "Reminder",
+      "Due",
+      "Resolved",
+      "No due date",
+      "Post due date"
+    ],
+    "ui_data": {
+      "icon": "jira"
+    }
+  }
+]

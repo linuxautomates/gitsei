@@ -1,0 +1,17 @@
+satellite:
+  tenant: sidofficial
+  api_key: api-key-1
+  url: 'https://testapi1.propelo.ai'
+integrations:
+  - id: '25'
+    application: bitbucket_server
+    url: 'http://host.docker.internal:7990'
+    username: steph-curry
+    api_key: bb-server-api-key
+    metadata:
+      fetch_prs: true
+      fetch_pr_reviews: true
+      fetch_commits: true
+      fetch_commit_files: true
+      repos: testa
+    satellite: true

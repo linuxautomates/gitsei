@@ -1,0 +1,149 @@
+[
+  {
+    "type": "get_date",
+    "node_handler": "get_date",
+    "name": "Get Current Date",
+    "description": "Get the current date or the date at the start of this Propel's run.",
+    "category": "Dates",
+    "input": {
+      "date": {
+        "key": "date",
+        "index": 10,
+        "display_name": "Date",
+        "description": "Select which date to return.",
+        "type": "radio-group",
+        "options": [
+          "Current date",
+          "Start of the run"
+        ],
+        "default_value": "Current date",
+        "required": true
+      },
+      "format": {
+        "key": "format",
+        "index": 20,
+        "display_name": "Format",
+        "description": "Select how the date needs to be formatted. ISO Date corresponds to 'yyyy-MM-ddThh:mm:ssZ' (e.g '2020-01-30T10:15:30Z').",
+        "type": "single-select",
+        "options": [
+          "Month/Day/Year",
+          "Month-Day-Year",
+          "Month/Year",
+          "Month-Year",
+          "ISO Date"
+        ],
+        "default_value": "Month/Day/Year",
+        "required": true
+      }
+    },
+    "output": {
+      "date": {
+        "key": "date",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "clock-circle"
+    }
+  },
+  {
+    "type": "check_due_date",
+    "node_handler": "check_due_date",
+    "name": "Check Due Date",
+    "description": "Check if a date is due by specifying a frequency. For example, with a frequency of 6 months, a date will be considered due after 6 months have passed.",
+    "category": "Dates",
+    "input": {
+      "date": {
+        "key": "date",
+        "index": 10,
+        "display_name": "Date",
+        "description": "Date to check.",
+        "type": "text",
+        "required": true
+      },
+      "frequency": {
+        "key": "frequency",
+        "index": 20,
+        "display_name": "Frequency",
+        "description": "How much time should pass before the date is due. Select the corresponding time unit below.",
+        "type": "text",
+        "required": true
+      },
+      "unit": {
+        "key": "unit",
+        "index": 30,
+        "display_name": "Time Unit",
+        "description": "Time unit of the frequency.",
+        "type": "single-select",
+        "options": [
+          "Days",
+          "Weeks",
+          "Months",
+          "Years"
+        ],
+        "default_value": "Months",
+        "required": true
+      }
+    },
+    "options": [
+      "Due",
+      "Not due"
+    ],
+    "output": {
+    },
+    "ui_data": {
+      "icon": "clock-circle"
+    }
+  },
+  {
+    "type": "get_time_range",
+    "node_handler": "get_time_range",
+    "name": "Get Time Range In Epoch",
+    "description": "Get the start and end timestamps based on the specified time period",
+    "category": "Dates",
+    "input": {
+      "time_period": {
+        "key": "time_period",
+        "index": 10,
+        "display_name": "Time Period",
+        "description": "Time period to get the start and end timestamps.",
+        "type": "single-select",
+        "options": [
+          "Last_Day",
+          "Last_Week",
+          "Last_Month",
+          "Last_Quarter",
+          "Last_Six_Months",
+          "Last_Year"
+        ],
+        "default_value": "Last_Day",
+        "required": true
+      },
+      "truncate": {
+        "key": "truncate",
+        "index": 20,
+        "display_name": "Truncate To Day",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "type": "radio-group",
+        "required": true
+      }
+    },
+    "output": {
+      "start_ts": {
+        "key": "start_ts",
+        "value_type": "string"
+      },
+      "end_ts": {
+        "key": "end_ts",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "clock-circle"
+    }
+  }
+]

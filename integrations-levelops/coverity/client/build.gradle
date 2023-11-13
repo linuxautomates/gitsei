@@ -1,0 +1,50 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api levelopsCommonsLib('utils')
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-service')
+
+    implementation levelopsCommonsLib('preflight-check')
+
+    compile project(":integration-coverity-models")
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    compile libraries.apache_commons
+    compile libraries.apache_collections
+    compile libraries.apache_http
+    compile libraries.jackson_core
+    compile libraries.spring_boot_web
+    compile(libraries.javaxws_security) {
+        exclude group: 'javax.xml.crypto', module: 'xmldsig'
+        exclude group: 'javax.activation', module: 'activation'
+    }
+    //compile libraries.jakarta_xml_ws_api
+    compile libraries.javax_activation
+
+    testCompile libraries.jackson_core
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.mockito
+    testCompile libraries.lombok
+    testCompile levelopsCommonsLib("utils")
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+                excludes = ['io.levelops.integrations.coverity']
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestCoverageVerification

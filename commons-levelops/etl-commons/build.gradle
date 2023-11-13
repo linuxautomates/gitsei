@@ -1,0 +1,43 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":okhttp-utils")
+    compile project(":ingestion-commons")
+
+    implementation libraries.spring_boot_starter_web
+    implementation libraries.apache_commons
+    implementation libraries.apache_collections
+
+    compile libraries.guava
+
+    testCompile libraries.junit
+    testCompile libraries.mockito
+    testCompile libraries.assertj
+
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}
+
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

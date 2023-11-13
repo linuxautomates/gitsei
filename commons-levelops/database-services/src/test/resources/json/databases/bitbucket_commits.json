@@ -1,0 +1,194 @@
+{
+  "records": [
+    {
+      "name": "Repository1",
+      "scm": "git",
+      "has_wiki": false,
+      "uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}",
+      "fork_policy": "allow_forks",
+      "project": {
+        "key": "PROJ",
+        "type": "project",
+        "uuid": "{4fad52cb-4889-401f-bf81-c834f0875977}",
+        "name": "project1"
+      },
+      "language": "",
+      "created_on": "2020-07-20T10:09:10.671+00:00",
+      "mainbranch": {
+        "type": "branch",
+        "name": "master"
+      },
+      "full_name": "srinath_levelops/repository1",
+      "has_issues": false,
+      "owner": {
+        "display_name": "Srinath Chandrashekhar",
+        "type": "user",
+        "uuid": "{9ed4d705-29c4-44b2-a289-1c5c076c0239}",
+        "nickname": "srinath.chandrashekhar",
+        "account_id": "5e6b0b13308ac10ced3a5839"
+      },
+      "updated_on": "2020-08-05T07:37:31.206+00:00",
+      "size": 128946,
+      "type": "repository",
+      "slug": "repository1",
+      "is_private": false,
+      "description": "This is a description",
+      "links": {
+        "html": {
+          "href": "https://bitbucket.org/srinath_levelops/repository1"
+        }
+      },
+      "workspace_slug": "srinath_levelops",
+      "commits": [
+        {
+          "rendered": {
+            "message": {
+              "raw": "file1 edited online with Bitbucket",
+              "markup": "markdown",
+              "html": "<p>file1 edited online with Bitbucket</p>",
+              "type": "rendered"
+            }
+          },
+          "hash": "61b9edfbd678fb5fa7ec9367719bd5197e5d2f58",
+          "repository": {
+            "type": "repository",
+            "name": "Repository1",
+            "full_name": "srinath_levelops/repository1",
+            "uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}"
+          },
+          "author": {
+            "raw": "Srinath Chandrashekhar <srinath.chandrashekhar@levelops.io>",
+            "type": "author"
+          },
+          "summary": {
+            "raw": "file1 edited online with Bitbucket",
+            "markup": "markdown",
+            "html": "<p>file1 edited online with Bitbucket</p>",
+            "type": "rendered"
+          },
+          "parents": [
+            {
+              "hash": "08b4d6e6e9c9a17956a2ce066e8b0f5ff76afd27",
+              "type": "commit"
+            }
+          ],
+          "date": "2020-08-05T07:37:30.000+00:00",
+          "message": "file1 edited online with Bitbucket",
+          "type": "commit",
+          "workspace_slug": "srinath_levelops",
+          "repo_uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}",
+          "links": {
+            "html": {
+              "href": "https://bitbucket.org/srinath_levelops/repository1/commits/61b9edfbd678fb5fa7ec9367719bd5197e5d2f58"
+            }
+          },
+          "diff_stats": [
+            {
+              "status": "modified",
+              "old": {
+                "path": "file1",
+                "type": "commit_file"
+              },
+              "lines_removed": 1,
+              "lines_added": 3,
+              "new": {
+                "path": "file1",
+                "type": "commit_file"
+              },
+              "type": "diffstat"
+            }
+          ]
+        },
+        {
+          "rendered": {
+            "message": {
+              "raw": "README.md edited online with Bitbucket",
+              "markup": "markdown",
+              "html": "<p>README.md edited online with Bitbucket</p>",
+              "type": "rendered"
+            }
+          },
+          "hash": "08b4d6e6e9c9a17956a2ce066e8b0f5ff76afd27",
+          "repository": {
+            "type": "repository",
+            "name": "Repository1",
+            "full_name": "srinath_levelops/repository1",
+            "uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}"
+          },
+          "author": {
+            "raw": "Srinath Chandrashekhar <srinath.chandrashekhar@levelops.io>",
+            "type": "author"
+          },
+          "summary": {
+            "raw": "README.md edited online with Bitbucket",
+            "markup": "markdown",
+            "html": "<p>README.md edited online with Bitbucket</p>",
+            "type": "rendered"
+          },
+          "parents": [
+            {
+              "hash": "af135906ee5d8ba910d70c5076a2d774273c0d96",
+              "type": "commit"
+            }
+          ],
+          "date": "2020-08-05T07:35:43.000+00:00",
+          "message": "README.md edited online with Bitbucket",
+          "type": "commit",
+          "workspace_slug": "srinath_levelops",
+          "repo_uuid": "{31c113e1-47ee-4c0b-a080-84d39378bca3}",
+          "links": {
+            "html": {
+              "href": "https://bitbucket.org/srinath_levelops/repository1/commits/08b4d6e6e9c9a17956a2ce066e8b0f5ff76afd27"
+            }
+          },
+          "diff_stats": [
+            {
+              "status": "modified",
+              "old": {
+                "path": "README.md",
+                "type": "commit_file"
+              },
+              "lines_removed": 0,
+              "lines_added": 1,
+              "new": {
+                "path": "README.md",
+                "type": "commit_file"
+              },
+              "type": "diffstat"
+            },
+            {
+              "status": "added",
+              "lines_removed": 0,
+              "lines_added": 50,
+              "new": {
+                "path": ".gitignore",
+                "type": "commit_file"
+              },
+              "type": "diffstat"
+            },
+            {
+              "status": "added",
+              "lines_removed": 0,
+              "lines_added": 45,
+              "new": {
+                "path": "README.md",
+                "type": "commit_file"
+              },
+              "type": "diffstat"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "1"
+    },
+    "integration_type": "bitbucket",
+    "data_type": "commits",
+    "page_number": 0
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ok": false,
+  "issues": {
+    "vulnerabilities": [],
+    "licenses": [
+      {
+        "id": "snyk:lic:maven:org.biojava:biojava3-core:GPL-3.0",
+        "url": "https://snyk.io/vuln/snyk:lic:maven:org.biojava:biojava3-core:GPL-3.0",
+        "title": "GPL-3.0 license",
+        "type": "license",
+        "from": [],
+        "package": "org.biojava:biojava3-core",
+        "version": "3.0-SNAPSHOT",
+        "severity": "high",
+        "language": "java",
+        "packageManager": "maven",
+        "semver": {
+          "vulnerable": [
+            "[0,)"
+          ]
+        },
+        "isIgnored": true,
+        "isPatched": false,
+        "ignored": [
+          {
+            "path": [
+              "*"
+            ],
+            "reason": "VA_Ignore_4",
+            "source": "api",
+            "created": "2020-02-04T22:17:28.451Z",
+            "expires": "2020-03-05T22:17:07.632Z",
+            "ignoredBy": {
+              "id": "eac56b5c-589a-41ca-bd2e-ba2711a926c0",
+              "name": "App Account App Admin",
+              "email": "testadmin1@levelops.io"
+            },
+            "reasonType": "temporary-ignore",
+            "disregardIfFixable": false
+          }
+        ]
+      },
+      {
+        "id": "snyk:lic:maven:org.biojava:bytecode:GPL-3.0",
+        "url": "https://snyk.io/vuln/snyk:lic:maven:org.biojava:bytecode:GPL-3.0",
+        "title": "GPL-3.0 license",
+        "type": "license",
+        "from": [
+          "org.biojava:core@3.0-SNAPSHOT",
+          "org.biojava:bytecode@3.0-SNAPSHOT"
+        ],
+        "package": "org.biojava:bytecode",
+        "version": "3.0-SNAPSHOT",
+        "severity": "high",
+        "language": "java",
+        "packageManager": "maven",
+        "semver": {
+          "vulnerable": [
+            "[0,)"
+          ]
+        }
+      },
+      {
+        "id": "snyk:lic:maven:org.biojava:core:GPL-3.0",
+        "url": "https://snyk.io/vuln/snyk:lic:maven:org.biojava:core:GPL-3.0",
+        "title": "GPL-3.0 license",
+        "type": "license",
+        "from": [
+          "org.biojava:core@3.0-SNAPSHOT"
+        ],
+        "package": "org.biojava:core",
+        "version": "3.0-SNAPSHOT",
+        "severity": "high",
+        "language": "java",
+        "packageManager": "maven",
+        "semver": {
+          "vulnerable": [
+            "[0,)"
+          ]
+        }
+      }
+    ]
+  },
+  "dependencyCount": 5,
+  "packageManager": "maven"
+}

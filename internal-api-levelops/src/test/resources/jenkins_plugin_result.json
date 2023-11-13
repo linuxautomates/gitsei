@@ -1,0 +1,1305 @@
+[
+  {
+    "job_name": "Build-commons-levelops",
+    "job_full_name": "Build-commons-levelops",
+    "scm_url": "https://github.com/levelops/commons-levelops.git",
+    "runs": [
+      {
+        "number": 1253,
+        "status": "SUCCESS",
+        "start_time": 1593060359,
+        "duration": 199,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "2bdf3970b3c4991fe22692c290a718162ffef08b"
+        ],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "master"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Build-Aggregations-Service",
+    "job_full_name": "Build-Aggregations-Service",
+    "scm_url": "https://github.com/levelops/aggregations-levelops.git",
+    "runs": [
+      {
+        "number": 64,
+        "status": "SUCCESS",
+        "start_time": 1593061377,
+        "duration": 92,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "309c2c7d5f6a9ec024b8d12657bfcd7097501c67"
+        ],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "dev"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": "-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Build-Server-API",
+    "job_full_name": "Build-Server-API",
+    "scm_url": "https://github.com/levelops/api-levelops.git",
+    "runs": [
+      {
+        "number": 904,
+        "status": "SUCCESS",
+        "start_time": 1593061392,
+        "duration": 79,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "bdd23c2f1a0ce059dc4dc7fa8c6d375da3f9d6b5"
+        ],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "dev"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": "-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Deploy-Internal-Api-to-kubernetes-cluster",
+    "job_full_name": "Deploy-Internal-Api-to-kubernetes-cluster",
+    "runs": [
+      {
+        "number": 426,
+        "status": "SUCCESS",
+        "start_time": 1593062362,
+        "duration": 46,
+        "user_id": "SCMTrigger",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "INTERNAL_API_VERSION",
+            "value": "v0.1.589-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Deploy-Aggregations-Service",
+    "job_full_name": "Deploy-Aggregations-Service",
+    "runs": [
+      {
+        "number": 58,
+        "status": "SUCCESS",
+        "start_time": 1593061477,
+        "duration": 52,
+        "user_id": "SCMTrigger",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "AGGREGATIONS_SERVICE_VERSION",
+            "value": "v0.1.64-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Deploy-Server_API-to-Kubernetes-Cluster",
+    "job_full_name": "Deploy-Server_API-to-Kubernetes-Cluster",
+    "runs": [
+      {
+        "number": 434,
+        "status": "FAILURE",
+        "start_time": 1593061477,
+        "duration": 51,
+        "user_id": "SCMTrigger",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "SERVERAPI_VERSION",
+            "value": "v0.1.904-dev"
+          }
+        ]
+      },
+      {
+        "number": 435,
+        "status": "SUCCESS",
+        "start_time": 1593062146,
+        "duration": 63,
+        "user_id": "SCMTrigger",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "SERVERAPI_VERSION",
+            "value": "v0.1.904-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Build-Internal-API",
+    "job_full_name": "Build-Internal-API",
+    "scm_url": "https://github.com/levelops/internal-api-levelops.git",
+    "runs": [
+      {
+        "number": 589,
+        "status": "SUCCESS",
+        "start_time": 1593062252,
+        "duration": 104,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "a7c93331c4065616c2a8a2f8dcb26f7ab3a22f51"
+        ],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "dev"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": "-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Pipe2",
+    "job_full_name": "Pipe2",
+    "runs": [
+      {
+        "number": 11,
+        "status": "ABORTED",
+        "start_time": 1590788755,
+        "duration": 121497,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 12,
+        "status": "ABORTED",
+        "start_time": 1590788755,
+        "duration": 121500,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 13,
+        "status": "SUCCESS",
+        "start_time": 1590914370,
+        "duration": 120,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 14,
+        "status": "SUCCESS",
+        "start_time": 1590941151,
+        "duration": 50,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 15,
+        "status": "SUCCESS",
+        "start_time": 1590944383,
+        "duration": 32,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 16,
+        "status": "SUCCESS",
+        "start_time": 1590961534,
+        "duration": 19,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          }
+        ]
+      },
+      {
+        "number": 17,
+        "status": "SUCCESS",
+        "start_time": 1590962421,
+        "duration": 25,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          }
+        ]
+      },
+      {
+        "number": 18,
+        "status": "SUCCESS",
+        "start_time": 1590962662,
+        "duration": 16,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          }
+        ]
+      },
+      {
+        "number": 19,
+        "status": "SUCCESS",
+        "start_time": 1590963776,
+        "duration": 30,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          }
+        ]
+      },
+      {
+        "number": 21,
+        "status": "SUCCESS",
+        "start_time": 1590969275,
+        "duration": 23,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 22,
+        "status": "SUCCESS",
+        "start_time": 1590973828,
+        "duration": 53,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 23,
+        "status": "SUCCESS",
+        "start_time": 1591036124,
+        "duration": 28,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 24,
+        "status": "SUCCESS",
+        "start_time": 1591037758,
+        "duration": 24,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 31,
+        "status": "SUCCESS",
+        "start_time": 1591219444,
+        "duration": 17,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "UAT"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 32,
+        "status": "SUCCESS",
+        "start_time": 1591219476,
+        "duration": 10,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "UAT"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 33,
+        "status": "SUCCESS",
+        "start_time": 1591219498,
+        "duration": 10,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "UAT"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 34,
+        "status": "SUCCESS",
+        "start_time": 1591219663,
+        "duration": 14,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "PROD"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 35,
+        "status": "SUCCESS",
+        "start_time": 1591220606,
+        "duration": 13,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "UAT"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 38,
+        "status": "SUCCESS",
+        "start_time": 1592901483,
+        "duration": 178,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 39,
+        "status": "SUCCESS",
+        "start_time": 1592901853,
+        "duration": 190,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 40,
+        "status": "SUCCESS",
+        "start_time": 1592902313,
+        "duration": 415,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 41,
+        "status": "FAILURE",
+        "start_time": 1592905221,
+        "duration": 1,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 43,
+        "status": "FAILURE",
+        "start_time": 1592906263,
+        "duration": 1,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 44,
+        "status": "SUCCESS",
+        "start_time": 1592906296,
+        "duration": 17,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 45,
+        "status": "SUCCESS",
+        "start_time": 1592913114,
+        "duration": 262,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 46,
+        "status": "SUCCESS",
+        "start_time": 1592914578,
+        "duration": 100,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 47,
+        "status": "SUCCESS",
+        "start_time": 1592914707,
+        "duration": 456,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 48,
+        "status": "SUCCESS",
+        "start_time": 1592915450,
+        "duration": 334,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 49,
+        "status": "SUCCESS",
+        "start_time": 1592916049,
+        "duration": 121,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 50,
+        "status": "SUCCESS",
+        "start_time": 1592916397,
+        "duration": 86,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 51,
+        "status": "SUCCESS",
+        "start_time": 1592916643,
+        "duration": 389,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 52,
+        "status": "SUCCESS",
+        "start_time": 1592917042,
+        "duration": 318,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 53,
+        "status": "SUCCESS",
+        "start_time": 1592919407,
+        "duration": 45,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 54,
+        "status": "SUCCESS",
+        "start_time": 1592931224,
+        "duration": 6377,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 55,
+        "status": "SUCCESS",
+        "start_time": 1592939485,
+        "duration": 810,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 56,
+        "status": "SUCCESS",
+        "start_time": 1592940542,
+        "duration": 1720,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 57,
+        "status": "SUCCESS",
+        "start_time": 1592942276,
+        "duration": 2377,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 58,
+        "status": "SUCCESS",
+        "start_time": 1592947484,
+        "duration": 389,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 59,
+        "status": "FAILURE",
+        "start_time": 1592960885,
+        "duration": 24,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 60,
+        "status": "SUCCESS",
+        "start_time": 1592961171,
+        "duration": 98,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 61,
+        "status": "SUCCESS",
+        "start_time": 1592961599,
+        "duration": 93,
+        "user_id": "testread",
+        "commit_ids": [
+          "4a4353c6d9d471826328b298fe3042c28bbe318d",
+          "cc6dfc65066fd69fb065b62b734cc7c960a46e75",
+          "cf64153e237ee3a34ce91989accfdafb2323e7a6",
+          "3a2eeee9bf5ba2938e7aa9c861eb0611bb4056eb",
+          "600b571966defafb1d124db2b4d85cae22a20f10",
+          "52e295e34a16c119c403a0130fa0093fc31f5371",
+          "81b426e034d67ead6db7689e694b450baf14a114",
+          "2d44ef083cf86190ef0597d705edbf02e9635bc0",
+          "a7c7ecbdc554fa6cf083d604582743b152180208",
+          "e667282899c3e3913f707277699de633f738e957",
+          "7856900458ea5d5cde55d8bc5a8266470d6a2517",
+          "e57c62527ea8e28cadc23c38e9cfb69820b9e8d5"
+        ],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      },
+      {
+        "number": 62,
+        "status": "SUCCESS",
+        "start_time": 1593042350,
+        "duration": 69,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "env_name",
+            "value": "STAGING"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "boker_ids",
+            "value": "broker1\nbroker2\nbroker3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "com.wordnik$swagger-codegen_2.9.1",
+    "job_full_name": "com.wordnik$swagger-codegen_2.9.1",
+    "runs": [
+      {
+        "number": 1,
+        "status": "FAILURE",
+        "start_time": 1592944696,
+        "duration": 163,
+        "user_id": "SYSTEM",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 2,
+        "status": "FAILURE",
+        "start_time": 1592948965,
+        "duration": 69,
+        "user_id": "SYSTEM",
+        "commit_ids": [],
+        "params": []
+      }
+    ]
+  },
+  {
+    "job_name": "Pipe3",
+    "job_full_name": "Pipe3",
+    "scm_url": "https://github.com/TechPrimers/jenkins-example.git",
+    "runs": [
+      {
+        "number": 6,
+        "status": "FAILURE",
+        "start_time": 1590947302,
+        "duration": 14,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 7,
+        "status": "FAILURE",
+        "start_time": 1590958241,
+        "duration": 13,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "status": "FAILURE",
+        "start_time": 1590959165,
+        "duration": 14,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "status": "FAILURE",
+        "start_time": 1590959872,
+        "duration": 14,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "status": "FAILURE",
+        "start_time": 1590961400,
+        "duration": 13,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "BooleanParameterValue",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "StringP",
+            "value": "sd1"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "status": "FAILURE",
+        "start_time": 1590969638,
+        "duration": 12,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "BooleanParameterValue",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "status": "FAILURE",
+        "start_time": 1591037795,
+        "duration": 13,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "BooleanParameterValue",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "status": "FAILURE",
+        "start_time": 1592900457,
+        "duration": 19,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "BooleanParameterValue",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "status": "FAILURE",
+        "start_time": 1592919464,
+        "duration": 48,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": [
+          {
+            "type": "BooleanParameterValue",
+            "name": "BooleanP",
+            "value": "true"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "ChoiceP",
+            "value": "c1,c2"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "StringP",
+            "value": "sd1"
+          },
+          {
+            "type": "TextParameterValue",
+            "name": "MultiP",
+            "value": "md1l1\nmd1l2\nmd1l3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "openapi-generator",
+    "job_full_name": "openapi-generator",
+    "scm_url": "https://github.com/testadmin1-levelops/openapi-generator.git",
+    "runs": [
+      {
+        "number": 1,
+        "status": "FAILURE",
+        "start_time": 1592944615,
+        "duration": 254,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 2,
+        "status": "FAILURE",
+        "start_time": 1592948898,
+        "duration": 148,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 3,
+        "status": "FAILURE",
+        "start_time": 1592951452,
+        "duration": 35,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 4,
+        "status": "FAILURE",
+        "start_time": 1592960708,
+        "duration": 40,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      },
+      {
+        "number": 5,
+        "status": "ABORTED",
+        "start_time": 1593041414,
+        "duration": 43,
+        "user_id": "testread",
+        "commit_ids": [],
+        "params": []
+      }
+    ]
+  }
+]

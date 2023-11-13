@@ -1,0 +1,39 @@
+{
+  "nodeMap": {
+    "yT54s-GUTRy86o1hz4i1Fg": {
+      "outcomes": {
+        "deploymentInfoOutcome": {
+          "serverInstanceInfoList": [
+            {
+              "name": "harness-example-deployment-6b4d9f99f8-fl4gw",
+              "namespace": "default",
+              "releaseName": "release-895e552d418bb1b51452bb293cb201b1450ef6c1",
+              "podIP": "10.43.128.200",
+              "containerList": [
+                {
+                  "containerId": "containerd://8121d9d18c181b52aa1b036c1efddedde43c803b14c3803bda47425fd87e730f",
+                  "name": "harness-example",
+                  "image": "docker.io/meetrajsinhcrest/harness-test:0.0.2"
+                },
+                {
+                  "containerId": "containerd://8121d9d18c181b52aa1b036c1efddedde43c803b14c3803bda47425fd87e730f",
+                  "name": "harness-example",
+                  "image": "harness-test2:0.0.3"
+                },
+                {
+                  "containerId": "containerd://8121d9d18c181b52aa1b036c1efddedde43c803b14c3803bda47425fd87e730f",
+                  "name": "harness-example",
+                  "image": "docker.io/meetrajsinhcrest/harness-test3"
+                },
+                {
+                  "containerId": "containerd://8121d9d18c181b52aa1b036c1efddedde43c803b14c3803bda47425fd87e730f",
+                  "name": "harness-example"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

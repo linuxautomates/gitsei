@@ -1,0 +1,62 @@
+{
+  "status": "SUCCESS",
+  "data": {
+    "totalPages": 1,
+    "totalItems": 2,
+    "pageItemCount": 2,
+    "pageSize": 100,
+    "content": [
+      {
+        "project": {
+          "orgIdentifier": "test",
+          "identifier": "Test_Project",
+          "name": "Test Project",
+          "color": "#0063f7",
+          "modules": [
+            "CD",
+            "CI",
+            "CV",
+            "CF",
+            "CE",
+            "STO",
+            "CHAOS",
+            "CORE",
+            "PMS",
+            "TEMPLATESERVICE"
+          ],
+          "description": "",
+          "tags": {}
+        },
+        "createdAt": 1671778286168,
+        "lastModifiedAt": 1671778286168
+      },
+      {
+        "project": {
+          "orgIdentifier": "default",
+          "identifier": "Test",
+          "name": "Test Project 1",
+          "color": "#0063f7",
+          "modules": [
+            "CD",
+            "CI",
+            "CV",
+            "CF",
+            "CE",
+            "STO",
+            "CORE",
+            "PMS",
+            "TEMPLATESERVICE"
+          ],
+          "description": "",
+          "tags": {}
+        },
+        "createdAt": null,
+        "lastModifiedAt": 1655249267522
+      }
+    ],
+    "pageIndex": 0,
+    "empty": false
+  },
+  "metaData": null,
+  "correlationId": "a8130d3d-576c-49f5-9297-80a63421aea4"
+}

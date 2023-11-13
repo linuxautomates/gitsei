@@ -1,0 +1,36 @@
+dependencies {
+    compile libraries.jackson_core
+    compile libraries.apache_collections
+    api project(':utils')
+    compile project(':database-services')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.gcs
+
+    testCompile libraries.embedded_postgres
+    testCompile libraries.junit
+    testCompile libraries.mockito
+    testCompile libraries.assertj
+
+
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.8
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

@@ -1,0 +1,33 @@
+{
+  "/" : {
+    "base_path" : "/",
+    "added" : [ "/pluginA" ],
+    "removed" : [ "/pluginB" ],
+    "changed" : [ "/pluginC" ],
+    "data_changes" : {
+      "/pluginA" : {
+        "operation" : "ADDED",
+        "before" : null,
+        "after" : {
+          "some" : "data"
+        }
+      },
+      "/pluginB" : {
+        "operation" : "REMOVED",
+        "before" : {
+          "old" : "data"
+        },
+        "after" : null
+      },
+      "/pluginC" : {
+        "operation" : "CHANGED",
+        "before" : {
+          "previous" : "data"
+        },
+        "after" : {
+          "new" : "data"
+        }
+      }
+    }
+  }
+}

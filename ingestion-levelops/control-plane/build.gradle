@@ -1,0 +1,103 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.6.6")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    implementation project(':ingestion-engine')
+    implementation project(':integrations:integration-github')
+    implementation levelopsCommonsLib('control-plane-commons')
+    
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('inventory-service')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('spring-web-utils')
+    implementation levelopsCommonsLib('events-services')
+
+    runtimeOnly levelopsIntegrationsLib('integration-zendesk-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-tenable-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-salesforce-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-pagerduty-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-gerrit-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-bitbucket-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-blackduck-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-okta-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-testrails-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-sonarqube-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-circleci-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-droneci-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-harnessng-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-gitlab-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-azure-devops-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-awsdevtools-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-checkmarx-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-helix-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-bitbucket-server-triggers')
+    runtimeOnly levelopsIntegrationsLib('integration-coverity-triggers')
+
+    implementation ("org.apache.logging.log4j:log4j-core:2.17.2") {
+        version {
+            strictly "2.17.2"
+        }
+        because "version >= 2.17.1 required to fix CVE-2021-44228, CVE-2021-45105, CVE-2021-45046"
+    }
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    // OpenAPI
+    implementation openapiLib('ui')
+    implementation libraries.spring_boot_web
+    implementation libraries.spring_jdbc
+    implementation libraries.guava
+    implementation libraries.apache_collections
+    implementation libraries.hikari
+    implementation libraries.gson
+
+    implementation libraries.spring_cache
+    implementation libraries.spring_redis
+    implementation libraries.redis
+    implementation libraries.spring_data_redis
+    implementation libraries.servlet
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.5.1'
+
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+    testImplementation libraries.spring_boot_starter_test
+    testImplementation libraries.mockito
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.embedded_postgres
+    testImplementation enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:13.2.0')
+    testImplementation 'it.ozimov:embedded-redis:0.7.3'
+    
+    developmentOnly ('org.springframework.boot:spring-boot-devtools:2.7.6') {
+		exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+	}
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

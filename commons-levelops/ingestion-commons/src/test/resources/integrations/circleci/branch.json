@@ -1,0 +1,77 @@
+{
+  "latest_workflows" : {
+    "Build%20Error" : {
+      "status" : "failed",
+      "created_at" : "2020-09-28T02:33:30.488Z",
+      "id" : "398bb7fa-9f10-47c4-ad14-fcba08731255"
+    },
+    "maven_test" : {
+      "status" : "success",
+      "created_at" : "2020-09-28T02:40:52.648Z",
+      "id" : "24d73d4e-7603-49c6-a7be-8d60bf604103"
+    }
+  },
+  "pusher_logins" : [ "Srinathc" ],
+  "running_builds" : [ ],
+  "recent_builds" : [ {
+    "outcome" : "success",
+    "status" : "success",
+    "build_num" : 5,
+    "vcs_revision" : "6b63d018fe8cec2c38bf3abd9325780a46b89391",
+    "pushed_at" : "2020-09-28T02:40:52.000Z",
+    "is_workflow_job" : true,
+    "is_2_0_job" : true,
+    "added_at" : "2020-09-28T02:41:34.644Z"
+  }, {
+    "outcome" : "failed",
+    "status" : "failed",
+    "build_num" : 4,
+    "vcs_revision" : "6ed2d5ebfae263d54cd2a1d3ea2d053db923f6b7",
+    "pushed_at" : "2020-09-28T02:36:10.000Z",
+    "is_workflow_job" : true,
+    "is_2_0_job" : true,
+    "added_at" : "2020-09-28T02:36:24.207Z"
+  }, {
+    "outcome" : "failed",
+    "status" : "failed",
+    "build_num" : 1,
+    "vcs_revision" : "b8084969f6f83056d27e6b8b80d08286c08000f6",
+    "pushed_at" : "2020-09-28T02:33:30.000Z",
+    "is_workflow_job" : true,
+    "is_2_0_job" : true,
+    "added_at" : "2020-09-28T02:33:39.980Z"
+  } ],
+  "last_non_success" : {
+    "outcome" : "failed",
+    "status" : "failed",
+    "build_num" : 4,
+    "vcs_revision" : "6ed2d5ebfae263d54cd2a1d3ea2d053db923f6b7",
+    "pushed_at" : "2020-09-28T02:36:10.000Z",
+    "is_workflow_job" : true,
+    "is_2_0_job" : true,
+    "added_at" : "2020-09-28T02:36:24.207Z"
+  },
+  "latest_completed_workflows" : {
+    "Build%20Error" : {
+      "status" : "failed",
+      "created_at" : "2020-09-28T02:33:30.488Z",
+      "id" : "398bb7fa-9f10-47c4-ad14-fcba08731255"
+    },
+    "maven_test" : {
+      "status" : "success",
+      "created_at" : "2020-09-28T02:40:52.648Z",
+      "id" : "24d73d4e-7603-49c6-a7be-8d60bf604103"
+    }
+  },
+  "last_success" : {
+    "outcome" : "success",
+    "status" : "success",
+    "build_num" : 5,
+    "vcs_revision" : "6b63d018fe8cec2c38bf3abd9325780a46b89391",
+    "pushed_at" : "2020-09-28T02:40:52.000Z",
+    "is_workflow_job" : true,
+    "is_2_0_job" : true,
+    "added_at" : "2020-09-28T02:41:34.644Z"
+  },
+  "is_using_workflows" : true
+}

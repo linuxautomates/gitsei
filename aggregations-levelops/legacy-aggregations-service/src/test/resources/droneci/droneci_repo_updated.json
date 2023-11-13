@@ -1,0 +1,158 @@
+{
+  "records": [
+    {
+      "builds": [
+        {
+          "id": 32,
+          "repo_id": 1,
+          "trigger": "testuser",
+          "number": 20,
+          "status": "success",
+          "event": "custom",
+          "action": "",
+          "link": "https://github.com/testuser/test",
+          "timestamp": 0,
+          "message": "Create .drone.yml",
+          "before": "2a999d9c8e2128ed6140c0b506cf86dd6cdb4523",
+          "after": "2a999d9c8e2128ed6140c0b506cf86dd6cdb4523",
+          "ref": "refs/heads/main",
+          "source_repo": "",
+          "source": "main",
+          "target": "main",
+          "author_login": "testuser",
+          "author_name": "testuser",
+          "author_email": "106055941+testuser@users.noreply.github.com",
+          "author_avatar": "https://avatars.githubusercontent.com/u/106055941?v=4",
+          "sender": "testuser",
+          "started": 1653303407,
+          "finished": 1653303420,
+          "created": 1653303399,
+          "updated": 1653303407,
+          "version": 3,
+          "stages": [
+            {
+              "id": 32,
+              "repo_id": 1,
+              "build_id": 32,
+              "number": 1,
+              "name": "default",
+              "kind": "pipeline",
+              "type": "docker",
+              "status": "success",
+              "errignore": false,
+              "exit_code": 0,
+              "machine": "my-first-runner",
+              "os": "linux",
+              "arch": "amd64",
+              "started": 1653303407,
+              "stopped": 1653303420,
+              "created": 1653303399,
+              "updated": 1653303420,
+              "version": 4,
+              "on_success": true,
+              "on_failure": false,
+              "stage_url": "http://localhost/testuser/test/20",
+              "steps": [
+                {
+                  "id": 125,
+                  "step_id": 32,
+                  "number": 1,
+                  "name": "clone1",
+                  "status": "success",
+                  "exit_code": 0,
+                  "started": 1653303405,
+                  "stopped": 1653303406,
+                  "version": 4,
+                  "image": "drone/git:latest"
+                },
+                {
+                  "id": 126,
+                  "step_id": 32,
+                  "number": 2,
+                  "name": "write 1",
+                  "status": "success",
+                  "exit_code": 0,
+                  "started": 1653303407,
+                  "stopped": 1653303408,
+                  "version": 4,
+                  "image": "docker.io/library/alpine:latest",
+                  "depends_on": [
+                    "clone"
+                  ]
+                },
+                {
+                  "id": 127,
+                  "step_id": 32,
+                  "number": 3,
+                  "name": "read 1",
+                  "status": "success",
+                  "exit_code": 0,
+                  "started": 1653303409,
+                  "stopped": 1653303410,
+                  "version": 4,
+                  "image": "docker.io/library/alpine:latest",
+                  "depends_on": [
+                    "write"
+                  ]
+                },
+                {
+                  "id": 128,
+                  "step_id": 32,
+                  "number": 4,
+                  "name": "update 1",
+                  "status": "success",
+                  "exit_code": 0,
+                  "started": 1653303411,
+                  "stopped": 1653303412,
+                  "version": 4,
+                  "image": "docker.io/library/alpine:latest",
+                  "depends_on": [
+                    "read"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": 1,
+      "user_id": 1,
+      "namespace": "testuser1",
+      "name": "test1",
+      "slug": "testuser/test",
+      "scm": "",
+      "git_http_url": "https://github.com/testuser/test.git",
+      "git_ssh_url": "git@github.com:testuser/test.git",
+      "link": "https://github.com/testuser1/test1",
+      "default_branch": "main",
+      "private": false,
+      "visibility": "public",
+      "active": true,
+      "config_path": ".drone.yml",
+      "trusted": false,
+      "protected": false,
+      "ignore_forks": false,
+      "ignore_pull_requests": false,
+      "auto_cancel_pull_requests": false,
+      "auto_cancel_pushes": false,
+      "auto_cancel_running": false,
+      "timeout": 60,
+      "counter": 20,
+      "synced": 1653287235,
+      "created": 1653287235,
+      "updated": 1653287236,
+      "version": 22,
+      "archived": false
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "2275"
+    },
+    "integration_type": "droneci",
+    "data_type": "repository",
+    "page_number": 0
+  }
+}

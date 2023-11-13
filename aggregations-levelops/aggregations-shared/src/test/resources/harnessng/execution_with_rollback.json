@@ -1,0 +1,1111 @@
+{
+  "pipelineExecutionSummary": {
+    "pipelineIdentifier": "deploychaospipeline",
+    "orgIdentifier": "default",
+    "projectIdentifier": "ChaosTestinProd2",
+    "planExecutionId": "W6WFJR45RFGsFNw8_B8Wlw",
+    "name": "deploy-chaos-pipeline",
+    "status": "Failed",
+    "tags": [],
+    "executionTriggerInfo": {
+      "triggerType": "MANUAL",
+      "triggeredBy": {
+        "uuid": "WMo_FTvNR2mUakF--quX-w",
+        "identifier": "Saranya Jena",
+        "extraInfo": {
+          "email": "saranya.jena@harness.io"
+        }
+      },
+      "isRerun": false
+    },
+    "executionErrorInfo": {
+      "message": "Score 33.00 is less than expected Resiliency Score of 100.00"
+    },
+    "governanceMetadata": {
+      "id": "0",
+      "deny": false,
+      "details": [],
+      "message": "",
+      "timestamp": "1671015147941",
+      "status": "pass",
+      "accountId": "cTU1lRSWS2SSRV9phKvuOA",
+      "orgId": "default",
+      "projectId": "ChaosTestinProd2",
+      "entity": "accountIdentifier%3AcTU1lRSWS2SSRV9phKvuOA%2ForgIdentifier%3Adefault%2FprojectIdentifier%3AChaosTestinProd2%2FpipelineIdentifier%3Adeploychaospipeline",
+      "type": "pipeline",
+      "action": "onrun",
+      "created": "1671015147930"
+    },
+    "moduleInfo": {
+      "cd": {
+        "__recast": "io.harness.cdng.pipeline.executions.beans.CDPipelineModuleInfo",
+        "envGroupIdentifiers": [],
+        "envIdentifiers": [
+          "vedanttestenv"
+        ],
+        "environmentTypes": [
+          "PreProduction"
+        ],
+        "freezeIdentifiers": [],
+        "infrastructureIdentifiers": [
+          "saranyainfra"
+        ],
+        "infrastructureNames": [
+          "saranya-infra"
+        ],
+        "infrastructureTypes": [
+          "KubernetesDirect"
+        ],
+        "serviceDefinitionTypes": [
+          "Kubernetes"
+        ],
+        "serviceIdentifiers": [
+          "democartsvc"
+        ]
+      }
+    },
+    "layoutNodeMap": {
+      "wLuXO8SPSheg7Mec_OvZ7g": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "manifestdeploy",
+        "name": "manifest-deploy",
+        "nodeUuid": "wLuXO8SPSheg7Mec_OvZ7g",
+        "status": "Failed",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {
+            "__recast": "io.harness.cdng.pipeline.executions.beans.CDStageModuleInfo",
+            "rollbackDuration": 23559,
+            "serviceInfo": {
+              "__recast": "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary",
+              "identifier": "democartsvc",
+              "displayName": "demo-cart-svc",
+              "deploymentType": "Kubernetes",
+              "gitOpsEnabled": false,
+              "artifacts": {
+                "__recast": "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary$ArtifactsSummary",
+                "sidecars": []
+              }
+            },
+            "infraExecutionSummary": {
+              "__recast": "io.harness.cdng.pipeline.executions.beans.InfraExecutionSummary",
+              "identifier": "vedanttestenv",
+              "name": "vedant-test-env",
+              "type": "PreProduction",
+              "infrastructureIdentifier": "saranyainfra",
+              "infrastructureName": "saranya-infra"
+            }
+          }
+        },
+        "startTs": 1671015148175,
+        "endTs": 1671015446537,
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "failureInfo": {
+          "message": "Score 33.00 is less than expected Resiliency Score of 100.00"
+        },
+        "failureInfoDTO": {
+          "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+          "failureTypeList": [],
+          "responseMessages": [
+            {
+              "code": "GENERAL_ERROR",
+              "level": "ERROR",
+              "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+              "exception": null,
+              "failureTypes": [
+                "APPLICATION_ERROR"
+              ]
+            }
+          ]
+        },
+        "nodeExecutionId": "iU2U4DUnTHKX4BM7fiGBBw",
+        "executionInputConfigured": false,
+        "isRollbackStageNode": false
+      },
+      "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage": {
+        "nodeType": "Deployment",
+        "nodeGroup": "STAGE",
+        "nodeIdentifier": "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage",
+        "name": "manifest-deploy (Rollback Stage)",
+        "nodeUuid": "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage",
+        "status": "NotStarted",
+        "module": "cd",
+        "moduleInfo": {
+          "cd": {}
+        },
+        "edgeLayoutList": {
+          "currentNodeChildren": [],
+          "nextIds": []
+        },
+        "isRollbackStageNode": true
+      }
+    },
+    "modules": [
+      "cd"
+    ],
+    "startingNodeId": "wLuXO8SPSheg7Mec_OvZ7g",
+    "startTs": 1671015147941,
+    "endTs": 1671015446610,
+    "createdAt": 1671015147999,
+    "canRetry": true,
+    "showRetryHistory": false,
+    "runSequence": 35,
+    "successfulStagesCount": 0,
+    "runningStagesCount": 0,
+    "failedStagesCount": 1,
+    "totalStagesCount": 1,
+    "storeType": "INLINE",
+    "executionInputConfigured": false,
+    "parentStageInfo": {
+      "hasparentpipeline": false,
+      "stagenodeid": "",
+      "executionid": "",
+      "identifier": "",
+      "projectid": "",
+      "orgid": "",
+      "runsequence": 0
+    },
+    "allowStageExecutions": false,
+    "stagesExecution": false
+  },
+  "executionGraph": {
+    "rootNodeId": "iU2U4DUnTHKX4BM7fiGBBw",
+    "nodeMap": {
+      "5cABmnAlQzqMZr8Xwxquag": {
+        "uuid": "5cABmnAlQzqMZr8Xwxquag",
+        "setupId": "I1ECRMQCRcOi8IX77KmCEwsteps_combinedRollback",
+        "name": "Execution (Rollback)",
+        "identifier": "rollbackSteps",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.execution",
+        "outcomes": {},
+        "stepParameters": null,
+        "startTs": 1671015422912,
+        "endTs": 1671015446347,
+        "stepType": "ROLLBACK_OPTIONAL_CHILD_CHAIN",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "childChain": {
+              "nextChildId": "I1ECRMQCRcOi8IX77KmCEwrollbackSteps_rollbackSteps",
+              "previousChildId": "",
+              "passThroughData": "kxkBAVNlY3Rpb25DaGFpblBhc3NUaHJvdWdoRGF0YS5jaGlsZEluZGX4AQAA",
+              "lastLink": true,
+              "suspend": false
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "bNvJ9iwZQwqAnW7aDTmPjA": {
+        "uuid": "bNvJ9iwZQwqAnW7aDTmPjA",
+        "setupId": "CWXGEiO0S1W68vEVxQlddQ",
+        "name": "Infrastructure Section",
+        "identifier": "infrastructure",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.infrastructure",
+        "outcomes": {
+          "output": {
+            "connectorRef": "saranyainfra",
+            "namespace": "boutique",
+            "releaseName": "release-<+INFRA_KEY>",
+            "environment": {
+              "name": "vedant-test-env",
+              "identifier": "vedanttestenv",
+              "description": "",
+              "type": "PreProduction",
+              "tags": {},
+              "environmentRef": "vedanttestenv",
+              "variables": {}
+            },
+            "infrastructureKey": "123",
+            "infraIdentifier": "saranyainfra",
+            "infraName": "saranya-infra",
+            "name": "saranya-infra",
+            "connector": {
+              "name": "saranya-infra"
+            }
+          }
+        },
+        "stepParameters": null,
+        "startTs": 1671015149078,
+        "endTs": 1671015149857,
+        "stepType": "INFRASTRUCTURE_TASKSTEP_V2",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [],
+              "logKeys": [
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:infrastructure-commandUnit:Execute"
+              ],
+              "units": [],
+              "timeout": 0,
+              "status": "NO_OP"
+            }
+          }
+        ],
+        "unitProgresses": [
+          {
+            "unitName": "Execute",
+            "status": "SUCCESS",
+            "startTime": "1671015149473",
+            "endTime": "1671015149829"
+          }
+        ],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "GMP2Ggu5RaWRZ3O0uhyRKA": {
+        "uuid": "GMP2Ggu5RaWRZ3O0uhyRKA",
+        "setupId": "I1ECRMQCRcOi8IX77KmCEw",
+        "name": "Execution",
+        "identifier": "execution",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.execution",
+        "outcomes": {},
+        "stepParameters": null,
+        "startTs": 1671015150137,
+        "endTs": 1671015446429,
+        "stepType": "NG_SECTION_WITH_ROLLBACK_INFO",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+          "failureTypeList": [],
+          "responseMessages": [
+            {
+              "code": "GENERAL_ERROR",
+              "level": "ERROR",
+              "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+              "exception": null,
+              "failureTypes": [
+                "APPLICATION_ERROR"
+              ]
+            }
+          ]
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "I1ECRMQCRcOi8IX77KmCEwsteps",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "LB0dxZRIRiqrRDEO-YpuGw": {
+        "uuid": "LB0dxZRIRiqrRDEO-YpuGw",
+        "setupId": "wREEC84pTYOMJ8pQcsoy6w",
+        "name": "Chaos Step",
+        "identifier": "ChaosStep",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.execution.steps.ChaosStep",
+        "outcomes": {
+          "output": {
+            "phase": "Completed",
+            "experimentRunId": "4e0e09c2-2afe-45b4-90c2-e27708cb48f5",
+            "resiliencyScore": 33.0,
+            "faultsPassed": 0,
+            "faultsFailed": 1,
+            "faultsAwaited": 0,
+            "faultsStopped": 0,
+            "faultsNa": 0,
+            "totalFaults": 0
+          }
+        },
+        "stepParameters": {
+          "uuid": "wREEC84pTYOMJ8pQcsoy6w",
+          "identifier": "ChaosStep",
+          "name": "Chaos Step",
+          "timeout": "10h",
+          "failureStrategies": [
+            {
+              "onFailure": {
+                "errors": [
+                  "ALL_ERRORS"
+                ],
+                "action": {
+                  "type": "STAGE_ROLLBACK"
+                }
+              }
+            }
+          ],
+          "type": "Chaos",
+          "spec": {
+            "experimentRef": "7211c689-ac5b-4e18-87f0-4094142358d5",
+            "expectedResilienceScore": 100.0
+          },
+          "rollbackParameters": {
+            "strategy": "UNKNOWN",
+            "strategyToUuid": {
+              "PIPELINE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage",
+              "STAGE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_combinedRollback"
+            },
+            "applicableFailureTypes": []
+          }
+        },
+        "startTs": 1671015181921,
+        "endTs": 1671015422724,
+        "stepType": "Chaos",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+          "failureTypeList": [],
+          "responseMessages": [
+            {
+              "code": "GENERAL_ERROR",
+              "level": "ERROR",
+              "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+              "exception": null,
+              "failureTypes": [
+                "APPLICATION_ERROR"
+              ]
+            }
+          ]
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "async": {
+              "callbackIds": [
+                "491739c1-4ebe-4394-8da6-0f612c7e480a"
+              ],
+              "logKeys": [],
+              "units": [],
+              "timeout": 0,
+              "status": "NO_OP"
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "u-hP6ZpzTT6HKRotIAczlQ": {
+        "uuid": "u-hP6ZpzTT6HKRotIAczlQ",
+        "setupId": "sBslq3EAQPyfdME_bRGrsw",
+        "name": "Rollback Rollout Deployment",
+        "identifier": "rollbackRolloutDeployment",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.execution.rollbackSteps.rollbackRolloutDeployment",
+        "outcomes": {
+          "output": {
+            "recreatedResourceIds": []
+          },
+          "deploymentInfoOutcome": {
+            "serverInstanceInfoList": [
+              {
+                "name": "cartservice-547d9fcbd7-4zxxm",
+                "namespace": "boutique",
+                "releaseName": "release-123",
+                "podIP": "10.36.3.31",
+                "containerList": [
+                  {
+                    "containerId": "containerd://b81e79288a06d3b2201fe9acebe099f279f569f6514d61c02447d69695a3d386",
+                    "name": "server",
+                    "image": "gcr.io/google-samples/microservices-demo/cartservice:v0.3.8"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "stepParameters": {
+          "uuid": "sBslq3EAQPyfdME_bRGrsw",
+          "identifier": "rollbackRolloutDeployment",
+          "name": "Rollback Rollout Deployment",
+          "timeout": "10m",
+          "type": "K8sRollingRollback",
+          "spec": {
+            "pruningEnabled": false,
+            "rollingStepFqn": "pipeline.stages.manifestdeploy.spec.execution.steps.rolloutDeployment"
+          },
+          "rollbackParameters": {
+            "strategy": "UNKNOWN",
+            "strategyToUuid": {
+              "PIPELINE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage",
+              "STAGE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_combinedRollback"
+            },
+            "applicableFailureTypes": []
+          }
+        },
+        "startTs": 1671015423109,
+        "endTs": 1671015446274,
+        "stepType": "K8sRollingRollback",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageFailure>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageFailure",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "task": {
+              "taskId": "Ga71kL35TaK_47NVUa7yiw",
+              "taskCategory": "DELEGATE_TASK_V2",
+              "logKeys": [
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:rollbackSteps/level6:rollbackSteps/level7:rollbackSteps/level8:rollbackRolloutDeployment-commandUnit:Initialize",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:rollbackSteps/level6:rollbackSteps/level7:rollbackSteps/level8:rollbackRolloutDeployment-commandUnit:Rollback",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:rollbackSteps/level6:rollbackSteps/level7:rollbackSteps/level8:rollbackRolloutDeployment-commandUnit:Wait for Steady State"
+              ],
+              "units": [
+                "Initialize",
+                "Rollback",
+                "Wait for Steady State"
+              ],
+              "taskName": "K8s Task : Rolling Deployment Rollback"
+            }
+          }
+        ],
+        "unitProgresses": [
+          {
+            "unitName": "Initialize",
+            "status": "SUCCESS",
+            "startTime": "1671015423696",
+            "endTime": "1671015423796"
+          },
+          {
+            "unitName": "Rollback",
+            "status": "SUCCESS",
+            "startTime": "1671015423886",
+            "endTime": "1671015424259"
+          },
+          {
+            "unitName": "Wait for Steady State",
+            "status": "SUCCESS",
+            "startTime": "1671015424340",
+            "endTime": "1671015445951"
+          }
+        ],
+        "progressData": {
+          "unitProgresses": [
+            {
+              "unitName": "Initialize",
+              "status": "SUCCESS",
+              "startTime": "1671015423696",
+              "endTime": "1671015423796"
+            },
+            {
+              "unitName": "Rollback",
+              "status": "SUCCESS",
+              "startTime": "1671015423886",
+              "endTime": "1671015424259"
+            },
+            {
+              "unitName": "Wait for Steady State",
+              "status": "RUNNING",
+              "startTime": "1671015424340"
+            }
+          ]
+        },
+        "delegateInfoList": [
+          {
+            "id": null,
+            "name": null,
+            "taskId": "Ga71kL35TaK_47NVUa7yiw",
+            "taskName": "K8s Task : Rolling Deployment Rollback"
+          }
+        ],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "Y6AH5FS4ShONr0dTkR9isA": {
+        "uuid": "Y6AH5FS4ShONr0dTkR9isA",
+        "setupId": "542GJxnKShuBuG7YLXgBZQ",
+        "name": "Rollout Deployment",
+        "identifier": "rolloutDeployment",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.execution.steps.rolloutDeployment",
+        "outcomes": {
+          "output": {
+            "releaseName": "release-123",
+            "releaseNumber": 30,
+            "prunedResourceIds": []
+          },
+          "deploymentInfoOutcome": {
+            "serverInstanceInfoList": [
+              {
+                "name": "cartservice-56f6569b97-4k9cg",
+                "namespace": "boutique",
+                "releaseName": "release-123",
+                "podIP": "10.36.3.30",
+                "containerList": [
+                  {
+                    "containerId": "containerd://dd8140d69763d5beea8f23349c2ec35f632bd38b0e3fa2791cc4353fe4849e4c",
+                    "name": "server",
+                    "image": "docker.io/ksatchit/cartservice:0.1.0"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "stepParameters": {
+          "uuid": "542GJxnKShuBuG7YLXgBZQ",
+          "identifier": "rolloutDeployment",
+          "name": "Rollout Deployment",
+          "timeout": "10m",
+          "type": "K8sRollingDeploy",
+          "spec": {
+            "skipDryRun": false,
+            "pruningEnabled": false
+          },
+          "rollbackParameters": {
+            "strategy": "UNKNOWN",
+            "strategyToUuid": {
+              "PIPELINE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage",
+              "STAGE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_combinedRollback"
+            },
+            "applicableFailureTypes": []
+          }
+        },
+        "startTs": 1671015150252,
+        "endTs": 1671015181855,
+        "stepType": "K8sRollingDeploy",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "taskChain": {
+              "taskId": "IEVTzVUsS1CY-Q7yIeQ9ag",
+              "taskCategory": "DELEGATE_TASK_V2",
+              "chainEnd": false,
+              "passThroughData": "eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5rOHMuSzhzU3RlcFBhc3NUaHJvdWdoRGF0YSIsIm1hbmlmZXN0T3V0Y29tZSI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5tYW5pZmVzdC55YW1sLks4c01hbmlmZXN0T3V0Y29tZSIsImlkZW50aWZpZXIiOiJjYXJ0LXN2Yy55YW1sIiwidHlwZSI6Iks4c01hbmlmZXN0Iiwic3RvcmUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLmNkbmcubWFuaWZlc3QueWFtbC5HaXRodWJTdG9yZSIsImNvbm5lY3RvclJlZiI6eyJfX3JlY2FzdCI6InBhcmFtZXRlckZpZWxkIiwiX19lbmNvZGVkVmFsdWUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckRvY3VtZW50RmllbGQiLCJleHByZXNzaW9uIjpmYWxzZSwidmFsdWVEb2MiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckZpZWxkVmFsdWVXcmFwcGVyIiwidmFsdWUiOiJzYXJhbnlhZ2l0Y29ubmVjdG9yIn0sInZhbHVlQ2xhc3MiOiJqYXZhLmxhbmcuU3RyaW5nIiwidHlwZVN0cmluZyI6dHJ1ZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX0sImdpdEZldGNoVHlwZSI6IkJSQU5DSCIsImJyYW5jaCI6eyJfX3JlY2FzdCI6InBhcmFtZXRlckZpZWxkIiwiX19lbmNvZGVkVmFsdWUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckRvY3VtZW50RmllbGQiLCJleHByZXNzaW9uIjpmYWxzZSwidmFsdWVEb2MiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckZpZWxkVmFsdWVXcmFwcGVyIiwidmFsdWUiOiJtYWluIn0sInZhbHVlQ2xhc3MiOiJqYXZhLmxhbmcuU3RyaW5nIiwidHlwZVN0cmluZyI6dHJ1ZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX0sImNvbW1pdElkIjp7Il9fcmVjYXN0IjoicGFyYW1ldGVyRmllbGQiLCJfX2VuY29kZWRWYWx1ZSI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRG9jdW1lbnRGaWVsZCIsImV4cHJlc3Npb24iOmZhbHNlLCJ2YWx1ZURvYyI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRmllbGRWYWx1ZVdyYXBwZXIifSwidmFsdWVDbGFzcyI6ImphdmEubGFuZy5TdHJpbmciLCJ0eXBlU3RyaW5nIjpmYWxzZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX0sInBhdGhzIjp7Il9fcmVjYXN0IjoicGFyYW1ldGVyRmllbGQiLCJfX2VuY29kZWRWYWx1ZSI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRG9jdW1lbnRGaWVsZCIsImV4cHJlc3Npb24iOmZhbHNlLCJ2YWx1ZURvYyI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRmllbGRWYWx1ZVdyYXBwZXIiLCJ2YWx1ZSI6WyJjYXJ0LXN2Yy55YW1sIl19LCJ2YWx1ZUNsYXNzIjoiamF2YS51dGlsLkxpc3QiLCJ0eXBlU3RyaW5nIjpmYWxzZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX0sImZvbGRlclBhdGgiOnsiX19yZWNhc3QiOiJwYXJhbWV0ZXJGaWVsZCIsIl9fZW5jb2RlZFZhbHVlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJEb2N1bWVudEZpZWxkIiwiZXhwcmVzc2lvbiI6ZmFsc2UsInZhbHVlRG9jIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJGaWVsZFZhbHVlV3JhcHBlciJ9LCJ2YWx1ZUNsYXNzIjoiamF2YS5sYW5nLlN0cmluZyIsInR5cGVTdHJpbmciOmZhbHNlLCJza2lwQXV0b0V2YWx1YXRpb24iOmZhbHNlLCJqc29uUmVzcG9uc2VGaWVsZCI6ZmFsc2V9fSwicmVwb05hbWUiOnsiX19yZWNhc3QiOiJwYXJhbWV0ZXJGaWVsZCIsIl9fZW5jb2RlZFZhbHVlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJEb2N1bWVudEZpZWxkIiwiZXhwcmVzc2lvbiI6ZmFsc2UsInZhbHVlRG9jIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJGaWVsZFZhbHVlV3JhcHBlciJ9LCJ2YWx1ZUNsYXNzIjoiamF2YS5sYW5nLlN0cmluZyIsInR5cGVTdHJpbmciOmZhbHNlLCJza2lwQXV0b0V2YWx1YXRpb24iOmZhbHNlLCJqc29uUmVzcG9uc2VGaWVsZCI6ZmFsc2V9fX0sInNraXBSZXNvdXJjZVZlcnNpb25pbmciOnsiX19yZWNhc3QiOiJwYXJhbWV0ZXJGaWVsZCIsIl9fZW5jb2RlZFZhbHVlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJEb2N1bWVudEZpZWxkIiwiZXhwcmVzc2lvbiI6ZmFsc2UsInZhbHVlRG9jIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJGaWVsZFZhbHVlV3JhcHBlciIsInZhbHVlIjpmYWxzZX0sInZhbHVlQ2xhc3MiOiJqYXZhLmxhbmcuQm9vbGVhbiIsInR5cGVTdHJpbmciOmZhbHNlLCJza2lwQXV0b0V2YWx1YXRpb24iOmZhbHNlLCJqc29uUmVzcG9uc2VGaWVsZCI6ZmFsc2V9fSwidmFsdWVzUGF0aHMiOnsiX19yZWNhc3QiOiJwYXJhbWV0ZXJGaWVsZCIsIl9fZW5jb2RlZFZhbHVlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJEb2N1bWVudEZpZWxkIiwiZXhwcmVzc2lvbiI6ZmFsc2UsInZhbHVlRG9jIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJGaWVsZFZhbHVlV3JhcHBlciJ9LCJ2YWx1ZUNsYXNzIjoiamF2YS51dGlsLkxpc3QiLCJ0eXBlU3RyaW5nIjpmYWxzZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX19LCJtYW5pZmVzdE91dGNvbWVMaXN0IjpbeyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5tYW5pZmVzdC55YW1sLlZhbHVlc01hbmlmZXN0T3V0Y29tZSIsImlkZW50aWZpZXIiOiJjYXJ0LXN2Yy55YW1sIiwidHlwZSI6IlZhbHVlcyIsInN0b3JlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5jZG5nLm1hbmlmZXN0LnlhbWwuR2l0aHViU3RvcmUiLCJjb25uZWN0b3JSZWYiOnsiX19yZWNhc3QiOiJwYXJhbWV0ZXJGaWVsZCIsIl9fZW5jb2RlZFZhbHVlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJEb2N1bWVudEZpZWxkIiwiZXhwcmVzc2lvbiI6ZmFsc2UsInZhbHVlRG9jIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJGaWVsZFZhbHVlV3JhcHBlciIsInZhbHVlIjoic2FyYW55YWdpdGNvbm5lY3RvciJ9LCJ2YWx1ZUNsYXNzIjoiamF2YS5sYW5nLlN0cmluZyIsInR5cGVTdHJpbmciOnRydWUsInNraXBBdXRvRXZhbHVhdGlvbiI6ZmFsc2UsImpzb25SZXNwb25zZUZpZWxkIjpmYWxzZX19LCJnaXRGZXRjaFR5cGUiOiJCUkFOQ0giLCJicmFuY2giOnsiX19yZWNhc3QiOiJwYXJhbWV0ZXJGaWVsZCIsIl9fZW5jb2RlZFZhbHVlIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJEb2N1bWVudEZpZWxkIiwiZXhwcmVzc2lvbiI6ZmFsc2UsInZhbHVlRG9jIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5wbXMueWFtbC5QYXJhbWV0ZXJGaWVsZFZhbHVlV3JhcHBlciIsInZhbHVlIjoibWFpbiJ9LCJ2YWx1ZUNsYXNzIjoiamF2YS5sYW5nLlN0cmluZyIsInR5cGVTdHJpbmciOnRydWUsInNraXBBdXRvRXZhbHVhdGlvbiI6ZmFsc2UsImpzb25SZXNwb25zZUZpZWxkIjpmYWxzZX19LCJjb21taXRJZCI6eyJfX3JlY2FzdCI6InBhcmFtZXRlckZpZWxkIiwiX19lbmNvZGVkVmFsdWUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckRvY3VtZW50RmllbGQiLCJleHByZXNzaW9uIjpmYWxzZSwidmFsdWVEb2MiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckZpZWxkVmFsdWVXcmFwcGVyIn0sInZhbHVlQ2xhc3MiOiJqYXZhLmxhbmcuU3RyaW5nIiwidHlwZVN0cmluZyI6ZmFsc2UsInNraXBBdXRvRXZhbHVhdGlvbiI6ZmFsc2UsImpzb25SZXNwb25zZUZpZWxkIjpmYWxzZX19LCJwYXRocyI6eyJfX3JlY2FzdCI6InBhcmFtZXRlckZpZWxkIiwiX19lbmNvZGVkVmFsdWUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckRvY3VtZW50RmllbGQiLCJleHByZXNzaW9uIjpmYWxzZSwidmFsdWVEb2MiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnBtcy55YW1sLlBhcmFtZXRlckZpZWxkVmFsdWVXcmFwcGVyIiwidmFsdWUiOlsiY2FydC1zdmMueWFtbCJdfSwidmFsdWVDbGFzcyI6ImphdmEudXRpbC5MaXN0IiwidHlwZVN0cmluZyI6ZmFsc2UsInNraXBBdXRvRXZhbHVhdGlvbiI6ZmFsc2UsImpzb25SZXNwb25zZUZpZWxkIjpmYWxzZX19LCJmb2xkZXJQYXRoIjp7Il9fcmVjYXN0IjoicGFyYW1ldGVyRmllbGQiLCJfX2VuY29kZWRWYWx1ZSI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRG9jdW1lbnRGaWVsZCIsImV4cHJlc3Npb24iOmZhbHNlLCJ2YWx1ZURvYyI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRmllbGRWYWx1ZVdyYXBwZXIifSwidmFsdWVDbGFzcyI6ImphdmEubGFuZy5TdHJpbmciLCJ0eXBlU3RyaW5nIjpmYWxzZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX0sInJlcG9OYW1lIjp7Il9fcmVjYXN0IjoicGFyYW1ldGVyRmllbGQiLCJfX2VuY29kZWRWYWx1ZSI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRG9jdW1lbnRGaWVsZCIsImV4cHJlc3Npb24iOmZhbHNlLCJ2YWx1ZURvYyI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MucG1zLnlhbWwuUGFyYW1ldGVyRmllbGRWYWx1ZVdyYXBwZXIifSwidmFsdWVDbGFzcyI6ImphdmEubGFuZy5TdHJpbmciLCJ0eXBlU3RyaW5nIjpmYWxzZSwic2tpcEF1dG9FdmFsdWF0aW9uIjpmYWxzZSwianNvblJlc3BvbnNlRmllbGQiOmZhbHNlfX19LCJvcmRlciI6MH1dLCJpbmZyYXN0cnVjdHVyZSI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5pbmZyYS5iZWFucy5LOHNEaXJlY3RJbmZyYXN0cnVjdHVyZU91dGNvbWUiLCJjb25uZWN0b3JSZWYiOiJzYXJhbnlhaW5mcmEiLCJuYW1lc3BhY2UiOiJib3V0aXF1ZSIsInJlbGVhc2VOYW1lIjoicmVsZWFzZS08K0lORlJBX0tFWT4iLCJlbnZpcm9ubWVudCI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3Muc3RlcHMuZW52aXJvbm1lbnQuRW52aXJvbm1lbnRPdXRjb21lIiwibmFtZSI6InZlZGFudC10ZXN0LWVudiIsImlkZW50aWZpZXIiOiJ2ZWRhbnR0ZXN0ZW52IiwiZGVzY3JpcHRpb24iOiIiLCJ0eXBlIjoiUHJlUHJvZHVjdGlvbiIsInRhZ3MiOnt9LCJlbnZpcm9ubWVudFJlZiI6InZlZGFudHRlc3RlbnYiLCJ2YXJpYWJsZXMiOnt9fSwiaW5mcmFzdHJ1Y3R1cmVLZXkiOiI1ZGQzOTQ4MWJiYTc0MTNiOTI1OWMzZmE0Zjc3YjQzYWFiM2VhZWNkIiwiaW5mcmFJZGVudGlmaWVyIjoic2FyYW55YWluZnJhIiwiaW5mcmFOYW1lIjoic2FyYW55YS1pbmZyYSIsIm5hbWUiOiJzYXJhbnlhLWluZnJhIiwiY29ubmVjdG9yIjp7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5jZG5nLmluZnJhLkNvbm5lY3RvciIsIm5hbWUiOiJzYXJhbnlhLWluZnJhIn19LCJsb2NhbFN0b3JlRmlsZU1hcENvbnRlbnRzIjp7fSwibWFuaWZlc3RGaWxlcyI6W10sImN1c3RvbUZldGNoQ29udGVudCI6e30sInppcHBlZE1hbmlmZXN0RmlsZUlkIjoiIiwic2hvdWxkQ2xvc2VGZXRjaEZpbGVzU3RyZWFtIjpmYWxzZSwic2hvdWxkT3BlbkZldGNoRmlsZXNTdHJlYW0iOnRydWV9",
+              "logKeys": [
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Fetch Files",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Initialize",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Prepare",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Apply",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Wait for Steady State",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Wrap Up"
+              ],
+              "units": [
+                "Fetch Files",
+                "Initialize",
+                "Prepare",
+                "Apply",
+                "Wait for Steady State",
+                "Wrap Up"
+              ],
+              "taskName": "Git Fetch Files Task"
+            }
+          },
+          {
+            "taskChain": {
+              "taskId": "1MxBWfEgQ-Cal2v1IXQMDQ",
+              "taskCategory": "DELEGATE_TASK_V2",
+              "chainEnd": true,
+              "passThroughData": "eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5rOHMuYmVhbnMuSzhzRXhlY3V0aW9uUGFzc1Rocm91Z2hEYXRhIiwiaW5mcmFzdHJ1Y3R1cmUiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLmNkbmcuaW5mcmEuYmVhbnMuSzhzRGlyZWN0SW5mcmFzdHJ1Y3R1cmVPdXRjb21lIiwiY29ubmVjdG9yUmVmIjoic2FyYW55YWluZnJhIiwibmFtZXNwYWNlIjoiYm91dGlxdWUiLCJyZWxlYXNlTmFtZSI6InJlbGVhc2UtPCtJTkZSQV9LRVk+IiwiZW52aXJvbm1lbnQiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLnN0ZXBzLmVudmlyb25tZW50LkVudmlyb25tZW50T3V0Y29tZSIsIm5hbWUiOiJ2ZWRhbnQtdGVzdC1lbnYiLCJpZGVudGlmaWVyIjoidmVkYW50dGVzdGVudiIsImRlc2NyaXB0aW9uIjoiIiwidHlwZSI6IlByZVByb2R1Y3Rpb24iLCJ0YWdzIjp7fSwiZW52aXJvbm1lbnRSZWYiOiJ2ZWRhbnR0ZXN0ZW52IiwidmFyaWFibGVzIjp7fX0sImluZnJhc3RydWN0dXJlS2V5IjoiNWRkMzk0ODFiYmE3NDEzYjkyNTljM2ZhNGY3N2I0M2FhYjNlYWVjZCIsImluZnJhSWRlbnRpZmllciI6InNhcmFueWFpbmZyYSIsImluZnJhTmFtZSI6InNhcmFueWEtaW5mcmEiLCJuYW1lIjoic2FyYW55YS1pbmZyYSIsImNvbm5lY3RvciI6eyJfX3JlY2FzdCI6ImlvLmhhcm5lc3MuY2RuZy5pbmZyYS5Db25uZWN0b3IiLCJuYW1lIjoic2FyYW55YS1pbmZyYSJ9fSwibGFzdEFjdGl2ZVVuaXRQcm9ncmVzc0RhdGEiOnsiX19yZWNhc3QiOiJpby5oYXJuZXNzLmRlbGVnYXRlLmJlYW5zLmxvZ3N0cmVhbWluZy5Vbml0UHJvZ3Jlc3NEYXRhIiwidW5pdFByb2dyZXNzZXMiOlt7Il9fcmVjYXN0IjoiaW8uaGFybmVzcy5sb2dnaW5nLlVuaXRQcm9ncmVzcyIsIl9fZW5jb2RlZFZhbHVlIjoie1xuICBcInVuaXROYW1lXCI6IFwiRmV0Y2ggRmlsZXNcIixcbiAgXCJzdGF0dXNcIjogXCJSVU5OSU5HXCIsXG4gIFwic3RhcnRUaW1lXCI6IFwiMTY3MTAxNTE1MTUyNlwiXG59In1dfSwiemlwcGVkTWFuaWZlc3RJZCI6IiIsIm1hbmlmZXN0RmlsZXMiOltdfQ==",
+              "logKeys": [
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Fetch Files",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Initialize",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Prepare",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Apply",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Wait for Steady State",
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:execution/level5:steps/level6:rolloutDeployment-commandUnit:Wrap Up"
+              ],
+              "units": [
+                "Fetch Files",
+                "Initialize",
+                "Prepare",
+                "Apply",
+                "Wait for Steady State",
+                "Wrap Up"
+              ],
+              "taskName": "K8s Task : Rolling Deploy"
+            }
+          }
+        ],
+        "unitProgresses": [
+          {
+            "unitName": "Fetch Files",
+            "status": "SUCCESS",
+            "startTime": "1671015151526",
+            "endTime": "1671015155089"
+          },
+          {
+            "unitName": "Initialize",
+            "status": "SUCCESS",
+            "startTime": "1671015155157",
+            "endTime": "1671015156806"
+          },
+          {
+            "unitName": "Prepare",
+            "status": "SUCCESS",
+            "startTime": "1671015156953",
+            "endTime": "1671015157473"
+          },
+          {
+            "unitName": "Apply",
+            "status": "SUCCESS",
+            "startTime": "1671015157547",
+            "endTime": "1671015157998"
+          },
+          {
+            "unitName": "Wait for Steady State",
+            "status": "SUCCESS",
+            "startTime": "1671015159557",
+            "endTime": "1671015179578"
+          },
+          {
+            "unitName": "Wrap Up",
+            "status": "SUCCESS",
+            "startTime": "1671015179748",
+            "endTime": "1671015179901"
+          }
+        ],
+        "progressData": {
+          "unitProgresses": [
+            {
+              "unitName": "Fetch Files",
+              "status": "SUCCESS",
+              "startTime": "1671015151526",
+              "endTime": "1671015155089"
+            },
+            {
+              "unitName": "Initialize",
+              "status": "SUCCESS",
+              "startTime": "1671015155157",
+              "endTime": "1671015156806"
+            },
+            {
+              "unitName": "Prepare",
+              "status": "SUCCESS",
+              "startTime": "1671015156953",
+              "endTime": "1671015157473"
+            },
+            {
+              "unitName": "Apply",
+              "status": "SUCCESS",
+              "startTime": "1671015157547",
+              "endTime": "1671015157998"
+            },
+            {
+              "unitName": "Wait for Steady State",
+              "status": "SUCCESS",
+              "startTime": "1671015159557",
+              "endTime": "1671015179578"
+            }
+          ]
+        },
+        "delegateInfoList": [
+          {
+            "id": null,
+            "name": null,
+            "taskId": "IEVTzVUsS1CY-Q7yIeQ9ag",
+            "taskName": "Git Fetch Files Task"
+          },
+          {
+            "id": null,
+            "name": null,
+            "taskId": "1MxBWfEgQ-Cal2v1IXQMDQ",
+            "taskName": "K8s Task : Rolling Deploy"
+          }
+        ],
+        "interruptHistories": [],
+        "stepDetails": {
+          "Release Name": {
+            "releaseName": "release-123"
+          }
+        },
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "tylKhm83T16twpwAjhBXCQ": {
+        "uuid": "tylKhm83T16twpwAjhBXCQ",
+        "setupId": "WtAErgzuRx6x7vXdyCE-rA",
+        "name": "Resource Constraint",
+        "identifier": "rc-HD8MMKtCQOua2yf6bCmx1A",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec.rc-HD8MMKtCQOua2yf6bCmx1A",
+        "outcomes": {
+          "output": {
+            "name": "Queuing",
+            "capacity": 1,
+            "resourceUnit": "123",
+            "usage": 1,
+            "alreadyAcquiredPermits": 1
+          }
+        },
+        "stepParameters": {
+          "uuid": "WtAErgzuRx6x7vXdyCE-rA",
+          "identifier": "rc-HD8MMKtCQOua2yf6bCmx1A",
+          "name": "Resource Constraint",
+          "timeout": "1w",
+          "when": {
+            "uuid": "3fH86BIeRoCArf_meHiPQA",
+            "stageStatus": "SUCCESS",
+            "condition": "true == \"true\""
+          },
+          "type": "ResourceConstraint",
+          "spec": {
+            "name": "Queuing",
+            "resourceUnit": "123",
+            "acquireMode": "ENSURE",
+            "permits": 1,
+            "holdingScope": "STAGE"
+          },
+          "rollbackParameters": {
+            "strategy": "UNKNOWN",
+            "strategyToUuid": {
+              "STAGE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_combinedRollback",
+              "PIPELINE_ROLLBACK": "wLuXO8SPSheg7Mec_OvZ7g_rollbackStage"
+            },
+            "applicableFailureTypes": []
+          }
+        },
+        "startTs": 1671015150057,
+        "endTs": 1671015150112,
+        "stepType": "ResourceConstraint",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnStageSuccess> && (<+InfrastructureStepOutput.addRcStep> == \"true\")",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "InfrastructureStepOutput.addRcStep",
+              "expressionValue": "true",
+              "count": 1
+            },
+            {
+              "expression": "OnStageSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "sync": {
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "gZISCH4ETteSDUrt8THRUg": {
+        "uuid": "gZISCH4ETteSDUrt8THRUg",
+        "setupId": "hcq1sIIKSyib5zTKLA-9NA",
+        "name": "Service",
+        "identifier": "service",
+        "baseFqn": "pipeline.stages.manifestdeploy.spec",
+        "outcomes": {
+          "service": {
+            "identifier": "democartsvc",
+            "name": "demo-cart-svc",
+            "type": "Kubernetes",
+            "gitOpsEnabled": false
+          },
+          "manifests": {
+            "cart-svc.yaml": {
+              "identifier": "cart-svc.yaml",
+              "type": "K8sManifest",
+              "store": {
+                "connectorRef": "saranyagitconnector",
+                "gitFetchType": "BRANCH",
+                "branch": "main",
+                "paths": [
+                  "cart-svc.yaml"
+                ]
+              },
+              "skipResourceVersioning": false
+            }
+          }
+        },
+        "stepParameters": {
+          "serviceRef": "democartsvc",
+          "envRef": "vedanttestenv",
+          "childrenNodeIds": [
+            "artifacts-cB3IVdUqRXyPze7y8U1pPQ",
+            "manifests-DL3lHUqYS7mQkbZbyLU--Q",
+            "configFiles-meuVL2m5RfOgcjxcHnP_7A"
+          ],
+          "deploymentType": "KUBERNETES"
+        },
+        "startTs": 1671015148276,
+        "endTs": 1671015149052,
+        "stepType": "SERVICE_V3",
+        "status": "Success",
+        "failureInfo": {
+          "message": "",
+          "failureTypeList": [],
+          "responseMessages": []
+        },
+        "skipInfo": null,
+        "nodeRunInfo": null,
+        "executableResponses": [
+          {
+            "children": {
+              "children": [
+                {
+                  "childNodeId": "artifacts-cB3IVdUqRXyPze7y8U1pPQ"
+                },
+                {
+                  "childNodeId": "manifests-DL3lHUqYS7mQkbZbyLU--Q"
+                },
+                {
+                  "childNodeId": "configFiles-meuVL2m5RfOgcjxcHnP_7A"
+                }
+              ],
+              "maxConcurrency": "0",
+              "logKeys": [
+                "accountId:cTU1lRSWS2SSRV9phKvuOA/orgId:default/projectId:ChaosTestinProd2/pipelineId:deploychaospipeline/runSequence:35/level0:pipeline/level1:stages/level2:manifestdeploy/level3:spec/level4:service"
+              ],
+              "shouldProceedIfFailed": false
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      },
+      "iU2U4DUnTHKX4BM7fiGBBw": {
+        "uuid": "iU2U4DUnTHKX4BM7fiGBBw",
+        "setupId": "wLuXO8SPSheg7Mec_OvZ7g",
+        "name": "manifest-deploy",
+        "identifier": "manifestdeploy",
+        "baseFqn": "pipeline.stages.manifestdeploy",
+        "outcomes": {},
+        "stepParameters": {
+          "uuid": "wLuXO8SPSheg7Mec_OvZ7g",
+          "identifier": "manifestdeploy",
+          "name": "manifest-deploy",
+          "description": "",
+          "failureStrategies": [
+            {
+              "onFailure": {
+                "errors": [
+                  "ALL_ERRORS"
+                ],
+                "action": {
+                  "type": "STAGE_ROLLBACK"
+                }
+              }
+            }
+          ],
+          "variables": {
+            "__recast": "java.util.LinkedHashMap"
+          },
+          "tags": {},
+          "type": "Deployment",
+          "specConfig": {
+            "childNodeID": "x64HoMYLRdqakYVA67IJLg"
+          }
+        },
+        "startTs": 1671015148175,
+        "endTs": 1671015446537,
+        "stepType": "DEPLOYMENT_STAGE_STEP",
+        "status": "Failed",
+        "failureInfo": {
+          "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+          "failureTypeList": [],
+          "responseMessages": [
+            {
+              "code": "GENERAL_ERROR",
+              "level": "ERROR",
+              "message": "Score 33.00 is less than expected Resiliency Score of 100.00",
+              "exception": null,
+              "failureTypes": [
+                "APPLICATION_ERROR"
+              ]
+            }
+          ]
+        },
+        "skipInfo": null,
+        "nodeRunInfo": {
+          "whenCondition": "<+OnPipelineSuccess>",
+          "evaluatedCondition": true,
+          "expressions": [
+            {
+              "expression": "OnPipelineSuccess",
+              "expressionValue": "true",
+              "count": 1
+            }
+          ]
+        },
+        "executableResponses": [
+          {
+            "child": {
+              "childNodeId": "x64HoMYLRdqakYVA67IJLg",
+              "logKeys": [],
+              "units": []
+            }
+          }
+        ],
+        "unitProgresses": [],
+        "progressData": null,
+        "delegateInfoList": [],
+        "interruptHistories": [],
+        "stepDetails": null,
+        "strategyMetadata": null,
+        "executionInputConfigured": false
+      }
+    },
+    "nodeAdjacencyListMap": {
+      "5cABmnAlQzqMZr8Xwxquag": {
+        "children": [
+          "u-hP6ZpzTT6HKRotIAczlQ"
+        ],
+        "nextIds": []
+      },
+      "bNvJ9iwZQwqAnW7aDTmPjA": {
+        "children": [],
+        "nextIds": [
+          "tylKhm83T16twpwAjhBXCQ"
+        ]
+      },
+      "GMP2Ggu5RaWRZ3O0uhyRKA": {
+        "children": [
+          "Y6AH5FS4ShONr0dTkR9isA"
+        ],
+        "nextIds": []
+      },
+      "LB0dxZRIRiqrRDEO-YpuGw": {
+        "children": [],
+        "nextIds": [
+          "5cABmnAlQzqMZr8Xwxquag"
+        ]
+      },
+      "u-hP6ZpzTT6HKRotIAczlQ": {
+        "children": [],
+        "nextIds": []
+      },
+      "Y6AH5FS4ShONr0dTkR9isA": {
+        "children": [],
+        "nextIds": [
+          "LB0dxZRIRiqrRDEO-YpuGw"
+        ]
+      },
+      "tylKhm83T16twpwAjhBXCQ": {
+        "children": [],
+        "nextIds": [
+          "GMP2Ggu5RaWRZ3O0uhyRKA"
+        ]
+      },
+      "gZISCH4ETteSDUrt8THRUg": {
+        "children": [],
+        "nextIds": [
+          "bNvJ9iwZQwqAnW7aDTmPjA"
+        ]
+      },
+      "iU2U4DUnTHKX4BM7fiGBBw": {
+        "children": [
+          "gZISCH4ETteSDUrt8THRUg"
+        ],
+        "nextIds": []
+      }
+    },
+    "executionMetadata": {
+      "accountId": "cTU1lRSWS2SSRV9phKvuOA",
+      "pipelineIdentifier": "deploychaospipeline",
+      "orgIdentifier": "default",
+      "projectIdentifier": "ChaosTestinProd2",
+      "planExecutionId": "W6WFJR45RFGsFNw8_B8Wlw"
+    },
+    "representationStrategy": "camelCase"
+  }
+}

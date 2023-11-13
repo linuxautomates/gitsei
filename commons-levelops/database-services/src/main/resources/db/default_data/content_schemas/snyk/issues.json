@@ -1,0 +1,96 @@
+{
+  "content_type": "integration/snyk/issues",
+  "value_type": "json_blob",
+  "fields": {
+    "key": {
+      "key": "key",
+      "value_type": "string",
+      "content_type": "id:integration/snyk/issues"
+    },
+    "scm_project_url": {
+      "key": "scm_project_url",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "url": {
+      "key": "url",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "title": {
+      "key": "title",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "type": {
+      "key": "type",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "description": {
+      "key": "description",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "package": {
+      "key": "package",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "version": {
+      "key": "version",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "severity": {
+      "key": "severity",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "exploitMaturity": {
+      "key": "exploitMaturity",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "language": {
+      "key": "language",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "packageManager": {
+      "key": "packageManager",
+      "value_type": "string",
+      "content_type": "string"
+    },
+    "isUpgradable": {
+      "key": "isUpgradable",
+      "value_type": "boolean",
+      "content_type": "boolean"
+    },
+    "isPatchable": {
+      "key": "isPatchable",
+      "value_type": "boolean",
+      "content_type": "boolean"
+    },
+    "isPinnable": {
+      "key": "isPinnable",
+      "value_type": "boolean",
+      "content_type": "boolean"
+    },
+    "cvssScore": {
+      "key": "cvssScore",
+      "value_type": "float",
+      "content_type": "float"
+    },
+    "updated_at": {
+      "key": "updated_at",
+      "value_type": "string",
+      "content_type": "date"
+    },
+    "created_at": {
+      "key": "created_at",
+      "value_type": "string",
+      "content_type": "date"
+    }
+  }
+}

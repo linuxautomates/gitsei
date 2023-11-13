@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "public": true,
+      "id": "1",
+      "teamId": "1",
+      "name": "Tic - Tac - Toe",
+      "isPublic": true,
+      "links": [
+        {
+          "rel": "self",
+          "uri": "/projects/1"
+        },
+        {
+          "rel": "teams",
+          "uri": "/auth/teams/"
+        },
+        {
+          "rel": "latestscan",
+          "uri": "/sast/scans?projectId=1&last=1"
+        },
+        {
+          "rel": "allscans",
+          "uri": "/sast/scans?projectId=1"
+        },
+        {
+          "rel": "scansettings",
+          "uri": "/sast/scanSettings/1"
+        },
+        {
+          "type": "local",
+          "rel": "source"
+        }
+      ],
+      "vcs_settings": {
+        "exclude_settings": {
+          "link": {
+            "rel": "self",
+            "uri": "/projects/1/sourceCode/excludeSettings"
+          },
+          "projectId": "1",
+          "excludeFoldersPattern": "",
+          "excludeFilesPattern": ""
+        }
+      }
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "test",
+      "integration_id": "1"
+    },
+    "integration_type": "cxsast",
+    "data_type": "projects",
+    "page_number": 0
+  }
+}

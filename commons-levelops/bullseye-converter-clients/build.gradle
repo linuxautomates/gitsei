@@ -1,0 +1,35 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile project(":utils")
+    compile project(":okhttp-utils")
+    compile project(":bullseye-converter-commons")
+    compile project(":spring-web-utils")
+    compile libraries.okhttp
+    compile libraries.jackson_core
+    compile libraries.log4j
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile "com.squareup.okhttp3:logging-interceptor:4.6.0"
+    testCompile libraries.spring_boot_starter_test
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.9
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.9
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

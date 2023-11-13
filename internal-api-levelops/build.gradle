@@ -1,0 +1,266 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.6.6")
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "3.0"
+}
+
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'org.springframework.boot'
+
+group = 'io.levelops'
+version = '0.0.1-SNAPSHOT'
+if (System.getenv("VERSION") != null) {
+    version = System.getenv("VERSION")
+}
+sourceCompatibility = '1.13'
+targetCompatibility = '1.13'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url "https://artifactory.levelops.io/repository/maven-public/"
+        credentials {
+            username nexusUser
+            password nexusPassword
+        }
+    }
+
+    maven {
+        url "https://packages.atlassian.com/maven-public/"
+    }
+
+    dependencies {
+        components.all {
+            allVariants {
+                withDependencies { deps ->
+                    deps.each { dep ->
+                        if (dep.group == 'io.levelops.commons') {
+                            dep.version {
+                                strictly levelopsCommonsVersion
+                            }
+                            dep.because ""
+                        }
+                        if (dep.group == 'org.apache.logging.log4j' && dep.name == 'log4j-core') {
+                            dep.version {
+                                strictly "2.17.1"
+                            }
+                            dep.because "version 2.17.1 required to fix CVE-2021-44228, CVE-2021-45105, CVE-2021-45046"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+wrapper {
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+bootJar {
+    mainClass = "io.levelops.internal_api.InternalApiApplication"
+}
+
+ext.levelopsCommonsVersion = "v0.1.9293-main"
+
+ext.levelopsCommonsLib = { name -> [group: 'io.levelops.commons', name: name, version: levelopsCommonsVersion] }
+
+ext.levelopsIntegrationsVersion = 'v0.1.877-main'
+
+ext.levelopsIntegrationsLib = { name -> [group: 'io.levelops.integrations', name: name, version: levelopsIntegrationsVersion] }
+
+ext.openApiVersion = '1.6.6'
+ext.openapiLib = { component -> ["org.springdoc:springdoc-openapi-" + component + ":${openApiVersion}"] }
+
+ext.libraries = [
+        'lombok'                  : [group: 'org.projectlombok', name: 'lombok', version: '1.18.22'],
+        'junit'                   : [group: 'junit', name: 'junit', version: '4.13.2'],
+        'assertj'                 : [group: 'org.assertj', name: 'assertj-core', version: '3.22.0'],
+        'okhttp'                  : [group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.3'],
+        'mockito'                 : [group: 'org.mockito', name: 'mockito-core', 'version': '4.4.0'],
+        'apache_commons'          : [group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'],
+        'apache_collections'      : [group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'],
+        'csv'                     : [group: 'com.univocity', name: 'univocity-parsers', version: '2.9.1'],
+        'log4j'                   : [group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.2'],
+        'servlet'                 : [group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'],
+        'gson'                    : [group: 'com.google.code.gson', name: 'gson', version:'2.9.0'],
+        'hikari'                  : [group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'],
+        'jedis'                   : [group: 'redis.clients', name: 'jedis', version: '3.8.0'],
+        'micrometer_stackdriver'  : [group: "io.micrometer", name: "micrometer-registry-stackdriver", version: "1.9.7"],
+        'spring_actuator'         : [group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.6.6'],
+]
+
+configurations {
+    runtime.exclude group: "org.apache.logging.log4j", module: "log4j-core"
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}
+
+dependencies {
+    // annotation processing
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    // documentation
+    openapiLib("ui")
+    implementation libraries.okhttp
+    implementation libraries.servlet
+    implementation libraries.gson
+    // levelops
+    implementation levelopsCommonsLib('utils')
+    implementation levelopsCommonsLib('lql-utils')
+    implementation levelopsCommonsLib('okhttp-utils')
+    implementation levelopsCommonsLib('token-services')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('spring-web-utils')
+    implementation levelopsCommonsLib('database-services')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('plugin-results-commons')
+    implementation levelopsCommonsLib('plugin-services')
+    implementation levelopsCommonsLib('events-services')
+    implementation levelopsCommonsLib('aggregation-commons')
+    implementation levelopsCommonsLib('json-diff')
+    implementation levelopsCommonsLib('notification-service')
+    implementation levelopsCommonsLib('internal-api-clients')
+    implementation levelopsCommonsLib('generic-services')
+    implementation levelopsIntegrationsLib('integration-bitbucket-models')
+    implementation levelopsCommonsLib('file-commons')
+    implementation levelopsCommonsLib('logging-utils')
+    implementation levelopsCommonsLib('integration-github')
+    implementation levelopsCommonsLib('scm-auto-repo-mapping')
+    implementation levelopsCommonsLib('atlassian-connect')
+
+    // 3rd party
+    implementation group: "org.springframework.integration", name: "spring-integration-core", version: "5.5.15"
+    implementation group: "org.springframework.boot", name: "spring-boot-starter-web", version: "2.7.6"
+    implementation group: 'org.springframework.security', name: 'spring-security-test', version: '5.8.0'
+    implementation group: 'org.springframework.integration', name: 'spring-integration-redis', version: '5.5.15'
+    implementation libraries.apache_commons
+    implementation group: "com.google.cloud", name: "google-cloud-pubsub", version: "1.90.0"
+    implementation group: "com.google.cloud", name: "google-cloud-storage", version: "1.90.0"
+    implementation libraries.hikari
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.5.1'
+    implementation 'com.cronutils:cron-utils:9.2.0'
+    implementation 'org.apache.commons:commons-math3:3.3'
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.10.0'
+    implementation group: 'redis.clients', name: 'jedis', version: '3.8.0'
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-csv', version: '2.9.9'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.33' // to fix cve
+    implementation group: 'com.google.oauth-client', name: 'google-oauth-client', version: '1.34.1'// to fix cve
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'// to fix cve
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.21.12' // to fix cve
+
+    implementation (group: 'com.google.api-client', name: 'google-api-client') {
+        version {
+            strictly '1.35.2'
+        }
+    }
+
+    implementation libraries.spring_actuator
+    implementation libraries.micrometer_stackdriver
+
+    // test
+    testAnnotationProcessor libraries.lombok
+    testCompileOnly libraries.lombok
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.6.6'
+    testImplementation group: "io.zonky.test", name: "embedded-postgres", version: "1.3.1"
+    testImplementation enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:13.2.0')
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.internal_api.services']
+            limit {
+                counter = 'LINE'
+                minimum = 0.3
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.internal_api.controllers']
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        //Default for any new code
+        rule {
+            element = 'PACKAGE'
+            // includes = ['io.levelops.auth.*']
+            excludes = ['io.levelops.internal_api.services.handlers','io.levelops.internal_api.config','io.levelops.internal_api','io.levelops.internal_api.services.plugins.preprocess','io.levelops.internal_api.exception','io.levelops.internal_api.services','io.levelops.internal_api.controllers']
+            limit {
+                counter = 'LINE'
+                minimum = 0.5
+            }
+        }
+
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.internal_api.services.plugins']
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.3
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.internal_api.services']
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.internal_api.controllers']
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+
+        //Default for any new code
+        rule {
+            element = 'PACKAGE'
+            excludes = ['io.levelops.internal_api.services','io.levelops.internal_api.services.handlers','io.levelops.internal_api.config','io.levelops.internal_api.requests','io.levelops.internal_api.models','io.levelops.internal_api.controllers','io.levelops.internal_api.services.plugins']
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.2
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

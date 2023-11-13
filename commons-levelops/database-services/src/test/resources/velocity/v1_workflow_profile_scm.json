@@ -1,0 +1,308 @@
+{
+  "name": "Temporory-test1",
+  "is_new": true,
+  "description": "qa",
+  "deployment_frequency": {
+    "integration_ids": [
+      "3847"
+    ],
+    "filters": {
+      "deployment_frequency": {
+        "integration_type": "SCM",
+        "deployment_route": "pr",
+        "deployment_criteria": "pr_merged",
+        "calculation_field": "pr_merged_at",
+        "scm_filters": {
+          "source_branch": {
+            "$begins": [
+              "branch1"
+            ]
+          },
+          "target_branch": {
+            "$begins": [
+              "main"
+            ]
+          },
+          "labels": {
+            "$begins": [
+              "label1",
+              "label2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "change_failure_rate": {
+    "integration_ids": [
+      "4216"
+    ],
+    "is_absolute": false,
+    "filters": {
+      "failed_deployment": {
+        "integration_type": "SCM",
+        "deployment_route": "pr",
+        "deployment_criteria": "pr_merged",
+        "calculation_field": "pr_merged_at",
+        "scm_filters": {
+          "source_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "target_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "labels": {
+            "$begins": [
+              "release"
+            ]
+          }
+        }
+      },
+      "total_deployment": {
+        "integration_type": "SCM",
+        "deployment_route": "pr",
+        "deployment_criteria": "pr_merged",
+        "calculation_field": "pr_merged_at",
+        "scm_filters": {
+          "source_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "target_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "labels": {
+            "$begins": [
+              "release"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "lead_time_for_changes": {
+    "integration_id": "1430",
+    "fixed_stages": [
+      {
+        "order": 0,
+        "name": "Lead time to First Commit",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_COMMIT_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 1,
+        "name": "PR Creation Time",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 2,
+        "name": "Time to First Comment",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_REVIEW_STARTED"
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 3,
+        "name": "Approval Time",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_APPROVED",
+          "params": {
+            "last_approval": [
+              "true"
+            ]
+          }
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 4,
+        "name": "Merge Time",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_MERGED",
+          "scm_filters": {
+            "target_branch": {
+              "$begins": [
+                "release"
+              ]
+            },
+            "commit_branch": {
+              "$begins": [
+                "release"
+              ]
+            },
+            "labels": {
+              "$begins": [
+                "release"
+              ]
+            }
+          }
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      }
+    ],
+    "fixed_stages_enabled": true,
+    "filters": {
+      "lead_time_for_changes": {
+        "integration_type": "IM",
+        "filter": {
+          "exclude": {},
+          "partial_match": {
+            "issue_type": {
+              "$contains": [
+                "New Feature"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "event": "ticket_created",
+    "starting_event_is_commit_created": false,
+    "starting_event_is_generic_event": false
+  },
+  "mean_time_to_restore": {
+    "integration_id": "1430",
+    "fixed_stages": [
+      {
+        "order": 0,
+        "name": "Lead time to First Commit",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_COMMIT_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 1,
+        "name": "PR Creation Time",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_CREATED"
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 2,
+        "name": "Time to First Comment",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_REVIEW_STARTED"
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 3,
+        "name": "Approval Time",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_APPROVED",
+          "params": {
+            "last_approval": [
+              "true"
+            ]
+          }
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      },
+      {
+        "order": 4,
+        "name": "Merge Time",
+        "event": {
+          "any_label_added": false,
+          "type": "SCM_PR_MERGED",
+          "scm_filters": {
+            "target_branch": {
+              "$begins": [
+                "bugfix",
+                "fix",
+                "bug"
+              ]
+            },
+            "commit_branch": {
+              "$begins": [
+                "bugfix",
+                "fix",
+                "bug"
+              ]
+            },
+            "labels": {
+              "$begins": [
+                "bugfix",
+                "fix",
+                "bug"
+              ]
+            }
+          }
+        },
+        "lower_limit_value": 864000,
+        "upper_limit_value": 2592000,
+        "lower_limit_unit": "SECONDS",
+        "upper_limit_unit": "SECONDS"
+      }
+    ],
+    "fixed_stages_enabled": true,
+    "filters": {
+      "mean_time_to_restore": {
+        "integration_type": "IM",
+        "filter": {
+          "exclude": {},
+          "partial_match": {
+            "issue_type": {
+              "$contains": [
+                "New Feature"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "event": "ticket_created",
+    "starting_event_is_commit_created": false,
+    "starting_event_is_generic_event": false
+  }
+}

@@ -1,0 +1,41 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'java-library'
+
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    api project(':utils')
+    compile project(':database-commons')
+    compile project(':database-services')
+    compile libraries.jackson_core
+    compile libraries.apache_collections
+    compile libraries.apache_commons
+    
+    // test
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', 'version': '3.0.0'
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.1
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

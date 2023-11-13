@@ -1,0 +1,234 @@
+[
+  {
+    "type": "query_config_table",
+    "node_handler": "query_config_table",
+    "name": "Query Table",
+    "description": "Query a table.",
+    "category": "Tables",
+    "input": {
+      "config_table": {
+        "key": "config_table",
+        "index": 10,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "config_table_filter": {
+        "key": "config_table_filter",
+        "index": 20,
+        "display_name": "Filters",
+        "description": "Specify one or more filters by selecting a column and what value it should contain. The behavior of the filters depends on the filtering mode below.",
+        "type": "config-table-filter",
+        "use_input_fields": {
+          "table_id": "config_table"
+        },
+        "required": true
+      },
+      "output_mode": {
+        "key": "output_mode",
+        "index": 30,
+        "display_name": "Output mode",
+        "description": "When returning a single row, only the first match will be returned. When iterating, the rest of the Propel is executed in a loop for each row that matched the filters.",
+        "type": "radio-group",
+        "options": [
+          "Return Single Row",
+          "Iterate"
+        ],
+        "default_value": "Return Single Row",
+        "required": true
+      },
+      "filtering_mode": {
+        "key": "filtering_mode",
+        "index": 40,
+        "display_name": "Filtering mode",
+        "description": "Select how the filters should be evaluated. This applies to all the filters at once.",
+        "type": "radio-group",
+        "options": [
+          "Exact match",
+          "Contains",
+          "Starts with"
+        ],
+        "default_value": "Exact match",
+        "required": true
+      }
+    },
+    "output": {
+      "config_row": {
+        "key": "config_row",
+        "value_type": "json_blob",
+        "content_type_from_input_config_table": "config_table_filter"
+      }
+    },
+    "options": [
+      "Found",
+      "Not found"
+    ],
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "distinct_config_table_values",
+    "node_handler": "distinct_config_table_values",
+    "name": "Distinct Table Values",
+    "description": "Iterate over the distinct values of a table's column.",
+    "category": "Tables",
+    "input": {
+      "config_table": {
+        "key": "config_table",
+        "index": 10,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "config_table_column": {
+        "key": "config_table_column",
+        "index": 20,
+        "display_name": "Table Column",
+        "description": "Select a table and one of its columns.",
+        "type": "config-table-column",
+        "use_input_fields": {
+          "table_id": "config_table"
+        },
+        "required": true
+      },
+      "split_comma_lists": {
+        "key": "split_comma_lists",
+        "index" : 30,
+        "display_name": "Split comma-separated values",
+        "description": "If Yes, cells that contain comma-separated values will be treated as multiple individual values. Otherwise, the whole cell is considered as one value.",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "required": true
+      },
+      "config_table_filter": {
+        "key": "config_table_filter",
+        "index": 40,
+        "display_name": "Table Filters",
+        "description": "Optionally, specify one or more filters by selecting a column and what value it should contain. The behavior of the filters depends on the filtering mode below.",
+        "type": "config-table-filter",
+        "use_input_fields": {
+          "table_id": "config_table"
+        },
+        "required": false
+      },
+      "filtering_mode": {
+        "key": "filtering_mode",
+        "index": 50,
+        "display_name": "Filtering mode",
+        "description": "Select how the filters should be evaluated. This applies to all the filters at once.",
+        "type": "radio-group",
+        "options": [
+          "Exact match",
+          "Contains",
+          "Starts with"
+        ],
+        "default_value": "Exact match",
+        "required": false
+      }
+    },
+    "output": {
+      "value": {
+        "key": "value",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "update_config_table",
+    "node_handler": "update_config_table",
+    "name": "Update Table",
+    "description": "Update a cell of a table",
+    "category": "Tables",
+    "input": {
+      "config_table": {
+        "key": "config_table",
+        "index": 10,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "config_table_column": {
+        "key": "config_table_column",
+        "index": 20,
+        "display_name": "Column",
+        "description": "Select a column.",
+        "type": "config-table-column",
+        "use_input_fields": {
+          "table_id": "config_table"
+        },
+        "required": true
+      },
+      "row_id": {
+        "key" : "row_id",
+        "index": 30,
+        "display_name": "Row Id",
+        "description": "Id of the row to update",
+        "content_type": "id:config_row",
+        "type": "text",
+        "required": true
+      },
+      "value": {
+        "key" : "value",
+        "index": 40,
+        "display_name": "Value",
+        "description": "New value of the cell",
+        "type": "text",
+        "required": true
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "insert_config_table",
+    "node_handler": "insert_config_table",
+    "name": "Insert Row in Table",
+    "description": "Insert a row in the table",
+    "category": "Tables",
+    "input": {
+      "config_table": {
+        "key": "config_table",
+        "index": 10,
+        "display_name": "Table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "config_row": {
+        "key": "config_row",
+        "index": 20,
+        "display_name": "Row",
+        "description": "Create a row",
+        "type": "text",
+        "required": true
+      }
+    },
+    "output": {
+      "config_row": {
+        "key": "config_row",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  }
+]

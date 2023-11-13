@@ -1,0 +1,221 @@
+[
+  {
+    "job_name": "Build-commons-levelops",
+    "job_full_name": "Build-commons-levelops",
+    "scm_url": "https://github.com/levelops/commons-levelops.git",
+    "runs": [
+      {
+        "number": 1253,
+        "status": "SUCCESS",
+        "start_time": 1593060359,
+        "end_time": 1593064800,
+        "duration": 199,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "2bdf3970b3c4991fe22692c290a718162ffef08b"
+        ],
+        "metadata": {
+          "tags": ["delegate"],
+          "branch": "master",
+          "repo_url": "https://github.com/meetrajsinh-crest/private-repo",
+          "rollback": true,
+          "env_types": [],
+          "infra_ids": [
+            "CD_only_Docker_Registry_Infrastructure"
+          ],
+          "env_ids": [
+            "CD_only_Docker_Registry_Env"
+          ],
+          "repo_name": "private-repo",
+          "env_groups": [],
+          "infra_names": [],
+          "infra_types": [],
+          "service_ids": [
+            "Deploy_to_GCP"
+          ],
+          "service_types": [
+            "Kubernetes"
+          ]
+        },
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "master"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Build-Aggregations-Service",
+    "job_full_name": "Build-Aggregations-Service",
+    "scm_url": "https://github.com/levelops/aggregations-levelops.git",
+    "runs": [
+      {
+        "number": 64,
+        "status": "SUCCESS",
+        "start_time": 1593068700,
+        "end_time": 1593070800,
+        "duration": 92,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "309c2c7d5f6a9ec024b8d12657bfcd7097501c67"
+        ],
+        "metadata": {
+          "tags": [],
+          "branch": "master",
+          "repo_url": "https://github.com/meetrajsinh-crest/private-repo",
+          "rollback": true,
+          "env_types": [],
+          "infra_ids": [
+            "CD_only_Docker_Registry_Infrastructure"
+          ],
+          "env_ids": [
+            "CD_only_Docker_Registry_Env"
+          ],
+          "repo_name": "private-repo",
+          "env_groups": [],
+          "infra_names": [],
+          "infra_types": [],
+          "service_ids": [
+            "Deploy_to_GCP"
+          ],
+          "service_types": [
+            "Kubernetes"
+          ]
+        },
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "dev"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": "-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Build-Server-API",
+    "job_full_name": "Build-Server-API",
+    "scm_url": "https://github.com/levelops/api-levelops.git",
+    "runs": [
+      {
+        "number": 904,
+        "status": "SUCCESS",
+        "start_time": 1593131420,
+        "end_time": 1593138620,
+        "duration": 79,
+        "user_id": "SCMTrigger",
+        "commit_ids": [
+          "bdd23c2f1a0ce059dc4dc7fa8c6d375da3f9d6b5"
+        ],
+        "metadata": {
+          "tags": ["delegate"],
+          "branch": "master",
+          "repo_url": "https://github.com/meetrajsinh-crest/private-repo",
+          "rollback": true,
+          "env_types": [],
+          "infra_ids": [
+            "CD_only_Docker_Registry_Infrastructure"
+          ],
+          "env_ids": [
+            "CD_only_Docker_Registry_Env"
+          ],
+          "repo_name": "private-repo",
+          "env_groups": [],
+          "infra_names": [],
+          "infra_types": [],
+          "service_ids": [
+            "Deploy_to_GCP"
+          ],
+          "service_types": [
+            "Kubernetes"
+          ]
+        },
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "BRANCH_NAME",
+            "value": "dev"
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "MAJOR_VERSION",
+            "value": "v0.1."
+          },
+          {
+            "type": "StringParameterValue",
+            "name": "VERSION_SUFFIX",
+            "value": "-dev"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "job_name": "Deploy-Internal-Api-to-kubernetes-cluster",
+    "job_full_name": "Deploy-Internal-Api-to-kubernetes-cluster",
+    "runs": [
+      {
+        "number": 426,
+        "status": "SUCCESS",
+        "start_time": 1593142763,
+        "end_time": 1593146123,
+        "duration": 46,
+        "user_id": "SCMTrigger",
+        "commit_ids": [],
+        "metadata": {
+          "tags": ["delegate"],
+          "branch": "master",
+          "repo_url": "https://github.com/meetrajsinh-crest/private-repo",
+          "rollback": true,
+          "env_types": [],
+          "infra_ids": [
+            "CD_only_Docker_Registry_Infrastructure"
+          ],
+          "env_ids": [
+            "CD_only_Docker_Registry_Env"
+          ],
+          "repo_name": "private-repo",
+          "env_groups": [],
+          "infra_names": [],
+          "infra_types": [],
+          "service_ids": [
+            "Deploy_to_GCP"
+          ],
+          "service_types": [
+            "Kubernetes"
+          ]
+        },
+        "params": [
+          {
+            "type": "StringParameterValue",
+            "name": "INTERNAL_API_VERSION",
+            "value": "v0.1.589-dev"
+          }
+        ]
+      }
+    ]
+  }
+]

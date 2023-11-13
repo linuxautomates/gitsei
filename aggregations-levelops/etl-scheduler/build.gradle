@@ -1,0 +1,70 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.7.0")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    mainClass = "io.levelops.etl.SchedulerApplication"
+}
+
+configurations {
+    runtime.exclude group: "org.apache.logging.log4j", module: "log4j-core"
+}
+
+dependencies {
+    // annotation processing
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    // local aggs shared
+    implementation project(":aggregations-shared")
+
+    implementation libraries.servlet
+    implementation libraries.jedis // TODO remove if not needed
+
+    // commons
+    implementation levelopsCommonsLib("spring-web-utils")
+    implementation levelopsCommonsLib('logging-utils')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('database-services')
+    implementation levelopsCommonsLib('events-services')
+    implementation levelopsCommonsLib('inventory-service')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('etl-commons')
+
+    implementation libraries.jackson_core
+    implementation libraries.google_cloud_storage
+    // OpenAPI
+    implementation openapiLib('ui')
+
+    implementation libraries.spring_actuator
+    implementation libraries.micrometer_stackdriver
+
+    // test
+    testImplementation(testFixtures(project(":aggregations-shared")))
+    testImplementation libraries.junit
+    testImplementation libraries.spring_boot_starter_test
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+    testImplementation libraries.embedded_postgres
+}
+
+test {
+    // This is for setting up junit 5 but we're using junit4 everywhere. Revisit later
+    //    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = 'full'
+    }
+}

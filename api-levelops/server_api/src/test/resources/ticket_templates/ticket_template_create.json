@@ -1,0 +1,70 @@
+{
+  "name": "default issue template",
+  "description": "description",
+  "questionnaire_templates": [
+    {
+      "name": "mapping1",
+      "questionnaire_template_id": "6f274ee5-0825-4793-90d0-8bba0860b732"
+    }
+  ],
+  "ticket_fields": [
+    {
+      "key": "type",
+      "type": "single-dropdown",
+      "required": true,
+      "hidden": false,
+      "metadata": {
+        "options": [
+          "Bug",
+          "Story",
+          "Epic"
+        ]
+      },
+      "options": [
+        "Bug",
+        "Story",
+        "Epic"
+      ]
+    },
+    {
+      "key": "reporter",
+      "type": "text",
+      "required": true,
+      "hidden": false,
+      "metadata": {
+        "validation": "email"
+      },
+      "validation": "email"
+    },
+    {
+      "key": "state",
+      "type": "single-dropdown",
+      "required": true,
+      "hidden": false,
+      "metadata": {
+        "options": [
+          "To Do",
+          "In Progress",
+          "Closed",
+          "Done",
+          "Won't Do"
+        ]
+      },
+      "options": [
+        "To Do",
+        "In Progress",
+        "Closed",
+        "Done",
+        "Won't Do"
+      ]
+    },
+    {
+      "key": "due date",
+      "type": "date",
+      "required": true,
+      "hidden": false,
+      "metadata": {}
+    }
+  ],
+  "enabled": true
+}

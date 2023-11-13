@@ -1,0 +1,36 @@
+[
+  {
+    "type": "splunk_search_job",
+    "node_handler": "splunk_search_job",
+    "name": "Create Splunk search job",
+    "description": "Creates a Splunk search job and waits for the results to be ingested. Note: Splunk search results are truncated to a maximum of 200 records.",
+    "category": "Splunk",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "query": {
+        "key": "query",
+        "index": 20,
+        "display_name": "Splunk search query",
+        "description": "Splunk search query for running the search job",
+        "type": "text",
+        "required": true
+      }
+    },
+    "output": {
+      "search_job_result": {
+        "key": "search_job_result",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "splunk"
+    }
+  }
+]

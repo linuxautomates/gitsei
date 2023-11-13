@@ -1,0 +1,40 @@
+dependencies {
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    implementation libraries.atlassian_jwt_core
+    implementation libraries.atlassian_jwt_api
+
+    compile project(':inventory-service')
+    compile libraries.okhttp
+
+    // test
+    testAnnotationProcessor libraries.lombok
+    testCompileOnly libraries.lombok
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testImplementation libraries.mockwebserver
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                minimum = 0.0
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.0
+            }
+        }
+    }
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

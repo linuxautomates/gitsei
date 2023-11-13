@@ -1,0 +1,15 @@
+dependencies {
+    api project(':utils')
+    api project(':okhttp-utils')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    compile libraries.okhttp
+    compile libraries.apache_collections
+
+    testCompile libraries.junit
+    testCompile libraries.assertj
+    testCompile libraries.wiremock
+    testCompile libraries.mockito
+}

@@ -1,0 +1,32 @@
+{
+  "integration_id" : "1",
+  "repo_id" : [ "project1" ],
+  "vcs_type" : "GIT",
+  "project" : "project1",
+  "commit_sha" : "0e1af68aa88e5b2e9e6c21092e331cc70d5fcd9d",
+  "committer" : "Administrator",
+  "author" : "Administrator",
+  "message" : "PROP-123 This is the firs",
+  "files_ct" : 0,
+  "additions" : 0,
+  "deletions" : 0,
+  "changes" : 0,
+  "committed_at" : 1601321384,
+  "ingested_at" : 1601276400,
+  "author_info" : {
+    "integration_id" : "1",
+    "display_name" : "Administrator",
+    "original_display_name" : "Administrator",
+    "cloudId" : "admin@example.com"
+  },
+  "committer_info" : {
+    "integration_id" : "1",
+    "display_name" : "Administrator",
+    "original_display_name" : "Administrator",
+    "cloudId" : "admin@example.com"
+  },
+  "issue_keys" : [ "PROP-123" ],
+  "workitem_ids" : [ "123", "3", "6", "622", "139631", "292", "628", "84372090" ],
+  "branch" : "master",
+  "direct_merge" : false
+}

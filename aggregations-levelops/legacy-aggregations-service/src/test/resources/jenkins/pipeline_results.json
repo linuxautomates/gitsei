@@ -1,0 +1,414 @@
+{
+    "id": "23",
+    "name": null,
+    "organization": "jenkins",
+    "pipeline": "master",
+    "result": "UNKNOWN",
+    "state": "RUNNING",
+    "type": "WorkflowRun",
+    "actions": [],
+    "causes": [
+        {
+            "shortDescription": "Started by user test Read",
+            "userId": "testread",
+            "userName": "test Read",
+            "upstreamBuild": null,
+            "upstreamProject": null,
+            "upstreamUrl": null
+        }
+    ],
+    "description": null,
+    "durationInMillis": 25300,
+    "enQueueTime": "2020-08-18T00:00:06.609+0000",
+    "endTime": "2020-08-18T00:00:31.921+0000",
+    "estimatedDurationInMillis": 21507,
+    "replayable": true,
+    "runSummary": "broken for a long time",
+    "startTime": "2020-08-18T00:00:06.621+0000",
+    "_links": {
+        "prevRun": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/branches/master/runs/22/"
+        },
+        "parent": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/"
+        },
+        "tests": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/tests/"
+        },
+        "nodes": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/"
+        },
+        "log": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/log/"
+        },
+        "self": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/"
+        },
+        "blueTestSummary": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/blueTestSummary/"
+        },
+        "actions": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/actions/"
+        },
+        "steps": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/steps/"
+        },
+        "artifacts": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/artifacts/"
+        },
+        "changeSet": {
+            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/changeSet/"
+        }
+    },
+    "child_job_runs": [],
+    "stages": [
+        {
+            "id": "13",
+            "result": "FAILURE",
+            "state": "FINISHED",
+            "type": "STAGE",
+            "actions": [
+                {
+                    "description": "pipeline-int-2 » master #23",
+                    "link": {
+                        "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/"
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "18",
+                    "type": "STAGE"
+                }
+            ],
+            "displayDescription": null,
+            "displayName": "Starting downstream job ",
+            "durationInMillis": 17176,
+            "startTime": "2020-08-18T00:00:13.474+0000",
+            "firstParent": null,
+            "restartable": true,
+            "_links": {
+                "prevRun": null,
+                "parent": null,
+                "tests": null,
+                "nodes": null,
+                "log": null,
+                "self": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/13/"
+                },
+                "blueTestSummary": null,
+                "actions": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/13/actions/"
+                },
+                "steps": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/13/steps/"
+                },
+                "artifacts": null,
+                "changeSet": null
+            },
+            "child_job_runs": [
+                {
+                    "id": "23",
+                    "name": null,
+                    "organization": "jenkins",
+                    "pipeline": "master",
+                    "result": "FAILURE",
+                    "state": "FINISHED",
+                    "type": "WorkflowRun",
+                    "actions": [],
+                    "causes": [
+                        {
+                            "shortDescription": "Started by upstream project \"pipeline-2/master\" build number 23",
+                            "userId": null,
+                            "userName": null,
+                            "upstreamBuild": 23,
+                            "upstreamProject": "pipeline-2/master",
+                            "upstreamUrl": "job/pipeline-2/job/master/"
+                        }
+                    ],
+                    "description": null,
+                    "durationInMillis": 9264,
+                    "enQueueTime": "2020-08-18T00:00:20.799+0000",
+                    "endTime": "2020-08-18T00:00:30.080+0000",
+                    "estimatedDurationInMillis": 7479,
+                    "replayable": true,
+                    "runSummary": "broken for a long time",
+                    "startTime": "2020-08-18T00:00:20.816+0000",
+                    "_links": {
+                        "prevRun": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/22/"
+                        },
+                        "parent": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/"
+                        },
+                        "tests": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/tests/"
+                        },
+                        "nodes": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/"
+                        },
+                        "log": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/log/"
+                        },
+                        "self": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/"
+                        },
+                        "blueTestSummary": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/blueTestSummary/"
+                        },
+                        "actions": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/actions/"
+                        },
+                        "steps": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/steps/"
+                        },
+                        "artifacts": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/artifacts/"
+                        },
+                        "changeSet": {
+                            "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/changeSet/"
+                        }
+                    },
+                    "child_job_runs": [],
+                    "stages": [
+                        {
+                            "id": "13",
+                            "result": "FAILURE",
+                            "state": "FINISHED",
+                            "type": "STAGE",
+                            "actions": [],
+                            "edges": [
+                                {
+                                    "id": "22",
+                                    "type": "STAGE"
+                                }
+                            ],
+                            "displayDescription": null,
+                            "displayName": "Compile Stage",
+                            "durationInMillis": 974,
+                            "startTime": "2020-08-18T00:00:28.082+0000",
+                            "firstParent": null,
+                            "restartable": true,
+                            "_links": {
+                                "prevRun": null,
+                                "parent": null,
+                                "tests": null,
+                                "nodes": null,
+                                "log": null,
+                                "self": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/13/"
+                                },
+                                "blueTestSummary": null,
+                                "actions": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/13/actions/"
+                                },
+                                "steps": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/13/steps/"
+                                },
+                                "artifacts": null,
+                                "changeSet": null
+                            },
+                            "child_job_runs": [],
+                            "log": "No credentials specified\r\n > git rev-parse --is-inside-work-tree # timeout=10\r\nFetching changes from the remote Git repository\r\n > git config remote.origin.url https://github.com/viraj-levelops/pipeline-int-2 # timeout=10\r\nFetching without tags\r\nFetching upstream changes from https://github.com/viraj-levelops/pipeline-int-2\r\n > git --version # timeout=10\r\n > git fetch --no-tags --force --progress -- https://github.com/viraj-levelops/pipeline-int-2 +refs/heads/*:refs/remotes/origin/* # timeout=10\r\nChecking out Revision 46b87821b5c88e4702717c3d6d3fa5c3c0194778 (master)\r\n > git config core.sparsecheckout # timeout=10\r\n > git checkout -f 46b87821b5c88e4702717c3d6d3fa5c3c0194778 # timeout=10\r\nCommit message: \"change\"\r\n > git rev-list --no-walk 46b87821b5c88e4702717c3d6d3fa5c3c0194778 # timeout=10\r\n+ mvn clean compile\r\n----- withMaven Wrapper script -----\r\n/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven_3_5_0/bin/mvn: exec: line 191: /var/jenkins_home/tools/java-se-8u41-ri/bin/java: not found\r\nscript returned exit code 127"
+                        },
+                        {
+                            "id": "22",
+                            "result": "NOT_BUILT",
+                            "state": "SKIPPED",
+                            "type": "STAGE",
+                            "actions": [],
+                            "edges": [
+                                {
+                                    "id": "26",
+                                    "type": "STAGE"
+                                }
+                            ],
+                            "displayDescription": null,
+                            "displayName": "Testing Stage",
+                            "durationInMillis": 0,
+                            "startTime": null,
+                            "firstParent": "13",
+                            "restartable": false,
+                            "_links": {
+                                "prevRun": null,
+                                "parent": null,
+                                "tests": null,
+                                "nodes": null,
+                                "log": null,
+                                "self": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/22/"
+                                },
+                                "blueTestSummary": null,
+                                "actions": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/22/actions/"
+                                },
+                                "steps": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/22/steps/"
+                                },
+                                "artifacts": null,
+                                "changeSet": null
+                            },
+                            "child_job_runs": [],
+                            "log": null
+                        },
+                        {
+                            "id": "26",
+                            "result": "NOT_BUILT",
+                            "state": "SKIPPED",
+                            "type": "STAGE",
+                            "actions": [],
+                            "edges": [],
+                            "displayDescription": null,
+                            "displayName": "Deployment Stage",
+                            "durationInMillis": 0,
+                            "startTime": null,
+                            "firstParent": "22",
+                            "restartable": false,
+                            "_links": {
+                                "prevRun": null,
+                                "parent": null,
+                                "tests": null,
+                                "nodes": null,
+                                "log": null,
+                                "self": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/26/"
+                                },
+                                "blueTestSummary": null,
+                                "actions": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/26/actions/"
+                                },
+                                "steps": {
+                                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-int-2/branches/master/runs/23/nodes/26/steps/"
+                                },
+                                "artifacts": null,
+                                "changeSet": null
+                            },
+                            "child_job_runs": [],
+                            "log": null
+                        }
+                    ],
+                    "log": null,
+                    "job_normalized_full_name": "pipeline-int-2/master"
+                }
+            ],
+            "log": "No credentials specified\r\n > git rev-parse --is-inside-work-tree # timeout=10\r\nFetching changes from the remote Git repository\r\n > git config remote.origin.url https://github.com/viraj-levelops/pipeline-2 # timeout=10\r\nFetching without tags\r\nFetching upstream changes from https://github.com/viraj-levelops/pipeline-2\r\n > git --version # timeout=10\r\n > git fetch --no-tags --force --progress -- https://github.com/viraj-levelops/pipeline-2 +refs/heads/*:refs/remotes/origin/* # timeout=10\r\nChecking out Revision 37497794902ac68eb062d4d9f41eecf5765be91d (master)\r\n > git config core.sparsecheckout # timeout=10\r\n > git checkout -f 37497794902ac68eb062d4d9f41eecf5765be91d # timeout=10\r\nCommit message: \"change\"\r\n > git rev-list --no-walk 37497794902ac68eb062d4d9f41eecf5765be91d # timeout=10\r\nScheduling project: pipeline-int-2 » master\r\nStarting building: pipeline-int-2 » master #23\r\n"
+        },
+        {
+            "id": "18",
+            "result": "NOT_BUILT",
+            "state": "SKIPPED",
+            "type": "STAGE",
+            "actions": [],
+            "edges": [
+                {
+                    "id": "22",
+                    "type": "STAGE"
+                }
+            ],
+            "displayDescription": null,
+            "displayName": "Compile Stage",
+            "durationInMillis": 0,
+            "startTime": null,
+            "firstParent": "13",
+            "restartable": false,
+            "_links": {
+                "prevRun": null,
+                "parent": null,
+                "tests": null,
+                "nodes": null,
+                "log": null,
+                "self": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/18/"
+                },
+                "blueTestSummary": null,
+                "actions": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/18/actions/"
+                },
+                "steps": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/18/steps/"
+                },
+                "artifacts": null,
+                "changeSet": null
+            },
+            "child_job_runs": [],
+            "log": null
+        },
+        {
+            "id": "22",
+            "result": "NOT_BUILT",
+            "state": "SKIPPED",
+            "type": "STAGE",
+            "actions": [],
+            "edges": [
+                {
+                    "id": "26",
+                    "type": "STAGE"
+                }
+            ],
+            "displayDescription": null,
+            "displayName": "Testing Stage",
+            "durationInMillis": 0,
+            "startTime": null,
+            "firstParent": "18",
+            "restartable": false,
+            "_links": {
+                "prevRun": null,
+                "parent": null,
+                "tests": null,
+                "nodes": null,
+                "log": null,
+                "self": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/22/"
+                },
+                "blueTestSummary": null,
+                "actions": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/22/actions/"
+                },
+                "steps": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/22/steps/"
+                },
+                "artifacts": null,
+                "changeSet": null
+            },
+            "child_job_runs": [],
+            "log": null
+        },
+        {
+            "id": "26",
+            "result": "NOT_BUILT",
+            "state": "SKIPPED",
+            "type": "STAGE",
+            "actions": [],
+            "edges": [],
+            "displayDescription": null,
+            "displayName": "Deployment Stage",
+            "durationInMillis": 0,
+            "startTime": null,
+            "firstParent": "22",
+            "restartable": false,
+            "_links": {
+                "prevRun": null,
+                "parent": null,
+                "tests": null,
+                "nodes": null,
+                "log": null,
+                "self": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/26/"
+                },
+                "blueTestSummary": null,
+                "actions": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/26/actions/"
+                },
+                "steps": {
+                    "href": "/blue/rest/organizations/jenkins/pipelines/pipeline-2/pipelines/master/runs/23/nodes/26/steps/"
+                },
+                "artifacts": null,
+                "changeSet": null
+            },
+            "child_job_runs": [],
+            "log": null
+        }
+    ],
+    "log": null,
+    "job_normalized_full_name": "pipeline-2/master"
+}

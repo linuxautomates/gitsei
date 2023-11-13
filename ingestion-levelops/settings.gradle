@@ -1,0 +1,26 @@
+rootProject.name = 'ingestion-levelops'
+
+include 'ingestion-engine'
+
+include 'ingestion-agent'
+include 'control-plane'
+
+include 'agents:agents-common'
+include 'agents:default-agent'
+// include 'agents:sample-agent'
+include 'agents:satellite-agent'
+
+include 'integrations:integration-gcs'
+include 'integrations:integration-github'
+include 'integrations:integration-jira'
+include 'integrations:integration-slack'
+include 'integrations:integration-confluence'
+include 'integrations:integration-rapid7'
+include 'integrations:integration-bitbucket'
+include 'integrations:integration-pagerduty'
+include 'integrations:integration-snyk'
+include 'integrations:integration-splunk'
+include 'integrations:integration-postgres'
+include 'integrations:integration-k8s'
+include 'integrations:integration-blackduck'
+include 'integrations:integration-coverity'

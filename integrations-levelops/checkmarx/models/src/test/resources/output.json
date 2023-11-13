@@ -1,0 +1,320 @@
+{
+  "CheckmarxVersion": "7.1.5 HF6",
+  "DeepLink": "https://checkmarx.company.com:443/CxWebClient/ViewerMain.aspx?scanid=11&projectid=1",
+  "FilesScanned": 284,
+  "LinesOfCodeScanned": 23678,
+  "ReportCreationTime": "Monday, April 06, 2015 5:04:20 PM",
+  "ScanStart": "Monday, April 06, 2015 5:01:46 PM",
+  "ScanTime": "00h:02m:31s",
+  "ScanType": "Full",
+  "SourceOrigin": "GIT",
+  "Team": "Example_Mobile",
+  "queries": [
+    {
+      "Severity": "High",
+      "cweId": "359",
+      "group": "Java_Android",
+      "id": "1601",
+      "name": "Side_Channel_Data_Leakage",
+      "results": [
+        {
+          "AssignToUser": "",
+          "DeepLink": "https://checkmarx.company.com:443/CxWebClient/ViewerMain.aspx?scanid=11&projectid=1&pathid=1",
+          "FalsePositive": false,
+          "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+          "Line": 12,
+          "NodeId": "104010003",
+          "Remark": "",
+          "Severity": "High",
+          "Status": "Recurrent",
+          "paths": [
+            {
+              "PathId": "3",
+              "ResultId": "10401",
+              "SimilarityId": "1077616318",
+              "pathNodes": [
+                {
+                  "Column": 26,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "8",
+                  "Line": 12,
+                  "Name": "password",
+                  "NodeId": "1",
+                  "Snippet": {
+                    "Line": {
+                      "Code": "private final String password;",
+                      "Number": 12
+                    }
+                  },
+                  "Type": ""
+                },
+                {
+                  "Column": 29,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "1",
+                  "Line": 50,
+                  "Name": "getClass",
+                  "NodeId": "2",
+                  "Type": ""
+                },
+                {
+                  "Column": 39,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "1",
+                  "Line": 50,
+                  "Name": "getName",
+                  "NodeId": "3",
+                  "Type": ""
+                },
+                {
+                  "Column": 79,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "1",
+                  "Line": 58,
+                  "Name": "getCacheKey",
+                  "NodeId": "4",
+                  "Type": ""
+                },
+                {
+                  "Column": 63,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "1",
+                  "Line": 58,
+                  "Name": "get",
+                  "NodeId": "5",
+                  "Type": ""
+                },
+                {
+                  "Column": 17,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "6",
+                  "Line": 58,
+                  "Name": "rValue",
+                  "NodeId": "6",
+                  "Type": ""
+                },
+                {
+                  "Column": 76,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "6",
+                  "Line": 61,
+                  "Name": "rValue",
+                  "NodeId": "7",
+                  "Type": ""
+                },
+                {
+                  "Column": 51,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "15",
+                  "Line": 93,
+                  "Name": "serviceResponse",
+                  "NodeId": "8",
+                  "Type": ""
+                },
+                {
+                  "Column": 53,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "1",
+                  "Line": 95,
+                  "Name": "value",
+                  "NodeId": "9",
+                  "Snippet": {
+                    "Line": {
+                      "Code": "if(serviceResponse !=null && serviceResponse.value instanceof SoftReference)\n                                {\n                            ",
+                      "Number": 95
+                    }
+                  },
+                  "Type": ""
+                }
+              ]
+            }
+          ],
+          "state": "0"
+        },
+        {
+          "AssignToUser": "",
+          "DeepLink": "https://checkmarx.company.com:443/CxWebClient/ViewerMain.aspx?scanid=11&projectid=1&pathid=4",
+          "FalsePositive": false,
+          "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+          "Line": 12,
+          "NodeId": "104010004",
+          "Remark": "",
+          "Severity": "High",
+          "Status": "Recurrent",
+          "paths": [
+            {
+              "PathId": "4",
+              "ResultId": "10401",
+              "SimilarityId": "1314445456",
+              "pathNodes": [
+                {
+                  "Column": 26,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "8",
+                  "Line": 12,
+                  "Name": "password",
+                  "NodeId": "1",
+                  "Snippet": {
+                    "Line": {
+                      "Code": "private final String password;",
+                      "Number": 12
+                    }
+                  },
+                  "Type": ""
+                },
+                {
+                  "Column": 29,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "1",
+                  "Line": 50,
+                  "Name": "getClass",
+                  "NodeId": "2",
+                  "Type": ""
+                },
+                {
+                  "Column": 39,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/key/LoginKey.java",
+                  "Length": "1",
+                  "Line": 50,
+                  "Name": "getName",
+                  "NodeId": "3",
+                  "Type": ""
+                },
+                {
+                  "Column": 79,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "1",
+                  "Line": 58,
+                  "Name": "getCacheKey",
+                  "NodeId": "4",
+                  "Type": ""
+                },
+                {
+                  "Column": 63,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "1",
+                  "Line": 58,
+                  "Name": "get",
+                  "NodeId": "5",
+                  "Type": ""
+                },
+                {
+                  "Column": 17,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "6",
+                  "Line": 58,
+                  "Name": "rValue",
+                  "NodeId": "6",
+                  "Type": ""
+                },
+                {
+                  "Column": 76,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "6",
+                  "Line": 61,
+                  "Name": "rValue",
+                  "NodeId": "7",
+                  "Type": ""
+                },
+                {
+                  "Column": 51,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "15",
+                  "Line": 93,
+                  "Name": "serviceResponse",
+                  "NodeId": "8",
+                  "Type": ""
+                },
+                {
+                  "Column": 45,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "1",
+                  "Line": 96,
+                  "Name": "value",
+                  "NodeId": "9",
+                  "Type": ""
+                },
+                {
+                  "Column": 55,
+                  "FileName": "/src/main/java/com/company/app/services/dataManager/store/DataModel_Cache.java",
+                  "Length": "1",
+                  "Line": 96,
+                  "Name": "get",
+                  "NodeId": "10",
+                  "Snippet": {
+                    "Line": {
+                      "Code": "Object wrapped = serviceResponse.value.get();",
+                      "Number": 96
+                    }
+                  },
+                  "Type": ""
+                }
+              ]
+            }
+          ],
+          "state": "0"
+        }
+      ]
+    },
+    {
+      "Severity": "Information",
+      "cweId": "89",
+      "group": "Java_Best_Coding_Practice",
+      "id": "507",
+      "name": "Dynamic_SQL_Queries",
+      "results": [
+        {
+          "AssignToUser": "",
+          "DeepLink": "https://checkmarx.company.com:443/CxWebClient/ViewerMain.aspx?scanid=11&projectid=1&pathid=68",
+          "FalsePositive": false,
+          "FileName": "/src/test/java/com/company/app/services/TestUtils.java",
+          "Line": 146,
+          "NodeId": "104010068",
+          "Remark": "",
+          "Severity": "Information",
+          "Status": "Recurrent",
+          "paths": [
+            {
+              "PathId": "68",
+              "ResultId": "10401",
+              "SimilarityId": "343009085",
+              "pathNodes": [
+                {
+                  "Column": 62,
+                  "FileName": "/src/test/java/com/company/app/services/TestUtils.java",
+                  "Length": "9",
+                  "Line": 146,
+                  "Name": "tableName",
+                  "NodeId": "1",
+                  "Snippet": {
+                    "Line": {
+                      "Code": "Cursor cursor = database.rawQuery(\"SELECT * FROM \" + tableName,null);",
+                      "Number": 146
+                    }
+                  },
+                  "Type": ""
+                },
+                {
+                  "Column": 60,
+                  "FileName": "/src/test/java/com/company/app/services/TestUtils.java",
+                  "Length": "1",
+                  "Line": 146,
+                  "Name": "",
+                  "NodeId": "2",
+                  "Snippet": {
+                    "Line": {
+                      "Code": "Cursor cursor = database.rawQuery(\"SELECT * FROM \" + tableName,null);",
+                      "Number": 146
+                    }
+                  },
+                  "Type": ""
+                }
+              ]
+            }
+          ],
+          "state": "0"
+        }
+      ]
+    }
+  ]
+}

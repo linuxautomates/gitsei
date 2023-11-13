@@ -1,0 +1,216 @@
+{
+  "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+  "id": "1263123",
+  "key": "LEV-123",
+  "fields": {
+    "issuetype": {
+      "id": 10000,
+      "name": "Feature",
+      "description": "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+      "subtask": false
+    },
+    "project": {
+      "id": "1",
+      "key": "LEV",
+      "name": "LEV",
+      "projectTypeKey": "software"
+    },
+    "fixVersions": [],
+    "created": "2021-07-14T23:58:28.000+00:00",
+    "priority": {
+      "name": "High",
+      "id": "2"
+    },
+    "labels": [
+      "lab"
+    ],
+    "versions": [
+      {
+        "self": "https://harness.atlassian.net/rest/api/2/version/12303",
+        "id": "12303",
+        "description": "Testing purpose only",
+        "name": "Test Release",
+        "archived": false,
+        "released": false,
+        "startDate": "2023-05-02",
+        "releaseDate": "2023-05-02",
+        "overdue": true,
+        "userStartDate": "01/May/23",
+        "userReleaseDate": "01/May/23",
+        "projectId": 10368
+      }
+    ],
+    "assignee": {
+      "name": "max",
+      "displayName": "max",
+      "active": true,
+      "emailAddress": "max"
+    },
+    "updated": "2021-07-26T18:48:58.000+00:00",
+    "status": {
+      "description": "",
+      "name": "To Do",
+      "id": "10200",
+      "statusCategory": {
+        "id": "2",
+        "key": "new",
+        "name": "To Do",
+        "colorName": "blue-gray"
+      }
+    },
+    "components": [
+      {
+        "id": "31506",
+        "name": "comp",
+        "description": "comp"
+      }
+    ],
+    "summary": "Test Ticket",
+    "creator": {
+      "name": "max",
+      "displayName": "max",
+      "active": true,
+      "emailAddress": "max"
+    },
+    "subtasks": [],
+    "reporter": {
+      "name": "max",
+      "displayName": "max",
+      "active": true,
+      "emailAddress": "max"
+    },
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "votes": {
+      "votes": 0,
+      "hasVoted": false
+    },
+    "comment": {
+      "comments": []
+    },
+    "description_text": "Some desc",
+    "description_length": 189,
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    }
+  },
+  "changelog": {
+    "self": null,
+    "maxResults": 9,
+    "startAt": 0,
+    "total": 9,
+    "isLast": null,
+    "values": null,
+    "histories": [
+      {
+        "id": "5452977",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+          "accountId": "61e445fc6b1ad900699280fb",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Arpit Jain",
+          "active": true,
+          "emailAddress": "arpit.jain@harness.io"
+        },
+        "created": "2023-10-22T11:25:37.139+00:00",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "3",
+            "fromString": "In Progress",
+            "to": "10300",
+            "toString": "Under Review",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      },
+      {
+        "id": "5437610",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+          "accountId": "61e445fc6b1ad900699280fb",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Arpit Jain",
+          "active": true,
+          "emailAddress": "arpit.jain@harness.io"
+        },
+        "created": "2023-10-17T15:01:57.459+00:00",
+        "items": [
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "fieldId": "status",
+            "from": "10000",
+            "fromString": "To Do",
+            "to": "3",
+            "toString": "In Progress",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      },
+      {
+        "id": "5356118",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=5ff9d543b66825010ed27008",
+          "accountId": "5ff9d543b66825010ed27008",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Sunil Gupta",
+          "active": true,
+          "emailAddress": "sunil.gupta@harness.io"
+        },
+        "created": "2023-09-25T08:51:13.926+00:00",
+        "items": [
+          {
+            "field": "Sprint",
+            "fieldtype": "custom",
+            "fieldId": "customfield_10103",
+            "from": "3237, 3230",
+            "fromString": "SSCS Sprint 12, SSCS Sprint 11",
+            "to": "3237",
+            "toString": "SSCS Sprint 12",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      },
+      {
+        "id": "5337363",
+        "author": {
+          "self": "https://harness.atlassian.net/rest/api/2/user?accountId=61e445fc6b1ad900699280fb",
+          "accountId": "61e445fc6b1ad900699280fb",
+          "accountType": "atlassian",
+          "name": null,
+          "displayName": "Arpit Jain",
+          "active": true,
+          "emailAddress": "arpit.jain@harness.io"
+        },
+        "created": "2023-09-17T18:49:52.442+00:00",
+        "items": [
+          {
+            "field": "IssueParentAssociation",
+            "fieldtype": "jira",
+            "fieldId": null,
+            "from": null,
+            "fromString": null,
+            "to": "530383",
+            "toString": "SSCA-530",
+            "tmpFromAccountId": null,
+            "tmpToAccountId": null
+          }
+        ]
+      }
+    ]
+  }
+}

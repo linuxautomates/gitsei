@@ -1,0 +1,2848 @@
+{
+  "records": [
+    {
+      "id": "f93fb430-8fb4-4d60-9974-97c0eef0c447",
+      "key": "SEI-2524",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [],
+      "status": "DONE",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - Pass widget id in open report payload for jira release widget",
+      "assignee": "Darshan Patel",
+      "priority": "P4",
+      "reporter": "Darshan Patel",
+      "versions": [],
+      "desc_size": 61,
+      "is_active": true,
+      "created_at": 1691376783,
+      "issue_type": "TASK",
+      "parent_key": "SEI-1620",
+      "resolution": "DONE",
+      "sprint_ids": [
+        2104
+      ],
+      "asof_status": "DONE",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "status_list": [
+        {
+          "status": "DONE",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2524",
+          "status_id": "10001",
+          "created_at": 1689690001,
+          "start_time": 1689684626,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689684626,
+          "issue_key": "SEI-2524",
+          "status_id": "10626",
+          "created_at": 1689690001,
+          "start_time": 1689672409,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689672409,
+          "issue_key": "SEI-2524",
+          "status_id": "10100",
+          "created_at": 1689672309,
+          "start_time": 1689665405,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689665405,
+          "issue_key": "SEI-2524",
+          "status_id": "10627",
+          "created_at": 1689672309,
+          "start_time": 1689664814,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689664814,
+          "issue_key": "SEI-2524",
+          "status_id": "10300",
+          "created_at": 1689672309,
+          "start_time": 1689664693,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689664693,
+          "issue_key": "SEI-2524",
+          "status_id": "3",
+          "created_at": 1689672309,
+          "start_time": 1689664691,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689664691,
+          "issue_key": "SEI-2524",
+          "status_id": "10000",
+          "created_at": 1689672309,
+          "start_time": 1689664419,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2524",
+          "created_at": 1689672309,
+          "start_time": 1689664419,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10658": "describe what the user wants:"
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 2,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 1768173,
+          "velocity_stage_result": {
+            "rating": "SLOW",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 20205
+        }
+      ],
+      "first_comment_at": 1689672406,
+      "issue_created_at": 1689664419,
+      "issue_updated_at": 1689684625,
+      "first_assigned_at": 1689664419,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689684625,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 1788380
+    },
+    {
+      "id": "a9ef292f-e052-46b6-9b40-68304cfbb554",
+      "key": "SEI-2490",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Add Jira Release Report behind entitlement  ",
+      "assignee": "Darshan Patel",
+      "priority": "P4",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 0,
+      "is_active": true,
+      "created_at": 1691376713,
+      "issue_type": "ENHANCEMENT ",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2490",
+          "status_id": "10711",
+          "created_at": 1689766078,
+          "start_time": 1689759942,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759942,
+          "issue_key": "SEI-2490",
+          "status_id": "10001",
+          "created_at": 1689643794,
+          "start_time": 1689593957,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689593957,
+          "issue_key": "SEI-2490",
+          "status_id": "10626",
+          "created_at": 1689400776,
+          "start_time": 1689314243,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689314243,
+          "issue_key": "SEI-2490",
+          "status_id": "10100",
+          "created_at": 1689400776,
+          "start_time": 1689310594,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689310594,
+          "issue_key": "SEI-2490",
+          "status_id": "10627",
+          "created_at": 1689258591,
+          "start_time": 1689236537,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689236537,
+          "issue_key": "SEI-2490",
+          "status_id": "10300",
+          "created_at": 1689258591,
+          "start_time": 1689234946,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689234946,
+          "issue_key": "SEI-2490",
+          "status_id": "3",
+          "created_at": 1689258591,
+          "start_time": 1689234905,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689234905,
+          "issue_key": "SEI-2490",
+          "status_id": "10000",
+          "created_at": 1689258591,
+          "start_time": 1689234872,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2490",
+          "created_at": 1689258591,
+          "start_time": 1689234872,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10658": "describe what the user wants:"
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 41,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 165985,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 359044
+        }
+      ],
+      "first_comment_at": 1689314240,
+      "issue_created_at": 1689234872,
+      "issue_updated_at": 1689759942,
+      "first_assigned_at": 1689234872,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759942,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 525070
+    },
+    {
+      "id": "26bbd2da-a468-4f2c-9ca2-08ea435a8dbd",
+      "key": "SEI-2488",
+      "hops": 0,
+      "labels": [],
+      "status": "DONE",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Jira Release Report - Epic name filter is not working",
+      "assignee": "Darshan Patel",
+      "priority": "P3",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 53,
+      "is_active": true,
+      "created_at": 1691376781,
+      "issue_type": "BUG",
+      "resolution": "DONE",
+      "sprint_ids": [],
+      "asof_status": "DONE",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "DONE",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2488",
+          "status_id": "10001",
+          "created_at": 1689689996,
+          "start_time": 1689686382,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689686382,
+          "issue_key": "SEI-2488",
+          "status_id": "10626",
+          "created_at": 1689689996,
+          "start_time": 1689675932,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689675932,
+          "issue_key": "SEI-2488",
+          "status_id": "10100",
+          "created_at": 1689400654,
+          "start_time": 1689329453,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689329453,
+          "issue_key": "SEI-2488",
+          "status_id": "10627",
+          "created_at": 1689400654,
+          "start_time": 1689328802,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689328802,
+          "issue_key": "SEI-2488",
+          "status_id": "10300",
+          "created_at": 1689400654,
+          "start_time": 1689328655,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689328655,
+          "issue_key": "SEI-2488",
+          "status_id": "3",
+          "created_at": 1689400654,
+          "start_time": 1689328363,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689328363,
+          "issue_key": "SEI-2488",
+          "status_id": "10000",
+          "created_at": 1689258595,
+          "start_time": 1689231597,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2488",
+          "created_at": 1689400654,
+          "start_time": 1689328295,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1689328295,
+          "issue_key": "SEI-2488",
+          "created_at": 1689258595,
+          "start_time": 1689231597,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {},
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 292,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 1766417,
+          "velocity_stage_result": {
+            "rating": "SLOW",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 454493
+        }
+      ],
+      "first_comment_at": 0,
+      "issue_created_at": 1689231597,
+      "issue_updated_at": 1689686382,
+      "first_assigned_at": 1689328295,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689686382,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 2221202
+    },
+    {
+      "id": "3f637307-07ca-4ea2-b441-c631a81d7947",
+      "key": "SEI-2476",
+      "epic": "SEI-1620",
+      "hops": 0,
+      "labels": [],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Jira Release Report - Change the description of the widget & note on the edit page",
+      "assignee": "Darshan Patel",
+      "priority": "P4",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 268,
+      "is_active": true,
+      "created_at": 1691376713,
+      "issue_type": "ENHANCEMENT ",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2476",
+          "status_id": "10711",
+          "created_at": 1689766078,
+          "start_time": 1689759946,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759946,
+          "issue_key": "SEI-2476",
+          "status_id": "10001",
+          "created_at": 1689643795,
+          "start_time": 1689593778,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689593778,
+          "issue_key": "SEI-2476",
+          "status_id": "10626",
+          "created_at": 1689400778,
+          "start_time": 1689312623,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689312623,
+          "issue_key": "SEI-2476",
+          "status_id": "10100",
+          "created_at": 1689400778,
+          "start_time": 1689310589,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689310589,
+          "issue_key": "SEI-2476",
+          "status_id": "10627",
+          "created_at": 1689258591,
+          "start_time": 1689236532,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689236532,
+          "issue_key": "SEI-2476",
+          "status_id": "10300",
+          "created_at": 1689258591,
+          "start_time": 1689234942,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689234942,
+          "issue_key": "SEI-2476",
+          "status_id": "3",
+          "created_at": 1689258591,
+          "start_time": 1689226838,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689226838,
+          "issue_key": "SEI-2476",
+          "status_id": "10000",
+          "created_at": 1689191208,
+          "start_time": 1689178907,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2476",
+          "created_at": 1689258591,
+          "start_time": 1689226739,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1689226739,
+          "issue_key": "SEI-2476",
+          "created_at": 1689191208,
+          "start_time": 1689178907,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10658": "describe what the user wants:"
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 8104,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 166168,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 406767
+        }
+      ],
+      "first_comment_at": 1689312620,
+      "issue_created_at": 1689178907,
+      "issue_updated_at": 1689759946,
+      "first_assigned_at": 1689226739,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759946,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 581039
+    },
+    {
+      "id": "aeb9603c-c7bc-4ec0-9842-b71f6c629212",
+      "key": "SEI-2474",
+      "epic": "SEI-1620",
+      "hops": 0,
+      "labels": [],
+      "status": "NOT A BUG",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Jira Release Report - Drilldown columns - By default not all columns should be selected but only few as mentioned",
+      "assignee": "Darshan Patel",
+      "priority": "P3",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 133,
+      "is_active": true,
+      "created_at": 1691376713,
+      "issue_type": "BUG",
+      "parent_key": "SEI-1620",
+      "resolution": "NOT A BUG",
+      "sprint_ids": [
+        2104
+      ],
+      "asof_status": "NOT A BUG",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "NOT A BUG",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2474",
+          "status_id": "10621",
+          "created_at": 1689766078,
+          "start_time": 1689753655,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689753655,
+          "issue_key": "SEI-2474",
+          "status_id": "10100",
+          "created_at": 1689766078,
+          "start_time": 1689752476,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689752476,
+          "issue_key": "SEI-2474",
+          "status_id": "10627",
+          "created_at": 1689766078,
+          "start_time": 1689752473,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689752473,
+          "issue_key": "SEI-2474",
+          "status_id": "3",
+          "created_at": 1689766078,
+          "start_time": 1689752470,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689752470,
+          "issue_key": "SEI-2474",
+          "status_id": "10000",
+          "created_at": 1689400714,
+          "start_time": 1689320474,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689320474,
+          "issue_key": "SEI-2474",
+          "status_id": "3",
+          "created_at": 1689400714,
+          "start_time": 1689320468,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689320468,
+          "issue_key": "SEI-2474",
+          "status_id": "10000",
+          "created_at": 1689191208,
+          "start_time": 1689178495,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2474",
+          "created_at": 1689689992,
+          "start_time": 1689687687,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1689687687,
+          "issue_key": "SEI-2474",
+          "created_at": 1689191208,
+          "start_time": 1689178495,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.2"
+        ]
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 9,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 0,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 575151
+        }
+      ],
+      "first_comment_at": 0,
+      "issue_created_at": 1689178495,
+      "issue_updated_at": 1689753655,
+      "first_assigned_at": 1689687687,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689753655,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 575160
+    },
+    {
+      "id": "d6147672-1f15-4e03-ace4-75c5c4fd68d3",
+      "key": "SEI-2423",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - New Jira Release Widget - change for updated at data",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "Darshan Patel",
+      "versions": [],
+      "desc_size": 53,
+      "is_active": true,
+      "created_at": 1691376479,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2423",
+          "status_id": "10711",
+          "created_at": 1689766079,
+          "start_time": 1689759940,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759940,
+          "issue_key": "SEI-2423",
+          "status_id": "10001",
+          "created_at": 1689643800,
+          "start_time": 1689592922,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592922,
+          "issue_key": "SEI-2423",
+          "status_id": "10626",
+          "created_at": 1689400778,
+          "start_time": 1689311711,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311711,
+          "issue_key": "SEI-2423",
+          "status_id": "10100",
+          "created_at": 1689179749,
+          "start_time": 1689140894,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689140894,
+          "issue_key": "SEI-2423",
+          "status_id": "10627",
+          "created_at": 1689179749,
+          "start_time": 1689139349,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689139349,
+          "issue_key": "SEI-2423",
+          "status_id": "3",
+          "created_at": 1689179749,
+          "start_time": 1689139346,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER INVESTIGATION",
+          "end_time": 1689139346,
+          "issue_key": "SEI-2423",
+          "status_id": "10614",
+          "created_at": 1689179749,
+          "start_time": 1689139343,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689139343,
+          "issue_key": "SEI-2423",
+          "status_id": "3",
+          "created_at": 1689073257,
+          "start_time": 1689068223,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689068223,
+          "issue_key": "SEI-2423",
+          "status_id": "10000",
+          "created_at": 1689073257,
+          "start_time": 1689067047,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 2,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2423",
+          "created_at": 1689073257,
+          "start_time": 1689067047,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "2.0",
+        "customfield_10658": ""
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 71123,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167018,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 454752
+        }
+      ],
+      "first_comment_at": 0,
+      "issue_created_at": 1689067047,
+      "issue_updated_at": 1690176623,
+      "first_assigned_at": 1689067047,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759940,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 692893
+    },
+    {
+      "id": "9a56dc79-4b00-494d-aa4a-d95ae850a356",
+      "key": "SEI-2367",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Jira Release Profile - Clone from old velocity profile with post dev stages is not working as expected",
+      "assignee": "Darshan Patel",
+      "priority": "P3",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 558,
+      "is_active": true,
+      "created_at": 1691376715,
+      "issue_type": "BUG",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2367",
+          "status_id": "10711",
+          "created_at": 1689766079,
+          "start_time": 1689759974,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759974,
+          "issue_key": "SEI-2367",
+          "status_id": "10001",
+          "created_at": 1689690004,
+          "start_time": 1689683439,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689683439,
+          "issue_key": "SEI-2367",
+          "status_id": "10626",
+          "created_at": 1689643789,
+          "start_time": 1689576514,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689576514,
+          "issue_key": "SEI-2367",
+          "status_id": "10100",
+          "created_at": 1689179723,
+          "start_time": 1689166284,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689166284,
+          "issue_key": "SEI-2367",
+          "status_id": "10627",
+          "created_at": 1689179723,
+          "start_time": 1689166282,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689166282,
+          "issue_key": "SEI-2367",
+          "status_id": "10300",
+          "created_at": 1689179723,
+          "start_time": 1689151766,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689151766,
+          "issue_key": "SEI-2367",
+          "status_id": "3",
+          "created_at": 1689179723,
+          "start_time": 1689144774,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689144774,
+          "issue_key": "SEI-2367",
+          "status_id": "10000",
+          "created_at": 1688480393,
+          "start_time": 1688475811,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2367",
+          "created_at": 1688542677,
+          "start_time": 1688539975,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "Milan Sonagra",
+          "end_time": 1688539975,
+          "issue_key": "SEI-2367",
+          "created_at": 1688542677,
+          "start_time": 1688539467,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1688539467,
+          "issue_key": "SEI-2367",
+          "created_at": 1688480393,
+          "start_time": 1688475811,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ]
+      },
+      "component_list": [],
+      "first_assignee": "Milan Sonagra",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 6992,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 76535,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 1200636
+        }
+      ],
+      "first_comment_at": 1689576587,
+      "issue_created_at": 1688475811,
+      "issue_updated_at": 1689759974,
+      "first_assigned_at": 1688539467,
+      "first_assignee_id": "60f44002-887c-44ec-a241-ee36c416ed1a",
+      "issue_resolved_at": 1689759974,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 1284163
+    },
+    {
+      "id": "009290a6-831b-4d97-a5b0-4763bcc350ee",
+      "key": "SEI-2326",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - New Jira Release Widget - Open Report",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "Darshan Patel",
+      "versions": [],
+      "desc_size": 80,
+      "is_active": true,
+      "created_at": 1691376480,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2326",
+          "status_id": "10711",
+          "created_at": 1689766080,
+          "start_time": 1689759944,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759944,
+          "issue_key": "SEI-2326",
+          "status_id": "10001",
+          "created_at": 1689643800,
+          "start_time": 1689592799,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592799,
+          "issue_key": "SEI-2326",
+          "status_id": "10626",
+          "created_at": 1689400780,
+          "start_time": 1689311566,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311566,
+          "issue_key": "SEI-2326",
+          "status_id": "10100",
+          "created_at": 1689179749,
+          "start_time": 1689140889,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689140889,
+          "issue_key": "SEI-2326",
+          "status_id": "10627",
+          "created_at": 1689179749,
+          "start_time": 1689139338,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689139338,
+          "issue_key": "SEI-2326",
+          "status_id": "3",
+          "created_at": 1689073259,
+          "start_time": 1689053085,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689053085,
+          "issue_key": "SEI-2326",
+          "status_id": "10000",
+          "created_at": 1687952023,
+          "start_time": 1687948664,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 2,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2326",
+          "created_at": 1687952023,
+          "start_time": 1687948664,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "2.0",
+        "customfield_10658": ""
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 86253,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167145,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 1557882
+        }
+      ],
+      "first_comment_at": 1689311563,
+      "issue_created_at": 1687948664,
+      "issue_updated_at": 1690176592,
+      "first_assigned_at": 1687948664,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759943,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 1811280
+    },
+    {
+      "id": "8be93e3e-61ee-4c9c-a86a-399cc38f23a2",
+      "key": "SEI-2325",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - New Jira Release Widget - Drilldown",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "Darshan Patel",
+      "versions": [],
+      "desc_size": 119,
+      "is_active": true,
+      "created_at": 1691376480,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2325",
+          "status_id": "10711",
+          "created_at": 1689766080,
+          "start_time": 1689759944,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759944,
+          "issue_key": "SEI-2325",
+          "status_id": "10001",
+          "created_at": 1689643801,
+          "start_time": 1689592787,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592787,
+          "issue_key": "SEI-2325",
+          "status_id": "10626",
+          "created_at": 1689400781,
+          "start_time": 1689311557,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311557,
+          "issue_key": "SEI-2325",
+          "status_id": "10100",
+          "created_at": 1689179749,
+          "start_time": 1689140884,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689140884,
+          "issue_key": "SEI-2325",
+          "status_id": "10627",
+          "created_at": 1689179749,
+          "start_time": 1689139332,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689139332,
+          "issue_key": "SEI-2325",
+          "status_id": "10300",
+          "created_at": 1689073277,
+          "start_time": 1689052820,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689052820,
+          "issue_key": "SEI-2325",
+          "status_id": "3",
+          "created_at": 1688976680,
+          "start_time": 1688967903,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1688967903,
+          "issue_key": "SEI-2325",
+          "status_id": "10000",
+          "created_at": 1687952025,
+          "start_time": 1687948618,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 3,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2325",
+          "created_at": 1687952025,
+          "start_time": 1687948618,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "3.0",
+        "customfield_10658": ""
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 84917,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167157,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 1559252
+        }
+      ],
+      "first_comment_at": 1689311527,
+      "issue_created_at": 1687948618,
+      "issue_updated_at": 1690176585,
+      "first_assigned_at": 1687948618,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759944,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 1811326
+    },
+    {
+      "id": "7a691ad8-af0f-4f26-a6e1-5e348743c5d3",
+      "key": "SEI-2324",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - New Jira Release Widget - Edit widget",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "Darshan Patel",
+      "versions": [],
+      "desc_size": 397,
+      "is_active": true,
+      "created_at": 1691376480,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2324",
+          "status_id": "10711",
+          "created_at": 1689766080,
+          "start_time": 1689759941,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759941,
+          "issue_key": "SEI-2324",
+          "status_id": "10001",
+          "created_at": 1689643801,
+          "start_time": 1689592775,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592775,
+          "issue_key": "SEI-2324",
+          "status_id": "10626",
+          "created_at": 1689400781,
+          "start_time": 1689311522,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311522,
+          "issue_key": "SEI-2324",
+          "status_id": "10100",
+          "created_at": 1689012231,
+          "start_time": 1688995345,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1688995345,
+          "issue_key": "SEI-2324",
+          "status_id": "10627",
+          "created_at": 1689012231,
+          "start_time": 1688995343,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1688995343,
+          "issue_key": "SEI-2324",
+          "status_id": "10300",
+          "created_at": 1688976692,
+          "start_time": 1688965676,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1688965676,
+          "issue_key": "SEI-2324",
+          "status_id": "3",
+          "created_at": 1688711095,
+          "start_time": 1688707712,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1688707712,
+          "issue_key": "SEI-2324",
+          "status_id": "10000",
+          "created_at": 1687952024,
+          "start_time": 1687948535,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 5,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2324",
+          "created_at": 1687952024,
+          "start_time": 1687948535,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "5.0",
+        "customfield_10658": ""
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 257964,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167166,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 1386276
+        }
+      ],
+      "first_comment_at": 1689311495,
+      "issue_created_at": 1687948535,
+      "issue_updated_at": 1690176616,
+      "first_assigned_at": 1687948535,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759941,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 1811406
+    },
+    {
+      "id": "9bd1378b-0beb-4779-b914-d1660f31f15f",
+      "key": "SEI-2323",
+      "epic": "SEI-1620",
+      "hops": 1,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - New Jira Release Widget Add In Dashboard",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "Darshan Patel",
+      "versions": [],
+      "desc_size": 248,
+      "is_active": true,
+      "created_at": 1691376480,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2323",
+          "status_id": "10711",
+          "created_at": 1689766080,
+          "start_time": 1689759943,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759943,
+          "issue_key": "SEI-2323",
+          "status_id": "10001",
+          "created_at": 1689643801,
+          "start_time": 1689592751,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592751,
+          "issue_key": "SEI-2323",
+          "status_id": "10626",
+          "created_at": 1689400783,
+          "start_time": 1689311487,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311487,
+          "issue_key": "SEI-2323",
+          "status_id": "10100",
+          "created_at": 1689012231,
+          "start_time": 1688995337,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1688995337,
+          "issue_key": "SEI-2323",
+          "status_id": "10627",
+          "created_at": 1689012231,
+          "start_time": 1688995334,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1688995334,
+          "issue_key": "SEI-2323",
+          "status_id": "10300",
+          "created_at": 1688976691,
+          "start_time": 1688965669,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1688965669,
+          "issue_key": "SEI-2323",
+          "status_id": "3",
+          "created_at": 1688125040,
+          "start_time": 1688123991,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1688123991,
+          "issue_key": "SEI-2323",
+          "status_id": "10000",
+          "created_at": 1687952025,
+          "start_time": 1687948486,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 5,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2323",
+          "created_at": 1687952025,
+          "start_time": 1687948486,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "5.0",
+        "customfield_10658": ""
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 841678,
+          "velocity_stage_result": {
+            "rating": "NEEDS_ATTENTION",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167192,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 802587
+        }
+      ],
+      "first_comment_at": 1689311408,
+      "issue_created_at": 1687948486,
+      "issue_updated_at": 1690176600,
+      "first_assigned_at": 1687948486,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689759943,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 1811457
+    },
+    {
+      "id": "9fe254ce-ade7-4d73-ab6e-d9afb9ac46ef",
+      "key": "SEI-2278",
+      "hops": 0,
+      "labels": [],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Lead time by time spent in stages report - Release date filter - Filter preview does not show correct value",
+      "assignee": "Darshan Patel",
+      "priority": "P3",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 417,
+      "is_active": true,
+      "created_at": 1691376717,
+      "issue_type": "TASK",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2278",
+          "status_id": "10711",
+          "created_at": 1689766080,
+          "start_time": 1689760082,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689760082,
+          "issue_key": "SEI-2278",
+          "status_id": "10001",
+          "created_at": 1689643792,
+          "start_time": 1689594558,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689594558,
+          "issue_key": "SEI-2278",
+          "status_id": "10626",
+          "created_at": 1689073257,
+          "start_time": 1689068211,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689068211,
+          "issue_key": "SEI-2278",
+          "status_id": "10100",
+          "created_at": 1689012231,
+          "start_time": 1688995356,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1688995356,
+          "issue_key": "SEI-2278",
+          "status_id": "10627",
+          "created_at": 1689012231,
+          "start_time": 1688995354,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1688995354,
+          "issue_key": "SEI-2278",
+          "status_id": "10300",
+          "created_at": 1688976687,
+          "start_time": 1688966230,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1688966230,
+          "issue_key": "SEI-2278",
+          "status_id": "3",
+          "created_at": 1688976687,
+          "start_time": 1688966227,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER INVESTIGATION",
+          "end_time": 1688966227,
+          "issue_key": "SEI-2278",
+          "status_id": "10614",
+          "created_at": 1688976687,
+          "start_time": 1688965682,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1688965682,
+          "issue_key": "SEI-2278",
+          "status_id": "3",
+          "created_at": 1688476747,
+          "start_time": 1688474073,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1688474073,
+          "issue_key": "SEI-2278",
+          "status_id": "10000",
+          "created_at": 1687504938,
+          "start_time": 1687500406,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2278",
+          "created_at": 1687867467,
+          "start_time": 1687858563,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1687858563,
+          "issue_key": "SEI-2278",
+          "created_at": 1687504938,
+          "start_time": 1687500406,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10658": "describe what the user wants:"
+      },
+      "component_list": [],
+      "first_assignee": "Darshan Patel",
+      "integration_id": "4414",
+      "num_attachments": 2,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 491612,
+          "velocity_stage_result": {
+            "rating": "NEEDS_ATTENTION",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 165524,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 1602540
+        }
+      ],
+      "first_comment_at": 1689068207,
+      "issue_created_at": 1687500406,
+      "issue_updated_at": 1689760082,
+      "first_assigned_at": 1687858563,
+      "first_assignee_id": "4d7eedef-fc25-4486-9aff-2bfe07da0ed4",
+      "issue_resolved_at": 1689760082,
+      "original_estimate": 0,
+      "first_attachment_at": 1687500406,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 2259676
+    },
+    {
+      "id": "c4881c98-d9ea-4603-bd8d-db0831d82448",
+      "key": "SEI-2221",
+      "epic": "SEI-1620",
+      "hops": 2,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - Create a new report to display the data for the Jira Releases",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "yashaswini.raghavan",
+      "versions": [],
+      "desc_size": 242,
+      "is_active": true,
+      "created_at": 1691376480,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "052992c5-17b3-462c-a6ec-afc1645eae0f",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2221",
+          "status_id": "10711",
+          "created_at": 1689766081,
+          "start_time": 1689759941,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759941,
+          "issue_key": "SEI-2221",
+          "status_id": "10001",
+          "created_at": 1689643801,
+          "start_time": 1689592735,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592735,
+          "issue_key": "SEI-2221",
+          "status_id": "10626",
+          "created_at": 1689400785,
+          "start_time": 1689311400,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311400,
+          "issue_key": "SEI-2221",
+          "status_id": "10100",
+          "created_at": 1689012231,
+          "start_time": 1688995327,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1688995327,
+          "issue_key": "SEI-2221",
+          "status_id": "10627",
+          "created_at": 1689012231,
+          "start_time": 1688995324,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1688995324,
+          "issue_key": "SEI-2221",
+          "status_id": "10300",
+          "created_at": 1688976692,
+          "start_time": 1688965661,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1688965661,
+          "issue_key": "SEI-2221",
+          "status_id": "3",
+          "created_at": 1688106909,
+          "start_time": 1688102704,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1688102704,
+          "issue_key": "SEI-2221",
+          "status_id": "10000",
+          "created_at": 1687195915,
+          "start_time": 1687170472,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 2,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2221",
+          "created_at": 1687195915,
+          "start_time": 1687170491,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "Milan Sonagra",
+          "end_time": 1687170491,
+          "issue_key": "SEI-2221",
+          "created_at": 1687195915,
+          "start_time": 1687170472,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "2.0",
+        "customfield_10658": "# This report will be calculated on the same lines"
+      },
+      "component_list": [],
+      "first_assignee": "Milan Sonagra",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 862957,
+          "velocity_stage_result": {
+            "rating": "NEEDS_ATTENTION",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167206,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 1559306
+        }
+      ],
+      "first_comment_at": 1689311396,
+      "issue_created_at": 1687170472,
+      "issue_updated_at": 1690176608,
+      "first_assigned_at": 1687170472,
+      "first_assignee_id": "60f44002-887c-44ec-a241-ee36c416ed1a",
+      "issue_resolved_at": 1689759941,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 2589469
+    },
+    {
+      "id": "726685ee-d473-4c08-a9fc-2962162ea9a3",
+      "key": "SEI-2211",
+      "epic": "SEI-177",
+      "hops": 1,
+      "labels": [],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Testrail Test Report - Multiselect type of field should not be included in the list of Stack  because its not supported",
+      "assignee": "Darshan Patel",
+      "priority": "P3",
+      "reporter": "Esha Shah",
+      "versions": [],
+      "desc_size": 520,
+      "is_active": true,
+      "created_at": 1691376717,
+      "issue_type": "BUG",
+      "parent_key": "SEI-177",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2086,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "fa8d717d-f1a1-471f-8654-940e5f047004",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2211",
+          "status_id": "10711",
+          "created_at": 1689766081,
+          "start_time": 1689760072,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689760072,
+          "issue_key": "SEI-2211",
+          "status_id": "10001",
+          "created_at": 1689689999,
+          "start_time": 1689685553,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689685553,
+          "issue_key": "SEI-2211",
+          "status_id": "10626",
+          "created_at": 1688383891,
+          "start_time": 1688380464,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1688380464,
+          "issue_key": "SEI-2211",
+          "status_id": "10100",
+          "created_at": 1688369873,
+          "start_time": 1688366098,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1688366098,
+          "issue_key": "SEI-2211",
+          "status_id": "10627",
+          "created_at": 1688106910,
+          "start_time": 1688102095,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1688102095,
+          "issue_key": "SEI-2211",
+          "status_id": "10300",
+          "created_at": 1687516108,
+          "start_time": 1687512028,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1687512028,
+          "issue_key": "SEI-2211",
+          "status_id": "3",
+          "created_at": 1687516108,
+          "start_time": 1687511921,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1687511921,
+          "issue_key": "SEI-2211",
+          "status_id": "10000",
+          "created_at": 1686903242,
+          "start_time": 1686897349,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.2"
+      ],
+      "issue_due_at": 0,
+      "story_points": 1,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2211",
+          "created_at": 1687255255,
+          "start_time": 1687244708,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "Meetrajsinh Solanki",
+          "end_time": 1687244708,
+          "issue_key": "SEI-2211",
+          "created_at": 1687195915,
+          "start_time": 1687172487,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1687172487,
+          "issue_key": "SEI-2211",
+          "created_at": 1686903242,
+          "start_time": 1686897349,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-177",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202306.2",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "1.0"
+      },
+      "component_list": [],
+      "first_assignee": "Meetrajsinh Solanki",
+      "integration_id": "4414",
+      "num_attachments": 2,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 107,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 74519,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 2788097
+        }
+      ],
+      "first_comment_at": 1688380460,
+      "issue_created_at": 1686897349,
+      "issue_updated_at": 1689760072,
+      "first_assigned_at": 1687172487,
+      "first_assignee_id": "1ef9ae0f-e22f-423a-8a51-2444e4bfa1ec",
+      "issue_resolved_at": 1689760072,
+      "original_estimate": 0,
+      "first_attachment_at": 1686897349,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 2862723
+    },
+    {
+      "id": "fae02e99-9941-4296-8910-2df3dfc287e3",
+      "key": "SEI-2210",
+      "hops": 1,
+      "labels": [],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "Testrails trend report is not honoring the org unit filters",
+      "assignee": "Darshan Patel",
+      "priority": "P3",
+      "reporter": "Shashank Kumar",
+      "versions": [],
+      "desc_size": 218,
+      "is_active": true,
+      "created_at": 1691376717,
+      "issue_type": "BUG",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "0c2679ff-4afb-4d43-b3b1-4c607fb22acd",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2210",
+          "status_id": "10711",
+          "created_at": 1689766081,
+          "start_time": 1689760068,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689760068,
+          "issue_key": "SEI-2210",
+          "status_id": "10001",
+          "created_at": 1689665765,
+          "start_time": 1689661015,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689661015,
+          "issue_key": "SEI-2210",
+          "status_id": "10626",
+          "created_at": 1689643789,
+          "start_time": 1689578873,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689578873,
+          "issue_key": "SEI-2210",
+          "status_id": "10100",
+          "created_at": 1689643789,
+          "start_time": 1689576878,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689576878,
+          "issue_key": "SEI-2210",
+          "status_id": "10627",
+          "created_at": 1689643789,
+          "start_time": 1689576195,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689576195,
+          "issue_key": "SEI-2210",
+          "status_id": "10300",
+          "created_at": 1689400635,
+          "start_time": 1689332952,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689332952,
+          "issue_key": "SEI-2210",
+          "status_id": "3",
+          "created_at": 1689400635,
+          "start_time": 1689332778,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689332778,
+          "issue_key": "SEI-2210",
+          "status_id": "10000",
+          "created_at": 1686892071,
+          "start_time": 1686849778,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2210",
+          "created_at": 1689400635,
+          "start_time": 1689332775,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "Meetrajsinh Solanki",
+          "end_time": 1689332775,
+          "issue_key": "SEI-2210",
+          "created_at": 1689297842,
+          "start_time": 1689264830,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "_UNASSIGNED_",
+          "end_time": 1689264830,
+          "issue_key": "SEI-2210",
+          "created_at": 1686892071,
+          "start_time": 1686849778,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10732": [
+          "Netskope"
+        ]
+      },
+      "component_list": [],
+      "first_assignee": "Meetrajsinh Solanki",
+      "integration_id": "4414",
+      "num_attachments": 5,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 174,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 99053,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 2811063
+        }
+      ],
+      "first_comment_at": 1686910402,
+      "issue_created_at": 1686849778,
+      "issue_updated_at": 1689760068,
+      "first_assigned_at": 1689264830,
+      "first_assignee_id": "1ef9ae0f-e22f-423a-8a51-2444e4bfa1ec",
+      "issue_resolved_at": 1689760067,
+      "original_estimate": 0,
+      "first_attachment_at": 1686910400,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 2910290
+    },
+    {
+      "id": "240fdf9a-0aea-4977-ab8d-78b8db3a7dc9",
+      "key": "SEI-2143",
+      "epic": "SEI-1620",
+      "hops": 2,
+      "labels": [
+        "roadmap"
+      ],
+      "status": "DEPLOYED",
+      "bounces": 0,
+      "project": "SEI",
+      "summary": "FE - Have the Jira only profile created to support Lead time by time spent in stages report",
+      "assignee": "Darshan Patel",
+      "priority": "P2",
+      "reporter": "yashaswini.raghavan",
+      "versions": [],
+      "desc_size": 733,
+      "is_active": true,
+      "created_at": 1691376481,
+      "issue_type": "STORY",
+      "parent_key": "SEI-1620",
+      "resolution": "DEPLOYED",
+      "sprint_ids": [
+        2100,
+        2086,
+        2104
+      ],
+      "asof_status": "DEPLOYED",
+      "assignee_id": "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+      "ingested_at": 1691366400,
+      "reporter_id": "052992c5-17b3-462c-a6ec-afc1645eae0f",
+      "status_list": [
+        {
+          "status": "DEPLOYED",
+          "end_time": 1691452799,
+          "issue_key": "SEI-2143",
+          "status_id": "10711",
+          "created_at": 1689766081,
+          "start_time": 1689759946,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DONE",
+          "end_time": 1689759946,
+          "issue_key": "SEI-2143",
+          "status_id": "10001",
+          "created_at": 1689643802,
+          "start_time": 1689592816,
+          "integration_id": "4414"
+        },
+        {
+          "status": "DEV COMPLETE",
+          "end_time": 1689592816,
+          "issue_key": "SEI-2143",
+          "status_id": "10626",
+          "created_at": 1689400788,
+          "start_time": 1689311660,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1689311660,
+          "issue_key": "SEI-2143",
+          "status_id": "10100",
+          "created_at": 1689179743,
+          "start_time": 1689145792,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1689145792,
+          "issue_key": "SEI-2143",
+          "status_id": "10627",
+          "created_at": 1689179743,
+          "start_time": 1689145790,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1689145790,
+          "issue_key": "SEI-2143",
+          "status_id": "10300",
+          "created_at": 1689179743,
+          "start_time": 1689144708,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1689144708,
+          "issue_key": "SEI-2143",
+          "status_id": "3",
+          "created_at": 1689179743,
+          "start_time": 1689141402,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1689141402,
+          "issue_key": "SEI-2143",
+          "status_id": "10000",
+          "created_at": 1688454317,
+          "start_time": 1688450778,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1688450778,
+          "issue_key": "SEI-2143",
+          "status_id": "3",
+          "created_at": 1688453276,
+          "start_time": 1688447002,
+          "integration_id": "4414"
+        },
+        {
+          "status": "QA TEST",
+          "end_time": 1688447002,
+          "issue_key": "SEI-2143",
+          "status_id": "10100",
+          "created_at": 1688369873,
+          "start_time": 1688366119,
+          "integration_id": "4414"
+        },
+        {
+          "status": "READY FOR MERGE",
+          "end_time": 1688366119,
+          "issue_key": "SEI-2143",
+          "status_id": "10627",
+          "created_at": 1688110990,
+          "start_time": 1688108941,
+          "integration_id": "4414"
+        },
+        {
+          "status": "UNDER REVIEW",
+          "end_time": 1688108941,
+          "issue_key": "SEI-2143",
+          "status_id": "10300",
+          "created_at": 1687952033,
+          "start_time": 1687948401,
+          "integration_id": "4414"
+        },
+        {
+          "status": "IN PROGRESS",
+          "end_time": 1687948401,
+          "issue_key": "SEI-2143",
+          "status_id": "3",
+          "created_at": 1687759926,
+          "start_time": 1687756280,
+          "integration_id": "4414"
+        },
+        {
+          "status": "TO DO",
+          "end_time": 1687756280,
+          "issue_key": "SEI-2143",
+          "status_id": "10000",
+          "created_at": 1686337656,
+          "start_time": 1686294657,
+          "integration_id": "4414"
+        }
+      ],
+      "fix_versions": [
+        "202307.1"
+      ],
+      "issue_due_at": 0,
+      "story_points": 3,
+      "assignee_list": [
+        {
+          "assignee": "Darshan Patel",
+          "end_time": 1691372490,
+          "issue_key": "SEI-2143",
+          "created_at": 1686337656,
+          "start_time": 1686294669,
+          "integration_id": "4414"
+        },
+        {
+          "assignee": "Milan Sonagra",
+          "end_time": 1686294669,
+          "issue_key": "SEI-2143",
+          "created_at": 1686337656,
+          "start_time": 1686294657,
+          "integration_id": "4414"
+        }
+      ],
+      "custom_fields": {
+        "customfield_10006": "SEI-1620",
+        "customfield_10103": [
+          "SEI Sprint - 202307.1",
+          "SEI Sprint - 202306.2",
+          "SEI Sprint - 202307.2"
+        ],
+        "customfield_10105": "3.0",
+        "customfield_10658": "describe what the user wants:"
+      },
+      "component_list": [],
+      "first_assignee": "Milan Sonagra",
+      "integration_id": "4414",
+      "num_attachments": 0,
+      "status_category": "Done",
+      "velocity_stages": [
+        {
+          "stage": "In progress",
+          "time_spent": 199203,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Done",
+          "time_spent": 167130,
+          "velocity_stage_result": {
+            "rating": "GOOD",
+            "lower_limit_unit": "DAYS",
+            "upper_limit_unit": "DAYS",
+            "lower_limit_value": 4,
+            "upper_limit_value": 11
+          }
+        },
+        {
+          "stage": "Other",
+          "time_spent": 3098956
+        }
+      ],
+      "first_comment_at": 1688386389,
+      "issue_created_at": 1686294657,
+      "issue_updated_at": 1690176577,
+      "first_assigned_at": 1686294657,
+      "first_assignee_id": "60f44002-887c-44ec-a241-ee36c416ed1a",
+      "issue_resolved_at": 1689759946,
+      "original_estimate": 0,
+      "first_attachment_at": 0,
+      "velocity_stage_time": 0,
+      "velocity_stage_total_time": 3465289
+    }
+  ],
+  "calculated_at": 1686700800,
+  "count": 16,
+  "_metadata": {
+    "page_size": 16,
+    "page": 0,
+    "has_next": false,
+    "total_count": 16
+  }
+}

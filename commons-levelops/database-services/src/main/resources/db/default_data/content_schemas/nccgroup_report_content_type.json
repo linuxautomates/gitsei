@@ -1,0 +1,325 @@
+{
+    "content_type": "plugin_result/nccgroup_report/report",
+    "fields": {
+        "id": {
+            "key": "id",
+            "value_type": "string",
+            "content_type": "id:plugin_result/nccgroup_report/report"
+        },
+        "tool": {
+            "key": "tool",
+            "value_type": "string",
+            "content_type": "string"
+        },
+        "successful": {
+            "key": "successful",
+            "value_type": "string",
+            "content_type": "boolean"
+        },
+        "tags": {
+            "key": "tags",
+            "value_type": "json_array",
+            "content_type": "string"
+        },
+        "product_ids": {
+            "key": "product_ids",
+            "value_type": "json_array",
+            "content_type": "string"
+        },
+        "results": {
+            "key": "results",
+            "value_type": "json_blob",
+            "content_type": "plugin_result/nccgroup_report/report.results",
+            "fields": {
+                "project_name": {
+                    "key": "project_name",
+                    "value_type": "string",
+                    "content_type": "string"
+                },
+                "summary": {
+                    "key": "summary",
+                    "value_type": "json_blob",
+                    "content_type": "plugin_result/nccgroup_report/report.results.summary",
+                    "fields": {
+                        "total_high": {
+                            "key": "total_high",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "total_medium": {
+                            "key": "total_medium",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "total_low": {
+                            "key": "total_low",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        },
+                        "total_informational": {
+                            "key": "total_informational",
+                            "value_type": "string",
+                            "content_type": "integer"
+                        }
+                    }
+                },
+                "aggregations": {
+                    "key": "aggregations",
+                    "value_type": "json_blob",
+                    "content_type": "plugin_result/nccgroup_report/report.results.aggregations",
+                    "fields": {
+                        "by_component": {
+                            "key": "by_component",
+                            "value_type": "json_array",
+                            "content_type": "plugin_result/nccgroup_report/report.results.aggregations.by_component",
+                            "fields": {
+                                "All": {
+                                    "key": "All",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "zcash": {
+                                    "key": "zcash",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "bitcoin": {
+                                    "key": "bitcoin",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "libsnark": {
+                                    "key": "libsnark",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        },
+                        "by_category": {
+                            "key": "by_category",
+                            "value_type": "json_blob",
+                            "content_type": "plugin_result/nccgroup_report/report.results.aggregations.by_category",
+                            "fields": {
+                                "Patching": {
+                                    "key": "Patching",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Cryptography": {
+                                    "key": "Cryptography",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Timing": {
+                                    "key": "Timing",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Data Exposure": {
+                                    "key": "Data Exposure",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Access Controls": {
+                                    "key": "Access Controls",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Denial of Service": {
+                                    "key": "Denial of Service",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Data Validation": {
+                                    "key": "Data Validation",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Uncategorized": {
+                                    "key": "Uncategorized",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "Other": {
+                                    "key": "Other",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        },
+                        "by_impact": {
+                            "key": "by_impact",
+                            "value_type": "json_blob",
+                            "content_type": "plugin_result/nccgroup_report/report.results.aggregations.by_impact",
+                            "fields": {
+                                "high": {
+                                    "key": "high",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "medium": {
+                                    "key": "medium",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "low": {
+                                    "key": "low",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "none": {
+                                    "key": "none",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        },
+                        "by_exploitability": {
+                            "key": "by_exploitability",
+                            "value_type": "json_blob",
+                            "content_type": "plugin_result/nccgroup_report/report.results.aggregations.by_exploitability",
+                            "fields": {
+                                "high": {
+                                    "key": "high",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "medium": {
+                                    "key": "medium",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "low": {
+                                    "key": "low",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "none": {
+                                    "key": "none",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        },
+                        "by_risk": {
+                            "key": "by_risk",
+                            "value_type": "json_blob",
+                            "content_type": "plugin_result/nccgroup_report/report.results.aggregations.by_risk",
+                            "fields": {
+                                "high": {
+                                    "key": "high",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "medium": {
+                                    "key": "medium",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "low": {
+                                    "key": "low",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                },
+                                "informational": {
+                                    "key": "informational",
+                                    "value_type": "string",
+                                    "content_type": "integer"
+                                }
+                            }
+                        }
+                    }
+                },
+                "metadata": {
+                    "key": "metadata",
+                    "value_type": "json_blob",
+                    "content_type": "plugin_result/nccgroup_report/report.results.metadata",
+                    "fields": {
+                        "title": {
+                            "key": "title",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "date": {
+                            "key": "date",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                },
+                "data": {
+                    "key": "data",
+                    "value_type": "json_array",
+                    "content_type": "plugin_result/nccgroup_report/report.results.data",
+                    "fields": {
+                        "key": {
+                            "key": "key",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "risk": {
+                            "key": "risk",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "identifier": {
+                            "key": "identifier",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "component": {
+                            "key": "component",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "category": {
+                            "key": "category",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "location": {
+                            "key": "location",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "status": {
+                            "key": "status",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "description": {
+                            "key": "description",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "exploitability": {
+                            "key": "exploitability",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "impact": {
+                            "key": "impact",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "impact_description": {
+                            "key": "impact_description",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "recommendation": {
+                            "key": "recommendation",
+                            "value_type": "string",
+                            "content_type": "string"
+                        },
+                        "reproduction_steps": {
+                            "key": "reproduction_steps",
+                            "value_type": "string",
+                            "content_type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,463 @@
+{
+  "records": [
+    {
+      "project": {
+        "id": "da783d0c-a1e9-4df9-800f-df487d37ac74",
+        "name": "project-test-5",
+        "url": "https://dev.azure.com/cgn-test/_apis/projects/da783d0c-a1e9-4df9-800f-df487d37ac74",
+        "state": "wellFormed",
+        "revision": 152,
+        "visibility": "public",
+        "lastUpdateTime": "2021-05-03T09:12:29.357+0000",
+        "GitEnabled": true,
+        "TfvcEnabled": false,
+        "projectProperty": [
+          {
+            "value": "23feeea2-cfbb-48d7-bd00-d0f620a4eac4",
+            "name": "System.CurrentProcessTemplateId"
+          },
+          {
+            "value": "23feeea2-cfbb-48d7-bd00-d0f620a4eac4",
+            "name": "System.OriginalProcessTemplateId"
+          },
+          {
+            "value": "b8a3a935-7e91-48b8-a94c-606d37c3e9f2",
+            "name": "System.ProcessTemplateType"
+          },
+          {
+            "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<MSProject>\r\n  <Mappings>\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.AreaPath\" ProjectField=\"pjTaskOutlineCode9\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.AssignedTo\" ProjectField=\"pjTaskResourceNames\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Id\" ProjectField=\"pjTaskText10\" ProjectName=\"Work Item ID\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.IterationPath\" ProjectField=\"pjTaskOutlineCode10\" ProjectName=\"Sprint\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Reason\" ProjectField=\"pjTaskText14\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Rev\" ProjectField=\"pjTaskText23\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.State\" ProjectField=\"pjTaskText13\" ProjectName=\"State\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.Title\" ProjectField=\"pjTaskName\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"System.WorkItemType\" ProjectField=\"pjTaskText24\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"Microsoft.VSTS.Common.BacklogPriority\" ProjectField=\"pjTaskNumber1\" ProjectName=\"Backlog Priority\" />\r\n    <Mapping WorkItemTrackingFieldReferenceName=\"Microsoft.VSTS.Scheduling.RemainingWork\" ProjectField=\"pjTaskRemainingWork\" ProjectUnits=\"pjHour\" IfSummaryRefreshOnly=\"true\" />\r\n    <LinksField ProjectField=\"pjTaskText26\" />\r\n    <SyncField ProjectField=\"pjTaskText25\" />\r\n  </Mappings>\r\n</MSProject>",
+            "name": "System.MSPROJ"
+          },
+          {
+            "value": "Scrum",
+            "name": "System.Process Template"
+          },
+          {
+            "value": "2",
+            "name": "System.Microsoft.TeamFoundation.Team.Count"
+          },
+          {
+            "value": "fe02b4eb-b468-408a-a508-03ef995be9bb",
+            "name": "System.Microsoft.TeamFoundation.Team.Default"
+          },
+          {
+            "value": "2",
+            "name": "System.SourceControlCapabilityFlags"
+          },
+          {
+            "value": "True",
+            "name": "System.SourceControlGitEnabled"
+          },
+          {
+            "value": "True",
+            "name": "System.SourceControlGitPermissionsInitialized"
+          }
+        ],
+        "organization": "cgn-test"
+      },
+      "metadata": {
+        "workItemCategories": [
+          {
+            "defaultWorkItemType": {
+              "name": "Issue",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Issue"
+            },
+            "name": "Bug Category",
+            "referenceName": "Microsoft.BugCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.BugCategory",
+            "workItemTypes": [
+              {
+                "name": "Issue",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Issue"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Epic",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Epic"
+            },
+            "name": "Epic Category",
+            "referenceName": "Microsoft.EpicCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.EpicCategory",
+            "workItemTypes": [
+              {
+                "name": "Epic",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Epic"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Issue",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Issue"
+            },
+            "name": "Requirement Category",
+            "referenceName": "Microsoft.RequirementCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.RequirementCategory",
+            "workItemTypes": [
+              {
+                "name": "Issue",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Issue"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Test Case",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestCase"
+            },
+            "name": "Test Case Category",
+            "referenceName": "Microsoft.TestCaseCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.TestCaseCategory",
+            "workItemTypes": [
+              {
+                "name": "Test Case",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestCase"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Shared Steps",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.SharedStep"
+            },
+            "name": "Shared Step Category",
+            "referenceName": "Microsoft.SharedStepCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.SharedStepCategory",
+            "workItemTypes": [
+              {
+                "name": "Shared Steps",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.SharedStep"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Shared Parameter",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.SharedParameter"
+            },
+            "name": "Shared Parameter Category",
+            "referenceName": "Microsoft.SharedParameterCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.SharedParameterCategory",
+            "workItemTypes": [
+              {
+                "name": "Shared Parameter",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.SharedParameter"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Code Review Request",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewRequest"
+            },
+            "name": "Code Review Request Category",
+            "referenceName": "Microsoft.CodeReviewRequestCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.CodeReviewRequestCategory",
+            "workItemTypes": [
+              {
+                "name": "Code Review Request",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewRequest"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Code Review Response",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewResponse"
+            },
+            "name": "Code Review Response Category",
+            "referenceName": "Microsoft.CodeReviewResponseCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.CodeReviewResponseCategory",
+            "workItemTypes": [
+              {
+                "name": "Code Review Response",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewResponse"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Feedback Request",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.FeedbackRequest"
+            },
+            "name": "Feedback Request Category",
+            "referenceName": "Microsoft.FeedbackRequestCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.FeedbackRequestCategory",
+            "workItemTypes": [
+              {
+                "name": "Feedback Request",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.FeedbackRequest"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Feedback Response",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.FeedbackResponse"
+            },
+            "name": "Feedback Response Category",
+            "referenceName": "Microsoft.FeedbackResponseCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.FeedbackResponseCategory",
+            "workItemTypes": [
+              {
+                "name": "Feedback Response",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.FeedbackResponse"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Test Plan",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestPlan"
+            },
+            "name": "Test Plan Category",
+            "referenceName": "Microsoft.TestPlanCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.TestPlanCategory",
+            "workItemTypes": [
+              {
+                "name": "Test Plan",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestPlan"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Test Suite",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestSuite"
+            },
+            "name": "Test Suite Category",
+            "referenceName": "Microsoft.TestSuiteCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.TestSuiteCategory",
+            "workItemTypes": [
+              {
+                "name": "Test Suite",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestSuite"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Task",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Task"
+            },
+            "name": "Task Category",
+            "referenceName": "Microsoft.TaskCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.TaskCategory",
+            "workItemTypes": [
+              {
+                "name": "Task",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.Task"
+              }
+            ]
+          },
+          {
+            "defaultWorkItemType": {
+              "name": "Code Review Request",
+              "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewRequest"
+            },
+            "name": "Hidden Types Category",
+            "referenceName": "Microsoft.HiddenCategory",
+            "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypeCategories/Microsoft.HiddenCategory",
+            "workItemTypes": [
+              {
+                "name": "Code Review Request",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewRequest"
+              },
+              {
+                "name": "Code Review Response",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.CodeReviewResponse"
+              },
+              {
+                "name": "Shared Steps",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.SharedStep"
+              },
+              {
+                "name": "Shared Parameter",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.SharedParameter"
+              },
+              {
+                "name": "Test Suite",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestSuite"
+              },
+              {
+                "name": "Test Plan",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestPlan"
+              },
+              {
+                "name": "Test Case",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.TestCase"
+              },
+              {
+                "name": "Feedback Response",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.FeedbackResponse"
+              },
+              {
+                "name": "Feedback Request",
+                "url": "https://dev.azure.com/cgn-test/da783d0c-a1e9-4df9-800f-df487d37ac74/_apis/wit/workItemTypes/Microsoft.VSTS.WorkItemTypes.FeedbackRequest"
+              }
+            ]
+          }
+        ],
+        "workItemTypeStates": [
+          {
+            "category": "Proposed",
+            "color": "b2b2b2",
+            "name": "To Do"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Doing"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Done"
+          },
+          {
+            "category": "Proposed",
+            "color": "b2b2b2",
+            "name": "To Do"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Doing"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Done"
+          },
+          {
+            "category": "Proposed",
+            "color": "b2b2b2",
+            "name": "To Do"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Doing"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Done"
+          },
+          {
+            "category": "Proposed",
+            "color": "b2b2b2",
+            "name": "Design"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Ready"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Closed"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Active"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Inactive"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "In Planning"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "In Progress"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Completed"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Active"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Closed"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Active"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Inactive"
+          },
+          {
+            "category": "Proposed",
+            "color": "b2b2b2",
+            "name": "Requested"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Closed"
+          },
+          {
+            "category": "Proposed",
+            "color": "b2b2b2",
+            "name": "Requested"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Accepted"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Closed"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Doing"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Done"
+          },
+          {
+            "category": "Removed",
+            "color": "ffffff",
+            "name": "Removed"
+          },
+          {
+            "category": "InProgress",
+            "color": "007acc",
+            "name": "Doing"
+          },
+          {
+            "category": "Completed",
+            "color": "339933",
+            "name": "Done"
+          }
+        ]
+      }
+    }
+  ]
+}

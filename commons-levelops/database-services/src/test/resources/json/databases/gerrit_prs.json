@@ -1,0 +1,2518 @@
+{
+  "records": [
+    {
+      "id": "All-Users",
+      "name": "All-Users",
+      "parent": "All-Projects",
+      "description": "Individual user settings and preferences.",
+      "state": "ACTIVE",
+      "changes": [
+        {
+          "id": "project1~branch1~If0f79f26da10c6ccebe3e174b73c4ae1e03c014b",
+          "project": "project1",
+          "branch": "branch1",
+          "assignee": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "hashtags": [],
+          "subject": "New change",
+          "status": "NEW",
+          "created": "2020-07-17T11:52:40",
+          "updated": "2020-07-17T11:53:11",
+          "mergeable": true,
+          "submittable": false,
+          "insertions": 0,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "private": {
+              "method": "POST",
+              "label": "Mark private",
+              "title": "Mark change as private",
+              "enabled": true
+            },
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "abandon": {
+              "method": "POST",
+              "label": "Abandon",
+              "title": "Abandon the change",
+              "enabled": true
+            },
+            "move": {
+              "method": "POST",
+              "label": "Move Change",
+              "title": "Move change to a different branch",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "wip": {
+              "method": "POST",
+              "label": "WIP",
+              "title": "Set Work In Progress",
+              "enabled": true
+            },
+            "/": {
+              "method": "DELETE",
+              "label": "Delete",
+              "title": "Delete change 8",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "all": [
+                {
+                  "value": "0",
+                  "name": "ctlo user3",
+                  "username": "user3",
+                  "permitted_voting_range": {
+                    "min": -1,
+                    "max": 1
+                  },
+                  "_account_id": "1000003",
+                  "email": "ctlo@user3.com"
+                },
+                {
+                  "value": "1",
+                  "date": "2020-07-17T11:52:57",
+                  "name": "Administrator",
+                  "username": "admin",
+                  "permitted_voting_range": {
+                    "min": -2,
+                    "max": 2
+                  },
+                  "_account_id": "1000000",
+                  "email": "admin@example.com"
+                },
+                {
+                  "value": "0",
+                  "name": "ctlo user4",
+                  "username": "user4",
+                  "permitted_voting_range": {
+                    "min": -1,
+                    "max": 1
+                  },
+                  "_account_id": "1000004",
+                  "email": "ctlo@user4.com"
+                }
+              ],
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {
+            "REVIEWER": [
+              {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              {
+                "name": "ctlo user3",
+                "username": "user3",
+                "_account_id": "1000003",
+                "email": "ctlo@user3.com"
+              },
+              {
+                "name": "ctlo user4",
+                "username": "user4",
+                "_account_id": "1000004",
+                "email": "ctlo@user4.com"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "108db0e829d2f20d1fa6025501ef1cd78c727cc0",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-17T11:52:40",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "cc2480eab50f449c83b9c3377faa26cd14def6b4",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-17T11:52:57",
+              "message": "Patch Set 1: Code-Review+1\n\nThis change is ready for review.",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "9632a3f2a4cb1ce0d2743e29be37f0776e4d527b",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-17T11:53:11",
+              "message": "Assignee added: Administrator <admin@example.com>",
+              "tag": "autogenerated:gerrit:setAssignee",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "3e186c569d728605c97849ce3d8d11ebe36ece28": {
+              "kind": "REWORK",
+              "created": "2020-07-17T11:52:40",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/08/8/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-17T11:52:40",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-17T11:52:40",
+                  "tz": "0"
+                },
+                "subject": "New change",
+                "message": "New change\n\nChange-Id: If0f79f26da10c6ccebe3e174b73c4ae1e03c014b\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                },
+                "description": {
+                  "method": "PUT",
+                  "label": "Edit Description",
+                  "enabled": true
+                },
+                "rebase": {
+                  "method": "POST",
+                  "label": "Rebase",
+                  "title": "Rebase onto tip of branch or parent change"
+                }
+              },
+              "reviewers": [
+                {
+                  "approvals": {
+                    "Code-Review": " 0"
+                  },
+                  "name": "ctlo user3",
+                  "username": "user3",
+                  "_account_id": "1000003",
+                  "email": "ctlo@user3.com"
+                },
+                {
+                  "approvals": {
+                    "Code-Review": " 0"
+                  },
+                  "name": "ctlo user4",
+                  "username": "user4",
+                  "_account_id": "1000004",
+                  "email": "ctlo@user4.com"
+                },
+                {
+                  "approvals": {
+                    "Code-Review": "+1"
+                  },
+                  "name": "Administrator",
+                  "username": "admin",
+                  "_account_id": "1000000",
+                  "email": "admin@example.com"
+                }
+              ],
+              "_number": "1"
+            }
+          },
+          "change_id": "If0f79f26da10c6ccebe3e174b73c4ae1e03c014b",
+          "submit_type": "MERGE_IF_NECESSARY",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 8,
+          "permitted_labels": {
+            "Code-Review": [
+              "-2",
+              "-1",
+              " 0",
+              "+1",
+              "+2"
+            ]
+          },
+          "removable_reviewers": [
+            {
+              "name": "ctlo user3",
+              "username": "user3",
+              "_account_id": "1000003",
+              "email": "ctlo@user3.com"
+            },
+            {
+              "name": "Administrator",
+              "username": "admin",
+              "_account_id": "1000000",
+              "email": "admin@example.com"
+            },
+            {
+              "name": "ctlo user4",
+              "username": "user4",
+              "_account_id": "1000004",
+              "email": "ctlo@user4.com"
+            }
+          ],
+          "pending_reviewers": {},
+          "reviewer_updates": [
+            {
+              "updated": "2020-07-17T11:52:57",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user4",
+                "username": "user4",
+                "_account_id": "1000004",
+                "email": "ctlo@user4.com"
+              },
+              "state": "REVIEWER"
+            },
+            {
+              "updated": "2020-07-17T11:52:57",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user3",
+                "username": "user3",
+                "_account_id": "1000003",
+                "email": "ctlo@user3.com"
+              },
+              "state": "REVIEWER"
+            }
+          ],
+          "current_revision": "3e186c569d728605c97849ce3d8d11ebe36ece28",
+          "has_review_started": true
+        },
+        {
+          "id": "project1~branch1~Ib7f15f60f10c55d8616fb8e11d8a01a62dcd2c71",
+          "project": "project1",
+          "branch": "branch1",
+          "assignee": {
+            "name": "ctlo user1",
+            "username": "user1",
+            "_account_id": "1000001",
+            "email": "ctlo@user.com"
+          },
+          "hashtags": [],
+          "subject": "This is the latest change description",
+          "status": "NEW",
+          "created": "2020-07-13T13:11:35",
+          "updated": "2020-07-13T13:12:06",
+          "mergeable": true,
+          "submittable": false,
+          "insertions": 0,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "private": {
+              "method": "POST",
+              "label": "Mark private",
+              "title": "Mark change as private",
+              "enabled": true
+            },
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "abandon": {
+              "method": "POST",
+              "label": "Abandon",
+              "title": "Abandon the change",
+              "enabled": true
+            },
+            "move": {
+              "method": "POST",
+              "label": "Move Change",
+              "title": "Move change to a different branch",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "wip": {
+              "method": "POST",
+              "label": "WIP",
+              "title": "Set Work In Progress",
+              "enabled": true
+            },
+            "/": {
+              "method": "DELETE",
+              "label": "Delete",
+              "title": "Delete change 7",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "all": [
+                {
+                  "value": "0",
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "permitted_voting_range": {
+                    "min": -1,
+                    "max": 1
+                  },
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {
+            "REVIEWER": [
+              {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "2f897b75c155ece8d3f90e2f6bcf37c21a1fbb6d",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-13T13:11:35",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "0888847e48350039f5847b639cf9df8892648c4e",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-13T13:11:51",
+              "message": "Assignee added: ctlo user1 (1000001)",
+              "tag": "autogenerated:gerrit:setAssignee",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "2c2536f40df2b5085868cbdc67b23de95c4d7521",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-13T13:12:06",
+              "message": "Patch Set 1:\n\nThis change is ready for review.",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "88745411d35f7252c59271037658e73d7dddffb8": {
+              "kind": "REWORK",
+              "created": "2020-07-13T13:11:35",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/07/7/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-13T13:11:35",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-13T13:11:35",
+                  "tz": "0"
+                },
+                "subject": "This is the latest change description",
+                "message": "This is the latest change description\n\nChange-Id: Ib7f15f60f10c55d8616fb8e11d8a01a62dcd2c71\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                },
+                "description": {
+                  "method": "PUT",
+                  "label": "Edit Description",
+                  "enabled": true
+                },
+                "rebase": {
+                  "method": "POST",
+                  "label": "Rebase",
+                  "title": "Rebase onto tip of branch or parent change"
+                }
+              },
+              "reviewers": [
+                {
+                  "approvals": {
+                    "Code-Review": " 0"
+                  },
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "_number": "1"
+            }
+          },
+          "change_id": "Ib7f15f60f10c55d8616fb8e11d8a01a62dcd2c71",
+          "submit_type": "MERGE_IF_NECESSARY",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 7,
+          "permitted_labels": {
+            "Code-Review": [
+              "-2",
+              "-1",
+              " 0",
+              "+1",
+              "+2"
+            ]
+          },
+          "removable_reviewers": [
+            {
+              "name": "ctlo user1",
+              "username": "user1",
+              "_account_id": "1000001",
+              "email": "ctlo@user.com"
+            }
+          ],
+          "pending_reviewers": {},
+          "reviewer_updates": [
+            {
+              "updated": "2020-07-13T13:11:51",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "CC"
+            },
+            {
+              "updated": "2020-07-13T13:12:06",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REVIEWER"
+            }
+          ],
+          "current_revision": "88745411d35f7252c59271037658e73d7dddffb8",
+          "has_review_started": true
+        },
+        {
+          "id": "project1~branch2~Ifa4d812fe3061b47f31edb619aae01df5f56a2d9",
+          "project": "project1",
+          "branch": "branch2",
+          "topic": "thisTopic-branch2",
+          "hashtags": [],
+          "subject": "This is a new change",
+          "status": "NEW",
+          "created": "2020-07-09T10:29:04",
+          "updated": "2020-07-09T10:29:04",
+          "mergeable": true,
+          "submittable": false,
+          "insertions": 15,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "private": {
+              "method": "POST",
+              "label": "Mark private",
+              "title": "Mark change as private",
+              "enabled": true
+            },
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "abandon": {
+              "method": "POST",
+              "label": "Abandon",
+              "title": "Abandon the change",
+              "enabled": true
+            },
+            "move": {
+              "method": "POST",
+              "label": "Move Change",
+              "title": "Move change to a different branch",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "wip": {
+              "method": "POST",
+              "label": "WIP",
+              "title": "Set Work In Progress",
+              "enabled": true
+            },
+            "/": {
+              "method": "DELETE",
+              "label": "Delete",
+              "title": "Delete change 6",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {},
+          "messages": [
+            {
+              "id": "85046c24a31ba277388e44c073af4de80c53cf0c",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T10:29:04",
+              "message": "Patch Set 1: Cherry Picked from branch branch4.",
+              "tag": "autogenerated:gerrit:newPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "b2399ec8d9cfbab22dd62fd4dca2409bcbfbce54": {
+              "kind": "REWORK",
+              "created": "2020-07-09T10:29:04",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/06/6/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-08T12:21:29",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-09T10:29:04",
+                  "tz": "0"
+                },
+                "subject": "This is a new change",
+                "message": "This is a new change\n\nChange-Id: Ifa4d812fe3061b47f31edb619aae01df5f56a2d9\n(cherry picked from commit 0d558fa8405870900f0f148e51d272ad95618190)\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                },
+                "description": {
+                  "method": "PUT",
+                  "label": "Edit Description",
+                  "enabled": true
+                },
+                "rebase": {
+                  "method": "POST",
+                  "label": "Rebase",
+                  "title": "Rebase onto tip of branch or parent change"
+                }
+              },
+              "reviewers": [],
+              "_number": "1"
+            }
+          },
+          "change_id": "Ifa4d812fe3061b47f31edb619aae01df5f56a2d9",
+          "submit_type": "MERGE_IF_NECESSARY",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 6,
+          "permitted_labels": {
+            "Code-Review": [
+              "-2",
+              "-1",
+              " 0",
+              "+1",
+              "+2"
+            ]
+          },
+          "removable_reviewers": [],
+          "pending_reviewers": {},
+          "reviewer_updates": [],
+          "current_revision": "b2399ec8d9cfbab22dd62fd4dca2409bcbfbce54",
+          "has_review_started": true,
+          "cherry_pick_of_change": "4",
+          "cherry_pick_of_patch_set": "2"
+        },
+        {
+          "id": "project1~branch4~I983acaa69c477650eedef6bbd78cb3d110c041d9",
+          "project": "project1",
+          "branch": "branch4",
+          "hashtags": [],
+          "subject": "next file change",
+          "status": "ABANDONED",
+          "created": "2020-07-09T10:27:09",
+          "updated": "2020-07-09T10:27:56",
+          "insertions": 0,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "restore": {
+              "method": "POST",
+              "label": "Restore",
+              "title": "Restore the change",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "/": {
+              "method": "DELETE",
+              "label": "Delete",
+              "title": "Delete change 5",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {},
+          "messages": [
+            {
+              "id": "6155081b55f25200f0a845b0be7de8189d00993a",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T10:27:09",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "29afb2bf554054910d676de6ba9a50fbacc7822c",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T10:27:56",
+              "message": "Abandoned\n\nsimply abandoning",
+              "tag": "autogenerated:gerrit:abandon",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "5342eaef6563ec9396f14d287f8dc32a6f54847b": {
+              "kind": "REWORK",
+              "created": "2020-07-09T10:27:09",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/05/5/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "This is a new change"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-09T10:27:09",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-09T10:27:09",
+                  "tz": "0"
+                },
+                "subject": "next file change",
+                "message": "next file change\n\nChange-Id: I983acaa69c477650eedef6bbd78cb3d110c041d9\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                }
+              },
+              "reviewers": [],
+              "_number": "1"
+            }
+          },
+          "change_id": "I983acaa69c477650eedef6bbd78cb3d110c041d9",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 5,
+          "permitted_labels": {},
+          "removable_reviewers": [],
+          "pending_reviewers": {},
+          "reviewer_updates": [],
+          "current_revision": "5342eaef6563ec9396f14d287f8dc32a6f54847b",
+          "work_in_progress": true,
+          "has_review_started": false
+        },
+        {
+          "id": "project1~branch4~Ifa4d812fe3061b47f31edb619aae01df5f56a2d9",
+          "project": "project1",
+          "branch": "branch4",
+          "topic": "thisTopic",
+          "hashtags": [
+            "Hash2",
+            "Hash1"
+          ],
+          "subject": "This is a new change",
+          "status": "MERGED",
+          "created": "2020-07-08T12:21:29",
+          "updated": "2020-07-09T10:26:26",
+          "submitted": "2020-07-09T10:26:26",
+          "submitter": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "insertions": 15,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "revert": {
+              "method": "POST",
+              "label": "Revert",
+              "title": "Revert the change",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "all": [
+                {
+                  "value": "0",
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                },
+                {
+                  "value": "2",
+                  "date": "2020-07-09T10:26:19",
+                  "name": "Administrator",
+                  "username": "admin",
+                  "permitted_voting_range": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "_account_id": "1000000",
+                  "email": "admin@example.com"
+                }
+              ],
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {
+            "REVIEWER": [
+              {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "59a529bf1cf0eccbfe3be4f3ffefb3d25e18fb97",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-08T12:21:29",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "4a6dd4b2049e72728dc69d08de3c2977f85d00fd",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-08T12:21:42",
+              "message": "Patch Set 1:\n\nThis change is ready for review.",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "ef636140fe3127ff6962bb8373bbe3d86f1b1746",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-08T12:21:55",
+              "message": "Topic set to thisTopic",
+              "tag": "autogenerated:gerrit:setTopic",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "ef043805ff34c982b9145c160cba972bdd53e2fb",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-08T12:22:00",
+              "message": "Hashtag added: Hash1",
+              "tag": "autogenerated:gerrit:setHashtag",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "9ddabb3949a2935c9e3d3c6bb0c31af3fe38c664",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-08T12:22:05",
+              "message": "Hashtag added: Hash2",
+              "tag": "autogenerated:gerrit:setHashtag",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "89422b28c6cfb96f0650ff0a76706ae14870531e",
+              "author": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "date": "2020-07-09T09:45:36",
+              "message": "Patch Set 1: Code-Review-1",
+              "real_author": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "c606d9f184b8e2c389615462135a9f07942ec0a7",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T09:54:57",
+              "message": "Patch Set 1: Code-Review+1",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "d3f0e7bfa4ccf571c2c4a37213384f4f551da14c",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T10:21:21",
+              "message": "Patch Set 2: Published edit on patch set 1.",
+              "tag": "autogenerated:gerrit:newPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "2"
+            },
+            {
+              "id": "32ee5dee661dcaf011ef156529d701de519e79c4",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T10:26:19",
+              "message": "Patch Set 2: Code-Review+2",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "2"
+            },
+            {
+              "id": "ed012f601e22e017711e8c3bd3afb106f970f831",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T10:26:26",
+              "message": "Change has been successfully merged by Administrator",
+              "tag": "autogenerated:gerrit:merged",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "2"
+            }
+          ],
+          "revisions": {
+            "f69caba705c62ec0bafe9813a6dc7f9bb6aa43fa": {
+              "kind": "REWORK",
+              "created": "2020-07-08T12:21:29",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/04/4/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-08T12:21:29",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-08T12:21:29",
+                  "tz": "0"
+                },
+                "subject": "This is a new change",
+                "message": "This is a new change\n\nChange-Id: Ifa4d812fe3061b47f31edb619aae01df5f56a2d9\n"
+              },
+              "_number": "1"
+            },
+            "ecca4d6ef20c827d2d5606d10550de694080cdbf": {
+              "kind": "REWORK",
+              "created": "2020-07-09T10:21:21",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/04/4/2",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-08T12:21:29",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-09T10:21:11",
+                  "tz": "0"
+                },
+                "subject": "This is a new change",
+                "message": "This is a new change\n\nChange-Id: Ifa4d812fe3061b47f31edb619aae01df5f56a2d9\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                }
+              },
+              "reviewers": [
+                {
+                  "approvals": {
+                    "Code-Review": "+2"
+                  },
+                  "name": "Administrator",
+                  "username": "admin",
+                  "_account_id": "1000000",
+                  "email": "admin@example.com"
+                },
+                {
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "_number": "2"
+            }
+          },
+          "change_id": "Ifa4d812fe3061b47f31edb619aae01df5f56a2d9",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 4,
+          "permitted_labels": {
+            "Code-Review": [
+              "+2"
+            ]
+          },
+          "removable_reviewers": [],
+          "pending_reviewers": {},
+          "reviewer_updates": [
+            {
+              "updated": "2020-07-08T12:21:42",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REVIEWER"
+            }
+          ],
+          "current_revision": "ecca4d6ef20c827d2d5606d10550de694080cdbf",
+          "has_review_started": true,
+          "submission_id": "4-thisTopic"
+        },
+        {
+          "id": "project1~master~I84372090cbec6be628b622f139631ce3aaf292fb",
+          "project": "project1",
+          "branch": "master",
+          "topic": "this is a topic",
+          "assignee": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "hashtags": [
+            "hashtag2",
+            "hashtag1"
+          ],
+          "subject": "This is the first change",
+          "status": "MERGED",
+          "created": "2020-07-06T05:25:26",
+          "updated": "2020-07-09T06:59:55",
+          "submitted": "2020-07-09T06:59:55",
+          "submitter": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "starred": true,
+          "stars": [
+            "star"
+          ],
+          "insertions": 0,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "revert": {
+              "method": "POST",
+              "label": "Revert",
+              "title": "Revert the change",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "all": [
+                {
+                  "value": "2",
+                  "date": "2020-07-09T06:59:42",
+                  "name": "Administrator",
+                  "username": "admin",
+                  "permitted_voting_range": {
+                    "min": 2,
+                    "max": 2
+                  },
+                  "_account_id": "1000000",
+                  "email": "admin@example.com"
+                }
+              ],
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {
+            "REVIEWER": [
+              {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "54122d5e5f1f76c4e81c26771074a7c9f865b4b6",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T05:25:26",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "26c9321ef8548e3cefe2086ba88aa3a710b5e855",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T05:26:04",
+              "message": "Topic set to this is a topic",
+              "tag": "autogenerated:gerrit:setTopic",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "0d40be36b974f9290627c144a8db06b62dd59bed",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T05:26:22",
+              "message": "Patch Set 1: Code-Review-1\n\nThis change is ready for review.",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "a8e6738c58ea5c52afc8cf6791bde576c0905f2d",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T07:59:55",
+              "message": "Hashtag added: hashtag1",
+              "tag": "autogenerated:gerrit:setHashtag",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "ef10ac0f2836919b55ee40388dd22c284d4d6288",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T08:00:00",
+              "message": "Hashtag added: hashtag2",
+              "tag": "autogenerated:gerrit:setHashtag",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "d38d22a04b59b601573f62302c8046a813a4c55d",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T08:00:10",
+              "message": "Assignee added: Administrator <admin@example.com>",
+              "tag": "autogenerated:gerrit:setAssignee",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "d467023dbd67927e34e8447f59659597e2b1a068",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T06:59:42",
+              "message": "Patch Set 1: Code-Review+2",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "65b2c8fbfac49dbb8310d1a486bf72afd1b4c5c5",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-09T06:59:55",
+              "message": "Change has been successfully merged by Administrator",
+              "tag": "autogenerated:gerrit:merged",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "0e1af68aa88e5b2e9e6c21092e331cc70d5fcd9d": {
+              "kind": "REWORK",
+              "created": "2020-07-06T05:25:26",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/01/1/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-06T05:25:26",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-06T05:25:26",
+                  "tz": "0"
+                },
+                "subject": "This is the first change",
+                "message": "This is the first change\n\nChange-Id: I84372090cbec6be628b622f139631ce3aaf292fb\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                }
+              },
+              "reviewers": [
+                {
+                  "approvals": {
+                    "Code-Review": "+2"
+                  },
+                  "name": "Administrator",
+                  "username": "admin",
+                  "_account_id": "1000000",
+                  "email": "admin@example.com"
+                },
+                {
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "_number": "1"
+            }
+          },
+          "change_id": "I84372090cbec6be628b622f139631ce3aaf292fb",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 1,
+          "permitted_labels": {
+            "Code-Review": [
+              "+2"
+            ]
+          },
+          "removable_reviewers": [],
+          "pending_reviewers": {},
+          "reviewer_updates": [
+            {
+              "updated": "2020-07-06T05:26:22",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REVIEWER"
+            }
+          ],
+          "current_revision": "0e1af68aa88e5b2e9e6c21092e331cc70d5fcd9d",
+          "has_review_started": true,
+          "submission_id": "1-this is a topic"
+        },
+        {
+          "id": "project1~branch3~I15e4d666d42b448ee23e3139de7157a044589b6e",
+          "project": "project1",
+          "branch": "branch3",
+          "hashtags": [],
+          "subject": "wip change",
+          "status": "NEW",
+          "created": "2020-07-06T10:39:31",
+          "updated": "2020-07-06T10:40:09",
+          "submittable": false,
+          "insertions": 0,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "private": {
+              "method": "POST",
+              "label": "Mark private",
+              "title": "Mark change as private",
+              "enabled": true
+            },
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "ready": {
+              "method": "POST",
+              "label": "Mark as Active",
+              "title": "Switch change state from WIP to Active (ready for review)",
+              "enabled": true
+            },
+            "abandon": {
+              "method": "POST",
+              "label": "Abandon",
+              "title": "Abandon the change",
+              "enabled": true
+            },
+            "move": {
+              "method": "POST",
+              "label": "Move Change",
+              "title": "Move change to a different branch",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "/": {
+              "method": "DELETE",
+              "label": "Delete",
+              "title": "Delete change 3",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "all": [
+                {
+                  "value": "0",
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "permitted_voting_range": {
+                    "min": -1,
+                    "max": 1
+                  },
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {
+            "REVIEWER": [
+              {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "4f847f173000210d0f5ca50eb6838f0066a2e8d9",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:39:31",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "14cef577f0ee72f3e598f283fc6e67c985d2275b",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:39:45",
+              "message": "Patch Set 1:\n\nThis change is ready for review.",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "ab602aacc631a469e9419b2b276dcd5560517a1e",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:39:53",
+              "message": "Set Work In Progress",
+              "tag": "autogenerated:gerrit:setWorkInProgress",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "f224a68387e2828aa7236f5bedb783a1c9810195",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:40:04",
+              "message": "Removed reviewer ctlo user1.",
+              "tag": "autogenerated:gerrit:deleteReviewer",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "341ad170f58df2b4d1f72bce9cfca9297bd12ee7": {
+              "kind": "REWORK",
+              "created": "2020-07-06T10:39:31",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/03/3/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-06T10:39:31",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-06T10:39:31",
+                  "tz": "0"
+                },
+                "subject": "wip change",
+                "message": "wip change\n\nChange-Id: I15e4d666d42b448ee23e3139de7157a044589b6e\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                },
+                "description": {
+                  "method": "PUT",
+                  "label": "Edit Description",
+                  "enabled": true
+                },
+                "rebase": {
+                  "method": "POST",
+                  "label": "Rebase",
+                  "title": "Rebase onto tip of branch or parent change"
+                }
+              },
+              "reviewers": [
+                {
+                  "approvals": {
+                    "Code-Review": " 0"
+                  },
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "_number": "1"
+            }
+          },
+          "change_id": "I15e4d666d42b448ee23e3139de7157a044589b6e",
+          "submit_type": "MERGE_IF_NECESSARY",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 3,
+          "permitted_labels": {
+            "Code-Review": [
+              "-2",
+              "-1",
+              " 0",
+              "+1",
+              "+2"
+            ]
+          },
+          "removable_reviewers": [
+            {
+              "name": "ctlo user1",
+              "username": "user1",
+              "_account_id": "1000001",
+              "email": "ctlo@user.com"
+            }
+          ],
+          "pending_reviewers": {
+            "REVIEWER": [
+              {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              }
+            ]
+          },
+          "reviewer_updates": [
+            {
+              "updated": "2020-07-06T10:39:45",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REVIEWER"
+            },
+            {
+              "updated": "2020-07-06T10:40:04",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REMOVED"
+            },
+            {
+              "updated": "2020-07-06T10:40:09",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REVIEWER"
+            }
+          ],
+          "current_revision": "341ad170f58df2b4d1f72bce9cfca9297bd12ee7",
+          "work_in_progress": true,
+          "has_review_started": true
+        },
+        {
+          "id": "project1~branch2~Idb1f3501da1a2061fc7ec5b19da7a4e2325875f9",
+          "project": "project1",
+          "branch": "branch2",
+          "hashtags": [],
+          "subject": "This is some change",
+          "status": "NEW",
+          "created": "2020-07-06T10:30:32",
+          "updated": "2020-07-06T10:36:07",
+          "submittable": false,
+          "insertions": 0,
+          "deletions": 0,
+          "owner": {
+            "name": "Administrator",
+            "username": "admin",
+            "_account_id": "1000000",
+            "email": "admin@example.com"
+          },
+          "actions": {
+            "private": {
+              "method": "POST",
+              "label": "Mark private",
+              "title": "Mark change as private",
+              "enabled": true
+            },
+            "assignee": {
+              "method": "PUT",
+              "label": "Edit Assignee",
+              "enabled": true
+            },
+            "topic": {
+              "method": "PUT",
+              "label": "Edit Topic",
+              "enabled": true
+            },
+            "hashtags": {
+              "method": "POST",
+              "label": "Edit Hashtags",
+              "enabled": true
+            },
+            "ready": {
+              "method": "POST",
+              "label": "Mark as Active",
+              "title": "Switch change state from WIP to Active (ready for review)",
+              "enabled": true
+            },
+            "abandon": {
+              "method": "POST",
+              "label": "Abandon",
+              "title": "Abandon the change",
+              "enabled": true
+            },
+            "move": {
+              "method": "POST",
+              "label": "Move Change",
+              "title": "Move change to a different branch",
+              "enabled": true
+            },
+            "reviewed": {
+              "method": "PUT",
+              "label": "Mark Reviewed",
+              "title": "Mark the change as reviewed to unhighlight it in the dashboard",
+              "enabled": true
+            },
+            "/": {
+              "method": "DELETE",
+              "label": "Delete",
+              "title": "Delete change 2",
+              "enabled": true
+            },
+            "followup": {
+              "method": "POST",
+              "label": "Follow-Up",
+              "title": "Create follow-up change",
+              "enabled": true
+            }
+          },
+          "requirements": [],
+          "labels": {
+            "Code-Review": {
+              "all": [
+                {
+                  "value": "1",
+                  "date": "2020-07-06T10:35:25",
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "permitted_voting_range": {
+                    "min": -1,
+                    "max": 1
+                  },
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "values": {
+                "-2": "This shall not be merged",
+                "-1": "I would prefer this is not merged as is",
+                " 0": "No score",
+                "+1": "Looks good to me, but someone else must approve",
+                "+2": "Looks good to me, approved"
+              },
+              "default_value": "0"
+            }
+          },
+          "reviewers": {
+            "REVIEWER": [
+              {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "7e976f15df748726fbeb99d3149dfffa3df47c6c",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:30:32",
+              "message": "Uploaded patch set 1.",
+              "tag": "autogenerated:gerrit:newWipPatchSet",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "bbd2629f45bbd47cdc1764d8b5f744f6f8cf0367",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:30:44",
+              "message": "Patch Set 1:\n\nThis change is ready for review.",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "36fca7d18513a35a7101e9388bdd528a9a9c602f",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:31:11",
+              "message": "Set Work In Progress",
+              "tag": "autogenerated:gerrit:setWorkInProgress",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "32383c55f43a60ec6840e734782dc54814618507",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:34:10",
+              "message": "Set Ready For Review",
+              "tag": "autogenerated:gerrit:setReadyForReview",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "2b76ef0bbbc6287bfe88f5481dd3205f8100b7d2",
+              "author": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "date": "2020-07-06T10:35:25",
+              "message": "Patch Set 1: Code-Review+1\n\nThere are some changes suggested",
+              "real_author": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "_revision_number": "1"
+            },
+            {
+              "id": "f01a9670233abf3ef5ca17522a93c263b46a11c4",
+              "author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "date": "2020-07-06T10:36:07",
+              "message": "Set Work In Progress",
+              "tag": "autogenerated:gerrit:setWorkInProgress",
+              "real_author": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "_revision_number": "1"
+            }
+          ],
+          "revisions": {
+            "99f4b6030cc99ff38af31b0b06335c7209c10af0": {
+              "kind": "REWORK",
+              "created": "2020-07-06T10:30:32",
+              "uploader": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "ref": "refs/changes/02/2/1",
+              "fetch": {},
+              "commit": {
+                "parents": [
+                  {
+                    "subject": "Initial empty repository"
+                  }
+                ],
+                "author": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-06T10:30:32",
+                  "tz": "0"
+                },
+                "committer": {
+                  "name": "Administrator",
+                  "email": "admin@example.com",
+                  "date": "2020-07-06T10:30:32",
+                  "tz": "0"
+                },
+                "subject": "This is some change",
+                "message": "This is some change\n\nChange-Id: Idb1f3501da1a2061fc7ec5b19da7a4e2325875f9\n"
+              },
+              "actions": {
+                "cherrypick": {
+                  "method": "POST",
+                  "label": "Cherry Pick",
+                  "title": "Cherry pick change to a different branch",
+                  "enabled": true
+                },
+                "description": {
+                  "method": "PUT",
+                  "label": "Edit Description",
+                  "enabled": true
+                },
+                "rebase": {
+                  "method": "POST",
+                  "label": "Rebase",
+                  "title": "Rebase onto tip of branch or parent change"
+                }
+              },
+              "reviewers": [
+                {
+                  "approvals": {
+                    "Code-Review": "+1"
+                  },
+                  "name": "ctlo user1",
+                  "username": "user1",
+                  "_account_id": "1000001",
+                  "email": "ctlo@user.com"
+                }
+              ],
+              "_number": "1"
+            }
+          },
+          "change_id": "Idb1f3501da1a2061fc7ec5b19da7a4e2325875f9",
+          "submit_type": "MERGE_IF_NECESSARY",
+          "total_comment_count": 0,
+          "unresolved_comment_count": 0,
+          "_number": 2,
+          "permitted_labels": {
+            "Code-Review": [
+              "-2",
+              "-1",
+              " 0",
+              "+1",
+              "+2"
+            ]
+          },
+          "removable_reviewers": [
+            {
+              "name": "ctlo user1",
+              "username": "user1",
+              "_account_id": "1000001",
+              "email": "ctlo@user.com"
+            }
+          ],
+          "pending_reviewers": {},
+          "reviewer_updates": [
+            {
+              "updated": "2020-07-06T10:30:44",
+              "updated_by": {
+                "name": "Administrator",
+                "username": "admin",
+                "_account_id": "1000000",
+                "email": "admin@example.com"
+              },
+              "reviewer": {
+                "name": "ctlo user1",
+                "username": "user1",
+                "_account_id": "1000001",
+                "email": "ctlo@user.com"
+              },
+              "state": "REVIEWER"
+            }
+          ],
+          "current_revision": "99f4b6030cc99ff38af31b0b06335c7209c10af0",
+          "work_in_progress": true,
+          "has_review_started": true
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "1"
+    },
+    "integration_type": "gerrit",
+    "data_type": "pull_requests",
+    "page_number": 0
+  }
+}

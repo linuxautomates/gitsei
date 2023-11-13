@@ -1,0 +1,213 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.6.6")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+bootJar {
+    mainClass = "io.levelops.api.ServerApiApplication"
+}
+
+configurations {
+    runtime.exclude group: "org.apache.logging.log4j", module: "log4j-core"
+}
+
+dependencies {
+    // Lombok
+    annotationProcessor libraries.lombok
+    compileOnly libraries.lombok
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    // OpenAPI
+    implementation openapiLib('ui')
+    // Project dependencies
+    implementation project(':auth')
+    implementation levelopsCommonsLib("database-commons")
+    implementation levelopsCommonsLib("ingestion-commons")
+    implementation levelopsCommonsLib("token-services")
+    implementation levelopsCommonsLib("okhttp-utils")
+    implementation levelopsCommonsLib("ingestion-service")
+    implementation levelopsCommonsLib("email-utils")
+    implementation levelopsCommonsLib("template-utils")
+    implementation levelopsCommonsLib("preflight-check")
+    implementation levelopsCommonsLib("spring-web-utils")
+    implementation levelopsCommonsLib("plugin-services")
+    implementation levelopsCommonsLib("integration-gcs")
+    implementation levelopsCommonsLib('ingestion-clients')
+    implementation levelopsCommonsLib('notification-service')
+    implementation levelopsCommonsLib('trigger-services')
+    implementation levelopsCommonsLib('runbook-commons')
+    implementation levelopsCommonsLib('internal-api-clients')
+    implementation levelopsCommonsLib('generic-services')
+    implementation levelopsCommonsLib('file-commons')
+    implementation levelopsCommonsLib('aggregation-services')
+    implementation levelopsCommonsLib('runbook-services')
+    implementation levelopsCommonsLib('dev-productivity-services')
+    implementation levelopsCommonsLib('events-services')
+    implementation levelopsCommonsLib('licensing-service')
+    implementation levelopsCommonsLib("faceted-search")
+    implementation levelopsCommonsLib('faceted-search-query')
+    implementation levelopsCommonsLib('faceted-search-models')
+    implementation levelopsCommonsLib('elasticsearch-clients')
+    implementation levelopsCommonsLib('velocity-services')
+    implementation levelopsCommonsLib('logging-utils')
+    implementation levelopsCommonsLib('aggregations-cache-services')
+    implementation levelopsCommonsLib('ba-services')
+    implementation levelopsCommonsLib('dora-services')
+    implementation levelopsCommonsLib('trellis-models')
+    implementation levelopsCommonsLib('trellis-clients')
+    implementation levelopsCommonsLib('etl-commons')
+    implementation levelopsCommonsLib('scm-auto-repo-mapping')
+    implementation levelopsCommonsLib('atlassian-connect')
+    implementation levelopsCommonsLib('harness-acl-client')
+    implementation levelopsCommonsLib('sei-contributor')
+
+    implementation group: "com.google.cloud", name: "google-cloud-storage", version: "1.108.0"
+    implementation (group: 'com.google.api-client', name: 'google-api-client') {
+        version {
+            strictly '1.35.2'
+        }
+    }
+
+
+    implementation 'com.sendgrid:sendgrid-java:4.4.1'
+    implementation group: 'org.apache.velocity', name: 'velocity-engine-core', version: '2.3'
+    // https://mvnrepository.com/artifact/com.github.jrachiele/timeseries
+    implementation group: 'com.github.jrachiele', name: 'timeseries', version: '0.3'
+    implementation libraries.csv
+    compile ("org.apache.logging.log4j:log4j-core:2.17.1") {
+        version {
+            strictly "2.17.1"
+        }
+        because "version 2.17.1 required to fix CVE-2021-44228, CVE-2021-45105, CVE-2021-45046"
+    }
+
+    implementation libraries.spring_boot_starter_actuator
+    implementation libraries.micrometer_stackdriver
+
+    runtimeOnly levelopsIntegrationsLib('integration-testrails-client')
+    runtimeOnly levelopsIntegrationsLib('integration-zendesk-client')
+    runtimeOnly levelopsIntegrationsLib('integration-tenable-client')
+    runtimeOnly levelopsIntegrationsLib('integration-salesforce-client')
+    runtimeOnly levelopsIntegrationsLib('integration-okta-client')
+    runtimeOnly levelopsIntegrationsLib('integration-gerrit-client')
+    runtimeOnly levelopsIntegrationsLib('integration-sonarqube-client')
+    runtimeOnly levelopsIntegrationsLib('integration-gitlab-client')
+    runtimeOnly levelopsIntegrationsLib('integration-droneci-client')
+    runtimeOnly levelopsIntegrationsLib('integration-harnessng-client')
+    runtimeOnly levelopsIntegrationsLib('integration-circleci-client')
+    runtimeOnly levelopsIntegrationsLib('integration-prometheus-client')
+    runtimeOnly levelopsIntegrationsLib('integration-azure-devops-client')
+    runtimeOnly levelopsIntegrationsLib('integration-awsdevtools-client')
+    runtimeOnly levelopsIntegrationsLib('integration-helix-client')
+    runtimeOnly levelopsIntegrationsLib('integration-blackduck-client')
+    runtimeOnly levelopsIntegrationsLib('integration-coverity-client')
+    runtimeOnly levelopsIntegrationsLib('integration-bitbucket-server-client')
+
+    compile levelopsIntegrationsLib('integration-gitlab-controllers')
+    compile levelopsIntegrationsLib('integration-bitbucket-controllers')
+    compile levelopsIntegrationsLib('integration-bitbucket-server-controllers')
+
+    compile libraries.gson
+    compile libraries.servlet
+    compile libraries.jedis
+    compile libraries.es
+    compile libraries.embedded_postgres
+    implementation libraries.okhttp
+    implementation libraries.spring_boot_cache
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.21.12' // to fix cve
+    implementation group: 'com.google.oauth-client', name: 'google-oauth-client', version: '1.34.1'// to fix cve
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'// to fix cve
+
+
+    testCompile enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:11.5.0')
+    testImplementation libraries.junit
+    testImplementation libraries.spring_security_test
+    testImplementation libraries.spring_boot_starter_test
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testCompileOnly levelopsCommonsLib('internal-api-clients')
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.api.exceptions']
+            limit {
+                counter = 'LINE'
+                minimum = 0.6
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.api.requests']
+            limit {
+                counter = 'LINE'
+                minimum = 0.4
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.api.model','io.levelops.api.model.slack']
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.api.services']
+            limit {
+                counter = 'LINE'
+                minimum = 0.2
+            }
+        }
+        rule {
+            element = 'PACKAGE'
+            includes = ['io.levelops.api.config']
+            limit {
+                counter = 'LINE'
+                minimum = 0.1
+            }
+        }
+        //Default for any new code
+        rule {
+            element = 'PACKAGE'
+            // includes = ['io.levelops.auth.*']
+            excludes = ['io.levelops.api.controllers.bullseye','io.levelops.api','io.levelops.api.converters','io.levelops.api.utils','io.levelops.api.controllers','io.levelops.api.controllers.*','io.levelops.api.model','io.levelops.api.services','io.levelops.api.config', 'io.levelops.api.controllers.blackduck', 'io.levelops.api.controllers.organization', 'io.levelops.api.model.organization', 'io.levelops.api.services.dev_productivity', 'io.levelops.api.converters.organization', 'io.levelops.api.controllers.dev_productivity', 'io.levelops.api.model.dev_productivity','io.levelops.api.controllers.admin', 'io.levelops.api.services.elasticsearch', 'io.levelops.api.model.workspace_automation', 'io.levelops.api.model.spotchecks']
+            limit {
+                counter = 'LINE'
+                minimum = 0.4
+            }
+        }
+
+//        rule {
+//            element = 'PACKAGE'
+//            includes = ['io.levelops.api.services']
+//            limit {
+//                counter = 'BRANCH'
+//                minimum = 0.1
+//            }
+//        }
+        //Default for any new code
+        rule {
+            element = 'PACKAGE'
+            excludes = ['io.levelops.api.controllers.bullseye','io.levelops.api.config','io.levelops.api.converters','io.levelops.api.model','io.levelops.api.model.slack','io.levelops.api.utils','io.levelops.api.controllers','io.levelops.api.requests','io.levelops.api.controllers.snyk','io.levelops.api.services', 'io.levelops.api.controllers.organization', 'io.levelops.api.model.organization','io.levelops.api.controllers.issue_mgmt', 'io.levelops.api.controllers.blackduck','io.levelops.api.controllers.ba', 'io.levelops.api.services.dev_productivity', 'io.levelops.api.converters.organization', 'io.levelops.api.controllers.dev_productivity', 'io.levelops.api.model.dev_productivity','io.levelops.api.controllers.admin', 'io.levelops.api.services.elasticsearch', 'io.levelops.api.model.workspace_automation', 'io.levelops.api.model.spotchecks']
+            limit {
+                counter = 'BRANCH'
+                minimum = 0.5
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification

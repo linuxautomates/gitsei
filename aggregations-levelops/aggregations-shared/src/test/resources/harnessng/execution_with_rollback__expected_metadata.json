@@ -1,0 +1,12 @@
+{
+  "env_ids" : [ "vedanttestenv" ],
+  "infra_types" : [ "KubernetesDirect" ],
+  "rollback" : true,
+  "infra_ids" : [ "saranyainfra" ],
+  "infra_names" : [ "saranya-infra" ],
+  "service_types" : [ "Kubernetes" ],
+  "service_ids" : [ "democartsvc" ],
+  "env_types" : [ "PreProduction" ],
+  "env_groups" : [ ],
+  "tags" : [ ]
+}

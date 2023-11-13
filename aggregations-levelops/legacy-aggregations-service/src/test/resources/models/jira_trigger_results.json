@@ -1,0 +1,68 @@
+{
+  "integration_id": "92",
+  "tenant_id": "foo",
+  "partial": false,
+  "trigger_results": [
+    {
+      "trigger_id": "d4db3018-063b-4b17-bf3d-96b25d709fa4",
+      "trigger_type": "jira",
+      "tenant_id": "foo",
+      "integration_id": "92",
+      "iteration_id": "52a8b3cf-c50b-428d-a1ac-03193c9194fc",
+      "partial": false,
+      "jobs": [
+        {
+          "id": "c511b5d8-ab88-4b61-895f-b40decd1bdeb",
+          "agent_id": "d7d8373c-bfda-4e2f-96fd-ce0d01313c0f",
+          "status": "success",
+          "level": 0,
+          "attempt_count": 1,
+          "query": {
+            "to": 1582685127246,
+            "integration_key": {
+              "tenant_id": "foo",
+              "integration_id": "92"
+            }
+          },
+          "callback_url": "",
+          "controller_name": "JiraIterativeScanController",
+          "created_at": 1582685127,
+          "status_changed_at": 1582685239,
+          "result": {
+            "records": [
+              {
+                "_metadata": {
+                  "integration_key": {
+                    "tenant_id": "foo",
+                    "integration_id": "92"
+                  },
+                  "integration_type": "jira",
+                  "data_type": "issues"
+                },
+                "destination": "gcs",
+                "prefix_uri": "issues/",
+                "records": [
+                  {
+                    "uri": "gs://dev-ingestion-levelops/data/tenant-foo/integration-30/2020/02/26/job-c511b5d8-ab88-4b61-895f-b40decd1bdeb/incidents/incidents.0.json",
+                    "html_uri": "https://console.cloud.google.com/storage/browser/_details/dev-ingestion-levelops/data/tenant-foo/integration-30/2020/02/26/job-c511b5d8-ab88-4b61-895f-b40decd1bdeb/incidents/incidents.0.json",
+                    "blob_id": {
+                      "bucket": "dev-ingestion-levelops",
+                      "name": "data/tenant-foo/integration-30/2020/02/26/job-c511b5d8-ab88-4b61-895f-b40decd1bdeb/incidents/incidents.0.json",
+                      "generation": 1582685179811986
+                    }
+                  }
+                ],
+                "count": 1
+              }
+            ],
+            "count": 1
+          },
+          "partial": false,
+          "iteration_id": "05a32fce-75ca-4159-b436-a7ded4be4334",
+          "iteration_ts": 1582685127
+        }
+      ],
+      "count": 1
+    }
+  ]
+}

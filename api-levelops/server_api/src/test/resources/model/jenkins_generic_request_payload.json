@@ -1,0 +1,38 @@
+{
+  "job_name": "pipelines-javascript-docker",
+  "user_id": "UNKNOWN",
+  "repo_url": "https://dev.azure.com/vinayanayak/Agile_proj/_git/pipelines-javascript-docker",
+  "start_time": 16849125200,
+  "result": "FAILED",
+  "duration": 5,
+  "build_number": 7870,
+  "jenkins_instance_guid": "c9a73c1b-7590-4ac6-a82f-c53a469686b7",
+  "jenkins_instance_name": "azure-integration-4403",
+  "jenkins_instance_url": "https://dev.azure.com",
+  "job_full_name": "Agile_proj/pipelines-javascript-docker",
+  "job_normalized_full_name": "Agile_proj/pipelines-javascript-docker",
+  "branch_name": "main",
+  "module_name": null,
+  "job_run": {
+    "stages": [
+      {
+        "id": "Build_Stage",
+        "displayName": "Build_Stage",
+        "displayDescription": "Build_Stage",
+        "result": "succeeded",
+        "state": "completed",
+        "durationInMillis": 5000,
+        "steps": [
+          {
+            "id": "1122",
+            "displayName": "BUILD_STEP",
+            "displayDescription": "BUILD_STEP",
+            "result": "succeeded",
+            "state": "completed",
+            "durationInMillis": 5000
+          }
+        ]
+      }
+    ]
+  }
+}

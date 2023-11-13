@@ -1,0 +1,14 @@
+## This is a sample configuration file for the satellite agent
+levelops:
+  url: https://testapi1.levelops.io # optional: defaults to prod url
+  api_key: <API KEY>
+  tenant: coke
+integrations:
+  - id: 12
+    application: jira
+    url: levelops.atlassian.net
+    user_name: test
+    api_key: 123
+  - id: 34
+    application: github
+    api_key: 456

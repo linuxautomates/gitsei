@@ -1,0 +1,1396 @@
+{
+  "records": [
+    {
+      "id": "1000006",
+      "project": {
+        "public": false,
+        "id": "1",
+        "name": "Tic - Tac - Toe",
+        "isPublic": false
+      },
+      "status": {
+        "id": "7",
+        "name": "Finished",
+        "details": {
+          "stage": "",
+          "step": ""
+        }
+      },
+      "scanType": {
+        "id": "1",
+        "value": "Regular"
+      },
+      "comment": "",
+      "dateAndTime": {
+        "startedOn": "2021-06-18T04:58:30.360",
+        "finishedOn": "2021-06-18T04:59:32.860"
+      },
+      "scanState": {
+        "path": " N/A (Zip File)",
+        "sourceId": "0000000031_000865839593_000683171125",
+        "filesCount": 31,
+        "linesOfCode": 15183,
+        "failedLinesOfCode": 0,
+        "cxVersion": "9.3.0.1139",
+        "languageStateCollection": [
+          {
+            "languageName": "Common",
+            "languageHash": "0236820700031681"
+          },
+          {
+            "languageName": "Groovy",
+            "languageHash": "0182637364353426"
+          },
+          {
+            "languageName": "Java",
+            "languageHash": "1814004309129553"
+          },
+          {
+            "languageName": "JavaScript",
+            "languageHash": "1681617171013993"
+          }
+        ]
+      },
+      "owner": "srinathc",
+      "origin": "Web Portal",
+      "initiatorName": "Srinath Chandrashekhar",
+      "owningTeamId": "1",
+      "isPublic": true,
+      "isLocked": false,
+      "isIncremental": false,
+      "scanRisk": 10,
+      "engineServer": {
+        "id": "1",
+        "name": "Localhost"
+      },
+      "finishedScanStatus": {
+        "id": 1,
+        "value": "Completed"
+      },
+      "report": {
+        "queries": [
+          {
+            "id": "622",
+            "categories": "PCI DSS v3.2;PCI DSS (3.2) - 6.5.5 - Improper error handling,OWASP Top 10 2013;A5-Security Misconfiguration,FISMA 2014;Configuration Management,NIST SP 800-53;SI-11 Error Handling (P2),OWASP Top 10 2017;A6-Security Misconfiguration,ASD STIG 4.10;APSC-DV-002570 - CAT II The application must generate error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.,OWASP Top 10 API;API3-Excessive Data Exposure",
+            "category": [
+              "OWASP Top 10 2013",
+              "FISMA 2014",
+              "NIST SP 800-53",
+              "OWASP Top 10 2017",
+              "ASD STIG 4.10",
+              "OWASP Top 10 API"
+            ],
+            "cweId": "209",
+            "name": "Information_Exposure_Through_an_Error_Message",
+            "group": "Java_Low_Visibility",
+            "Severity": "Low",
+            "Language": "Java",
+            "LanguageHash": "1814004309129553",
+            "SeverityIndex": "1",
+            "LanguageChangeDate": "2021-05-13T00:00:00.0000000",
+            "QueryPath": "Java\\Cx\\Java Low Visibility\\Information Exposure Through an Error Message Version:1",
+            "QueryVersionCode": "56439377",
+            "results": [
+              {
+                "NodeId": "10000060002",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "Recurrent",
+                "Line": 102,
+                "Column": 39,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=2",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "2",
+                    "SimilarityId": "119449289",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 102,
+                        "Column": 39,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 102,
+                            "Code": "      } catch (ClassNotFoundException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 103,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 103,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 103,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 103,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000060003",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "Recurrent",
+                "Line": 104,
+                "Column": 38,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=3",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "3",
+                    "SimilarityId": "-845655879",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 104,
+                        "Column": 38,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 104,
+                            "Code": "      } catch (NoSuchMethodException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 105,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 105,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 105,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 105,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000060004",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "Recurrent",
+                "Line": 106,
+                "Column": 39,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=4",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "4",
+                    "SimilarityId": "1015338294",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 106,
+                        "Column": 39,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 106,
+                            "Code": "      } catch (IllegalAccessException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 107,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 107,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 107,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 107,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000060005",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "Recurrent",
+                "Line": 108,
+                "Column": 42,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=5",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "5",
+                    "SimilarityId": "-1479595103",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 108,
+                        "Column": 42,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 108,
+                            "Code": "      } catch (InvocationTargetException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 109,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 109,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 109,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 109,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6219",
+            "category": [],
+            "cweId": "693",
+            "name": "Missing_Root_Or_Jailbreak_Check",
+            "group": "JavaScript_ReactNative",
+            "Severity": "Low",
+            "Language": "JavaScript",
+            "LanguageHash": "1681617171013993",
+            "SeverityIndex": "1",
+            "LanguageChangeDate": "2021-05-13T00:00:00.0000000",
+            "QueryPath": "JavaScript\\Cx\\JavaScript ReactNative\\Missing Root Or Jailbreak Check Version:1",
+            "QueryVersionCode": "131562311",
+            "results": [
+              {
+                "NodeId": "10000060001",
+                "FileName": "tictactoe-master/App.js",
+                "Status": "Recurrent",
+                "Line": 107,
+                "Column": 3,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=1",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "1",
+                    "SimilarityId": "-772255956",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/App.js",
+                        "Line": 107,
+                        "Column": 3,
+                        "NodeId": "1",
+                        "Name": "render",
+                        "Type": "",
+                        "Length": "6",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 107,
+                            "Code": "  render() {"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3265",
+            "category": [],
+            "cweId": "493",
+            "name": "Exposure_of_Resource_to_Wrong_Sphere",
+            "group": "Groovy_Best_Coding_Practice",
+            "Severity": "Information",
+            "Language": "Groovy",
+            "LanguageHash": "0182637364353426",
+            "SeverityIndex": "0",
+            "LanguageChangeDate": "2021-05-13T00:00:00.0000000",
+            "QueryPath": "Groovy\\Cx\\Groovy Best Coding Practice\\Exposure of Resource to Wrong Sphere Version:0",
+            "QueryVersionCode": "3265",
+            "results": [
+              {
+                "NodeId": "10000060006",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "Recurrent",
+                "Line": 95,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=6",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "6",
+                    "SimilarityId": "1901845694",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 95,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "enableSeparateBuildPerCPUArchitecture",
+                        "Type": "",
+                        "Length": "37",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 95,
+                            "Code": "def enableSeparateBuildPerCPUArchitecture = false"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000060007",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "Recurrent",
+                "Line": 100,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=7",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "7",
+                    "SimilarityId": "-2011342786",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 100,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "enableProguardInReleaseBuilds",
+                        "Type": "",
+                        "Length": "29",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 100,
+                            "Code": "def enableProguardInReleaseBuilds = false"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000060008",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "Recurrent",
+                "Line": 113,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=8",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "8",
+                    "SimilarityId": "-1443718374",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 113,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "jscFlavor",
+                        "Type": "",
+                        "Length": "9",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 113,
+                            "Code": "def jscFlavor = 'org.webkit:android-jsc:+'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000060009",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "Recurrent",
+                "Line": 122,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1&pathid=9",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000006",
+                    "PathId": "9",
+                    "SimilarityId": "164012702",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 122,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "enableHermes",
+                        "Type": "",
+                        "Length": "12",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 122,
+                            "Code": "def enableHermes = project.ext.react.get(\"enableHermes\", false);"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "InitiatorName": "Srinath Chandrashekhar",
+        "Owner": "srinathc",
+        "ScanId": "1000006",
+        "ProjectId": "1",
+        "ProjectName": "Tic - Tac - Toe",
+        "TeamFullPathOnReportDate": "CxServer",
+        "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000006&projectid=1",
+        "ScanStart": "Friday, June 18, 2021 4:58:16 AM",
+        "Preset": "Checkmarx Default",
+        "ScanTime": "00h:01m:16s",
+        "LinesOfCodeScanned": 15183,
+        "FilesScanned": 31,
+        "ReportCreationTime": "Friday, June 18, 2021 6:04:48 AM",
+        "Team": "CxServer",
+        "CheckmarxVersion": "9.3.0.1139",
+        "ScanComments": "",
+        "ScanType": "Full",
+        "SourceOrigin": "LocalPath",
+        "Visibility": "Public"
+      }
+    },
+    {
+      "id": "1000005",
+      "project": {
+        "public": false,
+        "id": "4",
+        "name": "smart-inspector",
+        "isPublic": false
+      },
+      "status": {
+        "id": "7",
+        "name": "Finished",
+        "details": {
+          "stage": "",
+          "step": ""
+        }
+      },
+      "scanType": {
+        "id": "1",
+        "value": "Regular"
+      },
+      "comment": "Attempt to perform scan on 6/18/2021 4:53:30 AM - No code changes were detected; ",
+      "dateAndTime": {
+        "startedOn": "2021-06-18T04:53:30.530",
+        "finishedOn": "2021-06-18T04:53:30.530"
+      },
+      "scanState": {
+        "path": " N/A (Zip File)",
+        "sourceId": "0000000029_0-1515030078_0-1371255671",
+        "filesCount": 29,
+        "linesOfCode": 2741,
+        "failedLinesOfCode": 0,
+        "cxVersion": "9.3.0.1139",
+        "languageStateCollection": []
+      },
+      "owner": "srinathc",
+      "origin": "Web Portal",
+      "initiatorName": "Srinath Chandrashekhar",
+      "owningTeamId": "1",
+      "isPublic": true,
+      "isLocked": false,
+      "isIncremental": true,
+      "scanRisk": 0,
+      "engineServer": {
+        "id": "1",
+        "name": "Localhost"
+      },
+      "finishedScanStatus": {
+        "id": 1,
+        "value": "Completed"
+      },
+      "report": {
+        "queries": [],
+        "InitiatorName": "Srinath Chandrashekhar",
+        "Owner": "srinathc",
+        "ScanId": "1000005",
+        "ProjectId": "4",
+        "ProjectName": "smart-inspector",
+        "TeamFullPathOnReportDate": "CxServer",
+        "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000005&projectid=4",
+        "ScanStart": "Friday, June 18, 2021 4:53:30 AM",
+        "Preset": "Checkmarx Default",
+        "ScanTime": "00h:00m:00s",
+        "LinesOfCodeScanned": 2741,
+        "FilesScanned": 29,
+        "ReportCreationTime": "Friday, June 18, 2021 6:04:51 AM",
+        "Team": "CxServer",
+        "CheckmarxVersion": "9.3.0.1139",
+        "ScanComments": "Attempt to perform scan on 6/18/2021 4:53:30 AM - No code changes were detected; ",
+        "ScanType": "Incremental",
+        "SourceOrigin": "LocalPath",
+        "Visibility": "Public"
+      }
+    },
+    {
+      "id": "1000003",
+      "project": {
+        "public": false,
+        "id": "4",
+        "name": "smart-inspector",
+        "isPublic": false
+      },
+      "status": {
+        "id": "7",
+        "name": "Finished",
+        "details": {
+          "stage": "",
+          "step": ""
+        }
+      },
+      "scanType": {
+        "id": "1",
+        "value": "Regular"
+      },
+      "comment": "",
+      "dateAndTime": {
+        "startedOn": "2021-06-17T16:17:15.830",
+        "finishedOn": "2021-06-17T16:18:11.057"
+      },
+      "scanState": {
+        "path": " N/A (Zip File)",
+        "sourceId": "0000000029_0-1515030078_0-1371255671",
+        "filesCount": 29,
+        "linesOfCode": 2741,
+        "failedLinesOfCode": 0,
+        "cxVersion": "9.3.0.1139",
+        "languageStateCollection": []
+      },
+      "owner": "srinathc",
+      "origin": "Web Portal",
+      "initiatorName": "Srinath Chandrashekhar",
+      "owningTeamId": "1",
+      "isPublic": true,
+      "isLocked": false,
+      "isIncremental": false,
+      "scanRisk": -1,
+      "engineServer": {
+        "id": "1",
+        "name": "Localhost"
+      },
+      "finishedScanStatus": {
+        "id": 1,
+        "value": "Completed"
+      },
+      "report": {
+        "queries": [],
+        "InitiatorName": "Srinath Chandrashekhar",
+        "Owner": "srinathc",
+        "ScanId": "1000003",
+        "ProjectId": "4",
+        "ProjectName": "smart-inspector",
+        "TeamFullPathOnReportDate": "CxServer",
+        "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000003&projectid=4",
+        "ScanStart": "Thursday, June 17, 2021 4:16:54 PM",
+        "Preset": "Checkmarx Default",
+        "ScanTime": "00h:01m:16s",
+        "LinesOfCodeScanned": 2741,
+        "FilesScanned": 29,
+        "ReportCreationTime": "Friday, June 18, 2021 6:04:54 AM",
+        "Team": "CxServer",
+        "CheckmarxVersion": "9.3.0.1139",
+        "ScanComments": "",
+        "ScanType": "Full",
+        "SourceOrigin": "LocalPath",
+        "Visibility": "Public"
+      }
+    },
+    {
+      "id": "1000000",
+      "project": {
+        "public": false,
+        "id": "1",
+        "name": "Tic - Tac - Toe",
+        "isPublic": false
+      },
+      "status": {
+        "id": "7",
+        "name": "Finished",
+        "details": {
+          "stage": "",
+          "step": ""
+        }
+      },
+      "scanType": {
+        "id": "1",
+        "value": "Regular"
+      },
+      "comment": "",
+      "dateAndTime": {
+        "startedOn": "2021-06-11T11:32:51.920",
+        "finishedOn": "2021-06-11T11:33:58.513"
+      },
+      "scanState": {
+        "path": " N/A (Zip File)",
+        "sourceId": "0000000031_000865839593_000683171125",
+        "filesCount": 31,
+        "linesOfCode": 15183,
+        "failedLinesOfCode": 0,
+        "cxVersion": "9.3.0.1139",
+        "languageStateCollection": [
+          {
+            "languageName": "Common",
+            "languageHash": "0236820700031681"
+          },
+          {
+            "languageName": "Groovy",
+            "languageHash": "0182637364353426"
+          },
+          {
+            "languageName": "Java",
+            "languageHash": "1814004309129553"
+          },
+          {
+            "languageName": "JavaScript",
+            "languageHash": "1681617171013993"
+          }
+        ]
+      },
+      "owner": "srinathc",
+      "origin": "Web Portal",
+      "initiatorName": "Srinath Chandrashekhar",
+      "owningTeamId": "1",
+      "isPublic": true,
+      "isLocked": false,
+      "isIncremental": false,
+      "scanRisk": 10,
+      "engineServer": {
+        "id": "1",
+        "name": "Localhost"
+      },
+      "finishedScanStatus": {
+        "id": 1,
+        "value": "Completed"
+      },
+      "report": {
+        "queries": [
+          {
+            "id": "622",
+            "categories": "PCI DSS v3.2;PCI DSS (3.2) - 6.5.5 - Improper error handling,OWASP Top 10 2013;A5-Security Misconfiguration,FISMA 2014;Configuration Management,NIST SP 800-53;SI-11 Error Handling (P2),OWASP Top 10 2017;A6-Security Misconfiguration,ASD STIG 4.10;APSC-DV-002570 - CAT II The application must generate error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries.,OWASP Top 10 API;API3-Excessive Data Exposure",
+            "category": [
+              "OWASP Top 10 2013",
+              "FISMA 2014",
+              "NIST SP 800-53",
+              "OWASP Top 10 2017",
+              "ASD STIG 4.10",
+              "OWASP Top 10 API"
+            ],
+            "cweId": "209",
+            "name": "Information_Exposure_Through_an_Error_Message",
+            "group": "Java_Low_Visibility",
+            "Severity": "Low",
+            "Language": "Java",
+            "LanguageHash": "1814004309129553",
+            "SeverityIndex": "1",
+            "LanguageChangeDate": "2021-05-13T00:00:00.0000000",
+            "QueryPath": "Java\\Cx\\Java Low Visibility\\Information Exposure Through an Error Message Version:1",
+            "QueryVersionCode": "56439377",
+            "results": [
+              {
+                "NodeId": "10000000001",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "New",
+                "Line": 102,
+                "Column": 39,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=1",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "1",
+                    "SimilarityId": "119449289",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 102,
+                        "Column": 39,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 102,
+                            "Code": "      } catch (ClassNotFoundException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 103,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 103,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 103,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 103,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000000005",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "New",
+                "Line": 104,
+                "Column": 38,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=5",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "5",
+                    "SimilarityId": "-845655879",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 104,
+                        "Column": 38,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 104,
+                            "Code": "      } catch (NoSuchMethodException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 105,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 105,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 105,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 105,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000000007",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "New",
+                "Line": 106,
+                "Column": 39,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=7",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "7",
+                    "SimilarityId": "1015338294",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 106,
+                        "Column": 39,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 106,
+                            "Code": "      } catch (IllegalAccessException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 107,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 107,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 107,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 107,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000000008",
+                "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                "Status": "New",
+                "Line": 108,
+                "Column": 42,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=8",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "8",
+                    "SimilarityId": "-1479595103",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 108,
+                        "Column": 42,
+                        "NodeId": "1",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 108,
+                            "Code": "      } catch (InvocationTargetException e) {"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 109,
+                        "Column": 9,
+                        "NodeId": "2",
+                        "Name": "e",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 109,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      },
+                      {
+                        "FileName": "tictactoe-master/android/app/src/main/java/com/tictactoe/MainApplication.java",
+                        "Line": 109,
+                        "Column": 26,
+                        "NodeId": "3",
+                        "Name": "printStackTrace",
+                        "Type": "",
+                        "Length": "1",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 109,
+                            "Code": "        e.printStackTrace();"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6219",
+            "category": [],
+            "cweId": "693",
+            "name": "Missing_Root_Or_Jailbreak_Check",
+            "group": "JavaScript_ReactNative",
+            "Severity": "Low",
+            "Language": "JavaScript",
+            "LanguageHash": "1681617171013993",
+            "SeverityIndex": "1",
+            "LanguageChangeDate": "2021-05-13T00:00:00.0000000",
+            "QueryPath": "JavaScript\\Cx\\JavaScript ReactNative\\Missing Root Or Jailbreak Check Version:1",
+            "QueryVersionCode": "131562311",
+            "results": [
+              {
+                "NodeId": "10000000002",
+                "FileName": "tictactoe-master/App.js",
+                "Status": "New",
+                "Line": 107,
+                "Column": 3,
+                "FalsePositive": false,
+                "Severity": "Low",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=2",
+                "SeverityIndex": "1",
+                "DetectionDate": "06/11/2021 11:33:54 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "2",
+                    "SimilarityId": "-772255956",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/App.js",
+                        "Line": 107,
+                        "Column": 3,
+                        "NodeId": "1",
+                        "Name": "render",
+                        "Type": "",
+                        "Length": "6",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 107,
+                            "Code": "  render() {"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3265",
+            "category": [],
+            "cweId": "493",
+            "name": "Exposure_of_Resource_to_Wrong_Sphere",
+            "group": "Groovy_Best_Coding_Practice",
+            "Severity": "Information",
+            "Language": "Groovy",
+            "LanguageHash": "0182637364353426",
+            "SeverityIndex": "0",
+            "LanguageChangeDate": "2021-05-13T00:00:00.0000000",
+            "QueryPath": "Groovy\\Cx\\Groovy Best Coding Practice\\Exposure of Resource to Wrong Sphere Version:0",
+            "QueryVersionCode": "3265",
+            "results": [
+              {
+                "NodeId": "10000000003",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "New",
+                "Line": 95,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=3",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "3",
+                    "SimilarityId": "1901845694",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 95,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "enableSeparateBuildPerCPUArchitecture",
+                        "Type": "",
+                        "Length": "37",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 95,
+                            "Code": "def enableSeparateBuildPerCPUArchitecture = false"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000000004",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "New",
+                "Line": 100,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=4",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "4",
+                    "SimilarityId": "-2011342786",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 100,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "enableProguardInReleaseBuilds",
+                        "Type": "",
+                        "Length": "29",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 100,
+                            "Code": "def enableProguardInReleaseBuilds = false"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000000006",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "New",
+                "Line": 113,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=6",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "6",
+                    "SimilarityId": "-1443718374",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 113,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "jscFlavor",
+                        "Type": "",
+                        "Length": "9",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 113,
+                            "Code": "def jscFlavor = 'org.webkit:android-jsc:+'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "NodeId": "10000000009",
+                "FileName": "tictactoe-master/android/app/build.gradle",
+                "Status": "New",
+                "Line": 122,
+                "Column": 5,
+                "FalsePositive": false,
+                "Severity": "Information",
+                "AssignToUser": "",
+                "state": "0",
+                "Remark": "",
+                "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1&pathid=9",
+                "SeverityIndex": "0",
+                "DetectionDate": "06/11/2021 11:33:55 am",
+                "paths": [
+                  {
+                    "ResultId": "1000000",
+                    "PathId": "9",
+                    "SimilarityId": "164012702",
+                    "pathNodes": [
+                      {
+                        "FileName": "tictactoe-master/android/app/build.gradle",
+                        "Line": 122,
+                        "Column": 5,
+                        "NodeId": "1",
+                        "Name": "enableHermes",
+                        "Type": "",
+                        "Length": "12",
+                        "Snippet": {
+                          "Line": {
+                            "Number": 122,
+                            "Code": "def enableHermes = project.ext.react.get(\"enableHermes\", false);"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "InitiatorName": "Srinath Chandrashekhar",
+        "Owner": "srinathc",
+        "ScanId": "1000000",
+        "ProjectId": "1",
+        "ProjectName": "Tic - Tac - Toe",
+        "TeamFullPathOnReportDate": "CxServer",
+        "DeepLink": "http://WIN-SERVER-1/CxWebClient/ViewerMain.aspx?scanid=1000000&projectid=1",
+        "ScanStart": "Friday, June 11, 2021 11:32:24 AM",
+        "Preset": "Checkmarx Default",
+        "ScanTime": "00h:01m:34s",
+        "LinesOfCodeScanned": 15183,
+        "FilesScanned": 31,
+        "ReportCreationTime": "Friday, June 18, 2021 6:05:00 AM",
+        "Team": "CxServer",
+        "CheckmarxVersion": "9.3.0.1139",
+        "ScanComments": "",
+        "ScanType": "Full",
+        "SourceOrigin": "LocalPath",
+        "Visibility": "Public"
+      }
+    }
+  ],
+  "count": 4,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "foo",
+      "integration_id": "16"
+    },
+    "integration_type": "cxsast",
+    "data_type": "scans",
+    "page_number": 0
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "public": false,
+  "id": "8355",
+  "name": "test precal in stage",
+  "type": "dashboard",
+  "owner_id": "12092",
+  "demo": false,
+  "query": {
+    "integration_ids": [
+      "1849",
+      "4218",
+      "4414"
+    ]
+  },
+  "metadata": {
+    "rbac": {
+      "owner": "esha.shah@harness.io",
+      "users": {},
+      "dashboardPermission": "admin"
+    },
+    "dashboard_time_range": true,
+    "effort_investment_unit": false,
+    "integration_monitoring": false,
+    "effort_investment_profile": false,
+    "dashboard_time_range_filter": "last_30_days",
+    "effort_investment_unit_filter": "%_of_engineers"
+  },
+  "widgets": [
+    {
+      "id": "763f5140-2b16-11ee-8692-b71d07894893",
+      "dashboard_id": "8355",
+      "name": "LEAD TIME BY TIME SPENT IN STAGES",
+      "type": "lead_time_by_time_spent_in_stages_report",
+      "metadata": {
+        "order": 1,
+        "width": "full",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "The amount of time spent by an issue in a given stage. This widget helps identify issues with bottlenecks.",
+        "hide_stages": [
+          "In progress"
+        ],
+        "max_records": 20,
+        "widget_type": "graph",
+        "default_value": "jira",
+        "custom_hygienes": [],
+        "filter_tab_order": {
+          "assignees": 3,
+          "released_in": 2,
+          "issue_resolved_at": 1
+        },
+        "dashBoard_time_keys": {
+          "released_in": {
+            "use_dashboard_time": true
+          }
+        },
+        "disable_issue_management_system": true
+      },
+      "query": {
+        "assignees": [
+          "a900bc1b-919f-4345-8884-43674c4e4b4b",
+          "28033ef3-3ac5-414e-8b34-b75cd2ceeddf"
+        ],
+        "released_in": {
+          "$gt": "1688256000",
+          "$lt": "1690307221"
+        },
+        "issue_resolved_at": {
+          "$gt": "1688256000",
+          "$lt": "1690307221"
+        },
+        "velocity_config_id": "b1a46fc9-39e0-4ec7-acbc-40a5b32547ea"
+      },
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    },
+    {
+      "id": "75811f70-2b18-11ee-925e-ef285b269519",
+      "dashboard_id": "8355",
+      "name": "Copy of LEAD TIME BY TIME SPENT IN STAGES",
+      "type": "lead_time_by_time_spent_in_stages_report",
+      "metadata": {
+        "order": 2,
+        "width": "full",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "The amount of time spent by an issue in a given stage. This widget helps identify issues with bottlenecks.",
+        "max_records": 20,
+        "widget_type": "graph",
+        "default_value": "jira",
+        "custom_hygienes": [],
+        "filter_tab_order": {
+          "assignees": 3,
+          "released_in": 2,
+          "issue_resolved_at": 1
+        },
+        "dashBoard_time_keys": {
+          "released_in": {
+            "use_dashboard_time": true
+          },
+          "issue_resolved_at": {
+            "use_dashboard_time": true
+          }
+        },
+        "disable_issue_management_system": true
+      },
+      "query": {
+        "assignees": [
+          "28033ef3-3ac5-414e-8b34-b75cd2ceeddf",
+          "a900bc1b-919f-4345-8884-43674c4e4b4b"
+        ],
+        "released_in": {
+          "$gt": "1688256000",
+          "$lt": "1690307221"
+        },
+        "issue_resolved_at": {
+          "$gt": "1688256000",
+          "$lt": "1690307221"
+        },
+        "velocity_config_id": "b1a46fc9-39e0-4ec7-acbc-40a5b32547ea"
+      },
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    },
+    {
+      "id": "30f1ce40-3059-11ee-913d-4599bb16cff7",
+      "dashboard_id": "8355",
+      "name": "ISSUE LEAD TIME BY STAGE REPORT",
+      "type": "lead_time_by_stage_report",
+      "metadata": {
+        "order": 4,
+        "width": "full",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "The amount of time involved from the first commit to getting into production is depicted by splitting into all the involved stages. It helps in identifying the bottlenecks by displaying if each of the stages is in a good, acceptable or slow state as per the threshold defined.",
+        "max_records": 20,
+        "widget_type": "graph",
+        "default_value": "jira",
+        "custom_hygienes": [],
+        "disable_issue_management_system": true
+      },
+      "query": {
+        "across": "velocity",
+        "ratings": [
+          "good",
+          "slow",
+          "needs_attention"
+        ],
+        "velocity_config_id": "4a6de017-5f6e-4b4d-8cac-ec806a6bb2e4",
+        "limit_to_only_applicable_data": true
+      },
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    },
+    {
+      "id": "8fd59300-30fa-11ee-9033-819335b74107",
+      "dashboard_id": "8355",
+      "name": "ISSUE FIRST ASSIGNEE REPORT",
+      "type": "first_assignee_report",
+      "metadata": {
+        "order": 5,
+        "width": "half",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "",
+        "max_records": 20,
+        "widget_type": "graph",
+        "default_value": "jira",
+        "custom_hygienes": [],
+        "disable_or_filters": false,
+        "disable_issue_management_system": true
+      },
+      "query": {
+        "across": "issue_updated",
+        "sort_xaxis": "default_old-latest"
+      },
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    },
+    {
+      "id": "f91bd460-2c3a-11ee-925e-ef285b269519",
+      "dashboard_id": "8355",
+      "name": "JIRA RELEASES REPORT",
+      "type": "jira_release_table_report",
+      "metadata": {
+        "order": 3,
+        "width": "full",
+        "hidden": false,
+        "weights": {
+          "IDLE": 20,
+          "NO_ASSIGNEE": 20,
+          "NO_DUE_DATE": 30,
+          "NO_COMPONENTS": 20,
+          "POOR_DESCRIPTION": 8
+        },
+        "children": [],
+        "description": "Visualize the releases occurring across various projects using the Jira releases report.",
+        "max_records": 20,
+        "widget_type": "graph",
+        "default_value": "jira",
+        "custom_hygienes": [],
+        "filter_tab_order": {
+          "released_in": 2,
+          "issue_resolved_at": 1
+        },
+        "range_filter_choice": {
+          "released_in": {
+            "type": "relative",
+            "relative": {
+              "last": {
+                "num": "25",
+                "unit": "weeks"
+              },
+              "next": {
+                "unit": "today"
+              }
+            }
+          },
+          "issue_resolved_at": {
+            "type": "relative",
+            "relative": {
+              "last": {
+                "num": "24",
+                "unit": "weeks"
+              },
+              "next": {
+                "unit": "today"
+              }
+            }
+          }
+        },
+        "disable_issue_management_system": true
+      },
+      "query": {
+        "across": "",
+        "released_in": {
+          "$gt": "1675555200",
+          "$lt": "1690502399"
+        },
+        "issue_resolved_at": {
+          "$gt": "1676160000",
+          "$lt": "1690502399"
+        },
+        "velocity_config_id": "b1a46fc9-39e0-4ec7-acbc-40a5b32547ea"
+      },
+      "display_info": {},
+      "precalculate": false,
+      "precalculate_frequency_in_mins": 0
+    }
+  ],
+  "default": false,
+  "created_at": 1690308576
+}

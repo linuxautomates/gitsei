@@ -1,0 +1,249 @@
+{
+  "properties": {
+    "pr_id": {
+      "type": "keyword"
+    },
+    "pr_repo_id": {
+      "type": "keyword"
+    },
+    "pr_integration_id": {
+      "type": "keyword"
+    },
+    "pr_number": {
+      "type": "keyword"
+    },
+    "pr_project": {
+      "type": "keyword"
+    },
+    "pr_merge_sha": {
+      "type": "keyword"
+    },
+    "pr_title": {
+      "type": "keyword"
+    },
+    "pr_source_branch": {
+      "type": "keyword"
+    },
+    "pr_target_branch": {
+      "type": "keyword"
+    },
+    "pr_state": {
+      "type": "keyword"
+    },
+    "pr_review_type": {
+      "type": "keyword"
+    },
+    "pr_tot_lines_removed": {
+      "type": "keyword"
+    },
+    "pr_workitem_ids": {
+      "type": "keyword"
+    },
+    "pr_commit_shas": {
+      "type": "keyword"
+    },
+    "pr_label": {
+      "type": "keyword"
+    },
+    "pr_technology": {
+      "type": "keyword"
+    },
+    "pr_avg_author_response_time": {
+      "type": "long"
+    },
+    "pr_avg_reviewer_response_time": {
+      "type": "long"
+    },
+    "pr_cycle_time": {
+      "type": "long"
+    },
+    "pr_review_cycle_time": {
+      "type": "long"
+    },
+    "pr_review_merge_cycle_time": {
+      "type": "long"
+    },
+    "pr_approval_time": {
+      "type": "long"
+    },
+    "pr_pr_updated_at": {
+      "type": "date"
+    },
+    "pr_pr_merged_at": {
+      "type": "date"
+    },
+    "pr_pr_created_at": {
+      "type": "date"
+    },
+    "pr_pr_closed_at": {
+      "type": "date"
+    },
+    "pr_createdat": {
+      "type": "date"
+    },
+    "pr_merged": {
+      "type": "boolean"
+    },
+    "pr_creator": {
+      "type": "keyword"
+    },
+    "pr_creator_id": {
+      "type": "keyword"
+    },
+    "pr_collab_state": {
+      "type": "keyword"
+    },
+    "pr_created_day": {
+      "type": "keyword"
+    },
+    "pr_merged_day": {
+      "type": "keyword"
+    },
+    "pr_closed_day": {
+      "type": "keyword"
+    },
+    "pr_approval_status": {
+      "type": "keyword"
+    },
+    "pr_additions": {
+      "type": "integer"
+    },
+    "pr_deletions": {
+      "type": "integer"
+    },
+    "pr_changes": {
+      "type": "integer"
+    },
+    "pr_loc": {
+      "type": "integer"
+    },
+    "pr_files_count": {
+      "type": "integer"
+    },
+    "pr_comment_count": {
+      "type": "integer"
+    },
+    "pr_reviewer_count": {
+      "type": "integer"
+    },
+    "pr_approver_count": {
+      "type": "integer"
+    },
+    "pr_first_committed_at": {
+      "type": "date"
+    },
+    "pr_assignees": {
+      "type": "keyword"
+    },
+    "pr_assignee_ids": {
+      "type": "keyword"
+    },
+    "pr_reviewers": {
+      "type": "keyword"
+    },
+    "pr_reviewer_ids": {
+      "type": "keyword"
+    },
+    "pr_reviewer_info": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "pr_id": {
+          "type": "keyword"
+        },
+        "reviewer": {
+          "type": "keyword"
+        },
+        "reviewe_id": {
+          "type": "keyword"
+        },
+        "state": {
+          "type": "keyword"
+        },
+        "reviewed_at": {
+          "type": "date"
+        }
+      }
+    },
+    "pr_commenters": {
+      "type": "keyword"
+    },
+    "pr_commenter_ids": {
+      "type": "keyword"
+    },
+    "pr_commentor_info": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "pr_id": {
+          "type": "keyword"
+        },
+        "reviewer": {
+          "type": "keyword"
+        },
+        "reviewe_id": {
+          "type": "keyword"
+        },
+        "state": {
+          "type": "keyword"
+        },
+        "reviewed_at": {
+          "type": "date"
+        }
+      }
+    },
+    "pr_approvers": {
+      "type": "keyword"
+    },
+    "pr_approver_ids": {
+      "type": "keyword"
+    },
+    "pr_approver_info": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "pr_id": {
+          "type": "keyword"
+        },
+        "reviewer": {
+          "type": "keyword"
+        },
+        "reviewe_id": {
+          "type": "keyword"
+        },
+        "state": {
+          "type": "keyword"
+        },
+        "reviewed_at": {
+          "type": "date"
+        }
+      }
+    },
+    "pr_pr_labels": {
+      "type": "nested",
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "name": {
+          "type": "keyword"
+        },
+        "cloud_id": {
+          "type": "keyword"
+        },
+        "scm_pullrequest_id": {
+          "type": "keyword"
+        },
+        "label_added_timestamp": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}

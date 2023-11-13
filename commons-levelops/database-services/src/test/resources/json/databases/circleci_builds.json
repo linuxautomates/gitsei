@@ -1,0 +1,2598 @@
+{
+  "records": [
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/15",
+        "build_num": 15,
+        "branch": "master",
+        "vcs_revision": "516f4ccc28d3d74bbee8ddddbc7c19462577c6f1",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "scm enrichment test",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-11-11T16:34:54.699+00:00",
+        "start_time": "2020-11-11T16:34:59.112+00:00",
+        "build_time_millis": 21314,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 4522,
+                "start_time": "2020-11-11T16:34:59.152+00:00",
+                "end_time": "2020-11-11T16:35:03.674+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 25,
+                "start_time": "2020-11-11T16:35:03.986+00:00",
+                "end_time": "2020-11-11T16:35:04.011+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin 'master:remotes/origin/master'\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 807,
+                "start_time": "2020-11-11T16:35:04.032+00:00",
+                "end_time": "2020-11-11T16:35:04.839+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 23,
+                "start_time": "2020-11-11T16:35:04.847+00:00",
+                "end_time": "2020-11-11T16:35:04.870+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 7150,
+                "start_time": "2020-11-11T16:35:04.879+00:00",
+                "end_time": "2020-11-11T16:35:12.029+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2272,
+                "start_time": "2020-11-11T16:35:12.036+00:00",
+                "end_time": "2020-11-11T16:35:14.308+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 5865,
+                "start_time": "2020-11-11T16:35:14.316+00:00",
+                "end_time": "2020-11-11T16:35:20.181+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 94,
+                "start_time": "2020-11-11T16:35:20.187+00:00",
+                "end_time": "2020-11-11T16:35:20.281+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 94,
+                "start_time": "2020-11-11T16:35:20.290+00:00",
+                "end_time": "2020-11-11T16:35:20.384+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.203,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/516f4ccc28d3d74bbee8ddddbc7c19462577c6f1",
+          "commit": "516f4ccc28d3d74bbee8ddddbc7c19462577c6f1",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "scm enrichment test"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/15",
+      "build_num": 15,
+      "branch": "master",
+      "vcs_revision": "516f4ccc28d3d74bbee8ddddbc7c19462577c6f1",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "scm enrichment test",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-11-11T16:34:54.699+00:00",
+      "start_time": "2020-11-11T16:34:59.112+00:00",
+      "stop_time": "2020-11-11T16:35:20.426+00:00",
+      "build_time_millis": 21314,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/14",
+        "build_num": 14,
+        "branch": "master",
+        "vcs_revision": "90c39246af818740734c89f714900b4c4223d224",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "scm enrichment test",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-11-11T13:40:19.305+00:00",
+        "start_time": "2020-11-11T13:40:22.555+00:00",
+        "build_time_millis": 23569,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 9815,
+                "start_time": "2020-11-11T13:40:22.598+00:00",
+                "end_time": "2020-11-11T13:40:32.413+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 41,
+                "start_time": "2020-11-11T13:40:32.688+00:00",
+                "end_time": "2020-11-11T13:40:32.729+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin 'master:remotes/origin/master'\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 871,
+                "start_time": "2020-11-11T13:40:32.756+00:00",
+                "end_time": "2020-11-11T13:40:33.627+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 21,
+                "start_time": "2020-11-11T13:40:33.635+00:00",
+                "end_time": "2020-11-11T13:40:33.656+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 3546,
+                "start_time": "2020-11-11T13:40:33.665+00:00",
+                "end_time": "2020-11-11T13:40:37.211+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2587,
+                "start_time": "2020-11-11T13:40:37.218+00:00",
+                "end_time": "2020-11-11T13:40:39.805+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 6018,
+                "start_time": "2020-11-11T13:40:39.813+00:00",
+                "end_time": "2020-11-11T13:40:45.831+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 49,
+                "start_time": "2020-11-11T13:40:45.837+00:00",
+                "end_time": "2020-11-11T13:40:45.886+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 68,
+                "start_time": "2020-11-11T13:40:45.894+00:00",
+                "end_time": "2020-11-11T13:40:45.962+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.211,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/90c39246af818740734c89f714900b4c4223d224",
+          "commit": "90c39246af818740734c89f714900b4c4223d224",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "scm enrichment test"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/14",
+      "build_num": 14,
+      "branch": "master",
+      "vcs_revision": "90c39246af818740734c89f714900b4c4223d224",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "scm enrichment test",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-11-11T13:40:19.305+00:00",
+      "start_time": "2020-11-11T13:40:22.555+00:00",
+      "stop_time": "2020-11-11T13:40:46.124+00:00",
+      "build_time_millis": 23569,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/13",
+        "build_num": 13,
+        "branch": "master",
+        "vcs_revision": "3e9b271e47521b079266e4b3375872c7e4d42671",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Update readme",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-11-09T09:45:50.881+00:00",
+        "start_time": "2020-11-09T09:46:21.053+00:00",
+        "build_time_millis": 46459,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 14506,
+                "start_time": "2020-11-09T09:46:21.100+00:00",
+                "end_time": "2020-11-09T09:46:35.606+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 90,
+                "start_time": "2020-11-09T09:46:35.948+00:00",
+                "end_time": "2020-11-09T09:46:36.038+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin 'master:remotes/origin/master'\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 806,
+                "start_time": "2020-11-09T09:46:36.061+00:00",
+                "end_time": "2020-11-09T09:46:36.867+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 22,
+                "start_time": "2020-11-09T09:46:36.875+00:00",
+                "end_time": "2020-11-09T09:46:36.897+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 143,
+                "start_time": "2020-11-09T09:46:36.906+00:00",
+                "end_time": "2020-11-09T09:46:37.049+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 17844,
+                "start_time": "2020-11-09T09:46:37.057+00:00",
+                "end_time": "2020-11-09T09:46:54.901+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 8980,
+                "start_time": "2020-11-09T09:46:54.907+00:00",
+                "end_time": "2020-11-09T09:47:03.887+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 3470,
+                "start_time": "2020-11-09T09:47:03.916+00:00",
+                "end_time": "2020-11-09T09:47:07.386+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 62,
+                "start_time": "2020-11-09T09:47:07.394+00:00",
+                "end_time": "2020-11-09T09:47:07.456+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.267,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/3e9b271e47521b079266e4b3375872c7e4d42671",
+          "commit": "3e9b271e47521b079266e4b3375872c7e4d42671",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Update readme"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/13",
+      "build_num": 13,
+      "branch": "master",
+      "vcs_revision": "3e9b271e47521b079266e4b3375872c7e4d42671",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Update readme",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-11-09T09:45:50.881+00:00",
+      "start_time": "2020-11-09T09:46:21.053+00:00",
+      "stop_time": "2020-11-09T09:47:07.512+00:00",
+      "build_time_millis": 46459,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/12",
+        "build_num": 12,
+        "branch": "master",
+        "vcs_revision": "6f6097276726032435f396c10d5070ecc3b4fd0a",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Correct the bad commit",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-30T13:25:53.310+00:00",
+        "start_time": "2020-10-30T13:25:56.623+00:00",
+        "build_time_millis": 16497,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 5373,
+                "start_time": "2020-10-30T13:25:56.662+00:00",
+                "end_time": "2020-10-30T13:26:02.035+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 90,
+                "start_time": "2020-10-30T13:26:02.289+00:00",
+                "end_time": "2020-10-30T13:26:02.379+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin 'master:remotes/origin/master'\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 1299,
+                "start_time": "2020-10-30T13:26:02.388+00:00",
+                "end_time": "2020-10-30T13:26:03.687+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 15,
+                "start_time": "2020-10-30T13:26:03.694+00:00",
+                "end_time": "2020-10-30T13:26:03.709+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2065,
+                "start_time": "2020-10-30T13:26:03.716+00:00",
+                "end_time": "2020-10-30T13:26:05.781+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 1835,
+                "start_time": "2020-10-30T13:26:05.788+00:00",
+                "end_time": "2020-10-30T13:26:07.623+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 5277,
+                "start_time": "2020-10-30T13:26:07.630+00:00",
+                "end_time": "2020-10-30T13:26:12.907+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 50,
+                "start_time": "2020-10-30T13:26:12.913+00:00",
+                "end_time": "2020-10-30T13:26:12.963+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 109,
+                "start_time": "2020-10-30T13:26:12.971+00:00",
+                "end_time": "2020-10-30T13:26:13.080+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.192,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/6f6097276726032435f396c10d5070ecc3b4fd0a",
+          "commit": "6f6097276726032435f396c10d5070ecc3b4fd0a",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Correct the bad commit"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/12",
+      "build_num": 12,
+      "branch": "master",
+      "vcs_revision": "6f6097276726032435f396c10d5070ecc3b4fd0a",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Correct the bad commit",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-30T13:25:53.310+00:00",
+      "start_time": "2020-10-30T13:25:56.623+00:00",
+      "stop_time": "2020-10-30T13:26:13.120+00:00",
+      "build_time_millis": 16497,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/11",
+        "build_num": 11,
+        "branch": "master",
+        "vcs_revision": "6b90b7e8023c900ac9e513770b9d8246c186c1b6",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "A good commit over a bad commit",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-29T07:32:10.612+00:00",
+        "start_time": "2020-10-29T07:32:14.529+00:00",
+        "build_time_millis": 14420,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "failed",
+        "status": "failed",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 6549,
+                "start_time": "2020-10-29T07:32:14.584+00:00",
+                "end_time": "2020-10-29T07:32:21.133+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 26,
+                "start_time": "2020-10-29T07:32:21.428+00:00",
+                "end_time": "2020-10-29T07:32:21.454+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin 'master:remotes/origin/master'\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 563,
+                "start_time": "2020-10-29T07:32:21.465+00:00",
+                "end_time": "2020-10-29T07:32:22.028+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 16,
+                "start_time": "2020-10-29T07:32:22.036+00:00",
+                "end_time": "2020-10-29T07:32:22.052+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2516,
+                "start_time": "2020-10-29T07:32:22.061+00:00",
+                "end_time": "2020-10-29T07:32:24.577+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2416,
+                "start_time": "2020-10-29T07:32:24.584+00:00",
+                "end_time": "2020-10-29T07:32:27.000+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 1860,
+                "start_time": "2020-10-29T07:32:27.009+00:00",
+                "end_time": "2020-10-29T07:32:28.869+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 19,
+                "start_time": "2020-10-29T07:32:28.875+00:00",
+                "end_time": "2020-10-29T07:32:28.894+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/bcc02f766cda8e37e352a3d8a0860e8158da7de1",
+          "commit": "bcc02f766cda8e37e352a3d8a0860e8158da7de1",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Bad commit: part 2.1"
+        },
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/6b90b7e8023c900ac9e513770b9d8246c186c1b6",
+          "commit": "6b90b7e8023c900ac9e513770b9d8246c186c1b6",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "A good commit over a bad commit"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/11",
+      "build_num": 11,
+      "branch": "master",
+      "vcs_revision": "6b90b7e8023c900ac9e513770b9d8246c186c1b6",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "A good commit over a bad commit",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-29T07:32:10.612+00:00",
+      "start_time": "2020-10-29T07:32:14.529+00:00",
+      "stop_time": "2020-10-29T07:32:28.949+00:00",
+      "build_time_millis": 14420,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "failed",
+      "status": "failed",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/10",
+        "build_num": 10,
+        "branch": "master",
+        "vcs_revision": "d9934707b318fa81d2f6be7304d09cd684f2479f",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "part 2",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-29T07:22:49.562+00:00",
+        "start_time": "2020-10-29T07:22:53.608+00:00",
+        "build_time_millis": 14424,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 2640,
+                "start_time": "2020-10-29T07:22:53.648+00:00",
+                "end_time": "2020-10-29T07:22:56.288+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 37,
+                "start_time": "2020-10-29T07:22:56.558+00:00",
+                "end_time": "2020-10-29T07:22:56.595+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin 'master:remotes/origin/master'\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 604,
+                "start_time": "2020-10-29T07:22:56.614+00:00",
+                "end_time": "2020-10-29T07:22:57.218+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 18,
+                "start_time": "2020-10-29T07:22:57.226+00:00",
+                "end_time": "2020-10-29T07:22:57.244+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2138,
+                "start_time": "2020-10-29T07:22:57.252+00:00",
+                "end_time": "2020-10-29T07:22:59.390+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2172,
+                "start_time": "2020-10-29T07:22:59.397+00:00",
+                "end_time": "2020-10-29T07:23:01.569+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 5984,
+                "start_time": "2020-10-29T07:23:01.576+00:00",
+                "end_time": "2020-10-29T07:23:07.560+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 53,
+                "start_time": "2020-10-29T07:23:07.567+00:00",
+                "end_time": "2020-10-29T07:23:07.620+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 361,
+                "start_time": "2020-10-29T07:23:07.629+00:00",
+                "end_time": "2020-10-29T07:23:07.990+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.192,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/b8d48cbaa90ef11096d01fcf631a6f923479c4d6",
+          "commit": "b8d48cbaa90ef11096d01fcf631a6f923479c4d6",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "part 1"
+        },
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/d9934707b318fa81d2f6be7304d09cd684f2479f",
+          "commit": "d9934707b318fa81d2f6be7304d09cd684f2479f",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "part 2"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/10",
+      "build_num": 10,
+      "branch": "master",
+      "vcs_revision": "d9934707b318fa81d2f6be7304d09cd684f2479f",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "part 2",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-29T07:22:49.562+00:00",
+      "start_time": "2020-10-29T07:22:53.608+00:00",
+      "stop_time": "2020-10-29T07:23:08.032+00:00",
+      "build_time_millis": 14424,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/9",
+        "build_num": 9,
+        "branch": "master",
+        "vcs_revision": "a66bf0c8f32ab90e4f72ee2fe6836d7d9c70bd68",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "update readme to test end to end",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-21T07:50:18.618+00:00",
+        "start_time": "2020-10-21T07:50:28.608+00:00",
+        "build_time_millis": 29412,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 18611,
+                "start_time": "2020-10-21T07:50:28.657+00:00",
+                "end_time": "2020-10-21T07:50:47.268+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 34,
+                "start_time": "2020-10-21T07:50:47.535+00:00",
+                "end_time": "2020-10-21T07:50:47.569+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 571,
+                "start_time": "2020-10-21T07:50:47.582+00:00",
+                "end_time": "2020-10-21T07:50:48.153+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 15,
+                "start_time": "2020-10-21T07:50:48.162+00:00",
+                "end_time": "2020-10-21T07:50:48.177+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 1985,
+                "start_time": "2020-10-21T07:50:48.184+00:00",
+                "end_time": "2020-10-21T07:50:50.169+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2039,
+                "start_time": "2020-10-21T07:50:50.175+00:00",
+                "end_time": "2020-10-21T07:50:52.214+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 5604,
+                "start_time": "2020-10-21T07:50:52.220+00:00",
+                "end_time": "2020-10-21T07:50:57.824+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 58,
+                "start_time": "2020-10-21T07:50:57.829+00:00",
+                "end_time": "2020-10-21T07:50:57.887+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 71,
+                "start_time": "2020-10-21T07:50:57.897+00:00",
+                "end_time": "2020-10-21T07:50:57.968+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.199,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/a66bf0c8f32ab90e4f72ee2fe6836d7d9c70bd68",
+          "commit": "a66bf0c8f32ab90e4f72ee2fe6836d7d9c70bd68",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "update readme to test end to end"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/9",
+      "build_num": 9,
+      "branch": "master",
+      "vcs_revision": "a66bf0c8f32ab90e4f72ee2fe6836d7d9c70bd68",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "update readme to test end to end",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-21T07:50:18.618+00:00",
+      "start_time": "2020-10-21T07:50:28.608+00:00",
+      "stop_time": "2020-10-21T07:50:58.020+00:00",
+      "build_time_millis": 29412,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/8",
+        "build_num": 8,
+        "branch": "master",
+        "vcs_revision": "de81e3cc8a0720492a8d90e7ccd03bc5af5c2aec",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "update readme to test end to end",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-21T07:36:38.066+00:00",
+        "start_time": "2020-10-21T07:36:42.022+00:00",
+        "build_time_millis": 24146,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 14012,
+                "start_time": "2020-10-21T07:36:42.072+00:00",
+                "end_time": "2020-10-21T07:36:56.084+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 71,
+                "start_time": "2020-10-21T07:36:56.362+00:00",
+                "end_time": "2020-10-21T07:36:56.433+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 543,
+                "start_time": "2020-10-21T07:36:56.444+00:00",
+                "end_time": "2020-10-21T07:36:56.987+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 12,
+                "start_time": "2020-10-21T07:36:56.995+00:00",
+                "end_time": "2020-10-21T07:36:57.007+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 1972,
+                "start_time": "2020-10-21T07:36:57.017+00:00",
+                "end_time": "2020-10-21T07:36:58.989+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 1895,
+                "start_time": "2020-10-21T07:36:58.996+00:00",
+                "end_time": "2020-10-21T07:37:00.891+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 5064,
+                "start_time": "2020-10-21T07:37:00.897+00:00",
+                "end_time": "2020-10-21T07:37:05.961+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 84,
+                "start_time": "2020-10-21T07:37:05.966+00:00",
+                "end_time": "2020-10-21T07:37:06.050+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 71,
+                "start_time": "2020-10-21T07:37:06.059+00:00",
+                "end_time": "2020-10-21T07:37:06.130+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.19,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/de81e3cc8a0720492a8d90e7ccd03bc5af5c2aec",
+          "commit": "de81e3cc8a0720492a8d90e7ccd03bc5af5c2aec",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "update readme to test end to end"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/8",
+      "build_num": 8,
+      "branch": "master",
+      "vcs_revision": "de81e3cc8a0720492a8d90e7ccd03bc5af5c2aec",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "update readme to test end to end",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-21T07:36:38.066+00:00",
+      "start_time": "2020-10-21T07:36:42.022+00:00",
+      "stop_time": "2020-10-21T07:37:06.168+00:00",
+      "build_time_millis": 24146,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/7",
+        "build_num": 7,
+        "branch": "master",
+        "vcs_revision": "37456ba06b71a04c073d3a914400c17c163b2aaa",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "update readme to test end to end",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-21T07:00:19.857+00:00",
+        "start_time": "2020-10-21T07:00:27.172+00:00",
+        "build_time_millis": 43274,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 15543,
+                "start_time": "2020-10-21T07:00:27.215+00:00",
+                "end_time": "2020-10-21T07:00:42.758+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 89,
+                "start_time": "2020-10-21T07:00:43.104+00:00",
+                "end_time": "2020-10-21T07:00:43.193+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 648,
+                "start_time": "2020-10-21T07:00:43.208+00:00",
+                "end_time": "2020-10-21T07:00:43.856+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 15,
+                "start_time": "2020-10-21T07:00:43.865+00:00",
+                "end_time": "2020-10-21T07:00:43.880+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 159,
+                "start_time": "2020-10-21T07:00:43.888+00:00",
+                "end_time": "2020-10-21T07:00:44.047+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 11903,
+                "start_time": "2020-10-21T07:00:44.056+00:00",
+                "end_time": "2020-10-21T07:00:55.959+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 9335,
+                "start_time": "2020-10-21T07:00:55.965+00:00",
+                "end_time": "2020-10-21T07:01:05.300+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 5014,
+                "start_time": "2020-10-21T07:01:05.307+00:00",
+                "end_time": "2020-10-21T07:01:10.321+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 69,
+                "start_time": "2020-10-21T07:01:10.330+00:00",
+                "end_time": "2020-10-21T07:01:10.399+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.387,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/37456ba06b71a04c073d3a914400c17c163b2aaa",
+          "commit": "37456ba06b71a04c073d3a914400c17c163b2aaa",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "update readme to test end to end"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/7",
+      "build_num": 7,
+      "branch": "master",
+      "vcs_revision": "37456ba06b71a04c073d3a914400c17c163b2aaa",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "update readme to test end to end",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-21T07:00:19.857+00:00",
+      "start_time": "2020-10-21T07:00:27.172+00:00",
+      "stop_time": "2020-10-21T07:01:10.446+00:00",
+      "build_time_millis": 43274,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/6",
+        "build_num": 6,
+        "branch": "master",
+        "vcs_revision": "45d6ed7490721efde318f0f133eb3a0688bc0757",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Update readme",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-14T09:56:43.488+00:00",
+        "start_time": "2020-10-14T09:56:47.628+00:00",
+        "build_time_millis": 63489,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 51275,
+                "start_time": "2020-10-14T09:56:47.671+00:00",
+                "end_time": "2020-10-14T09:57:38.946+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 20,
+                "start_time": "2020-10-14T09:57:39.213+00:00",
+                "end_time": "2020-10-14T09:57:39.233+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 563,
+                "start_time": "2020-10-14T09:57:39.243+00:00",
+                "end_time": "2020-10-14T09:57:39.806+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 13,
+                "start_time": "2020-10-14T09:57:39.814+00:00",
+                "end_time": "2020-10-14T09:57:39.827+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2939,
+                "start_time": "2020-10-14T09:57:39.835+00:00",
+                "end_time": "2020-10-14T09:57:42.774+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2303,
+                "start_time": "2020-10-14T09:57:42.781+00:00",
+                "end_time": "2020-10-14T09:57:45.084+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 5834,
+                "start_time": "2020-10-14T09:57:45.103+00:00",
+                "end_time": "2020-10-14T09:57:50.937+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 48,
+                "start_time": "2020-10-14T09:57:50.943+00:00",
+                "end_time": "2020-10-14T09:57:50.991+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 75,
+                "start_time": "2020-10-14T09:57:50.999+00:00",
+                "end_time": "2020-10-14T09:57:51.074+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.2,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/45d6ed7490721efde318f0f133eb3a0688bc0757",
+          "commit": "45d6ed7490721efde318f0f133eb3a0688bc0757",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Update readme"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/6",
+      "build_num": 6,
+      "branch": "master",
+      "vcs_revision": "45d6ed7490721efde318f0f133eb3a0688bc0757",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Update readme",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-14T09:56:43.488+00:00",
+      "start_time": "2020-10-14T09:56:47.628+00:00",
+      "stop_time": "2020-10-14T09:57:51.117+00:00",
+      "build_time_millis": 63489,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/5",
+        "build_num": 5,
+        "branch": "master",
+        "vcs_revision": "a6f7373b0f640b20818f25eb5b4922a07722acb4",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Update readme yet again",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-14T09:50:24.049+00:00",
+        "start_time": "2020-10-14T09:50:28.584+00:00",
+        "build_time_millis": 44211,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 14042,
+                "start_time": "2020-10-14T09:50:28.622+00:00",
+                "end_time": "2020-10-14T09:50:42.664+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 31,
+                "start_time": "2020-10-14T09:50:43.542+00:00",
+                "end_time": "2020-10-14T09:50:43.573+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 899,
+                "start_time": "2020-10-14T09:50:43.609+00:00",
+                "end_time": "2020-10-14T09:50:44.508+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 62,
+                "start_time": "2020-10-14T09:50:44.516+00:00",
+                "end_time": "2020-10-14T09:50:44.578+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 3152,
+                "start_time": "2020-10-14T09:50:44.587+00:00",
+                "end_time": "2020-10-14T09:50:47.739+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 6895,
+                "start_time": "2020-10-14T09:50:47.746+00:00",
+                "end_time": "2020-10-14T09:50:54.641+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 17878,
+                "start_time": "2020-10-14T09:50:54.649+00:00",
+                "end_time": "2020-10-14T09:51:12.527+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 48,
+                "start_time": "2020-10-14T09:51:12.534+00:00",
+                "end_time": "2020-10-14T09:51:12.582+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 91,
+                "start_time": "2020-10-14T09:51:12.590+00:00",
+                "end_time": "2020-10-14T09:51:12.681+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.639,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/a6f7373b0f640b20818f25eb5b4922a07722acb4",
+          "commit": "a6f7373b0f640b20818f25eb5b4922a07722acb4",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Update readme yet again"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/5",
+      "build_num": 5,
+      "branch": "master",
+      "vcs_revision": "a6f7373b0f640b20818f25eb5b4922a07722acb4",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Update readme yet again",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-14T09:50:24.049+00:00",
+      "start_time": "2020-10-14T09:50:28.584+00:00",
+      "stop_time": "2020-10-14T09:51:12.795+00:00",
+      "build_time_millis": 44211,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/4",
+        "build_num": 4,
+        "branch": "master",
+        "vcs_revision": "ab3bacddcc03d42c49cad56b3526a76e368d65b5",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Update readme",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-14T09:38:59.578+00:00",
+        "start_time": "2020-10-14T09:39:05.162+00:00",
+        "build_time_millis": 20990,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 6220,
+                "start_time": "2020-10-14T09:39:05.208+00:00",
+                "end_time": "2020-10-14T09:39:11.428+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 86,
+                "start_time": "2020-10-14T09:39:11.933+00:00",
+                "end_time": "2020-10-14T09:39:12.019+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 677,
+                "start_time": "2020-10-14T09:39:12.035+00:00",
+                "end_time": "2020-10-14T09:39:12.712+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 16,
+                "start_time": "2020-10-14T09:39:12.722+00:00",
+                "end_time": "2020-10-14T09:39:12.738+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2666,
+                "start_time": "2020-10-14T09:39:12.746+00:00",
+                "end_time": "2020-10-14T09:39:15.412+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 3104,
+                "start_time": "2020-10-14T09:39:15.419+00:00",
+                "end_time": "2020-10-14T09:39:18.523+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 7434,
+                "start_time": "2020-10-14T09:39:18.529+00:00",
+                "end_time": "2020-10-14T09:39:25.963+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 42,
+                "start_time": "2020-10-14T09:39:25.969+00:00",
+                "end_time": "2020-10-14T09:39:26.011+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 72,
+                "start_time": "2020-10-14T09:39:26.021+00:00",
+                "end_time": "2020-10-14T09:39:26.093+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.242,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/ab3bacddcc03d42c49cad56b3526a76e368d65b5",
+          "commit": "ab3bacddcc03d42c49cad56b3526a76e368d65b5",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Update readme"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/4",
+      "build_num": 4,
+      "branch": "master",
+      "vcs_revision": "ab3bacddcc03d42c49cad56b3526a76e368d65b5",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Update readme",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-14T09:38:59.578+00:00",
+      "start_time": "2020-10-14T09:39:05.162+00:00",
+      "stop_time": "2020-10-14T09:39:26.152+00:00",
+      "build_time_millis": 20990,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/3",
+        "build_num": 3,
+        "branch": "master",
+        "vcs_revision": "eb966962f2651f1a213cee54072807aaa7906669",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Add a readme",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-10-14T08:59:44.910+00:00",
+        "start_time": "2020-10-14T09:01:30.632+00:00",
+        "build_time_millis": 16839,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 4488,
+                "start_time": "2020-10-14T09:01:30.673+00:00",
+                "end_time": "2020-10-14T09:01:35.161+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 58,
+                "start_time": "2020-10-14T09:01:35.444+00:00",
+                "end_time": "2020-10-14T09:01:35.502+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 560,
+                "start_time": "2020-10-14T09:01:35.513+00:00",
+                "end_time": "2020-10-14T09:01:36.073+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 12,
+                "start_time": "2020-10-14T09:01:36.082+00:00",
+                "end_time": "2020-10-14T09:01:36.094+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2216,
+                "start_time": "2020-10-14T09:01:36.102+00:00",
+                "end_time": "2020-10-14T09:01:38.318+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2688,
+                "start_time": "2020-10-14T09:01:38.323+00:00",
+                "end_time": "2020-10-14T09:01:41.011+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 6214,
+                "start_time": "2020-10-14T09:01:41.018+00:00",
+                "end_time": "2020-10-14T09:01:47.232+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 43,
+                "start_time": "2020-10-14T09:01:47.237+00:00",
+                "end_time": "2020-10-14T09:01:47.280+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 136,
+                "start_time": "2020-10-14T09:01:47.289+00:00",
+                "end_time": "2020-10-14T09:01:47.425+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.208,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/eb966962f2651f1a213cee54072807aaa7906669",
+          "commit": "eb966962f2651f1a213cee54072807aaa7906669",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Add a readme"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/3",
+      "build_num": 3,
+      "branch": "master",
+      "vcs_revision": "eb966962f2651f1a213cee54072807aaa7906669",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Add a readme",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-10-14T08:59:44.910+00:00",
+      "start_time": "2020-10-14T09:01:30.632+00:00",
+      "stop_time": "2020-10-14T09:01:47.471+00:00",
+      "build_time_millis": 16839,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "success",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci-eval",
+        "build_url": "https://circleci.com/gh/johndoe/circleci-eval/2",
+        "build_num": 2,
+        "branch": "master",
+        "vcs_revision": "7dafbd036c67e52ec16358e5b6fb996d6c546369",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Add a redundant job to to check if redundant builds are made",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-09-29T08:27:51.688+00:00",
+        "start_time": "2020-09-29T08:28:47.738+00:00",
+        "build_time_millis": 28336,
+        "username": "johndoe",
+        "reponame": "circleci-eval",
+        "lifecycle": "finished",
+        "outcome": "success",
+        "status": "success",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 15383,
+                "start_time": "2020-09-29T08:28:47.783+00:00",
+                "end_time": "2020-09-29T08:29:03.166+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 29,
+                "start_time": "2020-09-29T08:29:03.463+00:00",
+                "end_time": "2020-09-29T08:29:03.492+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Checkout code",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh\nset -e\n\n# Workaround old docker images with incorrect $HOME\n# check https://github.com/docker/docker/issues/2968 for details\nif [ \"${HOME}\" = \"/\" ]\nthen\n  export HOME=$(getent passwd $(id -un) | cut -d: -f6)\nfi\n\necho Using SSH Config Dir $SSH_CONFIG_DIR\n\nmkdir -p $SSH_CONFIG_DIR\n\necho 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==\nbitbucket.org ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw==\n' >> $SSH_CONFIG_DIR/known_hosts\n\n(umask 077; touch $SSH_CONFIG_DIR/id_rsa)\nchmod 0600 $SSH_CONFIG_DIR/id_rsa\n(cat <<EOF > $SSH_CONFIG_DIR/id_rsa\n$CHECKOUT_KEY\nEOF\n)\n\nexport GIT_SSH_COMMAND='ssh -i $SSH_CONFIG_DIR/id_rsa -o UserKnownHostsFile=$SSH_CONFIG_DIR/known_hosts'\n\n# use git+ssh instead of https\ngit config --global url.\"ssh://git@github.com\".insteadOf \"https://github.com\" || true\ngit config --global gc.auto 0 || true\n\nif [ -e /home/circleci/project/.git ]\nthen\n  cd /home/circleci/project\n  git remote set-url origin \"$CIRCLE_REPOSITORY_URL\" || true\nelse\n  mkdir -p /home/circleci/project\n  cd /home/circleci/project\n  git clone \"$CIRCLE_REPOSITORY_URL\" .\nfi\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git fetch --force origin \"refs/tags/${CIRCLE_TAG}\"\nelse\n  git fetch --force origin \"master:remotes/origin/master\"\nfi\n\n\nif [ -n \"$CIRCLE_TAG\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q \"$CIRCLE_TAG\"\nelif [ -n \"$CIRCLE_BRANCH\" ]\nthen\n  git reset --hard \"$CIRCLE_SHA1\"\n  git checkout -q -B \"$CIRCLE_BRANCH\"\nfi\n\ngit reset --hard \"$CIRCLE_SHA1\"",
+                "run_time_millis": 536,
+                "start_time": "2020-09-29T08:29:03.503+00:00",
+                "end_time": "2020-09-29T08:29:04.039+00:00",
+                "name": "Checkout code",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Generate Cache Checksum",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nfind . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed",
+                "run_time_millis": 11,
+                "start_time": "2020-09-29T08:29:04.047+00:00",
+                "end_time": "2020-09-29T08:29:04.058+00:00",
+                "name": "Generate Cache Checksum",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Restoring cache",
+            "actions": [
+              {
+                "run_time_millis": 2673,
+                "start_time": "2020-09-29T08:29:04.067+00:00",
+                "end_time": "2020-09-29T08:29:06.740+00:00",
+                "name": "Restoring cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Install Dependencies",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn dependency:go-offline --settings 'pom.xml'",
+                "run_time_millis": 2570,
+                "start_time": "2020-09-29T08:29:06.746+00:00",
+                "end_time": "2020-09-29T08:29:09.316+00:00",
+                "name": "Install Dependencies",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Run Tests",
+            "actions": [
+              {
+                "bash_command": "#!/bin/bash -eo pipefail\nmvn verify --settings 'pom.xml'",
+                "run_time_millis": 6537,
+                "start_time": "2020-09-29T08:29:09.322+00:00",
+                "end_time": "2020-09-29T08:29:15.859+00:00",
+                "name": "Run Tests",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Saving cache",
+            "actions": [
+              {
+                "run_time_millis": 83,
+                "start_time": "2020-09-29T08:29:15.865+00:00",
+                "end_time": "2020-09-29T08:29:15.948+00:00",
+                "name": "Saving cache",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Uploading test results",
+            "actions": [
+              {
+                "run_time_millis": 64,
+                "start_time": "2020-09-29T08:29:15.956+00:00",
+                "end_time": "2020-09-29T08:29:16.020+00:00",
+                "name": "Uploading test results",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": [
+          {
+            "run_time": 0.223,
+            "source": "unknown",
+            "result": "success",
+            "name": "getHello",
+            "classname": "com.example.springboot.HelloControllerTest"
+          }
+        ],
+        "exceptions": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci-eval/commit/7dafbd036c67e52ec16358e5b6fb996d6c546369",
+          "commit": "7dafbd036c67e52ec16358e5b6fb996d6c546369",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Add a redundant job to to check if redundant builds are made"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci-eval",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci-eval/2",
+      "build_num": 2,
+      "branch": "master",
+      "vcs_revision": "7dafbd036c67e52ec16358e5b6fb996d6c546369",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Add a redundant job to to check if redundant builds are made",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-09-29T08:27:51.688+00:00",
+      "start_time": "2020-09-29T08:28:47.738+00:00",
+      "stop_time": "2020-09-29T08:29:16.074+00:00",
+      "build_time_millis": 28336,
+      "username": "johndoe",
+      "reponame": "circleci-eval",
+      "lifecycle": "finished",
+      "outcome": "failed",
+      "status": "success",
+      "retry_of": 0
+    },
+    {
+      "job": {
+        "vcs_url": "https://github.com/johndoe/circleci_playground",
+        "build_url": "https://circleci.com/gh/johndoe/circleci_playground/2",
+        "build_num": 2,
+        "branch": "master",
+        "vcs_revision": "bc55d56392fa026bbd1738bce4b698c2912bab17",
+        "committer_name": "john doe",
+        "committer_email": "abc@xyz",
+        "subject": "Replace tabs with spaces - Failed in circleci build due to tabs",
+        "body": "",
+        "why": "github",
+        "queued_at": "2020-09-29T06:25:25.421+00:00",
+        "start_time": "2020-09-29T06:25:38.539+00:00",
+        "build_time_millis": 12593,
+        "username": "johndoe",
+        "reponame": "circleci_playground",
+        "lifecycle": "finished",
+        "outcome": "failed",
+        "status": "failed",
+        "retry_of": 0,
+        "steps": [
+          {
+            "name": "Spin up environment",
+            "actions": [
+              {
+                "run_time_millis": 12148,
+                "start_time": "2020-09-29T06:25:38.585+00:00",
+                "end_time": "2020-09-29T06:25:50.733+00:00",
+                "name": "Spin up environment",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Preparing environment variables",
+            "actions": [
+              {
+                "run_time_millis": 25,
+                "start_time": "2020-09-29T06:25:51.029+00:00",
+                "end_time": "2020-09-29T06:25:51.054+00:00",
+                "name": "Preparing environment variables",
+                "type": "test"
+              }
+            ]
+          },
+          {
+            "name": "Config Processing Error (Don't rerun)",
+            "actions": [
+              {
+                "bash_command": "#!/bin/sh -eo pipefail\n# ERROR IN CONFIG FILE:\n# [#/jobs/build] 0 subschemas matched instead of one\n# 1. [#/jobs/build] only 1 subschema matches out of 2\n# |   1. [#/jobs/build/steps/0] 0 subschemas matched instead of one\n# |   |   1. [#/jobs/build/steps/0] 3 schema violations found\n# |   |   |   `when`/`unless` step\n# |   |   |   1. [#/jobs/build/steps/0] extraneous key [command] is not permitted\n# |   |   |   |   `when`/`unless` step\n# |   |   |   |   Permitted keys:\n# |   |   |   |     - when\n# |   |   |   |     - unless\n# |   |   |   |   Passed keys:\n# |   |   |   |     - run\n# |   |   |   |     - name\n# |   |   |   |     - command\n# |   |   |   2. [#/jobs/build/steps/0] extraneous key [name] is not permitted\n# |   |   |   |   `when`/`unless` step\n# |   |   |   |   Permitted keys:\n# |   |   |   |     - when\n# |   |   |   |     - unless\n# |   |   |   |   Passed keys:\n# |   |   |   |     - run\n# |   |   |   |     - name\n# |   |   |   |     - command\n# |   |   |   3. [#/jobs/build/steps/0] maximum size: [1], found: [2]\n# |   |   |   |   `when`/`unless` step\n# |   |   |   |   SCHEMA:\n# |   |   |   |     maxProperties: 1\n# |   |   |   |   INPUT:\n# |   |   |   |     run: null\n# |   |   |   |     name: The first app\n# |   |   |   |     command: |\n# |   |   |   |       echo \\\"Hello World\\\"\n# |   |   |   |       echo \\\"This is the delivery pipeline\\\"\n# |   |   2. [#/jobs/build/steps/0] expected type: String, found: Mapping\n# |   |   |   Shorthand commands, like `checkout`\n# |   |   |   SCHEMA:\n# |   |   |     type: string\n# |   |   |   INPUT:\n# |   |   |     run: null\n# |   |   |     name: The first app\n# |   |   |     command: |\n# |   |   |       echo \\\"Hello World\\\"\n# |   |   |       echo \\\"This is the delivery pipeline\\\"\n# |   |   3. [#/jobs/build/steps/0] maximum size: [1], found: [2]\n# |   |   |   long form commands like `run:`\n# |   |   |   SCHEMA:\n# |   |   |     maxProperties: 1\n# |   |   |   INPUT:\n# |   |   |     run: null\n# |   |   |     name: The first app\n# |   |   |     command: |\n# |   |   |       echo \\\"Hello World\\\"\n# |   |   |       echo \\\"This is the delivery pipeline\\\"\n# 2. [#/jobs/build] expected type: String, found: Mapping\n# |   Job may be a string reference to another job\n# \n# -------\n# Warning: This configuration was auto-generated to show you the message above.\n# Don't rerun this job. Rerunning will have no effect.\nfalse",
+                "run_time_millis": 14,
+                "start_time": "2020-09-29T06:25:51.063+00:00",
+                "end_time": "2020-09-29T06:25:51.077+00:00",
+                "name": "Config Processing Error (Don't rerun)",
+                "type": "test"
+              }
+            ]
+          }
+        ]
+      },
+      "build_test_metadata": {
+        "tests": []
+      },
+      "all_commit_details": [
+        {
+          "commit_url": "https://github.com/johndoe/circleci_playground/commit/bc55d56392fa026bbd1738bce4b698c2912bab17",
+          "commit": "bc55d56392fa026bbd1738bce4b698c2912bab17",
+          "committer_name": "john doe",
+          "committer_email": "abc@xyz",
+          "subject": "Replace tabs with spaces - Failed in circleci build due to tabs"
+        }
+      ],
+      "vcs_url": "https://github.com/johndoe/circleci_playground",
+      "vcs_type": "github",
+      "build_url": "https://circleci.com/gh/johndoe/circleci_playground/2",
+      "build_num": 2,
+      "branch": "master",
+      "vcs_revision": "bc55d56392fa026bbd1738bce4b698c2912bab17",
+      "committer_name": "john doe",
+      "committer_email": "abc@xyz",
+      "subject": "Replace tabs with spaces - Failed in circleci build due to tabs",
+      "body": "",
+      "why": "github",
+      "queued_at": "2020-09-29T06:25:25.421+00:00",
+      "start_time": "2020-09-29T06:25:38.539+00:00",
+      "stop_time": "2020-09-29T06:25:51.132+00:00",
+      "build_time_millis": 12593,
+      "username": "johndoe",
+      "reponame": "circleci_playground",
+      "lifecycle": "finished",
+      "outcome": "failed",
+      "status": "failed",
+      "retry_of": 0
+    }
+  ]
+}

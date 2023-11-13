@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy : ant-path-matcher
+  main:
+    allow-circular-references: true
+  application:
+    name: serverapi
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      file-size-threshold: 10MB
+  cloud:
+    gcp:
+      sql:
+        enabled: false
+      logging:
+        enabled: true
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%0.15t]%X{tenant_id}%X{integration_type}%X{integration_id}%X{message_id} %-40.40logger{0} : %m%n'
+server:
+  compression:
+    enabled: true
+    min-response-size: 2048
+  http2:
+    enabled: true

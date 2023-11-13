@@ -1,0 +1,246 @@
+{
+  "email": "sanjay.gurnani@broadcom.com",
+  "score": 88,
+  "full_name": "Sanjay Gurnani",
+  "org_user_id": "d7fa9d51-4219-4a7b-a1cf-2531d5ccf2be",
+  "section_responses": [
+    {
+      "name": "Quality",
+      "order": 0,
+      "score": 90,
+      "enabled": true,
+      "description": "Configure metrics to measure the quality of work",
+      "weighted_score": 15,
+      "feature_responses": [
+        {
+          "mean": 0.0,
+          "name": "Percentage of Rework",
+          "count": 0,
+          "order": 0,
+          "score": 90,
+          "rating": "GOOD",
+          "result": 0,
+          "enabled": true,
+          "description": "Provide the baseline for worst performance or 0% score",
+          "feature_unit": "%",
+          "section_order": 0
+        }
+      ]
+    },
+    {
+      "name": "Impact",
+      "order": 1,
+      "score": 30,
+      "enabled": true,
+      "description": "Configure metrics to measure the impact of work",
+      "weighted_score": 3,
+      "feature_responses": [
+        {
+          "mean": 1.0,
+          "name": "High Impact stories worked on per month",
+          "count": 1,
+          "order": 1,
+          "score": 30,
+          "rating": "NEEDS_IMPROVEMENT",
+          "result": 1,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Stories",
+          "section_order": 1
+        }
+      ]
+    },
+    {
+      "name": "Volume",
+      "order": 2,
+      "score": 95,
+      "enabled": true,
+      "description": "Configure metrics to measure the volume of work",
+      "weighted_score": 31,
+      "feature_responses": [
+        {
+          "mean": 31.0,
+          "name": "Number of PRs per month",
+          "count": 31,
+          "order": 0,
+          "score": 93,
+          "rating": "GOOD",
+          "result": 31,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "PRs",
+          "section_order": 2
+        },
+        {
+          "mean": 95.0,
+          "name": "Number of Commits per month",
+          "count": 95,
+          "order": 1,
+          "score": 99,
+          "rating": "GOOD",
+          "result": 95,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Commits",
+          "section_order": 2
+        },
+        {
+          "mean": 5504.0,
+          "name": "Lines of Code per month",
+          "count": 5504,
+          "order": 2,
+          "score": 92,
+          "rating": "GOOD",
+          "result": 5504,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Lines",
+          "section_order": 2
+        },
+        {
+          "name": "Number of bugs worked on per month",
+          "order": 3,
+          "result": 0,
+          "enabled": false,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Bugs",
+          "section_order": 2
+        }
+      ]
+    },
+    {
+      "name": "Speed",
+      "order": 3,
+      "score": 96,
+      "enabled": true,
+      "description": "Configure metrics to measure the speed of work",
+      "weighted_score": 15,
+      "feature_responses": [
+        {
+          "mean": 322559.99712,
+          "name": "Average Coding days per week",
+          "count": 1290240,
+          "order": 0,
+          "score": 91,
+          "rating": "GOOD",
+          "result": 322560,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "DAYS",
+          "section_order": 3
+        },
+        {
+          "mean": 16773.19,
+          "name": "Average PR Cycle Time",
+          "count": 16773,
+          "order": 1,
+          "score": 100,
+          "rating": "GOOD",
+          "result": 16773,
+          "enabled": true,
+          "description": "Provide the baseline for worst performance or 0% score",
+          "feature_unit": "DAYS",
+          "section_order": 3
+        }
+      ]
+    },
+    {
+      "name": "Proficiency",
+      "order": 4,
+      "score": 80,
+      "enabled": true,
+      "description": "Configure metrics to measure technical proficiency",
+      "weighted_score": 8,
+      "feature_responses": [
+        {
+          "mean": 3.0,
+          "name": "Technical Breadth - Number of unique file extension",
+          "count": 3,
+          "order": 0,
+          "score": 67,
+          "rating": "ACCEPTABLE",
+          "result": 3,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "",
+          "section_order": 4
+        },
+        {
+          "mean": 12.0,
+          "name": "Repo Breadth - Number of unique repo",
+          "count": 12,
+          "order": 1,
+          "score": 93,
+          "rating": "GOOD",
+          "result": 12,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "Repos",
+          "section_order": 4
+        }
+      ]
+    },
+    {
+      "name": "Leadership & Collaboration",
+      "order": 5,
+      "score": 97,
+      "enabled": true,
+      "description": "Configure metrics to measure leadership and collaboration",
+      "weighted_score": 16,
+      "feature_responses": [
+        {
+          "mean": 152.0,
+          "name": "Number of PRs approved per month",
+          "count": 152,
+          "order": 0,
+          "score": 99,
+          "rating": "GOOD",
+          "result": 152,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "PRs",
+          "section_order": 5
+        },
+        {
+          "mean": 9.0,
+          "name": "Number of PRs commented on per month",
+          "count": 9,
+          "order": 1,
+          "score": 91,
+          "rating": "GOOD",
+          "result": 9,
+          "enabled": true,
+          "description": "Provide the baseline for best performance or 100% score",
+          "feature_unit": "PRs",
+          "section_order": 5
+        },
+        {
+          "mean": 10243.796052631578,
+          "name": "Average response time for PR approvals",
+          "count": 10244,
+          "order": 2,
+          "score": 98,
+          "rating": "GOOD",
+          "result": 10244,
+          "enabled": true,
+          "description": "Provide the baseline for worst performance or 0% score",
+          "feature_unit": "DAYS",
+          "section_order": 5
+        },
+        {
+          "mean": 2172.1111111111113,
+          "name": "Average response time for PR comments",
+          "count": 2172,
+          "order": 3,
+          "score": 100,
+          "rating": "GOOD",
+          "result": 2172,
+          "enabled": true,
+          "description": "Provide the baseline for worst performance or 0% score",
+          "feature_unit": "DAYS",
+          "section_order": 5
+        }
+      ]
+    }
+  ]
+}

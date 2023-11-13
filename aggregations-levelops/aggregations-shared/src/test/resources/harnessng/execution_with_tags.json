@@ -1,0 +1,369 @@
+{
+  "pipelineExecutionSummary" : {
+    "orgIdentifier" : "Harness",
+    "projectIdentifier" : "Operations",
+    "pipelineIdentifier" : "Ring_Only_Delegate_Per_Account_Migration",
+    "planExecutionId" : "6LVY50T1Sjm2gSLu4tsynQ",
+    "name" : "Ring Only Delegate Per Account Migration",
+    "status" : "Success",
+    "runSequence" : 56,
+    "executionTriggerInfo" : {
+      "triggeredBy" : {
+        "email_from_extra_info" : "bharat.goel@harness.io",
+        "uuid" : "Hvzl1-IcQpuQigpmAPd8yA",
+        "identifier" : "bharat goel",
+        "extraInfo" : {
+          "email" : "bharat.goel@harness.io"
+        }
+      }
+    },
+    "startTs" : 1677485134608,
+    "endTs" : 1677485184674,
+    "createdAt" : 1677485134698,
+    "layoutNodeMap" : {
+      "fCUVoInWSh2R3fDeF_Z6vg" : {
+        "nodeType" : "Custom",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "Mandatory_PreRequisite",
+        "name" : "Mandatory PreRequisite",
+        "nodeUuid" : "fCUVoInWSh2R3fDeF_Z6vg",
+        "status" : "Success",
+        "module" : "pms",
+        "moduleInfo" : { },
+        "startTs" : 1677485134926,
+        "endTs" : 1677485180602
+      },
+      "x0xaMo53SQC66uyjz50PMQ_rollbackStage" : {
+        "nodeType" : "Deployment",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "x0xaMo53SQC66uyjz50PMQ_rollbackStage",
+        "name" : "Update Ring of Accounts (Rollback Stage)",
+        "nodeUuid" : "x0xaMo53SQC66uyjz50PMQ_rollbackStage",
+        "status" : "NotStarted",
+        "module" : "cd",
+        "moduleInfo" : {
+          "cd" : { }
+        }
+      },
+      "fCUVoInWSh2R3fDeF_Z6vg_rollbackStage" : {
+        "nodeType" : "Custom",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "fCUVoInWSh2R3fDeF_Z6vg_rollbackStage",
+        "name" : "Mandatory PreRequisite (Rollback Stage)",
+        "nodeUuid" : "fCUVoInWSh2R3fDeF_Z6vg_rollbackStage",
+        "status" : "NotStarted",
+        "module" : "pms",
+        "moduleInfo" : { }
+      },
+      "x0xaMo53SQC66uyjz50PMQ" : {
+        "nodeType" : "Deployment",
+        "nodeGroup" : "STAGE",
+        "nodeIdentifier" : "Update_Ring_of_Accounts",
+        "name" : "Update Ring of Accounts",
+        "nodeUuid" : "x0xaMo53SQC66uyjz50PMQ",
+        "status" : "Success",
+        "module" : "cd",
+        "moduleInfo" : {
+          "cd" : {
+            "__recast" : "io.harness.cdng.pipeline.executions.beans.CDStageModuleInfo",
+            "serviceInfo" : {
+              "__recast" : "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary",
+              "identifier" : "watcher",
+              "displayName" : "watcher",
+              "deploymentType" : "Kubernetes",
+              "gitOpsEnabled" : false,
+              "artifacts" : {
+                "__recast" : "io.harness.cdng.pipeline.executions.beans.ServiceExecutionSummary$ArtifactsSummary"
+              }
+            },
+            "infraExecutionSummary" : {
+              "__recast" : "io.harness.cdng.pipeline.executions.beans.InfraExecutionSummary",
+              "identifier" : "free",
+              "name" : "free",
+              "type" : "Production"
+            }
+          }
+        },
+        "startTs" : 1677485180654,
+        "endTs" : 1677485184587
+      }
+    },
+    "moduleInfo" : {
+      "cd" : {
+        "__recast" : "io.harness.cdng.pipeline.executions.beans.CDPipelineModuleInfo",
+        "envGroupIdentifiers" : [ ],
+        "envIdentifiers" : [ "free" ],
+        "environmentTypes" : [ "Production" ],
+        "freezeIdentifiers" : [ ],
+        "infrastructureIdentifiers" : [ null ],
+        "infrastructureNames" : [ null ],
+        "infrastructureTypes" : [ "KubernetesDirect" ],
+        "serviceDefinitionTypes" : [ "Kubernetes" ],
+        "serviceIdentifiers" : [ "watcher" ]
+      }
+    },
+    "tags" : [ {
+      "key" : "delegate",
+      "value" : ""
+    } ]
+  },
+  "executionGraph" : {
+    "rootNodeId" : "D9Zovws8SMqd_aW1hXFWug",
+    "nodeMap" : {
+      "8F1zMQOjQOGyEIVr4UPRlg" : {
+        "uuid" : "8F1zMQOjQOGyEIVr4UPRlg",
+        "name" : "Execution",
+        "identifier" : "execution",
+        "baseFqn" : "pipeline.stages.Update_Ring_of_Accounts.spec.execution",
+        "stepType" : "NG_SECTION_WITH_ROLLBACK_INFO",
+        "status" : "Success",
+        "startTs" : 1677485181993,
+        "endTs" : 1677485184529,
+        "outcomes" : { }
+      },
+      "ZsOofX6iQ2SgXSqI2t1VWg" : {
+        "uuid" : "ZsOofX6iQ2SgXSqI2t1VWg",
+        "name" : "Resource Constraint",
+        "identifier" : "rc-TGUmwb-XRyy4Z51ji-J7Ig",
+        "baseFqn" : "pipeline.stages.Update_Ring_of_Accounts.spec.rc-TGUmwb-XRyy4Z51ji-J7Ig",
+        "stepType" : "ResourceConstraint",
+        "status" : "Success",
+        "startTs" : 1677485181943,
+        "endTs" : 1677485181976,
+        "outcomes" : {
+          "output" : {
+            "name" : "Queuing",
+            "capacity" : 1,
+            "resourceUnit" : "123",
+            "usage" : 1,
+            "alreadyAcquiredPermits" : 1
+          }
+        }
+      },
+      "qxXViEzRRsOfjFyzzV4bLA" : {
+        "uuid" : "qxXViEzRRsOfjFyzzV4bLA",
+        "name" : "Service",
+        "identifier" : "serviceConfig",
+        "baseFqn" : "pipeline.stages.Update_Ring_of_Accounts.spec.serviceConfig",
+        "stepType" : "SERVICE_CONFIG",
+        "status" : "Success",
+        "startTs" : 1677485180708,
+        "endTs" : 1677485181223,
+        "outcomes" : {
+          "output" : {
+            "serviceResult" : {
+              "identifier" : "watcher",
+              "name" : "watcher",
+              "type" : "Kubernetes",
+              "tags" : { },
+              "gitOpsEnabled" : false
+            },
+            "variablesResult" : { }
+          }
+        }
+      },
+      "0LZeihj7SoS42E_wB-YBGg" : {
+        "uuid" : "0LZeihj7SoS42E_wB-YBGg",
+        "name" : "Manager Approval",
+        "identifier" : "Manager_Approval",
+        "baseFqn" : "pipeline.stages.Mandatory_PreRequisite.spec.execution.steps.Manager_Approval",
+        "stepType" : "HarnessApproval",
+        "status" : "Success",
+        "startTs" : 1677485138499,
+        "endTs" : 1677485180500,
+        "outcomes" : {
+          "output" : {
+            "approvalActivities" : [ {
+              "user" : {
+                "name" : "bharat goel",
+                "email" : "bharat.goel@harness.io"
+              },
+              "action" : "APPROVE",
+              "approverInputs" : [ ],
+              "comments" : "",
+              "approvedAt" : 1677485180267
+            } ],
+            "approverInputs" : { }
+          }
+        }
+      },
+      "UVbW65qMTmmGXMYuZGhB7Q" : {
+        "uuid" : "UVbW65qMTmmGXMYuZGhB7Q",
+        "name" : "Execution",
+        "identifier" : "execution",
+        "baseFqn" : "pipeline.stages.Mandatory_PreRequisite.spec.execution",
+        "stepType" : "NG_EXECUTION",
+        "status" : "Success",
+        "startTs" : 1677485134999,
+        "endTs" : 1677485180548,
+        "outcomes" : { }
+      },
+      "FdnEsAEgQai5z3-lInQijQ" : {
+        "uuid" : "FdnEsAEgQai5z3-lInQijQ",
+        "name" : "Update Ring for a Account",
+        "identifier" : "Update_Ring_for_a_Account",
+        "baseFqn" : "pipeline.stages.Update_Ring_of_Accounts.spec.execution.steps.Update_Ring_for_a_Account",
+        "stepType" : "ShellScript",
+        "status" : "Success",
+        "startTs" : 1677485182310,
+        "endTs" : 1677485184469,
+        "outcomes" : {
+          "output" : {
+            "outputVariables" : { }
+          }
+        }
+      },
+      "Lt0QNi4GSeu3IOJvjlNVbw" : {
+        "uuid" : "Lt0QNi4GSeu3IOJvjlNVbw",
+        "name" : "Change List",
+        "identifier" : "Change_List",
+        "baseFqn" : "pipeline.stages.Mandatory_PreRequisite.spec.execution.steps.Change_List",
+        "stepType" : "ShellScript",
+        "status" : "Success",
+        "startTs" : 1677485135275,
+        "endTs" : 1677485138442,
+        "outcomes" : {
+          "output" : {
+            "outputVariables" : { }
+          }
+        }
+      },
+      "TddGSnMoTh2bATIkN-PJYQ" : {
+        "uuid" : "TddGSnMoTh2bATIkN-PJYQ",
+        "name" : "Infrastructure",
+        "identifier" : "spec",
+        "baseFqn" : "pipeline.stages.Update_Ring_of_Accounts.spec.infrastructure.infrastructureDefinition.spec",
+        "stepType" : "INFRASTRUCTURE",
+        "status" : "Success",
+        "startTs" : 1677485181374,
+        "endTs" : 1677485181713,
+        "outcomes" : {
+          "output" : {
+            "connectorRef" : "freeprivateprimary",
+            "namespace" : "dummy",
+            "releaseName" : "release-<+INFRA_KEY>",
+            "environment" : {
+              "name" : "free",
+              "identifier" : "free",
+              "description" : "",
+              "type" : "Production",
+              "tags" : { }
+            },
+            "infrastructureKey" : "123",
+            "connector" : {
+              "name" : "free-private-primary"
+            }
+          }
+        }
+      },
+      "D9Zovws8SMqd_aW1hXFWug" : {
+        "uuid" : "D9Zovws8SMqd_aW1hXFWug",
+        "name" : "Ring Only Delegate Per Account Migration",
+        "identifier" : "pipeline",
+        "baseFqn" : "pipeline",
+        "stepType" : "PIPELINE_SECTION",
+        "status" : "Success",
+        "startTs" : 1677485134720,
+        "endTs" : 1677485184674,
+        "outcomes" : { }
+      },
+      "FEjlPSMCRSKoOKAEuIeMSQ" : {
+        "uuid" : "FEjlPSMCRSKoOKAEuIeMSQ",
+        "name" : "stages",
+        "identifier" : "stages",
+        "baseFqn" : "pipeline.stages",
+        "stepType" : "STAGES_STEP",
+        "status" : "Success",
+        "startTs" : 1677485134748,
+        "endTs" : 1677485184650,
+        "outcomes" : { }
+      },
+      "wVNbB9cVSry3-61J-hNogw" : {
+        "uuid" : "wVNbB9cVSry3-61J-hNogw",
+        "name" : "Mandatory PreRequisite",
+        "identifier" : "Mandatory_PreRequisite",
+        "baseFqn" : "pipeline.stages.Mandatory_PreRequisite",
+        "stepType" : "CUSTOM_STAGE",
+        "status" : "Success",
+        "startTs" : 1677485134926,
+        "endTs" : 1677485180602,
+        "outcomes" : { }
+      },
+      "NsNYuy7PTuuLifLAkdyI9A" : {
+        "uuid" : "NsNYuy7PTuuLifLAkdyI9A",
+        "name" : "Update Ring of Accounts",
+        "identifier" : "Update_Ring_of_Accounts",
+        "baseFqn" : "pipeline.stages.Update_Ring_of_Accounts",
+        "stepType" : "DEPLOYMENT_STAGE_STEP",
+        "status" : "Success",
+        "startTs" : 1677485180654,
+        "endTs" : 1677485184587,
+        "outcomes" : { }
+      },
+      "yjKLweAFRtuhL9KOol8LTQ" : {
+        "uuid" : "yjKLweAFRtuhL9KOol8LTQ",
+        "name" : "Skip UAT for Ingress Upgrade",
+        "identifier" : "Skip_UAT_for_Ingress_Upgrade",
+        "baseFqn" : "pipeline.stages.Mandatory_PreRequisite.spec.execution.steps.Skip_UAT_for_Ingress_Upgrade",
+        "stepType" : "ShellScript",
+        "status" : "Skipped",
+        "endTs" : 1677485135117,
+        "outcomes" : { }
+      }
+    },
+    "nodeAdjacencyListMap" : {
+      "8F1zMQOjQOGyEIVr4UPRlg" : {
+        "children" : [ "FdnEsAEgQai5z3-lInQijQ" ],
+        "nextIds" : [ ]
+      },
+      "ZsOofX6iQ2SgXSqI2t1VWg" : {
+        "children" : [ ],
+        "nextIds" : [ "8F1zMQOjQOGyEIVr4UPRlg" ]
+      },
+      "qxXViEzRRsOfjFyzzV4bLA" : {
+        "children" : [ ],
+        "nextIds" : [ "TddGSnMoTh2bATIkN-PJYQ" ]
+      },
+      "0LZeihj7SoS42E_wB-YBGg" : {
+        "children" : [ ],
+        "nextIds" : [ ]
+      },
+      "UVbW65qMTmmGXMYuZGhB7Q" : {
+        "children" : [ "yjKLweAFRtuhL9KOol8LTQ" ],
+        "nextIds" : [ ]
+      },
+      "FdnEsAEgQai5z3-lInQijQ" : {
+        "children" : [ ],
+        "nextIds" : [ ]
+      },
+      "Lt0QNi4GSeu3IOJvjlNVbw" : {
+        "children" : [ ],
+        "nextIds" : [ "0LZeihj7SoS42E_wB-YBGg" ]
+      },
+      "TddGSnMoTh2bATIkN-PJYQ" : {
+        "children" : [ ],
+        "nextIds" : [ "ZsOofX6iQ2SgXSqI2t1VWg" ]
+      },
+      "D9Zovws8SMqd_aW1hXFWug" : {
+        "children" : [ "FEjlPSMCRSKoOKAEuIeMSQ" ],
+        "nextIds" : [ ]
+      },
+      "FEjlPSMCRSKoOKAEuIeMSQ" : {
+        "children" : [ "wVNbB9cVSry3-61J-hNogw" ],
+        "nextIds" : [ ]
+      },
+      "wVNbB9cVSry3-61J-hNogw" : {
+        "children" : [ "UVbW65qMTmmGXMYuZGhB7Q" ],
+        "nextIds" : [ "NsNYuy7PTuuLifLAkdyI9A" ]
+      },
+      "NsNYuy7PTuuLifLAkdyI9A" : {
+        "children" : [ "qxXViEzRRsOfjFyzzV4bLA" ],
+        "nextIds" : [ ]
+      },
+      "yjKLweAFRtuhL9KOol8LTQ" : {
+        "children" : [ ],
+        "nextIds" : [ "Lt0QNi4GSeu3IOJvjlNVbw" ]
+      }
+    }
+  }
+}

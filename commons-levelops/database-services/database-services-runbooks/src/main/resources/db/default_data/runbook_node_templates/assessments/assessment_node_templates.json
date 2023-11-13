@@ -1,0 +1,256 @@
+[
+  {
+    "type": "send_assessment",
+    "node_handler": "send_assessment",
+    "name": "Create Assessment",
+    "description": "Create an assessment attached to an existing issue.",
+    "category": "Assessments",
+    "input": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 10,
+        "display_name": "Issue Id",
+        "type": "variable-select",
+        "content_type": "id:work_item/-/work_item",
+        "required": true
+      },
+      "assessment_template_id": {
+        "key": "assessment_template_id",
+        "index": 20,
+        "display_name": "Assessment Template",
+        "type": "single-custom-dynamic-select",
+        "dynamic_resource_name": "questionnaires",
+        "required": true
+      },
+      "sender_email": {
+        "key": "sender_email",
+        "index": 50,
+        "display_name": "Sender Email",
+        "description": "Email of the sender",
+        "type": "text",
+        "required": false
+      },
+      "product_id": {
+        "key": "product_id",
+        "index": 60,
+        "display_name": "Project",
+        "description": "Associate this assessment with a project",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "products",
+        "required": false
+      }
+    },
+    "output": {
+      "assessment_id": {
+        "key": "assessment_id",
+        "content_type": "id:assessment/-/assessment",
+        "value_type": "string"
+      },
+      "link": {
+        "key": "link",
+        "value_type": "string",
+        "content_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "get_assessment",
+    "node_handler": "get_assessment",
+    "name": "Get Assessment",
+    "description": "Retrieve an Assessment",
+    "category": "Assessments",
+    "input": {
+      "assessment_id": {
+        "key": "assessment_id",
+        "index": 10,
+        "display_name": "Assessment Id",
+        "description": "Id of the assessment. Enter or select a variable from the list.",
+        "type": "variable-select",
+        "content_type": "id:assessment/-/assessment",
+        "value_type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "assessment": {
+        "key": "assessment",
+        "content_type": "assessment/-/assessment",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "hidden": false,
+    "type": "check_assessment",
+    "node_handler": "check_assessment",
+    "name": "Check Assessment Answer",
+    "description": "Check that a specific answer has been submitted",
+    "category": "Assessments",
+    "input": {
+      "assessment_id": {
+        "key": "assessment_id",
+        "index": 10,
+        "display_name": "Assessment Id",
+        "description": "Id of the assessment. Enter or select a variable from the list.",
+        "type": "variable-select",
+        "content_type": "id:assessment/-/assessment",
+        "value_type": "string",
+        "required": true
+      },
+      "assessment_check": {
+        "key": "assessment_check",
+        "index": 20,
+        "display_name": "Answer",
+        "type": "assessment-check",
+        "required": true
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met"
+    ],
+    "output": {
+      "assessment": {
+        "key": "assessment",
+        "content_type": "assessment/-/assessment",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "wait_assessment_submitted",
+    "node_handler": "wait_assessment_submitted",
+    "name": "Wait For Assessment Submission",
+    "description": "Wait for an assessment to be submitted",
+    "category": "Assessments",
+    "input": {
+      "assessment_id": {
+        "key": "assessment_id",
+        "index": 10,
+        "display_name": "Assessment Id",
+        "description": "Id of the assessment. Enter or select a variable from the list.",
+        "type": "variable-select",
+        "content_type": "id:assessment/-/assessment",
+        "value_type": "string",
+        "required": true
+      },
+      "frequency": {
+        "key": "frequency",
+        "index": 20,
+        "display_name": "Frequency in minutes",
+        "description": "Choose how often to check if the assessment has been submitted",
+        "type": "text",
+        "required": true
+      },
+      "timeout": {
+        "key": "timeout",
+        "index": 30,
+        "display_name": "Time-out in minutes",
+        "description": "Choose how long to wait before timing out",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "assessment": {
+        "key": "assessment",
+        "content_type": "assessment/-/assessment",
+        "value_type": "json_blob"
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met",
+      "Timed out"
+    ],
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "check_assessment_completion",
+    "node_handler": "check_assessment_completion",
+    "name": "Check Assessment Completion",
+    "description": "Check that an assessment has been completed",
+    "category": "Assessments",
+    "input": {
+      "assessment_id": {
+        "key": "assessment_id",
+        "index": 10,
+        "display_name": "Assessment Id",
+        "description": "Id of the assessment. Enter or select a variable from the list.",
+        "type": "variable-select",
+        "content_type": "id:assessment/-/assessment",
+        "value_type": "string",
+        "required": true
+      },
+      "threshold": {
+        "key": "threshold",
+        "index": 20,
+        "display_name": "Completion Threshold",
+        "description": "The assessment will be considered complete if the percentage of answered questions reaches this threshold",
+        "type": "text",
+        "content_type": "integer",
+        "default_value": "100",
+        "required": true
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met"
+    ],
+    "output": {
+      "assessment": {
+        "key": "assessment",
+        "content_type": "assessment/-/assessment",
+        "value_type": "json_blob"
+      },
+      "completion": {
+        "key": "completion",
+        "content_type": "integer",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "list_assessments",
+    "node_handler": "list_assessments",
+    "name": "List Assessments",
+    "description": "List assessments attached to a given issue",
+    "category": "Assessments",
+    "input": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 10,
+        "display_name": "Issue Id",
+        "description": "Id of the issue (e.g. PROJ-123). Enter or select a variable from the list. You can also type in an Id.",
+        "type": "variable-select",
+        "content_type": "id:work_item/-/work_item",
+        "options": [],
+        "required": true
+      }
+    },
+    "output": {
+      "assessment": {
+        "key": "assessment",
+        "content_type": "assessment/-/assessment",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  }
+]

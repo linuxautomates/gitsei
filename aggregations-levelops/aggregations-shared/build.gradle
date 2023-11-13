@@ -1,0 +1,55 @@
+apply plugin: 'java-library'
+apply plugin: 'java-test-fixtures'
+
+
+dependencies {
+    // annotation processing
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+
+    // commons
+    implementation levelopsCommonsLib('logging-utils')
+    implementation levelopsCommonsLib('ingestion-commons')
+    implementation levelopsCommonsLib('database-commons')
+    implementation levelopsCommonsLib('database-services')
+    implementation levelopsCommonsLib('events-services')
+    implementation levelopsCommonsLib('inventory-service')
+    implementation levelopsCommonsLib('ingestion-service')
+    implementation levelopsCommonsLib('etl-commons')
+    implementation levelopsCommonsLib('integration-clients')
+
+
+    implementation libraries.jackson_core
+    implementation libraries.jackson_yaml
+    implementation libraries.google_cloud_storage
+    implementation libraries.micrometer_stackdriver
+
+
+    // test
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.1.RELEASE'
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.assertj
+    testImplementation libraries.embedded_postgres
+
+    testFixturesImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.1.RELEASE'
+    testFixturesImplementation libraries.junit
+    testFixturesImplementation libraries.mockito
+    testFixturesImplementation libraries.assertj
+    testFixturesImplementation libraries.guava
+    testFixturesImplementation levelopsCommonsLib('ingestion-commons')
+    testFixturesImplementation levelopsCommonsLib('etl-commons')
+
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+    testFixturesCompileOnly libraries.lombok
+    testFixturesAnnotationProcessor libraries.lombok
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        exceptionFormat = 'full'
+    }
+}

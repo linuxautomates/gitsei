@@ -1,0 +1,1594 @@
+[
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "1117514",
+    "self": "https://projects.cdk.com/rest/api/2/issue/1117514",
+    "key": "REV8-70616",
+    "fields": {
+      "issuetype": {
+        "self": "https://projects.cdk.com/rest/api/2/issuetype/10001",
+        "id": 10001,
+        "name": "Story",
+        "description": "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://projects.cdk.com/rest/api/2/project/10205",
+        "id": "10205",
+        "key": "REV8",
+        "name": "Autoline Rev8",
+        "projectTypeKey": "software"
+      },
+      "fixVersions": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/version/23967",
+          "id": "23967",
+          "description": "Jan Sprint",
+          "name": "2021.01",
+          "archived": false,
+          "released": false,
+          "releaseDate": "2021-01-29"
+        }
+      ],
+      "created": "2021-01-15T11:51:45.000+00:00",
+      "labels": [
+        "Pre-Release-Bug"
+      ],
+      "versions": [],
+      "issuelinks": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/issueLink/1427857",
+          "id": "1427857",
+          "type": {
+            "id": "10201",
+            "name": "Problem/Incident",
+            "inward": "is caused by",
+            "outward": "causes"
+          },
+          "inwardIssue": {
+            "id": "1046651",
+            "self": "https://projects.cdk.com/rest/api/2/issue/1046651",
+            "key": "REV8-66779",
+            "fields": {
+              "issuetype": {
+                "self": "https://projects.cdk.com/rest/api/2/issuetype/10000",
+                "id": 10000,
+                "name": "Feature",
+                "description": "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+                "subtask": false
+              },
+              "priority": {
+                "name": "Medium",
+                "id": "3"
+              },
+              "status": {
+                "self": "https://projects.cdk.com/rest/api/2/status/10900",
+                "description": "",
+                "name": "Product Readiness",
+                "id": "10900",
+                "statusCategory": {
+                  "self": "https://projects.cdk.com/rest/api/2/statuscategory/4",
+                  "id": "4",
+                  "key": "indeterminate",
+                  "name": "In Progress",
+                  "colorName": "yellow"
+                }
+              },
+              "summary": "REV8 - Pon - PCR416 Service discount for older vehicles (ET5746)",
+              "description_length": 0,
+              "description_text": ""
+            }
+          }
+        }
+      ],
+      "assignee": {
+        "self": "https://projects.cdk.com/rest/api/2/user?username=torralbm",
+        "name": "torralbm",
+        "displayName": "Torralba Castaneda, Marta",
+        "active": true,
+        "emailAddress": "marta.torralba@cdk.com"
+      },
+      "updated": "2021-01-19T17:24:16.000+00:00",
+      "status": {
+        "self": "https://projects.cdk.com/rest/api/2/status/1",
+        "description": "The issue is open and ready for the assignee to start work on it.",
+        "name": "Open",
+        "id": "1",
+        "statusCategory": {
+          "self": "https://projects.cdk.com/rest/api/2/statuscategory/2",
+          "id": "2",
+          "key": "new",
+          "name": "To Do",
+          "colorName": "blue-gray"
+        }
+      },
+      "components": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/component/10456",
+          "id": "10456",
+          "name": "Autobots - CoE Spain"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/component/19531",
+          "id": "19531",
+          "name": "Product Management - Central"
+        }
+      ],
+      "summary": "PCR416 - PRB 12 - Short key for copy doesn't work",
+      "creator": {
+        "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+        "name": "degrootm",
+        "displayName": "de Groot, Michel",
+        "active": true,
+        "emailAddress": "Michel.deGroot@cdk.com"
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+        "name": "degrootm",
+        "displayName": "de Groot, Michel",
+        "active": true,
+        "emailAddress": "Michel.deGroot@cdk.com"
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": []
+      },
+      "description_length": 233,
+      "description_text": "The short key for copy is Crtl C, but if I select a line to copy and press Ctr+C nothing happens.\r\n\r\nIf this is not possible it's fine for me to remove the text Ctrl+C.\r\n\r\n \r\n\r\nCtrl+N works fine\r\n\r\n!image-2021-01-15-12-49-53-891.png!",
+      "customfield_14150": "",
+      "customfield_14153": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/16102",
+        "value": "Business",
+        "id": "16102"
+      },
+      "customfield_14151": "",
+      "customfield_14152": "",
+      "customfield_14113": "0",
+      "customfield_14114": "0",
+      "customfield_13300": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@751958f4[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@4b5a9b5a[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@5ecb247d[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@4154f4b5[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@157ae65f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@2413921a[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@237cb229[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@45eb0baf[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7e14553[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@3fda94f7[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@797184df[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@645a4e2d[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+      "customfield_14111": "Pérez Anguio, Ignacio",
+      "customfield_14112": "Component",
+      "customfield_14117": "0",
+      "customfield_10310": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10789",
+          "value": "Pon Group",
+          "id": "10789"
+        }
+      ],
+      "customfield_14118": "0",
+      "customfield_14115": "0",
+      "customfield_14116": "0",
+      "customfield_10500": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10248",
+          "value": "Netherlands",
+          "id": "10248"
+        }
+      ],
+      "customfield_13933": "",
+      "customfield_13932": "",
+      "customfield_13935": "",
+      "customfield_13934": "",
+      "customfield_10702": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10690",
+        "value": "Aftersales",
+        "id": "10690"
+      },
+      "customfield_13936": "",
+      "workratio": -1,
+      "watches": {
+        "self": "https://projects.cdk.com/rest/api/2/issue/REV8-70616/watchers",
+        "watchCount": 1,
+        "isWatching": false
+      },
+      "customfield_14142": "",
+      "customfield_14143": "",
+      "customfield_14140": "",
+      "customfield_14141": "",
+      "customfield_14300": "0",
+      "customfield_14146": "",
+      "customfield_14301": "0",
+      "customfield_14147": "2021-01-15 11:51:45",
+      "customfield_14144": "",
+      "customfield_14145": "",
+      "customfield_10101": [],
+      "customfield_14302": "",
+      "customfield_14148": "Pérez Anguio, Ignacio",
+      "customfield_14104": "Empty",
+      "customfield_14303": "",
+      "customfield_14149": "",
+      "customfield_14105": "No script",
+      "customfield_13922": "Pérez Anguio, Ignacio",
+      "customfield_13602": "TORRALBM",
+      "customfield_13921": "",
+      "customfield_13923": "",
+      "customfield_13969": "110.35",
+      "customfield_14130": "Hammer - CoE Spain",
+      "customfield_14135": "2021-01-19 17:24:16",
+      "customfield_14136": "No script",
+      "customfield_14139": "",
+      "customfield_11300": 0.0,
+      "customfield_14137": "",
+      "timetracking": {},
+      "customfield_14138": "",
+      "customfield_10005": "REV8-66779",
+      "customfield_10605": "RQIUskUtcqTk4W6LZgS26JcZLTqv5ZS1ttkhS3eqw3WMqPCdiSG7wZJONBUj,jM8rAMU3VnYz7qm9QR2Br1jVYMr3mPat9mXgwFy8oncRNhoMPkC0oZRJlZvo,sJ6IoGQe5paMDaSPwLqilBkWmuDaMz839cOu2ZZ6ZYQtviQL1SZYyMGVLS11",
+      "customfield_10401": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10224",
+        "value": "P1000 Autoline",
+        "id": "10224"
+      },
+      "attachment": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837935",
+          "id": "837935",
+          "filename": "3218_7245_1600162875_PCR416 issue 5746 Service discount for older vehicles.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-10-01T15:55:45.247+0000",
+          "size": 519714,
+          "mimeType": "vi/a5/include/jira_files/3218_7245_1600162875_PCR416_issue_5746_Service_discount_for_older_vehicles.docx: application/vnd.openxmlformats-officedocument.wordprocessingml.document; charset=binary",
+          "content": "https://projects.cdk.com/secure/attachment/837935/3218_7245_1600162875_PCR416+issue+5746+Service+discount+for+older+vehicles.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837936",
+          "id": "837936",
+          "filename": "HT PCR416 - PON Service discount for older vehicles.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-30T16:52:50.073+0000",
+          "size": 3628736,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837936/HT+PCR416+-+PON+Service+discount+for+older+vehicles.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837934",
+          "id": "837934",
+          "filename": "image-2021-01-15-12-49-53-891.png",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2021-01-15T11:49:54.622+0000",
+          "size": 52643,
+          "mimeType": "image/png",
+          "content": "https://projects.cdk.com/secure/attachment/837934/image-2021-01-15-12-49-53-891.png",
+          "thumbnail": "https://projects.cdk.com/secure/thumbnail/837934/_thumb_837934.png"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837937",
+          "id": "837937",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V01.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-17T15:42:09.565+0000",
+          "size": 373875,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837937/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V01.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837938",
+          "id": "837938",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V1.1.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-23T16:00:13.615+0000",
+          "size": 793215,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837938/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V1.1.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837939",
+          "id": "837939",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V1.2.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-30T16:52:14.059+0000",
+          "size": 1011926,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837939/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V1.2.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837940",
+          "id": "837940",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V1.3.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2021-01-12T07:38:38.729+0000",
+          "size": 1136765,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837940/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V1.3.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837941",
+          "id": "837941",
+          "filename": "TestCases_PCR416.xlsx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-23T16:00:29.371+0000",
+          "size": 13265,
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "content": "https://projects.cdk.com/secure/attachment/837941/TestCases_PCR416.xlsx"
+        }
+      ],
+      "customfield_14607": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/16789",
+        "value": "No",
+        "id": "16789"
+      },
+      "customfield_14120": "0",
+      "customfield_14121": "",
+      "customfield_14124": "",
+      "customfield_14201": "",
+      "customfield_14125": "",
+      "customfield_14202": "",
+      "customfield_14122": "",
+      "customfield_14123": "",
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_14128": "",
+      "customfield_14129": "No script",
+      "customfield_14800": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/17001",
+        "value": "No",
+        "id": "17001"
+      },
+      "customfield_10003": "2|i0l2b0:",
+      "customfield_14126": "",
+      "customfield_14203": "",
+      "customfield_14127": "",
+      "customfield_14204": "",
+      "customfield_14119": "0",
+      "customfield_10317": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10169",
+        "value": "No",
+        "id": "10169"
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      }
+    },
+    "changelog": {
+      "maxResults": 3,
+      "startAt": 0,
+      "total": 3,
+      "histories": [
+        {
+          "id": "14834120",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "emailAddress": "Michel.deGroot@cdk.com"
+          },
+          "created": "2021-01-15T11:51:49.006+00:00",
+          "items": [
+            {
+              "field": "Link",
+              "fieldtype": "jira",
+              "to": "REV8-66779",
+              "toString": "This issue is caused by REV8-66779"
+            }
+          ]
+        },
+        {
+          "id": "14836904",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=torralbm",
+            "name": "torralbm",
+            "displayName": "Torralba Castaneda, Marta",
+            "active": true,
+            "emailAddress": "marta.torralba@cdk.com"
+          },
+          "created": "2021-01-15T15:27:36.607+00:00",
+          "items": [
+            {
+              "field": "assignee",
+              "fieldtype": "jira",
+              "to": "torralbm",
+              "toString": "Torralba Castaneda, Marta"
+            }
+          ]
+        },
+        {
+          "id": "14874694",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=perezi",
+            "name": "perezi",
+            "displayName": "Pérez Anguio, Ignacio",
+            "active": true,
+            "emailAddress": "ignacio.perez@cdk.com"
+          },
+          "created": "2021-01-19T17:24:16.100+00:00",
+          "items": [
+            {
+              "field": "Component",
+              "fieldtype": "jira",
+              "from": "10455",
+              "fromString": "Hammer - CoE Spain"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "1117514",
+    "self": "https://projects.cdk.com/rest/api/2/issue/1117514",
+    "key": "REV8-70616",
+    "fields": {
+      "issuetype": {
+        "self": "https://projects.cdk.com/rest/api/2/issuetype/10001",
+        "id": 10001,
+        "name": "Story",
+        "description": "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://projects.cdk.com/rest/api/2/project/10205",
+        "id": "10205",
+        "key": "REV8",
+        "name": "Autoline Rev8",
+        "projectTypeKey": "software"
+      },
+      "fixVersions": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/version/23967",
+          "id": "23967",
+          "description": "Jan Sprint",
+          "name": "2021.01",
+          "archived": false,
+          "released": false,
+          "releaseDate": "2021-01-29"
+        }
+      ],
+      "created": "2021-01-15T11:51:45.000+00:00",
+      "labels": [
+        "Pre-Release-Bug"
+      ],
+      "versions": [],
+      "issuelinks": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/issueLink/1427857",
+          "id": "1427857",
+          "type": {
+            "id": "10201",
+            "name": "Problem/Incident",
+            "inward": "is caused by",
+            "outward": "causes"
+          },
+          "inwardIssue": {
+            "id": "1046651",
+            "self": "https://projects.cdk.com/rest/api/2/issue/1046651",
+            "key": "REV8-66779",
+            "fields": {
+              "issuetype": {
+                "self": "https://projects.cdk.com/rest/api/2/issuetype/10000",
+                "id": 10000,
+                "name": "Feature",
+                "description": "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+                "subtask": false
+              },
+              "priority": {
+                "name": "Medium",
+                "id": "3"
+              },
+              "status": {
+                "self": "https://projects.cdk.com/rest/api/2/status/10900",
+                "description": "",
+                "name": "Product Readiness",
+                "id": "10900",
+                "statusCategory": {
+                  "self": "https://projects.cdk.com/rest/api/2/statuscategory/4",
+                  "id": "4",
+                  "key": "indeterminate",
+                  "name": "In Progress",
+                  "colorName": "yellow"
+                }
+              },
+              "summary": "REV8 - Pon - PCR416 Service discount for older vehicles (ET5746)",
+              "description_length": 0,
+              "description_text": ""
+            }
+          }
+        }
+      ],
+      "assignee": {
+        "self": "https://projects.cdk.com/rest/api/2/user?username=tenderod",
+        "name": "tenderod",
+        "displayName": "Tendero Garcia, Daniel",
+        "active": true,
+        "emailAddress": "Daniel.Tendero@cdk.com"
+      },
+      "updated": "2021-01-20T15:29:55.000+00:00",
+      "status": {
+        "self": "https://projects.cdk.com/rest/api/2/status/3",
+        "description": "This issue is being actively worked on at the moment by the assignee.",
+        "name": "In Progress",
+        "id": "3",
+        "statusCategory": {
+          "self": "https://projects.cdk.com/rest/api/2/statuscategory/4",
+          "id": "4",
+          "key": "indeterminate",
+          "name": "In Progress",
+          "colorName": "yellow"
+        }
+      },
+      "components": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/component/10456",
+          "id": "10456",
+          "name": "Autobots - CoE Spain"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/component/19531",
+          "id": "19531",
+          "name": "Product Management - Central"
+        }
+      ],
+      "summary": "PCR416 - PRB 12 - Short key for copy doesn't work",
+      "creator": {
+        "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+        "name": "degrootm",
+        "displayName": "de Groot, Michel",
+        "active": true,
+        "emailAddress": "Michel.deGroot@cdk.com"
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+        "name": "degrootm",
+        "displayName": "de Groot, Michel",
+        "active": true,
+        "emailAddress": "Michel.deGroot@cdk.com"
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": [
+          {
+            "self": "https://projects.cdk.com/rest/api/2/issue/1117514/comment/1876794",
+            "id": "1876794",
+            "author": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=tenderod",
+              "name": "tenderod",
+              "displayName": "Tendero Garcia, Daniel",
+              "active": true,
+              "emailAddress": "Daniel.Tendero@cdk.com"
+            },
+            "updateAuthor": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=tenderod",
+              "name": "tenderod",
+              "displayName": "Tendero Garcia, Daniel",
+              "active": true,
+              "emailAddress": "Daniel.Tendero@cdk.com"
+            },
+            "body": "Hi [~degrootm],\r\n\r\nI think that the problem with the short key CTRL + C is that interferes with a predefined shortcut for other actions. \r\n\r\nSo, for example, if I change the menu option to Duplicate with the shortcut CTRL + D it works correctly.\r\n\r\nDo you agree to change the menu option and shortcut for \"Duplicate\" and CTRL + D ? Or do you prefer any other combination of menu option - shortcut? \r\n\r\nBest regards,\r\n\r\nDaniel",
+            "created": "2021-01-20T11:09:32.571+00:00",
+            "updated": "2021-01-20T11:09:32.571+00:00",
+            "body_text": "Hi [~degrootm],\r\n\r\nI think that the problem with the short key CTRL + C is that interferes with a predefined shortcut for other actions. \r\n\r\nSo, for example, if I change the menu option to Duplicate with the shortcut CTRL + D it works correctly.\r\n\r\nDo you agree to change the menu option and shortcut for \"Duplicate\" and CTRL + D ? Or do you prefer any other combination of menu option - shortcut? \r\n\r\nBest regards,\r\n\r\nDaniel"
+          },
+          {
+            "self": "https://projects.cdk.com/rest/api/2/issue/1117514/comment/1877055",
+            "id": "1877055",
+            "author": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+              "name": "degrootm",
+              "displayName": "de Groot, Michel",
+              "active": true,
+              "emailAddress": "Michel.deGroot@cdk.com"
+            },
+            "updateAuthor": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+              "name": "degrootm",
+              "displayName": "de Groot, Michel",
+              "active": true,
+              "emailAddress": "Michel.deGroot@cdk.com"
+            },
+            "body": "Hi [~tenderod]\r\n\r\nIf we can get it working with another shortcut it's fine for me to change it.\r\n\r\nKind regards\r\n\r\nMichel ",
+            "created": "2021-01-20T13:28:28.126+00:00",
+            "updated": "2021-01-20T13:28:28.126+00:00",
+            "body_text": "Hi [~tenderod]\r\n\r\nIf we can get it working with another shortcut it's fine for me to change it.\r\n\r\nKind regards\r\n\r\nMichel "
+          },
+          {
+            "self": "https://projects.cdk.com/rest/api/2/issue/1117514/comment/1877062",
+            "id": "1877062",
+            "author": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=tenderod",
+              "name": "tenderod",
+              "displayName": "Tendero Garcia, Daniel",
+              "active": true,
+              "emailAddress": "Daniel.Tendero@cdk.com"
+            },
+            "updateAuthor": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=tenderod",
+              "name": "tenderod",
+              "displayName": "Tendero Garcia, Daniel",
+              "active": true,
+              "emailAddress": "Daniel.Tendero@cdk.com"
+            },
+            "body": "Hi [~degrootm],\r\n\r\nPlease install PNSOAUTDIS 1 EOB.\r\n\r\nIt should also solve REV8-70615 and REV8-70616.\r\n\r\nPlease let me know if al works as expected.\r\n\r\nBest regards,\r\n\r\nDaniel",
+            "created": "2021-01-20T13:41:24.005+00:00",
+            "updated": "2021-01-20T13:42:09.276+00:00",
+            "body_text": "Hi [~degrootm],\r\n\r\nPlease install PNSOAUTDIS 1 EOB.\r\n\r\nIt should also solve REV8-70615 and REV8-70616.\r\n\r\nPlease let me know if al works as expected.\r\n\r\nBest regards,\r\n\r\nDaniel"
+          },
+          {
+            "self": "https://projects.cdk.com/rest/api/2/issue/1117514/comment/1877434",
+            "id": "1877434",
+            "author": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+              "name": "degrootm",
+              "displayName": "de Groot, Michel",
+              "active": true,
+              "emailAddress": "Michel.deGroot@cdk.com"
+            },
+            "updateAuthor": {
+              "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+              "name": "degrootm",
+              "displayName": "de Groot, Michel",
+              "active": true,
+              "emailAddress": "Michel.deGroot@cdk.com"
+            },
+            "body": "Hi [~tenderod]\r\n\r\nIt is now working as expected.\r\n\r\nKind regards\r\n\r\nMichel",
+            "created": "2021-01-20T15:29:55.897+00:00",
+            "updated": "2021-01-20T15:29:55.897+00:00",
+            "body_text": "Hi [~tenderod]\r\n\r\nIt is now working as expected.\r\n\r\nKind regards\r\n\r\nMichel"
+          }
+        ]
+      },
+      "description_length": 233,
+      "description_text": "The short key for copy is Crtl C, but if I select a line to copy and press Ctr+C nothing happens.\r\n\r\nIf this is not possible it's fine for me to remove the text Ctrl+C.\r\n\r\n \r\n\r\nCtrl+N works fine\r\n\r\n!image-2021-01-15-12-49-53-891.png!",
+      "customfield_14150": "",
+      "customfield_14153": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/16102",
+        "value": "Business",
+        "id": "16102"
+      },
+      "customfield_14151": "",
+      "customfield_14152": "",
+      "customfield_14113": "0",
+      "customfield_14114": "0",
+      "customfield_13300": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@2d5afffa[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@25c312e0[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@116dd4a5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@2c84907a[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@31cf6a91[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@489ca54d[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@372b8807[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@3fa4d9d8[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@75f5a75f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@586ec261[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@33ee02db[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@2a9d7767[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+      "customfield_14111": "Tendero Garcia, Daniel",
+      "customfield_14112": "status",
+      "customfield_14117": "0",
+      "customfield_10310": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10789",
+          "value": "Pon Group",
+          "id": "10789"
+        }
+      ],
+      "customfield_14118": "13.89",
+      "customfield_14115": "0",
+      "customfield_14116": "0",
+      "customfield_10500": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10248",
+          "value": "Netherlands",
+          "id": "10248"
+        }
+      ],
+      "customfield_13933": "",
+      "customfield_13932": "",
+      "customfield_13935": "",
+      "customfield_13934": "",
+      "customfield_10702": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10690",
+        "value": "Aftersales",
+        "id": "10690"
+      },
+      "customfield_13936": "",
+      "workratio": -1,
+      "watches": {
+        "self": "https://projects.cdk.com/rest/api/2/issue/REV8-70616/watchers",
+        "watchCount": 2,
+        "isWatching": false
+      },
+      "customfield_14142": "",
+      "customfield_14143": "",
+      "customfield_14140": "",
+      "customfield_14141": "",
+      "customfield_14300": "0",
+      "customfield_14146": "Tendero Garcia, Daniel",
+      "customfield_14301": "0",
+      "customfield_14147": "2021-01-15 11:51:45",
+      "customfield_14144": "",
+      "customfield_14145": "2021-01-20 10:19:23",
+      "customfield_10101": [],
+      "customfield_14302": "0",
+      "customfield_14148": "Tendero Garcia, Daniel",
+      "customfield_14104": "In Progress",
+      "customfield_14303": "0",
+      "customfield_14149": "",
+      "customfield_14105": "No script",
+      "customfield_13922": "Tendero Garcia, Daniel",
+      "customfield_13602": "TENDEROD",
+      "customfield_13921": "Torralba Castaneda, Marta",
+      "customfield_13923": "Hi [~tenderod]\r\n\r\nIt is now working as expected.\r\n\r\nKind regards\r\n\r\nMichel By: de Groot, Michel Date: 2021-01-20 15:29:55",
+      "customfield_13969": "132.35",
+      "customfield_14130": "Open",
+      "customfield_14135": "2021-01-20 10:19:23",
+      "customfield_14136": "No script",
+      "customfield_14139": "",
+      "customfield_11300": 0.0,
+      "customfield_14137": "",
+      "timetracking": {},
+      "customfield_14138": "",
+      "customfield_10005": "REV8-66779",
+      "customfield_10401": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10224",
+        "value": "P1000 Autoline",
+        "id": "10224"
+      },
+      "attachment": [
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837935",
+          "id": "837935",
+          "filename": "3218_7245_1600162875_PCR416 issue 5746 Service discount for older vehicles.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-10-01T15:55:45.247+0000",
+          "size": 519714,
+          "mimeType": "vi/a5/include/jira_files/3218_7245_1600162875_PCR416_issue_5746_Service_discount_for_older_vehicles.docx: application/vnd.openxmlformats-officedocument.wordprocessingml.document; charset=binary",
+          "content": "https://projects.cdk.com/secure/attachment/837935/3218_7245_1600162875_PCR416+issue+5746+Service+discount+for+older+vehicles.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837936",
+          "id": "837936",
+          "filename": "HT PCR416 - PON Service discount for older vehicles.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-30T16:52:50.073+0000",
+          "size": 3628736,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837936/HT+PCR416+-+PON+Service+discount+for+older+vehicles.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837934",
+          "id": "837934",
+          "filename": "image-2021-01-15-12-49-53-891.png",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2021-01-15T11:49:54.622+0000",
+          "size": 52643,
+          "mimeType": "image/png",
+          "content": "https://projects.cdk.com/secure/attachment/837934/image-2021-01-15-12-49-53-891.png",
+          "thumbnail": "https://projects.cdk.com/secure/thumbnail/837934/_thumb_837934.png"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837937",
+          "id": "837937",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V01.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-17T15:42:09.565+0000",
+          "size": 373875,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837937/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V01.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837938",
+          "id": "837938",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V1.1.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-23T16:00:13.615+0000",
+          "size": 793215,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837938/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V1.1.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837939",
+          "id": "837939",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V1.2.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-30T16:52:14.059+0000",
+          "size": 1011926,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837939/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V1.2.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837940",
+          "id": "837940",
+          "filename": "PD_POS_PN_ PCR416 Service discount for older vehicles.V1.3.docx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2021-01-12T07:38:38.729+0000",
+          "size": 1136765,
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "content": "https://projects.cdk.com/secure/attachment/837940/PD_POS_PN_+PCR416+Service+discount+for+older+vehicles.V1.3.docx"
+        },
+        {
+          "self": "https://projects.cdk.com/rest/api/2/attachment/837941",
+          "id": "837941",
+          "filename": "TestCases_PCR416.xlsx",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "key": "degrootm",
+            "emailAddress": "Michel.deGroot@cdk.com",
+            "avatarUrls": {
+              "48x48": "https://projects.cdk.com/secure/useravatar?ownerId=degrootm&avatarId=23618",
+              "24x24": "https://projects.cdk.com/secure/useravatar?size=small&ownerId=degrootm&avatarId=23618",
+              "16x16": "https://projects.cdk.com/secure/useravatar?size=xsmall&ownerId=degrootm&avatarId=23618",
+              "32x32": "https://projects.cdk.com/secure/useravatar?size=medium&ownerId=degrootm&avatarId=23618"
+            },
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "timeZone": "Europe/Amsterdam"
+          },
+          "created": "2020-12-23T16:00:29.371+0000",
+          "size": 13265,
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "content": "https://projects.cdk.com/secure/attachment/837941/TestCases_PCR416.xlsx"
+        }
+      ],
+      "customfield_14607": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/16789",
+        "value": "No",
+        "id": "16789"
+      },
+      "customfield_14120": "0",
+      "customfield_14121": "0",
+      "customfield_14124": "0",
+      "customfield_14201": "",
+      "customfield_14125": "0",
+      "customfield_14202": "",
+      "customfield_14122": "0",
+      "customfield_14123": "0",
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_14128": "0",
+      "customfield_14129": "No script",
+      "customfield_14800": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/17001",
+        "value": "No",
+        "id": "17001"
+      },
+      "customfield_10003": "2|i0cze4:",
+      "customfield_14126": "1",
+      "customfield_14203": "",
+      "customfield_10004": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@755469b4[id=25292,rapidViewId=142,state=ACTIVE,name=REV8 AUTOBOTS - JAN 21,startDate=2021-01-04T09:37:19.039Z,endDate=2021-01-29T19:21:00.000Z,completeDate=<null>,sequence=25292,goal=]",
+        "com.atlassian.greenhopper.service.sprint.Sprint@755469b4[id=25291,rapidViewId=143,state=ACTIVE,name=R AUTOBOT - JAN 21,startDate=2021-01-04T09:37:19.039Z,endDate=2021-01-29T19:21:00.000Z,completeDate=<null>,sequence=25292,goal=]"
+      ],
+      "customfield_14127": "0",
+      "customfield_14204": "",
+      "customfield_14119": "0",
+      "customfield_10317": {
+        "self": "https://projects.cdk.com/rest/api/2/customFieldOption/10169",
+        "value": "No",
+        "id": "10169"
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      }
+    },
+    "changelog": {
+      "maxResults": 16,
+      "startAt": 0,
+      "total": 16,
+      "histories": [
+        {
+          "id": "14834120",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=degrootm",
+            "name": "degrootm",
+            "displayName": "de Groot, Michel",
+            "active": true,
+            "emailAddress": "Michel.deGroot@cdk.com"
+          },
+          "created": "2021-01-15T11:51:49.006+00:00",
+          "items": [
+            {
+              "field": "Link",
+              "fieldtype": "jira",
+              "to": "REV8-66779",
+              "toString": "This issue is caused by REV8-66779"
+            }
+          ]
+        },
+        {
+          "id": "14836904",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=torralbm",
+            "name": "torralbm",
+            "displayName": "Torralba Castaneda, Marta",
+            "active": true,
+            "emailAddress": "marta.torralba@cdk.com"
+          },
+          "created": "2021-01-15T15:27:36.607+00:00",
+          "items": [
+            {
+              "field": "assignee",
+              "fieldtype": "jira",
+              "to": "torralbm",
+              "toString": "Torralba Castaneda, Marta"
+            }
+          ]
+        },
+        {
+          "id": "14874694",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=perezi",
+            "name": "perezi",
+            "displayName": "Pérez Anguio, Ignacio",
+            "active": true,
+            "emailAddress": "ignacio.perez@cdk.com"
+          },
+          "created": "2021-01-19T17:24:16.100+00:00",
+          "items": [
+            {
+              "field": "Component",
+              "fieldtype": "jira",
+              "from": "10455",
+              "fromString": "Hammer - CoE Spain"
+            }
+          ]
+        },
+        {
+          "id": "14888765",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:14:25.977+00:00",
+          "items": [
+            {
+              "field": "assignee",
+              "fieldtype": "jira",
+              "from": "torralbm",
+              "fromString": "Torralba Castaneda, Marta",
+              "to": "tenderod",
+              "toString": "Tendero Garcia, Daniel"
+            }
+          ]
+        },
+        {
+          "id": "14888768",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:14:45.516+00:00",
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "to": "25292",
+              "toString": "REV8 AUTOBOTS - JAN 21"
+            }
+          ]
+        },
+        {
+          "id": "14888773",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:16:04.966+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888775",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:16:45.144+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888777",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:17:16.256+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888778",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:17:18.988+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888780",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:17:23.094+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888781",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:17:28.474+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888782",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:17:38.003+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888785",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:17:56.042+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888788",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:18:13.818+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14888789",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=cerrolaj",
+            "name": "cerrolaj",
+            "displayName": "Cerrolaza Aragon, Jorge",
+            "active": true,
+            "emailAddress": "jorge.cerrolaza@cdk.com"
+          },
+          "created": "2021-01-20T10:18:36.243+00:00",
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "14889118",
+          "author": {
+            "self": "https://projects.cdk.com/rest/api/2/user?username=tenderod",
+            "name": "tenderod",
+            "displayName": "Tendero Garcia, Daniel",
+            "active": true,
+            "emailAddress": "Daniel.Tendero@cdk.com"
+          },
+          "created": "2021-01-20T10:19:23.097+00:00",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "from": "1",
+              "fromString": "Open",
+              "to": "3",
+              "toString": "In Progress"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "11763",
+    "self": "https://levelops.atlassian.net/rest/api/2/issue/11763",
+    "key": "LEV-1005",
+    "fields": {
+      "issuetype": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issuetype/10006",
+        "id": 10006,
+        "name": "Story",
+        "description": "Functionality or a feature expressed as a user goal.",
+        "subtask": false
+      },
+      "project": {
+        "self": "https://levelops.atlassian.net/rest/api/2/project/10001",
+        "id": "10001",
+        "key": "LEV",
+        "name": "levelops",
+        "projectTypeKey": "software",
+        "simplified": false
+      },
+      "fixVersions": [],
+      "created": 1590354205527,
+      "priority": {
+        "name": "Medium",
+        "id": "3"
+      },
+      "labels": [],
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "updated": 1590354209770,
+      "status": {
+        "self": "https://levelops.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://levelops.atlassian.net/rest/api/2/statuscategory/2",
+          "id": "2",
+          "key": "new",
+          "name": "To Do",
+          "colorName": "blue-gray"
+        }
+      },
+      "components": [
+        {
+          "self": "https://levelops.atlassian.net/rest/api/2/component/10000",
+          "id": "10000",
+          "name": "ui-levelops",
+          "description": "UI"
+        }
+      ],
+      "summary": "Check status generic component for playbook",
+      "creator": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+        "accountId": "5d6049c417bc890d28ef70dd",
+        "displayName": "Meghana Dwarakanath",
+        "active": true
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "comment": {
+        "comments": []
+      },
+      "description_text": "schedule -> daily, weekly etc",
+      "description_length": 29,
+      "statuscategorychangedate": "2020-05-24T14:03:25.715-0700",
+      "watches": {
+        "self": "https://levelops.atlassian.net/rest/api/2/issue/LEV-1005/watchers",
+        "watchCount": 1,
+        "isWatching": false
+      },
+      "customfield_10018": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "PLUGIN_LICENSE_ERROR",
+          "message": "The Parent Link is only available to Jira Premium users."
+        }
+      },
+      "customfield_10019": "0|i00a3i:zzr",
+      "attachment": [],
+      "workratio": -1,
+      "customfield_10004": [
+        "com.atlassian.greenhopper.service.sprint.Sprint@51389564[completeDate=<null>,endDate=2020-05-18T23:04:00.000Z,goal=,id=8,name=May 11,rapidViewId=1,sequence=6,startDate=2020-05-11T23:04:41.049Z,state=ACTIVE]"
+      ],
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10000": "{}",
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "customfield_10024": [],
+      "timetracking": {}
+    },
+    "changelog": {
+      "maxResults": 2,
+      "startAt": 0,
+      "total": 2,
+      "histories": [
+        {
+          "id": "17746",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590354209773,
+          "items": [
+            {
+              "field": "Rank",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10019",
+              "from": "",
+              "fromString": "",
+              "to": "",
+              "toString": "Ranked higher"
+            }
+          ]
+        },
+        {
+          "id": "17745",
+          "author": {
+            "self": "https://levelops.atlassian.net/rest/api/2/user?accountId=5d6049c417bc890d28ef70dd",
+            "accountId": "5d6049c417bc890d28ef70dd",
+            "displayName": "Meghana Dwarakanath",
+            "active": true
+          },
+          "created": 1590354209336,
+          "items": [
+            {
+              "field": "Sprint",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10020",
+              "from": "",
+              "fromString": "",
+              "to": "8",
+              "toString": "May 11"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

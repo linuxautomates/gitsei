@@ -1,0 +1,1889 @@
+{
+  "records": [
+    {
+      "key": "AXUoL1bOiMar7IIcslJj",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "testing-01:sonarqube/client/src/main/java/io/levelops/integrations/sonarqube/client/SonarQubeClient.java",
+      "project": "testing-01",
+      "line": 8,
+      "hash": "899698dbfaf8f7ac85b34f5cc2de8b16",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 0,
+        "endOffset": 87
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'io.levelops.integrations.sonarqube.sources.SonarQubeProjectEnrichmentDataSource'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": ["hello"],
+      "comments": [],
+      "creationDate": "2020-10-14T17:35:59+0000",
+      "updateDate": "2020-10-14T17:35:59+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXUoL1bPiMar7IIcslJl",
+      "rule": "java:S1068",
+      "severity": "MAJOR",
+      "component": "testing-01:sonarqube/client/src/main/java/io/levelops/integrations/sonarqube/client/SonarQubeClient.java",
+      "project": "testing-01",
+      "line": 19,
+      "hash": "b13c66ca8f9f04cc7a8c8081a2944106",
+      "textRange": {
+        "startLine": 19,
+        "endLine": 19,
+        "startOffset": 32,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused \"CURSOR\" private field.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-10-14T17:35:59+0000",
+      "updateDate": "2020-10-14T17:35:59+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXUoL1bPiMar7IIcslJm",
+      "rule": "java:S1068",
+      "severity": "MAJOR",
+      "component": "testing-01:sonarqube/client/src/main/java/io/levelops/integrations/sonarqube/client/SonarQubeClient.java",
+      "project": "testing-01",
+      "line": 20,
+      "hash": "63bfd2c619ed786d12c07a367a179976",
+      "textRange": {
+        "startLine": 20,
+        "endLine": 20,
+        "startOffset": 32,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused \"START_TIME\" private field.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-10-14T17:35:59+0000",
+      "updateDate": "2020-10-14T17:35:59+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXUoL1cLiMar7IIcslJ6",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "testing-01:sonarqube/client/src/main/java/io/levelops/integrations/sonarqube/sources/SonarQubeIssueDataSource.java",
+      "project": "testing-01",
+      "line": 17,
+      "hash": "6234c377ce2227992dcefb7dfee2ac8d",
+      "textRange": {
+        "startLine": 17,
+        "endLine": 17,
+        "startOffset": 0,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'io.levelops.integrations.zendesk.models.User'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-10-14T17:35:59+0000",
+      "updateDate": "2020-10-14T17:35:59+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXUoL1cLiMar7IIcslJ7",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "testing-01:sonarqube/client/src/main/java/io/levelops/integrations/sonarqube/sources/SonarQubeIssueDataSource.java",
+      "project": "testing-01",
+      "line": 34,
+      "hash": "b2931919ea7be56f9bc81063f21279c7",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 22,
+        "endOffset": 32
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"PAGE_LIMIT\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-10-14T17:35:59+0000",
+      "updateDate": "2020-10-14T17:35:59+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RZAGsszTasiJGEtm",
+      "rule": "java:S3776",
+      "severity": "CRITICAL",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+      "project": "commons",
+      "line": 380,
+      "hash": "536872dc7a50a7108de4468c81968cbb",
+      "textRange": {
+        "startLine": 380,
+        "endLine": 380,
+        "startOffset": 40,
+        "endOffset": 72
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 416,
+                "endLine": 416,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 422,
+                "endLine": 422,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 426,
+                "endLine": 426,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 430,
+                "endLine": 430,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 434,
+                "endLine": 434,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 438,
+                "endLine": 438,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 442,
+                "endLine": 442,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 446,
+                "endLine": 446,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 450,
+                "endLine": 450,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 454,
+                "endLine": 454,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 459,
+                "endLine": 459,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 463,
+                "endLine": 463,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 464,
+                "endLine": 464,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 468,
+                "endLine": 468,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 472,
+                "endLine": 472,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 476,
+                "endLine": 476,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 479,
+                "endLine": 479,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 483,
+                "endLine": 483,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 487,
+                "endLine": 487,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 491,
+                "endLine": 491,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 495,
+                "endLine": 495,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 499,
+                "endLine": 499,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 503,
+                "endLine": 503,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 508,
+                "endLine": 508,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 512,
+                "endLine": 512,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 516,
+                "endLine": 516,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 520,
+                "endLine": 520,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 524,
+                "endLine": 524,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 528,
+                "endLine": 528,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 529,
+                "endLine": 529,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 533,
+                "endLine": 533,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 537,
+                "endLine": 537,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 541,
+                "endLine": 541,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 546,
+                "endLine": 546,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+3 (incl 2 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 548,
+                "endLine": 548,
+                "startOffset": 18,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 555,
+                "endLine": 555,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 558,
+                "endLine": 558,
+                "startOffset": 8,
+                "endOffset": 11
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 559,
+                "endLine": 559,
+                "startOffset": 12,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.",
+      "effort": "31min",
+      "debt": "31min",
+      "author": "srinath.chandrashekhar@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T11:58:36+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RZAGsszTasiJGEtr",
+      "rule": "java:S3776",
+      "severity": "CRITICAL",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+      "project": "commons",
+      "line": 967,
+      "hash": "f116119c59f3611fd490bf183ab588b5",
+      "textRange": {
+        "startLine": 967,
+        "endLine": 967,
+        "startOffset": 47,
+        "endOffset": 66
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 971,
+                "endLine": 971,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 972,
+                "endLine": 972,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 972,
+                "endLine": 972,
+                "startOffset": 66,
+                "endOffset": 68
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 976,
+                "endLine": 976,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 984,
+                "endLine": 984,
+                "startOffset": 69,
+                "endOffset": 71
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 986,
+                "endLine": 986,
+                "startOffset": 24,
+                "endOffset": 26
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 990,
+                "endLine": 990,
+                "startOffset": 8,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1029,
+                "endLine": 1029,
+                "startOffset": 8,
+                "endOffset": 14
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1052,
+                "endLine": 1052,
+                "startOffset": 16,
+                "endOffset": 18
+              },
+              "msg": "+2 (incl 1 for nesting)"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1055,
+                "endLine": 1055,
+                "startOffset": 18,
+                "endOffset": 22
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1078,
+                "endLine": 1078,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1080,
+                "endLine": 1080,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1084,
+                "endLine": 1084,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1086,
+                "endLine": 1086,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1091,
+                "endLine": 1091,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1096,
+                "endLine": 1096,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1101,
+                "endLine": 1101,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1111,
+                "endLine": 1111,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1115,
+                "endLine": 1115,
+                "startOffset": 8,
+                "endOffset": 10
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1122,
+                "endLine": 1122,
+                "startOffset": 30,
+                "endOffset": 31
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1123,
+                "endLine": 1123,
+                "startOffset": 36,
+                "endOffset": 37
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1134,
+                "endLine": 1134,
+                "startOffset": 30,
+                "endOffset": 31
+              },
+              "msg": "+1"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/JiraIssueService.java",
+              "textRange": {
+                "startLine": 1136,
+                "endLine": 1136,
+                "startOffset": 87,
+                "endOffset": 88
+              },
+              "msg": "+1"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.",
+      "effort": "14min",
+      "debt": "14min",
+      "author": "srinath.chandrashekhar@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T11:58:36+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0NqdOsszTasiJGA-r",
+      "rule": "java:S1192",
+      "severity": "CRITICAL",
+      "component": "io.levelops:aggregations-service:src/main/java/io/levelops/aggregations/controllers/JenkinsMonitoringPluginJobRunCompleteController.java",
+      "project": "io.levelops:aggregations-service",
+      "line": 443,
+      "hash": "259b0fafd7429bea3ae5ba556a77fa61",
+      "textRange": {
+        "startLine": 443,
+        "endLine": 443,
+        "startOffset": 68,
+        "endOffset": 77
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "io.levelops:aggregations-service:src/main/java/io/levelops/aggregations/controllers/JenkinsMonitoringPluginJobRunCompleteController.java",
+              "textRange": {
+                "startLine": 443,
+                "endLine": 443,
+                "startOffset": 68,
+                "endOffset": 77
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "io.levelops:aggregations-service:src/main/java/io/levelops/aggregations/controllers/JenkinsMonitoringPluginJobRunCompleteController.java",
+              "textRange": {
+                "startLine": 444,
+                "endLine": 444,
+                "startOffset": 66,
+                "endOffset": 75
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "io.levelops:aggregations-service:src/main/java/io/levelops/aggregations/controllers/JenkinsMonitoringPluginJobRunCompleteController.java",
+              "textRange": {
+                "startLine": 485,
+                "endLine": 485,
+                "startOffset": 67,
+                "endOffset": 76
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "io.levelops:aggregations-service:src/main/java/io/levelops/aggregations/controllers/JenkinsMonitoringPluginJobRunCompleteController.java",
+              "textRange": {
+                "startLine": 485,
+                "endLine": 485,
+                "startOffset": 127,
+                "endOffset": 136
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Define a constant instead of duplicating this literal \"UNKNOWN\" 4 times.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "59263740+viraj-levelops@users.noreply.github.com",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T06:08:48+0000",
+      "updateDate": "2020-09-22T05:08:05+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0NQgCsszTasiJF_vY",
+      "rule": "java:S1612",
+      "severity": "MINOR",
+      "component": "io.levelops.server_api:server-api:server_api/src/main/java/io/levelops/api/controllers/JiraSalesforceController.java",
+      "project": "io.levelops.server_api:server-api",
+      "line": 68,
+      "hash": "791ed1a8c590002f39580f71b7517498",
+      "textRange": {
+        "startLine": 68,
+        "endLine": 68,
+        "startOffset": 31,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this lambda with a method reference.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "srinath.chandrashekhar@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T01:40:09+0000",
+      "updateDate": "2020-09-22T05:06:21+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0NQgCsszTasiJF_vZ",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "io.levelops.server_api:server-api:server_api/src/main/java/io/levelops/api/controllers/JiraSalesforceController.java",
+      "project": "io.levelops.server_api:server-api",
+      "line": 79,
+      "hash": "9f953bd269fadbaff75bcb07ffa66afb",
+      "textRange": {
+        "startLine": 79,
+        "endLine": 79,
+        "startOffset": 5,
+        "endOffset": 19
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "io.levelops.server_api:server-api:server_api/src/main/java/io/levelops/api/controllers/JiraSalesforceController.java",
+              "textRange": {
+                "startLine": 79,
+                "endLine": 79,
+                "startOffset": 29,
+                "endOffset": 47
+              }
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "srinath.chandrashekhar@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T01:40:09+0000",
+      "updateDate": "2020-09-22T05:06:21+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0NQTlsszTasiJF_pz",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "io.levelops.server_api:server-api:server_api/src/main/java/io/levelops/api/controllers/DashboardReportsController.java",
+      "project": "io.levelops.server_api:server-api",
+      "line": 39,
+      "hash": "3d575bb264bf2a1cbfba73d83102a2c8",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 39,
+        "startOffset": 5,
+        "endOffset": 19
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "io.levelops.server_api:server-api:server_api/src/main/java/io/levelops/api/controllers/DashboardReportsController.java",
+              "textRange": {
+                "startLine": 39,
+                "endLine": 39,
+                "startOffset": 29,
+                "endOffset": 47
+              }
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "harshjariwala@harshswkbookpro.lan",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T00:50:14+0000",
+      "updateDate": "2020-09-22T05:06:21+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RY_usszTasiJGEsG",
+      "rule": "java:S1192",
+      "severity": "CRITICAL",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+      "project": "commons",
+      "line": 55,
+      "hash": "a3261ccedbf4771c193bf69aacd19d3b",
+      "textRange": {
+        "startLine": 55,
+        "endLine": 55,
+        "startOffset": 21,
+        "endOffset": 35
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 55,
+                "endLine": 55,
+                "startOffset": 21,
+                "endOffset": 35
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 57,
+                "endLine": 57,
+                "startOffset": 22,
+                "endOffset": 36
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 113,
+                "endLine": 113,
+                "startOffset": 21,
+                "endOffset": 35
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 170,
+                "endLine": 170,
+                "startOffset": 22,
+                "endOffset": 36
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 463,
+                "endLine": 463,
+                "startOffset": 16,
+                "endOffset": 30
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Define a constant instead of duplicating this literal \"INSERT INTO \" 5 times.",
+      "effort": "12min",
+      "debt": "12min",
+      "author": "harshjariwala@harshswkbookpro.lan",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T00:34:12+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RY_usszTasiJGEsO",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+      "project": "commons",
+      "line": 113,
+      "hash": "18b1356cf39b778203fb5e5c6f2e9be8",
+      "textRange": {
+        "startLine": 113,
+        "endLine": 113,
+        "startOffset": 15,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "harshjariwala@harshswkbookpro.lan",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T00:34:12+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RY_usszTasiJGEsI",
+      "rule": "java:S1192",
+      "severity": "CRITICAL",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+      "project": "commons",
+      "line": 169,
+      "hash": "0fa8af5a1eb3e7426f27063f84d35f62",
+      "textRange": {
+        "startLine": 169,
+        "endLine": 169,
+        "startOffset": 22,
+        "endOffset": 36
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 169,
+                "endLine": 169,
+                "startOffset": 22,
+                "endOffset": 36
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 404,
+                "endLine": 404,
+                "startOffset": 21,
+                "endOffset": 35
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/DashboardWidgetService.java",
+              "textRange": {
+                "startLine": 417,
+                "endLine": 417,
+                "startOffset": 21,
+                "endOffset": 35
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Define a constant instead of duplicating this literal \"DELETE FROM \" 3 times.",
+      "effort": "8min",
+      "debt": "8min",
+      "author": "harshjariwala@harshswkbookpro.lan",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-09-11T00:34:12+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RZBSsszTasiJGEvV",
+      "rule": "java:S1192",
+      "severity": "CRITICAL",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+      "project": "commons",
+      "line": 109,
+      "hash": "2821b384d7f8e9d75f4c000792160e28",
+      "textRange": {
+        "startLine": 109,
+        "endLine": 109,
+        "startOffset": 36,
+        "endOffset": 50
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+              "textRange": {
+                "startLine": 109,
+                "endLine": 109,
+                "startOffset": 36,
+                "endOffset": 50
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+              "textRange": {
+                "startLine": 113,
+                "endLine": 113,
+                "startOffset": 38,
+                "endOffset": 52
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+              "textRange": {
+                "startLine": 299,
+                "endLine": 299,
+                "startOffset": 31,
+                "endOffset": 45
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Define a constant instead of duplicating this literal \"DELETE FROM \" 3 times.",
+      "effort": "8min",
+      "debt": "8min",
+      "author": "srinath.chandrashekhar@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-08-19T07:10:58+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0RZBSsszTasiJGEvS",
+      "rule": "java:S1192",
+      "severity": "CRITICAL",
+      "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+      "project": "commons",
+      "line": 110,
+      "hash": "7e7236da4ff7de59a583c0eaeba87967",
+      "textRange": {
+        "startLine": 110,
+        "endLine": 110,
+        "startOffset": 66,
+        "endOffset": 75
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+              "textRange": {
+                "startLine": 110,
+                "endLine": 110,
+                "startOffset": 66,
+                "endOffset": 75
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+              "textRange": {
+                "startLine": 114,
+                "endLine": 114,
+                "startOffset": 66,
+                "endOffset": 75
+              },
+              "msg": "Duplication"
+            }
+          ]
+        },
+        {
+          "locations": [
+            {
+              "component": "commons:database-services/src/main/java/io/levelops/commons/databases/services/ZendeskTicketService.java",
+              "textRange": {
+                "startLine": 288,
+                "endLine": 288,
+                "startOffset": 26,
+                "endOffset": 35
+              },
+              "msg": "Duplication"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Define a constant instead of duplicating this literal \" WHERE \" 3 times.",
+      "effort": "8min",
+      "debt": "8min",
+      "author": "srinath.chandrashekhar@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-08-19T07:10:58+0000",
+      "updateDate": "2020-09-22T05:22:06+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0NqbjsszTasiJGA-d",
+      "rule": "java:S2864",
+      "severity": "MAJOR",
+      "component": "io.levelops:aggregations-service:src/main/java/io/levelops/aggregations/helpers/JenkinsPersistDataHandler.java",
+      "project": "io.levelops:aggregations-service",
+      "line": 239,
+      "hash": "37254c71953b12c680ad505b4a5a3091",
+      "textRange": {
+        "startLine": 239,
+        "endLine": 239,
+        "startOffset": 8,
+        "endOffset": 11
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Iterate over the \"entrySet\" instead of the \"keySet\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "59263740+viraj-levelops@users.noreply.github.com",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2020-08-18T21:22:44+0000",
+      "updateDate": "2020-09-22T05:08:05+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    },
+    {
+      "key": "AXS0NQsfsszTasiJF_w5",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "io.levelops.server_api:server-api:auth/src/main/java/io/levelops/auth/controllers/JwtAuthenticationController.java",
+      "project": "io.levelops.server_api:server-api",
+      "line": 289,
+      "hash": "e83d2c6702b92322170b8a8dd9a0c29f",
+      "textRange": {
+        "startLine": 289,
+        "endLine": 289,
+        "startOffset": 5,
+        "endOffset": 19
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "io.levelops.server_api:server-api:auth/src/main/java/io/levelops/auth/controllers/JwtAuthenticationController.java",
+              "textRange": {
+                "startLine": 289,
+                "endLine": 289,
+                "startOffset": 57,
+                "endOffset": 75
+              }
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "harsh@levelops.io",
+      "tags": [],
+      "comments": [],
+      "creationDate": "2019-08-12T21:46:16+0000",
+      "updateDate": "2020-09-22T05:06:21+0000",
+      "type": "CODE_SMELL",
+      "organization": "default-organization",
+      "transitions": [
+        "confirm",
+        "resolve",
+        "falsepositive",
+        "wontfix"
+      ],
+      "actions": [
+        "set_type",
+        "set_tags",
+        "comment",
+        "set_severity",
+        "assign"
+      ]
+    }
+  ],
+  "count": 18,
+  "_metadata": {
+    "integration_key": {
+      "tenant_id": "sqtenant3",
+      "integration_id": "1"
+    },
+    "integration_type": "sonarqube",
+    "data_type": "issues",
+    "page_number": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "644183081",
+  "node_id": "MDExOlB1bGxSZXF1ZXN0NDM4ODUyMjU2",
+  "number": 9302,
+  "html_url": "https://github.com/hashicorp/vault/pull/9302",
+  "title": "Add ability to specify region for OCI Storage Backend",
+  "user": {
+    "type": "user",
+    "login": "jwitko"
+  },
+  "labels": [],
+  "state": "open",
+  "locked": false,
+  "assignees": [],
+  "comments": 2,
+  "created_at": 1592950517000,
+  "updated_at": 1594432592000,
+  "author_association": "NONE",
+  "body": "This pull request adds the use of an OCI SDK function to the OCI Storage Backend for allowing the explicit setting of an OCI region to the ObjectStorage client.  \r\n\r\nThe current behavior is to use the SDK default behavior which pulls the region from the OCI credentials configuration.  \r\n\r\nThis behavior has not been changed in the event a region is not specified in the storage backend config.",
+  "events": []
+}

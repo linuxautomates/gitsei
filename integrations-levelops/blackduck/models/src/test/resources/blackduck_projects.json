@@ -1,0 +1,115 @@
+{
+  "totalCount": 1,
+  "items": [
+    {
+      "name": "Acme",
+      "description": "Acme",
+      "projectLevelAdjustments": true,
+      "cloneCategories": [
+        "COMPONENT_DATA",
+        "VULN_DATA",
+        "CUSTOM_FIELD_DATA",
+        "LICENSE_TERM_FULFILLMENT",
+        "VERSION_SETTINGS"
+      ],
+      "customSignatureEnabled": false,
+      "customSignatureDepth": "5",
+      "deepLicenseDataEnabled": false,
+      "snippetAdjustmentApplied": false,
+      "licenseConflictsEnabled": false,
+      "createdAt": "2021-08-06T22:46:34.539Z",
+      "createdBy": "sysadmin",
+      "createdByUser": "https://35.239.185.151/api/users/00000000-0000-0000-0001-000000000001",
+      "updatedAt": "2021-08-06T22:46:34.573Z",
+      "updatedBy": "sysadmin",
+      "updatedByUser": "https://35.239.185.151/api/users/00000000-0000-0000-0001-000000000001",
+      "source": "CUSTOM",
+      "_meta": {
+        "allow": [
+          "DELETE",
+          "GET",
+          "PUT"
+        ],
+        "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1",
+        "links": [
+          {
+            "rel": "versions",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/versions"
+          },
+          {
+            "rel": "canonicalVersion",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/versions/1b4940fd-c362-4b80-a4db-c0e6d4ab557e"
+          },
+          {
+            "rel": "assignable-users",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/assignable-users"
+          },
+          {
+            "rel": "assignable-usergroups",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/assignable-usergroups"
+          },
+          {
+            "rel": "users",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/users"
+          },
+          {
+            "rel": "usergroups",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/usergroups"
+          },
+          {
+            "rel": "tags",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/tags"
+          },
+          {
+            "rel": "project-mappings",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/project-mappings"
+          },
+          {
+            "rel": "project-journal",
+            "href": "https://35.239.185.151/api/journal/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/custom-fields"
+          },
+          {
+            "rel": "custom-fields",
+            "href": "https://35.239.185.151/api/projects/d650a186-5b3f-48ef-bbad-2d6fdbcd42d1/custom-fields"
+          },
+          {
+            "rel": "notification-subscription",
+            "href": "https://35.239.185.151/api/users/00000000-0000-0000-0001-000000000001/notification-subscriptions/9b56e347-610c-43a0-bcc7-33bb26653c96"
+          }
+        ]
+      }
+    }
+  ],
+  "appliedFilters": [],
+  "_meta": {
+    "allow": [
+      "POST",
+      "GET"
+    ],
+    "href": "https://35.239.185.151/api/projects",
+    "links": [
+      {
+        "rel": "static-date-filter",
+        "href": "https://35.239.185.151/api/projects-filters?filterKey=createdAt",
+        "name": "createdAt",
+        "label": "Created Date"
+      },
+      {
+        "rel": "dynamic-filter",
+        "href": "https://35.239.185.151/api/projects-filters?filterKey=owner",
+        "name": "owner",
+        "label": "Owner"
+      },
+      {
+        "rel": "static-filter",
+        "href": "https://35.239.185.151/api/projects-filters?filterKey=subscribed",
+        "name": "subscribed",
+        "label": "Subscribed"
+      }
+    ]
+  }
+}

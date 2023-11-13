@@ -1,0 +1,332 @@
+[
+  {
+    "type": "check_jenkins_triage_rule",
+    "node_handler": "check_jenkins_triage_rule",
+    "name": "Check Jenkins Triage Rule",
+    "description": "Check that a given triage rule was matched.",
+    "category": "Jenkins",
+    "input": {
+      "job_run_id": {
+        "key": "job_run_id",
+        "index": 10,
+        "display_name": "Job Run Id",
+        "description": "Id of the run of a Jenkins Job.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/job_run",
+        "value_type": "string",
+        "required": true
+      },
+      "stage_id": {
+        "key": "stage_id",
+        "index": 20,
+        "display_name": "Stage Id",
+        "description": "Id of the Jenkins Job's stage.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/stage",
+        "value_type": "string",
+        "required": false
+      },
+      "rule_id": {
+        "key": "rule_id",
+        "index": 30,
+        "display_name": "Triage Rule",
+        "description": "Triage Rule to check.",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "triage_rules",
+        "required": true
+      },
+      "threshold": {
+        "key": "threshold",
+        "index": 40,
+        "display_name": "Threshold",
+        "description": "Check that the number of matches for the selected triage rule reaches this threshold.",
+        "type": "text",
+        "content_type": "integer",
+        "default_value": "1",
+        "required": true
+      }
+    },
+    "options": [
+      "Matched",
+      "Not matched"
+    ],
+    "output": {
+      "count": {
+        "key": "count",
+        "content_type": "integer",
+        "value_type": "string"
+      },
+      "match_content": {
+        "key": "match_content",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "rule_name": {
+        "key": "rule_name",
+        "content_type": "string",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "jenkins"
+    }
+  },
+  {
+    "type": "list_jenkins_triage_rule_matches",
+    "node_handler": "list_jenkins_triage_rule_matches",
+    "name": "List Jenkins Triage Rule Matches",
+    "description": "Iterate through all the results of triage rules that matched a failed Jenkins Job.",
+    "category": "Jenkins",
+    "input": {
+      "job_run_id": {
+        "key": "job_run_id",
+        "index": 10,
+        "display_name": "Job Run Id",
+        "description": "Id of the run of a Jenkins Job.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/job_run",
+        "value_type": "string",
+        "required": true
+      },
+      "stage_id": {
+        "key": "stage_id",
+        "index": 20,
+        "display_name": "Stage Id",
+        "description": "Id of the Jenkins Job's stage.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/stage",
+        "value_type": "string",
+        "required": false
+      },
+      "threshold": {
+        "key": "threshold",
+        "index": 30,
+        "display_name": "Threshold",
+        "description": "Check that the number of matches of each triage rule reaches this threshold.",
+        "type": "text",
+        "content_type": "integer",
+        "default_value": "1",
+        "required": true
+      }
+    },
+    "options": [
+      "Matched",
+      "Not matched"
+    ],
+    "output": {
+      "count": {
+        "key": "count",
+        "content_type": "integer",
+        "value_type": "string"
+      },
+      "match_content": {
+        "key": "match_content",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "rule_name": {
+        "key": "rule_name",
+        "content_type": "string",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "jenkins"
+    }
+  },
+  {
+    "type": "list_jenkins_job_stages",
+    "node_handler": "list_jenkins_job_stages",
+    "name": "List Jenkins Job Stages",
+    "description": "Iterate through the stages of a Jenkins Job, if any. If the Job does not have any stage, the 'No stages' branch will be selected.",
+    "category": "Jenkins",
+    "input": {
+      "job_run_id": {
+        "key": "job_run_id",
+        "index": 10,
+        "display_name": "Job Run Id",
+        "description": "Id of the run of a Jenkins Job.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/job_run",
+        "value_type": "string",
+        "required": true
+      },
+      "only_failures": {
+        "key": "only_failures",
+        "index": 20,
+        "display_name": "Only failed stages",
+        "description": "Select Yes if only failed stages should be included.",
+        "content_type": "boolean",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "required": true
+      },
+      "only_rule_matches": {
+        "key": "only_rule_matches",
+        "index": 30,
+        "display_name": "Only stages with matched triage rules",
+        "description": "Select Yes if only failed stages that have at least one triage rule match should be included.",
+        "content_type": "boolean",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "required": true
+      }
+    },
+    "options": [
+      "Stages",
+      "No stages"
+    ],
+    "output": {
+      "stage_id": {
+        "key": "stage_id",
+        "content_type": "id:triage_rules_matched/jenkins/stage",
+        "value_type": "string"
+      },
+      "stage_name": {
+        "key": "stage_name",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "stage_failed": {
+        "key": "stage_failed",
+        "content_type": "boolean",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "jenkins"
+    }
+  },
+  {
+    "type": "jenkins_hierarchical_lookup",
+    "node_handler": "jenkins_hierarchical_lookup",
+    "name": "Jenkins Hierarchical Lookup",
+    "description": "Lookup some data in a config table based on Jenkins jobs hierarchy",
+    "category": "Jenkins",
+    "input": {
+      "config_table": {
+        "key": "config_table",
+        "index": 10,
+        "display_name": "Config table",
+        "description": "",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "config_tables",
+        "required": true
+      },
+      "job_name_column": {
+        "key": "job_name_column",
+        "index": 20,
+        "display_name": "Job Name Column",
+        "description": "",
+        "type": "config-table-column",
+        "use_input_fields": {
+          "table_id": "config_table"
+        },
+        "required": true
+      },
+      "stage_name_column": {
+        "key": "stage_name_column",
+        "index": 30,
+        "display_name": "Stage Name Column",
+        "description": "",
+        "type": "config-table-column",
+        "use_input_fields": {
+          "table_id": "config_table"
+        },
+        "required": false
+      },
+      "job_run_id": {
+        "key": "job_run_id",
+        "index": 40,
+        "display_name": "Job Run Id",
+        "description": "Id of the run of a Jenkins Job.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/job_run",
+        "value_type": "string",
+        "required": true
+      },
+      "stage_id": {
+        "key": "stage_id",
+        "index": 50,
+        "display_name": "Stage Id",
+        "description": "Id of the Jenkins Job's stage.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/stage",
+        "value_type": "string",
+        "required": false
+      }
+    },
+    "output": {
+      "config_row": {
+        "key": "config_row",
+        "value_type": "json_blob",
+        "content_type_from_input_config_table": "job_name_column"
+      }
+    },
+    "options": [
+      "Found",
+      "Not found"
+    ],
+    "ui_data": {
+      "icon": "jenkins"
+    }
+  },
+  {
+    "type": "get_job_details",
+    "node_handler": "get_job_details",
+    "name": "Get Jenkins Job Details",
+    "description": "Retrieve detailed information about a Jenkins Job.",
+    "category": "Jenkins",
+    "input": {
+      "job_run_id": {
+        "key": "job_run_id",
+        "index": 10,
+        "display_name": "Job Run Id",
+        "description": "Id of a run of a Jenkins Job.",
+        "type": "text",
+        "content_type": "id:triage_rules_matched/jenkins/job_run",
+        "value_type": "string",
+        "required": true
+      }
+    },
+    "output": {
+      "name": {
+        "key": "name",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "url": {
+        "key": "url",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "job_run_number": {
+        "key": "job_run_number",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "status": {
+        "key": "status",
+        "content_type": "string",
+        "value_type": "string"
+      },
+      "params": {
+        "key": "params",
+        "content_type": "json_blob",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "jenkins"
+    }
+  }
+]

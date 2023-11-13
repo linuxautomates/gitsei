@@ -1,0 +1,85 @@
+{
+  "name": "Temporory-test1",
+  "is_new": true,
+  "description": "qa",
+  "deployment_frequency": {
+    "integration_ids": [
+      "3847"
+    ],
+    "integration_id": "3847",
+    "calculation_field": "pr_merged_at",
+    "filters": {
+      "deployment_frequency": {
+        "integration_type": "SCM",
+        "scm_filters": {
+          "source_branch": {
+            "$begins": [
+              "branch1"
+            ]
+          },
+          "target_branch": {
+            "$begins": [
+              "main"
+            ]
+          },
+          "labels": {
+            "$begins": [
+              "label1",
+              "label2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "change_failure_rate": {
+    "integration_ids": [
+      "4216"
+    ],
+    "integration_id": "4216",
+    "is_absolute": false,
+    "calculation_field": "pr_merged_at",
+    "filters": {
+      "failed_deployment": {
+        "integration_type": "SCM",
+        "scm_filters": {
+          "source_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "target_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "labels": {
+            "$begins": [
+              "release"
+            ]
+          }
+        }
+      },
+      "total_deployment": {
+        "integration_type": "SCM",
+        "scm_filters": {
+          "source_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "target_branch": {
+            "$begins": [
+              "release"
+            ]
+          },
+          "labels": {
+            "$begins": [
+              "release"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

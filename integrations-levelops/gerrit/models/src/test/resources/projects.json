@@ -1,0 +1,18 @@
+{
+  "All-Projects": {
+    "id": "All-Projects",
+    "description": "Access inherited by all other projects.",
+    "state": "ACTIVE"
+  },
+  "All-Users": {
+    "id": "All-Users",
+    "parent": "All-Projects",
+    "description": "Individual user settings and preferences.",
+    "state": "ACTIVE"
+  },
+  "project1": {
+    "id": "project1",
+    "parent": "All-Projects",
+    "state": "ACTIVE"
+  }
+}

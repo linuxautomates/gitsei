@@ -1,0 +1,28 @@
+{
+  "change_failure_rate_only_workflow_filters": {
+    "workitem_types": [
+      "Task"
+    ],
+    "workitem_statuses": [
+      "Done", "Resolved"
+    ]
+  },
+  "change_failure_rate_workflow_filters_with_req_filter": {
+    "workitem_types": [
+      "Task"
+    ]
+  },
+  "deployment_frequency_rate_only_workflow_filters": {
+    "workitem_types": [
+      "Task", "Issue"
+    ],
+    "workitem_statuses": [
+      "Done", "Resolved"
+    ]
+  },
+  "deployment_frequency_workflow_filters_with_req_filter": {
+    "workitem_types": [
+      "Task", "Issue"
+    ]
+  }
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "type": "zendesk_create_ticket",
+    "node_handler": "zendesk_create_ticket",
+    "name": "Create Zendesk ticket",
+    "description": "Creates a Zendesk ticket",
+    "category": "Zendesk",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "public_reply": {
+        "key": "public_reply",
+        "index": 20,
+        "display_name": "Public reply",
+        "description": "Opening comment for the ticket",
+        "type": "text",
+        "required": true
+      },
+      "internal_note": {
+        "key": "internal_note",
+        "index": 30,
+        "display_name": "Internal comment",
+        "description": "Internal opening comment for the ticket",
+        "type": "text",
+        "required": false
+      },
+      "subject": {
+        "key": "subject",
+        "index": 40,
+        "display_name": "Subject",
+        "description": "Subject/description of the ticket",
+        "type": "text",
+        "required": false
+      },
+      "priority": {
+        "key": "priority",
+        "index": 50,
+        "display_name": "Priority",
+        "description": "Priority of the ticket",
+        "type": "single-select",
+        "options": [
+          "urgent",
+          "high",
+          "normal",
+          "low"
+        ],
+        "required": false
+      },
+      "type": {
+        "key": "type",
+        "index": 60,
+        "display_name": "Type",
+        "description": "Type of the ticket",
+        "type": "single-select",
+        "options": [
+          "problem",
+          "incident",
+          "question",
+          "task"
+        ],
+        "required": false
+      },
+      "status": {
+        "key": "status",
+        "index": 70,
+        "display_name": "Status",
+        "description": "Status of the ticket",
+        "type": "single-select",
+        "options": [
+          "new",
+          "open",
+          "pending",
+          "hold",
+          "solved",
+          "closed"
+        ],
+        "required": false
+      },
+      "requester_email": {
+        "key": "requester_email",
+        "index": 80,
+        "display_name": "Requester email",
+        "description": "Email address of the ticket requester",
+        "type": "text",
+        "required": false
+      },
+      "assignee_email": {
+        "key": "assignee_email",
+        "index": 90,
+        "display_name": "Assignee email",
+        "description": "Email address of the ticket assignee",
+        "type": "text",
+        "required": false
+      },
+      "group_name": {
+        "key": "group_name",
+        "index": 100,
+        "display_name": "Group name",
+        "description": "Name of the assignee group",
+        "type": "text",
+        "required": false
+      },
+      "follower_emails": {
+        "key": "follower_emails",
+        "index": 110,
+        "display_name": "Follower emails",
+        "description": "Comma separated email addresses of the followers",
+        "type": "text",
+        "required": false
+      },
+      "due_date": {
+        "key": "due_date",
+        "index": 120,
+        "display_name": "Due date",
+        "description": "Due date of the ticket",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "zendesk"
+    }
+  },
+  {
+    "type": "zendesk_update_ticket",
+    "node_handler": "zendesk_update_ticket",
+    "name": "Update Zendesk ticket",
+    "description": "Updates an existing Zendesk ticket",
+    "category": "Zendesk",
+    "input": {
+      "integration_id": {
+        "key": "integration_id",
+        "index": 10,
+        "display_name": "Integration",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "integrations",
+        "required": true
+      },
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 20,
+        "display_name": "Ticket id",
+        "description": "Id of the ticket to be updated",
+        "type": "text",
+        "required": true
+      },
+      "public_reply": {
+        "key": "public_reply",
+        "index": 30,
+        "display_name": "Public reply",
+        "description": "Opening comment for the ticket",
+        "type": "text",
+        "required": true
+      },
+      "internal_note": {
+        "key": "internal_note",
+        "index": 40,
+        "display_name": "Internal comment",
+        "description": "Internal opening comment for the ticket",
+        "type": "text",
+        "required": false
+      },
+      "subject": {
+        "key": "subject",
+        "index": 50,
+        "display_name": "Subject",
+        "description": "Subject/description of the ticket",
+        "type": "text",
+        "required": false
+      },
+      "priority": {
+        "key": "priority",
+        "index": 60,
+        "display_name": "Priority",
+        "description": "Priority of the ticket",
+        "type": "single-select",
+        "options": [
+          "urgent",
+          "high",
+          "normal",
+          "low"
+        ],
+        "required": false
+      },
+      "type": {
+        "key": "type",
+        "index": 70,
+        "display_name": "Type",
+        "description": "Type of the ticket",
+        "type": "single-select",
+        "options": [
+          "problem",
+          "incident",
+          "question",
+          "task"
+        ],
+        "required": false
+      },
+      "status": {
+        "key": "status",
+        "index": 80,
+        "display_name": "Status",
+        "description": "Status of the ticket",
+        "type": "single-select",
+        "options": [
+          "new",
+          "open",
+          "pending",
+          "hold",
+          "solved",
+          "closed"
+        ],
+        "required": false
+      },
+      "requester_email": {
+        "key": "requester_email",
+        "index": 90,
+        "display_name": "Requester email",
+        "description": "Email address of the ticket requester",
+        "type": "text",
+        "required": false
+      },
+      "assignee_email": {
+        "key": "assignee_email",
+        "index": 100,
+        "display_name": "Assignee email",
+        "description": "Email address of the ticket assignee",
+        "type": "text",
+        "required": false
+      },
+      "group_name": {
+        "key": "group_name",
+        "index": 110,
+        "display_name": "Group name",
+        "description": "Name of the assignee group",
+        "type": "text",
+        "required": false
+      },
+      "follower_emails": {
+        "key": "follower_emails",
+        "index": 120,
+        "display_name": "Follower emails",
+        "description": "Comma separated email addresses of the followers",
+        "type": "text",
+        "required": false
+      },
+      "due_date": {
+        "key": "due_date",
+        "index": 130,
+        "display_name": "Due date",
+        "description": "Due date for the ticket",
+        "type": "text",
+        "required": false
+      }
+    },
+    "output": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "value_type": "string"
+      }
+    },
+    "ui_data": {
+      "icon": "zendesk"
+    }
+  }
+]

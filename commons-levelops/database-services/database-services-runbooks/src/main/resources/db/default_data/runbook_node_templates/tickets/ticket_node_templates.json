@@ -1,0 +1,300 @@
+[
+  {
+    "type": "create_ticket",
+    "node_handler": "create_ticket",
+    "name": "Create Issue",
+    "description": "Create an issue",
+    "category": "Issues",
+    "input": {
+      "artifact_title": {
+        "key": "artifact_title",
+        "index": 10,
+        "display_name": "Title",
+        "description": "Title of the issue",
+        "type": "text",
+        "options": [],
+        "required": true
+      },
+      "reporter_id": {
+        "key": "reporter_id",
+        "index": 35,
+        "display_name": "Reporter",
+        "description": "User that is reporting this issue. Select from the list, or use a variable.",
+        "type": "single-custom-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "users",
+        "search_field": "email",
+        "required": false
+      },
+      "assignee_id": {
+        "key": "assignee_id",
+        "index": 40,
+        "display_name": "Assignees",
+        "description": "This issue will be assigned to these users. Select from the list, or use a variable.",
+        "type": "multi-custom-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "users",
+        "search_field": "email",
+        "required": false
+      },
+      "product_id": {
+        "key": "product_id",
+        "index": 60,
+        "display_name": "Project",
+        "description": "Associate this issue with a project.",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "products",
+        "required": false
+      },
+      "description": {
+        "key": "description",
+        "index": 50,
+        "display_name": "Description",
+        "description": "Description for the ticket",
+        "type": "text",
+        "options": [],
+        "required": false
+      },
+      "parent_ticket_id": {
+        "key": "parent_ticket_id",
+        "index": 70,
+        "display_name": "Parent Issue ID",
+        "type": "text",
+        "description": "If specified, create a sub-issue.",
+        "content_type": "id:work_item/-/work_item",
+        "value_type": "string",
+        "required": false
+      },
+      "ticket_template_id": {
+        "key": "ticket_template_id",
+        "index": 80,
+        "display_name": "Issue template",
+        "type": "single-dynamic-select",
+        "options": [],
+        "dynamic_resource_name": "ticket_templates",
+        "required": false
+      },
+      "send_notification": {
+        "key": "send_notification",
+        "index": 90,
+        "display_name": "Send Notification",
+        "description": "Send a notification to the issue assignees (only if an issue template was specified).",
+        "type": "radio-group",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default_value": "Yes",
+        "hidden": false,
+        "required": false
+      }
+    },
+    "output": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "content_type": "id:work_item/-/work_item",
+        "value_type": "string"
+      },
+      "link": {
+        "key": "link",
+        "value_type": "string",
+        "content_type": "string"
+      },
+      "assessment_id": {
+        "key": "assessment_id",
+        "content_type": "id:assessment/-/assessment",
+        "value_type": "string"
+      },
+      "assessment_created": {
+        "key": "assessment_created",
+        "content_type": "boolean",
+        "value_type": "string"
+      },
+      "ticket": {
+        "key": "ticket",
+        "content_type": "work_item/-/work_item",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "get_ticket",
+    "node_handler": "get_ticket",
+    "name": "Get Issue",
+    "description": "Retrieve an issue.",
+    "category": "Issues",
+    "input": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 10,
+        "display_name": "Issue Id",
+        "description": "Id of the issue (e.g. PROJ-123). Enter or select a variable from the list. You can also type in an Id.",
+        "type": "variable-select",
+        "content_type": "id:work_item/-/work_item",
+        "options": [],
+        "required": true
+      }
+    },
+    "output": {
+      "ticket": {
+        "key": "ticket",
+        "content_type": "work_item/-/work_item",
+        "value_type": "json_blob"
+      }
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "update_ticket",
+    "node_handler": "update_ticket",
+    "name": "Update Issue",
+    "description": "Update an issue",
+    "category": "Issues",
+    "input": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 10,
+        "display_name": "Issue Id",
+        "description": "Id of the issue (e.g. PROJ-123). Enter or select a variable from the list. You can also type in an Id.",
+        "type": "variable-select",
+        "content_type": "id:work_item/-/work_item",
+        "options": [],
+        "required": true
+      },
+      "state_id": {
+        "key": "state_id",
+        "index": 20,
+        "display_name": "State",
+        "type": "single-dynamic-select",
+        "dynamic_resource_name": "states",
+        "options": [],
+        "required": false
+      },
+      "assignee_id": {
+        "key": "assignee_id",
+        "index": 30,
+        "display_name": "Assignees",
+        "description": "Choose one or more assignees. If left empty, current assignees will not be modified.",
+        "type": "multi-dynamic-select",
+        "dynamic_resource_name": "users",
+        "search_field": "email",
+        "options": [],
+        "required": false
+      },
+      "replace_assignees": {
+        "key": "replace_assignees",
+        "index": 40,
+        "display_name": "Replace or Add Assignees",
+        "description": "Replace all assignees or add to the current ones.",
+        "type": "radio-group",
+        "options": [
+          "Replace",
+          "Add"
+        ],
+        "default_value": "Replace",
+        "required": false
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "check_ticket_status",
+    "node_handler": "check_ticket_status",
+    "name": "Check Status of Issue",
+    "description": "Wait for an issue to be in a desired state.",
+    "category": "Issues",
+    "input": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 10,
+        "display_name": "Issue Id",
+        "description": "Id of the issue (e.g. PROJ-123). Enter or select a variable from the list. You can also type in an Id.",
+        "type": "variable-select",
+        "content_type": "id:work_item/-/work_item",
+        "required": true
+      },
+      "frequency": {
+        "key": "frequency",
+        "index": 20,
+        "display_name": "Frequency in minutes",
+        "description": "Choose how often to check the issue status",
+        "type": "text",
+        "required": true
+      },
+      "timeout": {
+        "key": "timeout",
+        "index": 30,
+        "display_name": "Time-out in minutes",
+        "description": "Choose how long to wait before stopping checking the issue status",
+        "type": "text",
+        "required": false
+      },
+      "state_ids": {
+        "key": "state_ids",
+        "index": 40,
+        "display_name": "States",
+        "description": "Choose one or more states the issue should be in",
+        "type": "multi-dynamic-select",
+        "dynamic_resource_name": "states",
+        "required": true
+      }
+    },
+    "output": {
+      "ticket": {
+        "key": "ticket",
+        "content_type": "work_item/-/work_item",
+        "value_type": "json_blob"
+      }
+    },
+    "options": [
+      "Condition met",
+      "Condition not met",
+      "Timed out"
+    ],
+    "ui_data": {
+      "icon": "levelops"
+    }
+  },
+  {
+    "type": "tag_ticket",
+    "node_handler": "tag_ticket",
+    "name": "Tag Issue",
+    "description": "Add tags to an existing Issue",
+    "category": "Issues",
+    "input": {
+      "ticket_id": {
+        "key": "ticket_id",
+        "index": 10,
+        "display_name": "Issue Id",
+        "description": "Id of the issue (e.g. PROJ-123). Enter or select a variable from the list. You can also type in an Id.",
+        "type": "variable-select",
+        "content_type": "id:work_item/-/work_item",
+        "required": true
+      },
+      "tags": {
+        "key": "tags",
+        "index": 20,
+        "display_name": "Tags",
+        "description": "Choose one or more tags to add to the issue.",
+        "type": "multi-custom-dynamic-select",
+        "dynamic_resource_name": "tags",
+        "required": true
+      }
+    },
+    "output": {
+    },
+    "ui_data": {
+      "icon": "levelops"
+    }
+  }
+]

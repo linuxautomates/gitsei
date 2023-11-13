@@ -1,0 +1,28 @@
+apply plugin: 'java-library'
+
+configurations{
+}
+
+dependencies {
+    api levelopsCommonsLib('inventory-service')
+    api levelopsCommonsLib('ingestion-commons')
+    api levelopsCommonsLib('database-commons')
+
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    testImplementation libraries.lombok
+
+    implementation libraries.jackson_core
+    implementation libraries.guava
+    implementation libraries.apache_commons
+    implementation libraries.apache_collections
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+
+    testImplementation libraries.junit
+    testImplementation libraries.assertj
+    testImplementation libraries.mockito
+}
+
+test {
+    exclude '**/*IntegrationTest*'
+}

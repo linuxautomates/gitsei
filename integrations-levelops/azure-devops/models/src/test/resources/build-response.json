@@ -1,0 +1,1914 @@
+{
+  "value" : [ {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/16"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=16"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "4d4996f0-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : { },
+    "id" : 16,
+    "buildNumber" : "20201124.3",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-24T13:26:41.524+0000",
+    "startTime" : "2020-11-24T13:29:26.43+0000",
+    "finishTime" : "2020-11-24T13:29:38.548+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/16",
+    "definition" : {
+      "id" : 1,
+      "name" : "praveen-cognitree.my-first-repo",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/1",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/1?revision=1"
+    },
+    "buildNumberRevision" : 3,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/16",
+    "sourceBranch" : "refs/heads/main",
+    "sourceVersion" : "f75abe6b29ba0abad5dd9924f62de0fa67b4e140",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "manual",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-24T13:29:38.683+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "4d4996f0-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/16/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "praveen-cognitree/my-first-repo",
+      "type" : "GitHub"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/15"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=15"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "4d4a44fe-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : { },
+    "id" : 15,
+    "buildNumber" : "20201124.2",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-24T13:25:57.784+0000",
+    "startTime" : "2020-11-24T13:29:05.893+0000",
+    "finishTime" : "2020-11-24T13:29:18.812+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/15",
+    "definition" : {
+      "id" : 1,
+      "name" : "praveen-cognitree.my-first-repo",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/1",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/1?revision=1"
+    },
+    "buildNumberRevision" : 2,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/15",
+    "sourceBranch" : "refs/heads/main",
+    "sourceVersion" : "f75abe6b29ba0abad5dd9924f62de0fa67b4e140",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "manual",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-24T13:29:18.967+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "4d4a44fe-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/15/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "praveen-cognitree/my-first-repo",
+      "type" : "GitHub"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/14"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=14"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "4d4a5975-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : { },
+    "id" : 14,
+    "buildNumber" : "20201124.1",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-24T13:25:37.769+0000",
+    "startTime" : "2020-11-24T13:27:24.640+0000",
+    "finishTime" : "2020-11-24T13:28:58.668+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/14",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/14",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "7c73c87858b901cd071bc2b4820d006ebc83b72a",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "manual",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-24T13:28:58.957+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "4d4a5975-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/14/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/13"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=13"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "4d4a6689-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : { },
+    "id" : 13,
+    "buildNumber" : "20201124.1",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-24T13:25:21.324+0000",
+    "startTime" : "2020-11-24T13:25:35.759+0000",
+    "finishTime" : "2020-11-24T13:27:18.751+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/13",
+    "definition" : {
+      "id" : 3,
+      "name" : "repo-test-1 (1)",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/3",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/3?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/13",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "7c73c87858b901cd071bc2b4820d006ebc83b72a",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "manual",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-24T13:27:19.37+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "4d4a6689-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/13/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/12"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=12"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "4d4a035f-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : { },
+    "id" : 12,
+    "buildNumber" : "20201124.1",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-24T13:24:57.279+0000",
+    "startTime" : "2020-11-24T13:25:15.597+0000",
+    "finishTime" : "2020-11-24T13:25:29.954+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/12",
+    "definition" : {
+      "id" : 1,
+      "name" : "praveen-cognitree.my-first-repo",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/1",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/1?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/12",
+    "sourceBranch" : "refs/heads/main",
+    "sourceVersion" : "f75abe6b29ba0abad5dd9924f62de0fa67b4e140",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "manual",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-24T13:25:30.243+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "4d4a035f-43f8-444d-b918-878e1692826b",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/12/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "praveen-cognitree/my-first-repo",
+      "type" : "GitHub"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/11"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=11"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "4513657b-96de-4281-ba27-ac5cc9ff1258",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "7c73c87858b901cd071bc2b4820d006ebc83b72a",
+      "ci.message" : "Updated pom.xml",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 11,
+    "buildNumber" : "20201110.2",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-10T07:15:06.883+0000",
+    "startTime" : "2020-11-10T07:16:53.389+0000",
+    "finishTime" : "2020-11-10T07:18:25.963+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/11",
+    "definition" : {
+      "id" : 3,
+      "name" : "repo-test-1 (1)",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/3",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/3?revision=1"
+    },
+    "buildNumberRevision" : 2,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/11",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "7c73c87858b901cd071bc2b4820d006ebc83b72a",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-10T07:18:26.273+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "4513657b-96de-4281-ba27-ac5cc9ff1258",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/11/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/10"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=10"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "667ceabe-e2e5-4579-8c5b-5055cf8134da",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "7c73c87858b901cd071bc2b4820d006ebc83b72a",
+      "ci.message" : "Updated pom.xml",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 10,
+    "buildNumber" : "20201110.2",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-10T07:15:06.443+0000",
+    "startTime" : "2020-11-10T07:15:14.884+0000",
+    "finishTime" : "2020-11-10T07:16:47.364+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/10",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 2,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/10",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "7c73c87858b901cd071bc2b4820d006ebc83b72a",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-10T07:16:47.610+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "667ceabe-e2e5-4579-8c5b-5055cf8134da",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/10/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/9"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=9"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "ddc583f9-a660-4415-ba67-9d8a6dc841f2",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "6092bc8ccc249af5692ff2486e48d59e6d504a31",
+      "ci.message" : "Updated pom.xml",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 9,
+    "buildNumber" : "20201110.1",
+    "status" : "completed",
+    "result" : "failed",
+    "queueTime" : "2020-11-10T07:05:11.732+0000",
+    "startTime" : "2020-11-10T07:05:38.768+0000",
+    "finishTime" : "2020-11-10T07:05:48.989+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/9",
+    "definition" : {
+      "id" : 3,
+      "name" : "repo-test-1 (1)",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/3",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/3?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/9",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "6092bc8ccc249af5692ff2486e48d59e6d504a31",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-10T07:05:49.577+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "ddc583f9-a660-4415-ba67-9d8a6dc841f2",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/9/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/8"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=8"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "168271de-b640-417c-bb44-a1a8b9438fd2",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "6092bc8ccc249af5692ff2486e48d59e6d504a31",
+      "ci.message" : "Updated pom.xml",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 8,
+    "buildNumber" : "20201110.1",
+    "status" : "completed",
+    "result" : "failed",
+    "queueTime" : "2020-11-10T07:05:11.302+0000",
+    "startTime" : "2020-11-10T07:05:20.975+0000",
+    "finishTime" : "2020-11-10T07:05:32.679+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/8",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/8",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "6092bc8ccc249af5692ff2486e48d59e6d504a31",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-10T07:05:32.927+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "168271de-b640-417c-bb44-a1a8b9438fd2",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/8/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/7"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=7"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "c6c45da6-7100-4fa6-aa5e-a97711dd01a5",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : { },
+    "id" : 7,
+    "buildNumber" : "20201109.3",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-09T05:37:24.778+0000",
+    "startTime" : "2020-11-09T05:37:31.702+0000",
+    "finishTime" : "2020-11-09T05:39:03.970+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/7",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 3,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/7",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "cd0e64818e7152f86e2343aed7d7cdcb21d5575c",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "manual",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-09T05:39:04.257+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "c6c45da6-7100-4fa6-aa5e-a97711dd01a5",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/7/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : true,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/5"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=5"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "18b7462c-ffd2-467f-addb-bcc0d8124979",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "cd0e64818e7152f86e2343aed7d7cdcb21d5575c",
+      "ci.message" : "Added pom.xml to /",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 5,
+    "buildNumber" : "20201109.2",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-09T05:34:38.212+0000",
+    "startTime" : "2020-11-09T05:34:46.203+0000",
+    "finishTime" : "2020-11-09T05:36:19.201+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/5",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 2,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/5",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "cd0e64818e7152f86e2343aed7d7cdcb21d5575c",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-09T05:36:19.447+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "18b7462c-ffd2-467f-addb-bcc0d8124979",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/5/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/6"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=6"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "a8ecd34e-3cba-4254-a798-e2484ed0493b",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "cd0e64818e7152f86e2343aed7d7cdcb21d5575c",
+      "ci.message" : "Added pom.xml to /",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 6,
+    "buildNumber" : "20201109.2",
+    "status" : "completed",
+    "result" : "canceled",
+    "queueTime" : "2020-11-09T05:34:38.557+0000",
+    "startTime" : "2020-11-09T05:35:59.891+0000",
+    "finishTime" : "2020-11-09T05:35:59.891+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/6",
+    "definition" : {
+      "id" : 3,
+      "name" : "repo-test-1 (1)",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/3",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/3?revision=1"
+    },
+    "buildNumberRevision" : 2,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/6",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "cd0e64818e7152f86e2343aed7d7cdcb21d5575c",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-09T05:36:00.123+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "a8ecd34e-3cba-4254-a798-e2484ed0493b",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/6/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/4"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=4"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "e498bd6b-07b8-4cce-a681-c564af08f22a",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "master",
+      "ci.sourceSha" : "37d2e22419d4b5fb17287b6e6fa8f6a9b976a28f",
+      "ci.message" : "Set up CI with Azure Pipelines"
+    },
+    "id" : 4,
+    "buildNumber" : "20201109.1",
+    "status" : "completed",
+    "result" : "failed",
+    "queueTime" : "2020-11-09T05:33:20.299+0000",
+    "startTime" : "2020-11-09T05:33:27.07+0000",
+    "finishTime" : "2020-11-09T05:33:36.596+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/4",
+    "definition" : {
+      "id" : 3,
+      "name" : "repo-test-1 (1)",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/3",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/3?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/4",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "37d2e22419d4b5fb17287b6e6fa8f6a9b976a28f",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-09T05:33:36.817+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "e498bd6b-07b8-4cce-a681-c564af08f22a",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/4/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/3"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=3"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "45985054-b821-4a53-bb1c-082507d5c6b1",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "refs/heads/master",
+      "ci.sourceSha" : "838b05a60bc4118051ce342d74c79f0110a48ec2",
+      "ci.message" : "Added App.java to /",
+      "ci.triggerRepository" : "d4cfc7cc-18cc-4f60-89b0-40012643650f"
+    },
+    "id" : 3,
+    "buildNumber" : "20201109.1",
+    "status" : "completed",
+    "result" : "failed",
+    "queueTime" : "2020-11-09T05:32:29.789+0000",
+    "startTime" : "2020-11-09T05:32:39.801+0000",
+    "finishTime" : "2020-11-09T05:32:50.772+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/3",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/3",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "838b05a60bc4118051ce342d74c79f0110a48ec2",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "lastChangedDate" : "2020-11-09T05:32:50.967+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "45985054-b821-4a53-bb1c-082507d5c6b1",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/3/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/2"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=2"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "aac5e7ea-bd57-41b3-a97d-65f76cc997d2",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "master",
+      "ci.sourceSha" : "2a8a5a9fbfe56e3c2fc24ba15374fc50e5e76b3b",
+      "ci.message" : "Set up CI with Azure Pipelines"
+    },
+    "id" : 2,
+    "buildNumber" : "20201106.1",
+    "status" : "completed",
+    "result" : "failed",
+    "queueTime" : "2020-11-06T12:00:46.98+0000",
+    "startTime" : "2020-11-06T12:00:54.980+0000",
+    "finishTime" : "2020-11-06T12:01:04.60+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/2",
+    "definition" : {
+      "id" : 2,
+      "name" : "repo-test-1",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/2",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/2?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/2",
+    "sourceBranch" : "refs/heads/master",
+    "sourceVersion" : "2a8a5a9fbfe56e3c2fc24ba15374fc50e5e76b3b",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-06T12:01:04.370+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "aac5e7ea-bd57-41b3-a97d-65f76cc997d2",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/2/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "d4cfc7cc-18cc-4f60-89b0-40012643650f",
+      "name" : "repo-test-1",
+      "type" : "TfsGit",
+      "url" : "https://dev.azure.com/cgn-test/project-test-1/_git/repo-test-1"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  }, {
+    "_links" : {
+      "self" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/1"
+      },
+      "web" : {
+        "href" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_build/results?buildId=1"
+      }
+    },
+    "properties" : {
+      "count" : 0
+    },
+    "tags" : [ ],
+    "validationResults" : [ ],
+    "plans" : [ {
+      "planId" : "b4331e32-0956-4625-9371-f9ee3af8a2c5",
+      "orchestrationType" : 0
+    } ],
+    "triggerInfo" : {
+      "ci.sourceBranch" : "main",
+      "ci.sourceSha" : "f75abe6b29ba0abad5dd9924f62de0fa67b4e140",
+      "ci.message" : "Set up CI with Azure Pipelines"
+    },
+    "id" : 1,
+    "buildNumber" : "20201106.1",
+    "status" : "completed",
+    "result" : "succeeded",
+    "queueTime" : "2020-11-06T07:12:05.133+0000",
+    "startTime" : "2020-11-06T07:12:17.695+0000",
+    "finishTime" : "2020-11-06T07:12:28.627+0000",
+    "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Builds/1",
+    "definition" : {
+      "id" : 1,
+      "name" : "praveen-cognitree.my-first-repo",
+      "path" : "\\",
+      "project" : {
+        "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "name" : "project-test-1",
+        "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+        "state" : "wellFormed",
+        "revision" : 12,
+        "visibility" : "private",
+        "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+      },
+      "queueStatus" : "enabled",
+      "revision" : 1,
+      "type" : "build",
+      "uri" : "vstfs:///Build/Definition/1",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/Definitions/1?revision=1"
+    },
+    "buildNumberRevision" : 1,
+    "project" : {
+      "id" : "d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "name" : "project-test-1",
+      "url" : "https://dev.azure.com/cgn-test/_apis/projects/d1c0f253-13c2-48f9-bc41-e493d8c18da6",
+      "state" : "wellFormed",
+      "revision" : 12,
+      "visibility" : "private",
+      "lastUpdateTime" : "2020-11-06T09:57:46.917+0000"
+    },
+    "uri" : "vstfs:///Build/Build/1",
+    "sourceBranch" : "refs/heads/main",
+    "sourceVersion" : "f75abe6b29ba0abad5dd9924f62de0fa67b4e140",
+    "queue" : {
+      "id" : 8,
+      "name" : "Hosted Ubuntu 1604",
+      "pool" : {
+        "hosted" : true,
+        "id" : 8,
+        "isHosted" : true,
+        "name" : "Hosted Ubuntu 1604"
+      }
+    },
+    "priority" : "normal",
+    "reason" : "individualCI",
+    "requestedFor" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "requestedBy" : {
+      "_links" : { },
+      "descriptor" : "msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "displayName" : "srinath.chandrashekhar",
+      "id" : "31111bde-02f6-694e-86e7-cb19b5559f0b",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/msa.MzExMTFiZGUtMDJmNi03OTRlLTg2ZTctY2IxOWI1NTU5ZjBi",
+      "uniqueName" : "srinath.chandrashekhar@levelops.io",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/31111bde-02f6-694e-86e7-cb19b5559f0b"
+    },
+    "lastChangedDate" : "2020-11-06T07:12:28.800+0000",
+    "lastChangedBy" : {
+      "_links" : { },
+      "descriptor" : "s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "displayName" : "Microsoft.VisualStudio.Services.TFS",
+      "id" : "00000002-0000-8888-8000-000000000000",
+      "imageUrl" : "https://dev.azure.com/cgn-test/_apis/GraphProfile/MemberAvatars/s2s.MDAwMDAwMDItMDAwMC04ODg4LTgwMDAtMDAwMDAwMDAwMDAwQDJjODk1OTA4LTA0ZTAtNDk1Mi04OWZkLTU0YjAwNDZkNjI4OA",
+      "uniqueName" : "00000002-0000-8888-8000-000000000000@2c895908-04e0-4952-89fd-54b0046d6288",
+      "url" : "https://spsprodsin1.vssps.visualstudio.com/Ac35fc200-ab68-40e7-8802-0a5a3ab01d32/_apis/Identities/00000002-0000-8888-8000-000000000000"
+    },
+    "orchestrationPlan" : {
+      "planId" : "b4331e32-0956-4625-9371-f9ee3af8a2c5",
+      "orchestrationType" : 0
+    },
+    "logs" : {
+      "id" : 0,
+      "type" : "Container",
+      "url" : "https://dev.azure.com/cgn-test/d1c0f253-13c2-48f9-bc41-e493d8c18da6/_apis/build/builds/1/logs"
+    },
+    "repository" : {
+      "checkoutSubmodules" : false,
+      "id" : "praveen-cognitree/my-first-repo",
+      "type" : "GitHub"
+    },
+    "keepForever" : false,
+    "retainedByRelease" : false
+  } ]
+}
