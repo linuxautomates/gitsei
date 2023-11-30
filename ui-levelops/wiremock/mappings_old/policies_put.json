@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/v1/policies/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

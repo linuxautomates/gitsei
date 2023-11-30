@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/event_logs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "count": 2,
+      "records": [
+        {
+          "id": "1",
+          "created_at": 1572540591,
+          "policy": "Policy 1",
+          "reason": "Signature xyz failed",
+          "integration": "",
+          "artifact": "abc, efg",
+          "severity": "LOW"
+        },
+        {
+          "id": "2",
+          "created_at": 1572540591,
+          "policy": "Policy 1",
+          "reason": "Signature xyz failed",
+          "integration": "",
+          "artifact": "abc, efg",
+          "severity": "LOW"
+        }
+      ],
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 2,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

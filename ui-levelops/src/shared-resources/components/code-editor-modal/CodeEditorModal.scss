@@ -1,0 +1,10 @@
+.code-editor-modal {
+  .ant-modal {
+    width: calc(100vw - 300px) !important;
+
+    .ant-modal-body {
+      height: calc(100vh - 250px);
+      overflow-y: hidden;
+    }
+  }
+}

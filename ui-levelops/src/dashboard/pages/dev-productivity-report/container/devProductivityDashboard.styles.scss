@@ -1,0 +1,29 @@
+$backgroundColor: #fff;
+$text-color-dark: #262626;
+
+.dev-productivity-dashboard-container {
+  .dev-productivity-widget-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    .widgets {
+      width: 82%;
+      .dev-widget-container {
+        margin-bottom: 22px;
+        .ant-card-head-title {
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        .dev-widget-extra {
+          input {
+            margin-right: 1rem;
+          }
+          display: flex;
+        }
+      }
+    }
+  }
+}

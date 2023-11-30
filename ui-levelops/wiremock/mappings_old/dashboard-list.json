@@ -1,0 +1,44 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/ous/4db68f4d-2abd-4ddc-9846-131253116992/dashboards/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "has_next": false,
+        "page": 0,
+        "page_size": 10,
+        "total_count": 4
+      },
+      "records": [
+        {
+          "ou_id": "4db68f4d-2a4ddc-9846-131253116992",
+          "dashboard_order": 0,
+          "is_default": false,
+          "dashboard_id": 1,
+          "name": "Alignment"
+        },
+        {
+          "ou_id": "4db68f4d-2abd-4ddc-9846-131253116992",
+          "dashboard_order": 0,
+          "is_default": false,
+          "dashboard_id": 2,
+          "name": "02-06-2022-LFE-3058"
+        },
+        {
+          "ou_id": "4db68f4d-2abd-4dd11253116992",
+          "dashboard_order": 0,
+          "is_default": false,
+          "dashboard_id": 3,
+          "name": "02-06-2022-LFE-3058"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/products/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "46",
+          "name": "Gondor",
+          "description": "gondor",
+          "key": "DEF46",
+          "updated_at": 1592432768,
+          "created_at": 1587068137,
+          "bootstrapped": false,
+          "immutable": false
+        },
+        {
+          "id": "71",
+          "name": "Rivendell",
+          "description": "Default Product",
+          "key": "DEFAULT",
+          "owner_id": "20",
+          "updated_at": 1591920065,
+          "created_at": 1588894460,
+          "bootstrapped": true,
+          "immutable": true
+        },
+        {
+          "id": "36",
+          "name": "Mordor",
+          "description": "test description",
+          "key": "DEF36",
+          "updated_at": 1591820148,
+          "created_at": 1581660101,
+          "bootstrapped": false,
+          "immutable": false
+        },
+        {
+          "id": "79",
+          "name": "Middle-earth",
+          "description": "",
+          "key": "MET",
+          "owner_id": "7",
+          "updated_at": 1591805609,
+          "created_at": 1591805609,
+          "bootstrapped": false,
+          "immutable": false
+        },
+        {
+          "id": "75",
+          "name": "Rohan",
+          "description": "",
+          "key": "ZCASH",
+          "updated_at": 1591805389,
+          "created_at": 1589752873,
+          "bootstrapped": false,
+          "immutable": false
+        },
+        {
+          "id": "78",
+          "name": "Isengaard",
+          "description": "",
+          "key": "MEG",
+          "owner_id": "3",
+          "updated_at": 1591805346,
+          "created_at": 1591002877,
+          "bootstrapped": false,
+          "immutable": false
+        },
+        {
+          "id": "76",
+          "name": "Minas Tirith",
+          "description": "",
+          "key": "MT",
+          "owner_id": "7",
+          "updated_at": 1591002239,
+          "created_at": 1590356801,
+          "bootstrapped": false,
+          "immutable": false
+        },
+        {
+          "id": "37",
+          "name": "Shire",
+          "description": "Wifi project",
+          "key": "DEF37",
+          "updated_at": 1589563677,
+          "created_at": 1581718579,
+          "bootstrapped": false,
+          "immutable": false
+        }
+      ],
+      "count": 8,
+      "_metadata": { "page_size": 100, "page": 0, "has_next": false, "total_count": 8 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

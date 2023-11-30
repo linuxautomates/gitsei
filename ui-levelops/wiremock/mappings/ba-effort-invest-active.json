@@ -1,0 +1,58 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/jira/active_work/ticket_count"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "alignment_score": 2,
+          "percentage_score": 0.3257576,
+          "category_allocations": {
+            "Technical Debt": {
+              "alignment_score": 1,
+              "percentage_score": 0,
+              "allocation": 0.36363637,
+              "effort": 12,
+              "total_effort": 33
+            },
+            "Story": {
+              "alignment_score": 2,
+              "percentage_score": 0.6212122,
+              "allocation": 0.42424244,
+              "effort": 14,
+              "total_effort": 33
+            },
+            "Bug & Defect": {
+              "alignment_score": 2,
+              "percentage_score": 0.6818182,
+              "allocation": 0.18181819,
+              "effort": 6,
+              "total_effort": 33
+            },
+            "Other": {
+              "alignment_score": 1,
+              "percentage_score": 0,
+              "allocation": 0.030303031,
+              "effort": 1,
+              "total_effort": 33
+            }
+          }
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

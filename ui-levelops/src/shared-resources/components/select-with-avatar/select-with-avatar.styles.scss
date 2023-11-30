@@ -1,0 +1,32 @@
+.select-with-avatar {
+  .selected-option {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+
+    .close-icon {
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .content {
+      max-width: calc(100% - 15px);
+    }
+  }
+
+  .add-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8a94a5;
+    .add-icon {
+      padding: 0 10px 0 2px;
+    }
+  }
+
+  .dropdown {
+    width: 100%;
+    margin-top: 8px;
+  }
+}

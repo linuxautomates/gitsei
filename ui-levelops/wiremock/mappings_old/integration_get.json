@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/integrations/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "123",
+      "status": "ACTIVE",
+      "name": "Github Integration",
+      "description": "This awesome integration",
+      "application": "github",
+      "method": "OAUTH",
+      "url": "",
+      "metadata": {
+        "repos": [
+          { "id": "1", "name": "company/repo1" },
+          { "id": "2", "name": "company/repo2" },
+          { "id": "3", "name": "company/repo3" },
+          { "id": "4", "name": "company/repo4" },
+          { "id": "5", "name": "company/repo5" }
+        ],
+        "projects": [
+          { "id": "6", "name": "project1" },
+          { "id": "7", "name": "project2" },
+          { "id": "8", "name": "project3" },
+          { "id": "9", "name": "project4" },
+          { "id": "10", "name": "project5" }
+        ]
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

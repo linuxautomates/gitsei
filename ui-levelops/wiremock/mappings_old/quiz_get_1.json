@@ -1,0 +1,148 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/questionnaires/1"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": 1,
+      "target_email": "meghana@levelops.io",
+      "sender_email": "harsh@levelops.io",
+      "work_item_id": 3,
+      "assignment_message": "Dear meghana@levelops.io, We discovered that you have a new ticket opened for release. Please answer this questionnaire",
+      "qtemplate_id": 2,
+      "policy_name": "Big Code Changes",
+      "artifact": "LEV-123",
+      "integration_url": "https://levelops.atlassian.net",
+      "integration_application": "jira",
+      "comments": "",
+      "section_responses": [
+        {
+          "section_id": 1,
+          "answers": [
+            {
+              "question_id": 1,
+              "user_email": "meghana@levelops.io",
+              "answered": true,
+              "responses": [
+                {
+                  "value": "yes",
+                  "score": 1
+                }
+              ]
+            },
+            {
+              "question_id": 2,
+              "user_email": "meghana@levelops.io",
+              "answered": true,
+              "responses": [
+                {
+                  "value": "no",
+                  "score": 10
+                }
+              ]
+            },
+            {
+              "question_id": 3,
+              "user_email": "meghana@levelops.io",
+              "answered": true,
+              "responses": [
+                {
+                  "value": "We manually checked for dead code",
+                  "score": 5
+                },
+                {
+                  "value": "We use coverage reports to identify dead code",
+                  "score": 3
+                }
+              ]
+            },
+            {
+              "question_id": 4,
+              "user_email": "harsh@levelops.io",
+              "answered": true,
+              "responses": [
+                {
+                  "value": "We have not checked for dead code",
+                  "score": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "answers": [
+            {
+              "question_id": 11,
+              "answered": true,
+              "user_email": "harsh@levelops.io",
+              "responses": [
+                {
+                  "value": "yes",
+                  "score": 1
+                }
+              ]
+            },
+            {
+              "question_id": 12,
+              "answered": true,
+              "user_email": "harsh@levelops.io",
+              "responses": [
+                {
+                  "value": "yes",
+                  "score": 1
+                }
+              ]
+            },
+            {
+              "question_id": 13,
+              "answered": true,
+              "user_email": "harsh@levelops.io",
+              "responses": [
+                {
+                  "value": "123",
+                  "score": 3,
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "section_id": 3,
+          "answers": [
+            {
+              "question_id": 22,
+              "answered": true,
+              "user_email": "harsh@levelops.io",
+              "responses": [
+                {
+                  "value": "no",
+                  "score": 10
+                }
+              ]
+            },
+            {
+              "question_id": 23,
+              "answered": true,
+              "user_email": "harsh@levelops.io",
+              "responses": [
+                {
+                  "value": "no",
+                  "score": 10
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "completed": false
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`configuration-tables helper test suite defaultRowData to match snapshot 1`] = `
+Array [
+  Object {
+    "column_1": "",
+    "column_2": "",
+    "column_3": "",
+    "column_4": "",
+  },
+]
+`;
+
+exports[`configuration-tables helper test suite defaultTableColumns to match snapshot 1`] = `
+Array [
+  Object {
+    "dataIndex": "column_1",
+    "editable": true,
+    "inputType": "string",
+    "key": "column_1",
+    "title": "Column 1",
+  },
+  Object {
+    "dataIndex": "column_2",
+    "editable": true,
+    "inputType": "boolean",
+    "key": "column_2",
+    "title": "Column 2",
+  },
+  Object {
+    "dataIndex": "column_3",
+    "editable": true,
+    "inputType": "date",
+    "key": "column_3",
+    "title": "Column 3",
+  },
+  Object {
+    "dataIndex": "column_4",
+    "editable": true,
+    "inputType": "single-select",
+    "key": "column_4",
+    "options": Array [
+      "preset",
+    ],
+    "title": "Column 4",
+  },
+]
+`;

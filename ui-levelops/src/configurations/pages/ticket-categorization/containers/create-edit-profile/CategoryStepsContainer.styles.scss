@@ -1,0 +1,17 @@
+.category-steps-container {
+  .category-steps-container_steps {
+    padding: 10px 20px;
+    box-shadow: rgba(96, 97, 112, 0.16) 0px 5px 5px;
+  }
+  .category-basic-info-container {
+    width: 100% !important;
+    min-height: 36rem;
+    padding: 2rem;
+    .basic-info-container-title {
+      display: none;
+    }
+    .basic-info-content-container {
+      padding: 2rem;
+    }
+  }
+}

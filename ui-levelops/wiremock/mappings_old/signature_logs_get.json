@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/signature_logs/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "delayDistribution": {
+      "type": "uniform",
+      "lower": 500,
+      "upper": 1000
+    },
+    "jsonBody": {
+      "id": "1",
+      "results": {
+        "high_risk_sql": [
+          "select * from common_table",
+          "select * from common_results_table where result_id in [1,2,3]"
+        ],
+        "new_sql": ["select * from customer.table where user_id=1"]
+      },
+      "metadata": {},
+      "product_id": "1",
+      "signature_id": "2",
+      "labels": ["db_isolation_tool", "us-east-1", "rel-123"],
+      "success": true,
+      "timestamp": 1572345209
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

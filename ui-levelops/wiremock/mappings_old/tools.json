@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/tools/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 9,
+        "page": 0,
+        "total_count": 15
+      },
+      "count": 9,
+      "records": [
+        {
+          "id": 1,
+          "name": "Jenkins Security Posture Assessment",
+          "file_id": "123",
+          "description": "Jenkins hardening and best practices checks",
+          "tags": [6, 2]
+        },
+        {
+          "id": 2,
+          "name": "GCP service discovery",
+          "file_id": "456",
+          "description": "Discovers kubernetes services running in your cluster",
+          "tags": [3, 4]
+        },
+        {
+          "id": 3,
+          "name": "API scan tool",
+          "file_id": "789",
+          "description": "Scan your environment for new API endpoints",
+          "tags": [1, 7]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

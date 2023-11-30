@@ -1,0 +1,110 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/v1/jira_issues/assignee_allocation_report",
+        "bodyPatterns": [
+            {
+                "equalToJson": "{\"filter\":{\"product_id\":\"772\",\"integration_ids\":[\"1430\",\"1446\",\"1597\",\"1598\",\"1723\"],\"epics\":[\"LEV-3375\",\"LEV-2555\",\"LEV-2635\",\"LEV-2843\",\"LEV-3933\"]},\"across\":\"epic\",\"ou_ids\":[\"116\"],\"ou_user_filter_designation\":{\"sprint\":[\"customfield_10020\"]}}",
+                "ignoreArrayOrder": true,
+                "ignoreExtraElements": true
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "records": [
+                {
+                    "key": "LEV-3375",
+                    "total": 14,
+                    "assignees": [
+                        "Former user",
+                        "Ishan Srivastava",
+                        "Kushagra Saxena",
+                        "Maxime Bellier",
+                        "Mohit Dokania",
+                        "Mukesh Kumar",
+                        "Piyush Mishra",
+                        "Praveen V",
+                        "rajamani",
+                        "Sai Krishna Chaitanya Adabala",
+                        "Srinath Chandrashekhar",
+                        "Suthar Sumitkumar Ganeshbhai",
+                        "Thanh Tran",
+                        "Viraj Ajgaonkar"
+                    ]
+                },
+                {
+                    "key": "LEV-2843",
+                    "total": 10,
+                    "assignees": [
+                        "Chinmay Joshi",
+                        "Former user",
+                        "Ishan Srivastava",
+                        "Jose Ivan Leon Islas",
+                        "Maxime Bellier",
+                        "Piyush Mishra",
+                        "Shrikesh Suresh",
+                        "Srinath Chandrashekhar",
+                        "Suthar Sumitkumar Ganeshbhai",
+                        "varshini"
+                    ]
+                },
+                {
+                    "key": "LEV-2555",
+                    "total": 4,
+                    "assignees": [
+                        "Amit Zohar",
+                        "Kushagra Saxena",
+                        "Maxime Bellier",
+                        "Shivam Yadav"
+                    ]
+                },
+                {
+                    "key": "LEV-2635",
+                    "total": 7,
+                    "assignees": [
+                        "Amit Zohar",
+                        "Former user",
+                        "Ishan Srivastava",
+                        "Mukesh Kumar",
+                        "Piyush Mishra",
+                        "Thanh Tran",
+                        "Viraj Ajgaonkar"
+                    ]
+                },
+                {
+                    "key": "LEV-3933",
+                    "total": 15,
+                    "assignees": [
+                        "Akashdeep Arora",
+                        "ashish",
+                        "Former user",
+                        "Kushagra Saxena",
+                        "Mukesh Kumar",
+                        "Praveen V",
+                        "rajamani",
+                        "Sai Krishna Chaitanya Adabala",
+                        "Shrikesh Suresh",
+                        "sivareddy aeddula",
+                        "Srinath Chandrashekhar",
+                        "Suthar Sumitkumar Ganeshbhai",
+                        "Thanh Tran",
+                        "varshini",
+                        "Viraj Ajgaonkar"
+                    ]
+                }
+            ],
+            "count": 5,
+            "_metadata": {
+                "page_size": 1000,
+                "page": 0,
+                "has_next": false
+            }
+        },
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.api-filter-many-options {
+  padding-top: 0.5rem;
+  margin-bottom: 0px !important;
+
+  .custom-form-item-label {
+    height: 2rem;
+    margin: 0px;
+    align-items: flex-start;
+  }
+  .ant-form-item-control{
+    line-height: 20px !important;
+  }
+  .ant-row{
+    margin-bottom: 0px !important;
+  }
+}
+
+.ant-popover.tag-paginated-select__popover.custom-width-popup.ant-popover-placement-right {
+  width: 57%;
+  left: 20% !important;
+  .popup-paginated-table {
+    width: auto !important;
+  }
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.4rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.1rem rgba(255, 255, 255, 0.5);
+  }
+}

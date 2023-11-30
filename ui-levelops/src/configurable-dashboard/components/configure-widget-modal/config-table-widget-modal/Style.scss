@@ -1,0 +1,80 @@
+$yaxis_delete_button_div_width: 42px;
+$test_class_margin: 10px;
+
+.test_class {
+  width: 100%;
+  margin-right: $test_class_margin;
+}
+
+.axis-container {
+  width: 100%;
+  overflow: auto;
+
+  .ant-checkbox-wrapper {
+    width: 100px;
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+
+  .ant-form-item {
+    width: 100%;
+  }
+
+  .axis-container__y {
+    width: 100%;
+
+    .axis-container__y-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 17px;
+
+      .axis-container__y-item-left {
+        width: calc(100% - #{$yaxis_delete_button_div_width});
+      }
+
+      .axis-container__y-item-right {
+        width: $yaxis_delete_button_div_width;
+      }
+
+      .axis-container__y-item-label {
+        margin-bottom: 6px;
+      }
+
+      .ant-form-item {
+        max-width: 50%;
+
+        .test_class {
+          margin-right: 0px;
+          padding-right: $test_class_margin;
+        }
+      }
+
+      .ant-form-item-with-help {
+        margin-bottom: 0px;
+        // max-width: 48%;
+      }
+
+      .ant-form-explain {
+        padding-top: 3px;
+      }
+
+      .axis-container_y-item-bottom {
+        .ant-form-explain {
+          padding-top: 0px;
+        }
+
+        .ant-input {
+          padding-bottom: 5px;
+        }
+        .display_color_input {
+          .ant-input {
+            padding-left: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}

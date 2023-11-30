@@ -1,0 +1,443 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_zendesk/list_jira"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "LEV-1511",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "new Jira chart -> assigness-report",
+          "status": "TO DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "_UNASSIGNED_",
+          "reporter": "Meghana Dwarakanath",
+          "desc_size": 181,
+          "hops": 0,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597707570,
+          "issue_updated_at": 1597708701,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "_UNASSIGNED_",
+              "issue_key": "LEV-1511",
+              "integration_id": "106",
+              "start_time": 1597707570,
+              "end_time": 1597708870,
+              "created_at": 1597707970
+            }
+          ]
+        },
+        {
+          "key": "LEV-1510",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "add across as epics for jira tickets_report",
+          "status": "TO DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "Piyush Mishra",
+          "reporter": "Meghana Dwarakanath",
+          "desc_size": 72,
+          "hops": 0,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597707551,
+          "issue_updated_at": 1597707793,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Piyush Mishra",
+              "issue_key": "LEV-1510",
+              "integration_id": "106",
+              "start_time": 1597707778,
+              "end_time": 1597708870,
+              "created_at": 1597707970
+            },
+            {
+              "assignee": "_UNASSIGNED_",
+              "issue_key": "LEV-1510",
+              "integration_id": "106",
+              "start_time": 1597707551,
+              "end_time": 1597707778,
+              "created_at": 1597707970
+            }
+          ]
+        },
+        {
+          "key": "LEV-1509",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "add new field -> created to jira reports",
+          "status": "TO DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "_UNASSIGNED_",
+          "reporter": "Meghana Dwarakanath",
+          "desc_size": 0,
+          "hops": 0,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597707527,
+          "issue_updated_at": 1597707527,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "_UNASSIGNED_",
+              "issue_key": "LEV-1509",
+              "integration_id": "106",
+              "start_time": 1597707527,
+              "end_time": 1597708870,
+              "created_at": 1597707970
+            }
+          ]
+        },
+        {
+          "key": "LEV-1508",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "support stacks for jira tickets_report",
+          "status": "TO DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "Piyush Mishra",
+          "reporter": "Meghana Dwarakanath",
+          "desc_size": 0,
+          "hops": 0,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597707506,
+          "issue_updated_at": 1597707766,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Piyush Mishra",
+              "issue_key": "LEV-1508",
+              "integration_id": "106",
+              "start_time": 1597707766,
+              "end_time": 1597708870,
+              "created_at": 1597707970
+            },
+            {
+              "assignee": "_UNASSIGNED_",
+              "issue_key": "LEV-1508",
+              "integration_id": "106",
+              "start_time": 1597707506,
+              "end_time": 1597707766,
+              "created_at": 1597707970
+            }
+          ]
+        },
+        {
+          "key": "LEV-1507",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "Config table CRUD endpoints",
+          "status": "IN PROGRESS",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "Maxime Bellier",
+          "reporter": "Maxime Bellier",
+          "desc_size": 0,
+          "hops": 0,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597700958,
+          "issue_updated_at": 1597701109,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 1597701107,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Maxime Bellier",
+              "issue_key": "LEV-1507",
+              "integration_id": "106",
+              "start_time": 1597700976,
+              "end_time": 1597708870,
+              "created_at": 1597701671
+            },
+            {
+              "assignee": "_UNASSIGNED_",
+              "issue_key": "LEV-1507",
+              "integration_id": "106",
+              "start_time": 1597700958,
+              "end_time": 1597700976,
+              "created_at": 1597701671
+            }
+          ]
+        },
+        {
+          "key": "LEV-1506",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "Config tables",
+          "status": "TO DO",
+          "issue_type": "EPIC",
+          "priority": "MEDIUM",
+          "assignee": "Maxime Bellier",
+          "reporter": "Maxime Bellier",
+          "desc_size": 0,
+          "hops": 1,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597700918,
+          "issue_updated_at": 1597700958,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Maxime Bellier",
+              "issue_key": "LEV-1506",
+              "integration_id": "106",
+              "start_time": 1597700918,
+              "end_time": 1597708870,
+              "created_at": 1597701671
+            }
+          ]
+        },
+        {
+          "key": "LEV-1505",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "pagerduty across + stacked bar",
+          "status": "TO DO",
+          "issue_type": "STORY",
+          "priority": "MEDIUM",
+          "assignee": "Meghana Dwarakanath",
+          "reporter": "Meghana Dwarakanath",
+          "desc_size": 0,
+          "hops": 1,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597680789,
+          "issue_updated_at": 1597686459,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": [],
+          "versions": [],
+          "component_list": ["ui-levelops"],
+          "assignee_list": [
+            {
+              "assignee": "Meghana Dwarakanath",
+              "issue_key": "LEV-1505",
+              "integration_id": "106",
+              "start_time": 1597680789,
+              "end_time": 1597708870,
+              "created_at": 1597680971
+            }
+          ]
+        },
+        {
+          "key": "LEV-1504",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "test please ignore",
+          "status": "WONT DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "Maxime Bellier",
+          "reporter": "Maxime Bellier",
+          "desc_size": 6,
+          "hops": 2,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597619054,
+          "issue_updated_at": 1597619899,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": ["test2"],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Maxime Bellier",
+              "issue_key": "LEV-1504",
+              "integration_id": "106",
+              "start_time": 1597619294,
+              "end_time": 1597708870,
+              "created_at": 1597619770
+            },
+            {
+              "assignee": "Ivan Leon",
+              "issue_key": "LEV-1504",
+              "integration_id": "106",
+              "start_time": 1597619054,
+              "end_time": 1597619294,
+              "created_at": 1597619770
+            }
+          ]
+        },
+        {
+          "key": "LEV-1503",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "test please ignore",
+          "status": "WONT DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "Maxime Bellier",
+          "reporter": "Maxime Bellier",
+          "desc_size": 6,
+          "hops": 2,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597616834,
+          "issue_updated_at": 1597618995,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": ["test2"],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Maxime Bellier",
+              "issue_key": "LEV-1503",
+              "integration_id": "106",
+              "start_time": 1597617074,
+              "end_time": 1597708870,
+              "created_at": 1597617970
+            },
+            {
+              "assignee": "Ivan Leon",
+              "issue_key": "LEV-1503",
+              "integration_id": "106",
+              "start_time": 1597616834,
+              "end_time": 1597617074,
+              "created_at": 1597617071
+            }
+          ]
+        },
+        {
+          "key": "LEV-1502",
+          "integration_id": "106",
+          "project": "LEV",
+          "summary": "test please ignore",
+          "status": "WONT DO",
+          "issue_type": "TASK",
+          "priority": "MEDIUM",
+          "assignee": "Maxime Bellier",
+          "reporter": "Maxime Bellier",
+          "desc_size": 6,
+          "hops": 2,
+          "bounces": 0,
+          "num_attachments": 0,
+          "issue_created_at": 1597615815,
+          "issue_updated_at": 1597616810,
+          "issue_resolved_at": 0,
+          "issue_due_at": 0,
+          "original_estimate": 0,
+          "first_comment_at": 0,
+          "ingested_at": 1597708800,
+          "created_at": 1597708871,
+          "custom_fields": {},
+          "labels": ["test2"],
+          "versions": [],
+          "component_list": [],
+          "assignee_list": [
+            {
+              "assignee": "Maxime Bellier",
+              "issue_key": "LEV-1502",
+              "integration_id": "106",
+              "start_time": 1597616054,
+              "end_time": 1597708870,
+              "created_at": 1597617071
+            },
+            {
+              "assignee": "Ivan Leon",
+              "issue_key": "LEV-1502",
+              "integration_id": "106",
+              "start_time": 1597615815,
+              "end_time": 1597616054,
+              "created_at": 1597617071
+            }
+          ]
+        }
+      ],
+      "count": 10,
+      "_metadata": {
+        "page_size": 10,
+        "page": 0,
+        "next_page": 1,
+        "has_next": true,
+        "total_count": 1535
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

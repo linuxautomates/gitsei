@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/issue_mgmt/ticket_count_fte"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [],
+      "count": 0,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

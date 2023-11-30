@@ -1,0 +1,50 @@
+.acceptance-time-slider {
+  width: 100%;
+  .track {
+    display: inline-block;
+    height: 8px;
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .tick {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -14px;
+      background: #bfbfbf;
+      height: 14px;
+      width: 2px;
+      transform: translate(-50%, 0.7rem);
+    }
+  }
+
+  .tick-label {
+    position: absolute;
+    font-size: 0.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    top: 100%;
+    transform: translate(-50%, 1.2rem);
+    white-space: nowrap;
+  }
+
+  .segment {
+    height: 100%;
+  }
+
+  .handle {
+    background: #ffffff;
+    border: 2px solid #91d5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    font-size: 0.6rem;
+    white-space: nowrap;
+    color: black;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}

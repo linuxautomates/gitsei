@@ -1,0 +1,118 @@
+.tile-wrapper {
+  position: relative;
+  cursor: pointer;
+  margin: 1rem;
+
+  .ant-card-wrapper {
+    margin: 0;
+  }
+
+  &:hover {
+    .tile-bordered-container {
+      box-shadow: 3px 3px 5px #949494;
+    }
+  }
+
+  .tile-title {
+    padding: 1.2rem 0;
+  }
+  .ant-card {
+    .ant-card-body {
+      display: flex;
+    }
+  }
+
+  .tile-row {
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin: -0.9rem 0;
+  }
+  .tile-name {
+    height: 1.5rem;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.7rem;
+  }
+  .tile-desc {
+    height: 2.8rem;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    color: var(--text-secondary-color);
+  }
+  .tile-icon {
+    border-radius: 2px;
+    height: 1.7rem;
+    width: 1.7rem;
+    padding: 0.1rem;
+    svg {
+      color: white;
+      border-color: white;
+      height: 1.4rem;
+      width: 1.4rem;
+    }
+  }
+  .tile-buttons {
+    display: flex;
+    padding: 1.2rem 0;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    .mng-btn {
+      flex-grow: 1;
+      .ant-btn {
+        padding-left: 0.3rem;
+        .anticon {
+          margin-right: 0.2rem;
+        }
+      }
+    }
+    .select-btn {
+      .ant-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .svg-icon {
+        height: 1rem;
+        width: 1rem;
+        margin-left: 0.2rem;
+      }
+    }
+  }
+
+  .ant-row.mng-btn-container {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    .manage-category-icon-container {
+      .disabled-manage-category-icon {
+        opacity: 0.4;
+      }
+      .disabled-manage-category-icon svg {
+        font-size: 20px;
+      }
+      .manage-category-icon svg {
+        font-size: 20px;
+        &:hover {
+          color: #08c;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .mng-btn-container {
+      display: inherit;
+    }
+  }
+}

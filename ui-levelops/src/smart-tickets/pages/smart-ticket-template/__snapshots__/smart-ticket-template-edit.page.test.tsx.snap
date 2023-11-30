@@ -1,0 +1,504 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Smart Ticket Template Edit Page UI Page should match the snapshot. 1`] = `
+<DocumentFragment>
+  <div
+    class="overflow-hidden-wrapper flex direction-column h-100 edit-questionaire"
+  >
+    <div
+      class="ant-row-flex ant-row-flex-space-between"
+      style="margin-bottom: 10px;"
+    >
+      <div
+        class="ant-col"
+      >
+        <h4
+          class="ant-typography"
+        >
+          Configure Template
+        </h4>
+        <span
+          class="ant-typography ant-typography-secondary"
+        >
+          Add custom fields and assessments to your ticket template
+        </span>
+      </div>
+    </div>
+    <div
+      class="ant-row h-100 flex-1"
+      style="margin: -5px -5px -5px -5px; min-height: 32rem; overflow-y: scroll;"
+    >
+      <div
+        class="ant-col ant-col-8 h-100"
+        style="padding: 5px 5px 5px 5px;"
+      >
+        <div
+          class="ant-collapse ant-collapse-icon-position-left"
+        >
+          <div
+            class="ant-collapse-item ant-collapse-item-active"
+          >
+            <div
+              aria-expanded="true"
+              class="ant-collapse-header"
+              role="button"
+              tabindex="0"
+            >
+              <i
+                aria-label="icon: right"
+                class="anticon anticon-right ant-collapse-arrow"
+              >
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  data-icon="right"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  style="transform: rotate(90deg);"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+                  />
+                </svg>
+              </i>
+              Assessments
+            </div>
+            <div
+              class="ant-collapse-content ant-collapse-content-active"
+            >
+              <div
+                class="ant-collapse-content-box"
+              >
+                <div
+                  class="ant-select-show-arrow select-restapi-helper ant-select ant-select-enabled ant-select-allow-clear ant-select-loading"
+                  style="width: 100%;"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <div
+                        class="ant-select-selection__placeholder"
+                        style="display: block; user-select: none;"
+                        unselectable="on"
+                      >
+                        Assessments
+                      </div>
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: loading"
+                        class="anticon anticon-loading"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="anticon-spin"
+                          data-icon="loading"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="0 0 1024 1024"
+                          width="1em"
+                        >
+                          <path
+                            d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-collapse-item"
+          >
+            <div
+              aria-expanded="false"
+              class="ant-collapse-header"
+              role="button"
+              tabindex="0"
+            >
+              <i
+                aria-label="icon: right"
+                class="anticon anticon-right ant-collapse-arrow"
+              >
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  data-icon="right"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+                  />
+                </svg>
+              </i>
+              Workflow Metadata
+            </div>
+          </div>
+          <div
+            class="ant-collapse-item"
+          >
+            <div
+              aria-expanded="false"
+              class="ant-collapse-header"
+              role="button"
+              tabindex="0"
+            >
+              <i
+                aria-label="icon: right"
+                class="anticon anticon-right ant-collapse-arrow"
+              >
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  data-icon="right"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+                  />
+                </svg>
+              </i>
+              Notifications
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-col ant-col-16"
+        style="padding: 5px 5px 5px 5px;"
+      >
+        <div
+          class="ant-card-wrapper"
+          role="presentation"
+        >
+          <div
+            class="ant-card ant-card-bordered"
+          >
+            <div
+              class="ant-card-head"
+            >
+              <div
+                class="ant-card-head-wrapper"
+              >
+                <div
+                  class="ant-card-head-title"
+                >
+                  Default Metadata Fields
+                </div>
+              </div>
+            </div>
+            <div
+              class="ant-card-body"
+            >
+              <div
+                style="height: 190px;"
+              >
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -10px -10px -10px -10px;"
+                >
+                  <div
+                    class="ant-col ant-col-8"
+                    style="padding: 10px 10px 10px 10px;"
+                  >
+                    <label
+                      class="ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-wrapper-disabled"
+                    >
+                      <span
+                        class="ant-checkbox ant-checkbox-checked ant-checkbox-disabled"
+                      >
+                        <input
+                          checked=""
+                          class="ant-checkbox-input"
+                          disabled=""
+                          type="checkbox"
+                          value="summary"
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                      <span>
+                        Summary
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -10px -10px -10px -10px;"
+                >
+                  <div
+                    class="ant-col ant-col-8"
+                    style="padding: 10px 10px 10px 10px;"
+                  >
+                    <label
+                      class="ant-checkbox-wrapper ant-checkbox-wrapper-checked ant-checkbox-wrapper-disabled"
+                    >
+                      <span
+                        class="ant-checkbox ant-checkbox-checked ant-checkbox-disabled"
+                      >
+                        <input
+                          checked=""
+                          class="ant-checkbox-input"
+                          disabled=""
+                          type="checkbox"
+                          value="assignee"
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                      <span>
+                        Assignee
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -10px -10px -10px -10px;"
+                >
+                  <div
+                    class="ant-col ant-col-8"
+                    style="padding: 10px 10px 10px 10px;"
+                  >
+                    <label
+                      class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+                    >
+                      <span
+                        class="ant-checkbox ant-checkbox-checked"
+                      >
+                        <input
+                          checked=""
+                          class="ant-checkbox-input"
+                          type="checkbox"
+                          value="description_checked"
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                      <span>
+                        Description
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -10px -10px -10px -10px;"
+                >
+                  <div
+                    class="ant-col ant-col-8"
+                    style="padding: 10px 10px 10px 10px;"
+                  >
+                    <label
+                      class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+                    >
+                      <span
+                        class="ant-checkbox ant-checkbox-checked"
+                      >
+                        <input
+                          checked=""
+                          class="ant-checkbox-input"
+                          type="checkbox"
+                          value="tags_checked"
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                      <span>
+                        Tags
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -10px -10px -10px -10px;"
+                >
+                  <div
+                    class="ant-col ant-col-8"
+                    style="padding: 10px 10px 10px 10px;"
+                  >
+                    <label
+                      class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+                    >
+                      <span
+                        class="ant-checkbox ant-checkbox-checked"
+                      >
+                        <input
+                          checked=""
+                          class="ant-checkbox-input"
+                          type="checkbox"
+                          value="type_checked"
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                      <span>
+                        Type
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -10px -10px -10px -10px;"
+                >
+                  <div
+                    class="ant-col ant-col-8"
+                    style="padding: 10px 10px 10px 10px;"
+                  >
+                    <label
+                      class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+                    >
+                      <span
+                        class="ant-checkbox ant-checkbox-checked"
+                      >
+                        <input
+                          checked=""
+                          class="ant-checkbox-input"
+                          type="checkbox"
+                          value="attachments_checked"
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                      <span>
+                        Attachments
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-col ant-col-16"
+        style="padding: 5px 5px 5px 5px;"
+      >
+        <div
+          class="ant-list bg-white ant-list-custom issue-template-list ant-list-split ant-list-bordered"
+        >
+          <div
+            class="ant-list-header"
+          >
+            Add Additional Metadata fields
+          </div>
+          <div
+            class="ant-spin-nested-loading"
+          >
+            <div
+              class="ant-spin-container"
+            >
+              <div
+                class="ant-list-empty-text"
+              >
+                <div
+                  class="ant-empty ant-empty-normal"
+                >
+                  <div
+                    class="ant-empty-image"
+                  >
+                    <svg
+                      height="41"
+                      viewBox="0 0 64 41"
+                      width="64"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        fill="none"
+                        fill-rule="evenodd"
+                        transform="translate(0 1)"
+                      >
+                        <ellipse
+                          cx="32"
+                          cy="33"
+                          fill="#F5F5F5"
+                          rx="32"
+                          ry="7"
+                        />
+                        <g
+                          fill-rule="nonzero"
+                          stroke="#D9D9D9"
+                        >
+                          <path
+                            d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"
+                          />
+                          <path
+                            d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z"
+                            fill="#FAFAFA"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <p
+                    class="ant-empty-description"
+                  >
+                    No Data
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,25 @@
+.integrationMapDialog {
+  width: 100%;
+  background-color: var(--primary-bg);
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+}
+.mapHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mapFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}

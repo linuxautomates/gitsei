@@ -1,0 +1,21 @@
+.ingestion-monitoring {
+  .ant-card-head {
+    padding-left: 0;
+  }
+
+  &--title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #262626;
+  }
+
+  .icon-style {
+    font-size: medium;
+    vertical-align: middle;
+    color: #999;
+    transition-duration: 0.3s;
+  }
+  .icon-style:hover {
+    color: #1890ff !important;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/users/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "123",
+      "email": "newuser@levelops.io",
+      "first_name": "New",
+      "last_name": "User",
+      "password_auth_enabled": true,
+      "saml_auth_enabled": false,
+      "user_type": "ADMIN"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

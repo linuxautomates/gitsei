@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/pipelines/job_durations",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"across\": \"\"  }",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Job 1",
+          "additional_key": "Jenkins Instance US",
+          "min": 15,
+          "median": 25,
+          "max": 300
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

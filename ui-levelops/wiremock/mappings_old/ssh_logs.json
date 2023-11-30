@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/ssh_logs"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "ssh_logs": [
+        { "ssh_command": "npm install webpack", "type": "config", "ip": "1.1.1.1", "service": "microservice 1" },
+        { "ssh_command": "npm start", "type": "read", "ip": "1.1.1.1", "service": "microservice 1" },
+        { "ssh_command": "npm install", "type": "config", "ip": "2.2.2.2", "service": "microservice 2" },
+        { "ssh_command": "npm audit fix", "type": "config", "ip": "2.2.2.2", "service": "microservice 2" },
+        { "ssh_command": "npm start", "type": "read", "ip": "3.3.3.3", "service": "microservice 3" },
+        { "ssh_command": "npm run dev", "type": "read", "ip": "2.2.2.2", "service": "microservice 2" },
+        { "ssh_command": "npm start", "type": "read", "ip": "1.1.1.1", "service": "microservice 1" },
+        { "ssh_command": "npm run prod-server", "type": "read", "ip": "3.3.3.3", "service": "microservice 3" },
+        { "ssh_command": "npm run prod", "type": "read", "ip": "1.1.1.1", "service": "microservice 1" }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

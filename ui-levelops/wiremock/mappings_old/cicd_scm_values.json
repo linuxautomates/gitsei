@@ -1,0 +1,64 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd_scm/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 4
+      },
+      "count": 4,
+      "records": [
+        {
+          "cicd_user_id": [
+            {
+              "key": "user1-cicd"
+            },
+            {
+              "key": "user2-cicd"
+            }
+          ]
+        },
+        {
+          "author": [
+            {
+              "key": "user1-scm"
+            },
+            {
+              "key": "user2-scm"
+            }
+          ]
+        },
+        {
+          "job_status": [
+            {
+              "key": "OPEN"
+            },
+            {
+              "key": "FAILED"
+            }
+          ]
+        },
+        {
+          "job_name": [
+            {
+              "key": "Pipeline 1"
+            },
+            {
+              "key": "Pipeline 2"
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

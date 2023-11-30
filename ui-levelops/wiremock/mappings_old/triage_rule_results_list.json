@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/triage_rule_results/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "4f14ff6e-e70a-11ea-adc1-0242ac120002",
+          "job_run_id": "4b221540-e70a-11ea-adc1-0242ac120002",
+          "stage_id": "123",
+          "rule_id": "5dd1c4c9-93a8-4822-a3ea-cde0a513a951",
+          "hit_content": "askdjnaksjdnkasjdnaskdj LONG TEXT",
+          "count": 23
+        }
+      ],
+      "count": 1,
+      "_metadata": { "page_size": 100, "page": 0, "has_next": false, "total_count": 1 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,782 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/plugins/results/diff"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "/warnings/": {
+        "base_path": "/warnings/",
+        "added": [
+          "/warnings/100",
+          "/warnings/101",
+          "/warnings/102",
+          "/warnings/103",
+          "/warnings/104",
+          "/warnings/105",
+          "/warnings/106",
+          "/warnings/107",
+          "/warnings/108",
+          "/warnings/109",
+          "/warnings/110",
+          "/warnings/111",
+          "/warnings/112",
+          "/warnings/113",
+          "/warnings/114",
+          "/warnings/115",
+          "/warnings/116",
+          "/warnings/117",
+          "/warnings/118",
+          "/warnings/119",
+          "/warnings/120",
+          "/warnings/121",
+          "/warnings/122",
+          "/warnings/123",
+          "/warnings/124",
+          "/warnings/125",
+          "/warnings/15",
+          "/warnings/16",
+          "/warnings/17",
+          "/warnings/18",
+          "/warnings/19",
+          "/warnings/20",
+          "/warnings/21",
+          "/warnings/22",
+          "/warnings/23",
+          "/warnings/24",
+          "/warnings/25",
+          "/warnings/26",
+          "/warnings/27",
+          "/warnings/28",
+          "/warnings/29",
+          "/warnings/30",
+          "/warnings/31",
+          "/warnings/32",
+          "/warnings/33",
+          "/warnings/34",
+          "/warnings/35",
+          "/warnings/36",
+          "/warnings/37",
+          "/warnings/38",
+          "/warnings/39",
+          "/warnings/40",
+          "/warnings/41",
+          "/warnings/42",
+          "/warnings/43",
+          "/warnings/44",
+          "/warnings/45",
+          "/warnings/46",
+          "/warnings/47",
+          "/warnings/48",
+          "/warnings/49",
+          "/warnings/50",
+          "/warnings/51",
+          "/warnings/52",
+          "/warnings/53",
+          "/warnings/54",
+          "/warnings/55",
+          "/warnings/56",
+          "/warnings/57",
+          "/warnings/58",
+          "/warnings/59",
+          "/warnings/60",
+          "/warnings/61",
+          "/warnings/62",
+          "/warnings/63",
+          "/warnings/64",
+          "/warnings/65",
+          "/warnings/66",
+          "/warnings/67",
+          "/warnings/68",
+          "/warnings/69",
+          "/warnings/70",
+          "/warnings/71",
+          "/warnings/72",
+          "/warnings/73",
+          "/warnings/74",
+          "/warnings/75",
+          "/warnings/76",
+          "/warnings/77",
+          "/warnings/78",
+          "/warnings/79",
+          "/warnings/80",
+          "/warnings/81",
+          "/warnings/82",
+          "/warnings/83",
+          "/warnings/84",
+          "/warnings/85",
+          "/warnings/86",
+          "/warnings/87",
+          "/warnings/88",
+          "/warnings/89",
+          "/warnings/90",
+          "/warnings/91",
+          "/warnings/92",
+          "/warnings/93",
+          "/warnings/94",
+          "/warnings/95",
+          "/warnings/96",
+          "/warnings/97",
+          "/warnings/98",
+          "/warnings/99"
+        ],
+        "removed": [],
+        "changed": [
+          "/warnings/0",
+          "/warnings/1",
+          "/warnings/10",
+          "/warnings/11",
+          "/warnings/12",
+          "/warnings/13",
+          "/warnings/14",
+          "/warnings/2",
+          "/warnings/3",
+          "/warnings/4",
+          "/warnings/5",
+          "/warnings/6",
+          "/warnings/7",
+          "/warnings/8",
+          "/warnings/9"
+        ],
+        "data_changes": {
+          "/warnings/0": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/1": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/10": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/100": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/101": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/102": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/103": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/104": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/105": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/106": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/107": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/108": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/109": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/11": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/110": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/111": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/112": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/113": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/114": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/115": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/116": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/117": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/118": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/119": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/12": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/120": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/121": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/122": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/123": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/124": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/125": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/13": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/14": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/15": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/16": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/17": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/18": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/19": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/2": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/20": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/21": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/22": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/23": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/24": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/25": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/26": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/27": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/28": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/29": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/3": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/30": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/31": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/32": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/33": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/34": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/35": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/36": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/37": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/38": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/39": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/4": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/40": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/41": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/42": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/43": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/44": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/45": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/46": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/47": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/48": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/49": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/5": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/50": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/51": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/52": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/53": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/54": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/55": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/56": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/57": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/58": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/59": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/6": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/60": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/61": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/62": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/63": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/64": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/65": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/66": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/67": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/68": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/69": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/7": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/70": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/71": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/72": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/73": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/74": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/75": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/76": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/77": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/78": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/79": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/8": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/80": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/81": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/82": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/83": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/84": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/85": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/86": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/87": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/88": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/89": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/9": {
+            "operation": "CHANGED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/90": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/91": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/92": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/93": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/94": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/95": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/96": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/97": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/98": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          },
+          "/warnings/99": {
+            "operation": "ADDED",
+            "before": null,
+            "after": null
+          }
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

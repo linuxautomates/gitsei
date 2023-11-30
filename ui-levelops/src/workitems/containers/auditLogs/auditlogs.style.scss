@@ -1,0 +1,58 @@
+.audit-logs {
+  padding-left: 10px;
+  .auditlog-body {
+    padding: 0 1rem;
+    font-size: 14px;
+
+    .date {
+      color: #ccc;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .author {
+      color: #8a94a5;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .audit-log-icon-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #ccc;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    .audit-log-icon {
+      position: absolute;
+      left: 4px;
+      right: 4px;
+      top: 4px;
+      bottom: 4px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      &.type-KB {
+        .cls-1 {
+          fill: #fff;
+        }
+
+        .cls-3 {
+          fill: #ccc;
+        }
+      }
+    }
+  }
+
+  // To reduce the width of
+  // line connecting two activities
+  .ant-timeline-item-tail {
+    border-left-width: 2px;
+  }
+}

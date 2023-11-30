@@ -1,0 +1,32 @@
+import { AZURE_LEAD_TIME_ISSUE_REPORT, LEAD_TIME_REPORTS } from "dashboard/constants/applications/names";
+export const LEAD_TIME_OU_DESIGNATION_REPORTS = [
+  // jira reports
+  LEAD_TIME_REPORTS.JIRA_LEAD_TIME_BY_STAGE_REPORT,
+  LEAD_TIME_REPORTS.JIRA_LEAD_TIME_BY_TYPE_REPORT,
+  LEAD_TIME_REPORTS.JIRA_LEAD_TIME_TREND_REPORT,
+  LEAD_TIME_REPORTS.LEAD_TIME_SINGLE_STAT_REPORT,
+
+  // azure reports
+  AZURE_LEAD_TIME_ISSUE_REPORT.ISSUE_LEAD_TIME_BY_TYPE_REPORT,
+  AZURE_LEAD_TIME_ISSUE_REPORT.ISSUE_LEAD_Time_BY_STAGE_REPORT,
+  AZURE_LEAD_TIME_ISSUE_REPORT.ISSUE_LEAD_TIME_TREND_REPORT,
+  AZURE_LEAD_TIME_ISSUE_REPORT.LEAD_TIME_SINGLE_STAT
+];
+
+export const SCM_LEAD_TIME_OU_DESIGNATION_REPORTS = [
+  LEAD_TIME_REPORTS.SCM_PR_LEAD_TIME_BY_STAGE_REPORT,
+  LEAD_TIME_REPORTS.SCM_PR_LEAD_TIME_TREND_REPORT
+];
+
+// props supported by acrossIsAzureIteration helper
+export interface AcrossIsAzureIterationProps {
+  across: string;
+  application: string;
+  reportType: string;
+}
+
+// sorting values supported when across is azure iteration
+export enum AZURE_ITERATION_SORTING_VALUES {
+  MILESTONE_START_DATE = "milestone_start_date",
+  MILESTONE_END_DATE = "milestone_end_date"
+}

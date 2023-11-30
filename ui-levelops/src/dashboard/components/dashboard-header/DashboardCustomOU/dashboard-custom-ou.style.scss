@@ -1,0 +1,175 @@
+.dashboard-custom-ou-wrapper {
+  padding: 0.7rem 0rem 0.5rem 1.2rem;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  .custom-cascader-div:hover {
+    border-color: #5b84eb;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(51, 93, 221, 0.2);
+  }
+  .custom-with-info-div {
+    display: flex;
+    align-items: center;
+    .custom-cascader-div {
+      width: 50%;
+      margin-right: 5px;
+      .custom-cascader {
+        width: 100%;
+        display: flex;
+        background-color: inherit;
+        .ant-cascader-input.ant-input {
+          border-bottom: none;
+          z-index: 1;
+        }
+
+        .ant-cascader-picker-label {
+          font-size: 17.5px;
+          .custom-ou-label-tooltip {
+            position: relative;
+            z-index: 2;
+            column-gap: 1rem;
+          }
+          .last-ou-label {
+            color: var(--link-and-actions);
+          }
+          .anticon-right {
+            font-size: 1rem;
+          }
+        }
+        .ant-cascader-picker-arrow {
+          color: var(--title-color);
+          font-size: 1.1rem;
+          top: 45%;
+        }
+        .ant-cascader-picker-clear {
+          font-size: 1.1rem;
+          color: var(--title-color);
+          opacity: 1;
+        }
+      }
+
+      .custom-cascader-popup {
+        overflow-x: auto;
+        font-size: 16px;
+        min-height: 70vh;
+        max-width: 90vw;
+        div:not([class]) {
+          min-height: 70vh;
+          margin-right: 2px;
+        }
+        .ant-cascader-menu {
+          min-height: 70vh;
+          min-width: 200px;
+          .ant-cascader-menu-item {
+            margin-bottom: 10px;
+            display: flex;
+          }
+          .ant-cascader-menu-item-active {
+            background-color: #eaf0fc;
+          }
+        }
+      }
+
+      .ant-cascader-picker:focus .ant-cascader-input {
+        z-index: 5;
+      }
+
+      .ant-cascader-picker-show-search.ant-cascader-picker-focused {
+        .custom-ou-label-tooltip {
+          z-index: 0;
+        }
+        color: rgba(0, 0, 0, 0.25);
+        .last-ou-label {
+          color: rgba(0, 0, 0, 0.25);
+        }
+      }
+      .ant-cascader-picker-with-value .ant-cascader-picker-label {
+        .last-ou-label {
+          color: transparent;
+        }
+      }
+    }
+    .ou-info-icon {
+      font-size: 14px;
+    }
+  }
+}
+
+.custom-ou-info-popover {
+  width: 32rem;
+  height: 22rem;
+  box-shadow: none;
+  border-radius: 0.2rem;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: auto;
+  background-color: white;
+  .ant-popover-title {
+    display: none;
+  }
+  .ant-popover-inner-content {
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    .show-ou-detail {
+      min-height: 19.7rem;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      z-index: 10;
+      padding-top: 1.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 400;
+      font-size: 14px;
+      .ou-items {
+        padding-bottom: 1rem;
+        display: flex;
+        .left-span {
+          position: absolute;
+          right: 75%;
+          color: #2d3e5e;
+          font-size: small;
+        }
+        .right-span {
+          display: block;
+          width: 80%;
+          position: relative;
+          left: 24%;
+          color: black;
+        }
+        .tag-item {
+          background-color: #e3e9f8;
+          margin-bottom: 4px;
+          max-width: 325px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .blocked-text {
+          display: block;
+        }
+        .ou-name {
+          color: #2967dd;
+          font-weight: 500;
+          display: flex;
+          justify-content: space-between;
+          .flex {
+            display: flex;
+            .svg-icon-custom-ou-link > svg {
+              stroke: #2967dd;
+              .path1 {
+                stroke: #2967dd;
+              }
+              width: 16px;
+              height: 16px;
+              margin-top: 2px;
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.scm-definition {
+  padding-left: 20px;
+  .required:after {
+    content:" *";
+    color: red;
+  }
+  .ant-steps-item-icon {
+    border-color: #7E7E7E;
+    .ant-steps-icon {
+      color: #7E7E7E;
+    }
+  }
+  .error-text {
+    color: red;
+  }
+  .note-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    color: #7e7e7e;
+  }
+}

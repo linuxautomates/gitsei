@@ -1,0 +1,75 @@
+.configure-widget-page {
+  max-width: calc(100vw - 155px); // 155px is page padding + side name
+
+  .left-container {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #fafafa;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    min-height: 432px;
+
+    .score-chart-component-container {
+      .stats-title,
+      .ticket-count {
+        font-size: 12px;
+      }
+
+      .ticket-count-container {
+        margin-bottom: 1em;
+
+        .ticket-count {
+          margin-bottom: 0;
+        }
+
+        .sort-label {
+          margin-right: 4px;
+        }
+      }
+
+      .hygieneList {
+        height: calc(100% - 122px);
+        overflow-y: scroll;
+      }
+
+      .breakdown-container {
+        height: 100%;
+      }
+
+      .colors-container {
+        transform: scale(0.6);
+      }
+
+      .score-wrapper {
+        font-size: 32px !important;
+      }
+    }
+  }
+
+  .right-container {
+    overflow-y: auto;
+    padding-left: 25px;
+  }
+
+  .widget-name {
+    font-size: 16px;
+    line-height: 24px;
+    color: #404040;
+  }
+
+  .edit-name-container {
+    background-color: white;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    color: #8c8c8c;
+    .name-discription {
+      color: #8c8c8c;
+    }
+    .edit-icon {
+      margin-left: 10px;
+    }
+  }
+}

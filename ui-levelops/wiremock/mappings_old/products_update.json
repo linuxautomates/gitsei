@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/v1/products/([0-9]*)"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": "123",
+      "jira_projects": ["asd"],
+      "git_repos": ["bsd"],
+      "created_at": 1570761099,
+      "updated_at": 1570761099
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

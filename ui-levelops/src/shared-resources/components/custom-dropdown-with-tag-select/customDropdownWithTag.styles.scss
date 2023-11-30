@@ -1,0 +1,106 @@
+.custom-selector-container {
+  width: 100%;
+  justify-content: start;
+  display: flex;
+  .label-container {
+    display: flex;
+    align-items: center;
+    .anticon {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+    .label {
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding-right: 0.5rem;
+    }
+  }
+  .spinner-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ant-spin {
+      margin-top: 0.25rem;
+    }
+  }
+  .selection-container {
+    text-align: center;
+    padding-top: 0.125rem;
+    display: flex;
+    justify-content: stretch;
+    font-size: 1.15rem;
+    align-items: center;
+    cursor: pointer;
+    .close-icon {
+      margin-left: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--inactive-tab);
+    }
+    .arrow-down {
+      margin-left: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--text-color);
+      font-size: 1.2rem;
+    }
+    .placeholder-text {
+      line-height: 1.25rem;
+      white-space: nowrap;
+      text-align: left;
+      color: var(--inactive-tab);
+      text-overflow: ellipsis;
+    }
+    .select-field {
+      border-radius: 1rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: var(--text-color);
+      margin-left: 0.3rem;
+      // background: var(--blueText);
+    }
+    .disable {
+      color: grey;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.custom-selection-dropdown {
+  .selection-action-buttons {
+    display: flex;
+    margin-top: 0.5rem;
+    .ant-btn:first-child {
+      margin-right: 0.25rem;
+    }
+  }
+  .selection-list-container {
+    height: 20rem;
+    overflow-y: auto;
+    padding: 0;
+    .dropdown-option {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0rem;
+      cursor: pointer;
+      .name {
+        color: var(--form-item-label);
+      }
+      .navigation-options {
+        padding-right: 0.5rem;
+        visibility: hidden;
+      }
+    }
+    .dropdown-option:hover {
+      .navigation-options {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.ou-selector-loading-width {
+  width: 10rem;
+}

@@ -1,0 +1,198 @@
+.score-chart-component-container {
+  justify-content: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .recharts-polar-grid-concentric {
+    display: none;
+  }
+
+  .recharts-polar-angle-axis-tick-value {
+    fill: var(--grey3);
+  }
+
+  .legend-container {
+    display: flex;
+    flex-direction: column;
+    height: 152px;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+
+  .score-label {
+    font-weight: bold;
+  }
+
+  .score-row {
+    justify-content: center;
+    height: 100%;
+
+    .score-col {
+      height: 100%;
+
+      .score-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .score {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: calc(100% - 1px);
+          font-size: 24px;
+
+          .scoreLabel {
+            font-size: 14px;
+          }
+
+          .score-wrapper {
+            font-size: 55px;
+
+            .score-sum {
+              color: #d93865;
+              font-weight: 700;
+            }
+
+            .score-total {
+              color: #aeadad;
+            }
+          }
+        }
+
+        .vertical-line {
+          width: 1px;
+          height: 60%;
+          background-color: #d7d7d7;
+        }
+      }
+    }
+    .stats-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .chart-btn {
+        display: flex;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .stats-title {
+        color: #4d4d4d;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+
+    .ticket-count-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .ticket-count {
+        width: 65%;
+      }
+
+      .sort-btn {
+        display: flex;
+        cursor: pointer;
+
+        .sort-label {
+          margin-right: 2rem;
+          font-size: 11px;
+          color: #4d4d4d;
+        }
+
+        .sort-icon {
+          color: #aeadad;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .align-left-12 {
+      left: 12%;
+    }
+
+    .align-left-23 {
+      left: 23%;
+    }
+
+    .stats-col {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 0 25px 5px !important;
+
+      .hygieneList {
+        padding-right: 1rem;
+        max-height: 252px;
+        overflow: hidden auto;
+
+        .issueList {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-size: 16px;
+          line-height: 32px;
+          color: #4d4d4d;
+        }
+
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          margin-left: 5px;
+          border-radius: 10px;
+          background: #d8d8d8;
+          width: 5px;
+        }
+      }
+
+      .list-btn {
+        display: flex;
+        cursor: pointer;
+        font-size: 16px;
+        justify-content: flex-end;
+      }
+    }
+
+    .align-right-10 {
+      right: 10%;
+    }
+
+    .align-right-0 {
+      right: 0;
+    }
+
+    .chart-col {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 0 25px 5px !important;
+
+      .colors-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+.clickable-data-point {
+  color: #335ddd;
+  cursor: pointer;
+}

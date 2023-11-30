@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/issue_mgmt/commit_count_fte"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Unplanned",
+          "fte": 5.335918
+        },
+        {
+          "key": "test-category-1",
+          "fte": 10.18104416
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

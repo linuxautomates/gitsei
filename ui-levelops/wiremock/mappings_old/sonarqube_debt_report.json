@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/sonarqube_issues/debt_report"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "project 1",
+          "min": 5,
+          "median": 2,
+          "max": 23
+        },
+        {
+          "key": "project 2",
+          "min": 15,
+          "median": 2,
+          "max": 23
+        },
+        {
+          "key": "project 3",
+          "min": 1,
+          "median": 2,
+          "max": 3
+        }
+      ],
+      "count": 1
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

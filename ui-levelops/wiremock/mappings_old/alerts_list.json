@@ -1,0 +1,71 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/alerts/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "id": 1,
+          "name": "Big Code Changes",
+          "team_name": "Elephant Team",
+          "actions": ["Code Review", "PEN testing"],
+          "due_date": 1570761099,
+          "release_date": 1570761099,
+          "release_name": "V1"
+        },
+        {
+          "id": 2,
+          "name": "Database Best Practice",
+          "team_name": "Zebra Team",
+          "actions": ["Schedule Meeting"],
+          "due_date": 1570761099,
+          "release_date": 1570761099,
+          "release_name": "V1"
+        },
+        {
+          "id": 3,
+          "name": "Sensitive Components",
+          "team_name": "Elephant Team",
+          "actions": ["Schedule Meeting", "PEN testing"],
+          "due_date": 1570761099,
+          "release_date": 1570761099,
+          "release_name": "V1"
+        },
+        {
+          "id": 4,
+          "name": "New Requirement",
+          "team_name": "Platypus Team",
+          "actions": ["Design Review"],
+          "due_date": 1570761099,
+          "release_date": 1570761099,
+          "release_name": "V1"
+        },
+        {
+          "id": 5,
+          "name": "Big Code Changes",
+          "team_name": "Zebra Team",
+          "actions": ["Code Review", "PEN testing"],
+          "due_date": 1570761099,
+          "release_date": 1570761099,
+          "release_name": "V8"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

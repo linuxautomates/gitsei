@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/dashboards/workbench"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "WorkBench",
+      "type": "workbench",
+      "widgets": [
+        {
+          "name": "Open Alerts for Nishant",
+          "id": 10,
+          "type": "list",
+          "endpoint": "v1/alerts/list",
+          "query": {
+            "filter": {
+              "user_id": 1
+            }
+          }
+        },
+        {
+          "name": "Open Alerts for past 30 days",
+          "id": 11,
+          "type": "linegraph",
+          "endpoint": "v1/alerts/series",
+          "query": {
+            "filter": {
+              "range": {
+                "start": 1568920349,
+                "stop": 1568920349,
+                "type": "days"
+              },
+              "team_id": 1,
+              "series_field": "alerts"
+            }
+          }
+        },
+        {
+          "name": "Current Alerts Assignments",
+          "id": 12,
+          "type": "bargraph",
+          "endpoint": "v1/alerts/aggregate",
+          "query": {
+            "filter": {
+              "state": "open",
+              "range": {
+                "start": 1568920349,
+                "stop": 1568920349,
+                "type": "days"
+              },
+              "team_id": 1,
+              "aggregate_field": "users"
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

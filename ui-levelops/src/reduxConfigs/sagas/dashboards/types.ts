@@ -1,0 +1,59 @@
+export enum API_REQUIREMENTS {
+  JIRA_CUSTOM_FIELDS_REQUIRED = "jiraCustomFieldsRequired",
+  AZURE_CUSTOM_FIELD_REQUIRED = "AzureCustomFieldsRequired",
+  JIRA_API_FILTER_REQUIRED = "jiraApiFiltersRequired",
+  AZURE_API_FILTER_REQUIRED = "azureApiFiltersRequired",
+  AZURE_SCM_API_FILTER_REQUIRED = "azureSCMApiFiltersRequired",
+  AZURE_COMMITTERS_API_FILTER_REQUIRED = "azureCommitterApiFiltersRequired",
+  GITHUB_SCM_API_FILTER_REQUIRED = "githubSCMApiFiltersRequired",
+  GITHUB_COMMITTERS_API_FILTER_REQUIRED = "githubCommitterApiFiltersRequired",
+  GITLAB_COMMITTERS_API_FILTER_REQUIRED = "gitlabCommitterApiFiltersRequired",
+  GITLAB_SCM_API_FILTER_REQUIRED = "gitlabSCMApiFiltersRequired",
+  BITBUCKET_SCM_API_FILTER_REQUIRED = "bitbucketScmApiFiltersRequired",
+  BITBUCKET_COMMITTER_API_FILTER_REQUIRED = "bitbucketCommitterApiFiltersRequired",
+  GERRIT_SCM_API_FILTER_REQUIRED = "gerritScmApiFiltersRequired",
+  GERRIT_COMMITTER_API_FILTER_REQUIRED = "gerritCommitterApiFiltersRequired",
+  PAGERDUTY_API_FILTER_REQUIRED = "pagerdutyApiFiltersRequired",
+  HELIX_SCM_API_FILTER_REQUIRED = "helixScmApiFiltersRequired",
+  HELIX_COMMITTER_API_FILTER_REQUIRED = "helixCommitterApiFiltersRequired",
+  USERS_API_REQUIREMENT = "usersApiRequirement"
+}
+
+export type OU_Integration = {
+  filters: any;
+  type: string;
+  name: string;
+  id: string;
+  dynamic_user_definition: any;
+  users: string[];
+};
+
+export type API_REQUIREMENTS_TYPE = {
+  [API_REQUIREMENTS.JIRA_CUSTOM_FIELDS_REQUIRED]: boolean;
+  [API_REQUIREMENTS.AZURE_CUSTOM_FIELD_REQUIRED]: boolean;
+  [API_REQUIREMENTS.JIRA_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.AZURE_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.AZURE_SCM_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.AZURE_COMMITTERS_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.GITHUB_SCM_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.GITHUB_COMMITTERS_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.GITLAB_COMMITTERS_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.GITLAB_SCM_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.BITBUCKET_SCM_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.BITBUCKET_COMMITTER_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.GERRIT_SCM_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.GERRIT_COMMITTER_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.PAGERDUTY_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.HELIX_SCM_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.HELIX_COMMITTER_API_FILTER_REQUIRED]: boolean;
+  [API_REQUIREMENTS.USERS_API_REQUIREMENT]: boolean;
+};
+
+export type API_REQUEST = {
+  key: string;
+  uri: string;
+  method: string;
+  filters: any;
+  complete: string;
+  uuid: string;
+};

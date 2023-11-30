@@ -1,0 +1,28 @@
+.jira-issue-row {
+  display: flex;
+  align-content: center;
+
+  a {
+    color: #2967dd;
+  }
+
+  .jira-external-link {
+    cursor: pointer;
+    margin-left: 10px;
+    align-self: center;
+    visibility: hidden;
+  }
+}
+
+.ant-table-row {
+  &:hover {
+    .jira-external-link {
+      visibility: visible;
+      svg {
+        path {
+          stroke: #2967dd;
+        }
+      }
+    }
+  }
+}

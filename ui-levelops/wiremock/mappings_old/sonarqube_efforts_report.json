@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/sonarqube_issues/effort_report"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "project 1",
+          "min": 11,
+          "median": 5,
+          "max": 3
+        },
+        {
+          "key": "project 2",
+          "min": 11,
+          "median": 21,
+          "max": 9
+        },
+        {
+          "key": "project 3",
+          "min": 1,
+          "median": 2,
+          "max": 23
+        }
+      ],
+      "count": 2
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

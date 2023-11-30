@@ -1,0 +1,24 @@
+.ant-card__diff-plugin-headers {
+  margin-bottom: 1.428rem;
+  .policy-diff-col {
+    .policy-diff-col__item {
+      & + .policy-diff-col__item {
+        border-top: 1px solid var(--border-color);
+      }
+    }
+    &__title {
+      background-color: var(--grey6);
+      width: 25%;
+      padding: 0.714rem 1.142rem;
+      color: var(--primary-text-color);
+      font-weight: 600;
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+    &__value {
+      width: 75%;
+      padding-left: 1.142rem;
+      padding-right: 1.142rem;
+    }
+  }
+}

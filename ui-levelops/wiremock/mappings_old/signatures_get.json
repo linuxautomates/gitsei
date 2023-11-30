@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/signatures/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "delayDistribution": {
+      "type": "uniform",
+      "lower": 500,
+      "upper": 1000
+    },
+    "jsonBody": {
+      "id": "1",
+      "name": "Signature 1",
+      "description": "This is my first signature",
+      "stage": "Planning",
+      "type": "INFO",
+      "products": ["1", "2", "3", "4"],
+      "tags": ["1", "2", "3"],
+      "severity_score": 99,
+      "fail_criteria": "> 50%"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

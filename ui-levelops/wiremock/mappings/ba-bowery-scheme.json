@@ -1,0 +1,100 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/ticket_categorization_schemes/56c70fd8-9bf3-4e00-9e5f-b1f38f6adaba"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "56c70fd8-9bf3-4e00-9e5f-b1f38f6adaba",
+      "default_scheme": true,
+      "name": "Issue Category",
+      "config": {
+        "integration_type": "jira",
+        "categories": {
+          "1": {
+            "id": "58d08615-721f-45d1-b2bc-aa6dc1b26319",
+            "name": "Story",
+            "index": 1,
+            "color": "#66991A",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 50,
+                "max": 60
+              },
+              "acceptable_range": {
+                "min": 40,
+                "max": 70
+              }
+            },
+            "filter": {
+              "issue_types": ["STORY", "CHANGE", "BUSINESS VALUE"]
+            }
+          },
+          "2": {
+            "id": "409ed475-b4b4-4b05-a906-1ab285ad4b7b",
+            "name": "Bug & Defect",
+            "index": 2,
+            "color": "#FF6633",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 10,
+                "max": 15
+              },
+              "acceptable_range": {
+                "min": 5,
+                "max": 20
+              }
+            },
+            "filter": {
+              "issue_types": ["BUG", "DEFECT"],
+              "partial_match": {}
+            }
+          },
+          "3": {
+            "id": "e142651c-ff18-45af-932c-72ecc26c1216",
+            "name": "Technical Debt",
+            "index": 3,
+            "color": "#6680B3",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 10,
+                "max": 15
+              },
+              "acceptable_range": {
+                "min": 5,
+                "max": 20
+              }
+            },
+            "filter": {
+              "issue_types": ["TECHNICAL DEBT", "TASK"]
+            }
+          }
+        },
+        "uncategorized": {
+          "color": "#E6B3B3",
+          "goals": {
+            "enabled": true,
+            "ideal_range": {}
+          }
+        },
+        "active_work": {
+          "issues": {
+            "active_sprints": true,
+            "in_progress": false,
+            "assigned": false
+          }
+        }
+      },
+      "created_at": 1641345125891,
+      "updated_at": 1641882868388
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

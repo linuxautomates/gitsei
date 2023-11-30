@@ -1,0 +1,45 @@
+.ou-integration-section {
+  .ou-intgration-title {
+    margin-bottom: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .integration-list-wrapper {
+    max-height: 15rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: rgba(0, 0, 0, 0.5) #fff !important;
+  }
+
+  .integration-list-wrapper::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+
+  .integration-list-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+
+  .ant-divider-horizontal {
+    margin-top: 0;
+  }
+  .integration-add-action {
+    font-weight: 500;
+    background-color: var(--background);
+    border: none;
+    color: var(--link-and-actions);
+    cursor: pointer;
+    margin-top: 1rem;
+    padding-left: 1px;
+    margin-bottom: 1rem;
+    width: fit-content;
+    .anticon {
+      margin-right: 0.4rem;
+    }
+  }
+}

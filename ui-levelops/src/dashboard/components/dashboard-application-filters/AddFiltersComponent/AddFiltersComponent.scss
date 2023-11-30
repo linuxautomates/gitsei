@@ -1,0 +1,117 @@
+.add_filters_component_container {
+  height: calc(100% - 65px);
+  & .p-1 {
+    padding: 0rem 1rem 1rem 1rem;
+  }
+  & .pl-0 {
+    padding-left: 0;
+  }
+  &_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    &_title {
+      display: flex;
+      align-items: center;
+      .ant-typography {
+        margin-left: 5px;
+      }
+    }
+    &_dropdown {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &_list {
+    height: calc(100% - 100px);
+    overflow: auto;
+    padding: 0 1.5rem;
+
+    .exclude-delete {
+      font-size: 15px;
+      margin-left: 16px;
+      margin-top: 5px;
+    }
+
+    .story-point-delete-icon {
+      position: absolute;
+      right: 0;
+      top: 18px;
+    }
+
+    .epics {
+      margin-top: 24px;
+      border-bottom: 1px solid #aeadad;
+    }
+
+    // TODO use better css
+    .story-point-label {
+      margin-top: 24px;
+      .form-label {
+        label {
+          font-weight: 700 !important;
+          text-transform: uppercase !important;
+          color: var(--form-item-label) !important;
+          font-size: 12px !important;
+          line-height: 1 !important;
+        }
+      }
+    }
+
+    .issue-time-filter {
+      margin-top: 24px;
+    }
+
+    .ui-filter {
+      display: flex;
+      margin-top: 24px;
+
+      .form-label {
+        label {
+          font-weight: 700 !important;
+          text-transform: uppercase !important;
+          color: var(--form-item-label) !important;
+          font-size: 12px !important;
+          line-height: 1 !important;
+        }
+      }
+
+      .epic-form {
+        .ant-form-item .ant-form-item-label {
+          height: 45px;
+        }
+      }
+
+      .ant-col {
+        height: auto;
+      }
+
+      .filter-delete-icon {
+        display: flex;
+        justify-content: flex-end;
+        width: 3%;
+
+        &--icon {
+          font-size: 15px;
+        }
+
+        &--epic-icon {
+          font-size: 15px;
+          margin-top: 17px;
+        }
+      }
+    }
+
+    .filter-input {
+      width: 97%;
+    }
+    .custom-filter-padding {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+.filters-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

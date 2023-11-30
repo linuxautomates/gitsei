@@ -1,0 +1,86 @@
+.dora-stats-chart-component {
+  display: flex;
+  height: 100%;
+  min-height: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .ant-statistic-content {
+    display: flex;
+    align-items: flex-end;
+    height: min-content;
+  }
+  .ant-tag {
+    font-size: 1rem;
+    border-radius: 0.8rem;
+  }
+
+  .stats-extra-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin: 10px 0;
+    & > .info-description {
+      flex: 1 1 auto;
+      margin-top: 20px;
+      font-size: 1rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      .bold {
+        font-weight: bold;
+      }
+      .count-value{
+        float: left;
+      }
+    }
+    & > .interval-description {
+      margin-top: 20px;
+    }
+    .mr-8 {
+      margin-right: 8px;
+    }
+  }
+  .ant-statistic .ant-statistic-content {
+    justify-content: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.7rem;
+    height: 44px;
+  }
+  .hightlight-value {
+    background-color: #eaf0fc;
+    width: fit-content;
+    padding: 0 4px 4px 4px;
+  }
+  .statistical-value {
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 53px;
+    .ant-statistic-content-value-decimal {
+      font-size: 2rem;
+    }
+  }
+
+  .band-value {
+    margin-top: 20px;
+  }
+
+  .ant-statistic-content-suffix {
+    color: #2d3e5e;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+  }
+}

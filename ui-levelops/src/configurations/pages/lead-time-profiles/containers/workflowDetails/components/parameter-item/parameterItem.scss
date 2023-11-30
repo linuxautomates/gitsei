@@ -1,0 +1,33 @@
+.new-parameter-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .parameter-content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 8px;
+    margin-right: 4px;
+
+    .ant-select-selection {
+      background-color: white;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      width: 60%;
+    }
+
+    .parameter-type {
+      width: 50%;
+      margin-right: 8px;
+    }
+
+    .parameter-value {
+      flex-grow: 1;
+      margin-left: 8px;
+      .values-selector {
+        width: 100%;
+      }
+    }
+  }
+}

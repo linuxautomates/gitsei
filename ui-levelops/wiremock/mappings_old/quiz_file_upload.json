@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/fileupload/quiz/(.*)/assertion/(.*)"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": { "id": "123" },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

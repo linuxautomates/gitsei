@@ -1,0 +1,43 @@
+@import "shared-resources/style/mixin.scss";
+
+%select-input {
+  width: 80%;
+  z-index: z-index("select");
+  margin-bottom: 10px;
+  &:focus {
+    border-bottom-color: var(--primary-orange);
+  }
+}
+
+.kb-edit-page {
+  &__content {
+    flex-basis: 70%;
+    width: 60%;
+    align-content: center;
+  }
+
+  &__toggle {
+    //width: 15%;
+  }
+
+  &__search-filter {
+    @extend %select-input;
+  }
+
+  &__search-filter-type {
+    @extend %select-input;
+    width: 30%;
+  }
+
+  &__label {
+    color: var(--grey4);
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  &__label-error {
+    color: var(--error);
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/v1/tickets"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "t_id_1",
+      "reporter": "abc@gmail.com",
+      "ticket_template_id": "1",
+      "ticket_fields": [
+        {
+          "key": "field1 ",
+          "label": "field 1",
+          "type": "multi-select",
+          "required": false,
+          "hidden": false,
+          "validation": "not_empty",
+          "options": ["tag1", "tag2", "tag3"],
+          "value": ["tag1", "tag3"]
+        },
+        {
+          "key": "field2 ",
+          "label": "field2 ",
+          "type": "text",
+          "required": true,
+          "hidden": false,
+          "validation": "email",
+          "options": [],
+          "value": "test@gmail.com"
+        }
+      ],
+      "mappings": [
+        {
+          "id": "mapping_id_1",
+          "ticket_id": "t_id_1",
+          "questionnaire_id": "2"
+        }
+      ],
+      "created_at": 123456,
+      "assignee": 1,
+      "status": "OPEN"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "shared-resources/style/mixin.scss";
+
+.slider {
+  &--root {
+    color: var(--primary-orange);
+    height: 8px;
+  }
+
+  &--thumb {
+    height: 24px;
+    width: 24px;
+    background-color: var(--grey3);
+    border: 2px solid currentColor;
+    margin-top: -8px;
+    margin-left: -12px;
+    &:focus &hover {
+      box-shadow: inherit;
+    }
+  }
+
+  &--value-label {
+    left: calc(-50% + 4px);
+  }
+
+  &--track {
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  &--rail {
+    height: 8px;
+    border-radius: 4px;
+    color: var(--primary-orange);
+  }
+}

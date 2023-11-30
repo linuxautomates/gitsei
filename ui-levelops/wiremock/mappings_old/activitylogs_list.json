@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/activitylogs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": 1,
+          "email": "meghana@levelops.io",
+          "body": "KB type activity.",
+          "target_item": "1",
+          "target_item_type": "KB",
+          "created_at": 1572040999
+        },
+        {
+          "id": 2,
+          "email": "meghana@levelops.io",
+          "body": "ASSESSMENT type activity.",
+          "target_item": "1",
+          "target_item_type": "ASSESSMENT",
+          "created_at": 1572040999
+        },
+        {
+          "id": 3,
+          "email": "meghana@levelops.io",
+          "body": "WORKFLOW type activity",
+          "target_item": "1",
+          "target_item_type": "WORKFLOW",
+          "created_at": 1572040999
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

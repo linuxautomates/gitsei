@@ -1,0 +1,106 @@
+@import "shared-resources/style/mixin.scss";
+
+.integrations-page {
+  &__search-bar {
+    padding: 0 2rem;
+    width: 40%;
+  }
+
+  &__cards-container {
+    @extend %cards-grid;
+  }
+
+  &__title {
+    @extend %p14;
+    //font-weight: bold;
+    //padding-left: size(2);
+  }
+
+  &__card-container {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  //  &__card-container{
+  //    min-width: 25rem;
+  //    min-height: 15rem;
+  //    justify-content: flex-end;
+  //  }
+
+  &__description {
+    @extend %p14;
+    color: var(--grey3);
+    //max-width: 25rem;
+    //min-height: 2.3rem;
+  }
+
+  &__last-updated {
+    @extend %p12;
+    color: var(--grey4);
+    //min-height: 2.3rem;
+  }
+
+  &__info {
+    margin-top: size(4);
+  }
+
+  &__item {
+    justify-content: flex-end;
+    span {
+      @extend %h4;
+      //  font-weight: bold;
+    }
+  }
+
+  &__item-label {
+    @extend %label3;
+    color: var(--grey3);
+    text-transform: uppercase;
+  }
+
+  &__status {
+    border-radius: 50%;
+    padding: 4px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .fill-color svg {
+      fill: var(--levelops-white);
+    }
+
+    &--success {
+      background-color: var(--green1);
+    }
+
+    &--error {
+      background-color: var(--error);
+    }
+  }
+}
+
+.remove-modal {
+  padding: size(4);
+}
+
+.remove-modal-warning {
+  padding: size(3);
+}
+
+.integration-details-modal-other {
+  .ant-modal {
+    width: 50vw !important;
+
+    .ant-modal-body {
+      height: 23rem;
+      overflow-y: auto;
+    }
+
+    .integration-info-grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

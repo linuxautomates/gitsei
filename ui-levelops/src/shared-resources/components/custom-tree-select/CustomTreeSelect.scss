@@ -1,0 +1,17 @@
+.custom-tree-select-container {
+  &__no-content-found-div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    &__label-div {
+      color: black;
+    }
+
+    &__button {
+      width: 100px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import "shared-resources/style/mixin.scss";
+@import "shared-resources/style/general.scss";
+
+$select: ".select";
+
+#{$select} {
+  @extend %mat-field;
+
+  min-width: 85px;
+
+  &--has-value {
+    @extend %mat-field--has-value;
+  }
+
+  &--has-error {
+    @extend %mat-field--has-error;
+
+    #{$select}__container {
+      border-bottom-color: var(--red);
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    #{$select}__current-value {
+      color: var(--grey);
+    }
+
+    .svg-icon .fill-color {
+      fill: var(--grey);
+    }
+  }
+
+  &__has-warning {
+    position: absolute;
+    right: 25px;
+
+    .svg-icon .fill-color {
+      fill: var(--yellow);
+    }
+  }
+
+  &--open {
+    #{$select}__container {
+      border-bottom-color: var(--primary);
+    }
+  }
+
+  &__container {
+    transition: border-bottom 0.3s;
+    min-width: 9rem;
+    background: var(--grey6);
+    padding: size();
+
+    .fill-color {
+      fill: var(--font-color);
+    }
+  }
+
+  &__current-value {
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    max-width: 100%;
+    min-width: 100%;
+    outline: 0;
+    user-select: none;
+    width: 100%;
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

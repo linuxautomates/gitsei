@@ -1,0 +1,45 @@
+# general
+pnpm-lock.yaml
+node_modules/
+.env
+.env.dev
+build/
+dist/
+public/env-config.js
+env-config.js
+.npmrc
+*.bak
+.scannerwork/
+
+# IDEs and editors
+.idea
+.project
+.classpath
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/coverage
+npm-debug.log
+yarn-error.log
+*.log*
+*.iml
+
+# System Files
+.DS_Store
+Thumbs.db
+.vscode
+
+# yalc
+.yalc
+yalc.lock

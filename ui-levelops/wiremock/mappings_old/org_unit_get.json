@@ -1,0 +1,68 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/org/units/123-456-67567-5675"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "has_next": false,
+        "page": 0,
+        "page_size": 10,
+        "total_count": 4
+      },
+      "records": [
+        {
+          "id": "123-456-67567-5675",
+          "version": "1",
+          "name": "Testing Major Name",
+          "description": "Testing description",
+          "tags": ["167", "168"],
+          "managers": [
+            { "id": "123-456-67567-5675", "email": "test1@levelops.io", "full_name": "Test user 1" },
+            { "id": "123-456-6784-5675", "email": "test2@levelops.io", "full_name": "Test user 2" }
+          ],
+          "default_section": { "users": ["123-456-67567-5675", "123-456-6784-5675", "123-456-656-5675"] },
+          "sections": [
+            {
+              "id": "5ace6a10-1f04-11ec-b6ee-45419ac0c92a",
+              "integrations": {
+                "1450": {
+                  "type": "jira",
+                  "filters": {
+                    "status": ["BACKLOG"],
+                    "exclude": { "priority": ["HIGHEST"] },
+                    "partial_match": { "status_category": { "$begin": "test" } }
+                  }
+                }
+              },
+              "users": ["123-456-67567-5675"]
+            },
+            {
+              "id": "7b3abce0-1f04-11ec-b6ee-45419ac0c92a",
+              "integrations": {
+                "1513": {
+                  "type": "coverity",
+                  "filters": {
+                    "first_detected": { "$gt": "1630368000", "$lt": "1631145599" },
+                    "exclude": { "impact": ["Medium"] }
+                  }
+                }
+              },
+              "dynamic_user_definition": {
+                "department": ["fe"],
+                "manager": ["123-456-67567-5675"],
+                "exclude": { "email_id": ["test1@levelops.io"] }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

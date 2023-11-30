@@ -1,0 +1,59 @@
+$actionButtonColor: #d9d9d9;
+
+.dash-action-buttons {
+  .ant-menu-root {
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .menu-divider {
+    font-size: 0.8rem;
+    color: var(--light-text);
+  }
+  .ant-menu-item {
+    margin: 0 !important;
+  }
+}
+
+.edit-dashboard {
+  padding: 0 8px;
+  margin: 0 1rem;
+  border: 1px solid $actionButtonColor;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  background: #ffffff;
+}
+
+.add-widget {
+  padding: 0 8px;
+  border: 1px solid $actionButtonColor;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  background: #ffffff;
+}
+
+.add-dropdown {
+  padding: 0 8px;
+  border: 1px solid $actionButtonColor;
+  font-size: 14px;
+  line-height: 22px;
+  color: #096dd9;
+  background: #ffffff;
+  margin-right: 1rem;
+}
+
+.more-button {
+  background: white;
+  padding: 0 8px;
+  border: 1px solid $actionButtonColor;
+
+  span i {
+    margin: 0;
+  }
+}
+
+.button-icon {
+  background: inherit;
+  margin-left: 0.3rem;
+}

@@ -1,0 +1,199 @@
+{
+  "reportType": "github_prs_report",
+  "apiData": [
+    {
+      "key": "levelops/commons-levelops",
+      "count": 608,
+      "total_lines_added": 312247,
+      "total_lines_removed": 149687,
+      "total_comments": 110,
+      "total_lines_changed": 461934,
+      "total_files_changed": 185,
+      "avg_files_changed": 0.30428,
+      "avg_lines_changed": 759.75987,
+      "median_lines_changed": 0,
+      "median_files_changed": 0,
+      "stacks": [
+        {
+          "key": "NONE",
+          "additional_key": "NONE",
+          "count": 608,
+          "total_lines_added": 312247,
+          "total_lines_removed": 149687,
+          "total_comments": 110,
+          "total_lines_changed": 461934,
+          "total_files_changed": 185,
+          "avg_files_changed": 0.30428,
+          "avg_lines_changed": 759.75987,
+          "median_lines_changed": 0,
+          "median_files_changed": 0
+        }
+      ]
+    },
+    {
+      "key": "levelops/ui-levelops",
+      "count": 253,
+      "total_lines_added": 123595,
+      "total_lines_removed": 37756,
+      "total_comments": 201,
+      "total_lines_changed": 161351,
+      "total_files_changed": 164,
+      "avg_files_changed": 0.64822,
+      "avg_lines_changed": 637.75099,
+      "median_lines_changed": 0,
+      "median_files_changed": 0,
+      "stacks": [
+        {
+          "key": "40c2e49c-3fc5-43a5-9d0b-9f535ceb007a",
+          "additional_key": "madhav-devslane",
+          "count": 12,
+          "total_lines_added": 49114,
+          "total_lines_removed": 25858,
+          "total_comments": 0,
+          "total_lines_changed": 74972,
+          "total_files_changed": 0,
+          "avg_files_changed": 0,
+          "avg_lines_changed": 6247.66667,
+          "median_lines_changed": 0,
+          "median_files_changed": 0
+        },
+        {
+          "key": "NONE",
+          "additional_key": "NONE",
+          "count": 199,
+          "total_lines_added": 74332,
+          "total_lines_removed": 11739,
+          "total_comments": 170,
+          "total_lines_changed": 86071,
+          "total_files_changed": 153,
+          "avg_files_changed": 0.76884,
+          "avg_lines_changed": 432.51759,
+          "median_lines_changed": 0,
+          "median_files_changed": 0
+        },
+        {
+          "key": "ef5b650a-b1e5-42cf-a2b9-2bac361a7c09",
+          "additional_key": "shivam-devslane",
+          "count": 38,
+          "total_lines_added": 51,
+          "total_lines_removed": 61,
+          "total_comments": 31,
+          "total_lines_changed": 112,
+          "total_files_changed": 11,
+          "avg_files_changed": 0.28947,
+          "avg_lines_changed": 2.94737,
+          "median_lines_changed": 0,
+          "median_files_changed": 0
+        },
+        {
+          "key": "023c025b-b13d-4860-86f8-6730435c2b53",
+          "additional_key": "thanh-levelops",
+          "count": 4,
+          "total_lines_added": 98,
+          "total_lines_removed": 98,
+          "total_comments": 0,
+          "total_lines_changed": 196,
+          "total_files_changed": 0,
+          "avg_files_changed": 0,
+          "avg_lines_changed": 49,
+          "median_lines_changed": 0,
+          "median_files_changed": 0
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "order": 5,
+    "width": "half",
+    "hidden": false,
+    "weights": {
+      "IDLE": 20,
+      "NO_ASSIGNEE": 20,
+      "NO_DUE_DATE": 30,
+      "NO_COMPONENTS": 20,
+      "POOR_DESCRIPTION": 8
+    },
+    "children": [],
+    "description": "Cumulative count of pull requests for each of the repositories for the selected duration.",
+    "max_records": 20,
+    "widget_type": "graph",
+    "visualization": "bar_chart",
+    "custom_hygienes": [],
+    "filter_tab_order": {
+      "projects": 1
+    }
+  },
+  "records": 20,
+  "filters": {
+    "across": "repo_id",
+    "stacks": ["assignee"],
+    "sort_xaxis": "value_high-low",
+    "visualization": "bar_chart"
+  },
+  "widgetFilters": {
+    "filter": {
+      "sort_xaxis": "value_high-low",
+      "visualization": "bar_chart",
+      "integration_ids": ["4218", "4414"],
+      "code_change_size_unit": "lines",
+      "code_change_size_config": {
+        "small": "100",
+        "medium": "1000"
+      },
+      "comment_density_size_config": {
+        "shallow": "2000",
+        "good": "5300"
+      }
+    },
+    "across": "repo_id",
+    "stacks": ["assignee"],
+    "sort": [
+      {
+        "id": "count",
+        "desc": true
+      }
+    ],
+    "ou_ids": ["33554"],
+    "widget_id": "1bb45ea0-8854-11ee-999e-591b45bca820"
+  },
+  "statUri": "github_prs_report",
+  "uri": "github_prs_report",
+  "dashMeta": {
+    "rbac": {
+      "owner": "nehal.mahida@harness.io",
+      "users": {},
+      "dashboardPermission": "admin"
+    },
+    "dashboard_time_range": true,
+    "effort_investment_unit": true,
+    "integration_monitoring": true,
+    "effort_investment_profile": true,
+    "dashboard_time_range_filter": {
+      "$gt": 1693526400,
+      "$lt": 1696031999
+    },
+    "effort_investment_unit_filter": "%_of_engineers",
+    "effort_investment_profile_filter": "c3e3699e-774d-4216-a6f5-520a326e705d"
+  },
+  "supportedCustomFields": [
+    {
+      "id": "1432041",
+      "integration_id": "4414",
+      "name": "Story point estimate",
+      "custom": true,
+      "field_key": "customfield_10630",
+      "field_type": "number",
+      "created_at": 1683529452
+    },
+    {
+      "id": "1432049",
+      "integration_id": "4414",
+      "name": "Effort",
+      "custom": true,
+      "field_key": "customfield_10985",
+      "field_type": "option",
+      "created_at": 1683529452
+    }
+  ],
+  "timeFilterKeys": ["job_end", "trend"]
+}

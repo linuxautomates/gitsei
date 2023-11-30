@@ -1,0 +1,28 @@
+.empty-preview-state {
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  background: white;
+
+  .preview-icon {
+    width: 150px;
+  }
+
+  .preview-icon-stat {
+    height: 40px;
+  }
+
+  .preview-icon-info-title,
+  .preview-icon-info-sub-title {
+    font-size: 8px;
+  }
+
+  .table-preview-icon {
+  }
+
+  .composite-preview-icon {
+  }
+}

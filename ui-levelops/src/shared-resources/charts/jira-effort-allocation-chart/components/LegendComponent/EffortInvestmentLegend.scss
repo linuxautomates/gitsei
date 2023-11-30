@@ -1,0 +1,16 @@
+.new-legend-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .legend-checkbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    .current-allocation {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+}

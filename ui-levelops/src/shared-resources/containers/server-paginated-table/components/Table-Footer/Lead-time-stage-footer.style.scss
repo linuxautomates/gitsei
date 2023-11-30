@@ -1,0 +1,46 @@
+.lead-time-stage-footer {
+  display: flex;
+  margin-top: 15px;
+  .stage-by-footer-good {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #61ba14;
+    margin-right: 5px;
+  }
+  .stage-by-footer-acceptable {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #789fe9;
+    margin-right: 5px;
+  }
+  .stage-by-footer-missing {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #808080;
+    margin-right: 5px;
+  }
+
+  .stage-by-footer-slow {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #cf1322;
+    margin-right: 5px;
+  }
+  .lead-time-stage-div {
+    display: flex;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .separator {
+      width: 0;
+      height: 18px;
+      margin-right: 15px;
+      border: 1px solid #404040;
+    }
+  }
+}

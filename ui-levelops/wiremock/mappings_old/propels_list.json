@@ -1,0 +1,50 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/playbooks/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "name": "Playbook 1",
+          "id": "1",
+          "created_at": 1570761099,
+          "updated_at": 1570761099
+        },
+        {
+          "name": "Playbook 2",
+          "id": "2",
+          "created_at": 1570761099,
+          "updated_at": 1570761099
+        },
+        {
+          "name": "Playbook 3",
+          "id": "3",
+          "created_at": 1570761099,
+          "updated_at": 1570761099
+        },
+        {
+          "name": "Playbook 4",
+          "id": "4",
+          "created_at": 1570761099,
+          "updated_at": 1570761099
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

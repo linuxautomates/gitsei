@@ -1,0 +1,28 @@
+.rank-container {
+  margin-top: 2rem;
+  height: 34rem;
+  overflow-y: scroll;
+  .react-grid-layout {
+    position: relative !important;
+    .ant-card {
+      height: 12rem;
+      &:hover {
+        background-color: #f0f4fd;
+      }
+      .ant-card-head-title {
+        padding-bottom: 0;
+        color: var(--grey3);
+        font-size: 1.15rem;
+        min-height: 4.625rem;
+      }
+    }
+  }
+  .category-card-action-icon {
+    font-size: large;
+  }
+}
+@media (max-width: 1440px) {
+  .rank-container {
+    height: 30rem;
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/pipelines/job_runs/values"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "cicd_user_id": [
+            {
+              "key": "viraj-jenkins",
+              "count": 384
+            },
+            {
+              "key": "user1-jenkins",
+              "count": 91
+            }
+          ]
+        },
+        {
+          "job_status": [
+            {
+              "key": "SUCCESS",
+              "count": 536
+            },
+            {
+              "key": "FAILURE",
+              "count": 76
+            }
+          ]
+        },
+        {
+          "job_name": [
+            {
+              "key": "Pipeline 1",
+              "count": 72
+            },
+            {
+              "key": "Pipeline 2",
+              "count": 53
+            }
+          ]
+        },
+        {
+          "qualified_job_name": [
+            {
+              "key": "Pipeline 1",
+              "additional_key": "Jenkins Instance US",
+              "count": 72
+            },
+            {
+              "key": "Pipeline 2",
+              "additional_key": "Jenkins Instance EU",
+              "count": 53
+            }
+          ]
+        },
+        {
+          "cicd_job_id": [
+            {
+              "key": "Pipeline 1",
+              "additional_key": "Jenkins Instance US",
+              "additional_key_2": "pipeline-1/branches/master",
+              "count": 72
+            },
+            {
+              "key": "Pipeline 2",
+              "additional_key": "Jenkins Instance EU",
+              "additional_key_2": "pipeline-2/branches/master",
+              "count": 53
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

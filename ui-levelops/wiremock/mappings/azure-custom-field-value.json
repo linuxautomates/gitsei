@@ -1,0 +1,51 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/issue_mgmt/workitems/custom_field/values"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        { "Custom.customfield": { "total_count": 1, "records": [{ "key": "test" }], "count": 1 } },
+        { "Custom.custom_field_1": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.CustomFieldTest": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.CustomFieldTest2": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.Identity": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.MultiLineText": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.newfield": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField00": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField1": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField2": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField3": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField4": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField5": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField6": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField7": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestCustomField8": { "total_count": 0, "records": [], "count": 0 } },
+        { "Custom.TestField": { "total_count": 0, "records": [], "count": 0 } },
+        {
+          "Microsoft.VSTS.Common.ValueArea": {
+            "total_count": 3,
+            "records": [{ "key": "First record" }, { "key": "Second" }, { "key": "third" }],
+            "count": 3
+          }
+        },
+        {
+          "Microsoft.VSTS.Scheduling.Effort": {
+            "total_count": 3,
+            "records": [{ "key": "First" }, { "key": "Second Custom" }, { "key": "third custom" }],
+            "count": 3
+          }
+        }
+      ],
+      "count": 20,
+      "_metadata": { "page_size": 20, "page": 0, "next_page": 1, "has_next": true }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

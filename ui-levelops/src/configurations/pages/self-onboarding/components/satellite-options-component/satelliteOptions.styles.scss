@@ -1,0 +1,44 @@
+.satellite-header {
+  margin: 1rem 1rem 0rem 1rem !important;
+}
+.satellite-final-component {
+  padding-left: 3rem;
+}
+
+.satellite-options-container {
+  .satellite-options {
+    padding-left: 2rem;
+    .title,
+    .select-repo-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .required {
+      font-size: 1.25rem;
+      color: red;
+      margin-left: 5px;
+    }
+    .ant-input,
+    .ant-select {
+      width: 50%;
+    }
+  }
+  .select-repo-collapse {
+    background-color: #fff;
+    margin-top: 1rem;
+    .ant-collapse-item {
+      border: none;
+    }
+    .ant-collapse-header {
+      color: var(--inactive-tab);
+      font-weight: 500;
+    }
+    .ant-checkbox-wrapper {
+      margin-bottom: 0.5rem;
+    }
+    .ant-collapse-content-box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

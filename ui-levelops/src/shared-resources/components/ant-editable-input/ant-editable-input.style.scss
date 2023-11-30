@@ -1,0 +1,25 @@
+.ant-editable-input {
+  input {
+    border-radius: 4px;
+    border: 1px solid #dcdfe4;
+  }
+
+  .ant-editable-input__enter-icon {
+    font-size: 12px;
+    color: #8a94a5;
+  }
+}
+
+.ant-editable-input__display {
+  display: flex;
+  align-items: center;
+
+  .ant-editable-input__display-value {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .ant-editable-input__edit-button {
+    padding-top: 4px;
+  }
+}

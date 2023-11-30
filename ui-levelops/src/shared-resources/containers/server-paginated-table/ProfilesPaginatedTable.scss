@@ -1,0 +1,26 @@
+.profile-paginated-table {
+  .search-box {
+    width: 15rem;
+    margin: 10px;
+  }
+  .divider-spacing {
+    margin: 4px 0;
+  }
+  .ant-alert-icon {
+    font-size: 20px;
+  }
+  .modal-column {
+    display: flex;
+  }
+  .external-link {
+    display: none;
+  }
+  .modal-column:hover .external-link{
+    display: block;
+  }
+  .external-link-icon {
+    padding-top: 3px;
+    height: 16px !important;
+    width: 16px !important;
+  }
+}

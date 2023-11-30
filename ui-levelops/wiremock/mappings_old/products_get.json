@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/products/([0-9]*)"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": "123",
+      "name": "iPad",
+      "description": "Description 1",
+      "owner": "meghana@levelops.io"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

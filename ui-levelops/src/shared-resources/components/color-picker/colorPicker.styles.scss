@@ -1,0 +1,10 @@
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+  .circle-color {
+    width: 2.688rem;
+    height: 2.688rem;
+    border-radius: 100%;
+    margin: 0.25rem;
+  }
+}

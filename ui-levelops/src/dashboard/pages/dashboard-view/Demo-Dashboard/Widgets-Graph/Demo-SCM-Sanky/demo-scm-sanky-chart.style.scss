@@ -1,0 +1,93 @@
+.scm-review-headers-style {
+  display: flex;
+  justify-content: space-between;
+  .ant-select-selection {
+    border: 0 !important;
+    .ant-select-selection-selected-value {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.total-breakdown-container {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--grey6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .breakdown-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .text {
+      font-weight: 300;
+      font-size: 2.5rem;
+    }
+    .label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .breakdown-checkbox {
+        width: 0.75rem;
+        height: 0.75rem;
+      }
+      .checkbox-text {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-left: 0.5rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.scm_sankey_container {
+  .submitters-header,
+  .reviewers-header {
+    .header-wrapper {
+      width: 50%;
+    }
+    @extend .scm-review-headers-style;
+  }
+
+  .scm-user-list-header {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: nowrap;
+    width: 100%;
+    &-prefix {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inline-block;
+      max-width: 70%;
+    }
+    .action-text {
+      color: var(--blueText);
+      cursor: pointer;
+    }
+  }
+
+  .review-bar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviewer-to-committer-percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(139, 173, 236);
+  }
+}

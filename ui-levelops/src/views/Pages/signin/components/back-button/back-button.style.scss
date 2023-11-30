@@ -1,0 +1,26 @@
+.back-button-wrapper {
+  .back-button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    background: #ffffff;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid var(--harness-blue);
+    box-sizing: border-box;
+    color: var(--harness-blue);
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
+  &:active {
+    outline: none;
+  }
+  button[ant-click-animating-without-extra-node]:after {
+    border: 0 none;
+    opacity: 0;
+    animation: none 0 ease 0 1 normal;
+  }
+}

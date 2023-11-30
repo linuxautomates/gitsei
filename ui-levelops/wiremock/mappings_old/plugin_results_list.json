@@ -1,0 +1,599 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/plugins/results/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "4e77874b-8055-4882-b2a2-0e26b716cc88",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5", "8"],
+          "product_ids": ["76"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.3267858028,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["0e3fe73f-de0a-4001-8dba-6dc65bc448ee"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1590537973000,
+          "created_at_epoch": 1590537973
+        },
+        {
+          "id": "bdcd11c7-b0e7-428b-a4d6-f1096c94dd30",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["8", "11"],
+          "product_ids": ["75", "37"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.7415039539,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["8040905e-59f8-46a1-866e-19c6abdc4d62"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1590349645000,
+          "created_at_epoch": 1590349645
+        },
+        {
+          "id": "b2ebe071-18b0-4d3a-9bed-78bdb9c106e7",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["36", "126"],
+          "product_ids": ["36"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.343252182,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["b01de480-ccd4-4ffb-9960-8b253fab550e"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589563592000,
+          "created_at_epoch": 1589563592
+        },
+        {
+          "id": "250bbccd-69da-4496-a76a-7d7c2a9e2b02",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5", "8"],
+          "product_ids": ["71", "37"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.8621492386,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["8c5911e2-b1f1-4031-9c0f-e2723854c419"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589323007000,
+          "created_at_epoch": 1589323007
+        },
+        {
+          "id": "e9981958-8538-4806-9c76-20f1e00d5460",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.8438186646,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["9b72e412-5c0d-4416-a6c2-45a255cd9d2e"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589321143000,
+          "created_at_epoch": 1589321143
+        },
+        {
+          "id": "0c6e76c9-6a4f-44c7-829a-0d238e7e9f4f",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.1639621258,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["96884e45-8689-470c-90f1-429e39f5dfc2"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589316708000,
+          "created_at_epoch": 1589316708
+        },
+        {
+          "id": "a75509cb-7979-4c97-8466-7561752cc828",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.4111199379,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["b9ba7898-a120-4e30-bdbe-4b3b0a9aa333"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589316278000,
+          "created_at_epoch": 1589316278
+        },
+        {
+          "id": "0bf3ecfd-6cef-4b60-b633-221e7410eb74",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["46"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.1533913612,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["ddc1b2a3-d8b4-450d-8615-d5d15f3a38f3"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589315922000,
+          "created_at_epoch": 1589315922
+        },
+        {
+          "id": "eec47063-aa8c-4970-9066-4fa6ca106da7",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": ["46"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.2279889584,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["a1da69ec-4a07-40aa-bb5a-0060997b5444"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589300914000,
+          "created_at_epoch": 1589300914
+        },
+        {
+          "id": "dcbc59b9-72b9-4389-8f20-7103394c41b8",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["36"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.7470510006,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["3910e783-f0b1-4136-8b8d-f43c58758f88"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589289329000,
+          "created_at_epoch": 1589289329
+        },
+        {
+          "id": "6bc563e5-22c6-42f6-bb62-dfa6c7f12e9c",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.7622284889,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["fe63e8ec-de3e-45d3-abf0-c22d4a4612fa"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589285569000,
+          "created_at_epoch": 1589285569
+        },
+        {
+          "id": "65474b5b-4a51-4df0-a6fd-e70502f5a529",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.2201030254,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["29f95312-2d07-4d85-af56-ed2f36d9e1ce"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589285181000,
+          "created_at_epoch": 1589285181
+        },
+        {
+          "id": "1ba94c4c-98eb-4350-b8a7-d054f9f0dd16",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.7365825176,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["aedfabe8-288d-4f43-a0b7-c9ca414b1160"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589284837000,
+          "created_at_epoch": 1589284837
+        },
+        {
+          "id": "260c1a75-a65e-44d1-aff0-5b0b925fc33e",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.6881735325,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["bd97bc61-fb40-4745-a1c7-d3b6b9b6304e"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589284201000,
+          "created_at_epoch": 1589284201
+        },
+        {
+          "id": "0bf65347-dd01-43da-9b88-5c5df9a6c8cc",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.1579711437,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["1faf790c-d6b4-48c4-9023-f65a4c3bbc97"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589283423000,
+          "created_at_epoch": 1589283423
+        },
+        {
+          "id": "a333b523-f154-4d57-a0fe-f898cc9a5309",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["5"],
+          "product_ids": ["71"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.2704865932,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["9a3d189d-6128-499a-92cd-c74d83a7cf84"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589282449000,
+          "created_at_epoch": 1589282449
+        },
+        {
+          "id": "f14741ed-79bf-442f-bdc4-8e921f20b752",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": ["46"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.2955844402,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["0b2ac49c-b689-4881-b35a-04ee9668102d"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1589258254000,
+          "created_at_epoch": 1589258254
+        },
+        {
+          "id": "6d18973c-401c-46ba-8558-befc0237fa5e",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": ["46"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.5135242939,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["5962cca9-7beb-480f-91ae-935087deda03"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587410714000,
+          "created_at_epoch": 1587410714
+        },
+        {
+          "id": "3efa286a-ad2b-4d7c-aa86-4a85fae35131",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["16", "17"],
+          "product_ids": ["36"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.4266843796,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["4b6bcbc1-8ea0-4b7b-8bed-a12d85108b62"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587410546000,
+          "created_at_epoch": 1587410546
+        },
+        {
+          "id": "0e13daef-7c00-49ba-8d3d-a4f647518660",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["101"],
+          "product_ids": ["37"],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.6994919777,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["800fbf19-9d92-429e-8e12-efae4bb012b8"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587409168000,
+          "created_at_epoch": 1587409168
+        },
+        {
+          "id": "d4b6eb2d-048b-470e-b821-997877bab3f6",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["99", "100"],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.8943338394,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587408685000,
+          "created_at_epoch": 1587408685
+        },
+        {
+          "id": "5c01efb7-e3a5-48ce-8595-3a4ea9a9cd2a",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["97", "98"],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.8570575714,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587408598000,
+          "created_at_epoch": 1587408598
+        },
+        {
+          "id": "1dee871d-5da9-4739-b25b-f4eb0932b448",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["97", "98"],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.7553431988,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587408583000,
+          "created_at_epoch": 1587408583
+        },
+        {
+          "id": "3b187211-7209-42f6-b542-7026bf81d4aa",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 1.79859972,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587408553000,
+          "created_at_epoch": 1587408553
+        },
+        {
+          "id": "ccc4b33a-8f0c-4bac-b499-3ab0596ab27e",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": ["38", "39"],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 3.3543970585,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587089996000,
+          "created_at_epoch": 1587089996
+        },
+        {
+          "id": "b989a8bb-a2f5-4243-8548-b81f0b290395",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 3.2384414673,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587073555000,
+          "created_at_epoch": 1587073555
+        },
+        {
+          "id": "a9dc6b2a-50e0-4aba-a440-1339f72480c4",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 3.2037432194,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587072099000,
+          "created_at_epoch": 1587072099
+        },
+        {
+          "id": "4df85c55-b8ab-45f2-9f68-004d6f8243d8",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 8.1490762234,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1587025049000,
+          "created_at_epoch": 1587025049
+        },
+        {
+          "id": "24e315e7-b24d-434e-9952-4ec63777fba4",
+          "plugin_name": "Praetorian Report",
+          "class": "report_file",
+          "tool": "report_praetorian",
+          "version": "1",
+          "tags": [],
+          "product_ids": [],
+          "successful": true,
+          "metadata": {
+            "os": "redhat8",
+            "version": "<runner version>",
+            "execution": 2.6169018745,
+            "available_cores": "3ecu",
+            "available_memory": "4GB"
+          },
+          "labels": { "trigger_id": ["c525164c-dbf6-4e41-9a21-ff2481667ec2"], "project_name": ["DMA,DMA (Retest)"] },
+          "created_at": 1586831686000,
+          "created_at_epoch": 1586831686
+        }
+      ],
+      "count": 29,
+      "_metadata": { "page_size": 100, "page": 0, "has_next": false, "total_count": 29 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.login-form {
+  & .ant-card-body {
+    padding: 12px 16px !important;
+  }
+
+  .verification-modal {
+    color: var(--grey2);
+
+    .verification_code_container {
+      .code_input_label {
+        font-weight: 600;
+      }
+    }
+    .verifiy_button_container {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .verification-help-container {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 1rem;
+      .help-icon {
+        margin: 0.25rem 1rem 0.25rem 0.25rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

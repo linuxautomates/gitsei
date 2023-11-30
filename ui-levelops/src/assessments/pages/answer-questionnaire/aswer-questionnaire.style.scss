@@ -1,0 +1,139 @@
+@import "shared-resources/style/mixin.scss";
+
+.answer-questionnaire {
+  &__header,
+  &__info {
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__info {
+    width: 100%;
+    padding: 2rem 4rem;
+    box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    @extend %h3;
+  }
+
+  &__label {
+    @extend %label2;
+
+    color: var(--grey4);
+    text-transform: uppercase;
+  }
+
+  &__percent {
+    @extend %p12;
+    align-self: flex-end;
+  }
+
+  &__progress-bar {
+    .progress {
+      height: size();
+      margin-bottom: 0;
+      border-radius: 0.6rem;
+      min-width: 12rem;
+    }
+  }
+
+  &__artifact_container {
+  }
+
+  &__artifact_link {
+    &:not(:first-child) {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      color: var(--link-and-actions);
+    }
+  }
+
+  &__content {
+    //height: calc(80vh - 20rem);
+    //height: 100%;
+    padding: size(4);
+    overflow: hidden;
+    //overflow-y: visible;
+  }
+
+  &__wrap-question {
+    border-bottom: 0.1rem solid var(--grey5);
+    margin-bottom: size(4);
+  }
+
+  &__question {
+    flex-basis: 30%;
+    height: 100%;
+    //height: 100%;
+    //overflow-y: visible;
+  }
+
+  &__question-name {
+    @extend %label1;
+    text-transform: uppercase;
+  }
+
+  &__question-description {
+    @extend %p14;
+    color: var(--grey3);
+  }
+
+  &__assertions {
+    margin: 0 size(2);
+    padding: 0 size(4) 0 size(6);
+    //max-height: calc(80vh - 20rem);
+    overflow: hidden;
+    overflow-y: visible;
+  }
+
+  &__assertion-answered-by {
+    flex-basis: 20%;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  &__assertion {
+    padding-bottom: size(2);
+    padding-top: size(2);
+    border-bottom: 1px solid var(--grey5);
+  }
+
+  &__assertion-qa {
+    flex-basis: 80%;
+    text-align: left;
+  }
+
+  &__assertion-name {
+    @extend %p14;
+    color: var(--grey2);
+  }
+
+  &__assertion-answered-label {
+    @extend %p14;
+    font-weight: bold;
+    color: var(--blue1);
+    text-transform: uppercase;
+  }
+
+  &__comments-label {
+    @extend %label1;
+    text-transform: uppercase;
+  }
+
+  .avatar-list {
+    .ant-avatar {
+      margin-left: 4px;
+    }
+
+    .ant-avatar:last-child {
+      margin-left: 0;
+    }
+  }
+}
+.word-break-all {
+  word-break: break-all;
+}

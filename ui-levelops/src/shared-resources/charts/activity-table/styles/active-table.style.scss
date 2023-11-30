@@ -1,0 +1,22 @@
+.active-table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .activity-html-table {
+    height: 100%;
+    .active-table-dot {
+      height: 7px;
+      width: 7px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 2px;
+    }
+    .active-table-value {
+      vertical-align: top;
+      font-size: 10px;
+      font-weight: 600;
+      margin-left: 2px;
+    }
+  }
+}

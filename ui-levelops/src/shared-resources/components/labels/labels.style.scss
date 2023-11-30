@@ -1,0 +1,53 @@
+@import "shared-resources/style/mixin.scss";
+
+.labels {
+  &__title {
+    @extend %p14;
+    font-weight: bold;
+    //padding-left: size(2);
+  }
+
+  &__header {
+    @extend %h3;
+  }
+
+  &__description {
+    @extend %p14;
+    color: var(--grey3);
+  }
+
+  &__info {
+    margin-top: size(4);
+  }
+
+  &__item {
+    span {
+      @extend %h4;
+      font-weight: bold;
+    }
+  }
+
+  &__item-label {
+    @extend %label3;
+    color: var(--grey3);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    @extend %label3;
+    color: var(--green3);
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  &__badge {
+    float: right;
+    margin: 0px 5px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background-color: var(--blue2);
+    color: #fff;
+    padding: 2px 8px;
+  }
+}

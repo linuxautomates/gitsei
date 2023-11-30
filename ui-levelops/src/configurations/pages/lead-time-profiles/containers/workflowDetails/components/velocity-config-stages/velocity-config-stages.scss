@@ -1,0 +1,36 @@
+.velocity-config-stages {
+  background-color: white;
+  padding: 1.5rem;
+  height: min-content;
+
+  .stage-title {
+    font-size: medium;
+    font-weight: 500;
+  }
+
+  .stage-count {
+    margin-left: 8px;
+    .ant-badge-count {
+      background-color: #8c8c8c;
+    }
+  }
+
+  .stages-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-top: 32px;
+    background-color: #f5f6f8;
+    .stage-item .stage-content {
+      .stage-name {
+        .exclamtion-icon {
+          height: 1.2rem;
+          width: 1.5rem;
+          vertical-align: text-bottom;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

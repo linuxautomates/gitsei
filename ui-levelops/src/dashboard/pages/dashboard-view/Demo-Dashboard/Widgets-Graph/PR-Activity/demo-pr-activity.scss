@@ -1,0 +1,68 @@
+.demo-pr-activity-container {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+  .ant-card-head {
+    position: absolute;
+    top: -70px;
+    left: 20%;
+    width: 80%;
+    margin: 5px 0 0 0;
+  }
+  .pr-activity-header {
+    width: auto;
+    span.interval-label {
+      font-size: 16px;
+    }
+    span.interval-month {
+      margin: 2.4px auto 0 auto;
+    }
+    .pr-activity-interval {
+      text-align: end;
+    }
+    .child {
+      flex: 1 0 38.5%;
+    }
+    .ant-select-selection--single .ant-select-selection__rendered {
+      margin-right: 34px;
+    }
+  }
+}
+
+div.ant-card-wrapper .ant-card.ant-card-bordered.demo-pr-activity-container {
+  border: 0;
+}
+.pr-activity-first-title-hide-show {
+  color: #2967dd;
+  cursor: pointer;
+}
+.pr-activity-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  .child {
+    flex: 1 0 30%;
+    max-width: 30%;
+  }
+  .pr-activity-title-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .pr-activity-by {
+    width: auto;
+  }
+  .pr-activity-week-selection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.pr-activity-vertical-auto-margin {
+  margin: auto 6px;
+}
+.pr-activity-name {
+  color: #2a67dd;
+  font-size: 14px;
+}

@@ -1,0 +1,106 @@
+.more-modal {
+  width: fit-content !important;
+  display: flex;
+  justify-content: center;
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    border: none;
+    padding: 5px 16px;
+  }
+  .column-border {
+    border-right: 1.5px solid var(--grey4) !important;
+    padding-right: 3rem !important;
+  }
+  .name-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1.2rem;
+    &-text {
+      margin-bottom: 0;
+      color: var(--ba-blue);
+      width: 80%;
+    }
+    &-avatar {
+      width: 20%;
+    }
+  }
+  .avg-column {
+    padding-left: 3rem !important;
+  }
+}
+.content {
+  .name-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1.2rem;
+    &-text {
+      margin-bottom: 0;
+      color: var(--ba-blue);
+      width: 80%;
+    }
+    &-avatar {
+      width: 20%;
+    }
+  }
+  .avg-column {
+    padding-left: 3rem !important;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    .title-with-count-container {
+      width: 8rem;
+      .title-count-text {
+        width: 70%;
+        font-weight: 500;
+      }
+    }
+  }
+  &-table {
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      border: none;
+      padding: 5px 16px;
+    }
+    .column-border {
+      border-right: 1.5px solid var(--grey4) !important;
+      padding-right: 3rem !important;
+    }
+  }
+  &-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    &-container {
+      display: flex;
+      align-items: center;
+      .legend-parent {
+        margin-left: 0;
+        .legend-container {
+          margin: 1rem 1rem 0rem 1rem;
+        }
+      }
+      .more-button {
+        position: absolute;
+        right: 4rem;
+      }
+    }
+    .divider-style {
+      margin: 12px 0;
+      background-color: var(--grey4) !important;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .content-table {
+    padding-left: 6rem;
+    .column-border {
+      width: 10%;
+    }
+  }
+}

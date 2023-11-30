@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/bestpractices/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "name": "MongoDB Best Practice",
+      "value": "https://somelinktodocument",
+      "type": "LINK",
+      "tags": [1, 2]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.assessment-infinite-scroll {
+  min-height: 300px;
+
+  .quiz-detail {
+    padding: 10px;
+
+    .ant-collapse-borderless {
+      background-color: white;
+    }
+
+    .ant-collapse-header {
+      background-color: #dfe4ef;
+      border-radius: 8px !important;
+
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-collapse-item {
+      border-bottom: none;
+      margin-bottom: 10px;
+    }
+  }
+}

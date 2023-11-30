@@ -1,0 +1,138 @@
+{
+  "id": "1",
+  "type": "distinct_config_table_values",
+  "description": "Iterate over the distinct values of a table's column.",
+  "ports": {
+    "input": {
+      "id": "input",
+      "type": "input",
+      "properties": {
+        "action": "input"
+      },
+      "position": {
+        "x": 131,
+        "y": 0
+      }
+    },
+    "output": {
+      "id": "output",
+      "type": "output",
+      "properties": {
+        "action": "output"
+      },
+      "position": {
+        "x": 131,
+        "y": 78
+      }
+    }
+  },
+  "input": {
+    "filtering_mode": {
+      "key": "filtering_mode",
+      "type": "radio-group",
+      "values": [
+        {
+          "value": "Exact match",
+          "type": "string"
+        }
+      ],
+      "required": false,
+      "hidden": false,
+      "options": ["Exact match", "Contains", "Starts with"],
+      "default_value": "Exact match",
+      "display_name": "Filtering mode",
+      "description": "Select how the filters should be evaluated. This applies to all the filters at once.",
+      "index": 50
+    },
+    "config_table_column": {
+      "key": "config_table_column",
+      "type": "config-table-column",
+      "values": [
+        {
+          "value": {
+            "column_id": "71860020-126b-11eb-a278-6d234472cfad"
+          },
+          "type": "string"
+        }
+      ],
+      "required": true,
+      "hidden": false,
+      "options": [],
+      "display_name": "Table Column",
+      "description": "Select a table and one of its columns.",
+      "index": 20,
+      "use_input_fields": {
+        "table_id": "config_table"
+      }
+    },
+    "config_table": {
+      "key": "config_table",
+      "type": "single-dynamic-select",
+      "values": [
+        {
+          "value": "433ad056-52c7-4206-8af6-1ff5d1d022ba",
+          "type": "string"
+        }
+      ],
+      "required": true,
+      "hidden": false,
+      "options": [],
+      "dynamic_resource_name": "config_tables",
+      "display_name": "Table",
+      "description": "",
+      "index": 10
+    },
+    "split_comma_lists": {
+      "key": "split_comma_lists",
+      "type": "radio-group",
+      "values": [
+        {
+          "value": "Yes",
+          "type": "string"
+        }
+      ],
+      "required": true,
+      "hidden": false,
+      "options": ["Yes", "No"],
+      "default_value": "Yes",
+      "display_name": "Split comma-separated values",
+      "description": "If Yes, cells that contain comma-separated values will be treated as multiple individual values. Otherwise, the whole cell is considered as one value.",
+      "index": 30
+    },
+    "config_table_filter": {
+      "key": "config_table_filter",
+      "type": "config-table-filter",
+      "values": [],
+      "required": false,
+      "hidden": false,
+      "options": [],
+      "display_name": "Table Filters",
+      "description": "Optionally, specify one or more filters by selecting a column and what value it should contain. The behavior of the filters depends on the filtering mode below.",
+      "index": 40,
+      "use_input_fields": {
+        "table_id": "config_table"
+      }
+    }
+  },
+  "output": {
+    "value": {
+      "key": "value",
+      "display_name": "value",
+      "value_type": "string",
+      "hidden": false
+    }
+  },
+  "options": [],
+  "position": {
+    "x": 300,
+    "y": 241
+  },
+  "properties": {
+    "icon": "levelops"
+  },
+  "name": "Distinct Table Values",
+  "size": {
+    "width": 320,
+    "height": 124
+  }
+}

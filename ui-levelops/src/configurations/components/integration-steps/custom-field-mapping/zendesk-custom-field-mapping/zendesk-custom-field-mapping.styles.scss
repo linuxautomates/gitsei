@@ -1,0 +1,63 @@
+.custom-fields-mapping {
+  width: 47%;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0;
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hide-dropdown {
+    display: none;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .full-width-dropdown {
+    width: fit-content !important;
+  }
+
+  .add-btn {
+    width: fit-content;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 1rem 0;
+    font-size: 14px;
+    color: #335ddd;
+
+    .add-icon {
+      padding: 0 10px 0 2px;
+    }
+  }
+
+  .centered {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.custom-fields-mapping-header {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.no-mapping-text {
+  font-size: 12px;
+  display: block;
+  margin: 0.5rem;
+}
+
+.custom-mapping-table-container {
+  width: 100%;
+  max-height: 20rem;
+  overflow-y: scroll;
+}

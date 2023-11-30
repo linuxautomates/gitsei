@@ -1,0 +1,144 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/sections/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "name": "General Guidance",
+      "description": "Applies to All Projects: Standard security guidance that all projects, regardless of features, need to follow.",
+      "tags": [1, 2],
+      "risk_enabled": false,
+      "questions": [
+        {
+          "id": 1,
+          "name": "We have tagged any bugs filed as a result of items in these checklists with '`security`' label.",
+          "severity": "high",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 1
+        },
+        {
+          "id": 2,
+          "name": "Our application is running on machines supported by Operations.",
+          "severity": "high",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1, "checklist": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "auto",
+          "verification_assets": [],
+          "training": [],
+          "number": 2
+        },
+        {
+          "id": 3,
+          "name": "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+          "severity": "medium",
+          "type": "multi-select",
+          "custom": true,
+          "options": [
+            {
+              "value": "We manually checked for dead code",
+              "score": 5
+            },
+            {
+              "value": "We use coverage reports to identify dead code",
+              "score": 3
+            },
+            {
+              "value": "We have not checked for dead code",
+              "score": 10
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 3
+        },
+        {
+          "id": 4,
+          "name": "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+          "severity": "medium",
+          "type": "single-select",
+          "custom": true,
+          "options": [
+            {
+              "value": "We manually checked for dead code",
+              "score": 5
+            },
+            {
+              "value": "We use coverage reports to identify dead code",
+              "score": 3
+            },
+            {
+              "value": "We have not checked for dead code",
+              "score": 10
+            }
+          ],
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 4
+        },
+        {
+          "id": "c0c38bd2-aef9-4d9e-b9d1-cae2f39e965a",
+          "name": "Assertion2",
+          "severity": "medium",
+          "question_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+          "type": "multi-select",
+          "options": [
+            {
+              "value": "option1",
+              "score": 3
+            },
+            {
+              "value": "option2",
+              "score": 1
+            },
+            {
+              "value": "option3",
+              "score": 5
+            }
+          ],
+          "verification_mode": "MANUAL",
+          "number": 5
+        },
+        {
+          "id": "46fbdd82-2b54-421b-9c82-5e004eb1dc97",
+          "name": "Assertion 1",
+          "severity": "medium",
+          "question_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+          "type": "text",
+          "options": [
+            {
+              "value": "",
+              "score": 3
+            }
+          ],
+          "verification_mode": "MANUAL",
+          "number": 6
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

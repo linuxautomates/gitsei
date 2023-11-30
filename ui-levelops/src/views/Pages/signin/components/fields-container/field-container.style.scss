@@ -1,0 +1,14 @@
+.input-field-component {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  width: 100%;
+}
+
+.input-field-component.current-step {
+  visibility: visible;
+  left: 0;
+}

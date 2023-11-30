@@ -1,0 +1,17 @@
+.hygiene-tabs {
+  .ant-tabs-nav {
+    width: 100%;
+
+    .ant-tabs-tab {
+      text-align: center;
+    }
+
+    .ant-tabs-tab:first-child {
+      width: 47%;
+    }
+
+    .ant-tabs-tab:nth-child(2) {
+      width: 49%;
+    }
+  }
+}

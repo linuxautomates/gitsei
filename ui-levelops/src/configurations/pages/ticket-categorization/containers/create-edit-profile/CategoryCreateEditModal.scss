@@ -1,0 +1,19 @@
+.scheme-modal-container {
+  .ant-modal {
+    width: 60rem !important;
+
+    .ant-modal-body {
+      height: 40rem;
+      padding: 0 !important;
+      box-shadow: rgba(96, 97, 112, 0.16) 0px 5px 5px;
+
+      .scheme-form-container {
+        padding: 0 5rem;
+      }
+    }
+    .ant-modal-footer {
+      box-shadow: rgba(96, 97, 112, 0.16) 0px -10px 10px;
+      padding: 15px 15px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/playbooks/triggers/schema/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "type": "scheduled",
+      "description": "A trigger for runbooks that will run on a fixed schedule.",
+      "fields": [
+        {
+          "key": "in-min",
+          "type": "text",
+          "required": false,
+          "hidden": false,
+          "options": [],
+          "validation": "not_empty if cron empty"
+        },
+        {
+          "key": "cron",
+          "type": "text",
+          "required": false,
+          "hidden": false,
+          "options": [],
+          "validation": "not_empty if in-min empty"
+        }
+      ],
+      "examples": [
+        {
+          "id": "1fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "name": "Every Monday Morning Trigger"
+        },
+        {
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "name": "Every 12 hours Trigger"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

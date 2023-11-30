@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/workitems/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "name": "Some default name field based on policy",
+      "policy_id": "1",
+      "type": "AUTOMATED",
+      "status": "OPEN",
+      "assignee": "1",
+      "due_at": null,
+      "created_at": 1572031299,
+      "integration_id": "1",
+      "reason": "Matched LQLs: issue.fix_version = \"MVP1\" AND issue.type = Epic AND issue.component=\"API\"",
+      "artifact": "LEV-123",
+      "artifact_title": "New feature for release XYZ",
+      "cloud_owner": "meghana@levelops.io"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

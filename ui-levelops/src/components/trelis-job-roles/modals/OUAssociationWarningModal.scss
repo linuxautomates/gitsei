@@ -1,0 +1,92 @@
+.ou-association {
+      width: fit-content !important;
+      .popup-paginated-table {
+        :first-child.flex.justify-space-between.align-center {
+            margin: 2.5rem 0rem 0.8rem !important;
+        }
+      }
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        .info-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .note {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--light-text-secondary, #383946);
+        }
+
+        .buttons {
+            display: flex;
+            margin-top: 8rem;
+            justify-content: center;
+            column-gap: 16px;
+        }
+    }
+
+    .ant-modal-footer {
+        display: none;
+    }
+                .buttons {
+                    display: flex;
+                    column-gap: 16px;
+                }
+        
+                .job-lable {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 22px;
+                    padding-right: 1px;
+                    cursor: pointer;
+                }
+        
+                .job-lable-blue {
+                    color: #0278d5 !important;
+                }
+        
+                .job-lable-black {
+                    color: #383946 !important;
+                }
+        
+                .job-lable-gray {
+                    color: #b0b1c3 !important;
+                }
+        
+                .job-lable-padding {
+                    padding-left: 38px;
+                }
+        
+                .job-filter-class {
+                    width: 35%;
+                    background: #EFFBFF;
+                    border-radius: 4px;
+                    border: 0.50px #0278D5 solid;
+                    padding: 0px 6px 6px 16px;
+        
+                    .job-filter-dropdown {
+                        color: #22222A;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 16px;
+        
+                        .job-filter-title {
+                            margin-top: 10px;
+                            margin-right: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+}

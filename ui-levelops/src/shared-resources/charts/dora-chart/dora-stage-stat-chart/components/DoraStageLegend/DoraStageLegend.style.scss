@@ -1,0 +1,59 @@
+.dora-stage-legend-container {
+  display: flex;
+  align-items: center;
+
+  .down-arrow {
+    margin-left: 4px;
+  }
+
+  .stages-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    font-size: 12px;
+    font-weight: 700;
+
+    .stages-count {
+      margin-left: 4px;
+      font-weight: 400;
+    }
+  }
+}
+
+.dora-stage-filters-dropdown {
+  .ant-dropdown-menu-item {
+    padding: 16px;
+
+    .reset-btn {
+      padding: 0;
+      color: #8c8c8c;
+      font-size: 14px;
+    }
+
+    .save-btn {
+      padding: 0;
+      color: #096dd9;
+      font-size: 14px;
+    }
+  }
+
+  .dora-legend-filter-footer {
+    padding: 5px;
+    background-color: #ffffff;
+    border-right: 1px solid #dcdfe4;
+    border-bottom: 1px solid #dcdfe4;
+    border-top: 1px solid #dcdfe4;
+  }
+}
+
+.dora-stage-legend-filter-checkbox {
+  text-transform: capitalize;
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    top: 3px;
+    left: 3px;
+    background-color: #096dd9;
+    transform: none;
+  }
+}

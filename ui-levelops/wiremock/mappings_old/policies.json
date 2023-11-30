@@ -1,0 +1,77 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/policies/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "id": 1,
+          "name": "Database Best Practice jhghjghjgjhgjhgjhgj hkghjgjhjhgjhgjhgj jfjfjgfjhfjfhkgflkgkfkdfkfkff",
+          "action_type": "manual",
+          "severity": "medium",
+          "status": "active",
+          "created_at": 1572216427,
+          "updated_at": 1572216427
+        },
+        {
+          "id": 2,
+          "name": "Encryption Code Best Practice",
+          "action_type": "manual",
+          "severity": "medium",
+          "status": "active",
+          "created_at": 1572216427,
+          "updated_at": 1572216427
+        },
+        {
+          "id": 3,
+          "name": "S3 Compliance Check",
+          "action_type": "automated",
+          "severity": "medium",
+          "status": "active",
+          "created_at": 1572216427,
+          "updated_at": 1572216427
+        },
+        {
+          "id": 4,
+          "name": "Big code changes",
+          "action_type": "automated",
+          "severity": "high",
+          "status": "active",
+          "created_at": 1572216427,
+          "updated_at": 1572216427
+        },
+        {
+          "id": 5,
+          "name": "Sensitive components",
+          "action_type": "automated",
+          "severity": "high",
+          "status": "active",
+          "created_at": 1572216427,
+          "updated_at": 1572216427
+        },
+        {
+          "id": 6,
+          "name": "New Requirement",
+          "action_type": "automated",
+          "severity": "medium",
+          "status": "active",
+          "created_at": 1572216427,
+          "updated_at": 1572216427
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

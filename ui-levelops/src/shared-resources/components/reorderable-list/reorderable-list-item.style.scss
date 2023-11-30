@@ -1,0 +1,36 @@
+@import "shared-resources/style/palette.scss";
+@import "shared-resources/style/mixin.scss";
+
+.row {
+  border: 1px solid var(--grey9);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.handle {
+  display: inline-block;
+  margin-right: 1.5rem;
+  position: relative;
+  top: 4px;
+  .fill-color {
+    fill: var(--grey9);
+  }
+}
+
+.activeRow {
+  &:hover {
+    border-color: var(--grey8);
+    .handle {
+      .fill-color {
+        fill: var(--grey8);
+      }
+    }
+  }
+}

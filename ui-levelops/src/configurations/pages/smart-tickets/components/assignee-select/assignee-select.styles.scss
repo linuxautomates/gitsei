@@ -1,0 +1,43 @@
+.assignee-select {
+  .selected-option {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+
+    .close-icon {
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .content {
+      max-width: calc(100% - 15px);
+      width: calc(100% - 15px);
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    .add-btn {
+      cursor: pointer;
+      margin-top: 10px;
+      margin-right: 20px;
+      font-size: 14px;
+      color: #8a94a5;
+      .add-icon {
+        padding: 0 10px 0 2px;
+      }
+    }
+  }
+
+  .dropdown {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .hide-dropdown {
+    display: none;
+  }
+}

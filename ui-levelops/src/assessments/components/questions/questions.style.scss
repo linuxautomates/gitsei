@@ -1,0 +1,48 @@
+.upload-list {
+  margin-bottom: 3px;
+  .close-icon {
+    visibility: hidden;
+    cursor: pointer;
+  }
+  &:hover {
+    .close-icon {
+      visibility: visible;
+    }
+    background-color: var(--grey6);
+  }
+  .upload-link {
+    font-size: 14px;
+    white-space: nowrap;
+    word-break: initial;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.comments {
+  background-color: var(--disabled);
+  width: 100%;
+  padding: 10px;
+}
+
+.comment-wrapper {
+  width: 100%;
+}
+
+.comment-icon {
+  fill: var(--grey3);
+  margin: 5px;
+  height: 1.2rem;
+  width: 1.2rem;
+
+  &__enabled {
+    margin: 5px;
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: var(--blue2);
+  }
+}
+
+.question-link-input {
+  margin-bottom: 0px !important;
+}

@@ -1,0 +1,112 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/rbacs/list"
+  },
+  "response": {
+    "status": 404,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 521
+      },
+      "count": 10,
+      "records": [
+        {
+          "id": 1,
+          "name": "admin",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": ["read", "write"],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 2,
+          "name": "read-only",
+          "permissions": {
+            "users": ["read"],
+            "rbac": [],
+            "integrations": ["read"]
+          }
+        },
+        {
+          "id": 3,
+          "name": "role1",
+          "permissions": {
+            "users": ["read", "write"],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 4,
+          "name": "role2",
+          "permissions": {
+            "users": ["read"],
+            "rbac": [],
+            "integrations": ["read"]
+          }
+        },
+        {
+          "id": 5,
+          "name": "role3",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": [],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 6,
+          "name": "role4",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": [],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 7,
+          "name": "role5",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": [],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 8,
+          "name": "role6",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": [],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 9,
+          "name": "role7",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": [],
+            "integrations": ["read", "write"]
+          }
+        },
+        {
+          "id": 10,
+          "name": "role8",
+          "permissions": {
+            "users": ["read", "write"],
+            "rbac": [],
+            "integrations": ["read", "write"]
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

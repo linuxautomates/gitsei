@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/ticket_templates/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "templat1",
+      "description": "df",
+      "questionnaire_templates": [
+        {
+          "name": "Template 1",
+          "questionnaire_template_id": "2"
+        },
+        {
+          "name": "Template 1",
+          "questionnaire_template_id": "3"
+        }
+      ],
+      "ticket_fields": [
+        {
+          "key": "field1 ",
+          "type": "multi-select",
+          "required": false,
+          "hidden": false,
+          "validation": "not_empty",
+          "options": ["tag1", "tag2", "tag3"],
+          "metadata": { "validation": "not_empty", "options": ["tag1", "tag2", "tag3"] }
+        },
+        {
+          "key": "field2 ",
+          "type": "text",
+          "required": true,
+          "hidden": true,
+          "validation": "email",
+          "options": [],
+          "metadata": { "validation": "email", "options": [] }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

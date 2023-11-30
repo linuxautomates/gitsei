@@ -1,0 +1,157 @@
+.no-data-ui-container {
+  width: calc(100vw - 280px);
+}
+
+.ant-card-extra {
+  .hide-badge {
+    display: none;
+  }
+
+  .import-export-dropdown {
+    &.import-export-btn {
+      background: var(--harness-blue);
+
+      &.ant-dropdown-open {
+        background: var(--harness-blue) !important;
+      }
+    }
+  }
+
+  .configure-btn {
+    font-size: 1.3rem;
+    padding: 0px;
+    margin-right: 0.8rem;
+  }
+
+  .only-icon {
+    padding: 0px;
+    font-size: 1.3rem;
+  }
+
+  .ant-btn-icon-only {
+    font-size: 1.3rem;
+    border: none;
+    padding: 0 0.4rem;
+    color: var(--harness-blue);
+
+    .anticon-unordered-list {
+      color: var(--harness-blue);
+    }
+  }
+
+  #full_name-search+button,
+  .user-search {
+    background-color: #f3f3fa !important;
+
+    .anticon-search {
+      color: #383946 !important;
+    }
+  }
+
+  .extra-filter-content button {
+    .anticon-delete {
+      color: var(--harness-blue);
+    }
+  }
+}
+
+.org-user-list {
+  .ant-table-scroll {
+    padding-right: 100px !important;
+
+    .ant-table-body {
+      scrollbar-color: rgba(0, 0, 0, 0.5) #fff !important;
+    }
+
+    .ant-table-body::-webkit-scrollbar {
+      -webkit-appearance: none;
+      height: 7px;
+    }
+
+    .ant-table-body::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .ant-table-row {
+    height: 48px !important;
+  }
+
+  .org-name-label {
+    color: #2967dd;
+    cursor: pointer;
+  }
+}
+
+.version-button {
+  .version-button-content {
+    display: flex;
+
+    .version-button-icon {
+      height: 16px;
+      width: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  &:hover {
+    .version-button-icon {
+      svg {
+        path {
+          fill: #5b84eb;
+        }
+      }
+    }
+  }
+}
+
+
+.userlist-email-warning {
+  display: flex;
+  flex-direction: row;
+  background-color: #fffbe6;
+  height: 40px;
+  justify-content: start;
+  align-items: center;
+
+  div {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.userlist-version-warning {
+  width: calc(100vw - 280px);
+  margin-bottom: 8px;
+
+  div {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.application-icon-container {
+  height: 32px;
+  width: 32px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 999px;
+  background-color: rgba(238, 238, 238, 0.8);
+  justify-content: center;
+  margin: 0 -2px;
+}
+
+.integration-popup-trigger {
+  border: none !important;
+  background: inherit !important;
+  box-shadow: none !important;
+}
+
+.user-list-import-btn-menu .ant-dropdown-menu-item button span {
+  color: #000000;
+}

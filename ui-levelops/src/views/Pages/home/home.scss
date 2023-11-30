@@ -1,0 +1,27 @@
+.landing-home {
+  .nav-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .m-2 {
+    margin: 2rem 2rem;
+  }
+  .m-1 {
+    margin: 1rem 1rem;
+  }
+  .message {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  .home-card {
+    min-height: 10rem;
+    .home-card-label {
+      font-size: 1rem;
+    }
+    .home-card-desc {
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

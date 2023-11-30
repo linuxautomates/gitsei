@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/files/list"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 1
+      },
+      "count": 1,
+      "records": [
+        {
+          "repo_id": "ui-levelops",
+          "num_commits": 5,
+          "committed_at": 1594816188,
+          "created_at": 1594816188
+        },
+        {
+          "repo_id": "ui-levelops",
+          "num_commits": 4,
+          "committed_at": 1583310752,
+          "created_at": 1583310752
+        },
+        {
+          "repo_id": "ui-levelops",
+          "num_commits": 6,
+          "committed_at": 1588716305,
+          "created_at": 1588716305
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

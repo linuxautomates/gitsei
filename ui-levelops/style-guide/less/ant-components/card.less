@@ -1,0 +1,29 @@
+// adding wrapper only for specificity
+.ant-card-wrapper {
+  .ant-card.ant-card-bordered {
+    border-radius: 3px;
+    border: solid 1px var(--border-color);
+  }
+
+  .ant-card {
+    background-color: var(--levelops-white);
+
+    &-head {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &-head-title {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.75;
+      letter-spacing: -0.16px;
+      text-align: left;
+      color: var(--title);
+    }
+  }
+}

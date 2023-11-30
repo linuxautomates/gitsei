@@ -1,0 +1,54 @@
+.header-date-range-container {
+  display: flex;
+
+  .custom-drop-down {
+    width: 20px;
+  }
+
+  .ant-calendar-picker {
+    display: none;
+  }
+}
+
+.header-date-range-container-footer {
+  flex-grow: 1;
+}
+.header-date-range-component {
+  min-height: 360px;
+}
+.header-date-range-container-wrapper {
+  position: relative;
+  min-width: 552px;
+
+  & > div {
+    position: relative !important;
+
+    & > div > div {
+      position: relative;
+      left: 0 !important;
+      top: 0 !important;
+
+      .ant-calendar.ant-calendar-range {
+        box-shadow: none;
+      }
+
+      .ant-calendar-input-wrap {
+        display: none;
+      }
+
+      .ant-calendar-range-middle {
+        display: none;
+      }
+    }
+  }
+}
+
+.ant-calendar-picker-input.ant-input {
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+}
+
+.time-range-value-viewer {
+  width: 528px;
+  padding-left: 25px;
+}

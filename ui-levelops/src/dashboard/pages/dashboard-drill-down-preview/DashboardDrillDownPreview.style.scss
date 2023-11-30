@@ -1,0 +1,45 @@
+.drilldownPreview {
+  .drillTable {
+    .ant-card {
+      .ant-table-body {
+        overflow-y: auto !important;
+      }
+    }
+  }
+
+  .closeIcon {
+    color: #8b8b8b;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 21px;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+.drilldownPreview.ant-card.ant-card-bordered {
+  border-radius: 0;
+  border-width: 2px 2px 2px 5px;
+  border-color: #94b3ee;
+}
+
+.customised-scroll {
+  .ant-table-scroll {
+    .ant-table-body {
+      scrollbar-color: #dcdfe4 !important;
+    }
+
+    .ant-table-body::-webkit-scrollbar {
+      -webkit-appearance: none;
+      height: 8px;
+    }
+
+    .ant-table-body::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: #dcdfe4;
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+  }
+}

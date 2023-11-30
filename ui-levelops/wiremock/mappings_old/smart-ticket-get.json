@@ -1,0 +1,61 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/tickets/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "name": "Ticket Name",
+      "policy_id": "1",
+      "type": "AUTOMATED",
+      "status": "OPEN",
+      "assignee": "1",
+      "due_at": null,
+      "created_at": 1572031299,
+      "integration_id": "1",
+      "reason": "Matched LQLs: issue.fix_version = \"MVP1\" AND issue.type = Epic AND issue.component=\"API\"",
+      "artifact": "LEV-123",
+      "artifact_title": "New feature for release XYZ",
+      "cloud_owner": "meghana@levelops.io",
+      "description": "Some awesome description",
+      "attachment_ids": [1, 2, 3],
+      "ticket_fields": [
+        {
+          "key": "field1 ",
+          "label": "field 1",
+          "type": "radio-group",
+          "required": false,
+          "hidden": false,
+          "validation": "not_empty",
+          "options": ["tag1", "tag2", "tag3"]
+        },
+        {
+          "key": "field2 ",
+          "label": "field2 ",
+          "type": "single-select",
+          "required": true,
+          "hidden": true,
+          "validation": "not_empty",
+          "options": ["tag1", "tag2", "tag3"],
+          "value": "tag2"
+        },
+        {
+          "key": "field3 ",
+          "label": "field3 ",
+          "type": "multi-select",
+          "required": true,
+          "hidden": true,
+          "validation": "not_empty",
+          "options": ["tag1", "tag2", "tag3"],
+          "value": ["tag1"]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

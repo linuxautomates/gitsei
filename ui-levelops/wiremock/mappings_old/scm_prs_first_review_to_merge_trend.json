@@ -1,0 +1,57 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/prs/first_review_to_merge_trend"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "1592636400",
+          "median": 448953,
+          "min": 448953,
+          "max": 448953,
+          "count": 1,
+          "sum": 448953
+        },
+        {
+          "key": "1591686000",
+          "median": 281,
+          "min": 281,
+          "max": 281,
+          "count": 1,
+          "sum": 281
+        },
+        {
+          "key": "1591599600",
+          "median": 193813,
+          "min": 193813,
+          "max": 193813,
+          "count": 1,
+          "sum": 193813
+        },
+        {
+          "key": "1590130800",
+          "median": 265,
+          "min": 265,
+          "max": 265,
+          "count": 1,
+          "sum": 265
+        },
+        {
+          "key": "1589958000",
+          "median": 8537,
+          "min": 8537,
+          "max": 8537,
+          "count": 4,
+          "sum": 34148
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

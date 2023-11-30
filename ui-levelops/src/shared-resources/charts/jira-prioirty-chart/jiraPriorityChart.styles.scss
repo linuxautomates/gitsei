@@ -1,0 +1,55 @@
+.jira-priority-chart-container {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    border: none;
+  }
+  &-table {
+    height: 21rem;
+  }
+  padding: 0rem 1rem 0 1rem;
+  .carousal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alert-container {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: fit-content;
+
+    .visible-alert {
+      margin-bottom: 0;
+      color: #5b677b;
+    }
+    .alert-button {
+      margin-left: 1rem;
+      background: var(--highest);
+      color: white;
+      border-radius: 1rem;
+      border: 1px solid var(--highest);
+    }
+  }
+}
+.popover-content {
+  display: flex;
+  align-items: center;
+  width: 24rem;
+  overflow-wrap: break-word;
+  padding: 0.5rem;
+  .popover-alert-icon {
+    color: var(--highest);
+  }
+  .popover-alert-text {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1441px) {
+  .jira-priority-chart-container {
+    .ant-table-tbody > tr > td {
+      padding: 10px 5px 16px 0px;
+    }
+  }
+}

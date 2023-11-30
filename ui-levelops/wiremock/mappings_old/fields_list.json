@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/fields/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 10
+      },
+      "count": 17,
+      "records": [
+        { "id": "1", "name": "Fix Version", "field_key": "fix_version", "integration_id": "1" },
+        { "id": "2", "name": "Label", "field_key": "label", "integration_id": "1" },
+        { "id": "3", "name": "Project", "field_key": "project", "integration_id": "1" },
+        { "id": "4", "name": "Title", "field_key": "title", "integration_id": "1" },
+        { "id": "5", "name": "Sprint", "field_key": "sprint", "integration_id": "1" },
+        { "id": "6", "name": "Component", "field_key": "component", "integration_id": "1" },
+        { "id": "7", "name": "Story Points", "field_key": "story_points", "integration_id": "1" },
+        { "id": "8", "name": "Priority", "field_key": "priority", "integration_id": "1" },
+        { "id": "9", "name": "Issue Type", "field_key": "issue_type", "integration_id": "1" },
+        { "id": "10", "name": "Reporter", "field_key": "reporter", "integration_id": "1" }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

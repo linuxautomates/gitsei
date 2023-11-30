@@ -1,0 +1,19 @@
+.action-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 2px;
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+
+  .svg-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

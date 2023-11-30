@@ -1,0 +1,742 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/dev_productivity/reports/orgs/6eaf9f21-e2e2-4207-8499-92a3bd1161cc/users"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "org_user_id": "e4f357bf-20f6-40a5-b6bc-a313eb18b428",
+          "full_name": "viraj-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "feature_responses": [
+                {
+                  "name": "Percentage of Rework",
+                  "description": "Percentage of Rework",
+                  "order": 0,
+                  "mean": 0,
+                  "score": 73,
+                  "rating": "GOOD"
+                },
+                {
+                  "name": "Percentage of Legacy Rework",
+                  "description": "Percentage of Legacy Rework",
+                  "order": 1,
+                  "mean": 0,
+                  "score": 71,
+                  "rating": "GOOD"
+                }
+              ],
+              "score": 72
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "feature_responses": [
+                {
+                  "name": "Major bugs resolved per month",
+                  "description": "Major bugs resolved per month",
+                  "order": 0,
+                  "count": 0,
+                  "mean": 0,
+                  "score": 61,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Major stories resolved per month",
+                  "description": "Major stories resolved per month",
+                  "order": 1,
+                  "count": 0,
+                  "mean": 0,
+                  "score": 87,
+                  "rating": "NEEDS_IMPROVEMENT"
+                }
+              ],
+              "score": 74
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "feature_responses": [
+                {
+                  "name": "Number of Bugs fixed per month",
+                  "description": "Number of Bugs fixed per month",
+                  "order": 0,
+                  "count": 0,
+                  "mean": 0,
+                  "score": 49,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Number of Stories resolved per month",
+                  "description": "Number of Stories resolved per month",
+                  "order": 1,
+                  "count": 0,
+                  "mean": 0,
+                  "score": 26,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Number of Stories Points delivered per month",
+                  "description": "Number of Stories delivered per month",
+                  "order": 2,
+                  "mean": 0,
+                  "score": 22,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Number of PRs per month",
+                  "description": "Number of PRs per month",
+                  "order": 3,
+                  "mean": 0,
+                  "score": 97,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Number of Commits per month",
+                  "description": "Number of Commits per month",
+                  "order": 4,
+                  "mean": 0,
+                  "score": 16,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Lines of Code per month",
+                  "description": "Lines of Code per month",
+                  "order": 5,
+                  "mean": 0,
+                  "score": 66,
+                  "rating": "NEEDS_IMPROVEMENT"
+                }
+              ],
+              "score": 46
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "feature_responses": [
+                {
+                  "name": "Average Coding days per week",
+                  "description": "Average Coding days per week",
+                  "order": 0,
+                  "mean": 0,
+                  "score": 75,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Average PR Cycle Time",
+                  "description": "Average PR Cycle Time",
+                  "order": 1,
+                  "mean": 243.66,
+                  "score": 46,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Average Issue Resolution Time",
+                  "description": "Average Issue Resolution Time",
+                  "order": 2,
+                  "mean": 0,
+                  "score": 81,
+                  "rating": "GOOD"
+                }
+              ],
+              "score": 67
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "feature_responses": [
+                {
+                  "name": "Technical Breadth - Number of unique file extension",
+                  "description": "Technical Breadth - Number of unique file extension",
+                  "order": 0,
+                  "mean": 1.2,
+                  "score": 3,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Repo Breadth - Number of unique repo",
+                  "description": "Repo Breadth - Number of unique repo",
+                  "order": 1,
+                  "mean": 1.8,
+                  "score": 61,
+                  "rating": "NEEDS_IMPROVEMENT"
+                }
+              ],
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "feature_responses": [
+                {
+                  "name": "Number of PRs reviewed per month",
+                  "description": "Number of PRs reviewed per month",
+                  "order": 0,
+                  "mean": 0,
+                  "score": 53,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Average response time for PR",
+                  "description": "Average response time for PR",
+                  "order": 1,
+                  "mean": 0,
+                  "score": 83,
+                  "rating": "GOOD"
+                }
+              ],
+              "score": 68
+            }
+          ],
+          "score": 59
+        },
+        {
+          "org_user_id": "e4f357bf-br82486bc-a313eb18b428",
+          "full_name": "varshini",
+          "email": "varshini@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "feature_responses": [
+                {
+                  "name": "Percentage of Rework",
+                  "description": "Percentage of Rework",
+                  "order": 0,
+                  "mean": 0,
+                  "score": 73,
+                  "rating": "GOOD"
+                },
+                {
+                  "name": "Percentage of Legacy Rework",
+                  "description": "Percentage of Legacy Rework",
+                  "order": 1,
+                  "mean": 0,
+                  "score": 71,
+                  "rating": "GOOD"
+                }
+              ],
+              "score": 78
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "feature_responses": [
+                {
+                  "name": "Major bugs resolved per month",
+                  "description": "Major bugs resolved per month",
+                  "order": 0,
+                  "count": 0,
+                  "mean": 0,
+                  "score": 61,
+                  "rating": "NEEDS_IMPROVEMENT"
+                },
+                {
+                  "name": "Major stories resolved per month",
+                  "description": "Major stories resolved per month",
+                  "order": 1,
+                  "count": 0,
+                  "mean": 0,
+                  "score": 87,
+                  "rating": "NEEDS_IMPROVEMENT"
+                }
+              ],
+              "score": 88
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 82
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 67
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 38
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 68
+            }
+          ],
+          "score": 92
+        },
+        {
+          "org_user_id": "e4f357bf-20f6-40a5-b6bc-a313eb18b428",
+          "full_name": "josh-levelops",
+          "email": "josh@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 10
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 24
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 82
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 68
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 20
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 86
+            }
+          ],
+          "score": 90
+        },
+        {
+          "org_user_id": "e4f357bf-20f6-40a5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357sdabf-20f6-40a5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bdasdf-20f6-40a5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bf-2sd0f6-40a5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bf-20ffgh6-40a5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bf-20f6-40afghf5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bf-20f6-40a5-bgfg6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bf-20fsff6-40a5-b6bc-a313eb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        },
+        {
+          "org_user_id": "e4f357bf-20f6-40a5-b6bc-a313efsfsdfb18b428",
+          "full_name": "ivan-levelops",
+          "email": "viraj@levelops.io",
+          "section_responses": [
+            {
+              "name": "Quality of Work",
+              "description": "Quality of Work",
+              "order": 0,
+              "score": 12
+            },
+            {
+              "name": "Impact of Work",
+              "description": "Impact of Work",
+              "order": 1,
+              "score": 75
+            },
+            {
+              "name": "Volume",
+              "description": "Volume",
+              "order": 2,
+              "score": 20
+            },
+            {
+              "name": "Speed",
+              "description": "Speed",
+              "order": 3,
+              "score": 87
+            },
+            {
+              "name": "Proficiency",
+              "description": "Proficiency",
+              "order": 4,
+              "score": 32
+            },
+            {
+              "name": "Leadership & Collaboration",
+              "description": "Leadership & Collaboration",
+              "order": 5,
+              "score": 23
+            }
+          ],
+          "score": 38
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 7
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

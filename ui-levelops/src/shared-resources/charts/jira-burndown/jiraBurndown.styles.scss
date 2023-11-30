@@ -1,0 +1,63 @@
+.jira-burndown-container {
+  height: 100%;
+  .jira-burndown-container-body {
+    height: 90%;
+    display: flex;
+    &-button-left {
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-button-right {
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-content {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  .burndown-footer-container {
+    .burndown-footer {
+      display: flex;
+      .custom-carousal {
+        width: 30%;
+        padding: 0rem;
+        height: 2.5rem;
+        &-pagination {
+          width: 40%;
+        }
+        &-dots {
+          width: 60%;
+          .custom-dot {
+            margin: 0.25rem;
+            width: 1.5rem;
+          }
+          .custom-dot-active {
+            width: 2rem;
+          }
+        }
+      }
+      .burndown-legend {
+        width: 80%;
+        .legend-parent {
+          margin-left: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .jira-burndown-container {
+    .jira-burndown-container-body {
+      &-content {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

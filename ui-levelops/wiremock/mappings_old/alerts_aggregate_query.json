@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/alerts/aggregate"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "filter": {
+        "state": "open",
+        "range": {
+          "start": 1568920349,
+          "stop": 1568920349,
+          "type": "days"
+        },
+        "team_id": 1,
+        "aggregate_field": "users"
+      },
+      "aggregate": {
+        "user1": 6,
+        "user2": 4,
+        "user3": 1,
+        "user4": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

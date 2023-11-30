@@ -1,0 +1,26 @@
+.demo-filtericon {
+  position: absolute;
+  top: 16px;
+  right: 56px;
+  z-index: 10;
+}
+.demo-moreIcon {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 10;
+  opacity: 0.4;
+  cursor: default !important;
+}
+.widget-extras {
+  padding: 0 !important;
+  color: #595959;
+  :hover {
+    background: #d9d9d9;
+    border-radius: 0;
+  }
+}
+
+.avatar-reviewer {
+  padding: 0 7px 0 0;
+}

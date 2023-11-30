@@ -1,0 +1,359 @@
+.lead-time-type-chart-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    min-height: 298px;
+
+    .active-velocity-row {
+      background-color: #f0f5ff !important;
+    }
+
+    .ant-table-row {
+      background-color: #f5f5f5;
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &:active {
+        background-color: #f0f5ff;
+      }
+    }
+
+    .velocity-container {
+      width: 328px;
+      height: 100%;
+
+      .velocity-table {
+        width: 328px;
+      }
+    }
+
+    .v-line {
+      width: 2px;
+      margin: 16px 8px;
+      background-color: #c6bcbc;
+    }
+
+    .phase-carousel {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: calc(100% - 346px);
+      height: 100%;
+
+      .nav-button-container {
+        position: absolute;
+        display: flex;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        height: calc(100% - 60px);
+        min-height: 156px;
+        padding: 0 16px;
+        margin-top: 48px;
+
+        &-left {
+          left: 0;
+          background: linear-gradient(
+            -90deg,
+            rgba(245, 245, 245, 0.62) 0%,
+            rgba(233, 233, 233, 0.3286) 36.98%,
+            rgba(191, 191, 191, 0.2356) 100%
+          );
+        }
+
+        &-left:hover {
+          background: linear-gradient(
+            -90deg,
+            rgba(245, 245, 245, 0.72) 0%,
+            rgba(233, 233, 233, 0.5286) 36.98%,
+            rgba(191, 191, 191, 0.4356) 100%
+          );
+        }
+
+        &-right {
+          right: 0;
+          background: linear-gradient(
+            90deg,
+            rgba(245, 245, 245, 0.62) 0%,
+            rgba(233, 233, 233, 0.3286) 36.98%,
+            rgba(191, 191, 191, 0.2356) 100%
+          );
+        }
+
+        &-right:hover {
+          background: linear-gradient(
+            90deg,
+            rgba(245, 245, 245, 0.72) 0%,
+            rgba(233, 233, 233, 0.5286) 36.98%,
+            rgba(191, 191, 191, 0.4356) 100%
+          );
+        }
+      }
+
+      .prev-btn,
+      .next-btn {
+        background-color: #2967dd;
+
+        .anticon svg {
+          fill: white;
+        }
+
+        &:disabled {
+          background-color: #e2e0e0;
+        }
+      }
+    }
+
+    .stage-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .task-type-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .ant-typography {
+      cursor: pointer;
+      color: #2967dd;
+    }
+  }
+
+  .avg-velocity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: white;
+    border: 3px solid #adc6ff;
+    border-radius: 999px;
+
+    > span {
+      color: #262626;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &-good {
+      border-color: #d6e4ff;
+    }
+
+    &-attention {
+      border-color: #f4bc79;
+    }
+
+    &-slow {
+      border-color: #a8071a;
+    }
+  }
+
+  .ant-table-row-cell-break-word {
+    background: transparent !important;
+    border: none;
+  }
+
+  .ant-table-header-column {
+    height: 24px;
+  }
+
+  .ant-table-column-title {
+    color: #5b677b !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 22px !important;
+  }
+
+  .ant-table-thead > tr > th {
+    padding: 4px 12px;
+    background-color: white;
+  }
+
+  .ant-table table {
+    border-spacing: 0 10px;
+  }
+
+  .stage-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+    .pr-volume {
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+      }
+
+      &-s {
+        width: 20px;
+        height: 15px;
+      }
+
+      &-m {
+        width: 40px;
+        height: 25px;
+      }
+
+      &-l {
+        width: 60px;
+        height: 35px;
+      }
+
+      &-xl {
+        width: 80px;
+        height: 50px;
+      }
+
+      &-good {
+        background-color: #d6e4ff;
+
+        &:hover {
+          background-color: #6f92e3;
+        }
+      }
+
+      &-attention {
+        background-color: #f4bc79;
+        &:hover {
+          background-color: #e6a962;
+        }
+      }
+
+      &-slow {
+        background-color: #a8071a;
+        &:hover {
+          background-color: #ad462f;
+        }
+      }
+    }
+
+    &-active {
+      .pr-volume {
+        border: 3px solid #f4e879;
+      }
+    }
+  }
+
+  .legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+
+    .metric-label {
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 12px;
+    }
+
+    .indicators-container {
+      display: flex;
+      align-items: center;
+      margin: 0 12px;
+      font-size: 14px;
+      font-weight: 500;
+
+      .indicator-label {
+        color: #8c8c8c;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .indicator-item {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+
+        .indicator-color {
+          width: 16px;
+          height: 16px;
+          border-radius: 2px;
+        }
+
+        .indicator-title {
+          margin-left: 8px;
+          font-size: 12px;
+        }
+      }
+
+      .separator {
+        width: 0;
+        height: 18px;
+        margin-left: 8px;
+        border: 1px solid #000000;
+      }
+    }
+  }
+}
+
+.stage-details-popover {
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+
+  .stage-details {
+    .stage-header {
+      padding: 8px 16px;
+      border-bottom: 1px solid var(--border-color);
+
+      .task-value,
+      .phase-value {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+      }
+
+      .task-value {
+        margin-left: 9px;
+      }
+
+      .phase-value {
+        margin-left: 36px;
+      }
+    }
+
+    .stage-content {
+      padding: 12px 16px;
+      font-size: 14px;
+      line-height: 22px;
+
+      .pr-label,
+      .pr-value {
+        color: #2967dd;
+      }
+
+      .pr-value,
+      .velocity-value {
+        margin-left: 10px;
+      }
+
+      .pr-value {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

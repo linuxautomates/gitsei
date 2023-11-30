@@ -1,0 +1,28 @@
+.switch-button-control {
+  .btn-selected {
+    fill: white;
+    stroke: white;
+    margin: 0 8px;
+  }
+  .btn {
+    fill: #2D3F5D;
+    stroke: #2D3F5D;
+    margin: 0 8px;
+  }
+  .btn:hover {
+    fill: #0378D4;
+    stroke: #0378D4;
+  }
+  .git-commit_svg__icon {
+    stroke: inherit !important;
+  }
+  .branch_svg__icon {
+    fill: inherit !important;
+  }
+  .btn-icon {
+    width: 12px;
+    height: 12px;
+    margin: 4px 4px 4px 0;
+    display: inline-flex;
+  }
+}

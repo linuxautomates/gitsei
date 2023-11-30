@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/pipelines/job_counts",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"across\": \"cicd_job_id\", \"filter\": { \"parent_cicd_job_ids\": [\"job_id_4\"] }}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Pipeline 4",
+          "cicd_job_id": "job_id_5",
+          "additional_key": "Jenkins Instance US",
+          "count": 12
+        },
+        {
+          "key": "Pipeline 6",
+          "cicd_job_id": "job_id_6",
+          "additional_key": "Jenkins Instance EU",
+          "count": 12
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

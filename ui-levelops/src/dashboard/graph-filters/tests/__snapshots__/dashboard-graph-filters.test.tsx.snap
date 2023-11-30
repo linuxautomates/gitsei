@@ -1,0 +1,3899 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardGraphFilters Dashboard graph filters component should match the screenshot with data 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="dashboard-graph-filters-component"
+    style="display: flex; width: 100%; margin-top: 0.6rem; justify-content: space-between; height: 14.725rem;"
+  >
+    <div
+      style="width: 48%; overflow-y: scroll;"
+    >
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                status
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                priority
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                issue type
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                assignee
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                project
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                component
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                reporter
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                fix version
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                version
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                sf_case_id
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                CGN test labels
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                CGN test field
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                CGN test multivalue field
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                Story Points
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+            >
+              <span>
+                Hygiene
+              </span>
+              <div
+                class="custom-label-actions"
+              >
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="ant-select-show-arrow ant-select ant-select-enabled"
+              >
+                <div
+                  aria-autocomplete="list"
+                  aria-controls="test-uuid"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="ant-select-selection
+            ant-select-selection--multiple"
+                  role="combobox"
+                >
+                  <div
+                    class="ant-select-selection__rendered"
+                  >
+                    <ul>
+                      <li
+                        class="ant-select-search ant-select-search--inline"
+                      >
+                        <div
+                          class="ant-select-search__field__wrap"
+                        >
+                          <input
+                            autocomplete="off"
+                            class="ant-select-search__field"
+                            value=""
+                          />
+                          <span
+                            class="ant-select-search__field__mirror"
+                          >
+                             
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <span
+                    class="ant-select-arrow"
+                    style="user-select: none;"
+                    unselectable="on"
+                  >
+                    <i
+                      aria-label="icon: down"
+                      class="anticon anticon-down ant-select-arrow-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title="Story Points"
+          >
+            Story Points
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                style="display: flex;"
+              >
+                <input
+                  class="ant-input"
+                  placeholder="Greater Than"
+                  type="text"
+                  value=""
+                />
+                <input
+                  class="ant-input"
+                  placeholder="Less Than"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title="Parent Story Points"
+          >
+            Parent Story Points
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                style="display: flex;"
+              >
+                <input
+                  class="ant-input"
+                  placeholder="Greater Than"
+                  type="text"
+                  value=""
+                />
+                <input
+                  class="ant-input"
+                  placeholder="Less Than"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="width: 48%; overflow-y: scroll;"
+    >
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class="ant-form-item-required"
+            title="X-Axis"
+          >
+            X-Axis
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="ant-select ant-select-enabled"
+              >
+                <div
+                  aria-autocomplete="list"
+                  aria-controls="test-uuid"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="ant-select-selection
+            ant-select-selection--single"
+                  role="combobox"
+                  tabindex="0"
+                >
+                  <div
+                    class="ant-select-selection__rendered"
+                  />
+                  <span
+                    class="ant-select-arrow"
+                    style="user-select: none;"
+                    unselectable="on"
+                  >
+                    <i
+                      aria-label="icon: down"
+                      class="anticon anticon-down ant-select-arrow-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title="Max X-Axis Entries"
+          >
+            Max X-Axis Entries
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="ant-select ant-select-enabled"
+              >
+                <div
+                  aria-autocomplete="list"
+                  aria-controls="test-uuid"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="ant-select-selection
+            ant-select-selection--single"
+                  role="combobox"
+                  tabindex="0"
+                >
+                  <div
+                    class="ant-select-selection__rendered"
+                  />
+                  <span
+                    class="ant-select-arrow"
+                    style="user-select: none;"
+                    unselectable="on"
+                  >
+                    <i
+                      aria-label="icon: down"
+                      class="anticon anticon-down ant-select-arrow-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item custom-form-item"
+        data-testid="filter-list-element"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+              style="height: 3.7rem; flex-direction: column; align-items: flex-start;"
+            >
+              <span>
+                label
+              </span>
+              <div
+                class="custom-label-actions"
+                style="width: 100%; height: 100%; justify-content: space-between; align-items: flex-end;"
+              >
+                <div
+                  class="flex mr-10"
+                  data-testid="custom-form-item-label-switchWithDropdown"
+                  style="width: 20rem; justify-content: start; height: 100%; align-items: center;"
+                >
+                  <div
+                    class="flex"
+                    style="align-items: center;"
+                  >
+                    <label
+                      class="mr-5 ant-checkbox-wrapper"
+                    >
+                      <span
+                        class="ant-checkbox"
+                      >
+                        <input
+                          class="ant-checkbox-input"
+                          data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                          type="checkbox"
+                          value=""
+                        />
+                        <span
+                          class="ant-checkbox-inner"
+                        />
+                      </span>
+                    </label>
+                    <span
+                      class="ant-typography action-text-select"
+                      style="margin: 0px;"
+                    >
+                      Include all values that :
+                    </span>
+                  </div>
+                  <div
+                    class="ant-select ant-select-disabled"
+                    style="width: 7rem; color: rgb(95, 95, 95); padding-top: 2px;"
+                  >
+                    <div
+                      aria-autocomplete="list"
+                      aria-controls="test-uuid"
+                      aria-expanded="false"
+                      aria-haspopup="true"
+                      class="ant-select-selection
+            ant-select-selection--single"
+                      data-testid="custom-form-item-label-switchWithDropdown-checkbox"
+                      role="combobox"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="ant-select-selection__rendered"
+                      >
+                        <div
+                          class="ant-select-selection-selected-value"
+                          style="display: block; opacity: 1;"
+                          title="Start with"
+                        >
+                          Start with
+                        </div>
+                      </div>
+                      <span
+                        class="ant-select-arrow"
+                        style="user-select: none;"
+                        unselectable="on"
+                      >
+                        <i
+                          aria-label="icon: down"
+                          class="anticon anticon-down ant-select-arrow-icon"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class=""
+                            data-icon="down"
+                            fill="currentColor"
+                            focusable="false"
+                            height="1em"
+                            viewBox="64 64 896 896"
+                            width="1em"
+                          >
+                            <path
+                              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                            />
+                          </svg>
+                        </i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex direction-column"
+                  style="align-items: center;"
+                >
+                  <button
+                    aria-checked="false"
+                    class="ant-switch-small ant-switch"
+                    data-testid="custom-form-item-label-withSwitch-switch"
+                    role="switch"
+                    title="Exclude"
+                    type="button"
+                  >
+                    <span
+                      class="ant-switch-inner"
+                    />
+                  </button>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Exclude
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="flex justify-content-between align-center"
+                data-testid="filter-list-element-select"
+              >
+                <div
+                  class="ant-select-show-arrow ant-select ant-select-enabled"
+                >
+                  <div
+                    aria-autocomplete="list"
+                    aria-controls="test-uuid"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                    class="ant-select-selection
+            ant-select-selection--multiple"
+                    role="combobox"
+                  >
+                    <div
+                      class="ant-select-selection__rendered"
+                    >
+                      <ul>
+                        <li
+                          class="ant-select-search ant-select-search--inline"
+                        >
+                          <div
+                            class="ant-select-search__field__wrap"
+                          >
+                            <input
+                              autocomplete="off"
+                              class="ant-select-search__field"
+                              value=""
+                            />
+                            <span
+                              class="ant-select-search__field__mirror"
+                            >
+                               
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <span
+                      class="ant-select-arrow"
+                      style="user-select: none;"
+                      unselectable="on"
+                    >
+                      <i
+                        aria-label="icon: down"
+                        class="anticon anticon-down ant-select-arrow-icon"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class=""
+                          data-icon="down"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                          />
+                        </svg>
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title="Epics"
+          >
+            Epics
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <span
+                class="ant-tag site-tag-plus"
+              >
+                <i
+                  aria-label="icon: plus"
+                  class="anticon anticon-plus"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    data-icon="plus"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"
+                    />
+                    <path
+                      d="M176 474h672q8 0 8 8v60q0 8-8 8H176q-8 0-8-8v-60q0-8 8-8z"
+                    />
+                  </svg>
+                </i>
+                 Add Epic
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+            >
+              <span>
+                Issue Created in
+              </span>
+              <div
+                class="custom-label-actions"
+              >
+                <div
+                  class="flex direction-column mx-10"
+                  style="align-items: center;"
+                >
+                  <label
+                    class="ant-checkbox-wrapper"
+                  >
+                    <span
+                      class="ant-checkbox"
+                    >
+                      <input
+                        class="ant-checkbox-input"
+                        type="checkbox"
+                        value=""
+                      />
+                      <span
+                        class="ant-checkbox-inner"
+                      />
+                    </span>
+                  </label>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Range
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="ant-select ant-select-enabled ant-select-allow-clear"
+              >
+                <div
+                  aria-autocomplete="list"
+                  aria-controls="test-uuid"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="ant-select-selection
+            ant-select-selection--single"
+                  role="combobox"
+                  tabindex="0"
+                >
+                  <div
+                    class="ant-select-selection__rendered"
+                  >
+                    <div
+                      class="ant-select-selection__placeholder"
+                      style="display: block; user-select: none;"
+                      unselectable="on"
+                    >
+                      &lt;any&gt;
+                    </div>
+                  </div>
+                  <span
+                    class="ant-select-arrow"
+                    style="user-select: none;"
+                    unselectable="on"
+                  >
+                    <i
+                      aria-label="icon: down"
+                      class="anticon anticon-down ant-select-arrow-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-row ant-form-item"
+      >
+        <div
+          class="ant-col ant-form-item-label"
+        >
+          <label
+            class=""
+            title=""
+          >
+            <div
+              class="custom-form-item-label"
+              data-testid="custom-form-item-label"
+            >
+              <span>
+                Issue Updated in
+              </span>
+              <div
+                class="custom-label-actions"
+              >
+                <div
+                  class="flex direction-column mx-10"
+                  style="align-items: center;"
+                >
+                  <label
+                    class="ant-checkbox-wrapper"
+                  >
+                    <span
+                      class="ant-checkbox"
+                    >
+                      <input
+                        class="ant-checkbox-input"
+                        type="checkbox"
+                        value=""
+                      />
+                      <span
+                        class="ant-checkbox-inner"
+                      />
+                    </span>
+                  </label>
+                  <span
+                    class="ant-typography action-text"
+                  >
+                    Range
+                  </span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="ant-col ant-form-item-control-wrapper"
+        >
+          <div
+            class="ant-form-item-control"
+          >
+            <span
+              class="ant-form-item-children"
+            >
+              <div
+                class="ant-select ant-select-enabled ant-select-allow-clear"
+              >
+                <div
+                  aria-autocomplete="list"
+                  aria-controls="test-uuid"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="ant-select-selection
+            ant-select-selection--single"
+                  role="combobox"
+                  tabindex="0"
+                >
+                  <div
+                    class="ant-select-selection__rendered"
+                  >
+                    <div
+                      class="ant-select-selection__placeholder"
+                      style="display: block; user-select: none;"
+                      unselectable="on"
+                    >
+                      &lt;any&gt;
+                    </div>
+                  </div>
+                  <span
+                    class="ant-select-arrow"
+                    style="user-select: none;"
+                    unselectable="on"
+                  >
+                    <i
+                      aria-label="icon: down"
+                      class="anticon anticon-down ant-select-arrow-icon"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        data-icon="down"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                        />
+                      </svg>
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

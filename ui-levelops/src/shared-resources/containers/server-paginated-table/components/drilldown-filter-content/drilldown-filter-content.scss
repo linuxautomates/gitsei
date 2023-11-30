@@ -1,0 +1,81 @@
+.drilldown-filter-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+
+  .drilldown-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 1px;
+    height: 30px;
+    width: 30px;
+    margin-left: 3px;
+    font-size: 20px;
+
+    .svg-icon {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    :hover {
+      background: #e8e8e8;
+      border-radius: 2px;
+    }
+    .icon-wrapper {
+      width: 100%;
+      height: 100%;
+      .reports-btn-icon {
+        width: 16px;
+        height: 16px;
+        margin: 4.6px;
+        svg {
+          width: 16px !important;
+          height: 16px !important;
+          stroke: #595959;
+
+          .path1 {
+            stroke: #595959;
+          }
+        }
+      }
+    }
+  }
+
+  .close-button {
+    margin-left: 20px;
+  }
+
+  .drilldown-type {
+    font-size: 16px;
+    font-weight: bolder;
+    white-space: pre;
+  }
+
+  .drilldown-title {
+    color: gray;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: bolder;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+
+  .circle-separator {
+    margin: 0 8px;
+    font-size: 10px;
+  }
+
+  .reports-btn,
+  .download-icon {
+    margin-left: 12px;
+  }
+}

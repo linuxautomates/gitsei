@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/apikeys/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        { "id": "1", "name": "test1", "description": "asd", "role": "ADMIN", "created_at": 1572347300 },
+        { "id": "2", "name": "test2", "description": "asd", "role": "ADMIN", "created_at": 1572347300 },
+        { "id": "3", "name": "test", "description": "asd", "role": "ADMIN", "created_at": 1572347300 }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

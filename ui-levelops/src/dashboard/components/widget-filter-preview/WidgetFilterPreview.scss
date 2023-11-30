@@ -1,0 +1,192 @@
+.widget-filters-wrapper {
+  .widget-filters-list {
+    padding: 0 20px 10px 20px;
+    overflow: auto;
+    border-bottom: 1px solid #ccc;
+    .global-filters-div-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    .global-filters-div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-right: 5px;
+
+      span {
+        margin-top: 5px;
+      }
+
+      .ant-tag {
+        max-width: 100%;
+        background-color: #efdbff;
+        border-color: #efdbff;
+        color: #595959;
+        word-break: break-all;
+      }
+    }
+
+    .widget-filter {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+
+      &_label {
+        margin-top: 0.5rem;
+        color: #555555;
+        font-size: 10px;
+        font-weight: bold;
+      }
+
+      &_extras {
+        font-size: 10px;
+      }
+
+      &_tags {
+        max-width: 100%;
+        margin-top: 0.2rem;
+        background-color: #efdbff;
+        border-color: #efdbff;
+        color: #595959;
+        word-break: break-all;
+        overflow-y: hidden;
+      }
+    }
+  }
+
+  .widget-filter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .filters-count-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 8px;
+
+    .filters-label-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .filters-label {
+      margin-right: 8px;
+      color: black;
+      font-size: 14px;
+      font-weight: 450;
+    }
+
+    .filters-subLabel {
+      color: black;
+      font-size: 12px;
+      font-weight: 450;
+    }
+
+    .filters-count {
+      .ant-badge-count {
+        background-color: #1d39c4;
+      }
+    }
+  }
+
+  .ant-collapse-content {
+    border: none;
+  }
+
+  .ant-collapse {
+    border: none;
+  }
+
+  .ant-collapse-item {
+    border-radius: 0;
+
+    .ant-collapse-content-box {
+      padding: 0 20px 16px 20px;
+    }
+
+    .widget-filters-list {
+      padding: 0;
+    }
+  }
+
+  .panel-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .panel-title {
+      color: #262626;
+      font-size: 14px;
+    }
+
+    .panel-filter-count {
+      margin-left: 4px;
+      .ant-badge-count {
+        background-color: #1d39c4;
+      }
+    }
+  }
+
+  .filter-placeholder {
+    padding: 16px;
+  }
+}
+.db-filter-container {
+  padding-left: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.disabled-db-filters {
+  background: #f0f0f0;
+  pointer-events: none;
+}
+
+.edit-Container {
+  padding-left: 15px;
+  margin: 16px 0px;
+  .edit-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(144, 88, 196);
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(106, 60, 148);
+    }
+  }
+}
+
+// this is for api based filters, these are not rendered under widget-filters-wrapper class so making a copy
+.widget-filter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+
+  &_label {
+    margin-top: 0.5rem;
+    color: #555555;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  &_extras {
+    font-size: 10px;
+  }
+
+  &_tags {
+    max-width: 100%;
+    margin-top: 0.2rem;
+    background-color: #efdbff;
+    border-color: #efdbff;
+    color: #595959;
+    word-break: break-all;
+    overflow-y: hidden;
+  }
+}

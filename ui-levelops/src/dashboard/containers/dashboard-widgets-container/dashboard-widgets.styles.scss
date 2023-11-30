@@ -1,0 +1,19 @@
+.dashboard-widgets-container {
+  .loader {
+    margin-top: 16px;
+  }
+
+  .react-slidedown {
+    &.closed {
+      display: none;
+    }
+
+    display: block;
+  }
+}
+
+.empty-dashboard {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}

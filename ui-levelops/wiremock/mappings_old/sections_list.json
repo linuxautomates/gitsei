@@ -1,0 +1,79 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/sections/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 17
+      },
+      "count": 17,
+      "records": [
+        { "id": "1", "name": "General Guidance" },
+        { "id": "2", "name": "APIs", "tags": ["code", "bestpractices"] },
+        { "id": "3", "name": "Authentication", "tags": ["infrastructure", "encryption"] },
+        {
+          "id": "4",
+          "name": "Does your code authenticate or authorize users, tokens, sessions, or other?",
+          "tags": ["code", "java", "python", "ruby"]
+        },
+        {
+          "id": "5",
+          "name": "If You’re Typing the Letters A-E-S Into Your Code You’re Doing It Wrong.",
+          "tags": ["code", "java"]
+        },
+        {
+          "id": "6",
+          "name": "Do you only utilize third-party services supported by IT or Operations?",
+          "tags": ["code", "python", "infrastructure"]
+        },
+        {
+          "id": "7",
+          "name": "This project or feature involves operating or displaying user information",
+          "tags": ["database", "PII", "infrastructure"]
+        },
+        {
+          "id": "8",
+          "name": "Are you planning on open-sourcing this library?",
+          "tags": ["database", "infrastructure", "encryption"]
+        },
+        {
+          "id": "9",
+          "name": "Does this feature won't require us to update our Terms of Service",
+          "tags": ["database", "infrastructure", "encryption"]
+        },
+        {
+          "id": "10",
+          "name": "Does this feature introduce any new open-source libraries (licensing)",
+          "tags": ["code", "java", "python", "ruby"]
+        },
+        { "id": "11", "name": "Does this project utilize a database via SQL?", "tags": ["code", "java"] },
+        {
+          "id": "12",
+          "name": "Does this functionality have any considerations when libraries and components around it are updated, e.g for security patches?",
+          "tags": ["code", "python", "infrastructure"]
+        },
+        { "id": "13", "name": "Do you set cookies in your component?", "tags": ["code", "java"] },
+        { "id": "14", "name": "Do you send users to another url?", "tags": ["code", "java"] },
+        { "id": "15", "name": "Does your application store logs in the client?", "tags": ["code", "privacy"] },
+        { "id": "16", "name": "Does this feature collect customer information?", "tags": ["code", "privacy"] },
+        {
+          "id": "17",
+          "name": "Does this feature require us to update our Terms of Service",
+          "tags": ["code", "privacy", "terms"]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

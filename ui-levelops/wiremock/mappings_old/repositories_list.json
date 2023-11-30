@@ -1,0 +1,56 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/repositories/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "name": "company/repo1",
+          "id": "1",
+          "integration_id": "1",
+          "master_branch": "master"
+        },
+        {
+          "name": "company/repo2",
+          "id": "2",
+          "integration_id": "1",
+          "master_branch": "master"
+        },
+        {
+          "name": "company/repo3",
+          "id": "3",
+          "integration_id": "1",
+          "master_branch": "master"
+        },
+        {
+          "name": "company/repo4",
+          "id": "4",
+          "integration_id": "1",
+          "master_branch": "master"
+        },
+        {
+          "name": "company/repo5",
+          "id": "5",
+          "integration_id": "1",
+          "master_branch": "master"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/integration_configs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "config": {
+            "agg_custom_fields": [
+              {
+                "name": "Value Area",
+                "key": "Microsoft.VSTS.Common.ValueArea"
+              },
+              {
+                "name": "Effort",
+                "key": "Microsoft.VSTS.Scheduling.Effort"
+              }
+            ]
+          },
+          "integration_id": "24"
+        }
+      ],
+      "count": 20,
+      "_metadata": { "page_size": 1000, "page": 0, "has_next": false, "total_count": 18 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

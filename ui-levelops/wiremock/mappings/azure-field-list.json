@@ -1,0 +1,199 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/issue_mgmt/workitems_fields/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "5809094b-860a-494a-936b-6c00f65751ff",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "custom field",
+          "field_key": "Custom.customfield",
+          "field_type": "integer",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "997b28e6-2b25-4dd4-b362-e6f9d6bfaa94",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "custom_field_1",
+          "field_key": "Custom.custom_field_1",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "8680418e-8836-4562-8abc-f8ef7db7adb7",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "CustomFieldTest",
+          "field_key": "Custom.CustomFieldTest",
+          "field_type": "integer",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "baf1caaf-8eb5-4a44-8e5d-39d68d32b5c7",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "CustomFieldTest2",
+          "field_key": "Custom.CustomFieldTest2",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "1f5532c4-84bd-49f7-b7d0-5aa2b022622a",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "Identity",
+          "field_key": "Custom.Identity",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "de4339dd-3bee-424d-af02-642c25e758e3",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "MultiLineText",
+          "field_key": "Custom.MultiLineText",
+          "field_type": "html",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "134e45ef-7744-4aa7-a47c-48a1630698c5",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "new field",
+          "field_key": "Custom.newfield",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "06148f47-ca9b-4074-9995-4c01f049f82a",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField",
+          "field_key": "Custom.TestCustomField",
+          "field_type": "html",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "28c278e3-963f-400d-8db2-ec215a9df641",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField00",
+          "field_key": "Custom.TestCustomField00",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "20482e4c-b762-4d1e-a9c9-58a39b1f02ff",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField1",
+          "field_key": "Custom.TestCustomField1",
+          "field_type": "boolean",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "8f1f3ab3-193b-4780-b252-bb11a702b4ae",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField2",
+          "field_key": "Custom.TestCustomField2",
+          "field_type": "dateTime",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "5344950f-3b10-413c-a670-8de60236bd2d",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField3",
+          "field_key": "Custom.TestCustomField3",
+          "field_type": "double",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "5450fba6-c48f-4157-8f89-e5a05b53f3fb",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField4",
+          "field_key": "Custom.TestCustomField4",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "2c58a5ad-f2b0-450f-826c-b7f3c9a69eab",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField5",
+          "field_key": "Custom.TestCustomField5",
+          "field_type": "integer",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "c4ff8303-bc0f-428e-a4a5-5328ffec9fb2",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField6",
+          "field_key": "Custom.TestCustomField6",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "3eff0166-3a2d-4b70-b883-31231c383818",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField7",
+          "field_key": "Custom.TestCustomField7",
+          "field_type": "integer",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "39ce8f05-e58a-45e0-86b8-283d561b8daa",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestCustomField8",
+          "field_key": "Custom.TestCustomField8",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "6d275c9f-20fe-43a8-98c5-e4e288354e90",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "TestField",
+          "field_key": "Custom.TestField",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "6d275c9f-20fe-43a8-98c5-e4e28835234e90",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "Value Area",
+          "field_key": "Microsoft.VSTS.Common.ValueArea",
+          "field_type": "string",
+          "created_at": 1646997141364
+        },
+        {
+          "id": "6d275c9f-20fe-43a8-98223c5-e4e28835234e90",
+          "custom": true,
+          "integration_id": "1887",
+          "name": "Effort",
+          "field_key": "Microsoft.VSTS.Scheduling.Effort",
+          "field_type": "string",
+          "created_at": 1646997141364
+        }
+      ],
+      "count": 20,
+      "_metadata": { "page_size": 1000, "page": 0, "has_next": false, "total_count": 18 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

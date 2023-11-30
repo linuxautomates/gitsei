@@ -1,0 +1,60 @@
+$tooltip: '.mat-tooltip';
+
+#{$tooltip} {
+  filter: drop-shadow(0 0 1px var(--grey1));
+  position: absolute;
+  z-index: 1302;
+
+  &--top {
+    #{$tooltip} {
+      &__content {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &--left {
+    #{$tooltip} {
+      &__content {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &--bottom {
+    #{$tooltip} {
+      &__content {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &--right {
+    #{$tooltip} {
+      &__content {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__content {
+    background-color: var(--component-background);
+    border-radius: 6px;
+    color: var(--grey1);
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 250px;
+    overflow-wrap: break-word;
+    padding: 10px 15px;
+
+    &--no-white-space {
+      white-space: nowrap;
+    }
+  }
+
+  &__trigger {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

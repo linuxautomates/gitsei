@@ -1,0 +1,544 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/workflows/2"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "selected": {},
+      "hovered": {},
+      "name": "API Endpoint Change",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "start",
+          "position": {
+            "x": 20,
+            "y": 20
+          },
+          "ports": {
+            "output": {
+              "id": "output",
+              "type": "right",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "type": "start",
+            "icon": "info-circle",
+            "title": "start",
+            "name": "start"
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "condition": {
+          "id": "condition",
+          "type": "condition",
+          "position": {
+            "x": 200,
+            "y": 20
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "success": {
+              "id": "success",
+              "type": "right",
+              "properties": {
+                "action": "success"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            },
+            "fail": {
+              "id": "fail",
+              "type": "output",
+              "properties": {
+                "action": "fail"
+              },
+              "position": {
+                "x": 60,
+                "y": 140
+              }
+            }
+          },
+          "properties": {
+            "icon": "apartment",
+            "title": "condition",
+            "type": "condition",
+            "name": "API added",
+            "configurations": {
+              "rules": {
+                "type": "condition",
+                "name": "or",
+                "id": "1",
+                "children": [
+                  {
+                    "type": "rule",
+                    "id": "29493b80-4d02-11ea-a69b-1f2769f4b46b",
+                    "signature": {
+                      "key": "1",
+                      "label": "Ensure unit test coverage is more than 90%"
+                    },
+                    "operator": {
+                      "key": "==",
+                      "label": "=="
+                    },
+                    "value": "true"
+                  }
+                ],
+                "": {}
+              }
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "bb0feab0-4d01-11ea-a69b-1f2769f4b46b": {
+          "id": "bb0feab0-4d01-11ea-a69b-1f2769f4b46b",
+          "type": "action_questionnaire",
+          "position": {
+            "x": 371,
+            "y": 20
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "right",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "reconciliation",
+            "type": "action_questionnaire",
+            "name": "API Questionnaire",
+            "title": "Questionnaire",
+            "configurations": {
+              "qtemplate_id": 1,
+              "comm_channel": "SLACK",
+              "message_template_id": "3",
+              "target_emails": ["Stage Owner"],
+              "additional_info": "We have discovered new API endpoints. Please provide us with additional information"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "c57581e0-4d01-11ea-a69b-1f2769f4b46b": {
+          "id": "c57581e0-4d01-11ea-a69b-1f2769f4b46b",
+          "type": "wait",
+          "position": {
+            "x": 545,
+            "y": 19
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "success": {
+              "id": "success",
+              "type": "right",
+              "properties": {
+                "action": "success"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            },
+            "fail": {
+              "id": "fail",
+              "type": "output",
+              "properties": {
+                "action": "fail"
+              },
+              "position": {
+                "x": 60,
+                "y": 140
+              }
+            }
+          },
+          "properties": {
+            "icon": "clock-circle",
+            "type": "wait",
+            "name": "Check Status",
+            "title": "Check Status on Q",
+            "configurations": {
+              "node_id": "bb0feab0-4d01-11ea-a69b-1f2769f4b46b",
+              "exit_status": "QUESTIONNAIRE_ANSWERED",
+              "pass_status": "QUESTIONNAIRE_RISK_HIGH",
+              "frequency": {
+                "type": "daily",
+                "escalation": "weekly",
+                "hour": "2020-02-11T17:00:00.000Z"
+              }
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "d1051a20-4d01-11ea-a69b-1f2769f4b46b": {
+          "id": "d1051a20-4d01-11ea-a69b-1f2769f4b46b",
+          "type": "action_workitem",
+          "position": {
+            "x": 735,
+            "y": 19
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "right",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "shopping",
+            "type": "action_workitem",
+            "name": "Work Item",
+            "title": "High Risk Work Item",
+            "configurations": {
+              "notification": "SLACK",
+              "assignee_ids": [2, 4, 7],
+              "priority": "HIGH",
+              "status": "OPEN"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "d72e8e40-4d01-11ea-a69b-1f2769f4b46b": {
+          "id": "d72e8e40-4d01-11ea-a69b-1f2769f4b46b",
+          "type": "condition",
+          "position": {
+            "x": 371,
+            "y": 185
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "success": {
+              "id": "success",
+              "type": "right",
+              "properties": {
+                "action": "success"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            },
+            "fail": {
+              "id": "fail",
+              "type": "output",
+              "properties": {
+                "action": "fail"
+              },
+              "position": {
+                "x": 60,
+                "y": 140
+              }
+            }
+          },
+          "properties": {
+            "icon": "apartment",
+            "title": "condition",
+            "type": "condition",
+            "name": "API removed",
+            "configurations": {
+              "rules": {
+                "type": "condition",
+                "name": "or",
+                "id": "1",
+                "children": [
+                  {
+                    "type": "rule",
+                    "id": "30e0be90-4d02-11ea-a69b-1f2769f4b46b",
+                    "signature": {
+                      "key": "4",
+                      "label": "Ensure passwords are not checked into SCM"
+                    },
+                    "operator": {
+                      "key": "DIFF",
+                      "label": "DIFF"
+                    },
+                    "value": "true"
+                  }
+                ],
+                "": {}
+              }
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "dd809900-4d01-11ea-a69b-1f2769f4b46b": {
+          "id": "dd809900-4d01-11ea-a69b-1f2769f4b46b",
+          "type": "action_slack",
+          "position": {
+            "x": 544,
+            "y": 186
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "right",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "slack",
+            "type": "action_slack",
+            "name": "Notify TechPub",
+            "title": "slack",
+            "configurations": {
+              "message_template_id": "4",
+              "target_emails": [5],
+              "additional_info": "Please remove documentation for the above API endpoints"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "e4f774b0-4d01-11ea-a69b-1f2769f4b46b": {
+          "id": "e4f774b0-4d01-11ea-a69b-1f2769f4b46b",
+          "type": "action_email",
+          "position": {
+            "x": 714,
+            "y": 185
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "left",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "right",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "mail",
+            "type": "action_email",
+            "name": "Notify Customer Support",
+            "title": "email",
+            "configurations": {
+              "message_template_id": "2",
+              "target_emails": [2],
+              "additional_info": "API endpoint has been deleted"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        }
+      },
+      "links": {
+        "link1": {
+          "id": "link1",
+          "from": {
+            "nodeId": "start",
+            "portId": "output"
+          },
+          "to": {
+            "nodeId": "condition",
+            "portId": "input"
+          },
+          "properties": {
+            "label": "example link label"
+          }
+        },
+        "cbd7a328-7c16-4e27-9fd4-3f1ef72bf80e": {
+          "id": "cbd7a328-7c16-4e27-9fd4-3f1ef72bf80e",
+          "from": {
+            "nodeId": "condition",
+            "portId": "success"
+          },
+          "to": {
+            "nodeId": "bb0feab0-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "input"
+          }
+        },
+        "4e57487e-d139-4035-a66b-0d0964fa5a9b": {
+          "id": "4e57487e-d139-4035-a66b-0d0964fa5a9b",
+          "from": {
+            "nodeId": "bb0feab0-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "output"
+          },
+          "to": {
+            "nodeId": "c57581e0-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "input"
+          }
+        },
+        "6862ab45-55f9-405e-80a8-9a58dd6aa466": {
+          "id": "6862ab45-55f9-405e-80a8-9a58dd6aa466",
+          "from": {
+            "nodeId": "condition",
+            "portId": "fail"
+          },
+          "to": {
+            "nodeId": "d72e8e40-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "input"
+          }
+        },
+        "053f7808-e60f-4347-a43c-f06440a039cc": {
+          "id": "053f7808-e60f-4347-a43c-f06440a039cc",
+          "from": {
+            "nodeId": "d72e8e40-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "success"
+          },
+          "to": {
+            "nodeId": "dd809900-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "input"
+          }
+        },
+        "d751870f-8a87-4dc3-89cd-241672b2efff": {
+          "id": "d751870f-8a87-4dc3-89cd-241672b2efff",
+          "from": {
+            "nodeId": "dd809900-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "output"
+          },
+          "to": {
+            "nodeId": "e4f774b0-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "input"
+          }
+        },
+        "04585432-70cc-4d72-be0e-ad3c3f8cc4da": {
+          "id": "04585432-70cc-4d72-be0e-ad3c3f8cc4da",
+          "from": {
+            "nodeId": "c57581e0-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "success"
+          },
+          "to": {
+            "nodeId": "d1051a20-4d01-11ea-a69b-1f2769f4b46b",
+            "portId": "input"
+          }
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/product_aggs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "1922f896-b863-43ac-8fd6-ece5c84b0f27",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "b9ab2d60-65aa-4e0a-af46-94621a8f63c1",
+          "version": "V0.1",
+          "product_id": "76",
+          "successful": true,
+          "integration_ids": ["118"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/06/26/product-76/SNYK-agg/integration-118/b9ab2d60-65aa-4e0a-af46-94621a8f63c1",
+          "updated_at": 1593161760,
+          "created_at": 1593130260
+        },
+        {
+          "id": "2",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "3",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "4",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "1",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "5",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "6",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "TENABLE",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "5671ca18-3202-446f-9afd-481e3c6ca718",
+          "version": "V0.1",
+          "product_id": "76",
+          "successful": true,
+          "integration_ids": ["118"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/06/25/product-76/SNYK-agg/integration-118/5671ca18-3202-446f-9afd-481e3c6ca718",
+          "updated_at": 1593129479,
+          "created_at": 1593043913
+        },
+        {
+          "id": "4e1ce71a-1e16-4aaa-9a1e-a7927199139b",
+          "version": "V0.1",
+          "product_id": "76",
+          "successful": true,
+          "integration_ids": ["118"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/06/24/product-76/SNYK-agg/integration-118/4e1ce71a-1e16-4aaa-9a1e-a7927199139b",
+          "updated_at": 1593042953,
+          "created_at": 1592957399
+        },
+        {
+          "id": "ede87c2f-52f6-4348-b191-a92a4242aceb",
+          "version": "V0.1",
+          "product_id": "76",
+          "successful": true,
+          "integration_ids": ["118"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/06/23/product-76/SNYK-agg/integration-118/ede87c2f-52f6-4348-b191-a92a4242aceb",
+          "updated_at": 1592956558,
+          "created_at": 1592870822
+        },
+        {
+          "id": "4c9f2e11-734e-407e-b277-ddbd18caf6de",
+          "version": "V0.1",
+          "product_id": "76",
+          "successful": true,
+          "integration_ids": ["118"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/06/22/product-76/SNYK-agg/integration-118/4c9f2e11-734e-407e-b277-ddbd18caf6de",
+          "updated_at": 1592870159,
+          "created_at": 1592870159
+        },
+        {
+          "id": "00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/18/product-36/SNYK-agg/integration-72/00e35f1d-ff05-4850-be35-8a791efa2f47",
+          "updated_at": 1589833970,
+          "created_at": 1589832864
+        },
+        {
+          "id": "77679718-1447-47b1-8d81-1b5090450cc5",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/17/product-36/SNYK-agg/integration-72/77679718-1447-47b1-8d81-1b5090450cc5",
+          "updated_at": 1589681723,
+          "created_at": 1589681543
+        },
+        {
+          "id": "a8628ce2-05a3-4fc5-859f-12e7c7d3321b",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/14/product-36/SNYK-agg/integration-72/a8628ce2-05a3-4fc5-859f-12e7c7d3321b",
+          "updated_at": 1589498801,
+          "created_at": 1589498115
+        },
+        {
+          "id": "8e209730-4b97-4337-9266-5d15ae34e8c3",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/13/product-36/SNYK-agg/integration-72/8e209730-4b97-4337-9266-5d15ae34e8c3",
+          "updated_at": 1589399527,
+          "created_at": 1589328011
+        },
+        {
+          "id": "9f9e52e6-cdb6-40be-a8ef-bc0074c7ae77",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/12/product-36/SNYK-agg/integration-72/9f9e52e6-cdb6-40be-a8ef-bc0074c7ae77",
+          "updated_at": 1589327950,
+          "created_at": 1589242135
+        },
+        {
+          "id": "9545458e-e57e-4d0b-b1c5-73bcc19cece9",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/11/product-36/SNYK-agg/integration-72/9545458e-e57e-4d0b-b1c5-73bcc19cece9",
+          "updated_at": 1589241595,
+          "created_at": 1589155734
+        },
+        {
+          "id": "111742f1-1fb4-42d5-b83c-b0b67213581b",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/10/product-36/SNYK-agg/integration-72/111742f1-1fb4-42d5-b83c-b0b67213581b",
+          "updated_at": 1589155193,
+          "created_at": 1589069333
+        },
+        {
+          "id": "929819e4-dc5c-43d9-a859-64d8d8b040db",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/09/product-36/SNYK-agg/integration-72/929819e4-dc5c-43d9-a859-64d8d8b040db",
+          "updated_at": 1589068613,
+          "created_at": 1588982933
+        },
+        {
+          "id": "c34d83fe-7327-4ce8-b8c1-d5423f895372",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/08/product-36/SNYK-agg/integration-72/c34d83fe-7327-4ce8-b8c1-d5423f895372",
+          "updated_at": 1588982212,
+          "created_at": 1588896593
+        },
+        {
+          "id": "6a392dd9-77d7-4bb8-a74d-13232986346c",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/07/product-36/SNYK-agg/integration-72/6a392dd9-77d7-4bb8-a74d-13232986346c",
+          "updated_at": 1588895813,
+          "created_at": 1588810090
+        },
+        {
+          "id": "6fca7630-f065-4394-91a5-ca063d3ec0b5",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/06/product-36/SNYK-agg/integration-72/6fca7630-f065-4394-91a5-ca063d3ec0b5",
+          "updated_at": 1588809370,
+          "created_at": 1588723635
+        },
+        {
+          "id": "6faa5ac6-059e-4898-aef6-00183e46b5c4",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/05/product-36/SNYK-agg/integration-72/6faa5ac6-059e-4898-aef6-00183e46b5c4",
+          "updated_at": 1588722914,
+          "created_at": 1588637234
+        },
+        {
+          "id": "0658cbed-efaa-4793-ad62-18eeeb189c43",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/04/product-36/SNYK-agg/integration-72/0658cbed-efaa-4793-ad62-18eeeb189c43",
+          "updated_at": 1588636514,
+          "created_at": 1588550777
+        },
+        {
+          "id": "e90c85a6-513e-4fdb-9637-2f7222d80426",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/03/product-36/SNYK-agg/integration-72/e90c85a6-513e-4fdb-9637-2f7222d80426",
+          "updated_at": 1588550056,
+          "created_at": 1588464323
+        },
+        {
+          "id": "1e1b73b8-9e10-4817-815a-cf2500b80488",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/02/product-36/SNYK-agg/integration-72/1e1b73b8-9e10-4817-815a-cf2500b80488",
+          "updated_at": 1588463602,
+          "created_at": 1588377923
+        },
+        {
+          "id": "a1861d1e-696e-455a-9ce4-9914649379b7",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/05/01/product-36/SNYK-agg/integration-72/a1861d1e-696e-455a-9ce4-9914649379b7",
+          "updated_at": 1588377202,
+          "created_at": 1588291523
+        },
+        {
+          "id": "f90781e6-03b2-4b1d-8185-96b4c769c873",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/30/product-36/SNYK-agg/integration-72/f90781e6-03b2-4b1d-8185-96b4c769c873",
+          "updated_at": 1588290801,
+          "created_at": 1588205052
+        },
+        {
+          "id": "32513433-0b6d-46e3-ad95-d2a3a71dbfff",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/29/product-36/SNYK-agg/integration-72/32513433-0b6d-46e3-ad95-d2a3a71dbfff",
+          "updated_at": 1588204331,
+          "created_at": 1588118652
+        },
+        {
+          "id": "4605df72-a55a-4b13-9747-d11ee92a7f7a",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/28/product-36/SNYK-agg/integration-72/4605df72-a55a-4b13-9747-d11ee92a7f7a",
+          "updated_at": 1588117930,
+          "created_at": 1588032253
+        },
+        {
+          "id": "7c00cd08-b8b4-4d09-ab2f-406b02fd1c7f",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/27/product-36/SNYK-agg/integration-72/7c00cd08-b8b4-4d09-ab2f-406b02fd1c7f",
+          "updated_at": 1588031505,
+          "created_at": 1587945778
+        },
+        {
+          "id": "c182ea49-dcdc-4c54-af7f-c8e213aa082b",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/26/product-36/SNYK-agg/integration-72/c182ea49-dcdc-4c54-af7f-c8e213aa082b",
+          "updated_at": 1587945056,
+          "created_at": 1587929578
+        },
+        {
+          "id": "23cc6178-95be-41f6-bebc-5f67099ee9fd",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/25/product-36/SNYK-agg/integration-72/23cc6178-95be-41f6-bebc-5f67099ee9fd",
+          "updated_at": 1587775855,
+          "created_at": 1587772975
+        },
+        {
+          "id": "74b89801-9074-4108-844f-4bafe3bc9f48",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/24/product-36/SNYK-agg/integration-72/74b89801-9074-4108-844f-4bafe3bc9f48",
+          "updated_at": 1587772253,
+          "created_at": 1587694506
+        },
+        {
+          "id": "7179dc86-34b5-464a-9cb1-8a95d345b1df",
+          "version": "V0.1",
+          "product_id": "36",
+          "successful": true,
+          "integration_ids": ["72"],
+          "type": "SNYK",
+          "gcs_path": "tenant-foo/2020/04/24/product-36/SNYK-agg/integration-72/7179dc86-34b5-464a-9cb1-8a95d345b1df",
+          "updated_at": 1587694354,
+          "created_at": 1587600001
+        }
+      ],
+      "count": 24,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 24
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

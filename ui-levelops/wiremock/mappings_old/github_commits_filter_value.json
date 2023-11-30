@@ -1,0 +1,67 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/commits/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 3
+      },
+      "count": 3,
+      "records": [
+        {
+          "repo_id": [
+            {
+              "key": "1",
+              "total_tickets": 100
+            },
+            {
+              "key": "2",
+              "total_tickets": 100
+            },
+            {
+              "key": "3",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "committer": [
+            {
+              "key": "Kushagra",
+              "total_tickets": 100
+            },
+            {
+              "key": "Piyush",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "author": [
+            {
+              "key": "Meghana Dwarakanath",
+              "total_tickets": 100
+            },
+            {
+              "key": "Megha Shyam",
+              "total_tickets": 100
+            },
+            {
+              "key": "Ivan Leon",
+              "total_tickets": 100
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

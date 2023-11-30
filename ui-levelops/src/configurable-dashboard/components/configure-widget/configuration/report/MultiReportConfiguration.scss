@@ -1,0 +1,94 @@
+.report-label {
+  display: flex;
+  margin-bottom: 14px;
+  .label {
+    font-size: 16px;
+    line-height: 24px;
+    align-self: center;
+  }
+
+  .report-count {
+    align-self: center;
+    background-color: #e8eaf1;
+    color: #5b677b;
+    padding: 0 8px;
+    margin-left: 10px;
+    border-radius: 16px;
+  }
+
+  .report-add-button.ant-btn {
+    height: 24px;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.multi-report-list-dd {
+  padding: 20px;
+  background: #f5f6f8;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+
+  .select-report-icon {
+    background-color: #ffffff;
+    margin-left: 8px;
+    border: 1px solid #d9d9d9;
+  }
+
+  .select-report-info {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #595959;
+  }
+
+  .report-dropdown {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    border: none;
+
+    .ant-select-selection {
+      border: 1px solid #d9d9d9;
+      background: #ffffff;
+    }
+
+    .ant-select-selection__choice {
+      background: #f5f5f5;
+      border: 1px solid #d9d9d9;
+      box-sizing: border-box;
+      border-radius: 2px;
+
+      .ant-select-selection__choice__content {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        color: #595959;
+      }
+
+      .ant-select-selection__choice__remove {
+        color: #595959;
+      }
+    }
+  }
+}
+
+.trend-report-collapse {
+  .ant-collapse-content {
+    width: 100%;
+  }
+}
+
+.multi-report-info {
+  color: #8a94a5;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  margin-top: 30vh;
+}

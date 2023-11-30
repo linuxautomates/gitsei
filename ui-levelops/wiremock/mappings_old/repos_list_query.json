@@ -1,0 +1,76 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/repos/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "filters": {
+        "range": {
+          "start": 1568920349,
+          "stop": 1568920349,
+          "type": "days"
+        },
+        "team_id": 1
+      },
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "name": "Repo1",
+          "type": "infra",
+          "technologies": ["Java", "Spring"],
+          "last_updated": 1569011481,
+          "branches": 12,
+          "commits": 96,
+          "files": ["/src/classes/Database.java", "/src/classes/RestAPI.java", "/src/classes/Controller.java"]
+        },
+        {
+          "name": "Repo2",
+          "type": "infra",
+          "technologies": ["Java", "Spring"],
+          "last_updated": 1569011481,
+          "branches": 12,
+          "commits": 96,
+          "files": ["/src/classes/Database.java", "/src/classes/RestAPI.java", "/src/classes/Controller.java"]
+        },
+        {
+          "name": "Repo3",
+          "type": "infra",
+          "technologies": ["Java", "Spring"],
+          "last_updated": 1569011481,
+          "branches": 12,
+          "commits": 96,
+          "files": ["/src/classes/Database.java", "/src/classes/RestAPI.java", "/src/classes/Controller.java"]
+        },
+        {
+          "name": "Repo4",
+          "type": "infra",
+          "technologies": ["Java", "Spring"],
+          "last_updated": 1569011481,
+          "branches": 12,
+          "commits": 96,
+          "files": ["/src/classes/Database.java", "/src/classes/RestAPI.java", "/src/classes/Controller.java"]
+        },
+        {
+          "name": "Repo5",
+          "type": "infra",
+          "technologies": ["Java", "Spring"],
+          "last_updated": 1569011481,
+          "branches": 12,
+          "commits": 96,
+          "files": ["/src/classes/Database.java", "/src/classes/RestAPI.java", "/src/classes/Controller.java"]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

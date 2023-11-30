@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/workitems/65121919-a79d-4bd1-914f-da19f82320ef"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": "NEW",
+      "assignees": [
+        {
+          "user_id": "74",
+          "user_email": "anagpal-ext@arista.com"
+        }
+      ],
+      "id": "65121919-a79d-4bd1-914f-da19f82320ef",
+      "priority": "UNKNOWN",
+      "type": "AUTOMATED",
+      "ticket_type": "WORK_ITEM",
+      "artifact_title": "[Apr-May 2022] [ Monthly ] SDLC-02-2022-04 Evidence Collection",
+      "notify": false,
+      "product_id": "16",
+      "updated_at": 1657165705,
+      "created_at": 1657165664,
+      "ticket_template_id": "b7a1d121-b0b0-46f1-8577-6e6e98e12d4b",
+      "ticket_data_values": [],
+      "tag_ids": ["151", "404"],
+      "state_id": 4,
+      "attachments": [],
+      "title": "[Apr-May 2022] [ Monthly ] SDLC-02-2022-04 Evidence Collection",
+      "vanity_id": "CVAAS-1134",
+      "child_ids": [],
+      "cicd_mappings": [],
+      "notifications": []
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

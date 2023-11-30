@@ -1,0 +1,12 @@
+@import "shared-resources/style/mixin.scss";
+
+.title-helper {
+  &__title {
+    @extend %h3;
+  }
+
+  &__button {
+    max-height: 40px;
+    padding-right: 0px;
+  }
+}

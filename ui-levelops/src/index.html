@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="/static/favicon.png" />
+  <!-- Fonts -->
+  <link href="/static/inter.css" rel="stylesheet" />
+
+  <title>SEI</title>
+  <script type="module" src="/env-config.js"></script>
+
+  <script type="text/javascript">
+    window.__DEV__ = "<%= NODE_ENV %>" === 'development';
+    window.__BUILD_VERSION__ = "<%= BUILD_VERSION %>" || 'unknown';
+    window.isStandaloneApp = true;
+    console.info(`[Running build version: ${window.__BUILD_VERSION__}]`);
+  </script>
+
+  <!-- Saber Feedback button -->
+  <script type="text/javascript" async>
+    if (!window.__DEV__) {
+      (function () {
+        window.Saber = {
+          apiKey: "dfb2bd6fa8f0cd828be1",
+          com: [],
+          do: function () {
+            this.com.push(arguments);
+          }
+        };
+        var e = document.createElement("script");
+        e.setAttribute("type", "text/javascript");
+        e.setAttribute("src", "https://widget.saberfeedback.com/v2/widget.js");
+        document.getElementsByTagName("head")[0].appendChild(e);
+      })();
+    }
+  </script>
+  <!-- End of Saber Feedback button -->  
+</head>
+
+<body class="off-canvas-sidebar">
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div id="root"></div>
+</body>
+
+</html>

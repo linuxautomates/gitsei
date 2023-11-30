@@ -1,0 +1,58 @@
+.effort-investment-chart-container {
+  padding: 0rem 1rem 1rem 1rem;
+  .sort-container {
+    display: flex;
+    align-items: center;
+    .ant-select-selection__rendered::after {
+      margin-left: 0.5rem !important;
+    }
+    .ant-select .ant-select-selection {
+      border: 0 !important;
+      color: black !important;
+    }
+    &-text {
+      margin-bottom: 0;
+    }
+  }
+  .divider-style {
+    margin: 12px 0;
+    background-color: var(--grey3);
+  }
+  .content-container {
+    padding: 0rem 0rem 0rem 3rem;
+    height: 32rem;
+  }
+  .team-footer-container {
+    display: flex;
+    justify-content: flex-start;
+    .custom-carousal {
+      width: 35%;
+      padding: 0rem;
+      height: 2.5rem;
+      &-pagination {
+        width: 25%;
+      }
+      &-dots {
+        width: 60%;
+        .custom-dot {
+          margin: 0.25rem;
+          width: 1.5rem;
+        }
+        .custom-dot-active {
+          width: 2rem;
+        }
+      }
+      &-action_buttons {
+        width: 15%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .team-footer-container {
+    .custom-carousal {
+      width: 45% !important;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.import-csv-modal {
+  .content {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden auto;
+  }
+
+  .content-table {
+    justify-content: flex-start;
+  }
+
+  .selectError > .ant-select-selection.ant-select-selection--single {
+    border-color: red;
+  }
+
+  .dateError {
+    input.ant-calendar-picker-input {
+      border-color: red;
+    }
+  }
+}

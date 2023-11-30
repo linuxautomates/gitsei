@@ -1,0 +1,31 @@
+$light-gray: #595959;
+$switch-background: #1890ff;
+$dark-grey-text: #262626;
+
+.category-basic-info-container {
+  width: 100%;
+  min-height: 36rem;
+  padding: 1rem 2rem;
+
+  .basic-info-container-title {
+    text-transform: capitalize !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    color: $light-gray;
+  }
+
+  .basic-info-content-container {
+    .ant-form-item-required::before {
+      display: none;
+    }
+    .ant-form-item-required::after {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ff7d59;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: "*";
+    }
+  }
+}

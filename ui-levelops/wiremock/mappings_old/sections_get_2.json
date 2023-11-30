@@ -1,0 +1,90 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "url": "/v1/sections/2"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "2",
+      "name": "APIs",
+      "description": "Are you implementing or modifying any APIs?",
+      "tags": ["apis", "restapi"],
+      "questions": [
+        {
+          "id": 11,
+          "name": "We have ensured that a Guest user / Multi-Channel user / Normal user / Admin user can only use this API as intended",
+          "severity": "high",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 1
+        },
+        {
+          "id": 12,
+          "name": "We have ensured that if our API is called by an unauthenticated user / non-permissioned user, that it behaves correctly and denies access appropriately",
+          "severity": "high",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "auto",
+          "verification_assets": [],
+          "training": [],
+          "number": 2
+        },
+        {
+          "id": 13,
+          "name": "PEN testing results",
+          "severity": "medium",
+          "type": "file upload",
+          "options": [
+            {
+              "value": "",
+              "score": 3
+            }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 3
+        },
+        {
+          "id": 222,
+          "name": "Some text field question",
+          "severity": "medium",
+          "type": "text",
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "options": [
+            {
+              "value": "",
+              "score": 10
+            }
+          ],
+          "number": 4
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

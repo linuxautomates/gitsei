@@ -1,0 +1,26 @@
+.workflow-profile-edit-create-container {
+  display: flex;
+  height: 100%;
+  background-color: #f5f6f8;
+}
+
+.no-integration-modal {
+  width: 20.8rem !important;
+  .ant-modal-body{
+    margin-top: 25px;
+  }
+  .selection-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #404040;
+  }
+
+  .info-icon {
+    color: #ec5b56;
+    margin-right: 5px;
+  }
+  .section-description{
+    margin-top: 15px;
+  }
+}

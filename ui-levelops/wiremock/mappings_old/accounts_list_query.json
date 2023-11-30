@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/accounts/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": 1,
+          "name": "AWS Account 1",
+          "account_id": "123456",
+          "cloud": "AWS",
+          "location": "us-east-1",
+          "production": true
+        },
+        {
+          "id": 2,
+          "name": "AWS Account 2",
+          "account_id": "123456",
+          "cloud": "AWS",
+          "location": "us-west-1",
+          "production": false
+        },
+        {
+          "id": 3,
+          "name": "GCP Account 1",
+          "account_id": "123456",
+          "cloud": "GCP",
+          "location": "us-west-2",
+          "production": false
+        }
+      ],
+      "count": 2,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

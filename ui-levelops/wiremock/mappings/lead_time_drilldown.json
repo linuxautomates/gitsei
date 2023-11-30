@@ -1,0 +1,75 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/velocity/values"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "e9422a24-89bf-4d4a-89fb-80264b9b50ee",
+          "additional_key": "1565",
+          "repo_ids": ["levelops/api-levelops"],
+          "project": "levelops/api-levelops",
+          "title": "prop12-fix: Removed duplicates",
+          "total": 15209892,
+          "data": [
+            {
+              "key": "PR creation time",
+              "additional_key": "Pull Request Created",
+              "median": 15192657,
+              "mean": 1.5192657e7,
+              "velocity_stage_result": {
+                "lower_limit_value": 864000,
+                "lower_limit_unit": "SECONDS",
+                "upper_limit_value": 2592000,
+                "upper_limit_unit": "SECONDS",
+                "rating": "SLOW"
+              }
+            },
+            {
+              "key": "Time to First Comment",
+              "additional_key": "Pull Request Review Started",
+              "median": 17235,
+              "mean": 17235.0,
+              "velocity_stage_result": {
+                "lower_limit_value": 864000,
+                "lower_limit_unit": "SECONDS",
+                "upper_limit_value": 2592000,
+                "upper_limit_unit": "SECONDS",
+                "rating": "GOOD"
+              }
+            },
+            {
+              "key": "Approval Time",
+              "additional_key": "Pull Request Approved",
+              "median": 0,
+              "mean": 0.0,
+              "velocity_stage_result": {
+                "lower_limit_value": 864000,
+                "lower_limit_unit": "SECONDS",
+                "upper_limit_value": 2592000,
+                "upper_limit_unit": "SECONDS",
+                "rating": "GOOD"
+              }
+            }
+          ],
+          "integration_id": "3809"
+        }
+      ],
+      "count": 10,
+      "_metadata": {
+        "page_size": 10,
+        "page": 0,
+        "next_page": 1,
+        "has_next": true,
+        "total_count": 3989
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

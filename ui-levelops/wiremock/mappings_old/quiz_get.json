@@ -1,0 +1,404 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/questionnaires/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": 0,
+      "target_email": "meghana@levelops.io",
+      "sender_email": "harsh@levelops.io",
+      "work_item_id": 3,
+      "policy_name": "Big Code Changes",
+      "artifact": "LEV-123",
+      "integration_url": "https://levelops.atlassian.net",
+      "integration_application": "jira",
+      "assignment_message": "Dear meghana@levelops.io, We discovered that you have a new ticket opened for release. Please answer this questionnaire",
+      "qtemplate_id": 2,
+      "qtemplate_name": "New Feature Questionnaire",
+      "total_questions": 10,
+      "answered_questions": 5,
+      "product_id": 12,
+      "section_responses": [
+        {
+          "section_id": "1",
+          "answers": [
+            {
+              "question_id": 1,
+              "responses": [
+                {
+                  "value": "yes",
+                  "score": 1
+                }
+              ],
+              "answered": true,
+              "user_email": "asd"
+            },
+            {
+              "question_id": 2,
+              "responses": [
+                {
+                  "value": "",
+                  "score": 0
+                }
+              ],
+              "answered": false
+            },
+            {
+              "question_id": 3,
+              "responses": [
+                {
+                  "value": "We manually checked for dead code",
+                  "score": 5
+                },
+                {
+                  "value": "We use coverage reports to identify dead code",
+                  "score": 3
+                },
+                {
+                  "value": "Something else",
+                  "score": 1,
+                  "original_value": "Other"
+                }
+              ],
+              "answered": true,
+              "user_email": "asd"
+            },
+            {
+              "question_id": 4,
+              "responses": [
+                {
+                  "value": "Something else",
+                  "score": 0,
+                  "original_value": "We have not checked for dead code"
+                }
+              ],
+              "answered": false
+            },
+            {
+              "question_id": "c0c38bd2-aef9-4d9e-b9d1-cae2f39e965a",
+              "responses": [],
+              "answered": false
+            },
+            {
+              "question_id": "46fbdd82-2b54-421b-9c82-5e004eb1dc97",
+              "responses": [
+                {
+                  "value": "dgrre",
+                  "score": 3
+                }
+              ],
+              "answered": true,
+              "user_email": "asd"
+            },
+            {
+              "question_id": "abcd",
+              "responses": [
+                {
+                  "value": "123",
+                  "file_name": "IMG_6260.JPG",
+                  "score": 3,
+                  "type": "file"
+                }
+              ],
+              "answered": true,
+              "user_email": "asd",
+              "upload": false
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "1",
+          "name": "General Guidance",
+          "description": "Applies to All Projects: Standard security guidance that all projects, regardless of features, need to follow. I am just making this a really really really really really long string so that I can fix the alignment issue that is happening",
+          "questions": [
+            {
+              "id": 1,
+              "name": "We have tagged any bugs filed as a result of items in these checklists with '`security`' label. I am just making this a really really really really really long string so that I can fix the alignment issue that is happening",
+              "severity": "high",
+              "type": "boolean",
+              "options": [
+                { "value": "yes", "score": 1 },
+                { "value": "no", "score": 10 }
+              ],
+              "custom": true,
+              "verifiable": true,
+              "verification_mode": "manual",
+              "verification_assets": [],
+              "training": [],
+              "number": 2
+            },
+            {
+              "id": 2,
+              "name": "Our application is running on machines supported by Operations.",
+              "severity": "high",
+              "type": "boolean",
+              "options": [
+                { "value": "yes", "score": 1 },
+                { "value": "no", "score": 10 }
+              ],
+              "custom": true,
+              "verifiable": true,
+              "verification_mode": "auto",
+              "verification_assets": [],
+              "training": [],
+              "number": 3
+            },
+            {
+              "id": 3,
+              "name": "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+              "severity": "medium",
+              "type": "multi-select",
+              "custom": true,
+              "options": [
+                {
+                  "value": "We manually checked for dead code",
+                  "score": 5
+                },
+                {
+                  "value": "We use coverage reports to identify dead code",
+                  "score": 3
+                },
+                {
+                  "value": "Other",
+                  "score": 1,
+                  "editable": true
+                }
+              ],
+              "verifiable": true,
+              "verification_mode": "manual",
+              "verification_assets": [],
+              "training": [],
+              "number": 4
+            },
+            {
+              "id": 4,
+              "name": "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+              "severity": "medium",
+              "type": "single-select",
+              "custom": true,
+              "options": [
+                {
+                  "value": "We manually checked for dead code",
+                  "score": 5
+                },
+                {
+                  "value": "We use coverage reports to identify dead code",
+                  "score": 3
+                },
+                {
+                  "value": "We have not checked for dead code",
+                  "score": 10,
+                  "editable": true
+                }
+              ],
+              "verifiable": true,
+              "verification_mode": "manual",
+              "verification_assets": [],
+              "training": [],
+              "number": 5
+            },
+            {
+              "id": "c0c38bd2-aef9-4d9e-b9d1-cae2f39e965a",
+              "name": "Assertion2",
+              "severity": "medium",
+              "section_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+              "type": "multi-select",
+              "options": [
+                {
+                  "value": "option1",
+                  "score": 3
+                },
+                {
+                  "value": "option2",
+                  "score": 1
+                },
+                {
+                  "value": "option3",
+                  "score": 5
+                }
+              ],
+              "verification_mode": "MANUAL",
+              "number": 6
+            },
+            {
+              "id": "46fbdd82-2b54-421b-9c82-5e004eb1dc97",
+              "name": "Assertion 1",
+              "severity": "medium",
+              "section_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+              "type": "text",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL",
+              "number": 7
+            },
+            {
+              "id": "abcd",
+              "name": "File Upload",
+              "severity": "medium",
+              "section_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+              "type": "file upload",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "New API Endpoints",
+          "description": "Applies to All Projects: Standard security guidance that all projects, regardless of features, need to follow. I am just making this a really really really really really long string so that I can fix the alignment issue that is happening",
+          "questions": [
+            {
+              "id": 1,
+              "name": "We have tagged any bugs filed as a result of items in these checklists with '`security`' label. I am just making this a really really really really really long string so that I can fix the alignment issue that is happening",
+              "severity": "high",
+              "type": "boolean",
+              "options": [
+                { "value": "yes", "score": 1 },
+                { "value": "no", "score": 10 }
+              ],
+              "custom": true,
+              "verifiable": true,
+              "verification_mode": "manual",
+              "verification_assets": [],
+              "training": []
+            },
+            {
+              "id": 2,
+              "name": "Our application is running on machines supported by Operations.",
+              "severity": "high",
+              "type": "boolean",
+              "options": [
+                { "value": "yes", "score": 1 },
+                { "value": "no", "score": 10 }
+              ],
+              "custom": true,
+              "verifiable": true,
+              "verification_mode": "auto",
+              "verification_assets": [],
+              "training": []
+            },
+            {
+              "id": 3,
+              "name": "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+              "severity": "medium",
+              "type": "multi-select",
+              "custom": true,
+              "options": [
+                {
+                  "value": "We manually checked for dead code",
+                  "score": 5
+                },
+                {
+                  "value": "We use coverage reports to identify dead code",
+                  "score": 3
+                },
+                {
+                  "value": "We have not checked for dead code",
+                  "score": 10
+                }
+              ],
+              "verifiable": true,
+              "verification_mode": "manual",
+              "verification_assets": [],
+              "training": []
+            },
+            {
+              "id": 4,
+              "name": "We have checked for dead code, and deleted it. Less code = fewer bugs!",
+              "severity": "medium",
+              "type": "single-select",
+              "custom": true,
+              "options": [
+                {
+                  "value": "We manually checked for dead code",
+                  "score": 5
+                },
+                {
+                  "value": "We use coverage reports to identify dead code",
+                  "score": 3
+                },
+                {
+                  "value": "We have not checked for dead code",
+                  "score": 10
+                }
+              ],
+              "verifiable": true,
+              "verification_mode": "manual",
+              "verification_assets": [],
+              "training": []
+            },
+            {
+              "id": "c0c38bd2-aef9-4d9e-b9d1-cae2f39e965a",
+              "name": "Assertion2",
+              "severity": "medium",
+              "section_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+              "type": "multi-select",
+              "options": [
+                {
+                  "value": "option1",
+                  "score": 3
+                },
+                {
+                  "value": "option2",
+                  "score": 1
+                },
+                {
+                  "value": "option3",
+                  "score": 5
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "id": "46fbdd82-2b54-421b-9c82-5e004eb1dc97",
+              "name": "Assertion 1",
+              "severity": "medium",
+              "section_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+              "type": "text",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "id": "abcd",
+              "name": "File Upload",
+              "severity": "medium",
+              "section_id": "6b7d965b-3517-4047-85b8-ad91b004325e",
+              "type": "file upload",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ]
+        }
+      ],
+      "comments": "There are the additional comments",
+      "completed": false
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/notifications/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "id": 1,
+          "type": "info",
+          "name": "Analytics for Project XYZ completed"
+        },
+        {
+          "id": 2,
+          "type": "warning",
+          "name": "Harsh work-life balance at risk"
+        },
+        {
+          "id": 3,
+          "type": "critical",
+          "name": "No design doc found for feature OPAL"
+        },
+        {
+          "id": 4,
+          "type": "critical",
+          "name": "No runbook found for feature OPAL"
+        },
+        {
+          "id": 5,
+          "type": "info",
+          "name": "Analytics for repo XYZ completed"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

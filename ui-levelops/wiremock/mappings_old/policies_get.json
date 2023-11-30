@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/policies/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "New API Requirements",
+      "description": "this policy will get triggered when code changes are > 1000 lines of code",
+      "action_type": "automated",
+      "severity": "MEDIUM",
+      "status": "ACTIVE",
+      "lqls": [
+        "code.type = application AND code.pr.size > 1000",
+        "document.type = Confluence AND document.title contains \"Design\"",
+        "issue.type = Epic AND issue.technology = Java"
+      ],
+      "signature_ids": [1, 2, 3],
+      "actions": {
+        "workflow": {
+          "assigning_process": "round_robin",
+          "assignee_ids": [1, 2, 3]
+        },
+        "communication": {
+          "template_id": 1,
+          "to": ["meghana@levelops.io", "someone@levelops.io"]
+        },
+        "assessment": {
+          "template_id": "1",
+          "to": ["meghana@levelops.io", "someone@levelops.io"],
+          "assessment_ids": ["1", "2", "3"]
+        },
+        "knowledgebase": {
+          "template_id": 1,
+          "to": ["meghana@levelops.io", "someone@levelops.io"],
+          "kb_ids": [1, 2, 3]
+        },
+        "log": true
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

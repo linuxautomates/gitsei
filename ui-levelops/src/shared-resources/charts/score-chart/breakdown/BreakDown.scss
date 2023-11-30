@@ -1,0 +1,31 @@
+.issue-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  .issue-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    width: 40%;
+
+    .issue-title {
+      color: #4d4d4d;
+      text-align: right;
+    }
+  }
+
+  .dashed-space {
+    width: 25%;
+    border-bottom: 0.5px dashed lightgray;
+  }
+
+  .issue-link {
+    margin-left: 10px;
+    width: 35%;
+    color: #335ddd;
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/integrations/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 10
+      },
+      "count": 10,
+      "records": [
+        {
+          "id": "21",
+          "name": "Github Integration 1",
+          "application": "github",
+          "status": "ACTIVE",
+          "method": "OAUTH",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration This is the most awesome integration This is the most awesome integration",
+          "updated_at": 1578348210
+        },
+        {
+          "id": "1",
+          "name": "Github Integration 1",
+          "application": "github",
+          "status": "ACTIVE",
+          "method": "OAUTH",
+          "tags": ["1", "2"],
+          "updated_at": 1578348210,
+          "satellite": true
+        },
+        {
+          "id": "2",
+          "name": "Slack Integration 1",
+          "application": "slack",
+          "status": "ACTIVE",
+          "method": "OAUTH",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "3",
+          "name": "Jira Integration 1",
+          "application": "jira",
+          "status": "ACTIVE",
+          "method": "FORM",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "4",
+          "name": "Jira Integration 2",
+          "application": "jira",
+          "status": "error",
+          "method": "FORM",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "5",
+          "name": "Github Integration 2",
+          "application": "github",
+          "status": "ACTIVE",
+          "method": "FORM",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "221",
+          "name": "Github Integration 1",
+          "application": "github",
+          "status": "ACTIVE",
+          "method": "OAUTH",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "222",
+          "name": "Github Integration 1",
+          "application": "github",
+          "status": "ACTIVE",
+          "method": "OAUTH",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "212",
+          "name": "Slack Integration 1",
+          "application": "slack",
+          "status": "ACTIVE",
+          "method": "OAUTH",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "213",
+          "name": "Jira Integration 1",
+          "application": "jira",
+          "status": "ACTIVE",
+          "method": "FORM",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "214",
+          "name": "Jira Integration 2",
+          "application": "jira",
+          "status": "error",
+          "method": "FORM",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        },
+        {
+          "id": "215",
+          "name": "Github Integration 2",
+          "application": "github",
+          "status": "ACTIVE",
+          "method": "FORM",
+          "tags": ["1", "2"],
+          "description": "This is the most awesome integration"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/playbooks/531ac01f-6ceb-4c19-b702-1eb5e020a09b/runs/a7bba3a3-b729-4741-97f9-5299b5ae0b1e/nodes/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "0",
+          "run_id": "a7bba3a3-b729-4741-97f9-5299b5ae0b1e",
+          "node_id": "1",
+          "triggered_by": { "0": "0" },
+          "output": {},
+          "data": {},
+          "state": "failure",
+          "result": {
+            "errors": [
+              {
+                "type": "internal_error",
+                "details": {
+                  "message": "Failed to handle nodeId=1, runningNodeId=949d5b59-9f7d-42bc-9f9d-3bb4d78df797 for (company=foo, runbook=c938841a-a776-45cd-bfdd-66d8131dccc6, run=ec2fc269-4204-4943-807a-2b966573e033)"
+                },
+                "description": "An internal error has occurred",
+                "exception_printout": {
+                  "message": "Failed to handle nodeId=1, runningNodeId=949d5b59-9f7d-42bc-9f9d-3bb4d78df797 for (company=foo, runbook=c938841a-a776-45cd-bfdd-66d8131dccc6, run=ec2fc269-4204-4943-807a-2b966573e033)",
+                  "stacktrace": [
+                    {
+                      "io.levelops.runbooks.exceptions.RunbookEvalException: Failed to handle nodeId=1, runningNodeId=949d5b59-9f7d-42bc-9f9d-3bb4d78df797 for (company=foo, runbook=c938841a-a776-45cd-bfdd-66d8131dccc6, run=ec2fc269-4204-4943-807a-2b966573e033)": [
+                        "at io.levelops.runbooks.services.NodeHandlingService.handleNode(NodeHandlingService.java:48)",
+                        "at io.levelops.runbooks.services.RunbookEvaluationService.evaluateNode(RunbookEvaluationService.java:313)",
+                        "at io.levelops.runbooks.services.RunbookEvaluationService.doEvaluateRun(RunbookEvaluationService.java:263)",
+                        "at io.levelops.runbooks.services.RunbookEvaluationService.evaluateRun(RunbookEvaluationService.java:183)",
+                        "at io.levelops.runbooks.services.RunbookEvaluationService.lambda$evaluateAllRuns$0(RunbookEvaluationService.java:149)",
+                        "at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)",
+                        "at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)",
+                        "at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)",
+                        "at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)",
+                        "at java.base/java.lang.Thread.run(Thread.java:830)"
+                      ]
+                    },
+                    {
+                      "Caused by: io.levelops.runbooks.exceptions.RunbookInvalidDataException: Variable 'state_ids' contains data that is not in the format required by this node": [
+                        "at io.levelops.runbooks.variables.VariableHolder.throwInvalidOrMissingException(VariableHolder.java:86)",
+                        "at io.levelops.runbooks.variables.VariableHolder.validate(VariableHolder.java:78)",
+                        "at io.levelops.runbooks.variables.VariableHolder.getValueAsObject(VariableHolder.java:124)",
+                        "at io.levelops.runbooks.variables.VariableHolder.getValueAsJsonNode(VariableHolder.java:163)",
+                        "at io.levelops.runbooks.variables.VariableHolder.getValueAsList(VariableHolder.java:170)",
+                        "at io.levelops.runbooks.variables.VariableHolder.getValueAsList(VariableHolder.java:178)",
+                        "at io.levelops.runbooks.handlers.tickets.TicketCheckStatusNodeHandler.handleNode(TicketCheckStatusNodeHandler.java:67)",
+                        "at io.levelops.runbooks.services.NodeHandlingService.handleNode(NodeHandlingService.java:39)",
+                        "... 9 more"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

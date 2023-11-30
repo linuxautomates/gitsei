@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/prs/labels/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "cloud_id": "3169210240",
+          "name": "Ready for Review",
+          "description": "Label 1"
+        },
+        {
+          "cloud_id": "3169463903",
+          "name": "ToDo",
+          "description": "Label Constant"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

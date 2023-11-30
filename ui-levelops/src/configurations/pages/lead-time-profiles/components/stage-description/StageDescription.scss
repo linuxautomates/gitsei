@@ -1,0 +1,53 @@
+.stage-description-wrapper {
+  padding-top: 3rem;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    &-description {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #8c8c8c;
+    }
+  }
+  &-form {
+    padding-top: 3rem;
+    &-end-event-options {
+      display: flex;
+      flex-direction: column;
+      &-label {
+        display: flex;
+        align-items: center;
+        span {
+          display: flex;
+          .ant-select-show-arrow {
+            border-bottom: 1px solid #096dd9;
+            height: 28px;
+            .ant-select-selection {
+              border-bottom: 1px solid #096dd9;
+              height: 28px;
+            }
+            .ant-select-arrow {
+              margin-right: -5px;
+            }
+          }
+        }
+      }
+      .ant-radio-wrapper {
+        padding: 0.5rem;
+        .ant-radio-checked:not(.ant-radio-disabled) .ant-radio-inner {
+          background-color: #fff;
+          &::after {
+            background-color: #1890ff;
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+}

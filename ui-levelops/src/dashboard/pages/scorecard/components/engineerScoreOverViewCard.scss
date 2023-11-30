@@ -1,0 +1,104 @@
+.score-overview-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2d3e5e;
+  &-title {
+    font-weight: 500;
+  }
+  .section-over-view-container {
+    display: flex;
+    flex-wrap: wrap;
+    .section-over-view {
+      width: 50%;
+      padding: 10px 15px;
+      &:nth-child(odd) {
+        border-right: 1px solid #d9d9d9;
+      }
+      &-details {
+        display: flex;
+        padding: 4px;
+        border-bottom: 1px solid #d9d9d9;
+        &-image {
+          width: 24px;
+        }
+        &-name {
+          flex: 1 1 auto;
+          margin: 0 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        &-chip {
+          flex: 0 0 auto;
+          text-align: left;
+          min-width: 35px;
+          &-mark {
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            display: inline-block;
+            align-self: center;
+            margin-right: 5px;
+          }
+        }
+      }
+      &-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        .feature-score {
+          padding: 4px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          &:hover {
+            background-color: rgba(120, 159, 233, 0.11);
+          }
+          &.highlighted {
+            background-color: rgba(120, 159, 233, 0.11);
+          }
+          &-value {
+            border-radius: 50px;
+            padding: 2px 8px;
+            color: #ffffff;
+            margin-right: 10px;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-legends {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    &-wrapper {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      .score-legend-container {
+        display: flex;
+        font-weight: 400;
+        font-size: 12px;
+
+        .score-legend-mark {
+          width: 16px;
+          height: 16px;
+          margin: 2px 8px 0px 8px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

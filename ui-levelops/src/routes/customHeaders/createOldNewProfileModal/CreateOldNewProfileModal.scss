@@ -1,0 +1,32 @@
+$warning-color: #595959;
+.create-old-new-modal {
+  width: 25.8rem !important;
+  .ant-modal-body {
+    padding: 10px 20px 0px !important;
+  }
+  .content {
+    margin: 1.5rem 0;
+    padding: 0rem 0rem;
+    .selection-header {
+      font-weight: 500;
+      line-height: 22px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .radio-lable-name {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #404040;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin-bottom: 6px;
+      .radio-info-icon {
+        color: #0278d5;
+        margin-left: 5px;
+      }
+    }
+  }
+}

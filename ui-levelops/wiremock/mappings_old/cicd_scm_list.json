@@ -1,0 +1,198 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd_scm/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de16d",
+          "job_name": "Build-Server-API",
+          "product_id": 71,
+          "number": 31,
+          "status": "SUCCESS",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-jenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ],
+          "commits": [
+            {
+              "commit_id": "f4e40b09-938f-4493-ad5b-dcec5a67778a",
+              "repo_id": "levelops/commons-levelops",
+              "integration_id": 121,
+              "author": "viraj-git",
+              "message": "commit message",
+              "files_changed_count": 3,
+              "lines_added_count": 20,
+              "lines_removed_count": 5,
+              "committed_at": 1593043200
+            }
+          ]
+        },
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de161",
+          "job_name": "Build-Server",
+          "product_id": 71,
+          "number": 31,
+          "status": "FAILED",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-kenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ],
+          "commits": [
+            {
+              "commit_id": "f4e40b09-938f-4493-ad5b-dcec5a67778a",
+              "repo_id": "levelops/commons-levelops",
+              "integration_id": 121,
+              "author": "viraj-git",
+              "message": "commit message",
+              "files_changed_count": 3,
+              "lines_added_count": 20,
+              "lines_removed_count": 5,
+              "committed_at": 1593043200
+            }
+          ]
+        },
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de164",
+          "job_name": "Build-Server-API 1",
+          "product_id": 71,
+          "number": 31,
+          "status": "SUCCESS",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-jenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ],
+          "commits": [
+            {
+              "commit_id": "f4e40b09-938f-4493-ad5b-dcec5a67778a",
+              "repo_id": "levelops/commons-levelops",
+              "integration_id": 121,
+              "author": "viraj-git",
+              "message": "commit message",
+              "files_changed_count": 3,
+              "lines_added_count": 20,
+              "lines_removed_count": 5,
+              "committed_at": 1593043200
+            }
+          ]
+        },
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de162",
+          "job_name": "Build-Server-API 2",
+          "product_id": 71,
+          "number": 31,
+          "status": "FAILED",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-jenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ],
+          "commits": [
+            {
+              "commit_id": "f4e40b09-938f-4493-ad5b-dcec5a67778a",
+              "repo_id": "levelops/commons-levelops",
+              "integration_id": 121,
+              "author": "viraj-git",
+              "message": "commit message",
+              "files_changed_count": 3,
+              "lines_added_count": 20,
+              "lines_removed_count": 5,
+              "committed_at": 1593043200
+            }
+          ]
+        },
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de169",
+          "job_name": "Build-Server-API 3",
+          "product_id": 71,
+          "number": 31,
+          "status": "FAILED",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-jenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ],
+          "commits": [
+            {
+              "commit_id": "f4e40b09-938f-4493-ad5b-dcec5a67778a",
+              "repo_id": "levelops/commons-levelops",
+              "integration_id": 121,
+              "author": "viraj-git",
+              "message": "commit message",
+              "files_changed_count": 3,
+              "lines_added_count": 20,
+              "lines_removed_count": 5,
+              "committed_at": 1593043200
+            }
+          ]
+        },
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de168",
+          "job_name": "Build-Server-API 4",
+          "product_id": 71,
+          "number": 31,
+          "status": "SUCCESS",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-jenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ],
+          "commits": [
+            {
+              "commit_id": "f4e40b09-938f-4493-ad5b-dcec5a67778a",
+              "repo_id": "levelops/commons-levelops",
+              "integration_id": 121,
+              "author": "viraj-git",
+              "message": "commit message",
+              "files_changed_count": 3,
+              "lines_added_count": 20,
+              "lines_removed_count": 5,
+              "committed_at": 1593043200
+            }
+          ]
+        }
+      ],
+      "total_count": 6
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

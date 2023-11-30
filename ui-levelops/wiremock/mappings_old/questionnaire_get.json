@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/qtemplates/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "name": "Customer Data Questionnaire",
+      "sections": ["1", "2", "3"],
+      "tag_ids": ["1", "2"],
+      "low_risk_boundary": 30,
+      "mid_risk_boundary": 80,
+      "risk_enabled": true
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

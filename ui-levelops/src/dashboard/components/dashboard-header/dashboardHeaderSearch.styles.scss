@@ -1,0 +1,37 @@
+.more-dashboard {
+  .ant-col {
+    padding: 0.5rem 0rem 0.4rem 0.7rem;
+    cursor: pointer;
+    button {
+      width: 100%;
+      background-color: #448ff7;
+      border-color: #448ff7;
+    }
+    &.default-button {
+      button {
+        background-color: #eaf0fc;
+        border: 1px solid var(--grey5);
+      }
+    }
+    .anticon {
+      display: none;
+      font-size: 1rem;
+      pointer-events: all;
+      border: none !important;
+      background: transparent !important;
+      box-shadow: none;
+    }
+  }
+  .ant-row {
+    &:hover {
+      background-color: #eaf0fc;
+      .ant-col {
+        .anticon {
+          display: block;
+          font-size: 1rem;
+          pointer-events: all;
+        }
+      }
+    }
+  }
+}

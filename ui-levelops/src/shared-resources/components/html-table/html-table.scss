@@ -1,0 +1,19 @@
+.html-table {
+  padding-right: 15px;
+  width: 100%;
+  border-bottom: 1px solid #dcdfe4;
+  .header {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .cell {
+    padding: 0;
+    font-size: 12px;
+    vertical-align: top;
+    height: fit-content;
+    .hiddenData {
+      filter: blur(4px);
+    }
+  }
+}

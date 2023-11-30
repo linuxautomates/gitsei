@@ -1,0 +1,29 @@
+.breadcrumbs-container {
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .path {
+    color: black;
+    cursor: pointer;
+  }
+  .active-path {
+    color: #40a9ff !important;
+    cursor: unset !important;
+  }
+  .delimiter {
+    margin: 0 10px;
+  }
+
+  .homeIcon {
+    margin-right: 8px;
+    color: black;
+  }
+
+  .active {
+    color: #40a9ff;
+    cursor: unset;
+  }
+}

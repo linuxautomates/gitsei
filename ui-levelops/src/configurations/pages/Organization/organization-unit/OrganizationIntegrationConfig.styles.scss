@@ -1,0 +1,174 @@
+.integration-configure-container {
+  margin: 1rem 0rem;
+  .filter-loading-spinner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .static-content {
+    display: flex;
+    justify-content: space-between;
+    .integration-select {
+      display: flex;
+      width: 50%;
+      .title {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        width: 6rem;
+      }
+      .ant-select {
+        width: 100%;
+      }
+    }
+    .action-container {
+      .action-filter-button {
+        cursor: pointer;
+      }
+      .action-filter-button-not-allowed {
+        cursor: not-allowed;
+      }
+      .ant-btn {
+        border-radius: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem;
+        color: var(--light-text);
+        .anticon {
+          position: absolute;
+          right: 25%;
+          bottom: 20%;
+        }
+      }
+    }
+  }
+  .dynamic-content {
+    width: 100%;
+    .filter-field-container {
+      width: 100%;
+      .filter-row {
+        display: flex;
+        justify-content: space-between;
+        .select-content {
+          display: flex;
+          width: 80%;
+          .text {
+            width: 6rem;
+            text-align: end;
+          }
+        }
+      }
+      .filter-col {
+        width: 25.25% !important;
+        margin: 0rem 0.5rem 0rem 0.5rem !important;
+      }
+      .action-filter-col {
+        .ant-btn {
+          border-radius: 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          margin: 0.25rem;
+          color: var(--light-text);
+          .anticon {
+            position: absolute;
+            right: 25%;
+            bottom: 20%;
+          }
+        }
+      }
+      .filter-col-select {
+        width: 100%;
+      }
+    }
+    .user-field-container {
+      display: flex;
+      justify-content: space-between;
+      .user-select-container {
+        display: flex;
+        width: 100%;
+        .filter-field-container {
+          width: 100%;
+          .filter-row {
+            display: flex;
+            justify-content: space-between;
+            .select-content {
+              display: flex;
+              width: 80%;
+              .text {
+                width: 6rem;
+                text-align: end;
+              }
+            }
+          }
+          .filter-col {
+            width: 25.25% !important;
+            margin: 0rem 0.5rem 0rem 0.5rem !important;
+          }
+          .action-filter-col {
+            .ant-btn {
+              border-radius: 0.5rem;
+              width: 2rem;
+              height: 2rem;
+              margin: 0.25rem;
+              color: var(--light-text);
+              .anticon {
+                position: absolute;
+                right: 25%;
+                bottom: 20%;
+              }
+            }
+          }
+          .filter-col-select {
+            width: 100%;
+          }
+        }
+
+        .text {
+          width: 6rem;
+          text-align: end;
+        }
+        .user-add-action {
+          font-weight: 500;
+          margin-left: 0.5rem;
+          .anticon {
+            margin-right: 0.4rem;
+          }
+          .user-create-option {
+            color: var(--link-and-actions);
+            margin-right: 0.25rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .user-remove-action {
+        .ant-btn {
+          border-radius: 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          margin: 0.25rem;
+          color: var(--light-text);
+          .anticon {
+            position: absolute;
+            right: 25%;
+            bottom: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-not-available {
+    margin-left: 104px;
+  }
+}
+
+@media (min-width: 1355px) and (max-width: 1440px) {
+  .integration-configure-container {
+    .static-content {
+      .integration-select {
+        width: 54.75%;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/workflows/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "status": "NEW",
+          "assignees": [],
+          "id": "5fff6d67-c5a5-4ec5-b567-632a5189f6e7",
+          "policy_name": "Mobile devices approval",
+          "priority": "UNKNOWN",
+          "type": "AUTOMATED",
+          "ticket_type": "WORK_ITEM",
+          "policy_id": "6",
+          "cloud_owner": "Meghana Dwarakanath",
+          "artifact_title": "Custom integration yml file",
+          "notify": false,
+          "reason": "Matched LQLs: issue.component = ui-levelops",
+          "product_id": "71",
+          "integration_id": "106",
+          "artifact": "LEV-1250",
+          "updated_at": 1592774040,
+          "created_at": 1592774040,
+          "ticket_data_values": [],
+          "tag_ids": [],
+          "state_id": 27,
+          "attachments": [],
+          "title": "Custom integration yml file",
+          "vanity_id": "DEFAULT-150418",
+          "child_ids": []
+        }
+      ],
+      "count": 1,
+      "_metadata": { "page_size": 1, "page": 0, "next_page": 1, "has_next": true, "total_count": 946 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

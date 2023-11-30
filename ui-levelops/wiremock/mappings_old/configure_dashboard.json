@@ -1,0 +1,124 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/configure-dashboard/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "Dashboard 1",
+      "type": "team360",
+      "query": {
+        "filter": {
+          "product_id": "1",
+          "integration_ids": ["2"]
+        }
+      },
+      "widgets": [
+        {
+          "name": "Technologies",
+          "id": "5",
+          "type": "jira_bounce_report",
+          "metadata": {
+            "order": 5,
+            "width": 12
+          },
+          "query": {
+            "filter": {
+              "product_id": "1",
+              "integration_id": "2"
+            }
+          }
+        },
+        {
+          "name": "Upcoming releases",
+          "id": "1",
+          "type": "jira_hygiene_report",
+          "metadata": {
+            "order": 2,
+            "width": 12
+          },
+          "query": {
+            "filter": {
+              "priorities": ["asd", "bsd"],
+              "issue_type": "TASK",
+              "statuses": ["some status"],
+              "assignees": ["display name"],
+              "projects": ["LEV"],
+              "partial": {
+                "summary": "asdoai"
+              }
+            }
+          }
+        },
+        {
+          "name": "Repos",
+          "id": "3",
+          "type": "jira_hops_report",
+          "metadata": {
+            "order": 4,
+            "width": 12
+          },
+          "query": {
+            "filter": {
+              "priorities": ["asd", "bsd"],
+              "issue_type": "TASK",
+              "statuses": ["some status"],
+              "assignees": ["display name"],
+              "projects": ["LEV"],
+              "partial": {
+                "summary": "asdoai"
+              }
+            }
+          }
+        },
+        {
+          "name": "Deployments",
+          "id": "4",
+          "type": "jira_list_report",
+          "metadata": {
+            "order": 3,
+            "width": 12
+          },
+          "query": {
+            "filter": {
+              "priorities": ["asd", "bsd"],
+              "issue_type": "TASK",
+              "statuses": ["some status"],
+              "assignees": ["display name"],
+              "projects": ["LEV"],
+              "partial": {
+                "summary": "asdoai"
+              }
+            }
+          }
+        },
+        {
+          "name": "Commits by day",
+          "id": "2",
+          "type": "jira_ticket_report",
+          "metadata": {
+            "order": 1,
+            "width": 24
+          },
+          "query": {
+            "filter": {
+              "priorities": ["asd", "bsd"],
+              "issue_type": "TASK",
+              "statuses": ["some status"],
+              "assignees": ["display name"],
+              "projects": ["LEV"],
+              "partial": {
+                "summary": "asdoai"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

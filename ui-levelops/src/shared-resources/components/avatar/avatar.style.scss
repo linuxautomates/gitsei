@@ -1,0 +1,27 @@
+.avatar {
+  background-color: var(--component-background);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+
+  img,
+  .svg-icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__small {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  &__medium {
+    height: 24px;
+    width: 24px;
+  }
+
+  &__large {
+    height: 32px;
+    width: 32px;
+  }
+}

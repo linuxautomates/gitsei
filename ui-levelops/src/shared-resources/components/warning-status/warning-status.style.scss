@@ -1,0 +1,21 @@
+.warning-status {
+  background: #e1d0ff;
+  border-radius: 4px;
+  width: fit-content;
+
+  &--icon {
+    font-size: 14px;
+    margin: 4px 5px 4px 9px;
+  }
+
+  &--text {
+    color: #4d0b8f;
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: 8px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+}

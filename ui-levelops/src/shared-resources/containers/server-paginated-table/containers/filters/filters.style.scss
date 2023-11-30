@@ -1,0 +1,48 @@
+.filters {
+  background: var(--page-background);
+  padding: 1.6rem;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1rem;
+  margin: 0.5rem 0;
+
+  span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #575757;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.new-filters {
+  margin-bottom: 26px;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: #fafafa;
+  padding: 22px 28px 75px 35px;
+
+  .filter-heading {
+    margin-bottom: 16px;
+    &--text {
+      font-weight: 700;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--form-item-label);
+    }
+
+    &__close-button {
+      margin-left: 18px;
+      font-size: 16px;
+    }
+  }
+
+  &__date-picker {
+    width: 100% !important; // to override inline css
+  }
+}

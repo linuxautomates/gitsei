@@ -1,0 +1,75 @@
+.mfa-enrollment-component {
+  .signIn-mfa-form {
+    input {
+      border: 1px solid #d9dae5;
+      border-radius: 0.2rem;
+    }
+  }
+  .next-back-button {
+    .signin-button-wrapper {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+  .mfa-welcome-text {
+    margin-top: 2.5rem;
+    .ant-typography {
+      color: #000000;
+    }
+    .content {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 14px;
+    }
+    .email-arrow {
+      display: flex;
+      align-items: baseline;
+      .ant-typography {
+        color: #404040;
+      }
+      .email {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
+      .svg-icon svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .qr-help-container {
+    .ant-typography {
+      color: #000000;
+    }
+    .qr-content {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    .qr-container {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .qr-container > img {
+      height: 250px;
+    }
+    .help-code {
+      margin-top: 0.5rem;
+      width: 92%;
+      margin-left: 2rem;
+      input {
+        border: 1px solid #d9dae5;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}

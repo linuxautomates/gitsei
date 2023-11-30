@@ -1,0 +1,38 @@
+.ant-card {
+  display: flex;
+  flex-direction: column;
+
+  &-head,
+  &-actions {
+    flex-shrink: 0;
+  }
+
+  &-body {
+    flex: 1;
+    padding: 12px 16px;
+  }
+
+  &-type-inner {
+    border-radius: 4px !important;
+    border-width: 1px;
+    box-shadow: none !important;
+    border: 1px solid var(--grey12);
+    .ant-card-head {
+      background-color: var(--levelops-white);
+      min-height: auto;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+  }
+  &-actions {
+    background-color: var(--levelops-white);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &-actions > li > span a:not(.ant-btn),
+  &-actions > li > span > .anticon {
+    color: var(--blue6);
+    font-size: 15px;
+  }
+}

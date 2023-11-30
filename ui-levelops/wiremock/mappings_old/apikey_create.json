@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/apikeys"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": "123",
+      "key": "eyJrZXkiOiJNclVEWkhvM05sN0kjWDdPYUB1JnFeQ1Y0SWo3MXZyVWpBQk5wSyMrMkJJMTNvTEJ0eiIsImlkIjoiZTNmMjcyODEtNGZmZC00YTgwLWIzNDItNjMyMmYwYTdlZTI5IiwiY29tcGFueSI6InNhdGVsbGl0ZSJ9"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

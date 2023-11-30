@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/jira/ticket_count_fte",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"filter\": {\"ticket_categories\": [\"Other\"]}}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Jonathan Ma",
+          "fte": 0.75,
+          "total": 6,
+          "effort": 1
+        },
+        {
+          "key": "Nehal Patel",
+          "fte": 0.2,
+          "total": 6,
+          "effort": 2
+        },
+        {
+          "key": "Satish Kumar Singh",
+          "fte": 1.4,
+          "total": 6,
+          "effort": 3
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

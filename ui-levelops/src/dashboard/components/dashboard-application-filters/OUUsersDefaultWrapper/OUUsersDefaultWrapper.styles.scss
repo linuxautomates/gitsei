@@ -1,0 +1,40 @@
+.ou-default-users-container {
+  height: 100%;
+  padding: 0rem 1rem;
+  .header {
+    .sub-heading {
+      font-weight: 700;
+    }
+  }
+  .content-list-container {
+    margin-top: 2rem;
+    height: 100%;
+    .ant-empty {
+      margin: 0 !important;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-item {
+      display: flex;
+      width: 100%;
+      margin: 1rem 0rem;
+      .application-name {
+        width: 20%;
+        text-transform: capitalize;
+        text-align: start;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .fields-select {
+        width: 80%;
+        .ant-select {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

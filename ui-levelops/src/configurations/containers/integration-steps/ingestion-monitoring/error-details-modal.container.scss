@@ -1,0 +1,30 @@
+.error-details-modal {
+  .ant-modal-body {
+    overflow: auto;
+  }
+
+  .stacktraces-container {
+    .header {
+      margin-bottom: 15px;
+      margin-top: 20px;
+
+      span {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+
+    .details {
+      overflow: auto;
+      padding: 21px 16px;
+      background: #f3f3f3;
+      max-height: 220px;
+
+      .stacktrace-line {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+      }
+    }
+  }
+}

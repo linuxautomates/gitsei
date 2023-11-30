@@ -1,0 +1,24 @@
+.issue-template-list {
+  height: 100%;
+  overflow: hidden;
+  .ant-spin-nested-loading {
+    overflow: auto;
+    height: 86%;
+  }
+}
+
+.issue-template-configure-container {
+  .collapsible-panel-container {
+    .ant-collapse-content {
+      min-height: 9rem;
+      .ant-select-dropdown {
+        min-height: 6rem;
+        max-height: 8rem;
+        &-menu {
+          min-height: 6rem;
+          max-height: 8rem;
+        }
+      }
+    }
+  }
+}

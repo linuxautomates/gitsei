@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/triage_rule_results/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": {
+        "asdr1aisdo12ioasi1oida2": ["result 1", "result 2", "result 3", "result 4"],
+        "asdr1aisdo12ioasi1oida3": ["result 1", "result 2", "result 3", "result 4"],
+        "asdr1aisdo12ioasi1oida4": ["result 1", "result 2", "result 3", "result 4"],
+        "asdr1aisdo12ioasi1oida5": ["result 1", "result 2", "result 3", "result 4"],
+        "asdr1aisdo12ioasi1oida6": ["result 1", "result 2", "result 3", "result 4"],
+        "asdr1aisdo12ioasi1oida7": ["result 1", "result 2", "result 3", "result 4"],
+        "asdr1aisdo12ioasi1oida8": ["result 1", "result 2", "result 3", "result 4"]
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

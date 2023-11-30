@@ -1,0 +1,29 @@
+.work-items-page {
+  height: calc(100vh - 200px);
+  overflow: hidden;
+
+  &_edit-container {
+    width: 93vw;
+  }
+
+  &__list {
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+  }
+
+  .audit-log {
+    padding: 24px;
+  }
+  .sub-tickets,
+  .notes {
+    padding: 2px;
+  }
+
+  .sub-tickets {
+    height: calc(100vh - 400px);
+  }
+
+  .audit-logs {
+    height: calc(100vh - 550px);
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/org/units/values"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "name": {
+            "total_count": 3,
+            "records": [
+              {
+                "key": "India FE"
+              },
+              {
+                "key": "USA BE"
+              },
+              {
+                "key": "India BE"
+              }
+            ],
+            "count": 3
+          }
+        }
+      ],
+      "count": 2,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

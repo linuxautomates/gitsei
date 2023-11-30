@@ -1,0 +1,284 @@
+{
+  "sortingColumnForFixedLeft": [
+    {
+      "input": [
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Jira Ticket Summary",
+              "children": "Jira Ticket Summary",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Jira Ticket Summary",
+          "key": "summary",
+          "dataIndex": "summary",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        },
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Total Time",
+              "children": "Total Time",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Total Time",
+          "key": "total",
+          "dataIndex": "total",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        },
+        {
+          "title": "Jira Ticket ID",
+          "titleForCSV": "Jira Ticket ID",
+          "key": "additional_key",
+          "dataIndex": "additional_key",
+          "width": 128,
+          "sorter": true,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": "",
+          "fixed": "left"
+        }
+      ],
+      "output": [
+        {
+          "title": "Jira Ticket ID",
+          "titleForCSV": "Jira Ticket ID",
+          "key": "additional_key",
+          "dataIndex": "additional_key",
+          "width": 128,
+          "sorter": true,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": "",
+          "fixed": "left"
+        },
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Jira Ticket Summary",
+              "children": "Jira Ticket Summary",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Jira Ticket Summary",
+          "key": "summary",
+          "dataIndex": "summary",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        },
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Total Time",
+              "children": "Total Time",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Total Time",
+          "key": "total",
+          "dataIndex": "total",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        }
+      ]
+    },
+    {
+      "input": [
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Jira Ticket Summary",
+              "children": "Jira Ticket Summary",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Jira Ticket Summary",
+          "key": "summary",
+          "dataIndex": "summary",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        },
+        {
+          "title": "Jira Ticket ID",
+          "titleForCSV": "Jira Ticket ID",
+          "key": "additional_key",
+          "dataIndex": "additional_key",
+          "width": 128,
+          "sorter": true,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        },
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Total Time",
+              "children": "Total Time",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Total Time",
+          "key": "total",
+          "dataIndex": "total",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": "",
+          "fixed": "left"
+        }
+      ],
+      "output": [
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Total Time",
+              "children": "Total Time",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Total Time",
+          "key": "total",
+          "dataIndex": "total",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": "",
+          "fixed": "left"
+        },
+        {
+          "title": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "title": "Jira Ticket Summary",
+              "children": "Jira Ticket Summary",
+              "placement": "top",
+              "transitionName": "zoom-big-fast",
+              "mouseEnterDelay": 0.1,
+              "mouseLeaveDelay": 0.1,
+              "arrowPointAtCenter": false,
+              "autoAdjustOverflow": true
+            },
+            "_owner": null,
+            "_store": {}
+          },
+          "titleForCSV": "Jira Ticket Summary",
+          "key": "summary",
+          "dataIndex": "summary",
+          "width": 180,
+          "sorter": false,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        },
+        {
+          "title": "Jira Ticket ID",
+          "titleForCSV": "Jira Ticket ID",
+          "key": "additional_key",
+          "dataIndex": "additional_key",
+          "width": 128,
+          "sorter": true,
+          "ellipsis": true,
+          "hidden": false,
+          "align": "left",
+          "className": ""
+        }
+      ]
+    }
+  ]
+}

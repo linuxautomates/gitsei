@@ -1,0 +1,11 @@
+.profile-edit-page {
+  &__content {
+    flex-basis: 70%;
+    width: 60%;
+    align-content: center;
+    .link {
+      cursor: pointer;
+      color: rgb(64, 206, 240);
+    }
+  }
+}

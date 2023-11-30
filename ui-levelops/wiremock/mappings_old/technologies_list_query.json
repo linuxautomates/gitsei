@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/technologies/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "filters": {
+        "range": {
+          "start": 1568920349,
+          "stop": 1568920349,
+          "type": "days"
+        },
+        "team_id": 1
+      },
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 2,
+      "records": [
+        {
+          "name": "Java",
+          "frameworks": ["Spring", "JUnit", "Jackson"],
+          "libraries": ["Log4j", "Mockito", "Cglib"],
+          "version": "10.0"
+        },
+        {
+          "name": "Python",
+          "frameworks": ["flask", "wsgi"],
+          "libraries": ["pandas", "numpy", "TensorFlow"],
+          "version": "3.5"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

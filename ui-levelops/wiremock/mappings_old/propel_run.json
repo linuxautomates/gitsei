@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/playbooks/runs/66e1d485-2961-4567-a4c2-e9a286a4d040"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "66e1d485-2961-4567-a4c2-e9a286a4d040",
+      "runbook_id": "58c26003-4287-4163-875d-58b8e76cb5cc",
+      "permanent_id": "394f88b5-7d37-4d85-8cbd-6f0a21404422",
+      "trigger_type": "jenkins_job_run_failed",
+      "args": {
+        "id": {
+          "key": "id",
+          "content_type": "plugin_result/jenkins plugin/id",
+          "value_type": "string",
+          "value": "3adbb0be-c5c0-443c-ad58-ca85249f0d0e"
+        },
+        "job_name": {
+          "key": "job_name",
+          "content_type": "plugin_result/jenkins plugin/job_name",
+          "value_type": "string",
+          "value": "UIBuild"
+        },
+        "job_run_id": {
+          "key": "job_run_id",
+          "content_type": "plugin_result/jenkins plugin/job_run_id",
+          "value_type": "string",
+          "value": "3e49eae8-9db4-424a-a9ae-7f66ee1fbbb6"
+        },
+        "instance_id": {
+          "key": "instance_id",
+          "content_type": "plugin_result/jenkins plugin/instance_id",
+          "value_type": "string",
+          "value": "fe6f7759-a843-4972-8472-eca83f8a5cd1"
+        },
+        "instance_name": {
+          "key": "instance_name",
+          "content_type": "plugin_result/jenkins plugin/instance_name",
+          "value_type": "string",
+          "value": "Jenkins Instance"
+        },
+        "parent_job_names": {
+          "key": "parent_job_names",
+          "content_type": "plugin_result/jenkins plugin/parent_job_names",
+          "value_type": "json_array",
+          "value": ["UIBuild"]
+        }
+      },
+      "state": "success",
+      "has_warnings": false,
+      "result": {
+        "data": {},
+        "output": {}
+      },
+      "state_changed_at": 1603927615673,
+      "created_at": 1603927314288
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

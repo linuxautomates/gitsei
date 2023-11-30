@@ -1,0 +1,31 @@
+@import "shared-resources/style/mixin.scss";
+
+.progress {
+  background-color: var(--grey5);
+  height: size();
+  margin-bottom: 0;
+  border-radius: 0.6rem;
+  min-width: 12rem;
+  box-shadow: none;
+}
+
+.progress-thin {
+  height: 2px;
+}
+
+.progress-bar,
+.progress-bar-primary {
+  background-color: $primary-color;
+}
+.progress-bar-info {
+  background-color: $info-color;
+}
+.progress-bar-success {
+  background-color: $success-color;
+}
+.progress-bar-warning {
+  background-color: $warning-color;
+}
+.progress-bar-danger {
+  background-color: $danger-color;
+}

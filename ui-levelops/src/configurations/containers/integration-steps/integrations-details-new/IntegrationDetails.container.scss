@@ -1,0 +1,100 @@
+.integration-details-modal-jira {
+  .ant-modal {
+    width: 80vw !important;
+
+    .integration-info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 3rem;
+      grid-row-gap: 2rem;
+    }
+  }
+}
+.full-width-dropdown {
+  width: fit-content !important;
+}
+
+.integration-details-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .integration-settings-content {
+    justify-content: flex-end;
+  }
+
+  &--title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #262626;
+  }
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .integration-row {
+    width: 100%;
+    padding: 1rem;
+
+    .integration-mappings {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .ant-select-selection {
+        width: 18rem;
+      }
+      .custom-mapping-table-container {
+        width: 100%;
+        max-height: 20rem;
+        overflow-y: scroll;
+      }
+    }
+
+    .add-custom-hygienes {
+      margin-top: 1rem;
+      padding: 0 1rem;
+    }
+
+    .no-mapping-text {
+      font-size: 12px;
+      display: block;
+      margin: 0.5rem;
+    }
+
+    .titleWithInfo {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      .info-icon {
+        margin-bottom: 0;
+      }
+    }
+
+    .add-icon {
+      padding: 0 10px 0 2px;
+    }
+
+    .add-repo-btn {
+      width: fit-content;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin: 1rem 0;
+      font-size: 14px;
+      color: #335ddd;
+    }
+
+    .add-repo-btn-disabled {
+      color: rgba(0, 0, 0, 0.25);
+      cursor: not-allowed;
+    }
+  }
+
+  .jenkins-integrations {
+    flex: 1 0 auto;
+    overflow: hidden;
+  }
+}

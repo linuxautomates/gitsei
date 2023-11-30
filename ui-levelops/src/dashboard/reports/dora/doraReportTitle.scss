@@ -1,0 +1,15 @@
+.doraReportTitle {
+  .nameContainer {
+    width: 275px;
+  }
+  .titleDoraClass {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .description-dora-icon {
+    margin: 4px 0 0 4px;
+  }
+  .doraTitleWidth {
+    width: calc(100% - 275px);
+  }
+}

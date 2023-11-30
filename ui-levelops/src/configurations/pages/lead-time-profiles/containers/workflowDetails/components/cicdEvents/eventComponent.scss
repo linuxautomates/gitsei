@@ -1,0 +1,109 @@
+.cicd-event-container {
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
+  .ant-card-body {
+    padding: 0;
+  }
+  .cicd-collapse {
+    border: none;
+    background-color: inherit;
+  }
+  .cicd-card:focus-within {
+    margin-right: 5px;
+    box-shadow: 3px 3px 5px #949494;
+  }
+  .event-dropdown {
+    width: 220px;
+  }
+  .filter-content {
+    padding: 8px;
+    .jobs-dropdown {
+      width: 50rem;
+    }
+    .add-event-parameter-btn {
+      margin: 0 2px;
+      border: none;
+      color: #8c8c8c;
+
+      &:hover {
+        color: #5b84eb;
+        cursor: pointer;
+      }
+    }
+    .checkbox-fields {
+      display: flex;
+      flex-direction: column;
+      .checkbox-margin-left {
+        margin-left: 8px !important;
+        margin-right: 8px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #404040;
+      }
+    }
+    .add-event-filter-btn {
+      float: right;
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      margin-right: 12px;
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+  }
+  .failed-deployment-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    color: #7e7e7e;
+    margin-top: 15px;
+  }
+  .parameter-job-nodata {
+    padding: 16px 26px;
+    height: 54px;
+    background: #fff9e7;
+    border-radius: 4px;
+    color: #0b0b0d;
+    .parameter-job-nodata-icon {
+      color: #f8ba02;
+      margin-right: 6px;
+    }
+  }
+  .cicd-definition {
+    padding-left: 20px;
+    .required:after {
+      content: " *";
+      color: red;
+    }
+    .ant-steps-item-icon {
+      border-color: #7e7e7e;
+      .ant-steps-icon {
+        color: #7e7e7e;
+      }
+    }
+    .error-text {
+      color: red;
+    }
+  }
+  .checkbox-required {
+    color: #ff7d59 !important;
+  }
+  .footer {
+    padding: 16px 24px;
+    gap: 8px;
+    height: 54px;
+    background: #eaf0fc;
+    border-radius: 4px;
+    .footer-icon {
+      color: #448ff7;
+    }
+  }
+}

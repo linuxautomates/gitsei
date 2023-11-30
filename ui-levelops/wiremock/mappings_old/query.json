@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/query"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": { "data": 123 },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

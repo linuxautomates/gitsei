@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/mappings/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "1",
+          "integration_type": "jira",
+          "integration_id": "2",
+          "stage_id": "13",
+          "mappings": {
+            "product": { "field_name": "project", "field_id": "1", "regex": "abc" },
+            "feature": { "field_name": "title", "field_id": "2", "regex": "abc" },
+            "sprint": { "field_name": "sprint", "field_id": "3", "regex": "abc" },
+            "release": { "field_name": "fix_version", "field_id": "4", "regex": "abc" }
+          }
+        },
+        {
+          "id": "2",
+          "integration_type": "github",
+          "integration_id": "21",
+          "stage_id": "14",
+          "mappings": {
+            "repos": [
+              { "repo_name": "company/repo1", "repo_id": "1" },
+              { "repo_name": "company/repo2", "repo_id": "2" }
+            ]
+          }
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

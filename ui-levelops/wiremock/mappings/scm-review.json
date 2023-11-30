@@ -1,0 +1,635 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/prs/collab_report"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "cdfd7a63-bd5e-43d1-b43a-8838f6b7d9ff",
+          "additional_key": "ctlo2020",
+          "count": 215,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 215
+            }
+          ]
+        },
+        {
+          "key": "81da63bd-4d69-4e35-9059-cc598706f0f7",
+          "additional_key": "maxime-levelops",
+          "count": 117,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 117
+            }
+          ]
+        },
+        {
+          "key": "44bbdf30-8030-41ff-98f1-c20de567b295",
+          "additional_key": "gershon-levelops",
+          "count": 58,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 58
+            }
+          ]
+        },
+        {
+          "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+          "additional_key": "thanh-levelops",
+          "count": 51,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "1b7dd8bd-d805-4bb0-813d-99e3e45de4cf",
+              "additional_key": "ivan-levelops",
+              "count": 23
+            },
+            {
+              "key": "3e6399c7-5b0f-4df8-90b8-ae59abda3f0d",
+              "additional_key": "madhav-devslane",
+              "count": 1
+            },
+            {
+              "additional_key": "mandar-levelops",
+              "count": 13
+            },
+            {
+              "key": "81da63bd-4d69-4e35-9059-cc598706f0f7",
+              "additional_key": "maxime-levelops",
+              "count": 17
+            },
+            {
+              "additional_key": "meghana-levelops",
+              "count": 2
+            },
+            {
+              "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+              "additional_key": "viraj-levelops",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+          "additional_key": "viraj-levelops",
+          "count": 48,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 48
+            }
+          ]
+        },
+        {
+          "key": "945c8fd2-ac7f-4da1-bd3a-ac58557fa400",
+          "additional_key": "shivam-devslane",
+          "count": 39,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 39
+            }
+          ]
+        },
+        {
+          "key": "c58889d1-9f73-4dbb-8288-a7c025d42700",
+          "additional_key": "ashish-levelops",
+          "count": 36,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 36
+            }
+          ]
+        },
+        {
+          "key": "bfde9bd8-1e44-4fc8-9c1b-6ce3ff1e599f",
+          "additional_key": "kush-prof",
+          "count": 34,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 34
+            }
+          ]
+        },
+        {
+          "key": "1b7dd8bd-d805-4bb0-813d-99e3e45de4cf",
+          "additional_key": "ivan-levelops",
+          "count": 33,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 33
+            }
+          ]
+        },
+        {
+          "key": "3e6399c7-5b0f-4df8-90b8-ae59abda3f0d",
+          "additional_key": "madhav-devslane",
+          "count": 32,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 32
+            }
+          ]
+        },
+        {
+          "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+          "additional_key": "viraj-levelops",
+          "count": 30,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "c58889d1-9f73-4dbb-8288-a7c025d42700",
+              "additional_key": "ashish-levelops",
+              "count": 3
+            },
+            {
+              "key": "cdfd7a63-bd5e-43d1-b43a-8838f6b7d9ff",
+              "additional_key": "ctlo2020",
+              "count": 4
+            },
+            {
+              "key": "1b7dd8bd-d805-4bb0-813d-99e3e45de4cf",
+              "additional_key": "ivan-levelops",
+              "count": 8
+            },
+            {
+              "key": "81da63bd-4d69-4e35-9059-cc598706f0f7",
+              "additional_key": "maxime-levelops",
+              "count": 16
+            },
+            {
+              "additional_key": "meghana-levelops",
+              "count": 1
+            },
+            {
+              "key": "fdff9dc5-4747-4a95-af8e-f3820f4efdac",
+              "additional_key": "siva-levelops",
+              "count": 4
+            },
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "key": "81da63bd-4d69-4e35-9059-cc598706f0f7",
+          "additional_key": "maxime-levelops",
+          "count": 25,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "1b7dd8bd-d805-4bb0-813d-99e3e45de4cf",
+              "additional_key": "ivan-levelops",
+              "count": 11
+            },
+            {
+              "additional_key": "mandar-levelops",
+              "count": 1
+            },
+            {
+              "additional_key": "meghana-levelops",
+              "count": 1
+            },
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 6
+            },
+            {
+              "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+              "additional_key": "viraj-levelops",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "key": "e6ca1260-204a-4fad-9751-12ec43003d11",
+          "additional_key": "piyushkantm",
+          "count": 20,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 20
+            }
+          ]
+        },
+        {
+          "key": "cdfd7a63-bd5e-43d1-b43a-8838f6b7d9ff",
+          "additional_key": "ctlo2020",
+          "count": 20,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "1b7dd8bd-d805-4bb0-813d-99e3e45de4cf",
+              "additional_key": "ivan-levelops",
+              "count": 9
+            },
+            {
+              "key": "81da63bd-4d69-4e35-9059-cc598706f0f7",
+              "additional_key": "maxime-levelops",
+              "count": 4
+            },
+            {
+              "key": "fdff9dc5-4747-4a95-af8e-f3820f4efdac",
+              "additional_key": "siva-levelops",
+              "count": 1
+            },
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 1
+            },
+            {
+              "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+              "additional_key": "viraj-levelops",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "key": "ee0fde5f-64a8-4793-8677-d9467b493fcb",
+          "additional_key": "ishan-devslane",
+          "count": 17,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 17
+            }
+          ]
+        },
+        {
+          "key": "156e0354-2afd-42e5-ac80-8097d3eef5f4",
+          "additional_key": "akashdeep-dl",
+          "count": 16,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 16
+            }
+          ]
+        },
+        {
+          "key": "1b7dd8bd-d805-4bb0-813d-99e3e45de4cf",
+          "additional_key": "ivan-levelops",
+          "count": 15,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "additional_key": "mandar-levelops",
+              "count": 2
+            },
+            {
+              "key": "81da63bd-4d69-4e35-9059-cc598706f0f7",
+              "additional_key": "maxime-levelops",
+              "count": 6
+            },
+            {
+              "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+              "additional_key": "thanh-levelops",
+              "count": 7
+            },
+            {
+              "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+              "additional_key": "viraj-levelops",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "key": "f63ca3cf-43f5-4c86-8ae2-e0a473f30a67",
+          "additional_key": "srinath.chandrashekhar",
+          "count": 11,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 11
+            }
+          ]
+        },
+        {
+          "key": "c5392fd7-0174-44aa-bb00-0e509a20a1ba",
+          "additional_key": "srinath.chandrashekhar",
+          "count": 10,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "key": "e63b519a-50f9-466c-9f6e-da195b2eda7c",
+          "additional_key": "srinath.chandrashekhar",
+          "count": 10,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "key": "c58889d1-9f73-4dbb-8288-a7c025d42700",
+          "additional_key": "ashish-levelops",
+          "count": 8,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "a3e98236-2a88-41e1-b7b6-541e22e5806d",
+              "additional_key": "viraj-levelops",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "key": "7d585693-718a-4d54-8707-e232325cf478",
+          "additional_key": "hemant-devslane",
+          "count": 6,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "key": "ee0fde5f-64a8-4793-8677-d9467b493fcb",
+          "additional_key": "ishan-devslane",
+          "count": 5,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "key": "9bfd675e-150b-438a-a61c-657d48135ec5",
+          "additional_key": "thanh-levelops",
+          "count": 5,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "key": "fdff9dc5-4747-4a95-af8e-f3820f4efdac",
+          "additional_key": "siva-levelops",
+          "count": 3,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "key": "25473344-5cb1-4e88-b0f1-26747a4618a8",
+          "additional_key": "vinaya",
+          "count": 3,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "key": "a95bc763-2136-4219-ba00-d5a8527ce344",
+          "additional_key": "Chaitanya5678",
+          "count": 2,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+              "additional_key": "askchaitanya2021",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "key": "945c8fd2-ac7f-4da1-bd3a-ac58557fa400",
+          "additional_key": "shivam-devslane",
+          "count": 2,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "key": "bfde9bd8-1e44-4fc8-9c1b-6ce3ff1e599f",
+          "additional_key": "kush-prof",
+          "count": 2,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "key": "20586f03-af6e-43da-a1bc-7bdec846c342",
+          "additional_key": "askchaitanya2021",
+          "count": 1,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "b24b691d-5df8-48f1-b3ca-d21b3d6a2979",
+              "additional_key": "Chaitanya5678",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "key": "a95bc763-2136-4219-ba00-d5a8527ce344",
+          "additional_key": "Chaitanya5678",
+          "count": 1,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "key": "d6de913a-3e2f-434b-9931-a98521b0656c",
+          "additional_key": "gch71",
+          "count": 1,
+          "collab_state": "unapproved",
+          "stacks": [
+            {
+              "key": "NONE",
+              "additional_key": "NONE",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+          "additional_key": "askchaitanya2021",
+          "count": 1,
+          "collab_state": "unassigned-peer-approved",
+          "stacks": [
+            {
+              "key": "a95bc763-2136-4219-ba00-d5a8527ce344",
+              "additional_key": "Chaitanya5678",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+          "additional_key": "askchaitanya2021",
+          "count": 15,
+          "collab_state": "self-approved",
+          "stacks": [
+            {
+              "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+              "additional_key": "askchaitanya2021",
+              "count": 15
+            }
+          ]
+        },
+        {
+          "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+          "additional_key": "askchaitanya2021",
+          "count": 20,
+          "collab_state": "assigned-peer-approved",
+          "stacks": [
+            {
+              "key": "a95bc763-2136-4219-ba00-d5a8527ce344",
+              "additional_key": "Chaitanya5678",
+              "count": 20
+            }
+          ]
+        },
+        {
+          "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+          "additional_key": "askchaitanya2021",
+          "count": 2,
+          "collab_state": "self-approved-with-review",
+          "stacks": [
+            {
+              "key": "a4a7999b-98bf-47e9-96cb-f0e0a02cf9a1",
+              "additional_key": "askchaitanya2021",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "key": "a4a7999b-98bf-499347e9-96cb-f0e0a02cf9a1",
+          "additional_key": "kushTest1",
+          "count": 3,
+          "collab_state": "assigned-peer-approved",
+          "stacks": [
+            {
+              "key": "a95bc763-2136-4219-ba00-d5a8527ce344",
+              "additional_key": "Chaitanya5678",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "key": "a4a7999544b-98bf-47e9-96cb-f0e0a02cf9a1",
+          "additional_key": "kushTest2",
+          "count": 3,
+          "collab_state": "self-approved",
+          "stacks": [
+            {
+              "key": "a4a7999544b-98bf-47e9-96cb-f0e0a02cf9a1",
+              "additional_key": "kushTest2",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "key": "a4a7999544b-98bf-47e9-96cb-f0e0a02cf9a13",
+          "additional_key": "kushTest3",
+          "count": 3,
+          "collab_state": "self-approved",
+          "stacks": [
+            {
+              "key": "a4a7999544b-98bf-47e9-96cb-f0e0a02cf9a13",
+              "additional_key": "kushTest3",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "count": 33,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 33
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

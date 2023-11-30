@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/fileupload/tickets/(.*)"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": "123456"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/playbooks/runs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "id": "1",
+          "runbook_id": "1",
+          "trigger_type": "manual",
+          "args": {},
+          "state": "running",
+          "state_changed_at": 1584482556,
+          "created_at": 1584482556
+        },
+        {
+          "id": "2",
+          "runbook_id": "1",
+          "trigger_type": "manual",
+          "args": {},
+          "state": "success",
+          "state_changed_at": 1584482556,
+          "created_at": 1584482556
+        },
+        {
+          "id": "3",
+          "runbook_id": "2",
+          "trigger_type": "manual",
+          "args": {},
+          "state": "failure",
+          "state_changed_at": 1584482556,
+          "created_at": 1584482556
+        },
+        {
+          "id": "4",
+          "runbook_id": "2",
+          "trigger_type": "manual",
+          "args": {},
+          "state": "running",
+          "state_changed_at": 1584482556,
+          "created_at": 1584482556
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

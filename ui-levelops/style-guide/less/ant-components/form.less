@@ -1,0 +1,49 @@
+.ant-form {
+  &-item-label {
+    text-transform: capitalize;
+    font-weight: 400;
+    & > label {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: @form-label;
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+  &-item-no-colon {
+    font-weight: 500;
+  }
+  &-vertical {
+    .ant-form-item-required {
+      line-height: inherit;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      &::before {
+        color: red;
+      }
+    }
+    .ant-form-item-label {
+      padding-bottom: 0;
+    }
+    .ant-form-item {
+      padding-bottom: 0;
+      margin-bottom: 12px;
+    }
+    .ant-divider {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &-explain,
+  &-extra {
+    font-size: 12px;
+  }
+  &-item-control.has-success {
+    .ant-form-explain,
+    .ant-form-extra {
+      color: @green-6;
+    }
+  }
+}

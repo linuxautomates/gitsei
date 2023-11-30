@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/fileupload/quiz/(.*)/assertion/(.*)/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "LevelOps.pdf",
+    "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "content-type": "application/octet-stream",
+      "Content-Disposition": "attachment; filename=levelops.pdf"
+    }
+  }
+}

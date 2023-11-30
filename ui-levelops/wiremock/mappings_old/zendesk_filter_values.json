@@ -1,0 +1,76 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/zendesk_tickets/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "records": [
+        {
+          "status": [
+            {
+              "key": "NEW",
+              "total_tickets": 24
+            },
+            {
+              "key": "OPEN",
+              "total_tickets": 18
+            },
+            {
+              "key": "SOLVED",
+              "total_tickets": 3
+            },
+            {
+              "key": "CLOSED",
+              "total_tickets": 1
+            }
+          ]
+        },
+        {
+          "type": [
+            {
+              "key": "NOT-SET",
+              "total_tickets": 34
+            },
+            {
+              "key": "TASK",
+              "total_tickets": 10
+            },
+            {
+              "key": "INCIDENT",
+              "total_tickets": 2
+            }
+          ]
+        },
+        {
+          "assignee": [
+            {
+              "key": "NOT-SET",
+              "total_tickets": 27
+            },
+            {
+              "key": "srinath@cognitree.com",
+              "total_tickets": 18
+            },
+            {
+              "key": "harsh@levelops.io",
+              "total_tickets": 1
+            }
+          ]
+        }
+      ],
+      "count": 2,
+      "_metadata": {
+        "page_size": 2,
+        "page": 0,
+        "next_page": 1,
+        "has_next": true
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

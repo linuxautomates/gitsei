@@ -1,0 +1,56 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/playbooks/reports/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "id": "id of report",
+          "runbook_id": "1",
+          "run_id": "specific run that generated the report",
+          "created_at": 1588848290390
+        },
+        {
+          "id": "id of report",
+          "runbook_id": "2",
+          "run_id": "specific run that generated the report",
+          "created_at": 1588848290390
+        },
+        {
+          "id": "id of report",
+          "runbook_id": "1",
+          "run_id": "specific run that generated the report",
+          "created_at": 1588848290390
+        },
+        {
+          "id": "id of report",
+          "runbook_id": "1",
+          "run_id": "specific run that generated the report",
+          "created_at": 1588848290390
+        },
+        {
+          "id": "id of report",
+          "runbook_id": "1",
+          "run_id": "specific run that generated the report",
+          "created_at": 1588848290390
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

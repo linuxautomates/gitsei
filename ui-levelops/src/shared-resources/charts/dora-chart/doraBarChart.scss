@@ -1,0 +1,30 @@
+.dora-bar-chart {
+  .bar-chart {
+    height: 17.3rem;
+    margin: 10px 0;
+  }
+  .interval-buttons {
+    float: right;
+    margin-top: 10px;
+    .ant-radio-button-wrapper {
+      background-color: #ffffff;
+      color: #404040;
+    }
+    .ant-radio-button-wrapper-disabled{
+      background-color: #f3f4f7 !important;
+      color: #b3b6bf !important;
+    }
+    .ant-radio-button-wrapper-checked {
+      border: 1px solid #335ddd;
+      color: #335ddd !important;
+      z-index: inherit;
+    }
+    .ant-radio-button-wrapper-checked:hover{
+      color: #404040;
+    }
+    .filter-dropdown{
+      margin-right: 40px;
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/questionnaires/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "bd96de83-3998-4a2f-b831-4375aa1aef6b",
+          "questionnaire_template_id": "46825336-fe29-4d6d-a474-e13473a00b56",
+          "work_item_id": "505139ec-ade0-49f6-b7af-c1d8948ef413",
+          "questionnaire_template_name": "API Data Privacy",
+          "policy_name": "New API Requirements",
+          "answered_questions": 3,
+          "total_questions": 5,
+          "priority": "HIGH",
+          "target_email": "janedoe@bigwork.io",
+          "bucket_name": "levelops-uploads",
+          "bucket_path": "/foo/questionnaires/bd96de83-3998-4a2f-b831-4375aa1aef6b/answers/754e9a55-eb65-4966-9e6c-60de95e39647.json",
+          "updated_at": 1572540572,
+          "created_at": 1572540572,
+          "tag_ids": ["2", "3"],
+          "product_id": "1"
+        },
+        {
+          "id": "abcdd608-16f9-42e8-b653-3e79af858ac5",
+          "questionnaire_template_id": "46825336-fe29-4d6d-a474-e13473a00b56",
+          "work_item_id": "505139ec-ade0-49f6-b7af-c1d8948ef413",
+          "questionnaire_template_name": "API Security",
+          "policy_name": "New API Requirements",
+          "answered_questions": 2,
+          "total_questions": 2,
+          "target_email": "johndoe@bigwork.io",
+          "priority": "LOW",
+          "bucket_name": "levelops-uploads",
+          "bucket_path": "/foo/questionnaires/abcdd608-16f9-42e8-b653-3e79af858ac5/answers/2ed0b91c-f9b6-4c7f-866a-fbd92b32749c.json",
+          "updated_at": 1572540591,
+          "created_at": 1572540591,
+          "product_id": "2"
+        }
+      ],
+      "_metadata": { "page_size": 100, "page": 0, "total_count": 2 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

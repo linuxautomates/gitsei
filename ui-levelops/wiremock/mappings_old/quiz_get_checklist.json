@@ -1,0 +1,449 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/questionnaires/checklist"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "sender_email": "harsh@levelops.io",
+      "target_email": "meghana@levelops.io",
+      "assignment_message": "Please fill out privacy sections for MongoDB CIS Checklist available at https://app.levelops.io/#/admin/answer-questionnaire-page?questionnaire=c487de79-49c9-4920-bb65-3e9fc5c33dcc&tenant=foo being sent to you by harsh@levelops.io\n\n\n",
+      "artifact": "",
+      "work_item_id": "b8233c8a-d15f-43ce-b16e-3a8f54ecc015",
+      "id": "c487de79-49c9-4920-bb65-3e9fc5c33dcc",
+      "qtemplate_id": "a6f05665-4d7a-48fc-8387-8eae0b177052",
+      "qtemplate_name": "MongoDB CIS Checklist",
+      "completed": false,
+      "current_score": 0,
+      "priority": "UNKNOWN",
+      "total_questions": 23,
+      "answered_questions": 0,
+      "total_score": 0,
+      "updated_at": 1575138619,
+      "sections": [
+        {
+          "tags": ["26"],
+          "id": "1f9a338d-13cb-454e-be5d-15b4c9bb307e",
+          "name": "MongoDB CIS Authentication Checklist",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS Authentication Checklist",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "825e32e9-f748-46da-9024-66635d78e96c",
+              "name": "Ensure that authentication is enabled for MongoDB databases",
+              "severity": "MEDIUM",
+              "section_id": "1f9a338d-13cb-454e-be5d-15b4c9bb307e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 5
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "7cab187f-89fa-47d7-9c26-a7938e128fe4",
+              "name": "Ensure an industry standard authentication mechanism is used",
+              "severity": "MEDIUM",
+              "section_id": "1f9a338d-13cb-454e-be5d-15b4c9bb307e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "15b8c7aa-9426-4712-9fb8-6421f63981d4",
+              "name": "Ensure authentication is enabled in the sharded cluster",
+              "severity": "MEDIUM",
+              "section_id": "1f9a338d-13cb-454e-be5d-15b4c9bb307e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "103bc313-9aab-4950-99f1-139c698f8b89",
+              "name": "Ensure that MongoDB does not bypass authentication via the localhost exception",
+              "severity": "MEDIUM",
+              "section_id": "1f9a338d-13cb-454e-be5d-15b4c9bb307e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138183
+        },
+        {
+          "tags": ["26"],
+          "id": "35341b13-560c-4afc-8eb1-bdb68d690886",
+          "name": "MongoDB CIS Data Encryption",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS Data Encryption",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "f957f0a5-5f0f-42e4-beae-19aec653bad4",
+              "name": "Ensure Federal Information Processing Standard (FIPS) is enabled ",
+              "severity": "MEDIUM",
+              "section_id": "35341b13-560c-4afc-8eb1-bdb68d690886",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 1
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "b8fab5a9-4d15-4095-b4a3-f9cf7c31cf61",
+              "name": "Ensure TLS or SSL protects all network communications",
+              "severity": "MEDIUM",
+              "section_id": "35341b13-560c-4afc-8eb1-bdb68d690886",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138312
+        },
+        {
+          "tags": ["26"],
+          "id": "464a49c5-742f-46a3-b34c-cd25dd575b1e",
+          "name": "MongoDB CIS OS Hardening",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS OS Hardening",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "3a416313-b01d-419c-9148-4ed8cfcf12b5",
+              "name": "Ensure that MongoDB uses a non-default port",
+              "severity": "MEDIUM",
+              "section_id": "464a49c5-742f-46a3-b34c-cd25dd575b1e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "d829976b-f166-4a89-a722-41271d44f2a1",
+              "name": "Ensure that operating system resource limits are set for MongoDB",
+              "severity": "MEDIUM",
+              "section_id": "464a49c5-742f-46a3-b34c-cd25dd575b1e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "e8608076-f91b-4030-b8cd-e042f8e9a7f5",
+              "name": "Ensure that server-side scripting is disabled if not needed",
+              "severity": "MEDIUM",
+              "section_id": "464a49c5-742f-46a3-b34c-cd25dd575b1e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "f59c803f-788d-48bf-b209-ba5750ebcf18",
+              "name": "Mongodb Database Running with Least Privileges",
+              "severity": "MEDIUM",
+              "section_id": "464a49c5-742f-46a3-b34c-cd25dd575b1e",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138448
+        },
+        {
+          "tags": ["26"],
+          "id": "8b2304be-4fae-40b5-84da-18713e8f7ecd",
+          "name": "MongoDB CIS Installation & Patching Checklist",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS Installation & Patching Checklist",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "0f091008-4e8e-4a68-9e28-3f0e6c67db60",
+              "name": "Ensure the appropriate/ latest MongoDB software version/patches are installed",
+              "severity": "MEDIUM",
+              "section_id": "8b2304be-4fae-40b5-84da-18713e8f7ecd",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 5
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138037
+        },
+        {
+          "tags": ["26"],
+          "id": "9d5d18a6-3214-4a61-9c6e-499196a5bfb1",
+          "name": "MongoDB CIS File Permissions",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS File Permissions",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "136fd7ab-6ead-4c33-9e7e-560935445a5d",
+              "name": "Ensure that key file permissions are set correctly ( 600 )",
+              "severity": "MEDIUM",
+              "section_id": "9d5d18a6-3214-4a61-9c6e-499196a5bfb1",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "0155b851-4151-4f50-9138-2c32c81a9c7f",
+              "name": "Ensure that database file permissions are set correctly (660)",
+              "severity": "MEDIUM",
+              "section_id": "9d5d18a6-3214-4a61-9c6e-499196a5bfb1",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138513
+        },
+        {
+          "tags": ["26"],
+          "id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+          "name": "MongoDB CIS Access Control",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS Access Control",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "a17f8c97-3134-434c-8830-3ffb846cd646",
+              "name": "Ensure that MongoDB is run using a non-privileged, dedicated service account",
+              "severity": "MEDIUM",
+              "section_id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "b532e512-a95a-4c1c-948c-8145aea0b9ce",
+              "name": "Ensure that MongoDB only listens for network connections on authorized interfaces ",
+              "severity": "MEDIUM",
+              "section_id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "ed8bfba9-7c8f-4910-9912-ad29d8c08d66",
+              "name": "Ensure that role-based access control is enabled and configured appropriately ",
+              "severity": "MEDIUM",
+              "section_id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "1b8c1eef-5b74-4951-be34-cd8340f4efed",
+              "name": "Ensure that each role for each MongoDB database is needed and grants only the necessary privileges",
+              "severity": "MEDIUM",
+              "section_id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "330e4879-80b1-45d7-9758-7c620e0bbc11",
+              "name": "Review User-Defined Roles",
+              "severity": "MEDIUM",
+              "section_id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "3a90a2bf-43d8-4fc5-9c7e-b3f18141cf99",
+              "name": "Review Superuser/Admin Roles",
+              "severity": "MEDIUM",
+              "section_id": "ba917fa3-cb71-4a14-abc8-3e5982646e63",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138264
+        },
+        {
+          "tags": ["26"],
+          "id": "c2c7a978-85ac-43c9-9b63-042e9c6287f2",
+          "name": "MongoDB CIS Auditing",
+          "type": "CHECKLIST",
+          "description": "MongoDB CIS Auditing",
+          "questions": [
+            {
+              "verifiable": true,
+              "id": "d2fcc12d-368a-4e37-b2f6-d561a2236584",
+              "name": "Ensure that audit filters are configured properly ",
+              "severity": "MEDIUM",
+              "section_id": "c2c7a978-85ac-43c9-9b63-042e9c6287f2",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "2fc2dd5d-e853-4057-bfa1-068e4e4516c7",
+              "name": "Ensure that system activity is audited",
+              "severity": "MEDIUM",
+              "section_id": "c2c7a978-85ac-43c9-9b63-042e9c6287f2",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "3ef46ac5-6b26-44e6-b78c-e42fe3ec02f0",
+              "name": "Ensure that logging captures as much information as possible",
+              "severity": "MEDIUM",
+              "section_id": "c2c7a978-85ac-43c9-9b63-042e9c6287f2",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            },
+            {
+              "verifiable": true,
+              "id": "b2c29217-a960-4309-b21d-44327847f0c3",
+              "name": "Ensure that new entries are appended to the end of the log file ( logging is persistent )",
+              "severity": "MEDIUM",
+              "section_id": "c2c7a978-85ac-43c9-9b63-042e9c6287f2",
+              "type": "checklist",
+              "options": [
+                {
+                  "value": "",
+                  "score": 3
+                }
+              ],
+              "verification_mode": "MANUAL"
+            }
+          ],
+          "created_at": 1575138375
+        }
+      ],
+      "section_responses": [],
+      "message_sent": false
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

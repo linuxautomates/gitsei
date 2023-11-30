@@ -1,0 +1,71 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_issues/story_point_report",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"filter\":{\"product_id\":\"772\",\"integration_ids\":[\"1430\",\"1446\",\"1597\",\"1598\",\"1723\"],\"epics\":[\"LFE-2797\",\"LFE-2748\",\"LEV-4996\",\"LEV-4995\",\"LEV-4994\",\"LEV-4884\",\"LFE-2567\",\"LFE-2488\",\"ITOPS-320\",\"LEV-4791\",\"LFE-2404\",\"LFE-2329\",\"LEV-4649\",\"LEV-4641\",\"LFE-2281\",\"LEV-4573\",\"LEV-4541\",\"LEV-4479\",\"LEV-4384\",\"LEV-4380\",\"POC-12\",\"POC-10\",\"POC-8\",\"POC-6\",\"POC-1\",\"LEV-4329\",\"LFE-1910\",\"UXD-134\",\"LFE-1895\",\"LFE-1894\",\"LFE-1893\",\"LFE-1831\",\"LEV-4178\",\"UXD-122\",\"UXD-121\",\"LFE-1762\",\"LEV-4139\",\"LEV-4071\",\"LEV-3945\",\"LEV-3933\",\"LFE-1533\",\"LEV-3866\",\"LEV-3845\",\"LEV-3842\",\"LFE-1478\",\"LFE-1472\",\"LEV-3801\",\"LEV-3635\",\"LEV-3630\",\"LEV-3550\",\"LEV-3494\",\"LEV-3493\",\"LEV-3471\",\"LEV-3427\",\"LEV-3419\",\"LEV-3375\",\"CGN-135\",\"LEV-3357\",\"LEV-3350\",\"LEV-3334\",\"QUAL-178\",\"LEV-3256\",\"LEV-3249\",\"LEV-3237\",\"LFE-1071\",\"LEV-3212\",\"LEV-3209\",\"LEV-3162\",\"LEV-3160\",\"LEV-3153\",\"LEV-3150\",\"LEV-3133\",\"LEV-3073\",\"LEV-3070\",\"LEV-3060\",\"LEV-3003\",\"LEV-2998\",\"MER-3\",\"LEV-2961\",\"LEV-2957\",\"JAN-57\",\"LEV-2925\",\"JAN-52\",\"AUTO-9\",\"LEV-2844\",\"LEV-2843\",\"LEV-2837\",\"LEV-2822\",\"LEV-2800\",\"LEV-2789\",\"LEV-2776\",\"LEV-2765\",\"LEV-2729\",\"LEV-2706\",\"LEV-2702\",\"QUAL-96\",\"LEV-2668\",\"LEV-2635\",\"LEV-2555\",\"LEV-2539\",\"LEV-2526\",\"LEV-2416\",\"LEV-2348\",\"LFE-317\",\"LEV-2285\",\"LEV-2274\",\"LEV-2252\",\"LEV-2230\",\"LEV-2129\",\"LEV-2115\",\"LEV-2001\",\"LEV-1764\",\"LEV-1687\",\"LEV-642\",\"TEST1-7\",\"LEV-26\"],\"status_categories\":[\"Done\"]},\"across\":\"epic\",\"ou_ids\":[\"116\"],\"ou_user_filter_designation\":{\"sprint\":[\"customfield_10020\"]}}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 502,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "EPIC NAME 1",
+          "story_points": 100,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 2",
+          "story_points": 62,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 3",
+          "story_points": 50,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 4",
+          "story_points": 100,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 5",
+          "story_points": 100,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 6",
+          "story_points": 92,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 7",
+          "story_points": 100,
+          "unestimated_tickets": 10
+        },
+        {
+          "key": "EPIC NAME 8",
+          "story_points": 97,
+          "unestimated_tickets": 10
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

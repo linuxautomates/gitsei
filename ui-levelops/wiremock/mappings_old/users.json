@@ -1,0 +1,57 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/users/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 10
+      },
+      "count": 10,
+      "records": [
+        { "id": "3", "first_name": "Meghu", "last_name": "D", "email": "meghana@levelops.io", "user_type": "ADMIN" },
+        { "id": 2, "first_name": "Harsh", "last_name": "J", "email": "harsh@levelops.io", "user_type": "ADMIN" },
+        { "id": 3, "first_name": "Ivan", "last_name": "L", "email": "ivan@levelops.io", "user_type": "ADMIN" },
+        { "id": "10", "first_name": "Maxime", "last_name": "B", "email": "maxime@levelops.io", "user_type": "ADMIN" },
+        { "id": 5, "first_name": "Nishant", "last_name": "D", "email": "nishant@levelops.io", "user_type": "ADMIN" },
+        {
+          "id": 6,
+          "first_name": "Albert",
+          "last_name": "Einstien",
+          "email": "albert@levelops.io",
+          "user_type": "LIMITED_USER"
+        },
+        {
+          "id": 7,
+          "first_name": "Marie",
+          "last_name": "Curie",
+          "email": "marie@levelops.io",
+          "user_type": "LIMITED_USER"
+        },
+        {
+          "id": 8,
+          "first_name": "Ruth Bader",
+          "last_name": "Ginsberg",
+          "email": "ruth@levelops.io",
+          "user_type": "ADMIN"
+        },
+        {
+          "id": 9,
+          "first_name": "Shakuntala",
+          "last_name": "Narsimhan",
+          "email": "shakuntala@levelops.io",
+          "user_type": "ADMIN"
+        },
+        { "id": 10, "first_name": "Ada", "last_name": "Lovelace", "email": "ada@levelops.io", "user_type": "ADMIN" }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

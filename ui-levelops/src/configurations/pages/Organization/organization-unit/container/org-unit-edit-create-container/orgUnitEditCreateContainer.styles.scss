@@ -1,0 +1,191 @@
+$tab-background: #eaf0fc;
+$background-color: #fafafa;
+$field-size: 24rem;
+$small-field-size: 16.5rem;
+$medium-field-size: 20rem;
+
+.org-unit-edit-create-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .enable-events {
+    pointer-events: all;
+  }
+  .disable-events {
+    pointer-events: none;
+  }
+  .tabs {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    border-right: 1px solid var(--border-color);
+    .tab {
+      width: 100%;
+      height: 4rem;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: left;
+      text-transform: uppercase;
+      padding: 1.25rem 1rem 0.5rem 1rem;
+    }
+    .active-tab {
+      background-color: $tab-background;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+    &.new-trelis {
+      background-color: #fff;
+      .content {
+          background-color: #fff;
+        }
+      .org-unit-configuration-container {
+        background-color: #fff;
+        width: 95%;
+      }
+      .ou-integration-section {
+        .integration-add-action {
+          background-color: #fff;
+        }
+      }
+    }
+
+    .org-unit-basic-info-container {
+      padding: 1rem 2rem 2rem 2rem;
+
+      .basic-info-content-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .admins-form-item {
+          .ant-form-item-label {
+            padding-bottom: 2rem;
+          }
+        }
+        .admins-tag-container {
+          border-bottom: 1px solid var(--input-border);
+          .admin-tag {
+            background-color: rgb(198, 211, 251);
+          }
+        }
+        .ant-input {
+          width: $field-size;
+        }
+        .ant-form-item {
+          margin-right: 2rem;
+          width: $field-size;
+          .ant-form-item-label > label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 22px;
+            text-align: right;
+            color: var(--title);
+          }
+        }
+        .ant-select-selection {
+          width: $field-size;
+        }
+        .ant-form-item-required::before {
+          display: none;
+        }
+        .ant-form-item-required::after {
+          display: inline-block;
+          margin-right: 4px;
+          color: #ff7d59;
+          font-size: 14px;
+          font-family: SimSun, sans-serif;
+          line-height: 1;
+          content: "*";
+        }
+      }
+    }
+    &.new-trelis {
+      .org-unit-basic-info-container {
+        padding: 1rem 3.5rem;
+        .basic-info-content-container {
+          justify-content: flex-start;
+        }
+      }
+      .ou-dashboard-configuration-container {
+        padding: 1rem 3.5rem;
+        width: 95%;
+        overflow-y: scroll;
+          height: calc(100vh - 10rem);
+      }
+      .org-unit-configuration-container {
+        padding: 1rem 3.5rem;
+      }
+    }
+    .org-unit-configuration-container {
+      margin-top: 1rem;
+      padding: 0rem 2rem 2rem 2rem;
+      width: 100%;
+      height: 100%;
+      .header {
+        display: flex;
+        justify-content: flex-end;
+        .action-button {
+          display: flex;
+          &-cancel {
+            margin-right: 0.75rem;
+          }
+        }
+      }
+
+      .content {
+        margin-top: 2rem;
+        height: 100%;
+      }
+    }
+  }
+
+  .user-warning {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    &.m-t-10 {
+        margin-top: 10rem;
+      }
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1498px) {
+  .org-unit-edit-create-container {
+    .org-unit-basic-info-container {
+      .basic-info-content-container {
+        .ant-input {
+          width: $small-field-size !important;
+        }
+        .ant-form-item {
+          width: $small-field-size !important;
+        }
+        .ant-select-selection {
+          width: $small-field-size !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1499px) and (max-width: 1728px) {
+  .org-unit-edit-create-container {
+    .org-unit-basic-info-container {
+      .basic-info-content-container {
+        .ant-input {
+          width: $medium-field-size !important;
+        }
+        .ant-form-item {
+          width: $medium-field-size !important;
+        }
+        .ant-select-selection {
+          width: $medium-field-size !important;
+        }
+      }
+    }
+  }
+}

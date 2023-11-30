@@ -1,0 +1,27 @@
+$textColor: #2d3e5e;
+
+.custom-tooltip {
+  background-color: white;
+  border: solid 1px lightgrey;
+  & p {
+    color: $textColor;
+    padding: 4px 8px;
+    margin: 0px;
+    background-color: ghostwhite;
+  }
+  & ul {
+    color: $textColor;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding: 5px 20px;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+}
+
+.bar-chart-modal {
+  .ant-modal {
+    width: 850px !important;
+  }
+}

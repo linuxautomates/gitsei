@@ -1,0 +1,102 @@
+@import "shared-resources/style/mixin.scss";
+
+//body {
+//  background-color: #ddd;
+//}
+
+/*Style main div and remove default checkbox*/
+
+.switch {
+  position: relative;
+  width: 75px;
+  //margin: 3px auto;
+  margin: 5px;
+  border-width: 10px;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+/*Style words and oval switch */
+
+.switch-labels {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+.switch-text {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.switch-text:before,
+.switch-text:after {
+  float: left;
+  width: 50%;
+  line-height: 33px;
+  color: var(--levelops-white);
+  box-sizing: border-box;
+}
+
+.switch-text:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: var(--primary-orange);
+  color: #000000;
+}
+
+.switch-text:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: var(--grey3);
+  color: var(--levelops-white);
+  text-align: right;
+}
+
+/*Style center dot*/
+
+.switch-dot {
+  width: 30px;
+  height: 30px;
+  background: var(--levelops-white);
+  border-color: var(--primary-orange);
+  border-width: 10px;
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  //right: 41px;
+  right: 38px;
+  margin-right: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+  box-shadow: var(--primary-orange);
+}
+
+.switch-dot:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin: 5px 0 0 5px;
+  border-color: var(--grey3);
+  border-width: 10px;
+  box-shadow: var(--grey3);
+}
+
+/*State changer*/
+
+.switch-checkbox:checked + .switch-labels .switch-text {
+  margin-left: 0;
+}
+
+.switch-checkbox:checked + .switch-labels .switch-dot {
+  right: 2px;
+  margin-right: 0px;
+}

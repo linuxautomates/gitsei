@@ -1,0 +1,39 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/ticket_categorization_schemes/(0-9)*"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "0",
+      "default_scheme": true,
+      "name": "System Categorization Scheme",
+      "description": "description text (not searchable)",
+      "config": {
+        "categories": {
+          "0": {
+            "id": "0",
+            "index": 1,
+            "name": "Roadmap",
+            "description": "description text",
+            "filter": {}
+          },
+          "1": {
+            "id": "1",
+            "index": 2,
+            "name": "Support",
+            "description": "description text",
+            "filter": {}
+          }
+        }
+      },
+      "created_at": 1616954286,
+      "updated_at": 1616954286
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

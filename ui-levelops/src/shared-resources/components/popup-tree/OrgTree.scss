@@ -1,0 +1,23 @@
+.org-tree-container {
+  display: flex;
+  .edit-icon {
+    display: flex;
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+    color: var(--harness-blue);
+    align-items: end;
+  }
+  .org-tree {
+    display: flex;
+    flex-direction: row-reverse;
+    .ant-select-selection--multiple {
+      width: 100%;
+    }
+  }
+  .ant-select-dropdown--multiple {
+    max-height: 300px !important;
+    overflow-y: scroll;
+  }
+}

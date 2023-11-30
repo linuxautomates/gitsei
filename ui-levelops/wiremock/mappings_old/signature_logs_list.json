@@ -1,0 +1,86 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/signature_logs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "id": "1",
+          "success": true,
+          "timestamp": 1572345209,
+          "product_id": "1",
+          "signature_id": "44",
+          "workflow_id": "1",
+          "release_id": "1",
+          "integration_type": "jira",
+          "severity": "high",
+          "labels": ["db_isolation_tool", "us-east-1", "rel-123"]
+        },
+        {
+          "id": "2",
+          "success": true,
+          "timestamp": 1572345209,
+          "product_id": "1",
+          "signature_id": "46",
+          "workflow_id": "2",
+          "release_id": "1",
+          "severity": "low",
+          "integration_type": "github",
+          "labels": ["db_isolation_tool", "us-east-1", "rel-123"]
+        },
+        {
+          "id": "3",
+          "success": true,
+          "timestamp": 1572345209,
+          "product_id": "1",
+          "signature_id": "50",
+          "workflow_id": "2",
+          "release_id": "1",
+          "integration_type": "synk",
+          "severity": "high",
+          "labels": ["db_isolation_tool", "us-east-1", "rel-123"]
+        },
+        {
+          "id": "4",
+          "success": false,
+          "timestamp": 1572345209,
+          "product_id": "1",
+          "signature_id": "48",
+          "workflow_id": "1",
+          "release_id": "1",
+          "integration_type": "jenkins",
+          "severity": "medium",
+          "labels": ["db_isolation_tool", "us-east-1", "rel-123"]
+        },
+        {
+          "id": "5",
+          "success": true,
+          "timestamp": 1572345209,
+          "product_id": "1",
+          "signature_id": "30",
+          "workflow_id": "1",
+          "release_id": "1",
+          "integration_type": "github",
+          "severity": "medium",
+          "labels": ["db_isolation_tool", "us-east-1", "rel-123"]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

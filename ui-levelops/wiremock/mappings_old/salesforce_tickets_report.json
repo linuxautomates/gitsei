@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/salesforce_cases/tickets_report"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Levelops",
+          "total_cases": 46
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

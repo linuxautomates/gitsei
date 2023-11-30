@@ -1,0 +1,35 @@
+.ou-dashboard-configuration-container {
+  padding: 1rem;
+  .description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: var(--text-secondary-color);
+    margin-bottom: 1rem;
+  }
+  .ou-dashboard-association-table {
+    width: 32rem;
+    height: 49rem;
+    .search-box {
+      .ant-input-prefix {
+        color: var(--grey4);
+      }
+      .ant-input {
+        border-bottom: none;
+      }
+      border: 1px solid var(--grey5) !important;
+    }
+
+    .org-dashboard-row-hover-actions {
+      display: none;
+    }
+    .ant-table-row:hover {
+      .org-dashboard-row-hover-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

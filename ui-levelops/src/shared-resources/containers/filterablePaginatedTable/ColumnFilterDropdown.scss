@@ -1,0 +1,27 @@
+.column-filter-dropdown {
+  width: 22rem;
+  padding: 10px;
+  .sections {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    .header-color {
+      color: #7e7e7e;
+    }
+    .input-width {
+      width: 10rem;
+      background-color: white;
+    }
+    .sort-input-div {
+      height: 30px;
+      padding: 6px;
+      cursor: pointer;
+    }
+    .selected {
+      background-color: #eaf0fc;
+    }
+  }
+  .m-b10 {
+    margin-bottom: 10px;
+  }
+}

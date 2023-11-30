@@ -1,0 +1,76 @@
+.ant-list-item-smart-ticket {
+  background-color: var(--levelops-white);
+  border: 1px solid var(--border-color) !important;
+  //border-bottom: 1px solid var(--border-color) !important;
+  border-radius: 4px;
+  padding: 10px;
+  & + .ant-list-item-smart-ticket {
+    margin-top: 10px;
+  }
+  .ticket-name {
+    line-height: 1.2;
+    color: #2b3f62;
+  }
+  .ticket-name.ticket-name {
+    margin-bottom: 40px;
+  }
+  .ant-badge-status-text {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+
+  &.selected {
+    border: 2px solid #3264d6 !important;
+    background-color: #e8effc;
+
+    .ticket-name {
+      color: #84a4e7;
+    }
+  }
+
+  //.f-12:hover {
+  //  z-index: 1000 !important;
+  //  transform: translateY(-4px);
+  //  cursor: pointer;
+  //}
+  //
+  //.avatar-group-ternary {
+  //  position: relative;
+  //  display: contents;
+  //
+  //  .f-12:nth-child(1) {
+  //    position: absolute;
+  //    z-index: 1;
+  //    right: 2.9em;
+  //  }
+  //
+  //  .f-12:nth-child(2) {
+  //    position: absolute;
+  //    z-index: 2;
+  //    right: 1.9em;
+  //  }
+  //
+  //  .f-12:nth-child(3) {
+  //    position: absolute;
+  //    z-index: 3;
+  //    right: 0.9em;
+  //  }
+  //}
+  //
+  //.avatar-group-secondary {
+  //  position: relative;
+  //  display: contents;
+  //
+  //  .f-12:nth-child(1) {
+  //    position: absolute;
+  //    z-index: 1;
+  //    right: 1.9em;
+  //  }
+  //
+  //  .f-12:nth-child(2) {
+  //    position: absolute;
+  //    z-index: 2;
+  //    right: 0.9em;
+  //  }
+  //}
+}

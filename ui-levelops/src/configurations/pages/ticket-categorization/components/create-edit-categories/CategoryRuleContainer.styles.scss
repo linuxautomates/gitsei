@@ -1,0 +1,35 @@
+.ticket-categorization-filters-container {
+  .ant-form-item-label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .ant-select {
+    width: 100% !important;
+  }
+
+  .ant-form-item-label > label::after {
+    content: none !important;
+  }
+  .add_filters_component_container {
+    padding: 1rem 3.5rem;
+    &_list {
+      height: 30rem;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+  .issue-management-integration {
+    width: fit-content;
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+.ant-popover.tag-paginated-select__popover.ant-popover-placement-right {
+  right: 0 !important;
+  top: 0 !important;
+  left: auto !important;
+  height: 100vh;
+  padding: 0 !important;
+}

@@ -1,0 +1,34 @@
+.issue-management-config-wrapper{
+  .issue-management-config-container {
+    margin-top: 1rem;
+    .cicd-collapse {
+      border: none;
+      background-color: inherit;
+    }
+    .filter-content {
+      padding: 8px;
+    }
+    .failed-deployment-desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0;
+      color: #7e7e7e;
+    }
+    .info-circle-radio-button {
+      margin-left: 5px;
+      color: #0278d5;
+    }
+  }
+  .footer {
+    padding: 16px 24px;
+    gap: 8px;
+    height: 54px;
+    background: #eaf0fc;
+    border-radius: 4px;
+    .footer-icon {
+      color: #448ff7;
+    }
+  }
+}
+

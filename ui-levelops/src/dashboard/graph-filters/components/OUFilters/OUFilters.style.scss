@@ -1,0 +1,18 @@
+.ou-unit-override {
+  margin-top: 32px;
+  .ou-override-label {
+    display: flex;
+    flex-direction: column;
+
+    .ou-override-helper-text {
+      text-transform: none;
+      font-weight: 400;
+      margin-top: 8px;
+      color: #2d3e5e;
+    }
+  }
+
+  .ou-filters-container {
+    padding: 12px 4px;
+  }
+}

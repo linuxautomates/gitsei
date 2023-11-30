@@ -1,0 +1,44 @@
+.propelo-table-chart {
+  .ant-table-body {
+    overflow-x: auto !important;
+  }
+  .ant-table-row {
+    height: 2.5rem !important;
+  }
+  .current-ou {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 5px;
+    color: #1b841d;
+    background-color: #e4f7e1;
+    border-radius: 4px;
+    display: flex;
+    width: 110px;
+  }
+  .custom-ou-cell {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .custom-cell {
+    display: flex;
+    justify-content: center;
+    .custom-tooltip-wrapper {
+      align-items: center;
+      justify-content: center;
+    }
+    &.ou-column {
+      justify-content: left;
+    }
+  }
+}
+.legend-checkbox {
+  &.no-events {
+    cursor: not-allowed;
+    pointer-events: none;
+    .ant-checkbox input {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ticket_categorization_schemes/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "0",
+          "default_scheme": true,
+          "name": "System Categorization Scheme",
+          "description": "description text (not searchable)",
+          "config": {
+            "categories": {
+              "0": {
+                "id": "0",
+                "index": 1,
+                "name": "Roadmap",
+                "description": "description text",
+                "filter": {}
+              },
+              "1": {
+                "id": "1",
+                "index": 2,
+                "name": "Support",
+                "description": "description text",
+                "filter": {}
+              }
+            }
+          },
+          "created_at": 1616954286,
+          "updated_at": 1616954286
+        },
+        {
+          "id": "1",
+          "default_scheme": false,
+          "name": "System Categorization Scheme",
+          "description": "description text (not searchable)",
+          "config": {
+            "categories": {
+              "0": {
+                "id": "0",
+                "index": 1,
+                "name": "Roadmap",
+                "description": "description text",
+                "filter": {}
+              },
+              "1": {
+                "id": "1",
+                "index": 2,
+                "name": "Support",
+                "description": "description text",
+                "filter": {}
+              }
+            }
+          },
+          "created_at": 1616954286,
+          "updated_at": 1616954286
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

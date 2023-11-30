@@ -1,0 +1,40 @@
+.popover-container {
+  width: 10rem;
+  height: 12.5rem;
+  &-upper {
+    line-height: 1.5rem;
+    &-title {
+      font-size: x-large;
+      font-weight: 500;
+      color: var(--ba-blue);
+      margin-bottom: 0;
+    }
+    &-subtitle {
+      margin-bottom: 1rem;
+      color: var(--ba-blue);
+    }
+  }
+  &-lower {
+    &-legends {
+      .legend-parent {
+        margin-left: 0;
+        flex-direction: column;
+        .legend-container {
+          margin: 0;
+          &-text {
+            text-transform: capitalize;
+            font-size: smaller;
+          }
+        }
+      }
+    }
+    &-button_container {
+      text-align: center;
+      .report-button {
+        margin-top: 0.5rem;
+        background-color: #fff;
+        border: 1px solid var(--burn-remaining);
+      }
+    }
+  }
+}

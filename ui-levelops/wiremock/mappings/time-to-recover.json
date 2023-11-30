@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/dora/mean_time_to_recover"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "count": 3,
+      "band": "LOW",
+      "recover_time": 23442346
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

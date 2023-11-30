@@ -1,0 +1,31 @@
+.integration-edit-container {
+  &__header {
+    margin-bottom: 16px;
+
+    .info {
+      margin-left: 19px;
+
+      &--title {
+        font-size: 20px;
+        line-height: 28px;
+        color: #262626;
+      }
+
+      &--description {
+        font-size: 16px;
+        line-height: 22px;
+        color: #8c8c8c;
+      }
+    }
+
+    .status {
+      margin-left: 16px;
+    }
+    //&--icon {
+    //  svg {
+    //    width: 56px !important;
+    //    height: 56px !important;
+    //  }
+    //}
+  }
+}

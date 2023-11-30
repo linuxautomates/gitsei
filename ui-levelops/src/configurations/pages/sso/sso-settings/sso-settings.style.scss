@@ -1,0 +1,18 @@
+@import "shared-resources/style/mixin.scss";
+
+.sso-page {
+  &__content {
+    flex-basis: 70%;
+    width: 60%;
+    align-content: center;
+
+    a {
+      color: var(--blue7);
+    }
+
+    .ant-card-head,
+    .ant-card-body {
+      background-color: var(--levelops-white);
+    }
+  }
+}

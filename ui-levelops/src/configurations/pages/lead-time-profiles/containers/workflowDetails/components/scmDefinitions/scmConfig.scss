@@ -1,0 +1,43 @@
+.scm-definitions-container {
+  margin: 4px;
+  display: flex;
+  flex-direction: row;
+
+  .definitions {
+    width: 14rem;
+  }
+  .required:after {
+    content:" *";
+    color: red;
+  }
+  .no-checkbox-definitions {
+    width: 14rem;
+    align-self: center;
+  }
+
+  .key-select {
+    width: 7rem;
+  }
+
+  .ant-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .definition-comma-select {
+    width: 14rem;
+    margin-left: 8px;
+
+    .ant-select-selection {
+      border-bottom: 2px solid var(--grey5);
+    }
+  }
+  .definition-comma-select-error {
+    width: 14rem;
+    margin-left: 8px;
+
+    .ant-select-selection {
+      border-bottom: 1px solid #EE5F54;
+    }
+  }
+}

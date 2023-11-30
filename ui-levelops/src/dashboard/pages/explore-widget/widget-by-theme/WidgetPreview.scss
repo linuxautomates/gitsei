@@ -1,0 +1,148 @@
+.widget-theme-preview {
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+
+  .content-row {
+    padding: 8px 0 13px 0;
+    margin: 0 !important; // overriding library default inline margin
+  }
+
+  :hover {
+    background: #f0f5ff;
+  }
+}
+
+.widget-theme-preview-disabled {
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 100%;
+  cursor: not-allowed;
+  padding: 0;
+
+  .content-row {
+    padding: 8px 0 13px 0;
+    margin: 0 !important; // overriding library default inline margin
+  }
+
+  .title,
+  .title-info-dora .description,
+  .description-dora,
+  .link,
+  .theme-tags,
+  .widget-theme-preview__image {
+    opacity: 0.5;
+  }
+}
+
+.widget-theme-preview,
+.widget-theme-preview-disabled {
+  border: none !important;
+
+  &__image {
+    max-height: 70px;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #d9d9d9;
+  }
+
+  .ant-card-body {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding-top: 30px;
+  }
+
+  .title-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    span {
+      margin-left: auto;
+    }
+  }
+
+  .title-info-dora {
+    display: flex;
+    flex-direction: row;
+
+    span {
+      margin-left: auto;
+    }
+  }
+
+  .title-info-disabled {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 19px;
+    margin: 5px 0;
+    color: #595959;
+    display: inline-block;
+  }
+
+  .description-dora {
+    font-size: 12px;
+    line-height: 19px;
+    margin: 5px 0 5px 25px;
+    color: #595959;
+    display: inline-block;
+  }
+  .icon {
+    width: 78px;
+    height: 45.59px;
+    left: 0;
+    top: 0;
+    margin: 10px 0;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #2967dd;
+    margin: 6px 0;
+  }
+
+  .content-learn-more-button {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #818181;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 19px;
+    padding: 0;
+  }
+
+  .theme-tags {
+    margin-top: 15px;
+
+    .ant-tag {
+      color: #597ef7;
+      background: #f0f5ff;
+      border-color: #597ef7;
+    }
+  }
+}
+
+.theme-border {
+  border: 1px solid #335ddd !important;
+}
+
+.widget-preview-content {
+  padding-left: 30px !important;
+}

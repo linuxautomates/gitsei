@@ -1,0 +1,70 @@
+.date-time-col {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #dcdfe4;
+    top: -8px;
+    height: 42px;
+  }
+}
+
+.timeline-details-col {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    height: 42px;
+    //border-right: 1px solid #dcdfe4;
+  }
+
+  &__tagdiv {
+    min-width: 95px;
+    overflow: hidden;
+  }
+}
+
+.date-time-col {
+  &::after {
+    right: 0;
+  }
+}
+.timeline-details-col {
+  &::after {
+    right: 17px;
+  }
+}
+
+.ant-timeline-div {
+  max-height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin: 20px;
+
+  &__ant-timeline-ticket-bounce {
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.ant-timeline-ticket-bounce .ant-timeline-item-last {
+  padding-bottom: 0;
+}
+
+.CreatedOnText {
+  font-size: 12px !important;
+}
+
+.cardColumnDiv {
+  margin-bottom: 10px;
+  max-height: 800px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  &__innerDiv {
+    margin: 15px;
+    font-size: 12px;
+  }
+}

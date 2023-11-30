@@ -1,0 +1,85 @@
+.mfa-setup-modal {
+  .ant-modal-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .ant-result-title {
+    font-size: 0.9rem;
+    color: var(--grey2);
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .setup-modal {
+    color: var(--grey2);
+    padding: 2rem;
+
+    .help-code-container {
+      display: flex;
+      justify-content: center;
+      .help-code {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--grey4);
+        .text {
+          text-align: center;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &_header_text {
+      margin-bottom: 1rem;
+    }
+    &_subheader_container {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .text {
+        margin-bottom: 0;
+      }
+      .icon {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+    .qrcode-container {
+      display: flex;
+      justify-content: center;
+      .qr-container {
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--grey4);
+        text-align: center;
+        margin-bottom: 1rem;
+        .qr-image {
+          width: 8rem;
+        }
+      }
+    }
+
+    .code-example {
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+    .verfication-code-container {
+      display: flex;
+      justify-content: space-between;
+
+      .input_one_container {
+        width: 100%;
+        padding-right: 2rem;
+        .input-1 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .setup_modal_footer {
+    text-align: center;
+  }
+}

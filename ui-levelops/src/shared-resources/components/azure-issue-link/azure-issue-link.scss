@@ -1,0 +1,28 @@
+.azure-issue-row {
+  display: flex;
+  align-content: center;
+
+  a {
+    color: #2967dd;
+  }
+
+  .azure-external-link {
+    cursor: pointer;
+    margin-left: 10px;
+    align-self: center;
+    visibility: hidden;
+  }
+}
+
+.ant-table-row {
+  &:hover {
+    .azure-external-link {
+      visibility: visible;
+      svg {
+        path {
+          stroke: #2967dd;
+        }
+      }
+    }
+  }
+}

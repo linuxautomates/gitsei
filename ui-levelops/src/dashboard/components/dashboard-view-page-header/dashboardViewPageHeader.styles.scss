@@ -1,0 +1,72 @@
+.dashboard-view-page-header-container {
+  width: calc(100% + 80px);
+  z-index: 12;
+  margin-left: -40px;
+  .ant-select-auto-complete {
+    background-color: var(--levelops-white);
+    width: 18rem;
+    .ant-input {
+      border: none;
+    }
+    .ant-input-affix-wrapper .ant-input-suffix {
+      left: 12px;
+    }
+    .ant-input-affix-wrapper .ant-input:not(:last-child) {
+      padding-left: 2rem;
+      padding-right: 0.5rem;
+    }
+  }
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-bottom: 13px;
+    padding-top: 39px;
+    padding-left: 44px;
+    padding-right: 44px;
+
+    .dashboard-search-container {
+      margin-right: 16px;
+      border-bottom: 1px solid #bfbfbf;
+    }
+  }
+}
+.tour_icon_oudashboard,
+.tour_icon_propels,
+.tour_icon_widgets,
+.tour_icon_tour,
+.tour_icon_settings {
+  .ant-popover-content > .ant-popover-arrow {
+    display: none;
+  }
+  .ant-popover-content .ant-popover-inner-content {
+    border-radius: 4px;
+  }
+
+  .content {
+    padding: 0 0 36px 0;
+  }
+  .modal-title {
+    display: inline-block;
+    width: 90%;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+  }
+  .ant-popover-inner {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    position: relative;
+    top: 85px;
+    width: 400px;
+    left: -13px;
+  }
+  .modal-icon {
+    display: inline-block;
+  }
+}
+
+.dashboad-secondary-header-wrapper {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+  background-color: var(--layout-body-background);
+  position: relative;
+}

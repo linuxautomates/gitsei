@@ -1,0 +1,384 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/org/units/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "has_next": false,
+        "page": 0,
+        "page_size": 10,
+        "total_count": 4
+      },
+      "records": [
+        {
+          "id": "123-456-67567-5675",
+          "version": "1",
+          "name": "Google",
+          "description": "google",
+          "path": "/",
+          "tags": ["453", "172"],
+          "managers": [
+            {
+              "id": "134-246-23642834-234",
+              "email": "test@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test1@levelops.io",
+              "full_name": "Test"
+            }
+          ],
+          "sections": [
+            {
+              "id": "24234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "jira",
+                  "name": "",
+                  "filters": { "projects": ["Project 1", "Project 2"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        },
+        {
+          "id": "123-7862-67567-5675",
+          "version": "1",
+          "name": "Youtube",
+          "description": "New Hires Description",
+          "path": "/Google",
+          "tags": ["215"],
+          "managers": [
+            {
+              "id": "134-246-2364286666734-234",
+              "email": "test@levelops.io",
+              "full_name": "Test Manager 2"
+            }
+          ],
+          "sections": [
+            {
+              "id": "242354544-1423-23487",
+              "integration": [
+                {
+                  "id": "24237874-1423-23487",
+                  "type": "github",
+                  "name": "",
+                  "filters": {
+                    "repo_ids": ["levelops/api-levelops"],
+                    "states": ["closed"]
+                  }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        },
+        {
+          "id": "123-456-67567-893586",
+          "version": "1",
+          "name": "YouTube TV",
+          "description": "Research and Discovery Infrastructure",
+          "path": "/Google/Youtube",
+          "tags": ["255"],
+          "managers": [
+            {
+              "id": "134-246-23642834-234",
+              "email": "test2@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test3@levelops.io",
+              "full_name": "Test"
+            }
+          ],
+          "sections": [
+            {
+              "id": "24234-1423-84577",
+              "integration": [
+                {
+                  "id": "24234-1423-84577",
+                  "type": "jira",
+                  "name": "",
+                  "filters": { "status": ["Done", "New"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        },
+        {
+          "id": "123-456-62427567-5675",
+          "version": "1",
+          "name": "YouTube Kids",
+          "description": "Security and Development",
+          "path": "/Google/Youtube",
+          "tags": ["273", "274"],
+          "managers": [
+            {
+              "id": "134-246-2643642834-234",
+              "email": "test4@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test5@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test6@levelops.io",
+              "full_name": "Test"
+            }
+          ],
+          "sections": [
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "jira",
+                  "name": "",
+                  "filters": { "priority": ["HIGH", "LOW"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            },
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "github",
+                  "name": "",
+                  "filters": { "repo_ids": ["levelops/api-levelops"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "be"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        },
+        {
+          "id": "123-456-62427567-39574",
+          "version": "1",
+          "name": "Netflix",
+          "description": "Security and Development",
+          "path": "/Google",
+          "tags": ["273", "274"],
+          "managers": [
+            {
+              "id": "134-246-2643642834-234",
+              "email": "test4@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test5@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test6@levelops.io",
+              "full_name": "Test"
+            }
+          ],
+          "sections": [
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "jira",
+                  "name": "",
+                  "filters": { "priority": ["HIGH", "LOW"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            },
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "github",
+                  "name": "",
+                  "filters": { "repo_ids": ["levelops/api-levelops"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "be"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        },
+        {
+          "id": "123-456-62427567-2-912",
+          "version": "1",
+          "name": "TV Shows",
+          "description": "Security and Development",
+          "path": "/Google/Netflix",
+          "tags": ["273", "274"],
+          "managers": [
+            {
+              "id": "134-246-2643642834-234",
+              "email": "test4@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test5@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test6@levelops.io",
+              "full_name": "Test"
+            }
+          ],
+          "sections": [
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "jira",
+                  "name": "",
+                  "filters": { "priority": ["HIGH", "LOW"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            },
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "github",
+                  "name": "",
+                  "filters": { "repo_ids": ["levelops/api-levelops"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "be"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        },
+        {
+          "id": "123-456-62427567-5675-9438",
+          "version": "1",
+          "name": "Movies",
+          "description": "Security and Development",
+          "path": "/Google/Netflix",
+          "tags": ["273", "274"],
+          "managers": [
+            {
+              "id": "134-246-2643642834-234",
+              "email": "test4@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test5@levelops.io",
+              "full_name": "Test"
+            },
+            {
+              "id": "134-246-23642834-234",
+              "email": "test6@levelops.io",
+              "full_name": "Test"
+            }
+          ],
+          "sections": [
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "jira",
+                  "name": "",
+                  "filters": { "priority": ["HIGH", "LOW"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "fe"
+              }
+            },
+            {
+              "id": "2534234-1423-23487",
+              "integration": [
+                {
+                  "id": "24234-1423-23487",
+                  "type": "github",
+                  "name": "",
+                  "filters": { "repo_ids": ["levelops/api-levelops"] }
+                }
+              ],
+              "dynamic_user_definition": {
+                "department": "be"
+              }
+            }
+          ],
+          "default_section": {
+            "dynamic_user_definition": {
+              "department": "fe"
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

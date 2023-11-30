@@ -1,0 +1,77 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/ips"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "ips": [
+        {
+          "ip": "1.1.1.1",
+          "count": 25,
+          "env": "prod",
+          "id": 1
+        },
+        {
+          "ip": "2.2.2.2",
+          "count": 25,
+          "env": "prod",
+          "id": 2
+        },
+        {
+          "ip": "3.3.3.3",
+          "count": 25,
+          "env": "stage1",
+          "id": 3
+        },
+        {
+          "ip": "4.4.4.4",
+          "count": 25,
+          "env": "demo",
+          "id": 4
+        },
+        {
+          "ip": "5.5.5.5",
+          "count": 25,
+          "env": "prod",
+          "id": 5
+        },
+        {
+          "ip": "6.6.6.6",
+          "count": 25,
+          "env": "stage1",
+          "id": 6
+        },
+        {
+          "ip": "7.7.7.7",
+          "count": 25,
+          "env": "stage2",
+          "id": 7
+        },
+        {
+          "ip": "9.9.9.9",
+          "count": 25,
+          "env": "prod",
+          "id": 8
+        },
+        {
+          "ip": "10.10.10.10",
+          "count": 25,
+          "env": "prod",
+          "id": 9
+        },
+        {
+          "ip": "11.11.11.11",
+          "count": 25,
+          "env": "eu",
+          "id": 10
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

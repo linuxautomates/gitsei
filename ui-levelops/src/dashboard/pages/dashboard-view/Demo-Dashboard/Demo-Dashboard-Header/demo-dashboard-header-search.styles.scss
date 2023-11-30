@@ -1,0 +1,17 @@
+.more-demo-dashboard {
+  width: 20rem;
+  &_scroll-container {
+    min-height: 40vh;
+    max-height: 40vh;
+    overflow-y: auto;
+    .ant-col {
+      padding: 0.5rem 0rem 0.4rem 0.7rem;
+      cursor: pointer;
+    }
+    .ant-row {
+      &:hover {
+        background-color: #eaf0fc;
+      }
+    }
+  }
+}

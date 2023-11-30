@@ -1,0 +1,27 @@
+.column-selection {
+  padding: 0 !important;
+  max-width: 480px;
+  min-width: 240px;
+  max-height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .ant-menu-item-group-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    flex: auto;
+  }
+  .column {
+    margin: 4px auto 12px 12px;
+  }
+  .footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 6px;
+  }
+}

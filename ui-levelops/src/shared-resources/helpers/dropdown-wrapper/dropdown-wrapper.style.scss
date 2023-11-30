@@ -1,0 +1,14 @@
+@import '../../style/mixin';
+
+.dropdown-wrapper {
+  border-radius: 6px;
+  max-width: 100%;
+  min-height: 16px;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  transform: scale(1, 1) translateZ(0);
+  transition: opacity transition(), transform transition();
+  box-shadow: get-shadow(8);
+}

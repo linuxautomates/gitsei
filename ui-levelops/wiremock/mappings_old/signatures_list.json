@@ -1,0 +1,576 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/signatures/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "count": 2,
+      "records": [
+        {
+          "id": "1",
+          "signature": "Ensure unit test coverage is more than 90%",
+          "name": "Ensure unit test coverage is more than 90%",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "2",
+          "signature": "Ensure MFA is enabled for SCM application",
+          "name": "Ensure MFA is enabled for SCM application",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "3",
+          "signature": "Ensure IP restrictions are enabled for SCM application",
+          "name": "Ensure IP restrictions are enabled for SCM application",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "4",
+          "signature": "Ensure passwords are not checked into SCM",
+          "name": "Ensure passwords are not checked into SCM",
+          "stage": "Dev Security",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "5",
+          "signature": "Avoid checking in SSH keys into SCM code",
+          "name": "Avoid checking in SSH keys into SCM code",
+          "stage": "Dev Security",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "6",
+          "signature": "Avoid checking in secrets into SCM",
+          "name": "Avoid checking in secrets into SCM",
+          "stage": "Dev Security",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "7",
+          "signature": "Ensure all 3rd party SCM plugins have been reviewed and documented",
+          "name": "Ensure all 3rd party SCM plugins have been reviewed and documented",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "8",
+          "signature": "Disable dormant accounts ",
+          "name": "Disable dormant accounts ",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "9",
+          "signature": "Ensure all user access addition to SCM is documented",
+          "name": "Ensure all user access addition to SCM is documented",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "10",
+          "signature": "Ensure all user access removal from SCM  is documented, such as a JIRA ticket",
+          "name": "Ensure all user access removal from SCM  is documented, such as a JIRA ticket",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "11",
+          "signature": "Ensure 3rd party SCM plugins have no vulnerabilities",
+          "name": "Ensure 3rd party SCM plugins have no vulnerabilities",
+          "stage": "Dev Security",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "12",
+          "signature": "Ensure access to SCM is restricted based on user roles",
+          "name": "Ensure access to SCM is restricted based on user roles",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "13",
+          "signature": "Ensure SCM access ssh keys are rotated every 90days",
+          "name": "Ensure SCM access ssh keys are rotated every 90days",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "14",
+          "signature": "Ensure all pull requests to SCM have a reference to JIRA ticket",
+          "name": "Ensure all pull requests to SCM have a reference to JIRA ticket",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "15",
+          "signature": "Code reviews are performed on all PRs",
+          "name": "Code reviews are performed on all PRs",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "16",
+          "signature": "Ensure GitFlow Branching process is followed",
+          "name": "Ensure GitFlow Branching process is followed",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "17",
+          "signature": "Ensure unused branches are not deleted",
+          "name": "Ensure unused branches are not deleted",
+          "stage": "Dev",
+          "integration_types": ["github", "bitbucket"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "18",
+          "signature": "Avoid running Jenkins master in production environment",
+          "name": "Avoid running Jenkins master in production environment",
+          "stage": "Infrastructure",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "19",
+          "signature": "Ensure CSRF protection is turned on",
+          "name": "Ensure CSRF protection is turned on",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "20",
+          "signature": "Ensure JNLP is disabled for Jenkins",
+          "name": "Ensure JNLP is disabled for Jenkins",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "21",
+          "signature": "Ensure LDAP is being used for Jenkins authentication",
+          "name": "Ensure LDAP is being used for Jenkins authentication",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "22",
+          "signature": "Ensure job config history plugin is installed for Jenkins",
+          "name": "Ensure job config history plugin is installed for Jenkins",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "23",
+          "signature": "Ensure Audit Trail plugin is installed for Jenkins",
+          "name": "Ensure Audit Trail plugin is installed for Jenkins",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "24",
+          "signature": "Ensure TLS is enabled for Jenkins UI ",
+          "name": "Ensure TLS is enabled for Jenkins UI ",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "25",
+          "signature": "Ensure TLS version 1.2 is being used for Jenkins UI ",
+          "name": "Ensure TLS version 1.2 is being used for Jenkins UI ",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "26",
+          "signature": "Ensure TLS is enabled for  Jenkins Master-Slave communication",
+          "name": "Ensure TLS is enabled for  Jenkins Master-Slave communication",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "27",
+          "signature": "SAST Vulnerabilities",
+          "name": "SAST Vulnerabilities",
+          "stage": "Dev",
+          "integration_types": ["github"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "28",
+          "signature": "Ensure TLS version 1.2 is being used for Jenkins Master-Slave communication",
+          "name": "Ensure TLS version 1.2 is being used for Jenkins Master-Slave communication",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "29",
+          "signature": "Ensure Jenkins plugins permissions have been reviewed and documented",
+          "name": "Ensure Jenkins plugins permissions have been reviewed and documented",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "30",
+          "signature": "Ensure Jenkins plugins have no known vulnerabilities",
+          "name": "Ensure Jenkins plugins have no known vulnerabilities",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "31",
+          "signature": "Ensure \"Logged-in users can do anything\" is not enabled in Jenkins",
+          "name": "Ensure \"Logged-in users can do anything\" is not enabled in Jenkins",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "32",
+          "signature": "Ensure \"Anyone can do anything\" is not enabled in Jenkins",
+          "name": "Ensure \"Anyone can do anything\" is not enabled in Jenkins",
+          "stage": "CI/CD",
+          "integration_types": ["jenkins"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "33",
+          "signature": "Assess PII impact for all features",
+          "name": "Assess PII impact for all features",
+          "stage": "Planning",
+          "integration_types": ["jira", "aha"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "34",
+          "signature": "Identify and document features with security impact",
+          "name": "Identify and document features with security impact",
+          "stage": "Planning",
+          "integration_types": ["jira", "aha"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "35",
+          "signature": "Ensure all features have documented owners",
+          "name": "Ensure all features have documented owners",
+          "stage": "Planning",
+          "integration_types": ["jira", "aha"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "36",
+          "signature": "Ensure all engineers must finish security awareness training",
+          "name": "Ensure all engineers must finish security awareness training",
+          "stage": "General",
+          "integration_types": ["knowbe4"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "37",
+          "signature": "Ensure new API endpoints are tracked and recorded ",
+          "name": "Ensure new API endpoints are tracked and recorded ",
+          "stage": "SAST",
+          "integration_types": ["levelops"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "38",
+          "signature": "Ensure no buffer overflow vulnerabilities must be present in your app",
+          "name": "Ensure no buffer overflow vulnerabilities must be present in your app",
+          "stage": "Dev Security",
+          "integration_types": ["levelops"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "39",
+          "signature": "Ensure DAST scan has been performed for every release",
+          "name": "Ensure DAST scan has been performed for every release",
+          "stage": "DAST",
+          "integration_types": ["rapid7", "appscan"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "40",
+          "signature": "Ensure no XSS vulnerabilites must be present in your app",
+          "name": "Ensure no XSS vulnerabilites must be present in your app",
+          "stage": "DAST",
+          "integration_types": ["rapid7", "appscan"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "41",
+          "signature": "Ensure no SQL injection vulnerabilities must be present in your app",
+          "name": "Ensure no SQL injection vulnerabilities must be present in your app",
+          "stage": "DAST",
+          "integration_types": ["rapid7", "appscan"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "42",
+          "signature": "Ensure SAST scan has been performed for every build",
+          "name": "Ensure SAST scan has been performed for every build",
+          "stage": "SAST",
+          "integration_types": ["snyk", "coverity", "blackduck", "github"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "43",
+          "signature": "Ensure SAST vulnerabilities are assigned to developers",
+          "name": "Ensure SAST vulnerabilities are assigned to developers",
+          "stage": "SAST",
+          "integration_types": ["jira", "aha"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "44",
+          "signature": "Critical Vulnerabilities have code fixes checked within 48 hours",
+          "name": "Critical Vulnerabilities have code fixes checked within 48 hours",
+          "stage": "SAST",
+          "integration_types": ["snyk", "coverity", "blackduck", "github"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "45",
+          "signature": "Medium or Low Vulnerabilities are code fixed within 1 week",
+          "name": "Medium or Low Vulnerabilities are code fixed within 1 week",
+          "stage": "SAST",
+          "integration_types": ["snyk", "coverity", "blackduck", "github"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "46",
+          "signature": "Ensure Threat Modeling has been done",
+          "name": "Ensure Threat Modeling has been done",
+          "stage": "Threat Modeling",
+          "integration_types": ["microsoft_threat_model"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "47",
+          "signature": "Access to contractors and part-time employees is restricted to production environment ",
+          "name": "Access to contractors and part-time employees is restricted to production environment ",
+          "stage": "infrastructure",
+          "integration_types": ["levelops"],
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "enabled": true,
+          "tags": ["1", "2"],
+          "products": ["Product 1", "Product 2"]
+        },
+        {
+          "id": "48",
+          "signature": "Contractors have taken security training before providing access",
+          "name": "Contractors have taken security training before providing access",
+          "stage": "General",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "integration_types": ["levelops"],
+          "enabled": false,
+          "products": ["product 1", "product 2"],
+          "tags": ["1", "2"]
+        },
+        {
+          "id": "49",
+          "signature": "Signature 3",
+          "name": "Signature 3",
+          "stage": "Security training",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "integration_types": ["github"],
+          "enabled": true,
+          "products": ["product 1", "product 2"],
+          "tags": ["1", "2"]
+        },
+        {
+          "id": "50",
+          "signature": "Ensure penetration testing has been conducted every 90 days",
+          "name": "Ensure penetration testing has been conducted every 90 days",
+          "stage": "Infrastructure",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "integration_types": ["levelops"],
+          "enabled": true,
+          "products": ["product 1", "product 2"],
+          "tags": ["1", "2"]
+        }
+      ],
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 343,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

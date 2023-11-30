@@ -1,0 +1,46 @@
+$background-color: #f5f6f8;
+
+.ticket-categorization-profile-page {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  width: 100%;
+  height: 100%;
+
+  .header-container {
+    position: sticky;
+    top: 0;
+    padding: 16px;
+    z-index: 101;
+    background-color: #f5f6f8;
+
+    .profile-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .profile-count {
+      margin-left: 8px;
+      .ant-badge-count {
+        background-color: #8c8c8c;
+      }
+    }
+
+    .add-profile-btn {
+      margin-left: 16px;
+      background-color: white;
+    }
+  }
+}
+.ticket-categorization-content-divider {
+  color: var(--grey3);
+  height: 0.15rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 1440px) {
+  .ticket-categorization-profile-page {
+    height: 100%;
+  }
+}

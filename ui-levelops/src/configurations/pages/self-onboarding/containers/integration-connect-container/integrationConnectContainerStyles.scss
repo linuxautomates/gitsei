@@ -1,0 +1,90 @@
+$backgroundColor: #ffffff;
+
+.integration-connect-parent-container {
+  display: flex;
+  justify-content: center;
+  .integration-connect-container {
+    min-height: 100%;
+    width: 55%;
+    background-color: $backgroundColor;
+
+    .ant-card-meta-description {
+      .description {
+        margin: 1rem 0rem 1rem 2rem;
+        color: var(--grey2);
+        .integration-doc-link {
+          text-decoration: underline;
+          color: var(--grey2);
+        }
+      }
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 1rem 1rem 2rem 1rem;
+      .section-header {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        text-transform: capitalize;
+        margin: 0.25rem 0.5rem 0rem 0.5rem;
+      }
+    }
+    .select-repo-desc {
+      color: #000;
+      padding-left: 3rem;
+    }
+    .connection-container {
+      height: 18rem;
+      .flex-row {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+      .flex-col {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .text_lebel {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0.25rem 0.5rem 0.5rem 0.5rem;
+      }
+      .link {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .scope {
+        background-color: #afaff6;
+        color: #ffffff;
+        margin-right: 0.5rem;
+        padding: 0 0.5rem 0 0.5rem;
+      }
+
+      .connect-collapse {
+        background-color: #fff;
+        margin-top: 1rem;
+        .ant-collapse-item {
+          border: none;
+        }
+        .ant-collapse-header {
+          color: var(--inactive-tab);
+          font-weight: 500;
+        }
+      }
+    }
+    .integration-nav-buttons {
+      margin: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      .ant-btn {
+        width: 6.5rem;
+        margin-right: 0.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

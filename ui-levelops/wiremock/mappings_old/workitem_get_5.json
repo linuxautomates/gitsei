@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/workitems/5"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "5",
+      "type": "AUTOMATED",
+      "status": "OPEN",
+      "policy_id": "5",
+      "reason": "Matched LQLs: issue.type = \"Bug\"",
+      "integration_id": "7",
+      "artifact": "LEV-112",
+      "created_at": 1572345209,
+      "name": "API endpoints changes",
+      "description": "ta na na"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

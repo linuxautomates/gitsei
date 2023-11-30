@@ -1,0 +1,38 @@
+.sso-error-component {
+  height: 650px;
+  color: #404040;
+  margin-top: 2.5rem;
+  .next-back-button {
+    margin: 40px 0 0 0;
+  }
+  button.ant-btn.back-button.mr-10.ant-btn-primary {
+    margin: 0;
+  }
+  .email-arrow {
+    display: flex;
+    align-items: baseline;
+    .email {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 22px;
+      letter-spacing: 0.06rem;
+      margin-left: 5px;
+    }
+    .svg-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .ant-typography {
+    color: #000000;
+  }
+
+  .content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 12px;
+    position: relative;
+    top: 12px;
+  }
+}

@@ -1,0 +1,21 @@
+.add-widget-filter-container {
+  .add-filter-btn {
+    background: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    color: #595959;
+  }
+
+  .add-filter-btn:hover {
+    color: #595959;
+  }
+
+  [ant-click-animating-without-extra-node]:after {
+    animation: 0s !important;
+  }
+
+  .add-widget-filter-container-list {
+    height: calc(100% - 100px);
+    overflow: auto;
+  }
+}

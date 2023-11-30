@@ -1,0 +1,53 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/checklists/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "tags": ["haha"],
+      "name": "Database Security Best Practices",
+      "artifact": "LEV-123",
+      "integration_url": "https://levelops.atlassian.net",
+      "integration_application": "jira",
+      "work_item_id": "1",
+      "additional_data": [
+        { "name": "Database name", "value": "MongoDB-prod-1" },
+        { "name": "Service name", "value": "some service" }
+      ],
+      "script": "https://api.levelops.io/fileupload/checklists/scripts/1",
+      "custom": false,
+      "completed": false,
+      "checks": [
+        {
+          "id": 1,
+          "name": "All users accessing the database are authenticated",
+          "description": "Check mongod.conf for security:authentication",
+          "checked": true,
+          "user_email": "user1@levelops.io"
+        },
+        {
+          "id": 2,
+          "name": "Logging is enabled and logs are persistent",
+          "checked": true
+        },
+        {
+          "id": 3,
+          "name": "SSL/TLS is enabled for all network communications",
+          "checked": false
+        },
+        {
+          "id": 4,
+          "name": "Database is encrypted",
+          "checked": false
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

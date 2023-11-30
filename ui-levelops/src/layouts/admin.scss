@@ -1,0 +1,30 @@
+@import "dashboard/pages/dashboard-view/dashboard-view.container";
+
+.dashboard-view-page-container {
+  background-color: $backgroundColor;
+  width: 0;
+  scroll-behavior: smooth;
+
+  &.withHarness {
+    width: 100%;
+
+    .ant-layout-content {
+      padding: 0;
+      height: 100vh;
+    }
+  }
+}
+
+.dev-productivity-container,
+.workflow-profile-container {
+  .ant-layout-content {
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0;
+  }
+  .page-container {
+    > * {
+      padding-bottom: 0px;
+    }
+  }
+}

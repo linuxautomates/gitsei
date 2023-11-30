@@ -1,0 +1,22 @@
+.time-range-abs-rel {
+  margin-top: 15px;
+
+  &__header {
+    margin-bottom: 24px;
+    &--title {
+      font-size: 14px;
+      line-height: 20px;
+      color: #2d3e5e;
+      font-weight: 500;
+      margin-right: 5px;
+    }
+
+    &--clear-button {
+      //margin-left: 108px;
+    }
+
+    &--clear-button.ant-btn {
+      height: 22px;
+    }
+  }
+}

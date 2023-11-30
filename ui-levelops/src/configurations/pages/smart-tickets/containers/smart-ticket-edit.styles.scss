@@ -1,0 +1,41 @@
+.smart-ticket-edit {
+  height: 100%;
+
+  .main-panel {
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    padding: 5px 10px;
+
+    .header {
+      .breadcrumbs {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .desc-normal {
+      white-space: pre-line;
+      word-break: break-word;
+    }
+  }
+
+  .side-panel {
+    height: 100%;
+    overflow-y: auto;
+    background: #fafafb;
+    padding: 5px 10px;
+
+    .fields {
+      padding-right: 20px;
+    }
+  }
+}
+
+.icon-transition {
+  transition: all 0.3s ease-in-out;
+
+  &.expanded {
+    transform: rotate(180deg);
+  }
+}

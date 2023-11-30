@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/files/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 1
+      },
+      "count": 1,
+      "records": [
+        {
+          "repo_id": [
+            {
+              "key": "ui-levelops",
+              "total_tickets": 100
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

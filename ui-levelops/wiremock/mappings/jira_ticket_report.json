@@ -1,0 +1,363 @@
+    {
+        "request": {
+            "method": "POST",
+            "url": "/v1/jira_issues/tickets_report"
+        },
+        "response": {
+            "status": 502,
+            "jsonBody": {
+                "records": [
+
+                ],
+                "count": 49,
+                "_metadata": {
+                    "page_size": 1000,
+                    "page": 0,
+                    "has_next": false
+                }
+            }
+        }
+    }
+
+  /*   {
+        "additional_key": "_UNASSIGNED_",
+        "mean_story_points": 1.540272614622057,
+        "total_tickets": 807,
+        "total_story_points": 1243
+    },
+    {
+        "key": "d7277a1f-9c86-462e-a0de-362fff61bef5",
+        "additional_key": "Jose Ivan Leon Islas",
+        "mean_story_points": 3.0242825607064017,
+        "total_tickets": 453,
+        "total_story_points": 1370
+    },
+    {
+        "key": "89880f84-bac6-48be-a778-b4e0b9673d83",
+        "additional_key": "Piyush Mishra",
+        "mean_story_points": 0.34579439252336447,
+        "total_tickets": 321,
+        "total_story_points": 111
+    },
+    {
+        "key": "940a3522-cd41-4366-a407-101c248a544c",
+        "additional_key": "Shivam Yadav",
+        "mean_story_points": 0.12218649517684887,
+        "total_tickets": 311,
+        "total_story_points": 38
+    },
+    {
+        "key": "63686748-c65a-42ba-b859-9a952a2c2603",
+        "additional_key": "Kushagra Saxena",
+        "mean_story_points": 0.46710526315789475,
+        "total_tickets": 304,
+        "total_story_points": 142
+    },
+    {
+        "key": "ae8fa2ec-24ff-479c-a6f0-b815ea81b2d5",
+        "additional_key": "Maxime Bellier",
+        "mean_story_points": 0.9768339768339769,
+        "total_tickets": 259,
+        "total_story_points": 253
+    },
+    {
+        "key": "21fa71b3-5a8a-4f30-8a87-42f2a9192df7",
+        "additional_key": "Viraj Ajgaonkar",
+        "mean_story_points": 1.587719298245614,
+        "total_tickets": 228,
+        "total_story_points": 362
+    },
+    {
+        "key": "9715a473-5ae5-4a0e-8dee-a5c668d2819d",
+        "additional_key": "Srinath Chandrashekhar",
+        "mean_story_points": 0.84688995215311,
+        "total_tickets": 209,
+        "total_story_points": 177
+    },
+    {
+        "key": "26129c9f-6f80-47dd-9ef6-5f1164b1f114",
+        "additional_key": "Madhav Bhasin",
+        "mean_story_points": 0.15151515151515152,
+        "total_tickets": 198,
+        "total_story_points": 30
+    },
+    {
+        "key": "d9159419-a496-47fc-b914-070582e87cf4",
+        "additional_key": "Akashdeep Arora",
+        "mean_story_points": 0.072992700729927,
+        "total_tickets": 137,
+        "total_story_points": 10
+    },
+    {
+        "key": "6351a2f7-988f-4088-ba34-2b624229a463",
+        "additional_key": "Ishan Srivastava",
+        "mean_story_points": 0.8671875,
+        "total_tickets": 128,
+        "total_story_points": 111
+    },
+    {
+        "key": "7855330d-97fe-4806-82ee-9910c29a954a",
+        "additional_key": "ashish",
+        "mean_story_points": 1.2372881355932204,
+        "total_tickets": 118,
+        "total_story_points": 146
+    },
+    {
+        "key": "af28f2c1-0ea1-4f85-b0ca-f8a2c5b1b176",
+        "additional_key": "Hemant Saini",
+        "mean_story_points": 1.07,
+        "total_tickets": 100,
+        "total_story_points": 107
+    },
+    {
+        "key": "46ec2c9e-6c80-4111-9e09-15d65c41efcb",
+        "additional_key": "Ajay Sakat",
+        "mean_story_points": 0.07368421052631578,
+        "total_tickets": 95,
+        "total_story_points": 7
+    },
+    {
+        "key": "083fdf6a-e22c-4855-a766-a5a4708f0597",
+        "additional_key": "sivareddy aeddula",
+        "mean_story_points": 0.06382978723404255,
+        "total_tickets": 94,
+        "total_story_points": 6
+    },
+    {
+        "key": "d8c42cba-ef6f-46e9-8fb8-77bd20c78d04",
+        "additional_key": "Thomas Jones",
+        "mean_story_points": 0.11956521739130435,
+        "total_tickets": 92,
+        "total_story_points": 11
+    },
+    {
+        "key": "41dd3b87-0e0a-42c7-8126-9db349a8df13",
+        "additional_key": "Thanh Tran",
+        "mean_story_points": 0.18681318681318682,
+        "total_tickets": 91,
+        "total_story_points": 17
+    },
+    {
+        "key": "688239e9-f2d5-4858-a3d2-9ca84c8cebcc",
+        "additional_key": "Praveen V",
+        "mean_story_points": 2.2133333333333334,
+        "total_tickets": 75,
+        "total_story_points": 166
+    },
+    {
+        "key": "0e06d399-bd28-4add-a83b-71929494f794",
+        "additional_key": "Gershon Shif",
+        "mean_story_points": 0.0,
+        "total_tickets": 74,
+        "total_story_points": 0
+    },
+    {
+        "key": "11d61822-d059-4472-a054-4a732ac698e2",
+        "additional_key": "Shrikesh Suresh",
+        "mean_story_points": 2.0821917808219177,
+        "total_tickets": 73,
+        "total_story_points": 152
+    },
+    {
+        "key": "17745a5c-36a6-457c-8708-3dbcaeec3d90",
+        "additional_key": "varshini",
+        "mean_story_points": 2.0,
+        "total_tickets": 71,
+        "total_story_points": 142
+    },
+    {
+        "key": "b61dcaba-94f9-47d0-9e8a-b220ed32ae89",
+        "additional_key": "Former user",
+        "mean_story_points": 2.015873015873016,
+        "total_tickets": 63,
+        "total_story_points": 127
+    },
+    {
+        "key": "b40add09-8095-4277-89b6-624c76dde1e0",
+        "additional_key": "Former user",
+        "mean_story_points": 2.0535714285714284,
+        "total_tickets": 56,
+        "total_story_points": 115
+    },
+    {
+        "key": "3cb4a028-ca8a-463b-b89d-306b073a7686",
+        "additional_key": "Former user",
+        "mean_story_points": 2.351851851851852,
+        "total_tickets": 54,
+        "total_story_points": 127
+    },
+    {
+        "key": "288cd302-c82e-473c-b6ef-644542c78a10",
+        "additional_key": "Former user",
+        "mean_story_points": 1.6851851851851851,
+        "total_tickets": 54,
+        "total_story_points": 91
+    },
+    {
+        "key": "133a28c5-68fc-4292-8fdb-83fbb736f426",
+        "additional_key": "Chinmay Joshi",
+        "mean_story_points": 0.10204081632653061,
+        "total_tickets": 49,
+        "total_story_points": 5
+    },
+    {
+        "key": "804dad4c-ccce-43d3-ad6f-d08388a5b8be",
+        "additional_key": "sharath",
+        "mean_story_points": 0.0,
+        "total_tickets": 48,
+        "total_story_points": 0
+    },
+    {
+        "key": "e3a22296-d372-41c6-a16b-24e69ce58b94",
+        "additional_key": "Former user",
+        "mean_story_points": 2.2127659574468086,
+        "total_tickets": 47,
+        "total_story_points": 104
+    },
+    {
+        "key": "094b1f4b-efed-4938-9f23-66a289d01b24",
+        "additional_key": "Amit Zohar",
+        "mean_story_points": 0.3235294117647059,
+        "total_tickets": 34,
+        "total_story_points": 11
+    },
+    {
+        "key": "dbcd7021-ff47-4539-a6a3-8618a161b782",
+        "additional_key": "Nehal Patel",
+        "mean_story_points": 0.0,
+        "total_tickets": 27,
+        "total_story_points": 0
+    },
+    {
+        "key": "bff3e73c-d1ef-4eab-8d93-20cd34159f4e",
+        "additional_key": "Chandra Yalangi",
+        "mean_story_points": 4.863636363636363,
+        "total_tickets": 22,
+        "total_story_points": 107
+    },
+    {
+        "key": "f12e1777-583e-4fbe-8c20-47326d0f1a67",
+        "additional_key": "vinaya",
+        "mean_story_points": 0.09090909090909091,
+        "total_tickets": 22,
+        "total_story_points": 2
+    },
+    {
+        "key": "8a8f98eb-0c4c-43c6-86fb-144a984906c8",
+        "additional_key": "Satish Kumar Singh",
+        "mean_story_points": 0.15,
+        "total_tickets": 20,
+        "total_story_points": 3
+    },
+    {
+        "key": "625f6164-fe62-445b-acf7-0b0b9ee0e672",
+        "additional_key": "Meghana Dwarakanath",
+        "mean_story_points": 0.3684210526315789,
+        "total_tickets": 19,
+        "total_story_points": 7
+    },
+    {
+        "key": "a57d1cbe-438a-4c39-aba2-586cc9f2688f",
+        "additional_key": "Megha Tamvada",
+        "mean_story_points": 0.0,
+        "total_tickets": 18,
+        "total_story_points": 0
+    },
+    {
+        "key": "beb5b03e-eee4-4c90-b7d5-8d195defed6a",
+        "additional_key": "Jonathan Ma",
+        "mean_story_points": 0.0,
+        "total_tickets": 15,
+        "total_story_points": 0
+    },
+    {
+        "key": "b04e2643-48e6-4e8c-819d-8f02d0e7e500",
+        "additional_key": "Mahesh Kumar",
+        "mean_story_points": 0.0,
+        "total_tickets": 13,
+        "total_story_points": 0
+    },
+    {
+        "key": "c4ca058c-3234-436c-bec2-0c138c8cd6c3",
+        "additional_key": "Temoke Sanchez",
+        "mean_story_points": 0.8461538461538461,
+        "total_tickets": 13,
+        "total_story_points": 11
+    },
+    {
+        "key": "abd65297-5d99-4702-b3ba-9cfe04cac56a",
+        "additional_key": "Former user",
+        "mean_story_points": 0.0,
+        "total_tickets": 12,
+        "total_story_points": 0
+    },
+    {
+        "key": "0f1364a1-e78e-4012-a345-758185e08c83",
+        "additional_key": "Maryann Cossette Lontoc",
+        "mean_story_points": 0.36363636363636365,
+        "total_tickets": 11,
+        "total_story_points": 4
+    },
+    {
+        "key": "565ae7f6-044c-4949-9213-838708d42a4a",
+        "additional_key": "Harsh Jariwala",
+        "mean_story_points": 4.75,
+        "total_tickets": 8,
+        "total_story_points": 38
+    },
+    {
+        "key": "f033aa86-390b-4ab0-93a6-af763d03be84",
+        "additional_key": "Satish Kumar Singh",
+        "mean_story_points": 0.0,
+        "total_tickets": 5,
+        "total_story_points": 0
+    },
+    {
+        "key": "c1659180-2ccd-46d8-a401-0dfa1362371f",
+        "additional_key": "Amanda Willoughby",
+        "mean_story_points": 0.0,
+        "total_tickets": 5,
+        "total_story_points": 0
+    },
+    {
+        "key": "372d1e4b-1035-4cd5-8748-3940d70ea4e9",
+        "additional_key": "Nishant Doshi",
+        "mean_story_points": 0.0,
+        "total_tickets": 4,
+        "total_story_points": 0
+    },
+    {
+        "key": "9fdbfb10-3b9e-4eb1-8e18-4e9442fc9bf2",
+        "additional_key": "Troy Abegglen",
+        "mean_story_points": 0.0,
+        "total_tickets": 4,
+        "total_story_points": 0
+    },
+    {
+        "key": "aa58b08a-f3f1-4f7d-ba76-4148f5c524c3",
+        "additional_key": "yashaswini",
+        "mean_story_points": 0.0,
+        "total_tickets": 3,
+        "total_story_points": 0
+    },
+    {
+        "key": "ec5d48ed-53cc-4ed0-a432-d6033c6ac98b",
+        "additional_key": "Hetal Vasa",
+        "mean_story_points": 0.0,
+        "total_tickets": 1,
+        "total_story_points": 0
+    },
+    {
+        "key": "ea998567-0a19-480d-b53c-05a1a0f5c156",
+        "additional_key": "Sampath Krishnabhat",
+        "mean_story_points": 8.0,
+        "total_tickets": 1,
+        "total_story_points": 8
+    },
+    {
+        "key": "168ea3b0-15e4-41e8-8320-85b059451dac",
+        "additional_key": "Mandar Gaitonde",
+        "mean_story_points": 0.0,
+        "total_tickets": 1,
+        "total_story_points": 0
+    } */

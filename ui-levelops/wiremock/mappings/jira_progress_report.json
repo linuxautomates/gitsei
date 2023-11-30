@@ -1,0 +1,388 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_issues/story_point_report",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"filter\":{\"metric\":\"story_point\",\"sort_xaxis\":\"value_high-low\",\"visualization\":\"bar_chart\",\"product_id\":\"2700\"},\"across\":\"epic\",\"stacks\":[\"status_category\"],\"across_limit\":20,\"sort\":[{\"id\":\"story_points\",\"desc\":true}]}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "ICSDCOEINF-2227",
+          "total_tickets": 44,
+          "total_story_points": 92,
+          "total_unestimated_tickets": 14,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 43,
+              "total_story_points": 92,
+              "total_unestimated_tickets": 13
+            },
+            {
+              "key": "To Do",
+              "total_tickets": 1,
+              "total_story_points": 0,
+              "total_unestimated_tickets": 1
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2162",
+          "total_tickets": 51,
+          "total_story_points": 83,
+          "total_unestimated_tickets": 19,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 46,
+              "total_story_points": 63,
+              "total_unestimated_tickets": 19
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 5,
+              "total_story_points": 20,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2265",
+          "total_tickets": 23,
+          "total_story_points": 62,
+          "total_unestimated_tickets": 5,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 15,
+              "total_story_points": 45,
+              "total_unestimated_tickets": 3
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 7,
+              "total_story_points": 17,
+              "total_unestimated_tickets": 1
+            },
+            {
+              "key": "To Do",
+              "total_tickets": 1,
+              "total_story_points": 0,
+              "total_unestimated_tickets": 1
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2226",
+          "total_tickets": 25,
+          "total_story_points": 52,
+          "total_unestimated_tickets": 3,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 25,
+              "total_story_points": 52,
+              "total_unestimated_tickets": 3
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-1404",
+          "total_tickets": 11,
+          "total_story_points": 49,
+          "total_unestimated_tickets": 1,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 11,
+              "total_story_points": 49,
+              "total_unestimated_tickets": 1
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2263",
+          "total_tickets": 16,
+          "total_story_points": 44,
+          "total_unestimated_tickets": 3,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 13,
+              "total_story_points": 37,
+              "total_unestimated_tickets": 2
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 2,
+              "total_story_points": 7,
+              "total_unestimated_tickets": 0
+            },
+            {
+              "key": "To Do",
+              "total_tickets": 1,
+              "total_story_points": 0,
+              "total_unestimated_tickets": 1
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2259",
+          "total_tickets": 11,
+          "total_story_points": 36,
+          "total_unestimated_tickets": 3,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 11,
+              "total_story_points": 36,
+              "total_unestimated_tickets": 3
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2684",
+          "total_tickets": 11,
+          "total_story_points": 28,
+          "total_unestimated_tickets": 1,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 8,
+              "total_story_points": 19,
+              "total_unestimated_tickets": 1
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 3,
+              "total_story_points": 9,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-1797",
+          "total_tickets": 6,
+          "total_story_points": 28,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 1,
+              "total_story_points": 3,
+              "total_unestimated_tickets": 0
+            },
+            {
+              "key": "To Do",
+              "total_tickets": 5,
+              "total_story_points": 25,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2268",
+          "total_tickets": 6,
+          "total_story_points": 14,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 6,
+              "total_story_points": 14,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2649",
+          "total_tickets": 3,
+          "total_story_points": 13,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 3,
+              "total_story_points": 13,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2267",
+          "total_tickets": 10,
+          "total_story_points": 10,
+          "total_unestimated_tickets": 7,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 8,
+              "total_story_points": 10,
+              "total_unestimated_tickets": 5
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 2,
+              "total_story_points": 0,
+              "total_unestimated_tickets": 2
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2225",
+          "total_tickets": 16,
+          "total_story_points": 9,
+          "total_unestimated_tickets": 8,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 8,
+              "total_story_points": 5,
+              "total_unestimated_tickets": 3
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 4,
+              "total_story_points": 4,
+              "total_unestimated_tickets": 1
+            },
+            {
+              "key": "To Do",
+              "total_tickets": 4,
+              "total_story_points": 0,
+              "total_unestimated_tickets": 4
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEFN-341",
+          "total_tickets": 5,
+          "total_story_points": 9,
+          "total_unestimated_tickets": 1,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 4,
+              "total_story_points": 4,
+              "total_unestimated_tickets": 1
+            },
+            {
+              "key": "In Progress",
+              "total_tickets": 1,
+              "total_story_points": 5,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2236",
+          "total_tickets": 4,
+          "total_story_points": 8,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 4,
+              "total_story_points": 8,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2218",
+          "total_tickets": 3,
+          "total_story_points": 6,
+          "total_unestimated_tickets": 1,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 2,
+              "total_story_points": 6,
+              "total_unestimated_tickets": 0
+            },
+            {
+              "key": "To Do",
+              "total_tickets": 1,
+              "total_story_points": 0,
+              "total_unestimated_tickets": 1
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-44",
+          "total_tickets": 4,
+          "total_story_points": 5,
+          "total_unestimated_tickets": 3,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 4,
+              "total_story_points": 5,
+              "total_unestimated_tickets": 3
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-1020",
+          "total_tickets": 2,
+          "total_story_points": 4,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 2,
+              "total_story_points": 4,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-2650",
+          "total_tickets": 2,
+          "total_story_points": 4,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 2,
+              "total_story_points": 4,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        },
+        {
+          "key": "ICSDCOEINF-1796",
+          "total_tickets": 1,
+          "total_story_points": 3,
+          "total_unestimated_tickets": 0,
+          "stacks": [
+            {
+              "key": "Done",
+              "total_tickets": 1,
+              "total_story_points": 3,
+              "total_unestimated_tickets": 0
+            }
+          ]
+        }
+      ],
+      "count": 20,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

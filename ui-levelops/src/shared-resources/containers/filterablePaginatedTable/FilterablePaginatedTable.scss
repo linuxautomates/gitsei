@@ -1,0 +1,91 @@
+.columnFilterButton {
+  border: none !important;
+  padding: 0 5px 5px !important;
+  background-color: transparent !important;
+}
+.filteredColumn {
+  color: #2967dd !important;
+}
+.reports-btn-icon {
+  width: 16px;
+  height: 16px;
+  margin: 4.6px;
+}
+.count-badge {
+  sup {
+    background-color: #2967dd;
+  }
+  margin: 0 6px;
+}
+
+.filter-table-container {
+  .attribute-column {
+    text-align: left !important;
+  }
+  .filterable-table-row {
+    td {
+      padding: 0;
+  .developer-raw-stat {
+      &.other-cell {
+        padding: 10px 16px;
+      }
+      &.stats-cell {
+        padding: 10px 16px;
+        &.good {
+        background: #35B779;
+      }
+  
+      &.acceptable {
+        background: #40A9FF;
+      }
+  
+      &.improvement {
+        background: #FAC858;
+      }
+  
+      &.not-available {
+        background: #D9D9D9;
+      }
+  
+      &.no-color {
+        background: #fff;
+      }
+  }
+}
+  
+  .org-raw-stat {
+    &.other-cell {
+    padding: 10px 16px;
+    }
+    &.good {
+    background: #35B779;
+    padding: 1.2rem;
+    }
+    &.acceptable {
+    background: #40A9FF;
+    padding: 1.2rem;
+    }
+    &.improvement {
+    background: #FAC858;
+    padding: 1.2rem;
+    }
+    &.not-available {
+    background: #D9D9D9;
+    padding: 1.2rem;
+    }
+    &.no-color {
+    background: #fff;
+    padding: 1.2rem;
+    }
+  }
+
+              
+      .stats-cell:active {
+        background-color: #eaf0fc;
+      }
+      .stats-cell:hover {
+        border: 1px solid #0a8ce9;
+      }
+    }
+  }
+}

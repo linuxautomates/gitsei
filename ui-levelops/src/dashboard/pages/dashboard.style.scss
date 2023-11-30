@@ -1,0 +1,92 @@
+.card-graph .ant-card-body {
+  height: calc(33rem - 57px);
+}
+
+.new-dashboard {
+  &__card {
+    &--no-padding {
+      margin-bottom: -20px;
+      margin-top: -20px;
+    }
+
+    &--responsive-compact {
+      max-width: 1200px;
+    }
+  }
+}
+
+.donut-box {
+  & .ant-card-body {
+    padding: 24px 8px;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-right: 5px;
+  &__title {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8c93a5;
+    text-transform: uppercase;
+  }
+  &__value {
+    display: block;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #17294d;
+  }
+}
+
+.ant-select-product {
+  min-width: 200px;
+}
+
+.multi-color-progressbar {
+  overflow: hidden;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.progressbar-legend-color {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 2px;
+}
+
+.progressbar-legend-text {
+  text-transform: uppercase;
+}
+
+.table-chart {
+  transform: translate(-15px, -15px);
+  width: calc(100% + 30px);
+}
+
+.widgets-container {
+  .loader {
+    margin-top: 16px;
+  }
+
+  .react-slidedown {
+    &.closed {
+      display: none;
+    }
+
+    display: block;
+  }
+}
+
+.export-button {
+  border: 1px solid #d9d9d9;
+  margin-right: 1rem;
+}
+
+.button-padding {
+  padding: 0 15px;
+}

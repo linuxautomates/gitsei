@@ -1,0 +1,78 @@
+.demo_effort_progress_chart_container {
+  padding: 1rem 0rem 2rem 2rem;
+  height: 21rem;
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    border: none;
+  }
+
+  .ant-table-thead tr .ant-table-column-title {
+    font-weight: 400;
+  }
+
+  .ant-table-thead > tr:first-child > th:last-child {
+    text-align: center !important;
+  }
+  .newTag {
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    color: white;
+  }
+
+  .ant-progress-text {
+    font-weight: 700;
+    color: #000;
+  }
+
+  .teams-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .team-div {
+      position: relative;
+
+      .f-12 {
+        position: absolute;
+        bottom: -0.3rem;
+      }
+
+      .f-12:nth-child(2) {
+        left: 1.2rem;
+      }
+
+      .f-12:nth-child(3) {
+        left: 2.2rem;
+      }
+    }
+    .teams-remaining {
+      cursor: pointer;
+      color: #096dd9;
+    }
+  }
+}
+.demo-carousal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .custom-carousal {
+    padding: 1rem 0.5rem;
+  }
+}
+.ant-popover-inner-content {
+  .team-popover-content {
+    max-height: 12rem;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1440px) {
+  .demo_effort_progress_chart_container {
+    padding-left: 0rem;
+    .ant-table-tbody > tr > td {
+      padding: 10px 12px;
+    }
+  }
+}

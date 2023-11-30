@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/dashboards/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 1
+      },
+      "count": 1,
+      "records": [
+        { "id": 1, "name": "Work" },
+        { "id": 2, "name": "Resources" },
+        { "id": 3, "name": "Engineers" }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

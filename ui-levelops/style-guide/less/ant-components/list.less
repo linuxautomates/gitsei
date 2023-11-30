@@ -1,0 +1,113 @@
+.ant-card {
+  .ant-list {
+    &-split {
+      margin: -24px;
+    }
+  }
+
+  .ant-card-head {
+    border-bottom: 0px;
+  }
+}
+
+.ant-card-head {
+  border-bottom: 0px;
+}
+
+.ant-list {
+  &-unbordered {
+    .ant-list-item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &-bordered {
+    .ant-list-header {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .ant-list-item {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  &-header {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 500;
+  }
+  &-item {
+    padding-left: 16px;
+    padding-right: 16px;
+    &-meta {
+      align-items: center;
+    }
+    &-meta-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      a {
+        font-size: 15px;
+        color: var(--black3);
+      }
+      .extra {
+        font-size: 13px;
+        color: var(--black4);
+        opacity: 0.5;
+      }
+    }
+    &-meta-avatar {
+      .icon-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+        background-color: var(--purple);
+        color: var(--purple1);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &-custom {
+    .ant-list {
+      &-items {
+        margin: 16px;
+      }
+      &-item {
+        cursor: pointer;
+        font-size: 13px;
+        padding: 8px 8px;
+        margin-bottom: 10px;
+        border: 1px solid @border-color-base;
+        border-radius: 3px;
+        justify-content: space-between;
+        display: flex;
+        align-items: flex-start;
+        //box-shadow: 1px 1px 9px -2px rgba(0, 0, 0, 0.25);
+        box-shadow: none;
+        .ant-list-item-action {
+          margin: 0;
+          > li {
+            padding: 0;
+            & + li {
+              padding-left: 8px;
+            }
+          }
+        }
+      }
+    }
+    &.ant-list-split {
+      .ant-list-item {
+        &:last-child {
+          border-bottom: 1px solid @border-color-base;
+        }
+      }
+    }
+  }
+}
+
+.ant-list-bottom-border {
+  margin: 0 !important;
+}

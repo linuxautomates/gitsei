@@ -1,0 +1,45 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/zendesk_tickets/resolution_time_report"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "harsh@levelops.io",
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "total_tickets": 1
+        },
+        {
+          "key": "srinath@cognitree.com",
+          "median": 5395500,
+          "min": 838980,
+          "max": 5406240,
+          "total_tickets": 18
+        },
+        {
+          "key": "NOT-SET",
+          "median": 4620,
+          "min": 4620,
+          "max": 4620,
+          "total_tickets": 27
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

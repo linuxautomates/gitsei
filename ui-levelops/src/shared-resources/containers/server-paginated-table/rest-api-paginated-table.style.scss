@@ -1,0 +1,44 @@
+.triage-grid-view-list {
+  min-height: 700px;
+  .ant-card-head,
+  .ant-card-extra {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ant-card-head-wrapper {
+    align-items: flex-start;
+  }
+}
+
+.remove-border {
+  .ant-table-placeholder {
+    border: none;
+  }
+}
+
+.rest-table-spinner {
+  .ant-spin-spinning {
+    margin: 54px;
+  }
+}
+.circle-separator {
+  color: #595959;
+}
+.drilldown-type {
+  font-size: 16px;
+  font-weight: bolder;
+  white-space: pre;
+}
+.circle-separator {
+  margin: 0 8px;
+  font-size: 10px;
+}
+.drilldown-title {
+  color: gray;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: bolder;
+  overflow: hidden;
+  margin-right: 1rem;
+}

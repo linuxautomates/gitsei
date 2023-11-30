@@ -1,0 +1,65 @@
+.h-popover {
+  padding: 6px 10px;
+  background: var(--grey1);
+  opacity: 0.9;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  transform: translate(-50%, -100%);
+  transition: 0.2s all;
+  display: flex;
+  align-items: center;
+}
+
+.h-popover:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #333;
+}
+
+.h-popover-item {
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+}
+
+.h-popover-item + .h-popover-item {
+  margin-left: 10px;
+}
+
+.default-popover {
+  background: transparent;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  color: #fff;
+  .ant-popover-inner-content {
+    background: var(--grey1);
+    opacity: 0.9;
+    color: #fff;
+    fill: var(--grey1);
+  }
+
+  .ant-popover-content > .ant-popover-arrow {
+    border-bottom-color: var(--grey1);
+    border-right-color: var(--grey1);
+  }
+}
+
+mark {
+  background-color: #bcdcfd;
+  cursor: pointer;
+  border-radius: 11px;
+  padding: 3px 5px;
+}

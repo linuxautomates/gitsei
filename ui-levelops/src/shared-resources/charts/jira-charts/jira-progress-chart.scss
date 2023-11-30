@@ -1,0 +1,130 @@
+.jira_progress_chart_container {
+  padding-top: 12px;
+
+  .progress-programm-chart {
+    color: var(--title-color) !important;
+    .ant-table {
+      color: var(--title-color) !important;
+    }
+    .ant-table-body {
+      background-color: #ffffff;
+      .status-label-container {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding-right: 1rem;
+      }
+      .status-tag-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        width: 50%;
+      }
+    }
+    .ant-table-scroll {
+      .ant-table-body {
+        scrollbar-color: #dcdfe4 !important;
+        background-color: #ffffff;
+      }
+
+      .ant-table-body::-webkit-scrollbar {
+        -webkit-appearance: none;
+        height: 8px;
+      }
+
+      .ant-table-body::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #dcdfe4;
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  .progress-pagination-div {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    border: none;
+    background-color: #ffffff;
+  }
+
+  .ant-table-thead tr .ant-table-column-title {
+    font-weight: 400;
+  }
+  .ant-table-tbody > tr {
+    height: 40px;
+  }
+  .ant-table-tbody > tr > td {
+    font-size: 0.9rem;
+    line-height: 22px;
+    padding: 8px 8px !important;
+  }
+  .ant-table-thead > tr:first-child {
+    text-align: center !important;
+  }
+  .newTag {
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    color: white;
+  }
+
+  .ant-progress-text {
+    font-weight: 700;
+    color: #000;
+  }
+
+  .teams-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .team-div {
+      position: relative;
+
+      .f-12 {
+        position: absolute;
+        bottom: -0.3rem;
+      }
+
+      .f-12:nth-child(2) {
+        left: 1.2rem;
+      }
+
+      .f-12:nth-child(3) {
+        left: 2.2rem;
+      }
+    }
+    .teams-remaining {
+      cursor: pointer;
+      color: #096dd9;
+    }
+  }
+}
+.carousal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .custom-carousal {
+    padding: 1rem 0.5rem;
+  }
+}
+.ant-popover-inner-content {
+  .team-popover-content {
+    max-height: 12rem;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1440px) {
+  .jira_progress_chart_container {
+    padding-left: 0rem;
+    .ant-table-tbody > tr > td {
+      padding: 10px 12px;
+    }
+  }
+}

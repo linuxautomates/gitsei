@@ -1,0 +1,34 @@
+@import "shared-resources/style/mixin.scss";
+
+.global-settings {
+  .sso-container {
+    padding: 15px 8px;
+  }
+
+  .state-settings {
+    .states-container {
+      padding: 15px 0;
+    }
+
+    .ant-card-head {
+      padding: 0;
+    }
+  }
+}
+
+.global-dashboard-color-scheme {
+  &_item {
+    &-popover {
+      .ant-popover-inner-content {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.chrome-extension-setting-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(50, 50, 50, 0.75);
+}

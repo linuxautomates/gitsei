@@ -1,0 +1,21 @@
+.actionsWrapper {
+  display: flex;
+}
+
+.action {
+  cursor: pointer;
+}
+
+.withoutBorder {
+  border: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+@media (min-width: 1355px) and (max-width: 1440px) {
+  .actionsWrapper {
+    .ant-btn-delete {
+      width: 27px !important;
+    }
+  }
+}

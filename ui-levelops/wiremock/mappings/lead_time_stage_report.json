@@ -1,0 +1,103 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/velocity"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Lead time to first commit",
+          "additional_key": "First Commit",
+          "median": 0,
+          "count": 3993,
+          "mean": 4.124789404274981e8,
+          "p90": 0,
+          "p95": 0,
+          "velocity_stage_result": {
+            "lower_limit_value": 864000,
+            "lower_limit_unit": "SECONDS",
+            "upper_limit_value": 2592000,
+            "upper_limit_unit": "SECONDS",
+            "rating": "GOOD"
+          }
+        },
+        {
+          "key": "Dev Time",
+          "additional_key": "Pull Request Created",
+          "median": 0,
+          "count": 3993,
+          "mean": 0.0,
+          "p90": 0,
+          "p95": 0,
+          "velocity_stage_result": {
+            "lower_limit_value": 864000,
+            "lower_limit_unit": "SECONDS",
+            "upper_limit_value": 2592000,
+            "upper_limit_unit": "SECONDS",
+            "rating": "GOOD"
+          }
+        },
+        {
+          "key": "Lead time to review",
+          "additional_key": "Pull Request Review Started",
+          "median": 0,
+          "count": 3993,
+          "mean": 0.0,
+          "p90": 0,
+          "p95": 0,
+          "velocity_stage_result": {
+            "lower_limit_value": 864000,
+            "lower_limit_unit": "SECONDS",
+            "upper_limit_value": 2592000,
+            "upper_limit_unit": "SECONDS",
+            "rating": "GOOD"
+          }
+        },
+        {
+          "key": "Review Time",
+          "additional_key": "Pull Request Approved",
+          "median": 0,
+          "count": 3993,
+          "mean": 0.0,
+          "p90": 0,
+          "p95": 0,
+          "velocity_stage_result": {
+            "lower_limit_value": 864000,
+            "lower_limit_unit": "SECONDS",
+            "upper_limit_value": 2592000,
+            "upper_limit_unit": "SECONDS",
+            "rating": "GOOD"
+          }
+        },
+        {
+          "key": "Merge Time",
+          "additional_key": "Pull Request Merged",
+          "median": 0,
+          "count": 3993,
+          "mean": 0.0,
+          "p90": 0,
+          "p95": 0,
+          "velocity_stage_result": {
+            "lower_limit_value": 864000,
+            "lower_limit_unit": "SECONDS",
+            "upper_limit_value": 2592000,
+            "upper_limit_unit": "SECONDS",
+            "rating": "GOOD"
+          }
+        }
+      ],
+      "count": 5,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

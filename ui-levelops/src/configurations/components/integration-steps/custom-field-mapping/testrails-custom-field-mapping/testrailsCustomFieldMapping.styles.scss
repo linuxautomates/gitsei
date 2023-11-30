@@ -1,0 +1,23 @@
+.testrails-custom-mapping-container {
+    width: 47%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    &_header {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  
+    &_no-mapping-text {
+      font-size: 0.75rem;
+      display: "block";
+      margin: 0.5rem;
+    }
+  
+    .full-width {
+      width: 100%;
+    }
+  }

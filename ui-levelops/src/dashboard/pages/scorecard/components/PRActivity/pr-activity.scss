@@ -1,0 +1,42 @@
+.pr-activity-container {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.pr-activity-first-title-hide-show {
+  color: #2967dd;
+  cursor: pointer;
+}
+.pr-activity-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  .child {
+    flex: 1 0 30%;
+    max-width: 30%;
+  }
+  .pr-activity-title-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .pr-activity-by {
+    width: 200px;
+  }
+  .pr-activity-week-selection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .ant-select-enabled {
+      width: auto;
+    }
+  }
+}
+.pr-activity-vertical-auto-margin {
+  margin: auto 6px;
+}
+.pr-activity-name {
+  color: #2a67dd;
+  font-size: 14px;
+}

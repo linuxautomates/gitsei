@@ -1,0 +1,116 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/sonarqube_issues/values"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "status": [
+            {
+              "key": "STATUS 1"
+            },
+            {
+              "key": "STATUS 2"
+            },
+            {
+              "key": "STATUS 3"
+            },
+            {
+              "key": "STATUS 4"
+            },
+            {
+              "key": "STATUS 5"
+            },
+            {
+              "key": "STATUS 6"
+            }
+          ]
+        },
+        {
+          "severity": [
+            {
+              "key": "SEVERITY 1"
+            },
+            {
+              "key": "SEVERITY 2"
+            },
+            {
+              "key": "SEVERITY 3"
+            }
+          ]
+        },
+        {
+          "organization": [
+            {
+              "key": "ORGANIZATION 1"
+            },
+            {
+              "key": "ORGANIZATION 2"
+            },
+            {
+              "key": "ORGANIZATION 3"
+            },
+            {
+              "key": "ORGANIZATION 4"
+            },
+            {
+              "key": "ORGANIZATION 5"
+            }
+          ]
+        },
+        {
+          "project": [
+            {
+              "key": "APSEC"
+            },
+            {
+              "key": "CGN"
+            },
+            {
+              "key": "LEV"
+            },
+            {
+              "key": "NP"
+            },
+            {
+              "key": "TEST2"
+            },
+            {
+              "key": "TM12"
+            },
+            {
+              "key": "TS"
+            }
+          ]
+        },
+        {
+          "type": [
+            {
+              "key": "Type 1"
+            },
+            {
+              "key": "Type 2"
+            },
+            {
+              "key": "Type 3"
+            },
+            {
+              "key": "Type 4"
+            },
+            {
+              "key": "Type 5"
+            }
+          ]
+        }
+      ],
+      "count": 10
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

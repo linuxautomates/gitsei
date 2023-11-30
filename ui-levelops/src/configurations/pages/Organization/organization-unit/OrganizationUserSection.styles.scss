@@ -1,0 +1,117 @@
+.ou-user-section {
+  height: 50%;
+  width: 100%;
+  .user-manual-selection-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .selected_count {
+      width: 80%;
+      align-items: center;
+      display: flex;
+      margin-left: 1.45rem;
+      .title {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+        font-weight: 500;
+      }
+    }
+    .user-create-option {
+      color: var(--link-and-actions);
+      margin-right: 0.25rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .action-manual-selection-remove {
+      .ant-btn {
+        border-radius: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem;
+        color: var(--light-text);
+        .anticon {
+          position: absolute;
+          right: 25%;
+          bottom: 20%;
+        }
+      }
+    }
+  }
+  .filter-field-container {
+    width: 100%;
+    .filter-row {
+      display: flex;
+      justify-content: space-between;
+      .select-content {
+        display: flex;
+        width: 80%;
+        .text {
+          width: 8rem;
+          text-align: end;
+        }
+      }
+    }
+
+    .time-filter-row {
+      width: 75.75%;
+    }
+
+    .filter-col {
+      width: 25.25% !important;
+      margin: 0rem 0.5rem 0rem 0.5rem !important;
+    }
+    .action-filter-col {
+      .ant-btn {
+        border-radius: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem;
+        color: var(--light-text);
+        .anticon {
+          position: absolute;
+          right: 25%;
+          bottom: 20%;
+        }
+      }
+    }
+    .filter-col-select {
+      width: 100%;
+    }
+  }
+  &-title {
+    margin-bottom: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .ant-divider-horizontal {
+    margin-top: 0;
+  }
+  .user-action-controller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ant-btn {
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+    .user-add-action {
+      font-weight: 500;
+      .anticon {
+        margin-right: 0.4rem;
+      }
+      .user-create-option {
+        color: var(--link-and-actions);
+        margin-right: 0.25rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

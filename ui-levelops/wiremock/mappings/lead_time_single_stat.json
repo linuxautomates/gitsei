@@ -1,0 +1,101 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/velocity",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"across\": \"velocity\"}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "Default Velocity",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 28917982
+        },
+        {
+          "key": "Backlog Time",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 28927982
+        },
+        {
+          "key": "Lead time to first commit",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 28937982
+        },
+        {
+          "key": "Dev Time",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 18947982
+        },
+        {
+          "key": "Lead time to review",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 28027982
+        },
+        {
+          "key": "Review Time",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 22927982
+        },
+        {
+          "key": "Merge Time",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 22927982
+        },
+        {
+          "key": "Deploy to Staging",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 18927982
+        },
+        {
+          "key": "QA",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 12927982
+        },
+        {
+          "key": "Deploy to Prod",
+          "count": 25,
+          "min": 10101,
+          "max": 119101102892,
+          "median": 20927982
+        }
+      ],
+      "count": 6,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

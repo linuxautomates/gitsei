@@ -1,0 +1,489 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/workflows/3"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "selected": {},
+      "hovered": {},
+      "name": "Security Training",
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "start",
+          "position": {
+            "x": 20,
+            "y": 20
+          },
+          "ports": {
+            "output": {
+              "id": "output",
+              "type": "output",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "type": "start",
+            "icon": "info-circle",
+            "title": "start",
+            "name": "start"
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "condition": {
+          "id": "condition",
+          "type": "condition",
+          "position": {
+            "x": 200,
+            "y": 20
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "top",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "success": {
+              "id": "success",
+              "type": "bottom",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            },
+            "fail": {
+              "id": "fail",
+              "type": "output",
+              "properties": {
+                "action": "fail"
+              },
+              "position": {
+                "x": 60,
+                "y": 140
+              }
+            }
+          },
+          "properties": {
+            "icon": "apartment",
+            "title": "condition",
+            "type": "condition",
+            "name": "Training Complete",
+            "configurations": {
+              "rules": {
+                "type": "condition",
+                "name": "or",
+                "id": "1",
+                "children": [
+                  {
+                    "type": "rule",
+                    "id": "c5b404f0-4d16-11ea-8479-d1075e6fd647",
+                    "signature": {
+                      "key": "48",
+                      "label": "Contractors have taken security training before providing access"
+                    },
+                    "operator": {
+                      "key": "==",
+                      "label": "=="
+                    },
+                    "value": "true"
+                  }
+                ],
+                "": {}
+              }
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "d3f094c0-4d16-11ea-8479-d1075e6fd647": {
+          "id": "d3f094c0-4d16-11ea-8479-d1075e6fd647",
+          "type": "action_slack",
+          "position": {
+            "x": 358,
+            "y": 160
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "top",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "bottom",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "slack",
+            "type": "action_slack",
+            "name": "notify employee",
+            "title": "slack",
+            "configurations": {
+              "message_template_id": "1",
+              "target_emails": [1],
+              "additional_info": "Please complete your security training"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          },
+          "ui_properties": [
+            {
+              "key": "1",
+              "label": "Text Area",
+              "type": "text-area",
+              "placeholder": "Additional Comments to be added to the slack message",
+              "disabled": false,
+              "required": false,
+              "hidden": false,
+              "values": {
+                "value": "abc@gmail.com",
+                "type": "string"
+              },
+              "validation": "email"
+            },
+            {
+              "key": "2",
+              "label": "Text",
+              "type": "text",
+              "placeholder": "Default Placeholder",
+              "validation": "max_length",
+              "validation_props": "30"
+            },
+            {
+              "key": "22",
+              "label": "Text",
+              "type": "text",
+              "hidden": true,
+              "placeholder": "Default Placeholder"
+            },
+            {
+              "key": "123",
+              "label": "Date",
+              "type": "date",
+              "values": {
+                "value": 1586488220,
+                "type": "date"
+              }
+            },
+            {
+              "key": "3",
+              "label": "Radio Group",
+              "type": "radio-group",
+              "options": ["Option1", "Option2", "Option3"],
+              "values": {
+                "value": "Option1",
+                "type": "string"
+              }
+            },
+            {
+              "key": "4",
+              "label": "Multi Select",
+              "placeholder": "Select Communication Medium",
+              "type": "multi-select",
+              "options": ["EMAIL", "SLACK", "OPTION3"]
+            },
+            {
+              "key": "5",
+              "label": "Single Select",
+              "placeholder": "Select Communication Medium",
+              "type": "single-select",
+              "required": true,
+              "values": {
+                "value": "EMAIL",
+                "type": "string"
+              },
+              "options": ["EMAIL", "SLACK", "OPTION3"]
+            },
+            {
+              "key": "6",
+              "label": "Single Dynamic Select",
+              "type": "single-dynamic-select",
+              "uri": "users",
+              "method": "list",
+              "searchField": "email",
+              "placeholder": "Select user or enter email",
+              "actionName": "usersList"
+            },
+            {
+              "key": "7",
+              "label": "Multi Dynamic Select",
+              "type": "multi-dynamic-select",
+              "uri": "users",
+              "method": "list",
+              "searchField": "email",
+              "placeholder": "Select user or enter email",
+              "actionName": "usersList"
+            },
+            {
+              "key": "8",
+              "label": "File upload",
+              "type": "file-upload"
+            }
+          ]
+        },
+        "e1d085a0-4d16-11ea-8479-d1075e6fd647": {
+          "id": "e1d085a0-4d16-11ea-8479-d1075e6fd647",
+          "type": "wait",
+          "position": {
+            "x": 535,
+            "y": 160
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "top",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "success": {
+              "id": "success",
+              "type": "bottom",
+              "properties": {
+                "action": "success"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            },
+            "fail": {
+              "id": "fail",
+              "type": "output",
+              "properties": {
+                "action": "fail"
+              },
+              "position": {
+                "x": 60,
+                "y": 140
+              }
+            }
+          },
+          "properties": {
+            "icon": "clock-circle",
+            "type": "wait",
+            "name": "Check Status",
+            "title": "Check Training Status",
+            "configurations": {
+              "node_id": "condition",
+              "exit_status": "CONDITION_PASS",
+              "frequency": {
+                "type": "daily",
+                "escalation": "weekly"
+              }
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "00459c50-4d17-11ea-8479-d1075e6fd647": {
+          "id": "00459c50-4d17-11ea-8479-d1075e6fd647",
+          "type": "action_email",
+          "position": {
+            "x": 712,
+            "y": 276
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "top",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "bottom",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "mail",
+            "type": "action_email",
+            "name": "Notify Supervisor",
+            "title": "email",
+            "configurations": {
+              "message_template_id": "1",
+              "target_emails": [4],
+              "additional_info": "Your direct report has not completed security training. Access will be revoked until the training has been completed"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        },
+        "0bc751e0-4d17-11ea-8479-d1075e6fd647": {
+          "id": "0bc751e0-4d17-11ea-8479-d1075e6fd647",
+          "type": "action_workitem",
+          "position": {
+            "x": 897,
+            "y": 277
+          },
+          "ports": {
+            "input": {
+              "id": "input",
+              "type": "top",
+              "properties": {
+                "action": "input"
+              },
+              "position": {
+                "x": -1,
+                "y": 70
+              }
+            },
+            "output": {
+              "id": "output",
+              "type": "bottom",
+              "properties": {
+                "action": "output"
+              },
+              "position": {
+                "x": 121,
+                "y": 70
+              }
+            }
+          },
+          "properties": {
+            "icon": "shopping",
+            "type": "action_workitem",
+            "name": "Revoke Access",
+            "title": "Work Item",
+            "configurations": {
+              "notification": "EMAIL",
+              "assignee_ids": [1, 2, 9],
+              "priority": "HIGH",
+              "status": "OPEN"
+            }
+          },
+          "size": {
+            "width": 120,
+            "height": 139
+          }
+        }
+      },
+      "links": {
+        "link1": {
+          "id": "link1",
+          "from": {
+            "nodeId": "start",
+            "portId": "output"
+          },
+          "to": {
+            "nodeId": "condition",
+            "portId": "input"
+          },
+          "properties": {
+            "label": "example link label"
+          }
+        },
+        "05c0524b-cf0b-401d-a332-6736ea9d1894": {
+          "id": "05c0524b-cf0b-401d-a332-6736ea9d1894",
+          "from": {
+            "nodeId": "condition",
+            "portId": "fail"
+          },
+          "to": {
+            "nodeId": "d3f094c0-4d16-11ea-8479-d1075e6fd647",
+            "portId": "input"
+          }
+        },
+        "041c5798-87e4-418e-a246-723c3c121096": {
+          "id": "041c5798-87e4-418e-a246-723c3c121096",
+          "from": {
+            "nodeId": "d3f094c0-4d16-11ea-8479-d1075e6fd647",
+            "portId": "output"
+          },
+          "to": {
+            "nodeId": "e1d085a0-4d16-11ea-8479-d1075e6fd647",
+            "portId": "input"
+          }
+        },
+        "becfc65e-ca34-44ca-ab63-2aee08f3fe23": {
+          "id": "becfc65e-ca34-44ca-ab63-2aee08f3fe23",
+          "from": {
+            "nodeId": "e1d085a0-4d16-11ea-8479-d1075e6fd647",
+            "portId": "fail"
+          },
+          "to": {
+            "nodeId": "00459c50-4d17-11ea-8479-d1075e6fd647",
+            "portId": "input"
+          }
+        },
+        "003237b6-9879-4b44-a3ca-6356fe7edbfd": {
+          "id": "003237b6-9879-4b44-a3ca-6356fe7edbfd",
+          "from": {
+            "nodeId": "00459c50-4d17-11ea-8479-d1075e6fd647",
+            "portId": "output"
+          },
+          "to": {
+            "nodeId": "0bc751e0-4d17-11ea-8479-d1075e6fd647",
+            "portId": "input"
+          }
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

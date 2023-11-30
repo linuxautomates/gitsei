@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      // "constants/*": ["constants/*"]
+      "@assets/*": ["assets/*"]
+    },
+    // "paths": {
+    // "src/*": ["./src/*"],
+    // "constants/*": ["./src/constants/*"],
+    // "shared-resources/*": ["./src/shared-resources/*"]
+    // },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "target": "ES2021",
+    "module": "ESNext",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test.*", "node_modules"]
+}

@@ -1,0 +1,43 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/commits/aggregate"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        {
+          "count": 19,
+          "key": "1592898830"
+        },
+        {
+          "count": 9,
+          "key": "1592812430"
+        },
+        {
+          "count": 53,
+          "key": "1592294030"
+        },
+        {
+          "count": 59,
+          "key": "1590220430"
+        },
+        {
+          "count": 76,
+          "key": "1561276430"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

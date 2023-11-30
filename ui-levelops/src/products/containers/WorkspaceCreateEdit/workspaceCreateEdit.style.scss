@@ -1,0 +1,18 @@
+.workspace-modal-sheet {
+  .ant-modal-content {
+    .ant-modal-body {
+      .org-list {
+        max-height: 55vh;
+        overflow: auto;
+        ul {
+          list-style: initial;
+          margin-bottom: 14px;
+        }
+      }
+      .confirmation-heading {
+        display: flex;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_issues/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [],
+      "count": 10,
+      "_metadata": {
+        "page_size": 10,
+        "page": 0,
+        "next_page": 1,
+        "has_next": false,
+        "total_count": 0
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

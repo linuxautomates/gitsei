@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/job_config_changes"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        { "key": "1627756200", "count": 2 },
+        { "key": "1630434600", "count": 4 },
+        { "key": "1633026600", "count": 5 },
+        { "key": "1635705000", "count": 1 },
+        { "key": "1638297000", "count": 10 }
+      ],
+      "count": 1,
+      "_metadata": { "page_size": 100, "page": 0, "has_next": false }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

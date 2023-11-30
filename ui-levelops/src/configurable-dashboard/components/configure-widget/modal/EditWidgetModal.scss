@@ -1,0 +1,64 @@
+.edit-widget {
+  .ant-form-item-control-wrapper {
+    width: 95%;
+  }
+
+  .error-msg {
+    color: #f44336;
+    font-size: 12px;
+  }
+}
+
+.widget-config-hint {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #595959;
+}
+
+.ant-modal-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #404040;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
+.ant-modal-close-icon {
+  color: #323232;
+  font-size: 20px;
+}
+
+.ant-modal-body {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+
+  .ant-form-item-label > label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 15px 0 10px 0;
+    text-transform: unset;
+  }
+
+  .ant-radio-wrapper {
+    color: #595959;
+  }
+
+  .ant-form-item-children > textarea {
+    border: none;
+    border-bottom: 1px solid #aeadad;
+    border-radius: unset;
+  }
+}

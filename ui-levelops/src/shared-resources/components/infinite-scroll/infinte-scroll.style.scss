@@ -1,0 +1,15 @@
+.infinite-scroll {
+  display: flex;
+  flex: 1 0 auto;
+  overflow: hidden;
+  overflow-y: auto;
+  white-space: normal;
+  flex-direction: column;
+
+  &__horizontal {
+    white-space: nowrap;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}

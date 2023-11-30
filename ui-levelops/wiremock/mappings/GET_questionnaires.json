@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/questionnaires/5a219a3d-5dd5-463b-93ab-54e6e6f75697"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "sender_email": "",
+      "assignment_message": "",
+      "work_item_id": "65121919-a79d-4bd1-914f-da19f82320ef",
+      "id": "d5ce2789-59f0-4668-9cb6-8902695daffa",
+      "qtemplate_id": "cd85154f-e72f-459a-952e-57a63f99809e",
+      "product_id": "16",
+      "qtemplate_name": "SDLC-02-2022-04",
+      "generation": "1657165705786290",
+      "completed": false,
+      "current_score": 0,
+      "priority": "UNKNOWN",
+      "total_questions": 1,
+      "answered_questions": 0,
+      "total_score": 0,
+      "updated_at": 1657165706,
+      "sections": [
+        {
+          "tags": [],
+          "id": "6aa54271-851f-4b63-b15b-6b1c3b27d20a",
+          "name": "All code changes require peer review and testing.",
+          "type": "DEFAULT",
+          "description": "",
+          "questions": [
+            {
+              "id": "02a365a9-052a-4dfa-96b1-c702756de33d",
+              "name": "A positive sample change showing changes was tested before merging.\nhttps://gerrit.corp.arista.io/q/is:merged+project:arista ",
+              "severity": "MEDIUM",
+              "section_id": "6aa54271-851f-4b63-b15b-6b1c3b27d20a",
+              "type": "File Upload",
+              "options": [
+                {
+                  "value": "",
+                  "score": 0
+                }
+              ],
+              "verifiable": false,
+              "number": 1,
+              "required": false,
+              "tag_ids": []
+            }
+          ],
+          "created_at": 1657036302
+        }
+      ],
+      "section_responses": [],
+      "message_sent": false,
+      "tag_ids": ["392"],
+      "state": "CREATED",
+      "main": false,
+      "kb_ids": []
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

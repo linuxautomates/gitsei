@@ -1,0 +1,31 @@
+.time-range-filter {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 104px;
+
+  .time-range-abs-rel {
+    &__header {
+      margin-bottom: 8px;
+      &--title {
+        font-size: 14px;
+        line-height: 20px;
+        color: #2d3e5e;
+        font-weight: 500;
+        margin-right: 5px;
+      }
+
+      &--clear-button {
+        //margin-left: 108px;
+      }
+
+      &--clear-button.ant-btn {
+        height: 22px;
+      }
+    }
+
+    .relative-time-range-dropdown {
+      flex-grow: unset;
+      width: auto !important;
+    }
+  }
+}

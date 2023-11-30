@@ -1,0 +1,115 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/prs/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 7
+      },
+      "count": 7,
+      "records": [
+        {
+          "state": [
+            {
+              "key": "OPEN",
+              "total_tickets": 100
+            },
+            {
+              "key": "CLOSED",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "repo_id": [
+            {
+              "key": "1",
+              "total_tickets": 100
+            },
+            {
+              "key": "2",
+              "total_tickets": 100
+            },
+            {
+              "key": "3",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "creator": [
+            {
+              "key": "Kushagra",
+              "total_tickets": 100
+            },
+            {
+              "key": "Piyush",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "branch": [
+            {
+              "key": "LEV-1",
+              "total_tickets": 100
+            },
+            {
+              "key": "LEV-2",
+              "total_tickets": 100
+            },
+            {
+              "key": "LEV-3",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "assignee": [
+            {
+              "key": "Kushagra",
+              "total_tickets": 100
+            },
+            {
+              "key": "Piyush",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "label": [
+            {
+              "key": "TEST-UI",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "reviewer": [
+            {
+              "key": "Meghana Dwarakanath",
+              "total_tickets": 100
+            },
+            {
+              "key": "Megha Shyam",
+              "total_tickets": 100
+            },
+            {
+              "key": "Ivan Leon",
+              "total_tickets": 100
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

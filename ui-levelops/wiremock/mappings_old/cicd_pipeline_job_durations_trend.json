@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/pipelines/job_durations",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"across\": \"trend\"  }",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "1591720855",
+          "min": 15,
+          "median": 25,
+          "max": 250
+        },
+        {
+          "key": "1592515671",
+          "min": 150,
+          "median": 200,
+          "max": 300
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

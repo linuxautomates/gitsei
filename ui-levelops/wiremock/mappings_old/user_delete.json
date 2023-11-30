@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPathPattern": "/v1/users/([0-9]*)"
+  },
+  "response": {
+    "status": 202,
+    "jsonBody": { "id": "123" },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

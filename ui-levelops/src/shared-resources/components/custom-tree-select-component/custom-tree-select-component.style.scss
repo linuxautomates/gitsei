@@ -1,0 +1,39 @@
+.custom-tree-select-component {
+  background: white !important;
+  border: unset !important;
+
+  .ant-collapse-content {
+    border-top: unset !important;
+  }
+
+  .ant-collapse-item {
+    border-bottom: unset !important;
+
+    .ant-collapse-header {
+      padding: 5px 40px !important;
+    }
+
+    .ant-collapse-content {
+      .ant-collapse-content-box {
+        padding: 5px 10px !important;
+      }
+    }
+  }
+}
+
+.accordion-heading-wrap {
+  display: flex;
+  align-items: center;
+  .accordion-heading {
+    margin-left: 9px;
+    cursor: pointer;
+  }
+  .ant-checkbox {
+    margin-left: unset !important;
+  }
+}
+
+.shift-heading {
+  margin-left: 42px;
+  background: white !important;
+}

@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/bestpractices/search"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        { "id": 1, "name": "MongoDB Best Practices" },
+        { "id": 2, "name": "Cassandra Best Practices" },
+        { "id": 3, "name": "Secrets Management Best Practices" },
+        { "id": 4, "name": "Java Spring Application Best Practices" },
+        { "id": 5, "name": "MySQL Best Practices" }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

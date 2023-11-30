@@ -1,0 +1,42 @@
+.products-infinite-list {
+  .infinite-scroll__horizontal {
+    padding-bottom: 10px;
+  }
+  .product {
+    width: 23.2rem;
+    margin: 0 10px;
+    padding: 0 24px;
+    border: 1px solid var(--grey13);
+    border-radius: 5px;
+    background-color: transparent;
+    .ant-card-body {
+      padding: 15px 24px 10px;
+    }
+    &.selected {
+      background-color: var(--levelops-white);
+      box-shadow: 0px 2px 3px #1b2c3c1a;
+      border: 1px solid transparent;
+      transition: all 0.5s ease;
+    }
+  }
+  .ant-progress-inner {
+    background-color: #dfe4ef;
+  }
+  .product-data {
+    &__title {
+      .title1 {
+        font-size: 30px;
+        line-height: 20px;
+      }
+      .subtitle1 {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 15px;
+        color: #2d3e5e;
+        font-weight: bolder;
+      }
+    }
+  }
+}

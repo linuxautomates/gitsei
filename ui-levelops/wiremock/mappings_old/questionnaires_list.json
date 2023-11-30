@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/qtemplates/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "18e91eb1-7968-4899-9635-591e0c43c8c8",
+          "work_item_id": "3c095a1d-70c5-4985-aef1-ed8f849f9468",
+          "current_score": 0,
+          "priority": "LOW",
+          "total_questions": 9,
+          "target_email": "tamvada@levelops.io",
+          "answered_questions": 1,
+          "updated_at": 1592782936,
+          "completed": false,
+          "questionnaire_template_id": "2689bcdd-b631-45bf-aa6c-0206ae5935da",
+          "questionnaire_template_name": "User Access Management",
+          "product_id": "71",
+          "tag_ids": ["37", "77"],
+          "state": "INCOMPLETE",
+          "main": true
+        }
+      ],
+      "count": 1,
+      "_metadata": { "page_size": 1, "page": 0, "next_page": 1, "has_next": true, "total_count": 184 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

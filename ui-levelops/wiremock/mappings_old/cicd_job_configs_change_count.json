@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/job_config_change"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      },
+      "count": 2,
+      "records": [
+        {
+          "count": 19,
+          "key": "Pipeline-1"
+        },
+        {
+          "count": 9,
+          "key": "Pipeline-2"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

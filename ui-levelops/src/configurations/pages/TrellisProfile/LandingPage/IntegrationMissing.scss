@@ -1,0 +1,22 @@
+.integration-missing-page {
+  .divider-spacing {
+    margin: 4px 0;
+  }
+  .content {
+    display: block;
+    padding: 0 15%;
+    margin: 24px 0;
+    font-style: italic;
+    color: #404040;
+  }
+  .add-integration-button {
+    margin: 0 50%;
+    border-radius: 4px;
+    background-color: #d93865;
+    border-color: #d93865;
+    &:hover {
+      background-color: #ef315e;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}

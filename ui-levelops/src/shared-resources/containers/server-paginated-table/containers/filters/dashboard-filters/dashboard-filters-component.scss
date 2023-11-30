@@ -1,0 +1,10 @@
+.dashboard-filters-component-container {
+  padding: 1rem;
+  &-description {
+    margin-bottom: 1rem;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

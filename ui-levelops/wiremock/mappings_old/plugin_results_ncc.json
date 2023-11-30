@@ -1,0 +1,94 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/plugins/results/ncc"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "b989a8bb-a2f5-4243-8548-b81f0b290395",
+      "plugin_name": "NCC Group Report",
+      "class": "report_file",
+      "tool": "report_nccgroup",
+      "version": "1",
+      "product_ids": ["30"],
+      "successful": true,
+      "metadata": {
+        "os": "redhat8",
+        "version": "<runner version>",
+        "execution": 3.2384414673,
+        "available_cores": "3ecu",
+        "available_memory": "4GB"
+      },
+      "labels": {
+        "project_name": ["DMA,DMA (Retest)"]
+      },
+      "results": {
+        "data": {
+          "use of obsolete open source libraries": {
+            "risk": "high",
+            "identifier": "NCC-2018-004",
+            "category": "category",
+            "component": "component",
+            "location": "location",
+            "impact": "impact",
+            "description": "description",
+            "recomendation": "recommendation",
+            "reproduction_steps": "repo",
+            "status": "Done",
+            "client_vulnerability_id": "client vuln id"
+          }
+        },
+        "summary": {
+          "assestment_0": {
+            "total_critical": "0",
+            "total_high": "0",
+            "total_med": "1",
+            "total_low": "3",
+            "total_info": "2",
+            "total_issues": "6"
+          },
+          "assestment_1": {
+            "total_critical": "0",
+            "total_high": "0",
+            "total_med": "0",
+            "total_low": "0",
+            "total_info": "1",
+            "total_issues": "1"
+          }
+        },
+        "aggregations": {
+          "by_category": {
+            "access_control": 3,
+            "cryptography": 1,
+            "something": 3
+          },
+          "by_component": {
+            "bitcoin": 0,
+            "something": 0
+          },
+          "by_something": {
+            "something": 1
+          }
+        },
+        "metadata": {
+          "title": "title",
+          "date": "date",
+          "version": "version",
+          "platform": "platform",
+          "environment": "environment",
+          "method": "method",
+          "effort": "effort"
+        },
+        "project_name": "DMA,DMA (Retest)"
+      },
+      "created_at": 1587073555000,
+      "created_at_epoch": 1587073555
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

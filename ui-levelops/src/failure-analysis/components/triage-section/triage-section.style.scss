@@ -1,0 +1,87 @@
+$background: #f8f8f8;
+
+.triage-section {
+  .name-col:hover {
+    font-weight: 600;
+  }
+
+  &__heading {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--greyText);
+    display: block;
+    padding-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--greyText);
+    display: block;
+    margin-top: 5px;
+    margin-left: 1rem;
+  }
+
+  .ant-card {
+    background-color: $background;
+
+    .ant-table-header,
+    .ant-table-body {
+      background-color: $background;
+
+      .ant-table-selection-column {
+        > * {
+          display: none;
+        }
+      }
+    }
+
+    .ant-table-body {
+      overflow-y: auto !important;
+
+      tr.ant-table-row:hover {
+        td {
+          background: #bcdcfd;
+          cursor: pointer;
+        }
+      }
+
+      .ant-table-row-selected {
+        .name-col {
+          font-weight: 600;
+        }
+
+        tr.ant-table-row:hover {
+          td {
+            background: #bcdcfd;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .selected-item {
+      tr.ant-table-row {
+        td {
+          background: #bcdcfd;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .ant-table-thead > tr > th {
+      background-color: $background;
+    }
+  }
+
+  .selected-regexes {
+    padding: 0.5rem 0 1rem 1rem;
+  }
+
+  .created-at-col {
+    vertical-align: top;
+  }
+}

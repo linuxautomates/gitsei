@@ -1,0 +1,24 @@
+.ant-input-clear-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+
+  .anticon {
+    opacity: 0.6;
+    font-size: 12px;
+    color: rgba(black, 0.4);
+  }
+
+  &:hover {
+    .anticon {
+      transition: opacity 0.25s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

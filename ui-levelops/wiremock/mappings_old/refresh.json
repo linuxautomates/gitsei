@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/refresh"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXJzaEBsZXZlbG9wcy5pbyIsInVzZXJfdHlwZSI6ImFkbWluIiwiY29tcGFueSI6ImZvbyIsImV4cCI6MTY3MTk0MjYyNiwiaWF0IjoxNTcxOTQyNjI2fQ.g12p6tYqWLLfS8CYk2UrFS5RZ1arhgavAFtNiYpGQIo"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

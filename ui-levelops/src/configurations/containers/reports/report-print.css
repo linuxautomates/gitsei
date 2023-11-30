@@ -1,0 +1,17 @@
+@media print {
+  .container {
+    height: initial !important;
+    overflow: initial !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    display: block;
+    page-break-before: always;
+    break-before: page;
+    break-after: page;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}

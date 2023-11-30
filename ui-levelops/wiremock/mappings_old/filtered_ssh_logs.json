@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/v1/get_ssh_logs"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "jsonBody": {
+      "matched_events": [
+        {
+          "type": "shell_command",
+          "command": "a:b",
+          "time": 1557904522,
+          "session_id": "82828hkaklsd",
+          "session_user": "harsh",
+          "server_ip": "1.1.1.1",
+          "environ": "environment1",
+          "customer_id": "test2"
+        },
+        {
+          "type": "shell_command",
+          "command": "service nginx restart",
+          "time": 1557904522,
+          "session_id": "82828hkaklsd",
+          "session_user": "harsh",
+          "server_ip": "1.1.1.1",
+          "environ": "environment1",
+          "customer_id": "test2"
+        }
+      ]
+    }
+  }
+}

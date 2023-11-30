@@ -1,0 +1,68 @@
+.jira-priority-column-container {
+  display: flex;
+  height: 2rem;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: inherit;
+  .prioirty-status {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .team-count-container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    .user-container {
+      display: flex;
+      width: 2rem;
+      justify-content: space-between;
+      margin-left: 0.25rem;
+      align-items: center;
+      &-icon {
+        font-size: 1.08rem;
+        color: var(--ba-blue);
+      }
+      &-text {
+        margin-bottom: 0;
+        font-size: 1.12rem;
+        font-weight: 500;
+        margin-left: 0.15rem;
+        color: var(--ba-blue);
+      }
+    }
+    .arrow-icon-style {
+      font-size: 1.1rem;
+      margin-right: 0.25rem;
+    }
+  }
+}
+.avatar-name-container {
+  max-height: 12rem;
+  overflow-x: hidden;
+  .avatar-name-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 12rem;
+    .name-avatar-container {
+      width: 20%;
+      text-align: center;
+    }
+    .text-container {
+      width: 80%;
+      .avatar-text {
+        margin-left: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        color: var(--ba-blue);
+      }
+    }
+  }
+}

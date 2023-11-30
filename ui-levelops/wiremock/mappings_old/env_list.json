@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/environments"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "environments": [
+        {
+          "id": 1,
+          "name": "nam1"
+        },
+        {
+          "id": 2,
+          "name": "nam2"
+        },
+        {
+          "id": 3,
+          "name": "staging1"
+        },
+        {
+          "id": 4,
+          "name": "staging2"
+        },
+        {
+          "id": 5,
+          "name": "eu"
+        },
+        {
+          "id": 6,
+          "name": "apac"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

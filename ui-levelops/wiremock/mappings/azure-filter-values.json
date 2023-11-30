@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/issue_mgmt/workitems/values"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "feature": {
+            "total_count": 4,
+            "records": [
+              {
+                "key": "Feature 1",
+                "total_tickets": 3
+              },
+              {
+                "key": "Feature 2",
+                "total_tickets": 3
+              }
+            ],
+            "count": 4
+          },
+          "user_story": {
+            "total_count": 4,
+            "records": [
+              {
+                "key": "User Story 1",
+                "total_tickets": 3
+              },
+              {
+                "key": "User Story 2",
+                "total_tickets": 3
+              }
+            ],
+            "count": 4
+          }
+        }
+      ],
+      "count": 2,
+      "_metadata": { "page_size": 1, "page": 0, "next_page": 1, "has_next": false }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

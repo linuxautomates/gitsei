@@ -1,0 +1,18 @@
+.legend-parent {
+  display: flex;
+  margin-left: 25%;
+  .legend-container {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 1rem;
+    &-capsule {
+      width: 0.6rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+    }
+    &-text {
+      margin-left: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+}

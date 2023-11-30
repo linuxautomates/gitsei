@@ -1,0 +1,95 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/stages/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "13",
+          "name": "PLANNING",
+          "product_id": "8",
+          "type": "PLANNING",
+          "order": 0,
+          "integration_types": ["jira", "aha"],
+          "owner": "jdoe@acme.io",
+          "security_violations": 31,
+          "engineering_violations": 23,
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "14",
+          "name": "DEVELOPMENT",
+          "product_id": "8",
+          "type": "DEVELOPMENT",
+          "order": 1,
+          "integration_types": ["github", "bitbucket"],
+          "security_violations": 26,
+          "engineering_violations": 87,
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "15",
+          "name": "DEVELOPMENT_SECURITY",
+          "product_id": "8",
+          "type": "DEVELOPMENT_SECURITY",
+          "order": 2,
+          "integration_types": ["snyk", "blackduck", "coverity", "github"],
+          "security_violations": 10,
+          "engineering_violations": 42,
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "16",
+          "name": "CI/CD",
+          "product_id": "8",
+          "type": "CI/CD",
+          "order": 3,
+          "integration_types": ["jenkins", "azure_pipelines", "aws_codebuild"],
+          "security_violations": 31,
+          "engineering_violations": 23,
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "17",
+          "name": "INFRASTRUCTURE",
+          "product_id": "8",
+          "type": "INFRASTRUCTURE",
+          "order": 4,
+          "integration_types": ["rapid_7", "app_dynamics", "datadog", "pagerduty"],
+          "security_violations": 86,
+          "engineering_violations": 27,
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "18",
+          "name": "GENERAL",
+          "product_id": "8",
+          "type": "GENERAL",
+          "order": 5,
+          "integration_types": ["knowbe4"],
+          "security_violations": 11,
+          "engineering_violations": 83,
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        }
+      ],
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 6
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

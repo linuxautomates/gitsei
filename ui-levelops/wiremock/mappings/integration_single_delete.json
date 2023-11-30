@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPathPattern": "/v1/integrations/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "4",
+      "success": false,
+      "error": "Not able to delete this Integration."
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

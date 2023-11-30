@@ -1,0 +1,64 @@
+.dora-filter-view-wrapper {
+  margin-top: 5px;
+  .dora-filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    .edit-button {
+      cursor: pointer;
+      .ant-typography {
+        margin-left: 8px;
+      }
+    }
+  }
+  margin-bottom: 1rem;
+  .profile-filters-header {
+    display: flex;
+    justify-content: space-between;
+
+    .parent-label {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--form-item-label);
+      font-size: small;
+    }
+  }
+  .profile-filter-row {
+    margin-left: 1rem;
+    display: flex;
+    margin-top: 0.5rem;
+
+    .key {
+      color: #000000;
+      text-transform: uppercase;
+    }
+    .value {
+      color: #262626;
+      margin-left: 0.5rem;
+    }
+  }
+  .title-wrapper {
+    margin-top: 1rem;
+    .title {
+      margin-left: 1rem;
+      color: #000000;
+      text-transform: uppercase;
+    }
+  }
+
+  .indent-top {
+    margin-top: 1rem;
+  }
+
+  .indent-left {
+    margin-left: 3rem;
+  }
+  .show-button {
+    cursor: pointer;
+    color: #2967dd;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+}

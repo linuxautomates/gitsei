@@ -1,0 +1,18 @@
+.getStartedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .widgetContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    .widget {
+      flex-grow: 1;
+      height: 400px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}

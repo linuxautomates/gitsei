@@ -1,0 +1,59 @@
+.total-lead-time-column-slow {
+  background-color: #fff0f6;
+}
+
+.total-lead-time-column-good {
+  background-color: #f0f5ff;
+}
+
+.total-lead-time-column-attention {
+  background-color: #fff7e6;
+}
+
+.stage-slow {
+  color: #a8071a;
+}
+
+// changing this for visibility reasons
+.stage-good {
+  color: #000;
+}
+.stage-attention {
+  color: #f4bc79;
+}
+
+.stage-by-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .stage-circle-slow {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #cf1322;
+    margin-right: 5px;
+  }
+  .stage-circle-good {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #61ba14;
+    margin-right: 5px;
+  }
+  .stage-circle-needs_attention,
+  .stage-circle-acceptance {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #789fe9;
+    margin-right: 5px;
+  }
+  .stage-circle-missing {
+    border-radius: 50%;
+    height: 12px;
+    width: 13px;
+    background-color: #808080;
+    margin-right: 5px;
+  }
+}

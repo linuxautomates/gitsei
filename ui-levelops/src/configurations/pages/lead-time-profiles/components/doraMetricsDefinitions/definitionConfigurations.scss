@@ -1,0 +1,46 @@
+.metric-configurations-container {
+  background-color: white;
+  margin-top: 1rem;
+  height: fit-content;
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
+  .metric-configurations {
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    .highlighted-text {
+      font-weight: 700;
+    }
+    .tip-text {
+      color: var(--grey3);
+    }
+    .error-text {
+      color: red;
+    }
+    .definitions-container {
+      margin: 1rem 0rem 2rem 0rem;
+      .key-select {
+        width: 7rem;
+      }
+      .ant-checkbox-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      .definition-comma-select {
+        width: 100%;
+        .ant-select-selection {
+          border-bottom: 2px solid var(--grey5);
+        }
+      }
+    }
+    .definition-nav-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      .ant-btn {
+        width: 16%;
+        margin-right: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+  }
+}

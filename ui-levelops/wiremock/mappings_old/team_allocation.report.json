@@ -1,0 +1,72 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_issues/team_allocation"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "EPIC NAME 1",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Hanna Botosh", "Marilyn Carder", "Kushagra", "Piyush"]
+        },
+        {
+          "key": "EPIC NAME 2",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Hanna Botosh", "Piyush"]
+        },
+        {
+          "key": "EPIC NAME 3",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Hanna Botosh", "Marilyn Carder", "Kushagra", "Piyush"]
+        },
+        {
+          "key": "EPIC NAME 4",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Marilyn Carder", "Kushagra", "Piyush"]
+        },
+        {
+          "key": "EPIC NAME 5",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Hanna Botosh"]
+        },
+        {
+          "key": "EPIC NAME 6",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Kushagra", "Piyush"]
+        },
+        {
+          "key": "EPIC NAME 7",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Marilyn Carder"]
+        },
+        {
+          "key": "EPIC NAME 8",
+          "additional_key": "3-2021",
+          "count": 20,
+          "assignees": ["Piyush"]
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

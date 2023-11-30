@@ -1,0 +1,80 @@
+.integration-container {
+  position: relative;
+
+  &:hover {
+    box-shadow: 3px 3px 5px #949494;
+  }
+
+  .actions-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+
+    .actions {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .docs-link-container {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+
+    a {
+      color: #8a94a5;
+    }
+  }
+
+  .integration-card {
+    padding: 24px;
+    min-height: 214px;
+    cursor: pointer;
+
+    .ant-card-body,
+    .ant-card-head-title,
+    .ant-card-head,
+    .ant-card-extra {
+      padding: 0;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      color: #2d3e5e;
+      padding: 0;
+      margin-top: 0;
+      min-height: 50px;
+
+      .integration-wrapper-description {
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .formatted-description {
+      max-height: 46px;
+      overflow: hidden;
+    }
+
+    .actions {
+      margin-top: 10px;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .actions > * {
+      margin: 10px 10px 0 0;
+    }
+  }
+}

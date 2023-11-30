@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPathPattern": "/v1/samlconfig"
+  },
+  "response": {
+    "status": 201,
+    "delayDistribution": {
+      "type": "uniform",
+      "lower": 500,
+      "upper": 1000
+    },
+    "jsonBody": { "id": "123" },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$background-color: #fafafa;
+$light-gray: #595959;
+
+.scheme-drilldown-page-content {
+  background-color: $background-color;
+  width: 100%;
+  padding: 1rem 2rem;
+  height: 80vh;
+  .categories-page-desc {
+    text-transform: initial;
+    color: $light-gray;
+    font-size: 0.875rem;
+  }
+  .add-category-button {
+    background-color: var(--levelops-white);
+    color: var(--grey3);
+    border: 1px solid var(--grey4);
+  }
+  .category-count-text {
+    text-transform: capitalize !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    color: $light-gray;
+  }
+}

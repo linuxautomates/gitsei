@@ -1,0 +1,17 @@
+.org-unit-list-container {
+  .ant-card-head-title {
+    font-size: 0.875rem;
+  }
+}
+
+.clone-org-unit-modal {
+  .ant-form-item {
+    margin-top: 1rem;
+    &-label {
+      line-height: 0 !important;
+    }
+  }
+  .required-field {
+    color: red;
+  }
+}

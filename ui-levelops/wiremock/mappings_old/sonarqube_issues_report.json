@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/sonarqube_issues/issues_report"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "project 1",
+          "total_issues": 100
+        },
+        {
+          "key": "project 2",
+          "total_issues": 200
+        }
+      ],
+      "count": 2
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

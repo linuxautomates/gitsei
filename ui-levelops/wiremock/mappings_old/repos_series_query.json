@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/repos/series"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "filters": {
+        "range": {
+          "start": 1568920349,
+          "stop": 1568920349,
+          "type": "days"
+        },
+        "team_id": 1,
+        "series_field": "commits"
+      },
+      "series": [1, 1, 1, 4, 4, 3, 3, 3, 4, 4, 1, 1, 1, 3, 3, 3, 3, 3, 5, 5, 5, 5, 10, 10, 10, 10, 1, 1, 1, 1]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

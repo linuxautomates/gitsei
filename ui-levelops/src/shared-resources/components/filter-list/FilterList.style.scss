@@ -1,0 +1,17 @@
+$height_var: 470px;
+
+.filter-list {
+  background-color: #f5f6f8;
+  border-radius: 8px;
+
+  .filter-list__scroll-parent {
+    max-height: $height_var;
+    overflow: auto;
+  }
+
+  .ant-list-items {
+    // max-height: $height_var;
+    // height: $height_var;
+    // overflow: auto;
+  }
+}

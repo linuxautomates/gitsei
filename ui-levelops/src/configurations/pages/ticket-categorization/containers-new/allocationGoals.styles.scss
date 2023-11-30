@@ -1,0 +1,39 @@
+$light-gray: #595959;
+$dark-grey-text: #292929;
+
+.allocation-goals-container {
+  padding: 1rem 0rem 0rem 1rem;
+  .header {
+    .allocation-title {
+      text-transform: capitalize !important;
+      font-size: 1.25rem !important;
+      font-weight: 500 !important;
+      color: $light-gray;
+    }
+    .allocation-subtitle {
+      text-transform: initial;
+      color: $light-gray;
+      line-height: 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+  .panel-container {
+    margin: 2rem 2rem 0rem 0rem;
+    .panel-tag-text {
+      border-radius: 1rem;
+      color: $dark-grey-text;
+      font-weight: 500;
+    }
+    .ant-collapse {
+      height: 30rem;
+      overflow-y: auto;
+    }
+    .footer {
+      margin-top: 2rem;
+      p {
+        margin-top: 0.5rem;
+        color: $light-gray;
+      }
+    }
+  }
+}

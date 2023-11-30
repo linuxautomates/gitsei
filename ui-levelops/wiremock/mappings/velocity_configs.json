@@ -1,0 +1,2439 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/velocity_configs/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "a63f754b-538f-4218-a095-4666fbc03803",
+          "name": "Fe",
+          "default_config": false,
+          "created_at": 1670300128503,
+          "updated_at": 1670300128503,
+          "scm_config": {
+            "release": {
+              "tags": {
+                "$begins": ["release"]
+              },
+              "labels": {
+                "$begins": ["release"]
+              },
+              "commit_branch": {
+                "$begins": ["release"]
+              },
+              "source_branch": {
+                "$begins": ["release"]
+              },
+              "target_branch": {
+                "$begins": ["release"]
+              }
+            },
+            "deployment": {
+              "tags": {
+                "$begins": ["deploy"]
+              },
+              "labels": {
+                "$begins": ["deploy"]
+              },
+              "commit_branch": {
+                "$begins": ["deploy"]
+              },
+              "source_branch": {
+                "$begins": ["deploy"]
+              },
+              "target_branch": {
+                "$begins": ["deploy"]
+              }
+            },
+            "hotfix": {
+              "tags": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "labels": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "commit_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "source_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "target_branch": {
+                "$begins": ["hotfix", "hf"]
+              }
+            },
+            "defect": {
+              "tags": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "labels": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "commit_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "source_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "target_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              }
+            }
+          },
+          "pre_development_custom_stages": [
+            {
+              "name": "Open",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN", "TO DO"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Implementing",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IMPLEMENTING"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Blocked",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["BLOCKED"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT"]
+        },
+        {
+          "id": "e14894db-d758-4a16-a706-bc5a34fa5266",
+          "name": "ICSSA Feature",
+          "default_config": false,
+          "created_at": 1630957805635,
+          "updated_at": 1663014808419,
+          "scm_config": {
+            "release": {
+              "tags": {
+                "$begins": ["release"]
+              },
+              "labels": {
+                "$begins": ["release"]
+              },
+              "source_branch": {
+                "$begins": ["release"]
+              },
+              "target_branch": {
+                "$begins": ["release"]
+              }
+            },
+            "deployment": {
+              "tags": {
+                "$begins": ["deploy"]
+              },
+              "labels": {
+                "$begins": ["deploy"]
+              },
+              "source_branch": {
+                "$begins": ["deploy"]
+              },
+              "target_branch": {
+                "$begins": ["deploy"]
+              }
+            },
+            "hotfix": {
+              "tags": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "labels": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "source_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "target_branch": {
+                "$begins": ["hotfix", "hf"]
+              }
+            },
+            "defect": {
+              "tags": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "labels": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "source_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "target_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              }
+            }
+          },
+          "pre_development_custom_stages": [
+            {
+              "name": "Open",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN", "BACKLOG", "ANALYSIS"]
+              },
+              "lower_limit_value": 90,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 91,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Dev In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": [
+                  "IN PROGRESS",
+                  "CODE REVIEW",
+                  "DEV COMPLETE",
+                  "READY FOR QA",
+                  "IN DEVELOPMENT",
+                  "IMPLEMENTING",
+                  "QA"
+                ]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 7,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Testing",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN TESTING", "TESTING", "IN QA", "QA COMPLETE", "READY FOR QA"]
+              },
+              "lower_limit_value": 3,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 6,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT"]
+        },
+        {
+          "id": "c9312112-f3e1-441c-8b40-7b095f8ce7b6",
+          "name": "GPTMCR Bug",
+          "default_config": false,
+          "created_at": 1635223907504,
+          "updated_at": 1658462733997,
+          "scm_config": {
+            "release": {
+              "tags": {
+                "$begins": ["release"]
+              },
+              "labels": {
+                "$begins": ["release"]
+              },
+              "commit_branch": {
+                "$begins": ["release"]
+              },
+              "source_branch": {
+                "$begins": ["release"]
+              },
+              "target_branch": {
+                "$begins": ["release"]
+              }
+            },
+            "deployment": {
+              "tags": {
+                "$begins": ["deploy"]
+              },
+              "labels": {
+                "$begins": ["deploy"]
+              },
+              "commit_branch": {
+                "$begins": ["deploy"]
+              },
+              "source_branch": {
+                "$begins": ["deploy"]
+              },
+              "target_branch": {
+                "$begins": ["deploy"]
+              }
+            },
+            "hotfix": {
+              "tags": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "labels": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "commit_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "source_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "target_branch": {
+                "$begins": ["hotfix", "hf"]
+              }
+            },
+            "defect": {
+              "tags": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "labels": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "commit_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "source_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "target_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              }
+            }
+          },
+          "pre_development_custom_stages": [
+            {
+              "name": "To Do",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "PR Creation Time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 10,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 30,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Time for First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 10,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 30,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "In Review",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN REVIEW"]
+              },
+              "lower_limit_value": 1,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 2,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In QA",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN QA"]
+              },
+              "lower_limit_value": 1,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 3,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_PRS"]
+        },
+        {
+          "id": "c678b0db-bac1-46fd-9900-93387a851ba7",
+          "name": "Propelo DORA profile",
+          "default_config": false,
+          "created_at": 1656306022071,
+          "updated_at": 1656306022071,
+          "scm_config": {
+            "release": {
+              "tags": {
+                "$begins": ["release"]
+              },
+              "labels": {
+                "$begins": ["release"]
+              },
+              "source_branch": {
+                "$begins": ["release"]
+              },
+              "target_branch": {
+                "$begins": ["release"]
+              }
+            },
+            "deployment": {
+              "tags": {
+                "$begins": ["deploy"]
+              },
+              "labels": {
+                "$begins": ["deploy"]
+              },
+              "source_branch": {
+                "$begins": ["deploy"]
+              },
+              "target_branch": {
+                "$begins": ["deploy"]
+              }
+            },
+            "hotfix": {
+              "tags": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "labels": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "source_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "target_branch": {
+                "$begins": ["hotfix", "hf"]
+              }
+            },
+            "defect": {
+              "tags": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "labels": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "source_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "target_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              }
+            }
+          },
+          "pre_development_custom_stages": [
+            {
+              "name": "Backlog",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO", "OPEN", "NEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "IN DEVELOPMENT", "IN REVIEW", "CODE REVIEW", "DEV CODE REVIEW", "ACTIVE"]
+              },
+              "lower_limit_value": 1,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 4,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to First Commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR Creation Time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "QA",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": [
+                  "DEPLOYED TO QA",
+                  "IN QA",
+                  "DEV AND QA REVIEW",
+                  "QA",
+                  "QA DONE",
+                  "QA COMPLETE",
+                  "QA IN PROGRESS",
+                  "IN TESTING",
+                  "READY FOR TESTING",
+                  "TESTING"
+                ]
+              },
+              "lower_limit_value": 1,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 3,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS"]
+        },
+        {
+          "id": "bbdfb9dd-7c60-458d-8c25-11d17b568de4",
+          "name": "Story Jira Only",
+          "default_config": false,
+          "created_at": 1655924355695,
+          "updated_at": 1655924369270,
+          "scm_config": {
+            "release": {
+              "tags": {
+                "$begins": ["release"]
+              },
+              "labels": {
+                "$begins": ["release"]
+              },
+              "source_branch": {
+                "$begins": ["release"]
+              },
+              "target_branch": {
+                "$begins": ["release"]
+              }
+            },
+            "deployment": {
+              "tags": {
+                "$begins": ["deploy"]
+              },
+              "labels": {
+                "$begins": ["deploy"]
+              },
+              "source_branch": {
+                "$begins": ["deploy"]
+              },
+              "target_branch": {
+                "$begins": ["deploy"]
+              }
+            },
+            "hotfix": {
+              "tags": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "labels": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "source_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "target_branch": {
+                "$begins": ["hotfix", "hf"]
+              }
+            },
+            "defect": {
+              "tags": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "labels": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "source_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "target_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              }
+            }
+          },
+          "pre_development_custom_stages": [
+            {
+              "name": "Open",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN", "BACKLOG", "ANALYSIS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Dev In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "CODE REVIEW", "DEV COMPLETE", "READY FOR QA", "IN DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Testing",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN TESTING", "TESTING", "IN QA", "QA COMPLETE", "READY FOR QA"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS"]
+        },
+        {
+          "id": "b6a698d4-c5eb-4b05-a1cc-2b75adf35463",
+          "name": "Smart",
+          "default_config": false,
+          "created_at": 1655407454448,
+          "updated_at": 1655407454448,
+          "scm_config": {
+            "release": {
+              "tags": {
+                "$begins": ["release"]
+              },
+              "labels": {
+                "$begins": ["release"]
+              },
+              "source_branch": {
+                "$begins": ["release"]
+              },
+              "target_branch": {
+                "$begins": ["release"]
+              }
+            },
+            "deployment": {
+              "tags": {
+                "$begins": ["deploy"]
+              },
+              "labels": {
+                "$begins": ["deploy"]
+              },
+              "source_branch": {
+                "$begins": ["deploy"]
+              },
+              "target_branch": {
+                "$begins": ["deploy"]
+              }
+            },
+            "hotfix": {
+              "tags": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "labels": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "source_branch": {
+                "$begins": ["hotfix", "hf"]
+              },
+              "target_branch": {
+                "$begins": ["hotfix", "hf"]
+              }
+            },
+            "defect": {
+              "tags": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "labels": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "source_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              },
+              "target_branch": {
+                "$begins": ["bugfix", "fix", "bug"]
+              }
+            }
+          },
+          "pre_development_custom_stages": [
+            {
+              "name": "Backlog",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN"]
+              },
+              "lower_limit_value": 17,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 45,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "CODE REVIEW", "DEV COMPLETE"]
+              },
+              "lower_limit_value": 3,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 12,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "QA",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR QA", "IN QA"]
+              },
+              "lower_limit_value": 2,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 4,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT"]
+        },
+        {
+          "id": "6c3ac932-7ad8-4874-9e3f-e9681e36e71d",
+          "name": "Kanban Service Teams",
+          "default_config": false,
+          "created_at": 1646766980075,
+          "updated_at": 1646767002078,
+          "pre_development_custom_stages": [
+            {
+              "name": "Backlog",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Analysis",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["ANALYSIS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Ready for Dev",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["DEV READY"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "With Vendor",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["WITH VENDOR"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Ready for Development",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT"]
+        },
+        {
+          "id": "418e66b4-27c3-4bf6-8a43-77534c20c26b",
+          "name": "PRs Only",
+          "default_config": false,
+          "created_at": 1629776319004,
+          "updated_at": 1639429640428,
+          "fixed_stages": [
+            {
+              "name": "PR Creation Time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 10,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 30,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Time For First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 10,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 30,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 10,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 30,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "starting_event_is_commit_created": true,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["SCM_PRS"]
+        },
+        {
+          "id": "b02470aa-dc06-4033-995d-d93b102f9b90",
+          "name": "PRs with Build",
+          "default_config": false,
+          "created_at": 1634146241342,
+          "updated_at": 1635804735099,
+          "fixed_stages": [
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Build",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "CICD_JOB_RUN",
+                "values": [],
+                "params": {}
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "cicd_job_id_name_mappings": {
+            "66078180-6d0a-4d40-b47d-a3c93d85aa6e": "connector-aprem-fast-build-deploy",
+            "9aa081c5-10e8-43c3-b78c-aedae3ffdb6d": "trading-aprem-fast-build-deploy",
+            "b535df7e-bea4-4f68-b0fd-f6f8a416a5ba": "core-aprem-fast-build-deploy"
+          },
+          "starting_event_is_commit_created": true,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["SCM_PRS", "CICD_JOB_RUNS"]
+        },
+        {
+          "id": "69c950d1-e0bd-4964-b98a-575a55d52bca",
+          "name": "Copy of LTX with Build",
+          "default_config": false,
+          "created_at": 1635742378066,
+          "updated_at": 1635742378066,
+          "pre_development_custom_stages": [
+            {
+              "name": "TODO",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Waiting for Development",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Development",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN DEVELOPMENT", "IN PROGRESS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Blocked",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["AWAITING RESPONSE"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Ready for Testing",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR TESTING"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Build",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "CICD_JOB_RUN",
+                "values": [
+                  "b535df7e-bea4-4f68-b0fd-f6f8a416a5ba",
+                  "9aa081c5-10e8-43c3-b78c-aedae3ffdb6d",
+                  "66078180-6d0a-4d40-b47d-a3c93d85aa6e"
+                ],
+                "params": {}
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "cicd_job_id_name_mappings": {
+            "66078180-6d0a-4d40-b47d-a3c93d85aa6e": "connector-aprem-fast-build-deploy",
+            "9aa081c5-10e8-43c3-b78c-aedae3ffdb6d": "trading-aprem-fast-build-deploy",
+            "b535df7e-bea4-4f68-b0fd-f6f8a416a5ba": "core-aprem-fast-build-deploy"
+          },
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS", "CICD_JOB_RUNS"]
+        },
+        {
+          "id": "2fe84e0e-4585-440f-95de-6d7b2e721ca0",
+          "name": "Copy of UCMF PRs with Build",
+          "default_config": false,
+          "created_at": 1635742069963,
+          "updated_at": 1635742069963,
+          "fixed_stages": [
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Build",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "CICD_JOB_RUN",
+                "values": [
+                  "50488d93-16ec-48dd-bef9-a13192e04acc",
+                  "e327eda0-d991-46b3-8122-29601ab2fef6",
+                  "de19aadf-9436-43f6-a175-7f778ac4495d",
+                  "1a4481de-cb3d-4c53-8167-5ae7d37163d8"
+                ],
+                "params": {}
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "cicd_job_id_name_mappings": {
+            "e327eda0-d991-46b3-8122-29601ab2fef6": "build",
+            "de19aadf-9436-43f6-a175-7f778ac4495d": "BuildCEF",
+            "1a4481de-cb3d-4c53-8167-5ae7d37163d8": "Deploy",
+            "50488d93-16ec-48dd-bef9-a13192e04acc": "B"
+          },
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["SCM_PRS", "CICD_JOB_RUNS"]
+        },
+        {
+          "id": "0806515b-3116-453b-b35a-809b1be51341",
+          "name": "UCMF - MFIO",
+          "default_config": false,
+          "created_at": 1632201868927,
+          "updated_at": 1634315607703,
+          "pre_development_custom_stages": [
+            {
+              "name": "To Do",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO", "IN REVIEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Development",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "IN DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Code Review",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["DEV COMPLETE", "DEV DONE", "DEV CODE REVIEW", "CODE REVIEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Testing",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": [
+                  "DEPLOYED TO QA",
+                  "IN QA",
+                  "IN TESTING",
+                  "QA IN PROGRESS",
+                  "QA QUESTION",
+                  "READY FOR QA",
+                  "READY FOR TESTING"
+                ]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT"]
+        },
+        {
+          "id": "616b2920-7490-4149-9abd-f45140be24a1",
+          "name": "FXL Profile",
+          "default_config": false,
+          "description": "FXL Ticket Profile",
+          "created_at": 1629909882836,
+          "updated_at": 1634314816637,
+          "pre_development_custom_stages": [
+            {
+              "name": "TODO",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO", "IN REVIEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Development",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN DEVELOPMENT", "IN PROGRESS", "SENT BACK"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Build",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["DEV DONE"]
+              },
+              "lower_limit_value": 1,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 2,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Ready for Testing",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["DEPLOYED TO QA"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT"]
+        },
+        {
+          "id": "c71d3eea-3a0f-4d51-a333-94f6d175529a",
+          "name": "UCMF PRs with Build",
+          "default_config": false,
+          "created_at": 1634167558706,
+          "updated_at": 1634232443982,
+          "fixed_stages": [
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Build",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "CICD_JOB_RUN",
+                "values": [
+                  "50488d93-16ec-48dd-bef9-a13192e04acc",
+                  "e327eda0-d991-46b3-8122-29601ab2fef6",
+                  "de19aadf-9436-43f6-a175-7f778ac4495d",
+                  "1a4481de-cb3d-4c53-8167-5ae7d37163d8"
+                ],
+                "params": {}
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "cicd_job_id_name_mappings": {
+            "8dfab5f7-d3bf-485a-ade1-8ac700366118": "build",
+            "9192e7b7-2e16-4c7d-b9f3-5ad8400a237d": "BUILD",
+            "73f4c533-8686-4dd2-b39f-462f29a47d41": "fxl",
+            "0bf3aadf-0b92-4591-89f1-1667768a38ee": "FXL(896)_PRD tfs",
+            "de19aadf-9436-43f6-a175-7f778ac4495d": "BuildCEF",
+            "c08534f7-b04f-493c-bd7f-0995e140fa04": "Build"
+          },
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["SCM_PRS", "CICD_JOB_RUNS"]
+        },
+        {
+          "id": "7fe67310-1dee-4f56-b493-644a907b440c",
+          "name": "Smart Advisor PRs with Build",
+          "default_config": false,
+          "created_at": 1634167733889,
+          "updated_at": 1634168028891,
+          "fixed_stages": [
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Build",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "CICD_JOB_RUN",
+                "values": ["b2012bf5-1e3b-4c0e-8c31-b84c9027e03d"],
+                "params": {}
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "cicd_job_id_name_mappings": {
+            "b2012bf5-1e3b-4c0e-8c31-b84c9027e03d": "build"
+          },
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["SCM_PRS", "CICD_JOB_RUNS"]
+        },
+        {
+          "id": "ae7cfad0-3408-47ea-8717-fa2b9f8c1c56",
+          "name": "LTX with Build",
+          "default_config": false,
+          "created_at": 1634142884739,
+          "updated_at": 1634143073672,
+          "pre_development_custom_stages": [
+            {
+              "name": "TODO",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Waiting for Development",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Development",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN DEVELOPMENT", "IN PROGRESS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Blocked",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["AWAITING RESPONSE"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Ready for Testing",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR TESTING"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Build",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "CICD_JOB_RUN",
+                "values": [
+                  "b535df7e-bea4-4f68-b0fd-f6f8a416a5ba",
+                  "9aa081c5-10e8-43c3-b78c-aedae3ffdb6d",
+                  "66078180-6d0a-4d40-b47d-a3c93d85aa6e"
+                ],
+                "params": {}
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "cicd_job_id_name_mappings": {
+            "66078180-6d0a-4d40-b47d-a3c93d85aa6e": "connector-aprem-fast-build-deploy",
+            "9aa081c5-10e8-43c3-b78c-aedae3ffdb6d": "trading-aprem-fast-build-deploy",
+            "b535df7e-bea4-4f68-b0fd-f6f8a416a5ba": "core-aprem-fast-build-deploy"
+          },
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS", "CICD_JOB_RUNS"]
+        },
+        {
+          "id": "f208e4b2-2aab-4b10-afd4-dc62de5453b1",
+          "name": "Copy of LTX Profile",
+          "default_config": false,
+          "created_at": 1633386704575,
+          "updated_at": 1633386704575,
+          "pre_development_custom_stages": [
+            {
+              "name": "TODO",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Waiting for Development",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Development",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN DEVELOPMENT", "IN PROGRESS"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Blocked",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["AWAITING RESPONSE"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Ready for Testing",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR TESTING"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS"]
+        },
+        {
+          "id": "e39e4a4d-3479-49d3-a066-347eb41e4ee2",
+          "name": "Bug Profile",
+          "default_config": true,
+          "created_at": 1630957467526,
+          "updated_at": 1632810217154,
+          "pre_development_custom_stages": [
+            {
+              "name": "Open",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN", "NEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "IN DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Blocked",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["AWAITING RESPONSE"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS"]
+        },
+        {
+          "id": "83e3ad3b-5dea-4925-aec2-959da8b39ead",
+          "name": "ICSRBN",
+          "default_config": false,
+          "created_at": 1632367464033,
+          "updated_at": 1632367527826,
+          "pre_development_custom_stages": [
+            {
+              "name": "To Do",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["TO DO", "OPEN"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Development",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "IN DEVELOPMENT", "CODE REVIEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "Dev Complete",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["DEV COMPLETE", "DEV DONE", "DEV CODE REVIEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Testing",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": [
+                  "DEPLOYED TO QA",
+                  "IN QA",
+                  "IN TESTING",
+                  "QA IN PROGRESS",
+                  "QA QUESTION",
+                  "READY FOR QA",
+                  "READY FOR TESTING"
+                ]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS"]
+        },
+        {
+          "id": "fbd3331b-94e8-46d3-b967-a97bc3e3795e",
+          "name": "MCX Bug Profile",
+          "default_config": false,
+          "created_at": 1631589485743,
+          "updated_at": 1631589635576,
+          "pre_development_custom_stages": [
+            {
+              "name": "Open",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["OPEN", "NEW"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "In Progress",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN PROGRESS", "IN DEVELOPMENT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Development",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["IN DEVELOPMENT", "DEV COMPLETE"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            },
+            {
+              "name": "Blocked",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["AWAITING RESPONSE"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "fixed_stages": [
+            {
+              "name": "Lead time to first commit",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_COMMIT_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "PR creation time",
+              "order": 1,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_CREATED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Time to First Comment",
+              "order": 2,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_REVIEW_STARTED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Approval Time",
+              "order": 3,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_APPROVED",
+                "params": {
+                  "last_approval": ["true"]
+                }
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            },
+            {
+              "name": "Merge Time",
+              "order": 4,
+              "event": {
+                "any_label_added": false,
+                "type": "SCM_PR_MERGED"
+              },
+              "lower_limit_value": 864000,
+              "lower_limit_unit": "SECONDS",
+              "upper_limit_value": 2592000,
+              "upper_limit_unit": "SECONDS"
+            }
+          ],
+          "post_development_custom_stages": [
+            {
+              "name": "QA",
+              "order": 0,
+              "event": {
+                "any_label_added": false,
+                "type": "JIRA_STATUS",
+                "values": ["READY FOR QA", "IN QA", "IN UAT"]
+              },
+              "lower_limit_value": 4,
+              "lower_limit_unit": "DAYS",
+              "upper_limit_value": 11,
+              "upper_limit_unit": "DAYS"
+            }
+          ],
+          "starting_event_is_commit_created": false,
+          "issue_management_integrations": ["jira"],
+          "integration_families": ["ISSUE_MANAGEMENT", "SCM_COMMITS", "SCM_PRS"]
+        }
+      ],
+      "count": 20,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false,
+        "total_count": 20
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

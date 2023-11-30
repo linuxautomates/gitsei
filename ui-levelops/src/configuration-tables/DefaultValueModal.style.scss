@@ -1,0 +1,11 @@
+.defaultValueModal {
+  .selectError > .ant-select-selection.ant-select-selection--single {
+    border-color: red;
+  }
+
+  .dateError {
+    input.ant-calendar-picker-input {
+      border-color: red;
+    }
+  }
+}

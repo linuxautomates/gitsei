@@ -1,0 +1,55 @@
+.org-user-warning {
+  .ant-select-selection__rendered {
+    .merged-users-wrapper {
+      .merged-integrations {
+        display: none;
+      }
+    }
+  }
+  .warning-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .anticon-close {
+      cursor: pointer;
+    }
+  }
+  .warning-content {
+    row-gap: 0.3rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    .warning-icon {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+      .text {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      svg {
+        fill: #efaf41;
+      }
+    }
+    .error-icon {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      column-gap: 0.5rem;
+      .text {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      svg {
+        fill: #ec5b56;
+      }
+    }
+    .warning-text {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

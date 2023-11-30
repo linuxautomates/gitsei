@@ -1,0 +1,82 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/metrics/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "13",
+          "name": "some name",
+          "status": true,
+          "source": "",
+          "workflow": "",
+          "report_id": "1",
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "14",
+          "name": "some random name",
+          "status": true,
+          "source": "jira",
+          "workflow": "",
+          "report_id": "1",
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "15",
+          "name": "step 2",
+          "status": true,
+          "source": "jira",
+          "workflow": "",
+          "report_id": "1",
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "16",
+          "name": "step",
+          "status": false,
+          "source": "jira",
+          "workflow": "",
+          "report_id": "1",
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "17",
+          "name": "one more step",
+          "status": true,
+          "source": "jira",
+          "workflow": "",
+          "report_id": "1",
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        },
+        {
+          "id": "18",
+          "name": "some stage step",
+          "status": true,
+          "source": "jira",
+          "workflow": "",
+          "report_id": "1",
+          "updated_at": 1579312663,
+          "created_at": 1579312663
+        }
+      ],
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 6
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

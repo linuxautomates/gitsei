@@ -1,0 +1,69 @@
+.ant-table {
+  &-thead {
+    tr {
+      min-height: 51px;
+      th {
+        background: var(--levelops-white);
+      }
+
+      .ant-table-column-title {
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: -0.14px;
+        text-align: left;
+        color: var(--table-header);
+      }
+    }
+  }
+}
+
+.ant-table-bordered .ant-table-thead > tr > th,
+.ant-table-bordered .ant-table-tbody > tr > td {
+  border-color: @border-color-base;
+  //&:not(:last-child) { // TODO:
+  //  border-right: 0;
+  //}
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 600;
+  border-bottom: 3px solid #d7d7d7;
+}
+
+.ant-table-bordered .ant-table-body > table {
+  border-radius: @border-radius-base;
+  border-color: @border-color-base;
+}
+
+.ant-table-row {
+  &:last-child {
+    td {
+      &:first-child {
+        border-bottom-left-radius: @border-radius-base;
+      }
+      &:last-child {
+        border-bottom-right-radius: @border-radius-base;
+      }
+    }
+  }
+}
+
+.ant-table-small > .ant-table-content > .ant-table-body {
+  margin: 0;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th {
+  background-color: @background-color-base;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > td {
+  padding: 8px;
+}
+
+.ant-table-thead > tr:hover.ant-table-row-selected > td,
+.ant-table-tbody > tr:hover.ant-table-row-selected > td {
+  background-color: #fafafa;
+}

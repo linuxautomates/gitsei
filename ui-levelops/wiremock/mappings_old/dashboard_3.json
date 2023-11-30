@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/dashboards/3"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "Engineers",
+      "type": "team360",
+      "widgets": [
+        {
+          "name": "Developers",
+          "id": 21,
+          "type": "list",
+          "endpoint": "v1/developers/list",
+          "query": {
+            "filter": {
+              "team_id": 1
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

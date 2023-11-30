@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/organizations/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        { "id": 1, "name": "Organization 1", "teams_count": 1 },
+        { "id": 2, "name": "Organization 2", "teams_count": 0 },
+        { "id": 3, "name": "Organization 3", "teams_count": 3 },
+        { "id": 4, "name": "Organization 4", "teams_count": 2 },
+        { "id": 5, "name": "Organization 5", "teams_count": 0 }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

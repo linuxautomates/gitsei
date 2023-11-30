@@ -1,0 +1,43 @@
+.custom-select-container {
+  &__no-content-found-div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    &__label-div {
+      color: black;
+    }
+
+    &__button {
+      width: 100px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.custom-select-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1rem;
+  margin: 0 0 0.5rem;
+  flex: 1;
+
+  span {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #595959;
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  &_required::after {
+    display: inline-block;
+    margin-left: 4px;
+    color: red;
+    font-size: 14px;
+    line-height: 1;
+    content: "*";
+  }
+}

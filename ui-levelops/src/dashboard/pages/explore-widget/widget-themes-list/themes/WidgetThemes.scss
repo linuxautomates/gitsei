@@ -1,0 +1,71 @@
+.theme-header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+.widget-themes-container {
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  height: calc(100% - 20px);
+  overflow: auto;
+
+  .widget-theme {
+    border: 0.6px solid #bfbfbf;
+    box-sizing: border-box;
+    border-radius: 6px;
+    height: 100%;
+    cursor: pointer;
+
+    .ant-card-body {
+      padding: 19px 20px;
+      background-color: var(--levelops-white);
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.2px;
+      color: var(--text-color);
+      margin: 6px 0;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 24px;
+      color: #8a94a5;
+      margin: 0 0 6px 0;
+    }
+
+    .icon {
+      height: 82px;
+      margin: 10px 0;
+
+      svg {
+        width: 100%;
+      }
+    }
+    :hover {
+      background: #f0f5ff;
+    }
+    .add-all-widgets-btn {
+      background-color: #335ddd;
+      color: white;
+      font-size: 14px;
+
+      :hover {
+        background-color: #335ddd;
+      }
+    }
+    .disabled-all-widgets-btn {
+      background-color: #f2f2f2;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.mfa-settings-modal-wrapper {
+  .ant-modal {
+    .ant-modal-header {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .ant-modal-footer {
+      border-top: 1px solid #f0f0f0;
+    }
+    .mfa-settings-container {
+      .mfa-switch {
+        .ant-switch {
+          margin-left: 1rem;
+        }
+      }
+      .mfa-select {
+        margin-top: 1rem;
+        .enrollment-title {
+          font-size: 1rem;
+          justify-content: flex-start;
+        }
+      }
+      .enrollment-period-text {
+        margin-top: 1rem;
+        color: #595959;
+      }
+    }
+  }
+}

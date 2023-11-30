@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/scm/prs/aggregate"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 8
+      },
+      "count": 8,
+      "records": [
+        {
+          "count": 9,
+          "key": "Kushagra"
+        },
+        {
+          "count": 92,
+          "key": "Piyush"
+        },
+        {
+          "count": 33,
+          "key": "Meghana Dwarakanath"
+        },
+        {
+          "count": 25,
+          "key": "Megha Shyam"
+        },
+        {
+          "count": 76,
+          "key": "Ivan Leon"
+        },
+        {
+          "count": 3,
+          "key": "Harsh Jariwala"
+        },
+        {
+          "count": 61,
+          "key": "Srinath"
+        },
+        {
+          "count": 54,
+          "key": "Rafay"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

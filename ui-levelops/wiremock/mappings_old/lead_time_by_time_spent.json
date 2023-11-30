@@ -1,0 +1,74 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_issues/velocity_stage_times_report"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "test1",
+          "median": 118659,
+          "min": 4,
+          "max": 31438004,
+          "mean": 2324030.266674547,
+          "total_tickets": 1492
+        },
+        {
+          "key": "Lead time to first commit",
+          "median": 265354,
+          "min": 169135,
+          "max": 65477617,
+          "mean": 1.8965896176939204e7,
+          "total_tickets": 91
+        },
+        {
+          "key": "Time to First Comment",
+          "median": 117663,
+          "min": 103383671,
+          "max": 131218851,
+          "mean": 1.1445354641666666e8,
+          "total_tickets": 17
+        },
+        {
+          "key": "Approval Time",
+          "additional_key": "Megha Tamvada",
+          "median": 382820,
+          "min": 38282025,
+          "max": 38282025,
+          "mean": 3.8282025e7,
+          "total_tickets": 2
+        },
+        {
+          "key": "Merge Time",
+          "additional_key": "Megha Tamvada",
+          "median": 282820,
+          "min": 38282025,
+          "max": 38282025,
+          "mean": 3.8282025e7,
+          "total_tickets": 2
+        },
+        {
+          "key": "test post",
+          "additional_key": "Megha Tamvada",
+          "median": 245820,
+          "min": 38282025,
+          "max": 38282025,
+          "mean": 3.8282025e7,
+          "total_tickets": 2
+        }
+      ],
+      "count": 0,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

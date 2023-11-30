@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/plugins/results/labels/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": ["env", "project_name", "release", "repo_name", "trigger_id"],
+      "count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

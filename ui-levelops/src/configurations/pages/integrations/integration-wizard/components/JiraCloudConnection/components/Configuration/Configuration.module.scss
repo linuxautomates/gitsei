@@ -1,0 +1,50 @@
+.configurationPanel {
+  height: 92vh;
+  margin-right: var(--spacing-large) !important;
+  overflow-y: scroll !important;
+}
+
+.greyCircle {
+  background-color: var(--grey-500) !important;
+  color: var(--white) !important;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jiraCloudManagedFields {
+  width: 400px;
+}
+
+.otpDataTextInput {
+  width: 520px;
+}
+
+.configurationBtns {
+  width: 170px;
+  margin-left: var(--spacing-large) !important;
+  margin-right: var(--spacing-large) !important;
+}
+
+.seiInfo {
+  color: var(--light-text-disabled, #b0b1c3);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.bottomBar {
+  display: flex;
+  padding: 16px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-top: 1px solid var(--light-text-divider, #d9dae5);
+  background: #fff;
+}

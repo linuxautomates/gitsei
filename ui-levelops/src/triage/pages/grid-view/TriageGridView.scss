@@ -1,0 +1,28 @@
+.triage-grid-view-container {
+  padding-left: 2px;
+  width: calc(100vw - 193px);
+
+  .ant-table-header.ant-table-hide-scrollbar {
+    .ant-table-fixed {
+      tr {
+        height: 44px !important;
+
+        .grid-view-name-col {
+          border-bottom: none;
+          overflow: visible;
+
+          .grid-job-path-label {
+            position: absolute;
+            top: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.name-cell {
+  display: inline-block;
+  text-overflow: ellipsis;
+  width: 200px;
+}

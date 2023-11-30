@@ -1,0 +1,14 @@
+.restapi-select {
+  position: relative;
+  display: flex;
+  .ant-btn.ant-btn-secondary {
+    margin: 0 0 0 10px;
+  }
+
+  .org-dropdown-menu {
+    max-height: 200px;
+    .ant-select-dropdown-menu {
+      max-height: 200px;
+    }
+  }
+}

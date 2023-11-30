@@ -1,0 +1,43 @@
+.cicd-params {
+  padding: 8px;
+  .filter-col {
+    width: 30.25% !important;
+    margin: 0rem 0.5rem 0rem 0.5rem !important;
+  }
+  .filter-col-select {
+    width: 100%;
+  }
+  .filter-row {
+    display: flex;
+    justify-content: space-between;
+    .select-content {
+      display: flex;
+      width: 80%;
+      .text {
+        width: 6rem;
+        text-align: end;
+      }
+    }
+  }
+  .action-filter-col {
+    .ant-btn {
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+  }
+  .param-note-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    color: #7e7e7e;
+  }
+}

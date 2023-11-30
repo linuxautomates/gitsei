@@ -1,0 +1,45 @@
+.dnd-row {
+  cursor: grab;
+  margin-bottom: 1rem;
+  &:hover {
+    cursor: pointer;
+    .category-card-rank-container-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.custom-row > td {
+  background-color: #f0f4fd;
+}
+.custom-row:hover > td {
+  background-color: #f0f4fd !important;
+}
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 3rem;
+  .action-col-text {
+    margin-bottom: 5px;
+  }
+  .category-action-buttons {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+    .action-button {
+      display: flex;
+      padding: 0.3rem 1rem 0.3rem 1rem;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0.5rem;
+      &-text {
+        margin-left: 0.5rem;
+      }
+      &:hover {
+        background: #c9d5ed;
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+.table-chart {
+  width: calc(100% + 30px);
+  transform: translate(-15px, -15px);
+}
+
+.preview-option {
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner::after {
+    border-color: white;
+  }
+  & label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .title {
+    color: #262626;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.hide-padding-for-preview {
+  .ant-card-body {
+    padding: 0;
+  }
+}
+
+.widget-preview-container {
+  padding-bottom: 1rem;
+  .ant-card-body {
+    background-color: var(--levelops-white);
+  }
+  .widget-preview {
+    position: relative;
+    height: 300px;
+    .recharts-surface {
+      overflow: unset;
+    }
+    .stats-chart-component.stats-extra-info-wrapper {
+      padding-top: 10%;
+      margin-left: 30%;
+      .ant-statistic .ant-statistic-content {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        font-size: 0.7rem;
+      }
+    }
+    .phase-chart-container {
+      position: absolute;
+      top: -15%;
+      left: -23%;
+      transform: scale(0.55, 0.7);
+
+      .start-event-container {
+        margin-bottom: 1px;
+      }
+
+      .legend-container {
+        width: calc(100vw - 210px);
+      }
+    }
+
+    .empty-preview-state {
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      background: white;
+
+      .preview-icon {
+        width: 180px;
+      }
+
+      .preview-icon-stat {
+        height: 100px;
+      }
+
+      .preview-icon-info-title,
+      .preview-icon-info-sub-title {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .cached-widget-preview {
+    position: relative;
+    height: 150px;
+    margin: 4px 0;
+    .api-error {
+      min-height: 0;
+      .api-error-text {
+        margin: 35px 0 0 0;
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .table-chart {
+      max-height: 10.5rem !important;
+      padding: 0.5rem 0rem 0rem 0.5rem !important;
+    }
+
+    .phase-chart-container {
+      position: absolute;
+      top: -25%;
+      left: -36%;
+      width: 174%;
+      transform: scale(0.56, 0.5);
+
+      .summary-container {
+        padding: 4px 8px;
+        border-width: 2px;
+
+        .ant-statistic-content {
+          font-size: 18px;
+          line-height: 20px;
+        }
+
+        .ant-statistic-title {
+          font-size: 10px;
+        }
+      }
+
+      .start-event-container {
+        margin-bottom: 1px;
+      }
+
+      .phase-carousel {
+        position: absolute;
+        top: 28px;
+        left: -12px;
+        width: 100%;
+        height: 170%;
+        transform: scaleY(0.75);
+
+        .phases-container {
+          height: 170%;
+        }
+      }
+
+      .legend-container {
+        position: relative;
+        top: 232px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .cached-stat-preview {
+    height: 70px;
+
+    .empty-stat {
+      .ant-empty-image {
+        height: 40px;
+      }
+    }
+    .stats-chart-component.stats-extra-info-wrapper {
+      // margin-left: 0;
+      .ant-statistic {
+        font-size: 0.8rem;
+        .ant-statistic-content {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+          font-size: 0.7rem;
+        }
+        .statistical-value {
+          line-height: 1;
+          font-size: 1.4rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .ant-statistic-content-suffix {
+          font-size: 0.7rem;
+        }
+      }
+      .info-description {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 5rem;
+        font-size: 0.7rem;
+        margin: 0.2rem;
+      }
+      .ant-tag {
+        font-size: 0.6rem;
+      }
+      .ant-typography {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.parameter-job {
+  width: 95%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 8px;
+  cursor: pointer;
+  .parameter-job-selected {
+    background: #e6f7ff;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+  }
+  .parameter-job-edit {
+    margin-left: 30px;
+    .parameter-job-edit-text {
+      color: #2967dd;
+      margin-left: 5px;
+    }
+  }
+}

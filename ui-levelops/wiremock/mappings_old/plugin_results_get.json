@@ -1,0 +1,260 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/plugins/results/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "4e77874b-8055-4882-b2a2-0e26b716cc88",
+      "plugin_name": "Praetorian Report",
+      "class": "report_file",
+      "tool": "report_praetorian",
+      "version": "1",
+      "tags": ["5", "8"],
+      "product_ids": ["76"],
+      "successful": true,
+      "metadata": {
+        "os": "redhat8",
+        "version": "<runner version>",
+        "execution": 2.3267858028,
+        "available_cores": "3ecu",
+        "available_memory": "4GB"
+      },
+      "labels": { "trigger_id": ["0e3fe73f-de0a-4001-8dba-6dc65bc448ee"], "project_name": ["DMA,DMA (Retest)"] },
+      "results": {
+        "data": {
+          "cross-site_websocket_hijacking_-_fixed": {
+            "meta": {
+              "score": {},
+              "category": "Configuration Management",
+              "WASC": "",
+              "CWE": "CWE-345",
+              "SANS Top 25": "",
+              "OWASP Top 10": ""
+            },
+            "status": "Fixed cross-site.",
+            "impact": "Praetorian confirmed that the application was checking the origin header of handshake requests. Validating the origin header of handshake requests mitigates this vulnerability.",
+            "vulnerability_description": "Because WebSockets are not restrained by the same-origin policy, an attacker can easily initiate a WebSocket request (i.e. the handshake/upgrade process) from a malicious webpage targeting the ws:// or wss:// endpoint URL of the attacked application. Due to the fact that this request is a regular HTTP(S) request, browsers send the cookies and HTTP-Authentication headers along, even An attacker could trick a user into initiating a WebSocket connection on their behalf allowing them to have full read/write communication with the WebSocket service while authenticated as the victim. The attacker could then read and modify the user’s information. System Impacted DMA web interface - Internal Management Services Interface",
+            "verification_and_attack_information": "Praetorian identified this vulnerability while testing the handshake between a user’s browser and the application to initiate a WebSocket communication channel. Praetorian noticed that the application was not properly validating the origin of the request used to initiate the handshake. Using this, Praetorian could hijack a user’s WebSocket session. Evidence is shown below. Figure 1: Initiating a WebSocket handshake using a malicious domain origin.",
+            "recommendation": "To secure web socket communications, the application should check the Origin header of the WebSocket handshake request on the server. Additionally, the application should implement CSRF tokens for each user session, send them with the handshake request, and verify them on the server. References"
+          },
+          "current_password_not_required_to_change_password_-_fixed": {
+            "meta": {
+              "score": {
+                "access_vector": { "value": "3", "description": "External" },
+                "attack_feasibility": { "value": "3", "description": "Demonstrated" },
+                "authentication": { "value": "2", "description": "User" },
+                "compromise_impact": { "value": "2", "description": "Partial" },
+                "business_value": { "value": "2", "description": "System" }
+              },
+              "category": "Authentication",
+              "WASC": "WASC-1",
+              "CWE": "",
+              "SANS Top 25": "",
+              "OWASP Top 10": "OWASP-A2"
+            },
+            "status": "Fixed",
+            "impact": "Praetorian confirmed that the current password was required to change the password of an admin; however, Praetorian noted that admins could change the password of any account without its current password. This is an intended feature and not a significant security risk.",
+            "vulnerability_description": "When setting a new password for a user, the application did not require knowledge of the original password, or the use of another form of authentication. By not verifying the password change via reconfirmation of the authenticity of the user requesting the change, the application leaves the door open for a session hijacker or session rider to compro- mise a user’s account and gain indefinite access with knowledge of the newly changed password. System Impacted DMA web interface - Internal Management Services Interface",
+            "verification_and_attack_information": "Praetorian discovered this vulnerability while examining the application’s account management fea- tures. Praetorian monitored the HTTP requests sent during the change password process, and noticed that the current password was not required. Example evidence is shown below. Figure 3: Sample request to change a user’s password that did not require the current password. The password change feature should force the user to provide the original password in addition to",
+            "recommendation": "the new password. References OWASP: Testing for weak password change or reset functionalities"
+          },
+          "httponly_flag_not_set_-_fixed": {
+            "meta": {
+              "score": {
+                "access_vector": { "value": "3", "description": "External" },
+                "attack_feasibility": { "value": "2", "description": "Not Demonstrated" },
+                "authentication": { "value": "3", "description": "None" },
+                "compromise_impact": { "value": "2", "description": "Partial" },
+                "business_value": { "value": "2", "description": "System" }
+              },
+              "category": "Session Management",
+              "WASC": "",
+              "CWE": "",
+              "SANS Top 25": "",
+              "OWASP Top 10": "OWASP-A2"
+            },
+            "status": "Fixed Praetorian confirmed the removal of cookies without the HttpOnly attribute.",
+            "vulnerability_description": "If the HttpOnly attribute is set on a cookie, then the cookie’s value cannot be read or set by client- side JavaScript. This measure can prevent certain client-side attacks, such as cross-site scripting, from easily accessing sensitive cookies. If an attacker was able to stage a cross-site scripting attack, they could read and steal sensitive",
+            "impact": "cookies via JavaScript.",
+            "cookies_impacted": "DMA API - JSESSIONID - Internal Management Services Interface",
+            "verification_and_attack_information": "During an application walkthrough, Praetorian noted that the HttpOnly flag was not set for the cookies listed above. Example evidence is shown below. Figure 4: The ’HttpOnly’ flag was not set for the JSESSIONID cookie.",
+            "recommendation": "the Set-Cookie directive. As part of best practice, set the HttpOnly flag on all cookies. Unless client-side scripts specifically require read or write access to a cookie’s value, the HttpOnly flag should be set on the cookie with References OWASP: Testing for Cookies Attributes OWASP: XSS Prevention Cheat Sheet - Use HTTPOnly cookie flag"
+          },
+          "missing_http_strict_transport_security_header_-_fixed": {
+            "meta": {
+              "score": {
+                "access_vector": { "value": "2", "description": "Adjacent" },
+                "attack_feasibility": { "value": "2", "description": "Not Demonstrated" },
+                "authentication": { "value": "3", "description": "None" },
+                "compromise_impact": { "value": "2", "description": "Partial" },
+                "business_value": { "value": "2", "description": "System" }
+              },
+              "category": "Communications",
+              "WASC": "",
+              "CWE": "",
+              "SANS Top 25": "",
+              "OWASP Top 10": "OWASP-A6"
+            },
+            "status": "Fixed Praetorian confirmed the addition of a Strict-Transport-Security header.",
+            "vulnerability_description": "The HTTP Strict Transport Security (HSTS) policy header defines a time window in which a browser must connect to the server over HTTPS. Although absence of the HSTS policy header does not immediately indicate a vulnerability, its inclusion is an important component in ensuring the applica- tion’s security as the header works in concert with other security mechanisms to prevent a variety of attacks. In general, the benefits of adding the HSTS policy header far outweigh the costs of its implementation.",
+            "impact": "If an attacker has a way to manipulate the route of a user’s request (e.g. through the use of a man-in-the-middle attack, such as DNS poisoning or ARP poisoning), then the attacker can force a request to the same domain over unencrypted HTTP. Once the attacker has redirected the user’s traffic, the attacker can set up a variety of attacks without needing to view the contents of the controlled traffic. Such attacks include: sensitive information values with a wide domain scope • Creating a cloned version of the application that communicates over HTTP for the retrieval of • Overwriting of cookie values by hosting an application on a subdomain and setting cookie",
+            "systems_impacted": "DMA web interface - Internal Management Services Interface",
+            "verification_and_attack_information": "Praetorian identified the lack of Strict-Transport-Security headers through an application walk- through. To verify the issue, Praetorian captured a response packet header and confirmed the lack of an HSTS policy header, as seen below. The issue was specifically identified on API requests created by refactoring web socket requests as http requests."
+          },
+          "sensitive_data_passed_in_url_-_fixed": {
+            "meta": {
+              "score": {
+                "access_vector": { "value": "1", "description": "Local" },
+                "attack_feasibility": { "value": "2", "description": "Not Demonstrated" },
+                "authentication": { "value": "3", "description": "None" },
+                "compromise_impact": { "value": "2", "description": "Partial" },
+                "business_value": { "value": "1", "description": "System" }
+              },
+              "category": "Data Protection",
+              "WASC": "WASC-13",
+              "CWE": "",
+              "SANS Top 25": "",
+              "OWASP Top 10": "OWASP-A6"
+            },
+            "endpoint_impacted": "Services Interface /dma/reports/network-usage/exports - access_token - DMA web interface - Internal Management",
+            "verification_and_attack_information": "Praetorian identified this issue during an application walkthrough. The application sent sensitive information within the URL. Evidence is shown below. Figure 6: An authorization token sent via an application URL.",
+            "recommendation": "All sensitive data in a POST request should be sent in the request body. Alternatively, sensitive URL parameters sent in GET requests can be passed to the server through an HTTP header. References OWASP - Keep Sensitive Data Out of the URL 3 Reasons Not to Send Sensitive Data in the URL (Even with TLS)"
+          },
+          "sensitive_information_in_client_side_storage_-_accepted_risk_at_this_time": {
+            "meta": {
+              "score": {
+                "access_vector": { "value": "1", "description": "Local" },
+                "attack_feasibility": { "value": "2", "description": "Not Demonstrated" },
+                "authentication": { "value": "2", "description": "User" },
+                "compromise_impact": { "value": "2", "description": "Partial" },
+                "business_value": { "value": "2", "description": "System" }
+              }
+            },
+            "status": "Accepted Risk at this Time Praetorian verified the continued use of sensitive information in the client side storage. While this issue was not remediated, Poly informed Praetorian that the affected application uses AngularJS Strict Contextual Escaping service to mitigate cross-site scripting attacks. Given these vulnerabilities cannot be used in tandem, Praetorian understood the lowered risk of this attack vector but continues to recommend against storing sensitive information in the client side storage.",
+            "vulnerability_description": "The web application writes sensitive information to client-side storage.",
+            "impact": "The presence of sensitive data can be substantial depending on the type of information exposed. Therefore, it is best practice to prevent sensitive information from being stored in client-side storage.",
+            "systems_impacted": "DMA web interface - Internal Management Services Interface",
+            "verification_and_attack_information": "Praetorian verified that the application stored session information in the browser’s local storage. Specifically, the application stored Meteor ID’s which could be used to highjack a users session or resume a suspended session, as seen in the figure below. Figure 7: User session information stored in local storage. While local storage is frequently used to store user information, local storage lacks several of the security controls provided by cookies. For example, there is no way to prevent malicious JavaScript such as from an XSS attack from reading the data in local storage, increasing the potential impact",
+            "recommendation": "of such attacks. References OWASP: User Privacy Protection Cheat Sheet"
+          }
+        },
+        "summary": {
+          "assessment_0": {
+            "total_critical": "0",
+            "total_high": "0",
+            "total_med": "1",
+            "total_low": "3",
+            "total_info": "2",
+            "total_issues": "6"
+          },
+          "assessment_1": {
+            "total_critical": "0",
+            "total_high": "0",
+            "total_med": "0",
+            "total_low": "0",
+            "total_info": "1",
+            "total_issues": "1"
+          }
+        },
+        "aggregations": {
+          "assessment_0": {
+            "by_category": {
+              "none": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "architecture": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "1", "total": "1" },
+              "authentication": { "critical": "0", "high": "0", "med": "0", "low": "1", "info": "0", "total": "1" },
+              "session management": { "critical": "0", "high": "0", "med": "0", "low": "1", "info": "0", "total": "1" },
+              "access control": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "malicious input handling": {
+                "critical": "0",
+                "high": "0",
+                "med": "0",
+                "low": "0",
+                "info": "0",
+                "total": "0"
+              },
+              "cryptography": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "error handling and logging": {
+                "critical": "0",
+                "high": "0",
+                "med": "0",
+                "low": "0",
+                "info": "0",
+                "total": "0"
+              },
+              "data protection": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "1", "total": "1" },
+              "communications": { "critical": "0", "high": "0", "med": "0", "low": "1", "info": "0", "total": "1" },
+              "http security configuration": {
+                "critical": "0",
+                "high": "0",
+                "med": "0",
+                "low": "0",
+                "info": "0",
+                "total": "0"
+              },
+              "malicious controls": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "business logic": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "file and resources": { "critical": "0", "high": "0", "med": "1", "low": "0", "info": "0", "total": "1" },
+              "mobile": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "web services": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "configuration": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "internet of things": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" }
+            }
+          },
+          "assessment_1": {
+            "by_category": {
+              "none": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "architecture": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "1", "total": "1" },
+              "authentication": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "session management": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "access control": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "malicious input handling": {
+                "critical": "0",
+                "high": "0",
+                "med": "0",
+                "low": "0",
+                "info": "0",
+                "total": "0"
+              },
+              "cryptography": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "error handling and logging": {
+                "critical": "0",
+                "high": "0",
+                "med": "0",
+                "low": "0",
+                "info": "0",
+                "total": "0"
+              },
+              "data protection": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "communications": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "http security configuration": {
+                "critical": "0",
+                "high": "0",
+                "med": "0",
+                "low": "0",
+                "info": "0",
+                "total": "0"
+              },
+              "malicious controls": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "business logic": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "file and resources": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "mobile": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "web services": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "configuration": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" },
+              "internet of things": { "critical": "0", "high": "0", "med": "0", "low": "0", "info": "0", "total": "0" }
+            }
+          }
+        },
+        "metadata": { "service": "DMA,DMA (Retest)", "security": "Good,Excellent", "grade": "B,A" },
+        "project_name": "DMA,DMA (Retest)"
+      },
+      "created_at": 1590537973000,
+      "created_at_epoch": 1590537973
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

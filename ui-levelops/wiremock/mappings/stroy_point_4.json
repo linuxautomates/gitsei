@@ -1,0 +1,51 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/issue_mgmt/workitems/story_point_report",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"filter\": {\"workitem_parent_workitem_ids\": [\"284\", \"224\", \"284\", \"224\"], \"integration_ids\":[\"1\"], \"workitem_status_categories\":[\"Done\", \"Resolved\", \"Closed\", \"Completed\"]}}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "parent_workitem_id": {
+            "total_count": 4,
+            "records": [
+              {
+                "key": "284",
+                "total_tickets": 8,
+                "total_story_points": 5,
+                "total_unestimated_tickets": 22
+              },
+              {
+                "key": "224",
+                "total_tickets": 5,
+                "total_story_points": 1,
+                "total_unestimated_tickets": 3
+              }
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 1,
+        "page": 0,
+        "next_page": 1,
+        "has_next": true
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

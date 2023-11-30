@@ -1,0 +1,59 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/orgs/groups/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "6cad073a-b7bf-4606-b706-302f19d8e133",
+          "name": "Organizing",
+          "description": "This is the first team c",
+          "is_predefined": true,
+          "created_at": 1654841196842,
+          "updated_at": 1654841196842
+        },
+        {
+          "id": "9fe62fc3-31aa-4cf0-a62f-677eaeff33b2",
+          "name": "Finance",
+          "description": "This is the second team c",
+          "group_category": "Group F",
+          "is_predefined": false,
+          "created_at": 1654841375866,
+          "updated_at": 1654841375866
+        },
+        {
+          "id": "75504d25-4980-4952-a282-ab6933fdff8b",
+          "name": "Dev Team",
+          "description": "This is the thrid team c",
+          "group_category": "Group D",
+          "is_predefined": true,
+          "created_at": 1654841422226,
+          "updated_at": 1654841422226
+        },
+        {
+          "id": "9a2c246b-4468-4888-8371-43fae8473296",
+          "name": "Testing Team",
+          "description": "This is the fourth team c",
+          "group_category": "Group T",
+          "is_predefined": true,
+          "created_at": 1654841434865,
+          "updated_at": 1654841434865
+        }
+      ],
+      "count": 4,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false,
+        "total_count": 4
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.area-chart {
+  // chart first point is not showing up because of this so commenting this code
+  // g.recharts-layer.recharts-cartesian-axis-tick:first-of-type {
+  //   display: none;
+  // }
+
+  .legend-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .metric-label {
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 12px;
+    }
+
+    .indicators-container {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: 500;
+
+      .velocity-indicator {
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+
+        .indicator-color {
+          width: 16px;
+          height: 16px;
+          border-radius: 2px;
+        }
+
+        .indicator-title {
+          margin-left: 8px;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.ant-card-integration {
+  border: 0;
+  .ant-card-body {
+    padding: 0;
+  }
+}
+.integration-item {
+  cursor: pointer;
+  padding: 0;
+  background-color: var(--layout-body-background);
+  border: 1px solid var(--grey13);
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  &.selected {
+    border-color: var(--link-and-actions);
+    background-color: var(--levelops-white);
+    .integration-item-icon {
+      border-right-color: var(--link-and-actions);
+    }
+  }
+  &-icon {
+    padding: 10px;
+    border-right: 1px solid var(--grey13);
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-name {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: uppercase;
+  }
+}
+
+.desc-normal {
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+.integration-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.625em, 1fr));
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+
+  .ant-card-head {
+    border-bottom: none;
+  }
+}
+
+.add-btn {
+  width: fit-content;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 14px;
+  color: #335ddd;
+
+  .add-icon {
+    padding: 0 10px 0 2px;
+  }
+}
+
+.hide-dropdown {
+  display: none;
+}
+
+.integration-field-form {
+  .ant-col.ant-form-item-label {
+    max-height: 20px;
+  }
+
+  .integration-field-container {
+    display: flex;
+    flex-direction: column;
+
+    .customHygienes {
+      width: 100%;
+
+      .customHygiene {
+        width: 100%;
+        display: flex;
+        margin: 0.7rem 0;
+        flex-direction: column;
+        border: 1px solid #d9d9d9;
+        padding: 1rem;
+
+        .hygiene-row {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .hygiene-name {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+        .dropdown-row {
+          width: 95%;
+        }
+
+        .delete-container {
+          width: 5%;
+        }
+
+        .icon-container {
+          width: 32px;
+          height: 21px;
+          font-size: 21px;
+          display: flex;
+          justify-content: center;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+
+.configuration-guide-container {
+  display: flex;
+  justify-content: space-between;
+  .row {
+    flex: auto;
+  }
+  .link-Container {
+    color: #335ddd;
+  }
+  .ssl-fingerprint {
+    .has-feedback .ant-input-affix-wrapper .ant-input-suffix {
+      padding-right: 0;
+    }
+  }
+}
+.integration-description {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+  }
+}

@@ -1,0 +1,48 @@
+.predefined-dashboard {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  .ou-item {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    &-selected {
+      color: var(--active-tab);
+      filter: invert(30%) sepia(98%) saturate(1313%) hue-rotate(204deg) brightness(91%) contrast(93%);
+    }
+    .svg-icon {
+      margin-right: 0.3rem;
+      height: 1.8rem;
+      width: 1.8rem;
+    }
+    .seperator {
+      margin: 0 0.3rem;
+      color: var(--grey13);
+    }
+  }
+}
+.landing-page-body {
+  > * .predefined-dashboard {
+    font-size: 1.4rem;
+    margin: 0rem 0 0.8rem 0;
+    .ou-item {
+      .svg-icon {
+        margin-right: 0.3rem;
+        height: 1.8rem;
+        width: 1.8rem;
+      }
+    }
+  }
+}
+.dashboad-secondary-header-wrapper {
+  > * .predefined-dashboard {
+    font-size: 1.2rem;
+    .ou-item {
+      .svg-icon {
+        margin-right: 0.3rem;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+  }
+}

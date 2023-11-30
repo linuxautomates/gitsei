@@ -1,0 +1,45 @@
+.f-12:hover {
+  z-index: 1000 !important;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.avatar-group-ternary {
+  position: relative;
+  display: contents;
+
+  .f-12:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    right: 3.5em;
+  }
+
+  .f-12:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    right: 2.3em;
+  }
+
+  .f-12:nth-child(3) {
+    position: absolute;
+    z-index: 3;
+    right: 0.9em;
+  }
+}
+
+.avatar-group-secondary {
+  position: relative;
+  display: contents;
+
+  .f-12:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    right: 2.3em;
+  }
+
+  .f-12:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    right: 0.9em;
+  }
+}

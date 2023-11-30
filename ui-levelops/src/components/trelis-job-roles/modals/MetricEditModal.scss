@@ -1,0 +1,106 @@
+.edit-metric {
+  .slider-legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 0px;
+    .slider-legend {
+      display: flex;
+      .slider-legend-mark {
+        width: 16px;
+        height: 16px;
+        margin: 2px 8px 0px 8px;
+      }
+      .good-legend {
+        background-color: #61ba14;
+      }
+      .acceptable-legend {
+        background-color: #789fe9;
+      }
+      .poor-legend {
+        background-color: #ffa940;
+      }
+      .slider-label {
+        display: flex;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        flex-shrink: 0;
+        line-height: 19px;
+        height: 100%;
+        margin-right: 10px;
+      }
+    }
+  }
+  .ant-input-number {
+    border-radius: 4px;
+    border: 1px solid #d9dae5;
+    background: #fff;
+    width: 22%;
+    margin: 0.5rem 0;
+  }
+  .metric-title {
+    flex-direction: column;
+    margin-top: 2rem;
+    .label-info {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 10px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      font-weight: 400;
+      .label {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+  }
+  .metric-row {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    .input {
+        .error-msg {
+          border-color: var(--red);
+        }
+      }
+    .note {
+      display: flex;
+      color: #6b6d85;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      .ant-divider {
+        height: 2rem;
+      }
+    }
+    label {
+      color: #383946;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    .select {
+      .ant-select {
+        width: 40%;
+        border-radius: 4px;
+        border: 1px solid #d9dae5;
+        background: #fff;
+        .ant-select-selection {
+          border-bottom: none;
+        }
+      }
+    }
+    .to {
+      margin: 0 5px;
+    }
+  }
+  .ant-modal-footer {
+    text-align: left;
+  }
+}

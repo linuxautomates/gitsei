@@ -1,0 +1,67 @@
+.manual-select-modal {
+  width: fit-content !important;
+  .preview-table {
+    height: 24rem;
+    overflow-y: auto;
+  }
+  .job-lable {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    padding-right: 1px;
+    cursor: pointer;
+  }
+  .job-lable-blue {
+    color: #0278d5 !important;
+  }
+  .job-lable-black {
+    color: #383946 !important;
+  }
+  .job-lable-gray {
+    color: #b0b1c3 !important;
+  }
+
+  .job-lable-padding {
+    padding-left: 38px;
+  }
+  .table-heading-total {
+    box-sizing: border-box;
+    padding: 0px 8px;
+    gap: 10px;
+    width: 34px;
+    height: 22px;
+    background: #096dd9;
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+  }
+  .job-selection-warning {
+    padding: 8px 16px;
+    background: #fffbe6;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .job-filter-class {
+    width: 35%;
+    background: #EFFBFF;
+    border-radius: 4px;
+    border: 0.50px #0278D5 solid; 
+    padding: 8px 8px 8px 16px;
+    .job-filter-dropdown{
+      color: #22222A; 
+      font-size: 12px; 
+      font-weight: 500; 
+      line-height: 16px;
+      .job-filter-title{
+        margin-top: 10px;
+        margin-right: 5px;
+        font-size: 14px; 
+      }
+    }
+  }
+}
+.preview-width {
+  width: 32rem !important;
+}

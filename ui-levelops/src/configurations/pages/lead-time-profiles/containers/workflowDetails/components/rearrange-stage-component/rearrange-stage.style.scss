@@ -1,0 +1,227 @@
+.new-rearrange-stages-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 8px;
+
+  .stage-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .velocity-config-stage {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      height: 94px;
+      width: 234px;
+      background-color: white;
+      padding: 12px;
+      margin-left: 8px;
+      margin-right: 8px;
+      z-index: 99;
+
+      &.error-stage {
+        border-color: red;
+      }
+
+      .stage-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .stage-name {
+          color: #262626;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .stage-target {
+          color: #5b677b;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+
+      .stage-actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 8px;
+
+        .anticon {
+          padding: 4px;
+        }
+      }
+
+      &:hover {
+        background: #f0f5ff;
+        box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05), 0 6px 16px rgba(0, 0, 0, 0.08),
+          0 3px 6px -4px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+
+  .add-stage-btn {
+    border-radius: 24px;
+    z-index: 99;
+    width: 24px;
+    height: 24px;
+  }
+
+  .add-stage-btn:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    .cls1 {
+      fill: #597ef7;
+    }
+
+    .cls2 {
+      fill: white;
+    }
+  }
+
+  .ticket-placeholder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-right: 16px;
+    background-color: #f5f6f8;
+    z-index: 99;
+
+    .tickets-icon > svg {
+      fill: var(--primary-text);
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .ant-typography {
+      margin-left: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      width: 72px;
+    }
+
+    .arrow {
+      margin-left: 8px;
+      width: 60px;
+      height: 0;
+      border: 1px dashed #8c8c8c;
+
+      &::after {
+        content: ">";
+        position: relative;
+        color: #8c8c8c;
+        font-size: 20px;
+        left: 55px;
+        top: -16px;
+      }
+    }
+
+    .v-line {
+      height: 50px;
+      width: 0;
+      border-left: 1px solid #8c8c8c;
+      margin-left: 12px;
+    }
+  }
+
+  .has-start-commit {
+    background-color: white !important;
+    .tickets-icon > svg {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
+  }
+
+  .add-pre-stage,
+  .add-post-stage {
+    display: flex;
+    align-items: center;
+    height: 94px;
+    margin-bottom: 32px;
+  }
+}
+
+.fixed_stages {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 32px;
+  z-index: 2;
+
+  .velocity-config-stage {
+    border: 2px solid #ffd591 !important;
+    border-radius: 2px !important;
+    background-color: #fff7e6 !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  .velocity-config-stage.velocity-config-stage-disabled {
+    border: 2px solid #d9d9d9 !important;
+    border-radius: 2px !important;
+    background-color: #f5f5f5 !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    .stage-content {
+      opacity: 0.5;
+    }
+  }
+
+  .velocity-config-stage.velocity-config-action-icons-disabled {
+    .stage-actions {
+      opacity: 0.5;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    padding: 0 10px 23px 10px;
+
+    .heading {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      color: black;
+    }
+
+    .sub-heading {
+      font-size: 12px;
+      line-height: 22px;
+      font-weight: 400;
+      color: black;
+    }
+  }
+}
+
+.no-fixed-stage {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding-top: 22px;
+  margin: 32px 0 86px 0;
+  z-index: 2;
+
+  .velocity-config-stage {
+    border: 2px solid #ffd591 !important;
+    border-radius: 2px !important;
+    background-color: #fff7e6 !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+}
+
+.lock-icon:hover {
+  background-color: #ffd666;
+}

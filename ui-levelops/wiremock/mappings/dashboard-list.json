@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/ous/47a86784-383b-485f-8d80-5cc3bc93a3f9/dashboards/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "has_next": false,
+        "page": 0,
+        "page_size": 10,
+        "total_count": 4
+      },
+      "records": [
+        {
+          "ou_id": "47a86784-383b-485f-8d80-5cc3bc93a3f9",
+          "dashboard_order": 1,
+          "dashboard_id": 7142,
+          "name": "Demo - Team Insights"
+        },
+        {
+          "ou_id": "47a86784-383b-485f-8d80-5cc3bc93a3f9",
+          "dashboard_order": 2,
+          "dashboard_id": 7317,
+          "name": "NEhal-SCM-Test"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.form-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  &.flex-start {
+    justify-content: flex-start;
+    .plus-icon-state {
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      margin-left: 15%;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+  &__text {
+    font-weight: 400;
+  }
+
+  &__switch {
+    width: 5%;
+    margin-top: 0.5rem;
+  }
+}
+
+.default-dashboard-switch {
+  position: absolute;
+  right: 0;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.info-text {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary-color);
+}
+.user-permission-wrapper {
+  border: 1px solid black !important;
+  box-sizing: border-box;
+  display: block;
+  padding: 1rem;
+  overflow-y: auto;
+  height: 15rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.permissions-form-container {
+  .form-content {
+    margin: 0;
+
+    &:first-of-type {
+      margin-top: 15px;
+    }
+  }
+
+  .permission-option-desc-container {
+    .permission-option-header {
+      font-weight: bolder;
+      margin-bottom: 3px;
+    }
+
+    .permission-option-subheader {
+      font-weight: 300;
+    }
+  }
+}

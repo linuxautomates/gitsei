@@ -1,0 +1,19 @@
+@import "shared-resources/style/mixin.scss";
+
+.product-stage {
+  &__container {
+    border: 1px solid var(--grey4);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__name,
+  &__action {
+    font-size: 13px;
+  }
+  &__action {
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+  }
+}

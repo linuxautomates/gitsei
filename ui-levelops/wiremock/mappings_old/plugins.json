@@ -1,0 +1,175 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/plugins/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "dfac2099-ddac-4fd1-9a25-d52314cd2bb8",
+          "class": "report_file",
+          "custom": false,
+          "tool": "fake_snyk",
+          "version": "1.0",
+          "name": "Snyk Report",
+          "description": "Ingests a Snyk Report",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "06554def-6c29-4d1b-a1c3-bbb73641a0cd",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_api_springmvc",
+          "version": "1.0",
+          "name": "API Discovery - Java Spring MVC",
+          "description": "Static API Endpoint Discovery for Java Spring MVC",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "92eddbe8-9a07-4cb8-a269-759ec52a4a49",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_brakeman",
+          "version": "1.0",
+          "name": "Brakeman",
+          "description": "Levelops Plugin for brakeman",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "fa503a79-1cf6-41f7-b3f3-7dfa2b018558",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_api_flask",
+          "version": "1.0",
+          "name": "API Discovery - Python Flask",
+          "description": "Static API Endpoint Discovery for Python Flask",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "4cd90953-a75f-423b-9f93-6fc2213f8f24",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_api_express",
+          "version": "1.0",
+          "name": "API Discovery - NodeJS express",
+          "description": "Static API Endpoint Discovery for NodeJS express",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "983ab0cb-71e9-4658-a823-95aa393fae1e",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_api_apigee",
+          "version": "1.0",
+          "name": "API Discovery - APIGee",
+          "description": "Static API Endpoint Discovery for ApiGee proxies",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "fb17acad-70e9-48fa-b1ee-1257f22aaeb7",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_api_cloudformation",
+          "version": "1.0",
+          "name": "API Discovery - CloudFormation",
+          "description": "Static API Endpoint Discovery for CloudFormation",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "da21a74c-b052-4043-9b9e-cbdf5f602a0e",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_api_k8s",
+          "version": "1.0",
+          "name": "API Discovery - K8s",
+          "description": "Static API Endpoint Discovery for kubernetes",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "9727e9be-1470-4b04-9230-c7ceebfe4843",
+          "class": "sources_scan",
+          "custom": false,
+          "tool": "sast_git_secrets",
+          "version": "1.0",
+          "name": "Git Secrets",
+          "description": "LevelOps plugin for git-secrets to find sensitive information in git repositories",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "8601b040-e3d6-4cc0-bd8f-ead1de440161",
+          "class": "monitoring",
+          "custom": false,
+          "tool": "jenkins_config",
+          "version": "1.0",
+          "name": "Jenkins Config",
+          "description": "Monitors Jenkins Config",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "aee31f18-144f-4d12-9b1a-a7888ad59ad0",
+          "class": "report_file",
+          "custom": false,
+          "tool": "report_ms_tmt",
+          "version": "1.0",
+          "name": "Microsoft Threat Modeling Tool",
+          "description": "Ingests a Microsoft Threat Modeling Tool Report",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "901e744b-9516-42e1-9a09-6dd378459b98",
+          "class": "report_file",
+          "custom": false,
+          "tool": "report_praetorian",
+          "version": "1.0",
+          "name": "Praetorian Report",
+          "description": "Ingests a Praetorian Report",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1586397541
+        },
+        {
+          "id": "dc0024ee-54e4-4595-88d3-9e9c1da72a25",
+          "class": "report_file",
+          "custom": false,
+          "tool": "report_nccgroup",
+          "version": "1.0",
+          "name": "NCC Group Report",
+          "description": "Ingests a NCC Group Report",
+          "readme": {},
+          "gcs_path": "",
+          "created_at": 1589658530
+        }
+      ],
+      "count": 13,
+      "_metadata": { "page_size": 100, "page": 0, "has_next": false, "total_count": 13 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

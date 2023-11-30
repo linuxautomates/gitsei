@@ -1,0 +1,78 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/users/me"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "2",
+      "first_name": "Madhav",
+      "last_name": "Bhasin",
+      "bcrypt_password": "$2a$10$Mz4vHceLs20wxxVYBEVFcuGN0wd4UAczY4/VddqnojjfEIM4I8N5S",
+      "user_type": "ADMIN",
+      "saml_auth_enabled": true,
+      "password_auth_enabled": true,
+      "mfa_enforced": false,
+      "mfa_enabled": false,
+      "mfa_enrollment_end": 0,
+      "scopes": {},
+      "metadata": {
+        "last_login_url": "/admin/dashboards/748?OU=1655&workspace_id=289",
+        "selected_workspace": {
+          "id": "289",
+          "key": "PROP-1808",
+          "demo": false,
+          "name": "PROP-1808",
+          "disabled": false,
+          "owner_id": "2",
+          "immutable": false,
+          "created_at": 1667203322,
+          "updated_at": 1667376927,
+          "description": "",
+          "bootstrapped": false,
+          "integrations": [
+            {
+              "id": "1",
+              "name": "Azure-Integ-1",
+              "application": "azure_devops",
+              "append_metadata": false
+            },
+            {
+              "id": "31",
+              "name": "Azure-Latest-22",
+              "application": "azure_devops",
+              "append_metadata": false
+            }
+          ],
+          "integration_ids": [1, 31]
+        }
+      },
+      "mfa_reset_at": 0,
+      "password_reset": {
+        "token": "$2a$10$UIWCRWv1eQI4r2yse5M6neagQj7SeGjAjIB.E7cRlZyzPVwZcyvRK",
+        "expiry": 1662727283
+      },
+      "email": "test@levelops.io",
+      "updated_at": 1667383025,
+      "created_at": 1657794970,
+      "license": "full",
+      "entitlements": [
+        "PROPELS",
+        "SETTINGS",
+        "ISSUES",
+        "DASHBOARDS",
+        "ALL_FEATURES",
+        "TABLES",
+        "NEW_DORA_LEADTIME_WIDGET",
+        "REPORTS",
+        "TRIAGE",
+        "TEMPLATES"
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "shared-resources/style/mixin.scss";
+
+.sdlc-flows {
+  &__header {
+    padding-bottom: size(4);
+  }
+  &__panel-header {
+    width: 40%;
+  }
+
+  .ant-collapse .ant-collapse-item .ant-collapse-header {
+    align-items: center;
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+  }
+
+  .ant-table-column-title {
+    font-family: Inter;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.14px;
+    line-height: 2;
+  }
+
+  .ant-table-row td {
+    color: var(--primary-text);
+    font-family: Inter;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.14px;
+    line-height: 2;
+  }
+
+  .ant-pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .ant-pagination-item-active {
+      background: var(--link-and-actions);
+      a {
+        color: var(--levelops-white);
+      }
+    }
+  }
+}

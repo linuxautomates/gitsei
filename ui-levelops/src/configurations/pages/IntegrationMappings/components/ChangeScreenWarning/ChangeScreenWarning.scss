@@ -1,0 +1,10 @@
+.changeScreenWarning {
+  display: flex;
+  gap: 40px;
+  padding: 24px;
+  .firstContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

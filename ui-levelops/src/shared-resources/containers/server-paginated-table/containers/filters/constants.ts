@@ -1,0 +1,1 @@
+export const DATE_RANGE_FILTER_FORMAT = "YYYY-MM-DD";

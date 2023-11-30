@@ -1,0 +1,10 @@
+.ant {
+  &-col {
+    > {
+      .ant-card-wrapper,
+      .ant-card-wrapper > .ant-card {
+        height: 100%;
+      }
+    }
+  }
+}

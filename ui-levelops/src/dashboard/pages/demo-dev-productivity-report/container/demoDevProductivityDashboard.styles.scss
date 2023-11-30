@@ -1,0 +1,61 @@
+$backgroundColor: #fff;
+$text-color-dark: #262626;
+
+.demo-dev-productivity-dashboard-container {
+  .dev-productivity-widget-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5rem;
+    .widgets {
+      width: 82%;
+      .dev-widget-container {
+        margin-bottom: 22px;
+        .ant-card-head-title {
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+        .dev-widget-extra {
+          input {
+            margin-right: 1rem;
+          }
+          display: flex;
+        }
+      }
+    }
+  }
+  .dashboard-view-page-header-container {
+    background-color: $backgroundColor;
+    .dashboad-secondary-header-wrapper {
+      background-color: $backgroundColor;
+      justify-content: space-between;
+      padding: 1rem 1rem 1rem 2.2rem;
+      align-items: center;
+    }
+    .dashboard-name {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 0px;
+    }
+
+    .version-chip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #595959;
+      border-radius: 20px;
+      width: 43px;
+      height: 23px;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 14px;
+      color: $backgroundColor;
+      margin-left: 10px;
+    }
+  }
+}

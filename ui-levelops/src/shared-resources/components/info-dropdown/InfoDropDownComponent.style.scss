@@ -1,0 +1,69 @@
+.triage-filter-dropdown {
+  display: flex;
+  flex-direction: column;
+  .search-popover {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 32px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    margin-right: 12px;
+  }
+
+  .info-icon {
+    font-size: 15px;
+    color: #595959;
+    margin-right: 12px;
+  }
+
+  .default-tag {
+    .ant-tag,
+    .ant-tag a,
+    .ant-tag a:hover {
+      color: #2967dd;
+      background-color: #eaf0fc;
+      border-color: #94b3ee;
+    }
+  }
+
+  .count-badge {
+    sup {
+      background-color: #2967dd;
+    }
+    margin-right: 6px;
+  }
+
+  &--results {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    margin-right: 5px;
+  }
+}
+
+.dropdown-popup-content {
+  width: 23.5rem;
+
+  hr {
+    border-top: none;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  &__add-button {
+    width: 100%;
+    height: 22px;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  &__list {
+    overflow: hidden auto;
+  }
+}

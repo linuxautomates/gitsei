@@ -1,0 +1,2 @@
+export const SCM_REVIEW_COLLABORATION_DESCRIPTION =
+  "This widget helps in understanding how the team is performing the code review amongst its peers. It enables to identify if the team is inclined toward the culture of having a Buddy system, where peers mutually review one another’s code always or if the team is burdened with code reviews only or if the team is practising merging the code without approvals and much more.";

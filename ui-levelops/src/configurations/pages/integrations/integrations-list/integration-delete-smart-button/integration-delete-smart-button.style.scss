@@ -1,0 +1,39 @@
+.integration-delete-confirm-popup {
+  .ant-modal {
+    &-content {
+      .ant-modal-close {
+        display: none;
+      }
+      .ant-modal-body {
+        padding-top: 30px;
+        .header-wrap {
+          display: flex;
+          align-items: center;
+          span {
+            .anticon-delete {
+              color: red;
+              font-size: 18px;
+            }
+          }
+          .confirmation-heading {
+            margin-left: 12px;
+            font-size: 14px;
+            color: #404040;
+          }
+        }
+        .content-wrap {
+          margin-left: 30px;
+          margin-top: 20px;
+          .org-list {
+            max-height: 55vh;
+            overflow: auto;
+            ul {
+              list-style: initial;
+              margin-bottom: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

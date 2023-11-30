@@ -1,0 +1,46 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/jira/ticket_count_fte",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"filter\": {\"ticket_categories\": [\"Bug & Defect\"]}}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "1638316800",
+          "additional_key": "12-2021",
+          "fte": 0.75
+        },
+        {
+          "key": "1635724800",
+          "additional_key": "11-2021",
+          "fte": 0.2
+        },
+        {
+          "key": "1633046400",
+          "additional_key": "10-2021",
+          "fte": 1.4
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

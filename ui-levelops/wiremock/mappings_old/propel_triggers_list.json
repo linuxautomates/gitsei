@@ -1,0 +1,277 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/playbooks/triggers/schemas/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page": 0,
+        "page_size": 10,
+        "total_count": 1
+      },
+      "count": 1,
+      "records": [
+        {
+          "name": "Trigger On A Schedule",
+          "type": "scheduled",
+          "description": "A trigger for runbooks that will run on a fixed schedule.",
+          "fields": {
+            "interval_in_min": {
+              "key": "interval_in_min",
+              "type": "text",
+              "required": true,
+              "hidden": false,
+              "validation": "not_empty"
+            }
+          },
+          "examples": [
+            {
+              "id": "1fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "name": "Every Monday Morning Trigger"
+            },
+            {
+              "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "name": "Every 12 hours Trigger"
+            }
+          ],
+          "ui_data": {
+            "icon": "slack"
+          }
+        },
+        {
+          "name": "JIRA Trigger",
+          "type": "event_trigger",
+          "description": "A trigger for runbooks that will run on JIRA events.",
+          "fields": {
+            "component_type": {
+              "key": "component_type",
+              "type": "text",
+              "required": true,
+              "hidden": true,
+              "validation": "",
+              "default_value": "INTEGRATION"
+            },
+            "component_name": {
+              "key": "component_name",
+              "type": "text",
+              "required": true,
+              "hidden": true,
+              "validation": "",
+              "default_value": "jira"
+            },
+            "event_type": {
+              "key": "event_type",
+              "type": "text",
+              "required": true,
+              "hidden": true,
+              "validation": "",
+              "default_value": "JIRA_NEW_ISSUE"
+            },
+            "product": {
+              "key": "product",
+              "type": "multi-dynamic-select",
+              "required": true,
+              "validation": "not_empty",
+              "dynamic_resource_name": "products"
+            }
+          },
+          "examples": [
+            {
+              "id": "1fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "name": "Every Monday Morning Trigger"
+            },
+            {
+              "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+              "name": "Every 12 hours Trigger"
+            }
+          ],
+          "ui_data": {
+            "icon": "jira"
+          }
+        },
+        {
+          "id": "8e8b4493-fb14-4a1e-9ce9-e7b2e53ef0d8",
+          "trigger_type": "scheduled",
+          "description": "Trigger for playbooks to run on a specific schedule.",
+          "fields": {
+            "cron": {
+              "key": "cron",
+              "type": "text",
+              "options": [],
+              "required": true,
+              "hidden": false,
+              "validation": "",
+              "default_value": ""
+            },
+            "tags": {
+              "key": "tags",
+              "type": "multi-dynamic-select",
+              "options": [],
+              "required": false,
+              "hidden": false,
+              "dynamic_resource_name": "tags",
+              "validation": "",
+              "default_value": ""
+            },
+            "products": {
+              "key": "products",
+              "type": "multi-dynamic-select",
+              "options": [],
+              "required": false,
+              "hidden": false,
+              "dynamic_resource_name": "products",
+              "validation": "",
+              "default_value": ""
+            }
+          },
+          "ui_data": {
+            "icon": "clock-circle"
+          },
+          "examples": {
+            "cron": {
+              "key": "cron",
+              "type": "cron",
+              "hidden": true,
+              "options": [],
+              "required": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "tags": {
+              "key": "tags",
+              "type": "multi-dynamic-select",
+              "hidden": true,
+              "options": [],
+              "required": false,
+              "validation": "",
+              "default_value": "",
+              "dynamic_resource_name": "tags"
+            },
+            "products": {
+              "key": "products",
+              "type": "multi-dynamic-select",
+              "hidden": true,
+              "options": [],
+              "required": false,
+              "validation": "",
+              "default_value": "",
+              "dynamic_resource_name": "products"
+            }
+          }
+        },
+        {
+          "id": "9063af6e-6333-4653-b6a7-e373b37506ef",
+          "trigger_type": "component_event",
+          "description": "Trigger for playbooks to run when an there is a new event generated by a LevelOps component.",
+          "fields": {
+            "component_type": {
+              "key": "component_type",
+              "type": "text",
+              "options": [],
+              "required": false,
+              "hidden": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "event_type": {
+              "key": "event_type",
+              "type": "text",
+              "options": [],
+              "required": false,
+              "hidden": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "component_name": {
+              "key": "component_name",
+              "type": "text",
+              "options": [],
+              "required": false,
+              "hidden": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "tags": {
+              "key": "tags",
+              "type": "multi-dynamic-select",
+              "options": [],
+              "required": false,
+              "hidden": false,
+              "dynamic_resource_name": "tags",
+              "validation": "",
+              "default_value": ""
+            },
+            "products": {
+              "key": "products",
+              "type": "multi-dynamic-select",
+              "options": [],
+              "required": false,
+              "hidden": false,
+              "dynamic_resource_name": "products",
+              "validation": "",
+              "default_value": ""
+            }
+          },
+          "ui_data": {
+            "icon": "levelops"
+          },
+          "examples": {
+            "component_type": {
+              "key": "component_type",
+              "type": "text",
+              "hidden": true,
+              "options": [],
+              "required": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "event_type": {
+              "key": "event_type",
+              "type": "text",
+              "hidden": true,
+              "options": [],
+              "required": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "component_name": {
+              "key": "component_name",
+              "type": "text",
+              "hidden": true,
+              "options": [],
+              "required": true,
+              "validation": "",
+              "default_value": ""
+            },
+            "tags": {
+              "key": "tags",
+              "type": "multi-dynamic-select",
+              "hidden": true,
+              "options": [],
+              "required": false,
+              "validation": "",
+              "default_value": "",
+              "dynamic_resource_name": "tags"
+            },
+            "products": {
+              "key": "products",
+              "type": "multi-dynamic-select",
+              "hidden": true,
+              "options": [],
+              "required": false,
+              "validation": "",
+              "default_value": "",
+              "dynamic_resource_name": "products"
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

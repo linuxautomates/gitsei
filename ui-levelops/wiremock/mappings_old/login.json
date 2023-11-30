@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/authenticate"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJoYXJzaEBsZXZlbG9wcy5pbyIsInVzZXJfdHlwZSI6ImFkbWluIiwiY29tcGFueSI6ImZvbyIsImV4cCI6MTU3MTk0MjYyNiwiaWF0IjoxNTcxOTQxNjI2fQ.s-_qy4OmSUatqjY6yjkS5-d_c1PKgYLN4ThFS1rlVzc"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

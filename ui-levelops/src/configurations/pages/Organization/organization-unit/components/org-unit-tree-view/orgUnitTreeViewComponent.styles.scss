@@ -1,0 +1,31 @@
+.ou-tree-container {
+  .ant-tree-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--title);
+  }
+  .show-more-text {
+    color: var(--link-and-actions);
+  }
+  .ant-tree-switcher {
+    .anticon {
+      font-size: 1rem !important;
+      color: var(--title);
+    }
+    .anticon-file {
+      display: none;
+    }
+  }
+  .ant-tree-treenode-switcher-close {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  &.no-events {
+    .ant-tree-node-content-wrapper {
+      cursor: default;
+    }
+  }
+}
+.tree-search {
+  width: 20%;
+}

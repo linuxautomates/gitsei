@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd_scm/job_runs/list"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 1
+      },
+      "count": 1,
+      "records": [
+        {
+          "id": "cf1a82a7-90b4-4bb4-8589-69a43a6de16d",
+          "job_name": "Build-Server-API",
+          "product_id": 71,
+          "number": 31,
+          "status": "SUCCESS",
+          "start_time": 1593043200,
+          "duration": 30,
+          "cicd_user_id": "viraj-jenkins",
+          "parameters": [
+            {
+              "type": "StringParameterValue",
+              "name": "BRANCH_NAME",
+              "value": "master"
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

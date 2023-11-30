@@ -1,0 +1,38 @@
+.ant-btn {
+  line-height: 1.2;
+  &-sm {
+    line-height: 0.6;
+  }
+  &-dashed {
+    background-color: @white;
+    border-color: @border-color-base;
+  }
+  &-group {
+    .ant-btn {
+      &:last-child:not(:first-child)[disabled],
+      & + &[disabled] {
+        border-left-color: @normal-color;
+      }
+    }
+  }
+  &-outline {
+    background-color: @white;
+    border-color: @border-color-base;
+    &.ant-btn-primary {
+      background-color: @white;
+      border-color: @primary-color;
+      color: @primary-color;
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+    &.ant-btn-danger {
+      background-color: @white;
+      border-color: @error-color;
+      color: @error-color;
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+}

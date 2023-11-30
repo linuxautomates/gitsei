@@ -1,0 +1,64 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/salesforce_cases/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "records": [
+        {
+          "status": [
+            {
+              "key": "CLOSED",
+              "total_cases": 1
+            },
+            {
+              "key": "PENDING",
+              "total_cases": 1
+            }
+          ]
+        },
+        {
+          "type": [
+            {
+              "key": "PROBLEM",
+              "total_cases": 5
+            },
+            {
+              "key": "FEATURE REQUEST",
+              "total_cases": 2
+            },
+            {
+              "key": "QUESTION",
+              "total_cases": 2
+            }
+          ]
+        },
+        {
+          "priority": [
+            {
+              "key": "MEDIUM",
+              "total_cases": 8
+            },
+            {
+              "key": "HIGH",
+              "total_cases": 1
+            }
+          ]
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 10,
+        "page": 0,
+        "next_page": 1,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

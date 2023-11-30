@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/developers/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": 1,
+          "user": "maxime-levelops",
+          "repos": ["levelops/ingestion-levelops", "levelops/ui-levelops"]
+        },
+        {
+          "id": 2,
+          "user": "meghana-levelops",
+          "repos": ["levelops/ingestion-levelops", "levelops/ui-levelops"]
+        },
+        {
+          "id": 3,
+          "user": "ivan-levelops",
+          "repos": ["levelops/ingestion-levelops", "levelops/ui-levelops"]
+        },
+        {
+          "id": 4,
+          "user": "harsh-levelops",
+          "repos": ["levelops/ingestion-levelops", "levelops/ui-levelops"]
+        },
+        {
+          "id": 5,
+          "user": "nishant-levelops",
+          "repos": ["levelops/ingestion-levelops", "levelops/ui-levelops"]
+        }
+      ],
+      "count": 10,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 10
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

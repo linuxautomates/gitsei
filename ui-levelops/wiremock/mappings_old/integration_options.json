@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "OPTIONS",
+    "urlPathPattern": "/v1/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Expose-Headers": "*"
+    }
+  }
+}

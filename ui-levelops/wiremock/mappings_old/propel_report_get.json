@@ -1,0 +1,46 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/playbooks/reports/(.*)"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "id of report",
+      "runbook_id": "backend",
+      "run_id": "specific run that generated the report",
+      "section_titles": ["section1", "section2"],
+      "columns": ["section_title", "app_name", "details", "cve"],
+      "records": [
+        {
+          "section_title": "section1",
+          "app_name": "Jira",
+          "details": { "title": "This is the issue title", "name": "LEV-123", "assigned": "meghana@levelops.io" },
+          "cve": "CVE-123"
+        },
+        {
+          "section_title": "section2",
+          "app_name": "Jira",
+          "cve": "CVE-123"
+        },
+        {
+          "section_title": "section1",
+          "app_name": "Jira",
+          "details": { "title": "This is the issue title", "name": "LEV-123", "assigned": "meghana@levelops.io" },
+          "cve": "CVE-123"
+        },
+        {
+          "section_title": "section2",
+          "app_name": "Jira",
+          "cve": "CVE-123"
+        }
+      ],
+      "created_at": 1588848290
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

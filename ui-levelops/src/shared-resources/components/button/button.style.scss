@@ -1,0 +1,119 @@
+@import "shared-resources/style/mixin.scss";
+
+.button {
+  background-color: var(--component-background);
+  border-radius: size();
+  border-width: 0;
+  color: var(--font-color);
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color transition();
+  user-select: none;
+  white-space: nowrap;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background-color: var(--background-hover);
+  }
+
+  &::before {
+    background-color: var(--grey03);
+    border-radius: 100%;
+    content: "";
+    display: block;
+    left: 50%;
+    padding-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+  }
+
+  &:active::before {
+    padding-top: 120%;
+    transition: width transition(), padding-top transition();
+    width: 120%;
+  }
+
+  &--basic {
+    box-shadow: 0 0 1.5px var(--font-color);
+  }
+
+  &--primary {
+    background-color: var(--primary-orange);
+    color: var(--levelops-white);
+
+    &:hover {
+      background-color: var(--orange1);
+    }
+
+    &::before {
+      background-color: var(--orange3);
+    }
+  }
+
+  &--accent {
+    background-color: var(--primary-green);
+    color: var(--levelops-white);
+
+    &:hover {
+      background-color: var(--green1);
+    }
+
+    &::before {
+      background-color: var(--green3);
+    }
+  }
+
+  &--warn {
+    background-color: var(--primary-blue);
+
+    &:hover {
+      background-color: var(--blue1);
+    }
+
+    &::before {
+      background-color: var(--blue3);
+    }
+  }
+
+  &--text {
+    color: var(--primary-orange);
+    background: transparent;
+
+    &:hover {
+      background: var(--orange1);
+      color: var(--levelops-white);
+    }
+
+    &::before {
+      background: var(--orange1);
+      color: var(--levelops-white);
+    }
+  }
+
+  > span {
+    display: block;
+    font-weight: bold;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 10;
+  }
+}

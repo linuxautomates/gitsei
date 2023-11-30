@@ -1,0 +1,9 @@
+@import "shared-resources/style/mixin.scss";
+
+.integration-teams {
+  &__info {
+    @extend %p14;
+    color: var(--grey4);
+    padding: size(2) 0;
+  }
+}

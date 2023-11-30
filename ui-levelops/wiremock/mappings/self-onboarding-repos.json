@@ -1,0 +1,67 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/onboarding/repos/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "name": "Repo 1",
+          "url": "abc/12345667/Repo_1",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 2",
+          "url": "abc/12345667/Repo_2",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 3",
+          "url": "abc/12345667/Repo_3",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 4",
+          "url": "abc/12345667/Repo_4",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 5",
+          "url": "abc/12345667/Repo_5",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 6",
+          "url": "abc/12345667/Repo_6",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 7",
+          "url": "abc/12345667/Repo_7",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 8",
+          "url": "abc/12345667/Repo_8",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 9",
+          "url": "abc/12345667/Repo_9",
+          "updated_at": "last year"
+        },
+        {
+          "name": "Repo 10",
+          "url": "abc/12345667/Repo_10",
+          "updated_at": "last year"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

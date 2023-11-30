@@ -1,0 +1,46 @@
+.search-dash-row {
+  &:hover {
+    background-color: #f5f9ff;
+    cursor: pointer;
+    .action-options {
+      visibility: visible;
+    }
+  }
+}
+.non-public-search-dash-row {
+  cursor: default;
+  pointer-events: none;
+}
+
+.header-dropdown-row {
+  &--name {
+    padding: 5px 0 5px 12px;
+    overflow: hidden;
+    max-height: 38px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #262626;
+  }
+
+  &__default-tag {
+    padding: 5px 0;
+    .ant-tag,
+    .ant-tag a,
+    .ant-tag a:hover {
+      color: #2967dd;
+      background-color: #eaf0fc;
+      border-color: #94b3ee;
+    }
+  }
+
+  .action-options {
+    padding: 5px 0;
+    visibility: hidden;
+  }
+
+  .delete-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+}

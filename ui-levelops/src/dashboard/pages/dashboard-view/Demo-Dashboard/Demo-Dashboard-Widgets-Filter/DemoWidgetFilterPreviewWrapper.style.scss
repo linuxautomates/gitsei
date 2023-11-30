@@ -1,0 +1,82 @@
+.demo-widget-filters-wrapper {
+  .widget-filters-list {
+    padding: 0 20px 10px 20px;
+    overflow: auto;
+
+    .widget-filter {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+
+      &_label {
+        margin-top: 0.5rem;
+        color: #555555;
+        font-size: 10px;
+        font-weight: bold;
+      }
+
+      &_extras {
+        font-size: 10px;
+      }
+
+      &_tags {
+        max-width: 100%;
+        margin-top: 0.2rem;
+        background-color: #efdbff;
+        border-color: #efdbff;
+        color: #595959;
+        word-break: break-all;
+        overflow-y: hidden;
+      }
+    }
+  }
+
+  .db-filter-container {
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .widget-filter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  .filters-count-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 8px;
+
+    .filters-label-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .filters-label {
+      margin-right: 8px;
+      color: black;
+      font-size: 14px;
+      font-weight: 450;
+    }
+
+    .filters-subLabel {
+      color: black;
+      font-size: 12px;
+      font-weight: 450;
+    }
+
+    .filters-count {
+      .ant-badge-count {
+        background-color: #1d39c4;
+      }
+    }
+  }
+
+  .filter-placeholder {
+    padding: 16px;
+  }
+}

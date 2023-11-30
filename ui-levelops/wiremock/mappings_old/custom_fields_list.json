@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/custom-fields/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "label": "field1 ",
+          "type": "multi-select",
+          "required": false,
+          "hidden": true,
+          "metadata": {
+            "validation": "not_empty",
+            "options": ["tag1", "tag2", "tag3"]
+          }
+        },
+        {
+          "label": "field2 ",
+          "type": "text",
+          "required": true,
+          "hidden": true,
+          "metadata": {
+            "validation": "email",
+            "options": []
+          }
+        },
+        {
+          "label": "field3 ",
+          "type": "date",
+          "required": true,
+          "hidden": false,
+          "metadata": {
+            "validation": "",
+            "options": []
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

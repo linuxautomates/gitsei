@@ -1,0 +1,22 @@
+.feature-drilldown-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  &__open {
+    margin: 0 8px;
+  }
+  .drilldown-close-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .close-icon {
+      cursor: pointer;
+      margin-left: 5px;
+      font-size: 18px;
+    }
+  }
+}

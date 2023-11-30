@@ -1,0 +1,36 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/jira/ticket_count_fte",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{\"across\":\"issue_resolved_at\",\"interval\":\"biweekly\",\"filter\":{\"issue_resolved_at\":{\"$gt\":\"1640995200\",\"$lt\":\"1650412799\"},\"ba_attribution_mode\":\"current_assignee\",\"ticket_categorization_scheme\":\"b530ea0b-1c76-4b3c-8646-e2c4c0fe402c\",\"product_id\":\"772\",\"integration_ids\":[\"1430\",\"1446\",\"1597\",\"1598\",\"1723\"],\"ticket_categories\":[\"Features\"]},\"ou_ids\":[\"116\"],\"ou_user_filter_designation\":{\"sprint\":[\"customfield_10020\"]}}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "1635724800",
+          "additional_key": "11-2021",
+          "fte": 0.33333334
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

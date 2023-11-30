@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/v1/questionnaires/([0-9]*)"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": { "id": "123" },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

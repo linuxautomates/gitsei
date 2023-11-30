@@ -1,0 +1,41 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/org/units/list",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"filter\": {\"ou_category_id\":[\"db46f789-aac2-4604-ac1a-eb37a861e74e\",\"305e737f-ffb2-43ad-bbcc-d7f0c932b11f\",\"e2d17d7b-1dd4-45ed-ac24-00849450ec8a\"]}}",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "432",
+          "ou_id": "1008e340-5df4-4cfe-98a7-de9253e37646",
+          "name": "OU2 PROP-637",
+          "tags": [],
+          "managers": [],
+          "sections": [],
+          "parent_ref_id": 431,
+          "version": "1",
+          "no_of_dashboards": 0,
+          "path": "/All Teams/OU1 PROP-637/OU2 PROP-637",
+          "ou_category_id": "db46f789-aac2-4604-ac1a-eb37a861e74e",
+          "default_dashboard_id": 0,
+          "workspace_id": 154
+        }
+      ],
+      "count": 3,
+      "_metadata": { "page_size": 50, "page": 0, "has_next": false, "total_count": 3 }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

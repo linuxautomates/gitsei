@@ -1,0 +1,54 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/bestpractices/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "tags": [],
+          "id": "b4f92445-9d02-494c-86e9-48995e8f50bd",
+          "name": "encryption KB",
+          "type": "LINK",
+          "value": "https://www.google.com",
+          "created_at": 1574807751
+        },
+        {
+          "tags": ["28"],
+          "id": "d7f0c015-1ca7-4b36-bb98-b39dd8349f15",
+          "name": "Rest API Security Best Practices",
+          "type": "LINK",
+          "value": "https://drive.google.com/file/d/1-tq0z7DWfyco3gzMQ4LVAx6InN_9IBCH/view?usp=sharing",
+          "created_at": 1575238469
+        },
+        {
+          "tags": ["33"],
+          "id": "f7fa09f2-833f-48bf-9614-700eee6124d5",
+          "name": "Customer Data Isolation Best Practices",
+          "type": "LINK",
+          "value": "https://drive.google.com/file/d/1dEdVnKWv_rTLYsfIasWGVmaBfdyiZA97/view?usp=sharing",
+          "created_at": 1575247628
+        },
+        {
+          "tags": ["26"],
+          "id": "a776ae37-9255-4b1c-bc5b-692287e29395",
+          "name": "MongoDB Best Practices",
+          "type": "LINK",
+          "value": "https://drive.google.com/file/d/1M-jd-pqin0gYABJkMsK8xZ_8ShfQ9tV4/view?usp=sharing",
+          "created_at": 1575313322
+        }
+      ],
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 4
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

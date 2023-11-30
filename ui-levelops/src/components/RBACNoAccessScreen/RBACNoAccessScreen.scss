@@ -1,0 +1,15 @@
+.rbacNoAccessScreen {
+  margin: 84px auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .textDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .alignCenter {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}

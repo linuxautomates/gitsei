@@ -1,0 +1,11 @@
+.react-codemirror2 {
+  height: 100%;
+}
+
+.CodeMirror {
+  height: calc(100vh - 300px) !important;
+}
+
+.CodeMirror-lint-tooltip {
+  z-index: 1500 !important;
+}

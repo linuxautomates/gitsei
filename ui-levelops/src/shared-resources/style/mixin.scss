@@ -1,0 +1,218 @@
+$breakpoints: (
+  sm: 600,
+  md: 960,
+  lg: 1280,
+  xl: 1920
+);
+
+@mixin respond-to($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+$shadows: (
+  0: none,
+  1: "0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14)",
+  2: "0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14)",
+  3: "0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14)",
+  4: "0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14)",
+  6: "0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 6px 10px rgba(0, 0, 0, 0.14)",
+  8: "0px 4px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14)",
+  9: "0px 5px 6px rgba(0, 0, 0, 0.2), 0px 3px 16px rgba(0, 0, 0, 0.12), 0px 9px 12px rgba(0, 0, 0, 0.14)",
+  12: "0px 7px 8px rgba(0, 0, 0, 0.2), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 12px 17px rgba(0, 0, 0, 0.14)",
+  16: "0px 8px 10px rgba(0, 0, 0, 0.2), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 16px 24px rgba(0, 0, 0, 0.14)",
+  24: "0px 11px 15px rgba(0, 0, 0, 0.2), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 24px 38px rgba(0, 0, 0, 0.14)"
+);
+
+@function get-shadow($index) {
+  @return #{map-get($shadows, $index)};
+}
+
+%h1 {
+  color: var(--black);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+%h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+%h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+%h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+
+  @include respond-to(sm) {
+    font-size: 2rem;
+  }
+}
+
+%h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.33;
+}
+
+%h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0075em;
+  line-height: 1.6;
+}
+
+%p1b {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+%p14 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+}
+
+%p12 {
+  color: var(--grey1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+%link1 {
+  color: var(--primary-blue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+%link2 {
+  color: var(--primary-blue);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+%link3 {
+  color: var(--primary-blue);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+%label1 {
+  color: var(--grey7);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+%label2 {
+  color: var(--grey7);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+%label3 {
+  color: var(--grey7);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+%label4 {
+  color: var(--grey8);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+%cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32rem);
+  grid-row-gap: 5rem;
+  grid-column-gap: 2.5rem;
+}
+
+%centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@function size($multiple: 1) {
+  @return $multiple * 0.8rem;
+}
+
+$transitions: (
+  easing: (
+    easeInOut: cubic-bezier(0.4, 0, 0.2, 1),
+    easeOut: cubic-bezier(0, 0, 0.2, 1),
+    easeIn: cubic-bezier(0.4, 0, 1, 1),
+    sharp: cubic-bezier(0.4, 0, 0.6, 1)
+  ),
+  duration: (
+    shortest: 150,
+    shorter: 200,
+    short: 250,
+    standard: 300,
+    complex: 375,
+    enteringScreen: 225,
+    leavingScreen: 195
+  )
+);
+
+@function transition($easing: easeIn, $duration: standard) {
+  @return #{map-get(map-get($transitions, duration), $duration)}ms map-get(map-get($transitions, easing), $easing);
+}
+
+$z-index: (
+  mobileStepper: 1000,
+  appBar: 1100,
+  drawer: 1200,
+  modal: 1300,
+  snackbar: 1400,
+  tooltip: 1500,
+  select: 999
+);
+
+@function z-index($type) {
+  @return map-get($z-index, $type);
+}
+
+$textDirection: ("right", "left", "start", "center", "end", "justify");
+
+@each $dir in $textDirection {
+  .text-#{$dir} {
+    text-align: #{$dir};
+  }
+}

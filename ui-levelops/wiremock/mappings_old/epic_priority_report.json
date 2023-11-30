@@ -1,0 +1,64 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/jira_issues/epic_priority_report"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "EPIC NAME 1",
+          "additional_key": "3-2021",
+          "priority": "Highest"
+        },
+        {
+          "key": "EPIC NAME 2",
+          "additional_key": "3-2021",
+          "priority": "Lowest"
+        },
+        {
+          "key": "EPIC NAME 3",
+          "additional_key": "3-2021",
+          "priority": "Low"
+        },
+        {
+          "key": "EPIC NAME 4",
+          "additional_key": "3-2021",
+          "priority": "High"
+        },
+        {
+          "key": "EPIC NAME 5",
+          "additional_key": "3-2021",
+          "priority": "Highest"
+        },
+        {
+          "key": "EPIC NAME 6",
+          "additional_key": "3-2021",
+          "priority": "Medium"
+        },
+        {
+          "key": "EPIC NAME 7",
+          "additional_key": "3-2021",
+          "priority": "Lowest"
+        },
+        {
+          "key": "EPIC NAME 8",
+          "additional_key": "3-2021",
+          "priority": "Medium"
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

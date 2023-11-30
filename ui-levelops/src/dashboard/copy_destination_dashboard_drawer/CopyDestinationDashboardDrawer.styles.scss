@@ -1,0 +1,68 @@
+$hover_color: #eaf0fc;
+.copy-destination-dashboards {
+  .ant-drawer-content-wrapper {
+    width: 28% !important;
+  }
+  .ant-drawer-mask {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+  }
+  .drawer_title_container {
+    margin-top: 1rem;
+    .title {
+      margin-bottom: 0;
+    }
+    .description {
+      font-weight: 400;
+    }
+  }
+  .ant-pagination-total-text {
+    display: none;
+  }
+  .footer {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    &_cancel_button {
+      margin-right: 0.5rem;
+    }
+  }
+  .destination-dashboards-list-container {
+    .ant-card-head {
+      padding: 0;
+    }
+    .ant-table-body {
+      margin-top: 0.75rem;
+    }
+    .ant-table-thead {
+      display: none;
+    }
+    .ant-table-tbody {
+      tr {
+        height: 3rem;
+        cursor: pointer;
+      }
+    }
+    .ant-card-extra {
+      margin-left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .ant-card-head-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .extra-filter-content__search,
+    .extra-filter-content {
+      width: 100%;
+    }
+  }
+  .dashboard_selected_row {
+    background-color: $hover_color;
+    td:hover {
+      background: $hover_color !important;
+    }
+  }
+}

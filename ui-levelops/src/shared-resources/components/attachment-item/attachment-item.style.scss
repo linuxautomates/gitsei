@@ -1,0 +1,57 @@
+.file-container {
+  height: 32px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &-actions {
+    display: none;
+
+    > * {
+      &:not(first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    .file-container-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.show-border {
+  border: solid 1px var(--levelops-white);
+
+  &:hover {
+    border: solid 1px var(--border-color);
+  }
+}
+
+.files-details-container {
+  height: 6rem;
+  background: #e7f7fe;
+  margin: 1rem 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &-actions {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+  .file-icon {
+    align-self: flex-start;
+
+    &__link {
+      font-size: 16px;
+      margin-right: 2px;
+    }
+  }
+}

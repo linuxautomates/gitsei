@@ -1,0 +1,64 @@
+.collapseWrapper {
+  border-top: unset !important;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px -4px var(--black);
+  padding: unset !important;
+  min-height: 94px;
+
+  margin: 3px 3px 10px;
+  &:hover {
+    background-color: var(--primary-1);
+  }
+}
+
+.leftContainer {
+  width: 65% !important;
+}
+
+.collapseHeader {
+  min-height: 94px;
+  padding-right: var(--spacing-medium) !important;
+  padding-left: var(--spacing-medium) !important;
+  padding-bottom: var(--spacing-small) !important;
+
+  [class*="CollapseHeader--leftSection"] {
+    width: 100%;
+  }
+  .collapeHeaderContent {
+    width: 100%;
+  }
+}
+
+.selectedItem {
+  background-color: var(--primary-2) !important;
+}
+
+.toolTile {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid var(--light-text-divider, #d9dae5);
+  background: #fff !important;
+  max-width: 50% !important;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--primary-2) !important;
+    border: 1px solid var(--light-text-divider, #0092e4);
+  }
+}
+
+.toolInfo {
+  width: 55% !important;
+}
+
+.rightContainer {
+  background: var(--gray-scale-gray-scale-0, #fff);
+  box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
+  width: 30%;
+  height: 93vh;
+  overflow: hidden;
+}
+
+.connectToolsDecription {
+  max-width: 40%;
+  overflow-wrap: break-word !important;
+}

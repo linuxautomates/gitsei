@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/qtemplates/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 5,
+      "records": [
+        { "id": 1, "name": "New Database Questionnaire" },
+        { "id": 2, "name": "New Mirco-service Questionnaire" },
+        { "id": 3, "name": "Architecture Design Review Questionnaire" },
+        { "id": 4, "name": "New Developer onboarding Questionnaire" },
+        { "id": 5, "name": "New Cloud Deployment Questionnaire" }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

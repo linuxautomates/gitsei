@@ -1,0 +1,38 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/salesforce_cases/bounce_report"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "OPEN",
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "total_cases": 16
+        },
+        {
+          "key": "SOLVED",
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "total_cases": 3
+        }
+      ],
+      "count": 2,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 2
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

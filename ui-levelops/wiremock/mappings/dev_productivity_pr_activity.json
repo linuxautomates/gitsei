@@ -1,0 +1,89 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/dev_productivity/reports/users/scm_activity"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "org_user_id": "12054e44-83ca-405e-8e04-022345012c94",
+          "full_name": "Norwood Williamson",
+          "email": "Norwood.Williamson@test.test",
+          "num_repos": 19,
+          "num_commits": 2034,
+          "num_prs": 14,
+          "stacks": [
+            {
+              "key": "Friday",
+              "num_prs_created": 14,
+              "num_prs_merged": 9,
+              "num_prs_closed": 7,
+              "num_prs_comments": 3,
+              "num_commits_created": 1
+            },
+            {
+              "key": "Monday",
+              "num_prs_created": 3,
+              "num_prs_merged": 10,
+              "num_prs_closed": 4,
+              "num_prs_comments": 11,
+              "num_commits_created": 4
+            },
+            {
+              "key": "Saturday",
+              "num_prs_created": 5,
+              "num_prs_merged": 2,
+              "num_prs_closed": 9,
+              "num_prs_comments": 6,
+              "num_commits_created": 20
+            },
+            {
+              "key": "Sunday",
+              "num_prs_created": 14,
+              "num_prs_merged": 9,
+              "num_prs_closed": 7,
+              "num_prs_comments": 3
+            },
+            {
+              "key": "Thursday",
+              "num_prs_created": 14,
+              "num_prs_merged": 9,
+              "num_prs_closed": 7,
+              "num_prs_comments": 3,
+              "num_commits_created": 10
+            },
+            {
+              "key": "Tuesday",
+              "num_prs_created": 14,
+              "num_prs_merged": 9,
+              "num_prs_closed": 7,
+              "num_prs_comments": 3,
+              "num_commits_created": 1
+            },
+            {
+              "key": "Wednesday",
+              "num_prs_created": 14,
+              "num_prs_merged": 9,
+              "num_prs_closed": 7,
+              "num_prs_comments": 3,
+              "num_commits_created": 4
+            }
+          ]
+        }
+      ],
+      "count": 54,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 54
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

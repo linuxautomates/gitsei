@@ -1,0 +1,1783 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tableUtils.js Tests nameColumn() should return value 1`] = `
+<AntTextComponent
+  className="pl-10"
+>
+  <a
+    className="ellipsis"
+    href="undefined=test"
+  >
+    Test
+  </a>
+</AntTextComponent>
+`;
+
+exports[`tableUtils.js Tests tableCell() should return value 1`] = `
+<AntTagComponent
+  color="blue"
+>
+  DEFAULT
+</AntTagComponent>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for changes header 1`] = `
+<table
+  className="table-responsive"
+  width="100%"
+>
+  <tbody />
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for changes header 2`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for changes header 3`] = `
+<table
+  className="table-responsive"
+  width="100%"
+>
+  <tbody>
+    <tr>
+      <td
+        align="right"
+      >
+        ID
+      </td>
+      <td
+        align="right"
+      >
+        101
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        NAME
+      </td>
+      <td
+        align="right"
+      >
+        test
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        KEY1
+      </td>
+      <td
+        align="right"
+      >
+        Value 1
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        KEY2
+      </td>
+      <td
+        align="right"
+      >
+        Value 2
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for configs_count header 1`] = `
+<a
+  href="?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for configs_count header 2`] = `
+<a
+  href="#?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for configs_count header 3`] = `
+<a
+  href="google.com?id=4&name=tet"
+>
+  9
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for configs_ct header 1`] = `
+<a
+  href="?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for configs_ct header 2`] = `
+<a
+  href="#?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for configs_ct header 3`] = `
+<a
+  href="google.com?id=4&name=tet"
+>
+  9
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for enabled header 1`] = `
+<AntTextComponent
+  bold={true}
+  type="danger"
+>
+  DISABLED
+</AntTextComponent>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for enabled header 2`] = `
+<AntTextComponent
+  bold={true}
+  type="primary"
+>
+  ENABLED
+</AntTextComponent>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for enabled header 3`] = `
+<AntTextComponent
+  bold={true}
+  type="primary"
+>
+  ENABLED
+</AntTextComponent>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for file_changes_count header 1`] = `
+<a
+  href="?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for file_changes_count header 2`] = `
+<a
+  href="#?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for file_changes_count header 3`] = `
+<a
+  href="google.com?id=4&name=tet"
+>
+  9
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files header 1`] = `
+<a
+  href="!#"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files header 2`] = `
+<a
+  href="!#"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for files header 4`] = `
+<a
+  href="!#"
+>
+  singleValue
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files header 5`] = `
+<table>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value1
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value2
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value3
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value4
+      </DummyLink>
+    </td>
+  </tr>
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files_ct header 1`] = `
+<a
+  href="?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files_ct header 2`] = `
+<a
+  href="#?"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for files_ct header 3`] = `
+<a
+  href="google.com?id=4&name=tet"
+>
+  9
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for frameworks header 1`] = `
+<a
+  href="!#"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for frameworks header 2`] = `
+<a
+  href="!#"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for frameworks header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for frameworks header 4`] = `
+<a
+  href="!#"
+>
+  singleValue
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for frameworks header 5`] = `
+<table>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value1
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value2
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value3
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value4
+      </DummyLink>
+    </td>
+  </tr>
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for integration_type header 1`] = `
+<UNDEFINED
+  align="center"
+  gutter={
+    Array [
+      10,
+      10,
+    ]
+  }
+  justify="start"
+  type="flex"
+>
+  <AntColComponent>
+    <SvgIconComponent
+      className="svg-icon"
+      icon=""
+      rotateIcon={false}
+      style={
+        Object {
+          "height": "2.4rem",
+          "width": "2.4rem",
+        }
+      }
+    />
+  </AntColComponent>
+  <AntColComponent>
+    <AntTextComponent>
+      
+    </AntTextComponent>
+  </AntColComponent>
+</UNDEFINED>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for integration_type header 2`] = `
+<UNDEFINED
+  align="center"
+  gutter={
+    Array [
+      10,
+      10,
+    ]
+  }
+  justify="start"
+  type="flex"
+>
+  <AntColComponent>
+    <SvgIconComponent
+      className="svg-icon"
+      icon="some_integration"
+      rotateIcon={false}
+      style={
+        Object {
+          "height": "2.4rem",
+          "width": "2.4rem",
+        }
+      }
+    />
+  </AntColComponent>
+  <AntColComponent>
+    <AntTextComponent>
+      SOME_INTEGRATION
+    </AntTextComponent>
+  </AntColComponent>
+</UNDEFINED>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for integration_types header 1`] = `
+<UNDEFINED
+  gutter={
+    Array [
+      20,
+      10,
+    ]
+  }
+  justify="start"
+  type="flex"
+>
+  <AntColComponent>
+    <SvgIconComponent
+      className="svg-icon"
+      icon="github"
+      rotateIcon={false}
+      style={
+        Object {
+          "height": "2.4rem",
+          "width": "2.4rem",
+        }
+      }
+    />
+  </AntColComponent>
+  <AntColComponent>
+    <SvgIconComponent
+      className="svg-icon"
+      icon="gitlab"
+      rotateIcon={false}
+      style={
+        Object {
+          "height": "2.4rem",
+          "width": "2.4rem",
+        }
+      }
+    />
+  </AntColComponent>
+</UNDEFINED>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for libraries header 1`] = `
+<a
+  href="!#"
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for libraries header 2`] = `
+<a
+  href="!#"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for libraries header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for libraries header 4`] = `
+<a
+  href="!#"
+>
+  singleValue
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for libraries header 5`] = `
+<table>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value1
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value2
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value3
+      </DummyLink>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <DummyLink
+        href="#"
+      >
+        value4
+      </DummyLink>
+    </td>
+  </tr>
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for link header 1`] = `
+<a
+  href=""
+>
+  
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for link header 2`] = `<a />`;
+
+exports[`tableUtils.js Tests tableCell() test for link header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for link header 4`] = `
+<a
+  href="google.com"
+>
+  google.com
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for name header 1`] = `
+<a
+  href="#"
+>
+  <h6>
+    
+  </h6>
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for name header 2`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for name header 3`] = `
+<a
+  href="google.com/names"
+>
+  <h6>
+    Test
+  </h6>
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for name header 4`] = `
+<a
+  href="#"
+>
+  <h6>
+    Test
+  </h6>
+</a>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for priority header 1`] = `
+<SeverityTag
+  severity="high"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for priority header 2`] = `
+<SeverityTag
+  severity="high"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for priority header 3`] = `
+<SeverityTag
+  severity="high"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for priority header 4`] = `
+<SeverityTag
+  severity="low"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for priority header 5`] = `
+<SeverityTag
+  severity="medium"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for priority header 6`] = `
+<SeverityTag
+  severity="highest"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for products header 1`] = `"product 1,product 2"`;
+
+exports[`tableUtils.js Tests tableCell() test for progress header 1`] = `
+<div>
+  <legend>
+    <h6>
+      Security Status
+         
+      <span
+        aria-label="danger"
+        className="text-danger"
+        role="img"
+      >
+        🔴
+      </span>
+    </h6>
+  </legend>
+  <p>
+    <h6>
+      SAST
+    </h6>
+    <AntProgressComponent
+      percent={20}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      DAST
+    </h6>
+    <AntProgressComponent
+      percent={30}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      PEN
+    </h6>
+    <AntProgressComponent
+      percent={40}
+      status="normal"
+    />
+  </p>
+  <p>
+    <h6>
+      Vulnerabilities
+    </h6>
+    <AntProgressComponent
+      percent={50}
+      status="normal"
+    />
+  </p>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for progress header 2`] = `
+<div>
+  <legend>
+    <h6>
+      Security Status
+         
+      <span
+        aria-label="danger"
+        className="text-danger"
+        role="img"
+      >
+        🔴
+      </span>
+    </h6>
+  </legend>
+  <p>
+    <h6>
+      SAST
+    </h6>
+    <AntProgressComponent
+      percent={20}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      DAST
+    </h6>
+    <AntProgressComponent
+      percent={30}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      PEN
+    </h6>
+    <AntProgressComponent
+      percent={40}
+      status="normal"
+    />
+  </p>
+  <p>
+    <h6>
+      Vulnerabilities
+    </h6>
+    <AntProgressComponent
+      percent={50}
+      status="normal"
+    />
+  </p>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for progress header 3`] = `
+<div>
+  <legend>
+    <h6>
+      Security Status
+         
+      <span
+        aria-label="danger"
+        className="text-danger"
+        role="img"
+      >
+        🔴
+      </span>
+    </h6>
+  </legend>
+  <p>
+    <h6>
+      SAST
+    </h6>
+    <AntProgressComponent
+      percent={0}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      DAST
+    </h6>
+    <AntProgressComponent
+      percent={30}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      PEN
+    </h6>
+    <AntProgressComponent
+      percent={40}
+      status="normal"
+    />
+  </p>
+  <p>
+    <h6>
+      Vulnerabilities
+    </h6>
+    <AntProgressComponent
+      percent={50}
+      status="normal"
+    />
+  </p>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for progress header 4`] = `
+<div>
+  <legend>
+    <h6>
+      Security Status
+         
+      <span
+        aria-label="danger"
+        className="text-danger"
+        role="img"
+      >
+        🔴
+      </span>
+    </h6>
+  </legend>
+  <p>
+    <h6>
+      SAST
+    </h6>
+    <AntProgressComponent
+      percent={20}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      DAST
+    </h6>
+    <AntProgressComponent
+      percent={0}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      PEN
+    </h6>
+    <AntProgressComponent
+      percent={40}
+      status="normal"
+    />
+  </p>
+  <p>
+    <h6>
+      Vulnerabilities
+    </h6>
+    <AntProgressComponent
+      percent={50}
+      status="normal"
+    />
+  </p>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for progress header 5`] = `
+<div>
+  <legend>
+    <h6>
+      Security Status
+         
+      <span
+        aria-label="danger"
+        className="text-danger"
+        role="img"
+      >
+        🔴
+      </span>
+    </h6>
+  </legend>
+  <p>
+    <h6>
+      SAST
+    </h6>
+    <AntProgressComponent
+      percent={20}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      DAST
+    </h6>
+    <AntProgressComponent
+      percent={30}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      PEN
+    </h6>
+    <AntProgressComponent
+      percent={0}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      Vulnerabilities
+    </h6>
+    <AntProgressComponent
+      percent={50}
+      status="normal"
+    />
+  </p>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for progress header 6`] = `
+<div>
+  <legend>
+    <h6>
+      Security Status
+         
+      <span
+        aria-label="danger"
+        className="text-danger"
+        role="img"
+      >
+        🔴
+      </span>
+    </h6>
+  </legend>
+  <p>
+    <h6>
+      SAST
+    </h6>
+    <AntProgressComponent
+      percent={20}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      DAST
+    </h6>
+    <AntProgressComponent
+      percent={30}
+      status="active"
+    />
+  </p>
+  <p>
+    <h6>
+      PEN
+    </h6>
+    <AntProgressComponent
+      percent={40}
+      status="normal"
+    />
+  </p>
+  <p>
+    <h6>
+      Vulnerabilities
+    </h6>
+    <AntProgressComponent
+      percent={0}
+      status="active"
+    />
+  </p>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for quiz_progress header 1`] = `
+<p>
+  <AntProgressComponent
+    percent={0}
+    status="active"
+  />
+</p>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for quiz_progress header 2`] = `
+<p>
+  <AntProgressComponent
+    percent={15}
+    status="active"
+  />
+</p>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for quiz_progress header 3`] = `
+<p>
+  <AntProgressComponent
+    percent={45}
+    status="normal"
+  />
+</p>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for quiz_progress header 4`] = `
+<p>
+  <AntProgressComponent
+    percent={85}
+    status="normal"
+  />
+</p>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for quiz_progress header 5`] = `
+<p>
+  <AntProgressComponent
+    percent={100}
+    status="success"
+  />
+</p>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for repos header 1`] = `
+<div
+  className="ellipsis"
+>
+  <Tooltip
+    arrowPointAtCenter={false}
+    autoAdjustOverflow={true}
+    mouseEnterDelay={0.1}
+    mouseLeaveDelay={0.1}
+    placement="top"
+    title=""
+    transitionName="zoom-big-fast"
+  />
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for repos header 2`] = `
+<div
+  className="ellipsis"
+>
+  <Tooltip
+    arrowPointAtCenter={false}
+    autoAdjustOverflow={true}
+    mouseEnterDelay={0.1}
+    mouseLeaveDelay={0.1}
+    placement="top"
+    title="value 1,value 2,value 3,value 4"
+    transitionName="zoom-big-fast"
+  >
+    <AntTagComponent>
+      value 1
+    </AntTagComponent>
+    <AntTagComponent>
+      value 2
+    </AntTagComponent>
+    <AntTagComponent>
+      value 3
+    </AntTagComponent>
+    <AntTagComponent>
+      value 4
+    </AntTagComponent>
+  </Tooltip>
+</div>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for security_work header 1`] = `
+<table
+  className="table-responsive"
+  width="100%"
+>
+  <tbody />
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for security_work header 2`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for security_work header 3`] = `
+<table
+  className="table-responsive"
+  width="100%"
+>
+  <tbody>
+    <tr>
+      <td
+        align="right"
+      >
+        ID
+      </td>
+      <td
+        align="right"
+      >
+        101
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        NAME
+      </td>
+      <td
+        align="right"
+      >
+        test
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        KEY1
+      </td>
+      <td
+        align="right"
+      >
+        Value 1
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        KEY2
+      </td>
+      <td
+        align="right"
+      >
+        Value 2
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for severity header 1`] = `
+<SeverityTag
+  severity="high"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for severity header 2`] = `
+<SeverityTag
+  severity="high"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for severity header 3`] = `
+<SeverityTag
+  severity="high"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for severity header 4`] = `
+<SeverityTag
+  severity="low"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for severity header 5`] = `
+<SeverityTag
+  severity="medium"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 1`] = `
+<AntBadgeComponent
+  status="default"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 2`] = `
+<AntBadgeComponent
+  status="success"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      success
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 3`] = `
+<AntBadgeComponent
+  status="success"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      open
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 4`] = `
+<AntBadgeComponent
+  status="success"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      open
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 5`] = `
+<AntBadgeComponent
+  status="success"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      active
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 6`] = `
+<AntBadgeComponent
+  status="success"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      passed
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 7`] = `
+<AntBadgeComponent
+  status="success"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      success
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 8`] = `
+<AntBadgeComponent
+  status="error"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      failure
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 9`] = `
+<AntBadgeComponent
+  status="error"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      closed
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 10`] = `
+<AntBadgeComponent
+  status="error"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      closed
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 11`] = `
+<AntBadgeComponent
+  status="error"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      inactive
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 12`] = `
+<AntBadgeComponent
+  status="error"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      failed
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 13`] = `
+<AntBadgeComponent
+  status="error"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      failure
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 14`] = `
+<AntBadgeComponent
+  status="processing"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      running
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 15`] = `
+<AntBadgeComponent
+  status="processing"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      in progress
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status header 16`] = `
+<AntBadgeComponent
+  status="default"
+  text={
+    <span
+      style={
+        Object {
+          "textTransform": "capitalize",
+        }
+      }
+    >
+      some random string
+    </span>
+  }
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 1`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 2`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 3`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 4`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 5`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 6`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 7`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 8`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 9`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for status_badge header 10`] = `
+<AntBadgeComponent
+  status="default"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for successful header 1`] = `
+<Tag
+  closable={false}
+  color="red"
+>
+  Failed
+</Tag>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for successful header 2`] = `
+<Tag
+  closable={false}
+  color="red"
+>
+  Failed
+</Tag>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for successful header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for successful header 4`] = `
+<Tag
+  closable={false}
+  color="green"
+>
+  Passed
+</Tag>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for tags_withColor header 1`] = `
+<React.Fragment>
+  
+</React.Fragment>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for tags_withColor header 2`] = `<React.Fragment />`;
+
+exports[`tableUtils.js Tests tableCell() test for tags_withColor header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for tags_withColor header 4`] = `<React.Fragment />`;
+
+exports[`tableUtils.js Tests tableCell() test for tags_withColor header 5`] = `<React.Fragment />`;
+
+exports[`tableUtils.js Tests tableCell() test for tags_withColor header 6`] = `
+<React.Fragment>
+  <AntTooltipComponent
+    title="tag 1"
+  >
+    <Tag
+      closable={false}
+      color="magenta"
+      style={
+        Object {
+          "margin": "5px",
+        }
+      }
+    >
+      tag 1
+    </Tag>
+  </AntTooltipComponent>
+  <AntTooltipComponent
+    title="tag 2"
+  >
+    <Tag
+      closable={false}
+      color="volcano"
+      style={
+        Object {
+          "margin": "5px",
+        }
+      }
+    >
+      tag 2
+    </Tag>
+  </AntTooltipComponent>
+</React.Fragment>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for tickets_by_stage header 1`] = `
+<table
+  className="table-responsive"
+  width="100%"
+>
+  <tbody />
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for tickets_by_stage header 2`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for tickets_by_stage header 3`] = `
+<table
+  className="table-responsive"
+  width="100%"
+>
+  <tbody>
+    <tr>
+      <td
+        align="right"
+      >
+        ID
+      </td>
+      <td
+        align="right"
+      >
+        101
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        NAME
+      </td>
+      <td
+        align="right"
+      >
+        test
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        KEY1
+      </td>
+      <td
+        align="right"
+      >
+        Value 1
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+    <tr>
+      <td
+        align="right"
+      >
+        KEY2
+      </td>
+      <td
+        align="right"
+      >
+        Value 2
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <hr />
+      </td>
+      <td>
+        <hr />
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for user header 1`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for user header 2`] = `
+<AvatarWithTextComponent
+  text="user name"
+/>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for users header 1`] = `
+<React.Fragment>
+  
+</React.Fragment>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for users header 2`] = `<React.Fragment />`;
+
+exports[`tableUtils.js Tests tableCell() test for users header 3`] = `""`;
+
+exports[`tableUtils.js Tests tableCell() test for users header 4`] = `<React.Fragment />`;
+
+exports[`tableUtils.js Tests tableCell() test for users header 5`] = `
+<React.Fragment>
+  <React.Fragment>
+    UNASSIGNED
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`tableUtils.js Tests tableCell() test for users header 6`] = `
+<React.Fragment>
+  <React.Fragment>
+    <NameAvatarListComponent
+      classRequired={false}
+      names={
+        Array [
+          "user 1",
+          "user 2",
+        ]
+      }
+    />
+  </React.Fragment>
+</React.Fragment>
+`;
+
+exports[`tableUtils.js Tests tagsColumn() should return value 1`] = `
+<div
+  className="ellipsis"
+>
+  <Tooltip
+    arrowPointAtCenter={false}
+    autoAdjustOverflow={true}
+    mouseEnterDelay={0.1}
+    mouseLeaveDelay={0.1}
+    placement="top"
+    title="tag1,tag2,tag3"
+    transitionName="zoom-big-fast"
+  >
+    <AntTagComponent>
+      tag1
+    </AntTagComponent>
+    <AntTagComponent>
+      tag2
+    </AntTagComponent>
+    <AntTagComponent>
+      tag3
+    </AntTagComponent>
+  </Tooltip>
+</div>
+`;
+
+exports[`tableUtils.js Tests tagsColumn() should return value 2`] = `
+<div
+  className="ellipsis"
+>
+  <Tooltip
+    arrowPointAtCenter={false}
+    autoAdjustOverflow={true}
+    mouseEnterDelay={0.1}
+    mouseLeaveDelay={0.1}
+    placement="top"
+    title="tag1"
+    transitionName="zoom-big-fast"
+  >
+    <AntTagComponent>
+      tag1
+    </AntTagComponent>
+  </Tooltip>
+</div>
+`;

@@ -1,0 +1,110 @@
+$module-tile: #f0e2d0;
+$file-tile: #d4f6d6;
+
+.grid-view-chart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+  .breadcrumbs-container {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .tree-map-container {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .empty-placeholder {
+    height: calc(100% - 22px); // 22px is height of breadcrumbs
+    width: 100%;
+  }
+
+  .report-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    width: 100%;
+
+    .report-btn {
+      margin: 8px 0;
+      padding: 4px 8px;
+      max-width: 100%;
+      min-height: 32px;
+      height: auto;
+      white-space: pre-line;
+      background-color: white;
+    }
+  }
+
+  .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+
+    .path-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .path-icon {
+        font-size: 15px;
+        color: black;
+        margin-right: 4px;
+      }
+    }
+
+    .title,
+    .data {
+      font-size: 12px;
+      font-weight: 500;
+      color: black;
+    }
+  }
+
+  .stat-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 1px;
+
+    .stat {
+      color: black;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .stat-normal {
+      font-size: 12px;
+    }
+
+    .stat-small {
+      font-size: 10px;
+      font-weight: 500;
+    }
+  }
+
+  .tooltip-container {
+    color: #fff;
+  }
+}

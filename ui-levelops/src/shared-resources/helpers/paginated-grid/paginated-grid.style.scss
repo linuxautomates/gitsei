@@ -1,0 +1,7 @@
+@import "shared-resources/style/mixin.scss";
+
+.paginated-grid {
+  __cards-container {
+    @extend %cards-grid;
+  }
+}

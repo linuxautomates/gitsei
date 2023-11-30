@@ -1,0 +1,51 @@
+.dev-section-info-popup-container {
+  font-family: sans-serif;
+  overflow-y: auto;
+  max-height: 30rem;
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .sub-title {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  .slider-legend-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .slider-legend {
+      display: flex;
+      flex: 1;
+      margin-right: 8px;
+      .slider-legend-mark {
+        width: 16px;
+        height: 16px;
+        margin: 2px 8px 0px 8px;
+      }
+      .good-legend {
+        background-color: #61ba14;
+      }
+      .acceptable-legend {
+        background-color: #789fe9;
+      }
+      .poor-legend {
+        background-color: #ffa940;
+      }
+      .slider-label {
+        display: flex;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        flex-shrink: 0;
+        line-height: 19px;
+        height: 100%;
+        margin-right: 10px;
+      }
+    }
+  }
+  .row-reverse {
+    flex-direction: column-reverse;
+  }
+}

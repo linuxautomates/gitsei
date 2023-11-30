@@ -1,0 +1,46 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/checklisttemplates/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "tags": ["haha"],
+      "name": "Database Security Best Practices",
+      "additional_data": [
+        { "name": "Database name", "value": "" },
+        { "name": "Service name", "value": "" }
+      ],
+      "script": "https://api.levelops.io/fileupload/checklists/scripts/1",
+      "custom": false,
+      "checks": [
+        {
+          "id": 1,
+          "name": "All users accessing the database are authenticated",
+          "description": ""
+        },
+        {
+          "id": 2,
+          "name": "Logging is enabled and logs are persistent",
+          "description": ""
+        },
+        {
+          "id": 3,
+          "name": "SSL/TLS is enabled for all network communications",
+          "description": ""
+        },
+        {
+          "id": 4,
+          "name": "Database is encrypted",
+          "description": ""
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

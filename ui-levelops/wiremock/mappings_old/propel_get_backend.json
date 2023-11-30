@@ -1,0 +1,272 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/playbooks/backend"
+  },
+  "priority": 1,
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "08ba8003-de45-47a8-8c79-7885ebe02290",
+      "name": "second attempt Meghana",
+      "description": "second attempt Meghana",
+      "enabled": true,
+      "trigger_type": "scheduled",
+      "trigger_data": {},
+      "ui_data": {
+        "nodes": {
+          "0": {
+            "id": "0",
+            "type": "trigger",
+            "description": "A trigger for runbooks that will run on a fixed schedule.",
+            "ports": {
+              "output": {
+                "id": "output",
+                "type": "output",
+                "properties": {
+                  "action": "output"
+                },
+                "position": {
+                  "x": 137,
+                  "y": 110
+                }
+              }
+            },
+            "input": {
+              "interval_in_min": {
+                "key": "interval_in_min",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "10",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "options": []
+              }
+            },
+            "output": {},
+            "options": [],
+            "position": {
+              "x": 10,
+              "y": 0
+            },
+            "properties": {
+              "icon": "bell"
+            },
+            "name": "trigger",
+            "trigger_type": "scheduled",
+            "size": {
+              "width": 290,
+              "height": 124
+            }
+          },
+          "1": {
+            "id": "1",
+            "type": "slack_notification",
+            "description": "Sends a Slack message to a user",
+            "ports": {
+              "input": {
+                "id": "input",
+                "type": "input",
+                "properties": {
+                  "action": "input"
+                },
+                "position": {
+                  "x": 137,
+                  "y": -1
+                }
+              },
+              "output": {
+                "id": "output",
+                "type": "output",
+                "properties": {
+                  "action": "output"
+                },
+                "position": {
+                  "x": 137,
+                  "y": 110
+                }
+              }
+            },
+            "input": {
+              "text": {
+                "key": "text",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "some text",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "options": []
+              },
+              "bot_name": {
+                "key": "bot_name",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "some bot",
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "options": []
+              },
+              "user_email": {
+                "key": "user_email",
+                "type": "single-dynamic-select",
+                "values": [
+                  {
+                    "value": "3",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "options": [],
+                "dynamic_resource_name": "users",
+                "search_field": "email"
+              }
+            },
+            "output": {},
+            "options": [],
+            "position": {
+              "x": 124,
+              "y": 155
+            },
+            "properties": {
+              "icon": "slack"
+            },
+            "name": "slack_notification",
+            "size": {
+              "width": 290,
+              "height": 124
+            }
+          },
+          "2": {
+            "id": "2",
+            "type": "slack_notification",
+            "description": "Sends a Slack message to a user",
+            "ports": {
+              "input": {
+                "id": "input",
+                "type": "input",
+                "properties": {
+                  "action": "input"
+                },
+                "position": {
+                  "x": 137,
+                  "y": -1
+                }
+              },
+              "output": {
+                "id": "output",
+                "type": "output",
+                "properties": {
+                  "action": "output"
+                },
+                "position": {
+                  "x": 137,
+                  "y": 110
+                }
+              }
+            },
+            "input": {
+              "text": {
+                "key": "text",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "some text",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "options": []
+              },
+              "bot_name": {
+                "key": "bot_name",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "some other bot",
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "options": []
+              },
+              "user_email": {
+                "key": "user_email",
+                "type": "single-dynamic-select",
+                "values": [
+                  {
+                    "value": "10",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "options": [],
+                "dynamic_resource_name": "users",
+                "search_field": "email"
+              }
+            },
+            "output": {},
+            "options": [],
+            "position": {
+              "x": 205,
+              "y": 301
+            },
+            "properties": {
+              "icon": "slack"
+            },
+            "name": "slack_notification",
+            "size": {
+              "width": 290,
+              "height": 124
+            }
+          }
+        },
+        "links": {
+          "fd0bcf61-91f9-46eb-ad49-a5cad552b5c6": {
+            "id": "fd0bcf61-91f9-46eb-ad49-a5cad552b5c6",
+            "from": {
+              "nodeId": "0",
+              "portId": "output"
+            },
+            "to": {
+              "nodeId": "1",
+              "portId": "input"
+            },
+            "properties": {}
+          },
+          "094c45b1-dfe1-408b-9f2c-701e4d9ea7d5": {
+            "id": "094c45b1-dfe1-408b-9f2c-701e4d9ea7d5",
+            "from": {
+              "nodeId": "1",
+              "portId": "output"
+            },
+            "to": {
+              "nodeId": "2",
+              "portId": "input"
+            },
+            "properties": {}
+          }
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

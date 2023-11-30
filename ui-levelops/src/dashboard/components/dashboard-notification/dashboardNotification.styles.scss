@@ -1,0 +1,54 @@
+.notification-container {
+  width: calc(100% + 80px);
+  z-index: 100;
+  margin: 0 0 0 -40px;
+  border: 1px solid #e8e8e8;
+  height: 56px;
+  padding: 0;
+  color: var(--text-color);
+
+  .single-notification-row {
+    margin: auto 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+
+    .ant-col {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 10px;
+    }
+
+    > .notification-icons {
+      width: 50px;
+      margin-left: 0;
+    }
+    > .notification-message-container {
+      width: auto;
+    }
+    > .notification-primary-actions-container {
+      // Nothing defined yet
+    }
+    > .notification-secondary-actions-container {
+      position: absolute;
+      right: 0;
+      width: auto;
+      margin-right: 0;
+    }
+  }
+
+  button.default-propelo-red {
+    background-color: var(--dashboard-banner);
+    color: var(--levelops-white);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    border-radius: 2px;
+    border: 0;
+    width: 150px;
+  }
+
+  button.default-propelo-red.long-text {
+    width: 230px;
+  }
+}

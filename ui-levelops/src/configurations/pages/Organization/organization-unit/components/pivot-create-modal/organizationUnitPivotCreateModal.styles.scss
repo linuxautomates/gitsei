@@ -1,0 +1,40 @@
+$warning-color: #efaf41;
+.pivot-create-modal {
+  width: 24.5rem !important;
+  .content {
+    margin-top: 1.5rem;
+    padding: 0rem 0.5rem;
+    .ant-form-item-label {
+      line-height: 0 !important;
+    }
+    .ant-form-item-no-colon {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.875rem;
+      color: var(--title);
+    }
+
+    .required-field {
+      color: red;
+    }
+  }
+  .warning {
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 22px;
+      color: var(--title);
+      margin-bottom: 1rem;
+      .anticon {
+        color: $warning-color;
+        margin-right: 0.35rem;
+        font-size: 1.15rem;
+      }
+    }
+  }
+  .category-toggle-info {
+    color: var(--text-secondary-color);
+    line-height: 1.5rem;
+  }
+}

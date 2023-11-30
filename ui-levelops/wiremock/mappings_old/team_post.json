@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/teams"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": { "team_id": "123" },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

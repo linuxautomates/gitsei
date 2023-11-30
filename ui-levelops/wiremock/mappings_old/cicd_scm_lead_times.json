@@ -1,0 +1,36 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd_scm/jobs_commit_lead_time"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      },
+      "count": 2,
+      "records": [
+        {
+          "key": "1592851348",
+          "min": 86400,
+          "median": 24670,
+          "max": 86400
+        },
+        {
+          "key": "1593035225",
+          "min": 3500,
+          "median": 86400,
+          "max": 128790
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

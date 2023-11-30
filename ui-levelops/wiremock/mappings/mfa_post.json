@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/mfa"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "mfa_required": true
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/resources/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": 1,
+          "name": "VM 1",
+          "type": "compute",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 2,
+          "name": "VM 2",
+          "type": "compute",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 3,
+          "name": "VM 3",
+          "type": "compute",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 4,
+          "name": "MYSQL DB 1",
+          "type": "DB",
+          "tags": ["cmdb", "serviceabc"],
+          "ip_address": "2.2.2.2",
+          "region": "us-east-1"
+        },
+        {
+          "id": 5,
+          "name": "MYSQL DB 2",
+          "type": "DB",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 6,
+          "name": "MYSQL DB 3",
+          "type": "DB",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 7,
+          "name": "s3-bucket-1",
+          "type": "storage",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 8,
+          "name": "s3-bucket-2",
+          "type": "storage",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 9,
+          "name": "s3-bucket-3",
+          "type": "storage",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        },
+        {
+          "id": 10,
+          "name": "s3-bucket-4",
+          "type": "compute",
+          "tags": ["rest-api", "serviceabc"],
+          "ip_address": "1.1.1.1",
+          "region": "us-east-1"
+        }
+      ],
+      "count": 10,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 10
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

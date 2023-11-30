@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/generate_authn"
+  },
+  "response": {
+    "status": 302,
+    "headers": {
+      "Location": "http://localhost:3000/auth-callback",
+      "Set-Cookie": [
+        "token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2QiLCJ1c2VyX3R5cGUiOiJhZG1pbiIsImNvbXBhbnkiOiJmb28iLCJleHAiOjE1NzE5NDI2MjYsImlhdCI6MTU3MTk0MTYyNn0.FotHCadX29ZI8GnlkOVHYFnJOkR_kHdEhTo5EJs-Jyc;Path=/;domain=localhost"
+      ],
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$tab-background: #eaf0fc;
+$background-color: #fafafa;
+
+.profile-edit-create-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .tabs {
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    .tab {
+      width: 100%;
+      height: 4rem;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: left;
+      padding: 1.25rem 1rem 0.5rem 1rem;
+    }
+    .active-tab {
+      background-color: $tab-background;
+    }
+  }
+  .content {
+    width: 80%;
+    height: 100%;
+    background-color: $background-color;
+  }
+}

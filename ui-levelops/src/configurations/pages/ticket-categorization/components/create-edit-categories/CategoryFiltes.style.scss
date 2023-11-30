@@ -1,0 +1,31 @@
+.category-filters {
+  height: 30rem;
+  width: 100%;
+  overflow-y: scroll;
+  margin-top: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  .ant-form-item-label > label::after {
+    content: none !important;
+  }
+  .ant-select {
+    width: 100% !important;
+  }
+  .ant-form-item-label {
+    text-transform: capitalize;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+  }
+  .ant-select-selection-selected-value {
+    margin-left: 4rem;
+  }
+}
+.category-filters-title {
+  font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+  .category-filters {
+    height: 23rem;
+  }
+}

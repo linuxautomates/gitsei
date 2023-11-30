@@ -1,0 +1,8 @@
+.demo-dashboard-view-page-header-container {
+  width: calc(100% + 80px);
+  z-index: 12;
+  margin-left: -40px;
+  .ant-row {
+    background-color: var(--layout-body-background) !important;
+  }
+}

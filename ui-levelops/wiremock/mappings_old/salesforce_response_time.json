@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/salesforce_cases/response_time_report"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "CLOSED",
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "total_cases": 1
+        },
+        {
+          "key": "SOLVED",
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "total_cases": 3
+        },
+        {
+          "key": "OPEN",
+          "median": 386760,
+          "min": 386760,
+          "max": 844320,
+          "total_cases": 18
+        },
+        {
+          "key": "NEW",
+          "median": 6840,
+          "min": 6840,
+          "max": 6840,
+          "total_cases": 24
+        }
+      ],
+      "count": 4,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 4
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

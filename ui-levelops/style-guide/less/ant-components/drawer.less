@@ -1,0 +1,33 @@
+.ant-drawer {
+  &-header {
+    border-bottom: 0;
+    flex-shrink: 0;
+  }
+  &-title {
+    font-size: @drawer-title-font-size;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: -0.16px;
+    color: @heading-color;
+  }
+  &-close {
+    color: @text-color;
+    font-size: @drawer-close-font-size;
+  }
+  &-body {
+    padding-top: 0;
+    flex: 1;
+    overflow: auto;
+    .ant-typography {
+      line-height: 1.3;
+    }
+  }
+  &-wrapper-body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  &-mask {
+    background-color: transparent;
+  }
+}

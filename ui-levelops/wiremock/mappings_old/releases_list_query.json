@@ -1,0 +1,69 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/releases/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "1",
+          "aggregation_uuid": "728877a1-6bbd-40e8-890a-c99606e4410d",
+          "name": "Release 4.0.3",
+          "integration_id": "17",
+          "team_id": "1",
+          "tickets_by_stage": {
+            "Done": 2
+          },
+          "release_version_id": "10001",
+          "release_date": 1571507725,
+          "file_changes_count": 72,
+          "commits_count": 15,
+          "configs_count": 42,
+          "progress": {
+            "SAST": 50,
+            "DAST": 30,
+            "PEN": 80,
+            "Vulnerabilities": 30,
+            "score": 8
+          }
+        },
+        {
+          "id": "2",
+          "aggregation_uuid": "728877a1-6bbd-40e8-890a-c99606e4410d",
+          "name": "Release 6.1",
+          "integration_id": "17",
+          "team_id": "1",
+          "tickets_by_stage": {
+            "Done": 56,
+            "To Do": 37,
+            "In Progress": 10
+          },
+          "release_version_id": "_levelops_n-a",
+          "release_date": 1571507725,
+          "file_changes_count": 511,
+          "commits_count": 148,
+          "configs_count": 219,
+          "progress": {
+            "SAST": 50,
+            "DAST": 30,
+            "PEN": 10,
+            "Vulnerabilities": 60,
+            "score": 3
+          }
+        }
+      ],
+      "count": 2,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

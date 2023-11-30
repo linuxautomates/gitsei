@@ -1,0 +1,235 @@
+.azure-areas-select {
+  width: 100%;
+}
+.customTree-component-wrapper {
+  min-width: 450px;
+  max-height: 99vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.filter-field-container {
+  width: 100%;
+  .filter-row {
+    display: flex;
+    justify-content: space-between;
+    .select-content {
+      display: flex;
+      width: 80%;
+      .text {
+        width: 6rem;
+        text-align: end;
+      }
+    }
+  }
+  .filter-col {
+    width: 25.25% !important;
+    margin: 0rem 0.5rem 0rem 0.5rem !important;
+  }
+  .filter-value-col {
+    width: 45% !important;
+    margin: 0rem 0.5rem 0rem 0.5rem !important;
+  }
+  .action-filter-col {
+    .ant-btn {
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+  }
+  .filter-col-select {
+    width: 100%;
+  }
+}
+.user-field-container {
+  display: flex;
+  justify-content: space-between;
+  .user-select-container {
+    display: flex;
+    width: 100%;
+    .filter-field-container {
+      width: 100%;
+      .filter-row {
+        display: flex;
+        justify-content: space-between;
+        .select-content {
+          display: flex;
+          width: 80%;
+          .text {
+            width: 6rem;
+            text-align: end;
+          }
+        }
+      }
+      .filter-col {
+        width: 25.25% !important;
+        margin: 0rem 0.5rem 0rem 0.5rem !important;
+      }
+      .action-filter-col {
+        .ant-btn {
+          border-radius: 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          margin: 0.25rem;
+          color: var(--light-text);
+          .anticon {
+            position: absolute;
+            right: 25%;
+            bottom: 20%;
+          }
+        }
+      }
+      .filter-col-select {
+        width: 100%;
+      }
+    }
+
+    .text {
+      width: 6rem;
+      text-align: end;
+    }
+    .user-add-action {
+      font-weight: 500;
+      margin-left: 0.5rem;
+      .anticon {
+        margin-right: 0.4rem;
+      }
+      .user-create-option {
+        color: var(--link-and-actions);
+        margin-right: 0.25rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .user-remove-action {
+    .ant-btn {
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+  }
+}
+.filter-field-container {
+  width: 100%;
+  .filter-row {
+    display: flex;
+    justify-content: space-between;
+    .select-content {
+      display: flex;
+      width: 80%;
+      .text {
+        width: 6rem;
+        text-align: end;
+      }
+    }
+  }
+  .filter-col {
+    width: 25.25% !important;
+    margin: 0rem 0.5rem 0rem 0.5rem !important;
+  }
+  .action-filter-col {
+    .ant-btn {
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+  }
+  .filter-col-select {
+    width: 100%;
+  }
+}
+.user-field-container {
+  display: flex;
+  justify-content: space-between;
+  .user-select-container {
+    display: flex;
+    width: 100%;
+    .filter-field-container {
+      width: 100%;
+      .filter-row {
+        display: flex;
+        justify-content: space-between;
+        .select-content {
+          display: flex;
+          width: 80%;
+          .text {
+            width: 6rem;
+            text-align: end;
+          }
+        }
+      }
+      .filter-col {
+        width: 25.25% !important;
+        margin: 0rem 0.5rem 0rem 0.5rem !important;
+      }
+      .action-filter-col {
+        .ant-btn {
+          border-radius: 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          margin: 0.25rem;
+          color: var(--light-text);
+          .anticon {
+            position: absolute;
+            right: 25%;
+            bottom: 20%;
+          }
+        }
+      }
+      .filter-col-select {
+        width: 100%;
+      }
+    }
+
+    .text {
+      width: 6rem;
+      text-align: end;
+    }
+    .user-add-action {
+      font-weight: 500;
+      margin-left: 0.5rem;
+      .anticon {
+        margin-right: 0.4rem;
+      }
+      .user-create-option {
+        color: var(--link-and-actions);
+        margin-right: 0.25rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .user-remove-action {
+    .ant-btn {
+      border-radius: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      margin: 0.25rem;
+      color: var(--light-text);
+      .anticon {
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+      }
+    }
+  }
+}

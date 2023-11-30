@@ -1,0 +1,121 @@
+.report-configuration-tabs {
+  height: calc(100% - 30px); // 30px height of report name above filters
+  overflow: hidden;
+  .ant-tabs-nav-wrap {
+    display: flex;
+    justify-content: center;
+    .ant-tabs-tab {
+      font-size: 14px;
+      line-height: 22px;
+      font-style: normal;
+      font-weight: normal;
+      color: var(--inactive-tab);
+      padding: 14px 1px 7px 1px;
+    }
+    .ant-tabs-tab-active {
+      font-weight: bold;
+      color: var(--harness-blue);
+    }
+    .ant-tabs-ink-bar {
+      background-color: var(--harness-blue);
+    }
+  }
+
+  .ant-tabs-bar {
+    border-bottom: none;
+  }
+
+  .ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content {
+    height: calc(100% - 95px); // 95px height ( + padding + margin) of tabs
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+
+  .dashboard-filter-wrapper {
+    background-color: #f5f6f8;
+    padding: 8px 0;
+    margin-right: 2px;
+
+    .filters-count {
+      width: 2rem;
+      margin: 5px;
+
+      .ant-badge-count {
+        background: #096dd9;
+      }
+    }
+
+    .ant-collapse-content-box {
+      background-color: #f5f6f8;
+    }
+
+    .toggle-global-filters-label {
+      font-weight: 500;
+      font-size: 10px;
+      text-align: center;
+      color: #8a94a5;
+    }
+
+    .dashboard-filters-div {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+
+      .dashboard-text {
+        color: black;
+      }
+    }
+
+    .help-container {
+      margin-top: 1rem;
+      padding-bottom: 15px;
+    }
+  }
+
+  .disabled-filters {
+    .ant-badge-count {
+      background: #d9d9d9 !important;
+    }
+
+    .global-filters-div-wrapper {
+      .ant-typography,
+      .ant-tag {
+        color: #8c8c8c !important;
+      }
+    }
+  }
+
+  .global-filters-div-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+  }
+  .half-width {
+    width: 50%;
+  }
+  .global-filters-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .widget-payload-copy {
+    padding: 0 10px;
+    margin: 16px 0;
+  }
+
+  .table-time-filter {
+    width: 90%;
+
+    .ant-form-item-label {
+      width: 100%;
+
+      > label::after {
+        position: absolute;
+      }
+    }
+  }
+}

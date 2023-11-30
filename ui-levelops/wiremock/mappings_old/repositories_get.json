@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/repositories/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "company/repo1",
+      "id": "1",
+      "integration_id": "1",
+      "master_branch": "master"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

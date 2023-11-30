@@ -1,0 +1,44 @@
+.landing-page {
+  height: 100%;
+
+  .ant-card {
+    border-radius: 2px;
+  }
+
+  .card-content {
+    padding: 1rem 0.5rem 0 0.5rem;
+    min-height: 150px;
+  }
+
+  .ant-card-actions {
+    border-top: 0;
+  }
+  .ant-card .ant-card-head {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .hint-label {
+    padding-left: 1rem;
+  }
+
+  .integration-type-card {
+    width: 330px;
+    margin: 0 1rem;
+  }
+
+  .select-type-btn {
+    float: right;
+    margin: 0 1.5rem 1rem 0;
+    border-radius: 0;
+  }
+
+  .basic-integration-option {
+    margin-bottom: 0.7rem;
+    color: #000;
+  }
+
+  .basic-integration-label {
+    font-size: 12px;
+    margin: 0 0 1rem 1.7rem;
+  }
+}

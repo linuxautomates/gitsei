@@ -1,0 +1,119 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/ticket_categorization_schemes/de3ebd44-8c86-4986-bed7-039c946bc613"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "de3ebd44-8c86-4986-bed7-039c946bc613",
+      "default_scheme": true,
+      "name": "System Ticket Categorization Profile",
+      "config": {
+        "integration_type": "jira",
+        "categories": {
+          "10": {
+            "id": "3c7eb1bc-80a1-445d-8470-f6f43a503cc9",
+            "name": "New Feature",
+            "index": 10,
+            "color": "#66991A",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 0,
+                "max": 18
+              },
+              "acceptable_range": {
+                "min": 0,
+                "max": 36
+              }
+            },
+            "filter": {
+              "issue_types": ["NEW FEATURE", "STORY"]
+            }
+          },
+          "20": {
+            "id": "e60d6f83-e098-4d22-9924-68ee713142cd",
+            "name": "Bugs",
+            "index": 20,
+            "color": "#E6331A",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 25,
+                "max": 40
+              },
+              "acceptable_range": {
+                "min": 10,
+                "max": 55
+              }
+            },
+            "filter": {
+              "issue_types": ["BUG"]
+            }
+          },
+          "30": {
+            "id": "fe5656d8-ab1a-4232-b0fd-3c44fea20fc5",
+            "name": "Fearture",
+            "index": 30,
+            "color": "#B33300",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 37,
+                "max": 88
+              },
+              "acceptable_range": {
+                "min": 0,
+                "max": 100
+              }
+            },
+            "filter": {
+              "issue_types": ["TASK"]
+            }
+          },
+          "40": {
+            "id": "fe5656d8-ab1a-4232-b0fd-3c44fea20fc5",
+            "name": "Others",
+            "index": 30,
+            "color": "#B33300",
+            "goals": {
+              "enabled": true,
+              "ideal_range": {
+                "min": 37,
+                "max": 88
+              },
+              "acceptable_range": {
+                "min": 0,
+                "max": 100
+              }
+            },
+            "filter": {
+              "issue_types": ["TASK"]
+            }
+          }
+        },
+        "uncategorized": {
+          "color": "#CCFF1A",
+          "goals": {
+            "enabled": true,
+            "ideal_range": {}
+          }
+        },
+        "active_work": {
+          "issues": {
+            "active_sprints": false,
+            "in_progress": false,
+            "assigned": false
+          }
+        }
+      },
+      "created_at": 1623288878709,
+      "updated_at": 1642067622285
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

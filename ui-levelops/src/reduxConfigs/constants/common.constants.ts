@@ -1,0 +1,5 @@
+export enum API_ERROR_CODES {
+  NOT_FOUND = 404,
+  BAD_REQUEST = 400,
+  UN_AUTHORIZED = 403
+}

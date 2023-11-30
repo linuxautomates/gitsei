@@ -1,0 +1,58 @@
+.dev-prod-relative-score {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+  border: 1px solid #d9d9d9;
+  padding: 25px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    &-heading {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .relative-core-dropdown {
+      min-width: 100px;
+    }
+    &-extras {
+      .ant-select .ant-select-selection {
+        border: 0;
+        .ant-select-selection-selected-value {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  .recharts-legend-wrapper {
+    bottom: 0 !important;
+  }
+}
+
+.dev-prod-relative-score-nodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+  border: 1px solid #d9d9d9;
+  padding: 25px;
+}
+
+.dev-prod-relative-score-container-spinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+  border: 1px solid #d9d9d9;
+}

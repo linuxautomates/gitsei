@@ -1,0 +1,70 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "url": "/v1/sections/3"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "3",
+      "name": "Authentication",
+      "description": "Does your code authenticate or authorize users, tokens, sessions, or other?",
+      "tags": ["authentication", "restapi"],
+      "questions": [
+        {
+          "id": 21,
+          "name": "We are only using approved authentication providers, or we are working with the security team on new authentication methods.",
+          "severity": "high",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 1
+        },
+        {
+          "id": 22,
+          "name": "We are storing authentication tokens for integrations correctly.",
+          "severity": "high",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "auto",
+          "verification_assets": [],
+          "training": [],
+          "number": 2
+        },
+        {
+          "id": 23,
+          "name": "We are not echoing authentication tokens (ours or third parties) into logs.",
+          "severity": "medium",
+          "type": "boolean",
+          "options": [
+            { "value": "yes", "score": 1 },
+            { "value": "no", "score": 10 }
+          ],
+          "custom": true,
+          "verifiable": true,
+          "verification_mode": "manual",
+          "verification_assets": [],
+          "training": [],
+          "number": 3
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

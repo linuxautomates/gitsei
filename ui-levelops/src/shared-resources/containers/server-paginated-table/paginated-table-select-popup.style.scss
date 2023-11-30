@@ -1,0 +1,29 @@
+.paginated-table-select-popup {
+  .ant-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .loader {
+    width: 81px;
+    display: inline-block;
+    height: 32px;
+    position: relative;
+    line-height: 1.2;
+  }
+
+  .delete-icon {
+    font-size: 30px;
+    color: #335ddd;
+  }
+
+  .warning-container {
+    display: flex;
+    align-items: center;
+
+    &__line {
+      margin-left: 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}

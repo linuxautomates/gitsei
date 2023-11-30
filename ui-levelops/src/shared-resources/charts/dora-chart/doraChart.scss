@@ -1,0 +1,12 @@
+.dora-chart {
+  display: flex;
+  flex-direction: row;
+  .left-component {
+    width: 275px;
+    padding: 0px 24px 24px 16px;
+  }
+  .right-component {
+    width: calc(100% - 275px);
+    height: 310px;
+  }
+}

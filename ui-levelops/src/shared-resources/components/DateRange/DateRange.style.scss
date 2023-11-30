@@ -1,0 +1,49 @@
+$tooltip-bg-color: black;
+$tooltip-font-color: white;
+.date-range-component__date-popover {
+  z-index: 1050;
+
+  & > .ant-popover-content > .ant-popover-arrow {
+    border-right-color: $tooltip-bg-color;
+    border-bottom-color: $tooltip-bg-color;
+  }
+
+  .ant-popover-inner {
+    background-color: $tooltip-bg-color;
+    color: $tooltip-font-color;
+
+    .ant-popover-inner-content {
+      color: $tooltip-font-color;
+      max-width: 200px;
+    }
+  }
+}
+
+.date-range-component {
+  display: flex;
+
+  .date-range-component__left-side {
+    flex: 1;
+  }
+
+  .date-range-component__divider {
+    min-width: 5px;
+  }
+
+  .date-range-component__right-side {
+    flex: 1;
+  }
+
+  .ant-row.ant-form-item {
+    margin-bottom: 0px;
+  }
+}
+
+.date-range-component__form-item.ant-row.ant-form-item {
+  margin-bottom: 5px;
+
+  .ant-form-explain {
+    min-height: 3px;
+    height: 3px;
+  }
+}

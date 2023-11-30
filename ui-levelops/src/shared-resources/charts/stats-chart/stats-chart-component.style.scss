@@ -1,0 +1,83 @@
+.stats-chart-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 60%;
+  &.stats-chart-cursor-pointer {
+    cursor: pointer;
+  }
+  .ant-statistic-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &.stats-extra-info-wrapper {
+    height: 100%;
+    min-height: 60%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15%;
+    .stats-extra-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      & > .info-description {
+        flex: 1 1 auto;
+        margin: 0.3rem;
+        font-size: 1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        .bold {
+          font-weight: bold;
+        }
+      }
+      .ant-tag {
+        font-size: 0.8rem;
+        border-radius: 0.8rem;
+      }
+    }
+    .ant-statistic .ant-statistic-content {
+      justify-content: start;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      font-size: 0.7rem;
+    }
+  }
+  .statistical-value {
+    color: var(--text-color);
+    font-size: 2.375rem;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .ant-statistic-content-value-decimal {
+      font-size: 2.375rem;
+    }
+  }
+
+  .statistical-decimal-value {
+    .ant-statistic-content-value-decimal {
+      font-size: 2.375rem !important;
+    }
+  }
+
+  .ant-statistic-content-suffix {
+    color: #2d3e5e;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+  }
+}

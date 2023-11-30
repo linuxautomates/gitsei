@@ -1,0 +1,77 @@
+.burndown-card {
+  height: 90%;
+  width: 25%;
+  border-radius: 0.25rem;
+  border: 2px solid var(--border-color);
+  margin: 1rem;
+  &-upper {
+    width: 90%;
+    height: 55%;
+    color: var(--ba-blue);
+    &-name {
+      margin: 1rem 0 0 1.5rem;
+    }
+    &-summary {
+      margin-left: 1.5rem;
+      margin-top: 0rem;
+    }
+    .recharts-responsive-container {
+      margin-left: 1rem;
+    }
+    line {
+      display: none;
+    }
+    tspan {
+      font-weight: 50;
+    }
+  }
+  &-lower {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .burndown-card-lower-text_container {
+      width: 100%;
+      padding-left: 20%;
+      .burndown-card-lower-text {
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+    }
+    &-legends {
+      margin-top: 0.5rem;
+      .legend-parent {
+        flex-direction: column;
+        margin-left: 0;
+        .legend-container {
+          margin: 0;
+          &-text {
+            color: var(--ba-blue);
+          }
+        }
+      }
+    }
+  }
+}
+.burndown-card:hover {
+  background-color: var(--carousal-back);
+}
+@media (min-width: 1441px) {
+  .burndown-card {
+    width: 20%;
+    margin: 2rem;
+    &-upper {
+      width: 80%;
+      .recharts-responsive-container {
+        margin-left: 1.75rem;
+      }
+    }
+    &-lower {
+      .burndown-card-lower-text_container {
+        width: 100%;
+        padding-left: 25%;
+      }
+    }
+  }
+}

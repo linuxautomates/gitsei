@@ -1,0 +1,45 @@
+@import '../../style/mixin';
+
+$dom-wrapper: '.dom-wrapper';
+
+#{$dom-wrapper} {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: z-index(drawer);
+
+  &--modal {
+    #{$dom-wrapper} {
+      &__overlay {
+        background: var(--black);
+        opacity: .8;
+      }
+    }
+  }
+
+  &--fullscreen {
+    #{$dom-wrapper} {
+      &__overlay {
+        background-color: var(--component-background);
+        height: 100vh;
+        opacity: 1;
+        width: 100vw;
+      }
+    }
+  }
+
+  &__overlay {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    touch-action: none;
+    transition: opacity transition();
+    will-change: opacity;
+    z-index: -1;
+  }
+}

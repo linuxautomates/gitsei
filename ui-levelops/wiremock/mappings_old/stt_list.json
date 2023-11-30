@@ -1,0 +1,56 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ticket_templates/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "total_record_count": 5,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 12
+      },
+      "count": 12,
+      "records": [
+        {
+          "id": "1",
+          "name": "Template 1",
+          "enabled": true,
+          "created_at": 1579312663
+        },
+        {
+          "id": "2",
+          "name": "Template 2",
+          "enabled": true,
+          "created_at": 1579312663
+        },
+        {
+          "id": "3",
+          "name": "Template 3",
+          "enabled": false,
+          "created_at": 1579312663
+        },
+        {
+          "id": "4",
+          "name": "Template 4",
+          "enabled": false,
+          "created_at": 1579312663
+        },
+        {
+          "id": "5",
+          "name": "Template 5",
+          "enabled": true,
+          "created_at": 1579312663
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

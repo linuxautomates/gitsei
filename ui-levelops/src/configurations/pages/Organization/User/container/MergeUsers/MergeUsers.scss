@@ -1,0 +1,26 @@
+.merge-users {
+  .row-card {
+    margin-top: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .email-box {
+    margin-right: 1rem;
+    border: 1px solid #d9dae5;
+    background: white;
+  }
+  .label-table {
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    &.user-id {
+      margin-left: 1rem;
+    }
+
+    &.integration {
+      margin-left: 3rem;
+    }
+  }
+}
+.merge-user-btn {
+  margin: -1rem;
+}

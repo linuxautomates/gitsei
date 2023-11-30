@@ -1,0 +1,20 @@
+.lineChartGraph {
+  .defaultCircle {
+    .innerCircle {
+      fill: #789fe9;
+    }
+    .outerCircle {
+      fill: transparent;
+    }
+  }
+  .defaultCircle:hover {
+    cursor: pointer;
+    .innerCircle {
+      stroke-width: 2;
+      stroke: white;
+    }
+    .outerCircle {
+      fill: #ffa333;
+    }
+  }
+}

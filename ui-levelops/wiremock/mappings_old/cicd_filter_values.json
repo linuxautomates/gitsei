@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/job_config_change/values"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      },
+      "count": 2,
+      "records": [
+        {
+          "cicd_user_id": [
+            {
+              "key": "viraj-jenkins",
+              "total_tickets": 100
+            },
+            {
+              "key": "user1-kenkins",
+              "total_tickets": 100
+            }
+          ]
+        },
+        {
+          "job_name": [
+            {
+              "key": "Pipeline 1",
+              "total_tickets": 100
+            },
+            {
+              "key": "Pipeline 2",
+              "total_tickets": 100
+            }
+          ]
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

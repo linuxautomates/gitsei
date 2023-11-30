@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/triage_rules/(.*)"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "id": "46",
+      "name": "iPad",
+      "regexes": ["abc", "xyz", "123"]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

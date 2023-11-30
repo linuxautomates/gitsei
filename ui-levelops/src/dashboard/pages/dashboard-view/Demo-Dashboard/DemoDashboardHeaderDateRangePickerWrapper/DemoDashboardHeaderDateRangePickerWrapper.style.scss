@@ -1,0 +1,57 @@
+.demoDashboardHeaderDateRange {
+  .header-date-range-component {
+    min-height: 360px;
+  }
+  .header-date-range-container-wrapper {
+    position: relative;
+    min-width: 552px;
+
+    & > div {
+      position: relative !important;
+
+      & > div > div {
+        position: relative;
+        left: 0 !important;
+        top: 0 !important;
+
+        .ant-calendar.ant-calendar-range {
+          box-shadow: none;
+        }
+
+        .ant-calendar-input-wrap {
+          display: none;
+        }
+
+        .ant-calendar-range-middle {
+          display: none;
+        }
+      }
+    }
+  }
+  .header-date-range-container-footer {
+    flex-grow: 1;
+  }
+  .header-date-range-container {
+    display: flex;
+
+    .custom-drop-down {
+      width: 20px;
+    }
+
+    .ant-calendar-picker {
+      display: none;
+    }
+  }
+  .ant-calendar-range .ant-calendar-in-range-cell > div {
+    background: #1890ff;
+    color: #fff;
+  }
+  .ant-calendar-range .ant-calendar-selected-start-date .ant-calendar-date {
+    background: #1890ff !important;
+    color: #fff !important;
+  }
+  .ant-calendar-range .ant-calendar-selected-end-date .ant-calendar-date {
+    background: #1890ff !important;
+    color: #fff !important;
+  }
+}

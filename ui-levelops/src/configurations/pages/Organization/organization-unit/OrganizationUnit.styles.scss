@@ -1,0 +1,54 @@
+$warning-color: #efaf41;
+
+.organization-units-container {
+  .no-data-ui-container {
+    height: 100vh;
+  }
+  .tab-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-tabs-container {
+    .ant-tabs-extra-content {
+      line-height: 0px !important;
+    }
+  }
+
+  .disabled-category-warning {
+    .anticon {
+      color: $warning-color;
+      margin-right: 0.35rem;
+      font-size: 1.15rem;
+    }
+    color: var(--text-color);
+  }
+
+  .org-unit-list-container {
+    .application-icon-container {
+      height: 32px;
+      width: 32px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 999px;
+      background-color: rgba(238, 238, 238, 0.8);
+      justify-content: center;
+      margin: 0 -2px;
+    }
+
+    .integration-popup-trigger {
+      border: none !important;
+      background: inherit !important;
+      box-shadow: none !important;
+    }
+
+    .extra-filter-content__search {
+      width: 20rem;
+    }
+    .ant-col-12 {
+      width: 33% !important;
+    }
+  }
+}

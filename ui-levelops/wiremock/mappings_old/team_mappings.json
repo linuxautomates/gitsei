@@ -1,0 +1,56 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/v1/team_mappings/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 10
+      },
+      "count": 10,
+      "records": [
+        {
+          "id": 1,
+          "integration_id": 1,
+          "integration_name": "Github Integration 1",
+          "integration_application": "github",
+          "selected": {
+            "repos": [
+              { "name": "company/repo1", "filter": "/src/project" },
+              { "name": "company/repo2", "filter": "/src/project1" }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "integration_id": 3,
+          "integration_name": "Jira Integration 1",
+          "integration_application": "jira",
+          "selected": {
+            "projects": [
+              { "name": "project1", "filter": "jql1" },
+              { "name": "project2", "filter": "jql2" }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "integration_id": 2,
+          "integration_application": "slack",
+          "integration_name": "Slack Integration 1",
+          "selected": {
+            "channel": ["slack-channel-1"]
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

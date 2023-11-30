@@ -1,0 +1,14 @@
+.configurationPanel {
+  height: 92vh;
+  overflow-y: scroll;
+  margin-right: var(--spacing-large) !important;
+  justify-content: space-between;
+}
+
+.downloadYamlBtn {
+  width: 170px;
+}
+
+.seperator {
+  border-top: 1px solid var(--grey-200);
+}

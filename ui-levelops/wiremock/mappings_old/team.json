@@ -1,0 +1,51 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/teams/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "1",
+      "name": "Elephant Team",
+      "organization_id": 1,
+      "members": 5,
+      "integrations": [
+        {
+          "type": "jira",
+          "id": "3",
+          "name": "Jira Integration 1",
+          "selected": {
+            "projects": {
+              "project1": "jql1",
+              "project2": "jql2"
+            }
+          }
+        },
+        {
+          "type": "slack",
+          "id": "2",
+          "name": "Slack Integration 1",
+          "selected": {
+            "channel": "channel1"
+          }
+        },
+        {
+          "type": "github",
+          "id": "1",
+          "name": "Github Integration 1",
+          "selected": {
+            "repos": {
+              "company/repo1": "/src/project1, src/project2",
+              "company/repo2": "/src/project3"
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.filter-action-btn {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 2px;
+  min-width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.widget-library-filters {
+  width: 397px;
+  display: flex;
+  flex-direction: column;
+  margin-left: -22px;
+  margin-bottom: 1rem;
+
+  &--title {
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+  }
+
+  &--type-heading {
+    margin: 12px 0 8px 0;
+  }
+
+  .ant-select {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border-bottom: none;
+  }
+
+  .ant-select .ant-select-selection {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .exclude-btn {
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #1890ff;
+      border-color: #1890ff;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner::after {
+      border-color: white;
+    }
+    .title {
+      font-size: 14px;
+      line-height: 22px;
+      color: #595959;
+    }
+  }
+}

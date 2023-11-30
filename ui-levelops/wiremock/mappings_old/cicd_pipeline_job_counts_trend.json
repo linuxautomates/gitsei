@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd/pipelines/job_counts",
+    "bodyPatterns": [
+      {
+        "equalToJson": "{ \"across\": \"trend\"  }",
+        "ignoreArrayOrder": true,
+        "ignoreExtraElements": true
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "key": "1591720855",
+          "count": 25
+        },
+        {
+          "key": "1592515671",
+          "count": 23
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

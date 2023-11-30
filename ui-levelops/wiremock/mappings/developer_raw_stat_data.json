@@ -1,0 +1,319 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/dev_productivity/reports/fixed_intervals/raw_stats/org/users"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "ou_id": "b6b667de-863b-4757-96e2-0547af9177d9",
+          "interval": "LAST_QUARTER",
+          "records": [
+            {
+              "org_user_id": "8d9f6667-307a-413b-9b76-20892d48e837",
+              "full_name": "Nishith Patel",
+              "ou_attributes": {
+                "bu": "someBU",
+                "manager": "Mandar"
+              },
+              "raw_stats": {
+                "Number of stories worked on per month": 0,
+                "Number of PRs per month": 0,
+                "Average Coding days per week": 6721,
+                "Number of PRs commented on per month": 0,
+                "Number of PRs approved per month": 1,
+                "Percentage of Rework": 100,
+                "Average response time for PR approvals": 386,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 0,
+                "Average PR Cycle Time": 70064,
+                "Percentage of Legacy Rework": 0,
+                "Technical Breadth - Number of unique file extension": 1,
+                "Number of bugs worked on per month": 0,
+                "Lines of Code per month": 2,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 1,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "2b6702d0-ba70-4645-9ac6-2b688bbac955",
+              "full_name": "Ajay Sakat",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 5,
+                "Number of PRs per month": 1,
+                "Average Coding days per week": 67201,
+                "Number of PRs commented on per month": 0,
+                "Average time spent working on Issues": 7735225,
+                "Number of PRs approved per month": 1,
+                "Percentage of Rework": 56,
+                "Average response time for PR approvals": 132908,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 6,
+                "Average PR Cycle Time": 164728,
+                "Percentage of Legacy Rework": 15,
+                "Technical Breadth - Number of unique file extension": 3,
+                "Number of bugs worked on per month": 12,
+                "Lines of Code per month": 5795,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 1,
+                "Number of Story Points worked on per month": 1
+              }
+            },
+            {
+              "org_user_id": "f2b87f70-a81d-4354-863b-e8de5e287c5e",
+              "full_name": "sharath",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 5,
+                "Number of PRs per month": 0,
+                "Average Coding days per week": 20160,
+                "Number of PRs commented on per month": 0,
+                "Average time spent working on Issues": 9944607,
+                "Number of PRs approved per month": 0,
+                "Percentage of Rework": 42,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 5,
+                "Average PR Cycle Time": 104157,
+                "Percentage of Legacy Rework": 0,
+                "Technical Breadth - Number of unique file extension": 2,
+                "Number of bugs worked on per month": 3,
+                "Lines of Code per month": 2333,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 1,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "be85025b-91c4-4101-9543-4bf18a9b46a8",
+              "full_name": "srinath.chandrashekhar",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 0,
+                "Number of PRs per month": 0,
+                "Average Coding days per week": 67201,
+                "Number of PRs commented on per month": 0,
+                "Number of PRs approved per month": 0,
+                "Percentage of Rework": 17,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 10,
+                "Percentage of Legacy Rework": 75,
+                "Technical Breadth - Number of unique file extension": 2,
+                "Number of bugs worked on per month": 0,
+                "Lines of Code per month": 2636,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 2,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "9010a148-1826-4a72-a392-1c7ab7d97d94",
+              "full_name": "Maxime Bellier",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 18,
+                "Number of PRs per month": 18,
+                "Average Coding days per week": 134401,
+                "Number of PRs commented on per month": 1,
+                "Average time spent working on Issues": 4108821,
+                "Number of PRs approved per month": 10,
+                "Percentage of Rework": 48,
+                "Average response time for PR approvals": 122285,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 33,
+                "Average PR Cycle Time": 1745,
+                "Average response time for PR comments": 402306,
+                "Percentage of Legacy Rework": 26,
+                "Technical Breadth - Number of unique file extension": 2,
+                "Number of bugs worked on per month": 18,
+                "Lines of Code per month": 4838,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 8,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "a23cf2f9-666c-4401-857e-ce46dc096ec7",
+              "full_name": "Viraj Ajgaonkar",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 4,
+                "Number of PRs per month": 30,
+                "Average Coding days per week": 154561,
+                "Number of PRs commented on per month": 1,
+                "Average time spent working on Issues": 6460184,
+                "Number of PRs approved per month": 10,
+                "Percentage of Rework": 50,
+                "Average response time for PR approvals": 134388,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 56,
+                "Average PR Cycle Time": 1512,
+                "Average response time for PR comments": 375961,
+                "Percentage of Legacy Rework": 19,
+                "Technical Breadth - Number of unique file extension": 2,
+                "Number of bugs worked on per month": 5,
+                "Lines of Code per month": 13439,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 6,
+                "Number of Story Points worked on per month": 3
+              }
+            },
+            {
+              "org_user_id": "a615faef-096d-4f35-9b75-7b408168be7b",
+              "full_name": "sivareddy aeddula",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 2,
+                "Number of PRs per month": 6,
+                "Average Coding days per week": 154560,
+                "Number of PRs commented on per month": 0,
+                "Average time spent working on Issues": 4090518,
+                "Number of PRs approved per month": 8,
+                "Percentage of Rework": 69,
+                "Average response time for PR approvals": 29445,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 38,
+                "Average PR Cycle Time": 247401,
+                "Percentage of Legacy Rework": 20,
+                "Technical Breadth - Number of unique file extension": 2,
+                "Number of bugs worked on per month": 4,
+                "Lines of Code per month": 15670,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 5,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "2db37601-df29-47e5-8ff5-327859348804",
+              "full_name": "Gopal Mandloi",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 1,
+                "Number of PRs per month": 0,
+                "Average Coding days per week": 0,
+                "Number of PRs commented on per month": 0,
+                "Average time spent working on Issues": 3839316,
+                "Number of PRs approved per month": 0,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 0,
+                "Technical Breadth - Number of unique file extension": 0,
+                "Number of bugs worked on per month": 0,
+                "Lines of Code per month": 0,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 0,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "5780e345-f4d2-45d7-aee4-e24e6d05b60a",
+              "full_name": "paramveer.singh",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 0,
+                "Number of PRs per month": 0,
+                "Average Coding days per week": 0,
+                "Number of PRs commented on per month": 0,
+                "Number of PRs approved per month": 0,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 0,
+                "Technical Breadth - Number of unique file extension": 0,
+                "Number of bugs worked on per month": 0,
+                "Lines of Code per month": 0,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 0,
+                "Number of Story Points worked on per month": 0
+              }
+            },
+            {
+              "org_user_id": "d800efef-2f3b-4c38-bed9-0cacc97f7a53",
+              "full_name": "Jose Ivan Leon Islas",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 29,
+                "Number of PRs per month": 1,
+                "Average Coding days per week": 73921,
+                "Number of PRs commented on per month": 0,
+                "Average time spent working on Issues": 8833769,
+                "Number of PRs approved per month": 2,
+                "Percentage of Rework": 27,
+                "Average response time for PR approvals": 358,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 12,
+                "Average PR Cycle Time": 522,
+                "Percentage of Legacy Rework": 12,
+                "Technical Breadth - Number of unique file extension": 3,
+                "Number of bugs worked on per month": 2,
+                "Lines of Code per month": 934,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 3,
+                "Number of Story Points worked on per month": 2
+              }
+            },
+            {
+              "org_user_id": "7cfa7795-f8ac-4493-801e-e0e704c9cc26",
+              "full_name": "ashish",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 2,
+                "Number of PRs per month": 7,
+                "Average Coding days per week": 94081,
+                "Number of PRs commented on per month": 0,
+                "Average time spent working on Issues": 6472248,
+                "Number of PRs approved per month": 11,
+                "Percentage of Rework": 78,
+                "Average response time for PR approvals": 247950,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 20,
+                "Average PR Cycle Time": 32246,
+                "Average response time for PR comments": 31438,
+                "Percentage of Legacy Rework": 14,
+                "Technical Breadth - Number of unique file extension": 3,
+                "Number of bugs worked on per month": 3,
+                "Lines of Code per month": 10466,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 4,
+                "Number of Story Points worked on per month": 1
+              }
+            },
+            {
+              "org_user_id": "cdeab275-5bd4-4400-8435-b0028712f00b",
+              "full_name": "sid",
+              "ou_attributes": {},
+              "raw_stats": {
+                "Number of stories worked on per month": 0,
+                "Number of PRs per month": 3,
+                "Average Coding days per week": 33601,
+                "Number of PRs commented on per month": 0,
+                "Number of PRs approved per month": 0,
+                "Percentage of Rework": 99,
+                "High Impact bugs worked on per month": 0,
+                "Number of Commits per month": 5,
+                "Average PR Cycle Time": 95282,
+                "Percentage of Legacy Rework": 0,
+                "Technical Breadth - Number of unique file extension": 1,
+                "Number of bugs worked on per month": 0,
+                "Lines of Code per month": 411,
+                "High Impact stories worked on per month": 0,
+                "Repo Breadth - Number of unique repo": 4,
+                "Number of Story Points worked on per month": 0
+              }
+            }
+          ]
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

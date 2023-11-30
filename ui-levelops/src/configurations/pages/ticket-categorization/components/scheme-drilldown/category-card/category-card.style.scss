@@ -1,0 +1,45 @@
+$light-gray: #595959;
+
+.category-card {
+  .ant-card-head-wrapper {
+    min-height: 4.875rem;
+    padding: 0 !important;
+  }
+  .category-card-rank {
+    margin-bottom: 0;
+    color: var(--grey3);
+  }
+  .category-content-container {
+    margin-top: 18%;
+    .category-card-rank-container {
+      display: flex;
+      justify-content: space-between;
+      .category-card-rank {
+        color: var(--grey3);
+      }
+      &-icon {
+        display: none;
+      }
+    }
+  }
+  .category-content-container :hover {
+    .category-card-rank-container-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .category-content-container-description {
+    line-height: 1.5rem;
+    .ant-typography {
+      text-transform: initial;
+      color: $light-gray;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+  .category-card-edit {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/playbooks/node_templates/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "page_number": 1,
+      "page_size": 100,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 5
+      },
+      "count": 2,
+      "records": [
+        {
+          "id": "d21ebab1-7218-4606-b7ff-bc0a990248ac",
+          "type": "slack_notification",
+          "display_type": "Slack Notify",
+          "name": "Send Slack notification",
+          "description": "Sends a Slack message to a user",
+          "input": {
+            "text": {
+              "key": "text",
+              "type": "text",
+              "options": [],
+              "required": true
+            },
+            "bot_name": {
+              "key": "bot_name",
+              "type": "text",
+              "options": [],
+              "required": false
+            },
+            "user_email": {
+              "key": "user_email",
+              "type": "single-dynamic-select",
+              "options": [],
+              "required": true,
+              "dynamic_resource_name": "users",
+              "search_field": "email"
+            }
+          },
+          "output": {},
+          "options": [],
+          "ui_data": {
+            "icon": "slack"
+          },
+          "created_at": 1588848290390
+        },
+        {
+          "id": "1",
+          "type": "type1",
+          "display_type": "type1",
+          "description": "outputs result, options on edge true,false,any",
+          "ui_data": {
+            "icon": "slack"
+          },
+          "options": ["true", "false", "any"],
+          "created_at": 1584482556000,
+          "input": {
+            "field1": {
+              "key": "field1",
+              "type": "single-select",
+              "required": true,
+              "hidden": false,
+              "validation": "not_empty",
+              "options": ["tag1", "tag2", "tag3"]
+            },
+            "field2": {
+              "key": "field2",
+              "type": "text",
+              "required": false,
+              "hidden": false,
+              "validation": "not_empty"
+            },
+            "field3": {
+              "key": "field3",
+              "type": "multi-dynamic-select",
+              "dynamic_resource_name": "users",
+              "search_field": "email",
+              "placeholder": "Select user or enter email"
+            }
+          },
+          "output": {
+            "result": {
+              "name": "result",
+              "type": "boolean"
+            }
+          }
+        },
+        {
+          "id": "2",
+          "type": "type2",
+          "display_type": "type2",
+          "description": "outputs result, options on edge true,false,any",
+          "ui_data": {
+            "icon": "edit"
+          },
+          "options": ["true", "false", "any"],
+          "created_at": 1584482556000,
+          "input": {
+            "field1": {
+              "key": "field1",
+              "type": "multi-select",
+              "required": false,
+              "hidden": false,
+              "validation": "not_empty",
+              "options": ["tag1", "tag2", "tag3"]
+            },
+            "field2": {
+              "key": "field2",
+              "type": "multi-select",
+              "required": false,
+              "hidden": false,
+              "validation": "not_empty",
+              "options": ["tag1", "tag2", "tag3"]
+            },
+            "field4": {
+              "key": "field4",
+              "type": "lql",
+              "required": false,
+              "hidden": false,
+              "validation": "",
+              "options": []
+            }
+          },
+          "output": {
+            "result": {
+              "name": "result",
+              "type": "boolean"
+            }
+          }
+        },
+        {
+          "display_type": "slack_notification",
+          "type": "slack_notification",
+          "name": "Send Slack notification",
+          "description": "Send a Slack message to a user",
+          "input": {
+            "bot_name": {
+              "key": "bot_name",
+              "type": "text",
+              "options": [],
+              "required": false
+            },
+            "user_email": {
+              "key": "user_email",
+              "type": "text",
+              "options": [],
+              "required": true
+            },
+            "text": {
+              "key": "text",
+              "type": "text",
+              "options": [],
+              "required": true
+            }
+          },
+          "ui_data": {
+            "icon": "slack"
+          }
+        },
+        {
+          "display_type": "get_plugin_result",
+          "type": "get_plugin_result",
+          "name": "Get Plugin Result",
+          "description": "Retrieve the results of a Plugin by id",
+          "input": {
+            "plugin_result_id": {
+              "key": "plugin_result_id",
+              "type": "text",
+              "options": [],
+              "required": true
+            }
+          },
+          "output": {
+            "plugin_result": {
+              "key": "plugin_result"
+            }
+          },
+          "ui_data": {
+            "icon": "levelops"
+          }
+        },
+        {
+          "display_type": "list_ingestion_data",
+          "type": "list_ingestion_data",
+          "name": "List Ingestion Data",
+          "description": "List data from a given integration, or all integrations of a given product",
+          "input": {
+            "integration_id": {
+              "key": "integration_id",
+              "type": "single-dynamic-select",
+              "options": [],
+              "dynamic_resource_name": "integrations",
+              "required": false
+            },
+            "product_id": {
+              "key": "product_id",
+              "type": "single-dynamic-select",
+              "options": [],
+              "dynamic_resource_name": "products",
+              "required": false
+            },
+            "integration_type": {
+              "key": "integration_type",
+              "type": "text",
+              "options": [],
+              "required": true
+            },
+            "integration_data_type": {
+              "key": "integration_data_type",
+              "type": "text",
+              "options": [],
+              "required": true
+            },
+            "lql": {
+              "key": "lql",
+              "type": "text",
+              "options": [],
+              "required": false
+            }
+          },
+          "output": {
+            "array": {
+              "key": "array"
+            }
+          },
+          "ui_data": {
+            "icon": "levelops"
+          }
+        },
+        {
+          "display_type": "list_jira_issues",
+          "type": "list_ingestion_data",
+          "name": "List Jira Issues",
+          "description": "List Jira Issues",
+          "input": {
+            "integration_id": {
+              "key": "integration_id",
+              "type": "single-dynamic-select",
+              "options": [],
+              "dynamic_resource_name": "integrations",
+              "required": false
+            },
+            "product_id": {
+              "key": "product_id",
+              "type": "single-dynamic-select",
+              "options": [],
+              "dynamic_resource_name": "products",
+              "required": false
+            },
+            "integration_type": {
+              "key": "integration_type",
+              "type": "text",
+              "options": [],
+              "required": true,
+              "hidden": true,
+              "default_value": "jira"
+            },
+            "integration_data_type": {
+              "key": "integration_data_type",
+              "type": "text",
+              "options": [],
+              "required": true,
+              "hidden": true,
+              "default_value": "issues"
+            },
+            "lql": {
+              "key": "lql",
+              "type": "lql",
+              "options": [],
+              "required": false
+            }
+          },
+          "output": {
+            "array": {
+              "key": "array"
+            }
+          },
+          "ui_data": {
+            "icon": "levelops"
+          }
+        },
+        {
+          "display_type": "for_each",
+          "type": "for_each",
+          "name": "For Each Item In Array",
+          "description": "Iterate over items in a given array variable",
+          "input": {
+            "array": {
+              "key": "array",
+              "type": "text",
+              "options": [],
+              "required": true
+            }
+          },
+          "output": {
+            "item": {
+              "key": "item"
+            }
+          },
+          "ui_data": {
+            "icon": "levelops"
+          }
+        },
+        {
+          "display_type": "report",
+          "type": "report",
+          "name": "Create report",
+          "description": "Create report from items in a given array variable. These items will be grouped under a section with the given title.",
+          "input": {
+            "title": {
+              "key": "title",
+              "type": "text",
+              "options": [],
+              "required": true
+            },
+            "array": {
+              "key": "array",
+              "type": "text",
+              "options": [],
+              "required": true
+            }
+          },
+          "ui_data": {
+            "icon": "levelops"
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

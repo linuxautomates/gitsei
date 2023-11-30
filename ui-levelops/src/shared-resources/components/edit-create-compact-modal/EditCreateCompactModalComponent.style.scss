@@ -1,0 +1,27 @@
+.edit-create-compact-modal {
+  .ant-modal-header {
+    padding-bottom: 16px;
+
+    .ant-modal-title {
+      color: #262626;
+    }
+  }
+
+  .ant-modal-body {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 0;
+  }
+
+  .ant-modal-footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .description-input {
+    border: none;
+    border-bottom: 1px solid #aeadad;
+    border-radius: 0;
+  }
+}

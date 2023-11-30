@@ -1,0 +1,43 @@
+
+$backgroundColor: #ffffff;
+.score-card-header-container {
+  background-color: $backgroundColor;
+  border-bottom: 1px solid #bfbfbf;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 5;
+  &.standaloneStyle {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+  }
+  .score-card-header-wrapper {
+    background-color: $backgroundColor;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 2.2rem;
+    align-items: center;
+  }
+  .dashboard-name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 0px;
+  }
+
+  .version-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #595959;
+    border-radius: 20px;
+    width: 43px;
+    height: 23px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: $backgroundColor;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+$backgroundColor: #fafcff;
+
+.dashboard-view-container {
+  background-color: $backgroundColor;
+  min-height: 100%;
+  margin: 0 auto;
+  .graph-stat-container {
+    .ant-empty-image {
+      height: 60px;
+    }
+  }
+  .no-dash-text {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: var(--title);
+  }
+}
+
+.dashboard-view-header-container {
+  position: sticky;
+  top: 0px;
+  width: calc(100% + 80px);
+  z-index: 20;
+  //margin-left: -40px;
+  margin: 0 auto;
+}

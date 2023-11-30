@@ -1,0 +1,47 @@
+.change-failure-rate {
+  margin: 24px;
+  width: 100%;
+  overflow: auto;
+  .header {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .change-failure-rate-common {
+    line-height: 22px;
+    align-items: center;
+    flex: none;
+    flex-grow: 0;
+    .formula-wrapper {
+      background-color: #EAF0FC;
+      margin: 6px 0;
+      padding: 16px 24px;
+      .formula {
+        padding-top: 4px;
+        width: 575px;
+      }
+    }
+    .change-failure-rate-desc-text {
+      font-weight: 500;
+      color: #7e7e7e;
+    }
+    .change-failure-rate-formula {
+      order: 0;
+      color: #404040;
+      .formula-title {
+        font-weight: 500;
+      }
+      .formula-desc {
+        font-weight: 400;
+      }
+    }
+    .change-failure-rate-checkbox {
+      font-weight: 400;
+      color: #404040;
+      order: 1;
+      .change-failure-rate-checkbox-description {
+        margin-left: 5px;
+      }
+    }
+  }
+}

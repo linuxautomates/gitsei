@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/fileupload/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "testFile.png",
+    "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "content-type": "application/octet-stream",
+      "Content-Disposition": "attachment; filename=testFile.png"
+    }
+  }
+}

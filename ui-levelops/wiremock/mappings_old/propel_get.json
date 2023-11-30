@@ -1,0 +1,335 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/playbooks/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "my playbook",
+      "description": "my description",
+      "trigger_type": "manual",
+      "enabled": true,
+      "nodes_dirty": true,
+      "ui_data": {
+        "nodes": {
+          "0": {
+            "id": "0",
+            "type": "trigger",
+            "ports": {
+              "output": {
+                "id": "output",
+                "type": "output",
+                "properties": {
+                  "action": "output"
+                },
+                "position": {
+                  "x": 135,
+                  "y": 108
+                }
+              }
+            },
+            "input": {
+              "component_type": {
+                "key": "component_type",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "INTEGRATION",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": true,
+                "validation": "",
+                "options": [],
+                "default_value": "INTEGRATION"
+              },
+              "component_name": {
+                "key": "component_name",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "jira",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": true,
+                "validation": "",
+                "options": [],
+                "default_value": "jira"
+              },
+              "event_type": {
+                "key": "event_type",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "JIRA_NEW_ISSUE",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": true,
+                "validation": "",
+                "options": [],
+                "default_value": "JIRA_NEW_ISSUE"
+              },
+              "product": {
+                "key": "product",
+                "type": "multi-dynamic-select",
+                "values": [
+                  {
+                    "value": {
+                      "key": "1",
+                      "label": "iPad"
+                    },
+                    "type": "string"
+                  },
+                  {
+                    "value": {
+                      "key": "2",
+                      "label": "iPhone"
+                    },
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "validation": "not_empty",
+                "options": [],
+                "dynamic_resource_name": "products"
+              }
+            },
+            "position": {
+              "x": 0,
+              "y": 5
+            },
+            "properties": {
+              "icon": "bell"
+            },
+            "name": "trigger",
+            "trigger_type": "event_trigger",
+            "size": {
+              "width": 290,
+              "height": 124
+            }
+          },
+          "1": {
+            "id": "1",
+            "type": "type1",
+            "ports": {
+              "input": {
+                "id": "input",
+                "type": "input",
+                "properties": {
+                  "action": "input"
+                },
+                "position": {
+                  "x": 137,
+                  "y": -1
+                }
+              },
+              "output": {
+                "id": "output",
+                "type": "output",
+                "properties": {
+                  "action": "output"
+                },
+                "position": {
+                  "x": 137,
+                  "y": 110
+                }
+              }
+            },
+            "input": {
+              "field1": {
+                "key": "field1",
+                "type": "single-select",
+                "values": [
+                  {
+                    "value": "tag1",
+                    "type": "string"
+                  }
+                ],
+                "required": true,
+                "hidden": false,
+                "validation": "not_empty",
+                "options": ["tag1", "tag2", "tag3"]
+              },
+              "field2": {
+                "key": "field2",
+                "type": "text",
+                "values": [
+                  {
+                    "value": "some text",
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "validation": "not_empty",
+                "options": ["tag1", "tag2", "tag3"]
+              },
+              "field3": {
+                "key": "field3",
+                "type": "multi-dynamic-select",
+                "values": [
+                  {
+                    "value": {
+                      "key": 1,
+                      "label": "meghana@levelops.io"
+                    },
+                    "type": "string"
+                  },
+                  {
+                    "value": {
+                      "key": 2,
+                      "label": "harsh@levelops.io"
+                    },
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "options": [],
+                "dynamic_resource_name": "users",
+                "searchField": "email"
+              }
+            },
+            "position": {
+              "x": 56,
+              "y": 156
+            },
+            "properties": {
+              "icon": "slack"
+            },
+            "name": "type1",
+            "size": {
+              "width": 290,
+              "height": 124
+            }
+          },
+          "2": {
+            "id": "2",
+            "type": "type2",
+            "ports": {
+              "input": {
+                "id": "input",
+                "type": "input",
+                "properties": {
+                  "action": "input"
+                },
+                "position": {
+                  "x": 137,
+                  "y": -1
+                }
+              },
+              "output": {
+                "id": "output",
+                "type": "output",
+                "properties": {
+                  "action": "output"
+                },
+                "position": {
+                  "x": 137,
+                  "y": 110
+                }
+              }
+            },
+            "input": {
+              "field1": {
+                "key": "field1",
+                "type": "multi-select",
+                "values": [
+                  {
+                    "value": "tag1",
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "validation": "not_empty",
+                "options": ["tag1", "tag2", "tag3"]
+              },
+              "field2": {
+                "key": "field2",
+                "type": "multi-select",
+                "values": [
+                  {
+                    "value": "tag2",
+                    "type": "string"
+                  },
+                  {
+                    "value": "tag3",
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "validation": "not_empty",
+                "options": ["tag1", "tag2", "tag3"]
+              },
+              "field4": {
+                "key": "field4",
+                "type": "lql",
+                "values": [
+                  {
+                    "value": "${1.result} = something",
+                    "type": "string"
+                  }
+                ],
+                "required": false,
+                "hidden": false,
+                "validation": "",
+                "options": []
+              }
+            },
+            "position": {
+              "x": 119,
+              "y": 311
+            },
+            "properties": {
+              "icon": "edit"
+            },
+            "name": "type2",
+            "size": {
+              "width": 290,
+              "height": 124
+            }
+          }
+        },
+        "links": {
+          "9f80eeed-d188-4b95-be05-2e4d61cd31de": {
+            "id": "9f80eeed-d188-4b95-be05-2e4d61cd31de",
+            "from": {
+              "nodeId": "0",
+              "portId": "output"
+            },
+            "to": {
+              "nodeId": "1",
+              "portId": "input"
+            },
+            "properties": {}
+          },
+          "3af43a92-fe37-4443-8026-0db407fbae69": {
+            "id": "3af43a92-fe37-4443-8026-0db407fbae69",
+            "from": {
+              "nodeId": 1,
+              "portId": "output"
+            },
+            "to": {
+              "nodeId": "2",
+              "portId": "input"
+            },
+            "properties": {}
+          }
+        }
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

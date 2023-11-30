@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/v1/organizations/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": { "id": "1", "name": "Organization 1" },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

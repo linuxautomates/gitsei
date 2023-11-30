@@ -1,0 +1,85 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/events/types/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "type": "PLUGIN_RESULT_CREATED",
+          "component_type": "PLUGIN_RESULT",
+          "description": "Event triggered when a new plugin result is created.",
+          "data": [
+            {
+              "key": "product",
+              "type": "text",
+              "required": true,
+              "hidden": false,
+              "options": [],
+              "validation": "numeric:[1-10]"
+            },
+            {
+              "key": "tags",
+              "type": "text",
+              "required": false,
+              "hidden": false,
+              "options": [],
+              "validation": ""
+            },
+            {
+              "key": "successfull",
+              "type": "text",
+              "required": true,
+              "hidden": false,
+              "options": [],
+              "validation": "boolean"
+            }
+          ]
+        },
+        {
+          "type": "PLUGIN_RESULT_CHANGED",
+          "component_type": "PLUGIN_RESULT",
+          "description": "Event triggered when changes are detected between a new plugin result and the inmidiately previous result (matching with the same tags, products and project name).",
+          "data": [
+            {
+              "key": "product",
+              "type": "text",
+              "required": true,
+              "hidden": false,
+              "options": [],
+              "validation": "numeric:[1-10]"
+            },
+            {
+              "key": "tags",
+              "type": "text",
+              "required": false,
+              "hidden": false,
+              "options": [],
+              "validation": ""
+            },
+            {
+              "key": "successfull",
+              "type": "text",
+              "required": true,
+              "hidden": false,
+              "options": [],
+              "validation": "boolean"
+            }
+          ]
+        }
+      ],
+      "count": 3,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 3
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

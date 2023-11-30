@@ -1,0 +1,33 @@
+.signin-button-wrapper {
+  .signup-button-loader {
+    margin-right: 10px;
+    height: 32px;
+    width: 69px;
+
+    &__spin {
+      .ant-spin-dot-item {
+        background-color: #542348;
+      }
+    }
+  }
+
+  .signin-button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 24px;
+    // line-height: 32px;
+    // width: 200px;
+    // height: 49px;
+    // padding: 8px 16px;
+    background: var(--harness-blue);
+    color: #ffffff;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    &.disabled {
+      background: #f5f5f5;
+      color: #bfbfbf;
+    }
+  }
+}

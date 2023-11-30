@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/v1/get_incident"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "severity": "1",
+      "config_forensics": [],
+      "environments": ["prod-nam", "prod-eu"],
+      "hosts": ["1.1.1.1"],
+      "system_forensics": [],
+      "organization": "IT Org",
+      "description": "asdadadasd",
+      "id": "e7a2c390-ad2b-403a-bc0a-89cf0ce34454",
+      "time": 1558671950830,
+      "services": ["rest-api"],
+      "ssh_forensics": [
+        {
+          "type": "shell_command",
+          "command": "a:b",
+          "time": 1557904522,
+          "session_id": "82828hkaklsd",
+          "session_user": "harsh",
+          "server_ip": "1.1.1.1",
+          "environ": "prod-nam",
+          "customer_id": "test2"
+        },
+        {
+          "type": "shell_command",
+          "command": "service nginx restart",
+          "time": 1557904522,
+          "session_id": "82828hkaklsd",
+          "session_user": "harsh",
+          "server_ip": "1.1.1.1",
+          "environ": "prod-eu",
+          "customer_id": "test2"
+        }
+      ],
+      "tiger_team": ["Meghana Dwarakanath"]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

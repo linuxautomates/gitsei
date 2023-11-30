@@ -1,0 +1,44 @@
+.application-filters {
+  .ant-col {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ant-modal {
+    width: 55rem !important;
+
+    .ant-modal-body {
+      height: 40rem;
+      .ant-tabs {
+        height: 100%;
+        .ant-tabs-content {
+          height: 100%;
+        }
+        .ant-tabs-tabpane-active {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+
+    .ant-form-item-label {
+      text-align: left;
+
+      .custom-form-item-label {
+        height: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    .ant-form-item-label > label::after {
+      content: none;
+    }
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+}

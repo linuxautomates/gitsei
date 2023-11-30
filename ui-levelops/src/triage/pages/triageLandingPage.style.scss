@@ -1,0 +1,16 @@
+.triage-grid-view-tab {
+  height: 100%;
+
+  .ant-tabs-content {
+    height: calc(100% - 30px); // height of tabs and margin
+    overflow: auto;
+
+    .ant-tabs-tabpane-active {
+      height: 100%;
+    }
+  }
+
+  .ant-tabs-bar {
+    margin: 0;
+  }
+}

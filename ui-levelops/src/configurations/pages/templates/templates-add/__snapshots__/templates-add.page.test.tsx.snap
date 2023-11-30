@@ -1,0 +1,494 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TemplateAddPage Template add page should match the snapshot. 1`] = `
+<DocumentFragment>
+  <div
+    class="flex direction-column align-center"
+  >
+    <div
+      class="undefined__content"
+    >
+      <div
+        class="ant-card-wrapper"
+        role="presentation"
+      >
+        <div
+          class="ant-card ant-card-bordered"
+        >
+          <div
+            class="ant-card-head"
+          >
+            <div
+              class="ant-card-head-wrapper"
+            >
+              <div
+                class="ant-card-head-title"
+              >
+                Template
+              </div>
+            </div>
+          </div>
+          <div
+            class="ant-card-body"
+          >
+            <form
+              class="ant-form ant-form-vertical"
+            >
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class="ant-form-item-required"
+                    title="type"
+                  >
+                    type
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control-wrapper"
+                >
+                  <div
+                    class="ant-form-item-control"
+                  >
+                    <span
+                      class="ant-form-item-children"
+                    >
+                      <div
+                        class="ant-select ant-select-enabled"
+                        style="width: 30%;"
+                      >
+                        <div
+                          aria-autocomplete="list"
+                          aria-controls="test-uuid"
+                          aria-expanded="false"
+                          aria-haspopup="true"
+                          class="ant-select-selection
+            ant-select-selection--single"
+                          role="combobox"
+                          tabindex="0"
+                        >
+                          <div
+                            class="ant-select-selection__rendered"
+                          >
+                            <div
+                              class="ant-select-selection-selected-value"
+                              style="display: block; opacity: 1;"
+                              title="Slack"
+                            >
+                              Slack
+                            </div>
+                          </div>
+                          <span
+                            class="ant-select-arrow"
+                            style="user-select: none;"
+                            unselectable="on"
+                          >
+                            <i
+                              aria-label="icon: down"
+                              class="anticon anticon-down ant-select-arrow-icon"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class=""
+                                data-icon="down"
+                                fill="currentColor"
+                                focusable="false"
+                                height="1em"
+                                viewBox="64 64 896 896"
+                                width="1em"
+                              >
+                                <path
+                                  d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                                />
+                              </svg>
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item ant-form-item-with-help"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class=""
+                    title="Name"
+                  >
+                    Name
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control-wrapper"
+                >
+                  <div
+                    class="ant-form-item-control has-error"
+                  >
+                    <span
+                      class="ant-form-item-children"
+                    >
+                      <input
+                        class="ant-input"
+                        type="text"
+                        value=""
+                      />
+                    </span>
+                    <div
+                      class="ant-form-explain show-help-appear"
+                    >
+                      This field is required
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class=""
+                    title="Bot Name"
+                  >
+                    Bot Name
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control-wrapper"
+                >
+                  <div
+                    class="ant-form-item-control has-error"
+                  >
+                    <span
+                      class="ant-form-item-children"
+                    >
+                      <input
+                        class="ant-input"
+                        type="text"
+                        value=""
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class="ant-form-item-required"
+                    title="Event Type"
+                  >
+                    Event Type
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control-wrapper"
+                >
+                  <div
+                    class="ant-form-item-control"
+                  >
+                    <span
+                      class="ant-form-item-children"
+                    >
+                      <div
+                        class="ant-select ant-select-enabled"
+                        style="width: 30%;"
+                      >
+                        <div
+                          aria-autocomplete="list"
+                          aria-controls="test-uuid"
+                          aria-expanded="false"
+                          aria-haspopup="true"
+                          class="ant-select-selection
+            ant-select-selection--single"
+                          role="combobox"
+                          tabindex="0"
+                        >
+                          <div
+                            class="ant-select-selection__rendered"
+                          >
+                            <div
+                              class="ant-select-selection-selected-value"
+                              style="display: block; opacity: 1;"
+                              title="All"
+                            >
+                              All
+                            </div>
+                          </div>
+                          <span
+                            class="ant-select-arrow"
+                            style="user-select: none;"
+                            unselectable="on"
+                          >
+                            <i
+                              aria-label="icon: down"
+                              class="anticon anticon-down ant-select-arrow-icon"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class=""
+                                data-icon="down"
+                                fill="currentColor"
+                                focusable="false"
+                                height="1em"
+                                viewBox="64 64 896 896"
+                                width="1em"
+                              >
+                                <path
+                                  d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+                                />
+                              </svg>
+                            </i>
+                          </span>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class=""
+                    title="Default"
+                  >
+                    Default
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control-wrapper"
+                >
+                  <div
+                    class="ant-form-item-control"
+                  >
+                    <span
+                      class="ant-form-item-children"
+                    >
+                      <button
+                        aria-checked="false"
+                        class="ant-switch"
+                        id="default"
+                        role="switch"
+                        type="button"
+                      >
+                        <span
+                          class="ant-switch-inner"
+                        />
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ant-row ant-form-item"
+              >
+                <div
+                  class="ant-col ant-form-item-label"
+                >
+                  <label
+                    class=""
+                    title="Message"
+                  >
+                    Message
+                  </label>
+                </div>
+                <div
+                  class="ant-col ant-form-item-control-wrapper"
+                >
+                  <div
+                    class="ant-form-item-control has-error"
+                  >
+                    <span
+                      class="ant-form-item-children"
+                    >
+                      <textarea
+                        class="ant-input"
+                        style="height: 0px; min-height: -9007199254740991px; max-height: 9007199254740991px; overflow-y: hidden; overflow-x: hidden;"
+                        type="textarea"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tokens"
+              >
+                <span
+                  class="tokenLabel"
+                >
+                  Tokens allowed: 
+                </span>
+                <div
+                  class="ant-row-flex ant-row-flex-start"
+                  style="margin: -5px -5px -5px -5px;"
+                >
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $link 
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $sender
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $info
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $artifact
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $title
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $text
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $issue_id
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $issue_title
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $issue_link
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $assessment_id
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $assessment_title
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="ant-col ant-col-6"
+                    style="padding: 5px 5px 5px 5px;"
+                  >
+                    <div>
+                      <span
+                        class="ant-tag"
+                      >
+                        $assessment_link
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,94 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/v1/tickets/list"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "id": "507854",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "9765",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "6982210",
+          "assignee": "aa@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "456",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "5",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "896",
+          "assignee": "aa@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "8879",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "5",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "66789998",
+          "assignee": "aa@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "34",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "5567",
+          "assignee": "test@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        },
+        {
+          "id": "12",
+          "assignee": "aa@gmail.com",
+          "status": "OPEN",
+          "title": "Ticket name"
+        }
+      ],
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 18
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.integration-monitoring-item-container {
+  .ant-card-head {
+    background-color: var(--grey6);
+  }
+  .integration-monitoring-table {
+    width: 32rem;
+    max-height: 25.5rem;
+    overflow-y: auto;
+    td,
+    th {
+      border: none !important;
+      .ant-table-column-title {
+        color: var(--inactive-tab);
+        font-weight: 500;
+      }
+    }
+  }
+  .view-all-text {
+    color: var(--blueText);
+    cursor: pointer;
+  }
+}
+.integration-monitoring-container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 0.3rem;
+  margin-left: -0.1rem;
+  .ant-dropdown-open {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #f5f6f8 !important;
+  }
+  .integration-monitoring-dropdown {
+    color: var(--light-text);
+    font-size: 1rem;
+    text-transform: capitalize;
+    .ant-badge-status-dot {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+    .ant-badge-status-text {
+      color: var(--light-text);
+      font-size: 1rem;
+    }
+  }
+}

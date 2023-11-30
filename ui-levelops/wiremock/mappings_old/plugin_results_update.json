@@ -1,0 +1,316 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/v1/plugins/results/(.*)"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "3d3eee3c-2724-45b2-87f1-88e0bdd41082",
+      "class": "report_file_123",
+      "tool": "report_ms_tmt",
+      "version": "1",
+      "plugin_name": "Microsoft Threat Model",
+      "product_ids": ["32"],
+      "successful": true,
+      "metadata": {
+        "os": "redhat8",
+        "version": "<runner version>",
+        "execution": 0.0492224693,
+        "available_cores": "3ecu",
+        "available_memory": "4GB"
+      },
+      "labels": {
+        "trigger_id": ["0eaa974b-7ad7-4889-8ca6-6a42b75b5937"],
+        "repo_name": ["Sample 1"]
+      },
+      "results": {
+        "aggregations": {
+          "Sample 1": {
+            "by_priority": {
+              "high": 30
+            },
+            "by_state": {
+              "not_started": 30
+            }
+          }
+        },
+        "summary": {
+          "totals_first_run": {
+            "low": 10,
+            "medium": 5,
+            "high": 2
+          },
+          "totals_second_run": {
+            "low": 10,
+            "medium": 5,
+            "high": 2
+          },
+          "mitigation": {
+            "not_mitigated": 3,
+            "mitigated": 7
+          }
+        },
+        "data": {
+          "t1": {
+            "category": "Spoofing",
+            "description": "OS Process may be spoofed by\n          an attacker and this may lead to information disclosure by Generic Data Store. Consider using a standard\n          authentication mechanism to identify the destination process.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "1. Spoofing the OS Process Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t2": {
+            "category": "Spoofing",
+            "description": "Generic Data Store may be\n          spoofed by an attacker and this may lead to incorrect data delivered to OS Process. Consider using a standard\n          authentication mechanism to identify the source data store.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "2. Spoofing of Source Data Store Generic Data Store",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t3": {
+            "category": "Tampering",
+            "description": "Attackers may attempt to\n          modify PHI to avoid billing, or to cause misdiagnosis of a patient. Recommend using cryptographic signing to\n          protect against modification of PHI.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "3. PHI at Rest Tampering",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t4": {
+            "category": "Repudiation",
+            "description": "OS Process claims that it did\n          not receive data from a source outside the trust boundary. Consider using logging or auditing to record the\n          source, time, and summary of the received data.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "4. Potential Data Repudiation by OS Process",
+            "state": "Mitigation Implemented",
+            "priority": "High"
+          },
+          "t5": {
+            "category": "Information Disclosure",
+            "description": "Improper data protection of\n          Generic Data Store can allow an attacker to read information not intended for disclosure. Review authorization\n          settings.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "5. Weak Access Control for a Resource",
+            "state": "Needs Investigation",
+            "priority": "High"
+          },
+          "t6": {
+            "category": "Denial Of Service",
+            "description": "OS Process crashes, halts,\n          stops or runs slowly; in all cases violating an availability metric.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "6. Potential Process Crash or Stop for OS Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t7": {
+            "category": "Denial Of Service",
+            "description": "An external agent interrupts\n          data flowing across a trust boundary in either direction.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "7. Data Flow Generic Data Flow Is Potentially Interrupted",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t8": {
+            "category": "Denial Of Service",
+            "description": "An external agent prevents\n          access to a data store on the other side of the trust boundary.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "8. Data Store Inaccessible",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t9": {
+            "category": "Elevation Of Privilege",
+            "description": "Generic Data Store may be\n          able to remotely execute code for OS Process.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "9. OS Process May be Subject to Elevation of Privilege Using Remote\n        Code Execution",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t10": {
+            "category": "Elevation Of Privilege",
+            "description": "An attacker may pass data\n          into OS Process in order to change the flow of program execution within OS Process to the attacker's choosing.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "10. Elevation by Changing the Execution Flow in OS Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t11": {
+            "category": "Spoofing",
+            "description": "OS Process may be spoofed by\n          an attacker and this may lead to unauthorized access to Generic Data Store. Consider using a standard\n          authentication mechanism to identify the source process.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "11. Spoofing the OS Process Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t12": {
+            "category": "Spoofing",
+            "description": "Generic Data Store may be\n          spoofed by an attacker and this may lead to data being written to the attacker's target instead of Generic\n          Data Store. Consider using a standard authentication mechanism to identify the destination data store.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "12. Spoofing of Destination Data Store Generic Data Store",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t13": {
+            "category": "Tampering",
+            "description": "Data flowing across Generic\n          Data Flow may be tampered with by an attacker. This may lead to corruption of Generic Data Store. Ensure the\n          integrity of the data flow to the data store.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "13. The Generic Data Store Data Store Could Be Corrupted",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t14": {
+            "category": "Repudiation",
+            "description": "Generic Data Store claims\n          that it did not write data received from an entity on the other side of the trust boundary. Consider using\n          logging or auditing to record the source, time, and summary of the received data.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "14. Data Store Denies Generic Data Store Potentially Writing\n        Data",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t15": {
+            "category": "Information Disclosure",
+            "description": "Data flowing across Generic\n          Data Flow may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used\n          to attack other parts of the system or simply be a disclosure of information leading to compliance violations.\n          Consider encrypting the data flow.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "15. Data Flow Sniffing",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t16": {
+            "category": "Denial Of Service",
+            "description": "Does OS Process or Generic\n          Data Store take explicit steps to control resource consumption? Resource consumption attacks can be hard to\n          deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource\n          requests don't deadlock, and that they do timeout.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "16. Potential Excessive Resource Consumption for OS Process or\n        Generic Data Store",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t17": {
+            "category": "Denial Of Service",
+            "description": "An external agent interrupts\n          data flowing across a trust boundary in either direction.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "17. Data Flow Generic Data Flow Is Potentially Interrupted",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t18": {
+            "category": "Denial Of Service",
+            "description": "An external agent prevents\n          access to a data store on the other side of the trust boundary.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "18. Data Store Inaccessible",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t19": {
+            "category": "Elevation Of Privilege",
+            "description": "OS Process may be able to\n          impersonate the context of OS Process in order to gain additional privilege.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "19. Elevation Using Impersonation",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t20": {
+            "category": "Elevation Of Privilege",
+            "description": "OS Process may be able to\n          impersonate the context of OS Process in order to gain additional privilege.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "20. Elevation Using Impersonation",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t21": {
+            "category": "Spoofing",
+            "description": "Generic External Interactor\n          may be spoofed by an attacker and this may lead to unauthorized access to OS Process. Consider using a\n          standard authentication mechanism to identify the external entity.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "21. Spoofing the Generic External Interactor External Entity",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t22": {
+            "category": "Repudiation",
+            "description": "OS Process claims that it did\n          not receive data from a source outside the trust boundary. Consider using logging or auditing to record the\n          source, time, and summary of the received data.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "22. Potential Data Repudiation by OS Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t23": {
+            "category": "Denial Of Service",
+            "description": "OS Process crashes, halts,\n          stops or runs slowly; in all cases violating an availability metric.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "23. Potential Process Crash or Stop for OS Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t24": {
+            "category": "Denial Of Service",
+            "description": "An external agent interrupts\n          data flowing across a trust boundary in either direction.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "24. Data Flow HTTPS Is Potentially Interrupted",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t25": {
+            "category": "Elevation Of Privilege",
+            "description": "OS Process may be able to\n          impersonate the context of Generic External Interactor in order to gain additional privilege.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "25. Elevation Using Impersonation",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t26": {
+            "category": "Elevation Of Privilege",
+            "description": "Generic External Interactor\n          may be able to remotely execute code for OS Process.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "26. OS Process May be Subject to Elevation of Privilege Using Remote\n        Code Execution",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t27": {
+            "category": "Elevation Of Privilege",
+            "description": "An attacker may pass data\n          into OS Process in order to change the flow of program execution within OS Process to the attacker's choosing.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "27. Elevation by Changing the Execution Flow in OS Process",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t28": {
+            "category": "Spoofing",
+            "description": "Generic External Interactor\n          may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Generic\n          External Interactor. Consider using a standard authentication mechanism to identify the external entity.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "28. Spoofing of the Generic External Interactor External Destination\n        Entity",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t29": {
+            "category": "Repudiation",
+            "description": "Generic External Interactor\n          claims that it did not receive data from a process on the other side of the trust boundary. Consider using\n          logging or auditing to record the source, time, and summary of the received data.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "29. External Entity Generic External Interactor Potentially Denies\n        Receiving Data",
+            "state": "Not Started",
+            "priority": "High"
+          },
+          "t30": {
+            "category": "Denial Of Service",
+            "description": "An external agent interrupts\n          data flowing across a trust boundary in either direction.",
+            "justification": "<no mitigation\n          provided>",
+            "summary": "30. Data Flow HTTPS Is Potentially Interrupted",
+            "state": "Not Started",
+            "priority": "High"
+          }
+        },
+        "metadata": {
+          "created_at": "4/3/2020 11:12:42 AM",
+          "threat_model_name": "Sample 1",
+          "owner": "Ivan",
+          "reviewer": "",
+          "contributors": "Ivan, Harsh, Maxime",
+          "description": "my\n    description",
+          "assumptions": "",
+          "external_dependencies": ""
+        }
+      },
+      "created_at": 1586581133000,
+      "created_at_epoch": 1586581133,
+      "project_name": "Sample 1"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

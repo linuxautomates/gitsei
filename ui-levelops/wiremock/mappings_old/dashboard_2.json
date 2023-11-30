@@ -1,0 +1,52 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/dashboards/2"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "Resources",
+      "type": "team360",
+      "widgets": [
+        {
+          "name": "Cloud Accounts",
+          "id": 7,
+          "type": "list",
+          "endpoint": "v1/accounts/list",
+          "query": {
+            "filter": {
+              "team_id": 1
+            }
+          }
+        },
+        {
+          "name": "Cloud Resources",
+          "id": 6,
+          "type": "list",
+          "endpoint": "v1/resources/list",
+          "query": {
+            "filter": {
+              "team_id": 1
+            }
+          }
+        },
+        {
+          "name": "Config Files",
+          "id": 8,
+          "type": "list",
+          "endpoint": "v1/configs/list",
+          "query": {
+            "filter": {
+              "team_id": 1
+            }
+          }
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

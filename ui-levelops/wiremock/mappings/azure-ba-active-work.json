@@ -1,0 +1,65 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/ba/issue_mgmt/active_work/ticket_count"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "alignment_score": 2,
+          "percentage_score": 0.4,
+          "category_allocations": {
+            "Bugs": {
+              "alignment_score": 1,
+              "percentage_score": 0.0,
+              "allocation": 0.30909792,
+              "effort": 24832,
+              "total_effort": 80337
+            },
+            "Others": {
+              "alignment_score": 1,
+              "percentage_score": 0.0,
+              "allocation": 0.28202447,
+              "effort": 22657,
+              "total_effort": 80337
+            },
+            "New Feature": {
+              "alignment_score": 3,
+              "percentage_score": 1.0,
+              "allocation": 0.016517919,
+              "effort": 1327,
+              "total_effort": 80337
+            },
+            "Fearture": {
+              "alignment_score": 3,
+              "percentage_score": 1.0,
+              "allocation": 0.0,
+              "effort": 0,
+              "total_effort": 80337
+            },
+            "Other": {
+              "alignment_score": 1,
+              "percentage_score": 0.0,
+              "allocation": 0.39235967,
+              "effort": 31521,
+              "total_effort": 80337
+            }
+          }
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "has_next": false,
+        "total_count": 1
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/zricethezav/gitleaks
+    rev: v8.15.2
+    hooks:
+      - id: gitleaks
+  - repo: local
+    hooks:
+      - id: check-console-logs
+        name: check-console-logs
+        entry: ./dev-scripts/log-alert-hook.sh
+        language: script
+      - id: check-pretty
+        name: check-pretty
+        entry: ./dev-scripts/pretty-check-hook.sh
+        language: script

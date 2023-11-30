@@ -1,0 +1,49 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/dev_productivity/reports/fixed_intervals/raw_stats/orgs"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "records": [
+        {
+          "ou_id": "b6b667de-863b-4757-96e2-0547af9177d9",
+          "name": "Nishith Patel",
+          "interval": "LAST_QUARTER",
+          "raw_stats": {
+            "Number of stories worked on per month": 6,
+            "Number of PRs per month": 6,
+            "Average Coding days per week": 67201,
+            "Number of PRs commented on per month": 0,
+            "Average time spent working on Issues": 6435586,
+            "Number of PRs approved per month": 4,
+            "Percentage of Rework": 61,
+            "Average response time for PR approvals": 95389,
+            "High Impact bugs worked on per month": 0,
+            "Number of Commits per month": 15,
+            "Average PR Cycle Time": 79740,
+            "Average response time for PR comments": 269902,
+            "Percentage of Legacy Rework": 16,
+            "Technical Breadth - Number of unique file extension": 2,
+            "Number of bugs worked on per month": 4,
+            "Lines of Code per month": 4710,
+            "High Impact stories worked on per month": 0,
+            "Repo Breadth - Number of unique repo": 3,
+            "Number of Story Points worked on per month": 1
+          }
+        }
+      ],
+      "count": 1,
+      "_metadata": {
+        "page_size": 1000,
+        "page": 0,
+        "has_next": false
+      }
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

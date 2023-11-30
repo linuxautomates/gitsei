@@ -1,0 +1,32 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/v1/cicd_scm/job_counts_by_job_name"
+  },
+  "response": {
+    "status": 201,
+    "jsonBody": {
+      "_metadata": {
+        "page_size": 100,
+        "page": 0,
+        "total_count": 2
+      },
+      "count": 2,
+      "records": [
+        {
+          "key": "1591720855",
+          "count": 25
+        },
+        {
+          "key": "1592515671",
+          "count": 10
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}

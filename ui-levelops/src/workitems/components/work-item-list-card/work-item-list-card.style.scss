@@ -1,0 +1,25 @@
+.ant-list-item-smart-ticket {
+  background-color: var(--levelops-white);
+  border: 1px solid var(--border-color) !important;
+  //border-bottom: 1px solid var(--border-color) !important;
+  border-radius: 4px;
+  padding: 10px;
+  & + .ant-list-item-smart-ticket {
+    margin-top: 10px;
+  }
+  .ticket-name {
+    line-height: 1.2;
+    color: #2b3f62;
+  }
+  .ant-badge-status-text {
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  &.selected {
+    border: 2px solid #3264d6 !important;
+    background-color: #e8effc;
+    .ticket-name {
+      color: #84a4e7;
+    }
+  }
+}

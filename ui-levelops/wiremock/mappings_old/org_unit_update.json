@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/v1/org/units"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "_metadata": {
+        "has_next": false,
+        "page": 0,
+        "page_size": 10,
+        "total_count": 4
+      },
+      "records": []
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}
